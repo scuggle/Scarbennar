@@ -1,4 +1,4 @@
-name="Anbennar-r/Europe"
+name="Anbennar-rEurope"
 tags={
 	"Alternative History"
 	"Total Conversion"
@@ -23,4 +23,4 @@ replace_path="history/advisors"
 replace_path="gfx/loadingscreens"
 picture="anbennar.jpg"
 supported_version="1.34.*"
-path="mod/Anbennar-r/Europe"
+path="mod/Anbennar-rEurope"
