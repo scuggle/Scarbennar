@@ -1,3 +1,0 @@
-
-496 = "Ibtat" # Elizna
-493 = "Amoni Kardesh"
