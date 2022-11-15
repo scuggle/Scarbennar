@@ -6,5 +6,6 @@ tags={
 name="AnbennarFormables"
 dependencies={
 	"Anbennar-PublicFork"
+	"Anbennar: A Fantasy Total Conversion Mod"
 }
 path="mod/AnbennarFormables"
