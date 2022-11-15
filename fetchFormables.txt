@@ -1,4 +1,4 @@
-#use ./fetch.sh
+# use from command line
 git fetch Formables
 git checkout -b temp Formables/main
 git checkout main
