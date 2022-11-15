@@ -1,0 +1,313 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+
+
+### Nation specific idea groups
+
+#Custom Formables
+#Damerian Republic
+X04_ideas = {
+	start = {
+		advisor_cost = -0.15
+		ae_impact = -0.2
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X04
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X04_one = {
+		mercenary_discipline = 0.1
+		mercenary_cost = -0.4
+	}
+	X04_two = {
+		development_cost = -0.15
+		trade_efficiency = 0.2
+	}
+	X04_three = {
+		galley_power = 0.2
+		naval_forcelimit_modifier = 0.3
+	}
+	X04_four = {
+		technology_cost = -0.1
+		allowed_marine_fraction = 0.1
+	}
+	X04_five = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	X04_six = {
+		institution_growth = 0.3
+		defensiveness = 0.2
+	}
+	X04_seven = {
+		land_morale = 0.15
+	}
+}
+
+#Seiranar
+X08_ideas = {
+	start = {
+		diplomatic_reputation = 1 #I For one welcome our Elven Overlords.
+		heavy_ship_power = 0.1 #Legacy of Celmaldor
+	}
+	bonus = {
+		fire_damage_received = -0.10 #Dáine, Glass Armour
+	}
+	trigger = {
+		OR = {
+			tag = X08
+		}
+	}
+	free = yes		#will be added at load.
+
+	X08_one = {  #A Helmet for every head.
+	manpower_recovery_speed = 0.25
+	}
+	X08_two = { #Aldróg [Pale Stone]
+	build_time = -0.2
+	prestige_decay = -0.01
+	}
+	X08_three = { #The Dalássa [Noble Lances].
+	cavalry_power = 0.2
+	}
+	X08_four = { #House Icewind
+	trade_efficiency = 0.15
+	}
+	X08_five = { #Seirèild - By Excellence alone.
+	same_culture_advisor_cost = -0.15
+	culture_conversion_cost = -0.25
+	}
+	X08_six = { #The Gilded Court of Seiranar.
+	yearly_absolutism = 2
+	dip_tech_cost_modifier = -0.1
+	}
+	X08_seven = { #Sons of Alen, welcome and respected
+	num_accepted_cultures = 2
+	}
+}
+
+#Greengate TBD
+X12_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_trade_power = 0.15
+	}
+
+	bonus = {
+		caravan_power = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X12
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X12_one = {
+		global_institution_spread = 0.2
+	}
+	X12_two = {
+		mercenary_cost = -0.3
+		merc_maintenance_modifier = -0.1
+	}
+	X12_three = {
+		diplomatic_upkeep = 2
+		improve_relation_modifier = 0.15
+	}
+	X12_four = {
+		num_accepted_cultures = 2
+	}
+	X12_five = {
+		defensiveness = 0.2
+	}
+	X12_six = {
+		rebel_support_efficiency = 0.5
+	}
+	X12_seven = {
+		free_adm_policy = 1
+	}
+}
+
+#Voltenu
+X13_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.15
+		innovativeness_gain = 1
+	}
+
+	bonus = {
+		global_unrest = -2
+	}
+	
+	trigger = {
+		OR = {
+			tag = X13
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X13_one = {
+		special_unit_forcelimit = 0.1
+	}
+	X13_two = {
+		vassal_income = 0.2
+		vassal_forcelimit_bonus = 0.5
+	}
+	X13_three = {
+		technology_cost = -0.1
+	}
+	X13_four = {
+		build_cost = -0.1
+		build_time = -0.1
+	}
+	X13_five = {
+		development_cost = -0.10
+	}
+	X13_six = {
+		production_efficiency = 0.1
+	}
+	X13_seven = {
+		trade_company_investment_cost = -0.15
+	}
+}
+
+#Vortzo Vedobbyat
+X14_ideas = {
+	start = {
+		spy_offence = 0.2
+		global_prosperity_growth = 0.2
+	}
+
+	bonus = {
+		max_absolutism = 15
+	}
+	
+	trigger = {
+		OR = {
+			tag = X14
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X14_one = {
+		diplomats = 1
+		siege_ability = 0.5
+	}
+	X14_two = {
+		movement_speed = 0.1
+	}
+	X14_three = {
+		global_tax_modifier = 0.15
+	}
+	X14_four = {
+		stability_cost_modifier = -0.2
+	}
+	X14_five = {
+		defensiveness = 0.1
+	}
+	X14_six = {
+		discipline = 0.05
+	}
+	X14_seven = {
+		land_morale = 0.1
+	}
+}
+
+#Goblin Empire
+X15_ideas = {
+	start = {
+		artillery_power = 0.2
+		backrow_artillery_damage = 0.1
+	}
+
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+
+	trigger = {
+		OR = {
+			tag = X15
+		}
+	}
+	free = yes
+
+	X15_one = {
+		global_trade_goods_size_modifier = 0.2
+	}
+	X15_two = {
+		innovativeness_gain = 1
+		special_unit_forcelimit = 0.2
+	}
+	X15_three = {
+		development_cost = -0.1
+		build_time = -0.05
+	}
+	X15_four = {
+		stability_cost_modifier = -0.25
+	}
+	X15_five = {
+		fire_damage = 0.1
+	}
+	X15_six = {
+		technology_cost = -0.1
+		idea_cost = -0.05
+	}
+	X15_seven = {
+		siege_ability = 0.15
+	}
+}
+
+#Orc Empire TBD
+X16_ideas = {
+	start = {
+		artillery_power = 0.2
+		backrow_artillery_damage = 0.1
+	}
+
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+
+	trigger = {
+		OR = {
+			tag = X16
+		}
+	}
+	free = yes
+
+	X16_one = {
+		global_trade_goods_size_modifier = 0.2
+	}
+	X16_two = {
+		innovativeness_gain = 1
+		special_unit_forcelimit = 0.2
+	}
+	X16_three = {
+		development_cost = -0.1
+		build_time = -0.05
+	}
+	X16_four = {
+		stability_cost_modifier = -0.25
+	}
+	X16_five = {
+		fire_damage = 0.1
+	}
+	X16_six = {
+		technology_cost = -0.1
+		idea_cost = -0.05
+	}
+	X16_seven = {
+		siege_ability = 0.15
+	}
+}
