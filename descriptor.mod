@@ -3,9 +3,5 @@ tags={
 	"New Nations"
 	"National Ideas"
 }
-name="AnbennarFormables"
-dependencies={
-	"Anbennar-PublicFork"
-	"Anbennar: A Fantasy Total Conversion Mod"
-}
-path="mod/AnbennarFormables"
+name="R/Europe-Anbennar_BETA"
+path="mod/R/Europe-Anbennar_BETA"
