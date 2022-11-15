@@ -1,0 +1,25 @@
+
+setup_vision = yes
+government = tribal
+add_government_reform = greentide_horde
+government_rank = 1
+primary_culture = green_orc
+religion = great_dookan
+technology_group = tech_orcish
+capital = 839
+
+#lore: a rabid beserker clan
+
+1440.4.15 = {
+	monarch = {
+		name = "Zog"
+		dynasty = "Bloodgorger"
+		birth_date = 1405.10.22
+		adm = 0
+		dip = 0
+		mil = 6
+	}
+    
+    add_ruler_personality = bold_fighter_personality
+    add_ruler_personality = cruel_personality
+}
