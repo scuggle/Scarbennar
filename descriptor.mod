@@ -3,8 +3,8 @@ tags={
 	"New Nations"
 	"National Ideas"
 }
-name="europeFormables"
+name="AnbennarFormables"
 dependencies={
 	"Anbennar-PublicFork"
 }
-path="mod/europeFormables"
+path="mod/AnbennarFormables"
