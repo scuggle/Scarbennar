@@ -1,0 +1,80 @@
+
+country_decisions = {
+	A30_form_nation = {
+		major = yes
+		potential = {
+			primary_culture = wexonard
+			NOT = { has_country_flag = formed_A30_flag }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+
+		allow = {
+			adm_tech = 7
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			NOT = { exists = A30 }
+			owns_core_province = 306	#Wexkeep
+			development_in_provinces = {
+				value = 250
+				OR = {
+					region = esmaria_region
+					region = the_borders_region
+					region = west_dameshead_region
+				}
+			}
+		}		
+	
+
+
+		provinces_to_highlight = {
+			
+		}
+	
+
+
+		effect = {
+			change_tag = A30
+			set_country_flag = formed_A30_flag
+			set_country_flag = no_formable_culture_shift
+			clr_country_flag = is_a_county
+			swap_non_generic_missions = yes
+			hidden_effect = { restore_country_name = yes }
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+	}
+}
