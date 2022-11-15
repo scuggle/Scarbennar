@@ -1,0 +1,7 @@
+
+#Aelantir
+1033 = "Traz-szel-Disen"
+1041 = "Nabakelu"
+1867 = "Ahitušes"
+1953 = "Umuhitu"
+2410 = "Aqatzan"

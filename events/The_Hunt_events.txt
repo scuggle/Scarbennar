@@ -1,0 +1,377 @@
+
+namespace = the_hunt_events
+
+#Fair winds
+country_event = {
+	id = the_hunt_events.1
+	title = the_hunt_events.1.t
+	desc = the_hunt_events.1.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = the_hunt_events.1.a
+		
+		add_country_modifier = {
+			name = "the_hunt_fair_winds"
+			duration = 365
+		}
+	}
+}
+
+#Move pop
+country_event = {
+	id = the_hunt_events.2
+	title = the_hunt_events.2.t
+	desc = the_hunt_events.2.d
+	picture = FAMINE_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			harpy_define_pop_to_take = yes
+		}
+	}
+	
+	after = {
+		hidden_effect = {
+			every_province = {
+				limit = { has_province_flag = harpy_pop_@ROOT }
+				clr_province_flag = harpy_pop_@ROOT
+				clr_province_flag = option_harpy_pop_1_@ROOT
+				clr_province_flag = option_harpy_pop_2_@ROOT
+				clr_province_flag = option_harpy_pop_3_@ROOT
+				clr_province_flag = option_harpy_pop_4_@ROOT
+			}
+			clr_country_flag = open_harpy_take_pop_menu
+		}
+	}
+	
+	option = {
+		name = the_hunt_events.2.a
+        ai_chance = { factor = 1 }
+		trigger = { any_province = { has_province_flag = option_harpy_pop_1_@ROOT } }
+		goto = harpy_pop1
+		random_province = {
+			limit = { has_province_flag = option_harpy_pop_1_@ROOT }
+			harpy_move_pop_to_capital_effect = yes
+		}
+	}
+	option = {
+		name = the_hunt_events.2.b
+        ai_chance = { factor = 1 }
+		trigger = { any_province = { has_province_flag = option_harpy_pop_2_@ROOT } }
+		goto = harpy_pop2
+		random_province = {
+			limit = { has_province_flag = option_harpy_pop_2_@ROOT }
+			harpy_move_pop_to_capital_effect = yes
+		}
+	}
+	option = {
+		name = the_hunt_events.2.c
+        ai_chance = { factor = 1 }
+		trigger = { any_province = { has_province_flag = option_harpy_pop_3_@ROOT } }
+		goto = harpy_pop3
+		random_province = {
+			limit = { has_province_flag = option_harpy_pop_3_@ROOT }
+			harpy_move_pop_to_capital_effect = yes
+		}
+	}
+	option = {
+		name = the_hunt_events.2.dd
+        ai_chance = { factor = 1 }
+		trigger = { any_province = { has_province_flag = option_harpy_pop_4_@ROOT } }
+		goto = harpy_pop4
+		random_province = {
+			limit = { has_province_flag = option_harpy_pop_4_@ROOT }
+			harpy_move_pop_to_capital_effect = yes
+		}
+	}
+	option = {
+        name = the_hunt_events.2.e
+        ai_chance = { factor = 0 }
+		add_church_power = 100
+	}
+}
+
+#Raid neighbours
+country_event = {
+	id = the_hunt_events.3
+	title = the_hunt_events.3.t
+	desc = the_hunt_events.3.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			harpy_define_raid_target = yes
+		}
+	}
+	
+	after = {
+		hidden_effect = {
+			event_target:harpy_raid1 = {
+				clr_province_flag = harpy_raid_@ROOT
+			}
+			event_target:harpy_raid2 = {
+				clr_province_flag = harpy_raid_@ROOT
+			}
+			event_target:harpy_raid3 = {
+				clr_province_flag = harpy_raid_@ROOT
+			}
+			event_target:harpy_raid4 = {
+				clr_province_flag = harpy_raid_@ROOT
+			}
+			clr_country_flag = open_harpy_raid_menu
+		}
+	}
+	
+	option = {
+		name = the_hunt_events.3.a
+        ai_chance = { factor = 1 }
+		trigger = { event_target:harpy_raid2 = { development = 3 } }
+		goto = harpy_raid1
+		event_target:harpy_raid1 = {
+			area = {
+				limit = { 
+					NOT = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+						owner = { overlord_of = ROOT }
+						owner = { alliance_with = ROOT }
+						owner = { ROOT = { truce_with = PREV } }
+						has_terrain = cavern
+						has_terrain = dwarven_road
+						has_terrain = dwarven_hold
+						has_terrain = dwarven_hold_surface
+					}
+					is_city = yes
+					has_discovered = ROOT		
+				}
+				harpy_raid_effect = yes
+				hidden_effect = {
+					if = {
+						limit = { owner = { NOT = { has_country_flag = informed_of_harpy_raid } } }
+						owner = { # Raid and inform the victim.
+							set_country_flag = informed_of_harpy_raid
+							country_event = { id = the_hunt_events.301 days = 1 } 
+						} 
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = the_hunt_events.3.b
+        ai_chance = { factor = 1 }
+		trigger = { event_target:harpy_raid2 = { development = 3 } }
+		goto = harpy_raid2
+		event_target:harpy_raid2 = {
+			area = {
+				limit = { 
+					NOT = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+						owner = { overlord_of = ROOT }
+						owner = { alliance_with = ROOT }
+						owner = { ROOT = { truce_with = PREV } }
+						has_terrain = cavern
+						has_terrain = dwarven_road
+						has_terrain = dwarven_hold
+						has_terrain = dwarven_hold_surface
+					}
+					is_city = yes
+					has_discovered = ROOT		
+				}
+				harpy_raid_effect = yes
+				hidden_effect = {
+					if = {
+						limit = { owner = { NOT = { has_country_flag = informed_of_harpy_raid } } }
+						owner = { # Raid and inform the victim.
+							set_country_flag = informed_of_harpy_raid
+							country_event = { id = the_hunt_events.302 days = 1 } 
+						} 
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = the_hunt_events.3.c
+        ai_chance = { factor = 1 }
+		trigger = { event_target:harpy_raid3 = { development = 3 } }
+		goto = harpy_raid3
+		event_target:harpy_raid3 = {
+			area = {
+				limit = { 
+					NOT = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+						owner = { overlord_of = ROOT }
+						owner = { alliance_with = ROOT }
+						owner = { ROOT = { truce_with = PREV } }
+						has_terrain = cavern
+						has_terrain = dwarven_road
+						has_terrain = dwarven_hold
+						has_terrain = dwarven_hold_surface
+					}
+					is_city = yes
+					has_discovered = ROOT		
+				}
+				harpy_raid_effect = yes
+				hidden_effect = {
+					if = {
+						limit = { owner = { NOT = { has_country_flag = informed_of_harpy_raid } } }
+						owner = { # Raid and inform the victim.
+							set_country_flag = informed_of_harpy_raid
+							country_event = { id = the_hunt_events.303 days = 1 } 
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = the_hunt_events.3.dd
+        ai_chance = { factor = 1 }
+		trigger = { event_target:harpy_raid4 = { development = 3 } }
+		goto = harpy_raid4
+		event_target:harpy_raid4 = {
+			area = {
+				limit = { 
+					NOT = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+						owner = { overlord_of = ROOT }
+						owner = { alliance_with = ROOT }
+						owner = { ROOT = { truce_with = PREV } }
+						has_terrain = cavern
+						has_terrain = dwarven_road
+						has_terrain = dwarven_hold
+						has_terrain = dwarven_hold_surface
+					}
+					is_city = yes
+					has_discovered = ROOT		
+				}
+				harpy_raid_effect = yes
+				hidden_effect = {
+					if = {
+						limit = { owner = { NOT = { has_country_flag = informed_of_harpy_raid } } }
+						owner = { # Raid and inform the victim.
+							set_country_flag = informed_of_harpy_raid
+							country_event = { id = the_hunt_events.304 days = 1 } 
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+        name = the_hunt_events.3.e
+        ai_chance = { factor = 0 }
+		add_church_power = 50
+	}
+}
+
+
+
+# Raid and inform the victim: "Helpless in Halting Harpy Hunts"
+country_event = {
+	id = the_hunt_events.301
+	title = the_hunt_events.300.t 
+	desc = the_hunt_events.301.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+
+	after = {
+		hidden_effect = {
+			set_country_flag = informed_of_harpy_raid
+		}
+	}
+	
+	option = {
+		name = the_hunt_events.300.a
+        ai_chance = { factor = 1 }
+		add_casus_belli = {
+			target = FROM
+			type = cb_insult
+			months = 18
+		}
+	}
+}
+country_event = {
+	id = the_hunt_events.302
+	title = the_hunt_events.300.t
+	desc = the_hunt_events.302.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+
+	after = {
+		hidden_effect = {
+			set_country_flag = informed_of_harpy_raid
+		}
+	}
+	
+	option = {
+		name = the_hunt_events.300.a
+        ai_chance = { factor = 1 }
+		add_casus_belli = {
+			target = FROM
+			type = cb_insult
+			months = 18
+		}
+	}
+}
+country_event = {
+	id = the_hunt_events.303
+	title = the_hunt_events.300.t
+	desc = the_hunt_events.303.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+
+	after = {
+		hidden_effect = {
+			set_country_flag = informed_of_harpy_raid
+		}
+	}
+	
+	option = {
+		name = the_hunt_events.300.a
+        ai_chance = { factor = 1 }
+		add_casus_belli = {
+			target = FROM
+			type = cb_insult
+			months = 18
+		}
+	}
+}
+country_event = {
+	id = the_hunt_events.304
+	title = the_hunt_events.300.t
+	desc = the_hunt_events.304.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+
+	after = {
+		hidden_effect = {
+			set_country_flag = informed_of_harpy_raid
+		}
+	}
+	
+	option = {
+		name = the_hunt_events.300.a
+        ai_chance = { factor = 1 }
+		add_casus_belli = {
+			target = FROM
+			type = cb_insult
+			months = 18
+		}
+	}
+}
