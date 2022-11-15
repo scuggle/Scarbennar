@@ -1,4 +1,4 @@
-name="Anbennar-PublicFork"
+name="Anbennar-r/Europe"
 tags={
 	"Alternative History"
 	"Total Conversion"
@@ -23,4 +23,4 @@ replace_path="history/advisors"
 replace_path="gfx/loadingscreens"
 picture="anbennar.jpg"
 supported_version="1.34.*"
-path="mod/anbennar-PublicFork"
+path="mod/Anbennar-r/Europe"
