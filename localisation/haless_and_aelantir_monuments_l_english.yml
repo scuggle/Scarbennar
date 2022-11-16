@@ -1,0 +1,310 @@
+﻿l_english:
+
+####################
+#Yanshen Coast
+####################
+
+tianlou_jewel_of_yanshen_title: "Tianlou, Jewel of Yanshen"
+tianlou_jewel_of_yanshen: "Tianlou, Jewel of Yanshen"
+great_project_tianlou_jewel_of_yanshen: "Tianlou, Jewel of Yanshen"
+
+tianlou_xuezhefang_eunuch_academy_title: "Xuezhefang Eunuch Academy"
+tianlou_xuezhefang_eunuch_academy: "Xuezhefang Eunuch Academy"
+great_project_tianlou_xuezhefang_eunuch_academy: "Xuezhefang Eunuch Academy"
+
+jiangdu_haoshitzi_title: "Haoshitzi"
+jiangdu_haoshitzi: "Haoshitzi"
+great_project_jiangdu_haoshitzi: "Haoshitzi"
+
+yinquan_the_conquerors_hotspring_title: "The Conqueror's Hotspring"
+yinquan_the_conquerors_hotspring: "The Conqueror's Hotspring"
+great_project_yinquan_the_conquerors_hotspring: "The Conqueror's Hotspring"
+
+luoyip_house_of_fire_and_water_title: "House of Fire and Water"
+luoyip_house_of_fire_and_water: "House of Fire and Water"
+great_project_luoyip_house_of_fire_and_water: "House of Fire and Water"
+
+####################
+#North Yanshen
+####################
+
+beikdugang_nanxin_naval_academy_title: "Nanxin Naval Academy"
+beikdugang_nanxin_naval_academy: "Nanxin Naval Academy"
+great_project_beikdugang_nanxin_naval_academy: "Nanxin Naval Academy"
+
+lanjinhui_lanjin_hall_title: "Lanjin Hall"
+lanjinhui_lanjin_hall: "Lanjin Hall"
+great_project_lanjinhui_lanjin_hall: "Lanjin Hall"
+
+jiantsiang_temple_of_the_ascendant_soul_title: "Temple of the Ascendant Soul"
+jiantsiang_temple_of_the_ascendant_soul: "Temple of the Ascendant Soul"
+great_project_jiantsiang_temple_of_the_ascendant_soul: "Temple of the Ascendant Soul"
+
+####################
+#Aelantir
+####################
+
+atlantis_title: "Aelantaris"
+atlantis: "Aelantaris"
+great_project_atlantis: "Aelantaris"
+
+malacnar_city_of_warriors_title: "Malacnar, City of Warriors"
+malacnar_city_of_warriors: "Malacnar, City of Warriors"
+great_project_malacnar_city_of_warriors: "Malacnar, City of Warriors"
+
+vels_bacar_scol_mecynn_title: "Scol Mecynn, School of the Riverblades"
+vels_bacar_scol_mecynn: "Scol Mecynn, School of the Riverblades"
+great_project_vels_bacar_scol_mecynn: "Scol Mecynn, School of the Riverblades"
+
+grebniesth_hedge_gardens_title: "Hedge Gardens of Grebniesth"
+grebniesth_hedge_gardens: "Hedge Gardens of Grebniesth"
+great_project_grebniesth_hedge_gardens: "Hedge Gardens of Grebniesth"
+
+stanyrhrada_golden_dome_title: "Golden Dome of Stanyrhrada"
+stanyrhrada_golden_dome: "Golden Dome of Stanyrhrada"
+great_project_stanyrhrada_golden_dome: "Golden Dome of Stanyrhrada"
+
+ixazulcucua_leechfathers_maw_title: "Leechfather's Maw"
+ixazulcucua_leechfathers_maw: "Leechfather's Maw"
+great_project_ixazulcucua_leechfathers_maw: "Leechfather's Maw"
+
+orenkoraim_nakar_koraim_title: "Nakar Koraim"
+orenkoraim_nakar_koraim: "Nakar Koraim"
+great_project_orenkoraim_nakar_koraim: "Nakar Koraim"
+
+####################
+#Eordand
+####################
+
+gift_of_spring_title: "Gift of Spring"
+gift_of_spring: "Gift of Spring"
+
+gift_of_summer_title: "Gift of Summer"
+gift_of_summer: "Gift of Summer"
+
+gift_of_autumn_title: "Gift of Autumn"
+gift_of_autumn: "Gift of Autumn"
+
+gift_of_winter_title: "Gift of Winter"
+gift_of_winter: "Gift of Winter"
+
+####################
+#Demon Hills
+####################
+
+hubao_the_tiger_fortress_title: "Hubao, The Tiger Fortress"
+hubao_the_tiger_fortress: "Hubao, The Tiger Fortress"
+great_project_hubao_the_tiger_fortress: "Hubao, The Tiger Fortress"
+
+####################
+#Xianjie
+####################
+
+xiadao_liusibao_title: "Liusibao"
+xiadao_liusibao: "Liusibao"
+great_project_xiadao_liusibao: "Liusibao"
+
+jilin_szienlou_title: "Szienlou"
+jilin_szienlou: "Szienlou"
+great_project_jilin_szienlou: "Szienlou"
+
+gundhaghidur_library_of_insight_title: "Library of Gundhaghidur"
+gundhaghidur_library_of_insight: "Library of Gundhaghidur"
+great_project_gundhaghidur_library_of_insight: "Library of Gundhaghidur"
+
+aoshan_hanging_temple_title: "Hanging Temple of Aoshan"
+aoshan_hanging_temple: "Hanging Temple of Aoshan"
+great_project_aoshan_hanging_temple: "Hanging Temple of Aoshan"
+
+####################
+#Upper Yanshen
+####################
+
+jinquiu_heiyukcheng_the_black_jade_citadel_title: "Heiyukcheng, The Black Jade Citadel"
+jinquiu_heiyukcheng_the_black_jade_citadel: "Heiyukcheng, The Black Jade Citadel"
+great_project_jinquiu_heiyukcheng_the_black_jade_citadel: "Heiyukcheng, The Black Jade Citadel"
+
+bianfang_huangpo_academy_of_war_title: "Huangpo Academy of War"
+bianfang_huangpo_academy_of_war: "Huangpo Academy of War"
+great_project_bianfang_huangpo_academy_of_war: "Huangpo Academy of War"
+
+guhe_the_cheng_of_guhe_title: "The Cheng of Guhe"
+guhe_the_cheng_of_guhe: "The Cheng of Guhe"
+great_project_guhe_the_cheng_of_guhe: "The Cheng of Guhe"
+
+bianfang_vermillion_gate_title: "The Vermillion Gate of Lamwun"
+bianfang_vermillion_gate: "The Vermillion Gate of Lamwun"
+great_project_bianfang_vermillion_gate: "The Vermillion Gate of Lamwun"
+
+####################
+#Thidnkai
+####################
+
+azkare_citadel_of_the_dawn_title: "Citadel of the Dawn"
+azkare_citadel_of_the_dawn: "Citadel of the Dawn"
+great_project_azkare_citadel_of_the_dawn: "Citadel of the Dawn"
+
+kudet_kai_danon_dungcam_mercenary_guild_title: "Danon Dungcam Guild Headquarters"
+kudet_kai_danon_dungcam_mercenary_guild: "Danon Dungcam Guild Headquarters"
+great_project_kudet_kai_danon_dungcam_mercenary_guild: "Danon Dungcam Guild Headquarters"
+
+chien_binhrung_nha_nuhoanha_temple_title: "Nha Nuhoanha Temple"
+chien_binhrung_nha_nuhoanha_temple: "Nha Nuhoanha Temple"
+great_project_chien_binhrung_nha_nuhoanha_temple: "Nha Nuhoanha Temple"
+
+####################
+#Bomdan
+####################
+
+prukakhin_bazaar_of_blood_and_ivory_title: "Bazaar of Blood and Ivory"
+prukakhin_bazaar_of_blood_and_ivory: "Bazaar of Blood and Ivory"
+great_project_prukakhin_bazaar_of_blood_and_ivory: "Bazaar of Blood and Ivory"
+
+phaethmen_di_phaemruk_shipyard_district_title: "Phaemruk Shipyard District"
+phaethmen_di_phaemruk_shipyard_district: "Phaemruk Shipyard District"
+great_project_phaethmen_di_phaemruk_shipyard_district: "Phaemruk Shipyard District"
+
+phaethmen_di_the_saccharine_garden_title: "The Saccharine Garden"
+phaethmen_di_the_saccharine_garden: "The Saccharine Garden"
+great_project_phaethmen_di_the_saccharine_garden: "The Saccharine Garden"
+
+lapnam_amrik_weapon_market_title: "Weapon Market of Lapnam Amrik"
+lapnam_amrik_weapon_market: "Weapon Market of Lapnam Amrik"
+great_project_lapnam_amrik_weapon_market: "Weapon Market of Lapnam Amrik"
+
+lapnam_amrik_teplinbasiet_arena_title: "Teplinbasiet Arena"
+lapnam_amrik_teplinbasiet_arena: "Teplinbasiet Arena"
+great_project_lapnam_amrik_teplinbasiet_arena: "Teplinbasiet Arena"
+
+lapnam_amrik_khram_ptaa_national_academy_title: "Khram Ptaa National Academy"
+lapnam_amrik_khram_ptaa_national_academy: "Khram Ptaa National Academy"
+great_project_lapnam_amrik_khram_ptaa_national_academy: "Khram Ptaa National Academy"
+
+bim_lau_necropolis_title: "Necropolis of Bim Lau"
+bim_lau_necropolis: "Necropolis of Bim Lau"
+great_project_bim_lau_necropolis: "Necropolis of Bim Lau"
+
+####################
+#Odheongu
+####################
+
+daengun_hajigaja_library_title: "Hajigaja Library"
+daengun_hajigaja_library: "Hajigaja Library"
+great_project_daengun_hajigaja_library: "Hajigaja Library"
+
+####################
+#Rahen
+####################
+
+temple_mindanan_title: "High Temple of Mindanan"
+temple_mindanan: "High Temple of Mindanan"
+
+dye_market_title: "Dye Markets of Sharaajaghal"
+dye_market: "Dye Markets of Sharaajaghal"
+
+temple_foresight_title: "Temple of Foresight"
+temple_foresight: "Temple of Foresight"
+
+dhujati_headquarters_title: "Dhujati League Headquarters"
+dhujati_headquarters: "Dhujati League Headquarters"
+
+court_dhen_title: "Lotus Court of the Dhenijanraj"
+court_dhen: "Lotus Court of the Dhenijanraj"
+
+sarnihanpur_library_title: "Royal Library of Sarnihanpur"
+sarnihanpur_library: "Royal Library of Sarnihanpur"
+
+khamayodi_camp_title: "Home of the Khamayodi"
+khamayodi_camp: "Home of the Khamayodi"
+
+sheramvi_foundry_title: "Ghankedhen Family Foundry"
+sheramvi_foundry: "Ghankedhen Family Foundry"
+
+sardhasi_fields_title: "Sardhasi Silk Fields"
+sardhasi_fields: "Sardhasi Silk Fields"
+
+great_market_sramaya_title: "Market of the World's Desire"
+great_market_sramaya: "Market of the World's Desire"
+
+brass_palace_title: "The Brass Palace of Sramaya"
+brass_palace: "The Brass Palace"
+
+####################
+#Bulwar
+####################
+
+temple_of_surael_title: "Temple of Surael's Chosen"
+temple_of_surael: "Temple of Surael's Chosen"
+
+eranils_oddities_title: "Eranil's Oddities"
+eranils_oddities: "Eranil's Oddities"
+
+stone_palace_title: "Stone Palace of Ekluzagnu"
+stone_palace: "Stone Palace of Ekluzagnu"
+
+moon_mountains_title: "Mountains of the Moon"
+moon_mountains: "Mountains of the Moon"
+
+port_emperor_title: "Port of Emperors"
+port_emperor: "Port of Emperors"
+
+mountain_sight_title: "Mountain of Clear Sight"
+mountain_sight: "Mountain of Clear Sight"
+
+sun_dial_title: "Sun-Dial of Azka-Sur"
+sun_dial: "Sun-Dial of Azka-Sur"
+
+temple_sun_title: "Temple of the Sun"
+temple_sun: "Temple of the Sun"
+
+bazaar_brasan_title: "Grand Bazaar of Brasan"
+bazaar_brasan: "Grand Bazaar of Brasan"
+
+fortress_azka_sur_title: "Fortress of Azka-Sur"
+fortress_azka_sur: "Fortress of Azka-Sur"
+
+fortress_azka_szel_title: "Fortress of Azka-szel-Azka"
+fortress_azka_szel: "Fortress of Azka-szel-Azka"
+
+hanging_gardens_title: "Hanging Gardens of Bulwar"
+hanging_gardens: "Hanging Gardens of Bulwar"
+
+####################
+#Kheionai
+####################
+
+warded_city_deg_title: "Degakheion, City of Soldiers"
+warded_city_deg: "Degakheion, City of Soldiers"
+
+warded_city_orm_title: "Ormam, City of Merchants"
+warded_city_orm: "Ormam, City of Merchants"
+
+warded_city_khe_title: "Kherka, City of Iron and Smoke"
+warded_city_khe: "Kherka, City of Iron and Smoke"
+
+warded_city_lok_title: "Lokemeion, City of Scholars"
+warded_city_lok: "Lokemeion, City of Scholars"
+
+warded_city_okt_title: "Oktikheion, City of Ships, Silk, and Sugar"
+warded_city_okt: "Oktikheion, City of Ships, Silk, and Sugar"
+
+warded_city_arp_title: "Arpedifer, City of Artisans"
+warded_city_arp: "Arpedifer, City of Artisans"
+
+the_goliath_title: "Goliath of Degakheion"
+the_goliath: "Goliath of Degakheion"
+
+wondrous_harbor_title: "Wondrous Harbor of Ormam"
+wondrous_harbor: "Wondrous Harbor of Ormam"
+
+grand_library_title: "Grand Library of Lokemeion"
+grand_library: "Grand Library of Lokemeion"
+
+great_forge_title: "Great Forges of Kherka"
+great_forge: "Great Forges of Kherka"
+
+naval_school_title: "Naval School of Oktikheion"
+naval_school: "Naval School of Oktikheion"
+
+glassworks_title: "Glassworks of Arpedifer"
+glassworks: "Glassworks of Arpedifer"

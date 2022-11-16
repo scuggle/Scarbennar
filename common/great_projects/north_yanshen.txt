@@ -1,0 +1,257 @@
+#Lanjin Hall (Lanjinhui)
+lanjinhui_lanjin_hall = {
+	start = 4930
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {	
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+		}
+		on_upgraded = {	
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_institution_spread = 0.1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			adm_advisor_cost = -0.1
+		}
+		on_upgraded = {
+			change_trade_goods = paper
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_institution_spread = 0.2
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			adm_advisor_cost = -0.15
+			idea_cost = -0.025
+			technology_cost = -0.025
+		}
+		on_upgraded = {
+			define_advisor = {
+				type = philosopher
+				name = "Zhankai Xiao"
+				skill = 3
+				culture = river_yan
+				religion = righteous_path
+				location = 4930
+				discount = yes
+			}
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_institution_spread = 0.33
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			adm_advisor_cost = -0.2
+			idea_cost = -0.05
+			technology_cost = -0.05
+		}
+		on_upgraded = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}
+#Temple of the Ascendant Soul (Jiantsiang)
+jiantsiang_temple_of_the_ascendant_soul = {
+	start = 4925
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {	
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.1
+		}
+		area_modifier = {
+			local_unrest = -1
+		}
+		country_modifiers = {
+			war_exhaustion = -0.01
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_defensiveness = 0.2
+		}
+		area_modifier = {
+			local_unrest = -3
+		}
+		country_modifiers = {
+			war_exhaustion = -0.03
+			fire_damage_received = -0.025
+			shock_damage_received = -0.025
+		}
+		on_upgraded = {
+			define_advisor = {
+				type = army_reformer
+				name = "Kubaka of the Ascendant Flame"
+				skill = 3
+				culture = east_harimari
+				religion = high_philosophy
+				location = 4925
+				discount = yes
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.33
+		}
+		area_modifier = {
+			local_unrest = -5
+		}
+		country_modifiers = {
+			war_exhaustion = -0.05
+			fire_damage_received = -0.05
+			shock_damage_received = -0.05
+		}
+		on_upgraded = {
+		}
+	}
+}

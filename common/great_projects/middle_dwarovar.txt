@@ -1,0 +1,680 @@
+####################
+#Middle Dwarovar
+####################
+#The Hero's Gate (Verkal Gulan)
+verkal_gulan_hero_gate = {
+	start = 2914
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {		
+	}	
+	can_use_modifiers_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}
+	can_upgrade_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.1
+		}
+		area_modifier = {			
+		}
+		country_modifiers = {
+			mercenary_cost = -0.1
+			land_forcelimit_modifier = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3500
+		}
+		province_modifiers = {
+			local_defensiveness = 0.2
+			local_hostile_attrition = 0.5
+		}
+		area_modifier = {		
+		}
+		country_modifiers = {
+			mercenary_cost = -0.15
+			land_forcelimit_modifier = 0.075
+			free_land_leader_pool = 1
+		}
+		on_upgraded = {
+			define_advisor = {
+				type = army_organiser
+				name = "Khadan Goldhammer"
+				skill = 3
+				culture = gold_dwarf
+				religion = ancestor_worship
+				location = 2914
+				discount = yes
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 7000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_hostile_attrition = 1
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = {		
+		}
+		country_modifiers = {
+			mercenary_cost = -0.20
+			land_forcelimit_modifier = 0.1
+			free_land_leader_pool = 2
+		}
+		on_upgraded = {
+			owner = {
+				define_general = {
+					name = "Urothr Jr."
+					trait = ruthless_personality
+					fire = 5
+					shock = 5
+					manuever = 5
+					siege = 3
+				}
+			}
+		}
+	}
+}
+#Home of the Seg Band (Seghdihr)
+seghdihr_home_of_the_seg_band = {
+	start = 4124
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {		
+	}	
+	can_use_modifiers_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}
+	can_upgrade_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {		
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.1
+		}
+		area_modifier = {		
+		}
+		country_modifiers = {
+			vassal_forcelimit_bonus = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3500
+		}
+		province_modifiers = {
+			local_defensiveness = 0.2
+			local_hostile_attrition = 0.5
+		}
+		area_modifier = {		
+		}
+		country_modifiers = {
+			fire_damage_received = -0.025
+			vassal_forcelimit_bonus = 0.3
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 7000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_hostile_attrition = 1
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = {			
+		}
+		country_modifiers = {
+			fire_damage_received = -0.05
+			vassal_forcelimit_bonus = 0.5
+			can_fabricate_for_vassals = yes
+		}
+		on_upgraded = {
+			owner = {
+				add_country_modifier = {
+					name = seghdihr_home_of_the_seg_band_warriors_of_the_segbandal
+					duration = 5475
+				}
+			}
+		}
+	}
+}
+#Hehodovar School of Architecture
+hehodovar_school_of_architecture = {
+	start = 4078
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {		
+	}	
+	can_use_modifiers_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {		
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_development_cost = -0.1
+			allowed_num_of_buildings = 1
+		}
+		area_modifier = {			
+		}
+		country_modifiers = {
+			build_cost = -0.05
+			build_time = -0.05		
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+			allowed_num_of_buildings = 1
+		}
+		country_modifiers = {
+			build_cost = -0.075
+			build_time = -0.075
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 7000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {		
+		}
+		region_modifier = {
+			local_development_cost = -0.1
+			allowed_num_of_buildings = 1
+		}
+		country_modifiers = {
+			build_cost = -0.1
+			build_time = -0.1
+			great_project_upgrade_cost = -0.1
+		}
+		on_upgraded = {
+		}
+	}
+}
+#The Vaulthold (Gor Vazumbrog)
+gor_vazumbrog_the_vaulthold = {
+	start = 4217
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {		
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}
+	can_upgrade_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {		
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			trade_value_modifier = 0.05
+		}
+		area_modifier = {			
+		}
+		country_modifiers = {
+			fire_damage = 0.01
+			shock_damage = 0.01
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3500
+		}
+		province_modifiers = {
+			trade_value_modifier = 0.1
+		}
+		area_modifier = {			
+		}
+		country_modifiers = {
+			fire_damage = 0.03
+			shock_damage = 0.03
+			artificers_loyalty_modifier = 0.05
+			artificers_influence_modifier = 0.025
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 7000
+		}
+		province_modifiers = {
+			trade_value_modifier = 0.15
+		}
+		area_modifier = {		
+		}
+		country_modifiers = {
+			fire_damage = 0.05
+			shock_damage = 0.05
+			artificers_influence_modifier = 0.05
+			artificers_loyalty_modifier = 0.10
+		}
+		on_upgraded = {
+			owner = {
+				add_country_modifier = {
+					name = gor_vazumbrog_the_vaulthold_secrets
+					duration = 3650
+				}
+				mission_reward_artifice_points_5 = yes
+			}
+		}
+	}
+}
+#The Topaz Throne (Gor Ozumbrog)
+gor_ozumbrog_the_topaz_throne = {
+	start = 4218
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {	
+	}
+	on_destroyed = {		
+	}	
+	can_use_modifiers_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			development = 40
+				custom_trigger_tooltip = {
+					tooltip = dwarven_monuments_can_use_tooltip
+						OR = {
+							culture_group = dwarven
+							culture_group = goblin
+							culture_group = kobold
+							culture = black_orc
+							culture = mossmouth_ogre
+						}
+				}
+				province_is_or_accepts_culture = yes
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {		
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {			
+		}
+		country_modifiers = {
+			manpower_in_culture_group_provinces = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {		
+		}
+		country_modifiers = {
+			manpower_in_culture_group_provinces = 0.1
+			ae_impact = -0.05
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 7000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {		
+		}
+		country_modifiers = {
+			manpower_in_culture_group_provinces = 0.15
+			ae_impact = -0.1
+			national_focus_years = -5
+		}
+		on_upgraded = {
+		}
+	}
+}
