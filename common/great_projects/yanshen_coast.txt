@@ -1,0 +1,665 @@
+#Tianlou, Jewel of Yanshen (Tianlou)
+tianlou_jewel_of_yanshen = {
+	start = 4871
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 2
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {	
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_development_cost = -0.05
+			province_trade_power_modifier = 0.1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.1
+			trade_efficiency = 0.025
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_development_cost = -0.1
+			province_trade_power_modifier = 0.2
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.25
+			trade_efficiency = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_development_cost = -0.15
+			province_trade_power_modifier = 0.33
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.5
+			trade_efficiency = 0.1
+			merchants = 1
+		}
+		on_upgraded = {
+		}
+	}
+}
+#Xuezhefang Eunuch Academy (Tianlou)
+tianlou_xuezhefang_eunuch_academy = {
+	start = 4871
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {	
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_unrest = -1
+		}
+		area_modifier = {
+			statewide_governing_cost = -0.05
+		}
+		country_modifiers = {
+			expand_administration_cost = -0.1
+			eunuchs_loyalty_modifier = 0.025
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_eunuchs
+					loyalty = 5
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_unrest = -3
+		}
+		area_modifier = {
+			statewide_governing_cost = -0.1
+		}
+		country_modifiers = {
+			expand_administration_cost = -0.3
+			state_maintenance_modifier = -0.1
+			eunuchs_loyalty_modifier = 0.05
+			eunuchs_influence_modifier = 0.025
+		}
+		on_upgraded = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Changbo Hua"
+				skill = 3
+				culture = river_yan
+				religion = righteous_path
+				location = 4871
+				discount = yes
+			}
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_eunuchs
+					loyalty = 10
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			allowed_num_of_buildings = 1
+			local_unrest = -5
+		}
+		area_modifier = {
+			statewide_governing_cost = -0.15
+		}
+		country_modifiers = {
+			expand_administration_cost = -0.5
+			state_maintenance_modifier = -0.2
+			eunuchs_loyalty_modifier = 0.1
+			eunuchs_influence_modifier = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_eunuchs
+					loyalty = 15
+				}
+				random_list = {
+					60 = {
+						add_adm_power = 100
+					}
+					25 = {
+						change_adm = 1
+					}
+					15 = {
+						add_adm_tech = 1
+					}
+				}
+			}
+		}
+	}
+}
+#Haoshitzi (Jiangdu)
+jiangdu_haoshitzi = {
+	start = 4868
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {	
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_development_cost = -0.05
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_trade_power = 0.05
+			burghers_loyalty_modifier = 0.025
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 5
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_development_cost = -0.1
+			province_trade_power_value = 5
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_trade_power = 0.1
+			mercantilism_cost = -0.1
+			burghers_loyalty_modifier = 0.05
+			burghers_influence_modifier = 0.025
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 10
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_development_cost = -0.15
+			province_trade_power_value = 10
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_trade_power = 0.15
+			mercantilism_cost = -0.2
+			burghers_loyalty_modifier = 0.1
+			burghers_influence_modifier = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 15
+				}
+			}
+		}
+	}
+}
+#House of Fire and Water (Luoyip)
+luoyip_house_of_fire_and_water = {
+	start = 4949
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {	
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_development_cost = -0.05
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			siege_ability = 0.025
+		}
+		on_upgraded = {
+			owner = { 
+				change_innovativeness = 1
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_development_cost = -0.1
+			province_trade_power_value = 5
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			siege_ability = 0.05
+			idea_cost = -0.025
+		}
+		on_upgraded = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Lhuge Ziang"
+				skill = 3
+				culture = coastal_yan
+				religion = high_philosophy
+				location = 4949
+				discount = yes
+			}
+			owner = { 
+				change_innovativeness = 2
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_development_cost = -0.15
+			province_trade_power_value = 10
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			siege_ability = 0.1
+			idea_cost = -0.05
+			advisor_pool = 1
+		}
+		on_upgraded = {
+			center_of_trade = 1
+			owner = { 
+				change_innovativeness = 3
+				mission_reward_artifice_points_2 = yes
+			}
+		}
+	}
+}
+#The Conqueror's Hotspring (Yinquan)
+yinquan_the_conquerors_hotspring = {
+	start = 4931
+	date = 01.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {	
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			province_is_or_accepts_culture = yes
+			OR = {
+				culture_group = yan
+				culture = east_harimari
+			}
+		}
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_tax_modifier = 0.1
+		}
+		country_modifiers = {
+			global_unrest = -0.5
+			prestige = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_development_cost = -0.05
+		}
+		area_modifier = {
+			local_tax_modifier = 0.15
+		}
+		country_modifiers = {
+			global_unrest = -1
+			prestige = 0.25
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_development_cost = -0.1
+		}
+		area_modifier = {
+			local_tax_modifier = 0.25
+		}
+		country_modifiers = {
+			global_unrest = -2
+			prestige = 0.5
+			monthly_splendor = 1
+		}
+		on_upgraded = {
+			owner = {
+				add_country_modifier = {
+					name = yinquan_the_conquerors_hotspring_soaked_men_tell_no_tales
+					duration = 7300
+				}
+			}
+		}
+	}
+}
