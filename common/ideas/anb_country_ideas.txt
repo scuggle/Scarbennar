@@ -15754,7 +15754,7 @@ A84_ideas = {
 B59_ideas = {
 	start = {
 		defensiveness = 0.15
-		global_autonomy = -0.05
+		discipline = 0.05
 	}
 
 	bonus = {
@@ -15769,7 +15769,7 @@ B59_ideas = {
 	free = yes		#will be added at load.
 
 	B59_lords_of_the_luna = {
-		global_tax_modifier = 0.15
+		global_manpower_modifier = 0.15
 	}
 	B59_once_divided = {
 		years_of_nationalism = -5
