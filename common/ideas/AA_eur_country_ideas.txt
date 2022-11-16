@@ -7,6 +7,147 @@
 ### Nation specific idea groups
 
 #Custom Formables
+#Gerudian Empire TBD
+X01_ideas = {
+	start = {
+		advisor_cost = -0.15
+		ae_impact = -0.2
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X01
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X01_one = {
+		mercenary_discipline = 0.1
+		mercenary_cost = -0.4
+	}
+	X01_two = {
+		development_cost = -0.15
+		trade_efficiency = 0.2
+	}
+	X01_three = {
+		galley_power = 0.2
+		naval_forcelimit_modifier = 0.3
+	}
+	X01_four = {
+		technology_cost = -0.1
+		allowed_marine_fraction = 0.1
+	}
+	X01_five = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	X01_six = {
+		institution_growth = 0.3
+		defensiveness = 0.2
+	}
+	X01_seven = {
+		land_morale = 0.15
+	}
+}
+
+#Carneter TBD
+X02_ideas = {
+	start = {
+		advisor_cost = -0.15
+		ae_impact = -0.2
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X02
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X02_one = {
+		mercenary_discipline = 0.1
+		mercenary_cost = -0.4
+	}
+	X02_two = {
+		development_cost = -0.15
+		trade_efficiency = 0.2
+	}
+	X02_three = {
+		galley_power = 0.2
+		naval_forcelimit_modifier = 0.3
+	}
+	X02_four = {
+		technology_cost = -0.1
+		allowed_marine_fraction = 0.1
+	}
+	X02_five = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	X02_six = {
+		institution_growth = 0.3
+		defensiveness = 0.2
+	}
+	X02_seven = {
+		land_morale = 0.15
+	}
+}
+
+#Great Xhaz TBD
+X03_ideas = {
+	start = {
+		advisor_cost = -0.15
+		ae_impact = -0.2
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X03
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X03_one = {
+		mercenary_discipline = 0.1
+		mercenary_cost = -0.4
+	}
+	X03_two = {
+		development_cost = -0.15
+		trade_efficiency = 0.2
+	}
+	X03_three = {
+		galley_power = 0.2
+		naval_forcelimit_modifier = 0.3
+	}
+	X03_four = {
+		technology_cost = -0.1
+		allowed_marine_fraction = 0.1
+	}
+	X03_five = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	X03_six = {
+		institution_growth = 0.3
+		defensiveness = 0.2
+	}
+	X03_seven = {
+		land_morale = 0.15
+	}
+}
+
 #Damerian Republic
 X04_ideas = {
 	start = {
@@ -54,6 +195,147 @@ X04_ideas = {
 	}
 }
 
+#Businor TBD
+X05_ideas = {
+	start = {
+		advisor_cost = -0.15
+		ae_impact = -0.2
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X05
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X05_one = {
+		mercenary_discipline = 0.1
+		mercenary_cost = -0.4
+	}
+	X05_two = {
+		development_cost = -0.15
+		trade_efficiency = 0.2
+	}
+	X05_three = {
+		galley_power = 0.2
+		naval_forcelimit_modifier = 0.3
+	}
+	X05_four = {
+		technology_cost = -0.1
+		allowed_marine_fraction = 0.1
+	}
+	X05_five = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	X05_six = {
+		institution_growth = 0.3
+		defensiveness = 0.2
+	}
+	X05_seven = {
+		land_morale = 0.15
+	}
+}
+
+#Lencenor TBD
+X06_ideas = {
+	start = {
+		advisor_cost = -0.15
+		ae_impact = -0.2
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X06
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X06_one = {
+		mercenary_discipline = 0.1
+		mercenary_cost = -0.4
+	}
+	X06_two = {
+		development_cost = -0.15
+		trade_efficiency = 0.2
+	}
+	X06_three = {
+		galley_power = 0.2
+		naval_forcelimit_modifier = 0.3
+	}
+	X06_four = {
+		technology_cost = -0.1
+		allowed_marine_fraction = 0.1
+	}
+	X06_five = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	X06_six = {
+		institution_growth = 0.3
+		defensiveness = 0.2
+	}
+	X06_seven = {
+		land_morale = 0.15
+	}
+}
+
+#Cities Reach TBD
+X07_ideas = {
+	start = {
+		advisor_cost = -0.15
+		ae_impact = -0.2
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X07
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X07_one = {
+		mercenary_discipline = 0.1
+		mercenary_cost = -0.4
+	}
+	X07_two = {
+		development_cost = -0.15
+		trade_efficiency = 0.2
+	}
+	X07_three = {
+		galley_power = 0.2
+		naval_forcelimit_modifier = 0.3
+	}
+	X07_four = {
+		technology_cost = -0.1
+		allowed_marine_fraction = 0.1
+	}
+	X07_five = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	X07_six = {
+		institution_growth = 0.3
+		defensiveness = 0.2
+	}
+	X07_seven = {
+		land_morale = 0.15
+	}
+}
+
 #Seiranar
 X08_ideas = {
 	start = {
@@ -96,7 +378,140 @@ X08_ideas = {
 	}
 }
 
-#Greengate TBD
+#Temples United TBD
+X09_ideas = {
+	start = {
+		advisor_cost = -0.15
+		ae_impact = -0.2
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X09
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X09_one = {
+		mercenary_discipline = 0.1
+		mercenary_cost = -0.4
+	}
+	X09_two = {
+		development_cost = -0.15
+		trade_efficiency = 0.2
+	}
+	X09_three = {
+		galley_power = 0.2
+		naval_forcelimit_modifier = 0.3
+	}
+	X09_four = {
+		technology_cost = -0.1
+		allowed_marine_fraction = 0.1
+	}
+	X09_five = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	X09_six = {
+		institution_growth = 0.3
+		defensiveness = 0.2
+	}
+	X09_seven = {
+		land_morale = 0.15
+	}
+}
+
+#Dameshead Republic TBD
+X10_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_trade_power = 0.15
+	}
+
+	bonus = {
+		caravan_power = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X10
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X10_one = {
+		global_institution_spread = 0.2
+	}
+	X10_two = {
+		mercenary_cost = -0.3
+		merc_maintenance_modifier = -0.1
+	}
+	X10_three = {
+		diplomatic_upkeep = 2
+		improve_relation_modifier = 0.15
+	}
+	X10_four = {
+		num_accepted_cultures = 2
+	}
+	X10_five = {
+		defensiveness = 0.2
+	}
+	X10_six = {
+		rebel_support_efficiency = 0.5
+	}
+	X10_seven = {
+		free_adm_policy = 1
+	}
+}
+
+#Vivin Empire TBD
+X11_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_trade_power = 0.15
+	}
+
+	bonus = {
+		caravan_power = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X11
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X11_one = {
+		global_institution_spread = 0.2
+	}
+	X11_two = {
+		mercenary_cost = -0.3
+		merc_maintenance_modifier = -0.1
+	}
+	X11_three = {
+		diplomatic_upkeep = 2
+		improve_relation_modifier = 0.15
+	}
+	X11_four = {
+		num_accepted_cultures = 2
+	}
+	X11_five = {
+		defensiveness = 0.2
+	}
+	X11_six = {
+		rebel_support_efficiency = 0.5
+	}
+	X11_seven = {
+		free_adm_policy = 1
+	}
+}
+
+#Greengate
 X12_ideas = {
 	start = {
 		diplomatic_reputation = 1
@@ -311,3 +726,93 @@ X16_ideas = {
 		siege_ability = 0.15
 	}
 }
+
+#Greater Ibevar TBD
+X17_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_trade_power = 0.15
+	}
+
+	bonus = {
+		caravan_power = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = X17
+		}
+	}
+	free = yes		#will be added at load.
+	
+	X17_one = {
+		global_institution_spread = 0.2
+	}
+	X17_two = {
+		mercenary_cost = -0.3
+		merc_maintenance_modifier = -0.1
+	}
+	X17_three = {
+		diplomatic_upkeep = 2
+		improve_relation_modifier = 0.15
+	}
+	X17_four = {
+		num_accepted_cultures = 2
+	}
+	X17_five = {
+		defensiveness = 0.2
+	}
+	X17_six = {
+		rebel_support_efficiency = 0.5
+	}
+	X17_seven = {
+		free_adm_policy = 1
+	}
+}
+
+#New ideas for old Formables
+#Esmaria TBD
+Z46_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_trade_power = 0.15
+	}
+
+	bonus = {
+		caravan_power = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = Z46
+		}
+	}
+	free = yes		#will be added at load.
+	
+	Z46_one = {
+		global_institution_spread = 0.2
+	}
+	Z46_two = {
+		mercenary_cost = -0.3
+		merc_maintenance_modifier = -0.1
+	}
+	Z46_three = {
+		diplomatic_upkeep = 2
+		improve_relation_modifier = 0.15
+	}
+	Z46_four = {
+		num_accepted_cultures = 2
+	}
+	Z46_five = {
+		defensiveness = 0.2
+	}
+	Z46_six = {
+		rebel_support_efficiency = 0.5
+	}
+	Z46_seven = {
+		free_adm_policy = 1
+	}
+}
+
+#Modified the Pashainé ideas in the r/Europe mod
+#Would need to make it a new formable with decision to make it work standalone
