@@ -4,7 +4,10 @@ country_decisions = {
 	X07_form_nation = {
 		major = yes
 		potential = {
-			culture_group = reachman
+			OR = {
+				primary_culture = blue_reachman
+				primary_culture = blue_reachman
+			}
 			NOT = { has_country_flag = formed_X07_flag }
 		}
 		provinces_to_highlight = {
