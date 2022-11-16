@@ -1,151 +1,248 @@
 #Country Name: Please seefilename.
 
-graphical_culture = westerngfx
+graphical_culture = divenhalgfx
 
 color = { 40  78  54 }
 
 revolutionary_colors = { 0 5 0 }
 
 historical_idea_groups = {
-	quantity_ideas
-	expansion_ideas
-	offensive_ideas
-	innovativeness_ideas
-	quality_ideas	
-	spy_ideas
-	defensive_ideas
 	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
 }
 
 historical_units = {
-
+	cannorian_1_medieval_infantry
+	cannorian_1_medieval_knights
+	cannorian_5_men_at_arms
+	cannorian_9_adventurer_band
+	cannorian_10_gun_knights
+	cannorian_12_thorn_formation
+	cannorian_14_outriders
+	cannorian_15_volley_infantry
+	cannorian_18_reformed_outriders
+	cannorian_19_thorn_formation2
+	cannorian_23_dragoons
+	cannorian_23_line_infantry
+	cannorian_26_carabiners
+	cannorian_26_dragoncoat_infantry
+	cannorian_28_impulse_infantry
+	cannorian_28_cuirassier
+	cannorian_30_sparkdrive_irregulars
 }
 
 monarch_names = {
-	#Generic Goblin Names
-	"Aminkle #0" = 50
-	"Artu #0" = 50
-	"Atqakle #0" = 50
-	"Bitgo #0" = 50
-	"Carg #0" = 50
-	"Chix #0" = 50
-	"Cleesb #0" = 50
-	"Colk #0" = 50
-	"Deeto #0" = 50
-	"Dizniz #0" = 50
+	#Generic Anbennarian Name List
+	"Adelar #0" = 10
+	"Ademar #0" = 10
+	"Adran #0" = 10
+	"Adrian #0" = 10
+	"Adrien #0" = 10
+	"Alain #0" = 10
+	"Alec #0" = 10
+	"Albert #0" = 10
+	"Aldred #0" = 10
+	"Alfons #0" = 10
+	"Alfred #0" = 10
+	"Alos #0" = 10
+	"Alvar #0" = 10
+	"Andrel #0" = 10
+	"Ardan #0" = 10
+	"Ardor #0" = 10
+	"Aril #0" = 10
+	"Arman #0" = 10
+	"Artorian #0" = 10
+	"Artur #0" = 10
+	"Aucan #0" = 10
+	"Austyn #0" = 10
+	"Avery #0" = 10
+	"Awen #0" = 10
+	"Borian #0" = 10
+	"Brandon #0" = 10
+	"Brayan #0" = 10
+	"Brayden #0" = 10
+	"Calas #0" = 10
+	"Caylen #0" = 10
+	"Castén #0" = 10
+	"Castín #0" = 10
+	"Cecill #0" = 10
+	"Corin #0" = 10
+	"Cristof #0" = 10
+	"Daran #0" = 10
+	"Darran #0" = 10
+	"Davan #0" = 10
+	"Denar #0" = 10
+	"Dominic #0" = 10
+	"Dustin #0" = 10
+	"Edmund #0" = 10
+	"Elran #0" = 10
+	"Emil #0" = 10
+	"Erel #0" = 10
+	"Eren #0" = 10
+	"Erlan #0" = 10
+	"Evin #0" = 10
+	"Frederic #0" = 10
+	"Galin #0" = 10
+	"Gelman #0" = 10
+	"Kalas #0" = 10
+	"Laurens #0" = 10
+	"Lucian #0" = 10
+	 
+	"Marion #0" = 10
+	"Maurise #0" = 10
+	"Nara #0" = 10
+	"Olor #0" = 10
+	"Otó #0" = 10
+	"Reán #0" = 10
+	"Riannón #0" = 10
+	"Ricain #0" = 10
+	"Rión #0" = 10
+	"Robin #0" = 10
+	"Rogier #0" = 10
+	"Sandur #0" = 10
+	"Taelar #0" = 10
+	"Teagan #0" = 10
+	"Thal #0" = 10
+	"Thiren #0" = 10
+	"Tomás #0" = 10
+	"Trian #0" = 10
+	"Tristan #0" = 10
+	"Trystan #0" = 10
+	"Valen #0" = 10
+	"Valeran #0" = 10
+	"Varian #0" = 10
+	"Varil #0" = 10
+	"Varilor #0" = 10
+	"Varion #0" = 10
+	"Vernell #0" = 10
+	"Vincen #0" = 10
+	"Willam #0" = 10
 	
-	"Dramkork #0" = 50
-	"Elgek #0" = 50
-	"Fazez #0" = 50
-	"Fazok #0" = 50
-	"Fazzbaz #0" = 50
-	"Fazzel #0" = 50
-	"Fezdot #0" = 50
-	"Frax #0" = 50
-	"Gax #0" = 50
-	"Gezz #0" = 50
-	"Ghuk #0" = 50
-	"Gochat #0" = 50
-	"Gramzik #0" = 50
-	"Hornax #0" = 50
-	"Iztuts #0" = 50
-	"Jagderk #0" = 50
-	"Jarko #0" = 50
-	"Jerrix #0" = 50
-	"Krirgi #0" = 50
-	"Krorch #0" = 50
-	"Meknik #0" = 50
-	"Meknok #0" = 50
-	"Naglerg #0" = 50
-	"Plakeank #0" = 50
-	"Qirnux #0" = 50
-	"Rirzakx #0" = 50
-	"Syz #0" = 50
-	"Vitta #0" = 50
-	"Vragg #0" = 50
-	"Weevil #0" = 50
-	"Wezzok #0" = 50
-	"Zaffarsog #0" = 50
-	"Zezzuk #0" = 50
-	"Zon #0" = 50
-	"Zozzok #0" = 50
-	"Zurgab #0" = 50
-	"Zuz #0" = 50
-	"Zyt #0" = 50
-	"Bomgaz #0" = 50
-	
-	"As #0" = -20
-	"Belda #0" = -20
-	"Choudkimpons #0" = -20
-	"Cike #0" = -20
-	"Dekka #0" = -20
-	"Detti #0" = -20
-	"Dexta #0" = -20
-	"Dezta #0" = -20
-	"Ekcho #0" = -20
-	"Exe #0" = -20
-	"Fanchegli #0" = -20
-	"Gloxee #0" = -20
-	"Jesufte #0" = -20
-	"Jetlis #0" = -20
-	"Jibrivut #0" = -20
-	"Kiarte #0" = -20
-	"Kild #0" = -20
-	"Klalgash #0" = -20
-	"Minxi #0" = -20
-	"Mophrouns #0" = -20
-	"Nenge #0" = -20
-	"Nin #0" = -20
-	"Oivug #0" = -20
-	"Palzindin #0" = -20
-	"Pedgoknu #0" = -20
-	"Qesxee #0" = -20
-	"Qodras #0" = -20
-	"Raalilt #0" = -20
-	"Ranras #0" = -20
-	"Sakra #0" = -20
-	"Shalte #0" = -20
-	"Sliassiq #0" = -20
-	"Snepi #0" = -20
-	"Tarka #0" = -20
-	"Termie #0" = -20
-	"Umme #0" = -20
-	"Ux #0" = -20
-	"Vexva #0" = -20
-	"Vox #0" = -20
-	"Vroanku #0" = -20
-	"Vufeank #0" = -20
-	"Yarduk #0" = -20
-	"Yoknookchu #0" = -20
-	"Yzva #0" = -20
-	"Zoorda #0" = -20
+	"Adeline #0" = -1
+	"Adra #0" = -1
+	"Alara #0" = -1
+	"Aldresia #0" = -1
+	"Alina #0" = -1
+	"Alisanne #0" = -1
+	"Amarien #0" = -1
+	"Amina #0" = -1
+	"Arabella #0" = -1
+	"Aria #0" = -1
+	"Athana #0" = -1
+	"Adela #0" = -1
+	"Aucanna #0" = -1
+	"Bella #0" = -1
+	"Calassa #0" = -1
+	"Casténnia #0" = -1
+	"Castína #0" = -1
+	"Cecille #0" = -1
+	"Cela #0" = -1
+	"Celadora #0" = -1
+	"Clarimonde #0" = -1
+	"Constance #0" = -1
+	"Cora #0" = -1
+	"Coraline #0" = -1
+	"Corina #0" = -1
+	"Corin #0" = -1
+	"Eilís #0" = -1
+	"Eilísabet #0" = -1
+	"Eléanore #0" = -1
+	"Emilíe #0" = -1
+	"Erela #0" = -1
+	"Erella #0" = -1
+	"Galina #0" = -1
+	"Galinda #0" = -1
+	"Giséle #0" = -1
+	"Isabel #0" = -1
+	"Isabella #0" = -1
+	"Isobel #0" = -1
+	"Kerstin #0" = -1
+	"Laurenne #0" = -1
+	"Lianne #0" = -1
+	"Madaléin #0" = -1
+	"Margery #0" = -1
+	"Maria #0" = -1
+	"Mariana #0" = -1
+	"Marianna #0" = -1
+	"Marianne #0" = -1
+	"Marien #0" = -1
+	"Marina #0" = -1
+	"Reánna #0" = -1
+	"Sofia #0" = -1
+	"Sofie #0" = -1
+	"Sybille #0" = -1
+	"Thalia #0" = -1
+	"Valence #0" = -1
+	"Varina #0" = -1
+	"Varinna #0" = -1
+	"Willamina #0" = -1
+	"Lisolette #0" = -1
 }
 
 leader_names = {
-	#Occupational Surnames
-	Skullgrinder "Mountain-Eater" Ironskin Ironhide Deadhide Hammerfist Hammerspike Spikefist Swordfist "Dead-eye" Bloodspear Blackheart Manhunter Pureblood "Bright Eyes" "Eagle Eyes" "Half-Tongue" "Grog-Maker" Deathmonger
-	Swordmaster Warborn Stoneskin Warmonger Rockskull Skullblade Skullhorn Ogreborn Deadeye Longtooth Pigsnout Regehammer Crueldrum Stonefist Angerfang Steelsword Warpsteel Deathforge Cravenkiller Hellspitter Rocksnarler
-	Deadbreath Bitteraxe Shadowfeast Bloodfeast Redfeast Bloodscream Wildmarcher Brokenhammer Brokentusk "No-eyes" Silentblade Rageblood Rageblade Doomhammer Hellscream Blackhand Doomhammer Saurfang Bladefist Bloodreaver
-	Brightflesh Grandguard Armorskin Armorhide Steelhide Metalhide Metaljaw Sharpears Halfblood Ragechain Chaoschain Chaosblade Flameseeker Fireblood Battlefire Thunderstorm Thunderblood Thunderfang Axemaul Shadowblood
+	#Country Specific
+	"of Port Jaher" "of Lorbet" "of Busilar" "of Lion's Pass" "of Lorincrag" "of Lorinhap" "of Cannohap" "of Khenahap" "of Hapainé" "of Enket's Pass" "of Stonehold" Davmor
+	"of Eborthíl" "of Jurith" "of Port Jurith" "of Tefkora" "of New Tefkora" "of Toref Citadel" "of the Citadel" "of Toref" "of Stonegaze" "of Dragondance" "of Goldwaters"
+
+	#Province Neighbours
+	"of Escandar" "of Gnollsgate" "of Heartspier" "of Stingport" "of Sorncell" "of Aiscestir" "of Napesbat"
+	"of Damesear" "of Damenath" "of Auraire" "of Taxwick"
+
+	#Country Neighbours
+	"of Sugamber" "of Verne" "of Arannen" "of Celliande" "of Toarnen" "of Crathanór"
+	"of Deshak" "of Kheterata" "of Ekha" "of Brasan"
+
+	#Geographic Neighbours
+	"of the Diven" "of the Borders" "of the Dameshead" "of Bulwar" "of Tef" "of the Khenak"
+	"of Akan" "of Businor"
+
+	#Noble Families
 	
-	
-	#Titles
-	"'the Stout'" "'the Rash'" "'the Deadly'" "'the Master'" "'the Slaver'" "'the Warlord'" "'the Relentless'" "'the Bold'" "'the Warrior'" "'the Death-bringer'" "'the Handsome'" "'the Greedy'" "'the Dwarf-slayer'" "'the Tyrant'" "'the Unbreakable'" "'the Great'"
-	"'the Defiler'" "'the Dead'" "'the Poker'" "'the Strangler'" "'the Twisted'" "'the Punisher'" "'the Devourer'" "'the Gravewalker'" "'the Crafty'" "'the Smart'" "'the Unwashed'" "'the Vile'" "'the Whisperer'" "'the Seer'" "'the Wicked'" "'the Brander'"
-	"'the Large'" "'the Tall'" "'the Fat'" "'the Small'" "'the Strong'" "'the Clever'" "'the Crusher'" "'the Halfblooded"
+	#Generic Anbennarian/Elvenized
+	Auern Rósarn Fwinern Esmarn Jercostarn Redcoaster Hylern Hylman Leonarn Liatharn Dostan Grey Sfern Pearler Alen Aranern Aistern Adenern Eánarn Bladern Castanern Vrorenern Damern Reigharn Bulwarn Khetarn Lunarn Akanarn Caorarn Rever Arbern Pírandern Airge Silsuinairge Anben Báisdaerh Cestirn Dhíarn Dhenern Silvarn Fwinern Duchaelarn Pírduchaelern Séthírn Magairn Párnern Verenvítern Tenachern Dortem Trínvítern Ciobisern Ciobiscúniacern Cúwern Trédárn Crécócarn Cócarn Cúbaírn Thanasern Bocharn Aíthrn Árthavítrn Célodir Gwalvítl Annceí Deabílanneí Cuísern Mathúisern Hirn Cínndiheí Niodágern Avusrael Laoch Gaóhern Bochoch Tenachvítarn Suíréach Cófravítrn Mérgirn Grùdídhern Avusíllern Fílívítarn Cígalern Dathaí Iascirn Eúnech Flárnarn Riéntenachirn Dáineí Pígu Adarvítí Mielvítí Melefvítí Orgórn Afesgórn Eresgórn Airgegórn Eumhígórn Bíanoch Gàrd Altírí Pítse Seina Fíhl Adachí Seíththorimí Cístern Sílreianí Gal Teder Liath Deir Var Jer Cam Iruan Pash Bron Vulsin Aríth Badhál Díhr Búel Cúw Agnel Geária Oulhá Stamh 
+ 	Rogpid Bradá Breác Eúne Melilar Bhac Derdíl Fabhn Finúch Crodach Bogeán Véirse Liubán Óbehr Sábal Ritach Bíobar Colúm Lánchs "sina Arademele" "sina Minarsdemele" "sina Damesdemele" "sina Necropolis" "sina Adensdemele" "sina Balgarstenach" "sina Fiarndemele" "sina Gráidemele" "of Builderstemple" 
 }
 
 ship_names = {
-	#Generic Orcish
-	Destruction Pillage Harness Power Axe Sword Tooth Nail Hammer Wrath Anger Dominion Domination Spike Severer "Severed Head" "Doom" Doomchosen Triump Tremendous Victory Conquest Courage Bravery Honour Honor "Great Dookan"
-	Korgus "Sunken Dwarf" "Dead Dwarf" "Dwarf-mast" Skinflayer Skinhider "Skin-masts" Skullfeeder Skulltaker Defiance Devastation Formidable Impregnable Hunter War Warmarked Warchosen Terrible Terror Thunderer Tarrasque
-	Banshee Harpy Goblintongue
+	#Generic Cannorian
+	Adamant Advantage Adventure Advice Answer Ardent Armada Arrogant Assistance Association Assurance Atlas Audacious 
+	Bear Beaver "Black Galley" "Black Pinnace" "Black Prince" "Black Blood" Captain Centurion Coronation Courage Crocodile Crown
+	Daisy Defence Defiance Devastation Diamond Director Dolphin Dragon Drake Dreadnaught Duke Duchess Eagle Elephant Excellent Exchange Expedition Experiment
+	Falcon Fame Favourite Fellowship Fleetwood Flight Flirt Formidable Forrester Fortitude Fortune Gillyflower Globe "Golden Horse" "Golden Lion" "Golden Phoenix" Goliath Goodgrace Governor
+	"Grand Mistress" "Great Bark" "Great Charity" "Great Galley" "Great Gift"  "Great Pinnace" "Great Zebra" "Green Dragon" Greyhound Griffin Guide "Half Moon" Hare Harpy Hawke Hazardous Heart
+	Hero Hope "Hope Bark" "Hopeful Adventure" Humble Hunter Illustrious Impregnable Increase Indefatigable Inflexible Intrepid Invincible "Less Bark" "Less Pinnace" "Less Zebra"
+	Lively Lizard Lion Magnanime Magnificent Majestic Makeshift Medusa Minotaur Moderate Monarch Moon Moor "New Bark" Ocean 
+	Pansy Panther Parrot Porcupine Powerful President Prince "Prince Consort" "Prince Royal"
+	Redoubtable Reformation Regent Renown Repulse Research Reserve Resistance Resolution Restoration Revenge 
+	Salamander Sandwich Sapphire Satisfaction Seahorse Search Sheerness Speaker Speedwell Sphinx Splendid Sprite Stag Standard Stately Success Sunlight Sunbeam Superb Swan Sweepstake Swift Swiftsure
+	Terrible Terror Thunderer Tiger Tremendous Trident Trinity Triumph Trusty
+	Unicorn Union Unity Valiant Vanguard Venerable Vestal Veteran Victor Vindictive Virtue Violet
+	Warrior Warspite "Young Prince" Zealous
+
+	Survey Surveillance Cow Ox Bird Hawk Sovereign Emperor Count Lord Baron
+
+	Knight Paladin Dragonslayer Cleric Rogue Fighter Ranger Sorcerer Wizard Warlock Monk Druid
+	Strength Dexterity Constitution Intelligence Wisdom Charisma
+	
+	#Elven
+	Lunetéin Agraseina Estaforra
+	
+	#Regent Court Deities
+	Castellos Dame "The Dame" Halanna Ysh Yshtralania Agrados Adean Esmaryal Ryala Edronias Falah Nerat Ara Minara Munas Moonsinger Nathalyne Begga Corin Balgar
+	Uelos Draxos Aesanna
 }
 
 army_names = {
-	"Hidehuzzler Army" "Goblin Horde" "Army $PROVINCE$"
+	"Royal Army" "Army of Eborthíl" "Busilari Army" "Army of the Lion" "Army of $PROVINCE$"
 } 
 
 fleet_names = {
-	"Hidehuzzler Fleet" "Goblin Fleet"
+	"Busilari Fleet" "Diven Squadron" "Dameshead Squadron" "Copper Squadron" "Stone Squadron" "Bronze Squadron"
+	"Royal Fleet" "Eborthíl Fleet" "Gold Squadron" "Brass Squadron" "Amber Squadron"
 }
