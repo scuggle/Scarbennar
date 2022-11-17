@@ -63,7 +63,7 @@ country_decisions = {
 			owns_core_province = 908
 			num_of_owned_provinces_with = {
 				value = 20
-				region = dameshead_region
+				region = damescrown_region
 			}
 		}
 		effect = {
@@ -75,7 +75,7 @@ country_decisions = {
 				set_government_rank = 3
 			}
 
-			dameshead_region = {
+			damescrown_region = {
 				limit = { NOT = { owned_by = ROOT } }
 				add_permanent_claim = X10
 			}
