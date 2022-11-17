@@ -24,6 +24,7 @@ country_decisions = {
             OR = {
 				tag = A59
 				tag = A60
+				tag = A72
 				AND = {
 					dynasty = "síl Vivin"
 					owns_core_province = 904	# Arannen
