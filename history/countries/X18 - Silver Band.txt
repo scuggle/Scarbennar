@@ -14,6 +14,7 @@ capital = 743
 	monarch = {
 		name = "Geth"
 		dynasty = "Silurion"
+		culture = half_elf
 		adm = 2
 		dip = 4
 		mil = 3
