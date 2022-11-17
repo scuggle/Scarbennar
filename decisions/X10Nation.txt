@@ -36,12 +36,24 @@ country_decisions = {
 			adm_tech = 15
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			is_nomad = no			
+			is_nomad = no
+			if = {
+				limit = { NOT = { tag = A12 } }
+				NOT = { exists = A12 }
+			}	
+			if = {
+				limit = { NOT = { tag = A25 } }
+				NOT = { exists = A25 }
+			}	
+			if = {
+				limit = { NOT = { tag = A54 } }
+				NOT = { exists = A54 }
+			}	
+			if = {
+				limit = { NOT = { tag = A23 } }
+				NOT = { exists = A23 }
+			}			
 			NOT = { exists = X10 }
-			NOT = { exists = A12 }
-			NOT = { exists = A25 }
-			NOT = { exists = A54 }
-			NOT = { exists = A23 }
 			owns_core_province = 60
 			owns_core_province = 151
 			owns_core_province = 155
