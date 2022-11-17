@@ -5,9 +5,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			capital_scope = {
-				region = gerudian_coast_region
-				region = dalr_region
-				region = alenic_reach_region
+				OR = {
+					region = gerudian_coast_region
+					region = dalr_region
+					region = alenic_reach_region
+				}
 			}
 			NOT = { has_country_flag = formed_X01_flag }
 			NOT = { tag = X01 }
@@ -27,22 +29,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
-			OR = {
-				owns_core_province = 956
-				owns_core_province = 967
-				owns_core_province = 959
-				owns_core_province = 999
-				owns_core_province = 696
-				owns_core_province = 985
-				owns_core_province = 978
-				owns_core_province = 740
-				owns_core_province = 723
-				owns_core_province = 701
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
+
 		}
 		allow = {
 			adm_tech = 15

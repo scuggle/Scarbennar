@@ -32,18 +32,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
-			OR = {
-				owns_core_province = 97
-				owns_core_province = 423
-				owns_core_province = 265
-				owns_core_province = 3
-				owns_core_province = 4
-				owns_core_province = 294
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
+
 		}
 		allow = {
 			is_at_war = no
