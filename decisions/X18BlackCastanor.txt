@@ -115,22 +115,28 @@ country_decisions = {
 					limit = {
 						has_owner_culture = yes
 					}
-					change_culture = black_castanorian
+					change_culture = dark_moon_elf
 				}
 			}
 			if = {
-				limit = { ruler_culture = ROOT ruler_is_human = yes }
-				set_ruler_culture = black_castanorian
+				limit = { ruler_culture = ROOT ruler_is_human = no }
+				set_ruler_culture = dark_moon_elf
 			}
 			if = {
-				limit = { has_heir = yes heir_culture = ROOT heir_is_human = yes }
-				set_heir_culture = black_castanorian
+				limit = { has_heir = yes heir_culture = ROOT heir_is_human = no }
+				set_heir_culture = dark_moon_elf
 			}
 			if = {
-				limit = { has_consort = yes consort_culture = ROOT consort_is_human = yes }
-				set_consort_culture = black_castanorian
+				limit = { has_consort = yes consort_culture = ROOT consort_is_human = no }
+				set_consort_culture = dark_moon_elf
 			}
-			change_primary_culture = black_castanorian
+			change_primary_culture = dark_moon_elf
+			
+			#Minorities
+			add_permanent_province_modifier = {
+				name = half_elven_minority_integrated_large
+				duration = -1
+			}
 			
 			#Claims
 			inner_castanor_region = {
