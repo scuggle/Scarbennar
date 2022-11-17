@@ -35,41 +35,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
-			OR = {	
-				AND = {
-					OR = {
-						province_id = 168	# Auraire
-						province_id = 6		# Damesear
-						province_id = 5		# Varivar
-						province_id = 2		# Eargate
-						province_id = 8		# Anbenncost
-						province_id = 11	# Damesteeth
-					}
-					ROOT = { dip = 5 }
-				}
-				AND = {
-					NOT = { ROOT = { dip = 5 } }
-					NOT = { ROOT = { dynasty = "Silmuna"} }
-					OR = {
-						province_id = 168	# Auraire
-						province_id = 6		# Damesear
-						province_id = 5		# Varivar
-						province_id = 2		# Eargate
-						province_id = 8		# Anbenncost
-						province_id = 11	# Damesteeth
-						province_id = 276	# Damescross
-						province_id = 330	# Acromton
-						province_id = 910	# Taxwick
-						province_id = 281	# Plumwall
-						province_id = 13	# Toothsend
-						province_id = 10	# Wesdam
-					}
-				}
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
+			
 		}
 		allow = {
 			is_at_war = no
