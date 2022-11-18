@@ -3,7 +3,7 @@ country_decisions = {
 	X19_form_nation = {
 		major = yes
 		potential = {
-			tag = X19
+			tag = X18
 			NOT = { has_country_flag = formed_X19_flag }
 			NOT = { exists = X19 }
 		}
