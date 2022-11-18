@@ -33,5 +33,7 @@
  X16_form_nation_desc: "tbd"
  X17_form_nation_title: "Proclaim Greater Ibevar"
  X17_form_nation_desc: "tbd"
+ X19_form_nation_title: "Form Our Own Country!"
+ X19_form_nation_desc: "We have grown powerful enough in Escann that our influence matches the old lords of the west. We must move on from our adventurer beginnings and turn into a sovereign nation in our own right!\n\n§R(Mutually exclusive with formables that revive extinct Escanni kingdoms)§!"
  A30_form_nation_title: "Reform Wex"
  A30_form_nation_desc: "tbd"
