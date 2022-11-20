@@ -1138,6 +1138,10 @@ elven = {
 	moon_elf = {
 		primary = A31 #Moonhaven
 	}
+	graphical_culture = elvengfx
+	dark_moon_elf = {
+		primary = Z34 #Elven Black Castanor
+	}
 	star_elf = {
 		primary = Z43 #Aelnar
 	}

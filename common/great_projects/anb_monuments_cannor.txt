@@ -1,5 +1,7 @@
 # Monuments for Cannor. Monuments added by specific missions do not go here.
 
+
+
 bal_vertesk = {
 	start = 216		#Vertesk
 
@@ -174,6 +176,8 @@ bal_vertesk = {
 	}
 }
 
+#Ourdia
+
 bal_ouord = {
 	start = 510		#Bal Ouord
 
@@ -254,8 +258,8 @@ bal_ouord = {
 
 		country_modifiers = {
 			prestige = 0.1
-			army_tradition = 0.25
 			manpower_recovery_speed = 0.05
+			global_regiment_recruit_speed = -0.05
 		}
 
 		on_upgraded = {
@@ -289,8 +293,8 @@ bal_ouord = {
 
 		country_modifiers = {
 			prestige = 0.25
-			army_tradition = 0.25
 			manpower_recovery_speed = 0.10
+			global_regiment_recruit_speed = -0.10
 		}
 
 		on_upgraded = {
@@ -326,8 +330,9 @@ bal_ouord = {
 
 		country_modifiers = {
 			prestige = 0.5
-			army_tradition = 0.5
 			manpower_recovery_speed = 0.15
+			global_regiment_recruit_speed = -0.15
+			
 		}
 
 		on_upgraded = {
@@ -343,6 +348,8 @@ bal_ouord = {
 		}
 	}
 }
+
+#Corvuria
 
 bal_dostan = {
 	start = 441		#Arca Corvur
@@ -417,6 +424,7 @@ bal_dostan = {
 
 		province_modifiers = {
 			local_defensiveness = 0.05
+				hostile_attrition = 1
 		}
 
 		area_modifier = {
@@ -465,6 +473,7 @@ bal_dostan = {
 
 		province_modifiers = {
 			local_defensiveness = 0.1
+				hostile_attrition = 2
 		}
 
 		area_modifier = {
@@ -472,6 +481,7 @@ bal_dostan = {
 
 		country_modifiers = {
 			prestige = 0.25
+			advisor_pool = 1
 			yearly_absolutism = 0.25
 		}
 
@@ -515,6 +525,7 @@ bal_dostan = {
 
 		province_modifiers = {
 			local_defensiveness = 0.10
+				hostile_attrition = 3
 		}
 
 		area_modifier = {
@@ -524,6 +535,7 @@ bal_dostan = {
 		country_modifiers = {
 			prestige = 0.5
 			yearly_absolutism = 0.5
+			advisor_pool = 2
 			nobles_loyalty_modifier = 0.05
 			vampires_loyalty_modifier = 0.05
 		}
@@ -624,7 +636,7 @@ bal_vroren = {
 
 		country_modifiers = {
 			prestige = 0.1
-			leader_cost = -0.05
+			recover_army_morale_speed = 0.05
 			garrison_size = 0.05
 		}
 
@@ -661,7 +673,7 @@ bal_vroren = {
 
 		country_modifiers = {
 			prestige = 0.25
-			leader_cost = -0.075
+			recover_army_morale_speed = 0.10
 			garrison_size = 0.10
 		}
 
@@ -700,7 +712,7 @@ bal_vroren = {
 
 		country_modifiers = {
 			prestige = 0.5
-			leader_cost = -0.10
+			recover_army_morale_speed = 0.15
 			garrison_size = 0.15 # Paradox pls fix
 		}
 
@@ -799,6 +811,8 @@ bal_hyl = {
 
 		country_modifiers = {
 			prestige = 0.1
+			imperial_mercenary_cost = -0.05
+			reasons_to_elect = 5
 		}
 
 		on_upgraded = {
@@ -834,6 +848,8 @@ bal_hyl = {
 
 		country_modifiers = {
 			prestige = 0.25
+			imperial_mercenary_cost = -0.1
+			reasons_to_elect = 10
 		}
 
 		on_upgraded = {
@@ -871,6 +887,8 @@ bal_hyl = {
 
 		country_modifiers = {
 			prestige = 0.5
+			imperial_mercenary_cost = -0.15
+			reasons_to_elect = 15
 		}
 
 		on_upgraded = {
@@ -970,6 +988,7 @@ bal_mire = {
 		country_modifiers = {
 			prestige = 0.1
 			rival_border_fort_maintenance = -0.10
+			embargo_efficiency = 0.10
 		}
 
 		on_upgraded = {
@@ -1006,6 +1025,7 @@ bal_mire = {
 		country_modifiers = {
 			prestige = 0.25
 			rival_border_fort_maintenance = -0.15
+			embargo_efficiency = 0.20
 		}
 
 		on_upgraded = {
@@ -1044,6 +1064,7 @@ bal_mire = {
 		country_modifiers = {
 			prestige = 0.5
 			rival_border_fort_maintenance = -0.25
+			embargo_efficiency = 0.30
 		}
 
 		on_upgraded = {
@@ -1302,6 +1323,8 @@ aelcandar = {
 
 		country_modifiers = {
 		    prestige = 0.1
+			harsh_treatment_cost = -0.1
+			reduced_liberty_desire_on_same_continent = 5
 		}
 
 		on_upgraded = {
@@ -1326,6 +1349,8 @@ aelcandar = {
 
 		country_modifiers = {
 		    prestige = 0.25
+			harsh_treatment_cost = -0.2
+			reduced_liberty_desire_on_same_continent = 10
 		}
 
 		on_upgraded = {
@@ -1352,6 +1377,8 @@ aelcandar = {
 
 		country_modifiers = {
 		    prestige = 0.5
+			harsh_treatment_cost = -0.3
+			reduced_liberty_desire_on_same_continent = 20
 		}
 
 		on_upgraded = {
@@ -1437,6 +1464,8 @@ escandar = {
 
 		country_modifiers = {
 		    prestige = 0.1
+			global_rebel_suppression_efficiency = 0.1
+			mercenary_manpower = 0.05
 		}
 
 		on_upgraded = {
@@ -1461,6 +1490,8 @@ escandar = {
 
 		country_modifiers = {
 		    prestige = 0.25
+			global_rebel_suppression_efficiency = 0.2
+			mercenary_manpower = 0.10
 		}
 
 		on_upgraded = {
@@ -1487,6 +1518,8 @@ escandar = {
 
 		country_modifiers = {
 		    prestige = 0.5
+			global_rebel_suppression_efficiency = 0.3
+			mercenary_manpower = 0.15
 		}
 
 		on_upgraded = {
@@ -1572,6 +1605,9 @@ calascandar = {
 
 		country_modifiers = {
 		    prestige = 0.1
+			heir_chance = 0.25
+			dip_advisor_cost = -0.05
+			power_projection_from_insults = 0.05
 		}
 
 		on_upgraded = {
@@ -1596,6 +1632,9 @@ calascandar = {
 
 		country_modifiers = {
 		    prestige = 0.25
+			heir_chance = 0.5
+			dip_advisor_cost = -0.1
+			power_projection_from_insults = 0.1
 		}
 
 		on_upgraded = {
@@ -1622,6 +1661,9 @@ calascandar = {
 
 		country_modifiers = {
 		    prestige = 0.5
+			heir_chance = 1
+			dip_advisor_cost = -0.15
+			power_projection_from_insults = 0.15
 		}
 
 		on_upgraded = {
