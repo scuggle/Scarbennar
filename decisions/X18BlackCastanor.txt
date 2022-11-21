@@ -1,6 +1,6 @@
 country_decisions = {
 
-	black_castanor_nation = {
+	X18_form_nation = {
 		major = yes
 		potential = {
 			Tag = X18
@@ -109,7 +109,6 @@ country_decisions = {
 			840 = {	#To North Citadel
 				move_capital_effect = yes
 			}
-			custom_tooltip = tooltip_black_castanorian_culture_provinces
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -175,6 +174,7 @@ country_decisions = {
 			}
 			set_country_flag = formed_black_castanor_flag
 			clr_country_flag = knightly_order_adventurer
+			
 		}
 		ai_will_do = {
 			factor = 1

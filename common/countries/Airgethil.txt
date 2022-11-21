@@ -38,8 +38,6 @@ historical_units = {
 }
 
 monarch_names = {
-	#Ibevar name list
-	monarch_names = {
 	"Adrahel #0" = 10
 	"Alarian #0" = 10
 	"Aldarian #0" = 10
@@ -85,7 +83,7 @@ monarch_names = {
 	"Galindor #0" = 10
 	"Gelehorn #0" = 10
 	"Gelmonias #0" = 10
-	"Ibenion #3" = 100
+	"Ibenion #0" = 10
 	"Ivran #0" = 10
 	"Ivrandil #0" = 10
 	"Ivrandir #0" = 10
@@ -130,7 +128,7 @@ monarch_names = {
 	"Imariel #0" = -5
 	"Vehari #0" = -5
 	"Veharia #0" = -5
-	"Varila #0" = -2
+	"Varila #0" = -5
 	"Varilia #0" = -5
 	"Panoril #0" = -5
 	"Liandiel #0" = -5

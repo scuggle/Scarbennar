@@ -33,7 +33,10 @@
  X16_form_nation_desc: "tbd"
  X17_form_nation_title: "Proclaim Greater Ibevar"
  X17_form_nation_desc: "tbd"
+ X18_form_nation_title: "Revive An Elven Black Castanor"
+ X18_form_nation_desc: "The founder of my Dynasty, Urion Starsworn, married the daughter of the enthralled Castan of Black Castanor during the War of the Sorcerer King. Although dying at the Battle of Trialmount, Urion & Alvara Ebonfrosts children would continue to hold lands and titles within Moonhaven and Istralore although never forgetting the tenuous claim we hold dynastically over the now ruined kingdom of Castanor.  Now it is my chance to claim glory for my house, to finally usurp the remnants of the Ebonfrost claim and to form a kingdom for both human and elves."
  X19_form_nation_title: "Form Our Own Country!"
  X19_form_nation_desc: "We have grown powerful enough in Escann that our influence matches the old lords of the west. We must move on from our adventurer beginnings and turn into a sovereign nation in our own right!\n\n§R(Mutually exclusive with formables that revive extinct Escanni kingdoms)§!"
  A30_form_nation_title: "Reform Wex"
  A30_form_nation_desc: "tbd"
+ 
