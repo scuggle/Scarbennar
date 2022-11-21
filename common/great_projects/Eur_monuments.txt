@@ -1,0 +1,84 @@
+<project> = {
+    # Province the project starts in
+    start = <province id>
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = year.month.date
+
+    # How much it costs to build
+    build_cost = <ducats>
+
+    # If the project can be moved
+    can_be_moved = yes/no
+
+    # Starting tier of the project
+    starting_tier = <tier>
+
+    # Project type
+    type = canal/monument
+
+    # Conditions to build the project
+    build_trigger = {
+        <conditions>
+    }
+
+    # What happens when the project is built
+    on_built = {
+        <do stuff> # For example; add_prestige = 25
+        # For canal, do add_canal = <canal_name>
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        <do stuff> # For example; add_prestige = -25
+        # For canal, do remove_canal = <canal_name>
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        <conditions>
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        <conditions>
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+        <conditions>
+    }
+
+    # Tiers
+    tier_<tier> = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = <months>
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = <ducats>
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            <modifiers>
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            <modifiers>
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            <modifiers>
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            <do stuff> #For example; add_prestige = 25
+        }
+    }
+}
