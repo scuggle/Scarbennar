@@ -1,84 +1,150 @@
-<project> = {
-    # Province the project starts in
-    start = <province id>
+####################
+#Eur Specific Monuments
+####################
 
-    # Date built in real life (If you start the game at a date later than this, then the project will show up)
-    date = year.month.date
+### Kara-Tarug
 
-    # How much it costs to build
-    build_cost = <ducats>
+Kara_Targu = {
+	start = 4182 #Sashkras
+	date = 01.01.01
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
 
-    # If the project can be moved
-    can_be_moved = yes/no
+	build_trigger = {	
+	}
 
-    # Starting tier of the project
-    starting_tier = <tier>
+	on_built = {
+	}
 
-    # Project type
-    type = canal/monument
+	on_destroyed = {
+	}
 
-    # Conditions to build the project
-    build_trigger = {
-        <conditions>
-    }
+	can_use_modifiers_trigger = {
+	AND = {
+			development = 20
+		OR = {
+			culture_group = dwarven
+			culture_group = goblin
+			culture_group = kobold
+			culture_group = orcish
+			culture_group = goblin
+			culture_group = gerudian
+			culture_group = giantkind	
+			}
+		}
+		province_is_or_accepts_culture = yes
+		
+	}	
+	can_upgrade_trigger = {
+		AND = {
+			development = 20
+		OR = {
+			culture_group = dwarven
+			culture_group = goblin
+			culture_group = kobold
+			culture_group = orcish
+			culture_group = goblin
+			culture_group = gerudian
+			culture_group = giantkind
+				}
+			}
+			province_is_or_accepts_culture = yes
+		}
+	}
+	keep_trigger = {
+	}
 
-    # What happens when the project is built
-    on_built = {
-        <do stuff> # For example; add_prestige = 25
-        # For canal, do add_canal = <canal_name>
-    }
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
 
-    # What happens when the project is destroyed
-    on_destroyed = {
-        <do stuff> # For example; add_prestige = -25
-        # For canal, do remove_canal = <canal_name>
-    }
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.1
+			local_monthly_devastation = -0.25
+		}
+		country_modifiers = {
+			global_trade_goods_size_modifier = 0.05
+			caravan_power = 0.1
+			
+		}
+		on_upgraded = {
+		}
+	}
 
-    # Conditions to use project
-    can_use_modifiers_trigger = {
-        <conditions>
-    }
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.15
+			local_monthly_devastation = -0.5
+		}
+		country_modifiers = {
+			global_trade_goods_size_modifier = 0.075
+			caravan_power = 0.2
+		}
+		on_upgraded = {
+		define_advisor = {
+			type = trader
+			name = "Bone Stripper of Sashkras"
+			skill = 3
+			religion = feast_of_the_gods
+			culture = mossmouth_ogre
+			location = 4182
+			discount = yes
+		}
+	}
 
-    # Conditions to upgrade project
-    can_upgrade_trigger = {
-        <conditions>
-    }
-
-    # Conditions for if the project will be destroyed when conquered
-    keep_trigger = {
-        <conditions>
-    }
-
-    # Tiers
-    tier_<tier> = {
-        # Time it takes to upgrade the project
-        upgrade_time = {
-            months = <months>
-        }
-
-        # Cost to upgrade the project
-        cost_to_upgrade = {
-            factor = <ducats>
-        }
-
-        # What modifiers are given to the province the project is located in
-        province_modifiers = {
-            <modifiers>
-        }
-
-        # What modifiers are given to the area of the province the project is located in
-        area_modifier = {
-            <modifiers>
-        }
-
-        # What modifiers are given to the nation that owns the monument
-        country_modifiers = {
-            <modifiers>
-        }
-
-        # What happens when the upgrade is complete
-        on_upgraded = {
-            <do stuff> #For example; add_prestige = 25
-        }
-    }
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.25
+			local_monthly_devastation = -1
+		}
+		country_modifiers = {
+			global_trade_goods_size_modifier = 0.1
+			caravan_power = 0.3
+			
+		}
+		on_upgraded = {
+		}
+	}
 }
