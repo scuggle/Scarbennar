@@ -4,7 +4,7 @@
 
 ### Kara-Tarug
 
-Kara_Targu = {
+kara_targu = {
 	start = 4182 #Sashkras
 	date = 01.01.01
 	time = { months = 0	}

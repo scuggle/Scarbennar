@@ -1,0 +1,36 @@
+spriteTypes = {
+
+##########################
+#R/Europe Custom Monuments
+##########################
+
+spriteType = {
+       name = "GFX_great_project_kara_targu"	
+        texturefile = "gfx//interface//great_projects//great_project_kara_targu.dds"
+    }
+
+
+
+
+
+########
+Examples
+########
+
+
+##spriteType = {
+       ## name = "GFX_great_project_freecestir_mustering_grounds"	
+        ## texturefile = "gfx//interface//great_projects//great_project_freecestir_mustering_grounds.dds"
+    ##}
+
+##spriteType = {
+        ##name = "GFX_great_project_gawed_castle_gaweton"	
+        ##texturefile = "gfx//interface//great_projects//great_project_gawed_castle_gaweton.dds"
+    ##}
+
+
+##Add more here
+
+
+
+}
