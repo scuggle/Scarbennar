@@ -8,7 +8,11 @@ spriteType = {
        name = "GFX_great_project_kara_targu"	
         texturefile = "gfx//interface//great_projects//great_project_kara_targu.dds"
     }
-
+	
+spriteType = {
+       name = "GFX_great_project_elven_mountain"	
+        texturefile = "gfx//interface//great_projects//great_project_elven_mountain.dds"
+    }
 
 
 
