@@ -3,18 +3,30 @@
 ####################
 
 ### Kara-Tarug
-
 kara_targu = {
 	start = 4182 #Sashkras
 	date = 01.01.01
-	time = { months = 0	}
-	build_cost = 0
+	time = { months = 120	}
+	build_cost = 1000
 	can_be_moved = no
-	move_days_per_unit_distance = 10
+	move_days_per_unit_distance = 1
 	starting_tier = 0
 	type = monument
 
 	build_trigger = {	
+		AND = {
+			development = 20
+			OR = {
+				culture_group = dwarven
+				culture_group = goblin
+				culture_group = kobold
+				culture_group = orcish
+				culture_group = goblin
+				culture_group = gerudian
+				culture_group = giantkind	
+			}
+			province_is_or_accepts_culture = yes
+		}
 	}
 
 	on_built = {
@@ -24,33 +36,31 @@ kara_targu = {
 	}
 
 	can_use_modifiers_trigger = {
-	AND = {
+		AND = {
 			development = 20
-		OR = {
-			culture_group = dwarven
-			culture_group = goblin
-			culture_group = kobold
-			culture_group = orcish
-			culture_group = goblin
-			culture_group = gerudian
-			culture_group = giantkind	
+			OR = {
+				culture_group = dwarven
+				culture_group = goblin
+				culture_group = kobold
+				culture_group = orcish
+				culture_group = goblin
+				culture_group = gerudian
+				culture_group = giantkind	
 			}
+			province_is_or_accepts_culture = yes
 		}
-		province_is_or_accepts_culture = yes
-		
 	}	
 	can_upgrade_trigger = {
 		AND = {
 			development = 20
-		OR = {
-			culture_group = dwarven
-			culture_group = goblin
-			culture_group = kobold
-			culture_group = orcish
-			culture_group = goblin
-			culture_group = gerudian
-			culture_group = giantkind
-				}
+			OR = {
+				culture_group = dwarven
+				culture_group = goblin
+				culture_group = kobold
+				culture_group = orcish
+				culture_group = goblin
+				culture_group = gerudian
+				culture_group = giantkind
 			}
 			province_is_or_accepts_culture = yes
 		}
@@ -92,7 +102,6 @@ kara_targu = {
 		country_modifiers = {
 			global_trade_goods_size_modifier = 0.05
 			caravan_power = 0.1
-			
 		}
 		on_upgraded = {
 		}
@@ -116,14 +125,15 @@ kara_targu = {
 			caravan_power = 0.2
 		}
 		on_upgraded = {
-		define_advisor = {
-			type = trader
-			name = "Bone Stripper of Sashkras"
-			skill = 3
-			religion = feast_of_the_gods
-			culture = mossmouth_ogre
-			location = 4182
-			discount = yes
+			define_advisor = {
+				type = trader
+				name = "Bone Stripper of Sashkras"
+				skill = 3
+				religion = feast_of_the_gods
+				culture = mossmouth_ogre
+				location = 4182
+				discount = yes
+			}
 		}
 	}
 
@@ -157,37 +167,45 @@ elven_mountain = {
 	start = 3020
 	date = 01.01.01
 	time = {
-		months = 0
+		months = 120
 	}
-	build_cost = 0
+	build_cost = 1000
 	can_be_moved = no
-	move_days_per_unit_distance = 1
 	starting_tier = 0
 	type = monument
 	build_trigger = {	
+		AND = {
+			OR = {
+				culture_group = goblin
+				culture_group = orcish
+				culture = wood_elf
+				culture = castanorian
+			}
+			province_is_or_accepts_culture = yes
+		}
 	}
 	on_built = {		
 	}
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
-					OR = {
-						culture_group = goblin
-						culture_group = orcish
-						culture = wood_elf
-						culture = castanorian
-					}
+		AND = {
+			OR = {
+				culture_group = goblin
+				culture_group = orcish
+				culture = wood_elf
+				culture = castanorian
 			}
 			province_is_or_accepts_culture = yes
 		}
 	}
 	can_upgrade_trigger = {
-					OR = {
-						culture_group = goblin
-						culture_group = orcish
-						culture = wood_elf
-						culture = castanorian
-					}
+		AND = {
+			OR = {
+				culture_group = goblin
+				culture_group = orcish
+				culture = wood_elf
+				culture = castanorian
 			}
 			province_is_or_accepts_culture = yes
 		}
@@ -220,11 +238,8 @@ elven_mountain = {
 		province_modifiers = {
 		}
 		area_modifier = {
-
 		}
 		country_modifiers = {
-
-
 		}
 		on_upgraded = {
 		}
@@ -237,12 +252,10 @@ elven_mountain = {
 			factor = 2500
 		}
 		province_modifiers = {
-
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-
 		}
 		on_upgraded = {
 		}
@@ -257,10 +270,8 @@ elven_mountain = {
 		province_modifiers = {
 		}
 		area_modifier = {
-
 		}
 		country_modifiers = {
-
 		}
 		on_upgraded = {
 		}
@@ -268,16 +279,21 @@ elven_mountain = {
 }	
 
 black_pillar = {
-	start = 1001
+	start = 487
 	date = 01.01.01
-	time = { months = 0	}
-	build_cost = 0
+	time = { 
+		months = 120	
+	}
+	build_cost = 1000
 	can_be_moved = no
-	move_days_per_unit_distance = 10
 	starting_tier = 1
 	type = monument
 
 	build_trigger = {
+		AND = {
+			culture_group = gnoll
+			province_is_or_accepts_culture = yes
+		}
 	}
 
 	on_built = {
@@ -287,9 +303,17 @@ black_pillar = {
 	}
 
 	can_use_modifiers_trigger = {
+		AND = {
+			culture_group = gnoll
+			province_is_or_accepts_culture = yes
+		}
 	}
 
 	can_upgrade_trigger = {
+		AND = {
+			culture_group = gnoll
+			province_is_or_accepts_culture = yes
+		}
 	}
 
 	keep_trigger = {
