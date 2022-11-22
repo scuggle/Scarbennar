@@ -14,6 +14,10 @@ spriteType = {
         texturefile = "gfx//interface//great_projects//great_project_elven_mountain.dds"
     }
 
+spriteType = {
+       name = "GFX_great_project_black_pillar"	
+        texturefile = "gfx//interface//great_projects//great_project_black_pillar.dds"
+    }
 
 
 
