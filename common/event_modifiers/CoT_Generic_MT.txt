@@ -1,0 +1,255 @@
+army_1_mission {
+	land_morale = 0.15
+}
+
+expansion_1_mission {
+	build_cost = -0.1
+}
+
+trade_1_mission {
+	trade_efficiency = 0.15
+}
+
+economic_1_mission {
+	advisor_cost = -0.1
+}
+
+government_1_mission {
+	idea_cost = -0.1
+}
+
+conquest_1_mission {
+	global_autonomy = -0.1
+}
+
+expansion_1_capital {
+	local_build_cost = -0.2
+	local_development_cost = -0.1
+}
+
+national_focus_tellum_1 {
+	local_build_cost = -0.5
+	local_development_cost = -0.5
+}
+
+exotic_trading_post_1 {
+	trade_goods_size_modifier = -0.33
+	trade_goods_size = -0.25
+}
+
+exotic_trading_post_2 {
+	trade_goods_size_modifier = 1
+	local_development_cost = -0.25
+	local_manpower_modifier = 0.5
+}
+
+exotic_trading_post_3 {
+	trade_goods_size = 3
+	local_manpower_modifier = 0.5
+}
+
+exotic_trading_post_4 {
+	trade_goods_size = 2
+	local_institution_spread = 1
+	trade_value_modifier = 0.5
+}
+
+front_lines_tellumm_1 {
+	infantry_power = 0.10
+	cavalry_power = 0.10
+}
+
+front_lines_tellumm_2 {
+	shock_damage = 0.10
+}
+
+front_lines_tellumm_3 {
+	cavalry_shock = 0.25
+	infantry_shock = 0.25
+}
+
+support_tellumm_1 {
+	artillery_power = 0.075
+}
+
+support_tellumm_2 {
+	fire_damage = 0.075
+}
+
+support_tellumm_3 {
+	artillery_fire = 0.25
+}
+
+artificers_tellumm_2 {
+	special_unit_forcelimit= 0.05
+}
+
+artificers_tellumm_3 {
+	is_rajput_modifier = yes 
+	infantry_fire = 0.25 
+	fire_damage_received = -0.10
+	infantry_power = 0.10 
+}
+
+economic_tellumm_1 {
+	global_allowed_num_of_buildings = 1
+}
+
+economic_tellumm_2 {
+	development_cost = -0.075
+}
+
+economic_tellumm_3 {
+	development_cost_modifier = -0.05
+}
+
+trade_tellumm_1 {
+	global_sailors_modifier = 0.5
+	global_ship_trade_power = 0.25
+	privateer_efficiency = 0.25
+}
+
+trade_tellumm_2 {
+	ship_durability = 0.15
+}
+
+trade_tellumm_3 {
+	trade_steering = 0.4
+}
+
+conquered_hold_tellum {
+	local_development_cost = -0.75
+	global_manpower = -10
+	land_forcelimit = -10
+}
+
+rebuilding_efforts_tellum {
+	local_development_cost = -0.5
+	global_manpower = -10
+	land_forcelimit = -10
+}
+
+capital_management_1 {
+	local_development_cost = -0.15
+	supply_limit_modifier = 0.50
+	governing_capacity = 25
+}
+
+capital_management_2 {
+	local_development_cost = -0.30
+	supply_limit_modifier = 1
+	governing_capacity = 50
+}
+
+capital_management_3 {
+	local_development_cost = -0.50
+	supply_limit_modifier = 2
+	governing_capacity = 100
+}
+
+oasis_capital_tellum {
+	local_development_cost = -0.75
+	attrition = 1
+}
+
+port_capital_tellum {
+	local_development_cost = -0.40
+	province_trade_power_modifier = 0.5
+	province_trade_power_value = 5
+}
+
+natural_capital_tellum {
+	local_development_cost = -0.55
+	trade_goods_size = 1
+}
+
+fortress_capital_tellum {
+	local_development_cost = -0.5
+	local_defensiveness = 0.66
+}
+
+frozen_capital_tellum {
+	local_development_cost = -0.75
+	attrition = 1
+}
+
+prosperous_capital_tellum {
+	local_development_cost = -0.15
+	trade_value_modifier = 0.5
+}
+
+arid_arctic_balance {
+	local_development_cost = -0.5
+}
+
+military_mutagen_1 = {
+	shock_damage = 0.075
+}
+military_mutagen_2 = {
+	fire_damage = 0.05
+}
+military_mutagen_3 = {
+	fire_damage_received = -0.025
+	shock_damage_received = -0.025
+}
+military_mutagen_4 = {
+	global_manpower_modifier = 0.1
+}
+military_mutagen_5 = {
+	special_unit_forcelimit= 0.05
+}
+
+#Expansion Mutagens
+
+expansion_mutagen_1 = {
+	development_cost = -0.05
+}
+expansion_mutagen_2 = {
+	administrative_efficiency = 0.025
+}
+expansion_mutagen_3 = {
+	technology_cost = -0.05
+	idea_cost = -0.05
+}
+expansion_mutagen_4 = {
+	governing_capacity_modifier = 0.2
+}
+expansion_mutagen_5 = {
+	build_cost = -0.05
+	build_time = -0.075
+}
+
+#Trade Mutagens
+
+trade_mutagen_1 = {
+	global_trade_goods_size_modifier = 0.05
+}
+trade_mutagen_2 = {
+	trade_efficiency = 0.1
+}
+trade_mutagen_3 = {
+	global_own_trade_power = 0.25
+}
+trade_mutagen_4 = {
+	global_foreign_trade_power = 0.3
+}
+trade_mutagen_5 = {
+	naval_forcelimit_modifier = 0.1
+	global_sailors_modifier = 0.15
+}
+
+#Economy Mutagens
+
+economy_mutagen_1 = {
+	global_trade_goods_size_modifier = 0.05
+}
+economy_mutagen_2 = {
+	production_efficiency = 0.1
+}
+economy_mutagen_3 = {
+	global_tax_modifier = 0.2
+}
+economy_mutagen_4 = {
+	interest = -0.25
+	inflation_action_cost = -0.25
+}
