@@ -175,11 +175,10 @@ elven_mountain = {
 	type = monument
 	build_trigger = {	
 		AND = {
+			development = 40
 			OR = {
-				culture_group = goblin
-				culture_group = orcish
+				culture = emerald_orc
 				culture = wood_elf
-				culture = castanorian
 			}
 			province_is_or_accepts_culture = yes
 		}
@@ -190,26 +189,25 @@ elven_mountain = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
+			development = 40
 			OR = {
-				culture_group = goblin
-				culture_group = orcish
+				culture = emerald_orc
 				culture = wood_elf
-				culture = castanorian
 			}
 			province_is_or_accepts_culture = yes
 		}
 	}
 	can_upgrade_trigger = {
+	can_use_modifiers_trigger = {
 		AND = {
 			OR = {
-				culture_group = goblin
-				culture_group = orcish
+				culture = emerald_orc
 				culture = wood_elf
-				culture = castanorian
 			}
 			province_is_or_accepts_culture = yes
 		}
 	}	
+	
 	keep_trigger = {
 	}
 	tier_0 = {
@@ -233,15 +231,22 @@ elven_mountain = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 3000
 		}
 		province_modifiers = {
+			local_defensiveness = 0.1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			reinforce_speed = 0.05
+			manpower_recovery_speed = 0.05
 		}
 		on_upgraded = {
+		add_base_tax = -5
+		add_base_production = -5
+		add_base_manpower = -5
+		add_devastation = 50
 		}
 	}
 	tier_2 = {
@@ -249,15 +254,23 @@ elven_mountain = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 6000
 		}
 		province_modifiers = {
+			local_defensiveness = 0.2
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			reinforce_speed = 0.15
+				manpower_recovery_speed = 0.15
 		}
 		on_upgraded = {
+			add_base_tax = -10
+			add_base_production = -10
+			add_base_manpower = -10
+			add_devastation = 50
+			}
 		}
 	}
 	tier_3 = {
@@ -265,18 +278,32 @@ elven_mountain = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 10000
 		}
 		province_modifiers = {
+			local_defensiveness = 0.33
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			reinforce_speed = 0.25
+			manpower_recovery_speed = 0.25
 		}
 		on_upgraded = {
+			add_base_tax = -15
+			add_base_production = -15
+			add_base_manpower = -15
+			add_devastation = 100
+
 		}
 	}
-}	
+}
+
+
+
+
+
+
 
 #black_pillar = {
 	#start = 5476
