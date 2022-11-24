@@ -94,14 +94,13 @@ kara_targu = {
 			factor = 1000
 		}
 		province_modifiers = {
+		province_trade_power_value = 5
 		}
 		area_modifier = {
 			local_defensiveness = 0.1
-			local_monthly_devastation = -0.25
 		}
 		country_modifiers = {
 			global_trade_goods_size_modifier = 0.05
-			caravan_power = 0.1
 		}
 		on_upgraded = {
 		}
@@ -115,14 +114,14 @@ kara_targu = {
 			factor = 2500
 		}
 		province_modifiers = {
+		province_trade_power_value = 10
+		allowed_num_of_buildings = 1
 		}
 		area_modifier = {
 			local_defensiveness = 0.15
-			local_monthly_devastation = -0.5
 		}
 		country_modifiers = {
 			global_trade_goods_size_modifier = 0.075
-			caravan_power = 0.2
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -145,17 +144,18 @@ kara_targu = {
 			factor = 5000
 		}
 		province_modifiers = {
+		province_trade_power_value = 20
 		}
 		area_modifier = {
 			local_defensiveness = 0.25
-			local_monthly_devastation = -1
+			allowed_num_of_buildings = 1
 		}
 		country_modifiers = {
 			global_trade_goods_size_modifier = 0.1
-			caravan_power = 0.3
 			
 		}
 		on_upgraded = {
+		
 		}
 	}
 	
@@ -278,124 +278,143 @@ elven_mountain = {
 	}
 }	
 
-black_pillar = {
-	start = 487
-	date = 01.01.01
-	time = { 
-		months = 120	
+#black_pillar = {
+	#start = 5476
+	#date = 01.01.01
+	#time = { 
+	#	months = 120	
 	}
-	build_cost = 1000
-	can_be_moved = no
-	starting_tier = 1
-	type = monument
+	#build_cost = 1000
+	#can_be_moved = no
+	#starting_tier = 0
+	#type = monument
 
-	build_trigger = {
-		AND = {
-			culture_group = gnoll
-			province_is_or_accepts_culture = yes
-		}
-	}
+	#build_trigger = {
+		#AND = {
+		#	Development = 30
+		#	culture_group = gnollish
+		#	province_is_or_accepts_culture = yes
+	#	}
+	#}
 
-	on_built = {
-	}
+	#on_built = {
+	#}
 
-	on_destroyed = {
-	}
+	#on_destroyed = {
+	#}
 
-	can_use_modifiers_trigger = {
-		AND = {
-			culture_group = gnoll
-			province_is_or_accepts_culture = yes
-		}
-	}
+	#can_use_modifiers_trigger = {
+	#	AND = {
+	#		Development = 30
+	#		culture_group = gnollish
+	#		province_is_or_accepts_culture = yes
+	#	}
+	#}
 
-	can_upgrade_trigger = {
-		AND = {
-			culture_group = gnoll
-			province_is_or_accepts_culture = yes
-		}
-	}
+	#can_upgrade_trigger = {
+	#	AND = {
+	#		culture_group = gnollish
+	#		province_is_or_accepts_culture = yes
+	#	}
+	#}
 
-	keep_trigger = {
-	}
+	#keep_trigger = {
+	#}
 
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
+	#tier_0 = {
+	#	upgrade_time = {
+	#		months = 0
+	#	}
+	#	cost_to_upgrade = {
+	#		factor = 0
+	#	}
+	#	province_modifiers = {
+	#	}
+	#	area_modifier = {
+	#	}
+	#	country_modifiers = {
+	#	}
+	#	on_upgraded = {
+	#	}
+	#}
 
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-			trade_goods_size = 2.0
-		}
-		area_modifier = {
-			local_build_cost = -0.05
-			local_build_time = -0.05
-		}
-		country_modifiers = {			
-		}
-		on_upgraded = {
-		}
-	}
+	#tier_1 = {
+	#	upgrade_time = {
+	#		months = 120
+	#	}
+	#	cost_to_upgrade = {
+	#		factor = 1000
+	#	}
+	#	province_modifiers = {
+	#		trade_goods_size = 2.0
+	#	}
+	#	area_modifier = {
+	#		local_build_cost = -0.05
+	#		local_build_time = -0.05
+	#	}
+	#	country_modifiers = {		
+	#	global_unrest = 2		
+	#	}
+	#	on_upgraded = {
+	#	add_base_tax = -100
+	#	add_base_production = -100
+	#	add_base_manpower = -100
+	#	add_devastation = 25
+	#	}
+	#}
 
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-			trade_goods_size = 3.0
-		}
-		area_modifier = {
-			local_build_cost = -0.1
-			local_build_time = -0.1
-		}
-		country_modifiers = {
+	#tier_2 = {
+	#	upgrade_time = {
+	#		months = 240
+	#	}
+	#	cost_to_upgrade = {
+	#		factor = 2500
+	#	}
+	#	province_modifiers = {
+	#		trade_goods_size = 3.0
+	#	}
+	#	area_modifier = {
+	#		local_build_cost = -0.1
+	#		local_build_time = -0.1
+	#	}
+	#	country_modifiers = {
+	#	global_unrest = 4
 			
-		}
-		on_upgraded = {
-		}
-	}
+	#	}
+	#	on_upgraded = {
+	#	add_base_tax = -100
+	#	add_base_production = -100
+	#	add_base_manpower = -100
+	#	add_devastation = 50
+	#	}
+	#}
 
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-			trade_goods_size = 4.0
-		}
-		area_modifier = {
-			local_build_cost = -0.2
-			local_build_time = -0.2
-		}
-		country_modifiers = {
+	#tier_3 = {
+	#	upgrade_time = {
+	#		months = 480
+	#	}
+	#	cost_to_upgrade = {
+	#		factor = 5000
+	#	}
+	#	province_modifiers = {
+	#		trade_goods_size = 4.0
+	#	}
+	#	area_modifier = {
+	#		local_build_cost = -0.2
+	#		local_build_time = -0.2
+	#	}
+	#	country_modifiers = {
+	#	global_unrest = 8
 			
-		}
-		on_upgraded = {
-		}
-	}
-}
+	#	}
+	#	on_upgraded = {
+	#	change_trade_goods = damestear
+	#	set_province_flag = permanent_damestear
+	#	add_base_tax = -100
+	#	add_base_production = -100
+	#	add_base_manpower = -100
+	#	add_devastation = 100
+	#	}
+	#}
+#}
 
