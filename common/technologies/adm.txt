@@ -28,6 +28,7 @@ technology = { #Tribal Government
 
 	warcamp = yes
 	guild_hall = yes
+	native_fortified_house = yes
 	quest_board = yes
 	foragers_camp = yes
 	pioneer_office = yes
@@ -76,6 +77,7 @@ technology = { #Medieval Administration
 		feudalism = 0.5
 	}
 
+	allowed_idea_groups = 1
 	production_efficiency	=	0.02
 	may_support_rebels = yes
 	
@@ -102,7 +104,7 @@ technology = { #National Ideas
 		renaissance = 0.15
 	}
 
-	allowed_idea_groups = 1
+	allowed_idea_groups = 2
 	production_efficiency	 =	0.02
 }
 
@@ -129,7 +131,6 @@ technology = { #Renaissance Thought
 	}
 	
 	#Noble Republic
-	allowed_idea_groups = 2	
 }
 
 technology = { #Courthouse
@@ -140,6 +141,7 @@ technology = { #Courthouse
 		renaissance = 0.5
 	}
 
+	allowed_idea_groups = 3
 	courthouse = yes
 	governing_capacity = 100
 
@@ -169,7 +171,6 @@ technology = { #Modern Theocracy
 		new_world_i = 0.3
 	}
 	
-	allowed_idea_groups = 3
 	theocratic_government = yes
 }
 
@@ -181,7 +182,8 @@ technology = { #Textile Manufactory
 		renaissance = 0.5
 		new_world_i = 0.5
 	}
-	
+
+	allowed_idea_groups = 4
 	#Textile Manufactory
 	textile = yes  
 
@@ -227,7 +229,7 @@ technology = { #Scientific Experimentation
 	}
 	
 	plantations = yes
-	allowed_idea_groups	= 4
+	allowed_idea_groups	= 5
 }
 
 technology = { #Military Administration
@@ -270,12 +272,13 @@ technology = { #University
 		printing_press = 0.5
 		global_trade = 0.15
 	}
-	
+
+	allowed_idea_groups = 6
 	university = yes	
 	governing_capacity = 250
 	
 	administrative_efficiency = 0.1
-	development_cost_modifier = -0.1
+	development_efficiency = 0.1
 }
 
 technology = { #National Sovereignty
@@ -288,8 +291,6 @@ technology = { #National Sovereignty
 		printing_press = 0.5
 		global_trade = 0.3
 	}
-	
-	allowed_idea_groups	= 5
 }
 
 technology = { #Cathedral
@@ -317,7 +318,8 @@ technology = { #Absolute Rulership
 		printing_press = 0.5
 		global_trade = 0.5
 	}
-	
+
+	allowed_idea_groups = 7
 	republican_dictatorship = yes
 	governing_capacity = 250
 }
@@ -351,7 +353,6 @@ technology = { #The Constitution
 		manufactories = 0.3
 	}
 	
-	allowed_idea_groups = 6
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
@@ -369,9 +370,10 @@ technology = { #Measuring the World
 		global_trade = 0.5
 		manufactories = 0.5
 	}
-	
+
+	allowed_idea_groups = 8
 	administrative_efficiency = 0.1
-	development_cost_modifier = -0.1
+	development_efficiency = 0.1
 }
 
 technology = { #Bonds and Tontines
@@ -421,7 +423,7 @@ technology = { #Separation of Powers
 		enlightenment = 0.5
 	}
 	
-	allowed_idea_groups 	= 	7
+	allowed_idea_groups 	= 	9
 }
 
 technology = { #Modern Bureaucracy
@@ -438,7 +440,7 @@ technology = { #Modern Bureaucracy
 	}
 
 	administrative_efficiency = 0.1
-	development_cost_modifier = -0.1	
+	development_efficiency = 0.1	
 	governing_capacity = 250
 }
 
@@ -474,7 +476,7 @@ technology = { #Rights of Man
 		industrialization = 0.5
 	}
 
-	allowed_idea_groups = 8
+	allowed_idea_groups = 10
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }

@@ -1,5 +1,5 @@
 army_1_mission {
-	land_morale = 0.15
+	land_morale = 0.10
 }
 
 expansion_1_mission {
@@ -28,8 +28,8 @@ expansion_1_capital {
 }
 
 national_focus_tellum_1 {
-	local_build_cost = -0.5
-	local_development_cost = -0.5
+	local_build_cost = -0.2
+	local_development_cost = -0.15
 }
 
 exotic_trading_post_1 {
@@ -39,7 +39,7 @@ exotic_trading_post_1 {
 
 exotic_trading_post_2 {
 	trade_goods_size_modifier = 1
-	local_development_cost = -0.25
+	local_development_cost = -0.10
 	local_manpower_modifier = 0.5
 }
 
@@ -114,17 +114,17 @@ trade_tellumm_2 {
 }
 
 trade_tellumm_3 {
-	trade_steering = 0.4
+	trade_steering = 0.1
 }
 
 conquered_hold_tellum {
-	local_development_cost = -0.75
+	local_development_cost = -0.20
 	global_manpower = -10
 	land_forcelimit = -10
 }
 
 rebuilding_efforts_tellum {
-	local_development_cost = -0.5
+	local_development_cost = -0.10
 	global_manpower = -10
 	land_forcelimit = -10
 }
@@ -136,40 +136,40 @@ capital_management_1 {
 }
 
 capital_management_2 {
-	local_development_cost = -0.30
+	local_development_cost = -0.10
 	supply_limit_modifier = 1
 	governing_capacity = 50
 }
 
 capital_management_3 {
-	local_development_cost = -0.50
+	local_development_cost = -0.15
 	supply_limit_modifier = 2
 	governing_capacity = 100
 }
 
 oasis_capital_tellum {
-	local_development_cost = -0.75
+	local_development_cost = -0.20
 	attrition = 1
 }
 
 port_capital_tellum {
-	local_development_cost = -0.40
+	local_development_cost = -0.15
 	province_trade_power_modifier = 0.5
 	province_trade_power_value = 5
 }
 
 natural_capital_tellum {
-	local_development_cost = -0.55
+	local_development_cost = -0.10
 	trade_goods_size = 1
 }
 
 fortress_capital_tellum {
-	local_development_cost = -0.5
+	local_development_cost = -0.15
 	local_defensiveness = 0.66
 }
 
 frozen_capital_tellum {
-	local_development_cost = -0.75
+	local_development_cost = -0.15
 	attrition = 1
 }
 
@@ -179,7 +179,7 @@ prosperous_capital_tellum {
 }
 
 arid_arctic_balance {
-	local_development_cost = -0.5
+	local_development_cost = -0.2
 }
 
 military_mutagen_1 = {
