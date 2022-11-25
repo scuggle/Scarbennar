@@ -1,0 +1,187 @@
+namespace = mutagen
+
+#Military Mutagen
+country_event = {
+	id = mutagen.1
+	title = mutagen.1.t
+	desc = mutagen.1.d
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mutagen.1.a
+		add_country_modifier = {
+			name = military_mutagen_1
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.1.b
+		add_country_modifier = {
+			name = military_mutagen_2
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.1.c
+		add_country_modifier = {
+			name = military_mutagen_3
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.1.e
+		add_country_modifier = {
+			name = military_mutagen_4
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.1.f
+		add_country_modifier = {
+			name = military_mutagen_5
+			duration = -1
+		}
+	}
+}
+
+#Expansion Mutagen
+country_event = {
+	id = mutagen.2
+	title = mutagen.2.t
+	desc = mutagen.2.d
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mutagen.2.a
+		add_country_modifier = {
+			name = expansion_mutagen_1
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.2.b
+		add_country_modifier = {
+			name = expansion_mutagen_2
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.2.c
+		add_country_modifier = {
+			name = expansion_mutagen_3
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.2.e
+		add_country_modifier = {
+			name = expansion_mutagen_4
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.2.f
+		add_country_modifier = {
+			name = expansion_mutagen_5
+			duration = -1
+		}
+	}
+}
+
+#Trade Mutagen
+country_event = {
+	id = mutagen.3
+	title = mutagen.3.t
+	desc = mutagen.3.d
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mutagen.3.a
+		add_country_modifier = {
+			name = trade_mutagen_1
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.3.b
+		add_country_modifier = {
+			name = trade_mutagen_2
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.3.c
+		add_country_modifier = {
+			name = trade_mutagen_3
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.3.e
+		add_country_modifier = {
+			name = trade_mutagen_4
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.3.f
+		add_country_modifier = {
+			name = trade_mutagen_5
+			duration = -1
+		}
+	}
+}
+
+#Economy Mutagen
+country_event = {
+	id = mutagen.4
+	title = mutagen.4.t
+	desc = mutagen.4.d
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mutagen.4.a
+		add_country_modifier = {
+			name = economy_mutagen_1
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.4.b
+		add_country_modifier = {
+			name = economy_mutagen_2
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.4.c
+		add_country_modifier = {
+			name = economy_mutagen_3
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.4.e
+		add_country_modifier = {
+			name = economy_mutagen_4
+			duration = -1
+		}
+	}
+	option = {
+		name = mutagen.4.f
+			mission_reward_artifice_points_5 = yes
+			add_country_modifier = {
+			name = economy_mutagen_5
+			duration = -1
+		
+		}
+	}
+}

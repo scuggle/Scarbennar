@@ -1,0 +1,69 @@
+﻿l_english:
+ #ADM Policies
+ #Tier 1
+ vass_reform_the_goverment_1:0 "Reform the Government [1]"
+ vass_increased_taxes_1:0 "Maximize Profits [1]"
+ vass_reduce_inflation_1:0 "Reduce Inflation [1]"
+ vass_building_spree_1:0 "Building Spree [1]"
+ vass_centralization_effort_1:0 "Centralization [1]"
+ vass_tighten_the_belt_1:0 "Tighten the Belt [1]"
+ #Tier 2
+ vass_reform_the_goverment_2:0 "Reform the Government [2]"
+ vass_increased_taxes_2:0 "Maximize Profits [2]"
+ vass_reduce_inflation_2:0 "Reduce Inflation [2]"
+ vass_building_spree_2:0 "Building Spree [2]"
+ vass_centralization_effort_2:0 "Centralization [2]"
+ vass_tighten_the_belt_2:0 "Tighten the Belt [2]"
+ #Tier 3
+ vass_reform_the_goverment_3:0 "Reform the Government [3]"
+ vass_increased_taxes_3:0 "Maximize Profits [3]"
+ vass_reduce_inflation_3:0 "Reduce Inflation [3]"
+ vass_building_spree_3:0 "Building Spree [3]"
+ vass_centralization_effort_3:0 "Centralization [3]"
+ vass_tighten_the_belt_3:0 "Tighten the Belt [3]"
+
+ #DIP Policies
+ #Tier 1
+ vass_an_underdog_1:0 "An Underdog [1]"
+ vass_glorious_armada_1:0 "A Glorious Armada [1]"
+ vass_gold_and_lies_1:0 "A Web of Gold [1]"
+ vass_a_grand_court_1:0 "A Grand Court [1]"
+ vass_a_melting_pot_1:0 "A Melting Pot [1]"
+ vass_unity_strength_1:0 "In Unity, Strength! [1]"
+ #Tier 2
+ vass_an_underdog_2:0 "An Underdog [2]"
+ vass_glorious_armada_2:0 "A Glorious Armada [2]"
+ vass_gold_and_lies_2:0 "A Web of Gold [2]"
+ vass_a_grand_court_2:0 "A Grand Court [2]"
+ vass_a_melting_pot_2:0 "A Melting Pot [2]"
+ vass_unity_strength_2:0 "In Unity, Strength! [2]"
+ #Tier3
+ vass_an_underdog_3:0 "An Underdog [3]"
+ vass_glorious_armada_3:0 "A Glorious Armada [3]"
+ vass_gold_and_lies_3:0 "A Web of Gold [3]"
+ vass_a_grand_court_3:0 "A Grand Court [3]"
+ vass_a_melting_pot_3:0 "A Melting Pot [3]"
+ vass_unity_strength_3:0 "In Unity, Strength! [3]"
+
+ #MIL Policies
+ #Tier 1
+ vass_cutting_edge_1:0 "Cutting Edge [1]"
+ vass_affordable_munitions_1:0 "Affordable Munitions [1]"
+ vass_engineer_corps_1:0 "Engineer Corps [1]"
+ vass_deep_reserve_1:0 "Deep Reserve [1]"
+ vass_professional_corps_1:0 "Professional Corps [1]"
+ vass_hunters_and_baggage_1:0 "Hunters and Baggage Trains [1]"
+ #Tier 2
+ vass_cutting_edge_2:0 "Cutting Edge [2]"
+ vass_affordable_munitions_2:0 "Affordable Munitions [2]"
+ vass_engineer_corps_2:0 "Engineer Corps [2]"
+ vass_deep_reserve_2:0 "Deep Reserve [2]"
+ vass_professional_corps_2:0 "Professional Corps [2]"
+ vass_hunters_and_baggage_2:0 "Hunters and Baggage Trains [2]"
+ #Tier 3
+ vass_cutting_edge_3:0 "Cutting Edge [3]"
+ vass_affordable_munitions_3:0 "Affordable Munitions [3]"
+ vass_engineer_corps_3:0 "Engineer Corps [3]"
+ vass_deep_reserve_3:0 "Deep Reserve [3]"
+ vass_professional_corps_3:0 "Professional Corps [3]"
+ vass_hunters_and_baggage_3:0 "Hunters and Baggage Trains [3]"

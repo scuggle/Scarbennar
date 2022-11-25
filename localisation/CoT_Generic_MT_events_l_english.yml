@@ -1,0 +1,51 @@
+﻿l_english: 
+
+towards_future_20.title:0 "Towards The Future"
+towards_future_20.desc:0 "Choosing the path for your nation is one of the hardest desisions $MONARCHTITLE$ $MONARCH$ has every had to make. With advisory from his council, your court reaches an agreement. The hearts of our people will beat for- The minds of our people will gravitate towards- The lives of ouir men will die for- We are..."
+towards_future_20_a:0 "Unbreakable (Infantry/Cavalry)"
+towards_future_20_b:0 "Supportive (Artillery)"
+towards_future_20_c:0 "Smarter Than Everyone Else (Artificers)"
+towards_future_20_d:0 "Prosperous (Economic)"
+towards_future_20_e:0 "Rich! *Fans Money* (Trade)"
+
+TOWARDS_FUTURE_TOOLTIP:0 "Choose A Path"
+
+mutagen.1.t:0 "Military Mutagen"
+mutagen.1.d:0 "Choose a Mutagen"
+mutagen.1.a:0 "Shock"
+mutagen.1.b:0 "Fire"
+mutagen.1.c:0 "Defense"
+mutagen.1.e:0 "Quantity"
+mutagen.1.f:0 "Artificery"
+
+MUTAGEN_1_TOOLTIP:0 "Choose a Mutagen"
+
+mutagen.2.t:0 "Expansion Mutagen"
+mutagen.2.d:0 "Choose a Mutagen"
+mutagen.2.a:0 "Development"
+mutagen.2.b:0 "Admin Efficiency"
+mutagen.2.c:0 "Scholars"
+mutagen.2.e:0 "Gov. Capacity"
+mutagen.2.f:0 "Build Cost"
+
+MUTAGEN_2_TOOLTIP:0 "Choose a Mutagen"
+
+mutagen.3.t:0 "Trade Mutagen"
+mutagen.3.d:0 "Choose a Mutagen"
+mutagen.3.a:0 "Goods"
+mutagen.3.b:0 "Trade"
+mutagen.3.c:0 "Domestic Trade"
+mutagen.3.e:0 "Foreign Trade"
+mutagen.3.f:0 "Naval"
+
+MUTAGEN_3_TOOLTIP:0 "Choose a Mutagen"
+
+mutagen.4.t:0 "Economic Mutagen"
+mutagen.4.d:0 "Choose a Mutagen"
+mutagen.4.a:0 "Goods"
+mutagen.4.b:0 "Production"
+mutagen.4.c:0 "Tax"
+mutagen.4.e:0 "Bank Notes"
+mutagen.4.f:0 "Artificery"
+
+MUTAGEN_4_TOOLTIP:0 "Choose a Mutagen"
