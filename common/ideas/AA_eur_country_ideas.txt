@@ -788,8 +788,7 @@ X19_ideas = {
 	free = yes		#will be added at load.
 	
 	X19_one = {
-		
-		promote_culture_cost = -0.20 #done
+		culture_conversion_cost = -0.20 #done
 	}
 	X19_two = {
 		defensiveness = 0.20 #done

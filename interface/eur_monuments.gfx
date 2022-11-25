@@ -19,6 +19,16 @@ spriteType = {
         texturefile = "gfx//interface//great_projects//great_project_black_pillar.dds"
     }
 
+spriteType = {
+       name = "GFX_great_project_lost_ship"	
+        texturefile = "gfx//interface//great_projects//great_project_lost_ship.dds"
+    }
+
+
+spriteType = {
+       name = "GFX_great_project_silent_repose"	
+        texturefile = "gfx//interface//great_projects//great_project_silent_repose.dds"
+    }
 
 
 ########
