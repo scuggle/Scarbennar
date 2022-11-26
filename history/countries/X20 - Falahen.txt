@@ -1,0 +1,29 @@
+
+setup_vision = yes
+government = tribal
+add_government_reform = harpy_matriarchy_reform
+government_rank = 1
+primary_culture = cannorian_harpy
+religion = the_hunt
+technology_group = tech_harpy
+historical_rival = U18
+capital = 519
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1411.7.3 = {
+	monarch = {
+		name = "Emshara I"
+		dynasty = "Falahen"
+		birth_date = 1413.5.4
+		female = yes
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+
+	add_ruler_personality = navigator
+	add_ruler_personality = well_connected
+	
+	set_variable = { built_roosts = 1 }
+}
