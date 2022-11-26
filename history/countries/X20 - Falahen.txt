@@ -1,4 +1,3 @@
-
 setup_vision = yes
 government = tribal
 add_government_reform = harpy_matriarchy_reform
@@ -17,9 +16,9 @@ capital = 519
 		dynasty = "Falahen"
 		birth_date = 1413.5.4
 		female = yes
-		adm = 3
-		dip = 5
-		mil = 1
+		adm = 2
+		dip = 3
+		mil = 4
 	}
 
 	add_ruler_personality = navigator

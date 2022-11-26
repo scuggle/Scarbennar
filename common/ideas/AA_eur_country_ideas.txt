@@ -811,6 +811,50 @@ X19_ideas = {
 	}
 }
 
+#Falahen 
+X20_ideas = {
+	start = {
+		cavalry_power = 0.2
+		diplomatic_upkeep = 1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		OR = {
+			tag = A01
+		}
+	}
+	free = yes		#will be added at load.
+
+	X20_one = {
+		vassal_forcelimit_bonus = 1.0
+		reduced_liberty_desire = 5
+	}
+	X20_two = {
+		prestige = 1
+	}
+	X20_three = {
+		diplomatic_reputation = 1
+	}
+	X20_four = {
+		infantry_power = 0.1
+	}
+	X20_five = {
+		improve_relation_modifier = 0.10
+		spy_offence = 0.1
+	}
+	X20_six = {
+		colonists = 1
+	}
+	X20_seven = {
+		hostile_attrition = 1.0
+		land_morale = 0.1
+	}
+}
+
 #New ideas for old Formables
 #Esmaria TBD
 Z46_ideas = {

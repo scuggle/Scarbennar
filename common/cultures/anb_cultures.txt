@@ -1801,7 +1801,7 @@ harpy = {
 	
 	cannorian_harpy = {
 		graphical_culture = asiangfx
-		primary = A06 #Manyburrows
+		primary = X20 #Falahen
 	}
 
 	dynasty_names = {
