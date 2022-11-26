@@ -824,7 +824,7 @@ X20_ideas = {
 
 	trigger = {
 		OR = {
-			tag = A01
+			tag = X20
 		}
 	}
 	free = yes		#will be added at load.
