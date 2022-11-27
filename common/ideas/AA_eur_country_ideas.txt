@@ -808,12 +808,12 @@ X19_ideas = {
 #Falahen TBD
 X20_ideas = {
 	start = {
-		cavalry_power = 0.2
-		diplomatic_upkeep = 1
+		may_perform_slave_raid_on_same_religion = yes	#We are slavers
+		own_coast_naval_combat_bonus = 1				#We like to fly from the coast into combat
 	}
 
 	bonus = {
-		discipline = 0.05
+		light_ship_power = 0.15			#fast ship is more powerful
 	}
 
 	trigger = {
@@ -824,28 +824,28 @@ X20_ideas = {
 	free = yes		#will be added at load.
 
 	X20_one = {
-		vassal_forcelimit_bonus = 1.0
-		reduced_liberty_desire = 5
+		naval_forcelimit_modifier = 0.15				#Sea harpies like boats
+		sea_repair = yes								#We can easily fly to the coast
 	}
 	X20_two = {
-		prestige = 1
+		advisor_pool = 2								#Some slaves are okay, bring them into the fold
 	}
 	X20_three = {
-		diplomatic_reputation = 1
+		global_unrest = -2								#Slave masters make sure slaves stay in line
 	}
 	X20_four = {
-		infantry_power = 0.1
+		privateer_efficiency = 0.15						#Damn were getting good at pirating people
 	}
 	X20_five = {
-		improve_relation_modifier = 0.10
-		spy_offence = 0.1
+		allowed_marine_fraction = 0.25					#dedicated flying marines
+		landing_penalty = -2							#trained, dedicated flying marines supporting infantry
 	}
 	X20_six = {
-		colonists = 1
+		leader_naval_manuever = 1						#Smart pigeons make boat faster
 	}
 	X20_seven = {
-		hostile_attrition = 1.0
-		land_morale = 0.1
+		manpower_in_accepted_culture_provinces = 0.10 	#incorperate the slave forces
+		infantry_power = 0.10							#They make fantastic distractions
 	}
 }
 

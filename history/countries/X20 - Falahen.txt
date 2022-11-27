@@ -17,9 +17,9 @@ capital = 519
 		dynasty = "Falahen"
 		birth_date = 1391.12.1
 		female = yes
-		adm = 1
-		dip = 5
-		mil = 3
+		adm = 4
+		dip = 4
+		mil = 1
 		
 		leader = {
 			name = "Anatra Falahen"     # Name of the leader
@@ -30,7 +30,7 @@ capital = 519
 			siege = 2
 		}
 	}
-	add_ruler_personality = loose_lips_personality
+	add_ruler_personality = careful_personality
 	add_ruler_personality = bold_fighter_personality
 	
 	set_variable = { built_roosts = 1 }
@@ -49,6 +49,6 @@ capital = 519
 		dip = 3
 		mil = 4
 	}
-	add_ruler_personality = navigator
+	add_ruler_personality = navigator_personality
 	
 }
