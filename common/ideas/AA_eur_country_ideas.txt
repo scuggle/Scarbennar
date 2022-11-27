@@ -52,15 +52,15 @@ X01_ideas = {
 	}
 }
 
-#Carneter TBD
+#Carneter
 X02_ideas = {
 	start = {
-		advisor_cost = -0.15
-		ae_impact = -0.2
+		adm_advisor_cost = -0.33 #Barons of Carneter.
+		stability_cost_modifier = -0.2 #Stubborn Nobles.
 	}
 
 	bonus = {
-		core_creation = -0.1
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -71,31 +71,30 @@ X02_ideas = {
 	free = yes		#will be added at load.
 	
 	X02_one = {
-		mercenary_discipline = 0.1
-		mercenary_cost = -0.4
+		manpower_in_own_culture_provinces = 0.33
 	}
 	X02_two = {
-		development_cost = -0.15
-		trade_efficiency = 0.2
+		prestige = 1
+		female_advisor_chance = 0.25
+		may_recruit_female_generals = yes
+		heir_chance = 0.5
 	}
 	X02_three = {
-		galley_power = 0.2
-		naval_forcelimit_modifier = 0.3
+		build_time = -0.2
 	}
 	X02_four = {
-		technology_cost = -0.1
-		allowed_marine_fraction = 0.1
+		infantry_power = 0.10
 	}
 	X02_five = {
-		diplomatic_reputation = 2
-		diplomatic_upkeep = 1
+		diplomats = 1
+		envoy_travel_time = -0.25
 	}
 	X02_six = {
-		institution_growth = 0.3
-		defensiveness = 0.2
+		production_efficiency = 0.10
+		culture_conversion_cost = -0.10
 	}
 	X02_seven = {
-		land_morale = 0.15
+		global_unrest = -2
 	}
 }
 
