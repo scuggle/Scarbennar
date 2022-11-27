@@ -1752,7 +1752,13 @@ harpy = {
 			Firanyakin
 		}
 	}
-	
+		
+	cannorian_harpy = {
+		primary = X20 #Falahen
+		
+		dynasty_names = {
+			Falahen
+	}	
 	siadunan_harpy = {
 		primary = F48 #Siadan
 		
@@ -1779,29 +1785,6 @@ harpy = {
 	feng_harpy = {
 		graphical_culture = asiangfx
 		primary = Y39 #Fengwuzhe
-	}
-
-	dynasty_names = {
-		Shrieker Feathersworn Blackfeather Bluefeather Redfeather Greenfeather Talonheart Talonbeak Ladybreaker Maneater Manbreaker Manchewer Mantaker Malesworn Clawbeak Clawfeather Clawtalon
-		Cronemother Cronebeak Cronefeather Bluewing Goldwing Goldclaw Goldtalon Goldeye Redeye "One-eye" Tallpeak Tallwind Windpeak Windtalon Windwing Birdsworn Birdlady
-		Screechsong Birdsong Soothesong Windsong Beaksong Melodysong Songshriek Songfeather Songbeak Songpeaks
-	}
-	male_names = {
-		# Adran Albert Aldred Alfons Alfred Alos Alain Ardan Ardor Aril Artorian Artur Aucan Austyn Awen Borian Brandon Brayan Brayden Calas Castén Castín Daran 
-		# Darran Denar Edmund Elran Erel Eren Erlan Evin Galin Gelman Kalas Laurens Marion Maurise Nara Olor Otó Reán Riannón Ricain Ríon Robin Rogier Sandur Taelar 
-		# Thal Thiren Tomás Trian Trystan Varian Varion Varil Varilor Vincen Willam Dustin Avery Lucian Luciana Dominic Vernell Arman Cecill Tristan Alvar Adelar 
-		# Teagan Andrel Frederic Adrien Adrian Ademar Valeran Valen Corin
-	
-	}
-	female_names = {
-		Adra Alara Amarien Aria Calassa Aucanna Casténnia Castína Cela Celadora Clarimonde Eilís Eilísabet Erela Erella Galina Galinda Laurenne Lianne Madaléin 
-		Maria Marianna Mariana Marianne Marien Marina Réanna Thalia Varina Varinna Alina Arabella Margery Cecille Kerstin Alisanne Isobel Isabel Isabella Bella 
-		Adeline Amina Willamina Aldresia Sofie Sofia Sybille Constance Eléanore Valence Emilíe Gisíle Athana Corina Corin Cora
-	}
-	
-	cannorian_harpy = {
-		graphical_culture = asiangfx
-		primary = X20 #Falahen
 	}
 
 	dynasty_names = {
