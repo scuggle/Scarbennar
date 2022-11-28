@@ -810,7 +810,7 @@ X20_ideas = {
 	}
 
 	bonus = {
-		ship_durability = 0.15
+		ship_durability = 0.10
 	}
 
 	trigger = {
