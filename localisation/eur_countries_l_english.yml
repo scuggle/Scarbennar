@@ -18,6 +18,7 @@
  X01_six_desc:0 "tbd"
  X01_seven:0 "7"
  X01_seven_desc:0 "tbd"
+ 
  X02:0 "Carneter"
  X02_ADJ:0 "Carneter"
  X02_ideas:0 "Carneter Ideas"
@@ -37,6 +38,7 @@
  X02_six_desc:0 "tbd"
  X02_seven:0 "7"
  X02_seven_desc:0 "tbd"
+
  X03:0 "Great Xhaz"
  X03_ADJ:0 "Demonic"
  X03_ideas:0 "Great Xhaz Ideas"
@@ -56,6 +58,7 @@
  X03_six_desc:0 "tbd"
  X03_seven:0 "7"
  X03_seven_desc:0 "tbd"
+
  X04:0 "Damerian Republic"
  X04_ADJ:0 "Damnerian"
  X04_ideas:0 "Damerian Republic Ideas"
@@ -75,6 +78,7 @@
  X04_six_desc:0 "tbd"
  X04_seven:0 "7"
  X04_seven_desc:0 "tbd"
+
  X05:0 "Businor"
  X05_ADJ:0 "Businorian"
  X05_ideas:0 "Businor Ideas"
@@ -94,6 +98,7 @@
  X05_six_desc:0 "tbd"
  X05_seven:0 "7"
  X05_seven_desc:0 "tbd"
+
  X06:0 "Lencenor"
  X06_ADJ:0 "Lencenorian"
  X06_ideas:0 "Lencenor Ideas"
@@ -113,6 +118,7 @@
  X06_six_desc:0 "tbd"
  X06_seven:0 "7"
  X06_seven_desc:0 "tbd"
+
  X07:0 "The Reach"
  X07_ADJ:0 "Reachman"
  X07_ideas:0 "The Reach Ideas"
@@ -132,6 +138,7 @@
  X07_six_desc:0 "tbd"
  X07_seven:0 "7"
  X07_seven_desc:0 "tbd"
+
  X08:0 "Seiranar"
  X08_ADJ:0 "Seiranar"
  X08_ideas:0 "Seiranar Ideas"
@@ -151,6 +158,7 @@
  X08_six_desc:0 "tbd"
  X08_seven:0 "7"
  X08_seven_desc:0 "tbd"
+
  X09:0 "United Temples"
  X09_ADJ:0 "Temple"
  X09_ideas:0 "United Temples Ideas"
@@ -170,6 +178,7 @@
  X09_six_desc:0 "tbd"
  X09_seven:0 "7"
  X09_seven_desc:0 "tbd"
+
  X10:0 "Dameshead"
  X10_ADJ:0 "Dameshead"
  X10_ideas:0 "Dameshead Ideas"
@@ -189,6 +198,7 @@
  X10_six_desc:0 "tbd"
  X10_seven:0 "7"
  X10_seven_desc:0 "tbd"
+
  X11:0 "Vivin Empire"
  X11_ADJ:0 "Vivin"
  X11_ideas:0 "Vivin Empire Ideas"
@@ -208,6 +218,7 @@
  X11_six_desc:0 "tbd"
  X11_seven:0 "7"
  X11_seven_desc:0 "tbd"
+
  X12:0 "Greengate"
  X12_ADJ:0 "Greengate"
  X12_ideas:0 "Greengate Ideas"
@@ -227,6 +238,7 @@
  X12_six_desc:0 "tbd"
  X12_seven:0 "7"
  X12_seven_desc:0 "tbd"
+
  X13:0 "Voltenu"
  X13_ADJ:0 "Voltenu"
  X13_ideas:0 "Voltenu Ideas"
@@ -246,6 +258,7 @@
  X13_six_desc:0 "tbd"
  X13_seven:0 "7"
  X13_seven_desc:0 "tbd"
+
  X14:0 "Vortzo Vedobbyat"
  X14_ADJ:0 "Vortzo"
  X14_ideas:0 "Vortzo Ideas"
@@ -265,6 +278,7 @@
  X14_six_desc:0 "tbd"
  X14_seven:0 "7"
  X14_seven_desc:0 "tbd"
+
  X15:0 "Goblin Empire"
  X15_ADJ:0 "Goblin"
  X15_ideas:0 "Goblin Empire Ideas"
@@ -284,11 +298,12 @@
  X15_six_desc:0 "tbd"
  X15_seven:0 "7"
  X15_seven_desc:0 "tbd"
- X16:0 "Orc Empire"
- X16_ADJ:0 "Orcish"
- X16_ideas:0 "Orc Empire Ideas"
- X16_ideas_start:0 "Orc Empire Traditions"
- X16_ideas_bonus:0 "Orc Empire Ambition"
+
+ X16:0 "Karlur Khan"
+ X16_ADJ:0 "Karlur"
+ X16_ideas:0 "Karlur Khan Ideas"
+ X16_ideas_start:0 "Karlur Khan Traditions"
+ X16_ideas_bonus:0 "Karlur Khan Ambition"
  X16_one:0 "1"
  X16_one_desc:0 "tbd"
  X16_two:0 "2"
@@ -303,6 +318,7 @@
  X16_six_desc:0 "tbd"
  X16_seven:0 "7"
  X16_seven_desc:0 "tbd"
+ 
  X17:0 "Greater Ibevar"
  X17_ADJ:0 "Ibevari"
  X17_ideas:0 "Greater Ibevar Ideas"
@@ -322,8 +338,10 @@
  X17_six_desc:0 "tbd"
  X17_seven:0 "7"
  X17_seven_desc:0 "tbd"
+ 
  X18:0 "Silver Band"
  X18_ADJ:0 "Silver Band"
+ 
  X19:0 "Airgethil"
  X19_ADJ:0 "Airgethi"
  X19_ideas:0 "Airgethil Ideas"
@@ -343,3 +361,23 @@
  X19_six_desc:0 "We in Airgethil will always accept some races into the fold, but we want those who live in our lands to know it is a home for elves first, for them second and for some of them, third. We will not hesitate in times of hardship to blame troubles on the minorities of our realm and we promote this idea by almost exclusively hiring those of pure elvish stock."
  X19_seven:0 "Light Step Across The Land"
  X19_seven_desc:0 "As our military grows, the logistics of our soldier’s coordination becomes harder to manage on the vast stretches of territory within and without our domain. To counter this we have employed schools of manoeuver in which we school our officers on the latest information in organisational coordination."
+ 
+ X20:0 "Falahen"
+ X20_ADJ:0 "Falahen"
+ X20_ideas:0 "Falahen Ideas"
+ X20_ideas_start:0 "Falahen Traditions"
+ X20_ideas_bonus:0 "Falahen Ambition"
+ X20_one:0 "The Falahen Slave Armada"
+ X20_one_desc:0 "Although our ancestors once prowled the cliffs of Aezbel, kidnapping wayward shepherds and merchants, our kin under Matriarch Falahen, shall create the first fleet of ships to facilitate in our ever-expanding hunt. This is a new undertaking for us, should anything terrible happen on the waves, we can at least rely on our wings to ferry provisions back from the mainland. "
+ X20_two:0 "A Soft Whip"
+ X20_two_desc:0 "With the influx of slaves we drag in every month, many are not deemed suitable by the upper elites of Falahen to mate with. Although those of lesser stock are not picky and those mates ill suited would rather be consorts than physical labour, we have come to a compromise. To keep both groups in line, we shall extend mating rights to those slaves who perform well in their given role. Those harpies wishing to have a mate may pick from a handful of candidates before the slaves are taken back, after successfully mating of course."
+ X20_three:0 "Consorts of Falahen"
+ X20_three_desc:0 "The Falahen Royal family takes its name sake from the Regent Court Deity, Falah, an influence from the teachings of Crathanor preachers kidnapped by our ancestors. With the influx of slaves and mates, the Royal family has taken on many new consorts, many of which share the same religious teachings as Falah and eagerly wish to serve in their roles as advisors of the realm. "
+ X20_four:0 "Black Sails and Black Wings"
+ X20_four_desc:0 "Privateering invokes the idea of unwashed simpletons looting and pillaging the ships and coasts of others, killing and plundering anything that crosses their path. We on the other hand shall make it an official practise in our naval doctrine, the nations of Cannor and Bulwar will come to fear our black winged corsairs soaring high above black flagged vessels."
+ X20_five:0 "On the Sunset Sea"
+ X20_five_desc:0 "Our sisters have learned the way of oceans, but troubles have begun to arise, many of the Cannorians and Bulwari have begun to use heavily gunned warships in place of the old Carrack designs. Although we may at times struggle to match the raw power of these vessels, we can at least turn the tide in both our manoeuvrability of our fleets and the use of our wings to directly firebomb them from above, causing chaos and pandemonium in their ranks."
+ X20_six:0 "Black Winged Warriors and White Cloaked Consorts"
+ X20_six_desc:0 "Due to our ability to fly we are able to easily support our sisters and slaves both out at sea and on land, flying in low to drop bombs and directly land trusted consort marines. Although we may never have trusted our Consorts on the front line previously, for they are too precious to lose, our warriors demand that their consorts join them in battle. This phenomenon has allowed both ground and air forces to work in tandem with one another, reducing casualties immensely. This however has had another phenomenon, due to our sisters only being able to carry one mate in their talons to the battlefield, many have opted to forgo multiple consorts and instead only have one mate, insisting that it allows for greater teamwork and stronger offspring. "
+ X20_seven:0 "Consort Legions"
+ X20_seven_desc:0 "We have finally done away with the concept of slave armies, seeing the effectiveness of the Black Wings and the White Cloaks, we have decided to reform our armed forces to incorporate our consorts onto the battlefield. Although we thought there would be some push back, our warriors have gleefully supported the idea of fighting alongside their mates in battle. This in turn has encouraged many of the potential mates in our domain not in slavery to sign up, with the prospect of being considered a potential mate to our warriors in the future."

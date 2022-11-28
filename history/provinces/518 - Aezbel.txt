@@ -1,12 +1,13 @@
 
 #518 - Aezbel
 
-owner = U17
-controller = U17
-add_core = U17
+owner = X20
+controller = X20
+add_core = X20
 add_core = U18
-culture = crathanori
-religion = regent_court
+add_core = U17
+culture = cannorian_harpy
+religion = the_hunt
 
 
 base_tax = 2

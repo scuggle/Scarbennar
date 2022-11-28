@@ -9,7 +9,16 @@ country_decisions = {
 					has_terrain = dwarven_hold
 					has_terrain = dwarven_hold_surface
 				}
-				has_subterranean_race = yes
+				OR{
+					has_subterranean_race = yes
+					AND={
+						has_province_modifier = human_hold_3
+						ROOT = {
+							mission_completed = marrhold_hole
+						}
+					}
+				}
+				
 			}
 			NOT = { has_country_flag = debug_digging_flag }
 		}
@@ -25,12 +34,35 @@ country_decisions = {
 				NOT = { has_country_flag = building_diggy }
 			}
 			if = {
-				limit = { OR = { has_country_modifier = dwarven_administration adm_tech = 7 } }
-				capital_scope = { has_subterranean_race = yes }
+				limit = { 
+					OR = { 
+						has_country_modifier = dwarven_administration
+						adm_tech = 7
+						} 
+					}
+				capital_scope = { 
+					OR={
+						has_subterranean_race = yes
+						AND = {
+							has_integrated_dwarven_pop = yes
+							has_province_modifier = human_hold_3
+							ROOT = {
+								mission_completed = marrhold_hole
+							}
+						}
+					}
+				}
 			}
 			else = {
-				capital_scope = { has_subterranean_race = yes }
-				adm_tech = 7
+				capital_scope = { has_integrated_dwarven_pop = yes }
+				OR={adm_tech = 7
+					AND={
+						has_province_modifier = human_hold_3
+						ROOT = {
+							mission_completed = marrhold_hole
+						}
+					}
+				}
 			}
 			capital_scope = { 
 				is_state_core = ROOT
