@@ -919,6 +919,7 @@ ruler_is_harpy = {
 			ruler_culture = firanyan_harpy
 			ruler_culture = siadunan_harpy
 			ruler_culture = feng_harpy
+			ruler_culture = cannorian_harpy
 		}
 	}
 }
