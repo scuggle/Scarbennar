@@ -806,11 +806,11 @@ X19_ideas = {
 X20_ideas = {
 	start = {
 		may_perform_slave_raid_on_same_religion = yes	#We are slavers
-		tolerance_heathen = 1
+		galley_power = 0.15		#fast ship is more powerful
 	}
 
 	bonus = {
-		galley_power = 0.15		#fast ship is more powerful
+		ship_durability = 0.1
 	}
 
 	trigger = {
