@@ -893,5 +893,44 @@ Z46_ideas = {
 	}
 }
 
+#Grasshopper Muncher #Names TBD
+B46_ideas = {
+	start = {
+		cav_flanking = 1					#Can flank easily
+		cavalry_power = 0.3					#Fight good. Counteracts goblin racial debuff.
+	}
+
+	bonus = {
+		fire_damage_received = -0.1			#Hard to hit cause speedy
+	}
+
+	trigger = {
+		tag = B46
+	}
+	free = yes
+
+	B46_one = {
+		cavalry_shock = 0.15				#Jumps into you. Splat
+	}
+	B46_two = {
+		supply_limit_modifier = 0.5			#Move over land easily, can resupply, also edible
+	}
+	B46_three = {
+		prestige = 1						#Can paint their carapace in cool colours. Fancy!
+	}
+	B46_four = {
+		caravan_power = 0.15				#Move fast. Trade good.
+		trade_range_modifier = 0.25
+	}
+	B46_five = {
+		cavalry_cost = -0.1					#Breed fast
+	}
+	B46_six = {
+		army_tradition_decay = -0.05		#Nice History at this point. Grasshopper rider becomes wanted job.
+	}
+	B46_seven = {
+		global_unrest = -1					#Makes for good crowd control
+	}	
+}
 #Modified the Pashainé ideas in the r/Europe mod
 #Would need to make it a new formable with decision to make it work standalone
