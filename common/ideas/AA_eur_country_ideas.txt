@@ -805,15 +805,15 @@ X19_ideas = {
 	}
 }
 
-#Falahen TBD
+#Falahen WIP
 X20_ideas = {
 	start = {
 		may_perform_slave_raid_on_same_religion = yes	#We are slavers
-		own_coast_naval_combat_bonus = 1				#We like to fly from the coast into combat
+		tolerance_heathen = 1
 	}
 
 	bonus = {
-		light_ship_power = 0.15			#fast ship is more powerful
+		galley_power = 0.15		#fast ship is more powerful
 	}
 
 	trigger = {
@@ -828,23 +828,26 @@ X20_ideas = {
 		sea_repair = yes								#We can easily fly to the coast
 	}
 	X20_two = {
-		advisor_pool = 2								#Some slaves are okay, bring them into the fold
+		global_unrest = -2								#Slave masters make sure slaves stay in line
 	}
 	X20_three = {
-		global_unrest = -2								#Slave masters make sure slaves stay in line
+		advisor_pool = 2								#Some slaves are okay, bring them into the fold
 	}
 	X20_four = {
 		privateer_efficiency = 0.15						#Damn were getting good at pirating people
 	}
 	X20_five = {
-		allowed_marine_fraction = 0.25					#dedicated flying marines
-		landing_penalty = -2							#trained, dedicated flying marines supporting infantry
+		leader_naval_manuever = 1						#Smart pigeons make boat faster
+		own_coast_naval_combat_bonus = 1				#We like to fly from the coast into combat
+		
 	}
 	X20_six = {
-		leader_naval_manuever = 1						#Smart pigeons make boat faster
+		allowed_marine_fraction = 0.50					#dedicated flying marines
+		landing_penalty = -2							#trained, dedicated flying marines supporting infantry
+		
 	}
 	X20_seven = {
-		manpower_in_accepted_culture_provinces = 0.10 	#incorperate the slave forces
+		manpower_in_accepted_culture_provinces = 0.15 	#incorperate the slave forces
 		infantry_power = 0.10							#They make fantastic distractions
 	}
 }
