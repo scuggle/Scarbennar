@@ -6,7 +6,7 @@ country_decisions = {
 		potential = {
 			OR = {
 				primary_culture = blue_reachman
-				primary_culture = blue_reachman
+				primary_culture = white_reachman
 			}
 			NOT = { has_country_flag = formed_X07_flag }
 		}
