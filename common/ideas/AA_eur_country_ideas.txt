@@ -806,11 +806,11 @@ X19_ideas = {
 X20_ideas = {
 	start = {
 		may_perform_slave_raid_on_same_religion = yes	#We are slavers
-		galley_power = 0.15		#fast ship is more powerful
+		galley_power = 0.20		#fast ship is more powerful
 	}
 
 	bonus = {
-		ship_durability = 0.1
+		ship_durability = 0.15
 	}
 
 	trigger = {
@@ -821,7 +821,7 @@ X20_ideas = {
 	free = yes		#will be added at load.
 
 	X20_one = {
-		naval_forcelimit_modifier = 0.15				#Sea harpies like boats
+		naval_forcelimit_modifier = 0.25				#Sea harpies like boats
 		sea_repair = yes								#We can easily fly to the coast
 	}
 	X20_two = {
@@ -832,6 +832,7 @@ X20_ideas = {
 	}
 	X20_four = {
 		privateer_efficiency = 0.15						#Damn were getting good at pirating people
+		global_sailors_modifier = 0.33
 	}
 	X20_five = {
 		leader_naval_manuever = 1						#Smart pigeons make boat faster
@@ -839,7 +840,7 @@ X20_ideas = {
 		
 	}
 	X20_six = {
-		allowed_marine_fraction = 0.50					#dedicated flying marines
+		allowed_marine_fraction = 0.25					#dedicated flying marines
 		landing_penalty = -2							#trained, dedicated flying marines supporting infantry
 		
 	}
