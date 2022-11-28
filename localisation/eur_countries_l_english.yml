@@ -18,6 +18,7 @@
  X01_six_desc:0 "tbd"
  X01_seven:0 "7"
  X01_seven_desc:0 "tbd"
+ 
  X02:0 "Carneter"
  X02_ADJ:0 "Carneter"
  X02_ideas:0 "Carneter Ideas"
@@ -37,6 +38,7 @@
  X02_six_desc:0 "tbd"
  X02_seven:0 "7"
  X02_seven_desc:0 "tbd"
+
  X03:0 "Great Xhaz"
  X03_ADJ:0 "Demonic"
  X03_ideas:0 "Great Xhaz Ideas"
@@ -56,6 +58,7 @@
  X03_six_desc:0 "tbd"
  X03_seven:0 "7"
  X03_seven_desc:0 "tbd"
+
  X04:0 "Damerian Republic"
  X04_ADJ:0 "Damnerian"
  X04_ideas:0 "Damerian Republic Ideas"
@@ -75,6 +78,7 @@
  X04_six_desc:0 "tbd"
  X04_seven:0 "7"
  X04_seven_desc:0 "tbd"
+
  X05:0 "Businor"
  X05_ADJ:0 "Businorian"
  X05_ideas:0 "Businor Ideas"
@@ -94,6 +98,7 @@
  X05_six_desc:0 "tbd"
  X05_seven:0 "7"
  X05_seven_desc:0 "tbd"
+
  X06:0 "Lencenor"
  X06_ADJ:0 "Lencenorian"
  X06_ideas:0 "Lencenor Ideas"
@@ -113,6 +118,7 @@
  X06_six_desc:0 "tbd"
  X06_seven:0 "7"
  X06_seven_desc:0 "tbd"
+
  X07:0 "The Reach"
  X07_ADJ:0 "Reachman"
  X07_ideas:0 "The Reach Ideas"
@@ -132,6 +138,7 @@
  X07_six_desc:0 "tbd"
  X07_seven:0 "7"
  X07_seven_desc:0 "tbd"
+
  X08:0 "Seiranar"
  X08_ADJ:0 "Seiranar"
  X08_ideas:0 "Seiranar Ideas"
@@ -151,6 +158,7 @@
  X08_six_desc:0 "tbd"
  X08_seven:0 "7"
  X08_seven_desc:0 "tbd"
+
  X09:0 "United Temples"
  X09_ADJ:0 "Temple"
  X09_ideas:0 "United Temples Ideas"
@@ -170,6 +178,7 @@
  X09_six_desc:0 "tbd"
  X09_seven:0 "7"
  X09_seven_desc:0 "tbd"
+
  X10:0 "Dameshead"
  X10_ADJ:0 "Dameshead"
  X10_ideas:0 "Dameshead Ideas"
@@ -189,6 +198,7 @@
  X10_six_desc:0 "tbd"
  X10_seven:0 "7"
  X10_seven_desc:0 "tbd"
+
  X11:0 "Vivin Empire"
  X11_ADJ:0 "Vivin"
  X11_ideas:0 "Vivin Empire Ideas"
@@ -208,6 +218,7 @@
  X11_six_desc:0 "tbd"
  X11_seven:0 "7"
  X11_seven_desc:0 "tbd"
+
  X12:0 "Greengate"
  X12_ADJ:0 "Greengate"
  X12_ideas:0 "Greengate Ideas"
@@ -227,6 +238,7 @@
  X12_six_desc:0 "tbd"
  X12_seven:0 "7"
  X12_seven_desc:0 "tbd"
+
  X13:0 "Voltenu"
  X13_ADJ:0 "Voltenu"
  X13_ideas:0 "Voltenu Ideas"
@@ -246,6 +258,7 @@
  X13_six_desc:0 "tbd"
  X13_seven:0 "7"
  X13_seven_desc:0 "tbd"
+
  X14:0 "Vortzo Vedobbyat"
  X14_ADJ:0 "Vortzo"
  X14_ideas:0 "Vortzo Ideas"
@@ -265,6 +278,7 @@
  X14_six_desc:0 "tbd"
  X14_seven:0 "7"
  X14_seven_desc:0 "tbd"
+
  X15:0 "Goblin Empire"
  X15_ADJ:0 "Goblin"
  X15_ideas:0 "Goblin Empire Ideas"
@@ -284,6 +298,7 @@
  X15_six_desc:0 "tbd"
  X15_seven:0 "7"
  X15_seven_desc:0 "tbd"
+
  X16:0 "Karlur Khan"
  X16_ADJ:0 "Karlur"
  X16_ideas:0 "Karlur Khan Ideas"
