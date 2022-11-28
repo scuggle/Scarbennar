@@ -12433,7 +12433,7 @@ goblin_hideguzzler_legacy = {
 }
 
 goblin_grasshopper_muncher_legacy = {
-	trade_efficiency = 0.10
+	cavalry_power = 0.1
 }
 
 goblin_flung_head_legacy = {
