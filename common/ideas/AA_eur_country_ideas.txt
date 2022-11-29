@@ -607,7 +607,7 @@ X14_ideas = {
 	
 	X14_one = {
 		diplomats = 1
-		siege_ability = 0.5
+		siege_ability = 0.15
 	}
 	X14_two = {
 		movement_speed = 0.1
