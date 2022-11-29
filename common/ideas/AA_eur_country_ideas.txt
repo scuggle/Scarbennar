@@ -412,15 +412,15 @@ X09_ideas = {
 	}
 }
 
-#Dameshead Republic TBD
+#Dameshead Republic
 X10_ideas = {
 	start = {
-		diplomatic_reputation = 1
-		global_trade_power = 0.15
+		global_trade_power = 0.1
+		trade_efficiency = 0.2
 	}
 
 	bonus = {
-		caravan_power = 0.1
+		development_cost = -0.15
 	}
 	
 	trigger = {
@@ -431,27 +431,29 @@ X10_ideas = {
 	free = yes		#will be added at load.
 	
 	X10_one = {
-		global_institution_spread = 0.2
+		embargo_efficiency = 0.5
+		trade_range_modifier = 0.25
 	}
 	X10_two = {
-		mercenary_cost = -0.3
-		merc_maintenance_modifier = -0.1
+		interest = -0.5
+		mercantilism_cost = -0.3
 	}
 	X10_three = {
-		diplomatic_upkeep = 2
-		improve_relation_modifier = 0.15
+		global_foreign_trade_power = 0.15
+		merchants = 1
 	}
 	X10_four = {
-		num_accepted_cultures = 2
+		naval_forcelimit_modifier = 0.2
+		global_ship_trade_power = 0.5
 	}
 	X10_five = {
-		defensiveness = 0.2
+		global_trade_goods_size_modifier = 0.2
 	}
 	X10_six = {
-		rebel_support_efficiency = 0.5
+		global_tax_modifier = 0.1
 	}
 	X10_seven = {
-		free_adm_policy = 1
+		trade_steering = 0.2
 	}
 }
 
