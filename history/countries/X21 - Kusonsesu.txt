@@ -7,7 +7,7 @@ primary_culture = lion_command
 religion = godlost
 technology_group = tech_hobgoblin
 national_focus = MIL
-capital = 
+capital = 4400
 
 
 

@@ -1,11 +1,12 @@
 
 # No previous file for Banten
-owner = R02
-controller = R02
+owner = X21
+controller = X21
 add_core = R02
 add_core = F56
-culture = maqeti
-religion = old_bulwari_sun_cult
+add_core = X21
+culture = lion_command
+religion = godlost
 
 hre = no
 
