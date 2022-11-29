@@ -1,10 +1,10 @@
 
 setup_vision = yes
-government = monarchy
-add_government_reform = hobgoblin_stratocracy_reform
+government = republic
+add_government_reform = stratocracy_reform
 government_rank = 1
 primary_culture = lion_command
-religion = godlost
+religion = old_bulwari_sun_cult
 technology_group = tech_hobgoblin
 national_focus = MIL
 capital = 4400
@@ -30,6 +30,7 @@ capital = 4400
 		}
 	}
 	add_ruler_personality = just_personality
+	add_ruler_personality = navigator_personality
 	add_ruler_modifier = {
 		name = command_rule_of_the_lion
 		duration = -1
