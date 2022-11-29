@@ -894,7 +894,7 @@ Z46_ideas = {
 	}
 }
 
-#Grasshopper Muncher #Names TBD
+#Grasshopper Muncher
 B46_ideas = {
 	start = {
 		cav_flanking = 1					#Can flank easily
@@ -933,5 +933,44 @@ B46_ideas = {
 		global_unrest = -1					#Makes for good crowd control
 	}	
 }
+
+#Kusonsesu #Hobgoblin for 'Fallen Tribe'
+#X21_ideas = {
+#	start = {
+#		naval_forcelimit_modifier  = 0.2				#Island Tag
+#		no_religion_penalty = yes						#Their gods are dead, they accept all others.
+#	}
+#
+#	bonus = {
+#		all_estate_loyalty_equilibrium  = 0.05			#Old Boomers finally okay with this.
+#	}
+#
+#	trigger = {
+#		tag = B46
+#	}
+#	free = yes
+#
+#	X21_one = {
+#		galley_power  = 0.15						#Galleys rely on manpower which hobs are good at
+#	}
+#	X21_two = {
+#		global_trade_goods_size_modifier  = 0.1		#Craftsman Culture. Hobs take pride in their work.
+#	}
+#	X21_three = {
+#		sunk_ship_morale_hit_recieved   = -0.1		#Hobs are naturally disciplined and follow their commander. Unfazed by ships sinking.
+#	}
+#	X21_four = {
+#		development_cost = -0.1						#Making a new home for themselves.
+#	}
+#	X21_five = {
+#		num_accepted_cultures = 2					#They are okay with other races.							
+#	}
+#	X21_six = {
+#		fort_maintenance_modifier = 0.2				#Relatively peaceful for Hobgoblins but still have knowledge how to build forts.
+#	}
+#	X21_seven = {
+#		trade_efficiency  = 0.15					#Gulf of Rahen trade
+#	}	
+#}
 #Modified the Pashainé ideas in the r/Europe mod
 #Would need to make it a new formable with decision to make it work standalone
