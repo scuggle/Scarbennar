@@ -368,15 +368,15 @@ X08_ideas = {
 	}
 }
 
-#Temples United TBD
+#Temples United
 X09_ideas = {
 	start = {
-		advisor_cost = -0.15
-		ae_impact = -0.2
+		cb_on_religious_enemies = yes
+		extra_manpower_at_religious_war = yes
 	}
 
 	bonus = {
-		core_creation = -0.1
+		development_cost = -0.10
 	}
 	
 	trigger = {
@@ -387,31 +387,31 @@ X09_ideas = {
 	free = yes		#will be added at load.
 	
 	X09_one = {
-		mercenary_discipline = 0.1
-		mercenary_cost = -0.4
+		tolerance_own = 2
+		global_religious_conversion_resistance = -0.25
 	}
 	X09_two = {
-		development_cost = -0.15
-		trade_efficiency = 0.2
+		church_loyalty_modifier = 0.1
+		devotion = 1
 	}
 	X09_three = {
-		galley_power = 0.2
-		naval_forcelimit_modifier = 0.3
+		global_tax_modifier = 0.20
 	}
 	X09_four = {
-		technology_cost = -0.1
-		allowed_marine_fraction = 0.1
+	shock_damage_received = -0.10
+	shock_damage = 0.10
 	}
 	X09_five = {
 		diplomatic_reputation = 2
 		diplomatic_upkeep = 1
 	}
 	X09_six = {
-		institution_growth = 0.3
-		defensiveness = 0.2
+	recover_army_morale_speed = 0.10
+	reinforce_speed = 0.10
 	}
 	X09_seven = {
-		land_morale = 0.15
+		build_cost = -0.1
+		build_time = -0.25
 	}
 }
 
