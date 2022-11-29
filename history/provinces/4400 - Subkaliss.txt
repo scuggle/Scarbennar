@@ -4,6 +4,7 @@ owner = R02
 controller = R02
 add_core = R02
 add_core = F56
+add_core = X21
 culture = maqeti
 religion = old_bulwari_sun_cult
 
