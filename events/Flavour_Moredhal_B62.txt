@@ -107,7 +107,6 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
-		always = no	#temporary disabled, remove this when Moredhal is ready
 		OR = { 
 			owns_core_province = 750
 			owns_core_province = 727
@@ -692,7 +691,7 @@ country_event = {
 					claim = 100
 				}
 				add_ruler_personality = mage_personality
-				set_dynasty = "síl na Eán"
+				set_dynasty = "sï¿½l na Eï¿½n"
 				add_country_modifier = { 
 					name = last_hope_of_escann
 					duration = -1
