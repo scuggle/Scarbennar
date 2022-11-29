@@ -966,7 +966,7 @@ X21_ideas = {
 		num_accepted_cultures = 2					#They are okay with other races.							
 	}
 	X21_six = {
-		fort_maintenance_modifier = 0.2				#Relatively peaceful for Hobgoblins but still have knowledge how to build forts.
+		fort_maintenance_modifier = -0.2				#Relatively peaceful for Hobgoblins but still have knowledge how to build forts.
 	}
 	X21_seven = {
 		trade_efficiency  = 0.15					#Gulf of Rahen trade
