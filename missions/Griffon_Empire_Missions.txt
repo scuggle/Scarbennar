@@ -1,0 +1,153 @@
+ge_left = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = M01 } 
+
+	ge_industry_1 = {
+		icon = position
+		position = 1
+		required_missions = { ge_those_we_fought_with } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+ge_left_center = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = M01 } 
+
+	ge_tech_1 = {
+		icon = position
+		position = 1
+		required_missions = { ge_those_we_fought_with } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+ge_mid = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = M01 } 
+
+	GE_from_ashes_and_ruins = {
+		icon = mission_arise_ashes
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = { tag = M01 } 
+
+		effect = {  } 
+	}
+
+	ge_a_new_empire_rise = {
+		icon = mission_swiss_mercenaries_flipped
+		position = 2
+		required_missions = { GE_from_ashes_and_ruins } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ge_those_we_fought_with = {
+		icon = position
+		position = 1
+		required_missions = { ge_a_new_empire_rise } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+ge_right_center = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = M01 } 
+
+	ge_get_rid_adventurers = {
+		icon = mission_confrontation
+		position = 1
+		required_missions = { ge_those_we_fought_with } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+ge_consolidating_inner_castanor = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = M01 } 
+
+	ge_conq_1 = {
+		icon = fortify_malta
+		position = 1
+		required_missions = { ge_those_we_fought_with } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+
+ge_ravelian = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = M01 religion = ravelian } 
+	
+	ge_ravelians_spawn = {
+		icon = mission_dark_book
+		position = 1
+		required_missions = { } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  }
+	}
+	
+	ge_spread_ravelianism = {
+		icon = mission_science
+		position = 2
+		required_missions = { ge_ravelians_spawn } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  }
+	}
+	
+	ge_finish_converting = {
+		icon = mission_science
+		position = 3
+		required_missions = { ge_spread_ravelianism } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  }
+	}
+	
+}

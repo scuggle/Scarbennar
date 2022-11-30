@@ -13,8 +13,11 @@ country_decisions = {
 					has_subterranean_race = yes
 					AND={
 						has_province_modifier = human_hold_3
-						ROOT = {
-							mission_completed = marrhold_hole
+						OR = {
+							#tag = M01
+							ROOT = {
+								mission_completed = marrhold_hole
+							}	
 						}
 					}
 				}
