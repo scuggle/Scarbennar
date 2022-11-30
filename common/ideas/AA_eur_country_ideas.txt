@@ -1062,5 +1062,46 @@ B43_ideas = {
 		global_regiment_cost = -0.1						# Magic support lightens the need for good equipment for other troops, thus cheaper
 	}	
 }
+
+#Griffon Empire ideas
+M01_ideas = {
+	start = {
+		cav_flanking = 1			#You are flying around your enemies.
+		cavalry_power = 0.33		#This makes your empire's military might.
+	}
+	
+	bonus = {
+		envoy_travel_time = -0.5		#Flying over water is fast.
+	}
+	
+	trigger = {
+		tag = M01
+	}
+	free = yes
+	
+	M01_one = {
+		cavalry_cost = -0.1					#Breeding Griffons
+	}
+	M01_two = {
+		discipline = 0.05					#You need well trained troops in battle
+	}
+	M01_three = {
+		prestige_decay = 0.01				#You rule everything from the caverns to the skies
+	}
+	M01_four = {
+		trade_steering = 0.1				#Move fast. Trade good.
+		trade_range_modifier = 0.25
+	}
+	M01_five = {
+		goods_produced_modifier = 0.1		#The Dwarven artificers are helping the economy
+	}
+	M01_six = {
+		years_of_nationalism = -5			#You have a merciful rule over your empire, and it's new subjects
+	}
+	M01_seven = {
+		governing_capacity_modifier = 0.1	#Marr Griffon Post offices makes bureaucracy faster and better.
+	}
+}
+
 #Modified the Pashainé ideas in the r/Europe mod
 #Would need to make it a new formable with decision to make it work standalone
