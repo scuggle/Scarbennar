@@ -1,11 +1,15 @@
-
 marrhold = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
-		tag = B36
-		
+		OR={
+			tag = B36
+			AND ={
+				tag = M01
+				was_tag = B36
+			}
+		}
 	}
 	has_country_shield = yes
 	
@@ -290,7 +294,13 @@ marrhold_two = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = B36
+		OR={
+			tag = B36
+			AND ={
+				tag = M01
+				was_tag = B36
+			}
+		}
 	}
 	has_country_shield = yes
 	
@@ -569,7 +579,13 @@ marrhold_three = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = B36
+		OR={
+			tag = B36
+			AND ={
+				tag = M01
+				was_tag = B36
+			}
+		}
 	}
 	has_country_shield = yes
 	
@@ -1190,7 +1206,13 @@ marrhold_four = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = B36
+		OR={
+			tag = B36
+			AND ={
+				tag = M01
+				was_tag = B36
+			}
+		}
 	}
 	has_country_shield = yes
 	
@@ -1573,8 +1595,13 @@ marrhold_five = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = B36
-		
+		OR={
+			tag = B36
+			AND ={
+				tag = M01
+				was_tag = B36
+			}
+		}
 	}
 	has_country_shield = yes
 	
@@ -1964,4 +1991,164 @@ marrhold_five = {
 			}
 		}
 	}
+}
+
+griffon_empire_events = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = M01
+		was_tag = B36
+	}
+	has_country_shield = yes
+	
+	#From Ashes and Ruins
+	ge_from_ashes = {
+		icon = 
+		position = 1
+		required_missions = { marrhold_griffon_king }
+		
+		trigger = {
+			tag = M01
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_griffon_empire.1 #A new Empire Rise
+				days = 1
+			}
+		}
+	}
+	
+	ge_imperial_culture = {
+		icon = 
+		position = 2
+		required_missions = { ge_from_ashes }
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+			value = 30
+			NOT = { culture = root }
+			is_overseas = no
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_griffon_empire.2 #A New Culture (Imperial Marr(Escanni) AE Impact - Stay Marrodic Bonus Culture Conversion Cost)
+				days = 1
+			}
+			inner_castanor_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	
+	
+}
+
+griffon_empire_expand = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = M01
+		was_tag = B36
+	}
+	has_country_shield = yes
+	
+	ge_inner_castanor = {
+		icon = 
+		position = 1
+		required_missions = { ge_imperial_culture }
+	
+		trigger = {
+			NOT = {
+				owns_all_provinces = {
+					region = inner_castanor_region
+				}
+			}
+		}
+	
+		effect = {
+			inner_castanor_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	
+	ge_west_castanor_1 = {
+		icon = 
+		position = 2
+		required_missions = {ge_inner_castanor}
+
+		trigger = {
+			owns_all_provinces = {
+				region = inner_castanor_region
+			}
+		}
+		
+		effect = {
+			west_castanor_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+griffon_empire_industry = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = M01
+		was_tag = B36
+	}
+	has_country_shield = yes
+	
+	ge_cheap_iron = {
+		icon = 
+		position = 1
+		required_missions = { ge_imperial_culture }
+		
+		trigger = {
+			OR = {
+				production_leader = {
+					trade_goods = iron
+				}
+				AND = {
+					owns_all_provinces = {
+						limit = { tag = ROOT }
+						trade_goods = iron
+						has_building = weapons
+						development = 10
+					}
+				}
+				
+			}
+		}
+		
+		effect = {
+			global_regiment_cost = -0.10
+			years = 20
+		}
+		
+	}
+	
+	
 }
