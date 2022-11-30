@@ -441,5 +441,26 @@
  B44_six_desc:0 "tbd"
  B44_seven:0 "7"
  B44_seven_desc:0 "tbd"
+
+  B43:0 "Flying Dog"
+ B43_ADJ:0 "Flying Doggy"
+ B43_ideas:0 "Flying Dog Ideas"
+ B43_ideas_start:0 "Flying Dog Traditions"
+ B43_ideas_bonus:0 "Flying Dog Ambition"
+ B43_one:0 "1"
+ B43_one_desc:0 "tbd"
+ B43_two:0 "2"
+ B43_two_desc:0 "tbd"
+ B43_three:0 "3"
+ B43_three_desc:0 "tbd"
+ B43_four:0 "4"
+ B43_four_desc:0 "tbd"
+ B43_five:0 "5"
+ B43_five_desc:0 "tbd"
+ B43_six:0 "6"
+ B43_six_desc:0 "tbd"
+ B43_seven:0 "7"
+ B43_seven_desc:0 "tbd"
+ 
  
  
