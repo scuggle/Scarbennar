@@ -1066,12 +1066,13 @@ B43_ideas = {
 #Griffon Empire ideas
 M01_ideas = {
 	start = {
-		cav_flanking = 1			#You are flying around your enemies.
-		cavalry_power = 0.33		#This makes your empire's military might.
+		cav_flanking = 1					#You are flying around your enemies.
+		cavalry_power = 0.25				#This makes your empire's military might.
+		may_recruit_female_generals = yes	#Both man and Woman proved itself during the Greentide
 	}
 	
 	bonus = {
-		envoy_travel_time = -0.5		#Flying over water is fast.
+		envoy_travel_time = -0.5			#Flying over water is fast.
 	}
 	
 	trigger = {
@@ -1080,23 +1081,23 @@ M01_ideas = {
 	free = yes
 	
 	M01_one = {
-		cavalry_cost = -0.1					#Breeding Griffons
+		mercenary_cost = -0.1				#Breeding Griffons
 	}
 	M01_two = {
 		discipline = 0.05					#You need well trained troops in battle
 	}
 	M01_three = {
-		prestige_decay = 0.01				#You rule everything from the caverns to the skies
+		fort_maintenance_modifier = -0.15	#You rule everything from the caverns to the skies
 	}
 	M01_four = {
-		trade_steering = 0.1				#Move fast. Trade good.
-		trade_range_modifier = 0.25
+		general_cost = -0.25				#The Feather Academy gives a lot of potential generals
 	}
 	M01_five = {
-		goods_produced_modifier = 0.1		#The Dwarven artificers are helping the economy
+		production_efficiency = 0.1			#The Dwarven artificers are helping the economy
+		goods_produced_modifier = 0.1		
 	}
 	M01_six = {
-		years_of_nationalism = -5			#You have a merciful rule over your empire, and it's new subjects
+		leader_land_manuever = 1			#Your Generals have acclimatized to the fast armies of griffon riders
 	}
 	M01_seven = {
 		governing_capacity_modifier = 0.1	#Marr Griffon Post offices makes bureaucracy faster and better.
