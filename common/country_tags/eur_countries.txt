@@ -20,4 +20,3 @@ X18 = "countries/Silver Band.txt"
 X19 = "countries/Airgethil.txt"
 X20 = "countries/Falahen.txt"
 X21 = "countries/Kusonsesu.txt"
-
