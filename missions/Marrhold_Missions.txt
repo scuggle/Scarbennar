@@ -501,7 +501,13 @@ marrhold_two = {
 		
 		trigger = {
 			895 = {
-				has_building = university
+				OR = {
+					has_building = university
+					has_great_project = {
+						type = marrhold_the_feather_academy
+						tier = 2
+					}
+				}
 			}
 			OR = {
 				army_organiser = 3
@@ -550,7 +556,6 @@ marrhold_two = {
 		ai = yes
 		position = 17
 		required_missions = {
-			marrhold_Plan_B
 			marrhold_sky_lancers
 			marrhold_grenadiers
 		}
@@ -2049,8 +2054,67 @@ griffon_empire_events = {
 		}
 	}
 	
+	ge_biggest_human_capital = {
+		icon = 
+		position = 4
+		required_missions = {ge_imperial_culture}
+		
+		trigger = {
+			4096 = {
+				has_great_project = {
+					type = marrhold_gate_to_the_serpentspine
+					tier = 3
+				}
+				OR = {
+					has_province_modfier = dig_6
+					has_province_modfier = dig_7
+					has_province_modfier = dig_8
+					has_province_modfier = dig_9
+					has_province_modfier = dig_10
+					has_province_modfier = dig_11
+				}
+			}
+		}
+		
+		effect = {
+			build_cost = -0.15
+			years = 20
+		}
+	}
+	
+	ge_the_new_death_ring = {
+		icon = 
+		position = 5
+		required_missions = {ge_biggest_human_capital}
+		
+		trigger = {
+			treasury = 15000
+			ROOT = {
+				defensiveness = 0.4
+			}
+		}
+		
+		effect = {
+			add_treasury = -15000
+			#make a new defensive line from serpentspine to Deepwoods cut half by Lake Silvermere and remove the old "White Walls of Castanor"
+		}
+	}
 	
 	
+	ge_an_empire_forged = {
+		icon = 
+		position = 6
+		required_missions = {ge_the_new_death_ring ge_new_chief_of_army ge_west_castanor_3}
+		
+		trigger = {
+			total_development = 2000
+		}
+		
+		effect = {
+			administrative_efficiency = 0.2
+			days = -1
+		}
+	}
 }
 
 griffon_empire_expand = {
@@ -2109,6 +2173,63 @@ griffon_empire_expand = {
 			}
 		}
 	}
+	
+	ge_west_castanor_3 = {
+		icon = 
+		position = 3
+		required_missions = {ge_west_castanor_2}
+
+		trigger = {
+			owns_all_provinces = {
+				region = west_castanor_region
+			}
+		}
+		
+		effect = {
+			west_castanor_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+griffon_empire_misc = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = M01
+		was_tag = B36
+	}
+	has_country_shield = yes
+	
+	ge_west_castanor_2 = {
+		icon = 
+		position = 1
+		required_missions = {ge_inner_castanor}
+
+		trigger = {
+			owns_all_provinces = {
+				region = west_castanor_region
+			}
+		}
+		
+		effect = {
+			west_castanor_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	
 }
 
 griffon_empire_industry = {
@@ -2131,15 +2252,12 @@ griffon_empire_industry = {
 				production_leader = {
 					trade_goods = iron
 				}
-				AND = {
-					owns_all_provinces = {
-						limit = { tag = ROOT }
-						trade_goods = iron
-						has_building = weapons
-						development = 10
-					}
+				owns_all_provinces = {
+					limit = { tag = ROOT }
+					trade_goods = iron
+					has_building = weapons
+					development = 10
 				}
-				
 			}
 		}
 		
@@ -2150,5 +2268,150 @@ griffon_empire_industry = {
 		
 	}
 	
+	ge_a_need_for_meat = {
+		icon = 
+		position = 2
+		required_missions = {ge_cheap_iron}
+		
+		trigger = {
+			owns_all_provinces = {
+				limit = { tag = ROOT }
+				trade_goods = livestock
+				has_building = farm_estate
+				development = 10
+			}
+		}
+		
+		effect = {
+			global_supply_limit_modifier = 0.5
+			land_attrition = -0.1
+			years = 10
+		}
+	}
 	
+	ge_reap_profit = {
+		icon = 
+		position = 3
+		required_missions = {ge_a_need_for_meat}
+		
+		trigger = {
+			4096 = {
+				has_great_project = {
+					type = marrhold_tunnel
+					tier = 3
+				}
+			}
+		}
+		
+		effect = {
+			add_dip_power = 100
+			add_years_of_income = 5
+		}
+		
+	}
+	
+}
+
+griffon_empire_mil_tech = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = M01
+		was_tag = B36
+	}
+	has_country_shield = yes
+	
+	ge_integrating_griffon_companies = {
+		icon = 
+		position = 1
+		required_missions = {ge_cheap_iron marrhold_Plan_B}
+		
+		trigger = {
+			army_professionalism = 1
+			army_tradition = 100
+			treasury = 3000
+		}
+		
+		effect = {
+			merc_maintenance_modifier = -0.5
+			mercenary_cost = -0.5
+			add_treasury = -3000
+		}
+	}
+	
+	ge_feather_academy = {
+		icon = 
+		position = 2
+		required_missions = {ge_integrating_griffon_companies}
+		
+		trigger = {
+			896 = {
+				has_great_project = {
+					type = marrhold_feather_academy
+					tier = 3
+				}
+			}
+			
+			num_of_owned_provinces_with = {
+				has_building = university
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+				value = 15
+			}
+		}
+		
+		effect = {
+			adm_tech_cost_modifier = -0.1
+			mil_tech_cost_modifier = -0.1
+			years = 15
+		}
+	}
+	
+	
+	ge_new_chief_of_army = {
+		icon = 
+		position = 3
+		required_missions = {ge_feather_academy}
+		
+		trigger = {
+			had_mission_completed = ge_feather_academy
+			years = 10
+			army_professionalism = 1
+		}
+		
+		effect = {
+			custom_tooltip = {
+				#Robyn Drakesford is ready for active duty
+				random_list = {
+					50 = {
+						define_general = {
+							shock = 8
+							fire = 6
+							manuever = 8
+							siege = 4
+							name = Robyn Drakesford
+							female = yes
+							trait = cannonner
+							age = 25
+						}
+					}
+					50 = {
+						define_general = {
+							shock = 8
+							fire = 6
+							manuever = 8
+							siege = 4
+							name = Robyn Drakesford
+							female = no
+							trait = cannonner
+							age = 25
+						}
+					}
+				}
+			}
+		}
+	}
 }
