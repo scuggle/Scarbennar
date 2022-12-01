@@ -1081,7 +1081,7 @@ M01_ideas = {
 	free = yes
 	
 	M01_one = {
-		mercenary_cost = -0.1				#Breeding Griffons
+		cavalry_cost = -0.1				#Breeding Griffons
 	}
 	M01_two = {
 		discipline = 0.05					#You need well trained troops in battle
