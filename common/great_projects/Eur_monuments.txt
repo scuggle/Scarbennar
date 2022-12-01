@@ -231,7 +231,7 @@ elven_mountain = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 3000
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.1
@@ -239,6 +239,8 @@ elven_mountain = {
 		area_modifier = {
 		}
 		country_modifiers = {
+		stability_cost_modifier = -0.1
+		global_spy_defence = 0.1
 
 		}
 		on_upgraded = {
@@ -250,7 +252,7 @@ elven_mountain = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 6000
+			factor = 5000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -258,6 +260,8 @@ elven_mountain = {
 		area_modifier = {
 		}
 		country_modifiers = {
+		stability_cost_modifier = -0.25
+		global_spy_defence = 0.25
 
 		}
 		on_upgraded = {
@@ -277,6 +281,9 @@ elven_mountain = {
 		area_modifier = {
 		}
 		country_modifiers = {
+		stability_cost_modifier = -0.50
+		global_spy_defence = 0.50
+		no_stability_loss_on_monarch_death = yes
 
 		}
 		on_upgraded = {

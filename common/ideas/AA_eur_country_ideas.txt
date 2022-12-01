@@ -814,7 +814,7 @@ X20_ideas = {
 	}
 
 	bonus = {
-		ship_durability = 0.10
+		ship_durability = 0.05
 	}
 
 	trigger = {
@@ -825,7 +825,7 @@ X20_ideas = {
 	free = yes		#will be added at load.
 
 	X20_one = {
-		naval_forcelimit_modifier = 0.25				#Sea harpies like boats
+		naval_forcelimit_modifier = 0.20				#Sea harpies like boats
 		sea_repair = yes								#We can easily fly to the coast
 	}
 	X20_two = {
