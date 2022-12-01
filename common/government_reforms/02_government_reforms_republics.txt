@@ -6515,8 +6515,8 @@ voltenu_corpocracy = {
 	}
 	
 	modifiers = {
-		idea_cost = 0.1
-		technology_cost = 0.1
+		idea_cost = -0.1
+		technology_cost = -0.1
 		interest = -1
 		global_monthly_devastation = 0.01
 		global_autonomy = -0.05
