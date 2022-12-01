@@ -599,143 +599,126 @@ lost_ship = {
 	}
 }
 
-#black_pillar = {
-	#start = 5476
-	#date = 01.01.01
-	#time = { 
-	#	months = 120	
+black_pillar = {
+	start = 5476
+	date = 01.01.01
+	time = { 
+		months = 120	
 	}
-	#build_cost = 1000
-	#can_be_moved = no
-	#starting_tier = 0
-	#type = monument
+	build_cost = 1000
+	can_be_moved = yes
+	starting_tier = 0
+	type = monument
 
-	#build_trigger = {
-		#AND = {
-		#	Development = 30
-		#	culture_group = gnollish
-		#	province_is_or_accepts_culture = yes
-	#	}
-	#}
+	build_trigger = {
+		AND = {
+			Development = 30
+			culture_group = gnollish
+		}
+		province_is_or_accepts_culture = yes
+	}
 
-	#on_built = {
-	#}
+	on_built = {
+	}
 
-	#on_destroyed = {
-	#}
+	on_destroyed = {
+	}
 
-	#can_use_modifiers_trigger = {
-	#	AND = {
-	#		Development = 30
-	#		culture_group = gnollish
-	#		province_is_or_accepts_culture = yes
-	#	}
-	#}
+	can_use_modifiers_trigger = {
+		AND = {
+			Development = 30
+			culture_group = gnollish
+		}
+		province_is_or_accepts_culture = yes
+	}
 
-	#can_upgrade_trigger = {
-	#	AND = {
-	#		culture_group = gnollish
-	#		province_is_or_accepts_culture = yes
-	#	}
-	#}
+	can_upgrade_trigger = {
+		AND = {
+			Development = 30
+			culture_group = gnollish
+		}
+		province_is_or_accepts_culture = yes
+	}
 
-	#keep_trigger = {
-	#}
+	keep_trigger = {
+	}
 
-	#tier_0 = {
-	#	upgrade_time = {
-	#		months = 0
-	#	}
-	#	cost_to_upgrade = {
-	#		factor = 0
-	#	}
-	#	province_modifiers = {
-	#	}
-	#	area_modifier = {
-	#	}
-	#	country_modifiers = {
-	#	}
-	#	on_upgraded = {
-	#	}
-	#}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
 
-	#tier_1 = {
-	#	upgrade_time = {
-	#		months = 120
-	#	}
-	#	cost_to_upgrade = {
-	#		factor = 1000
-	#	}
-	#	province_modifiers = {
-	#		trade_goods_size = 2.0
-	#	}
-	#	area_modifier = {
-	#		local_build_cost = -0.05
-	#		local_build_time = -0.05
-	#	}
-	#	country_modifiers = {		
-	#	global_unrest = 2		
-	#	}
-	#	on_upgraded = {
-	#	add_base_tax = -100
-	#	add_base_production = -100
-	#	add_base_manpower = -100
-	#	add_devastation = 25
-	#	}
-	#}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		local_unrest = 5
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+		raze_power_gain = 0.10		
+		}
+		on_upgraded = {
+		}
+	}
 
-	#tier_2 = {
-	#	upgrade_time = {
-	#		months = 240
-	#	}
-	#	cost_to_upgrade = {
-	#		factor = 2500
-	#	}
-	#	province_modifiers = {
-	#		trade_goods_size = 3.0
-	#	}
-	#	area_modifier = {
-	#		local_build_cost = -0.1
-	#		local_build_time = -0.1
-	#	}
-	#	country_modifiers = {
-	#	global_unrest = 4
-			
-	#	}
-	#	on_upgraded = {
-	#	add_base_tax = -100
-	#	add_base_production = -100
-	#	add_base_manpower = -100
-	#	add_devastation = 50
-	#	}
-	#}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+				local_unrest = 10
+		}
+		area_modifier = {
 
-	#tier_3 = {
-	#	upgrade_time = {
-	#		months = 480
-	#	}
-	#	cost_to_upgrade = {
-	#		factor = 5000
-	#	}
-	#	province_modifiers = {
-	#		trade_goods_size = 4.0
-	#	}
-	#	area_modifier = {
-	#		local_build_cost = -0.2
-	#		local_build_time = -0.2
-	#	}
-	#	country_modifiers = {
-	#	global_unrest = 8
-			
-	#	}
-	#	on_upgraded = {
-	#	change_trade_goods = damestear
-	#	set_province_flag = permanent_damestear
-	#	add_base_tax = -100
-	#	add_base_production = -100
-	#	add_base_manpower = -100
-	#	add_devastation = 100
-	#	}
-	#}
-#}
+		}
+		country_modifiers = {
+		raze_power_gain = 0.20	
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		local_unrest = 15
+		}
+		area_modifier = {
+
+		}
+		country_modifiers = {
+		raze_power_gain = 0.30
+		missionaries = 1
+		}
+		on_upgraded = {
+
+		}
+	}
+}
 
