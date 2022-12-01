@@ -14,7 +14,7 @@ country_decisions = {
 					AND={
 						has_province_modifier = human_hold_3
 						OR = {
-							#tag = M01
+							tag = M01
 							ROOT = {
 								mission_completed = marrhold_hole
 							}	
