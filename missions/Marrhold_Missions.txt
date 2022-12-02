@@ -1843,7 +1843,7 @@ griffon_empire_events = {
 
 	ge_from_ashes = {
 		icon = mission_torch_fire
-		position = 1
+		position = 19
 		required_missions = { marrhold_griffon_king } 
 		provinces_to_highlight = {  } 
 
@@ -1859,7 +1859,7 @@ griffon_empire_events = {
 
 	ge_imperial_culture = {
 		icon = la_marseillaise
-		position = 1
+		position = 20
 		required_missions = { ge_from_ashes } 
 		provinces_to_highlight = {  } 
 
@@ -1888,12 +1888,12 @@ griffon_empire_events = {
 
 	ge_biggest_human_capital = {
 		icon = mission_mechanical_mining
-		position = 1
+		position = 21
 		required_missions = { ge_imperial_culture } 
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			4096 = {
+			4097 = {
 				has_great_project = {
 					type = marrhold_gate_to_the_serpentspine
 					tier = 3
@@ -1919,7 +1919,7 @@ griffon_empire_events = {
 
 	ge_the_new_death_ring = {
 		icon = mission_great_wall
-		position = 1
+		position = 22
 		required_missions = {
 			ge_biggest_human_capital
 			ge_inner_castanor
@@ -1936,7 +1936,7 @@ griffon_empire_events = {
 
 	ge_an_empire_forged = {
 		icon = give_him_back_his_legions
-		position = 1
+		position = 25
 		required_missions = {
 			ge_the_new_death_ring
 			ge_new_chief_of_army
@@ -1966,11 +1966,16 @@ griffon_empire_expand = {
 
 	ge_inner_castanor = {
 		icon = mission_temple_patronage
-		position = 1
+		position = 21
 		required_missions = { ge_imperial_culture } 
 		provinces_to_highlight = {  } 
 
-		trigger = { owns_all_provinces = { region = inner_castanor_region }  } 
+		trigger = {
+			inner_castanor_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 
 		effect = {
 			merescker_area = {
@@ -2020,15 +2025,22 @@ griffon_empire_expand = {
 
 	ge_west_castanor_1 = {
 		icon = mission_cannons_firing
-		position = 1
+		position = 22
 		required_missions = { ge_inner_castanor } 
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			owns_all_provinces = {
-				area = merescker_area
-				area = northmerewood_area
-				area = upcreek_area
+			merescker_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northmerewood_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upcreek_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 
@@ -2073,12 +2085,21 @@ griffon_empire_expand = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = { owns_all_provinces = { region = west_castanor_region }  } 
+		trigger = {
+			west_castanor_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 
 		effect = {
 			add_country_modifier = {
 				name = "ge_unifier_of_Castanor"
 				duration = 3650
+			}
+			country_event = {
+				id = flavor_griffon_empire.3
+				days = 1
 			}
 		}
 	}
@@ -2095,15 +2116,21 @@ griffon_empire_misc = {
 
 	ge_west_castanor_2 = {
 		icon = mission_cossack_cavalry
-		position = 1
-		required_missions = { ge_inner_castanor } 
+		position = 23
+		required_missions = { ge_west_castanor_1 } 
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			owns_all_provinces = {
-				area = silvervord_area
-				area = westwall_approach_area
-				area = ebonmarck_area
+			area = silvervord_area
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+			westwall_approach_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ebonmarck_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 
@@ -2151,7 +2178,7 @@ griffon_empire_industry = {
 
 	ge_cheap_iron = {
 		icon = mission_spoils_of_war
-		position = 1
+		position = 21
 		required_missions = { ge_imperial_culture } 
 		provinces_to_highlight = {  } 
 
@@ -2177,7 +2204,7 @@ griffon_empire_industry = {
 
 	ge_a_need_for_meat = {
 		icon = mission_thirsting_queen
-		position = 1
+		position = 22
 		required_missions = { ge_cheap_iron } 
 		provinces_to_highlight = {  } 
 
@@ -2200,7 +2227,7 @@ griffon_empire_industry = {
 
 	ge_reap_profit = {
 		icon = mission_establish_mint_towns
-		position = 1
+		position = 23
 		required_missions = { ge_a_need_for_meat } 
 		provinces_to_highlight = {  } 
 
@@ -2231,7 +2258,7 @@ griffon_empire_mil_tech = {
 
 	ge_integrating_griffon_companies = {
 		icon = mission_conquer_5_states
-		position = 1
+		position = 22
 		required_missions = {
 			ge_cheap_iron
 			marrhold_Plan_B
@@ -2247,7 +2274,7 @@ griffon_empire_mil_tech = {
 		effect = {
 			add_country_modifier = {
 				name = "ge_integrate_griffon_mercs"
-				duration = 1
+				duration = -1
 			}
 			add_treasury = -3000
 		}
@@ -2255,7 +2282,7 @@ griffon_empire_mil_tech = {
 
 	ge_feather_academy = {
 		icon = mission_develop_the_capital
-		position = 1
+		position = 23
 		required_missions = { ge_integrating_griffon_companies } 
 		provinces_to_highlight = {  } 
 
@@ -2286,7 +2313,7 @@ griffon_empire_mil_tech = {
 
 	ge_new_chief_of_army = {
 		icon = mission_corin
-		position = 1
+		position = 24
 		required_missions = { ge_feather_academy } 
 		provinces_to_highlight = {  } 
 
@@ -2298,30 +2325,29 @@ griffon_empire_mil_tech = {
 
 		effect = {
 			custom_tooltip = {
-				#Robyn Drakesford is signing for duty
 				random_list = {
-						50 = {
-							define_general = {
-								shock = 8
-								fire = 6
-								manuever = 8
-								siege = 4
-								name = "Robyn Drakesford"
-								female = yes 
-								trait = cannonner
-								age = 25
-							}
+					50 = {
+						define_general = {
+							shock = 8
+							fire = 6
+							manuever = 8
+							siege = 4
+							name = "Robyn Drakesford"
+							female = yes
+							trait = cannonner
+							age = 25
 						}
-						50 = { 
-							define_general = {
-								shock = 8
-								fire = 6
-								manuever = 8
-								siege = 4
-								name = "Robyn Drakesford"
-								female = no
-								trait = cannonner
-								age = 25
+					}
+					50 = {
+						define_general = {
+							shock = 8
+							fire = 6
+							manuever = 8
+							siege = 4
+							name = "Robyn Drakesford"
+							female = no
+							trait = cannonner
+							age = 25
 						}
 					}
 				}
@@ -2329,4 +2355,3 @@ griffon_empire_mil_tech = {
 		}
 	}
 }
-
