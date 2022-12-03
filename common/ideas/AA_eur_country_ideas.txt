@@ -1066,9 +1066,8 @@ B43_ideas = {
 #Griffon Empire ideas
 M01_ideas = {
 	start = {
-		cav_flanking = 1					#You are flying around your enemies.
+		cavalry_flanking = 1				#You are flying around your enemies.
 		cavalry_power = 0.25				#This makes your empire's military might.
-		may_recruit_female_generals = yes	#Both man and Woman proved itself during the Greentide
 	}
 	
 	bonus = {
@@ -1091,6 +1090,7 @@ M01_ideas = {
 	}
 	M01_four = {
 		general_cost = -0.25				#The Feather Academy gives a lot of potential generals
+		may_recruit_female_generals = yes	#Both man and Woman proved itself during the Greentide
 	}
 	M01_five = {
 		production_efficiency = 0.1			#The Dwarven artificers are helping the economy

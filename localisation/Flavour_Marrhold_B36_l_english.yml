@@ -161,6 +161,24 @@
  marrhold_fallen_friend_title:0 "Fallen Friend Memorial"
  marrhold_fallen_friend_desc:0 "Castonath is not only historically relevant because of its status as capital of Castanor. It was also site of the pivotal battle in the Greentide, the Battle of Castonath, where Corin slayed Dookanson and crushed the Vanguard of the Greentide.\n\nAlso fighting there was our famous king Gryf ‘The Young’, a hero of the Greentide in his own right. He slayed dozens of orcs alongside the Griffon Knights that accompanied him, but ultimately lost his beloved griffon mount and friend, Seovol, in the process.\n\nLet us honour their sacrifice with a monument for all to see, so that their glory may never be forgotten."
 
+ ge_integrating_griffon_companies_title:0 "Integrating the Companies"
+ ge_integrating_griffon_companies_desc:0 ""
+
+ ge_feather_academy_title:0 "The Strongest Feathers"
+ ge_feather_academy_desc:0 ""
+
+ ge_new_chief_of_army_title:0 "A New Chief of Army"
+ ge_new_chief_of_army_desc:0 ""
+
+ ge_cheap_iron_title:0 "A Griffon's Iron Talons"
+ ge_cheap_iron_desc:0 ""
+
+ ge_a_need_for_meat_title:0 "A Need for Meat"
+ ge_a_need_for_meat_desc:0 ""
+
+ ge_reap_profit_title:0 "Reap the Siphon's Profit"
+ ge_reap_profit_desc:0 ""
+
  ge_from_ashes_title:0 "From The Ashes"
  ge_from_ashes_desc:0 ""
 
@@ -187,24 +205,6 @@
 
  ge_west_castanor_2_title:0 "The Western Frontier"
  ge_west_castanor_2_desc:0 ""
-
- ge_cheap_iron_title:0 "A Griffon's Iron Talons"
- ge_cheap_iron_desc:0 ""
-
- ge_a_need_for_meat_title:0 "A Need for Meat"
- ge_a_need_for_meat_desc:0 ""
-
- ge_reap_profit_title:0 "Reap the Siphon's Profit"
- ge_reap_profit_desc:0 ""
-
- ge_integrating_griffon_companies_title:0 "Integrating the Companies"
- ge_integrating_griffon_companies_desc:0 ""
-
- ge_feather_academy_title:0 "The Strongest Feathers"
- ge_feather_academy_desc:0 ""
-
- ge_new_chief_of_army_title:0 "A New Chief of Army"
- ge_new_chief_of_army_desc:0 ""
 
 
  unlock_merc_marrhold_griffon_knight_tt:0 "Unlock the mercenary company §YGriffon Knights§! to recruit"

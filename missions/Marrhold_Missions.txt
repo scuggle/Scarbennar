@@ -1831,6 +1831,177 @@ marrhold_five = {
 		}
 	}
 }
+griffon_empire_mil_tech = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = M01
+		was_tag = B36
+	}
+
+	ge_integrating_griffon_companies = {
+		icon = mission_conquer_5_states
+		position = 22
+		required_missions = {
+			ge_cheap_iron
+			marrhold_Plan_B
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			army_professionalism = 1
+			army_tradition = 100
+			treasury = 3000
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "ge_integrate_griffon_mercs"
+				duration = -1
+			}
+			add_treasury = -3000
+		}
+	}
+
+	ge_feather_academy = {
+		icon = mission_develop_the_capital
+		position = 23
+		required_missions = { ge_integrating_griffon_companies } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			896 = {
+				has_great_project = {
+					type = marrhold_feather_academy
+					tier = 3
+				}
+			}
+			num_of_owned_provinces_with = {
+				has_building = university
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+				value = 15
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "ge_new_tactics_and_admin"
+				duration = 5475
+			}
+		}
+	}
+
+	ge_new_chief_of_army = {
+		icon = mission_corin
+		position = 24
+		required_missions = { ge_feather_academy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			had_mission_completed = ge_feather_academy
+			years = 10
+			army_professionalism = 1
+		}
+
+		effect = {
+			define_general = {
+				shock = 8
+				fire = 6
+				manuever = 8
+				siege = 4
+				name = "Robyn Drakesford"
+				female = yes
+				trait = cannonner
+				age = 25
+			}
+		}
+	}
+}
+
+griffon_empire_industry = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = M01
+		was_tag = B36
+	}
+
+	ge_cheap_iron = {
+		icon = mission_spoils_of_war
+		position = 21
+		required_missions = { ge_imperial_culture } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				production_leader = { trade_goods = iron } 
+				all_owned_province = {
+					trade_goods = iron
+					has_building = weapons
+					development = 10
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "ge_cheap_regiment"
+				duration = 7300
+			}
+		}
+	}
+
+	ge_a_need_for_meat = {
+		icon = mission_thirsting_queen
+		position = 22
+		required_missions = { ge_cheap_iron } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			all_owned_province = {
+				trade_goods = livestock
+				has_building = farm_estate
+				development = 10
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "ge_fresh_supply"
+				duration = 3650
+			}
+		}
+	}
+
+	ge_reap_profit = {
+		icon = mission_establish_mint_towns
+		position = 23
+		required_missions = { ge_a_need_for_meat } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			4096 = {
+				has_great_project = {
+					type = marrhold_tunnel
+					tier = 3
+				}
+			}
+		}
+
+		effect = {
+			add_dip_power = 100
+			add_years_of_income = 5
+		}
+	}
+}
+
 griffon_empire_events = {
 	slot = 3
 	generic = no
@@ -1954,6 +2125,7 @@ griffon_empire_events = {
 		}
 	}
 }
+
 griffon_empire_expand = {
 	slot = 4
 	generic = no
@@ -1985,7 +2157,7 @@ griffon_empire_expand = {
 				}
 				add_permanent_claim = ROOT
 			}
-			northmerewood_area = {
+			nortmerewood_area = {
 				limit = {
 					NOT = { is_core = ROOT } 
 					NOT = { is_permanent_claim = ROOT } 
@@ -2034,7 +2206,7 @@ griffon_empire_expand = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northmerewood_area = {
+			nortmerewood_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2075,7 +2247,6 @@ griffon_empire_expand = {
 			}
 		}
 	}
-
 	ge_west_castanor_finish = {
 		icon = mission_crusade_for_varna
 		position = 24
@@ -2104,6 +2275,7 @@ griffon_empire_expand = {
 		}
 	}
 }
+
 griffon_empire_misc = {
 	slot = 5
 	generic = no
@@ -2117,13 +2289,15 @@ griffon_empire_misc = {
 	ge_west_castanor_2 = {
 		icon = mission_cossack_cavalry
 		position = 23
-		required_missions = { ge_west_castanor_1 } 
+		required_missions = { } 
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			area = silvervord_area
-			type = all
-			country_or_non_sovereign_subject_holds = ROOT
+			mission_completed = ge_inner_castanor
+			silvervord_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			westwall_approach_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2162,195 +2336,6 @@ griffon_empire_misc = {
 					NOT = { is_permanent_claim = ROOT } 
 				}
 				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
-griffon_empire_industry = {
-	slot = 2
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = M01
-		was_tag = B36
-	}
-
-	ge_cheap_iron = {
-		icon = mission_spoils_of_war
-		position = 21
-		required_missions = { ge_imperial_culture } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			OR = {
-				production_leader = { trade_goods = iron } 
-				owns_all_provinces = {
-					limit = { tag = ROOT } 
-					trade_goods = iron
-					has_building = weapons
-					development = 10
-				}
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "ge_cheap_regiment"
-				duration = 7300
-			}
-		}
-	}
-
-	ge_a_need_for_meat = {
-		icon = mission_thirsting_queen
-		position = 22
-		required_missions = { ge_cheap_iron } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			owns_all_provinces = {
-				limit = { tag = ROOT } 
-				trade_goods = livestock
-				has_building = farm_estate
-				development = 10
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "ge_fresh_supply"
-				duration = 3650
-			}
-		}
-	}
-
-	ge_reap_profit = {
-		icon = mission_establish_mint_towns
-		position = 23
-		required_missions = { ge_a_need_for_meat } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			4096 = {
-				has_great_project = {
-					type = marrhold_tunnel
-					tier = 3
-				}
-			}
-		}
-
-		effect = {
-			add_dip_power = 100
-			add_years_of_income = 5
-		}
-	}
-}
-griffon_empire_mil_tech = {
-	slot = 1
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = M01
-		was_tag = B36
-	}
-
-	ge_integrating_griffon_companies = {
-		icon = mission_conquer_5_states
-		position = 22
-		required_missions = {
-			ge_cheap_iron
-			marrhold_Plan_B
-		}
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			army_professionalism = 1
-			army_tradition = 100
-			treasury = 3000
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "ge_integrate_griffon_mercs"
-				duration = -1
-			}
-			add_treasury = -3000
-		}
-	}
-
-	ge_feather_academy = {
-		icon = mission_develop_the_capital
-		position = 23
-		required_missions = { ge_integrating_griffon_companies } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			896 = {
-				has_great_project = {
-					type = marrhold_feather_academy
-					tier = 3
-				}
-			}
-			num_of_owned_provinces_with = {
-				has_building = university
-				OR = {
-					has_building = courthouse
-					has_building = town_hall
-				}
-				value = 15
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "ge_new_tactics_and_admin"
-				duration = 5475
-			}
-		}
-	}
-
-	ge_new_chief_of_army = {
-		icon = mission_corin
-		position = 24
-		required_missions = { ge_feather_academy } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			had_mission_completed = ge_feather_academy
-			years = 10
-			army_professionalism = 1
-		}
-
-		effect = {
-			custom_tooltip = {
-				random_list = {
-					50 = {
-						define_general = {
-							shock = 8
-							fire = 6
-							manuever = 8
-							siege = 4
-							name = "Robyn Drakesford"
-							female = yes
-							trait = cannonner
-							age = 25
-						}
-					}
-					50 = {
-						define_general = {
-							shock = 8
-							fire = 6
-							manuever = 8
-							siege = 4
-							name = "Robyn Drakesford"
-							female = no
-							trait = cannonner
-							age = 25
-						}
-					}
-				}
 			}
 		}
 	}
