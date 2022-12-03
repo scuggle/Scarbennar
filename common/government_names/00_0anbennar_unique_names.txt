@@ -2757,3 +2757,27 @@ luciande_lord_names = {
 		has_reform = luciande_lucians_domain_reform
 	}
 }
+
+voltenu_corp_names = {
+	rank = {
+		1 = CORPORATION
+		2 = CONGLOMERATE
+		3 = MEGACORP
+	}
+	
+	ruler_male = {
+		1 = CEO
+		2 = CEO
+		3 = CEO
+	}
+
+		ruler_female = {
+ 		1 = CEO
+ 		2 = CEO
+ 		3 = CEO
+ 	}
+	trigger = {
+		government = republic
+		has_reform = voltenu_corpocracy
+	}
+}
