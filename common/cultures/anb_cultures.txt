@@ -498,6 +498,25 @@ escanni = {
 		primary = B62 #Moredhal
 	}
 
+	imperial_marr = {	#the western plains dudes
+		primary = M01 #Griffon Empire
+
+		dynasty_names = {
+			Griffonmark Griffonhill "of Marrhold" Marr Marrod Griffonsgate Marrhyl "sina Marrton" "of Thadston" "of Falcon's Nest" "of Tailfeather" "of Endicott" "of Newton" "of Ridley" "of Winfield"
+			Gerwick "of Vanbury" Eaglecrest Fludd Lodan Feycombe Wightsgate Humbercroft Ginnfield Derwing Alainson Cottersea Leapdon Brontay Beron Cockerwall Edgemoor Fouler Lonevalley Greenley "of Alenath" 
+			Norleigh "of Morban" Jonsway Mossford Oudesker Wolfden Aldtempel Gardfort Drakesford Somberwold Westfield Baldfather Alenfield "of the Greatmarch"
+		}
+		male_names = {
+			Acromar Adelar Alain Alen Arnold Camir Camor Canrec Carlan Celgal Ciramod Clarimond Clothar Colyn Coreg Crovan Crovis 
+			Corac Corric Dalyon Delia Delian Devac Devan Dustyn Elecast Frederic Godrac Godric Godryc Godwin Gracos Henric Humac Humban 
+			Humbar Humbert Jacob Lain Lan Madalac Marcan Ottrac Ottran Petran Peyter Rabac Rabard Rican Rycan Ricard Rogec Roger Stovac 
+			Stovan Teagan Tomac Toman Tomar Tormac Ulric Venac Vencan Walter Welyam Wystan Bellac Robyn
+		}
+		female_names = {
+			Robyn Auci Bella Clarimonde Clarya Clothilde Constance Coralinde Cora Dalya Etta Humba Lisban Lisbet Madala Magda Matilda Adela Alice Anna Anne Catherine Edith Eleanor Elenor Emma
+		}
+	}
+
 	dynasty_names = {
 		"of Oldhaven" "s�l Burnoll" "s�l Cast" "s�l Anor" "s�l Acenth�n"
 		

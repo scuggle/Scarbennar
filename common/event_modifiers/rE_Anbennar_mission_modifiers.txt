@@ -7,7 +7,7 @@ ge_abundance_of_stone = {
 }
 
 ge_admin_eff_empire = {
-	administrative_efficency = 0.2
+	administrative_efficency = 0.05
 }
 
 ge_integrate_griffon_mercs = {
@@ -32,4 +32,12 @@ ge_fresh_supply = {
 ge_unifier_of_castanor = {
 	improve_relation_modifier = 0.2
 	diplomatic_reputation = 1
+}
+
+ge_imperial_culture_mod = {
+	ae_impact = -0.15
+}
+
+ge_culture_conversion_mod = {
+	culture_conversion_cost = -0.15
 }
