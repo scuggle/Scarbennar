@@ -41,3 +41,8 @@ ge_imperial_culture_mod = {
 ge_culture_conversion_mod = {
 	culture_conversion_cost = -0.15
 }
+
+ge_the_new_death_ring_mod = {
+	local_defensiveness = 0.25
+	picture = white_wall_2
+}
