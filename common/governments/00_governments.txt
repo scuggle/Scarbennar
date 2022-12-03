@@ -595,6 +595,7 @@ republic = {
 				anisikheioni_naval_stratocracy
 				concord_administration_reform
 				theinosi_synkletos
+				voltenu_corpocracy
 			}
 		}
 		republican_virtues = { #Tier 2
