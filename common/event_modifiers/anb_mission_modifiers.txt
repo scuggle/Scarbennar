@@ -12351,16 +12351,20 @@ elikhand_entef_resurgent = {
 #Escann Goblins
 
 goblin_force_to_defend = {
-	land_morale = 0.05
+	land_morale = 0.10
+	tribal_development_growth = 0.02
+
 }
 
 goblin_learning_from_new_neighbors = {
 	monthly_reform_progress = 0.2
+	tribal_development_growth = 0.02
 }
 
 goblin_escann_ingenuity = {
 	technology_cost = -0.10
 	monthly_reform_progress = 0.15
+	tribal_development_growth = 0.02
 }
 
 goblin_keeping_up = {
@@ -12374,6 +12378,7 @@ goblin_tools_for_the_army = {
 
 goblin_sharing_supplies = {
 	land_maintenance_modifier = -0.10
+	tribal_development_growth = 0.02
 }
 
 goblin_reaching_out = {
@@ -12443,6 +12448,7 @@ goblin_flung_head_legacy = {
 goblin_no_more_backstabbing = {
 	global_spy_defence = 0.1
 	discipline = 0.05
+	tribal_development_growth = 0.02
 }
 
 goblin_safe_homes = {
