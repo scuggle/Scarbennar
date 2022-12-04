@@ -1247,58 +1247,58 @@ stake_our_claim = {
 	custom_attributes = {
 		conquer_settled_land = yes
 	}
-	effect = {
-		custom_tooltip = claim_all_adjacent_monster_tt
-		hidden_effect = {
-			capital_scope = {
-				tribal_owner = {
-					if = {
-						limit = { ai = yes }
-						country_event = { id = adventurer.4 } # Don't sent yourself the event if you're not an AI
-					}
-				}
-				change_tribal_land = ROOT
-				# Take monsters tribal land
-				every_empty_neighbor_province = {
-					limit = { 
-						tribal_owner = { 
-							is_greentide_horde = yes  # For some reason checking for the modifier doesn't work
-						} 
-					}
-					tribal_owner = {
-						country_event = { id = adventurer.4 }
-					}
-					change_tribal_land = ROOT
-					if = {
-						limit = { ROOT = { ai = no } }
-						ROOT = {
-							add_adm_power = -50
-							add_treasury = -100
-						}
-					}
-				}
-				# Take monster tribal land
-				every_empty_neighbor_province = {
-						# Don't remove the NOT and change to an exists = no. You CANNOT scope to a tag that does not exist so this is the only way this works.
-					limit = {
-						NOT = {
-							tribal_owner = { 
-								exists = yes
-							}
-						}
-					}
-					change_tribal_land = ROOT
-					if = {
-						limit = { ROOT = { ai = no } }
-						ROOT = {
-							add_adm_power = -50
-							add_treasury = -100
-						}
-					}
-				}
-			}
-		}
-	}
+	# effect = {
+	# 	custom_tooltip = claim_all_adjacent_monster_tt
+	# 	hidden_effect = {
+	# 		capital_scope = {
+	# 			tribal_owner = {
+	# 				if = {
+	# 					limit = { ai = yes }
+	# 					country_event = { id = adventurer.4 } # Don't sent yourself the event if you're not an AI
+	# 				}
+	# 			}
+	# 			change_tribal_land = ROOT
+	# 			# Take monsters tribal land
+	# 			every_empty_neighbor_province = {
+	# 				limit = { 
+	# 					tribal_owner = { 
+	# 						is_greentide_horde = yes  # For some reason checking for the modifier doesn't work
+	# 					} 
+	# 				}
+	# 				tribal_owner = {
+	# 					country_event = { id = adventurer.4 }
+	# 				}
+	# 				change_tribal_land = ROOT
+	# 				if = {
+	# 					limit = { ROOT = { ai = no } }
+	# 					ROOT = {
+	# 						add_adm_power = -50
+	# 						add_treasury = -100
+	# 					}
+	# 				}
+	# 			}
+	# 			# Take monster tribal land
+	# 			every_empty_neighbor_province = {
+	# 					# Don't remove the NOT and change to an exists = no. You CANNOT scope to a tag that does not exist so this is the only way this works.
+	# 				limit = {
+	# 					NOT = {
+	# 						tribal_owner = { 
+	# 							exists = yes
+	# 						}
+	# 					}
+	# 				}
+	# 				change_tribal_land = ROOT
+	# 				if = 	{
+	# 					limit = { ROOT = { ai = no } }
+	# 					ROOT = 	{
+	# 						add_adm_power = -50
+	# 						add_treasury = -100
+	# 							}
+	# 						}
+	# 			}
+	# 		}
+	# 	}
+	# }
 	lock_level_when_selected = yes
 
 	ai = {
