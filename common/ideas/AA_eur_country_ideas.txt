@@ -1105,6 +1105,7 @@ M01_ideas = {
 
 ##COT###
 
+
 V02_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
 	start = {
 		hostile_attrition = 2

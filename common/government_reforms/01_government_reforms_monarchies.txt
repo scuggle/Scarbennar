@@ -7183,7 +7183,6 @@ techno_monarchy_reform = { #CoT Ashscale
 		enables_aristocratic_idea_group = no
 		is_technocracy = yes
 		maintain_dynasty = yes
-		queen = no
 	}
 	effect = {
 		add_country_modifier = {
