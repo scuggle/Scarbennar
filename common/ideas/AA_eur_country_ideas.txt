@@ -1102,3 +1102,54 @@ M01_ideas = {
 
 #Modified the Pashainé ideas in the r/Europe mod
 #Would need to make it a new formable with decision to make it work standalone
+
+##COT###
+
+V02_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
+	start = {
+		hostile_attrition = 2
+		enemy_core_creation = 0.5
+	}
+
+	bonus = {
+		fire_damage = 0.15
+	}
+
+	trigger = {
+		OR = {
+			tag = V02
+		}	
+	}
+
+	free = yes
+
+	V02_1 = { #The Great Project
+		build_cost = -0.15
+	}
+
+	V02_2 = { #Serpentspine Undercities
+		development_cost = -0.10
+	}
+
+	V02_3 = { #Shanty Garrison
+		garrison_size = 0.33
+		defensiveness = 0.25
+	}
+
+	V02_4 = { #Teeming Masses
+		land_forcelimit_modifier = 0.20
+		global_manpower_modifier = 0.10
+	}
+
+	V02_5 = { #Breath of the Dragonforge
+		artillery_power = 0.15
+	}
+
+	V02_6 = { #Servants of the Mecha-Dragon
+		tolerance_own = 2
+	}
+
+	V02_7 = { #Draconic Rule
+		max_absolutism = 20
+	}
+}

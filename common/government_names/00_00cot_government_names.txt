@@ -1,0 +1,95 @@
+seiranar_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = ARKON
+		2 = ARKON
+		3 = ARKON
+	}
+
+	ruler_female = {
+		1 = ARKENA
+		2 = ARKENA
+		3 = AKHENA
+	}
+
+	consort_male  = {
+		1 = DEKON
+		2 = DEKON
+		3 = DEKON
+	}
+
+	consort_female = {
+		1 = DEKENA
+		2 = DEKENA
+		3 = DEKENA
+	}
+	
+	heir_male = {
+		1 = SEIR_HEIR_M
+		2 = SEIR_HEIR_M
+		3 = SEIR_HEIR_M
+	}
+
+	heir_female = {
+		1 = SEIR_HEIR_F
+		2 = SEIR_HEIR_F
+		3 = SEIR_HEIR_F
+	}
+
+	trigger = {
+		has_reform = seiranari_monarchy_reform
+	}
+}
+
+ashscale_techno_monarchy = {
+	rank = {
+		1 = ZUTARZAN
+		2 = ZUTARZAN
+		3 = ZUTARZAN
+	}
+
+	ruler_male = {
+		1 = TINKERCOUNT
+		2 = TINKERKING
+		3 = TINKEREMPEROR
+	}
+
+	ruler_female = {
+		1 = TINKERCOUNTESS
+		2 = TINKERQUEEN
+		3 = TINKEREMPRESS
+	}
+
+	consort_male  = {
+		1 = ASSISTANTCOUNT
+		2 = ASSISTANTKING
+		3 = ASSISTANTEMPEROR
+	}
+
+	consort_female = {
+		1 = ASSISTANCOUNTESS
+		2 = ASSISTANTQUEEN
+		3 = ASSISTANTEMPRESS
+	}
+	
+	heir_male = {
+		1 = FIRSTAPPRENTICE
+		2 = FIRSTAPPRENTICE
+		3 = FIRSTAPPRENTICE
+	}
+
+	heir_female = {
+		1 = FIRSTAPPRENTICE
+		2 = FIRSTAPPRENTICE
+		3 = FIRSTAPPRENTICE
+	}
+
+	trigger = {
+		has_reform = techno_monarchy_reform
+	}
+}

@@ -1,9 +1,10 @@
 
-
-
-
-culture = cave_goblin
-religion = goblinic_shamanism
+owner = V01
+controller = V01
+add_core = V01
+is_city = yes
+culture = redscale_kobold
+religion = kobold_dragon_cult
 trade_goods = unknown
 hre = no
 base_tax = 1 

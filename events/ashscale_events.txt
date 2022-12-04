@@ -1,0 +1,662 @@
+
+namespace = ash_flavour_events
+
+country_event = { #Religious Turmoil
+	id = ash_flavour_events.1
+	title = ash_flavour_events.1.t
+	desc = ash_flavour_events.1.d
+	picture = KOBOLD_HOARD_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ash_flavour_events.1.a
+		change_religion = ravelian
+		add_country_modifier = {
+			name = ash_converted
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = ash_flavour_events.1.b
+		change_religion = the_thought
+		add_country_modifier = {
+			name = ash_converted
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = ash_flavour_events.1.c
+		add_country_modifier = {
+			name = ash_resisted
+			duration = -1
+		}
+	}
+
+}
+
+country_event = { #Mecha-Dragon start
+	id = ash_flavour_events.2
+	title = ash_flavour_events.2.t
+	desc = ash_flavour_events.2.d
+	picture = KOBOLD_HOARD_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ash_flavour_events.2.a
+		hidden_effect = {
+			country_event = {
+				id = ash_flavour_events.3
+				days = 500
+			}
+			set_variable = {
+				which = mechaDesignHead
+				value = 0
+			}
+			set_variable = {
+				which = mechaDesignTorso
+				value = 0
+			}
+			set_variable = {
+				which = mechaDesignLegs
+				value = 0
+			}
+		}
+		custom_tooltip = ash_mech_beginn
+		add_treasury = -300
+	}
+
+	option = {
+		name = ash_flavour_events.2.b
+		custom_tooltip = ash_mech_abandoned
+	}
+	
+}
+
+country_event = { #Mecha-Dragon head
+	id = ash_flavour_events.3
+	title = ash_flavour_events.3.t
+	desc = ash_flavour_events.3.d
+	picture = KOBOLD_HOARD_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ash_flavour_events.3.a
+		add_adm_power = -200
+		hidden_effect = {
+			change_variable = {
+				which = mechaDesignHead
+				value = 1
+			}
+
+			country_event = {
+				id = ash_flavour_events.4
+				days = 500
+			}
+		}
+	}
+
+	option = {
+		name = ash_flavour_events.3.b
+		add_dip_power = -200
+		hidden_effect = {
+			change_variable = {
+				which = mechaDesignHead
+				value = 2
+			}
+
+			country_event = {
+				id = ash_flavour_events.4
+				days = 500
+			}
+		}
+	}
+
+	option = {
+		name = ash_flavour_events.3.c
+		add_mil_power = -200
+		hidden_effect = {
+			change_variable = {
+				which = mechaDesignHead
+				value = 3
+			}
+
+			country_event = {
+				id = ash_flavour_events.4
+				days = 500
+			}
+		}
+	}
+}
+
+country_event = { #Mecha-Dragon Torso
+	id = ash_flavour_events.4
+	title = ash_flavour_events.4.t
+	desc = ash_flavour_events.4.d
+	picture = KOBOLD_HOARD_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ash_flavour_events.4.a
+		add_country_modifier = {
+			name = ash_tax
+			duration = -1
+		}
+		hidden_effect = {
+			change_variable = {
+				which = mechaDesignTorso
+				value = 1
+			}
+
+			country_event = {
+				id = ash_flavour_events.5
+				days = 500
+			}
+		}
+	}
+
+	option = {
+		name = ash_flavour_events.4.b
+		add_country_modifier = {
+			name = ash_produc
+			duration = -1
+		}
+		hidden_effect = {
+			change_variable = {
+				which = mechaDesignTorso
+				value = 2
+			}
+
+			country_event = {
+				id = ash_flavour_events.5
+				days = 500
+			}
+		}
+	}
+	
+
+	option = {
+		name = ash_flavour_events.4.c
+		add_country_modifier = {
+			name = ash_rec
+			duration = -1
+		}
+		hidden_effect = {
+			change_variable = {
+				which = mechaDesignTorso
+				value = 3
+			}
+
+			country_event = {
+				id = ash_flavour_events.5
+				days = 500
+			}
+		}
+	}
+
+		
+}
+
+
+country_event = { #Mecha-Dragon Legs
+	id = ash_flavour_events.5
+	title = ash_flavour_events.5.t
+	desc = ash_flavour_events.5.d
+	picture = KOBOLD_HOARD_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_country_modifier = ash_tax
+			}
+
+			remove_country_modifier = ash_tax
+		}
+
+		else_if = {
+			limit = {
+				has_country_modifier = ash_produc
+			}
+
+			remove_country_modifier = ash_produc
+		}
+
+		else = {
+			remove_country_modifier = ash_rec
+		}
+	}
+
+	option = {
+		name = ash_flavour_events.5.a
+		add_adm_power = -250
+		add_treasury = -300
+		hidden_effect = {
+			change_variable = {
+				which = mechaDesignLegs
+				value = 1
+			}
+
+			country_event = {
+				id = ash_flavour_events.6
+				days = 750
+			}
+		}
+	}
+
+	option = {
+		name = ash_flavour_events.5.b
+		add_dip_power = -250
+		add_treasury = -300
+		hidden_effect = {
+			change_variable = {
+				which = mechaDesignLegs
+				value = 2
+			}
+
+			country_event = {
+				id = ash_flavour_events.6
+				days = 750
+			}
+		}
+	}
+
+	option = {
+		name = ash_flavour_events.5.c
+		add_mil_power = -250
+		add_treasury = -300
+		hidden_effect = {
+			change_variable = {
+				which = mechaDesignLegs
+				value = 3
+			}
+
+			country_event = {
+				id = ash_flavour_events.6
+				days = 750
+			}
+		}
+	}
+}
+
+country_event = { #Mecha-Dragon finished
+	id = ash_flavour_events.6
+	title = ash_flavour_events.6.t
+	desc = ash_flavour_events.6.d
+	picture = KOBOLD_HOARD_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ash_flavour_events.6.a
+		if = {
+			limit = {
+				check_variable = {
+					which = mechaDesignHead
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = mechaDesignHead
+						value = 2
+					}
+				}
+			}
+			add_country_modifier = {
+				name = ash_head_adm
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+				which = mechaDesignHead
+				value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = mechaDesignHead
+						value = 3
+					}
+				}
+			}
+			add_country_modifier = {
+				name = ash_head_dip
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = mechaDesignHead
+					value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = mechaDesignHead
+							value = 4
+						}
+					}
+			}
+			add_country_modifier = {
+				name = ash_head_mil
+				duration = -1
+			}
+		}
+
+		if = {
+			limit = {
+				check_variable = {
+					which = mechaDesignTorso
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = mechaDesignTorso
+						value = 2
+					}
+				}
+			}
+			add_country_modifier = {
+				name = ash_torso_adm
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+				which = mechaDesignTorso
+				value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = mechaDesignTorso
+						value = 3
+					}
+				}
+			}
+			add_country_modifier = {
+				name = ash_torso_dip
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = mechaDesignTorso
+					value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = mechaDesignTorso
+							value = 4
+						}
+					}
+			}
+			add_country_modifier = {
+				name = ash_torso_mil
+				duration = -1
+			}
+		}
+
+		if = {
+			limit = {
+				check_variable = {
+					which = mechaDesignLegs
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = mechaDesignLegs
+						value = 2
+					}
+				}
+			}
+			add_country_modifier = {
+				name = ash_leg_adm
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+				which = mechaDesignLegs
+				value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = mechaDesignLegs
+						value = 3
+					}
+				}
+			}
+			add_country_modifier = {
+				name = ash_leg_dip
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = mechaDesignLegs
+					value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = mechaDesignLegs
+							value = 4
+						}
+					}
+			}
+			add_country_modifier = {
+				name = ash_leg_mil
+				duration = -1
+			}
+		}
+
+		country_event = {
+			id = ash_flavour_events.7
+			days = 1
+		}
+	}
+
+}
+
+country_event = { #Mecha-Dragon name
+	id = ash_flavour_events.7
+	title = ash_flavour_events.7.t
+	desc = ash_flavour_events.7.d
+	picture = KOBOLD_BALRIS_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ash_flavour_events.7.a
+		define_ruler = {
+			name = "Malekith"
+			dynasty = "the Wise"
+			adm = 6
+			dip = 5
+			mil = 5
+			age = 30
+			claim = 100
+			culture = mecha_dragon_kobold
+		}
+		add_ruler_personality = immortal_personality
+		add_ruler_personality =  free_thinker_personality
+		add_ruler_personality = just_personality
+	}
+
+	option = {
+		name = ash_flavour_events.7.b
+		define_ruler = {
+			name = "Pendragon"
+			dynasty = "the Alloyed"
+			adm = 5
+			dip = 6
+			mil = 5
+			age = 30
+			claim = 100
+			culture = mecha_dragon_kobold
+		}
+		add_ruler_personality = immortal_personality
+		add_ruler_personality = entrepreneur_personality
+		add_ruler_personality = architectural_visionary_personality
+	}
+
+	option = {
+		name = ash_flavour_events.7.c
+		define_ruler = {
+			name = "Zyssys"
+			dynasty = "the Eternal"
+			adm = 5
+			dip = 5
+			mil = 6
+			age = 30
+			claim = 100
+			culture = mecha_dragon_kobold
+		}
+		add_ruler_personality = immortal_personality
+		add_ruler_personality = martial_educator_personality
+		add_ruler_personality = conqueror_personality
+	}
+}
+
+country_event = { #A new Identity
+	id = ash_flavour_events.8
+	title = ash_flavour_events.8.t
+	desc = ash_flavour_events.8.d
+	picture = KOBOLD_HOARD_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ash_flavour_events.8.a
+		ROOT = {
+			change_tag = V02
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			hidden_effect = {
+				change_government = monarchy
+				set_government_rank = 2
+			}
+			add_government_reform = techno_monarchy_reform
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = kobold
+					}
+					change_culture = zutarzexi_kobold
+				}
+			}
+			if = {
+				limit = { 
+					AND = {
+						ruler_culture = ROOT
+						NOT = {
+							ruler_culture = mecha_dragon_kobold
+						}
+					}
+				}
+				set_ruler_culture = zutarzexi_kobold
+			}
+			if = {
+				limit = { has_heir = yes heir_culture = ROOT }
+				set_heir_culture = zutarzexi_kobold
+			}
+			if = {
+				limit = { has_consort = yes consort_culture = ROOT }
+				set_consort_culture = zutarzexi_kobold
+			}
+			change_primary_culture = zutarzexi_kobold
+		}
+	}
+}
+
+country_event = { #Ending Blackbeard
+	id = ash_flavour_events.9
+	title = ash_flavour_events.9.t
+	desc = {
+		trigger = {
+			H71 = {
+				exists = no
+			}
+		}
+		desc = ash_flavour_events.9.d.1
+	}
+	desc = {
+		trigger = {
+			H71 = {
+				exists = yes
+			}
+		}
+		desc = ash_flavour_events.9.d.2
+	}
+	picture = KOBOLD_HOARD_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ash_flavour_events.9.a
+		2973 = {
+			discover_country = ROOT
+		}
+		4093 = {
+			discover_country = ROOT
+		}
+	}
+}
+
+country_event = { #Discover a few provinces in the beginning
+	id = ash_flavour_events.10
+	title = ash_flavour_events.10.t
+	desc = ash_flavour_events.10.d
+	picture = KOBOLD_HOARD_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		OR = {
+			tag = V01
+			was_tag = V01
+		}
+		is_year = 1444
+	}
+
+	immediate = {
+		2949 = {
+			discover_country = V01
+		}
+		4036 = {
+			discover_country = V01
+		}
+		2951 = {
+			discover_country = V01
+		}
+	}
+
+	option = {
+		name = ash_flavour_events.10.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

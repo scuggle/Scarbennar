@@ -1502,6 +1502,11 @@ kobold = {
 	goldscale_kobold = {
 		primary = Y85 #Balrijin
 	}
+	zutarzexi_kobold = {
+		primary = V02 #Zutarzex
+	}
+	mecha_dragon_kobold = { #Zutarzex Mecha-Dragon Ruler
+	}
 	
 	dynasty_names = { 
 		Scalesinger Scalemaster Greatfang Sneakscale Dragontail Sharpjaw Trapsetter Trapkin Spikemaker Scaleburrow Spiketail Traptail
