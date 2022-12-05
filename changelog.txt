@@ -25,7 +25,7 @@ Changelog:
 3 new countries:
 - Silver Band (elven adventurer in Inner Castanor)
 - Falahen (harpies on the coast of Bahar)
-- Kusonsensu (hobgoblins in the west rahen gulf, releasable)
+- Kusonsesu (hobgoblins in the west rahen gulf, releasable)
 ----------------------------------------------------------------------------
 27 modified/added national idea sets:
 - Esmaria
@@ -48,4 +48,15 @@ Added CoT idea groups
 Added CoT generic MT
 ----------------------------------------------------------------------------
 Enforced 1/1/1 idea ratio
+----------------------------------------------------------------------------
+Escanni Adventurers can no longer take Tribal Land from Orcs and Goblins outside of a peace deal
+----------------------------------------------------------------------------
+Buffed Escanni Goblin MT
+----------------------------------------------------------------------------
+Changed Serpentspine Terrain Defender Bonus
+Roads           1 -> 0
+Caves           2 -> 1
+Surface Holds   2 -> 1
+----------------------------------------------------------------------------
+Changed Hoardcurse to be impossible to trigger
 ----------------------------------------------------------------------------
