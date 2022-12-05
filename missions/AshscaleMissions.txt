@@ -211,23 +211,23 @@ becoming_a_country_branch = {
 		}
 		position = 1
 		provinces_to_highlight = {
-			province_id = 4038
+			province_id = 4039
 		}
 		trigger = {
 			OR = {
 				treasury = 100
-				4038 = {
+				4039 = {
 					has_fort_building_trigger = yes 
 				}
 			}
 		}
 		effect = {
 			if = {
-				limit = { 4038= { has_fort_building_trigger = yes } }
+				limit = { 4039= { has_fort_building_trigger = yes } }
 				add_mil_power = 100
 			}
 			else = {
-				4038 = {
+				4039 = {
 					add_building_construction = {
 						building = fort_15th
 						speed = 0.5
