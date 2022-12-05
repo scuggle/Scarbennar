@@ -4,7 +4,7 @@ hoardcurse = {
 		ai = no
 		culture_group = dwarven
 		NOT = { has_country_flag = hoardcurse_happened }
-		total_development = 600
+		total_development = 60000 #Making it impossible to fire
 		OR = {
 			capital_scope = { continent = serpentspine }
 			AND = {
