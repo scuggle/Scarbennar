@@ -6495,7 +6495,7 @@ voltenu_corpocracy = {
 	}
 	trigger = {
 		OR = {
-			tag = X13
+			tag = X99
 		}
 	}
 	duration = 4
