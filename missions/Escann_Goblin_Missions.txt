@@ -451,7 +451,10 @@ EscannGob2 = {
 		effect = {
 			if = {
 				limit = {
-					tag = B43
+					OR = {
+   						is tag = B43
+   						was_tag = B43
+						}
 				}
 			add_country_modifier = {
 				name = "goblin_flying_hound_legacy"
@@ -460,7 +463,10 @@ EscannGob2 = {
 			}
 			if = {
 				limit = {
-					tag = B41
+					OR = {
+   						is tag = B41
+   						was_tag = B41
+						}
 				}
 			add_country_modifier = {
 				name = "goblin_earworm_legacy"
@@ -469,7 +475,10 @@ EscannGob2 = {
 			}
 			if = {
 				limit = {
-					tag = B42
+					OR = {
+   						is tag = B42
+   						was_tag = B42
+						}
 				}
 			add_country_modifier = {
 				name = "goblin_groundhawk_legacy"
@@ -478,7 +487,10 @@ EscannGob2 = {
 			}
 			if = {
 				limit = {
-					tag = B44
+					OR = {
+   						is tag = B44
+   						was_tag = B44
+						}
 				}
 			add_country_modifier = {
 				name = "goblin_flung_head_legacy"
@@ -487,7 +499,10 @@ EscannGob2 = {
 			}
 			if = {
 				limit = {
-					tag = B46
+					OR = {
+   						is tag = B46
+   						was_tag = B46
+						}
 				}
 			add_country_modifier = {
 				name = "goblin_grasshopper_muncher_legacy"
@@ -496,7 +511,10 @@ EscannGob2 = {
 			}
 			if = {
 				limit = {
-					tag = B45
+					OR = {
+   						is tag = B45
+   						was_tag = B45
+						}
 				}
 			add_country_modifier = {
 				name = "goblin_headwearer_legacy"
@@ -505,7 +523,10 @@ EscannGob2 = {
 			}
 			if = {
 				limit = {
-					tag = Z20
+					OR = {
+   						is tag = Z20
+   						was_tag = Z20
+						}
 				}
 			add_country_modifier = {
 				name = "goblin_hideguzzler_legacy"
