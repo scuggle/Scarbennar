@@ -23604,21 +23604,23 @@ B67_ideas = {
 	free = yes
 
 	B67_dogs_war = {
-		possible_condottieri = 1
+		mercenary_manpower = 0.25
 		army_tradition_from_battle = 0.5
 	}
 	B67_two_faced = {
 		diplomatic_reputation = 1
 	}
 	B67_copper_hills = {
+		land_forcelimit_modifier = 0.2
 		army_tradition_decay = -0.01
 	}
 	B67_neo_gnollish = {
 		build_cost = -0.1
-		build_time = -0.1
+		defensiveness = 0.2
 	}
 	B67_cantons = {
 		global_unrest = -2
+		
 	}
 	B67_trash_treasure = {
 		trade_efficiency = 0.1
