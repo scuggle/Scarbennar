@@ -463,4 +463,23 @@
  B43_seven_desc:0 "tbd"
  
  
- 
+
+  M01:0 "Griffon Empire"
+ M01_ADJ:0 "Griffon Empire"
+ M01_ideas:0 "Griffon Empire Ideas"
+ M01_ideas_start:0 "Griffon Empire Traditions"
+ M01_ideas_bonus:0 "Griffon Empire Ambition"
+ M01_one:0 "Masterful Griffon Breeders"
+ M01_one_desc:0 "tbd"
+ M01_two:0 "New Imperial Armies"
+ M01_two_desc:0 "tbd"
+ M01_three:0 "Legacy of the old Death Ring"
+ M01_three_desc:0 "tbd"
+ M01_four:0 "Female Generals from the Feather Academy"
+ M01_four_desc:0 "tbd"
+ M01_five:0 "Dwarven Engineering"
+ M01_five_desc:0 "tbd"
+ M01_six:0 "Generals on Wings"
+ M01_six_desc:0 "tbd"
+ M01_seven:0 "Griffon Postal Services"
+ M01_seven_desc:0 "tbd"

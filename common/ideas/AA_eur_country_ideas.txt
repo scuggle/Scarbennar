@@ -814,7 +814,7 @@ X20_ideas = {
 	}
 
 	bonus = {
-		ship_durability = 0.10
+		ship_durability = 0.05
 	}
 
 	trigger = {
@@ -825,7 +825,7 @@ X20_ideas = {
 	free = yes		#will be added at load.
 
 	X20_one = {
-		naval_forcelimit_modifier = 0.25				#Sea harpies like boats
+		naval_forcelimit_modifier = 0.20				#Sea harpies like boats
 		sea_repair = yes								#We can easily fly to the coast
 	}
 	X20_two = {
@@ -1058,5 +1058,99 @@ B43_ideas = {
 		country_admin_power = 1						#These goblins know how to run a business... err country 
 	}	
 }
+
+#Griffon Empire ideas
+M01_ideas = {
+	start = {
+		cavalry_flanking = 1				#You are flying around your enemies.
+		cavalry_power = 0.25				#This makes your empire's military might.
+	}
+	
+	bonus = {
+		envoy_travel_time = -0.5			#Flying over water is fast.
+	}
+	
+	trigger = {
+		tag = M01
+	}
+	free = yes
+	
+	M01_one = {
+		cavalry_cost = -0.1				#Breeding Griffons
+	}
+	M01_two = {
+		discipline = 0.05					#You need well trained troops in battle
+	}
+	M01_three = {
+		fort_maintenance_modifier = -0.15	#You rule everything from the caverns to the skies
+	}
+	M01_four = {
+		general_cost = -0.25				#The Feather Academy gives a lot of potential generals
+		may_recruit_female_generals = yes	#Both man and Woman proved itself during the Greentide
+	}
+	M01_five = {
+		production_efficiency = 0.1			#The Dwarven artificers are helping the economy
+		goods_produced_modifier = 0.1		
+	}
+	M01_six = {
+		leader_land_manuever = 1			#Your Generals have acclimatized to the fast armies of griffon riders
+	}
+	M01_seven = {
+		governing_capacity_modifier = 0.1	#Marr Griffon Post offices makes bureaucracy faster and better.
+	}
+}
+
 #Modified the Pashainé ideas in the r/Europe mod
 #Would need to make it a new formable with decision to make it work standalone
+
+##COT###
+
+
+V02_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
+	start = {
+		hostile_attrition = 2
+		enemy_core_creation = 0.5
+	}
+
+	bonus = {
+		fire_damage = 0.15
+	}
+
+	trigger = {
+		OR = {
+			tag = V02
+		}	
+	}
+
+	free = yes
+
+	V02_1 = { #The Great Project
+		build_cost = -0.15
+	}
+
+	V02_2 = { #Serpentspine Undercities
+		development_cost = -0.10
+	}
+
+	V02_3 = { #Shanty Garrison
+		garrison_size = 0.33
+		defensiveness = 0.25
+	}
+
+	V02_4 = { #Teeming Masses
+		land_forcelimit_modifier = 0.20
+		global_manpower_modifier = 0.10
+	}
+
+	V02_5 = { #Breath of the Dragonforge
+		artillery_power = 0.15
+	}
+
+	V02_6 = { #Servants of the Mecha-Dragon
+		tolerance_own = 2
+	}
+
+	V02_7 = { #Draconic Rule
+		max_absolutism = 20
+	}
+}

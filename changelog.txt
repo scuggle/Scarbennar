@@ -1,0 +1,62 @@
+----------------------------------------------------------------------------
+Changelog:
+----------------------------------------------------------------------------
+19 new formable nations:
+- Gerudian Empire
+- Carneter
+- Great Xhaz
+- Damerian Republic
+- Businor
+- Lencenor
+- The Reach (human reach)
+- Seiranar (elven reach)
+- United Temples
+- Dameshead Republic
+- Vivin Empire
+- Greengate (West Castanor Goblins)
+- Voltenu (Inner Castanor Goblins)
+- Vortzo Vedobbyat (South Castanor Goblins)
+- Shemyeclan (Unified Escann Goblins)
+- Karlur Khan (Unified Escann Orcs)
+- Greater Ibevar
+- Airgethil (formable for Silver Band adventurers)
+- Griffon Empire (consolidation reward for Marrhold)
+----------------------------------------------------------------------------
+3 new countries:
+- Silver Band (elven adventurer in Inner Castanor)
+- Falahen (harpies on the coast of Bahar)
+- Kusonsesu (hobgoblins in the west rahen gulf, releasable)
+----------------------------------------------------------------------------
+27 modified/added national idea sets:
+- Esmaria
+- Pashainé
+- Karashar
+- 3 escann goblin tribes (Grasshopper Mucher,Flung Head, Flying Hound)
+- 19 for the formables
+- 2 for new countries
+----------------------------------------------------------------------------
+3 new monuments:
+- XXX
+- XXX
+- XXX
+----------------------------------------------------------------------------
+1 new mission tree:
+- Marrhold into Griffon Empire
+----------------------------------------------------------------------------
+Added CoT idea groups
+----------------------------------------------------------------------------
+Added CoT generic MT
+----------------------------------------------------------------------------
+Enforced 1/1/1 idea ratio
+----------------------------------------------------------------------------
+Escanni Adventurers can no longer take Tribal Land from Orcs and Goblins outside of a peace deal
+----------------------------------------------------------------------------
+Buffed Escanni Goblin MT
+----------------------------------------------------------------------------
+Changed Serpentspine Terrain Defender Bonus
+Roads           1 -> 0
+Caves           2 -> 1
+Surface Holds   2 -> 1
+----------------------------------------------------------------------------
+Changed Hoardcurse to be impossible to trigger
+----------------------------------------------------------------------------

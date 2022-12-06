@@ -5,6 +5,7 @@ country_decisions = {
 		potential = {
 			primary_culture = wexonard
 			NOT = { has_country_flag = formed_A30_flag }
+			NOT = { tag = A30 }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
