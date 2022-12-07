@@ -1197,7 +1197,7 @@ focus_inwards = { #Internal Ideas
 		country_admin_power = 1
 	}
 	foc_inw6 = {
-		global_allowed_num_of_buildings = 1
+		build_cost = -0.1
 	}
 	foc_inw7 = {
 		monthly_reform_progress = 0.25

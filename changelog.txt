@@ -20,7 +20,7 @@ Changelog:
 - Karlur Khan (Unified Escann Orcs)
 - Greater Ibevar
 - Airgethil (formable for Silver Band adventurers)
-- Griffon Empire (consolidation reward for Marrhold)
+- Griffon Empire (MT reward for Marrhold)
 ----------------------------------------------------------------------------
 3 new countries:
 - Silver Band (elven adventurer in Inner Castanor)
