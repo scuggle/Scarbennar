@@ -901,7 +901,7 @@ Z46_ideas = {
 #Grasshopper Muncher
 B46_ideas = {
 	start = {
-		cav_flanking = 1					#Can flank easily
+		cavalry_flanking = 1					#Can flank easily
 		cavalry_power = 0.3					#Fight good. Counteracts goblin racial debuff.
 	}
 
