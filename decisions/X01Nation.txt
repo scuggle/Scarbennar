@@ -11,6 +11,13 @@ country_decisions = {
 					region = alenic_reach_region
 				}
 			}
+			OR = {
+				culture_group = reachman
+				culture_group = gerudian
+				primary_culture = city_goblin
+				primary_culture = white_reachman
+				primary_culture = blue_reachman
+			}
 			NOT = { has_country_flag = formed_X01_flag }
 			NOT = { tag = X01 }
 			OR = {
