@@ -1,9 +1,8 @@
 
 #103 - Piedmont | 
 
-owner = A13
-controller = A13
-add_core = A13
+owner = A66
+controller = A66
 add_core = A66
 culture = bluefoot_halfling
 religion = regent_court

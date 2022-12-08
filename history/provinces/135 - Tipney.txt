@@ -1,9 +1,9 @@
 
 #135 - Sopron (Sopron + Vas + Moson + Zala)
 
-owner = A01
-controller = A01
-add_core = A01
+owner = A68
+controller = A68
+add_core = A68
 add_core = A68
 culture = redfoot_halfling
 religion = regent_court
