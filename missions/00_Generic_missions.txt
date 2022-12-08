@@ -565,12 +565,11 @@ economic_missions = {
 			university = 30
 		}
 		effect = {
-				country_event = { 
-    				id = mutagen.4
-    				days = 15
-    				random = 5
-    				tooltip = MUTAGEN_4_TOOLTIP
-				}
+			country_event = { 
+    			id = mutagen.4
+    			days = 15
+    			random = 5
+    			tooltip = MUTAGEN_4_TOOLTIP
 			}
 		}
 	}
