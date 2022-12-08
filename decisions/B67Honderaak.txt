@@ -22,8 +22,10 @@ country_decisions = {
 				province_id = 316 #Escandar
 				province_id = 317 #Ruppelion
 				province_id = 365 #Port Jaher
-				province_id = 376 #Stingport
-				province_id = 39 #Lions Pass
+				province_id = 366 #Lorbet
+				province_id = 363 #stonehold
+				province_id = 362 #Enkets pass
+				province_id = 408 #Hapaine
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -51,7 +53,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			num_of_owned_provinces_with = {
-				value = 25
+				value = 20
 				OR = { 	
 					region = businor_region
 					region = east_dameshead_region
@@ -69,15 +71,17 @@ country_decisions = {
 				owns_core_province = 316 #Escandar
 				owns_core_province = 317 #Ruppelion
 				owns_core_province = 365 #Port Jaher
-				owns_core_province = 376 #Stingport
-				owns_core_province = 39 #Lions Pass
+				owns_core_province = 366 #Lorbet
+				owns_core_province = 363 #stonehold
+				owns_core_province = 362 #Enkets pass
+				owns_core_province = 408 #Hapaine
 			}
 			NOT = { government = tribal }
 		}
 	effect = {
 			if = {
 				limit = { NOT = { religion = regent_court } }
-				add_stability = -3
+				add_stability = -2
 			}
 			change_tag = B67
 			hidden_effect = { restore_country_name = yes }

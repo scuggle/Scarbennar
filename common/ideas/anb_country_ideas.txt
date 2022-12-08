@@ -23586,7 +23586,7 @@ U23_ideas = {
 #Honderaak
 B67_ideas = {
 	start = {
-		improve_relation_modifier = 0.25
+		discipline = 0.05
 		reelection_cost = -0.2
 		##other govs
 		legitimacy = 1
@@ -23611,8 +23611,7 @@ B67_ideas = {
 		diplomatic_reputation = 1
 	}
 	B67_copper_hills = {
-		land_forcelimit_modifier = 0.2
-		army_tradition_decay = -0.01
+		land_forcelimit_modifier = 0.25
 	}
 	B67_neo_gnollish = {
 		build_cost = -0.1
@@ -23620,13 +23619,16 @@ B67_ideas = {
 	}
 	B67_cantons = {
 		global_unrest = -2
+		hostile_attrition = 1
 		
 	}
 	B67_trash_treasure = {
-		trade_efficiency = 0.1
+		technology_cost = -0.05
+		
 	}
 	B67_scrap_gun = {
-		infantry_power = 0.1
+		infantry_power = 0.15
+		
 	}
 }
 
