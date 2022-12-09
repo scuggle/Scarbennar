@@ -51,7 +51,7 @@ southroy_2_missions = {
 		trigger = {
 			reverse_has_opinion = {
 				who = A02
-				value = 75
+				value = 100
 			}
 		}
 		effect = {
