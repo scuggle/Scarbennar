@@ -7,7 +7,7 @@ country_event = {
 	id = southroy.1
 	title = southroy.1.t
 	desc = southroy.1.d
-	picture = 
+	picture = REFORM
 	
 	is_triggered_only = yes
 	

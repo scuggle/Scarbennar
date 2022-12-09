@@ -201,14 +201,25 @@ southroy_3_missions = {
 			is_in_war = {
 				attacker_leader = A01
 				defender_leader = ROOT
-				war_score = 90
 			}
+			war_score = 90
 		}
 		effect = {
 			inherit = A01
 			country_event = { 
     			id = southroy.1
-    			#tooltip = southroy_tooltip_1
+			}
+			38 = {
+				cede_province = A02
+			}
+			119 = {
+				cede_province = A02
+			}
+			59 = {
+				cede_province = A87
+			}
+			20 = {
+				cede_province = A15
 			}
 		}
 	}
@@ -292,8 +303,8 @@ southroy_5_missions = {
 			is_in_war = {
 				attacker_leader = A01
 				defender_leader = ROOT
-				war_score = 50
 			}
+			war_score = 50
 		}
 		effect = {
 			add_country_modifier = {
