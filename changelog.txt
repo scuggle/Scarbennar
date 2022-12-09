@@ -22,26 +22,28 @@ Changelog:
 - Airgethil (formable for Silver Band adventurers)
 - Griffon Empire (MT reward for Marrhold)
 ----------------------------------------------------------------------------
-3 new countries:
+4 new countries:
 - Silver Band (elven adventurer in Inner Castanor)
 - Falahen (harpies on the coast of Bahar)
 - Kusonsesu (hobgoblins in the west rahen gulf, releasable)
+- Southroy (A lorentish pretender)
 ----------------------------------------------------------------------------
-27 modified/added national idea sets:
+28 modified/added national idea sets:
 - Esmaria
 - Pashainé
 - Karashar
 - 3 escann goblin tribes (Grasshopper Mucher,Flung Head, Flying Hound)
 - 19 for the formables
-- 2 for new countries
+- 3 for new countries
 ----------------------------------------------------------------------------
 3 new monuments:
 - XXX
 - XXX
 - XXX
 ----------------------------------------------------------------------------
-1 new mission tree:
+2 new mission tree:
 - Marrhold into Griffon Empire
+- Southroy
 ----------------------------------------------------------------------------
 Added CoT idea groups
 ----------------------------------------------------------------------------
