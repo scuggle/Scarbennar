@@ -15,7 +15,7 @@ country_event = {
 	}
 	
 	trigger = {
-		is_year = 1460
+		is_year = 1450
 		owns = 912
 	}
 	
@@ -108,7 +108,7 @@ country_event = {
 	}
 	
 	trigger = {
-		is_year = 1470
+		is_year = 1460
 		owns = 912
 	}
 	
@@ -202,7 +202,7 @@ country_event = {
 	}
 	
 	trigger = {
-		is_year = 1460
+		is_year = 1450
 		owns = 62
 	}
 	
@@ -300,7 +300,7 @@ country_event = {
 	}
 	
 	trigger = {
-		is_year = 1470
+		is_year = 1460
 		owns = 4397
 	}
 	
