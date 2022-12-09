@@ -12418,7 +12418,7 @@ goblin_settling_down = {
 }
 
 goblin_flying_hound_legacy = {
-	build_cost = 0.05
+	build_cost = -0.05
 }
 
 goblin_earworm_legacy = {
