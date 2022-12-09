@@ -99,7 +99,7 @@ southroy_2_missions = {
 			marriage_with = A02
 			reverse_has_opinion = {
 				who = A02
-				value = 120
+				value = 150
 			}
 		}
 		effect = {

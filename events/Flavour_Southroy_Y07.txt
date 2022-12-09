@@ -27,12 +27,6 @@ country_event = {
 			}
 			set_government_rank = 2
 		}
-		lencenor_region = {
-			limit = {
-				NOT = { owned_by = ROOT }
-			}
-			add_permanent_claim = A01
-		}
 		add_prestige = 50
 		add_country_modifier = {
 			name = X22_remain_southroy_modifier
@@ -57,12 +51,6 @@ country_event = {
 				NOT = { government_rank = 2 }
 			}
 			set_government_rank = 2
-		}
-		lencenor_region = {
-			limit = {
-				NOT = { owned_by = ROOT }
-			}
-			add_permanent_claim = A01
 		}
 		add_country_modifier = {
 			name = "centralization_modifier"
@@ -96,12 +84,6 @@ country_event = {
 			}
 			set_government_rank = 2
 		}
-		lencenor_region = {
-			limit = {
-				NOT = { owned_by = ROOT }
-			}
-			add_permanent_claim = X06
-		}
 		add_country_modifier = {
 			name = "centralization_modifier"
 			duration = 7300
@@ -115,5 +97,9 @@ country_event = {
 		}
 		set_country_flag = formed_lorent_flag
 		set_country_flag = formed_X06_flag
+		add_country_modifier = {
+			name = X22_lencenor_modifier
+			duration = -1
+		}
 	}
 }
