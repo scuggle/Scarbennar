@@ -6488,6 +6488,7 @@ voltenu_corpocracy = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes	#changed this from no
 	potential = {
+		tag = X99
 		NOT = { has_reform = crown_colony_government }
 		NOT = { has_reform = private_enterprise_colony_government }
 		NOT = { has_reform = self_governing_colony_government }
