@@ -854,6 +854,130 @@ X20_ideas = {
 	}
 }
 
+#Kusonsesu #Hobgoblin for 'Fallen Tribe'
+X21_ideas = {
+	start = {
+		naval_forcelimit_modifier  = 0.2				#Island Tag
+		no_religion_penalty = yes						#Their gods are dead, they accept all others.
+	}
+
+	bonus = {
+		all_estate_loyalty_equilibrium  = 0.05			#Old Boomers finally okay with this.
+	}
+
+	trigger = {
+		tag = X21
+	}
+	free = yes
+
+	X21_one = {
+		galley_power  = 0.15						#Galleys rely on manpower which hobs are good at
+	}
+	X21_two = {
+		global_trade_goods_size_modifier  = 0.1		#Craftsman Culture. Hobs take pride in their work.
+	}
+	X21_three = {
+		sunk_ship_morale_hit_recieved   = -0.1		#Hobs are naturally disciplined and follow their commander. Unfazed by ships sinking.
+	}
+	X21_four = {
+		development_cost = -0.1						#Making a new home for themselves.
+	}
+	X21_five = {
+		num_accepted_cultures = 2					#They are okay with other races.							
+	}
+	X21_six = {
+		fort_maintenance_modifier = -0.2				#Relatively peaceful for Hobgoblins but still have knowledge how to build forts.
+	}
+	X21_seven = {
+		trade_efficiency  = 0.15					#Gulf of Rahen trade
+	}	
+}
+
+#Southroy
+X22_ideas = {
+	start = {
+		infantry_power = 0.15
+		morale_damage_received = -0.1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		tag = X22
+	}
+	free = yes
+
+	X22_one = {
+		years_of_nationalism = -5
+		province_warscore_cost = -0.1
+	}
+	X22_two = {
+		prestige = 1
+		diplomatic_upkeep = 2
+	}
+	X22_three = {
+		colonists = 1
+		naval_forcelimit_modifier = 0.2
+	}
+	X22_four = {
+		ae_impact = -0.1
+		unjustified_demands = -0.2
+	}
+	X22_five = {
+		global_trade_goods_size_modifier = 0.1							
+	}
+	X22_six = {
+		hostile_attrition = 1
+		fort_maintenance_modifier = -0.2
+	}
+	X22_seven = {
+		global_manpower_modifier = 0.15
+	}	
+}
+
+#Griffon Empire ideas
+M01_ideas = {
+	start = {
+		cavalry_flanking = 1				#You are flying around your enemies.
+		cavalry_power = 0.25				#This makes your empire's military might.
+	}
+	
+	bonus = {
+		envoy_travel_time = -0.5			#Flying over water is fast.
+	}
+	
+	trigger = {
+		tag = M01
+	}
+	free = yes
+	
+	M01_one = {
+		cavalry_cost = -0.1				#Breeding Griffons
+	}
+	M01_two = {
+		discipline = 0.05					#You need well trained troops in battle
+	}
+	M01_three = {
+		fort_maintenance_modifier = -0.15	#You rule everything from the caverns to the skies
+	}
+	M01_four = {
+		general_cost = -0.25				#The Feather Academy gives a lot of potential generals
+		may_recruit_female_generals = yes	#Both man and Woman proved itself during the Greentide
+	}
+	M01_five = {
+		production_efficiency = 0.1			#The Dwarven artificers are helping the economy
+		goods_produced_modifier = 0.1		
+	}
+	M01_six = {
+		leader_land_manuever = 1			#Your Generals have acclimatized to the fast armies of griffon riders
+	}
+	M01_seven = {
+		governing_capacity_modifier = 0.1	#Marr Griffon Post offices makes bureaucracy faster and better.
+	}
+}
+
 #New ideas for old Formables
 #Esmaria
 Z46_ideas = {
@@ -935,45 +1059,6 @@ B46_ideas = {
 	}
 	B46_seven = {
 		global_unrest = -1					#Makes for good crowd control
-	}	
-}
-
-#Kusonsesu #Hobgoblin for 'Fallen Tribe'
-X21_ideas = {
-	start = {
-		naval_forcelimit_modifier  = 0.2				#Island Tag
-		no_religion_penalty = yes						#Their gods are dead, they accept all others.
-	}
-
-	bonus = {
-		all_estate_loyalty_equilibrium  = 0.05			#Old Boomers finally okay with this.
-	}
-
-	trigger = {
-		tag = X21
-	}
-	free = yes
-
-	X21_one = {
-		galley_power  = 0.15						#Galleys rely on manpower which hobs are good at
-	}
-	X21_two = {
-		global_trade_goods_size_modifier  = 0.1		#Craftsman Culture. Hobs take pride in their work.
-	}
-	X21_three = {
-		sunk_ship_morale_hit_recieved   = -0.1		#Hobs are naturally disciplined and follow their commander. Unfazed by ships sinking.
-	}
-	X21_four = {
-		development_cost = -0.1						#Making a new home for themselves.
-	}
-	X21_five = {
-		num_accepted_cultures = 2					#They are okay with other races.							
-	}
-	X21_six = {
-		fort_maintenance_modifier = -0.2				#Relatively peaceful for Hobgoblins but still have knowledge how to build forts.
-	}
-	X21_seven = {
-		trade_efficiency  = 0.15					#Gulf of Rahen trade
 	}	
 }
 
@@ -1059,46 +1144,6 @@ B43_ideas = {
 	}	
 }
 
-#Griffon Empire ideas
-M01_ideas = {
-	start = {
-		cavalry_flanking = 1				#You are flying around your enemies.
-		cavalry_power = 0.25				#This makes your empire's military might.
-	}
-	
-	bonus = {
-		envoy_travel_time = -0.5			#Flying over water is fast.
-	}
-	
-	trigger = {
-		tag = M01
-	}
-	free = yes
-	
-	M01_one = {
-		cavalry_cost = -0.1				#Breeding Griffons
-	}
-	M01_two = {
-		discipline = 0.05					#You need well trained troops in battle
-	}
-	M01_three = {
-		fort_maintenance_modifier = -0.15	#You rule everything from the caverns to the skies
-	}
-	M01_four = {
-		general_cost = -0.25				#The Feather Academy gives a lot of potential generals
-		may_recruit_female_generals = yes	#Both man and Woman proved itself during the Greentide
-	}
-	M01_five = {
-		production_efficiency = 0.1			#The Dwarven artificers are helping the economy
-		goods_produced_modifier = 0.1		
-	}
-	M01_six = {
-		leader_land_manuever = 1			#Your Generals have acclimatized to the fast armies of griffon riders
-	}
-	M01_seven = {
-		governing_capacity_modifier = 0.1	#Marr Griffon Post offices makes bureaucracy faster and better.
-	}
-}
 
 #Modified the Pashainé ideas in the r/Europe mod
 #Would need to make it a new formable with decision to make it work standalone
