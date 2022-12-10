@@ -311,7 +311,6 @@ elven_majority_coexisting = {
 	local_tax_modifier = 0.2
 	trade_value_modifier = 0.1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_elf_ma"
 }
 
@@ -321,7 +320,6 @@ elven_majority_integrated = {
 	trade_value_modifier = 0.1
 	local_production_efficiency = 0.1
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_elf_mi"
 }
 
@@ -403,7 +401,6 @@ dwarven_majority_coexisting = {
 	local_production_efficiency = 0.2
 	local_build_time = -0.2
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_dwarf_ma"
 }
 
@@ -413,7 +410,6 @@ dwarven_majority_integrated = {
 	local_build_time = -0.2
 	trade_goods_size_modifier = 0.1		#More dwarves allow some to focus on their craft in addition to manual labour
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_dwarf_mi"
 }
 
@@ -495,7 +491,6 @@ gnomish_majority_coexisting = {
 	local_production_efficiency = 0.1
 	local_institution_spread = 0.1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_gnome_ma"
 }
 
@@ -505,7 +500,6 @@ gnomish_majority_integrated = {
 	local_institution_spread = 0.1
 	local_tax_modifier = 0.1
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_gnome_mi"
 }
 
@@ -587,7 +581,6 @@ halfling_majority_coexisting = {
 	local_development_cost = -0.05
 	province_trade_power_modifier = 0.1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_halfling_ma"
 }
 
@@ -597,7 +590,6 @@ halfling_majority_integrated = {
 	province_trade_power_modifier = 0.1
 	supply_limit_modifier = 0.25				#halfling runners and networks
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_halfling_mi"
 }
 
@@ -679,7 +671,6 @@ human_majority_coexisting = {
 	local_manpower_modifier = 0.1			
 	local_development_cost = -0.05				#There's a reason why humans have huge cities and are the most powerful
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_human_ma"
 }
 
@@ -689,7 +680,6 @@ human_majority_integrated = {
 	local_development_cost = -0.05				#There's a reason why humans have huge cities and are the most powerful
 	local_sailors_modifier = 0.2
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_human_mi"
 }
 
@@ -771,7 +761,6 @@ half_orcish_majority_coexisting = {
 	local_manpower_modifier = 0.2
 	local_defensiveness = 0.1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_half_orc_ma"
 }
 
@@ -781,7 +770,6 @@ half_orcish_majority_integrated = {
 	local_defensiveness = 0.1
 	garrison_growth = 0.1
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_half_orc_mi"
 }
 
@@ -864,7 +852,6 @@ half_elven_majority_coexisting = {
 	local_tax_modifier = 0.1
 	local_development_cost = -0.05
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_half_elf_ma"
 }
 
@@ -874,7 +861,6 @@ half_elven_majority_integrated = {
 	local_development_cost = -0.05
 	local_core_creation = -0.2			#they are diplomats so they can argue your case, in anbennar they are signs of legitimacy
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_half_elf_mi"
 }
 
@@ -957,7 +943,6 @@ ruinborn_majority_coexisting = {
 	local_build_cost = -0.1
 	supply_limit_modifier = 0.2
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_ruinborn_ma"
 }
 
@@ -967,7 +952,6 @@ ruinborn_majority_integrated = {
 	supply_limit_modifier = 0.2
 	local_monthly_devastation = -0.1
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_ruinborn_mi"
 }
 
@@ -1056,7 +1040,6 @@ orcish_majority_coexisting = {
 	trade_goods_size_modifier = 0.1
 	local_manpower_modifier = 0.2
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_orc_ma"
 }
 
@@ -1066,7 +1049,6 @@ orcish_majority_integrated = {
 	local_manpower_modifier = 0.2
 	local_regiment_cost = -0.2
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_orc_mi"
 }
 
@@ -1147,7 +1129,6 @@ kobold_majority_coexisting = {
 	local_build_cost = -0.2
 	local_build_time = -0.1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_kobold_ma"
 }
 
@@ -1157,7 +1138,6 @@ kobold_majority_integrated = {
 	local_build_time = -0.1
 	local_hostile_attrition = 1
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_kobold_mi"
 }
 
@@ -1240,7 +1220,6 @@ gnollish_majority_coexisting = {
 	trade_goods_size_modifier = 0.1
 	local_manpower_modifier = 0.1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_gnoll_ma"
 }
 
@@ -1250,7 +1229,6 @@ gnollish_majority_integrated = {
 	local_manpower_modifier = 0.1
 	province_trade_power_value = 0.1
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_gnoll_mi"
 }
 
@@ -1334,7 +1312,6 @@ harpy_majority_coexisting = {
 	local_build_time = -0.1
 	local_friendly_movement_speed = 0.2
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_harpy_ma"
 }
 
@@ -1344,7 +1321,6 @@ harpy_majority_integrated = {
 	local_friendly_movement_speed = 0.2
 	local_hostile_attrition = 2
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_harpy_mi"
 }
 
@@ -1428,7 +1404,6 @@ goblin_majority_coexisting = {
 	local_build_time = -0.2
 	trade_goods_size = 0.1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_goblin_ma"
 }
 
@@ -1438,7 +1413,6 @@ goblin_majority_integrated = {
 	trade_goods_size = 0.1
 	local_production_efficiency = 0.2
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_goblin_mi"
 }
 
@@ -1522,7 +1496,6 @@ troll_majority_coexisting = {
 	supply_limit_modifier = 0.1
  	local_hostile_movement_speed = -0.2
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_troll_ma"
 }
 
@@ -1532,7 +1505,6 @@ troll_majority_integrated = {
  	local_hostile_movement_speed = -0.2
 	local_manpower_modifier = 0.2
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_troll_mi"
 }
 
@@ -1615,7 +1587,6 @@ ogre_majority_coexisting = {
 	local_build_time = -0.2
 	local_tax_modifier = 0.1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_ogre_ma"
 }
 
@@ -1625,7 +1596,6 @@ ogre_majority_integrated = {
 	local_tax_modifier = 0.1
 	local_manpower_modifier = 0.2
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_ogre_mi"
 }
 
@@ -1710,7 +1680,6 @@ centaur_majority_coexisting = {
 	province_trade_power_modifier = 0.1
  	supply_limit_modifier = 0.1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_centaur_ma"
 }
 
@@ -1720,7 +1689,6 @@ centaur_majority_integrated = {
  	supply_limit_modifier = 0.1
 	local_friendly_movement_speed = 0.2
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_centaur_mi"
 }
 
@@ -1803,7 +1771,6 @@ harimari_majority_coexisting = {
 	local_tax_modifier = 0.1
  	local_hostile_attrition = 1
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_harimari_ma"
 }
 
@@ -1813,7 +1780,6 @@ harimari_majority_integrated = {
  	local_hostile_attrition = 1
 	local_state_maintenance_modifier = -0.2
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_harimari_mi"
 }
 
@@ -1896,7 +1862,6 @@ hobgoblin_majority_coexisting = {
 	local_unrest = -2
  	regiment_recruit_speed = -0.2
 	
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_hobgoblin_ma"
 }
 
@@ -1906,7 +1871,6 @@ hobgoblin_majority_integrated = {
  	regiment_recruit_speed = -0.2
 	local_manpower_modifier = 0.2
 	
-	local_culture_conversion_cost = 0.50
 	picture = "pop_icon_hobgoblin_mi"
 }
 
