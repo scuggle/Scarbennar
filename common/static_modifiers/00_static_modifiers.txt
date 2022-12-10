@@ -1721,6 +1721,7 @@ karma_just_right =
 
 	diplomatic_reputation = 2
 	manpower_in_true_faith_provinces = 0.1
+	shock_damage = 0.1
 	global_unrest = -1
 
 }
