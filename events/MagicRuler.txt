@@ -4697,17 +4697,7 @@ country_event = {
 	option = {
 		name = magic_ruler.4.m	#available
 		trigger = {
-			has_ruler_flag = enchantment_3
-			is_at_war = yes
-			is_lesser_in_union = no
-			any_army = {
-				location = {
-					fort_level = 1
-					sieged_by = ROOT
-					unit_has_leader = yes
-				}
-			}
-			NOT = { has_ruler_modifier = magic_siege_cooldown }
+			always = no
 		}
 		ai_chance = {
 			factor = 50
