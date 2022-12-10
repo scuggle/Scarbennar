@@ -564,7 +564,7 @@ left_trade_company = {
 
 
 scorched_earth = {
-	local_hostile_movement_speed = -0.50
+	local_hostile_movement_speed = -0.25
 	local_monthly_devastation = 0.25
 }
 
