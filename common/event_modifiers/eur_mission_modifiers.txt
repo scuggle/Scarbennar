@@ -49,8 +49,11 @@ ge_the_new_death_ring_mod = {
 
 #Southroy
 X22_remain_southroy_modifier = {
-	core_creation = -0.1
 	land_morale = 0.05
+}
+
+X22_lencenor_modifier = {
+	core_creation = -0.1
 }
 
 X22_war_bonds_modifier = {

@@ -2,7 +2,7 @@
 southroy_1_missions = { 
 	slot = 1
 	generic = no
-	ai = yes 
+	ai = no 
 	has_country_shield = yes
 	potential = { tag = X22 }
 
@@ -17,8 +17,8 @@ southroy_1_missions = {
 		}
 		trigger = {
 			is_in_war = {
-				attacker_leader = A01
-				defender_leader = ROOT
+				attacker_leader = ROOT
+				defender_leader = A01
 			}
 			has_wartaxes = yes
 		}
@@ -51,7 +51,7 @@ southroy_2_missions = {
 		trigger = {
 			reverse_has_opinion = {
 				who = A02
-				value = 75
+				value = 100
 			}
 		}
 		effect = {
@@ -99,7 +99,7 @@ southroy_2_missions = {
 			marriage_with = A02
 			reverse_has_opinion = {
 				who = A02
-				value = 120
+				value = 150
 			}
 		}
 		effect = {
@@ -177,14 +177,10 @@ southroy_3_missions = {
 				name = X22_rebellion_modifier
 				duration = 1825
 			}
-			A01 = {
-				declare_war_with_cb = {
-    				who = X22
-    				casus_belli = cb_annex
-				}
-			}
-			A02 = {
-				join_all_defensive_wars_of = X22
+			add_casus_belli = {
+    			target = A01
+    			type = cb_restore_personal_union
+   			 	months = 240
 			}
 		}
 	}
@@ -198,11 +194,7 @@ southroy_3_missions = {
 			
 		}
 		trigger = {
-			is_in_war = {
-				attacker_leader = A01
-				defender_leader = ROOT
-			}
-			war_score = 90
+			senior_union_with = A01
 		}
 		effect = {
 			inherit = A01
@@ -246,11 +238,15 @@ southroy_4_missions = {
 				who = A03
 				value = 75
 			}
+			dip_power = 100
 		}
 		effect = {
 			A03 = {
 				add_liberty_desire = 50
+				remove_historical_friend = A01
+				add_historical_friend = X22
 			}
+			add_dip_power -100
 		}
 	}
 	X22_oath_of_allegiance = {
@@ -263,13 +259,24 @@ southroy_4_missions = {
 			is_capital_of = A03
 		}
 		trigger = {
-			A03 = {
-				liberty_desire = 50
+			if = {
+				limit = {
+					A03 = {
+						liberty_desire = 50
+					}
+				}
+				reverse_has_opinion = {
+					who = A03
+					value = 100
+				}
 			}
-			reverse_has_opinion = {
-				who = A03
-				value = 100
+			else = {
+				reverse_has_opinion = {
+					who = A03
+					value = 150
+				}
 			}
+			dip_power = 100
 		}
 		effect = {
 			vassalize = A03
@@ -279,6 +286,7 @@ southroy_4_missions = {
 					duration = -1
 				}
 			}
+			add_dip_power = -100
 		}
 	}
 }
@@ -301,8 +309,8 @@ southroy_5_missions = {
 		}
 		trigger = {
 			is_in_war = {
-				attacker_leader = A01
-				defender_leader = ROOT
+				attacker_leader = ROOT
+				defender_leader = A01
 			}
 			war_score = 50
 		}
