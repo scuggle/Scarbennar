@@ -177,14 +177,10 @@ southroy_3_missions = {
 				name = X22_rebellion_modifier
 				duration = 1825
 			}
-			A01 = {
-				declare_war_with_cb = {
-    				who = X22
-    				casus_belli = cb_annex
-				}
-			}
-			A02 = {
-				join_all_defensive_wars_of = X22
+			add_casus_belli = {
+    			target = A01
+    			type = cb_restore_personal_union
+   			 	months = 240
 			}
 		}
 	}
@@ -198,11 +194,7 @@ southroy_3_missions = {
 			
 		}
 		trigger = {
-			is_in_war = {
-				attacker_leader = A01
-				defender_leader = ROOT
-			}
-			war_score = 90
+			senior_union_with = A01
 		}
 		effect = {
 			inherit = A01
