@@ -1513,7 +1513,7 @@ subject_nation = {
 }
 
 vassal_nation = {
-	development_cost = 0.5
+	development_cost = 0.1
 }
 
 kruman_nation = {
