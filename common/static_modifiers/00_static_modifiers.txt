@@ -1556,7 +1556,7 @@ subject_tax_modifier = {
 
 #scales to amount of up-to-date forts compared to total development
 maintained_forts = {
-	army_tradition = 1
+	army_tradition = 5
 }
 
 gov_rank_1 = {
