@@ -1695,8 +1695,7 @@ support_loyalists = {
 }
 
 send_officers = {
-	discipline = 0.05
-	land_morale = 0.2
+	land_morale = 0.1
 }
 
 divert_trade = {
