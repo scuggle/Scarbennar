@@ -14,7 +14,7 @@ country_event = {
 	trigger = {
 		owns = 169 #Nimscodd
 		has_global_flag = new_world_discovered
-		is_year = 1520
+		is_year = 1500
 		OR = {
 			gommiochand_area = {
 				is_empty = yes
@@ -41,7 +41,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 360
+		months = 36
 		
 		modifier = {
 			factor = 0.5
@@ -254,7 +254,7 @@ country_event = {
 	trigger = {
 		owns = 185 #Dragonpeaks
 		has_global_flag = new_world_discovered
-		is_year = 1520
+		is_year = 1500
 		OR = {
 			zurzumexia_area = {
 				is_empty = yes
@@ -274,7 +274,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 360
+		months = 36
 		
 		modifier = {
 			factor = 0.05
@@ -483,7 +483,7 @@ country_event = {
 	trigger = {
 		owns = 723 #Bayvic
 		has_global_flag = new_world_discovered
-		is_year = 1520
+		is_year = 1500
 		OR = {
 			mestikardu_area = {
 				is_empty = yes
@@ -503,7 +503,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 360
+		months = 36
 		
 		modifier = {
 			factor = 0.05
@@ -3380,7 +3380,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 360
+		months = 36
 		
 		modifier = {
 			factor = 0.05
