@@ -22,16 +22,20 @@ Changelog:
 - Airgethil (formable for Silver Band adventurers)
 - Griffon Empire (MT reward for Marrhold)
 ----------------------------------------------------------------------------
+1 new formable decision:
+- Empire of Anbennar
+----------------------------------------------------------------------------
 4 new countries:
 - Silver Band (elven adventurer in Inner Castanor)
 - Falahen (harpies on the coast of Bahar)
 - Kusonsesu (hobgoblins in the west rahen gulf, releasable)
 - Southroy (A lorentish pretender)
 ----------------------------------------------------------------------------
-28 modified/added national idea sets:
+29 modified/added national idea sets:
 - Esmaria
 - Pashainé
 - Karashar
+- Empire of Anbennar
 - 3 escann goblin tribes (Grasshopper Mucher,Flung Head, Flying Hound)
 - 19 for the formables
 - 3 for new countries
@@ -61,4 +65,9 @@ Caves           2 -> 1
 Surface Holds   2 -> 1
 ----------------------------------------------------------------------------
 Changed Hoardcurse to be impossible to trigger
+----------------------------------------------------------------------------
+Added QoL decisions (such as deleting churches)
+----------------------------------------------------------------------------
+Rebalance:
+- XXX
 ----------------------------------------------------------------------------
