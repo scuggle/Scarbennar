@@ -39,6 +39,7 @@ Changelog:
 - 3 escann goblin tribes (Grasshopper Mucher,Flung Head, Flying Hound)
 - 19 for the formables
 - 3 for new countries
+- 1 for Coppertown (Released Halflings)
 ----------------------------------------------------------------------------
 3 new monuments:
 - XXX
@@ -70,4 +71,7 @@ Added QoL decisions (such as deleting churches)
 ----------------------------------------------------------------------------
 Rebalance:
 - XXX
+----------------------------------------------------------------------------
+Dwarven Adventurers in Serpentspine spawn earlier
+Gommoport, Zurzumexia and Mestikardu spawn at the same time as Vanbury Guild now
 ----------------------------------------------------------------------------
