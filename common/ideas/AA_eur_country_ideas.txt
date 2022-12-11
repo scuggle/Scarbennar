@@ -1275,3 +1275,43 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 # 		artillery_power = 0.15						# 
 # 	}	
 # }
+
+# Triarchy
+X23_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.10				#
+		shock_damage_received = -0.10						#
+	}
+
+	bonus = {
+		artillery_fire = 0.5							#
+	}
+
+	trigger = {
+		tag = X23
+	}
+	free = yes
+
+	X23_one = {
+		artillery_cost = -0.10						#
+	}
+	X23_two = {
+		build_cost = -0.10
+		build_time = -0.10							#
+	}
+	X23_three = {
+		fire_damage = 0.15							#
+	}
+	X23_four = {
+		production_efficiency = 0.10				#
+	}
+	X23_five = {
+		merchants = 1								# 	
+	}
+	X23_six = {
+		fort_maintenance_modifier = -0.2			# 
+	}
+	X23_seven = {
+		artillery_power = 0.15						# 
+	}	
+}

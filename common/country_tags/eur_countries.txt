@@ -21,6 +21,7 @@ X19 = "countries/Airgethil.txt"
 X20 = "countries/Falahen.txt"
 X21 = "countries/Kusonsesu.txt"
 X22 = "countries/Southroy.txt"
+X23 = "countries/Triarchy.txt"
 
 M01 = "countries/Griffon_Empire.txt"
 
