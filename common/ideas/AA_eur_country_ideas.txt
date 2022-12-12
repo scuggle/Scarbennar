@@ -1190,13 +1190,11 @@ Z01_ideas = {
 V02_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
 	start = {
 		hostile_attrition = 2
-		leader_land_fire = 1
+		fort_maintenance_modifier = -0.15
 	}
 
 	bonus = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
+		stability_cost_modifier = -0.15
 	}
 
 	trigger = {
@@ -1217,27 +1215,29 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 
 	V02_3 = { #Shanty Garrison
 		garrison_size = 0.33
-		defensiveness = 0.15
+		global_garrison_growth = 0.5
 	}
 
 	V02_4 = { #Teeming Masses
-		fire_damage_received = -0.075
-		shock_damage_received = -0.075
+		 supply_limit_modifier = 0.25
 	}
 
 	V02_5 = { #Breath of the Dragonforge
-		artillery_power = 0.15
-		fire_damage = 0.10
+		artillery_power = 0.10
+		infantry_power = 0.05
 
 	}
 
 	V02_6 = { #Servants of the Mecha-Dragon
-		tolerance_own = 2
 		artificers_loyalty_modifier = 0.1
 	}
 
 	V02_7 = { #Draconic Rule
-			infantry_power = 0.10
+
+			legitimacy = 1
+			devotion = 1
+			republican_tradition = 0.3
+			
 
 	}
 }
