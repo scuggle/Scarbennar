@@ -1236,8 +1236,48 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 	}
 }
 
-#Coppertown
-A69_ideas = {
+## Coppertown
+# A69_ideas = {
+# 	start = {
+# 		global_trade_goods_size_modifier = 0.10				#
+# 		shock_damage_received = -0.10						#
+# 	}
+
+# 	bonus = {
+# 		artillery_fire = 0.5							#
+# 	}
+
+# 	trigger = {
+# 		tag = A69
+# 	}
+# 	free = yes
+
+# 	A69_one = {
+# 		artillery_cost = -0.10						#
+# 	}
+# 	A69_two = {
+# 		build_cost = -0.10
+# 		build_time = -0.10							#
+# 	}
+# 	A69_three = {
+# 		fire_damage = 0.15							#
+# 	}
+# 	A69_four = {
+# 		production_efficiency = 0.10				#
+# 	}
+# 	A69_five = {
+# 		merchants = 1								# 	
+# 	}
+# 	A69_six = {
+# 		fort_maintenance_modifier = -0.2			# 
+# 	}
+# 	A69_seven = {
+# 		artillery_power = 0.15						# 
+# 	}	
+# }
+
+# Triarchy
+X23_ideas = {
 	start = {
 		global_trade_goods_size_modifier = 0.10				#
 		shock_damage_received = -0.10						#
@@ -1248,30 +1288,30 @@ A69_ideas = {
 	}
 
 	trigger = {
-		tag = A69
+		tag = X23
 	}
 	free = yes
 
-	A69_one = {
+	X23_one = {
 		artillery_cost = -0.10						#
 	}
-	A69_two = {
+	X23_two = {
 		build_cost = -0.10
 		build_time = -0.10							#
 	}
-	A69_three = {
+	X23_three = {
 		fire_damage = 0.15							#
 	}
-	A69_four = {
+	X23_four = {
 		production_efficiency = 0.10				#
 	}
-	A69_five = {
+	X23_five = {
 		merchants = 1								# 	
 	}
-	A69_six = {
+	X23_six = {
 		fort_maintenance_modifier = -0.2			# 
 	}
-	A69_seven = {
+	X23_seven = {
 		artillery_power = 0.15						# 
 	}	
 }
