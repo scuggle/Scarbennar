@@ -1194,7 +1194,7 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 	}
 
 	bonus = {
-		stability_cost_modifier = -0.15
+		special_unit_forcelimit = 0.15
 	}
 
 	trigger = {
