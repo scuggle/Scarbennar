@@ -1190,11 +1190,13 @@ Z01_ideas = {
 V02_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
 	start = {
 		hostile_attrition = 2
-		enemy_core_creation = 0.5
+		leader_land_fire = 1
 	}
 
 	bonus = {
-		fire_damage = 0.15
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
 	}
 
 	trigger = {
@@ -1206,33 +1208,37 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 	free = yes
 
 	V02_1 = { #The Great Project
-		build_cost = -0.15
+		build_cost = -0.10
 	}
 
 	V02_2 = { #Serpentspine Undercities
-		development_cost = -0.10
+		development_cost = -0.1
 	}
 
 	V02_3 = { #Shanty Garrison
 		garrison_size = 0.33
-		defensiveness = 0.25
+		defensiveness = 0.15
 	}
 
 	V02_4 = { #Teeming Masses
-		land_forcelimit_modifier = 0.20
-		global_manpower_modifier = 0.10
+		fire_damage_received = -0.075
+		shock_damage_received = -0.075
 	}
 
 	V02_5 = { #Breath of the Dragonforge
 		artillery_power = 0.15
+		fire_damage = 0.10
+
 	}
 
 	V02_6 = { #Servants of the Mecha-Dragon
 		tolerance_own = 2
+		artificers_loyalty_modifier = 0.1
 	}
 
 	V02_7 = { #Draconic Rule
-		max_absolutism = 20
+			infantry_power = 0.10
+
 	}
 }
 

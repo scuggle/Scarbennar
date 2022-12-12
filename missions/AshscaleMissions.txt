@@ -214,10 +214,10 @@ becoming_a_country_branch = {
 			province_id = 4039
 		}
 		trigger = {
-			OR = {
+			AND = {
 				treasury = 100
 				4039 = {
-					has_fort_building_trigger = yes 
+					is_capital = yes
 				}
 			}
 		}
