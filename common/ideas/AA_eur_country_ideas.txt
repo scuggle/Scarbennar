@@ -1194,7 +1194,7 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 	}
 
 	bonus = {
-		special_unit_forcelimit = 0.15
+		artillery_cost = -0.20	
 	}
 
 	trigger = {
@@ -1219,17 +1219,16 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 	}
 
 	V02_4 = { #Teeming Masses
-		 supply_limit_modifier = 0.25
+		 shock_damage_received = -0.10
 	}
 
 	V02_5 = { #Breath of the Dragonforge
 		artillery_power = 0.10
-		infantry_power = 0.05
-
 	}
 
 	V02_6 = { #Servants of the Mecha-Dragon
-		artificers_loyalty_modifier = 0.1
+		
+		special_unit_forcelimit = 0.15
 	}
 
 	V02_7 = { #Draconic Rule
@@ -1237,6 +1236,7 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 			legitimacy = 1
 			devotion = 1
 			republican_tradition = 0.3
+			artificers_loyalty_modifier = 0.1
 			
 
 	}
