@@ -297,14 +297,13 @@ X07_ideas = {
 	
 	X07_one = {
 		galley_power = 0.2
-		naval_forcelimit_modifier = 0.2
 	}
 	X07_two = {
 		development_cost = -0.1
-		global_ship_trade_power = 0.3
+		global_ship_trade_power = 0.15
 	}
 	X07_three = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.1
 	}
 	X07_four = {
 		diplomatic_upkeep = 2
@@ -327,10 +326,10 @@ X07_ideas = {
 X08_ideas = {
 	start = {
 		diplomatic_reputation = 1 #I For one welcome our Elven Overlords.
-		heavy_ship_power = 0.1 #Legacy of Celmaldor
+		light_ship_power = 0.1 #Legacy of Celmaldor
 	}
 	bonus = {
-		fire_damage_received = -0.10 #Dáine, Glass Armour
+		fire_damage_received = -0.05 #Dáine, Glass Armour
 	}
 	trigger = {
 		OR = {
@@ -340,28 +339,28 @@ X08_ideas = {
 	free = yes		#will be added at load.
 
 	X08_one = {  #A Helmet for every head.
-	manpower_recovery_speed = 0.25
+		manpower_recovery_speed = 0.20
 	}
 	X08_two = { #Aldróg [Pale Stone]
-	build_time = -0.2
-	prestige_decay = -0.01
+		build_time = -0.1
+		prestige_decay = -0.01
 	}
 	X08_three = { #The Dalássa [Noble Lances].
-	cavalry_power = 0.2
+		cavalry_power = 0.15
 	}
 	X08_four = { #House Icewind
-	trade_efficiency = 0.15
+		trade_efficiency = 0.15
 	}
 	X08_five = { #Seirèild - By Excellence alone.
-	same_culture_advisor_cost = -0.15
-	culture_conversion_cost = -0.25
+		same_culture_advisor_cost = -0.15
+		culture_conversion_cost = -0.25
 	}
 	X08_six = { #The Gilded Court of Seiranar.
-	yearly_absolutism = 2
-	dip_tech_cost_modifier = -0.1
+		yearly_absolutism = 2
+		dip_tech_cost_modifier = -0.1
 	}
 	X08_seven = { #Sons of Alen, welcome and respected
-	num_accepted_cultures = 2
+		global_institution_spread = 0.2
 	}
 }
 
