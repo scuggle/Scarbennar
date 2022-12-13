@@ -1285,12 +1285,12 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 # Triarchy
 X23_ideas = {
 	start = {
-		global_trade_goods_size_modifier = 0.10				#
-		shock_damage_received = -0.10						#
+		possible_policy = 1
+		advisor_cost = -0.15
 	}
 
 	bonus = {
-		artillery_fire = 0.5							#
+		production_efficiency = 0.15
 	}
 
 	trigger = {
@@ -1299,76 +1299,30 @@ X23_ideas = {
 	free = yes
 
 	X23_one = {
-		artillery_cost = -0.10						#
-	}
-	X23_two = {
-		build_cost = -0.10
-		build_time = -0.10							#
-	}
-	X23_three = {
-		fire_damage = 0.15							#
-	}
-	X23_four = {
-		production_efficiency = 0.10				#
-	}
-	X23_five = {
-		merchants = 1								# 	
-	}
-	X23_six = {
-		fort_maintenance_modifier = -0.2			# 
-	}
-	X23_seven = {
-		artillery_power = 0.15						# 
-	}	
-}
-
-# #Triarchy WIP
-X23_ideas = {
-	start = {
-		all_possible_policy = 1
-		advisor_cost = -0.2
-	}
-
-	bonus = {
- production_efficiency = 0.2
- }
-
 		fire_damage_received = -0.05
 		shock_damage_received = -0.05
-		shock_damage = 0.10
-		fire_damage = 0.10
 
-
-		naval_forcelimit_modifier = 0.15
-		light_ship_power = 0.2
-		global_ship_trade_power = 0.2
-
+	}
+	X23_two = {
+		naval_forcelimit_modifier = 0.1
+		global_naval_engagement_modifier = 0.05
+	}
+	X23_three = {
 		technology_cost = -0.05
 		idea_cost = -0.05
-
+	}
+	X23_four = {
 		leader_land_fire = 1
 		leader_naval_fire = 1
-		leader_land_manuever = 1
-
-# 		land_attrition = -0.1
-# 		defensiveness = 0.05
-# 		hostile_attrition = 1
-
-
-
-
-# 		leader_land_shock = 1
-# 		
-# 		special_unit_forcelimit = 0.10
-
-
-
-# 		prestige = 1.5
-# 		stability_cost_modifier = -0.1
-# 		
-# 		innovativeness_gain = 0.25
-
-		
-# 		production_efficiency = 0.15
-
-
+	}
+	X23_five = {
+		special_unit_forcelimit = 0.20 	
+	}
+	X23_six = {
+		shock_damage = 0.10
+		fire_damage = 0.10
+	}
+	X23_seven = {
+		artillery_power = 0.10						
+	}	
+}
