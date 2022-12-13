@@ -6541,3 +6541,21 @@ voltenu_corpocracy = {
 		remove_country_modifier = technocracy_rajput_bonus
 	}
 }
+
+triarchy_reform = {
+	icon = "fraternite_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		tag = X23
+	}
+	modifiers = {
+		advisor_pool = 3
+	}
+	custom_attributes {
+		cannot_become_dictatorship = yes
+	}
+	ai = {
+		factor = 2.5
+	}
+}
