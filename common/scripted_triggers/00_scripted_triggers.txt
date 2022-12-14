@@ -1728,6 +1728,7 @@ republic_with_female_rulers_trigger = {
 		has_country_modifier = sister_suffragettes
 		has_country_modifier = mary_inheritance_reforms
 		has_reform = democratic_values_reform
+		has_reform = triarchy_reform
 
 		#Anbennar
 		has_country_modifier = harpy_administration

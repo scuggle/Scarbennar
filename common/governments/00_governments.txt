@@ -614,6 +614,7 @@ republic = {
 				liberte_reform
 				egalite_reform
 				fraternite_reform
+				triarchy_reform
 
 				#Anbennar
 				military_council_reform

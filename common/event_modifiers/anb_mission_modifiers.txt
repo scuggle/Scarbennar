@@ -12352,13 +12352,11 @@ elikhand_entef_resurgent = {
 
 goblin_force_to_defend = {
 	land_morale = 0.10
-	tribal_development_growth = 0.01
 
 }
 
 goblin_learning_from_new_neighbors = {
 	monthly_reform_progress = 0.2
-	tribal_development_growth = 0.01
 }
 
 goblin_escann_ingenuity = {
@@ -12391,7 +12389,7 @@ goblin_learning_common = {
 }
 
 goblin_orcish_influx = {
-	tribal_development_growth = 0.04
+	tribal_development_growth = 0.02
 	global_regiment_cost = -0.10
 }
 
@@ -12409,7 +12407,7 @@ goblin_take_what_we_need = {
 }
 
 goblin_room_to_grow = {
-	tribal_development_growth = 0.02
+	tribal_development_growth = 0.01
 	settle_cost = -0.10
 }
 
@@ -12448,7 +12446,7 @@ goblin_flung_head_legacy = {
 goblin_no_more_backstabbing = {
 	global_spy_defence = 0.1
 	discipline = 0.05
-	tribal_development_growth = 0.02
+	tribal_development_growth = 0.01
 }
 
 goblin_safe_homes = {
