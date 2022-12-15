@@ -1,0 +1,35 @@
+#Military
+rp_military_morale_positive = {
+	land_morale = 0.1
+}
+rp_military_morale_negative = {
+	land_morale = -0.1
+}
+
+#Navy
+
+#Diplomacy
+
+#Economy
+
+#Expansion
+
+#Technology
+
+#Court
+
+#Government
+
+#Estates
+
+#EoA
+
+#Culture
+
+#Espionage
+
+#Religion
+
+#Colonisation
+
+#Trade
