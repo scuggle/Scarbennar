@@ -949,7 +949,7 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	
 	land_morale = 0.1 #1 A
 	naval_morale = 0.1
-	discipline = -0.1
+	discipline = -0.05
 	
 	movement_speed_onto_off_boat_modifier = 0.5
 	
