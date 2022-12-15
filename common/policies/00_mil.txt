@@ -31,7 +31,7 @@ vass_cutting_edge_1 = {
     }
 
 	siege_ability = 0.10
-	
+	reinforce_cost_modifier = -0.05
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -103,6 +103,7 @@ vass_engineer_corps_1 = {
     }
 
 	defensiveness = 0.20
+	reinforce_speed = 0.05
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -255,6 +256,7 @@ vass_cutting_edge_2 = {
     }
 
 	siege_ability = 0.15
+	reinforce_cost_modifier = -0.10
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -326,6 +328,7 @@ vass_engineer_corps_2 = {
     }
 
 	defensiveness = 0.33
+	reinforce_speed = 0.10
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -478,6 +481,7 @@ vass_cutting_edge_3 = {
     }
 
 	siege_ability = 0.20
+	reinforce_cost_modifier = -0.15
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -549,6 +553,7 @@ vass_engineer_corps_3 = {
     }
 
 	defensiveness = 0.50
+	reinforce_speed = 0.15
 	
 	ai_will_do = {
 		factor = 0.8		
