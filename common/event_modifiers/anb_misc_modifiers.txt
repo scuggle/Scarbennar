@@ -62,7 +62,6 @@ diplomatic_pariah = {
 	improve_relation_modifier = -0.5
 	
 	global_unrest = -1
-	enemy_core_creation = 0.25
 	
 	unjustified_demands = -0.5
 	ae_impact = -0.25
