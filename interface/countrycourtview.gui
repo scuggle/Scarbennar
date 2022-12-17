@@ -930,7 +930,7 @@ guiTypes = {
 		name = "advisor_modifier_item"
 		backGround =""
 		position = { x=0 y=0 }	
-		size = { x=48 y=12 }
+		size = { x=48 y=23 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
