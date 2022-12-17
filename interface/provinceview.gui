@@ -2418,12 +2418,12 @@ guiTypes = {
 				position = { x = 277 y = 9 }
 			}
 
-			guiButtonType =
-			{
-				name = "concentrate_development"
-				quadTextureSprite = "GFX_concentrate_development"
-				position = { x = 318 y = 9 }
-			}
+			#guiButtonType =
+			#{
+			#	name = "concentrate_development"
+			#	quadTextureSprite = "GFX_concentrate_development"
+			#	position = { x = 318 y = 9 }
+			#}
 			
 			guiButtonType =
 			{
@@ -2785,7 +2785,7 @@ guiTypes = {
 		windowType = {
 			name = "buildings_window"
 			backGround=""
-			position = { x=480 y=-51 }
+			position = { x=480 y=13 }
 			size = { x=475 y=480 }
 			dontRender = ""
 			horizontalBorder= ""
@@ -2870,13 +2870,13 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "center_of_trade_button"
-					position = { x=174 y=244 }
+					position = { x=174 y=180 }
 					spriteType = "GFX_center_of_trade_inland_1"
 				}
 
 				iconType = {
 					name = "center_of_trade_icon"
-					position = { x=174 y=244 }
+					position = { x=174 y=180 }
 					spriteType = "GFX_center_of_trade_inland_1"
 				}
 
@@ -2885,7 +2885,7 @@ guiTypes = {
 			windowType = {
 				name = "province_values_window"
 				backGround=""
-				position = { x=4 y=418 }
+				position = { x=4 y=354 }
 				size = { x=475 y=480 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -3265,7 +3265,7 @@ guiTypes = {
 			windowType = {
 				name = "natives_buildings_window"
 				backGround=""
-				position = {  x=1 y=209 }
+				position = {  x=1 y=1 }
 				size = { x=475 y=270 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -3321,7 +3321,7 @@ guiTypes = {
 					name = "buildings"
 					position = { x = 12 y = 67 }
 					backGround=""
-					size = { x=365 y = 210}
+					size = { x=365 y = 418}
 					Orientation = "UPPER_LEFT"
 					horizontal = 0
 					spacing = 0
@@ -3334,7 +3334,7 @@ guiTypes = {
 				windowType = {
 					name = "province_values_window"
 					backGround=""
-					position = { x=0 y=290 }
+					position = { x=0 y=498 }
 					size = { x=475 y=586 }
 					dontRender = ""
 					horizontalBorder= ""
@@ -3405,9 +3405,8 @@ guiTypes = {
 					{
 						name ="governing_capacity_icon"
 						spriteType = "GFX_governing_capacity"
-						position = { x= 205 y = -12  }
+						position = { x= 210 y = 0  }
 						Orientation = "UPPER_LEFT"
-						scale = 0.75
 					}
 					
 					instantTextBoxType = {
@@ -3490,7 +3489,7 @@ guiTypes = {
 			windowType = {
 				name = "natives_buildings_window_large"
 				backGround=""
-				position = {  x=1 y=-105 }
+				position = {  x=1 y=-157 }
 				size = { x=475 y=480 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -3508,7 +3507,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "sort_name"
-					position = { x = 70 y = 40 }
+					position = { x = 70 y = 92 }
 					tooltip = ""
 					tooltipText =""
 					delayedTooltipText = ""
@@ -3520,7 +3519,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "sort_cost"
-					position = { x = 230 y = 42 }
+					position = { x = 230 y = 94 }
 					tooltip = ""
 					tooltipText =""
 					delayedTooltipText = ""
@@ -3532,7 +3531,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "sort_time"
-					position = { x = 295 y = 42 }
+					position = { x = 295 y = 94 }
 					tooltip = ""
 					tooltipText =""
 					delayedTooltipText = ""
@@ -3544,9 +3543,9 @@ guiTypes = {
 
 				listboxType = {
 					name = "buildings"
-					position = { x = 12 y = 67 }
+					position = { x = 12 y = 119 }
 					backGround=""
-					size = { x=365 y = 572}
+					size = { x=365 y = 520}
 					Orientation = "UPPER_LEFT"
 					horizontal = 0
 					spacing = 0
@@ -3559,7 +3558,7 @@ guiTypes = {
 				windowType = {
 					name = "province_values_window"
 					backGround=""
-					position = { x=0 y=0 }
+					position = { x=0 y=52 }
 					size = { x=475 y=586 }
 					dontRender = ""
 					horizontalBorder= ""
@@ -3708,7 +3707,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "building_close_button"
-				position = { x = 304 y = 123 }
+				position = { x = 304 y = 120 }
 				quadTextureSprite ="GFX_closebutton2"
 				clicksound = close_window
 			}
@@ -4550,12 +4549,12 @@ guiTypes = {
 
 	positionType = {
 		name = "building_close_button_natives"
-		position = { x = 382 y = 200 }
+		position = { x = 382 y = -8 }
 	}
 
 	positionType = {
 		name = "building_close_button_natives_large"
-		position = { x = 382 y = -112 }
+		position = { x = 382 y = -164 }
 	}
 
 	positionType = {
@@ -6470,13 +6469,13 @@ guiTypes = {
 
 		checkboxType = {
 			name = "build_ramparts"
-			position = { x = 61 y = 420 }
+			position = { x = 113 y = 420 }	#Anbennar, x was 61, moved for mage tower
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
 			name = "ramparts_cost"
-			position = {x = 61 y = 470 }
+			position = {x = 113 y = 470 }	#Anbennar, x was 61, moved for mage tower
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
@@ -6486,13 +6485,13 @@ guiTypes = {
 
 		checkboxType = {
 			name = "build_impressment_offices"
-			position = { x = 113 y = 420 }
+			position = { x = 165 y = 420 }	#Anbennar, x was 113, moved for mage tower
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
 			name = "impressment_offices_cost"
-			position = {x = 113 y = 470 }
+			position = {x = 165 y = 470 }	#Anbennar, x was 113, moved for mage tower
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
@@ -6502,13 +6501,13 @@ guiTypes = {
 
 		checkboxType = {
 			name = "build_state_house"
-			position = { x = 165 y = 420 }
+			position = { x = 217 y = 420 }	#Anbennar, x was 165, moved for mage tower
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
 			name = "state_house_cost"
-			position = {x = 165 y = 470 }
+			position = {x = 217 y = 470 }	#Anbennar, x was 165, moved for mage tower
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
@@ -6518,13 +6517,13 @@ guiTypes = {
 
 		checkboxType = {
 			name = "build_soldier_households"
-			position = { x = 217 y = 420 }
+			position = { x = 269 y = 420 }	#Anbennar, x was 217, moved for mage tower
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
 			name = "soldier_households_cost"
-			position = {x = 217 y = 470 }
+			position = {x = 269 y = 470 }	#Anbennar, x was 217, moved for mage tower
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
@@ -6534,18 +6533,35 @@ guiTypes = {
 
 		checkboxType = {
 			name = "build_furnace"
-			position = { x = 269 y = 420 }
+			position = { x = 321 y = 420 }	#Anbennar, x was 269, moved for mage tower
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
 			name = "furnace_cost"
-			position = {x = 269 y = 470 }
+			position = {x = 321 y = 470 }	#Anbennar, x was 269, moved for mage tower
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000�"
+		}
+
+		#Anbennar
+		checkboxType = {
+			name = "build_mage_tower"
+			position = { x = 61 y = 420 }
+			quadTextureSprite = "GFX_furnace"
+		}
+
+		instantTextBoxType={
+			name = "mage_tower_cost"
+			position = {x = 61 y = 470 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
 		}
 
 	}
@@ -6831,7 +6847,7 @@ guiTypes = {
 				name = "edicts_listbox"
 				backGround = ""
 				position = { x = 500 y = 51 }
-				size = { x = 380 y = 450 }
+				size = { x = 380 y = 400 }
 				horizontal = 0
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
