@@ -77,7 +77,7 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			buttonFont = "Stellaris_Small"
+			buttonFont = "vic_18"
 			clicksound = back_click
 			buttonText = "Abdicate"
 		}
@@ -88,7 +88,7 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			buttonFont = "Stellaris_Small"
+			buttonFont = "vic_18"
 			clicksound = back_click
 			buttonText = "Extend Regency"
 		}			
@@ -349,7 +349,7 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			buttonFont = "Stellaris_Small"
+			buttonFont = "vic_18"
 			buttonText = "Support Heir"			
 			clicksound = back_click
 		}
@@ -360,7 +360,7 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			buttonFont = "Stellaris_Small"
+			buttonFont = "vic_18"
 			clicksound = back_click
 			buttonText = "Destroy The Child"
 		}	
@@ -372,7 +372,7 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			buttonFont = "Stellaris_Small"
+			buttonFont = "vic_18"
 			clicksound = back_click
 			buttonText = "Assign Heir"
 		}	
