@@ -927,6 +927,7 @@ defender_of_faith = {
 
 defender_of_faith_refused_cta = {
 	diplomatic_reputation = -1
+	all_power_cost	= 0.10
 }
 
 emperor = {
