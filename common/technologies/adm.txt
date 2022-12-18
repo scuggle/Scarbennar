@@ -275,7 +275,6 @@ technology = { #University
 
 	allowed_idea_groups = 6
 	university = yes	
-	governing_capacity = 250
 	
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1
@@ -291,6 +290,8 @@ technology = { #National Sovereignty
 		printing_press = 0.5
 		global_trade = 0.3
 	}
+
+	governing_capacity = 250
 }
 
 technology = { #Cathedral
