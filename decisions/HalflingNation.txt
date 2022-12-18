@@ -30,7 +30,7 @@ country_decisions = {
 			is_at_war = no
 			#num_of_cities = 15
 			num_of_owned_provinces_with = {
-				value = 5
+				value = 15
 				region = small_country_region
 				culture_group = halfling
 			}
