@@ -947,7 +947,7 @@ commandant = {
 	
 	# Bonus
 	discipline = 0.025
-	drill_gain_modifier = 0.25
+	drill_gain_modifier = 0.15
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -985,8 +985,8 @@ quartermaster = {
 	monarch_power = MIL
 	
 	# Bonus
-	reinforce_speed = 0.33
-	reinforce_cost_modifier = -0.33
+	land_attrition = -0.15
+	land_maintenance_modifier = -0.10
 	
 	skill_scaled_modifier = {
 		trigger = {
