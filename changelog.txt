@@ -32,11 +32,12 @@ Changelog:
 - Kusonsesu (hobgoblins in the west rahen gulf, releasable)
 - Southroy (A lorentish pretender)
 ----------------------------------------------------------------------------
-29 modified/added national idea sets:
+30 modified/added national idea sets:
 - Esmaria
 - Pashainé
 - Karashar
 - Empire of Anbennar
+- Coppertown
 - 3 escann goblin tribes (Grasshopper Mucher,Flung Head, Flying Hound)
 - 19 for the formables
 - 3 for new countries
