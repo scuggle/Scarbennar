@@ -938,8 +938,8 @@ X22_ideas = {
 
 # Triarchy
 X23_ideas = {
-	start = {
-		possible_policy = 1
+  start = {
+	  possible_policy = 1
 		advisor_cost = -0.15
 	}
 
@@ -955,13 +955,12 @@ X23_ideas = {
 	X23_one = {
 		fire_damage_received = -0.05
 		shock_damage_received = -0.05
-
 	}
 	X23_two = {
 		naval_forcelimit_modifier = 0.15
 	}
 	X23_three = {
-		idea_cost = -0.5
+		idea_cost = -0.05
 	}
 	X23_four = {
 		leader_land_fire = 1
