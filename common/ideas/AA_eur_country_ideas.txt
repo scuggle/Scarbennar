@@ -1306,7 +1306,7 @@ X23_ideas = {
 		naval_forcelimit_modifier = 0.15
 	}
 	X23_three = {
-		idea_cost = -0.5
+		idea_cost = -0.05
 	}
 	X23_four = {
 		leader_land_fire = 1
