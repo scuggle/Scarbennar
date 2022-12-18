@@ -129,7 +129,6 @@ technology = { #Renaissance Thought
 	}
 	
 	farm_estate = yes
-	ramparts = yes
 	#Noble Republic
 }
 
@@ -172,6 +171,7 @@ technology = { #Modern Theocracy
 	}
 	
 	theocratic_government = yes
+	ramparts = yes
 }
 
 technology = { #Textile Manufactory
