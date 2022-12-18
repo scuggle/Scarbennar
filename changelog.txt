@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------
 Changelog:
 ----------------------------------------------------------------------------
-19 new formable nations:
+20 new formable nations:
 - Gerudian Empire
 - Carneter
 - Great Xhaz
@@ -21,6 +21,7 @@ Changelog:
 - Greater Ibevar
 - Airgethil (formable for Silver Band adventurers)
 - Griffon Empire (MT reward for Marrhold)
+- Northern League (alenics or gawed after their disaster)
 ----------------------------------------------------------------------------
 1 new formable decision:
 - Empire of Anbennar
