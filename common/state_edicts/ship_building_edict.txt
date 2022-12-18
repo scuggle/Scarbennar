@@ -1,4 +1,4 @@
-edict_encourage_development = {
+ship_building_edict = {
 	potential = {
 		always = yes		#we support "potential" if modders want to have lots and just show some.
 	}
@@ -8,14 +8,13 @@ edict_encourage_development = {
 	}
 	
 	modifier = {
-		supply_limit_modifier = 0.33
+		ship_recruit_speed = -0.25
 	}
 	
-	color = {  244 184 12  }
+	color = {  46 114 55  }
 	
 	
 	ai_will_do = {
 		factor = 0
 	}
-	
 }

@@ -417,7 +417,7 @@
  edict_religious_unity:0 "Enforce Religious Unity"
  edict_protect_trade:0 "Protect Trade"
  edict_promote_military_recruitment:1 "Increased Enlistment"
- edict_encourage_development:0 "Encourage Development"
+ edict_encourage_development:0 "Increase Local Supply"
  edict_defensive_edict:0 "Defensive Edict"
  edict_advancement_effort:0 "Advancement Effort"
  edict_centralization_effort:0 "Centralization Effort"
@@ -427,6 +427,15 @@
  edict_religion_enforced_tooltip:0 "Requires '§YReligion Enforced Edict§!' from Age of Reformation."
  edict_of_absolutism:0 "Edict of Absolutism"
  edict_of_absolutism_tooltip:0 "Requires '§YEdict of Absolutism§!' from Age of Absolutism."
+ 
+ ##New stuff
+ 
+ ship_building_edict:0 "Ship Construction Effort"
+ 
+ 
+ ##New Stuff
+ 
+ 
  UNCONDITIONAL_SURRENDER_UNREST:0 "The nation has surrendered. No unrest until peace is negotiated."
  DEVASTATION_FROM_UNREST:0 "Unrest: $VAL$\n"
  DEVASTATION_FROM_CONTROL:0 "Control: $VAL$\n"

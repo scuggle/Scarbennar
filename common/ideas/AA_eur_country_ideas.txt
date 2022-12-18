@@ -936,6 +936,87 @@ X22_ideas = {
 	}	
 }
 
+# Triarchy
+X23_ideas = {
+  start = {
+	  possible_policy = 1
+		advisor_cost = -0.15
+	}
+
+	bonus = {
+		production_efficiency = 0.15
+	}
+
+	trigger = {
+		tag = X23
+	}
+	free = yes
+
+	X23_one = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	X23_two = {
+		naval_forcelimit_modifier = 0.15
+	}
+	X23_three = {
+		idea_cost = -0.05
+	}
+	X23_four = {
+		leader_land_fire = 1
+		leader_naval_fire = 1
+	}
+	X23_five = {
+		special_unit_forcelimit = 0.20 	
+	}
+	X23_six = {
+		shock_damage = 0.10
+		fire_damage = 0.10
+	}
+	X23_seven = {
+		artillery_power = 0.10						
+	}	
+}
+
+#Northern League
+X24_ideas = {
+	start = {
+		prestige_decay = -0.01
+		advisor_cost = -0.15
+	}
+
+	bonus = {
+		core_creation = -0.15
+	}
+
+	trigger = {
+		tag = X24
+	}
+	free = yes
+
+	X24_one = {
+		religious_unity = 0.15
+	}
+	X24_two = {
+		fire_damage = 0.1
+	}
+	X24_three = {
+		global_manpower_modifier = 0.15
+	}
+	X24_four = {
+		artillery_cost = -0.2
+	}
+	X24_five = {
+		leader_land_fire = 1
+	}
+	X24_six = {
+		artillery_power = 0.1
+	}
+	X24_seven = {
+		siege_ability = 0.15			
+	}	
+}
+
 #Griffon Empire ideas
 M01_ideas = {
 	start = {
@@ -967,7 +1048,7 @@ M01_ideas = {
 	}
 	M01_five = {
 		production_efficiency = 0.1			#The Dwarven artificers are helping the economy
-		goods_produced_modifier = 0.1		
+		global_trade_goods_size_modifier =  0.1		
 	}
 	M01_six = {
 		leader_land_manuever = 1			#Your Generals have acclimatized to the fast armies of griffon riders
@@ -1218,7 +1299,7 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 	}
 
 	V02_4 = { #Teeming Masses
-		 shock_damage_received = -0.10
+		shock_damage_received = -0.10
 	}
 
 	V02_5 = { #Breath of the Dragonforge
@@ -1226,100 +1307,53 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 	}
 
 	V02_6 = { #Servants of the Mecha-Dragon
-		
 		special_unit_forcelimit = 0.15
 	}
 
 	V02_7 = { #Draconic Rule
-
 			legitimacy = 1
 			devotion = 1
 			republican_tradition = 0.3
 			artificers_loyalty_modifier = 0.1
-			
-
 	}
 }
 
-## Coppertown
-# A69_ideas = {
-# 	start = {
-# 		global_trade_goods_size_modifier = 0.10				#
-# 		shock_damage_received = -0.10						#
-# 	}
-
-# 	bonus = {
-# 		artillery_fire = 0.5							#
-# 	}
-
-# 	trigger = {
-# 		tag = A69
-# 	}
-# 	free = yes
-
-# 	A69_one = {
-# 		artillery_cost = -0.10						#
-# 	}
-# 	A69_two = {
-# 		build_cost = -0.10
-# 		build_time = -0.10							#
-# 	}
-# 	A69_three = {
-# 		fire_damage = 0.15							#
-# 	}
-# 	A69_four = {
-# 		production_efficiency = 0.10				#
-# 	}
-# 	A69_five = {
-# 		merchants = 1								# 	
-# 	}
-# 	A69_six = {
-# 		fort_maintenance_modifier = -0.2			# 
-# 	}
-# 	A69_seven = {
-# 		artillery_power = 0.15						# 
-# 	}	
-# }
-
-# Triarchy
-X23_ideas = {
+#Coppertown
+A69_ideas = {
 	start = {
-		possible_policy = 1
-		advisor_cost = -0.15
-	}
+ 		global_trade_goods_size_modifier = 0.10				#
+		shock_damage_received = -0.10						#
+ 	}
 
-	bonus = {
-		production_efficiency = 0.15
-	}
+ 	bonus = {
+ 		artillery_fire = 0.25							#
+ 	}
 
-	trigger = {
-		tag = X23
-	}
-	free = yes
+ 	trigger = {
+		tag = A69
+ 	}
+ 	free = yes
 
-	X23_one = {
-		fire_damage_received = -0.05
-		shock_damage_received = -0.05
-
+	A69_one = {
+ 		artillery_cost = -0.10						#
 	}
-	X23_two = {
-		naval_forcelimit_modifier = 0.15
+ 	A69_two = {
+ 		build_cost = -0.10
+ 		build_time = -0.10							#
+ 	}
+ 	A69_three = {
+ 		fire_damage = 0.15							#
+ 	}
+ 	A69_four = {
+ 		production_efficiency = 0.10				#
+ 	}
+ 	A69_five = {
+ 		merchants = 1								# 	
 	}
-	X23_three = {
-		idea_cost = -0.05
-	}
-	X23_four = {
-		leader_land_fire = 1
-		leader_naval_fire = 1
-	}
-	X23_five = {
-		special_unit_forcelimit = 0.20 	
-	}
-	X23_six = {
-		shock_damage = 0.10
-		fire_damage = 0.10
-	}
-	X23_seven = {
-		artillery_power = 0.10						
-	}	
+ 	A69_six = {
+ 		fort_maintenance_modifier = -0.2			# 
+ 	}
+ 	A69_seven = {
+ 		artillery_power = 0.10						# 
+ 	}	
 }

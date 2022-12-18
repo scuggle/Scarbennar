@@ -5681,6 +5681,8 @@ northern_league_magnates = {
 		OR = {
 			tag = A13 # Gawed
 			was_tag = A13
+			tag = X24 # Northern League
+			was_tag = X24
 			is_subject_of = A13
 		}
 	}
