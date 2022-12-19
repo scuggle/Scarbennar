@@ -72,7 +72,7 @@ Changed Hoardcurse to be impossible to trigger
 Added QoL decisions (such as deleting churches)
 ----------------------------------------------------------------------------
 Rebalance:
-- XXX
+- DoF for everyone
 ----------------------------------------------------------------------------
 Dwarven Adventurers in Serpentspine spawn earlier
 Gommoport, Zurzumexia and Mestikardu spawn at the same time as Vanbury Guild now
