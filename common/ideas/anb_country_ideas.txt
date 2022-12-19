@@ -25,7 +25,7 @@ A01_ideas = {
 	free = yes		#will be added at load.
 
 	A01_nobility_bound_in_blood = {
-		vassal_forcelimit_bonus = 1.0
+		vassal_forcelimit_bonus = 0.5
 		reduced_liberty_desire = 5
 	}
 	A01_ioriellan_renaissance = {
@@ -2745,7 +2745,7 @@ Z08_ideas = {
 
 	Z08_crown_of_bera = {
 		vassal_income = 0.25
-		vassal_forcelimit_bonus = 1.0
+		vassal_forcelimit_bonus = 0.5
 	}
 	Z08_heroes_of_old = {
 		army_tradition_decay = -0.01
@@ -4605,7 +4605,7 @@ G05_ideas = {
 # Cheshoshanta Ideas
 G06_ideas = {
 	start = {
-		vassal_forcelimit_bonus = 1.0 # Subjects give soldiers
+		vassal_forcelimit_bonus = 0.5 # Subjects give soldiers
 		infantry_power = 0.10 # Scary fighter types
 	}
 	bonus = {
@@ -12013,7 +12013,7 @@ H47_ideas = {
 larankar_ideas = {
 	start = {
 		diplomatic_upkeep = 2
-		vassal_forcelimit_bonus = 1.0
+		vassal_forcelimit_bonus = 0.5
 	}
 
 	bonus = {
@@ -13873,7 +13873,7 @@ H53_ideas = {
 		diplomatic_upkeep = 2
 	}
 	H53_soldiers_of_pelodir = {
-		vassal_forcelimit_bonus = 1.0
+		vassal_forcelimit_bonus = 0.5
 	}
 	H53_the_most_prestigious_house = {
 		prestige = 1
