@@ -2086,6 +2086,7 @@ U01_ideas = {
 	}
 	U01_anti_piracy_software = {
 		global_ship_trade_power = 0.15
+		transport_power = 0.33
 	}
 	U01_elikhets_legacy = {
 		prestige_decay = -0.01
