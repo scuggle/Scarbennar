@@ -17,6 +17,17 @@ update_artifice_points = {
 			}
 			# If you're adding a modifier here make sure to also add it to the artifice localization (in artifice_l_english and anb_custom_artifice_localization) otherwise it will not show up in game
 
+			#20 points for innovativeness ideas
+			if = {
+				limit = {
+					full_idea_group = innovativeness_ideas
+				}
+				change_variable = {
+					which = MaxArtificePoints
+					value = 20
+				}
+			}
+			
 			#5 points for having a university, nothing more from universities please.
 			if = {
 				limit = {

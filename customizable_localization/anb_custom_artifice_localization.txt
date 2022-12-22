@@ -775,3 +775,21 @@ defined_text = {
         }
     }
 }
+
+defined_text = {
+	name = getArtificeInnoIdeas
+	random = no
+	
+	text = {
+        localisation_key = artifice_inno_ideas
+        trigger = {
+			full_idea_group = innovativeness_ideas
+        }
+    }
+	text = {
+		localisation_key = artifice_inno_ideas_none
+		trigger = {
+			always = yes
+		}
+	}
+}

@@ -11,7 +11,7 @@
  has_artificer_estate_tt:0 "§Y[Root.GetName]§! has the §Y[Root.GetArtificersName]§! Estate."
  set_research_privilege_tt:0 "§YInvention Research§! will be granted to §Y[Root.GetArtificersName]§!:\nNational Tax Modifier: §R-10.0%§!\nPrestige Decay: §R+2.0%§!"
  
- artifice_breakdown:0 "[Root.getArtificeryBreakdownShort]\n\n§L============ Maximum Capacity Sources ===========§!\n[Root.getArtificeAdministration][Root.getArtificeMilitary][Root.getArtificeReligion][Root.getArtificeManufactories][Root.getArtificeIndustrialization][Root.getArtificeUniversities][Root.getArtificeHolds][Root.getArtificeDungeons][Root.getArtificeArtificersInfluence][Root.getArtificeMagesInfluence][Root.getArtificeInnovativeness][Root.getArtificeCoal][Root.getArtificeDamestear][Root.getArtificeRelics][Root.getArtificeMissions][Root.getArtificeFeitenLightningShuimuHired][Root.getArtificeFeitenStasisShuimuHired][Root.getArtificeFeitenFirestormShuimuHired][Root.getArtificeFeitenSkyFactoryShuimuHired][Root.getArtificeFeitenActiveFirestorm][Root.getArtificeFeitenActiveStasis][Root.getArtificeFeitenActiveSkyFactory][Root.getArtificeFeitenTotalInvestments][Root.getArtificeVaraineAllies][Root.getArtificeVaraineForeignAllies][Root.getArtificeHasMultipliers]\n§L===============================================§!\n§RGoing beyond your Artifice Capacity will result in a negative modifier!§!"
+ artifice_breakdown:0 "[Root.getArtificeryBreakdownShort]\n\n§L============ Maximum Capacity Sources ===========§!\n[Root.getArtificeAdministration][Root.getArtificeMilitary][Root.getArtificeReligion][Root.getArtificeManufactories][Root.getArtificeIndustrialization][Root.getArtificeUniversities][Root.getArtificeHolds][Root.getArtificeDungeons][Root.getArtificeArtificersInfluence][Root.getArtificeMagesInfluence][Root.getArtificeInnovativeness][Root.getArtificeFeitenActiveSkyFactory][Root.getArtificeFeitenTotalInvestments][Root.getArtificeVaraineAllies][Root.getArtificeVaraineForeignAllies][Root.getArtificeInnoIdeas][Root.getArtificeCoal][Root.getArtificeDamestear][Root.getArtificeRelics][Root.getArtificeMissions][Root.getArtificeFeitenLightningShuimuHired][Root.getArtificeFeitenStasisShuimuHired][Root.getArtificeFeitenFirestormShuimuHired][Root.getArtificeFeitenSkyFactoryShuimuHired][Root.getArtificeFeitenActiveFirestorm][Root.getArtificeFeitenActiveStasis][Root.getArtificeHasMultipliers]\n§L===============================================§!\n§RGoing beyond your Artifice Capacity will result in a negative modifier!§!"
  artifice_breakdown_short:0 "§L================ Artifice Capacity ================§!\nUsed Capacity:        §o[Root.ArtificeUpkeep.GetValue]§!\nMaxium Capacity:   §Y[Root.MaxArtificePoints.GetValue]§!\nAvailable Capacity:  §G[Root.RemainingArtificePoints.GetValue]§!"
  artifice_multipliers:0 "\n§L=========== Artifice Capacity Multipliers ===========§!\n[Root.getArtificeGovernment]\n"
  artifice_no_multpliers:0 ""
@@ -92,6 +92,9 @@
  artifice_damestear_points:0 "§G+[Root.DamestearArtificePoints.GetValue]§! - From Damestear (+3 per province)\n"
  artifice_damestear_points_none:0 "§g+0 - From Damestear (+3 per province)§!\n"
  artifice_mission_points:0 "§G+[Root.StaticArtificePoints.GetValue]§! - From Missions\n"
+
+artifice_inno_ideas:0 "§G+20§! - Full Innovative Ideas"
+artifice_inno_ideas_none:0 "§g+0 - Full Innovative Ideas"
  
  cost_10_artifice_capacity_to_maintain_tt:0 "Has §Y10§! Artifice Capacity available (Currently: §Y[Root.RemainingArtificePoints.GetValue]§!)"
  cost_20_artifice_capacity_to_maintain_tt:0 "Has §Y20§! Artifice Capacity available (Currently: §Y[Root.RemainingArtificePoints.GetValue]§!)"
