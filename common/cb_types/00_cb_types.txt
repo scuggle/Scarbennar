@@ -2040,7 +2040,7 @@ cb_premptive_strike = {
 		} 
 	} 
  
-	war_goal = humiliate_cyranvar 
+	war_goal = fallback_wargoal 
 } 
 
 #Elder Pact
