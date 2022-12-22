@@ -2557,8 +2557,3 @@ H51_focusing_on_machine = {
 	technology_cost = 0.05
 }
 ##
-
-##Advisor Events
-commandant_boost = {
-	discipline = 0.05
-}
