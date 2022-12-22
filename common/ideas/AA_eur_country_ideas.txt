@@ -384,7 +384,7 @@ X09_ideas = {
 	
 	X09_one = {
 		tolerance_own = 2
-		global_religious_conversion_resistance = -0.25
+		global_religious_conversion_resistance = 0.25
 	}
 	X09_two = {
 		church_loyalty_modifier = 0.1
