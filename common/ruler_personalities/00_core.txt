@@ -1854,7 +1854,7 @@ strict_personality = {
 	wants_avoid_loans = yes
 	wants_ecumenical_council = yes
 	
-	discipline = 0.025
+	discipline = 0.05
 
 	nation_designer_cost = 5
 } #1 easier event
