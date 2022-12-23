@@ -370,6 +370,7 @@ country_decisions = {
 					name = "autonomy_decreased"
 					duration = 10950
 				}
+				remove_province_modifier = recent_uprising
 			}
 		
 			
