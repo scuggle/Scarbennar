@@ -550,6 +550,73 @@ on_startup = {
 			}
 		}
 	}
+
+	#### Dev click counter ###
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_adm_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_adm_clicks
+				value = 0
+			}
+		}
+		
+	}
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_dip_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_dip_clicks
+				value = 0
+			}
+		}
+	}
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_mil_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_mil_clicks
+				value = 0
+			}
+		}
+	}
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_sum_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_sum_clicks
+				value = 0
+			}
+		}
+	}
 }
 
 # country
@@ -4504,6 +4571,20 @@ on_adm_development = {
 			add_next_institution_embracement_scaled = 5
 		}
 	}
+
+	#Dev Clicks
+    hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_adm_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
+	}
 }
 
 # province
@@ -4591,6 +4672,20 @@ on_dip_development = {
 			owner = { subtract_variable = { ancientDwarvenKnowledge = 1 } }
 			add_base_production = 1
 			add_next_institution_embracement_scaled = 5
+		}
+	}
+
+	#Dev Clicks
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_dip_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
 		}
 	}
 }
@@ -4684,6 +4779,20 @@ on_mil_development = {
 			owner = { subtract_variable = { ancientDwarvenKnowledge = 1 } }
 			add_base_manpower = 1
 			add_next_institution_embracement_scaled = 5
+		}
+	}
+
+	#Dev Clicks
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_mil_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
 		}
 	}
 }
