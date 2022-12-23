@@ -242,7 +242,7 @@ expansion_missions = {
 	}
 	army_1 = {
 		icon = mission_assemble_an_army
-		position = 7
+		position = 8
 		required_missions = {  }
 		trigger = { army_size = 15 }
 		effect = {
@@ -256,7 +256,7 @@ expansion_missions = {
 	}
 	army_2 = {
 		icon = mission_assemble_an_army
-		position = 8
+		position = 9
 		required_missions = { army_1 }
 		trigger = { land_forcelimit = 50 }
 		effect = {
@@ -270,7 +270,7 @@ expansion_missions = {
 	}
 	army_3 = {
 		icon = mission_assemble_an_army
-		position = 9
+		position = 10
 		required_missions = { army_2 }
 		trigger = { land_forcelimit = 100 }
 		effect = {
@@ -284,7 +284,7 @@ expansion_missions = {
 	}
 	army_4 = {
 		icon = mission_assemble_an_army
-		position = 10
+		position = 11
 		required_missions = { army_3 }
 		trigger = { land_forcelimit = 150
 		army_professionalism = 0.25 
@@ -300,7 +300,7 @@ expansion_missions = {
 	}
 	army_5 = {
 		icon = mission_assemble_an_army
-		position = 11
+		position = 12
 		required_missions = { army_4 }
 		trigger = { land_forcelimit = 250
 		army_professionalism = 0.5 
@@ -443,7 +443,7 @@ economic_missions = {
 	}
 	economic_1 = {
 		icon = mission_early_game_buildings
-		position = 7
+		position = 8
 		required_missions = {  }
 		trigger = {
 			temple = 5
@@ -469,7 +469,7 @@ economic_missions = {
 	}
 	economic_2 = {
 		icon = mission_early_game_buildings
-		position = 8
+		position = 9
 		required_missions = { economic_1 }
 		trigger = {
 			workshop = 10
@@ -494,7 +494,7 @@ economic_missions = {
 	}
 	economic_3 = {
 		icon = mission_early_game_buildings
-		position = 9
+		position = 10
 		required_missions = { economic_2 }
 		trigger = {
 			barracks = 15
@@ -519,7 +519,7 @@ economic_missions = {
 	}
 	economic_4 = {
 		icon = mission_early_game_buildings
-		position = 10
+		position = 11
 		required_missions = { economic_3 }
 		trigger = {
 			calc_true_if = {
@@ -559,7 +559,7 @@ economic_missions = {
 	}
 	economic_5 = {
 		icon = mission_early_game_buildings
-		position = 11
+		position = 12
 		required_missions = { economic_4 }
 		trigger = {
 			university = 30
@@ -592,7 +592,7 @@ trade_missions = {
 
 	towards_a_new_future_1 = {
 		icon = bavarian_cultural_dominance
-		position = 6
+		position = 7
 		required_missions = { ascendancy_1 ascendancy_2 }
 		trigger = {  }
 		effect = {
@@ -615,7 +615,7 @@ twisting_missions_goverment = {
 
 	government_1 = {
 		icon = give_him_back_his_legions
-		position = 7
+		position = 8
 		required_missions = {  } 
 		trigger = { legitimacy_equivalent = 100 }
 		effect = {
@@ -827,7 +827,7 @@ twisting_missions_goverment = {
 	}
 	government_2 = {
 		icon = give_him_back_his_legions
-		position = 8
+		position = 9
 		required_missions = { army_1 economic_1 government_1 } 
 		trigger = { 
 			reform_level = 3
@@ -860,7 +860,7 @@ twisting_missions_goverment = {
 	}
 	government_3 = {
 		icon = give_him_back_his_legions
-		position = 9
+		position = 10
 		required_missions = { army_2 economic_2 government_2 } 
 		trigger = { 
 			reform_level = 5
@@ -894,7 +894,7 @@ twisting_missions_goverment = {
 	}
 	government_4 = {
 		icon = give_him_back_his_legions
-		position = 10
+		position = 11
 		required_missions = { army_3 economic_3 government_3 } 
 		trigger = { 
 			reform_level = 7
@@ -928,7 +928,7 @@ twisting_missions_goverment = {
 	}
 	government_5 = {
 		icon = give_him_back_his_legions
-		position = 11
+		position = 12
 		required_missions = { army_4 economic_4 government_4 } 
 		trigger = { 
 			reform_level = 9
@@ -969,7 +969,7 @@ front_lines_tellum_missions = {
 
 	front_lines_1 = {
 		icon = mission_swear_fealty_knight
-		position = 12
+		position = 13
 		required_missions = {  }
 		trigger = { 
 			army_size = 500 
@@ -987,7 +987,7 @@ front_lines_tellum_missions = {
 	}
 	front_lines_2 = {
 		icon = mission_swear_fealty_knight
-		position = 13
+		position = 14
 		required_missions = { 
 			front_lines_1 
 		}
@@ -1001,7 +1001,7 @@ front_lines_tellum_missions = {
 	}
 	front_lines_3 = {
 		icon = mission_swear_fealty_knight
-		position = 14
+		position = 15
 		required_missions = { 
 			front_lines_2 
 		}
@@ -1029,7 +1029,7 @@ support_tellum_missions = {
 
 	support_tellum_1 = {
 		icon = mission_runeforged_cannons
-		position = 12
+		position = 13
 		required_missions = {  }
 		trigger = { 
 			army_size = 500
@@ -1047,7 +1047,7 @@ support_tellum_missions = {
 	}
 	support_tellum_2 = {
 		icon = mission_runeforged_cannons
-		position = 13
+		position = 14
 		required_missions = { support_tellum_1 }
 		trigger = { army_professionalism = 1 }
 		effect = {
@@ -1059,7 +1059,7 @@ support_tellum_missions = {
 		}
 	support_tellum_3 = {
 		icon = mission_runeforged_cannons
-		position = 14
+		position = 15
 		required_missions = { support_tellum_2 }
 		trigger = { treasury = 25000 }
 		effect = {
@@ -1083,7 +1083,7 @@ artificers_tellum_missions = {
 
 	artificers_tellum_1 = {
 		icon = mission_early_modern_university
-		position = 12
+		position = 13
 		required_missions = {  }
 		trigger = { 
 			innovativeness = 35
@@ -1118,7 +1118,7 @@ artificers_tellum_missions = {
 	}
 	artificers_tellum_2 = {
 		icon = mission_early_modern_university
-		position = 13
+		position = 14
 		required_missions = { artificers_tellum_1 }
 		trigger = { innovativeness = 70 }
 		effect = {
@@ -1130,7 +1130,7 @@ artificers_tellum_missions = {
 	}
 	artificers_tellum_3 = {
 		icon = mission_early_modern_university
-		position = 14
+		position = 15
 		required_missions = { artificers_tellum_2 }
 		trigger = { treasury = 25000 } 
 		effect = {
@@ -1154,7 +1154,7 @@ economic_tellum_missions = {
 
 	economic_tellum_1 = {
 		icon = mission_rb_hanseatic_east
-		position = 12
+		position = 13
 		required_missions = {  }
 		trigger = { 
 			custom_trigger_tooltip = {
@@ -1178,7 +1178,7 @@ economic_tellum_missions = {
 	}
 	economic_tellum_2 = {
 		icon = mission_rb_hanseatic_east
-		position = 13
+		position = 14
 		required_missions = { economic_tellum_1 }
 		trigger = { monthly_income = 500 }
 		effect = {
@@ -1190,7 +1190,7 @@ economic_tellum_missions = {
 	}
 	economic_tellum_3 = {
 		icon = mission_rb_hanseatic_east
-		position = 14
+		position = 15
 		required_missions = { economic_tellum_2 }
 		trigger = { treasury = 25000 } 
 		effect = {
@@ -1214,7 +1214,7 @@ trade_tellum_missions = {
 
 	trade_tellum_1 = {
 		icon = mission_colonize_the_west
-		position = 12
+		position = 13
 		required_missions = {  }
 		trigger = { 
 			monthly_income = 700
@@ -1233,7 +1233,7 @@ trade_tellum_missions = {
 	}
 	trade_tellum_2 = {
 		icon = mission_colonize_the_west
-		position = 13
+		position = 14
 		required_missions = { trade_tellum_1 }
 		trigger = { 
 			home_trade_node = {
@@ -1252,7 +1252,7 @@ trade_tellum_missions = {
 	}
 	trade_tellum_3 = {
 		icon = mission_colonize_the_west
-		position = 14
+		position = 15
 		required_missions = { trade_tellum_2 }
 		trigger = { 
 			treasury = 25000 
