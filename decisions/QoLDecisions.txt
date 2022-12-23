@@ -367,7 +367,7 @@ country_decisions = {
 				}
 				add_local_autonomy = -25
 				add_province_modifier = {
-					name = "autonomy_decreased"
+					name = autonomy_decreased
 					duration = 10950
 				}
 				remove_province_modifier = recent_uprising

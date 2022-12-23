@@ -7,7 +7,7 @@ ge_abundance_of_stone = {
 }
 
 ge_admin_eff_empire = {
-	administrative_efficency = 0.05
+	administrative_efficiency = 0.05
 }
 
 ge_integrate_griffon_mercs = {

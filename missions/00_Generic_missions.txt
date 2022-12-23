@@ -343,8 +343,7 @@ economic_missions = {
 		position = 2
 		required_missions = { trade_1 } 
 		trigger = { 
-			share_of_starting_income = 5
-			has_center_of_trade_of_level = 3	
+			share_of_starting_income = 5	
 		}
 		effect = {
 			add_dip_power = 50
@@ -597,7 +596,7 @@ trade_missions = {
 		trigger = {  }
 		effect = {
 			country_event = { 
-    			id = towards_future_20 
+    			id = towards_future 
 				days = 1
 			}
 		}	
@@ -773,7 +772,7 @@ twisting_missions_goverment = {
 					if = {
 						limit = { has_terrain = hills }
 						add_base_tax = 1
-						dd_base_production = 1
+						add_base_production = 1
 						add_base_manpower = 1
 						change_culture = ROOT
 						change_religion = ROOT
