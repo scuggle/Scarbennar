@@ -4027,8 +4027,7 @@ gerudia_unbound_commoners =  {
 	allow_normal_conversion = yes
 	lock_level_when_selected = no
 	potential = {
-		#culture_group = gerudian
-		always = no
+		culture_group = gerudian
 	}
 	modifiers = {
 		global_unrest = -2
