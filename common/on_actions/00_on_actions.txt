@@ -9565,7 +9565,7 @@ on_general_recruited = {
 		add_army_professionalism = 0.0125
 	}
 	else = {
-		add_army_professionalism = 0.01
+		army_tradition = 1
 	}
 	if = {
 		limit = { has_government_attribute = recruiting_generals_increases_nobles_loyalty }
