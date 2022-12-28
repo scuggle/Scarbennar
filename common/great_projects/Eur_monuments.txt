@@ -16,15 +16,6 @@ kara_targu = {
 	build_trigger = {	
 		AND = {
 			development = 20
-			OR = {
-				culture_group = dwarven
-				culture_group = goblin
-				culture_group = kobold
-				culture_group = orcish
-				culture_group = goblin
-				culture_group = gerudian
-				culture_group = giantkind	
-			}
 			province_is_or_accepts_culture = yes
 		}
 	}
