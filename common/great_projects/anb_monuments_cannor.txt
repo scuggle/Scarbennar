@@ -802,17 +802,20 @@ bal_hyl = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.05
-			local_hostile_attrition = 1
+		local_defensiveness = 0.05
+		hostile_attrition = 1
+
 		}
 
 		area_modifier = {
 		}
 
 		country_modifiers = {
-			prestige = 0.1
-			imperial_mercenary_cost = -0.05
-			reasons_to_elect = 5
+		prestige = 0.1
+		monthly_splendor = 0.5
+		prestige_from_land = 0.5
+		reasons_to_elect = 5
+
 		}
 
 		on_upgraded = {
@@ -838,18 +841,21 @@ bal_hyl = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.1
-			trade_goods_size = 0.25
+		local_defensiveness = 0.10
+		hostile_attrition = 2
+
 		}
 
 		area_modifier = {
-			local_hostile_attrition = 1
+
 		}
 
 		country_modifiers = {
-			prestige = 0.25
-			imperial_mercenary_cost = -0.1
-			reasons_to_elect = 10
+		prestige = 0.25
+		monthly_splendor = 1
+		prestige_from_land = 0.75
+		reasons_to_elect = 10
+
 		}
 
 		on_upgraded = {
@@ -876,19 +882,24 @@ bal_hyl = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.10
-			trade_goods_size = 0.5
+		
+		local_defensiveness = 0.10
+		hostile_attrition = 3
+
 		}
 
 		area_modifier = {
-			local_defensiveness = 0.10
-			local_hostile_attrition = 2
+		local_defensiveness = 0.10
+		local_defender_dice_roll_bonus = 1
+
 		}
 
 		country_modifiers = {
-			prestige = 0.5
-			imperial_mercenary_cost = -0.15
-			reasons_to_elect = 15
+		prestige = 0.50
+		monthly_splendor = 1.5
+		prestige_from_land = 1
+		reasons_to_elect = 15
+
 		}
 
 		on_upgraded = {
@@ -1464,8 +1475,8 @@ escandar = {
 
 		country_modifiers = {
 		    prestige = 0.1
-			global_rebel_suppression_efficiency = 0.1
-			mercenary_manpower = 0.05
+			imperial_mercenary_cost = -0.05
+			general_cost = -0.05
 		}
 
 		on_upgraded = {
@@ -1490,8 +1501,8 @@ escandar = {
 
 		country_modifiers = {
 		    prestige = 0.25
-			global_rebel_suppression_efficiency = 0.2
-			mercenary_manpower = 0.10
+			imperial_mercenary_cost = -0.1
+			general_cost = -0.10
 		}
 
 		on_upgraded = {
@@ -1518,8 +1529,9 @@ escandar = {
 
 		country_modifiers = {
 		    prestige = 0.5
-			global_rebel_suppression_efficiency = 0.3
-			mercenary_manpower = 0.15
+			imperial_mercenary_cost = -0.15
+			general_cost = -0.15
+			may_recruit_female_generals = yes
 		}
 
 		on_upgraded = {

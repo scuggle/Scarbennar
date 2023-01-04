@@ -253,6 +253,7 @@ elven_mountain = {
 		country_modifiers = {
 		stability_cost_modifier = -0.25
 		global_spy_defence = 0.25
+		advisor_pool = 1
 
 		}
 		on_upgraded = {
@@ -274,7 +275,7 @@ elven_mountain = {
 		country_modifiers = {
 		stability_cost_modifier = -0.50
 		global_spy_defence = 0.50
-		no_stability_loss_on_monarch_death = yes
+		advisor_pool = 2
 
 		}
 		on_upgraded = {
