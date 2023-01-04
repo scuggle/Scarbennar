@@ -179,7 +179,7 @@ monarch_names = {
 }
 
 leader_names = {
-	Appleseed Hardoak Bigwheat Thomsbridge Middlewood Barrows Hill Cand Merryfield Tip Wheatman Cowkeeper Brookspeaker "of Roysfort" Greenberry Marchfoot Copperburn
+	Appleseed Hardoak Bigwheat Thomsbridge Middlewood Barrows Hill Cand Merryfield Tip Wheatman Cowkeeper Brookspeaker "of Roysfort" Greenberry Marchfoot Copperburn Copperfoot Copperbutt Copperfinger
 
 	Roy Bravetree Lighthands Milktooth Brownlock Burrowtree "Bag-ins" Leafwhirl  Flatbrow Roytide Freefoot Downroot Stillsong Darkdew  Flightfoot Stormfoot Pinkfoot Sixfingers Heartbloom 
 	Bardbough Bardtree Bardfoot Songfoot Hillbranch Darkshot Silentgrain Forestbrand Rumblecrest Fumbletoes Eversword Smallknight Treeheart Bravefather Grandworth Fischer Smith Toysman Daygazer Stargazer Windcreek Pinehand
