@@ -1384,7 +1384,6 @@ aelcandar = {
 		}
 
 		on_upgraded = {
-		}
 	}
 }
 
