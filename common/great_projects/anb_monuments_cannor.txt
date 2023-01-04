@@ -1351,6 +1351,7 @@ aelcandar = {
 		    prestige = 0.25
 			harsh_treatment_cost = -0.2
 			reduced_liberty_desire_on_same_continent = 10
+			shock_damage_received = -0.025
 		}
 
 		on_upgraded = {
@@ -1379,6 +1380,7 @@ aelcandar = {
 		    prestige = 0.5
 			harsh_treatment_cost = -0.3
 			reduced_liberty_desire_on_same_continent = 20
+			shock_damage_received = -0.05
 		}
 
 		on_upgraded = {
