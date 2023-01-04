@@ -30,6 +30,11 @@ spriteType = {
         texturefile = "gfx//interface//great_projects//great_project_silent_repose.dds"
     }
 
+spriteType = {
+		name = "GFX_great_project_trinaire" 
+		texturefile = "gfx//interface//great_projects//great_project_trinaire.dds"
+	}
+
 
 ########
 Examples
