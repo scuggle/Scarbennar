@@ -22,6 +22,7 @@ Changelog:
 - Airgethil (formable for Silver Band adventurers)
 - Griffon Empire (MT reward for Marrhold)
 - Northern League (alenics or gawed after their disaster)
+- Triarchy (Haraf Artificers)
 ----------------------------------------------------------------------------
 1 new formable decision:
 - Empire of Anbennar
@@ -58,12 +59,11 @@ New monuments by us:
 Added CoT idea groups
 ----------------------------------------------------------------------------
 Added CoT generic MT
+- Formable Nations without own MT get this now. (i.e. Dwarven Holds and Escann Adventurers don't keep the adventurer tree upon reforming)
 ----------------------------------------------------------------------------
 Enforced 1/1/1 idea ratio
 ----------------------------------------------------------------------------
 Escanni Adventurers can no longer take Tribal Land from Orcs and Goblins outside of a peace deal
-----------------------------------------------------------------------------
-Buffed Escanni Goblin MT
 ----------------------------------------------------------------------------
 Changed Serpentspine Terrain Defender Bonus
 Roads           1 -> 0
@@ -76,9 +76,12 @@ Added QoL decisions (such as deleting churches)
 ----------------------------------------------------------------------------
 Rebalance:
 - DoF for everyone
+- Advisors now give 2 buffs, rebalanced values
+- Generals don't give professionalism
 ----------------------------------------------------------------------------
 Dwarven Adventurers in Serpentspine spawn earlier
 Gommoport, Zurzumexia and Mestikardu spawn at the same time as Vanbury Guild now
 ----------------------------------------------------------------------------
-Monsters now have Feudalism
+All Countries now start with Feudalism (i.e. Monsters mostly)
 ----------------------------------------------------------------------------
+Added Triggered Modifier for being in a "War against evil" (i.e. Vanilla Crusade Buff)
