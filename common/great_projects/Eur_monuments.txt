@@ -940,7 +940,7 @@ wine_league_hq = {
 		}
 
 		area_modifier = {
-			trade_goods_size_modifier = 0.5
+			trade_goods_size_modifier = 0.05
 		}
 
 		country_modifiers = {
