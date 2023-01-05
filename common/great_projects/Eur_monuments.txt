@@ -1016,8 +1016,8 @@ wine_league_hq = {
 		}
 	}
 }
-wine_league_hq = {
-	start = 79		#Eilisin
+harpy_onsen = {
+	start = 669		#Lovers Roost
 
 	date = 1443.1.1
 
@@ -1027,7 +1027,7 @@ wine_league_hq = {
 
 	build_cost = 0
 
-	can_be_moved = yes
+	can_be_moved = no
 
 	starting_tier = 0
 
