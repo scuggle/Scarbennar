@@ -31,6 +31,31 @@ spriteType = {
     }
 
 
+spriteType = {
+       name = "GFX_great_project_khenak_copper_mine"	
+        texturefile = "gfx//interface//great_projects//great_project_khenak_copper_mine.dds"
+    }
+	
+spriteType = {
+       name = "GFX_great_project_crannog_home"	
+        texturefile = "gfx//interface//great_projects//great_project_crannog_home.dds"
+    }
+	
+	spriteType = {
+       name = "GFX_great_project_pearl_guild"	
+        texturefile = "gfx//interface//great_projects//great_project_pearl_guild.dds"
+    }
+
+	spriteType = {
+       name = "GFX_great_project_diplomatic_palace"	
+        texturefile = "gfx//interface//great_projects//great_project_diplomatic_palace.dds"
+    }
+
+	spriteType = {
+       name = "GFX_great_project_raven_hill"	
+        texturefile = "gfx//interface//great_projects//great_project_raven_hill.dds"
+    }
+
 ########
 Examples
 ########
