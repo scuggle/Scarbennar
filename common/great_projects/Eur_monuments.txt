@@ -1562,3 +1562,308 @@ harpy_onsen = {
 		}
 	}
 }
+trinaire = {
+	start = 115		#Ioriellen
+
+	date = 1443.1.1
+
+	time = {
+		months = 120
+	}
+
+	build_cost = 0
+
+	can_be_moved = no
+
+	starting_tier = 0
+
+	#project type
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_culture = yes
+	}
+
+	can_upgrade_trigger = {
+		province_is_or_accepts_culture = yes
+	}
+
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			development_cost = -0.05
+			local_defensiveness = 0.05
+			
+		}
+
+		area_modifier = {
+
+		}
+
+		country_modifiers = {
+		land_morale = 0.025
+		prestige_decay = -0.001
+		num_accepted_cultures = 1
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			development_cost = -0.1
+			local_defensiveness = 0.1
+		}
+
+		area_modifier = {
+
+		}
+
+		country_modifiers = {
+			land_morale = 0.05
+			prestige_decay = -0.002
+			num_accepted_cultures = 1
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+
+
+		}
+
+		area_modifier = {
+			development_cost = -0.1
+			local_defensiveness = 0.1			
+		}
+
+		country_modifiers = {
+			land_morale = 0.1
+			prestige_decay = -0.003
+			num_accepted_cultures = 1
+		}
+
+		on_upgraded = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
+wine_league_hq = {
+	start = 79		#Eilisin
+
+	date = 1443.1.1
+
+	time = {
+		months = 120
+	}
+
+	build_cost = 0
+
+	can_be_moved = yes
+
+	starting_tier = 0
+
+	#project type
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_culture = yes
+	}
+
+	can_upgrade_trigger = {
+		province_is_or_accepts_culture = yes
+	}
+
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			province_trade_power_value = 5
+			trade_goods_size = 0.5
+			
+		}
+
+		area_modifier = {
+			trade_goods_size_modifier = 0.1
+		}
+
+		country_modifiers = {
+			global_trade_power = 0.05
+			embargo_efficiency = 0.1
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			province_trade_power_value = 10
+			trade_goods_size = 1
+		}
+
+		area_modifier = {
+			trade_goods_size_modifier = 0.2
+		}
+
+		country_modifiers = {
+			global_trade_power = 0.1
+			embargo_efficiency = 0.2
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			province_trade_power_value = 20
+			trade_goods_size = 2
+
+		}
+
+		area_modifier = {
+			development_cost = -0.1
+			trade_goods_size_modifier = 0.3		
+		}
+
+		country_modifiers = {
+		merchants = 1
+		global_trade_power = 0.15
+		embargo_efficiency = 0.3
+		}
+
+		on_upgraded = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
