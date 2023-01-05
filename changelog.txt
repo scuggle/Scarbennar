@@ -43,10 +43,13 @@ Changelog:
 - 3 for new countries
 - 1 for Coppertown (Released Halflings)
 ----------------------------------------------------------------------------
-3 new monuments:
-- XXX
-- XXX
-- XXX
+New monuments:
+Whole bunch of Monuments from Monuments mod.
+New monuments by us:
+- Harpylen: Harpy Bathhouses (Sen)
+- Eilisin:		Wine League HQ (Sen)
+- Redglades:	Trinaire/Elvish Tree City (Sen)
+- Other monuments (Barb)
 ----------------------------------------------------------------------------
 2 new mission tree:
 - Marrhold into Griffon Empire
@@ -76,4 +79,6 @@ Rebalance:
 ----------------------------------------------------------------------------
 Dwarven Adventurers in Serpentspine spawn earlier
 Gommoport, Zurzumexia and Mestikardu spawn at the same time as Vanbury Guild now
+----------------------------------------------------------------------------
+Monsters now have Feudalism
 ----------------------------------------------------------------------------
