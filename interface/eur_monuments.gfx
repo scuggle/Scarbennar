@@ -39,7 +39,10 @@ spriteType = {
 		name = "GFX_great_project_wine_league_hq" 
 		texturefile = "gfx//interface//great_projects//great_project_wine_league_hq.dds"
 	}
-
+    spriteType = {
+		name = "GFX_great_project_harpy_onsen" 
+		texturefile = "gfx//interface//great_projects//great_project_harpy_onsen.dds"
+	}
 
 spriteType = {
        name = "GFX_great_project_khenak_copper_mine"	
