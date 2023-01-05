@@ -35,6 +35,11 @@ spriteType = {
 		texturefile = "gfx//interface//great_projects//great_project_trinaire.dds"
 	}
 
+spriteType = {
+		name = "GFX_great_project_wine_league_hq" 
+		texturefile = "gfx//interface//great_projects//great_project_wine_league_hq.dds"
+	}
+
 
 ########
 Examples
