@@ -123,10 +123,8 @@ gor_burad_fireglass_forge = {
 			trade_goods_size = 3
 			trade_goods_size_modifier = 0.33
 		}
-		area_modifier = {		
-		}
-		region_modifier = {
-			allowed_num_of_buildings = 1
+		area_modifier = {	
+			allowed_num_of_buildings = 1	
 		}
 		country_modifiers = {
 			global_trade_goods_size_modifier = 0.1

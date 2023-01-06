@@ -180,8 +180,8 @@ vass_deep_reserve_1 = {
         }
     }
 
-	global_manpower_modifier = 0.10
-	yearly_army_professionalism = -0.01
+	army_tradition_decay = -0.01
+	army_tradition_from_battle = 0.25
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -405,8 +405,8 @@ vass_deep_reserve_2 = {
         }
     }
 
-	global_manpower_modifier = 0.15
-	yearly_army_professionalism = -0.015
+	army_tradition_decay = -0.02
+	army_tradition_from_battle = 0.50
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -630,8 +630,8 @@ vass_deep_reserve_3 = {
         }
     }
 
-	global_manpower_modifier = 0.20
-	yearly_army_professionalism = -0.02
+	army_tradition_decay = -0.03
+	army_tradition_from_battle = 1
 	
 	ai_will_do = {
 		factor = 0.8		

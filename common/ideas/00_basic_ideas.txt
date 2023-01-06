@@ -990,16 +990,18 @@ shadows_and_daggers = { #TBD
 	}
 	s_d2 = {
 		global_spy_defence = 0.2
+		dip_advisor_cost = -0.1
 	}
 	s_d3 = {
-		embargo_efficiency = 0.25
-		dip_tech_cost_modifier = -0.1
+		embargo_efficiency = 0.30
 	}
 	s_d4 = {
 		national_focus_years = -99 #Instant
 	}
 	s_d5 = {
 		diplomats = 1
+		yearly_corruption = -0.1
+		
 	}
 	s_d6 = {
 		rebel_support_efficiency = 1
