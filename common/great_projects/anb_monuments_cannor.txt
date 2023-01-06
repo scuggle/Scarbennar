@@ -812,9 +812,7 @@ bal_hyl = {
 
 		country_modifiers = {
 		prestige = 0.1
-		monthly_splendor = 0.5
 		prestige_from_land = 0.5
-		reasons_to_elect = 5
 
 		}
 
@@ -852,10 +850,7 @@ bal_hyl = {
 
 		country_modifiers = {
 		prestige = 0.25
-		monthly_splendor = 1
 		prestige_from_land = 0.75
-		reasons_to_elect = 10
-
 		}
 
 		on_upgraded = {
@@ -896,9 +891,7 @@ bal_hyl = {
 
 		country_modifiers = {
 		prestige = 0.50
-		monthly_splendor = 1.5
 		prestige_from_land = 1
-		reasons_to_elect = 15
 
 		}
 
@@ -1335,8 +1328,7 @@ aelcandar = {
 		country_modifiers = {
 		    prestige = 0.1
 			harsh_treatment_cost = -0.1
-			reduced_liberty_desire_on_same_continent = 5
-			merc_maintenance_modifier = 0.05
+			merc_maintenance_modifier = -0.05
 		}
 
 		on_upgraded = {
@@ -1362,7 +1354,6 @@ aelcandar = {
 		country_modifiers = {
 		    prestige = 0.25
 			harsh_treatment_cost = -0.2
-			reduced_liberty_desire_on_same_continent = 10
 			merc_maintenance_modifier = -0.1
 		}
 
@@ -1391,18 +1382,18 @@ aelcandar = {
 		country_modifiers = {
 		    prestige = 0.5
 			harsh_treatment_cost = -0.3
-			reduced_liberty_desire_on_same_continent = 20
 			merc_maintenance_modifier = -0.15
 		}
 
 		on_upgraded = {
 	}
 }
+}
+
 
 escandar = {
 	start = 316		#Escandar
-
-	date = 1000.1.1
+		date = 1000.1.1
 
 	time = {
 		months = 120
@@ -1414,7 +1405,6 @@ escandar = {
 
 	starting_tier = 0
 
-	#project type
 	type = monument
 
 	build_trigger = {
