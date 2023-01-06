@@ -1901,6 +1901,7 @@ eaglecrest_kobold_tannery = {
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_culture = yes
+		has_country_flag = racial_pop_kobold_purge
 	}
 
 	keep_trigger = {
@@ -1955,6 +1956,7 @@ eaglecrest_kobold_tannery = {
 		}
 
 		on_upgraded = {
+			change_trade_goods = livestock
 		}
 	}
 
@@ -1997,7 +1999,7 @@ eaglecrest_kobold_tannery = {
 		}
 
 		province_modifiers = {
-		province_trade_power_value = 20
+		province_trade_power_value = 15
 		trade_goods_size = 0.5
 		}
 
@@ -2012,9 +2014,7 @@ eaglecrest_kobold_tannery = {
 		}
 
 		on_upgraded = {
-			add_base_tax = 2
 			add_base_production = 2
-			add_base_manpower = 2
 		}
 	}
 }
