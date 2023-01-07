@@ -1849,12 +1849,16 @@ eaglecrest_kobold_tannery = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_culture = yes
+		owner = {
 		has_country_modifier = racial_pop_kobold_purge
+				}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_culture = yes
-		has_country_modifier = racial_pop_kobold_purge
+		owner =		{
+			has_country_modifier = racial_pop_kobold_purge
+					}
 	}
 
 	keep_trigger = {
