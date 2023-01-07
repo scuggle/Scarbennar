@@ -1059,15 +1059,15 @@ M01_ideas = {
 }
 
 #New ideas for old Formables
-#Esmaria
+#Esmaria	by Valten
 Z46_ideas = {
 	start = {
-		manpower_recovery_speed = 0.25 #they fucking
-		morale_damage_received = -0.1 #Unified Esmaria they pogging
+		manpower_in_own_culture_provinces = 0.25 	#Massive population density
+		same_culture_advisor_cost = -0.2	 		#Aristocratic Esmari Court
 	}
 
 	bonus = {
-		land_forcelimit_modifier = 0.15
+		development_cost = -0.1
 	}
 	
 	trigger = {
@@ -1078,27 +1078,27 @@ Z46_ideas = {
 	free = yes		#will be added at load.
 	
 	Z46_one = {
-		development_cost = -0.1 #huge cities big households
+		diplomatic_reputation = 1		#All Along the River
+		global_unrest = -1
 	}
 	Z46_two = {
-		prestige = 1 #big rennaiscance art
+		idea_cost = -0.05				#United Academies of Esmaria
+		technology_cost = -0.05
 	}
 	Z46_three = {
-		diplomatic_reputation = 2 #River parties now exported to the other major rivers
-		improve_relation_modifier = 0.2
+		morale_damage_received = -0.05 	#Esmaria Calls
 	}
 	Z46_four = {
-		recover_army_morale_speed = 0.15
+		culture_conversion_cost = -0.15	#Cultural Center of Anbennar
 	}
 	Z46_five = {
-		global_manpower_modifier = 0.30 #Oh lord they fucking with Ryala fervor
-		heir_chance = 0.5
+		fire_damage_received = -0.1		#Innovative Esmari Metallurgy
 	}
 	Z46_six = {
-		tolerance_own = 2 #RC bastion of Anbennar
+		production_efficiency = 0.15	#Esmari Luxury Industry
 	}
 	Z46_seven = {
-		idea_cost = -0.1 #Ivy keague thing from tons of unis Konwell Bardic College from Seinathil Varaine potion sellers, Giberd Gnomes
+		infantry_fire = 0.15 			#Esmari Royal Musketeers
 	}
 }
 
