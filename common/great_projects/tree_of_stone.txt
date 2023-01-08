@@ -241,7 +241,7 @@ ovdal_kanzad_cannon_foundry = {
 			factor = 1000
 		}
 		province_modifiers = {
-			trade_goods_size = 0.5
+			trade_goods_size = 0.25
 			allowed_num_of_buildings = 1
 		}
 		area_modifier = {		
@@ -261,14 +261,14 @@ ovdal_kanzad_cannon_foundry = {
 			factor = 3500
 		}
 		province_modifiers = {
-			trade_goods_size = 1
+			trade_goods_size = 0.5
 		}
 		area_modifier = {
 			allowed_num_of_buildings = 1
 		}
 		country_modifiers = {
-			artillery_cost = -0.1
-			artillery_fire = 0.2
+			artillery_cost = -0.075
+			artillery_fire = 0.15
 		}
 		on_upgraded = {
 			owner = {
@@ -291,17 +291,18 @@ ovdal_kanzad_cannon_foundry = {
 			factor = 7000
 		}
 		province_modifiers = {
-			trade_goods_size = 2
+			trade_goods_size = 1
 			allowed_num_of_manufactories = 1
 		}
-		area_modifier = {			
+		area_modifier = {	
+			allowed_num_of_buildings = 1		
 		}
 		region_modifier = {
-			allowed_num_of_buildings = 1
+			
 		}
 		country_modifiers = {
-			artillery_cost = -0.15
-			artillery_fire = 0.3
+			artillery_cost = -0.10
+			artillery_fire = 0.2
 			artillery_levels_available_vs_fort = 1
 		}
 		on_upgraded = {
@@ -431,7 +432,7 @@ grozumdhir_green_gate = {
 		province_modifiers = {
 			local_defensiveness = 0.33
 			local_hostile_attrition = 1
-			local_defender_dice_roll_bonus = 1
+			
 		}
 		area_modifier = {		
 		}
@@ -709,7 +710,7 @@ hul_as_krakazol_breweries = {
 		area_modifier = {		
 		}
 		region_modifier = {
-			local_unrest = -3
+			local_unrest = -2
 		}
 		country_modifiers = {
 			manpower_recovery_speed = 0.1
@@ -727,13 +728,13 @@ hul_as_krakazol_breweries = {
 		province_modifiers = {
 			local_defensiveness = 0.33
 			local_hostile_attrition = 1
-			local_defender_dice_roll_bonus = 1
+			
 			trade_goods_size = 3
 		}
 		area_modifier = {		
 		}
 		region_modifier = {
-			local_unrest = -5
+			local_unrest = -3
 		}
 		country_modifiers = {
 			manpower_recovery_speed = 0.15
