@@ -252,7 +252,6 @@ verkal_skomdihr_warding_gate = {
 		province_modifiers = {
 			local_defensiveness = 0.5
 			local_hostile_attrition = 2
-			local_defender_dice_roll_bonus = 1
 		}
 		area_modifier = {		
 		}
@@ -664,7 +663,6 @@ orlghelovar_great_waterfall = {
 		province_modifiers = {
 			local_defensiveness = 0.33
 			local_hostile_attrition = 1
-			local_defender_dice_roll_bonus = 1
 		}
 		area_modifier = {		
 		}
@@ -808,7 +806,6 @@ shaztundihr_marble_gate = {
 		province_modifiers = {
 			local_defensiveness = 0.33
 			local_hostile_attrition = 1
-			local_defender_dice_roll_bonus = 1
 		}
 		area_modifier = {		
 		}
