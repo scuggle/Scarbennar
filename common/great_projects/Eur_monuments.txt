@@ -1785,7 +1785,6 @@ crannog_home = {
 			factor = 3500
 		}
 		province_modifiers = {
-			local_defender_dice_roll_bonus = 1
 			local_hostile_attrition = 3
 			local_development_cost = -0.15
 		}
@@ -1805,7 +1804,7 @@ crannog_home = {
 			factor = 7000
 		}
 		province_modifiers = {
-		local_defender_dice_roll_bonus = 2
+		local_defender_dice_roll_bonus = 1
 		local_hostile_attrition = 5
 		local_development_cost = -0.25
 		}
@@ -1972,6 +1971,170 @@ eaglecrest_kobold_tannery = {
 
 		on_upgraded = {
 			add_base_production = 2
+		}
+	}
+}
+
+
+port_jaher = {
+	start = 365
+	
+	date = 1444.01.01 #1584.01.01
+	
+	time = {
+		months = 0
+	}
+	
+	build_cost = 0
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 1
+	
+	starting_tier = 0
+	
+	type = monument
+
+	build_trigger = {
+		AND = {
+				OR = {
+						culture_group = businori
+						culture_group = divenori
+						culture = castanorian
+						culture = hill_gnoll
+					}
+
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		AND = {
+				OR = {
+						culture_group = businori
+						culture_group = divenori
+						culture = castanorian
+						culture = hill_gnoll
+					}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	can_upgrade_trigger = {
+		AND = {
+			owner = {
+			num_of_colonists = 1
+			}
+				OR = {
+						culture_group = businori
+						culture_group = divenori
+						culture = castanorian
+						culture = hill_gnoll
+					}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {			
+		}
+		
+		area_modifier = {			
+		}
+
+		country_modifiers = {
+			global_autonomy = -0.01	
+			global_tariffs = 0.05
+			treasure_fleet_income = 0.05			
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_autonomy = -0.025
+			global_tariffs = 0.1
+			treasure_fleet_income = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_autonomy = -0.05
+			global_tariffs = 0.2
+			treasure_fleet_income = 0.2
+		}
+		on_upgraded = {
+		change_trade_goods = coffee
+			
 		}
 	}
 }

@@ -74,6 +74,11 @@ spriteType = {
          texturefile = "gfx//interface//great_projects//great_project_eaglecrest_kobold_tannery.dds"
      }
 
+
+    spriteType = {
+        name = "GFX_great_project_port_jaher"	
+         texturefile = "gfx//interface//great_projects//great_project_port_jaher.dds"
+     }
 ########
 Examples
 ########
