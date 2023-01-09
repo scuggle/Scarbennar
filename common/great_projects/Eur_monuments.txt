@@ -496,12 +496,11 @@ lost_ship = {
 			factor = 1000
 		}
 		province_modifiers = {
-			hostile_disembark_speed = 0.15
+			hostile_disembark_speed = 0.05
 			local_defensiveness = 0.05
-			local_ship_cost = -0.10
-			hostile_fleet_attrition = 1
-			local_ship_repair = 0.10
-			local_sailors_modifier = 0.1
+			local_ship_cost = -0.05
+			local_ship_repair = 0.05
+			local_sailors_modifier = 0.05
 		}
 		area_modifier = {
 		}
@@ -524,12 +523,12 @@ lost_ship = {
 			factor = 2500
 		}
 		province_modifiers = {
-			hostile_disembark_speed = 0.33
+			hostile_disembark_speed = 0.15
 			local_defensiveness = 0.1
-			local_ship_cost = -0.2
-			hostile_fleet_attrition = 3
-			local_ship_repair = 0.2
-			local_sailors_modifier = 0.2
+			local_ship_cost = -0.1
+			hostile_fleet_attrition = 1
+			local_ship_repair = 0.1
+			local_sailors_modifier = 0.1
 		}
 
 		area_modifier = {
@@ -566,19 +565,19 @@ lost_ship = {
 			factor = 5000
 		}
 		province_modifiers = {
-			hostile_disembark_speed = 0.5
+			hostile_disembark_speed = 0.20
 			local_defensiveness = 0.15
-			local_ship_cost = -0.33
-			hostile_fleet_attrition = 5
-			local_ship_repair = 0.33
-			local_sailors_modifier = 0.33
+			local_ship_cost = -0.20
+			hostile_fleet_attrition = 2
+			local_ship_repair = 0.20
+			local_sailors_modifier = 0.20
 			
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
 		    prestige = 0.5
-			capture_ship_chance = 0.15
+			capture_ship_chance = 0.10
 		}
 		on_upgraded = {
 		remove_province_modifier = harpy_minority_oppressed_large
@@ -791,197 +790,81 @@ khenak_copper_mine = {
 		country_modifiers = {
 		}
 		on_upgraded = {
+			
 		}
 	}
+
 	tier_1 = {
 		upgrade_time = {
 			months = 120
 		}
+
 		cost_to_upgrade = {
 			factor = 1000
 		}
+
 		province_modifiers = {
-			trade_goods_size = 1
-			trade_goods_size_modifier = 0.1	
+			trade_goods_size = 1.0
 		}
-		area_modifier = {	
-		}
-		country_modifiers = {
-			global_trade_goods_size_modifier = 0.025
-		}
-		on_upgraded = {
-			change_trade_goods = copper
-			add_base_production = 2
-		}
-	}
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 3500
-		}
-		province_modifiers = {
-			trade_goods_size = 2
-			trade_goods_size_modifier = 0.2
-		}
-		area_modifier = {	
-			allowed_num_of_buildings = 1
-		}
-		country_modifiers = {
-			global_trade_goods_size_modifier = 0.05		
-		}
-		on_upgraded = {
-			add_base_production = 2
-		}
-	}
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 7000
-		}
-		province_modifiers = {
-			trade_goods_size = 3
-			trade_goods_size_modifier = 0.33
-		}
-		area_modifier = {	
-		allowed_num_of_buildings = 1	
-		}
-		country_modifiers = {
-			global_trade_goods_size_modifier = 0.1
-		}
-		on_upgraded = {
-			add_base_production = 2
-		}
-	}
-}
-##Crannog Home
-
-crannog_home = {
-	start = 191
-	date = 01.01.01
-	time = { 
-		months = 120	
-	}
-	build_cost = 1000
-	can_be_moved = no
-	starting_tier = 0
-	type = monument
-
-	build_trigger = {
-		AND = {
-				OR = {
-						culture_group = kobold
-						culture = moorman
-					}
-
-		}
-		province_is_or_accepts_culture = yes
-	}
-
-	on_built = {
-	}
-
-	on_destroyed = {
-	}
-
-	can_use_modifiers_trigger = {
-		AND = {
-				OR = {
-						culture_group = kobold
-						culture = moorman
-					}
-		}
-		province_is_or_accepts_culture = yes
-	}
-
-	can_upgrade_trigger = {
-		AND = {
-				OR = {
-						culture_group = kobold
-						culture = moorman
-					}
-		}
-		province_is_or_accepts_culture = yes
-	}
-
-	keep_trigger = {
-	}
-
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
+		
 		area_modifier = {
+			trade_goods_size_modifier = 0.05
 		}
+
 		country_modifiers = {
 		}
+
 		on_upgraded = {
+		 change_trade_goods = copper
 		}
 	}
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-		local_hostile_attrition = 1
-		local_development_cost = -0.05
-		}
-		area_modifier = {	
-		}
-		country_modifiers = {
-		galley_cost = -0.05
-		}
-		on_upgraded = {
-		}
-	}
+
 	tier_2 = {
 		upgrade_time = {
 			months = 240
 		}
+
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 2500
 		}
+
 		province_modifiers = {
-			local_defender_dice_roll_bonus = 1
-			local_hostile_attrition = 3
-			local_development_cost = -0.15
+			trade_goods_size = 2.0
 		}
-		area_modifier = {	
+
+		area_modifier = {
+			trade_goods_size_modifier = 0.1
 		}
-		country_modifiers = {	
-		galley_cost = -0.10
+
+		country_modifiers = {
+			interest = -0.25
 		}
+
 		on_upgraded = {
 		}
 	}
+
 	tier_3 = {
 		upgrade_time = {
 			months = 480
 		}
+
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 5000
 		}
+
 		province_modifiers = {
-		local_defender_dice_roll_bonus = 2
-		local_hostile_attrition = 5
-		local_development_cost = -0.25
+			trade_goods_size = 3.0
 		}
-		area_modifier = {	
+
+		area_modifier = {
+			trade_goods_size_modifier = 0.15
 		}
+
 		country_modifiers = {
-		galley_cost = -0.20
+			interest = -0.5
 		}
+
 		on_upgraded = {
 		}
 	}
@@ -999,7 +882,7 @@ pearl_guild = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 1
-	starting_tier = 1
+	starting_tier = 0
 	type = monument
 	build_trigger = {	
 	}
@@ -1276,7 +1159,7 @@ raven_hill = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 1
-	starting_tier = 1
+	starting_tier = 0
 	type = monument
 	build_trigger = {	
 	}
@@ -1565,175 +1448,269 @@ harpy_onsen = {
 trinaire = {
 	start = 115		#Ioriellen
 
-	date = 1443.1.1
-
+	date = 01.01.01
 	time = {
-		months = 120
+		months = 0
 	}
-
 	build_cost = 0
-
 	can_be_moved = no
-
-	starting_tier = 0
-
-	#project type
+	move_days_per_unit_distance = 1
+	starting_tier = 1
 	type = monument
-
-	build_trigger = {
+	build_trigger = {	
 	}
-
-	on_built = {
+	on_built = {		
 	}
-
-	on_destroyed = {
+	on_destroyed = {	
 	}
-
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_culture = yes
+		AND = {
+			custom_trigger_tooltip = {
+				tooltip = cannorian_monuments_can_use_tooltip_lencenor
+					OR = {
+						culture_group = lencori
+						culture = moon_elf
+						culture = castanorian
+					}
+			}
+			province_is_or_accepts_culture = yes
+		}
 	}
-
 	can_upgrade_trigger = {
-		province_is_or_accepts_culture = yes
+		AND = {
+			custom_trigger_tooltip = {
+				tooltip = cannorian_monuments_can_use_tooltip_lencenor
+					OR = {
+						culture_group = lencori
+						culture = moon_elf
+						culture = castanorian
+					}
+			}
+			province_is_or_accepts_culture = yes
+		}
 	}
-
 	keep_trigger = {
 	}
-
-	#tier data
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-
-		cost_to_upgrade = {
-			factor = 0
-		}
-
-		province_modifiers = {
-
-		}
-
-		area_modifier = {
-		}
-
-		country_modifiers = {
-
-		}
-
-		on_upgraded = {
-		}
-	}
-
 	tier_1 = {
 		upgrade_time = {
 			months = 120
 		}
-
 		cost_to_upgrade = {
 			factor = 1000
 		}
-
 		province_modifiers = {
-			development_cost = -0.05
-			local_defensiveness = 0.05
-			
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.15
 		}
-
 		area_modifier = {
-
 		}
-
 		country_modifiers = {
-		land_morale = 0.025
-		prestige_decay = -0.001
-		num_accepted_cultures = 1
+			drill_decay_modifier = -0.05
 		}
-
 		on_upgraded = {
 		}
 	}
 
 	tier_2 = {
 		upgrade_time = {
-			months = 120
+			months = 240
 		}
-
 		cost_to_upgrade = {
 			factor = 2500
 		}
-
 		province_modifiers = {
-			development_cost = -0.1
-			local_defensiveness = 0.1
 		}
-
 		area_modifier = {
-
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.15
 		}
-
 		country_modifiers = {
-			land_morale = 0.05
-			prestige_decay = -0.002
-			num_accepted_cultures = 1
+			drill_decay_modifier = -0.10
+			advisor_cost = -0.1
 		}
-
 		on_upgraded = {
 		}
 	}
 
 	tier_3 = {
-		
 		upgrade_time = {
-			months = 120
+			months = 480
 		}
-
 		cost_to_upgrade = {
 			factor = 5000
 		}
-
 		province_modifiers = {
-
-
 		}
-
 		area_modifier = {
-			development_cost = -0.1
-			local_defensiveness = 0.1			
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.25
 		}
-
 		country_modifiers = {
-			land_morale = 0.1
-			prestige_decay = -0.003
-			num_accepted_cultures = 1
+			drill_decay_modifier = -0.15
+			advisor_cost = -0.2
+			special_unit_forcelimit = 0.1
 		}
-
 		on_upgraded = {
-			add_base_tax = 2
-			add_base_production = 2
-			add_base_manpower = 2
 		}
 	}
 }
+
+
 wine_league_hq = {
 	start = 79		#Eilisin
 
-	date = 1443.1.1
+	date = 1444.01.01	#1644.01.01
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
 
+date = 01.01.01
 	time = {
-		months = 120
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 0
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+	}
+	on_built = {		
+	}
+	on_destroyed = {	
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			custom_trigger_tooltip = {
+				tooltip = cannorian_monuments_can_use_tooltip_lencenor
+					OR = {
+						culture_group = lencori
+						culture = moon_elf
+						culture = castanorian
+					}
+			}
+			province_is_or_accepts_culture = yes
+		}
+	}
+	can_upgrade_trigger = {
+		AND = {
+			custom_trigger_tooltip = {
+				tooltip = cannorian_monuments_can_use_tooltip_lencenor
+					OR = {
+						culture_group = lencori
+						culture = moon_elf
+						culture = castanorian
+					}
+			}
+			province_is_or_accepts_culture = yes
+		}
+	}
+	keep_trigger = {
 	}
 
-	build_cost = 0
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
 
-	can_be_moved = yes
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			trade_efficiency = 0.05
+			mercantilism_cost = -0.05
+			burghers_loyalty_modifier = 0.025
+		}
+		on_upgraded = {
+		}
+	}
 
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			trade_efficiency = 0.075
+			mercantilism_cost = -0.1
+			burghers_loyalty_modifier = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			trade_efficiency = 0.10
+			mercantilism_cost = -0.15
+			burghers_loyalty_modifier = 0.10
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+##Crannog Home
+
+crannog_home = {
+	start = 191
+	date = 01.01.01
+	time = { 
+		months = 120	
+	}
+	build_cost = 1000
+	can_be_moved = no
 	starting_tier = 0
-
-	#project type
 	type = monument
 
 	build_trigger = {
+		AND = {
+				OR = {
+						culture_group = kobold
+						culture = moorman
+					}
+
+		}
+		province_is_or_accepts_culture = yes
 	}
 
 	on_built = {
@@ -1743,130 +1720,105 @@ wine_league_hq = {
 	}
 
 	can_use_modifiers_trigger = {
+		AND = {
+				OR = {
+						culture_group = kobold
+						culture = moorman
+					}
+		}
 		province_is_or_accepts_culture = yes
 	}
 
 	can_upgrade_trigger = {
+		AND = {
+				OR = {
+						culture_group = kobold
+						culture = moorman
+					}
+		}
 		province_is_or_accepts_culture = yes
 	}
 
 	keep_trigger = {
 	}
 
-	#tier data
 	tier_0 = {
 		upgrade_time = {
 			months = 0
 		}
-
 		cost_to_upgrade = {
 			factor = 0
 		}
-
 		province_modifiers = {
-
 		}
-
 		area_modifier = {
 		}
-
 		country_modifiers = {
-
 		}
-
 		on_upgraded = {
 		}
 	}
-
 	tier_1 = {
 		upgrade_time = {
 			months = 120
 		}
-
 		cost_to_upgrade = {
 			factor = 1000
 		}
-
 		province_modifiers = {
-			province_trade_power_value = 5
-			trade_goods_size = 0.5
-			
+		local_hostile_attrition = 1
+		local_development_cost = -0.05
 		}
-
-		area_modifier = {
-			trade_goods_size_modifier = 0.1
+		area_modifier = {	
 		}
-
 		country_modifiers = {
-			global_trade_power = 0.05
-			embargo_efficiency = 0.1
+		galley_cost = -0.05
 		}
-
 		on_upgraded = {
 		}
 	}
-
 	tier_2 = {
 		upgrade_time = {
-			months = 120
+			months = 240
 		}
-
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3500
 		}
-
 		province_modifiers = {
-			province_trade_power_value = 10
-			trade_goods_size = 1
+			local_hostile_attrition = 3
+			local_development_cost = -0.15
 		}
-
-		area_modifier = {
-			trade_goods_size_modifier = 0.2
+		area_modifier = {	
 		}
-
-		country_modifiers = {
-			global_trade_power = 0.1
-			embargo_efficiency = 0.2
+		country_modifiers = {	
+		galley_cost = -0.10
 		}
-
 		on_upgraded = {
 		}
 	}
-
 	tier_3 = {
-		
 		upgrade_time = {
-			months = 120
+			months = 480
 		}
-
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7000
 		}
-
 		province_modifiers = {
-			province_trade_power_value = 20
-			trade_goods_size = 2
-
+		local_defender_dice_roll_bonus = 1
+		local_hostile_attrition = 5
+		local_development_cost = -0.25
 		}
-
-		area_modifier = {
-			development_cost = -0.1
-			trade_goods_size_modifier = 0.3		
+		area_modifier = {	
 		}
-
 		country_modifiers = {
-		merchants = 1
-		global_trade_power = 0.15
-		embargo_efficiency = 0.3
+		galley_cost = -0.20
 		}
-
 		on_upgraded = {
-			add_base_tax = 2
-			add_base_production = 2
-			add_base_manpower = 2
 		}
 	}
 }
+
+
 eaglecrest_kobold_tannery = {
 	start = 213		#Eaglecrest
 
@@ -1896,12 +1848,16 @@ eaglecrest_kobold_tannery = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_culture = yes
-		has_country_flag = racial_pop_kobold_purge
+		owner = {
+		has_country_modifier = racial_pop_kobold_purge
+				}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_culture = yes
-		has_country_flag = racial_pop_kobold_purge
+		owner =		{
+			has_country_modifier = racial_pop_kobold_purge
+					}
 	}
 
 	keep_trigger = {
@@ -2015,6 +1971,170 @@ eaglecrest_kobold_tannery = {
 
 		on_upgraded = {
 			add_base_production = 2
+		}
+	}
+}
+
+
+port_jaher = {
+	start = 365
+	
+	date = 1444.01.01 #1584.01.01
+	
+	time = {
+		months = 0
+	}
+	
+	build_cost = 0
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 1
+	
+	starting_tier = 0
+	
+	type = monument
+
+	build_trigger = {
+		AND = {
+				OR = {
+						culture_group = businori
+						culture_group = divenori
+						culture = castanorian
+						culture = hill_gnoll
+					}
+
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		AND = {
+				OR = {
+						culture_group = businori
+						culture_group = divenori
+						culture = castanorian
+						culture = hill_gnoll
+					}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	can_upgrade_trigger = {
+		AND = {
+			owner = {
+			num_of_colonists = 1
+			}
+				OR = {
+						culture_group = businori
+						culture_group = divenori
+						culture = castanorian
+						culture = hill_gnoll
+					}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {			
+		}
+		
+		area_modifier = {			
+		}
+
+		country_modifiers = {
+			global_autonomy = -0.01	
+			global_tariffs = 0.05
+			treasure_fleet_income = 0.05			
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_autonomy = -0.025
+			global_tariffs = 0.1
+			treasure_fleet_income = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_autonomy = -0.05
+			global_tariffs = 0.2
+			treasure_fleet_income = 0.2
+		}
+		on_upgraded = {
+		change_trade_goods = coffee
+			
 		}
 	}
 }

@@ -650,9 +650,6 @@ twisting_missions_goverment = {
 							has_terrain = dwarven_hold 
 							NOT = { culture_group = dwarven }
 						}
-						add_base_tax = -15
-						add_base_production = -15
-						add_base_manpower = -15
 						add_province_modifier = {
 							name = "conquered_hold_tellum"
 							duration = 365

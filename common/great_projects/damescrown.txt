@@ -160,7 +160,7 @@ beepeck_the_largest_small_city = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 1
-	starting_tier = 2
+	starting_tier = 1
 	type = monument
 	build_trigger = {	
 	}
