@@ -12,3 +12,16 @@ capital = 32 # Saloren
 1000.1.1 = { set_estate_privilege = estate_mages_organization_magisterium }
 
 1422.1.2 = { set_country_flag = is_a_county }
+
+1442.3.17 = {
+	monarch = {
+		name = "Fyken IV"
+		dynasty = "Siloren"
+		birth_date = 1415.11.4
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+	add_ruler_personality = benevolent_personality
+	}
+}

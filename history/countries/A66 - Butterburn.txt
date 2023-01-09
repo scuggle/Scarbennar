@@ -10,3 +10,15 @@ technology_group = tech_halfling
 capital = 103
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+
+1434.1.1 = {
+	monarch = {
+		name = "Alessa Butterlord"
+		birth_date = 1426.1.1
+		adm = 1
+		dip = 6
+		mil = 1
+		female = yes
+	}
+}

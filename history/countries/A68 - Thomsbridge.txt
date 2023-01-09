@@ -10,3 +10,13 @@ technology_group = tech_halfling
 capital = 159
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1444.1.1 = {
+	monarch = {
+		name = "Tom Tubble"
+		birth_date = 1411.1.1
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}

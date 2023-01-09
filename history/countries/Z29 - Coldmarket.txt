@@ -14,10 +14,10 @@ capital = 700
 
 1440.1.1 = {
 	monarch = {
-		name = "City Council"
-		adm = 2
-		dip = 2
-		mil = 2
-		regent = yes
+		name = "Caas of Coldmarket"
+		birth_date = 1390.1.7
+		adm = 3
+		dip = 0
+		mil = 1
 	}
 }
