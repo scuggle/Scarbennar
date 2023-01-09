@@ -1224,6 +1224,50 @@ B43_ideas = {
 	}	
 }
 
+#Headwearer
+B45_ideas = {
+	start = {
+ 		land_maintenance_modifier = -0.10				#
+		institution_spread_from_true_faith = 0.1		#
+								
+ 	}
+
+ 	bonus = {
+ 		production_efficiency = 0.10								#
+ 	}
+
+ 	trigger = {
+		tag = B45
+ 	}
+ 	free = yes
+
+	B45_legacy_of_aminkle_headwearer = {
+ 		monthly_reform_progress_modifier = 0.1  #266 starting ruler chad gobbo that moved them toward more proper administration
+		
+	}
+ 	B45_bonewear = {
+ 		shock_damage_received = -0.10		#bone armour to intimidate superstitious enemies. Early artificeish stuff and reason for tribe name
+ 	}
+ 	B45_fire_haired_saviour = { 			#corrin struck down dookan to give freedom to gobbos. She is also apzarko hrom reincarnated. conversion of leaders
+ 		tolerance_own = 2
+ 	}
+ 	B45_continuing_the_fight = {
+ 		global_manpower_modifier = 0.05		#surrounded by enemies, their leaders implemented easy consciption laws and use the rabble to fight against the enemies of corrin
+		yearly_karma_decay = 0.01
+ 	}
+ 	B45_corrin_is_a_goblin = {
+		global_missionary_strength = 0.02	#later with corrinite proclamation some goblins start claiming that she was a goblin while still mortal.
+	}
+ 	B45_religious_brothers = {
+ 		global_manpower_modifier = 0.05
+		num_accepted_cultures = 1			#human subjects that worship corrin are given a fair amount of priviliges
+ 	}
+ 	B45_mech_crusaders = {
+ 		infantry_power = 0.10
+		special_unit_forcelimit= 0.10		#goblins in power armour fighting for corrin
+ 	}	
+}
+
 #Empire of Anbennar
 Z01_ideas = {
 	start = {
