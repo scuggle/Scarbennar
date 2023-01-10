@@ -13,7 +13,7 @@ X01_ideas = {
 	}
 
 	bonus = {
-		infantry_power = 0.20
+		infantry_power = 0.15
 	}
 	
 	trigger = {
@@ -42,7 +42,7 @@ X01_ideas = {
 		allowed_marine_fraction = 0.2
 	}
 	X01_six = {
-		production_efficiency = 0.15
+		production_efficiency = 0.20
 	}
 	X01_seven = {
 		infantry_shock = 0.2
@@ -52,7 +52,7 @@ X01_ideas = {
 #Carneter
 X02_ideas = {
 	start = {
-		adm_advisor_cost = -0.33 #Barons of Carneter.
+		adm_advisor_cost = -0.2 #Barons of Carneter.
 		stability_cost_modifier = -0.2 #Stubborn Nobles.
 	}
 
@@ -112,7 +112,7 @@ X03_ideas = {
 	free = yes		#will be added at load.
 	
 	X03_one = {
-		land_forcelimit_modifier = 0.2
+		land_forcelimit_modifier = 0.33
 		legitimacy = 1.5
 	}
 	X03_two = {
@@ -124,7 +124,7 @@ X03_ideas = {
 		technology_cost = -0.05
 	}
 	X03_four = {
-		shock_damage = 0.1
+		shock_damage = 0.2
 		leader_land_shock = 1
 	}
 	X03_five = {
@@ -213,7 +213,6 @@ X05_ideas = {
 	}
 	X05_three = {
 		heavy_ship_power = 0.15
-		galley_power = 0.1
 	}
 	X05_four = {
 		naval_maintenance_modifier = -0.25
@@ -277,7 +276,7 @@ X06_ideas = {
 	}
 }
 
-#Cities Reach
+#The Reach
 X07_ideas = {
 	start = {
 		global_trade_goods_size_modifier = 0.15
@@ -342,7 +341,7 @@ X08_ideas = {
 		manpower_recovery_speed = 0.20
 	}
 	X08_two = { #Aldróg [Pale Stone]
-		build_time = -0.1
+		build_cost = -0.1
 		prestige_decay = -0.01
 	}
 	X08_three = { #The Dalássa [Noble Lances].
@@ -394,16 +393,16 @@ X09_ideas = {
 		global_tax_modifier = 0.20
 	}
 	X09_four = {
-	shock_damage_received = -0.10
-	shock_damage = 0.10
+		shock_damage_received = -0.10
+		shock_damage = 0.10
 	}
 	X09_five = {
 		diplomatic_reputation = 2
 		diplomatic_upkeep = 1
 	}
 	X09_six = {
-	recover_army_morale_speed = 0.10
-	reinforce_speed = 0.10
+		recover_army_morale_speed = 0.10
+		reinforce_speed = 0.10
 	}
 	X09_seven = {
 		build_cost = -0.1
@@ -795,7 +794,7 @@ X19_ideas = {
 		land_attrition = -0.1 #done
 	}
 	X19_five = {
-		 caravan_power = 0.15 #done
+		caravan_power = 0.15 #done
 	}
 	X19_six = {
 		same_culture_advisor_cost = -0.15 #done
@@ -805,7 +804,7 @@ X19_ideas = {
 	}
 }
 
-#Falahen WIP
+#Falahen
 X20_ideas = {
 	start = {
 		may_perform_slave_raid_on_same_religion = yes	#We are slavers
@@ -835,17 +834,14 @@ X20_ideas = {
 		advisor_pool = 2								#Some slaves are okay, bring them into the fold
 	}
 	X20_four = {
-		privateer_efficiency = 0.15						#Damn were getting good at pirating people
-		
+		privateer_efficiency = 0.1						#Damn were getting good at pirating people
 	}
 	X20_five = {
 		own_coast_naval_combat_bonus = 1				#We like to fly from the coast into combat
-		
 	}
 	X20_six = {
 		allowed_marine_fraction = 0.25					#dedicated flying marines
 		landing_penalty = -2							#trained, dedicated flying marines supporting infantry
-		
 	}
 	X20_seven = {
 		manpower_in_accepted_culture_provinces = 0.15 	#incorperate the slave forces
@@ -1004,7 +1000,7 @@ X24_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	X24_four = {
-		artillery_cost = -0.2
+		artillery_cost = -0.1
 	}
 	X24_five = {
 		leader_land_fire = 1
@@ -1034,7 +1030,7 @@ M01_ideas = {
 	free = yes
 	
 	M01_one = {
-		cavalry_cost = -0.1				#Breeding Griffons
+		cavalry_cost = -0.1					#Breeding Griffons
 	}
 	M01_two = {
 		discipline = 0.05					#You need well trained troops in battle
@@ -1228,8 +1224,7 @@ B43_ideas = {
 B45_ideas = {
 	start = {
  		land_maintenance_modifier = -0.10				#
-		institution_spread_from_true_faith = 0.1		#
-								
+		institution_spread_from_true_faith = 0.1		#						
  	}
 
  	bonus = {
@@ -1243,7 +1238,6 @@ B45_ideas = {
 
 	B45_legacy_of_aminkle_headwearer = {
  		monthly_reform_progress_modifier = 0.1  #266 starting ruler chad gobbo that moved them toward more proper administration
-		
 	}
  	B45_bonewear = {
  		shock_damage_received = -0.10		#bone armour to intimidate superstitious enemies. Early artificeish stuff and reason for tribe name
@@ -1308,9 +1302,7 @@ Z01_ideas = {
 	}	
 }
 
-##COT###
-
-
+#COT
 V02_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
 	start = {
 		hostile_attrition = 2
@@ -1332,28 +1324,22 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 	V02_1 = { #The Great Project
 		build_cost = -0.10
 	}
-
 	V02_2 = { #Serpentspine Undercities
 		development_cost = -0.1
 	}
-
 	V02_3 = { #Shanty Garrison
 		garrison_size = 0.33
 		global_garrison_growth = 0.5
 	}
-
 	V02_4 = { #Teeming Masses
 		shock_damage_received = -0.10
 	}
-
 	V02_5 = { #Breath of the Dragonforge
 		artillery_power = 0.10
 	}
-
 	V02_6 = { #Servants of the Mecha-Dragon
 		special_unit_forcelimit = 0.15
 	}
-
 	V02_7 = { #Draconic Rule
 			legitimacy = 1
 			devotion = 1
@@ -1370,7 +1356,7 @@ A69_ideas = {
  	}
 
  	bonus = {
- 		artillery_fire = 0.25							#
+ 		artillery_fire = 0.15							#
  	}
 
  	trigger = {
