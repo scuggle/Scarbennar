@@ -1471,7 +1471,7 @@ eranils_oddities = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			development_cost = -0.1
+			development_cost = -0.05
 		}
 		on_upgraded = {
 			change_trade_goods = damestear
