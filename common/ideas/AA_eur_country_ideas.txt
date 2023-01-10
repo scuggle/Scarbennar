@@ -101,7 +101,7 @@ X03_ideas = {
 	}
 
 	bonus = {
-		free_mil_Policy = 1
+		free_mil_policy = 1
 	}
 	
 	trigger = {
