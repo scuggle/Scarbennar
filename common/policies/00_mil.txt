@@ -102,7 +102,7 @@ vass_engineer_corps_1 = {
         }
     }
 
-	defensiveness = 0.20
+	defensiveness = 0.15
 	reinforce_speed = 0.05
 	
 	ai_will_do = {
@@ -327,7 +327,7 @@ vass_engineer_corps_2 = {
         }
     }
 
-	defensiveness = 0.33
+	defensiveness = 0.25
 	reinforce_speed = 0.10
 	
 	ai_will_do = {
@@ -552,7 +552,7 @@ vass_engineer_corps_3 = {
         }
     }
 
-	defensiveness = 0.50
+	defensiveness = 0.35
 	reinforce_speed = 0.15
 	
 	ai_will_do = {
