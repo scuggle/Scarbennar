@@ -117,11 +117,12 @@ monarchy = {
 				alchemical_exploration_corps_reform
 				truedagger_intrigue_court
 				techno_monarchy_reform
+				medasi_reform
+				horasheshi_dynasty_reform
 			}
 		}
 		hereditary_vs_nobility = { #Tier 2
 			reforms = {
-				luciande_board_of_chains_reform
 				enforce_privileges_reform
 				quash_noble_power_reform
 				enforce_trader_privileges_reform
@@ -144,6 +145,7 @@ monarchy = {
 				#Anbennar
 				magical_elite_reform
 				jadd_nobility
+				luciande_board_of_chains_reform
 				elizna_elven_nobility_reform
 				dwarovar_old_clans_reform
 				dwarovar_new_clans_reform

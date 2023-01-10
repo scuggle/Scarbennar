@@ -1502,7 +1502,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "dev"
-			position = { x = 124 y = 4 }
+			position = { x = 142 y = 4 }	#anbennar
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -1517,13 +1517,13 @@ guiTypes = {
 		{
 			name ="acceptance_level_icon"
 			spriteType = "GFX_culture_star"
-			position = { x = 112 y = 7 }
+			position = { x = 130 y = 7 }	#anbennar
 			Orientation = "UPPER_LEFT"
 		}
 
 		guiButtonType = {
 			name = "select_button"
-			position = { x=167 y =2}
+			position = { x=185 y =2}	#anbennar
 			quadTextureSprite ="GFX_select_button"
 			tooltip = ""
 			tooltipText =""
@@ -1535,7 +1535,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "promote_button"
-			position = { x=196 y =2 }
+			position = { x=214 y =2 }	#anbennar
 			quadTextureSprite ="GFX_promote_button"
 			tooltip = ""
 			tooltipText =""
@@ -1547,7 +1547,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "demote_button"
-			position = { x=196 y =2}
+			position = { x=214 y =2}	#anbennar
 			quadTextureSprite ="GFX_demote_button"
 			tooltip = ""
 			tooltipText =""
@@ -1643,7 +1643,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "7"
-			maxWidth = 112
+			maxWidth = 132	#anbennar
 			maxHeight = 32
 			format = left
 			Orientation = "UPPER_LEFT"
@@ -1651,7 +1651,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "dev"
-			position = { x = 174 y = 4 }
+			position = { x = 192 y = 4 }	#anbennar
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -1666,7 +1666,7 @@ guiTypes = {
 		{
 			name ="acceptance_level_icon"
 			spriteType = "GFX_culture_star"
-			position = { x = 112 y = 7 }
+			position = { x = 130 y = 7 }	#anbennar
 			Orientation = "UPPER_LEFT"
 		}
 	}
@@ -1697,7 +1697,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "7"
-			maxWidth = 112
+			maxWidth = 132	#anbennar
 			maxHeight = 32
 			format = left
 			Orientation = "UPPER_LEFT"
@@ -1705,7 +1705,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "dev"
-			position = { x = 83 y = 4 }
+			position = { x = 101 y = 4 }	#anbennar
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -1718,7 +1718,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "culture_modifier_background"
-			position = { x = 158 y = 4 }
+			position = { x = 176 y = 4 }	#anbennar
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -1731,7 +1731,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "culture_modifier_label"
-			position = { x = 156 y = 4 }
+			position = { x = 174 y = 4 }	#anbennar
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -1746,7 +1746,7 @@ guiTypes = {
 		{
 			name ="culture_modifier_icon"
 			spriteType = "GFX_idea_empty"
-			position = { x = 145 y = 0 }
+			position = { x = 163 y = 0 }	#anbennar
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 		}
