@@ -596,7 +596,7 @@ trade_missions = {
 		trigger = {  }
 		effect = {
 			country_event = { 
-    			id = towards_future 
+    			id = towards_future.1
 				days = 1
 			}
 		}	
