@@ -178,8 +178,10 @@ arid_arctic_balance {
 	local_development_cost = -0.2
 }
 
+#Military Mutagens
+
 military_mutagen_1 = {
-	shock_damage = 0.075
+	shock_damage = 0.05
 }
 military_mutagen_2 = {
 	fire_damage = 0.05
