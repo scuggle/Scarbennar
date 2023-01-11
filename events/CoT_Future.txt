@@ -1,0 +1,42 @@
+namespace = towards_future
+
+#Towards the Future
+country_event = {
+	id = towards_future.1
+	title = towards_future_1.t
+	desc = towards_future_1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = towards_future_1.a
+		set_country_flag = front_lines_tellum_flag
+		swap_non_generic_missions = yes
+	}
+
+	option = {
+		name = towards_future_1.b
+		set_country_flag = support_tellum_flag
+		swap_non_generic_missions = yes
+	}
+
+	option = {
+		name = towards_future_1.c
+		set_country_flag = artificers_tellum_flag
+		swap_non_generic_missions = yes
+	}
+
+		option = {
+		name = towards_future_1.f
+		set_country_flag = economic_tellum_flag
+		swap_non_generic_missions = yes
+	}
+
+		option = {
+		name = towards_future_1.e
+		set_country_flag = trade_tellum_flag
+		swap_non_generic_missions = yes
+	}
+
+}

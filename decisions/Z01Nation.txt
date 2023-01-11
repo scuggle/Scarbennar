@@ -1,0 +1,113 @@
+
+country_decisions = {
+
+	Z01_form_nation = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = anbennarian
+				primary_culture = wexonard
+				tag = A31
+			}
+
+			NOT = { has_country_flag = formed_Z01_flag }
+			NOT = { tag = Z01 }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			normal_or_historical_nations = yes
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {
+			adm_tech = 10
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = Z01 }
+
+			is_emperor = yes
+
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 100
+				OR = {
+					region = esmaria_region
+					region = damescrown_region
+					region = west_dameshead_region
+					region = east_dameshead_region
+					region = the_borders_region
+				}
+			}
+		}
+		effect = {
+			change_tag = Z01
+			hidden_effect = { restore_country_name = yes }
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			
+			esmaria_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = Z01
+			}
+			damescrown_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = Z01
+			}
+			west_dameshead_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = Z01
+			}
+			east_dameshead_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = Z01
+			}
+			the_borders_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = Z01
+			}
+
+			add_country_modifier = {
+				name = "anbennar_a_dream_realised"
+				duration = -1
+			}	
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_Z01_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

@@ -1,0 +1,47 @@
+ashscale_techno_monarchy = {
+	rank = {
+		1 = ZUTARZAN
+		2 = ZUTARZAN
+		3 = ZUTARZAN
+	}
+
+	ruler_male = {
+		1 = TINKERCOUNT
+		2 = TINKERKING
+		3 = TINKEREMPEROR
+	}
+
+	ruler_female = {
+		1 = TINKERCOUNTESS
+		2 = TINKERQUEEN
+		3 = TINKEREMPRESS
+	}
+
+	consort_male  = {
+		1 = ASSISTANTCOUNT
+		2 = ASSISTANTKING
+		3 = ASSISTANTEMPEROR
+	}
+
+	consort_female = {
+		1 = ASSISTANCOUNTESS
+		2 = ASSISTANTQUEEN
+		3 = ASSISTANTEMPRESS
+	}
+	
+	heir_male = {
+		1 = FIRSTAPPRENTICE
+		2 = FIRSTAPPRENTICE
+		3 = FIRSTAPPRENTICE
+	}
+
+	heir_female = {
+		1 = FIRSTAPPRENTICE
+		2 = FIRSTAPPRENTICE
+		3 = FIRSTAPPRENTICE
+	}
+
+	trigger = {
+		has_reform = techno_monarchy_reform
+	}
+}

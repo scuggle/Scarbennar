@@ -181,7 +181,7 @@ sea_zone = {
 }
 
 land_province = {
-	max_attrition = 5						#Maximum Attrition is 5
+	max_attrition = 10						#Maximum Attrition is 5
 	local_manpower_modifier = 0.25			#25% of manpower.
 }
 
@@ -466,7 +466,7 @@ devastation = {
 
 prosperity = {
 	local_development_cost = -0.1
-	trade_goods_size_modifier = 0.25
+	trade_goods_size_modifier = 0.10
 	local_autonomy = -0.05
 }
 
@@ -564,7 +564,7 @@ left_trade_company = {
 
 
 scorched_earth = {
-	local_hostile_movement_speed = -0.50
+	local_hostile_movement_speed = -0.25
 	local_monthly_devastation = 0.25
 }
 
@@ -573,7 +573,7 @@ scorched_earth = {
 ##########################################################################
 
 base_values = {
-	max_absolutism = 65
+	max_absolutism = 80
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..
 	missionaries = 1						#1 missionary
@@ -927,6 +927,7 @@ defender_of_faith = {
 
 defender_of_faith_refused_cta = {
 	diplomatic_reputation = -1
+	all_power_cost	= 0.10
 }
 
 emperor = {
@@ -1365,14 +1366,15 @@ liberty_desire = {
 is_great_power = {						#Only works with Rights of Man DLC enabled
 	prestige_decay = -0.01
 	embracement_cost = -0.1
-	max_absolutism = 5
+	max_absolutism = 15
+	global_manpower_modifier = 0.1
 	
 	#Anbennar
 	monthly_militarized_society = -10
 }
 
 in_golden_era = {
-	all_power_cost = -0.1
+	all_power_cost = -0.05
 	global_trade_goods_size_modifier = 0.1
 	land_morale = 0.1
 	naval_morale = 0.1
@@ -1512,7 +1514,7 @@ subject_nation = {
 }
 
 vassal_nation = {
-	development_cost = 0.5
+	development_cost = 0.1
 }
 
 kruman_nation = {
@@ -1694,8 +1696,7 @@ support_loyalists = {
 }
 
 send_officers = {
-	discipline = 0.05
-	land_morale = 0.2
+	land_morale = 0.1
 }
 
 divert_trade = {
@@ -1721,6 +1722,7 @@ karma_just_right =
 
 	diplomatic_reputation = 2
 	manpower_in_true_faith_provinces = 0.1
+	shock_damage = 0.1
 	global_unrest = -1
 
 }
@@ -2115,7 +2117,7 @@ revolutionary_guard_regiment = {
 }
 
 innovativeness = {
-	all_power_cost	= -0.1
+	all_power_cost	= -0.05
 	army_tradition_decay = -0.01
 	navy_tradition_decay = -0.01
 
@@ -2181,7 +2183,7 @@ expanded_infrastructure = {
 	ship_recruit_speed = -0.15
 	local_defensiveness = 0.05
 	garrison_growth = 0.05
-	local_development_cost = -0.25
+	local_development_cost = -0.15
 	local_production_efficiency = 0.05
 	local_tax_modifier = 0.1
 	local_manpower_modifier = 0.05

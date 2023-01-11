@@ -1,0 +1,122 @@
+country_decisions = {
+	B67_form_nation = {
+		major = yes
+		potential = {
+			primary_culture = hill_gnoll
+			NOT = { has_country_flag = formed_honderaak_flag }
+			NOT = { exists = B67 }
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			is_colonial_nation = no
+			normal_or_historical_nations = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6513 #Hogzhaad
+				province_id = 913 #Gnollsgate
+				province_id = 316 #Escandar
+				province_id = 317 #Ruppelion
+				province_id = 365 #Port Jaher
+				province_id = 366 #Lorbet
+				province_id = 363 #stonehold
+				province_id = 362 #Enkets pass
+				province_id = 408 #Hapaine
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+##Remove this after testing 
+
+#		allow = {
+#			has_institution = feudalism
+#			OR = {
+#				AND = { 
+#					adm_tech = 7 
+#					stability = 2
+#				}
+
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = semi_or_non_monstrous_tt
+				OR = {
+					has_country_flag = semi_monstrous
+					has_country_flag = no_longer_monstrous
+					NOT = { has_country_modifier = monstrous_nation }
+				}
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				value = 20
+				OR = { 	
+					region = businor_region
+					region = east_dameshead_region
+					region = the_borders_region
+				}
+			}
+			OR = { 
+				medium_tolerance_human_race_trigger = yes
+				high_tolerance_human_race_trigger = yes
+			}
+
+			and = { 
+				owns_core_province = 6513 #Hogzhaad
+				owns_core_province = 913 #Gnollsgate
+				owns_core_province = 316 #Escandar
+				owns_core_province = 317 #Ruppelion
+				owns_core_province = 365 #Port Jaher
+				owns_core_province = 366 #Lorbet
+				owns_core_province = 363 #stonehold
+				owns_core_province = 362 #Enkets pass
+				owns_core_province = 408 #Hapaine
+			}
+			NOT = { government = tribal }
+		}
+	effect = {
+			if = {
+				limit = { NOT = { religion = regent_court } }
+				add_stability = -2
+			}
+			change_tag = B67
+			hidden_effect = { restore_country_name = yes }
+			change_primary_culture = dovesworn_gnoll
+			change_religion = regent_court
+			hidden_effect = {
+				every_owned_province = {
+					limit = { culture = hill_gnoll }
+					change_culture = dovesworn_gnoll
+					change_religion = regent_court
+				}
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			swap_non_generic_missions = yes
+			add_prestige = 25
+			set_country_flag = honderaak_formed
+			clr_country_flag = knightly_order_adventurer
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_honderaak
+			capital_scope = {
+				change_province_name = "Honderaak"
+				rename_capital = "Honderaak"
+				change_culture = dovesworn_gnoll
+				change_religion = regent_court
+				set_province_flag = Honderaak_city
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+

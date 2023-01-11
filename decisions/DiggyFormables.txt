@@ -57,7 +57,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I02 culture = quartz }
-			#no missions for reforming the hold
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -89,7 +89,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I03 culture = sapphire }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -249,7 +249,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I08 culture = platinum }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -281,7 +281,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I09 culture = opal }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -313,7 +313,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I10 culture = lead }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -441,7 +441,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I14 culture = titanium }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -473,7 +473,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I15 culture = pyrite }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -505,7 +505,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I16 culture = basalt }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -537,7 +537,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I17 culture = topaz }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -569,7 +569,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I18 culture = peridot }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -601,7 +601,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I19 culture = granite }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -681,7 +681,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I21 culture = emerald }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -713,7 +713,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I22 culture = jade }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -823,6 +823,17 @@ country_decisions = {
 				limit = { tag = I02 }
 				custom_tooltip = I24_nation_krak_tooltip
 			}
+			
+			if = { #astronomy disabled
+				custom_tooltip = vazhatun_disable_astronomy_completely_tt
+				hidden_effect = {
+					remove_country_modifier = vazhatun_astronomy_enabled
+					remove_country_modifier = vazhatun_terror_1
+					remove_country_modifier = vazhatun_terror_2
+					remove_country_modifier = vazhatun_terror_3
+				}
+			}
+
 			change_tag = I24
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -1033,7 +1044,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = H76 culture = diamond }
-			# swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1

@@ -4,7 +4,10 @@ estate_lion_command = {
 	color = { 150 0 0 }
 	
 	trigger = {
+		OR = {
 		tag = R62
+		tag = X21
+			}
 		has_reform = hobgoblin_stratocracy_reform
 	}
 	

@@ -5,6 +5,7 @@ country_decisions = {
 		potential = {
 			primary_culture = wexonard
 			NOT = { has_country_flag = formed_A30_flag }
+			NOT = { tag = A30 }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -59,6 +60,7 @@ country_decisions = {
 			set_country_flag = no_formable_culture_shift
 			clr_country_flag = is_a_county
 			swap_non_generic_missions = yes
+			complete_mission = A30_lothane_triumph
 			hidden_effect = { restore_country_name = yes }
 			if = {
 				limit = {

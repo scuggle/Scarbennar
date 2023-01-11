@@ -160,7 +160,6 @@ ameion_monarchist = {
 		all_estate_loyalty_equilibrium = -0.1
 		land_morale = -0.05
 		all_power_cost = 0.05
-		enemy_core_creation = 1
 	}
 	
 	

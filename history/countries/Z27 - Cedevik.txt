@@ -14,10 +14,11 @@ capital = 717
 
 1440.1.1 = {
 	monarch = {
-		name = "City Council"
-		adm = 2
-		dip = 2
+		name = "Gest Hanefsson"
+		birth_date = 1380.8.24
+		adm = 1
+		dip = 5
 		mil = 2
-		regent = yes
 	}
+	add_ruler_personality = embezzler_personality
 }

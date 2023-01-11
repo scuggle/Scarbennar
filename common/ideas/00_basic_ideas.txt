@@ -1,7 +1,3 @@
-# Coded by: Vaass, MaddoxCom and others.
-# Fuck MrHale28, he will never see this code, lazy bastard
-# Keep banning chevaliers, keep our numbers down, never pass 300 or we're doomed.
-
 ### MILITARY
 
 infantry_ideas = { # Elite: Infantry
@@ -909,7 +905,7 @@ influence_ideas = { #benevolence #done
 		dip_advisor_cost = -0.33
 	}
 	buffer_states = {
-		vassal_forcelimit_bonus = 1
+		vassal_forcelimit_bonus = 0.5
 	}
 	diplomatic_influence = {
 		diplomatic_reputation = 2
@@ -994,16 +990,18 @@ shadows_and_daggers = { #TBD
 	}
 	s_d2 = {
 		global_spy_defence = 0.2
+		dip_advisor_cost = -0.1
 	}
 	s_d3 = {
-		embargo_efficiency = 0.25
-		dip_tech_cost_modifier = -0.1
+		embargo_efficiency = 0.30
 	}
 	s_d4 = {
 		national_focus_years = -99 #Instant
 	}
 	s_d5 = {
 		diplomats = 1
+		yearly_corruption = -0.1
+		
 	}
 	s_d6 = {
 		rebel_support_efficiency = 1
@@ -1197,7 +1195,7 @@ focus_inwards = { #Internal Ideas
 		country_admin_power = 1
 	}
 	foc_inw6 = {
-		global_allowed_num_of_buildings = 1
+		build_cost = -0.1
 	}
 	foc_inw7 = {
 		monthly_reform_progress = 0.25

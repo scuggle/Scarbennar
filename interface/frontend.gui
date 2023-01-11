@@ -215,7 +215,7 @@ guiTypes = {
 				backGround=""
 				position = { x=0 y =-1 }
 				show_position = { x=0 y =-1 }
-				hide_position = { x=-600 y =0 }
+				hide_position = { x=0 y =-200 }
 				animation_type = "decelerated"
 				animation_time = 300
 				size = { x=256 y =768}
@@ -359,7 +359,7 @@ guiTypes = {
 				fullscreen=yes
 				Orientation = "CENTER_DOWN"
 
-### MAIN MENU PANEL (bottom)
+				### MAIN MENU PANEL (bottom)
 
 				iconType =
 				{
@@ -418,8 +418,8 @@ guiTypes = {
 						position = { x = 50 y = 7 }
 						font = "vic_22"
 						format = left
-						maxWidth = 260
-						maxHeight = 45
+						maxWidth = 400
+						maxHeight = 100
 						fixedsize = yes
 						alwaystransparent = yes
 					}
@@ -459,7 +459,7 @@ guiTypes = {
 					spriteType = "GFX_frontend_version_bg"
 					position = { x= -32 y = 20 }
 				}
-				
+
 				instantTextBoxType = {
 					name ="version_label"
 					position = { x = 23 y = 38 }
@@ -546,7 +546,7 @@ guiTypes = {
 			windowType = { #SOCIAL BUTTONS
 				name = "PersistentSocialButtons"
 				backGround=""
-				position = { x= 436 y = -60 }  
+				position = { x= 436 y = -60 }
 				show_position = { x = 436 y = -60 }
 				hide_position = { x = 436 y = 100 }
 				animation_type = "decelerated"
@@ -560,7 +560,7 @@ guiTypes = {
 				downsound = ""
 				fullScreen = no
 				Orientation = "CENTER_DOWN"
-				
+
 				iconType = {
 					name = "background"
 					position = { x = -100 y = -5 }
@@ -571,7 +571,7 @@ guiTypes = {
 						position = { x = -170 y = -5 }
 					}
 				}
-				
+
 				guiButtonType = {
 					name = "homepage_button"
 					position = { x = -38 y = 14 }
@@ -591,7 +591,7 @@ guiTypes = {
 					if_resolution = {
 						max_height = 1079
 						position = { x = -60 y = 14 }
-					}
+				}
 				}
 
 				guiButtonType = {
@@ -602,7 +602,7 @@ guiTypes = {
 					if_resolution = {
 						max_height = 1079
 						position = { x = -24 y = 14 }
-					}
+				}
 				}
 
 				guiButtonType = {
@@ -615,7 +615,7 @@ guiTypes = {
 						position = { x = 12 y = 14 }
 					}
 				}
-				
+
 				checkboxType = {
 					name = "login_logout_button"
 					position = { x = 128 y = 8 }
@@ -637,7 +637,7 @@ guiTypes = {
 						position = { x = 117 y = 8 }
 					}
 				}
-				
+
 				iconType = {
 					name ="frontend_small_frame"
 					spriteType = "GFX_frontend_small_frame"
@@ -1223,22 +1223,21 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "newgame_tab"
-					position = { x = 39 y = 48 }
+					position = { x = 89 y = 48 }
 					quadTextureSprite ="GFX_tab_small_116"
 					Orientation = "UPPER_LEFT"
 				}
 
 				guiButtonType = {
 					name = "savedgame_tab"
-					position = { x = 146 y = 48 }
+					position = { x = 196 y = 48 }
 					quadTextureSprite ="GFX_tab_small_116"
 					Orientation = "UPPER_LEFT"
 				}
 
 				instantTextBoxType = {
 					name = "bookmarks_label"
-					position = { x = 45 y = 59 }
-
+					position = { x = 95 y = 59 }
 					font = "vic_18"
 					borderSize = {x = 0 y = 0}
 					text = "FE_HISTORICAL_START"
@@ -1253,8 +1252,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "savedgames_label"
-					position = { x = 152 y = 59 }
-
+					position = { x = 202 y = 59 }
 					font = "vic_18"
 					borderSize = {x = 0 y = 0}
 					text = "FE_SAVED_GAMES"
@@ -1269,9 +1267,9 @@ guiTypes = {
 
 				listboxType = {
 					name ="enabled_dlc_list"
-					position = { x = 291 y = 40 }
+					position = { x = 391 y = 40 }
 					backGround=""
-					size = { x=50 y =500 }
+					size = { x=50 y =600 }
 					Orientation = "UPPER_LEFT"
 					horizontal = 0
 					spacing = 0
@@ -1298,7 +1296,7 @@ guiTypes = {
 						name ="save_games_list"
 						position = { x = 16 y = 120 }
 						backGround=""
-						size = { x=254 y =330}
+						size = { x=354 y =730}
 						Orientation = "UPPER_LEFT"
 						horizontal = 0
 						spacing = 0
@@ -1331,7 +1329,7 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "location_button"
-						position = { x = 75 y = 475 }
+						position = { x = 125 y = 825 }
 						quadTextureSprite ="button_type_7"
 						buttonText = "MENU_BAR_CLOUDGAMES"
 						buttonFont = "Main_16"
@@ -1339,7 +1337,7 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "delete_all_button"
-						position = { x = 75 y = 510 }
+						position = { x = 125 y = 860 }
 						quadTextureSprite ="button_type_7"
 						buttonText = "MENU_BAR_DELETE_ALL"
 						buttonFont = "Main_16"
@@ -1352,7 +1350,7 @@ guiTypes = {
 					name ="bookmarks"
 					backGround=""
 					position = { x=0 y =0 }
-					size = { x=110 y =768}
+					size = { x=110 y =668}
 					moveable = 0
 					dontRender = ""
 					horizontalBorder= ""
@@ -1362,17 +1360,17 @@ guiTypes = {
 					fullscreen=no
 
 
-				listboxType = {
-					name ="bookmarks_list"
-					position = { x = 16 y = 100 }
-					backGround=""
-					size = { x=254 y =287 }
-					Orientation = "UPPER_LEFT"
-					horizontal = 0
-					spacing = 0
-					scrollbartype = "standardlistbox_slider"
-					borderSize = {x = 0 y = 0}
-				}
+					listboxType = {
+						name ="bookmarks_list"
+						position = { x = 66 y = 100 }
+						backGround=""
+						size = { x=354 y =647 }
+						Orientation = "UPPER_LEFT"
+						horizontal = 0
+						spacing = 0
+						scrollbartype = "standardlistbox_slider"
+						borderSize = {x = 0 y = 0}
+					}
 
 				}
 
@@ -1380,7 +1378,7 @@ guiTypes = {
 				windowType = {
 					name ="datewidget"
 					backGround=""
-					position = { x=10 y =401}
+					position = { x=60 y =751}
 					size = { x=200 y =200}
 					moveable = 0
 					dontRender = ""
@@ -1395,7 +1393,7 @@ guiTypes = {
 					{
 						name ="selectdate_bg"
 						spriteType = "GFX_lobby_date_bg"
-						position = { x= 0 y = 0 }
+						position = { x= -2000 y = 0 }
 						Orientation = "UPPER_LEFT"
 					}
 
@@ -1733,7 +1731,7 @@ guiTypes = {
 				backGround=""
 				position = { x=0 y =0}
 				show_position = { x=0 y =-20}
-				hide_position = { x=300 y =-20}
+				hide_position = { x=500 y =-20}
 				animation_type = "decelerated"
 				animation_time = 300
 				size = { x=420 y =500}
@@ -1749,7 +1747,7 @@ guiTypes = {
 				{
 					name ="right_sidepanel"
 					spriteType = "GFX_lobby_right_bg"
-					position = { x= -266 y = 16 }
+					position = { x= -407 y = 22 }
 					Orientation = "UPPER_RIGHT"
 				}
 
@@ -1757,13 +1755,13 @@ guiTypes = {
 				{
 					name ="ironman_icon"
 					spriteType = "GFX_ironman_icon"
-					position = { x= -200 y = 30 }
+					position = { x= -260 y = 30 }
 					Orientation = "UPPER_RIGHT"
 				}
 
 				instantTextBoxType = {
 					name = "ironman_label"
-					position = { x= -170 y = 42 }
+					position = { x= -230 y = 42 }
 					font = "vic_22"
 					text = "FE_IRONMAN"
 					maxWidth = 160
@@ -1791,14 +1789,13 @@ guiTypes = {
 					{
 						name ="right_sidepanel"
 						spriteType = "GFX_lobby_right_mp_bg"
-						position = { x = -220 y = -18 }
+						position = { x = -361 y = -18 }
 						Orientation = "UPPER_RIGHT"
 					}
 
 					instantTextBoxType = {
 						name = "checksum"
-						position = { x = -20 y = 32 }
-
+						position = { x = -90 y = 32 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 4}
 						text = ""
@@ -1809,15 +1806,14 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "checksum_click_button"
-						position = { x = -20 y = 32 }
+						position = { x = -90 y = 32 }
 						quadTextureSprite = "GFX_frontend_checksum"
 						size = { x=260 y=24}
 					}
 
 					instantTextBoxType = {
 						name = "num_players"
-						position = { x = 20 y = 52 }
-
+						position = { x = -50 y = 52 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 4}
 						text = "Number of Players: 0"
@@ -1828,7 +1824,7 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "create_team_button"
-						position = { x = 18 y = 500 }
+						position = { x = -48 y = 700 }
 						quadTextureSprite = "GFX_frontend_create_team"
 						Orientation = "UPPER_LEFT"
 						buttonText = "CREATE_TEAM"
@@ -1839,7 +1835,7 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "leave_team_button"
-						position = { x = 18 y = 500 }
+						position = { x = -48 y = 700 }
 						quadTextureSprite = "GFX_frontend_leave_team"
 						Orientation = "UPPER_LEFT"
 						buttonText = "LEAVE_TEAM"
@@ -1850,9 +1846,9 @@ guiTypes = {
 					listboxType =
 					{
 						name ="multiplayer_list"
-						position = { x=0 y = 72}
+						position = { x=-140 y = 72}
 						backGround=""
-						size = { x=205 y =429}
+						size = { x=305 y =729}
 						horizontal = 0
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
@@ -1864,22 +1860,21 @@ guiTypes = {
 
 				checkboxType = {
 					name = "country_tab"
-					position = { x= -248 y = 29 }
+					position = { x= -308 y = 29 }
 					quadTextureSprite = "GFX_lobby_right_mp_tabs"
 					Orientation = "UPPER_RIGHT"
 				}
 
 				checkboxType = {
 					name = "players_tab"
-					position = { x= -134 y = 29 }
+					position = { x= -194 y = 29 }
 					quadTextureSprite = "GFX_lobby_right_mp_tabs"
 					Orientation = "UPPER_RIGHT"
 				}
 
 				instantTextBoxType = {
 					name = "country_tab_title"
-					position = { x= -250 y = 38 }
-
+					position = { x= -310 y = 38 }
 					font = "vic_22"
 					borderSize = {x = 4 y = 4}
 					text = "LEDGER_COUNTRY"
@@ -1891,8 +1886,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "players_tab_title"
-					position = { x = -132 y = 38 }
-
+					position = { x = -192 y = 38 }
 					font = "vic_22"
 					borderSize = {x = 4 y = 4}
 					text = "FE_PLAYERS"
@@ -1920,8 +1914,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "selected_nation_label"
-						position = { x = 24 y = 130 }
-
+						position = { x = -46 y = 130 }
 						font = "vic_22"
 						borderSize = {x = 0 y = 0}
 						text = "FE_NO_COUNTRY_SELECTED"
@@ -1949,8 +1942,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "diplomacy_banner_label"
-						position = { x = -5 y = 402 }
-
+						position = { x = -75 y = 402 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "HEADER_DIPLOMACY"
@@ -1963,12 +1955,12 @@ guiTypes = {
 					{
 						name ="techgroup_icon"
 						spriteType = "GFX_tech_group_strip"
-						position = { x= 19 y = 78 }
+						position = { x= -49 y = 78 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					guiButtonType = {
-						position = { x= 60 y = 32 }
+						position = { x= -10 y = 32 }
 						name = "player_shield"
 						quadTextureSprite ="GFX_shield_thin"
 					}
@@ -1977,29 +1969,28 @@ guiTypes = {
 					{
 						name ="government_rank"
 						spriteType = "GFX_government_rank_strip"
-						position = { x= 12 y = 38 }
+						position = { x= -58 y = 38 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					iconType = {
 						name ="religion_icon"
 						spriteType = "GFX_icon_religion"
-						position = { x= 148 y = 26 }
+						position = { x= 78 y = 26 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					iconType = {
 						name ="secondary_religion_icon"
 						spriteType = "GFX_icon_religion"
-						position = { x= 160 y = 84 }
+						position = { x= 90 y = 84 }
 						Orientation = "UPPER_LEFT"
 						scale = 0.65
 					}
 
 					instantTextBoxType = {
 						name = "selected_nation_label"
-						position = { x = 24 y = 130 }
-
+						position = { x = -46 y = 130 }
 						font = "vic_22"
 						borderSize = {x = 0 y = 0}
 						text = ""
@@ -2011,8 +2002,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "selected_fog"
-						position = { x = 20 y = 160 }
-
+						position = { x = -50 y = 160 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						text = ""
@@ -2024,8 +2014,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "selected_nation_status_label"
-						position = { x = 20 y = 174 }
-
+						position = { x = -50 y = 174 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						text = ""
@@ -2037,8 +2026,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "selected_ruler"
-						position = { x = 20 y = 196 }
-
+						position = { x = -50 y = 196 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						text = ""
@@ -2052,14 +2040,13 @@ guiTypes = {
 					{
 						name ="ruler_adm_icon"
 						spriteType = "GFX_icon_powers_administrative"
-						position = { x= 20 y = 210 }
+						position = { x= -50 y = 210 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "ruler_adm_value"
-						position = { x = 40 y = 215 }
-
+						position = { x = -30 y = 215 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "?"
@@ -2072,14 +2059,13 @@ guiTypes = {
 					{
 						name ="ruler_dip_icon"
 						spriteType = "GFX_icon_powers_diplomatic"
-						position = { x= 79 y = 210 }
+						position = { x= 9 y = 210 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "ruler_dip_value"
-						position = { x = 94 y = 215 }
-
+						position = { x = 24 y = 215 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "?"
@@ -2093,14 +2079,13 @@ guiTypes = {
 					{
 						name ="ruler_mil_icon"
 						spriteType = "GFX_icon_powers_military"
-						position = { x= 129 y = 210 }
+						position = { x= 59 y = 210 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "ruler_mil_value"
-						position = { x = 143 y = 215 }
-
+						position = { x = 73 y = 215 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "?"
@@ -2114,14 +2099,13 @@ guiTypes = {
 					{
 						name ="admtech_icon"
 						spriteType = "GFX_icon_powers_administrative_tech"
-						position = { x= 25 y = 246 }
+						position = { x= -45 y = 246 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "admtech_value"
-						position = { x = 5 y = 248 }
-
+						position = { x = -65 y = 248 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "?"
@@ -2134,14 +2118,13 @@ guiTypes = {
 					{
 						name ="diptech_icon"
 						spriteType = "GFX_icon_powers_diplomatic_tech"
-						position = { x= 80 y = 246 }
+						position = { x= 10 y = 246 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "diptech_value"
-						position = { x = 60 y = 248 }
-
+						position = { x = -10 y = 248 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "?"
@@ -2154,14 +2137,13 @@ guiTypes = {
 					{
 						name ="miltech_icon"
 						spriteType = "GFX_icon_powers_military_tech"
-						position = { x= 140 y = 246 }
+						position = { x= 70 y = 246 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "miltech_value"
-						position = { x = 120 y = 248 }
-
+						position = { x = 50 y = 248 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "?"
@@ -2172,8 +2154,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "national_ideagroup_name"
-						position = { x = -5 y = 286 }
-
+						position = { x = -75 y = 286 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "Enlish Ideas"
@@ -2186,14 +2167,13 @@ guiTypes = {
 					{
 						name ="ideas_icon"
 						spriteType = "GFX_icon_ideas"
-						position = { x= 170 y = 286 }
+						position = { x= 100 y = 286 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "ideas_value"
-						position = { x = 143 y = 288 }
-
+						position = { x = 73 y = 288 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "?"
@@ -2206,71 +2186,70 @@ guiTypes = {
 					{
 						name ="national_idea1"
 						spriteType = "GFX_idea_empty"
-						position = { x= -7 y = 320 }
+						position = { x= -77 y = 320 }
 						Orientation = "UPPER_LEFT"
-						scale = 0.5
+						scale = 0.6
 					}
 					iconType =
 					{
 						name ="national_idea2"
 						spriteType = "GFX_idea_empty"
-						position = { x= 25 y = 320 }
+						position = { x= -45 y = 320 }
 						Orientation = "UPPER_LEFT"
-						scale = 0.5
+						scale = 0.6
 					}
 					iconType =
 					{
 						name ="national_idea3"
 						spriteType = "GFX_idea_empty"
-						position = { x= 57 y = 320 }
+						position = { x= -13 y = 320 }
 						Orientation = "UPPER_LEFT"
-						scale = 0.5
+						scale = 0.6
 					}
 					iconType =
 					{
 						name ="national_idea4"
 						spriteType = "GFX_idea_empty"
-						position = { x= 89 y = 320 }
+						position = { x= 19 y = 320 }
 						Orientation = "UPPER_LEFT"
-						scale = 0.5
+						scale = 0.6
 					}
 					iconType =
 					{
 						name ="national_idea5"
 						spriteType = "GFX_idea_empty"
-						position = { x= 121 y = 320 }
+						position = { x= 51 y = 320 }
 						Orientation = "UPPER_LEFT"
-						scale = 0.5
+						scale = 0.6
 					}
 					iconType =
 					{
 						name ="national_idea6"
 						spriteType = "GFX_idea_empty"
-						position = { x= 153 y = 320 }
+						position = { x= 83 y = 320 }
 						Orientation = "UPPER_LEFT"
-						scale = 0.5
+						scale = 0.6
 					}
 					iconType =
 					{
 						name ="national_idea7"
 						spriteType = "GFX_idea_empty"
-						position = { x= 185 y = 320 }
+						position = { x= 115 y = 320 }
 						Orientation = "UPPER_LEFT"
-						scale = 0.5
+						scale = 0.6
 					}
 
 					iconType =
 					{
 						name ="provinces_icon"
 						spriteType = "GFX_province_icon"
-						position = { x= -5 y = 366 }
+						position = { x= -75 y = 366 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "provinces_value"
-						position = { x= -9 y = 372 }
-
+						position = { x= -79 y = 372 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						text = "37"
@@ -2284,14 +2263,13 @@ guiTypes = {
 					{
 						name ="economy_icon"
 						spriteType = "GFX_development_icon"
-						position = { x= 70 y = 366 }
+						position = { x= 0 y = 366 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "economy_value"
-						position = { x= 66 y = 372 }
-
+						position = { x= -4 y = 372 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						text = "1115"
@@ -2305,14 +2283,13 @@ guiTypes = {
 					{
 						name ="fort_icon"
 						spriteType = "GFX_fort_defense_icon"
-						position = { x= 150 y = 366 }
+						position = { x= 80 y = 366 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "fort_value"
-						position = { x= 142 y = 372 }
-
+						position = { x= 72 y = 372 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						text = "15"
@@ -2325,8 +2302,8 @@ guiTypes = {
 					listboxType = {
 						name = "diplomatic_listbox"
 						backGround = ""
-						position = { x=0 y=432 }
-						size = { x=200 y=120 }
+						position = { x=-140 y=432 }
+						size = { x= 320 y= 380 }
 						Orientation = "UPPER_LEFT"
 						horizontal = 0
 						spacing = 1.5
@@ -2336,7 +2313,7 @@ guiTypes = {
 
 					listboxType = {
 						name ="suggested_dlc_list"
-						position = { x = -50 y = 40 }
+						position = { x = -190 y = 40 }
 						backGround=""
 						size = { x=50 y =500 }
 						Orientation = "UPPER_LEFT"
@@ -2467,7 +2444,7 @@ guiTypes = {
 		name = "multiplayer_entry_server"
 		backGround=""
 		position = { x=0 y=0 }
-		size = { x=150 y= 38 }
+		size = { x=150 y= 37 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -2475,7 +2452,7 @@ guiTypes = {
 		fullScreen = no
 
 		guiButtonType = {
-			position = { x= -16 y = -4 }
+			position = { x= -16 y = -5 }
 			name = "player_shield"
 			quadTextureSprite ="GFX_shield_small"
 			tooltip = ""
@@ -2487,7 +2464,7 @@ guiTypes = {
 		{
 			name ="out_of_sync_icon"
 			spriteType = "GFX_icon_out_of_sync"
-			position = { x= -16 y = -4 }
+			position = { x= -16 y = -5 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -2505,7 +2482,7 @@ guiTypes = {
 			position = { x = 20 y =0 }
 			format = left
 			font = "Main_16"
-			maxWidth = 130
+			maxWidth = 196
 			maxHeight = 26
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
@@ -2553,8 +2530,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-
-
 	}
 
 	windowType = {
@@ -2599,7 +2574,7 @@ guiTypes = {
 			position = { x = 20 y =-5 }
 			format = left
 			font = "Main_24"
-			maxWidth = 130
+			maxWidth = 196
 			maxHeight = 26
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
@@ -2671,13 +2646,13 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-#		iconType =
-#		{
-#			name ="out_of_sync_icon02"
-#			spriteType = "GFX_icon_out_of_sync"
-#			position = { x= -16 y = -4 }
-#			Orientation = "UPPER_LEFT"
-#		}
+		#		iconType =
+		#		{
+		#			name ="out_of_sync_icon02"
+		#			spriteType = "GFX_icon_out_of_sync"
+		#			position = { x= -16 y = -4 }
+		#			Orientation = "UPPER_LEFT"
+		#		}
 
 		iconType =
 		{
@@ -2699,17 +2674,9 @@ guiTypes = {
 			truncate = yes
 		}
 
-		iconType =
-		{
-			name ="is_primary_local"
-			spriteType = "GFX_coop_player"
-			position = { x= 20 y = 15 }
-			Orientation = "UPPER_LEFT"
-		}
-
 		instantTextBoxType = {
 			name = "save_progress"
-			position = { x = 40 y =15 }
+			position = { x = 20 y =15 }
 			format = left
 			font = "Main_16"
 			maxWidth = 256
@@ -2747,13 +2714,13 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-#		iconType =
-#		{
-#			name ="out_of_sync_icon02"
-#			spriteType = "GFX_icon_out_of_sync"
-#			position = { x= -16 y = -4 }
-#			Orientation = "UPPER_LEFT"
-#		}
+		#		iconType =
+		#		{
+		#			name ="out_of_sync_icon02"
+		#			spriteType = "GFX_icon_out_of_sync"
+		#			position = { x= -16 y = -4 }
+		#			Orientation = "UPPER_LEFT"
+		#		}
 
 		iconType =
 		{
@@ -3041,7 +3008,7 @@ guiTypes = {
 		name = "savegameentry"
 		backGround=""
 		position = { x=0 y=0 }
-		size = { x=320 y= 41 }
+		size = { x=420 y= 41 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -3074,7 +3041,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 132
+			maxWidth = 232
 			maxHeight = 20
 			fixedsize = yes
 			#alwaystransparent = yes
@@ -3098,19 +3065,19 @@ guiTypes = {
 		iconType = {
 			name = "cloud_file"
 			spriteType = "GFX_cloud_file"
-			position = { x = 168 y = 12 }
+			position = { x = 268 y = 12 }
 		}
 
 		iconType = {
 			name = "ironman_icon"
 			spriteType = "GFX_ironman_icon"
-			position = { x = 200 y = 7 }
+			position = { x = 300 y = 7 }
 			scale = 0.8
 		}
 
 		guiButtonType = {
 			name ="delete_save_file_button"
-			position = { x = 218 y = 5 }
+			position = { x = 318 y = 5 }
 			quadTextureSprite = "GFX_button_delete_savegame"
 			tooltip = ""
 			tooltipText =""
@@ -3120,7 +3087,7 @@ guiTypes = {
 		iconType = {
 			name = "unsafe_savegame_icon"
 			spriteType = "GFX_unsafe_savegame_icon"
-			position = { x = 182 y = 7 }
+			position = { x = 282 y = 7 }
 		}
 
 	}
@@ -3129,7 +3096,7 @@ guiTypes = {
 	windowType = {
 		name = "savegameentry_wide"
 		backGround=""
-		position = { x=0 y=0 }
+		position = { x=0 y= 0 }
 		size = { x=320 y= 41 }
 		moveable = 0
 		dontRender = ""

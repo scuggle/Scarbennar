@@ -1,9 +1,8 @@
 
 #12 - Sjaelland | 
 
-owner = A13
-controller = A13
-add_core = A13
+owner = A71
+controller = A71
 add_core = A71
 culture = bluefoot_halfling
 religion = regent_court

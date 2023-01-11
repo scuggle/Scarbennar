@@ -10,3 +10,15 @@ technology_group = tech_halfling
 capital = 206
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1432.3.5 = {
+	monarch = {
+		name = "Bubish"
+		dynasty = "Elkmarch"
+		birth_date = 1409.4.3
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+	add_ruler_personality = embezzler_personality
+}

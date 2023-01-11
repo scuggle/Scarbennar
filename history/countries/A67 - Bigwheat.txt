@@ -10,3 +10,13 @@ technology_group = tech_halfling
 capital = 136
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1444.1.1 = {
+	monarch = {
+		name = "Bobby Fatfoot"
+		birth_date = 1403.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

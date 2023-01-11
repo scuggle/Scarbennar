@@ -1681,7 +1681,7 @@ technocracy_republic_reform = {
 	}
 	
 	modifiers = {
-		advisor_cost = -0.33
+		advisor_cost = -0.15
 		advisor_pool = 1
 		female_advisor_chance = 0.33
 		technology_cost = -0.1
@@ -2653,6 +2653,29 @@ concord_administration_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		locked_government_type = yes
+		lower_gov_cost_in_home_region = yes
+	}
+	effect = {
+		hidden_effect = {
+			capital_scope = {
+				region = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = lower_gov_cost_in_home_region_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = { has_province_modifier = lower_gov_cost_in_home_region_modifier }
+				remove_province_modifier = lower_gov_cost_in_home_region_modifier
+			}
+		}
 	}
 	ai = {
 		factor = 0.5 #generic
@@ -3195,6 +3218,8 @@ force_reelection_reform = {	#new Lotn
 			tooltip = "NEEDS_REGULAR_ELECTIONS"
 			has_government_attribute = has_term_election
 		}
+		#Anbennar
+		NOT = { is_lesser_in_union = yes }
 	}
 	modifiers = {
 		max_absolutism = -10
@@ -4038,6 +4063,18 @@ trollsbayer_pluralism_reform = {
 	modifiers = {
 		no_religion_penalty = yes
 		stability_cost_modifier = -0.1
+	}
+	effect = {
+		custom_tooltip = break_every_non_republic_alliance_tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					alliance_with = ROOT
+					NOT = { government = republic }
+				}
+				ROOT = { break_alliance = PREV }
+			}
+		}
 	}
 	custom_attributes = {
 		has_parliament = yes
@@ -5669,6 +5706,8 @@ northern_league_magnates = {
 		OR = {
 			tag = A13 # Gawed
 			was_tag = A13
+			tag = X24 # Northern League
+			was_tag = X24
 			is_subject_of = A13
 		}
 	}
@@ -6268,10 +6307,13 @@ barumand_land_of_equals_reform = {
     modifiers = {
         global_unrest = -2
         advisor_cost = -0.15
+		candidate_random_bonus = 2
+		
     }
     custom_attributes = {
         lottery_election = yes
         election_on_death = yes
+		bonus_stats_for_elected_ruler = yes
     }
     duration = 10
 }
@@ -6432,5 +6474,115 @@ anisikheioni_naval_administration = {
 		ship_durability = 0.1 
 		galley_power = 0.15
 		movement_speed_in_fleet_modifier = 1
+	}
+}
+
+#Theinos
+theinosi_synkletos = {
+	icon = "parliament"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = theinosi_synkletos
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	modifiers = {
+		colonists = 1
+		advisor_pool = 1
+		global_autonomy = -0.05
+		max_absolutism = 10
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		locked_government_type = yes
+		cannot_become_dictatorship = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+			disables_estate_nobles = yes
+		}
+	}
+	duration = 4
+}
+
+voltenu_corpocracy = {
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes	#changed this from no
+	potential = {
+		tag = X99
+		NOT = { has_reform = crown_colony_government }
+		NOT = { has_reform = private_enterprise_colony_government }
+		NOT = { has_reform = self_governing_colony_government }
+		NOT = { has_reform = obsidian_council_reform }
+	}
+	trigger = {
+		OR = {
+			tag = X99
+		}
+	}
+	duration = 4
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		OR = {
+			culture_group = goblin
+		}
+	}
+	lock_level_when_selected = yes
+	nation_designer_cost = 20
+	
+	factions = {
+		voltenu_stakeholders
+		voltenu_upper_management
+		voltenu_workers
+	}
+	
+	modifiers = {
+		idea_cost = -0.1
+		technology_cost = -0.1
+		interest = -1
+		global_monthly_devastation = 0.01
+		global_autonomy = -0.05
+		production_efficiency = 0.1
+		artificers_influence_modifier = 0.1
+	}
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		is_technocracy = yes
+		disables_regular_estates = yes
+	}
+	effect = {
+		add_country_modifier = {
+			name = technocracy_rajput_bonus
+			duration = -1
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = technocracy_rajput_bonus
+	}
+}
+
+triarchy_reform = {
+	icon = "fraternite_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		tag = X23
+	}
+	modifiers = {
+		advisor_pool = 3
+	}
+	custom_attributes {
+		cannot_become_dictatorship = yes
+	}
+	ai = {
+		factor = 2.5
 	}
 }

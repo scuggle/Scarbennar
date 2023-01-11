@@ -315,7 +315,7 @@ country_event = {
 	option = {
 		name = magic_ruler.4.m	#available
 		trigger = {
-			has_ruler_flag = enchantment_3
+			always = no
 		}
 		ai_chance = {
 			factor = 50

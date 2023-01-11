@@ -2,7 +2,7 @@
 
 graphical_culture = divenhalgfx
 
-color = { 40  78  54 }
+color = { 58  58  60 }
 
 revolutionary_colors = { 0 5 0 }
 

@@ -118,15 +118,11 @@ trade_tellumm_3 {
 }
 
 conquered_hold_tellum {
-	local_development_cost = -0.20
-	global_manpower = -10
-	land_forcelimit = -10
+	local_development_cost = -0.10
 }
 
 rebuilding_efforts_tellum {
 	local_development_cost = -0.10
-	global_manpower = -10
-	land_forcelimit = -10
 }
 
 capital_management_1 {
@@ -182,8 +178,10 @@ arid_arctic_balance {
 	local_development_cost = -0.2
 }
 
+#Military Mutagens
+
 military_mutagen_1 = {
-	shock_damage = 0.075
+	shock_damage = 0.05
 }
 military_mutagen_2 = {
 	fire_damage = 0.05

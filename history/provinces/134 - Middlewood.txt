@@ -1,9 +1,8 @@
 
 #134 - Wien
 
-owner = A01
-controller = A01
-add_core = A01
+owner = A68
+controller = A68
 add_core = A96
 add_core = A68
 culture = redfoot_halfling

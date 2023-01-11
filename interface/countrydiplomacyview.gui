@@ -18,13 +18,13 @@ guiTypes = {
 
 	windowType = {
 		name = "countrydiplomacyview"
-		#position = { x=0 y=140 }
-		position = { x=-600 y=140 }
+		position = { x=0 y=140 }
+		#position = { x=-600 y=140 }
 		show_position = { x=0 y =140 }
 		hide_position = { x=-600 y =140 }
 		animation_type = "decelerated"
-		animation_time = 300
-		size = { x=1024 y=100 }
+		animation_time = 10
+		size = { x=1024 y=900 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
 		upsound = tab_diplomacy
@@ -52,7 +52,7 @@ guiTypes = {
 			position = { x= -1 y = 83 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
 		iconType =
 		{
 			name ="bottomGold"
@@ -106,7 +106,7 @@ guiTypes = {
 			spriteType = "GFX_country_icon_religion"
 			position = { x= 74 y = 125 }
 			Orientation = "UPPER_LEFT"
-			scale = 1	#Anbennar, changed in 1.31, was originally 1 but they 0.7'd it because they increased the icons' base size, changed back to 1 for Anbennar
+			scale = 0.7
 			hint_tag = "hint_religion"
 		}
 
@@ -489,7 +489,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "corruption_value"
-			position = { x = 489 y = 220 }
+			position = { x = 492 y = 220 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -499,24 +499,31 @@ guiTypes = {
 			format = right
 		}
 
+		iconType = {
+			name ="land_forcelimit_icon"
+			spriteType = "GFX_land_forcelimit_icon"
+			position = { x = 362 y = 263 }
+			scale = 0.55
+		}
+
 		instantTextBoxType = {
 			name = "land_forcelimit_value"
-			position = { x = 380 y = 259 }
+			position = { x = 374 y = 259 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "000k"
-			maxWidth = 36
+			maxWidth = 40
 			maxHeight = 26
 			format = right
 		}
 
 		iconType = {
-			name ="land_forcelimit_icon"
-			spriteType = "GFX_land_forcelimit_icon"
-			position = { x = 363 y = 260 }
-			scale = 0.7
-		}	
+			name ="naval_forcelimit_icon"
+			spriteType = "GFX_naval_forcelimit_icon"
+			position = { x = 423 y = 263 }
+			scale = 0.6
+		}
 
 		instantTextBoxType = {
 			name = "naval_forcelimit_value"
@@ -531,10 +538,10 @@ guiTypes = {
 		}
 
 		iconType = {
-			name ="naval_forcelimit_icon"
-			spriteType = "GFX_naval_forcelimit_icon"
-			position = { x = 423 y = 260 }
-			scale = 0.7
+			name ="manpower_icon"
+			spriteType = "GFX_icon_manpower"
+			position = { x = 482 y = 260 }
+			scale = 0.85
 		}
 
 		instantTextBoxType = {
@@ -549,11 +556,7 @@ guiTypes = {
 			format = right
 		}
 
-		iconType = {
-			name ="manpower_icon"
-			spriteType = "GFX_icon_manpower"
-			position = { x = 482 y = 259 }
-		}
+		
 
 		iconType =
 		{
@@ -630,12 +633,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "prestige_value"
-			position = { x = 439 y = 160 }
+			position = { x = 444 y = 160 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "?"
-			maxWidth = 35
+			maxWidth = 30
 			maxHeight = 26
 			format = right
 			fixedsize = yes
@@ -662,7 +665,7 @@ guiTypes = {
 			maxHeight = 26
 			format = right
 		}
-		
+
 
 
 		iconType =
@@ -748,6 +751,7 @@ guiTypes = {
 			maxHeight = 26
 			format = right
 		}
+		# End of country stats
 
 		instantTextBoxType = {
 			name = "election_info"
@@ -763,7 +767,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "monarch_heir_label"
-			position = { x = 17 y = 243 }
+			position = { x = 17 y = 213 }
 			font = "vic_18"
 			text = "HEIR"
 			maxWidth = 60
@@ -775,13 +779,13 @@ guiTypes = {
 		{
 			name ="heir_gender"
 			spriteType = "GFX_gender_icon"
-			position = { x = 15 y = 259 }
+			position = { x = 15 y = 229 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name = "monarch_heir_name"
-			position = { x = 32 y = 257 }
+			position = { x = 32 y = 227 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -794,7 +798,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "monarch_heir_info"
-			position = { x =200 y = 257 }
+			position = { x =200 y = 227 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -812,12 +816,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "label_enemies"
-			position = { x = 40 y = 312 }
+			position = { x = 40 y = 305 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "ENEMIES"
-			maxWidth = 64
+			maxWidth = 70
 			maxHeight = 20
 			fixedsize = yes
 			truncate = yes
@@ -826,7 +830,7 @@ guiTypes = {
 
 		OverlappingElementsBoxType = {
 				name = "enemies_box"
-				position = { x = 100 y = 305 }
+				position = { x = 100 y = 302 }
 				size = { x = 180 y = 32 }
 				Orientation = "UPPER_LEFT"
 				format = left
@@ -835,7 +839,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "label_rivals"
-			position = { x = 40 y = 346 }
+			position = { x = 40 y = 345 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -850,7 +854,7 @@ guiTypes = {
 
 		OverlappingElementsBoxType = {
 				name = "rivals_box"
-				position = { x = 100 y = 336 }
+				position = { x = 100 y = 343 }
 				size = { x = 200 y = 32 }
 				Orientation = "UPPER_LEFT"
 				format = left
@@ -860,7 +864,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "label_rivals_not_possible"
-			position = { x = 40 y = 341 }
+			position = { x = 40 y = 301 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -877,7 +881,7 @@ guiTypes = {
 		listboxType = {
 			name = "diplomatic_listbox"
 			backGround = ""
-			position = { x=35 y=385 }
+			position = { x=35 y=385 } # x=30 y=335
 			if_resolution = {
 				max_height = 867
 				size = { x=243 y=160 }
@@ -907,11 +911,11 @@ guiTypes = {
 		}
 
 		editBoxType = {
-			position = { x = 325 y = 346 }
+			position = { x = 312 y = 346 }
 			name = "sort_search_edit"
 			font = "vic_18"
 			borderSize = {x = 8 y = 3}
-			size = { x=180 y=21}
+			size = { x=200 y=32}
 			text = "SEARCH_FIELD_TEXT"
 			orientation = "UPPER_LEFT"
 		}
@@ -1055,12 +1059,12 @@ guiTypes = {
 		iconType = {
 			name ="feedback_bg"
 			spriteType = "GFX_diplomacy_feedback_bg"
-			position = { x= 305 y = 341 }
+			position = { x= 300 y = 341 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType= {
-			position = { x = 319 y = 350 }
+			position = { x = 316 y = 350 }
 			name = "trust_label"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -1105,7 +1109,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType= {
-			position = { x = 319 y = 380 }
+			position = { x = 316 y = 380 }
 			name = "favors_label"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -1389,6 +1393,7 @@ guiTypes = {
 			buttonFont = "vic_18"
 		}
 
+###### Vassal release window - Dependency
 		windowType = {
 			name = "vassal_select_window"
 			backGround=""
@@ -1413,7 +1418,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "description"
-				position = { x = 70 y =138 }
+				position = { x = 70 y = 138 }
 				format = centre
 				font = "vic_22"
 				maxWidth = 420
@@ -1426,19 +1431,19 @@ guiTypes = {
 			listboxType =
 				{
 				name ="vassal_select_list"
-				position = { x=20 y =174}
+				position = { x= 30 y = 180 }
 				backGround=""
-				size = { x=500 y =350}
+				size = { x= 500 y = 650 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 2
 				scrollbartype = "standardlistbox_slider"
-				borderSize = {x = 10 y = 10}
+				borderSize = {x = 10 y = 10 }
 			}
 
 			guiButtonType = {
 				name = "back_button"
-				position = { x=240 y =531}
+				position = { x= 240 y = 831 }
 				quadTextureSprite ="GFX_standard_button_71"
 				tooltip = ""
 				tooltipText =""
@@ -1548,7 +1553,7 @@ guiTypes = {
 				buttonFont = "vic_18"
 				clicksound = click
 			}
-			
+
 			instantTextBoxType= {
 				position = { x = 430 y = 20 }
 				name = "rival_rivals_label"
@@ -1574,7 +1579,7 @@ guiTypes = {
 				name ="list"
 				position = { x = 110 y = 40 }
 				backGround=""
-				size = { x=410 y = 375}
+				size = { x=410 y = 660}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 0
@@ -1585,7 +1590,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "back"
-				position = { x= 235 y = 410 }
+				position = { x= 235 y = 695 }
 				quadTextureSprite ="GFX_province_back_button"
 				buttonText = "BACK"
 				buttonFont = "vic_18"
@@ -1686,7 +1691,7 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="shield"
-			position = { x= 0 y = -1 }
+			position = { x= 0 y = 0 }
 			quadTextureSprite = "GFX_shield_small"
 			tooltip = ""
 			tooltipText =""
@@ -1709,7 +1714,7 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="shield"
-			position = { x= 0 y = 8 }
+			position = { x= 0 y = 0 }
 			quadTextureSprite = "GFX_shield_small"
 			tooltip = ""
 			tooltipText =""
@@ -1853,7 +1858,7 @@ guiTypes = {
 		name = "possible_rival_entry"
 		backGround=""
 		position = { x=0 y=20 }
-		size = { x=320 y=45 }
+		size = { x=288 y=42 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -1869,13 +1874,13 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "flag"
-			position = { x= -65 y = 17 }
+			position = { x= -65 y = 18 }
 			quadTextureSprite ="GFX_flag_small"
 		}
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = -30 y = 17 }
+			position = { x = -30 y = 18 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -1890,41 +1895,41 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "opinion"
-			position = { x = 88 y = 17 }
+			position = { x = 88 y = 18 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "+100"
-			maxWidth = 53
+			maxWidth = 40
 			maxHeight = 32
-			format = center
+			format = right
 			fixedsize = yes
 			truncate = yes
 		}
 
 		instantTextBoxType = {
 			name = "army"
-			position = { x = 148 y = 17 }
+			position = { x = 148 y = 18 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "+100"
-			maxWidth = 77
+			maxWidth = 70
 			maxHeight = 32
-			format = center
+			format = right
 			fixedsize = yes
 			truncate = yes
 		}
 		instantTextBoxType = {
 			name = "navy"
-			position = { x = 230 y = 17 }
+			position = { x = 230 y = 18 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "+100"
-			maxWidth = 77
+			maxWidth = 70
 			maxHeight = 32
-			format = center
+			format = right
 			fixedsize = yes
 			truncate = yes
 		}
@@ -2112,7 +2117,7 @@ guiTypes = {
 		name = "GiftDiplomacyDialog"
 		backGround=""
 		position = { x=300 y=0 }
-		size = { x=520 y=476 }
+		size = { x=520 y=976 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -2217,7 +2222,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2230,7 +2235,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2279,13 +2284,13 @@ guiTypes = {
 
 		instantTextBoxType = {
 				name = "Description"
-				position = { x = 45 y = 205 }
+				position = { x = 45 y = 220 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = ""
 				maxWidth = 440
-				maxHeight = 270
+				maxHeight = 570
 				scrollbartype = "standardlistbox_slider"
 				format = left
 			}
@@ -2348,7 +2353,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2361,7 +2366,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2412,7 +2417,7 @@ guiTypes = {
 				borderSize = {x = 0 y = 0}
 				text = ""
 				maxWidth = 440
-				maxHeight = 270
+				maxHeight = 570
 				scrollbartype = "standardlistbox_slider"
 				format = left
 			}
@@ -2461,13 +2466,13 @@ guiTypes = {
 
 		checkboxType = {
 			name = "scornful"
-			position = { x= 50 y = 475 }
+			position = { x= 50 y = 775 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 		}
 
 		instantTextBoxType = {
 			name = "scornful_button_text"
-			position = { x = 85 y = 485 }
+			position = { x = 85 y = 785 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -2493,7 +2498,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "scornful_effect_text"
-			position = { x = 55 y = 425 }
+			position = { x = 55 y = 725 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -2505,7 +2510,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "scornful_enemies_text"
-			position = { x = 300 y = 455 }
+			position = { x = 300 y = 755 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -2517,7 +2522,7 @@ guiTypes = {
 
 		listboxType = {
 			name = "scornful_enemies"
-			position = { x = 300 y = 475 }
+			position = { x = 300 y = 775 }
 			size = { x=800 y=800 }
 			backGround=""
 			Orientation = "UPPER_LEFT"
@@ -2528,7 +2533,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "scornful_random"
-			position = { x=250 y =475}
+			position = { x= 250 y = 775}
 			quadTextureSprite ="GFX_nation_designer_random_button"
 			tooltip = ""
 			tooltipText =""
@@ -2539,7 +2544,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "scornful_back"
-			position = { x=220 y =475}
+			position = { x= 220 y = 775}
 			quadTextureSprite ="GFX_nation_designer_backwards_random_button"
 			tooltip = ""
 			tooltipText = ""
@@ -2564,7 +2569,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x= 280 y = 855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2577,7 +2582,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x= 50 y = 855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2628,7 +2633,7 @@ guiTypes = {
 				borderSize = {x = 0 y = 0}
 				text = ""
 				maxWidth = 440
-				maxHeight = 270
+				maxHeight = 570
 				scrollbartype = "standardlistbox_slider"
 				format = left
 			}
@@ -2711,7 +2716,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2724,7 +2729,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2776,7 +2781,7 @@ guiTypes = {
 				borderSize = {x = 0 y = 0}
 				text = ""
 				maxWidth = 475
-				maxHeight = 250
+				maxHeight = 580
 				format = left
 				scrollbartype = "standardtext_slider"
 			}
@@ -2817,7 +2822,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2830,7 +2835,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -3175,39 +3180,39 @@ guiTypes = {
 			name = "enemies_infantry_value"
 			if_resolution = {
 				max_height = 867
-				position = { x = 28 y = 488 }
+				position = { x = 38 y = 503 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 28 y = 645 }
+				position = { x = 38 y = 660 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 28 y = 815 }
+				position = { x = 38 y = 830 }
 			}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "100k"
-			maxWidth = 36
+			maxWidth = 46
 			maxHeight = 26
-			format = right
+			format = center
 		}
 		iconType = {
 			name = "enemies_infantry_icon"
 			if_resolution = {
 				max_height = 867
-				position = { x = 63 y = 486 }
+				position = { x = 53 y = 484 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 63 y = 640 }
+				position = { x = 53 y = 638 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 63 y = 810 }
+				position = { x = 53 y = 808 }
 			}
 			spriteType ="GFX_infantry_icon"
 			scale = 0.7
@@ -3217,39 +3222,39 @@ guiTypes = {
 			name = "enemies_cavalry_value"
 			if_resolution = {
 				max_height = 867
-				position = { x = 82 y = 488 }
+				position = { x = 92 y = 503 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 82 y = 645 }
+				position = { x = 92 y = 660 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 82 y = 815 }
+				position = { x = 92 y = 830 }
 			}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "100k"
-			maxWidth = 36
+			maxWidth = 46
 			maxHeight = 26
-			format = right
+			format = center
 		}
 		iconType = {
 			name = "enemies_cavalry_icon"
 			if_resolution = {
 				max_height = 867
-				position = { x = 118 y = 486 }
+				position = { x = 108 y = 484 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 118 y = 645 }
+				position = { x = 108 y = 643 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 118 y = 810 }
+				position = { x = 108 y = 808 }
 			}
 			spriteType ="GFX_cavalry_icon"
 			scale = 0.7
@@ -3259,39 +3264,39 @@ guiTypes = {
 			name = "enemies_artillery_value"
 			if_resolution = {
 				max_height = 867
-				position = { x = 136 y = 488 }
+				position = { x = 146 y = 503 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 136 y = 645 }
+				position = { x = 146 y = 660 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 136 y = 815 }
+				position = { x = 146 y = 830 }
 			}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "100k"
-			maxWidth = 36
+			maxWidth = 46
 			maxHeight = 26
-			format = right
+			format = center
 		}
 		iconType = {
 			name = "enemies_artillery_icon"
 			if_resolution = {
 				max_height = 867
-				position = { x = 170 y = 486 }
+				position = { x = 160 y = 484 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 170 y = 644 }
+				position = { x = 160 y = 642 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 170 y = 811 }
+				position = { x = 160 y = 809 }
 			}
 			spriteType ="GFX_artillery_icon"
 			scale = 0.7
@@ -3301,80 +3306,81 @@ guiTypes = {
 			name = "enemies_total_amount_value"
 			if_resolution = {
 				max_height = 867
-				position = { x = 190 y = 488 }
+				position = { x = 200 y = 503 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 190 y = 645 }
+				position = { x = 200 y = 660 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 190 y = 815 }
+				position = { x = 200 y = 830 }
 			}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "100k"
-			maxWidth = 36
+			maxWidth = 46
 			maxHeight = 26
-			format = right
+			format = center
 		}
 		iconType = {
 			name = "enemies_total_amount_icon"
 			if_resolution = {
 				max_height = 867
-				position = { x = 228 y = 486 }
+				position = { x = 216 y = 488 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 228 y = 644 }
+				position = { x = 216 y = 646 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 228 y = 810 }
+				position = { x = 216 y = 812 }
 			}
 			spriteType ="GFX_land_forcelimit_icon"
+			scale = 0.7
 		}
 
 		instantTextBoxType = {
 			name = "allies_infantry_value"
 			if_resolution = {
 				max_height = 867
-				position = { x = 292 y = 488 }
+				position = { x = 302 y = 503 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 292 y = 645 }
+				position = { x = 302 y = 660 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 292 y = 815 }
+				position = { x = 302 y = 830 }
 			}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "100k"
-			maxWidth = 36
+			maxWidth = 46
 			maxHeight = 26
-			format = right
+			format = center
 		}
 		iconType = {
 			name = "allies_infantry_icon"
 			if_resolution = {
 				max_height = 867
-				position = { x = 328 y = 486 }
+				position = { x = 318 y = 484 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 328 y = 644 }
+				position = { x = 318 y = 642 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 328 y = 810 }
+				position = { x = 318 y = 808 }
 			}
 			spriteType ="GFX_infantry_icon"
 			scale = 0.7
@@ -3384,39 +3390,39 @@ guiTypes = {
 			name = "allies_cavalry_value"
 			if_resolution = {
 				max_height = 867
-				position = { x = 347 y = 488 }
+				position = { x = 357 y = 503 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 347 y = 645 }
+				position = { x = 357 y = 660 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 347 y = 815 }
+				position = { x = 357 y = 830 }
 			}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "100k"
-			maxWidth = 36
+			maxWidth = 46
 			maxHeight = 26
-			format = right
+			format = center
 		}
 		iconType = {
 			name = "allies_cavalry_icon"
 			if_resolution = {
 				max_height = 867
-				position = { x = 383 y = 486 }
+				position = { x = 373 y = 484 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 383 y = 644 }
+				position = { x = 373 y = 642 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 383 y = 810 }
+				position = { x = 373 y = 808 }
 			}
 			spriteType ="GFX_cavalry_icon"
 			scale = 0.7
@@ -3426,39 +3432,39 @@ guiTypes = {
 			name = "allies_artillery_value"
 			if_resolution = {
 				max_height = 867
-				position = { x = 396 y = 488 }
+				position = { x = 406 y = 503 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 396 y = 645 }
+				position = { x = 406 y = 660 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 396 y = 815 }
+				position = { x = 406 y = 830 }
 			}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "100k"
-			maxWidth = 36
+			maxWidth = 46
 			maxHeight = 26
-			format = right
+			format = center
 		}
 		iconType = {
 			name = "allies_artillery_icon"
 			if_resolution = {
 				max_height = 867
-				position = { x = 430 y = 486 }
+				position = { x = 420 y = 484 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 430 y = 644 }
+				position = { x = 420 y = 642 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 430 y = 811 }
+				position = { x = 420 y = 809 }
 			}
 			spriteType ="GFX_artillery_icon"
 			scale = 0.7
@@ -3468,41 +3474,42 @@ guiTypes = {
 			name = "allies_total_amount_value"
 			if_resolution = {
 				max_height = 867
-				position = { x = 452 y = 488 }
+				position = { x = 462 y = 503 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 452 y = 645 }
+				position = { x = 462 y = 660 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 452 y = 815 }
+				position = { x = 462 y = 830 }
 			}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "100k"
-			maxWidth = 36
+			maxWidth = 46
 			maxHeight = 26
-			format = right
+			format = center
 		}
 		iconType = {
 			name = "allies_total_amount_icon"
 			if_resolution = {
 				max_height = 867
-				position = { x = 490 y = 486 }
+				position = { x = 478 y = 488 }
 			}
 			if_resolution = {
 				min_height = 868
 				max_height = 1047
-				position = { x = 490 y = 644 }
+				position = { x = 478 y = 646 }
 			}
 			if_resolution = {
 				min_height = 1048
-				position = { x = 490 y = 810 }
+				position = { x = 478 y = 812 }
 			}
 			spriteType ="GFX_land_forcelimit_icon"
+			scale = 0.7
 		}
 
 		iconType = {
@@ -3568,6 +3575,7 @@ guiTypes = {
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
+			shortcut = "c" #Arumba
 			delayedTooltipText = ""
 			buttonText = "WARTITLE"
 			buttonFont = "vic_18"
@@ -3954,7 +3962,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=264 y =412}
+			position = { x=264 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -3967,7 +3975,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=34 y =412}
+			position = { x=34 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -4081,7 +4089,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -4094,7 +4102,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -4225,7 +4233,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -4238,7 +4246,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -4452,7 +4460,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -4465,7 +4473,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -4750,7 +4758,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -4763,7 +4771,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -4917,9 +4925,9 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = ""
 			maxWidth = 300
-			maxHeight = 140
+			maxHeight = 200
 			fixedsize = yes
-		} 
+		}
 
 		instantTextBoxType = {
 			name = "chance_string"
@@ -4950,9 +4958,9 @@ guiTypes = {
 
 		listboxType = {
 			name ="rebels"
-			position = { x = 21   y = 355 }
+			position = { x = 21   y = 361 }
 			backGround=""
-			size = { x= 500 y = 160 }
+			size = { x= 500 y = 500 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1
@@ -5018,7 +5026,7 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
-			text = "0�"
+			text = "0?"
 			maxWidth = 200
 			maxHeight = 26
 			format = right
@@ -5026,7 +5034,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5039,7 +5047,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5247,7 +5255,7 @@ guiTypes = {
 			name ="armylist"
 			position = { x = 40 y = 210 }
 			backGround=""
-			size = { x=205 y =300}
+			size = { x=205 y =640}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -5292,12 +5300,14 @@ guiTypes = {
 				name = "landslider_upButton"
 				quadTextureSprite = "GFX_scroll_left_gold"
 				position = { x=0 y =0}
+				shortcut = "x" #Arumba
 			}
 			guiButtonType = {
 				# parent = "landslider_SliderButton"
 				name = "landslider_downButton"
 				quadTextureSprite = "GFX_scroll_right_gold"
 				position = { x=0 y =120}
+				shortcut = "v" #Arumba
 			}
 		}
 
@@ -5352,7 +5362,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5367,7 +5377,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=40 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5384,7 +5394,7 @@ guiTypes = {
 		name = "offer_condottieri_entry"
 		backGround=""
 		position = { x=0 y=0 }
-		size = { x=150 y= 90 }
+		size = { x=150 y= 65 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -5401,8 +5411,8 @@ guiTypes = {
 			buttonFont = "vic_18"
 		}
 
-		instantTextBoxType={
-			position = {x = 23 y = 10 }
+		instantTextBoxType = {
+			position = {x = -223 y = 10 }
 			name = "info_text"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -5428,7 +5438,7 @@ guiTypes = {
 				name = "unit1_type"
 				position = { x= 0 y = 30 }
 				quadTextureSprite = "GFX_unit_types_strip_nontransp"
-				scale= 0.7
+				scale= 0.6
 			}
 
 			instantTextBoxType = {
@@ -5447,7 +5457,7 @@ guiTypes = {
 				name = "unit2_type"
 				position = { x= 50 y = 30 }
 				quadTextureSprite = "GFX_unit_types_strip_nontransp"
-				scale= 0.7
+				scale= 0.6
 			}
 			instantTextBoxType = {
 				name = "unit2_count"
@@ -5465,7 +5475,7 @@ guiTypes = {
 				name = "unit3_type"
 				position = { x= 100 y = 30 }
 				quadTextureSprite = "GFX_unit_types_strip_nontransp"
-				scale= 0.7
+				scale= 0.6
 			}
 			instantTextBoxType = {
 				name = "unit3_count"
@@ -5483,7 +5493,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "leader_text"
-			position = { x = 0  y = 68 }
+			position = { x = 0  y = 9 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -5539,7 +5549,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 220
-			maxHeight = 210
+			maxHeight = 160
 			text = "SP_PRICE"
 			orientation = "UPPER_LEFT"
 			format = centre
@@ -5550,7 +5560,7 @@ guiTypes = {
 			name ="list"
 			position = { x = 40 y = 210 }
 			backGround=""
-			size = { x=205 y =300}
+			size = { x=205 y =600}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -5610,7 +5620,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x = 280 y = 855 }
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5625,7 +5635,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5638,16 +5648,17 @@ guiTypes = {
 
 	}
 
+#### Sell Province screen
 	eu3dialogtype = {
 		name = "SellProvDialog"
 		backGround=""
-		position = { x=300 y=0 }
-		size = { x=520 y=476 }
+		position = { x= 300 y= 0 }
+		size = { x= 520 y= 976 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
-		fullScreen = no
+		fullScreen = yes
 
 		iconType =
 		{
@@ -5704,7 +5715,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 220
-			maxHeight = 94
+			maxHeight = 220
 			text = "SP_PRICE"
 			orientation = "UPPER_LEFT"
 			format = centre
@@ -5715,7 +5726,7 @@ guiTypes = {
 			name ="provincelist"
 			position = { x = 40 y = 210 }
 			backGround=""
-			size = { x=205 y =300}
+			size = { x= 205 y = 600 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -5787,7 +5798,7 @@ guiTypes = {
 		{
 			name ="diplo_chance_reasons"
 			spriteType = "GFX_diplomacy_view_diplo_chance_sell_province"
-			position = { x = 295 y = 425 }
+			position = { x = 295 y = 550 }
 		}
 
 
@@ -5795,19 +5806,19 @@ guiTypes = {
 		{
 			name ="diplo_chance_frame"
 			spriteType = "GFX_diplomacy_view_diplochance_bar_frame_short"
-			position = { x = 283 y = 420 }
+			position = { x = 283 y = 545 }
 		}
 
 		iconType =
 		{
 			name ="diplo_chance_threshold"
 			spriteType = "GFX_diploreasons_bar_threshold"
-			position = { x = 289 y = 425 }
+			position = { x = 289 y = 550 }
 		}
 
 		instantTextBoxType = {
 			name = "chance_string"
-			position = { x = 229 y = 479 }
+			position = { x = 229 y = 629 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
@@ -5819,9 +5830,22 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		instantTextBoxType = {
+			name = "help_tooltip_click_on_map"
+			position = { x = 255 y = 659 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 0 y = 0}
+			text = "help_tooltip_click_on_map"
+			maxWidth = 280
+			maxHeight = 200
+			format = centre
+			alwaystransparent = yes
+		}
+
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5836,7 +5860,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5901,7 +5925,7 @@ guiTypes = {
 			name ="provincelist"
 			position = { x = 40 y = 210 }
 			backGround=""
-			size = { x=205 y =300}
+			size = { x=205 y =600}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -5927,7 +5951,7 @@ guiTypes = {
 		{
 			name ="diplo_chance_reasons"
 			spriteType = "GFX_diplomacy_view_diplo_chance_sell_province"
-			position = { x = 295 y = 425 }
+			position = { x = 295 y = 550 }
 		}
 
 
@@ -5935,19 +5959,19 @@ guiTypes = {
 		{
 			name ="diplo_chance_frame"
 			spriteType = "GFX_diplomacy_view_diplochance_bar_frame_short"
-			position = { x = 283 y = 420 }
+			position = { x = 283 y = 545 }
 		}
 
 		iconType =
 		{
 			name ="diplo_chance_threshold"
 			spriteType = "GFX_diploreasons_bar_threshold"
-			position = { x = 289 y = 425 }
+			position = { x = 289 y = 550 }
 		}
 
 		instantTextBoxType = {
 			name = "chance_string"
-			position = { x = 229 y = 479 }
+			position = { x = 235 y = 582 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
@@ -5961,7 +5985,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x= 280 y = 855 }
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5976,7 +6000,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x= 50 y = 855 }
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -5989,6 +6013,7 @@ guiTypes = {
 
 	}
 
+#### Sell Maps
 	eu3dialogtype = {
 		name = "ShareMapDialog"
 		backGround=""
@@ -6025,8 +6050,8 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-		instantTextBoxType={
-			position = {x = 287 y = 285 }
+		instantTextBoxType = {
+			position = {x = 287 y = 320 }
 			name = "Description"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -6041,7 +6066,7 @@ guiTypes = {
 			name ="regionlist"
 			position = { x = 40 y = 210 }
 			backGround=""
-			size = { x=205 y =300}
+			size = { x= 205 y = 600 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -6067,7 +6092,7 @@ guiTypes = {
 		{
 			name ="diplo_chance_reasons"
 			spriteType = "GFX_diplomacy_view_diplo_chance_sell_province"
-			position = { x = 297 y = 423 }
+			position = { x = 297 y = 478 }
 		}
 
 
@@ -6075,19 +6100,19 @@ guiTypes = {
 		{
 			name ="diplo_chance_frame"
 			spriteType = "GFX_diplomacy_view_diplochance_bar_frame_short"
-			position = { x = 283 y = 420 }
+			position = { x = 283 y = 473 }
 		}
 
 		iconType =
 		{
 			name ="diplo_chance_threshold"
 			spriteType = "GFX_diploreasons_bar_threshold"
-			position = { x = 289 y = 425 }
+			position = { x = 289 y = 478 }
 		}
 
 		instantTextBoxType = {
 			name = "chance_string"
-			position = { x = 229 y = 479 }
+			position = { x = 234 y = 515 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
@@ -6100,7 +6125,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x= 280 y = 855 }
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -6115,7 +6140,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x= 50 y = 855 }
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -6128,6 +6153,7 @@ guiTypes = {
 
 	}
 
+#### Sell ships screen
 	eu3dialogtype = {
 		name = "SellShipsDialog"
 		backGround=""
@@ -6205,7 +6231,7 @@ guiTypes = {
 			name ="provincelist"
 			position = { x = 40 y = 210 }
 			backGround=""
-			size = { x=205 y =300}
+			size = { x= 205 y = 600 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -6277,7 +6303,7 @@ guiTypes = {
 		{
 			name ="diplo_chance_reasons"
 			spriteType = "GFX_diplomacy_view_diplo_chance_sell_province"
-			position = { x = 295 y = 425 }
+			position = { x = 295 y = 550 }
 		}
 
 
@@ -6285,19 +6311,19 @@ guiTypes = {
 		{
 			name ="diplo_chance_frame"
 			spriteType = "GFX_diplomacy_view_diplochance_bar_frame_short"
-			position = { x = 283 y = 420 }
+			position = { x = 283 y = 545 }
 		}
 
 		iconType =
 		{
 			name ="diplo_chance_threshold"
 			spriteType = "GFX_diploreasons_bar_threshold"
-			position = { x = 289 y = 425 }
+			position = { x = 289 y = 550 }
 		}
 
 		instantTextBoxType = {
 			name = "chance_string"
-			position = { x = 229 y = 479 }
+			position = { x = 235 y = 582 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
@@ -6310,7 +6336,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x= 280 y = 855 }
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -6325,7 +6351,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x= 50 y = 855 }
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -6773,7 +6799,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -6788,7 +6814,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -6805,7 +6831,7 @@ guiTypes = {
 		name = "TransferTradePowerDialog"
 		backGround=""
 		position = { x=300 y=0 }
-		size = { x=520 y=476 }
+		size = { x=520 y=876 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -6969,7 +6995,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -6984,14 +7010,14 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
-			shortcut = "ESCAPE"
+			shortcut = "z" #Arumba
 		}
 
 	}
@@ -7000,7 +7026,7 @@ guiTypes = {
 		name = "DemandUnlawfulTerritoryDiplomacyDialogue"
 		backGround=""
 		position = { x=300 y=0 }
-		size = { x=520 y=476 }
+		size = { x=520 y=876 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -7046,9 +7072,9 @@ guiTypes = {
 
 		listboxType ={
 			name ="provincelist"
-			position = { x = 40 y = 210 }
+			position = { x = 40 y = 610 }
 			backGround=""
-			size = { x=205 y =300}
+			size = { x=205 y =600}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -7107,7 +7133,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -7122,7 +7148,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -7291,7 +7317,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -7304,7 +7330,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""

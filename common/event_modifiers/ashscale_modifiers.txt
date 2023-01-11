@@ -1,0 +1,152 @@
+ash_dilemma = {
+	land_morale = 0.10
+	shock_damage = 0.10
+}
+
+ash_colonist = {
+	colonists = 1
+	global_colonial_growth = 15
+}
+
+ash_equipment = {
+	infantry_power = 0.1
+	shock_damage_received = -0.1
+}
+
+ash_shanty = {
+	local_development_cost = -0.5
+}
+
+ash_burad = {
+	local_development_cost = -0.05
+	local_manpower_modifier = 0.25
+}
+
+ash_lodhum = {
+	manpower_recovery_speed = 0.05
+	local_manpower_modifier = 0.25
+}
+
+ash_skomdihr = {
+	movement_speed = 0.1
+	local_manpower_modifier = 0.25
+}
+
+ash_ordstun = {
+	production_efficiency = 0.05
+	local_manpower_modifier = 0.25
+}
+
+ash_shasztun = {
+	defensiveness = 0.05
+	local_manpower_modifier = 0.25
+}
+
+ash_orgh = {
+	technology_cost = -0.05
+	local_manpower_modifier = 0.25
+}
+
+ash_dragon_forge_1 = {
+	trade_goods_size = 0.25
+	local_tax_modifier = 0.05
+	picture = "sgc_province_icon"
+}
+
+ash_dragon_forge_2 = {
+	trade_goods_size = 0.5
+	local_tax_modifier = 0.1
+	local_development_cost = -0.075
+	picture = "sgc_province_icon"
+}
+
+ash_dragon_forge_3 = {
+	trade_goods_size = 1
+	local_tax_modifier = 0.2
+	local_development_cost = -0.15
+	picture = "sgc_province_icon"
+}
+
+ash_dragon_forge_final = {
+	trade_goods_size= 2
+	local_tax_modifier = 0.4
+	local_development_cost = -0.3
+	picture = "sgc_province_icon"
+}
+
+ash_entrance_trap = {
+	max_attrition = 5
+	local_hostile_attrition = 2
+	local_defensiveness = 0.20
+}
+
+ash_administration = {
+	administrative_efficiency = -0.05
+}
+
+ash_resisted = {
+	missionary_maintenance_cost = -0.1
+	tolerance_own = 2
+	tolerance_heathen = -2
+	tolerance_heretic = -2
+}
+
+ash_converted = {
+	missionaries = 1
+	global_missionary_strength = .02
+}
+
+ash_securing_nest = {
+	colonists = 1
+	global_colonial_growth = 20
+	colonist_placement_chance = 0.10
+}
+
+#mecha-dragon related
+ash_tax = {
+	global_tax_modifier = -0.4
+}
+
+ash_produc = {
+	production_efficiency = -0.3
+}
+
+ash_rec = {
+	manpower_recovery_speed = -0.2
+}
+#heads
+ash_head_adm = {
+	administrative_efficiency = 0.1
+}
+
+ash_head_dip = {
+	production_efficiency = 0.10
+}
+
+ash_head_mil = {
+	army_tradition_decay = -0.015
+}
+#torsos
+ash_torso_adm = {
+	build_time = -0.10
+}
+
+ash_torso_dip = {
+	trade_efficiency = 0.10
+}
+
+ash_torso_mil = {
+	land_morale = 0.10
+}
+#legs
+ash_leg_adm = {
+	all_estate_loyalty_equilibrium = 0.1
+}
+
+ash_leg_dip = {
+	trade_steering = 0.10
+}
+
+ash_leg_mil = {
+	discipline = 0.05
+}

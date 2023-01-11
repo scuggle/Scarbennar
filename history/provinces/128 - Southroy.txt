@@ -1,16 +1,16 @@
 
-#128 - Kärnten
+#128 - Kï¿½rnten
 
-owner = A01
-controller = A01
-add_core = A01
+owner = X22
+controller = X22
+add_core = X22
 culture = low_lorentish
 religion = regent_court
 hre = no
-base_tax = 2
-base_production = 2
+base_tax = 3
+base_production = 5
 trade_goods = grain
-base_manpower = 1
+base_manpower = 4
 capital = "" 
 is_city = yes
 

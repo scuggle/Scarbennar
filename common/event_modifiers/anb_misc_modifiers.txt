@@ -62,7 +62,6 @@ diplomatic_pariah = {
 	improve_relation_modifier = -0.5
 	
 	global_unrest = -1
-	enemy_core_creation = 0.25
 	
 	unjustified_demands = -0.5
 	ae_impact = -0.25
@@ -416,4 +415,8 @@ honderaak_incident_prestige = {
 }
 honderaak_incident_reformation = {
 	reform_progress_growth = 0.75
+}
+
+lower_gov_cost_in_home_region_modifier = {
+	local_governing_cost = -0.5
 }

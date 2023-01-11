@@ -1,9 +1,8 @@
 
 #208 - Leon | 
 
-owner = A13
-controller = A13
-add_core = A13
+owner = A76
+controller = A76
 add_core = A76
 culture = bluefoot_halfling
 religion = regent_court

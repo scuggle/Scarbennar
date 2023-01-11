@@ -1180,7 +1180,7 @@ moon_mountains = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			enemy_core_creation = 0.1
+			warscore_cost_vs_other_religion = -0.05
 			hostile_attrition = 0.5
 			land_attrition = -0.05
 		}
@@ -1205,7 +1205,7 @@ moon_mountains = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			enemy_core_creation = 0.2
+			warscore_cost_vs_other_religion = -0.10
 			hostile_attrition = 1
 			land_attrition = -0.1
 		}
@@ -1230,7 +1230,7 @@ moon_mountains = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			enemy_core_creation = 0.33
+			warscore_cost_vs_other_religion = -0.15
 			hostile_attrition = 1.5
 			land_attrition = -0.15
 		}
@@ -1471,7 +1471,7 @@ eranils_oddities = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			development_cost = -0.1
+			development_cost = -0.05
 		}
 		on_upgraded = {
 			change_trade_goods = damestear

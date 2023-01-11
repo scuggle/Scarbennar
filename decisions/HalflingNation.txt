@@ -24,13 +24,13 @@ country_decisions = {
 			}
 		}
 		allow = {
-			#adm_tech = 10
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			#num_of_cities = 5
+			#num_of_cities = 15
 			num_of_owned_provinces_with = {
-				value = 5
+				value = 15
 				region = small_country_region
 				culture_group = halfling
 			}

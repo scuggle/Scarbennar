@@ -1,9 +1,9 @@
 
 #104 - Milan | 
 
-owner = A01
-controller = A01
-add_core = A01
+owner = A02
+controller = A02
+add_core = A02
 culture = low_lorentish
 religion = regent_court
 

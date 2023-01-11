@@ -43,7 +43,7 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			NOT = { exists = X12 }
-			mission_completed = goblin_survivors
+			mission_completed = goblin_new_nation
 			owns_core_province = 774	#Taranton
 			num_of_owned_provinces_with = {
 				value = 10

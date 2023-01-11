@@ -84,7 +84,7 @@ anbennarian = {
 			"s�l Themarenn" "s�l Estallen" "s�l Deam�ine" "s�l Gabm�rionn" "s�l Bennon" "s�l Leslinp�r" "s�l Aranmas" "s�l Terr" Silurion "s�l Varain�" Konwell Silistra "s�l Vivin"
 			"s�l Esta" "s�na Gren" "s�lna Hat" "s�l Estadeir" "s�l Seinath�l"
 			#more names 
-			Seinp�r�rtharn Farran "sina Vartr�s" "sina Vardemele" "sina Ciobisp�r" "s�l na Kormistgr�i" "of Dogwood" "of Roysamfloo" "of Arkfloat" "of Bargedock" "sina Lanassionn" "of Coraston" "of Carrotrows" "s�l Esmarton" "sina Darovionn" "of Wincestir" "sina Gabnamm" "of Camirsville" "s�l na Falahvar" "of Peargrove" "sina Diz�lstunad" "sina Yaddervanhoop" "sina C�wbeloch" "of Weavers Rock" "of Erel" "sina Rhaeb�r" "s�l Balgarionn" "of Builderstemple" "s�l na Drominarsaraor" "of Maiden's Hill" "sina Quicksprout" "of Heartwood" "sina Brassblare" "of Heraldbrook"
+			"Seinp�r�rtharn" Farran "sina Vartr�s" "sina Vardemele" "sina Ciobisp�r" "s�l na Kormistgr�i" "of Dogwood" "of Roysamfloo" "of Arkfloat" "of Bargedock" "sina Lanassionn" "of Coraston" "of Carrotrows" "s�l Esmarton" "sina Darovionn" "of Wincestir" "sina Gabnamm" "of Camirsville" "s�l na Falahvar" "of Peargrove" "sina Diz�lstunad" "sina Yaddervanhoop" "sina C�wbeloch" "of Weavers Rock" "of Erel" "sina Rhaeb�r" "s�l Balgarionn" "of Builderstemple" "s�l na Drominarsaraor" "of Maiden's Hill" "sina Quicksprout" "of Heartwood" "sina Brassblare" "of Heraldbrook"
 		}
 	}
 	arannese = {
@@ -498,6 +498,25 @@ escanni = {
 		primary = B62 #Moredhal
 	}
 
+	imperial_marr = {	#the western plains dudes
+		primary = M01 #Griffon Empire
+
+		dynasty_names = {
+			Griffonmark Griffonhill "of Marrhold" Marr Marrod Griffonsgate Marrhyl "sina Marrton" "of Thadston" "of Falcon's Nest" "of Tailfeather" "of Endicott" "of Newton" "of Ridley" "of Winfield"
+			Gerwick "of Vanbury" Eaglecrest Fludd Lodan Feycombe Wightsgate Humbercroft Ginnfield Derwing Alainson Cottersea Leapdon Brontay Beron Cockerwall Edgemoor Fouler Lonevalley Greenley "of Alenath" 
+			Norleigh "of Morban" Jonsway Mossford Oudesker Wolfden Aldtempel Gardfort Drakesford Somberwold Westfield Baldfather Alenfield "of the Greatmarch"
+		}
+		male_names = {
+			Acromar Adelar Alain Alen Arnold Camir Camor Canrec Carlan Celgal Ciramod Clarimond Clothar Colyn Coreg Crovan Crovis 
+			Corac Corric Dalyon Delia Delian Devac Devan Dustyn Elecast Frederic Godrac Godric Godryc Godwin Gracos Henric Humac Humban 
+			Humbar Humbert Jacob Lain Lan Madalac Marcan Ottrac Ottran Petran Peyter Rabac Rabard Rican Rycan Ricard Rogec Roger Stovac 
+			Stovan Teagan Tomac Toman Tomar Tormac Ulric Venac Vencan Walter Welyam Wystan Bellac Robyn
+		}
+		female_names = {
+			Robyn Auci Bella Clarimonde Clarya Clothilde Constance Coralinde Cora Dalya Etta Humba Lisban Lisbet Madala Magda Matilda Adela Alice Anna Anne Catherine Edith Eleanor Elenor Emma
+		}
+	}
+
 	dynasty_names = {
 		"of Oldhaven" "s�l Burnoll" "s�l Cast" "s�l Anor" "s�l Acenth�n"
 		
@@ -593,6 +612,15 @@ divenori = {
 	}
 	shasoura = {
 		primary = L27 #Shasoura
+	}
+	tijarikheti = {
+		primary = F64 #Tijarikhet
+	}
+	khet_akani = {
+	}
+	khet_businori = {
+	}
+	khet_brasanni = {
 	}
 	dynasty_names = {
 		Crodamos Korosh Aakha Desha Akanos Khasa "ges Rasu" Orikes Khesen Akhaat
@@ -1110,6 +1138,9 @@ giantkind = {
 	}
 	forest_troll = {
 	}
+	swamp_troll = {
+		primary = S70
+	}
 	true_giant = {
 	}
 
@@ -1275,9 +1306,6 @@ dwarven = {
 		primary = A20 #Rubyhold
 		
 		dynasty_names = { 
-			Battlehammer Axehammer Ettinkiller Minesmiter Minesmith Hammersmith Forgehammer Bloodsteel Earthfist Bronzebeard Goldbeard Stonebeard Hammerbeard Frostbeard Whitebeard
-			Breakbeard Ringbeard Gembeard Ogreslayer Orcslayer Spiderslayer Goblinslayer Graybeard Greybeard Redbeard Warhorn Gemhorn Longbeard Truebellow Blackbellow Strongbellow
-			Shalesmith Shaleaxe Shalehammer Shaleforger Shalebeard Heavyaxe Skullaxe Gemcraver Goodanvil Blackanvil Shaleanvil Forgeanvil Axeanvil Trueanvil Bloodanvil 
 			#Lencori influence
 			"of Harascilde" "of Nesdhumme" "sina Gabdarov"
 		}
@@ -1286,10 +1314,6 @@ dwarven = {
 		primary = A73 #Silverforge
 		
 		dynasty_names = { 
-			Battlehammer Axehammer Ettinkiller Minesmiter Minesmith Hammersmith Forgehammer Bloodsteel Earthfist Bronzebeard Goldbeard Stonebeard Hammerbeard Frostbeard Whitebeard
-			Breakbeard Ringbeard Gembeard Ogreslayer Orcslayer Spiderslayer Goblinslayer Graybeard Greybeard Redbeard Warhorn Gemhorn Longbeard Truebellow Blackbellow Strongbellow
-			Shalesmith Shaleaxe Shalehammer Shaleforger Shalebeard Heavyaxe Skullaxe Gemcraver Goodanvil Blackanvil Shaleanvil Forgeanvil Axeanvil Trueanvil Bloodanvil 
-
 			#esmari influence
 			"s�l Balgarionn" "of Builderstemple" "s�l na Drominarsaraor" "sina Diz�lstunad" "sina Darovionn"
 		}
@@ -1299,9 +1323,6 @@ dwarven = {
 		primary = Z36 #Hammerhome
 		
 		dynasty_names = { 
-			Battlehammer Axehammer Ettinkiller Minesmiter Minesmith Hammersmith Forgehammer Bloodsteel Earthfist Bronzebeard Goldbeard Stonebeard Hammerbeard Frostbeard Whitebeard
-			Breakbeard Ringbeard Gembeard Ogreslayer Orcslayer Spiderslayer Goblinslayer Graybeard Greybeard Redbeard Warhorn Gemhorn Longbeard Truebellow Blackbellow Strongbellow
-			Shalesmith Shaleaxe Shalehammer Shaleforger Shalebeard Heavyaxe Skullaxe Gemcraver Goodanvil Blackanvil Shaleanvil Forgeanvil Axeanvil Trueanvil Bloodanvil 
 			#Castanori influence
 			"of Dwarovhul" "of Vazhabrok"
 		}
@@ -1311,9 +1332,6 @@ dwarven = {
 		primary = Z36 #Hammerhome
 		
 		dynasty_names = { 
-			Battlehammer Axehammer Ettinkiller Minesmiter Minesmith Hammersmith Forgehammer Bloodsteel Earthfist Bronzebeard Goldbeard Stonebeard Hammerbeard Frostbeard Whitebeard
-			Breakbeard Ringbeard Gembeard Ogreslayer Orcslayer Spiderslayer Goblinslayer Graybeard Greybeard Redbeard Warhorn Gemhorn Longbeard Truebellow Blackbellow Strongbellow
-			Shalesmith Shaleaxe Shalehammer Shaleforger Shalebeard Heavyaxe Skullaxe Gemcraver Goodanvil Blackanvil Shaleanvil Forgeanvil Axeanvil Trueanvil Bloodanvil 
 			#Castanori influence
 			"of Dwarovhul" "of Vazhabrok"
 		}
@@ -1328,14 +1346,6 @@ dwarven = {
 	}
 	gold_dwarf = {
 		primary = F47 #Verkal Gulan
-		dynasty_names = { 
-			"az-Run" Grommubanar Dimmal Dwinodum Dwinodar Grudanar Calnoraz Azduran Harrak Throm Throfrum Belarr Belarruz Bofgribal Thingribal "az-Thingr" Calikorbal 
-			Asra "az-Mag" "az-Shoka" "az-Regund" "az-Hehod" "az-Dar" "az-Urgongr" "az-Shemdur" "az-Lelorn" "az-Modan"
-			
-			Battlehammer Axehammer Ettinkiller Minesmiter Minesmith Hammersmith Forgehammer Bloodsteel Earthfist Bronzebeard Goldbeard Stonebeard Hammerbeard Frostbeard Whitebeard
-			Breakbeard Ringbeard Gembeard Ogreslayer Orcslayer Spiderslayer Goblinslayer Graybeard Greybeard Redbeard Warhorn Gemhorn Longbeard Truebellow Blackbellow Strongbellow
-			Shalesmith Shaleaxe Shalehammer Shaleforger Shalebeard Heavyaxe Skullaxe Gemcraver Goodanvil Blackanvil Shaleanvil Forgeanvil Axeanvil Trueanvil Bloodanvil 
-		}
 	}
 	copper_dwarf = {
 		primary = F23 #Ovdal Tungr
@@ -1345,6 +1355,9 @@ dwarven = {
 	}
 	quartz_dwarf = {
 		primary = I02 #Krakdhumvror
+		dynasty_names = {
+			Shalebeard Trollslayer Earthstriker Iceheart Frozenforge
+		}
 	}
 	sapphire_dwarf = {
 		primary = I03 #Dur-Vazhatun
@@ -1369,12 +1382,21 @@ dwarven = {
 	}
 	opal_dwarf = {
 		primary = I09 #Verkal Kozenad
+		dynasty_names = {
+			Forktongue
+		}
 	}
 	lead_dwarf = {
 		primary = I10 #Hul-Jorkad
+		dynasty_names = {
+			Leadpipe
+		}
 	}
 	marble_dwarf = {
 		primary = I11 #Shazstundihr
+		dynasty_names = {
+			Whitebeard Brightbeard
+		}
 	}
 	cobalt_dwarf = {
 		primary = I12 #Orlghelovar
@@ -1418,43 +1440,46 @@ dwarven = {
 	citrine_dwarf = {
 		primary = H78 #Seghdihr
 		dynasty_names = {
+			#has intentional duplicates due to Seg Band taking dynasty names from Seghdihr
 			az-Segh az-Harg�n Gemhorn Greybeard Ringbeard Forgehammer Heavyaxe Gemcraver
 		}
 	}
 	garnet_dwarf = {
 		primary = H77 #Ovdal Lodhum
+		dynasty_names = {
+			Slatecutter
+		}
 	}
 	diamond_dwarf = {
 		primary = H76 #Arg-Ordstun
+		dynasty_names = {
+			Stormheart
+		}
 	}
 	nephrite_dwarf = {
 		primary = Y63 #Verkal Ozovar
 	}
 	steel_dwarf = {
 		primary = G94 #Balgabar
-		
-		dynasty_names = {
-			Battlehammer Axehammer Ettinkiller Minesmiter Minesmith Hammersmith Forgehammer Bloodsteel Earthfist Bronzebeard Goldbeard Stonebeard Hammerbeard Frostbeard Whitebeard
-			Breakbeard Ringbeard Gembeard Ogreslayer Orcslayer Spiderslayer Goblinslayer Graybeard Greybeard Redbeard Warhorn Gemhorn Longbeard Truebellow Blackbellow Strongbellow
-			Shalesmith Shaleaxe Shalehammer Shaleforger Shalebeard Heavyaxe Skullaxe Gemcraver Goodanvil Blackanvil Shaleanvil Forgeanvil Axeanvil Trueanvil Bloodanvil 
-		}
 	}
 	argentium_dwarf = {
 		primary = G90 #Asraport
 	}
 	dynasty_names = { 
 		"az-Run" Grommubanar Dimmal Dwinodum Dwinodar Grudanar Calnoraz Azduran Harrak Throm Throfrum Belarr Belarruz Bofgribal Thingribal "az-Thingr" Calikorbal 
-		Asra "az-Mag" "az-Shoka" "az-Regund" "az-Hehod" "az-Dar" "az-Urgongr" "az-Shemdur" "az-Lelorn" "az-Modan"
+		Asra "az-Mag" "az-Regund" "az-Hehod" "az-Dar" "az-Urgongr" "az-Shemdur" "az-Lelorn" "az-Modan" Auird�n Gromki Grimhammer "az-Fi�bmhor" Underheart Gr�fgarth
 		
-		Battlehammer Axehammer Ettinkiller Minesmiter Minesmith Hammersmith Forgehammer Bloodsteel Earthfist Bronzebeard Goldbeard Stonebeard Hammerbeard Frostbeard Whitebeard
-		Breakbeard Ringbeard Gembeard Ogreslayer Orcslayer Spiderslayer Goblinslayer Graybeard Greybeard Redbeard Warhorn Gemhorn Longbeard Truebellow Blackbellow Strongbellow
-		Shalesmith Shaleaxe Shalehammer Shaleforger Shalebeard Heavyaxe Skullaxe Gemcraver Goodanvil Blackanvil Shaleanvil Forgeanvil Axeanvil Trueanvil Bloodanvil 
+		Battlehammer Axehammer Ettinkiller Minesmiter Minesmith Hammersmith Forgehammer Bloodsteel Earthfist Bronzebeard Goldbeard Stonebeard Hammerbeard Frostbeard 
+		Breakbeard Ringbeard Gembeard Ogreslayer Orcslayer Spiderslayer Goblinslayer Graybeard Greybeard Redbeard Warhorn Gemhorn Longbeard Truebellow Blackbellow Strongbellow 
+		Shalesmith Shaleaxe Shalehammer Shaleforger Heavyaxe Skullaxe Gemcraver Goodanvil Blackanvil Shaleanvil Forgeanvil Axeanvil Trueanvil Bloodanvil Firebane Hammerfist Slatehome Stonebreaker Steelarm
 	}
 	male_names = {
 		Adar Adranbur Ad�n Balgar Balgor Balin Bardin Bardur Beld�n Belgar Bofur Bolin Bombur Borin Brann Brok Bruenor Calin C�n Dagran Dain Dalbaran Dalmund Dolin Dorin Dorri Durb�r Durin Dwalin Dwarin Ed�n Falstad 
-		Far�n Fimbur Flondi Foldan Gorar Goren Gotrek Grim Grimmar Grimmun Gromar Gronmar Gr�aim Gr�ar Gr�n Gundobad Gundobar Gundobin Gundomar Hard�n Harl�n Harr�k Hjal Hjalmar Karrom Kazad�r Khadan Kildan Kildar Kild�m K�rg�m Lod�n Lorek Lorimbur Madar�n Magar 
-		Magni Magnus Mag�n Morzad Muradin Nali Nalin Norb�n Norb�r Nori Norimbur Norin Odar Odur Od�n Okar Olin Orim Orin Ragun Ragund Runmar R�nim�r Sevrund Simb�r Simur Sim�n Sindri Snorri Storin Storlin Storum Thargas Thargor Thinbur Thindobar Thindri 
-		Thingrim Thinobad Thorar Thorgrim Thorin Thrain Thrair Thror Thr�n Thr�r Thudri Tungdil Ungrim Urist Ur�r
+		Far�n Fimbur Flondi Foldan Gorar Goren Gotrek Grim Grimmar Grimmun Gromar Gronmar Gr�aim Gr�ar Gr�n Gundobad Gundobar Gundobin Gundomar Hard�n Harl�n Harr�k Hjal Hjalmar 
+		Karrom Kazad�r Khadan Kildan Kildar Kild�m K�rg�m Lod�n Lorek Lorimbur Madar�n Magar 
+		Magni Magnus Mag�n Morzad Muradin Nali Nalin Norb�n Norb�r Nori Norimbur Norin Odar Odur Od�n Okar Olin Orim Orin Ragun Ragund Runmar R�nim�r 
+		Sevrund Simb�r Simur Sim�n Sindri Snorri Storin Storlin Storum Thargas Thargor Thinbur Thindobar Thindri Thingrim Thinobad Thorar Thorgrim Thorin Thrain Thrair Thror Thr�n Thr�r Thudri Tungdil 
+		Ungrim Urist Ur�r
 	}
 	female_names = {
 		Adala Aira Anvi Auci Balga Barila Barra Belga Belgia Bella Branma Brenla Brenleil Brenlel Brina Broga Bronis Cala Dalina 
@@ -1482,6 +1507,11 @@ kobold = {
 	}
 	goldscale_kobold = {
 		primary = Y85 #Balrijin
+	}
+	zutarzexi_kobold = {
+		primary = V02 #Zutarzex
+	}
+	mecha_dragon_kobold = { #Zutarzex Mecha-Dragon Ruler
 	}
 	
 	dynasty_names = { 
@@ -1519,6 +1549,8 @@ gnollish = {
 	flamemarked_gnoll = {
 	}
 	fieldstalker_gnoll = {
+	}
+	windhowler_gnoll = {
 	}
 	ruinscourge_gnoll = {
 		primary = G93 #Mykx
@@ -1725,7 +1757,8 @@ bulwari = {
 	sadnatu = {
 		primary = F43 #Zansap
 	}
-
+	bulwari_half_elf = {
+	}
 	dynasty_names = {
 		szal-Duzan szel-Qasnabor szel-Beliqtura szal-Maqet szel-Kumarkand szel-Azanerdu szel-Bulwar szal-Barseen szel-Bazibar szel-Forramaz szel-Gelkalis szel-Zanbar szel-Attalu szel-Harlum szel-Akal�es szal-Aban
 
@@ -1786,6 +1819,12 @@ harpy = {
 	feng_harpy = {
 		graphical_culture = asiangfx
 		primary = Y39 #Fengwuzhe
+	}
+
+	nalayni_harpy = {
+	}
+
+	nzeri_harpy = {
 	}
 
 	dynasty_names = {
@@ -3026,10 +3065,8 @@ ynnsman = {
 			#Original
 			
 			#From mother culture
-			"s�l Aen" "s�l Ais" "s�l na Loop" 
-			"s�l Arannen" "s�l Marllin" "s�l Varlosen" "s�l Antirhalen" "s�l Irmathras" "s�l Vekt" "of Gisden" Brinkwick  
-			"s�l Cestirbridge" "s�l Livergrave" "s�l Gablain�" "s�na Th�l" "s�l Vivin"
-			"� Deedaunt"
+			"s�l Themarenn" "s�l Estallen" "s�l Deam�ine" "s�l Gabm�rionn" "s�l Bennon" "s�l Leslinp�r" "s�l Aranmas" "s�l Terr" Silurion "s�l Varain�" Konwell Silistra "s�l Vivin"
+			"s�l Esta" "s�na Gren" "s�lna Hat" "s�l Estadeir" "s�l Seinath�l"
 		}
 	}
 	plumsteader = {
@@ -3049,8 +3086,10 @@ ynnsman = {
 			#Original
 			
 			#From mother culture
-			"s�l Themarenn" "s�l Estallen" "s�l Deam�ine" "s�l Gabm�rionn" "s�l Bennon" "s�l Leslinp�r" "s�l Aranmas" "s�l Terr" Silurion "s�l Varain�" Konwell Silistra "s�l Vivin"
-			"s�l Esta" "s�na Gren" "s�lna Hat" "s�l Estadeir" "s�l Seinath�l"
+			"s�l Aen" "s�l Ais" "s�l na Loop" 
+			"s�l Arannen" "s�l Marllin" "s�l Varlosen" "s�l Antirhalen" "s�l Irmathras" "s�l Vekt" "of Gisden" Brinkwick  
+			"s�l Cestirbridge" "s�l Livergrave" "s�l Gablain�" "s�na Th�l" "s�l Vivin"
+			"� Deedaunt"
 		}
 	}
 }
@@ -3621,5 +3660,209 @@ akani = {
 		Aamina Abella Amata Amina Anatu Aqeela Araha Arahuna Arwia Asiah Baila Benan Canfeda Damrina Derya Dilara Elif Elina Elmas Emmita Ettu Fatma Gula Haala Haamida 
 		Hasibe Ia Iltani Ishtara Jannat Kamelya Kishar Kullaa Leja Lubna Mardina Mudam Musheera Nadide Nahrina Nardina Nesrin Ninsunu Nuriye Nusaiba Nuzha Omara Pari Qamara 
 		Rahma Saba Sabahat Samra Semiha Seyma Sireen Ura Yamima Yamina Zakiti Zeyni
+	}
+}
+
+vurebindu = {
+	graphical_culture = africangfx
+	
+	zuvunwa = {
+	}
+	
+	kuivanhi = {
+	}
+
+	kudenta = {
+	}
+
+	gomzumu = {
+	}
+
+	egilshibi = {
+	}
+	
+}
+
+irsukuba = {
+	graphical_culture = africangfx
+	
+	kudemtu  = {
+	}
+	
+	gumzemo = {
+	}
+	
+	ikilshebe = {
+	}
+	
+	zovanwe = {
+	}
+
+	kuivendi = {
+	}
+}
+
+west_sarhaly = {
+	graphical_culture = africangfx
+
+	mantimatu = {
+	}
+	
+	ndurubu = {
+	}
+	
+	kaino = {
+	}
+	
+	tamajoba = {
+	}
+	
+	taafi = {
+	}
+	
+	jiromji = {
+	}
+	
+	binwarji = {
+	}
+}
+
+vyzemby = {
+	graphical_culture = africangfx
+
+	amezatany = {
+	}
+	
+	mboala = {
+	}
+	
+	mazava = {
+	}
+
+	fomarati = {
+		primary = L37 #Mihitarab
+	}
+
+	vyoronsi = {
+		primary = S72 #Vyoronsi
+	}
+}
+
+mengi = {
+	graphical_culture = africangfx
+
+	ofehibi = {
+	}
+
+	sitewosi = {
+	}
+
+	metobesebi = {
+	}
+
+	yeteferen = {
+	}
+
+	talilibeti = {
+	}
+
+	korewosi = {
+	}
+	
+	gaariira = {	#use this for yan kilwa culture
+	}
+}
+
+lizardfolk = {
+	graphical_culture = africangfx
+
+	shagashay_lizardfolk = {
+	}
+
+	ichiadza_lizardfolk = {
+	}
+
+	rhada_lizardfolk = {
+	}
+
+	arraskay_lizardfolk = {
+	}
+
+	ichyaza_lizardfolk = {
+	}
+
+	shagatyn_lizardfolk = {
+	}
+
+	skarakara_lizardfolk = {
+	}
+
+	mashkay_lizardfolk = {
+	}
+
+	tsamkya_lizardfolk = {
+	}
+
+	karshyray_lizardfolk = {
+	}
+	male_names = {
+		Aethron Aguntat Akhsar Anzadza Anzaraz Arak Arako Arkant Atsamaz Ayralgaz Churnit Dashigy Daukazosk Dzankot Ertesk Eshird Etocard Gomzox Gotsag Grasz Grazk Gruz
+		Idax Iggu Igur Ikhaty  Imux Irdar Irlak Islesund Itros Ix Kapiss Karqut Kartu Katyradz Kazrek Kiusz Krorasz Kroshk Kruhusk Kusz Lashar Lazar Lird Lykk Mitra Mix
+		Moskand Nart Nichuk Nordasrex Nugzar Nulri Ogrant Orthaas Qakot Qoz Qrak Raggukur Rakhaz Rakhazay Razo Relork Rhaekles Rhesk Rhiz Rshyn Rusz Sarkat Serakz 
+		Shaordash Siltaru Soshasru Sozyr Sritiz Sulish Surkind Sykar Taraz Teranak Then Thuz Toraz Totraz Traak Tralit Trashugrun Troz Tsorak Tsusz Ullunk Unjacho
+		Uryzmag Ushaosk Ushux Vakhasha Varthessash Vord Vugu Vush Zamr Zerqix Zirzosk Ziz
+	}
+	female_names = {
+		Achagi Akrese Akzaja Alaka Anraru Aqolzu Arethu Artoqass Arxaso Ati Atirta Cruh Girtaota Gyara Hassa Hiax Hurta Ikrokass Ilraka Irize Kagya Khakhy 
+		Khatyra Khiah Kossa Krykha Lillukhun Lilteth Ner Nulri Olthekhua Oriski Qas Qez Qicha Radra Rumzuka Rushi Rykhsana Sacca Sezo Shax Shidhys Siz Sonza Sreh 
+		Ukirsha Unra Urkich Urqe Vallan Zashyt Zerassa Zibara
+	}
+}
+
+adzalan_lizardfolk = {
+	graphical_culture = africangfx
+
+	ashhama_lizardfolk = {
+	}
+
+	adzalanas_lizardfolk = {
+	}
+	male_names = {
+		Aethron Aguntat Akhsar Anzadza Anzaraz Arak Arako Arkant Atsamaz Ayralgaz Churnit Dashigy Daukazosk Dzankot Ertesk Eshird Etocard Gomzox Gotsag Grasz Grazk Gruz
+		Idax Iggu Igur Ikhaty  Imux Irdar Irlak Islesund Itros Ix Kapiss Karqut Kartu Katyradz Kazrek Kiusz Krorasz Kroshk Kruhusk Kusz Lashar Lazar Lird Lykk Mitra Mix
+		Moskand Nart Nichuk Nordasrex Nugzar Nulri Ogrant Orthaas Qakot Qoz Qrak Raggukur Rakhaz Rakhazay Razo Relork Rhaekles Rhesk Rhiz Rshyn Rusz Sarkat Serakz 
+		Shaordash Siltaru Soshasru Sozyr Sritiz Sulish Surkind Sykar Taraz Teran Then Thuz Toraz Totraz Traak Tralit Trashugrun Troz Tsorak Tsusz Ullunk Unjacho
+		Uryzmag Ushaosk Ushux Vakhasha Varthessash Vord Vugu Vush Zamr Zerqix Zirzosk Ziz
+	}
+	female_names = {
+		Achagi Akrese Akzaja Alaka Anraru Aqolzu Arethu Artoqass Arxaso Ati Atirta Cruh Girtaota Gyara Hassa Hiax Hurta Ikrokass Ilraka Irize Kagya Khakhy 
+		Khatyra Khiah Kossa Krykha Lillukhun Lilteth Ner Nulri Olthekhua Oriski Qas Qez Qicha Radra Rumzuka Rushi Rykhsana Sacca Sezo Shax Shidhys Siz Sonza Sreh 
+		Ukirsha Unra Urkich Urqe Vallan Zashyt Zerassa Zibara
+	}
+}
+
+baashidi = {
+	graphical_culture = africangfx
+
+	suhratbi = {
+	}
+	
+	dhebiji = {
+	}
+	
+	guryadagga = {
+	}
+
+	ashamadi = {
+	}
+}
+
+tanizu = {
+	graphical_culture = africangfx
+
+	tanizu = {
+	}
+	
+	dakinshi = {
 	}
 }

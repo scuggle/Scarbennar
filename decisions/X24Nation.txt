@@ -1,0 +1,128 @@
+
+country_decisions = {
+
+	X24_form_nation = {
+		major = yes
+		potential = {
+			OR = {
+				ai = no
+				NOT = { exists = X24 }
+			}
+			culture_group = alenic
+			NOT = {
+				primary_culture = wexonard
+				primary_culture = marrodic
+			}
+			NOT = { has_country_flag = formed_X24_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = Z01 }	#Anbennar
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			normal_or_historical_nations = yes
+			OR = {
+				was_never_end_game_tag_trigger = yes
+				tag = A13
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = gawed_area
+				area = south_alen_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = X24 }
+			adm_tech = 10
+			if = {
+				limit = { tag = A13 }
+				OR = {
+					has_reform = northern_league_magnates
+					have_had_reform = northern_league_magnates
+				}
+			}
+			else = {
+				gawed_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				south_alen_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { NOT = { capital = 216 } } #Vertesk
+				221 = { #Gaweton
+					move_capital_effect = yes
+				}
+			}
+			change_tag = X24
+			hidden_effect = { restore_country_name = yes }
+			#swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			alenic_frontier_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = X24
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_reform = northern_league_magnates
+							have_had_reform = northern_league_magnates
+						}
+					}
+				}
+				country_event = { id = magnate_uprising.100 }
+			}
+			set_country_flag = formed_X24_flag
+			set_country_flag = formed_gawed_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

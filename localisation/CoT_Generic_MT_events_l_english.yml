@@ -1,14 +1,14 @@
 ﻿l_english: 
 
-towards_future_20.title:0 "Towards The Future"
-towards_future_20.desc:0 "Choosing the path for your nation is one of the hardest desisions $MONARCHTITLE$ $MONARCH$ has every had to make. With advisory from his council, your court reaches an agreement. The hearts of our people will beat for- The minds of our people will gravitate towards- The lives of ouir men will die for- We are..."
-towards_future_20_a:0 "Unbreakable (Infantry/Cavalry)"
-towards_future_20_b:0 "Supportive (Artillery)"
-towards_future_20_c:0 "Smarter Than Everyone Else (Artificers)"
-towards_future_20_d:0 "Prosperous (Economic)"
-towards_future_20_e:0 "Rich! *Fans Money* (Trade)"
+ towards_future_1.t:0 "Towards The Future"
+ towards_future_1.d:0 "Choosing the path for your nation is one of the hardest desisions $MONARCHTITLE$ $MONARCH$ has every had to make. With advisory from his council, your court reaches an agreement. The hearts of our people will beat for- The minds of our people will gravitate towards- The lives of ouir men will die for- We are..."
+ towards_future_1.a:0 "Unbreakable (Infantry/Cavalry)"
+ towards_future_1.b:0 "Supportive (Artillery)"
+ towards_future_1.c:0 "Smarter Than Everyone Else (Artificers)"
+ towards_future_1.f:0 "Prosperous (Economic)"
+ towards_future_1.e:0 "Rich! *Fans Money* (Trade)"
 
-TOWARDS_FUTURE_TOOLTIP:0 "Choose A Path"
+ TOWARDS_FUTURE_TOOLTIP:0 "Choose A Path"
 
 mutagen.1.t:0 "Military Mutagen"
 mutagen.1.d:0 "Choose a Mutagen"

@@ -19,6 +19,7 @@ philosopher = {
 	
 	# Bonus
 	prestige = 1
+	reform_progress_growth = 0.1
 
 	# skill_scaled_modifier = {
 		# trigger = { 
@@ -83,7 +84,8 @@ natural_scientist = {
 	monarch_power = ADM
 	
 	# Bonus
-	production_efficiency = 0.10
+	production_efficiency = 0.1
+	global_monthly_devastation = -0.1
 	
 	# skill_scaled_modifier = {
 		# trigger = { 
@@ -148,7 +150,8 @@ artist = {
 	monarch_power = ADM
 	
 	# Bonus
-	stability_cost_modifier = -0.10
+	stability_cost_modifier = -0.15
+	build_cost = -0.05
 	
 	# skill_scaled_modifier = {
 		# trigger = { 
@@ -222,6 +225,7 @@ treasurer = {
 	
 	# Bonus
 	global_tax_modifier = 0.1
+	interest = -0.5
 	
 	# skill_scaled_modifier = {
 		# trigger = { 
@@ -286,7 +290,8 @@ theologian = {
 	monarch_power = ADM
 	
 	# Bonus
-	global_unrest = -2
+	global_unrest = -1.5
+	religious_unity = 0.15
 	
 	# skill_scaled_modifier = {
 		# trigger = { 
@@ -359,7 +364,7 @@ master_of_mint = {
 	monarch_power = ADM
 	
 	# Bonus
-	inflation_reduction = 0.10
+	inflation_reduction = 0.15
 	
 	# skill_scaled_modifier = {
 		# trigger = { 
@@ -430,6 +435,7 @@ inquisitor = {
 	
 	# Bonus
 	global_missionary_strength = 0.02
+	missionaries = 1
 	
 	# skill_scaled_modifier = {
 		# trigger = { 
@@ -512,6 +518,7 @@ statesman = {
 	
 	# Bonus
 	diplomatic_reputation = 1
+	diplomatic_upkeep = 1
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -550,7 +557,8 @@ naval_reformer = {
 	
 	# Bonus
 	
-	naval_morale = 0.1 
+	naval_morale = 0.1
+	global_ship_recruit_speed = -0.1
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -597,6 +605,7 @@ trader = {
 	
 	# Bonus
 	trade_efficiency = 0.10
+	mercantilism_cost = -0.2
 	
 	# skill_scaled_modifier = {
 		# trigger = {
@@ -665,7 +674,8 @@ spymaster = {
 	monarch_power = DIP
 	
 	# Bonus
-	spy_offence = 0.25
+	spy_offence = 0.33
+	global_spy_defence = 0.10
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -714,7 +724,8 @@ colonial_governor = {
 	monarch_power = DIP
 	
 	# Bonus
-	global_tariffs = 0.10
+	global_tariffs = 0.2
+	colonist_placement_chance = 0.05
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -766,6 +777,7 @@ diplomat = {
 	
 	# Bonus
 	improve_relation_modifier = 0.2
+	diplomats = 1
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -804,6 +816,7 @@ navigator = {
 	
 	# Bonus
 	range = 0.20
+	global_colonial_growth = 15
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -855,7 +868,8 @@ army_reformer = {
 	monarch_power = MIL
 	
 	# Bonus
-	land_morale = 0.10
+	land_morale = 0.05
+	recover_army_morale_speed = 0.10
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -893,7 +907,8 @@ army_organiser = {
 	monarch_power = MIL
 	
 	# Bonus
-	land_forcelimit_modifier = 0.10
+	land_forcelimit_modifier = 0.1
+	army_tradition = 0.25
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -931,7 +946,8 @@ commandant = {
 	monarch_power = MIL
 	
 	# Bonus
-	discipline = 0.05
+	discipline = 0.025
+	drill_gain_modifier = 0.15
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -969,7 +985,8 @@ quartermaster = {
 	monarch_power = MIL
 	
 	# Bonus
-	reinforce_speed = 0.33
+	land_attrition = -0.15
+	land_maintenance_modifier = -0.10
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1011,7 +1028,8 @@ recruitmaster = {
 	monarch_power = MIL
 	
 	# Bonus
-	global_manpower_modifier = 0.10
+	global_manpower_modifier = 0.1
+	global_regiment_recruit_speed = -0.1
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1053,7 +1071,8 @@ fortification_expert = {
 	monarch_power = MIL
 	
 	# Bonus
-	defensiveness = 0.2
+	defensiveness = 0.15
+	garrison_size = 0.15
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1092,7 +1111,8 @@ grand_captain = {
 	monarch_power = MIL
 	
 	# Bonus
-	land_maintenance_modifier = -0.10
+	global_regiment_cost = -0.1
+	general_cost = -0.1
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1135,7 +1155,8 @@ court_mage = {
 	monarch_power = ADM
 	
 	# Bonus
-	all_power_cost = -0.05
+	mages_loyalty_modifier = 0.05
+	all_power_cost = -0.025
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1211,7 +1232,7 @@ rune_scribe = {
 	monarch_power = ADM
 	
 	# Bonus
-	all_power_cost = -0.05
+	all_power_cost = -0.025
 	
 	chance = {
 		factor = 0
@@ -1248,13 +1269,34 @@ castonath_master_architect = {
 feiten_airfleet_admiral = {
 	monarch_power = DIP
 	
+	movement_speed = 0.025
+
 	skill_scaled_modifier = {
-		trigger = { 
-			#
+		trigger = {
+			owner = { 
+				# NOT = { has_country_flag = enable_special_trader_flag }
+				has_government_attribute = republican_tradition_from_advisors
+			}
 		}
-		modifier = {
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
 			movement_speed = 0.025
 			movement_speed_in_fleet_modifier = 0.2
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+				# NOT = { has_country_flag = enable_special_trader_flag }
+			}
+		}
+		modifier = {
+			meritocracy = 0.25
+			movement_speed = 0.025
+			movement_speed_in_fleet_modifier = 0.2
+
 		}
 	}
 	

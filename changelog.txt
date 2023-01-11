@@ -1,0 +1,87 @@
+----------------------------------------------------------------------------
+Changelog:
+----------------------------------------------------------------------------
+20 new formable nations:
+- Gerudian Empire
+- Carneter
+- Great Xhaz
+- Damerian Republic
+- Businor
+- Lencenor
+- The Reach (human reach)
+- Seiranar (elven reach)
+- United Temples
+- Dameshead Republic
+- Vivin Empire
+- Greengate (West Castanor Goblins)
+- Voltenu (Inner Castanor Goblins)
+- Vortzo Vedobbyat (South Castanor Goblins)
+- Shemyeclan (Unified Escann Goblins)
+- Karlur Khan (Unified Escann Orcs)
+- Greater Ibevar
+- Airgethil (formable for Silver Band adventurers)
+- Griffon Empire (MT reward for Marrhold)
+- Northern League (alenics or gawed after their disaster)
+- Triarchy (Haraf Artificers)
+----------------------------------------------------------------------------
+1 new formable decision:
+- Empire of Anbennar
+----------------------------------------------------------------------------
+4 new countries:
+- Silver Band (elven adventurer in Inner Castanor)
+- Falahen (harpies on the coast of Bahar)
+- Kusonsesu (hobgoblins in the west rahen gulf, releasable)
+- Southroy (A lorentish pretender)
+----------------------------------------------------------------------------
+30 modified/added national idea sets:
+- Esmaria
+- Pashainé
+- Karashar
+- Empire of Anbennar
+- Coppertown
+- 3 escann goblin tribes (Grasshopper Mucher,Flung Head, Flying Hound)
+- 19 for the formables
+- 3 for new countries
+- 1 for Coppertown (Released Halflings)
+----------------------------------------------------------------------------
+New monuments:
+Whole bunch of Monuments from Monuments mod.
+New monuments by us:
+- Harpylen: Harpy Bathhouses (Sen)
+- Eilisin:		Wine League HQ (Sen)
+- Redglades:	Trinaire/Elvish Tree City (Sen)
+- Other monuments (Barb)
+----------------------------------------------------------------------------
+2 new mission tree:
+- Marrhold into Griffon Empire
+- Southroy
+----------------------------------------------------------------------------
+Added CoT idea groups
+----------------------------------------------------------------------------
+Added CoT generic MT
+- Formable Nations without own MT get this now. (i.e. Dwarven Holds and Escann Adventurers don't keep the adventurer tree upon reforming)
+----------------------------------------------------------------------------
+Enforced 1/1/1 idea ratio
+----------------------------------------------------------------------------
+Escanni Adventurers can no longer take Tribal Land from Orcs and Goblins outside of a peace deal
+----------------------------------------------------------------------------
+Changed Serpentspine Terrain Defender Bonus
+Roads           1 -> 0
+Caves           2 -> 1
+Surface Holds   2 -> 1
+----------------------------------------------------------------------------
+Changed Hoardcurse to be impossible to trigger
+----------------------------------------------------------------------------
+Added QoL decisions (such as deleting churches)
+----------------------------------------------------------------------------
+Rebalance:
+- DoF for everyone
+- Advisors now give 2 buffs, rebalanced values
+- Generals don't give professionalism
+----------------------------------------------------------------------------
+Dwarven Adventurers in Serpentspine spawn earlier
+Gommoport, Zurzumexia and Mestikardu spawn at the same time as Vanbury Guild now
+----------------------------------------------------------------------------
+All Countries now start with Feudalism (i.e. Monsters mostly)
+----------------------------------------------------------------------------
+Added Triggered Modifier for being in a "War against evil" (i.e. Vanilla Crusade Buff)

@@ -1,0 +1,41 @@
+﻿l_english:
+ #Modifiers
+ X22_remain_southroy_modifier:0 "Southroy Forever"
+ desc_X22_remain_southroy_modifier:0 "tbd"
+ X22_lencenor_modifier:0 "A new Empire"
+ desc_X22_lencenor_modifier:0 "tbd"
+ X22_war_bonds_modifier:0 "War Bonds"
+ desc_X22_war_bonds_modifier:0 "tbd"
+ X22_rebellion_modifier:0 "Rebellion!"
+ desc_X22_rebellion_modifier:0 "tbd"
+ X22_redglades_modifier:0 "Reduced Liberty Desire"
+ desc_X22_redglades_modifier:0 "tbd"
+
+ #Events
+ southroy.1.t:0 "A New Identity"
+ southroy.1.d:0 "tbd"
+ southroy.1.a:0 "We shall remain Southroy, for now!"
+ southroy.1.b:0 "Let us take on the mantle of Lorent!"
+ southroy.1.c:0 "A New Empire for a new Age!"
+
+ #Missions
+ X22_war_bonds_title:0 "War Bands"
+ X22_war_bonds_desc:0 "tbd"
+ X22_an_alliance_of_conveniance_title:0 "An Alliance of Conveniance"
+ X22_an_alliance_of_conveniance_desc:0 "tbd"
+ X22_mutual_trust_title:0 "Mutual Trust"
+ X22_mutual_trust_desc:0 "tbd"
+ X22_lorenans_rebellion_title:0 "Lorenan's Rebellion"
+ X22_lorenans_rebellion_desc:0 "tbd"
+ X22_confront_lorent_title:0 "Confront Lorent"
+ X22_confront_lorent_desc:0 "tbd"
+ X22_victory_title:0 "Victory!"
+ X22_victory_desc:0 "tbd"
+ X22_an_envoy_into_the_woods_title:0 "An envoy into the Woods"
+ X22_an_envoy_into_the_woods_desc:0 "tbd"
+ X22_oath_of_allegiance_title:0 "Oath of Allegiance"
+ X22_oath_of_allegiance_desc:0 "tbd"
+ X22_the_last_push_title:0 "The Last Push"
+ X22_the_last_push_desc:0 "tbd"
+
+ #Tooltips

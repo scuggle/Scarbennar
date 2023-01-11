@@ -1,0 +1,75 @@
+################
+#Griffon Empire#
+################
+
+ge_abundance_of_stone = {
+	build_time = -0.15
+}
+
+ge_admin_eff_empire = {
+	administrative_efficiency = 0.05
+}
+
+ge_integrate_griffon_mercs = {
+	merc_maintenance_modifier = -0.5
+	mercenary_cost = -0.5
+}
+
+ge_new_tactics_and_admin = {
+	adm_tech_cost_modifier = -0.1
+	mil_tech_cost_modifier = -0.1
+}
+
+ge_cheap_regiment = {
+	global_regiment_cost = -0.1
+}
+
+ge_fresh_supply = {
+	global_supply_limit_modifier = 0.5
+	land_attrition = -0.1
+}
+
+ge_unifier_of_castanor = {
+	improve_relation_modifier = 0.2
+	diplomatic_reputation = 1
+}
+
+ge_imperial_culture_mod = {
+	ae_impact = -0.15
+}
+
+ge_culture_conversion_mod = {
+	culture_conversion_cost = -0.15
+}
+
+ge_the_new_death_ring_mod = {
+	local_defensiveness = 0.25
+	picture = white_wall_2
+}
+
+#Southroy
+X22_remain_southroy_modifier = {
+	land_morale = 0.05
+}
+
+X22_lencenor_modifier = {
+	core_creation = -0.1
+}
+
+X22_war_bonds_modifier = {
+	global_trade_goods_size_modifier = -0.1
+	trade_efficiency = -0.1
+	global_tax_modifier = -0.1
+	war_taxes_cost_modifier = -1
+}
+
+X22_rebellion_modifier = {
+	manpower_recovery_speed = 0.5
+	global_manpower = 10
+	land_forcelimit = 5
+	infantry_power = 0.1
+}
+
+X22_redglades_modifier = {
+	liberty_desire = -100
+}

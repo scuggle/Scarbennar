@@ -1,9 +1,9 @@
 
 #124 - Messina
 
-owner = A01
-controller = A01
-add_core = A01
+owner = X22
+controller = X22
+add_core = X22
 culture = low_lorentish
 religion = regent_court
 hre = no
