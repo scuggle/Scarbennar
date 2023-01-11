@@ -7583,10 +7583,7 @@ country_event = {
 	option = {	#available
 		name = magic_ruler.7.b
 		trigger = {
-			has_ruler_flag = necromancy_1
-			adm_power = 5
-			mil_power = 5
-			NOT = { has_ruler_modifier = magic_drain_cooldown }
+			always = no
 		}
 		ai_chance = {
 			factor = 50
