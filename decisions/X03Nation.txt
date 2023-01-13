@@ -40,7 +40,7 @@ country_decisions = {
 			NOT = { exists = X03 }
 
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 75
+				value = 100
 				superregion = bulwar_superregion
 			}
 			owns_core_province = 487
