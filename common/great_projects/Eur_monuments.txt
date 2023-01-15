@@ -1640,9 +1640,8 @@ date = 01.01.01
 		area_modifier = {
 		}
 		country_modifiers = {
-			trade_efficiency = 0.05
 			mercantilism_cost = -0.05
-			burghers_loyalty_modifier = 0.025
+			global_institution_spread = 0.1
 		}
 		on_upgraded = {
 		}
@@ -1660,9 +1659,9 @@ date = 01.01.01
 		area_modifier = {
 		}
 		country_modifiers = {
-			trade_efficiency = 0.075
 			mercantilism_cost = -0.1
-			burghers_loyalty_modifier = 0.05
+			global_institution_spread = 0.2
+			embracement_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -1680,9 +1679,9 @@ date = 01.01.01
 		area_modifier = {
 		}
 		country_modifiers = {
-			trade_efficiency = 0.10
 			mercantilism_cost = -0.15
-			burghers_loyalty_modifier = 0.10
+			global_institution_spread = 0.3
+			embracement_cost = -0.1
 		}
 		on_upgraded = {
 		}
@@ -1742,77 +1741,94 @@ crannog_home = {
 	keep_trigger = {
 	}
 
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_1 = {
+tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
 			months = 120
 		}
+
+		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
 			factor = 1000
 		}
+
+		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_hostile_attrition = 1
-		local_development_cost = -0.05
+			local_defensiveness = 0.15
+			local_manpower_modifier = 0.25
 		}
-		area_modifier = {	
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
 		}
+
+		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-		galley_cost = -0.05
 		}
+
+		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
 	}
+
 	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
 			months = 240
 		}
+
+		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 2500
 		}
+
+		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_hostile_attrition = 3
-			local_development_cost = -0.15
+			local_defensiveness = 0.25
+			local_manpower_modifier = 0.5
 		}
-		area_modifier = {	
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
 		}
-		country_modifiers = {	
-		galley_cost = -0.10
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
 		}
+
+		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
 	}
+
 	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
 			months = 480
 		}
+
+		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 5000
 		}
+
+		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_defender_dice_roll_bonus = 1
-		local_hostile_attrition = 5
-		local_development_cost = -0.25
+			local_defensiveness = 0.33
+			local_manpower_modifier = 1
 		}
-		area_modifier = {	
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_defensiveness = 0.15
 		}
+
+		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-		galley_cost = -0.20
+			global_regiment_cost = -0.1
 		}
+
+		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
 	}
