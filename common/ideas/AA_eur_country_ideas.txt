@@ -190,7 +190,7 @@ X04_ideas = {
 X05_ideas = {
 	start = {
 		defensiveness = 0.1
-		morale_damage_received = -0.2
+		reserves_organisation = 0.2
 	}
 
 	bonus = {
