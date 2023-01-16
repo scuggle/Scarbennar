@@ -1450,35 +1450,32 @@ economic_ideas = { #industrial ideas
 	}
 }
 
-logistical_ideas = { #logistical ideas
+logistical_ideas = { #Administration
 	category = ADM
 
 	bonus = {
 		development_cost = -0.05
 	}
-
 	logsi_ide1 = {
-		core_creation = -0.05 #new
+		core_creation = -0.15 
 	}
 	logsi_ide2 = {
-		global_tax_modifier = 0.10 #new
+		 interest = -0.5 
 	}
 	logsi_ide3 = {
 		administrative_efficiency = 0.05
 	}
 	logsi_ide4 = {
-		leader_land_manuever = 2
-		leader_naval_manuever = 2
+		global_tax_modifier = 0.10
 	}
 	logsi_ide5 = {
-		land_attrition = -0.15 #new
+		yearly_corruption = -0.1
 	}
 	logsi_ide6 = {
-		land_maintenance_modifier = -0.1 #new
+		move_capital_cost_modifier = -0.20
 	}
 	logsi_ide7 = {
-		movement_speed = 0.2
-		global_supply_limit_modifier = 1
+		state_maintenance_modifier = -0.25
 	}
 
 	ai_will_do = {
