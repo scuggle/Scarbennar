@@ -245,10 +245,19 @@ age_of_discovery = {
 		
 		ab_eborthil_ship_trade = {
 			allow = {
-				tag = A47
+				capital_scope = { 
+					OR = {
+						region = bahar_region 
+						region = ourdia_region 
+						region = harpy_hills_region 
+						region = bulwar_proper_region
+						region = north_salahad_region
+						region = businor_salahad_region
+					}
+				}
 			}
 			modifier = {
-				global_ship_trade_power = 0.5 
+				global_ship_trade_power = 0.30
 			}
 			ai_will_do = {
 				factor = 100
@@ -407,7 +416,7 @@ age_of_reformation = {
 		
 		ab_adventurer_armies = {
 			modifier = {
-				mercenary_manpower = 0.5
+				mercenary_manpower = 0.25
 				merc_maintenance_modifier = -0.33
 			}
 			ai_will_do = {
@@ -417,8 +426,8 @@ age_of_reformation = {
 
 		ab_call_of_the_high_seas = {
 			modifier = {
-				heavy_ship_cost = -0.5
-				light_ship_cost = -0.5
+				heavy_ship_cost = -0.25
+				light_ship_cost = -0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -427,18 +436,11 @@ age_of_reformation = {
 		
 		ab_aelantir_rush = {
 			allow = {
-				num_of_colonists = 1
-				OR = {
-					north_america = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					south_america = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
+				religion = regent_court
 			}
 			modifier = {
-				can_colony_boost_development = yes
+				global_religious_conversion_resistance = 0.5
+				global_heretic_missionary_strength = 0.02
 			}
 			ai_will_do = {
 				factor = 100
@@ -467,7 +469,7 @@ age_of_reformation = {
 				religion = corinite
 			}
 			modifier = {
-				shock_damage = 0.3
+				shock_damage = 0.15
 			}
 			ai_will_do = {
 				factor = 100
@@ -619,15 +621,18 @@ age_of_absolutism = {
 	
 		ab_direct_rule_in_escann = {
 			allow = {
-				OR = {
-					capital_scope = { region = west_castanor_region}
-					capital_scope = { region = south_castanor_region}
-					capital_scope = { region = inner_castanor_region}
+				capital_scope = { 
+					OR = {
+						region = bahar_region 
+						region = harpy_hills_region 
+						region = bulwar_proper_region
+						region = far_bulwar_region
+					}
 				}
 			}
 			modifier = {
-				yearly_absolutism = 2
-				max_absolutism = 10
+				autonomy_change_time = -0.25
+				max_absolutism = 15
 			}
 			ai_will_do = {
 				factor = 1000
@@ -636,11 +641,14 @@ age_of_absolutism = {
 		
 		ab_decadent_web_of_lies = {
 			allow = {
-				capital_scope = { continent = europe }
+				OR = {
+				culture_group = gnomish
+				culture_group = kobold
+				culture_group = goblin
+				}
 			}
 			modifier = {
-				diplomatic_upkeep = 1
-				spy_offence = 0.25
+				fire_damage = 0.10
 			}
 			ai_will_do = {
 				factor = 10
