@@ -723,7 +723,7 @@ vertesk_1_missions = {
 		
 		trigger = {
 			exists = Z08
-			full_idea_group = spy_ideas
+			full_idea_group =  shadows_and_daggers
 			full_idea_group = trade_ideas
 			Z08 = { 
 				trade_embargo_by = A23
@@ -845,8 +845,8 @@ vertesk_2_missions = {
 		trigger = {
 			if = { 
 				limit = { ai = no }
-				has_idea_group = spy_ideas
-				spy_ideas = 1
+				has_idea_group =  shadows_and_daggers
+				 shadows_and_daggers = 1
 				advisor = spymaster
 				A23 = { 
 					any_rival_country = { 
@@ -953,7 +953,7 @@ vertesk_2_missions = {
 		
 		trigger = {
 			advisor = diplomat
-			full_idea_group = spy_ideas
+			full_idea_group =  shadows_and_daggers
 			emperor = {
 				has_opinion = {
 					who = A23
@@ -1595,8 +1595,8 @@ vertesk_3_missions = {
 		trigger = {
 			if = { 
 				limit = { ai = no }
-				has_idea_group = spy_ideas
-				spy_ideas = 3
+				has_idea_group =  shadows_and_daggers
+				 shadows_and_daggers = 3
 				calc_true_if = {
 					all_country = {
 						capital_scope = {
@@ -2987,7 +2987,7 @@ vertesk_5_missions = {
 		
 		trigger = {
 			exists = Z50
-			full_idea_group = spy_ideas
+			full_idea_group =  shadows_and_daggers
 			full_idea_group = trade_ideas
 			Z50 = { 
 				trade_embargo_by = A23
