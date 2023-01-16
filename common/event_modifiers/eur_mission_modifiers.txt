@@ -73,3 +73,8 @@ X22_rebellion_modifier = {
 X22_redglades_modifier = {
 	liberty_desire = -100
 }
+
+X22_victorious_modifier = {
+	prestige_decay = -0.05
+	monthly_splendor = 0.5
+}
