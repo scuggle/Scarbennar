@@ -1316,7 +1316,7 @@ dwarven = {
 
 		heretic = { DEIST }
 
-		holy_sites = { 4119 4311 2931 4078 4093 2963 4269 }
+		holy_sites = { 4119 4039 2931 4078 526 2963 4269 }
 
 		blessings = {
 			global_unrest_dwarf
@@ -4425,7 +4425,7 @@ giantkin = {
 		province = {
 			local_hostile_attrition = 1
 		}
-		holy_sites = { 995 985 740 4208 5323 }
+		holy_sites = { 995 985 740 4208 4119 }
 
 		blessings = {
 			blessing_jormir
