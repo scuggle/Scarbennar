@@ -1,6 +1,6 @@
-####################
+####################~
 #Businor
-####################
+####################~
 #Toref Citadel (Eborthil)
 eborthil_toref_citadel = {
 	start = 35
