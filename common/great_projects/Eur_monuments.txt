@@ -735,6 +735,7 @@ khenak_copper_mine = {
 						culture_group = divenori
 						culture = castanorian
 						culture = hill_gnoll
+						culture = dovesworn_gnoll
 					}
 
 		}
@@ -2018,6 +2019,7 @@ port_jaher = {
 						culture_group = divenori
 						culture = castanorian
 						culture = hill_gnoll
+						culture = dovesworn_gnoll
 					}
 
 		}
