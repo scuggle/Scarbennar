@@ -987,7 +987,7 @@ front_lines_tellum_missions = {
 		required_missions = { 
 			front_lines_1 
 		}
-		trigger = { army_professionalism = 1 }
+		trigger = { army_professionalism = 0.75 }
 		effect = {
 			add_country_modifier = { 
     			name = front_lines_tellumm_2
@@ -1045,7 +1045,7 @@ support_tellum_missions = {
 		icon = mission_runeforged_cannons
 		position = 14
 		required_missions = { support_tellum_1 }
-		trigger = { army_professionalism = 1 }
+		trigger = { army_professionalism = 0.75 }
 		effect = {
 				add_country_modifier = { 
     				name = support_tellumm_2
