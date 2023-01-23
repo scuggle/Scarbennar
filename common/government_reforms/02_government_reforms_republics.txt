@@ -1681,7 +1681,7 @@ technocracy_republic_reform = {
 	}
 	
 	modifiers = {
-		advisor_cost = -0.15
+		advisor_cost = -0.20
 		advisor_pool = 1
 		female_advisor_chance = 0.33
 		technology_cost = -0.1
