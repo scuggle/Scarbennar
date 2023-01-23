@@ -340,21 +340,4 @@ country_event = {
 		ai_chance = {  factor = 100 }
 		hidden_effect = { set_global_flag = no_great_conqueror }
 	}
-	
-	#Let them in
-	option = {
-		name = great_conqueror.1.b
-		ai_chance = {  factor = 0 }
-		add_prestige = 1
-		custom_tooltip = great_conqueror_tooltip
-	}
-	
-	#Oh boi
-	option = {
-		name = great_conqueror.1.c
-		ai_chance = {  factor = 0 }
-		add_splendor = 10
-		hidden_effect = { set_global_flag = mythical_conqueror }
-		custom_tooltip = mythical_conqueror_tooltip
-	}
 }
