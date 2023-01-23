@@ -1,19 +1,20 @@
 namespace = eur_witch_king
 
-#Towards the Future
+#Witch King Relations event. Does NOT work currently.
 country_event = {
 	id = eur_witch_king.0
 	title = eur_witch_king.0.t
 	desc = eur_witch_king.0.d
 
 	trigger = {
-		has_ruler_modifier = witch_king_modifier
+		#has_ruler_modifier = witch_king_modifier
+		always = no
 	}
 	hidden = yes
 
 	immediate = {
 		hidden_effect = {
-			relation_slots_modifier_witch_kings = yes
+			relation_slots_modifier_witch_kings = yes	#eur_scripted_effects.txt
 			country_event = {
 				id = eur_witch_king.1
 				days = 365
