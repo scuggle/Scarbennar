@@ -1,4 +1,3 @@
-
 southroy_1_missions = { 
 	slot = 1
 	generic = no
@@ -220,11 +219,11 @@ southroy_3_missions = {
 				}
 				NOT = { exists = A01 }
 			}
-			effect = {
-				inherit = A01
-				country_event = { 
-    				id = southroy.1
-				}
+		}
+		effect = {
+			inherit = A01
+			country_event = { 
+    			id = southroy.1
 			}
 		}
 	}
