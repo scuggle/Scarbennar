@@ -1,0 +1,63 @@
+namespace = eur_witch_king
+
+#Towards the Future
+country_event = {
+	id = eur_witch_king.0
+	title = eur_witch_king.0.t
+	desc = eur_witch_king.0.d
+
+	trigger = {
+		has_ruler_modifier = witch_king_modifier
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			relation_slots_modifier_witch_kings = yes
+			country_event = {
+				id = eur_witch_king.1
+				days = 365
+			}
+		}
+	}
+
+	option = {
+		name = eur_witch_king.0.a
+		add_prestige = 1
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = eur_witch_king.1
+	title = eur_witch_king.1.t
+	desc = eur_witch_king.1.d
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_ruler_modifier = witch_king_modifier }
+				relation_slots_modifier_witch_kings = yes
+				country_event = {
+					id = eur_witch_king.1
+					days = 365
+				}
+			}
+			else = {
+				remove_witch_king_relations = yes
+			}
+		}
+	}
+
+	option = {
+		name = eur_witch_king.1.a
+		add_prestige = 1
+		ai_chance = { factor = 100 }
+	}
+}
