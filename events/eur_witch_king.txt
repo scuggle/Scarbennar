@@ -1,54 +1,68 @@
-namespace = eur_witch_king
+namespace = witch_king_reurope
 
-#Witch King Relations event. Does NOT work currently.
 country_event = {
-	id = eur_witch_king.0
-	title = eur_witch_king.0.t
-	desc = eur_witch_king.0.d
+    id = witch_king_reurope.1
+    title = witch_king_reurope.1.t
+    desc = witch_king_reurope.1.d
+    picture = REFORM_eventPicture
+    hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
 
-	trigger = {
-		#has_ruler_modifier = witch_king_modifier
-		always = no
+    trigger = {    
+        OR = {
+            ai = no
+            was_player = yes
+        }
+        OR = {
+            has_country_flag = witch_king_flag 
+            has_ruler_modifier = witch_king_modifier
+        }
+        NOT = { has_country_flag = witch_king_diplo}
+		AND = { is_month = 0 NOT = { is_month = 1}}
+    }
+    immediate = {
+        set_country_flag = witch_king_diplo
+        country_event = {
+            id =  witch_king_reurope.2
+        }    
 	}
-	hidden = yes
 
-	immediate = {
-		hidden_effect = {
-			relation_slots_modifier_witch_kings = yes	#eur_scripted_effects.txt
-			country_event = {
-				id = eur_witch_king.1
-				days = 365
-			}
-		}
-	}
-
-	option = {
-		name = eur_witch_king.0.a
-		add_prestige = 0
-		ai_chance = { factor = 100 }
-	}
+    option = {
+        name = witch_king_reurope.1.a
+        ai_chance = { factor = 100}
+    }
 }
 
 country_event = {
-	id = eur_witch_king.1
-	title = eur_witch_king.1.t
-	desc = eur_witch_king.1.d
-
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = { NOT = { has_ruler_modifier = witch_king_modifier } }
-				remove_witch_king_relations = yes
-			}
-		}
-	}
-
-	option = {
-		name = eur_witch_king.1.a
-		add_prestige = 0
-		ai_chance = { factor = 100 }
-	}
+    id = witch_king_reurope.2
+    title = witch_king_reurope.2.t
+    desc = witch_king_reurope.2.d
+    picture = REFORM_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        relation_slots_modifier_witch_kings = { tag = ROOT}
+        if = { 
+            limit = {
+                OR = {
+                    has_country_flag = witch_king_flag 
+                    has_ruler_modifier = witch_king_modifier
+                }
+            }
+            country_event = {
+                    id =  witch_king_reurope.2
+                    days = 366
+            }
+        }
+        else = {
+            clr_country_flag = witch_king_diplo
+        }
+        
+    }
+    option = {
+        name = witch_king_reurope.2.a
+        ai_chance = { factor = 100}
+    }
 }
