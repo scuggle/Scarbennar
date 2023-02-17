@@ -1681,7 +1681,7 @@ technocracy_republic_reform = {
 	}
 	
 	modifiers = {
-		advisor_cost = -0.15
+		advisor_cost = -0.20
 		advisor_pool = 1
 		female_advisor_chance = 0.33
 		technology_cost = -0.1
@@ -3156,6 +3156,7 @@ lottery_reform = { #sortition
 			has_country_flag = mykx_disable_t3
 			has_reform = anisikheioni_naval_stratocracy
 			has_reform = eternal_council
+			has_reform = triarchy_reform
 		}
 		OR = {
 			is_revolutionary = no
@@ -4819,6 +4820,7 @@ dynastic_rulership_reform = {	#new LotN
 			has_government_attribute = anb_special_elections
 			has_reform = northern_league_magnates
 			culture_group = dwarven
+			has_reform = triarchy_reform
 		}
 	}
 	modifiers = {
@@ -6578,6 +6580,10 @@ triarchy_reform = {
 	}
 	modifiers = {
 		advisor_pool = 3
+		max_absolutism = -20
+		num_accepted_cultures = 2
+		administrative_efficiency = -0.05
+		advisor_cost = -0.1
 	}
 	custom_attributes {
 		cannot_become_dictatorship = yes

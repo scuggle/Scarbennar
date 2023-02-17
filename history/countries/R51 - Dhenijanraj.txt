@@ -15,6 +15,7 @@ technology_group = tech_harimari
 capital = 4411
 religious_school = golden_palace_school
 historical_rival = R38
+historical_friend = R07
 
 1000.1.1 = {
     set_estate_privilege = estate_mages_organization_state

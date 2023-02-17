@@ -64,10 +64,14 @@ country_decisions = {
 					owned_by = ROOT
 					is_core = ROOT
 				}
-				south_alen_area = {
-					type = all
-					owned_by = ROOT
-					is_core = ROOT
+				owns_core_province = 216
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 35
+					region = alenic_frontier_region
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					region = alenic_reach_region
 				}
 			}
 		}

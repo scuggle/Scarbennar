@@ -9,6 +9,8 @@ technology_group = tech_raheni
 religious_school = orange_sash_school
 capital = 4397
 
+historical_friend = R51
+
 1000.1.1 = { 
 	set_estate_privilege = estate_mages_organization_state 
 	set_country_flag = has_caste_estates

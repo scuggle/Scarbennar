@@ -110,7 +110,7 @@ tec_brilliance = {
 		#production_efficiency = 0.15 #they just make more valuable stuff
 
 		possible_policy = 1 
-		advisor_cost = -0.15 
+		advisor_cost = -0.20 
 
 		army_tradition_decay = 0.01 
 	}

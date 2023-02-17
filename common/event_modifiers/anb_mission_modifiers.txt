@@ -12029,7 +12029,7 @@ A90_bardic_influence_1 = {
 
 A90_bardic_influence_2 = {
 	land_morale = 0.05
-	discipline = 0.05
+	discipline = 0.025
 }
 
 A90_bardic_influence_3 = {
@@ -12039,12 +12039,12 @@ A90_bardic_influence_3 = {
 
 A90_bardic_influence_4 = {
 	land_morale = 0.10
-	discipline = 0.075
+	discipline = 0.05
 }
 
 A90_bardic_influence_5 = {
 	land_morale = 0.15
-	discipline = 0.10
+	discipline = 0.05
 }
 
 A90_imperial_ambitions = {
