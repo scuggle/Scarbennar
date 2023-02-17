@@ -727,6 +727,8 @@ voltenu_workers = {
 
 		manpower_recovery_speed = -0.1 #employs a lot of people, who don't go into the army?
 		#drill_decay_modifier = 0.2 #mass produced artificer weaponry is still sorta tempermental cause it's the 18th century
+	}
+}
 #New Havoral
 
 bandit_kingdom_havoric_homesteaders = {
