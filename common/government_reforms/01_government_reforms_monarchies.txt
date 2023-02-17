@@ -2798,7 +2798,10 @@ seincourt_reform = {
 	icon = "three_classes_reform"
 	allow_normal_conversion = no
 	potential = {
-		tag = A90
+		OR = {
+			tag = A90
+			was_tag = A90
+		}
 		has_reform = seincourt_reform
 	}
 	legacy_equivalent = feudal_monarchy
