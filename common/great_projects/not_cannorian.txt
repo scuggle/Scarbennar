@@ -653,6 +653,7 @@ ekha_harbor = {
 			heavy_ship_power = 0.05
 			galley_power = 0.05
 			light_ship_power = 0.05
+			transport_power = 0.05
 		}
 		on_upgraded = {
 		}

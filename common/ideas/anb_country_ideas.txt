@@ -673,7 +673,9 @@ A20_ideas = {
 	free = yes		#will be added at load.
 
 	A20_the_sogahrubi = {
+		devotion = 1
 		legitimacy = 1
+		republican_tradition = 0.15
 	}
 	A20_rubyhold_institute_of_humanities = {
 		idea_cost = -0.05
