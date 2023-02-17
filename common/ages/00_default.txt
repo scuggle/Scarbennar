@@ -141,8 +141,7 @@ age_of_discovery = {
 			}			
 		}
 		
-		ab_transfer_vassal_wargoal = 
-		{
+		ab_transfer_vassal_wargoal = {
 			modifier = {
 				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
@@ -196,39 +195,39 @@ age_of_discovery = {
 			}
 		}
 		
-		ab_veterans_of_the_lilac_wars = {
-			allow = {
-				capital_scope = { continent = europe }
-				NOT = { has_country_modifier = monstrous_nation }
-			}
-			modifier = {
-				manpower_recovery_speed = 0.35
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
+		# ab_veterans_of_the_lilac_wars = {
+		# 	allow = {
+		# 		capital_scope = { continent = europe }
+		# 		NOT = { has_country_modifier = monstrous_nation }
+		# 	}
+		# 	modifier = {
+		# 		manpower_recovery_speed = 0.35
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 10
+		# 	}
+		# }
 		
-		ab_spoils_of_escann = {
-			allow = {
-				capital_scope = { 
-					OR = {
-						region = west_castanor_region 
-						region = south_castanor_region 
-						region = inner_castanor_region 
-						area = cursewood_area 
-						area = whistlevale_area 
-					}
-				}
-			}
-			modifier = {
-				loot_amount = 0.50
-				available_province_loot = 0.50
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
+		# ab_spoils_of_escann = {
+		# 	allow = {
+		# 		capital_scope = { 
+		# 			OR = {
+		# 				region = west_castanor_region 
+		# 				region = south_castanor_region 
+		# 				region = inner_castanor_region 
+		# 				area = cursewood_area 
+		# 				area = whistlevale_area 
+		# 			}
+		# 		}
+		# 	}
+		# 	modifier = {
+		# 		loot_amount = 0.50
+		# 		available_province_loot = 0.50
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 10
+		# 	}
+		# }
 		
 		ab_anbennar_decentralization_of_the_empire = {
 			allow = {
@@ -243,6 +242,18 @@ age_of_discovery = {
 			}
 		}
 		
+		# ab_eborthil_ship_trade = {
+		# 	allow = {
+		# 		tag = A47
+		# 	}
+		# 	modifier = {
+		# 		global_ship_trade_power = 0.5 
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 100
+		# 	}
+		# }
+
 		ab_eborthil_ship_trade = {
 			allow = {
 				capital_scope = { 
@@ -272,13 +283,18 @@ age_of_reformation = {
 	
 	can_start = {
 		#is_religion_enabled = corinite
-		#After Greentide region is fine 
-		OR = {
-			custom_trigger_tooltip = {
-				tooltip = castellos_is_dead_tooltip
-				has_global_flag = "castellos_is_dead"
+		#After Greentide region is fine
+		if = { limit = { NOT = { has_global_flag = delete_cannor_region } }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = castellos_is_dead_tooltip
+					has_global_flag = "castellos_is_dead"
+				}
+				is_year = 1560	#in case castellos never dies
 			}
-			is_year = 1560	#in case castellos never dies
+		}
+		else = {
+			is_year = 1530
 		}
 	}
 	#What if Ravelianism starts in Aelantir? if so in general they should rise from coastal provinces too and those facing west
@@ -304,6 +320,7 @@ age_of_reformation = {
 				NOT = {
 					capital_scope = { continent = north_america }
 					capital_scope = { continent = south_america }
+					capital_scope = { continent = serpentspine }
 				}
 			}
 			OR = {
@@ -347,6 +364,16 @@ age_of_reformation = {
 		
 		obj_two_continents = {
 			num_of_continents = 2
+		}
+
+		obj_dig_holds = {
+			allow = {
+				capital_scope = { continent = serpentspine }
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				has_dwarven_hold_2 = yes
+			}
 		}
 	}	
 	
@@ -433,6 +460,22 @@ age_of_reformation = {
 				factor = 10
 			}
 		}
+
+		ab_dwarovar_hold_redecorating = {
+			allow = {
+				OR = {
+					culture_group = goblin
+					culture_group = kobold
+				}
+				capital_scope = { continent = serpentspine }
+			}
+			modifier = {
+				build_cost = -0.2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
 		
 		ab_aelantir_rush = {
 			allow = {
@@ -476,12 +519,18 @@ age_of_reformation = {
 			}
 		}
 		
+		# ab_corinite_crusaders = {
+		# 	allow = {
+		# 		religion = corinite
+		# 	}
+		# 	modifier = {
+		# 		shock_damage = 0.3
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 100
+		# 	}
+		# }
 	}
-	
-	
-	
-
-	
 }
 
 age_of_absolutism = {
@@ -853,45 +902,45 @@ age_of_revolutions = {
 				}
 			}
 		}
-		ab_artificer_machinations_of_war = {
-			modifier = {
-				fire_damage = 0.25
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-		ab_magical_industrialization = {
-			modifier = {
-				production_efficiency = 0.15
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-		ab_anbennarian_resurgence = {
-			allow = {
-				tag = Z01
-			}
-			modifier = {
-				fire_damage_received = -0.33
-				global_unrest = -1
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-		ab_orcish_nation = {
-			allow = {
-				culture_group = orcish
-			}
-			modifier = {
-				development_cost = -0.25
-				defensiveness = 0.5
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
+		# ab_artificer_machinations_of_war = {
+		# 	modifier = {
+		# 		fire_damage = 0.25
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 100
+		# 	}
+		# }
+		# ab_magical_industrialization = {
+		# 	modifier = {
+		# 		production_efficiency = 0.15
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 100
+		# 	}
+		# }
+		# ab_anbennarian_resurgence = {
+		# 	allow = {
+		# 		tag = Z01
+		# 	}
+		# 	modifier = {
+		# 		fire_damage_received = -0.33
+		# 		global_unrest = -1
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 100
+		# 	}
+		# }
+		# ab_orcish_nation = {
+		# 	allow = {
+		# 		culture_group = orcish
+		# 	}
+		# 	modifier = {
+		# 		development_cost = -0.25
+		# 		defensiveness = 0.5
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 100
+		# 	}
+		# }
 	}
 }
