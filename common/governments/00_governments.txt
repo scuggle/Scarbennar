@@ -119,6 +119,9 @@ monarchy = {
 				techno_monarchy_reform
 				medasi_reform
 				horasheshi_dynasty_reform
+				dakinshi_warlord_reform
+				namasonamingo_reform
+				new_havoral_bandit_kingdom_reform
 			}
 		}
 		hereditary_vs_nobility = { #Tier 2
@@ -599,6 +602,8 @@ republic = {
 				concord_administration_reform
 				theinosi_synkletos
 				voltenu_corpocracy
+				namasomitingo_reform
+				thasáros_kheinisí
 			}
 		}
 		republican_virtues = { #Tier 2
@@ -635,6 +640,8 @@ republic = {
 				yangcheng_xuezhe_reform
 				yanzhong_patrol_reform
 				railskulker_councils_of_technocrats
+				maiden_republic
+				bharbhen_relations_bureau
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = { #Tier 3
@@ -972,6 +979,7 @@ tribal = {
 				infernal_autocracy
 				roadwarrior_great_convoy
 				harpy_matriarchy_reform
+				namasoguziza_reform
 			}
 		}
 		tribal_cultural_values = { #Tier 2
@@ -1137,6 +1145,8 @@ theocracy = {
 				tehanek_magocracy_reform
 				pelimkana_kalemba_reform
 				chaingrasper_dakocracy_reform
+				the_angel_kamniel_reform
+				land_of_thousand_shrines
 			}
 		}
 		internal_vs_external_mission = { #Tier 2

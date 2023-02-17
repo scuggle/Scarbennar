@@ -59,7 +59,7 @@ guiTypes = {
 
 		iconType = {
 			name = "dlc_icon_bg"
-			spriteType = "GFX_dlc_icon_even_bg_flip"
+			spriteType = "GFX_empty_interaction"	#anbennar
 			position = { x = -30 y = 0 }
 			alwaystransparent = yes
 		}
@@ -957,11 +957,11 @@ guiTypes = {
 				name ="bottom"
 				backGround=""
 				position = { x=0 y =0}
-				show_position = { x=-380 y =-172 }
-				hide_position = { x=-380 y =20}
+				show_position = { x=-405 y =-157 }	#anbennar
+				hide_position = { x=-405 y =20}		#anbennar
 				animation_type = "decelerated"
 				animation_time = 300
-				size = { x=760 y =172}
+				size = { x=810 y =246}	#anbennar
 				moveable = 0
 				dontRender = ""
 				horizontalBorder= ""
@@ -974,14 +974,14 @@ guiTypes = {
 				iconType =
 				{
 					name ="chatpanel"
-					spriteType = "GFX_lobby_chat_bg"
-					position = { x= 0 y = 0 }
+					spriteType = "GFX_anb_lobby_chat_bg"
+					position = { x= 0 y = -10 }	#anbennar
 					Orientation = "UPPER_LEFT"
 				}
 
 				instantTextBoxType = {
 					name ="scenario_description"
-					position = { x = 16 y = 16 }
+					position = { x = 22 y = -1 }	#anbennar
 					maxWidth = 728
 					maxHeight = 100
 					font = "vic_18"
@@ -989,12 +989,12 @@ guiTypes = {
 					text = ""
 					Orientation = "UPPER_LEFT"
 
-					maxWidth = 728
+					maxWidth = 766	#anbennar
 					maxHeight = 100
 				}
 
 				editBoxType = {
-					position = { x = 6 y = 125 }
+					position = { x = 26 y = 125 }	#anbennar
 					name = "lobby_chat_edit"
 					textureFile = "gfx\\interface\\small_tiles_dialog.dds"
 					font = "vic_18"
@@ -1006,7 +1006,7 @@ guiTypes = {
 				}
 
 				editBoxType = {
-					position = { x = 6 y = 125 }
+					position = { x = 26 y = 125 }	#anbennar
 					name = "largefonts_lobby_chat_edit"
 					textureFile = "gfx\\interface\\small_tiles_dialog.dds"
 					font = "chat_largefont"
@@ -1018,7 +1018,7 @@ guiTypes = {
 				}
 
 				editBoxType = {
-					position = { x = 6 y = 125 }
+					position = { x = 26 y = 125 }	#anbennar
 					name = "speech_enabled_lobby_chat_edit"
 					textureFile = "gfx\\interface\\small_tiles_dialog.dds"
 					font = "vic_18"
@@ -1030,7 +1030,7 @@ guiTypes = {
 				}
 
 				editBoxType = {
-					position = { x = 6 y = 125 }
+					position = { x = 26 y = 125 }	#anbennar
 					name = "speech_enabled_largefonts_lobby_chat_edit"
 					textureFile = "gfx\\interface\\small_tiles_dialog.dds"
 					font = "chat_largefont"
@@ -1043,7 +1043,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "speech_enabled_lobby_chat_button"
-					position = { x = 636 y = 125 }
+					position = { x = 623 y = 122 }	#anbennar
 					quadTextureSprite ="GFX_standard_button_105"
 					buttonText = "SEND"
 					buttonFont = "vic_18"
@@ -1052,7 +1052,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "mic_button"
-					position = { x = 526 y = 125 }
+					position = { x = 553 y = 122 }	#anbennar
 					quadTextureSprite ="GFX_mic_button_105"
 					buttonText = "CHAT_CVAA_MIC"
 					buttonFont = "vic_18"
@@ -1061,7 +1061,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "lobby_chat_button"
-					position = { x = 526 y = 125 }
+					position = { x = 553 y = 122 }	#anbennar
 					quadTextureSprite ="button_type_4"
 					buttonText = "SEND"
 					buttonFont = "vic_18"
@@ -1072,9 +1072,9 @@ guiTypes = {
 				listboxType =
 				{
 					name ="chatlog"
-					position = { x = 26 y = 15 }
+					position = { x = 26 y = 20 }	#anbennar
 					backGround=""
-					size = { x= 700 y =100 }
+					size = { x= 728 y =95 }	#anbennar
 					Orientation = "UPPER_LEFT"
 					horizontal = 0
 					spacing = 0
@@ -1210,7 +1210,7 @@ guiTypes = {
 				iconType =
 				{
 					name ="left_sidepanel"
-					spriteType = "GFX_lobby_left_bg"
+					spriteType = "GFX_anb_lobby_left_bg"
 					position = { x= 4 y = 31 }
 					Orientation = "UPPER_LEFT"
 				}
@@ -1746,8 +1746,8 @@ guiTypes = {
 				iconType =
 				{
 					name ="right_sidepanel"
-					spriteType = "GFX_lobby_right_bg"
-					position = { x= -407 y = 22 }
+					spriteType = "GFX_anb_lobby_right_bg"
+					position = { x= -266 y = 16 }
 					Orientation = "UPPER_RIGHT"
 				}
 
@@ -2298,7 +2298,18 @@ guiTypes = {
 						format = centre
 						fixedsize = yes
 					}
-
+					
+					instantTextBoxType = {
+						name = "diplomacy_banner_label"
+						position = { x = -5 y = 485 }	#anbennar
+						font = "vic_18"
+						borderSize = {x = 4 y = 4}
+						text = "HEADER_DIPLOMACY"
+						maxWidth = 160
+						format = left
+						maxHeight = 32
+					}
+					
 					listboxType = {
 						name = "diplomatic_listbox"
 						backGround = ""
@@ -2318,7 +2329,7 @@ guiTypes = {
 						size = { x=50 y =500 }
 						Orientation = "UPPER_LEFT"
 						horizontal = 0
-						spacing = 0
+						spacing = 60						#anbennar
 						scrollbartype = "standardlistbox_slider"
 						borderSize = {x = 0 y = 0}
 					}
@@ -2350,7 +2361,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "random_new_world_button"
-					position = { x = -241 y = -139 }
+					position = { x = 300 y = -139 }	#anbennar
 					quadTextureSprite ="GFX_frontend_random_world"
 					buttonText = "RANDOM_WORLD_START"
 					buttonFont = "vic_18"
@@ -2894,7 +2905,7 @@ guiTypes = {
 		name = "bookmark_entry"
 		backGround=""
 		position = { x=0 y=0 }
-		size = { x=320 y= 41 }
+		size = { x=320 y= 121 }	#anbennar
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -2903,7 +2914,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "bookmark"
-			quadTextureSprite = "GFX_lobby_list_entry"
+			quadTextureSprite = "GFX_anb_lobby_list_entry"	#anbennar
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
@@ -2912,13 +2923,13 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 20 y = 5 }
+			position = { x = 14 y = 46 }	#anbennar
 
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "FE_BOOKMARK_TITLE"
 			maxWidth = 225
-			maxHeight = 20
+			maxHeight = 80	#anbennar
 			fixedsize = yes
 			alwaystransparent = yes
 			Orientation = "UPPER_LEFT"
@@ -2926,7 +2937,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "date"
-			position = { x = 21 y = 22 }
+			position = { x = -300 y = 22 }	#anbennar
 
 			font = "Arial12"
 			borderSize = {x = 0 y = 0}
@@ -3615,12 +3626,12 @@ guiTypes = {
 	positionType = {
 		# Should be relative to lower center of screen
 		name = "shield_position"
-		position = { x = -13 y = -270 }
+		position = { x = 2 y = -256 }	#anbennar
 	}
 
 	positionType = {
 		name = "shield_offset"
-		position = { x = 70 y = 00 }
+		position = { x = 98 y = 0 }	#anbennar
 	}
 
 	windowType = {
