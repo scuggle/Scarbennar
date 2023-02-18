@@ -349,7 +349,7 @@ guiTypes = {
 				maxWidth = 332
 				maxHeight = 40	
 				format = center	
-			}			
+			}
 			instantTextBoxType = {
 				name = "tribal_owner"
 				position = { x = 75 y = 8 }
@@ -512,7 +512,7 @@ guiTypes = {
 			{
 				name ="religion_icon"
 				spriteType = "GFX_icon_religion"
-				position = { x= 22 y = 7 }
+				position = { x= 19 y = 7 }	#Anbennar
 				hint_tag = "hint_religion"
 			}
 			
@@ -613,7 +613,6 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "RECALL"
 				buttonFont = "vic_18"
-				shortcut = "z" #Arumba
 			}
 		}
 		
@@ -718,7 +717,6 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "SEND"
 				buttonFont = "vic_18"
-				shortcut = "c" #Arumba
 			}	
 			
 			guiButtonType = {
@@ -730,7 +728,6 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "ABANDON_MERCHANT"
 				buttonFont = "vic_18"
-				shortcut = "z" #Arumba
 			}	
 			
 			
@@ -741,7 +738,6 @@ guiTypes = {
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
-				shortcut = "c"
 			}	
 			
 		}
@@ -885,7 +881,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_straight_300_32"
 				buttonFont = "vic_18"
 				text = "SEND_COLONIST"	
-				shortcut = "c"
 			}
 
 			instantTextBoxType = {

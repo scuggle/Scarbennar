@@ -1440,7 +1440,7 @@ guiTypes = {
 			backGround=""
 			position = { x=-1325 y=-100 }	
 			show_position = { x=-1325 y=-100 }
-			hide_position = { x=-1325 y=10 }
+			hide_position = { x=-1325 y=250 }
 			animation_type = "decelerated"
 			animation_time = 1000
 			size = { x=770 y=100 }	
@@ -1663,12 +1663,12 @@ guiTypes = {
 	
 		windowType = {
 			name = "message_window_container"
-			position = { x = -247 y = -510 }
-			#show_position = { x= -200 y = -500 }
-			#hide_position = { x= 10 y = -500 }	
+			position = { x = -200 y = -460 }
+			#show_position = { x= -200 y = -460 }
+			#hide_position = { x= 10 y = -460 }	
 			animation_type = "decelerated"
-			animation_time = 100	
-			size = { x=288 y= 186 }
+			animation_time = 300	
+			size = { x=241 y= 186 }
 			Orientation = "LOWER_RIGHT"
 			backGround=""
 			moveable = 0
@@ -1679,12 +1679,12 @@ guiTypes = {
 		
 			windowType = {
 				name = "message_window"
-				position = { x = 0 y = 0 }
-				show_position = { x= 0 y = 0 }
-				hide_position = { x= 300 y = 0 }	
+				position = { x = 0 y = -60 }
+				show_position = { x= 0 y = -40 }
+				hide_position = { x= 210 y = -40 }	
 				animation_type = "decelerated"
-				animation_time = 100	
-				size = { x=289 y= 186 }
+				animation_time = 300	
+				size = { x=241 y= 186 }
 				Orientation = "UPPER_LEFT"
 				backGround=""
 				moveable = 0
@@ -1737,7 +1737,7 @@ guiTypes = {
 					background = ""
 					position = { x=-22 y=85 }
 					orientation = "UPPER_LEFT"
-					size = { x=250 y=135 }
+					size = { x=201 y=135 }
 					borderSize = {x = 0 y = 0}
 					scrollbartype = "standardlistbox_slider"
 				}
@@ -1745,7 +1745,7 @@ guiTypes = {
 			
 			windowType = {
 				name = "toggle_message_interface_window"
-				position = { x = 194 y = 5 }
+				position = { x = 146 y = -35 }
 				size = { x=32 y= 20 }
 				Orientation = "UPPER_LEFT"
 				backGround=""
@@ -2195,7 +2195,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""	
-			maxWidth = 150
+			maxWidth = 110
 			maxHeight = 10
 			format = left
 			fixedsize = yes
@@ -2204,7 +2204,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "other_flag"
-			position = { x = 215 y = 3 }
+			position = { x = 170 y = 3 }
 			
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
