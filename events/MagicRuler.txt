@@ -5594,6 +5594,15 @@ country_event = {
 			NOT = { has_ruler_modifier = magic_realm_evocation_war_magic_1 }
 			NOT = { has_ruler_modifier = magic_realm_evocation_war_magic_2 }
 			NOT = { has_ruler_modifier = magic_realm_evocation_war_magic_3 }
+			NOT = { has_ruler_modifier = patron_green_war_magic_1 }
+			NOT = { has_ruler_modifier = patron_green_war_magic_2 }
+			NOT = { has_ruler_modifier = patron_green_war_magic_3 }
+			NOT = { has_ruler_modifier = patron_ice_war_magic_1 }
+			NOT = { has_ruler_modifier = patron_ice_war_magic_2 }
+			NOT = { has_ruler_modifier = patron_ice_war_magic_3 }
+			NOT = { has_ruler_modifier = patron_diranbe_war_magic_1 }
+			NOT = { has_ruler_modifier = patron_diranbe_war_magic_2 }
+			NOT = { has_ruler_modifier = patron_diranbe_war_magic_3 }
 		}
 		ai_chance = {
 			factor = 50
@@ -5694,6 +5703,15 @@ country_event = {
 				has_ruler_modifier = magic_realm_evocation_war_magic_1
 				has_ruler_modifier = magic_realm_evocation_war_magic_2
 				has_ruler_modifier = magic_realm_evocation_war_magic_3
+				has_ruler_modifier = patron_green_war_magic_1
+				has_ruler_modifier = patron_green_war_magic_2
+				has_ruler_modifier = patron_green_war_magic_3
+				has_ruler_modifier = patron_ice_war_magic_1
+				has_ruler_modifier = patron_ice_war_magic_2
+				has_ruler_modifier = patron_ice_war_magic_3
+				has_ruler_modifier = patron_diranbe_war_magic_1
+				has_ruler_modifier = patron_diranbe_war_magic_2
+				has_ruler_modifier = patron_diranbe_war_magic_3
 			}
 		}
 		if = { limit = { NOT = { mil_power = 50 } }
@@ -5705,6 +5723,12 @@ country_event = {
 					has_ruler_modifier = magic_realm_evocation_war_magic_1
 					has_ruler_modifier = magic_realm_evocation_war_magic_2
 					has_ruler_modifier = magic_realm_evocation_war_magic_3
+					has_ruler_modifier = patron_ice_war_magic_1
+					has_ruler_modifier = patron_ice_war_magic_2
+					has_ruler_modifier = patron_ice_war_magic_3
+					has_ruler_modifier = patron_diranbe_war_magic_1
+					has_ruler_modifier = patron_diranbe_war_magic_2
+					has_ruler_modifier = patron_diranbe_war_magic_3
 				}
 			}
 			custom_tooltip = magic_spell_already_active_tt
@@ -5871,6 +5895,15 @@ country_event = {
 			NOT = { has_ruler_modifier = magic_realm_evocation_war_magic_1 }
 			NOT = { has_ruler_modifier = magic_realm_evocation_war_magic_2 }
 			NOT = { has_ruler_modifier = magic_realm_evocation_war_magic_3 }
+			NOT = { has_ruler_modifier = patron_green_war_magic_1 }
+			NOT = { has_ruler_modifier = patron_green_war_magic_2 }
+			NOT = { has_ruler_modifier = patron_green_war_magic_3 }
+			NOT = { has_ruler_modifier = patron_ice_war_magic_1 }
+			NOT = { has_ruler_modifier = patron_ice_war_magic_2 }
+			NOT = { has_ruler_modifier = patron_ice_war_magic_3 }
+			NOT = { has_ruler_modifier = patron_diranbe_war_magic_1 }
+			NOT = { has_ruler_modifier = patron_diranbe_war_magic_2 }
+			NOT = { has_ruler_modifier = patron_diranbe_war_magic_3 }
 		}
 		ai_chance = {
 			factor = 50
@@ -5969,6 +6002,15 @@ country_event = {
 				has_ruler_modifier = magic_realm_evocation_war_magic_1
 				has_ruler_modifier = magic_realm_evocation_war_magic_2
 				has_ruler_modifier = magic_realm_evocation_war_magic_3
+				has_ruler_modifier = patron_green_war_magic_1
+				has_ruler_modifier = patron_green_war_magic_2
+				has_ruler_modifier = patron_green_war_magic_3
+				has_ruler_modifier = patron_ice_war_magic_1
+				has_ruler_modifier = patron_ice_war_magic_2
+				has_ruler_modifier = patron_ice_war_magic_3
+				has_ruler_modifier = patron_diranbe_war_magic_1
+				has_ruler_modifier = patron_diranbe_war_magic_2
+				has_ruler_modifier = patron_diranbe_war_magic_3
 			}
 		}
 		if = { limit = { NOT = { mil_power = 50 } }
@@ -5980,6 +6022,15 @@ country_event = {
 					has_ruler_modifier = magic_realm_evocation_war_magic_1
 					has_ruler_modifier = magic_realm_evocation_war_magic_2
 					has_ruler_modifier = magic_realm_evocation_war_magic_3
+					has_ruler_modifier = patron_green_war_magic_1
+					has_ruler_modifier = patron_green_war_magic_2
+					has_ruler_modifier = patron_green_war_magic_3
+					has_ruler_modifier = patron_ice_war_magic_1
+					has_ruler_modifier = patron_ice_war_magic_2
+					has_ruler_modifier = patron_ice_war_magic_3
+					has_ruler_modifier = patron_diranbe_war_magic_1
+					has_ruler_modifier = patron_diranbe_war_magic_2
+					has_ruler_modifier = patron_diranbe_war_magic_3
 				}
 			}
 			custom_tooltip = magic_spell_already_active_tt
@@ -6157,6 +6208,15 @@ country_event = {
 			NOT = { has_ruler_modifier = magic_realm_evocation_war_magic_1 }
 			NOT = { has_ruler_modifier = magic_realm_evocation_war_magic_2 }
 			NOT = { has_ruler_modifier = magic_realm_evocation_war_magic_3 }
+			NOT = { has_ruler_modifier = patron_green_war_magic_1 }
+			NOT = { has_ruler_modifier = patron_green_war_magic_2 }
+			NOT = { has_ruler_modifier = patron_green_war_magic_3 }
+			NOT = { has_ruler_modifier = patron_ice_war_magic_1 }
+			NOT = { has_ruler_modifier = patron_ice_war_magic_2 }
+			NOT = { has_ruler_modifier = patron_ice_war_magic_3 }
+			NOT = { has_ruler_modifier = patron_diranbe_war_magic_1 }
+			NOT = { has_ruler_modifier = patron_diranbe_war_magic_2 }
+			NOT = { has_ruler_modifier = patron_diranbe_war_magic_3 }
 		}
 		ai_chance = {
 			factor = 50
@@ -6253,6 +6313,15 @@ country_event = {
 				has_ruler_modifier = magic_realm_evocation_war_magic_1
 				has_ruler_modifier = magic_realm_evocation_war_magic_2
 				has_ruler_modifier = magic_realm_evocation_war_magic_3
+				has_ruler_modifier = patron_green_war_magic_1
+				has_ruler_modifier = patron_green_war_magic_2
+				has_ruler_modifier = patron_green_war_magic_3
+				has_ruler_modifier = patron_ice_war_magic_1
+				has_ruler_modifier = patron_ice_war_magic_2
+				has_ruler_modifier = patron_ice_war_magic_3
+				has_ruler_modifier = patron_diranbe_war_magic_1
+				has_ruler_modifier = patron_diranbe_war_magic_2
+				has_ruler_modifier = patron_diranbe_war_magic_3
 			}
 		}
 		if = { limit = { NOT = { mil_power = 50 } }
@@ -6264,6 +6333,15 @@ country_event = {
 					has_ruler_modifier = magic_realm_evocation_war_magic_1
 					has_ruler_modifier = magic_realm_evocation_war_magic_2
 					has_ruler_modifier = magic_realm_evocation_war_magic_3
+					has_ruler_modifier = patron_green_war_magic_1
+					has_ruler_modifier = patron_green_war_magic_2
+					has_ruler_modifier = patron_green_war_magic_3
+					has_ruler_modifier = patron_ice_war_magic_1
+					has_ruler_modifier = patron_ice_war_magic_2
+					has_ruler_modifier = patron_ice_war_magic_3
+					has_ruler_modifier = patron_diranbe_war_magic_1
+					has_ruler_modifier = patron_diranbe_war_magic_2
+					has_ruler_modifier = patron_diranbe_war_magic_3
 				}
 			}
 			custom_tooltip = magic_spell_already_active_tt
