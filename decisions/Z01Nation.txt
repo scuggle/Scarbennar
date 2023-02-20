@@ -52,7 +52,7 @@ country_decisions = {
 		effect = {
 			change_tag = Z01
 			hidden_effect = { restore_country_name = yes }
-			#remove_non_electors_emperors_from_empire_effect = yes
+			dismantle_hre = yes
 			if = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
