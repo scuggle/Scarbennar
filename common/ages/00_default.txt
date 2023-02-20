@@ -195,39 +195,39 @@ age_of_discovery = {
 			}
 		}
 		
-		# ab_veterans_of_the_lilac_wars = {
-		# 	allow = {
-		# 		capital_scope = { continent = europe }
-		# 		NOT = { has_country_modifier = monstrous_nation }
-		# 	}
-		# 	modifier = {
-		# 		manpower_recovery_speed = 0.35
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 10
-		# 	}
-		# }
+		ab_veterans_of_the_lilac_wars = {
+		 	allow = {
+		 		capital_scope = { continent = europe }
+				NOT = { has_country_modifier = monstrous_nation }
+		 	}
+		 	modifier = {
+		 		manpower_recovery_speed = 0.35
+		 	}
+		 	ai_will_do = {
+		 		factor = 10
+		 	}
+		 }
 		
-		# ab_spoils_of_escann = {
-		# 	allow = {
-		# 		capital_scope = { 
-		# 			OR = {
-		# 				region = west_castanor_region 
-		# 				region = south_castanor_region 
-		# 				region = inner_castanor_region 
-		# 				area = cursewood_area 
-		# 				area = whistlevale_area 
-		# 			}
-		# 		}
-		# 	}
-		# 	modifier = {
-		# 		loot_amount = 0.50
-		# 		available_province_loot = 0.50
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 10
-		# 	}
-		# }
+		ab_spoils_of_escann = {
+		 	allow = {
+		 		capital_scope = { 
+		 			OR = {
+		 				region = west_castanor_region 
+		 				region = south_castanor_region 
+		 				region = inner_castanor_region 
+		 				area = cursewood_area 
+		 				area = whistlevale_area 
+		 			}
+		 		}
+		 	}
+		 	modifier = {
+		 		loot_amount = 0.50
+		 		available_province_loot = 0.50
+		 	}
+		 	ai_will_do = {
+		 		factor = 10
+		 	}
+		 }
 		
 		ab_anbennar_decentralization_of_the_empire = {
 			allow = {
@@ -241,18 +241,6 @@ age_of_discovery = {
 				factor = 10
 			}
 		}
-		
-		# ab_eborthil_ship_trade = {
-		# 	allow = {
-		# 		tag = A47
-		# 	}
-		# 	modifier = {
-		# 		global_ship_trade_power = 0.5 
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
 
 		ab_eborthil_ship_trade = {
 			allow = {
@@ -518,18 +506,6 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
-		
-		# ab_corinite_crusaders = {
-		# 	allow = {
-		# 		religion = corinite
-		# 	}
-		# 	modifier = {
-		# 		shock_damage = 0.3
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
 	}
 }
 
@@ -594,9 +570,6 @@ age_of_absolutism = {
 			
 		}
 	}	
-	
-	
-	
 	
 	abilities = {
 	
@@ -720,19 +693,19 @@ age_of_absolutism = {
 			}
 		}
 		
-		# ab_ravelian_zeal = {
-			# allow = {
-				# religion = ravelian
-			# }
-			# modifier = {
-				# global_missionary_strength = 0.02
-				# tolerance_own = 1
-				# land_morale = 0.05
-			# }
-			# ai_will_do = {
-				# factor = 100
-			# }
-		# }
+		ab_ravelian_zeal = {
+			allow = {
+				religion = ravelian
+			}
+			modifier = {
+				global_missionary_strength = 0.02
+				tolerance_own = 1
+				land_morale = 0.05
+			}
+			ai_will_do = {
+				factor = 100
+			}
+	 	}
 
 		ab_dwarven_reclamation = {
 			allow = {
@@ -902,45 +875,45 @@ age_of_revolutions = {
 				}
 			}
 		}
-		# ab_artificer_machinations_of_war = {
-		# 	modifier = {
-		# 		fire_damage = 0.25
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
-		# ab_magical_industrialization = {
-		# 	modifier = {
-		# 		production_efficiency = 0.15
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
-		# ab_anbennarian_resurgence = {
-		# 	allow = {
-		# 		tag = Z01
-		# 	}
-		# 	modifier = {
-		# 		fire_damage_received = -0.33
-		# 		global_unrest = -1
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
-		# ab_orcish_nation = {
-		# 	allow = {
-		# 		culture_group = orcish
-		# 	}
-		# 	modifier = {
-		# 		development_cost = -0.25
-		# 		defensiveness = 0.5
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
+		ab_artificer_machinations_of_war = {
+		 	modifier = {
+		 		fire_damage = 0.25
+		 	}
+		 	ai_will_do = {
+		 		factor = 100
+		 	}
+		 }
+		ab_magical_industrialization = {
+		 	modifier = {
+		 		production_efficiency = 0.15
+		 	}
+		 	ai_will_do = {
+		 		factor = 100
+		 	}
+		 }
+		ab_anbennarian_resurgence = {
+		 	allow = {
+		 		tag = Z01
+		 	}
+		 	modifier = {
+		 		fire_damage_received = -0.33
+		 		global_unrest = -1
+		 	}
+		 	ai_will_do = {
+		 		factor = 100
+		 	}
+		 }
+		ab_orcish_nation = {
+		 	allow = {
+		 		culture_group = orcish
+		 	}
+		 	modifier = {
+		 		development_cost = -0.25
+		 		defensiveness = 0.5
+		 	}
+			ai_will_do = {
+				factor = 100
+			}
+		}
 	}
 }
