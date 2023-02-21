@@ -314,7 +314,8 @@ A09_ideas = {
 A11_ideas = {
 	start = {
 		naval_morale = 0.15
-		heir_chance = 0.5
+		leader_land_manuever = 1
+		leader_naval_manuever = 1
 	}
 
 	bonus = {
@@ -333,7 +334,7 @@ A11_ideas = {
 		imperial_authority = 0.1
 	}
 	A11_defenders_of_the_dameshead = {
-		defensiveness = 0.1
+		defensiveness = 0.15
 		embargo_efficiency = 0.1
 	}
 	A11_seafaring_traditions = {
@@ -343,7 +344,7 @@ A11_ideas = {
 		colonists = 1
 	}
 	A11_bald_heads_glistening_in_the_sun = {
-		land_morale = 0.05
+		land_morale = 0.10
 		global_unrest = -1
 	}
 	A11_pearlywine_vinyards = {
