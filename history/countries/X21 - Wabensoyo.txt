@@ -1,0 +1,26 @@
+
+setup_vision = yes
+government = theocracy
+add_government_reform = magocracy_reform
+government_rank = 1
+primary_culture = lion_command
+religion = goblinic_shamanism
+technology_group = tech_hobgoblin
+capital = 5448
+
+
+
+1421.1.1 = {
+	monarch = {
+		name = "Akaru"
+		dynasty = "Lionborn"
+		birth_date = 1416.2.8
+		adm = 2
+		dip = 3
+		mil = 3
+		
+	}
+	add_ruler_personality = just_personality
+	add_ruler_personality = mage_personality
+}
+
