@@ -1429,7 +1429,7 @@ harpy_onsen = {
 		}
 
 		area_modifier = {
-			development_cost = -0.1
+			local_development_cost_modifier =  = -0.1
 			
 		}
 
@@ -1977,7 +1977,7 @@ eaglecrest_kobold_tannery = {
 		}
 
 		area_modifier = {
-			development_cost = -0.1	
+			local_development_cost = -0.1	
 		}
 
 		country_modifiers = {
