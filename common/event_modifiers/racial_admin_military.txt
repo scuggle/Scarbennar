@@ -878,7 +878,7 @@ hobgoblin_administration = {		#Highly disciplined and structured society with li
 }
 hobgoblin_military = {				#Highly ordered military focused on drill
 	#bonuses
-	yearly_army_professionalism = 0.005 	#1	All young hobgoblins are trained to fill military posts
+	yearly_army_professionalism = 0.002 	#1	All young hobgoblins are trained to fill military posts
 	discipline = 0.05			#1,5	Their structure and order lets them stay organised
 	shock_damage_received = -0.1		#0,5	They have learned to close ranks and defend against goblin and harimari charges
 	drill_gain_modifier = 1			#0,6	They drill a lot and are used to it
