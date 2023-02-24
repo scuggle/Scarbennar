@@ -1,12 +1,18 @@
 
 # No previous file for Banten
-owner = R02
-controller = R02
-add_core = R02
-add_core = S75
+# owner = R02
+# controller = R02
+# add_core = R02
+# add_core = S75
 
-culture = ofehibi
-religion = mengi_myths
+owner = X21
+controller = X21
+add_core = X21
+culture = lion_command
+religion = goblinic_shamanism
+
+# culture = ofehibi
+# religion = mengi_myths
 
 hre = no
 
