@@ -6,6 +6,20 @@ vass_an_underdog_1 = {
 		NOT = {
 			is_great_power = yes
 		}
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -41,7 +55,21 @@ vass_glorious_armada_1 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 3
+		dip_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -76,7 +104,21 @@ vass_gold_and_lies_1 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 3
+		dip_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -112,7 +154,21 @@ vass_a_grand_court_1 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 3
+		dip_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -148,7 +204,21 @@ vass_a_melting_pot_1 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 3
+		dip_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -188,7 +258,21 @@ vass_unity_strength_1 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 3
+		dip_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -231,7 +315,32 @@ vass_an_underdog_2 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 2
+		}
 		NOT = {
 			is_great_power = yes
 		}
@@ -271,7 +380,32 @@ vass_glorious_armada_2 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -306,7 +440,32 @@ vass_gold_and_lies_2 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -342,7 +501,32 @@ vass_a_grand_court_2 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -378,7 +562,32 @@ vass_a_melting_pot_2 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -418,7 +627,32 @@ vass_unity_strength_2 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = diplomatic_ideas
+				full_idea_group = spy_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = the_great_game
+				full_idea_group = shadows_and_daggers
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -461,7 +695,18 @@ vass_an_underdog_3 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 17
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 3
+		}
 		NOT = {
 			is_great_power = yes
 		}
@@ -500,7 +745,18 @@ vass_glorious_armada_3 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 17
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 3
+		}
 	}
 	
 	allow = {
@@ -535,7 +791,18 @@ vass_gold_and_lies_3 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 17
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 3
+		}
 	}
 	
 	allow = {
@@ -571,7 +838,18 @@ vass_a_grand_court_3 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 17
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 3
+		}
 	}
 	
 	allow = {
@@ -607,7 +885,18 @@ vass_a_melting_pot_3 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 17
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 3
+		}
 	}
 	allow = {
 		calc_true_if = {
@@ -646,7 +935,18 @@ vass_unity_strength_3 = {
 	monarch_power = DIP
 
 	potential = {
-		dip_tech = 17
+		calc_true_if = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = spy_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = naval_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = influence_ideas
+				has_idea_group = the_great_game
+				has_idea_group = shadows_and_daggers
+				amount = 3
+		}
 	}
 	
 	allow = {

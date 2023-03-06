@@ -6,6 +6,20 @@ vass_cutting_edge_1 = {
 
 	potential = {
 		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -42,6 +56,20 @@ vass_affordable_munitions_1 = {
 
 	potential = {
 		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -78,6 +106,20 @@ vass_engineer_corps_1 = {
 
 	potential = {
 		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -114,6 +156,20 @@ vass_professional_corps_1 = {
 
 	potential = {
 		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -153,6 +209,20 @@ vass_deep_reserve_1 = {
 
 	potential = {
 		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -192,6 +262,20 @@ vass_hunters_and_baggage_1 = {
 
 	potential = {
 		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -230,7 +314,32 @@ vass_cutting_edge_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -266,7 +375,32 @@ vass_affordable_munitions_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -302,7 +436,32 @@ vass_engineer_corps_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -338,7 +497,32 @@ vass_professional_corps_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -377,7 +561,32 @@ vass_deep_reserve_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -416,7 +625,32 @@ vass_hunters_and_baggage_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 2
+		}
 	}
 	
 	allow = {
@@ -455,7 +689,18 @@ vass_cutting_edge_3 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 17
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 3
+		}
 	}
 	
 	allow = {
@@ -491,7 +736,18 @@ vass_affordable_munitions_3 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 17
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 3
+		}
 	}
 	
 	allow = {
@@ -527,7 +783,18 @@ vass_engineer_corps_3 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 17
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 3
+		}
 	}
 	
 	allow = {
@@ -563,7 +830,18 @@ vass_professional_corps_3 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 17
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 3
+		}
 	}
 	
 	allow = {
@@ -602,7 +880,18 @@ vass_deep_reserve_3 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 17
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 3
+		}
 	}
 	
 	allow = {
@@ -641,7 +930,18 @@ vass_hunters_and_baggage_3 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 17
+		calc_true_if = {
+				has_idea_group = quality_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = at_standing
+				has_idea_group = quantity_ideas
+				has_idea_group = adventurer_ideas_vaass
+				has_idea_group = leadership_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = infantry_ideas
+				amount = 3
+		}
 	}
 	
 	allow = {
