@@ -2,5 +2,5 @@
 git fetch Anbennar
 git checkout -b temp Anbennar/new-master
 git checkout main                               #or git checkout development
-git merge temp --allow-unrelated-histories
+git merge temp --allow-unrelated-histories		#Fix merge conflicts manually in the github desktop app
 git branch --delete temp
