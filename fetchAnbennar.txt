@@ -1,6 +1,12 @@
-# use from command line
+#One time use only
+git remote add https://bitbucket.org/JayBean/anbennar-eu4-fork-public-build/src/new-master/
+#To check if it worked
+git remote -v
+
+
+#To pull from Anbennar:
 git fetch Anbennar
 git checkout -b temp Anbennar/new-master
-git checkout main                               #or git checkout development
+git checkout development
 git merge temp --allow-unrelated-histories		#Fix merge conflicts manually in the github desktop app
 git branch --delete temp
