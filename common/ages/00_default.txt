@@ -201,7 +201,7 @@ age_of_discovery = {
 				NOT = { has_country_modifier = monstrous_nation }
 		 	}
 		 	modifier = {
-		 		manpower_recovery_speed = 0.35
+		 		manpower_recovery_speed = 0.15
 		 	}
 		 	ai_will_do = {
 		 		factor = 10
@@ -251,7 +251,8 @@ age_of_discovery = {
 						region = harpy_hills_region 
 						region = bulwar_proper_region
 						region = north_salahad_region
-						region = businor_salahad_region
+						region = businor_region
+						region = akan_region
 					}
 				}
 			}
@@ -262,8 +263,37 @@ age_of_discovery = {
 				factor = 100
 			}
 		}
+			ab_consolidation_of_haless = {
+			allow = {
+				capital_scope = { 
+					OR = {
+						region = rakhadesh_region
+						region = rahen_coast_region 
+						region = dhujat_region 
+						region = shamakhad_region
+						region = demon_hills_region
+						region = bomdan_region
+						region = xianjie_region
+						region = thidinkai_region
+						region = lupulan_rainforest_region
+						region = yanshen_coast_region
+						region = upper_yanshen_region
+						region = north_yanshen_region
+						region = shuvuushudi_region
+						region = odheongu_region
+					}
+				}
+			}
+			modifier = {
+				unjustified_demands = -0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+			}
+
+		}
 	}
-}
 
 #Age of Unraveling
 age_of_reformation = {
