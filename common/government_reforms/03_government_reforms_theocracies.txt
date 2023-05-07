@@ -1421,7 +1421,7 @@ magocracy_reform = {
 	}
 
 	modifiers = {	#for better spellcasting
-		all_power_cost = -0.05
+		all_power_cost = -0.025
 		
 		mages_influence_modifier = 0.1
 	}
