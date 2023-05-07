@@ -765,7 +765,7 @@ minara = {
 
 falah = {
 	movement_speed = 0.1
-	army_tradition = 0.5
+	discipline = 0.025
 	
 	potential = {
 		OR = {
