@@ -398,6 +398,7 @@ cb_humiliate = {
 			num_of_cities = 2
 			FROM = {
 				num_of_cities = 2
+				ai = no
 			}
 		}
 		is_neighbor_of = FROM
