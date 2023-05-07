@@ -110,6 +110,15 @@ age_of_discovery = {
 				has_country_flag = purged_warband
 			}
 		}
+
+		obj_suran_temples = {
+			allow = {
+				capital_scope = { superregion = bulwar_superregion }
+			}
+			owns_core_province = 601
+			owns_core_province = 631
+			owns_core_province = 643
+		}
 	}		
 	
 	abilities = {
@@ -751,6 +760,24 @@ age_of_absolutism = {
 			}
 			ai_will_do = {
 				factor = 1000
+			}
+		}
+
+		ab_sun_cult_resurgence = {
+			allow = {
+				OR = {
+					religion = bulwari_sun_cult
+					religion = old_bulwari_sun_cult
+					religion = the_jadd
+				}
+				government_rank = 3
+			}
+			effect = {
+				custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
+				set_country_flag = age_ability_sun_cult_resurgence_flag
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
