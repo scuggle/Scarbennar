@@ -275,7 +275,7 @@ deranne_army_of_deranne_mod = {
 	yearly_army_professionalism = 0.005
 	drill_gain_modifier = 0.33
 	drill_decay_modifier = -0.33
-	discipline = 0.05
+	discipline = 0.025
 	land_maintenance_modifier = -0.05
 	leader_cost = -0.1
 }
@@ -2911,7 +2911,7 @@ khozrugan_loyal_clans = {
 }
 
 khozrugan_defeated_pretender = {
-	discipline = 0.1
+	discipline = 0.05
 }
 
 khozrugan_unifiers_of_orcs = {
@@ -3000,7 +3000,7 @@ khozrugan_worg_cavalry = {
 }
 
 khozrugan_organized_army = {
-	discipline = 0.1
+	discipline = 0.05
 }
 
 khozrugan_new_subjects = {
@@ -16152,7 +16152,7 @@ azkare_swallow_command_bonus_small = {
 	mercenary_discipline = 0.025
 }
 azkare_fenghuang_command_bonus_massive = {
-	discipline = 0.1
+	discipline = 0.05
 }
 azkare_fenghuang_command_bonus_big = {
 	discipline = 0.05

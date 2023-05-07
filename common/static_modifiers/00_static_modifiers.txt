@@ -319,7 +319,7 @@ patriarch_authority_local = {
 #for the country
 patriarch_authority_global = {
 	raze_power_gain = 0.5
-	discipline = 0.1
+	discipline = 0.05
 	global_regiment_cost = -0.2
 	
 	global_unrest = 4

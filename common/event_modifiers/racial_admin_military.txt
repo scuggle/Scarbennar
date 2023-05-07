@@ -56,7 +56,7 @@ elven_military = {
 	#Gameplay: A very powerful and swift military that shines when its drilled and well-trained, however they replenish very slowly so its best to pick your battles
 
 	#Positives
-	discipline = 0.1					#2 SS / only disc in the game, makes them good throughout 
+	discipline = 0.5					#2 SS / only disc in the game, makes them good throughout 
 	drill_decay_modifier = -0.25	#1.5 A / to promote idea of well-trained army that you dont lose 
 	drill_gain_modifier = 1			#1 B / to promote drilling gameplay
 	movement_speed = 0.15			#1.5 C / swift elves
@@ -880,7 +880,7 @@ hobgoblin_administration = {		#Highly disciplined and structured society with li
 hobgoblin_military = {				#Highly ordered military focused on drill
 	#bonuses
 	yearly_army_professionalism = 0.002 	#1	All young hobgoblins are trained to fill military posts
-	discipline = 0.05			#1,5	Their structure and order lets them stay organised
+	discipline = 0.025			#1,5	Their structure and order lets them stay organised
 	shock_damage_received = -0.1		#0,5	They have learned to close ranks and defend against goblin and harimari charges
 	drill_gain_modifier = 1			#0,6	They drill a lot and are used to it
 	drill_decay_modifier = -0.25		#0,3	The experience stays with them and damned if they forget it

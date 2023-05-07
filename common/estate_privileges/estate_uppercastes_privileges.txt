@@ -810,7 +810,7 @@ estate_uppercastes_military_achievements = {
 	benefits = {
 	}
 	modifier_by_land_ownership = {
-		discipline = 0.10
+		discipline = 0.05
 	}
 	ai_will_do = {
 		factor = 0

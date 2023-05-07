@@ -1977,7 +1977,7 @@ war_master = {
 	monarch_power = MIL
 	
 	# Bonus
-	discipline = 0.05
+	discipline = 0.025
 	siege_ability = 0.1
 	
 	chance = {

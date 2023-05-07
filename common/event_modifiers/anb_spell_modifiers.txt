@@ -639,7 +639,7 @@ army_reformer_homunculus = {
 	country_military_power = 1
 }
 commandant_homunculus = { 
-	discipline = 0.05
+	discipline = 0.025
 	country_military_power = 1
 }
 grand_captain_homunculus = { 
