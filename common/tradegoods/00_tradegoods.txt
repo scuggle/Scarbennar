@@ -2172,11 +2172,12 @@ mithril = {
 	color = { 220 238 251 }
 	# Trading bonus
 	modifier = {
-		prestige = 1
+		shock_damage_received = -0.5
+		shock_damage = 0.5
 	}
 	province = {
-		shock_damage_received = -0.01
-		shock_damage = 0.02
+		local_prosperity_growth = -0.1
+		local_build_cost = -0.25
 	}
 	chance = {
 		factor = 1
