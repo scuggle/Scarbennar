@@ -1507,7 +1507,7 @@ army_reformer = {
 	}
 	
 	# Bonus
-	land_morale = 0.05
+	land_morale = 0.1
 	recover_army_morale_speed = 0.10
 	
 	skill_scaled_modifier = {
