@@ -222,4 +222,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2115;2825;canal;2115;-1;-1;-1;-1;-1;Wormway
 2059;2825;canal;1811;-1;-1;-1;-1;-1;Wormway
 
+380;404;sea;1301;-1;-1;-1;-1;rEurope
+4;9;sea;1270;-1;-1;-1;-1;rEurope
+9;29;sea;1274;-1;-1;-1;-1;rEurope
+516;452;sea;1298;-1;-1;-1;-1;rEurope
+452;413;sea;1303;-1;-1;-1;-1;rEurope
+93;85;sea;1264;-1;-1;-1;-1;rEurope
+86;40;sea;1292;-1;-1;-1;-1;rEurope
+
 -1;-1;;-1;-1;-1;-1;-1;-1;
