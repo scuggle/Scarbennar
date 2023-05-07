@@ -603,79 +603,6 @@ on_startup = {
 			hidden = yes
 		}
 	}
-
-	#### Dev click counter ###
-	every_country = {
-		if = {
-			limit = {
-				check_variable = {
-					which = dev_adm_clicks					
-					value = 1
-				}
-			}
-		}
-		else = {
-			set_variable = {
-				which = dev_adm_clicks
-				value = 0
-			}
-		}
-		
-	}
-	every_country = {
-		if = {
-			limit = {
-				check_variable = {
-					which = dev_dip_clicks					
-					value = 1
-				}
-			}
-		}
-		else = {
-			set_variable = {
-				which = dev_dip_clicks
-				value = 0
-			}
-		}
-	}
-	every_country = {
-		if = {
-			limit = {
-				check_variable = {
-					which = dev_mil_clicks					
-					value = 1
-				}
-			}
-		}
-		else = {
-			set_variable = {
-				which = dev_mil_clicks
-				value = 0
-			}
-		}
-	}
-	every_country = {
-		if = {
-			limit = {
-				check_variable = {
-					which = dev_sum_clicks					
-					value = 1
-				}
-			}
-		}
-		else = {
-			set_variable = {
-				which = dev_sum_clicks
-				value = 0
-			}
-		}
-	}
-	
-	# Yinquan
-	if = {
-		limit = { tag = Y26 NOT = { check_variable = { yinquanBattlesWon = 1 } } }
-		set_variable = { yinquanBattlesWon = 0 }
-	}
 }
 
 # country
@@ -1358,7 +1285,6 @@ on_religion_change = {
 
 	if = {
 		limit = { 
-			NOT = { tag = H66 } #Jaherian Exemplars
 			OR = {
 				religion_group = bulwari
 				has_country_flag = updating_isolationism_window
@@ -3222,8 +3148,6 @@ on_new_monarch = {
 		flavor_melakmengi.3	#liberates aegis tributary prompt
 		
 		harpy_events.122	#Harpy parentage insight
-		
-		varamhar_flavour.22	#Varamhar patron
 	}
 
 	country_event = { id = estate_organization.1 days = 35 }		#choose magical organization for mage estate
@@ -3882,7 +3806,6 @@ on_new_term_election = {
 		flavor_krakazol.200 #Krakazol Olzonog
 		flavor_newshire.11
 		flavor_cestirmark.1 #United Trollsbay elections
-		flavor_triarchy.1 #Triarchy elections
 	}
 
 	if = {
@@ -3936,7 +3859,6 @@ on_death_election = {
 		flavor_newshire.12
 		flavor_newshire.41
 		flavor_cestirmark.2 #United Trollsbay death election
-		flavor_triarchy.2 #Triarchy Election
 		flavour_yinquan.0	#Land of Thousand Shrines election event
 	}
 
@@ -4917,20 +4839,6 @@ on_adm_development = {
 	anb_on_development_effect = {
 		development = tax
 	}
-
-	#Dev Clicks
-    hidden_effect = {
-		owner = {
-			change_variable = {
-				which = dev_adm_clicks
-				value = 1
-			}
-			change_variable = {
-				which = dev_sum_clicks
-				value = 1
-			}
-		}
-	}
 }
 
 # province
@@ -4959,20 +4867,6 @@ on_dip_development = {
 	anb_on_development_effect = {
 		development = production
 	}
-
-	#Dev Clicks
-	hidden_effect = {
-		owner = {
-			change_variable = {
-				which = dev_dip_clicks
-				value = 1
-			}
-			change_variable = {
-				which = dev_sum_clicks
-				value = 1
-			}
-		}
-	}
 }
 
 # province
@@ -4999,20 +4893,6 @@ on_mil_development = {
 	
 	anb_on_development_effect = {
 		development = manpower
-	}
-
-	#Dev Clicks
-	hidden_effect = {
-		owner = {
-			change_variable = {
-				which = dev_mil_clicks
-				value = 1
-			}
-			change_variable = {
-				which = dev_sum_clicks
-				value = 1
-			}
-		}
 	}
 }
 
@@ -5658,21 +5538,6 @@ on_bi_yearly_pulse_3 = {
 			33 = { country_event = { id = flavor_vacyn.1002 } }
 			33 = { country_event = { id = flavor_vacyn.1003 } }
 		}
-	}
-
-	if = { #Bulwar Age 1 Ability
-		limit = {
-			has_country_flag = age_ability_monstrous_rule_flag
-			development_in_provinces = {
-				culture_is_human = yes
-				value = 100
-			}
-			OR = {
-				had_country_flag = { flag = age_ability_monstrous_rule_cooldown_flag duration = 1825 }
-				NOT = { has_country_flag = age_ability_monstrous_rule_cooldown_flag }
-			}
-		}
-		country_event = { id = bulwar_flavour.200 }
 	}
 }
 
@@ -9346,11 +9211,7 @@ on_province_owner_change = {
 				has_province_modifier = ravelian_lodge
 			}
 		}
-		remove_province_modifier = ravelian_society
-		remove_province_modifier = ravelian_lodge
-		owner = { country_event = { id = ravelian.21 } }
-		# explains why they're fleeing, only one copy will fire as can't have duped unhidden events with same id
-		# (if you remove the modifier in this event it will only remove it from one of the provinces you gained if you got multiple)
+		province_event = { id = ravelian.21 }
 	}
 
 	if = {
@@ -9630,7 +9491,7 @@ on_province_owner_change = {
 	province_event = { id = roadwarrior.6 days = 3 } #Roadwarrior looting stuff
 
 	on_province_owner_change_estate_privileges_effect = yes
-	province_event = { id = race_setup_events.15 }
+	province_event = { id = race_setup_events.15 days = 1 }
 
 	#reapply dungeon flags
 	if = {
@@ -10242,9 +10103,7 @@ on_leader_recruited = {
 
 # country
 on_general_recruited = {
-	
 	on_general_recruited_effect = yes #1.35
-}
 
 	#Anbennar
 	if = {
@@ -10727,7 +10586,6 @@ on_culture_demoted = {
 				NOT = { accepted_culture = maqeti }
 				NOT = { accepted_culture = masnsih }
 				NOT = { accepted_culture = sadnatu }
-				NOT = { accepted_culture = kuzarami }
 				NOT = { accepted_culture = bulwari_half_elf }
 			}
 		}
@@ -10740,17 +10598,7 @@ on_culture_demoted = {
 		remove_accepted_culture = maqeti
 		remove_accepted_culture = masnsih
 		remove_accepted_culture = sadnatu
-		remove_accepted_culture = kuzarami
 		remove_accepted_culture = bulwari_half_elf
-	}
-	if = {
-		limit = {
-			has_country_modifier = jaddari_masnsih_culture_modifier
-			OR = {
-				NOT = { accepted_culture = masnsih }
-			}
-		}
-		remove_country_modifier = jaddari_masnsih_culture_modifier
 	}
 }
 
@@ -11208,7 +11056,6 @@ on_create_vassal = {
 
 	if = {
 		limit = { 
-			NOT = { tag = H66 } #Jaherian Exemplars
 			OR = {
 				religion_group = bulwari
 				has_country_flag = updating_isolationism_window
@@ -11517,8 +11364,7 @@ on_country_released = {
 		country_event = { id = kheionism.2 }
 	}
 	if = {
-		limit = {
-			NOT = { tag = H66 } #Jaherian Exemplars 
+		limit = { 
 			OR = {
 				religion_group = bulwari
 				has_country_flag = updating_isolationism_window
@@ -12192,8 +12038,7 @@ on_country_creation = {
 	}
 
 	if = {
-		limit = {
-			NOT = { tag = H66 } #Jaherian Exemplars 
+		limit = { 
 			OR = {
 				religion_group = bulwari
 				has_country_flag = updating_isolationism_window
@@ -12594,55 +12439,6 @@ on_hre_dismantled = {
 
 on_new_age = {
 	remove_all_age_timed_modifiers = yes
-	if = {
-		limit = {
-			current_age = age_of_absolutism
-			OR = {
-				culture_group = escanni
-				primary_culture = marrodic
-				primary_culture = stone_dwarf
-				primary_culture = iron_dwarf
-				primary_culture = newfoot_halfling
-			}
-			OR = {
-				capital_scope = {
-					OR  = {
-						region = south_castanor_region
-						region = west_castanor_region
-						region = inner_castanor_region
-						area = cursewood_area
-						area = whistlevale_area
-					}
-				}
-				has_country_flag = luciande_escanni_wars_flag
-			}
-			total_development = 150
-			is_subject = no
-			NOT = {
-				any_known_country = {
-					OR = {
-						culture_group = escanni
-						primary_culture = marrodic
-						primary_culture = stone_dwarf
-						primary_culture = iron_dwarf
-						primary_culture = newfoot_halfling
-					}
-					capital_scope = {
-						OR  = {
-							region = south_castanor_region
-							region = west_castanor_region
-							region = inner_castanor_region
-							area = cursewood_area
-							area = whistlevale_area
-						}
-					}
-				total_development = 150
-				is_subject = no
-				}
-			}
-		}
-		country_event = { id = escanni_wars.200 }
-	}
 }
 
 #ROOT = province

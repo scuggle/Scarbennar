@@ -1165,7 +1165,7 @@ categories =  {
 		color = { 36 42 75 }
 
 		type = plains
-		sound_type = mountainss
+		sound_type = mountains
 
 		movement_cost = 0.90
 		supply_limit = 6		
