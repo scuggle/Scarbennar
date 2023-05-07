@@ -4505,12 +4505,12 @@ dwarovar_ensure_worker_rights = {
 		culture_group = dwarven 
 		NOT = { is_adventurer = yes }
 	}
-	trigger = { 
-		custom_trigger_tooltip = {
-			tooltip = dwarovar_ensure_worker_rights_tooltip
-			has_country_flag = hoardcurse_happened
-		}
-	}
+	#trigger = { 
+	#	custom_trigger_tooltip = {
+	#		tooltip = dwarovar_ensure_worker_rights_tooltip
+	#		has_country_flag = hoardcurse_happened
+	#	}
+	#}
 	lock_level_when_selected = yes
 
 	modifiers = {
