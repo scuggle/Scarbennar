@@ -938,8 +938,8 @@ nathalyne = {
 }
 
 begga = {
-	war_exhaustion = -0.02
-	global_monthly_devastation = -0.1
+	war_exhaustion = -0.03
+	global_monthly_devastation = -0.15
 	
 	potential = {
 		OR = {
