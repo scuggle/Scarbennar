@@ -1235,7 +1235,7 @@ religious_ideas = { #zealotry ideas #done
 	}
 
 	missionary_schools = {
-		relation_with_same_religion = 25
+		reverse_relation_with_same_religion = 25
 	}
 	church_attendance_duty = {
 		global_missionary_strength = 0.02
@@ -1243,6 +1243,7 @@ religious_ideas = { #zealotry ideas #done
 	divine_supremacy = {
 		max_absolutism = 10
 		church_influence_modifier = 0.05
+		church_loyalty_modifier = 0.05
 	}
 	devoutness = {
 		missionaries = 1

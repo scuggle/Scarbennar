@@ -1422,7 +1422,7 @@ estate_adventurers_free_company_rosters = {
 	penalties = {
 	}
 	benefits = {
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.025
 	}
 	ai_will_do = {
 		factor = 10

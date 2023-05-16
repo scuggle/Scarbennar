@@ -17,6 +17,7 @@ trade_goods = grain
 center_of_trade = 2
 
 capital = ""
+tribal_owner = B13
 
 is_city = yes
 

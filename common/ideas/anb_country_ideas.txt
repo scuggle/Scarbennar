@@ -5966,10 +5966,10 @@ F49_ideas = {
 F47_ideas = {
 	start = {
 		infantry_power = 0.1
-		development_cost = -0.15
+		development_cost = -0.10
 	}
 	bonus = {
-		discipline = 0.05
+		discipline = 0.025
 	}
 	trigger = {
 		tag = F47

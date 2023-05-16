@@ -340,7 +340,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 1630
+		is_year = 1610
 		has_global_flag = ravelianism_can_be_founded
 		is_religion_enabled = corinite
 		NOT = { is_religion_enabled = ravelian }

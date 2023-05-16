@@ -146,7 +146,7 @@ gold_hold = {
 	}
 	picture = "gold_hold"
 	local_gold_depletion_chance_modifier = -1
-	trade_goods_size_modifier = -0.2
+	trade_goods_size_modifier = -0.4
 
 	#Province scope
 	on_activation = {
