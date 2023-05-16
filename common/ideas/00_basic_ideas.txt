@@ -346,7 +346,7 @@ quality_ideas = { #Siege
 		artillery_barrage_cost = -0.5
 	}
 	massed_battery = {
-		artillery_bonus_vs_fort = 1
+		artillery_level_modifier = 1
 	}
 
 	ai_will_do = {
