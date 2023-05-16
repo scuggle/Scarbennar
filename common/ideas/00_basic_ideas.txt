@@ -183,6 +183,7 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 	}
 	adven_ide7 = {
 		#TODO: Mercenaries do not cost prof
+		merc_independent_from_trade_range = yes
 	}
 
 	ai_will_do = {
@@ -215,7 +216,7 @@ quantity_ideas = { # Logistics
 		global_supply_limit_modifier = 0.33
 	}
 	camp_followers = {
-		reinforcement_speed = 0.10
+		reinforce_speed = 0.10
 	}
 	garrison_conscription = {
 		infantry_power = 0.05
@@ -325,7 +326,7 @@ quality_ideas = { #Siege
 	}
 
 	private_to_marshal = {
-		war_exhaustion = -0.03 #TODO: Check
+		war_exhaustion = -0.03
 	}
 	quality_education = {
 		siege_ability = 0.15
@@ -342,7 +343,7 @@ quality_ideas = { #Siege
 	}
 	copper_bottoms = {
 		leader_land_seige = 1
-		rtillery_barrage_cost = -0.5
+		artillery_barrage_cost = -0.5
 	}
 	massed_battery = {
 		artillery_bonus_vs_fort = 1
@@ -353,7 +354,7 @@ quality_ideas = { #Siege
 	}
 }
 
-offensive_ideas = { #The Grand Plan
+offensive_ideas = { #Grand Plan
 	category = MIL
 
 	trigger = {
