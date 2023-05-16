@@ -8,7 +8,7 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	
 	mean_time_to_happen = {
-		years = 30
+		years = 50
 
 		modifier = {	#less likely to happen for non long-lived
 			factor = 0.5
