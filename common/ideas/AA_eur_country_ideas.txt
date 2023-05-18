@@ -1390,7 +1390,7 @@ A69_ideas = {
 #Frozenmaw TBD
 Z18_ideas = {
 	start = {
-		colonists = 1
+		war_exhaustion_cost = -0.20
 		reduced_liberty_desire = 10
 	}
 
