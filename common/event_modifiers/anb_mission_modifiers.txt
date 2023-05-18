@@ -2860,7 +2860,7 @@ grombar_melting_pot = {
 }
 
 grombar_strong_and_disciplined = {
-	discipline = 0.05
+	discipline = 0.025
 	land_morale	= 0.05
 }
 
