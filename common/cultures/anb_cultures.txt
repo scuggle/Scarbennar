@@ -1802,7 +1802,7 @@ harpy = {
 		primary = F27 #Harpylen, Firanya is their first matriarch
 		
 		dynasty_names = {
-			Firanyakin
+			Firanyakin Falahen
 		}
 		male_names = {
 			Aban Abazu Absol Adad Akur Aloros Anshar Arad Arashk Arhab Arsham Arvand Ashan Ashur Asor Atbin Athan Awbal Baraz Barid Barseen Bavar Behlil Berk Bullud Bupalos Cahit Dagan Darab Darian Dariush Dartaxes Demartos Demos Durul Duzan Duzar Duzi Ekrem Erbay Erol Erten Fazil Giz Hazan Hermeias Himmet Huran Husaam Hyaclos Idad Idris Ikelos Irran Iskrates Jahangir Jareer Kalib Kaptan Kartal Kaveh Kikud Korydon Laris Larza Limer Lykidas Marod Marodeen Mehran Mesten Nahroon Naram Numair Oktan Oreias Panthes Raafi Rabon Radin Rimush Saamir Sabum Saed Samiun Sargin Sepeh Serim Sharaf Suhlamu Temenos Theron Tozan Tydeos Udish Ufuk Yazkur Zaid Zamman Zimud Zimudar 
