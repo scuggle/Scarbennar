@@ -30,13 +30,21 @@ country_decisions = {
 
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 16
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
 			NOT = { exists = Z01 }
 
-			is_emperor = yes
+			OR = {
+				is_emperor = yes
+				AND = {
+					owns_core_province = 8 # Anbenncost
+					any_known_country = {
+						is_emperor = no
+					}
+				}
+			}
 
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 100
