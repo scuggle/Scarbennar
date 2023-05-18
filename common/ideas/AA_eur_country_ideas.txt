@@ -1407,7 +1407,7 @@ Z18_ideas = {
 		global_unrest = -1
 	}
 	Z18_two = {
-		local_assault_fort_ability = -0.25
+		assault_fort_ability = 0.25
 		
 	}
 	Z18_three = {
