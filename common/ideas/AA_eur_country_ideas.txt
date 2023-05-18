@@ -1386,3 +1386,44 @@ A69_ideas = {
  		artillery_power = 0.10						# 
  	}	
 }
+
+#Frozenmaw TBD
+Z18_ideas = {
+	start = {
+		global_tax_modifier = 0.1
+		reduced_liberty_desire = -10
+	}
+
+	bonus = {
+		production_efficiency = 0.15
+	}
+
+	trigger = {
+		tag = Z18
+	}
+	free = yes
+
+	Z18_one = {
+		global_unrest = -1
+	}
+	Z18_two = {
+		infantry_power = 0.1
+	}
+	Z18_three = {
+		defensiveness = 0.1
+		fort_maintenance_modifier = -0.1
+	}
+	Z18_four = {
+		free_adm_policy = 1
+	}
+	Z18_five = {
+		stability_cost_modifier = -0.15
+	}
+	Z18_six = {
+		discipline = 0.05
+	}
+	Z18_seven = {
+		naval_forcelimit_modifier = 0.2
+		global_sailors_modifier = 0.15
+	}
+}
