@@ -16520,11 +16520,13 @@ B59_ideas = {
 		improve_relation_modifier = 0.3
 	}
 	B59_vernman_heritage = {
-		monarch_military_power = 1
+		cavalry_power = 0.15
+		cavalry_shock = 0.3
 		may_recruit_female_generals = yes
 	}
 	B59_harvest_moon = {
 		global_trade_goods_size_modifier = 0.1
+		cavalry_cost = -0.15
 	}
 }
 
