@@ -184,6 +184,72 @@ colonial_endralliande = {
 }
 
 # Noruin
+colonial_trollsbay = {
+	color = { 213 54 67 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 8
+	native_ferocity = 2
+	native_hostileness = 5
+
+	trade_goods = {
+		fur = 15
+		fish = 3
+		naval_supplies = 4
+		grain = 4
+		tobacco = 8
+		cotton = 10
+		sugar = 1
+	}
+
+	culture = {
+		boek = 10
+	}
+
+	religion = {
+		weeping_mother = 10
+	}
+
+	provinces = {
+		#Trollsbay
+		1050 1049 1048 1047 1046 1045 1037 1035 1036 1033 1034 1038 1039 1043 1044 1042 1041 1040 1032 1030 1029
+		2685 1867 2410 1953 1952 1958 1954 1880 2614 1866 2741 1869
+		1933 1934 1937 1938 1943 1949 1935 1936                        
+
+		#Reapers Coast
+		1941 1930 1940 1865 1951 1925 1939 1942 1948 1944 1955 1947 1876 1945 1946 1870 1868 1872 1960 1130
+	}
+
+	# Generic
+	names = {
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				region = trollsbay_region
+				is_core = ROOT
+			}
+		}
+		name = "COLONIAL_NORUIN_Root_Culture_GetName_TROLLSBAY"
+	}
+	names = {
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				region = reapers_coast_region
+				is_core = ROOT
+			}
+		}
+		name = "COLONIAL_NORUIN_Root_Culture_GetName_REAPERS_COAST"
+	}
+
+	names = {
+		name = "COLONIAL_NORUIN_Root_Culture_GetName_TROLLSBAY"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
 colonial_noruin = {
 	color = { 213 54 36 }
 
@@ -218,7 +284,7 @@ colonial_noruin = {
 		1933 1934 1937 1938 1943 1949 1935 1936
 
 		#Reapers Coast
-		1941 1930 1940 1865 1951 1925 1939 1942 1948 1944 1955 1947 1876 1945 1946 1870 1868 1872 1960 1130
+		#1941 1930 1940 1865 1951 1925 1939 1942 1948 1944 1955 1947 1876 1945 1946 1870 1868 1872 1960 1130
 
 		#Bloodgroves
 		1123 1995 2459 1012 1117 1124 1119 2538 2450 2548 1996 1114 1116 1115 2557 2208 1113 2283 1111 1110 2437 1121 1120 1998 1999 1014 1013 1015 1016
