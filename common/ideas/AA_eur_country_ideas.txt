@@ -1390,12 +1390,12 @@ A69_ideas = {
 #Frozenmaw TBD
 Z18_ideas = {
 	start = {
-		global_tax_modifier = 0.1
-		reduced_liberty_desire = -10
+		colonists = 1
+		reduced_liberty_desire = 10
 	}
 
 	bonus = {
-		production_efficiency = 0.15
+		can_transfer_vassal_wargoal = yes
 	}
 
 	trigger = {
@@ -1407,23 +1407,25 @@ Z18_ideas = {
 		global_unrest = -1
 	}
 	Z18_two = {
-		infantry_power = 0.1
+		local_assault_fort_ability = -0.25
+		
 	}
 	Z18_three = {
-		defensiveness = 0.1
-		fort_maintenance_modifier = -0.1
+		vassal_forcelimit_bonus = 0.25
+		
 	}
 	Z18_four = {
-		free_adm_policy = 1
+		diplomatic_reputation = 1
+		relation_with_other_culture = 10
 	}
 	Z18_five = {
-		stability_cost_modifier = -0.15
+		infantry_power = 0.10
 	}
 	Z18_six = {
-		discipline = 0.05
+		vassal_income = 0.30
 	}
 	Z18_seven = {
-		naval_forcelimit_modifier = 0.2
+		vassal_naval_forcelimit_bonus = 0.25
 		global_sailors_modifier = 0.15
 	}
 }
