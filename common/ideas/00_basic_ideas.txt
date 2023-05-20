@@ -1478,25 +1478,26 @@ theocracy_gov_ideas = { #government: theocracy
 	
 	servants_of_god = {
 		global_missionary_strength = 0.01
+		missionary_maintenance_cost = -0.2
 	}
 	by_the_grace_of_god = {
-		harsh_treatment_cost = -0.20
-	}
-	friends_in_high_places = {
-		free_adm_policy = 1
-	}
-	flesh_is_weak = {
 		monarch_lifespan = 5
 	}
+	friends_in_high_places = {
+		country_admin_power = 2
+	}
+	flesh_is_weak = {
+		tolerance_own = 3
+	}
 	alpha_and_omega = {
-		tolerance_own = 2
+		global_tax_modifier = 0.33
 	}
 	conviction_of_sin = {
+		harsh_treatment_cost = -0.20
 		stability_cost_modifier = -0.2
 	}
 	martyrs = {
-		country_admin_power = 2
-		global_tax_modifier = 0.33
+		free_adm_policy = 1
 	}
 
 }
