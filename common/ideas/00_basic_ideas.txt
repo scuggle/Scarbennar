@@ -446,8 +446,6 @@ diplomatic_ideas = { #international ideas #done
 
 	foreign_embassies = {
 		envoy_travel_time = -0.5
-	}
-	foreign_embassies = { #1.35
 		dip_advisor_cost = -0.25
 	}
 	cabinet = {
