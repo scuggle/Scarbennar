@@ -359,6 +359,10 @@ country_decisions = {
 			NOT = { tag = A59 } #Corvuria
 			NOT = { tag = A32 } #Ibevar
 			NOT = { tag = Z01 }#EoA
+			OR = {
+				has_reform = adventurer_reform
+				tag = B25
+			}
 			
 			OR = {
 				ai = no

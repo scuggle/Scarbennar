@@ -4937,11 +4937,15 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = bodzak_zuvetva_scholar_modifier duration = 7300 }
+				
+			}
 
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = bodzak_zuvetva_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -4963,11 +4967,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = avo_zuvawok_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = avo_zuvawok_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -4989,11 +4996,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = kuikwiza_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = kuikwiza_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -5017,11 +5027,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = ikhanilawuli_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = ikhanilawuli_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -5043,11 +5056,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mbenilitye_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = mbenilitye_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -5069,11 +5085,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = fazwakyroa_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = fazwakyroa_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -5168,7 +5187,7 @@ angel_religion = {
 
 	mengi_myths = {	
 		color = { 79 91 137 }
-		icon = 103
+		icon = 113
 		country = {
 			core_decay_on_your_own = -0.33	#lol so it makes it annoying in the shadow swamp tide stuff
 			core_creation = -0.1
@@ -5184,7 +5203,7 @@ angel_religion = {
 
 		on_convert = {
 			change_religion = mengi_myths
-			set_isolationism = 9
+			add_isolationism = 6
 			if = { limit = { NOT = { has_country_flag = updating_isolationism_window } }
 				add_prestige = -100
 
@@ -5195,7 +5214,7 @@ angel_religion = {
 			}
 		}
 
-		# heretic = { ARDIMYANAR }
+		heretic = { ARDIMYANAR }
 	}
 
 	kamnielaferi = {	#literal translation is kamniel's farm, but its more like growth of kamniel
@@ -5209,7 +5228,7 @@ angel_religion = {
 			warscore_cost_vs_other_religion = -0.15
 		}
 		on_convert = {
-			change_religion = mengi_myths
+			change_religion = kamnielaferi
 			add_prestige = -100
 			
 			add_country_modifier = {
@@ -5257,7 +5276,7 @@ hag_religion = {
 
 	night_coven = {
 		color = { 6  6  6 }
-		icon = 93
+		icon = 112
 		country = {
 			no_religion_penalty = yes	#the night coven is a pervasive cult and doesnt require converts
 			warscore_cost_vs_other_religion = -0.15
@@ -5289,7 +5308,7 @@ hag_religion = {
 
 	night_coven_reformed = {
 		color = { 6  6  6 }
-		icon = 93
+		icon = 112
 		country = {
 			no_religion_penalty = yes	#the night coven is a pervasive cult and doesnt require converts
 			warscore_cost_vs_other_religion = -0.15
@@ -5326,7 +5345,7 @@ lizardfolk_religion = {
 
 	anzalkatsa = {	
 		color = { 104 155 55 }
-		icon = 93
+		icon = 110
 		country = {
 			global_unrest = -2
 			core_creation = -0.1
@@ -5349,7 +5368,7 @@ lizardfolk_religion = {
 
 	zaradyrra = {	
 		color = { 137 66 20 }
-		icon = 93
+		icon = 114
 		country = {
 			land_morale = 0.1
 			army_tradition_from_battle = 1
@@ -5384,7 +5403,7 @@ baashidi_religion = {
 
 	ilaakhidigaha_yaghin = {	
 		color = { 0 99 99 }
-		icon = 93
+		icon = 111
 		country = {
 			trade_range_modifier = 0.5
 			range = 0.5

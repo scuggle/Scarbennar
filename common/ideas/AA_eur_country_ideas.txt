@@ -1348,41 +1348,84 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 }
 
 #Coppertown
-A69_ideas = {
+#A69_ideas = {
+#	start = {
+# 		global_trade_goods_size_modifier = 0.10				#
+#		shock_damage_received = -0.10						#
+# 	}
+#
+# 	bonus = {
+# 		artillery_fire = 0.15							#
+# 	}
+#
+# 	trigger = {
+#		tag = A69
+# 	}
+# 	free = yes
+#
+#	A69_one = {
+# 		artillery_cost = -0.10						#
+#	}
+# 	A69_two = {
+# 		build_cost = -0.10
+# 		build_time = -0.10							#
+# 	}
+# 	A69_three = {
+# 		fire_damage = 0.15							#
+# 	}
+# 	A69_four = {
+# 		production_efficiency = 0.10				#
+# 	}
+# 	A69_five = {
+# 		merchants = 1								# 	
+#	}
+# 	A69_six = {
+# 		fort_maintenance_modifier = -0.2			# 
+# 	}
+# 	A69_seven = {
+# 		artillery_power = 0.10						# 
+# 	}	
+#}
+
+#Frozenmaw TBD
+Z18_ideas = {
 	start = {
- 		global_trade_goods_size_modifier = 0.10				#
-		shock_damage_received = -0.10						#
- 	}
-
- 	bonus = {
- 		artillery_fire = 0.15							#
- 	}
-
- 	trigger = {
-		tag = A69
- 	}
- 	free = yes
-
-	A69_one = {
- 		artillery_cost = -0.10						#
+		war_exhaustion_cost = -0.20
+		reduced_liberty_desire = 10
 	}
- 	A69_two = {
- 		build_cost = -0.10
- 		build_time = -0.10							#
- 	}
- 	A69_three = {
- 		fire_damage = 0.15							#
- 	}
- 	A69_four = {
- 		production_efficiency = 0.10				#
- 	}
- 	A69_five = {
- 		merchants = 1								# 	
+
+	bonus = {
+		can_transfer_vassal_wargoal = yes
 	}
- 	A69_six = {
- 		fort_maintenance_modifier = -0.2			# 
- 	}
- 	A69_seven = {
- 		artillery_power = 0.10						# 
- 	}	
+
+	trigger = {
+		tag = Z18
+	}
+	free = yes
+
+	Z18_one = {
+		global_unrest = -1
+	}
+	Z18_two = {
+		assault_fort_ability = 0.25
+		
+	}
+	Z18_three = {
+		vassal_forcelimit_bonus = 0.25
+		
+	}
+	Z18_four = {
+		diplomatic_reputation = 1
+		relation_with_other_culture = 10
+	}
+	Z18_five = {
+		infantry_power = 0.10
+	}
+	Z18_six = {
+		vassal_income = 0.30
+	}
+	Z18_seven = {
+		vassal_naval_forcelimit_bonus = 0.25
+		global_sailors_modifier = 0.15
+	}
 }

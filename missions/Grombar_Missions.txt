@@ -3427,7 +3427,7 @@ grombar_half_orc_missions_3 = {
 		effect = {
 			add_country_modifier = {
 				name = "grombar_strong_and_disciplined"
-				duration = 36500
+				duration = -1
 			}
 		}
 	}

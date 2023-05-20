@@ -2698,15 +2698,15 @@ silvermere={
 		200 200 255 
 	}
 	inland=yes
-	outgoing={
-		name="freecestir"
-		path={
-			357 352 349 
-		}
-		control={
-			3014.000000 1614.000000 
-		}
-	}
+	#outgoing={
+	#	name="freecestir"
+	#	path={
+	#		357 352 349 
+	#	}
+	#	control={
+	#		3014.000000 1614.000000 
+	#	}
+	#}
 	outgoing={
 		name="middle_alen"
 		path={
@@ -2870,15 +2870,15 @@ lower_alen={
 		64 95 184 
 	}
 	inland=yes
-	outgoing={
-		name="dameshead"
-		path={
-			216 151 
-		}
-		control={
-			2846.000000 1668.000000 
-		}
-	}
+	#outgoing={
+	#	name="dameshead"
+	#	path={
+	#		216 151 
+	#	}
+	#	control={
+	#		2846.000000 1668.000000 
+	#	}
+	#}
 	outgoing={
 		name="serpentshead"
 		path={
