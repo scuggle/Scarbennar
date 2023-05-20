@@ -54,7 +54,6 @@ country_event = {
 				OR = {
 					has_global_flag = delete_south_sarhal_region
 					has_global_flag = delete_north_aelantir_region
-					has_global_flag = delete_north_aelantir_region
 					has_global_flag = delete_bulwar_region
 					has_global_flag = delete_north_sarhal_region
 					has_global_flag = delete_south_aelantir_region
@@ -84,7 +83,11 @@ country_event = {
 				south_sarhal_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_north_aelantir_region }
-				north_america = { destroy_province_permanently = yes }
+				north_aelantir_superregion = { destroy_province_permanently = yes }
+				ynn_superregion = { destroy_province_permanently = yes }
+				eordand_superregion = { destroy_province_permanently = yes }
+				torn_sea_superregion = { destroy_province_permanently = yes }
+				#ruined_sea_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_south_aelantir_region }
 				south_america = { destroy_province_permanently = yes }
