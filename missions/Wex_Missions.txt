@@ -24,6 +24,7 @@ wex_slot_1 = {
 					who = A30
 					value = 200
 				}
+				is_subject = yes
 			}
 		}
 		
@@ -50,6 +51,7 @@ wex_slot_1 = {
 					who = A30
 					value = 200
 				}
+				is_subject = yes
 			}
 		}
 		
@@ -76,6 +78,7 @@ wex_slot_1 = {
 					who = A30
 					value = 200
 				}
+				is_subject = yes
 			}
 		}
 		
@@ -105,6 +108,7 @@ wex_slot_1 = {
 					who = A30
 					value = 180
 				}
+				is_subject = yes
 			}
 		}
 		
