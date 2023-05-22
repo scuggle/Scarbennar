@@ -630,9 +630,73 @@ on_startup = {
 		}
 		country_event = { id = medasi.1 }
 		# medasi succession setup event
-        }
+    }
 
-
+	#### Dev click counter ###
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_adm_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_adm_clicks
+				value = 0
+			}
+		}
+	}
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_dip_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_dip_clicks
+				value = 0
+			}
+		}
+	}
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_mil_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_mil_clicks
+				value = 0
+			}
+		}
+	}
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_sum_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_sum_clicks
+				value = 0
+			}
+		}
+	}
 }
 
 # country
@@ -4865,6 +4929,20 @@ on_adm_development = {
 	anb_on_development_effect = {
 		development = tax
 	}
+
+	#Dev Click Counter
+	hidden_effect = {
+        owner = {
+            change_variable = {
+                which = dev_adm_clicks
+                value = 1
+            }
+            change_variable = {
+                which = dev_sum_clicks
+                value = 1
+            }
+        }
+    }
 }
 
 # province
@@ -4893,6 +4971,20 @@ on_dip_development = {
 	anb_on_development_effect = {
 		development = production
 	}
+
+	#Dev Click Counter
+	hidden_effect = {
+        owner = {
+            change_variable = {
+                which = dev_dip_clicks
+                value = 1
+            }
+            change_variable = {
+                which = dev_sum_clicks
+                value = 1
+            }
+        }
+    }
 }
 
 # province
@@ -4920,6 +5012,20 @@ on_mil_development = {
 	anb_on_development_effect = {
 		development = manpower
 	}
+
+	#Dev Click Counter
+	hidden_effect = {
+        owner = {
+            change_variable = {
+                which = dev_mil_clicks
+                value = 1
+            }
+            change_variable = {
+                which = dev_sum_clicks
+                value = 1
+            }
+        }
+    }
 }
 
 on_overextension_pulse = {
