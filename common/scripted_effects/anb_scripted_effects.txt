@@ -3509,11 +3509,14 @@ destroy_province = {
 }
 
 destroy_province_permanently = {
-	hidden_effect = {
-		cede_province = ---
-		add_permanent_province_modifier = { name = cant_colonize duration = -1 }
-		add_colonysize = -1000
-	}
+    hidden_effect = {
+        cede_province = ---
+        add_permanent_province_modifier = { name = cant_colonize duration = -1 }
+        add_colonysize = -1000
+		set_base_manpower = 1
+		set_base_production = 1
+		set_base_tax = 1
+    }
 }
 
 decrease_monstrous_10 = {

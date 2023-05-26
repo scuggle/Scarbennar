@@ -423,6 +423,7 @@ lower_gov_cost_in_home_region_modifier = {
 
 cant_colonize = {
 	picture = "icon_cant_colonize"
+	trade_goods_size = -1
 }
 
 melkibet_gold_mine = {
