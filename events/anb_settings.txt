@@ -158,7 +158,7 @@ country_event = {
 				shikenkhiin_area = { destroy_province_permanently = yes }
 				onrek_area = { destroy_province_permanently = yes }
 				shik_dozein_area = { destroy_province_permanently = yes }
-				#shik_dazar_area = { destroy_province_permanently = yes } # to have working treasure fleet
+				shik_dazar_area = { destroy_province_permanently = yes } #needed to have working treasure fleet
 
 			}
 			if = { limit = { has_global_flag = delete_haless_region }

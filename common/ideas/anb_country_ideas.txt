@@ -10655,7 +10655,6 @@ H47_ideas = {
 		republican_tradition = 0.3
 		horde_unity = 1
 		diplomats = 1
-		colonists = -20
 	}
 
 	bonus = {
@@ -10699,7 +10698,6 @@ H47_ideas = {
 	start = {
 		trade_efficiency = 0.1
 		own_coast_naval_combat_bonus = 1
-		colonists = -20
 	}
 
 	bonus = {
