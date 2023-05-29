@@ -217,7 +217,7 @@ age_of_discovery = {
 		 	}
 		 }
 		
-		ab_spoils_of_escann = {
+		 ab_adventurers_of_escann = {
 		 	allow = {
 		 		capital_scope = { 
 		 			OR = {
@@ -230,8 +230,7 @@ age_of_discovery = {
 		 		}
 		 	}
 		 	modifier = {
-		 		loot_amount = 0.50
-		 		available_province_loot = 0.50
+		 		mercenary_cost = -0.3
 		 	}
 		 	ai_will_do = {
 		 		factor = 10
@@ -244,35 +243,42 @@ age_of_discovery = {
 				NOT = { has_age_ability = ab_justified_wars }
 			}
 			modifier = {
-				ae_impact = -0.25
+				ae_impact = -0.15
+				core_creation = -0.1
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 
-		ab_eborthil_ship_trade = {
+		ab_cannorian_exploration = {
 			allow = {
 				capital_scope = { 
 					OR = {
-						region = bahar_region 
-						region = ourdia_region 
-						region = harpy_hills_region 
-						region = bulwar_proper_region
-						region = north_salahad_region
+						region = lencenor_region
+						region = west_dameshead_region
+						region = east_dameshead_region
+						region = isles_of_lament_region
+						region = small_country_region
+						region = dragon_coast_region
+						region = the_borders_region
+						region = forlorn_vale_region
+						region = esmaria_region
 						region = businor_region
-						region = akan_region
+						region = alenic_frontier_region
+						region = alenic_reach_region
+						region = damescrown_region
 					}
 				}
 			}
 			modifier = {
-				global_ship_trade_power = 0.30
+				range = 0.5
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-			ab_consolidation_of_haless = {
+		ab_consolidation_of_haless = {
 			allow = {
 				capital_scope = { 
 					OR = {
@@ -295,14 +301,14 @@ age_of_discovery = {
 			}
 			modifier = {
 				unjustified_demands = -0.15
+				leader_siege = 1
 			}
 			ai_will_do = {
 				factor = 100
 			}
-			}
-
 		}
 	}
+}
 
 #Age of Unraveling
 age_of_reformation = {
@@ -488,42 +494,39 @@ age_of_reformation = {
 			}
 		}
 
-		ab_dwarovar_hold_redecorating = {
+		ab_serpentspine_wars_of_consolidation = {
 			allow = {
-				OR = {
-					culture_group = goblin
-					culture_group = kobold
-				}
 				capital_scope = { continent = serpentspine }
 			}
 			modifier = {
-				build_cost = -0.2
+				siege_ability = 0.25
+				assault_fort_ability = 0.5
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		ab_aelantir_rush = {
+		ab_spirit_of_adean = {
 			allow = {
 				religion = regent_court
 			}
 			modifier = {
-				global_religious_conversion_resistance = 0.5
-				global_heretic_missionary_strength = 0.02
+				land_morale = 0.1
+				global_missionary_strength = 0.02
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		ab_elven_reclaimers = {
+		ab_elven_renaissance = {
 			allow = {
 				culture_group = elven
 			}
 			modifier = {
-				global_colonial_growth = 60
-				prestige = 0.5
+				advisor_cost = -0.15
+				prestige = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -540,6 +543,18 @@ age_of_reformation = {
 			}
 			modifier = {
 				shock_damage = 0.15
+				manpower_recovery_speed = 0.10
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_reavers_resurgent = {
+			allow = {
+				culture_group = gerudian
+			}
+			modifier = {
+				naval_morale = 0.2
 			}
 			ai_will_do = {
 				factor = 100
@@ -626,9 +641,9 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_rival_change = {
+		ab_wars_of_supremacy = {
 			modifier = {
-				rival_change_cost = -0.5
+				province_warscore_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 0
@@ -637,7 +652,7 @@ age_of_absolutism = {
 
 		ab_rival_border_fort = {
 			modifier = {
-				rival_border_fort_maintenance = -1.0
+				fort_maintenance_modifier = -0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -684,7 +699,7 @@ age_of_absolutism = {
 		}
 	
 	
-		ab_direct_rule_in_escann = {
+		ab_iron_fist_over_bulwar = {
 			allow = {
 				capital_scope = { 
 					OR = {
@@ -704,16 +719,17 @@ age_of_absolutism = {
 			}
 		}
 		
-		ab_decadent_web_of_lies = {
+		ab_anti_magic_measures = {
 			allow = {
 				OR = {
-				culture_group = gnomish
-				culture_group = kobold
-				culture_group = goblin
+					culture_group = gnomish
+					culture_group = kobold
+					culture_group = goblin
 				}
 			}
 			modifier = {
-				fire_damage = 0.10
+				fire_damage = 0.05
+				shock_damage_received = -0.05
 			}
 			ai_will_do = {
 				factor = 10
@@ -750,9 +766,9 @@ age_of_absolutism = {
 			}
 	 	}
 
-		ab_dwarven_reclamation = {
+		ab_serpentspine_reclamation = {
 			allow = {
-				culture_group = dwarven
+				#culture_group = dwarven
 				capital_scope = { continent = serpentspine }
 			}
 			effect = {
@@ -914,7 +930,7 @@ age_of_revolutions = {
 		
 		ab_backrow_artillery = {
 			modifier = {
-				backrow_artillery_damage = 0.20
+				backrow_artillery_damage = 0.1
 			}
 			ai_will_do = {
 				factor = 10
@@ -939,7 +955,7 @@ age_of_revolutions = {
 		}
 		ab_artificer_machinations_of_war = {
 		 	modifier = {
-		 		fire_damage = 0.25
+		 		fire_damage = 0.15
 		 	}
 		 	ai_will_do = {
 		 		factor = 100
@@ -955,23 +971,34 @@ age_of_revolutions = {
 		 }
 		ab_anbennarian_resurgence = {
 		 	allow = {
-		 		tag = Z01
+		 		OR = {
+					tag = Z01
+					is_part_of_hre = yes
+				}
 		 	}
 		 	modifier = {
-		 		fire_damage_received = -0.33
+		 		fire_damage_received = -0.15
 		 		global_unrest = -1
 		 	}
 		 	ai_will_do = {
 		 		factor = 100
 		 	}
 		 }
-		ab_orcish_nation = {
+		ab_legacy_of_monsters = {
 		 	allow = {
-		 		culture_group = orcish
+		 		OR = {
+					culture_group = orcish
+					culture_group = harpy
+					culture_group = goblin
+					culture_group = kobold
+					culture_group = hobgoblin
+					culture_group = giantkind
+					culture_group = centaur
+				}
 		 	}
 		 	modifier = {
-		 		development_cost = -0.25
-		 		defensiveness = 0.5
+		 		development_cost = -0.15
+		 		build_cost = -0.05
 		 	}
 			ai_will_do = {
 				factor = 100
