@@ -57,51 +57,21 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		release_with_religion_and_culture = { tag = Z40 religion = regent_court culture = east_damerian }
-		create_subject = {
-			subject_type = autonomous_vassal
-			subject = Z40
+		add_casus_belli = {
+			target = Z40
+			type = cb_vassalize_mission
+			months = 120
 		}
-		Z40 = { 
-			remove_opinion = {
-				who = A30
-				modifier = released_vassal
-				}
-			add_opinion = {
-				who = A30
-				modifier = wex_loyalist_rule
-				}
-			}
-		release_with_religion_and_culture = { tag = Z41 religion = regent_court culture = east_damerian }
-		create_subject = {
-			subject_type = autonomous_vassal
-			subject = Z41
+		add_casus_belli = {
+			target = Z41
+			type = cb_vassalize_mission
+			months = 120
 		}
-		Z41 = { 
-			remove_opinion = {
-				who = A30
-				modifier = released_vassal
-				}
-			add_opinion = {
-				who = A30
-				modifier = wex_loyalist_rule
-				}
-			}
-		release_with_religion_and_culture = { tag = Z42 religion = regent_court culture = moon_elf }
-		create_subject = {
-			subject_type = autonomous_vassal
-			subject = Z42
+		add_casus_belli = {
+			target = Z42
+			type = cb_vassalize_mission
+			months = 120
 		}
-		Z42 = { 
-			remove_opinion = {
-				who = A30
-				modifier = released_vassal
-				}
-			add_opinion = {
-				who = A30
-				modifier = wex_loyalist_rule
-				}
-			}
 		set_country_flag = lothane_benevolent
 	}
 	option = {
@@ -134,7 +104,24 @@ country_event = {
 				}
 			}
 		}
-		
+		2 = {
+			add_claim = A30
+		}
+		5 = {
+			add_claim = A30
+		}
+		276 = {
+			add_claim = A30
+		}
+		281 = {
+			add_claim = A30
+		}
+		330 = {
+			add_claim = A30
+		}
+		910 = {
+			add_claim = A30
+		}
 		add_stability = 1
 		set_country_flag = lothane_conqueror
 		
