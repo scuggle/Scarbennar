@@ -2132,10 +2132,10 @@ obrtrol_missiontree_4_b = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			yyl_moista_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#yyl_moista_region = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 		}
 		
 		effect = {
