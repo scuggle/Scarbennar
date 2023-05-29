@@ -441,9 +441,6 @@ eordand_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			isles_of_transition_area = {
-				add_permanent_claim = ROOT
-			}
 			unstill_waters_area = {
 				add_permanent_claim = ROOT
 			}
@@ -1129,7 +1126,14 @@ eordand_2 = {
 		
 		effect = {
 			if = {
-				limit = { NOT = { 2088 = { has_province_modifier = caamas_urdea_samrad } } }
+				limit = {
+					NOT = {
+						OR = {
+							2088 = { has_province_modifier = caamas_urdea_samrad }
+							2088 = { has_province_modifier = kairncal_urdea_samrad }
+						}
+					}
+				}
 				2088 = { 
 					add_province_modifier = { name = caamas_urdea_samrad duration = -1 }
 					change_province_name = "Urdea-Samrad" #New South Summer
@@ -1837,8 +1841,8 @@ eordand_spring_3 = {
 			add_government_reform = eordand_academical_realm
 			hidden_effect = {
 				set_country_flag = eord_seasonal_completed
-				swap_non_generic_missions = yes
 			}
+			swap_non_generic_missions = yes
 		} 
 	}
 }
@@ -1919,8 +1923,8 @@ eordand_summer_3 = {
 			add_government_reform = eordand_sunlit_thalassocracy
 			hidden_effect = {
 				set_country_flag = eord_seasonal_completed
-				swap_non_generic_missions = yes
 			}
+			swap_non_generic_missions = yes
 		} 
 	}
 }
@@ -1998,8 +2002,8 @@ eordand_autumn_3 = {
 			add_government_reform = eordand_legionary_command
 			hidden_effect = {	
 				set_country_flag = eord_seasonal_completed
-				swap_non_generic_missions = yes
 			}
+			swap_non_generic_missions = yes
 		} 
 	}
 }
@@ -2117,8 +2121,8 @@ eordand_winter_3 = {
 			add_government_reform = eordand_frozen_heart
 			hidden_effect = {
 				set_country_flag = eord_seasonal_completed
-				swap_non_generic_missions = yes
 			}
+			swap_non_generic_missions = yes
 		} 
 	}
 }
@@ -2258,8 +2262,8 @@ eordand_eordellon_3 = {
 			add_government_reform = eordand_lord_regent_domanrod
 			hidden_effect = {
 				set_country_flag = eord_seasonal_completed
-				swap_non_generic_missions = yes
 			}
+			swap_non_generic_missions = yes
 		} 
 	}
 }
@@ -4681,9 +4685,6 @@ eordand_5_2 = {
 				add_permanent_claim = ROOT
 			}
 			boek_river_area = {
-				add_permanent_claim = ROOT
-			}
-			bushbanks_area = {
 				add_permanent_claim = ROOT
 			}
 			yanekin_area = {

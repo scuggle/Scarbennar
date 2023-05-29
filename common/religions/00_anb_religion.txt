@@ -812,19 +812,19 @@ kheteratan = {
 						type = ADM
 						cost = 50
 
-						stability_cost_modifier = -0.1
+						stability_cost_modifier = -0.2
 					}
 					rebuild_the_nation = {
 						type = DIP
 						cost = 50
 
-						production_efficiency = 0.05
+						production_efficiency = 0.1
 					}
 					vanquish_the_invaders = {
 						type = MIL
 						cost = 50
 
-						manpower_recovery_speed = 0.1
+						manpower_recovery_speed = 0.2
 					}
 				}
 			}
@@ -845,19 +845,19 @@ kheteratan = {
 						type = ADM
 						cost = 50
 
-						technology_cost = -0.05
+						technology_cost = -0.1
 					}
 					tutor_the_people = {
 						type = DIP
 						cost = 50
 
-						global_institution_spread = 0.2
+						global_institution_spread = 0.4
 					}
 					control_the_satraps = {
 						type = MIL
 						cost = 50
 
-						reduced_liberty_desire = 10
+						reduced_liberty_desire = 20
 					}
 				}
 			}
@@ -878,19 +878,19 @@ kheteratan = {
 						type = ADM
 						cost = 50
 
-						yearly_absolutism = 0.5
+						yearly_absolutism = 1
 					}
 					organize_the_guilds = {
 						type = DIP
 						cost = 50
 
-						administrative_efficiency = 0.025
+						administrative_efficiency = 0.05
 					}
 					repel_the_foreigners = {
 						type = MIL
 						cost = 50
 
-						land_maintenance_modifier = -0.075
+						land_maintenance_modifier = -0.15
 					}
 				}
 			}
@@ -911,19 +911,19 @@ kheteratan = {
 						type = ADM
 						cost = 50
 
-						autonomy_change_time = -0.5
+						autonomy_change_time = -1
 					}
 					integrate_the_barbarians = {
 						type = DIP
 						cost = 50
 
-						diplomatic_annexation_cost = -0.1
+						diplomatic_annexation_cost = -0.2
 					}
 					marshal_the_armies = {
 						type = MIL
 						cost = 50
 
-						manpower_in_true_faith_provinces = 0.1
+						manpower_in_true_faith_provinces = 0.2
 					}
 				}
 			}
@@ -1327,7 +1327,7 @@ dwarven = {
 
 		heretic = { DEIST }
 
-		holy_sites = { 4119 4311 2931 4078 4093 2963 4269 }
+		holy_sites = { 4119 4039 2931 4078 526 2963 4269 }
 
 		blessings = {
 			ancestor_dagrin
@@ -1344,7 +1344,7 @@ dwarven = {
 
 	dwarven_pantheon = {
 		color = { 33 64 96 }
-		icon = 69
+		icon = 106
 		allowed_conversion = {}
 		country = {
 			tolerance_own = 2
@@ -1360,10 +1360,7 @@ dwarven = {
 			change_religion = dwarven_pantheon
 			add_prestige = -100
 
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}
+			#add_country_modifier = { name = conversion_zeal duration = 3650 }
 		}
 
 		heretic = { DEIST }
@@ -2072,7 +2069,7 @@ dragon_cult = {
 		country = {
 			loot_amount = 0.5
 			available_province_loot = 0.5
-			church_power_modifier = -0.35
+			church_power_modifier = -0.40
 		}
 		country_as_secondary = {
 			loot_amount = 0.2
@@ -2120,6 +2117,32 @@ dragon_cult = {
 			gold_dragon_2
 			gold_dragon_3
 			rainbow_dragon_1
+			
+			# Locked version of cults
+			red_dragon_2_locked
+			red_dragon_3_locked
+			blue_dragon_2_locked
+			blue_dragon_3_locked
+			green_dragon_2_locked
+			green_dragon_3_locked
+			black_dragon_2_locked
+			black_dragon_3_locked
+			white_dragon_2_locked
+			white_dragon_3_locked
+			purple_dragon_2_locked
+			purple_dragon_3_locked
+			brown_dragon_2_locked
+			brown_dragon_3_locked
+			brass_dragon_2_locked
+			brass_dragon_3_locked
+			copper_dragon_2_locked
+			copper_dragon_3_locked
+			bronze_dragon_2_locked
+			bronze_dragon_3_locked
+			silver_dragon_2_locked
+			silver_dragon_3_locked
+			gold_dragon_2_locked
+			gold_dragon_3_locked
 		}
 
 		celebrate = {
@@ -2256,13 +2279,14 @@ harpy_cults = {
 		icon = 41
 		country = {
 			leader_land_shock = 1
-			tolerance_heathen = 3
+			leader_land_manuever = 1
 		}
 		country_as_secondary = {
 			leader_land_shock = 1
 		}
 
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		can_have_secondary_religion = yes
 		aspects = {
 			harpy_seek_powerful_egg_aspect
 			harpy_fair_winds_aspect
@@ -2513,6 +2537,31 @@ aelantiri = {
 
 	}
 
+	skincarvers = {
+		icon = 97
+		color = { 82 59 135 }
+		allowed_conversion = {
+		}
+		country = {
+			prestige_decay = -0.01
+			all_power_cost = -0.025
+		}
+		country_as_secondary = {
+			all_power_cost = -0.0125
+		}
+		on_convert = {
+			change_religion = skincarvers
+			add_prestige = -100
+			add_country_modifier = {
+
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		heretic = { LEH'OREALL }
+
+	}
+
 	
 
 	harmonized_modifier = harmonized_aelantiri
@@ -2563,7 +2612,7 @@ cheshoshi_religion = {
 	crusade_name = HOLY_WAR
 }
 
-harafe = {
+harafic = {
 	kalun_masks = {
 		color = { 210 20 60 }
 		icon = 62
@@ -2636,8 +2685,39 @@ harafe = {
 		}
 		heretic = { DI'IIKUNAIL'NE }
 	}
+	jaakaiin = {
+		color = { 32 178 170}
+		icon = 107
+		allowed_conversion = {
 
-	harmonized_modifier = harmonized_harafe
+		}
+
+		country = {
+			production_efficiency = 0.1
+			embracement_cost = -0.25
+		}
+
+		country_as_secondary = {
+			production_efficiency = 0.05
+		}
+		
+		province = {
+			local_missionary_strength = 0.02	#easy to convert
+		}
+		personal_deity = yes
+
+		on_convert = {
+			change_religion = jaakaiin
+			add_prestige = -100
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		heretic = { CH'OOKAIIN }
+	}
+
+	harmonized_modifier = harmonized_harafic
 
 	crusade_name = HOLY_WAR
 }
@@ -4736,7 +4816,7 @@ giantkin = {
 		province = {
 			local_hostile_attrition = 1
 		}
-		holy_sites = { 995 985 740 4208 5323 }
+		holy_sites = { 995 985 740 4208 4119 }
 
 		blessings = {
 			blessing_jormir
@@ -4857,11 +4937,15 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = bodzak_zuvetva_scholar_modifier duration = 7300 }
+				
+			}
 
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = bodzak_zuvetva_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -4883,11 +4967,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = avo_zuvawok_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = avo_zuvawok_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -4909,11 +4996,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = kuikwiza_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = kuikwiza_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -4937,11 +5027,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = ikhanilawuli_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = ikhanilawuli_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -4963,11 +5056,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mbenilitye_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = mbenilitye_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -4989,11 +5085,14 @@ tanibic_religion = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
+				add_adm_power = -50
 				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT}
-
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = fazwakyroa_scholar_modifier duration = 7300 }
+				
+			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = starry_eye_scholar_modifier
+			invite_scholar_modifier_display = fazwakyroa_scholar_modifier
 
 			picture = "GFX_icon_high_philosophy_school_starry_eye"
 
@@ -5005,7 +5104,7 @@ tanibic_religion = {
 
 	avo_nakavy = {	
 		color = { 34 35 120 }
-		icon = 93
+		icon = 105
 		country = {
 			global_tax_modifier = 0.1
 			global_sailors_modifier = 0.1
@@ -5030,7 +5129,7 @@ tanibic_religion = {
 
 	medasi_pantheon = {	
 		color = { 52 140 49 }
-		icon = 93
+		icon = 108
 		country = {
 			tolerance_own = 2
 			warscore_cost_vs_other_religion = -0.15
@@ -5053,7 +5152,7 @@ tanibic_religion = {
 
 	fangaula_pantheon = {	
 		color = { 79 91 137 }
-		icon = 93
+		icon = 109
 		country = {
 			tolerance_own = 2
 			warscore_cost_vs_other_religion = -0.15
@@ -5083,12 +5182,12 @@ angel_religion = {
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 57 }
 
-	center_of_religion = 5710 #Kunolo
+	center_of_religion = 6118
 	defender_of_faith = yes
 
 	mengi_myths = {	
 		color = { 79 91 137 }
-		icon = 93
+		icon = 113
 		country = {
 			core_decay_on_your_own = -0.33	#lol so it makes it annoying in the shadow swamp tide stuff
 			core_creation = -0.1
@@ -5099,22 +5198,28 @@ angel_religion = {
 		country_as_secondary = {
 			core_decay_on_your_own = -0.2
 		}
+
+		uses_isolationism = yes
+
 		on_convert = {
 			change_religion = mengi_myths
-			add_prestige = -100
-			
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
+			add_isolationism = 6
+			if = { limit = { NOT = { has_country_flag = updating_isolationism_window } }
+				add_prestige = -100
+
+				add_country_modifier = {
+					name = "conversion_zeal"
+					duration = 3650
+				}
 			}
 		}
 
 		heretic = { ARDIMYANAR }
 	}
 
-	Kamnielaferi = {	#literal translation is kamniel's farm, but its more like growth of kamniel
-		color = { 79 91 137 }
-		icon = 93
+	kamnielaferi = {	#literal translation is kamniel's farm, but its more like growth of kamniel
+		color = {  126 18 69 }
+		icon = 103
 		country = {
 			tolerance_own = 2
 			warscore_cost_vs_other_religion = -0.15
@@ -5123,7 +5228,7 @@ angel_religion = {
 			warscore_cost_vs_other_religion = -0.15
 		}
 		on_convert = {
-			change_religion = mengi_myths
+			change_religion = kamnielaferi
 			add_prestige = -100
 			
 			add_country_modifier = {
@@ -5171,7 +5276,7 @@ hag_religion = {
 
 	night_coven = {
 		color = { 6  6  6 }
-		icon = 93
+		icon = 112
 		country = {
 			no_religion_penalty = yes	#the night coven is a pervasive cult and doesnt require converts
 			warscore_cost_vs_other_religion = -0.15
@@ -5203,7 +5308,7 @@ hag_religion = {
 
 	night_coven_reformed = {
 		color = { 6  6  6 }
-		icon = 93
+		icon = 112
 		country = {
 			no_religion_penalty = yes	#the night coven is a pervasive cult and doesnt require converts
 			warscore_cost_vs_other_religion = -0.15
@@ -5240,7 +5345,7 @@ lizardfolk_religion = {
 
 	anzalkatsa = {	
 		color = { 104 155 55 }
-		icon = 93
+		icon = 110
 		country = {
 			global_unrest = -2
 			core_creation = -0.1
@@ -5263,7 +5368,7 @@ lizardfolk_religion = {
 
 	zaradyrra = {	
 		color = { 137 66 20 }
-		icon = 93
+		icon = 114
 		country = {
 			land_morale = 0.1
 			army_tradition_from_battle = 1
@@ -5298,7 +5403,7 @@ baashidi_religion = {
 
 	ilaakhidigaha_yaghin = {	
 		color = { 0 99 99 }
-		icon = 93
+		icon = 111
 		country = {
 			trade_range_modifier = 0.5
 			range = 0.5
@@ -5351,6 +5456,34 @@ baashidi_religion = {
 
 		heretic = { JINN_CULTISTS }
 	}
+
+	jinn_cult = {	#here for potential MT stuff
+		color = { 50 50 200 }
+		icon = 93
+		country = {
+			all_power_cost = -0.025
+			mages_loyalty_modifier = 0.1
+			tolerance_heretic = -2
+		}
+		country_as_secondary = {
+			mages_loyalty_modifier = 0.1
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		personal_deity = no
+		on_convert = {
+			change_religion = jinn_cult
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+
+		heretic = { HABAB_ZARR }
+	}
 	
 	harmonized_modifier = harmonized_baashidi
 	
@@ -5366,7 +5499,7 @@ tanizu_religion = {
 
 	beast_memory = {	
 		color = { 222 80 46 }
-		icon = 93
+		icon = 104
 		country = {
 			shock_damage = 0.1
 			may_recruit_female_generals = yes
@@ -5376,7 +5509,7 @@ tanizu_religion = {
 			shock_damage = 0.1
 		}
 		province = {
-			local_missionary_strength = -0.02
+			local_missionary_strength = -0.01
 		}
 		personal_deity = no
 

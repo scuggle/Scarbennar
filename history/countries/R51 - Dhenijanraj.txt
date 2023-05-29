@@ -11,10 +11,11 @@ add_accepted_culture = dhukharuved
 add_accepted_culture = sarniryabsad
 
 religion = high_philosophy
-technology_group = tech_harimari
+technology_group = tech_west_harimari
 capital = 4411
 religious_school = golden_palace_school
 historical_rival = R38
+historical_friend = R07
 
 1000.1.1 = {
     set_estate_privilege = estate_mages_organization_state

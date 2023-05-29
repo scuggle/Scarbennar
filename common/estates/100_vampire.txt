@@ -10,13 +10,13 @@ estate_vampires = {
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		harsh_treatment_cost = -0.5
-		stability_cost_modifier = -0.5
-		global_tax_modifier = 0.3
+		harsh_treatment_cost = -0.25
+		stability_cost_modifier = -0.25
+		global_tax_modifier = 0.2
 	}
 	country_modifier_neutral = {
-		harsh_treatment_cost = -0.25
-		global_tax_modifier = 0.2
+		harsh_treatment_cost = -0.125
+		global_tax_modifier = 0.1
 	}	
 	country_modifier_angry = {
 		global_unrest = 2

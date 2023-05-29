@@ -1,0 +1,14 @@
+#No previous file for Banten 
+owner = X21
+controller = X21
+add_core = X21
+culture = lion_command
+religion = goblinic_shamanism
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = slaves
+capital = " " 
+is_city = yes
+add_core = R01
+add_core = S76

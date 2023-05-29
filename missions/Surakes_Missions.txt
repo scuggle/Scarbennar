@@ -46,7 +46,6 @@ surakes_slot_2 = {
 		position = 15
 	
 		provinces_to_highlight = {
-			ROOT = { NOT = { has_active_policy = the_education_act } }
 			OR = {
 				AND = {
 					region = bahar_region
@@ -127,59 +126,56 @@ surakes_slot_2 = {
 		}
 		
 		trigger = { 
-			OR = {
-				has_active_policy = the_education_act
-				AND = { 
-					num_of_owned_provinces_with = {
-						value = 5
-						region = bahar_region
-						OR = {
-							culture_group = bulwari
-							culture_group = elven
-							culture_group = dwarven
-						}
-						has_building = university
+			AND = { 
+				num_of_owned_provinces_with = {
+					value = 5
+					region = bahar_region
+					OR = {
+						culture_group = bulwari
+						culture_group = elven
+						culture_group = dwarven
 					}
-					num_of_owned_provinces_with = {
-						value = 5
-						region = bulwar_proper_region
-						OR = {
-							culture_group = bulwari
-							culture_group = elven
-							culture_group = dwarven
-						}
-						has_building = university
+					has_building = university
+				}
+				num_of_owned_provinces_with = {
+					value = 5
+					region = bulwar_proper_region
+					OR = {
+						culture_group = bulwari
+						culture_group = elven
+						culture_group = dwarven
 					}
-					num_of_owned_provinces_with = {
-						value = 5
-						region = harpy_hills_region
-						OR = {
-							culture_group = bulwari
-							culture_group = elven
-							culture_group = dwarven
-						}
-						has_building = university
+					has_building = university
+				}
+				num_of_owned_provinces_with = {
+					value = 5
+					region = harpy_hills_region
+					OR = {
+						culture_group = bulwari
+						culture_group = elven
+						culture_group = dwarven
 					}
-					num_of_owned_provinces_with = {
-						value = 5
-						region = far_bulwar_region
-						OR = {
-							culture_group = bulwari
-							culture_group = elven
-							culture_group = dwarven
-						}
-						has_building = university
+					has_building = university
+				}
+				num_of_owned_provinces_with = {
+					value = 5
+					region = far_bulwar_region
+					OR = {
+						culture_group = bulwari
+						culture_group = elven
+						culture_group = dwarven
 					}
-					num_of_owned_provinces_with = {
-						value = 5
-						region = far_salahad_region
-						OR = {
-							culture_group = bulwari
-							culture_group = elven
-							culture_group = dwarven
-						}
-						has_building = university
+					has_building = university
+				}
+				num_of_owned_provinces_with = {
+					value = 5
+					region = far_salahad_region
+					OR = {
+						culture_group = bulwari
+						culture_group = elven
+						culture_group = dwarven
 					}
+					has_building = university
 				}
 			}
 		}
@@ -461,6 +457,15 @@ surakes_slot_3 = {
 						}
 					}
 				}
+				custom_trigger_tooltip = {
+					tooltip = SURAKES_all_kuzarami_tooltip
+					NOT = {
+						bulwar_superregion = {
+							culture = kuzarami
+							NOT = { owned_by = ROOT }
+						}
+					}
+				}
 			}
 		}
 		
@@ -608,10 +613,6 @@ surakes_slot_3 = {
 					religious_unity = 1
 				}
 				AND = {
-					OR = {
-						has_active_policy = cultural_unity
-						has_active_policy = cultural_recognition_act
-					}
 					religious_unity = 1
 				}
 			}

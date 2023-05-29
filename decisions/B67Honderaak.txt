@@ -3,6 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			primary_culture = hill_gnoll
+			tag = A49
 			NOT = { has_country_flag = formed_honderaak_flag }
 			NOT = { exists = B67 }
 			OR = {

@@ -190,7 +190,7 @@ X04_ideas = {
 X05_ideas = {
 	start = {
 		defensiveness = 0.1
-		morale_damage_received = -0.2
+		reserves_organisation = 0.2
 	}
 
 	bonus = {
@@ -849,15 +849,14 @@ X20_ideas = {
 	}
 }
 
-#Kusonsesu #Hobgoblin for 'Fallen Tribe'
+#Wabensoyo
 X21_ideas = {
 	start = {
-		naval_forcelimit_modifier  = 0.2				#Island Tag
-		no_religion_penalty = yes						#Their gods are dead, they accept all others.
+		mages_influence_modifier = 0.15			
+		all_power_cost = -0.025						
 	}
-
 	bonus = {
-		all_estate_loyalty_equilibrium  = 0.05			#Old Boomers finally okay with this.
+		land_morale = 0.15			
 	}
 
 	trigger = {
@@ -866,25 +865,25 @@ X21_ideas = {
 	free = yes
 
 	X21_one = {
-		galley_power  = 0.15						#Galleys rely on manpower which hobs are good at
+		global_missionary_strength = 0.015						
 	}
 	X21_two = {
-		global_trade_goods_size_modifier  = 0.1		#Craftsman Culture. Hobs take pride in their work.
+		infantry_shock = 0.15		
 	}
 	X21_three = {
-		sunk_ship_morale_hit_recieved   = -0.1		#Hobs are naturally disciplined and follow their commander. Unfazed by ships sinking.
+		governing_capacity_modifier = 0.1		
 	}
 	X21_four = {
-		development_cost = -0.1						#Making a new home for themselves.
+		warscore_cost_vs_other_religion = -0.1						
 	}
 	X21_five = {
-		num_accepted_cultures = 2					#They are okay with other races.							
+		global_manpower_modifier = 0.2												
 	}
 	X21_six = {
-		fort_maintenance_modifier = -0.2				#Relatively peaceful for Hobgoblins but still have knowledge how to build forts.
+		culture_conversion_cost = -0.2				
 	}
 	X21_seven = {
-		trade_efficiency  = 0.15					#Gulf of Rahen trade
+		adm_advisor_cost = -0.25					
 	}	
 }
 
@@ -1263,44 +1262,44 @@ B45_ideas = {
 }
 
 #Empire of Anbennar
-Z01_ideas = {
-	start = {
-		diplomatic_reputation = 2
-		free_policy = 1
-	}
-
-	bonus = {
-		administrative_efficiency = 0.1
-	}
-
-	trigger = {
-		tag = Z01
-	}
-	free = yes
-
-	Z01_one = {
-		global_manpower_modifier = 0.2
-	}
-	Z01_two = {
-		land_morale = 0.15
-		infantry_shock = 0.2
-	}
-	Z01_three = {
-		improve_relation_modifier = 0.33
-	}
-	Z01_four = {
-		trade_efficiency = 0.2
-	}
-	Z01_five = {
-		core_creation = -0.2
-	}
-	Z01_six = {
-		discipline = 0.05
-	}
-	Z01_seven = {
-		governing_capacity_modifier = 0.2
-	}	
-}
+#Z01_ideas = {
+#	start = {
+#		diplomatic_reputation = 2
+#		free_policy = 1
+#	}
+#
+#	bonus = {
+#		administrative_efficiency = 0.1
+#	}
+#
+#	trigger = {
+#		tag = Z01
+#	}
+#	free = yes
+#
+#	Z01_one = {
+#		global_manpower_modifier = 0.2
+#	}
+#	Z01_two = {
+#		land_morale = 0.15
+#		infantry_shock = 0.2
+#	}
+#	Z01_three = {
+#		improve_relation_modifier = 0.33
+#	}
+#	Z01_four = {
+#		trade_efficiency = 0.2
+#	}
+#	Z01_five = {
+#		core_creation = -0.2
+#	}
+#	Z01_six = {
+#		discipline = 0.05
+#	}
+#	Z01_seven = {
+#		governing_capacity_modifier = 0.2
+#	}	
+#}
 
 #COT
 V02_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
@@ -1349,41 +1348,84 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 }
 
 #Coppertown
-A69_ideas = {
+#A69_ideas = {
+#	start = {
+# 		global_trade_goods_size_modifier = 0.10				
+#		shock_damage_received = -0.10						
+# 	}
+#
+# 	bonus = {
+# 		artillery_fire = 0.15							
+# 	}
+#
+# 	trigger = {
+#		tag = A69
+# 	}
+# 	free = yes
+#
+#	A69_one = {
+# 		artillery_cost = -0.10						
+#	}
+# 	A69_two = {
+# 		build_cost = -0.10
+# 		build_time = -0.10							
+# 	}
+# 	A69_three = {
+# 		fire_damage = 0.15							
+# 	}
+# 	A69_four = {
+# 		production_efficiency = 0.10				
+# 	}
+# 	A69_five = {
+# 		merchants = 1								 	
+#	}
+# 	A69_six = {
+# 		fort_maintenance_modifier = -0.2			 
+# 	}
+# 	A69_seven = {
+# 		artillery_power = 0.10						 
+# 	}	
+#}
+
+#Frozenmaw TBD
+Z18_ideas = {
 	start = {
- 		global_trade_goods_size_modifier = 0.10				#
-		shock_damage_received = -0.10						#
- 	}
-
- 	bonus = {
- 		artillery_fire = 0.15							#
- 	}
-
- 	trigger = {
-		tag = A69
- 	}
- 	free = yes
-
-	A69_one = {
- 		artillery_cost = -0.10						#
+		war_exhaustion_cost = -0.20
+		reduced_liberty_desire = 10
 	}
- 	A69_two = {
- 		build_cost = -0.10
- 		build_time = -0.10							#
- 	}
- 	A69_three = {
- 		fire_damage = 0.15							#
- 	}
- 	A69_four = {
- 		production_efficiency = 0.10				#
- 	}
- 	A69_five = {
- 		merchants = 1								# 	
+
+	bonus = {
+		can_transfer_vassal_wargoal = yes
 	}
- 	A69_six = {
- 		fort_maintenance_modifier = -0.2			# 
- 	}
- 	A69_seven = {
- 		artillery_power = 0.10						# 
- 	}	
+
+	trigger = {
+		tag = Z18
+	}
+	free = yes
+
+	Z18_one = {
+		global_unrest = -1
+	}
+	Z18_two = {
+		assault_fort_ability = 0.25
+		
+	}
+	Z18_three = {
+		vassal_forcelimit_bonus = 0.25
+		
+	}
+	Z18_four = {
+		diplomatic_reputation = 1
+		relation_with_other_culture = 10
+	}
+	Z18_five = {
+		infantry_power = 0.10
+	}
+	Z18_six = {
+		vassal_income = 0.30
+	}
+	Z18_seven = {
+		vassal_naval_forcelimit_bonus = 0.25
+		global_sailors_modifier = 0.15
+	}
 }

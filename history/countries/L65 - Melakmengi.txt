@@ -22,10 +22,10 @@ capital = 5530
         leader = {
             name = "The Angel Kamniel"
             type = general
-            fire = 1
-            shock = 10
-            manuever = 10
-            siege = 0
+            fire = 0
+            shock = 9 #10
+            manuever = 6 #10
+            siege = 4
             personality = inspirational_leader_general_personality
         }
     }

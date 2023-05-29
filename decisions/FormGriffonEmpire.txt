@@ -16,7 +16,7 @@ country_decisions = {
             government_rank = 3
             is_at_war = no
             prestige = 50
-            #mission_completed = marrhold_griffon_king
+            mission_completed = marrhold_griffon_king
         }
 
         effect = {

@@ -4,10 +4,16 @@ country_decisions = {
 	esmarian_nation = {
 		major = yes
 		potential = {
+			OR = {
 			primary_culture = esmari
+			tag = A73
+			tag = A81
+			}
+			
 			NOT = { has_country_flag = formed_esmaria_flag }
 			NOT = { tag = Z01 } #Empire of Anbennar
 			OR = {
+					
 				ai = no
 				NOT = { exists = Z46 }
 			}

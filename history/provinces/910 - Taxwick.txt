@@ -1,8 +1,8 @@
 
 #910 - Chippewa
 
-owner = A30
-controller = A30
+owner = Z41
+controller = Z41
 add_core = Z41
 culture = east_damerian
 religion = regent_court

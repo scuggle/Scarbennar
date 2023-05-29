@@ -699,10 +699,24 @@ ravenmarch_2_missions = {
 		
 		trigger = {
 			if = {
-				limit = { exists = A59 }
+				limit = {
+					exists = A59
+					A59 = { is_subject = no }
+				}
 				has_spy_network_in = {
 					who = A59
 					value = 75
+				}
+			}
+			else_if = {
+				limit = { exists = A59 }
+				A59 = {
+					overlord = {
+						has_spy_network_from = {
+							who = ROOT
+							value = 75
+						}
+					}
 				}
 			}
 			else = {
@@ -1193,9 +1207,6 @@ ravenmarch_2_missions = {
 			oris_area = {
 				add_permanent_claim = ROOT
 			}
-			399 = {
-				add_permanent_claim = ROOT
-			}
 			deshak_area = {
 				add_permanent_claim = ROOT
 			}
@@ -1211,7 +1222,6 @@ ravenmarch_2_missions = {
 			OR = {
 				area = deshak_area
 				area = oris_area
-				province_id = 399
 			}
 		}
 		trigger = {
@@ -1219,9 +1229,6 @@ ravenmarch_2_missions = {
 				owned_by = ROOT
 			}
 			oris_area = {
-				owned_by = ROOT
-			}
-			399 = {
 				owned_by = ROOT
 			}
 		}
@@ -2186,7 +2193,7 @@ ravenmarch_3_missions = {
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
-					superregion = west_salahad_superregion
+					superregion = north_salahad_superregion
 					superregion = bulwar_superregion
 				}
 				value = 100

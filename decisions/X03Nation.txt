@@ -53,10 +53,6 @@ country_decisions = {
 				owns_core_province = 442
 				owns_core_province = 393
 			}
-			has_great_project = {
-				type = black_pillar
-				tier = 3
-			}
 		}
 		effect = {
 			change_tag = X03

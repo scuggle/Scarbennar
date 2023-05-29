@@ -1363,31 +1363,31 @@ A73_complete_hold = {
 				base_manpower = 6
 			}
 			if = {
-				limit = { has_idea = civil_servants }
+				limit = { has_idea =  logsi_ide1 }
 				adm_power = 20
 			}
 			else_if = {
-				limit = { has_idea = administrative_efficiency_idea }
+				limit = { has_idea =  logsi_ide2 }
 				adm_power = 60
 			}
 			else_if = {
-				limit = { has_idea = organised_mercenary_recruitment }
+				limit = { has_idea =  logsi_ide3 }
 				adm_power = 100
 			}
 			else_if = {
-				limit = { has_idea = bookkeeping }
+				limit = { has_idea =  logsi_ide4 }
 				adm_power = 140
 			}
 			else_if = {
-				limit = { has_idea = benefits_for_mercenaries }
+				limit = { has_idea =  logsi_ide5 }
 				adm_power = 180
 			}
 			else_if = {
-				limit = { has_idea = adaptability }
+				limit = { has_idea =  logsi_ide6 }
 				adm_power = 220
 			}
 			else_if = {
-				limit = { has_idea = organised_mercenary_payment }
+				limit = { has_idea =  logsi_ide7 }
 				adm_power = 260
 			}
 			else = {
@@ -1396,31 +1396,31 @@ A73_complete_hold = {
 			custom_trigger_tooltip = {
 				tooltip = silverforge_tooltip_14_tt
 				if = {
-					limit = { has_idea = civil_servants }
+					limit = { has_idea = logsi_ide1 }
 					adm_power = 20
 				}
 				else_if = {
-					limit = { has_idea = administrative_efficiency_idea }
+					limit = { has_idea = logsi_ide2 }
 					adm_power = 60
 				}
 				else_if = {
-					limit = { has_idea = organised_mercenary_recruitment }
+					limit = { has_idea = logsi_ide3 }
 					adm_power = 100
 				}
 				else_if = {
-					limit = { has_idea = bookkeeping }
+					limit = { has_idea = logsi_ide4 }
 					adm_power = 140
 				}
 				else_if = {
-					limit = { has_idea = benefits_for_mercenaries }
+					limit = { has_idea = logsi_ide5 }
 					adm_power = 180
 				}
 				else_if = {
-					limit = { has_idea = adaptability }
+					limit = { has_idea = logsi_ide6 }
 					adm_power = 220
 				}
 				else_if = {
-					limit = { has_idea = organised_mercenary_payment }
+					limit = { has_idea = logsi_ide7 }
 					adm_power = 260
 				}
 				else = {
@@ -1441,31 +1441,31 @@ A73_complete_hold = {
 				duration = -1
 			}
 			if = {
-				limit = { has_idea = civil_servants }
+				limit = { has_idea = logsi_ide1 }
 				add_adm_power = -20
 			}
 			else_if = {
-				limit = { has_idea = administrative_efficiency_idea }
+				limit = { has_idea = logsi_ide2 }
 				add_adm_power = -60
 			}
 			else_if = {
-				limit = { has_idea = organised_mercenary_recruitment }
+				limit = { has_idea = logsi_ide3 }
 				add_adm_power = -100
 			}
 			else_if = {
-				limit = { has_idea = bookkeeping }
+				limit = { has_idea = logsi_ide4 }
 				add_adm_power = -140
 			}
 			else_if = {
-				limit = { has_idea = benefits_for_mercenaries }
+				limit = { has_idea = logsi_ide5 }
 				add_adm_power = -180
 			}
 			else_if = {
-				limit = { has_idea = adaptability }
+				limit = { has_idea = logsi_ide6 }
 				add_adm_power = -220
 			}
 			else_if = {
-				limit = { has_idea = organised_mercenary_payment }
+				limit = { has_idea = logsi_ide7 }
 				add_adm_power = -260
 			}
 			else = { add_adm_power = -300 }

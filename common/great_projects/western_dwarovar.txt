@@ -933,7 +933,7 @@ mithradhum_academy = {
 		}
 		country_modifiers = {
 			army_tradition_decay = -0.003
-			yearly_army_professionalism = 0.003
+			yearly_army_professionalism = 0.002
 		}
 		on_upgraded = {
 			owner = {
@@ -959,7 +959,7 @@ mithradhum_academy = {
 		}
 		country_modifiers = {
 			army_tradition_decay = -0.005
-			yearly_army_professionalism = 0.005
+			yearly_army_professionalism = 0.003
 		}
 		on_upgraded = {
 			add_building = university

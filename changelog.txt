@@ -30,7 +30,7 @@ Changelog:
 4 new countries:
 - Silver Band (elven adventurer in Inner Castanor)
 - Falahen (harpies on the coast of Bahar)
-- Kusonsesu (hobgoblins in the west rahen gulf, releasable)
+- Wabensoyo (hobgoblins in the west rahen gulf, releasable)
 - Southroy (A lorentish pretender)
 ----------------------------------------------------------------------------
 30 modified/added national idea sets:

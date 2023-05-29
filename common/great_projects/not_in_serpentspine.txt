@@ -687,7 +687,6 @@ silverforge_strongbellow_academy = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			global_regiment_cost = -0.05
 			mil_tech_cost_modifier = -0.05
 			artillery_power = 0.05
 		}
@@ -708,7 +707,6 @@ silverforge_strongbellow_academy = {
 		area_modifier = {	
 		}
 		country_modifiers = {
-			global_regiment_cost = -0.075
 			mil_tech_cost_modifier = -0.075
 			artillery_power = 0.075
 		}
@@ -733,7 +731,6 @@ silverforge_strongbellow_academy = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			global_regiment_cost = -0.1
 			mil_tech_cost_modifier = -0.1
 			artillery_power = 0.10
 		}

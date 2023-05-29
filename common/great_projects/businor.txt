@@ -1,6 +1,6 @@
-####################
+####################~
 #Businor
-####################
+####################~
 #Toref Citadel (Eborthil)
 eborthil_toref_citadel = {
 	start = 35
@@ -28,6 +28,7 @@ eborthil_toref_citadel = {
 						culture_group = divenori
 						culture = castanorian
 						culture = hill_gnoll
+						culture = dovesworn_gnoll
 					}
 			}
 			province_is_or_accepts_culture = yes

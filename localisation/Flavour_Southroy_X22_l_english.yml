@@ -10,8 +10,13 @@
  desc_X22_rebellion_modifier:0 "tbd"
  X22_redglades_modifier:0 "Reduced Liberty Desire"
  desc_X22_redglades_modifier:0 "tbd"
+ X22_victory_modifier:0 "Reduced Liberty Desire"
+ desc_X22_victory_modifier:0 "tbd"
 
  #Events
+ southroy.0.t:0 "Victory!"
+ southroy.0.d:0 "tbd"
+ southroy.0.a:0 "Give them what was promised."
  southroy.1.t:0 "A New Identity"
  southroy.1.d:0 "tbd"
  southroy.1.a:0 "We shall remain Southroy, for now!"

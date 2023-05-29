@@ -1,8 +1,8 @@
 
 #Östergötland, contains Norrköping, Linköping etc.
 
-owner = A30
-controller = A30
+owner = Z42
+controller = Z42
 add_core = Z42
 culture = east_damerian
 religion = regent_court

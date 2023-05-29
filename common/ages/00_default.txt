@@ -110,6 +110,15 @@ age_of_discovery = {
 				has_country_flag = purged_warband
 			}
 		}
+
+		obj_suran_temples = {
+			allow = {
+				capital_scope = { superregion = bulwar_superregion }
+			}
+			owns_core_province = 601
+			owns_core_province = 631
+			owns_core_province = 643
+		}
 	}		
 	
 	abilities = {
@@ -171,7 +180,7 @@ age_of_discovery = {
 		
 		ab_colony_boost_development = {
 			modifier = {
-				can_colony_boost_development = yes
+				colony_development_boost = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -184,7 +193,7 @@ age_of_discovery = {
 		
 		ab_attack_bonus_in_capital_terrain = {
 			modifier = {
-				attack_bonus_in_capital_terrain = yes
+				attack_bonus_in_capital_terrain = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -195,39 +204,38 @@ age_of_discovery = {
 			}
 		}
 		
-		# ab_veterans_of_the_lilac_wars = {
-		# 	allow = {
-		# 		capital_scope = { continent = europe }
-		# 		NOT = { has_country_modifier = monstrous_nation }
-		# 	}
-		# 	modifier = {
-		# 		manpower_recovery_speed = 0.35
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 10
-		# 	}
-		# }
+		ab_veterans_of_the_lilac_wars = {
+		 	allow = {
+		 		capital_scope = { continent = europe }
+				NOT = { has_country_modifier = monstrous_nation }
+		 	}
+		 	modifier = {
+		 		manpower_recovery_speed = 0.15
+		 	}
+		 	ai_will_do = {
+		 		factor = 10
+		 	}
+		 }
 		
-		# ab_spoils_of_escann = {
-		# 	allow = {
-		# 		capital_scope = { 
-		# 			OR = {
-		# 				region = west_castanor_region 
-		# 				region = south_castanor_region 
-		# 				region = inner_castanor_region 
-		# 				area = cursewood_area 
-		# 				area = whistlevale_area 
-		# 			}
-		# 		}
-		# 	}
-		# 	modifier = {
-		# 		loot_amount = 0.50
-		# 		available_province_loot = 0.50
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 10
-		# 	}
-		# }
+		 ab_adventurers_of_escann = {
+		 	allow = {
+		 		capital_scope = { 
+		 			OR = {
+		 				region = west_castanor_region 
+		 				region = south_castanor_region 
+		 				region = inner_castanor_region 
+		 				area = cursewood_area 
+		 				area = whistlevale_area 
+		 			}
+		 		}
+		 	}
+		 	modifier = {
+		 		mercenary_cost = -0.3
+		 	}
+		 	ai_will_do = {
+		 		factor = 10
+		 	}
+		 }
 		
 		ab_anbennar_decentralization_of_the_empire = {
 			allow = {
@@ -235,32 +243,65 @@ age_of_discovery = {
 				NOT = { has_age_ability = ab_justified_wars }
 			}
 			modifier = {
-				ae_impact = -0.25
+				ae_impact = -0.15
+				core_creation = -0.1
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		
-		# ab_eborthil_ship_trade = {
-		# 	allow = {
-		# 		tag = A47
-		# 	}
-		# 	modifier = {
-		# 		global_ship_trade_power = 0.5 
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
 
-		ab_dwarovar_empire_breakers = {
+		ab_cannorian_exploration = {
 			allow = {
-				culture = black_orc
+				capital_scope = { 
+					OR = {
+						region = lencenor_region
+						region = west_dameshead_region
+						region = east_dameshead_region
+						region = isles_of_lament_region
+						region = small_country_region
+						region = dragon_coast_region
+						region = the_borders_region
+						region = forlorn_vale_region
+						region = esmaria_region
+						region = businor_region
+						region = alenic_frontier_region
+						region = alenic_reach_region
+						region = damescrown_region
+					}
+				}
 			}
 			modifier = {
-				siege_ability = 0.2
-				available_province_loot = 0.25
+				range = 0.5
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_consolidation_of_haless = {
+			allow = {
+				capital_scope = { 
+					OR = {
+						region = rakhadesh_region
+						region = rahen_coast_region 
+						region = dhujat_region 
+						region = shamakhad_region
+						region = demon_hills_region
+						region = bomdan_region
+						region = xianjie_region
+						region = thidinkai_region
+						region = lupulan_rainforest_region
+						region = yanshen_coast_region
+						region = upper_yanshen_region
+						region = north_yanshen_region
+						region = shuvuushudi_region
+						region = odheongu_region
+					}
+				}
+			}
+			modifier = {
+				unjustified_demands = -0.15
+				leader_siege = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -435,7 +476,7 @@ age_of_reformation = {
 		
 		ab_adventurer_armies = {
 			modifier = {
-				mercenary_manpower = 0.5
+				mercenary_manpower = 0.25
 				merc_maintenance_modifier = -0.33
 			}
 			ai_will_do = {
@@ -445,78 +486,80 @@ age_of_reformation = {
 
 		ab_call_of_the_high_seas = {
 			modifier = {
-				heavy_ship_cost = -0.5
-				light_ship_cost = -0.5
+				heavy_ship_cost = -0.25
+				light_ship_cost = -0.25
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 
-		ab_dwarovar_hold_redecorating = {
+		ab_serpentspine_wars_of_consolidation = {
 			allow = {
-				OR = {
-					culture_group = goblin
-					culture_group = kobold
-				}
 				capital_scope = { continent = serpentspine }
 			}
 			modifier = {
-				build_cost = -0.2
+				siege_ability = 0.25
+				assault_fort_ability = 0.5
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		ab_aelantir_rush = {
+		ab_spirit_of_adean = {
 			allow = {
-				num_of_colonists = 1
-				OR = {
-					north_america = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					south_america = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
+				religion = regent_court
 			}
 			modifier = {
-				can_colony_boost_development = yes
+				land_morale = 0.1
+				global_missionary_strength = 0.02
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		# ab_elven_reclaimers = {
-		# 	allow = {
-		# 		culture_group = elven
-		# 	}
-		# 	modifier = {
-		# 		global_colonial_growth = 60
-		# 		prestige = 0.5
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 		modifier = {
-		# 			factor = 0
-		# 			NOT = { num_of_colonists = 1 }
-		# 		}
-		# 	}
-		# }
+		ab_elven_renaissance = {
+			allow = {
+				culture_group = elven
+			}
+			modifier = {
+				advisor_cost = -0.15
+				prestige = 1
+			}
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					NOT = { num_of_colonists = 1 }
+				}
+			}
+		}
 		
-		# ab_corinite_crusaders = {
-		# 	allow = {
-		# 		religion = corinite
-		# 	}
-		# 	modifier = {
-		# 		shock_damage = 0.3
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
+		ab_corinite_crusaders = {
+			allow = {
+				religion = corinite
+			}
+			modifier = {
+				shock_damage = 0.15
+				manpower_recovery_speed = 0.10
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_reavers_resurgent = {
+			allow = {
+				culture_group = gerudian
+			}
+			modifier = {
+				naval_morale = 0.2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
 	}
 }
 
@@ -538,7 +581,8 @@ age_of_absolutism = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		seat_in_parliament = -3
+		automatic_seat_in_parliament = -2 #1.35
+		manual_seat_in_parliament = -2 #1.35
 		war_exhaustion = -1
 	}
 	
@@ -549,8 +593,11 @@ age_of_absolutism = {
 			num_of_trade_companies = 3
 		}
 		
-		obj_universities = {
-			university = 5
+		obj_universities = { #1.35
+			num_of_owned_provinces_with = {
+				has_building = university 
+				value = 5 
+			}
 		}
 	
 		obj_large_forcelimit = {
@@ -582,9 +629,6 @@ age_of_absolutism = {
 		}
 	}	
 	
-	
-	
-	
 	abilities = {
 	
 		ab_allow_edict_of_absolutism = {
@@ -597,9 +641,9 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_rival_change = {
+		ab_wars_of_supremacy = {
 			modifier = {
-				rival_change_cost = -0.5
+				province_warscore_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 0
@@ -608,7 +652,7 @@ age_of_absolutism = {
 
 		ab_rival_border_fort = {
 			modifier = {
-				rival_border_fort_maintenance = -1.0
+				fort_maintenance_modifier = -0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -655,7 +699,44 @@ age_of_absolutism = {
 		}
 	
 	
-		ab_direct_rule_in_escann = {
+		ab_iron_fist_over_bulwar = {
+			allow = {
+				capital_scope = { 
+					OR = {
+						region = bahar_region 
+						region = harpy_hills_region 
+						region = bulwar_proper_region
+						region = far_bulwar_region
+					}
+				}
+			}
+			modifier = {
+				autonomy_change_time = -0.25
+				max_absolutism = 15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+		
+		ab_anti_magic_measures = {
+			allow = {
+				OR = {
+					culture_group = gnomish
+					culture_group = kobold
+					culture_group = goblin
+				}
+			}
+			modifier = {
+				fire_damage = 0.05
+				shock_damage_received = -0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}	
+		
+		ab_escanni_consolidation_wars = {
 			allow = {
 				OR = {
 					capital_scope = { region = west_castanor_region}
@@ -664,60 +745,30 @@ age_of_absolutism = {
 				}
 			}
 			modifier = {
-				yearly_absolutism = 2
-				max_absolutism = 10
+				unjustified_demands = -0.5
 			}
 			ai_will_do = {
-				factor = 1000
+				factor = 100
 			}
 		}
 		
-		# ab_decadent_web_of_lies = {
-		# 	allow = {
-		# 		capital_scope = { continent = europe }
-		# 	}
-		# 	modifier = {
-		# 		diplomatic_upkeep = 1
-		# 		spy_offence = 0.25
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 10
-		# 	}
-		# }	
-		
-		# ab_escanni_consolidation_wars = {
-		# 	allow = {
-		# 		OR = {
-		# 			capital_scope = { region = west_castanor_region}
-		# 			capital_scope = { region = south_castanor_region}
-		# 			capital_scope = { region = inner_castanor_region}
-		# 		}
-		# 	}
-		# 	modifier = {
-		# 		unjustified_demands = -0.5
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
-		
-		# ab_ravelian_zeal = {
-			# allow = {
-				# religion = ravelian
-			# }
-			# modifier = {
-				# global_missionary_strength = 0.02
-				# tolerance_own = 1
-				# land_morale = 0.05
-			# }
-			# ai_will_do = {
-				# factor = 100
-			# }
-		# }
-
-		ab_dwarven_reclamation = {
+		ab_ravelian_zeal = {
 			allow = {
-				culture_group = dwarven
+				religion = ravelian
+			}
+			modifier = {
+				global_missionary_strength = 0.02
+				tolerance_own = 1
+				land_morale = 0.05
+			}
+			ai_will_do = {
+				factor = 100
+			}
+	 	}
+
+		ab_serpentspine_reclamation = {
+			allow = {
+				#culture_group = dwarven
 				capital_scope = { continent = serpentspine }
 			}
 			effect = {
@@ -725,6 +776,24 @@ age_of_absolutism = {
 			}
 			ai_will_do = {
 				factor = 1000
+			}
+		}
+
+		ab_sun_cult_resurgence = {
+			allow = {
+				OR = {
+					religion = bulwari_sun_cult
+					religion = old_bulwari_sun_cult
+					religion = the_jadd
+				}
+				government_rank = 3
+			}
+			effect = {
+				custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
+				set_country_flag = age_ability_sun_cult_resurgence_flag
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
@@ -747,7 +816,8 @@ age_of_revolutions = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		seat_in_parliament = -3
+		automatic_seat_in_parliament = -2 #1.35
+		manual_seat_in_parliament = -2 #1.35
 		war_exhaustion = -1
 	}
 	
@@ -860,7 +930,7 @@ age_of_revolutions = {
 		
 		ab_backrow_artillery = {
 			modifier = {
-				backrow_artillery_damage = 0.20
+				backrow_artillery_damage = 0.1
 			}
 			ai_will_do = {
 				factor = 10
@@ -883,45 +953,56 @@ age_of_revolutions = {
 				}
 			}
 		}
-		# ab_artificer_machinations_of_war = {
-		# 	modifier = {
-		# 		fire_damage = 0.25
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
-		# ab_magical_industrialization = {
-		# 	modifier = {
-		# 		production_efficiency = 0.15
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
-		# ab_anbennarian_resurgence = {
-		# 	allow = {
-		# 		tag = Z01
-		# 	}
-		# 	modifier = {
-		# 		fire_damage_received = -0.33
-		# 		global_unrest = -1
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
-		# ab_orcish_nation = {
-		# 	allow = {
-		# 		culture_group = orcish
-		# 	}
-		# 	modifier = {
-		# 		development_cost = -0.25
-		# 		defensiveness = 0.5
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 100
-		# 	}
-		# }
+		ab_artificer_machinations_of_war = {
+		 	modifier = {
+		 		fire_damage = 0.15
+		 	}
+		 	ai_will_do = {
+		 		factor = 100
+		 	}
+		 }
+		ab_magical_industrialization = {
+		 	modifier = {
+		 		production_efficiency = 0.15
+		 	}
+		 	ai_will_do = {
+		 		factor = 100
+		 	}
+		 }
+		ab_anbennarian_resurgence = {
+		 	allow = {
+		 		OR = {
+					tag = Z01
+					is_part_of_hre = yes
+				}
+		 	}
+		 	modifier = {
+		 		fire_damage_received = -0.15
+		 		global_unrest = -1
+		 	}
+		 	ai_will_do = {
+		 		factor = 100
+		 	}
+		 }
+		ab_legacy_of_monsters = {
+		 	allow = {
+		 		OR = {
+					culture_group = orcish
+					culture_group = harpy
+					culture_group = goblin
+					culture_group = kobold
+					culture_group = hobgoblin
+					culture_group = giantkind
+					culture_group = centaur
+				}
+		 	}
+		 	modifier = {
+		 		development_cost = -0.15
+		 		build_cost = -0.05
+		 	}
+			ai_will_do = {
+				factor = 100
+			}
+		}
 	}
 }
