@@ -169,7 +169,7 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 	}
 	adven_ide3 = {
 		infantry_power = 0.1
-		mages_loyalty_modifier = 0.1
+		merc_leader_army_tradition = 0.5
 	}
 	adven_ide4 = {
 		leader_land_shock = 1
@@ -342,7 +342,7 @@ quality_ideas = { #Siege
 		assault_fort_ability = 0.33
 	}
 	copper_bottoms = {
-		leader_land_seige = 1
+		leader_siege = 1
 		artillery_barrage_cost = -0.5
 	}
 	massed_battery = {
@@ -373,7 +373,7 @@ offensive_ideas = { #Grand Plan
 	}
 	superior_firepower = {
 		land_morale = 0.1
-
+		global_manpower_modifier = 0.2
 	}
 	glorious_arms = {
 	    global_regiment_cost = -0.1
@@ -383,7 +383,7 @@ offensive_ideas = { #Grand Plan
 	}
 	grand_army = {
 		manpower_recovery_speed = 0.15
-		regiment_manpower_usage = -0.1
+		regiment_manpower_usage = -0.05
 	}
 	napoleonic_warfare = {
 		land_maintenance_modifier = -0.05
@@ -413,7 +413,6 @@ special_forces_ideas = { # Special Forces
 	}
 	special_forces_3 = {
 		special_unit_forcelimit = 0.15
-		allowed_marine_fraction = 0.1
 	}
 	special_forces_4 = {
 		leader_land_manuever = 1
