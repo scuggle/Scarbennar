@@ -2518,7 +2518,7 @@ grombar_colonization_2 = {
 			}
 			if = {
 				limit = { NOT = { exists = I02 } }
-				release = I02
+				release_with_religion_and_culture = { tag = I02 religion = ancestor_worship culture = quartz_dwarf }
 				create_subject = {
 					subject_type = autonomous_vassal
 					subject = I02
@@ -3427,7 +3427,7 @@ grombar_half_orc_missions_3 = {
 		effect = {
 			add_country_modifier = {
 				name = "grombar_strong_and_disciplined"
-				duration = 36500
+				duration = -1
 			}
 		}
 	}

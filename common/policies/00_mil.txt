@@ -1,223 +1,564 @@
 #
 # TIER 1
 #
-vass_cutting_edge_1 = {
+eur_maintain_reserves_1 = {
 	monarch_power = MIL
 
 	potential = {
 		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 1
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_cutting_edge_2
-            has_active_policy = vass_cutting_edge_3
+        	calc_true_if = {
+            	amount = 1
+            	has_active_policy = eur_maintain_reserves_2
+            	has_active_policy = eur_maintain_reserves_3
+
+				has_active_policy = eur_utilize_reserves_1
+				has_active_policy = eur_utilize_reserves_2
+				has_active_policy = eur_utilize_reserves_3
             }
         }
     }
 
-	siege_ability = 0.10
-	reinforce_cost_modifier = -0.05
+	global_manpower_modifier = 0.10
+	build_cost = 0.05
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_affordable_munitions_1 = {
+eur_utilize_reserves_1 = {
 	monarch_power = MIL
 
 	potential = {
 		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 1
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_affordable_munitions_2
-            has_active_policy = vass_affordable_munitions_3
+        	calc_true_if = {
+            	amount = 1
+            	has_active_policy = eur_utilize_reserves_2
+            	has_active_policy = eur_utilize_reserves_3
+
+				has_active_policy = eur_maintain_reserves_1
+				has_active_policy = eur_maintain_reserves_2
+            	has_active_policy = eur_maintain_reserves_3
             }
         }
     }
 
-	land_maintenance_modifier = -0.10
+	global_manpower_modifier = -0.15
+	build_cost = -0.05
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_higher_standards_1 = {
+	monarch_power = MIL
+
+	potential = {
+		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
+		}
+		NOT = {
+        	calc_true_if = {
+           		amount = 1
+            	has_active_policy = eur_higher_standards_2
+            	has_active_policy = eur_higher_standards_3
+
+				has_active_policy = eur_lower_standards_1
+				has_active_policy = eur_lower_standards_2
+            	has_active_policy = eur_lower_standards_3
+            }
+        }
+    }
+
+	discipline = 0.025
+	manpower_recovery_speed = -0.15
+	mercenary_discipline = -0.025
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_lower_standards_1 = {
+	monarch_power = MIL
+
+	potential = {
+		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
+		}
+		NOT = {
+        	calc_true_if = {
+            	amount = 1
+            	has_active_policy = eur_lower_standards_2
+            	has_active_policy = eur_lower_standards_3
+
+            	has_active_policy = eur_higher_standards_1
+            	has_active_policy = eur_higher_standards_2
+            	has_active_policy = eur_higher_standards_3
+            }
+        }
+    }
+
+	discipline = -0.025
+	manpower_recovery_speed = 0.15
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_firepower_1 = {
+	monarch_power = MIL
+
+	potential = {
+		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_firepower_2
+        	    has_active_policy = eur_firepower_3
+
+        	    has_active_policy = eur_shockpower_1
+        	    has_active_policy = eur_shockpower_2
+        	    has_active_policy = eur_shockpower_3
+            }
+        }
+    }
+
 	fire_damage = 0.05
+	shock_damage_received = 0.03
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_engineer_corps_1 = {
+eur_shockpower_1 = {
 	monarch_power = MIL
 
 	potential = {
 		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 1
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_engineer_corps_2
-            has_active_policy = vass_engineer_corps_3
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_shockpower_2
+        	    has_active_policy = eur_shockpower_3
+
+				has_active_policy = eur_firepower_1
+				has_active_policy = eur_firepower_2
+        	    has_active_policy = eur_firepower_3
             }
         }
     }
 
-	defensiveness = 0.15
-	reinforce_speed = 0.05
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_professional_corps_1 = {
-	monarch_power = MIL
-
-	potential = {
-		mil_tech = 2
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_professional_corps_2
-            has_active_policy = vass_professional_corps_3
-            has_active_policy = vass_deep_reserve_1
-            has_active_policy = vass_deep_reserve_2
-            has_active_policy = vass_deep_reserve_3
-            }
-        }
-    }
-
-	drill_gain_modifier = 0.10
-	drill_decay_modifier = -0.10
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_deep_reserve_1 = {
-	monarch_power = MIL
-
-	potential = {
-		mil_tech = 2
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_professional_corps_1
-            has_active_policy = vass_professional_corps_2
-            has_active_policy = vass_professional_corps_3
-            has_active_policy = vass_deep_reserve_2
-            has_active_policy = vass_deep_reserve_3
-            }
-        }
-    }
-
-	army_tradition_decay = -0.01
-	army_tradition_from_battle = 0.25
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_hunters_and_baggage_1 = {
-	monarch_power = MIL
-
-	potential = {
-		mil_tech = 2
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_hunters_and_baggage_2
-            has_active_policy = vass_hunters_and_baggage_3
-            }
-        }
-    }
-
-	land_attrition = -0.10
 	shock_damage = 0.05
+	fire_damage_received = 0.025
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_frontline_focus_1 = {
+	monarch_power = MIL
+
+	potential = {
+		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_frontline_focus_2
+        	    has_active_policy = eur_frontline_focus_3
+
+				has_active_policy = eur_backline_focus_1
+				has_active_policy = eur_backline_focus_2
+        	    has_active_policy = eur_backline_focus_3
+            }
+        }
+    }
+
+	infantry_power = 0.05
+	cavalry_power = 0.05
+	artillery_power = -0.025
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_backline_focus_1 = {
+	monarch_power = MIL
+
+	potential = {
+		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+				has_active_policy = eur_backline_focus_2
+        	    has_active_policy = eur_backline_focus_3
+
+        	    has_active_policy = eur_frontline_focus_1
+				has_active_policy = eur_frontline_focus_2
+        	    has_active_policy = eur_frontline_focus_3
+            }
+        }
+    }
+
+	infantry_power = -0.025
+	cavalry_power = -0.025
+	artillery_power = 0.05
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_organized_push_1 = {
+	monarch_power = MIL
+
+	potential = {
+		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_organized_push_2
+        	    has_active_policy = eur_organized_push_3
+
+				has_active_policy = eur_quick_push_1
+				has_active_policy = eur_quick_push_2
+        	    has_active_policy = eur_quick_push_3
+            }
+        }
+    }
+
+	land_attrition = -0.1
+	reserves_organisation = -0.05
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_quick_push_1 = {
+	monarch_power = MIL
+
+	potential = {
+		mil_tech = 2
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 2
+			}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 1
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_quick_push_2
+        	    has_active_policy = eur_quick_push_3
+
+				has_active_policy = eur_organized_push_1
+				has_active_policy = eur_organized_push_2
+        	    has_active_policy = eur_organized_push_3
+            }
+        }
+    }
+
+	reserves_organisation = 0.1
+	land_attrition = 0.05
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -226,223 +567,684 @@ vass_hunters_and_baggage_1 = {
 #
 # TIER 2
 #
-vass_cutting_edge_2 = {
+eur_maintain_reserves_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 2
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_cutting_edge_1
-            has_active_policy = vass_cutting_edge_3
+        	calc_true_if = {
+            	amount = 1
+            	has_active_policy = eur_maintain_reserves_1
+            	has_active_policy = eur_maintain_reserves_3
+
+				has_active_policy = eur_utilize_reserves_1
+				has_active_policy = eur_utilize_reserves_2
+				has_active_policy = eur_utilize_reserves_3
             }
         }
     }
 
-	siege_ability = 0.15
-	reinforce_cost_modifier = -0.10
+	global_manpower_modifier = 0.20
+	build_cost = 0.1
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_affordable_munitions_2 = {
+eur_utilize_reserves_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 2
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_affordable_munitions_1
-            has_active_policy = vass_affordable_munitions_3
+        	calc_true_if = {
+            	amount = 1
+            	has_active_policy = eur_utilize_reserves_1
+            	has_active_policy = eur_utilize_reserves_3
+
+				has_active_policy = eur_maintain_reserves_1
+				has_active_policy = eur_maintain_reserves_2
+            	has_active_policy = eur_maintain_reserves_3
             }
         }
     }
 
-	land_maintenance_modifier = -0.15
-	fire_damage = 0.10
+	global_manpower_modifier = -0.25
+	build_cost = -0.1
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_engineer_corps_2 = {
+eur_higher_standards_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 2
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_engineer_corps_1
-            has_active_policy = vass_engineer_corps_3
+        	calc_true_if = {
+           		amount = 1
+            	has_active_policy = eur_higher_standards_1
+            	has_active_policy = eur_higher_standards_3
+
+				has_active_policy = eur_lower_standards_1
+				has_active_policy = eur_lower_standards_2
+            	has_active_policy = eur_lower_standards_3
             }
         }
     }
 
-	defensiveness = 0.25
-	reinforce_speed = 0.10
+	discipline = 0.05
+	manpower_recovery_speed = -0.25
+	mercenary_discipline = -0.05
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_professional_corps_2 = {
+eur_lower_standards_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 2
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_professional_corps_1
-            has_active_policy = vass_professional_corps_3
-            has_active_policy = vass_deep_reserve_1
-            has_active_policy = vass_deep_reserve_2
-            has_active_policy = vass_deep_reserve_3
+        	calc_true_if = {
+            	amount = 1
+            	has_active_policy = eur_lower_standards_1
+            	has_active_policy = eur_lower_standards_3
+
+            	has_active_policy = eur_higher_standards_1
+            	has_active_policy = eur_higher_standards_2
+            	has_active_policy = eur_higher_standards_3
             }
         }
     }
 
-	drill_gain_modifier = 0.15
-	drill_decay_modifier = -0.15
+	discipline = -0.05
+	manpower_recovery_speed = 0.25
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_deep_reserve_2 = {
+eur_firepower_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 2
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_professional_corps_1
-            has_active_policy = vass_professional_corps_2
-            has_active_policy = vass_professional_corps_3
-            has_active_policy = vass_deep_reserve_1
-            has_active_policy = vass_deep_reserve_3
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_firepower_1
+        	    has_active_policy = eur_firepower_3
+
+        	    has_active_policy = eur_shockpower_1
+        	    has_active_policy = eur_shockpower_2
+        	    has_active_policy = eur_shockpower_3
             }
         }
     }
 
-	army_tradition_decay = -0.02
-	army_tradition_from_battle = 0.50
+	fire_damage = 0.1
+	shock_damage_received = 0.06
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_hunters_and_baggage_2 = {
+eur_shockpower_2 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 10
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 2
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_hunters_and_baggage_1
-            has_active_policy = vass_hunters_and_baggage_3
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_shockpower_1
+        	    has_active_policy = eur_shockpower_3
+
+				has_active_policy = eur_firepower_1
+				has_active_policy = eur_firepower_2
+        	    has_active_policy = eur_firepower_3
             }
         }
     }
 
-	land_attrition = -0.33
-	shock_damage = 0.10
+	shock_damage = 0.1
+	fire_damage_received = 0.05
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_frontline_focus_2 = {
+	monarch_power = MIL
+
+	potential = {
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_frontline_focus_1
+        	    has_active_policy = eur_frontline_focus_3
+
+				has_active_policy = eur_backline_focus_1
+				has_active_policy = eur_backline_focus_2
+        	    has_active_policy = eur_backline_focus_3
+            }
+        }
+    }
+
+	infantry_power = 0.1
+	cavalry_power = 0.1
+	artillery_power = -0.05
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_backline_focus_2 = {
+	monarch_power = MIL
+
+	potential = {
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+				has_active_policy = eur_backline_focus_1
+        	    has_active_policy = eur_backline_focus_3
+
+        	    has_active_policy = eur_frontline_focus_1
+				has_active_policy = eur_frontline_focus_2
+        	    has_active_policy = eur_frontline_focus_3
+            }
+        }
+    }
+
+	infantry_power = -0.05
+	cavalry_power = -0.05
+	artillery_power = 0.1
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_organized_push_2 = {
+	monarch_power = MIL
+
+	potential = {
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_organized_push_1
+        	    has_active_policy = eur_organized_push_3
+
+				has_active_policy = eur_quick_push_1
+				has_active_policy = eur_quick_push_2
+        	    has_active_policy = eur_quick_push_3
+            }
+        }
+    }
+
+	land_attrition = -0.2
+	reserves_organisation = -0.1
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_quick_push_2 = {
+	monarch_power = MIL
+
+	potential = {
+		NOT = {
+			calc_true_if = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = at_standing
+				full_idea_group = quantity_ideas
+				full_idea_group = adventurer_ideas_vaass
+				full_idea_group = leadership_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = infantry_ideas
+				full_idea_group = special_forces_ideas
+				amount = 3
+			}
+		}
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 2
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_quick_push_1
+        	    has_active_policy = eur_quick_push_3
+
+				has_active_policy = eur_organized_push_1
+				has_active_policy = eur_organized_push_2
+        	    has_active_policy = eur_organized_push_3
+            }
+        }
+    }
+
+	reserves_organisation = 0.2
+	land_attrition = 0.1
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -451,223 +1253,535 @@ vass_hunters_and_baggage_2 = {
 #
 # TIER 3
 #
-vass_cutting_edge_3 = {
+
+eur_maintain_reserves_3 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 17
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 3
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_cutting_edge_1
-            has_active_policy = vass_cutting_edge_2
+        	calc_true_if = {
+            	amount = 1
+            	has_active_policy = eur_maintain_reserves_1
+            	has_active_policy = eur_maintain_reserves_2
+
+				has_active_policy = eur_utilize_reserves_1
+				has_active_policy = eur_utilize_reserves_2
+				has_active_policy = eur_utilize_reserves_3
             }
         }
     }
 
-	siege_ability = 0.20
-	reinforce_cost_modifier = -0.15
+	global_manpower_modifier = 0.30
+	build_cost = 0.15
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_affordable_munitions_3 = {
+eur_utilize_reserves_3 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 17
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 3
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_affordable_munitions_1
-            has_active_policy = vass_affordable_munitions_3
+        	calc_true_if = {
+            	amount = 1
+            	has_active_policy = eur_utilize_reserves_1
+            	has_active_policy = eur_utilize_reserves_2
+
+				has_active_policy = eur_maintain_reserves_1
+				has_active_policy = eur_maintain_reserves_2
+            	has_active_policy = eur_maintain_reserves_3
             }
         }
     }
 
-	land_maintenance_modifier = -0.20
+	global_manpower_modifier = -0.35
+	build_cost = -0.15
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_higher_standards_3 = {
+	monarch_power = MIL
+
+	potential = {
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+		NOT = {
+        	calc_true_if = {
+           		amount = 1
+            	has_active_policy = eur_higher_standards_1
+            	has_active_policy = eur_higher_standards_2
+
+				has_active_policy = eur_lower_standards_1
+				has_active_policy = eur_lower_standards_2
+            	has_active_policy = eur_lower_standards_3
+            }
+        }
+    }
+
+	discipline = 0.075
+	manpower_recovery_speed = -0.4
+	mercenary_discipline = -0.075
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_lower_standards_3 = {
+	monarch_power = MIL
+
+	potential = {
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+		NOT = {
+        	calc_true_if = {
+            	amount = 1
+            	has_active_policy = eur_lower_standards_1
+            	has_active_policy = eur_lower_standards_2
+
+            	has_active_policy = eur_higher_standards_1
+            	has_active_policy = eur_higher_standards_2
+            	has_active_policy = eur_higher_standards_3
+            }
+        }
+    }
+
+	discipline = -0.075
+	manpower_recovery_speed = 0.4
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_firepower_3 = {
+	monarch_power = MIL
+
+	potential = {
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_firepower_1
+        	    has_active_policy = eur_firepower_2
+
+        	    has_active_policy = eur_shockpower_1
+        	    has_active_policy = eur_shockpower_2
+        	    has_active_policy = eur_shockpower_3
+            }
+        }
+    }
+
 	fire_damage = 0.15
+	shock_damage_received = 0.1
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_engineer_corps_3 = {
+eur_shockpower_3 = {
 	monarch_power = MIL
 
 	potential = {
-		mil_tech = 17
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
 	}
 	
 	allow = {
 		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 3
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_engineer_corps_1
-            has_active_policy = vass_engineer_corps_3
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_shockpower_1
+        	    has_active_policy = eur_shockpower_2
+
+				has_active_policy = eur_firepower_1
+				has_active_policy = eur_firepower_2
+        	    has_active_policy = eur_firepower_3
             }
         }
     }
 
-	defensiveness = 0.35
-	reinforce_speed = 0.15
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_professional_corps_3 = {
-	monarch_power = MIL
-
-	potential = {
-		mil_tech = 17
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_professional_corps_1
-            has_active_policy = vass_professional_corps_2
-            has_active_policy = vass_deep_reserve_1
-            has_active_policy = vass_deep_reserve_2
-            has_active_policy = vass_deep_reserve_3
-            }
-        }
-    }
-
-	drill_gain_modifier = 0.25
-	drill_decay_modifier = -0.25
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_deep_reserve_3 = {
-	monarch_power = MIL
-
-	potential = {
-		mil_tech = 17
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_professional_corps_1
-            has_active_policy = vass_professional_corps_2
-            has_active_policy = vass_professional_corps_3
-            has_active_policy = vass_deep_reserve_1
-            has_active_policy = vass_deep_reserve_2
-            }
-        }
-    }
-
-	army_tradition_decay = -0.03
-	army_tradition_from_battle = 1
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_hunters_and_baggage_3 = {
-	monarch_power = MIL
-
-	potential = {
-		mil_tech = 17
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = quality_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = at_standing
-		full_idea_group = quantity_ideas
-		full_idea_group = adventurer_ideas_vaass
-		full_idea_group = leadership_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = infantry_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_hunters_and_baggage_2
-            has_active_policy = vass_hunters_and_baggage_3
-            }
-        }
-    }
-
-	land_attrition = -0.50
 	shock_damage = 0.15
+	fire_damage_received = 0.085
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_frontline_focus_3 = {
+	monarch_power = MIL
+
+	potential = {
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_frontline_focus_1
+        	    has_active_policy = eur_frontline_focus_2
+
+				has_active_policy = eur_backline_focus_1
+				has_active_policy = eur_backline_focus_2
+        	    has_active_policy = eur_backline_focus_3
+            }
+        }
+    }
+
+	infantry_power = 0.15
+	cavalry_power = 0.15
+	artillery_power = -0.075
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_backline_focus_3 = {
+	monarch_power = MIL
+
+	potential = {
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+				has_active_policy = eur_backline_focus_1
+        	    has_active_policy = eur_backline_focus_2
+
+        	    has_active_policy = eur_frontline_focus_1
+				has_active_policy = eur_frontline_focus_2
+        	    has_active_policy = eur_frontline_focus_3
+            }
+        }
+    }
+
+	infantry_power = -0.075
+	cavalry_power = -0.075
+	artillery_power = 0.15
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_organized_push_3 = {
+	monarch_power = MIL
+
+	potential = {
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_organized_push_1
+        	    has_active_policy = eur_organized_push_2
+
+				has_active_policy = eur_quick_push_1
+				has_active_policy = eur_quick_push_2
+        	    has_active_policy = eur_quick_push_3
+            }
+        }
+    }
+
+	land_attrition = -0.3
+	reserves_organisation = -0.5
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_quick_push_3 = {
+	monarch_power = MIL
+
+	potential = {
+		calc_true_if = {
+			has_idea_group = quality_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = at_standing
+			has_idea_group = quantity_ideas
+			has_idea_group = adventurer_ideas_vaass
+			has_idea_group = leadership_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocracy_ideas
+			has_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = quality_ideas
+			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = quantity_ideas
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = leadership_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = infantry_ideas
+			full_idea_group = special_forces_ideas
+			amount = 3
+		}
+		NOT = {
+        	calc_true_if = {
+        	    amount = 1
+        	    has_active_policy = eur_quick_push_1
+        	    has_active_policy = eur_quick_push_2
+
+				has_active_policy = eur_organized_push_1
+				has_active_policy = eur_organized_push_2
+        	    has_active_policy = eur_organized_push_3
+            }
+        }
+    }
+
+	reserves_organisation = 0.3
+	land_attrition = 0.2
 	
 	ai_will_do = {
 		factor = 0.8		

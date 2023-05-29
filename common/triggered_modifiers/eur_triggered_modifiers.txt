@@ -26,3 +26,17 @@ crusade_evil = {
 	papal_influence = 1
 	devotion = 0.25
 }
+
+marine_ideas_stronger_marines_buff = {
+	potential = {
+		always = yes
+	}
+	trigger = 	{
+		root = 
+		{
+		has_idea = ships_penny
+		}
+				}
+is_marine_modifier = yes
+shock_damage_received = -0.1
+}

@@ -49,3 +49,8 @@
  triarchy_nation_desc: "I am a dead nation kek" 
  X24_form_nation_title: "Declare the Northern League"
  X24_form_nation_desc: "Gerudian, Gawedi, Reachman? It matters not. We are the peoples of the north, and under our leadership we shall forge one of the greatest industrialised nations the world has ever seen."
+
+reveal_all_title: "Reveal the World!"
+reveal_all_desc: "The world has become more interconnected than ever, allowing us to make contact with far away countries and peoples."
+switch_regent_court_title: "Change Personal Deity"
+switch_regent_court_desc: "The deities that are part of the Regent Court are not in conflict with one another, allowing us to change the personal deity of our ruler."

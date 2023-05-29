@@ -8,10 +8,10 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	
 	mean_time_to_happen = {
-		years = 100
+		years = 50
 
 		modifier = {	#less likely to happen for non long-lived
-			factor = 1.5
+			factor = 0.5
 			NOT = { ruler_has_personality = immortal_personality }
 		}
 	}
@@ -61,7 +61,6 @@ country_event = {
 			}
 		}
 		
-		add_stability = -1
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = -10
@@ -374,6 +373,10 @@ country_event = {
 			modifier = {
 				factor = 5
 				tag = G94 # Balgabar
+			}
+			modifier = {
+				factor = 5
+				tag = I07 # Khugdihr
 			}
 			modifier = {
 				factor = 1.5

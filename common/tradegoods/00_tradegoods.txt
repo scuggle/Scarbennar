@@ -103,6 +103,7 @@ grain = {
 			OR = {
 				province_id = 4236
 				region = moduk_region
+				area = somyonghon_area
 			}
 		}
 	}
@@ -237,6 +238,8 @@ wool = {
 			OR = {
 				province_id = 4236
 				region = mushroom_forest_region
+				area = westnest_area
+				area = eastnest_area
 			}
 		}
 	}
@@ -524,7 +527,10 @@ naval_supplies = {
 		}
 		modifier = {
 			factor = 1.5
-			region = moduk_region
+			OR = {
+				region = moduk_region
+				area = somyonghon_area
+			}
 			NOT = { has_terrain = steppe }
 		}
 		modifier = {
@@ -742,11 +748,11 @@ gold = {
 		}
 		modifier = {
 			factor = 0
-			owner = { has_reform = roadwarrior_great_convoy }
+			FROM = { has_reform = roadwarrior_great_convoy }
 		}
 		modifier = {
 			factor = 2
-			owner = { has_reform = dwarovar_treasures_of_our_forefathers }
+			FROM = { has_reform = dwarovar_treasures_of_our_forefathers }
 		}
 		modifier = {
 			factor = 2.5
@@ -754,6 +760,10 @@ gold = {
 				area = gor_burad_area
 				area = buradforge_area
 			}
+		}
+		modifier = {
+			factor = 7.5
+			area = greatcavern_area
 		}
 	}
 }
@@ -940,7 +950,6 @@ ivory = {
 			NOT = { province_id = 4989 }
 			NOT = { province_id = 4990 }
 			NOT = { province_id = 4992 }
-			NOT = { area = jerkikal_area }
 		}
 		modifier = {
 			factor = 2.0
@@ -1224,6 +1233,11 @@ coffee = {
 		modifier = {
 			factor = 1.1
 			FROM = { culture_group = bulwari }
+		}
+		# Jayek beans
+		modifier = {
+			factor = 100
+			province_id = 1036
 		}
 	}
 }
@@ -1530,11 +1544,6 @@ cocoa = {
 			factor = 1.15 #summer glade
 			area = domandrod_gladeway_2_area
 		}
-		# Gimme that cocoa
-		modifier = {
-			factor = 100
-			province_id = 1036
-		}
 	}
 }
 
@@ -1550,11 +1559,11 @@ silk = {
 		factor = 5
 		modifier = {
 			factor = 0
-			continent = europe
-		}
-		modifier = {
-			factor = 0
-			normal_or_historical_nations = yes
+			NOT = { 
+				region = domandrod_region
+				area = westnest_area
+				area = eastnest_area
+			}
 		}
 		modifier = {
 			factor = 0
@@ -1577,13 +1586,17 @@ silk = {
 			}
 		}
 		modifier = {
-			factor = 1.5
-			continent = asia
-		}
-		modifier = {
 			factor = 1.25
 			region = domandrod_region
 		}
+		modifier = {
+			factor = 13
+			OR = {
+				area = westnest_area
+				area = eastnest_area
+			}
+		}
+		
 		modifier = {
 			factor = 2.0
 			FROM = { has_country_flag = encourage_cash_crops_flag }
@@ -1740,6 +1753,8 @@ livestock = {
 				has_terrain = city_terrain
 				has_terrain = ancient_forest
 				has_terrain = gladeway
+				area = westnest_area
+				area = eastnest_area
 			}
 			NOT = { region = mushroom_forest_region }
 		}
@@ -2018,6 +2033,12 @@ gems = {
 			factor = 100
 			province_id = 2948 #diamond quarry
 		}
+		modifier = {
+			factor = 4
+			owner = {
+				has_country_modifier = G55_increased_gem_chance
+			}
+		}
 	}
 }
 
@@ -2033,11 +2054,28 @@ coal = {
 			development = 20
 			owner = { innovativeness = 20 }
 		}
-		provincial_institution_progress = {
-			which = enlightenment
-			value = 100
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_country_flag = earlier_coal_available }
+				}
+			}
+			provincial_institution_progress = {
+				which = enlightenment
+				value = 100
+			}
+			owner = { has_institution = enlightenment }
 		}
-		owner = { has_institution = enlightenment }
+		else = {
+			provincial_institution_progress = {
+				which = manufactories
+				value = 100
+			}
+			owner = {
+				has_institution = manufactories
+				adm_tech = 23
+			}
+		}
 	}
 	modifier = {
 		global_trade_goods_size_modifier = 0.1
@@ -2134,11 +2172,12 @@ mithril = {
 	color = { 220 238 251 }
 	# Trading bonus
 	modifier = {
-		prestige = 1
+		shock_damage_received = -0.5
+		shock_damage = 0.5
 	}
 	province = {
-		shock_damage_received = -0.01
-		shock_damage = 0.02
+		local_prosperity_growth = -0.1
+		local_build_cost = -0.25
 	}
 	chance = {
 		factor = 1
@@ -2176,7 +2215,10 @@ mithril = {
 		}
 		modifier = {
 			factor = 1000
-			has_province_modifier = dwarovar_huge_mithril_cave
+			OR = {
+				has_province_modifier = dwarovar_mithrilarm_mine
+				has_province_modifier = dwarovar_huge_mithril_cave
+			}		
 		}
 		modifier = {
 			factor = 1.5
@@ -2185,7 +2227,7 @@ mithril = {
 		}
 		modifier = {
 			factor = 2
-			owner = { has_reform = dwarovar_treasures_of_our_forefathers }
+			FROM = { has_reform = dwarovar_treasures_of_our_forefathers }
 		}
 		modifier = {
 			factor = 3

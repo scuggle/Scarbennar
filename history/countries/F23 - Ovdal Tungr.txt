@@ -27,3 +27,9 @@ historical_friend = U17 #Crathanor
 	add_ruler_personality = navigator_personality
 	set_ruler_flag = set_immortality
 }
+1000.1.1 = { 
+	set_estate_privilege = estate_mages_organization_state 
+	set_country_flag = ancestor_worship_knows_balgar
+	set_country_flag = ancestor_worship_knows_murri
+	set_country_flag = ancestor_worship_knows_krummul
+}

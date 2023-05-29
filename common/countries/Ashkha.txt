@@ -39,6 +39,7 @@ monarch_names = {
 
 
 	#Generic Lizardfolk Name List
+	"Achagi #0" = -1
 	"Aethron #0" = 10
 	"Aguntat #0" = 10
 	"Akhsar #0" = 10
@@ -147,7 +148,6 @@ monarch_names = {
 	"Zirzosk #0" = 10
 	"Ziz #0" = 10
 	
-	"Achagi #0" = -1
 	"Akrese #0" = -1
 	"Akzaja #0" = -1
 	"Alaka #0" = -1
@@ -203,7 +203,7 @@ leader_names = {
 	Goldscale Riverrunner Foreststrider Seawalker Starsage Dragonsbane Watersage Thunderfury Searuler Starseer Stormsinger Holyscale Starchaser Sunchaser
 	Skinhunter Battleborn Starborn Stargazer Sunlover Foamwalker Hissfoam Stillshadow Sunsong Nightsong Stonecarver Pearlchaser Shineblade Nightstalker Deepsage
 	Skybreaker Farsight Wiseclaw Wisestar Starriver Skywrite Wisenight Clearsea Stormbinder Greenstalker Starwalker Blackclaw Brightscale Marbleclaw Ebonclaw Ebonscale
-	Waverider Dreamchaser Skygaze Seascribe Earthseeker Spiritwalker Stareye Moonwarden Moonspear Moonlance Moonblade Sunspear Sunlance Sublade Starspear Starlance Starblade 
+	Waverider Dreamchaser Skygaze Seascribe Earthseeker Spiritwalker Stareye Moonwarden Moonspear Moonlance Moonblade Sunspear Sunlance Sunblade Starspear Starlance Starblade 
 	Waveblade Wavespear Wavelance Wavebreaker Seablade Sealance Seaspear Seabreaker Foamblade Foamlance Foamspear Godseeker
 	#Only for Ashhama
 	#Bloodsinger Blooddancer Blooddrinker Bonecarver Bonedancer Bonechaser Gutpainter Skinartist Songfury Newsong Songshriek Truehowl Redeye Clearthought Stonecarver
