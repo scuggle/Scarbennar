@@ -28,7 +28,7 @@ infantry_ideas = { #  Infantry/Fire
 		land_maintenance_modifier = -0.10
 	}
 	inf_ide6 = {
-		max_general_fire = 1
+		leader_land_fire = 1
 		artillery_fire = 0.25
 	}
 	inf_ide7 = {
@@ -68,7 +68,7 @@ aristocracy_ideas = { # Cavalry/Shock
 		land_attrition = -0.10
 	}
 	noble_officers = {
-		max_general_shock = 1
+		leader_land_shock = 1
 		shock_damage_received = -0.05
 	}
 	international_nobility = {
@@ -222,7 +222,7 @@ quantity_ideas = { # Logistics
 		infantry_power = 0.05
 		cavalry_power = 0.05
 		artillery_power = 0.05
-		max_general_maneuver = 1
+		leader_land_manuever = 2
 	}
 	expanded_supply_trains = {
 		loot_amount = 5
