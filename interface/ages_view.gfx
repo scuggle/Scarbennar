@@ -788,9 +788,50 @@ spriteTypes = {
 		name = "GFX_ab_anbennarian_resurgence"
 		texturefile = "gfx/interface/ages/ab_fire_damage_recieved.dds"
 	}
-	
-		spriteType = {
-		name = "GFX_ab_orcish_nation"
+
+	#Europe abilities
+	spriteType = {
+		name = "GFX_ab_adventurers_of_escann"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_cannorian_exploration"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_serpentspine_wars_of_consolidation"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_spirit_of_adean"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_elven_renaissance"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_reavers_resurgent"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_wars_of_supremacy"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_iron_fist_over_bulwar"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_anti_magic_measures"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_serpentspine_reclamation"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_legacy_of_monsters"
 		texturefile = "gfx/interface/ages/ab_development_cost.dds"
 	}
 

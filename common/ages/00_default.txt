@@ -447,15 +447,6 @@ age_of_reformation = {
 			}
 		}
 		
-		ab_ship_power_propagation = {
-			modifier = {
-				ship_power_propagation = 0.2
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-		
 		ab_institution_spread_from_true_faith = {
 			modifier = {
 				institution_spread_from_true_faith = 0.5
@@ -779,23 +770,23 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_sun_cult_resurgence = {
-			allow = {
-				OR = {
-					religion = bulwari_sun_cult
-					religion = old_bulwari_sun_cult
-					religion = the_jadd
-				}
-				government_rank = 3
-			}
-			effect = {
-				custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
-				set_country_flag = age_ability_sun_cult_resurgence_flag
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
+		# ab_sun_cult_resurgence = {
+		# 	allow = {
+		# 		OR = {
+		# 			religion = bulwari_sun_cult
+		# 			religion = old_bulwari_sun_cult
+		# 			religion = the_jadd
+		# 		}
+		# 		government_rank = 3
+		# 	}
+		# 	effect = {
+		# 		custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
+		# 		set_country_flag = age_ability_sun_cult_resurgence_flag
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 10
+		# 	}
+		# }
 	}
 }
 
@@ -951,6 +942,14 @@ age_of_revolutions = {
 						}
 					}
 				}
+			}
+		}
+		ab_ship_power_propagation = {
+			modifier = {
+				ship_power_propagation = 0.2
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 		ab_artificer_machinations_of_war = {
