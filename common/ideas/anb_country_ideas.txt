@@ -3953,7 +3953,7 @@ J32_ideas = {
 #Anbenland Ideas
 B52_ideas = {
 	start = {
-		global_colonial_growth = 15
+		backrow_artillery_damage = 0.15
 		global_institution_spread = 0.1
 	}
 	bonus = {
@@ -3975,6 +3975,7 @@ B52_ideas = {
 	}
 	B52_eternal_vigilance_on_the_horizon = {
 		defensiveness = 0.1
+		garrison_size = 0.1
 	}
 	B52_dule_legion = {
 		manpower_recovery_speed = 0.10
