@@ -2889,7 +2889,7 @@ mage_tower = {
 
 	modifier = {
 		local_development_cost = -0.05
-		tax_income =  = 3
+		tax_income = 3
 		local_hostile_attrition = 1
 	}
 	bonus_modifier = {
