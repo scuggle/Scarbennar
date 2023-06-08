@@ -29,7 +29,7 @@ infantry_ideas = { #  Infantry/Fire
 	}
 	inf_ide6 = {
 		leader_land_fire = 1
-		artillery_fire = 0.25
+		artillery_fire = 0.15
 	}
 	inf_ide7 = {
 		artillery_cost = -0.15
@@ -169,10 +169,9 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 	}
 	adven_ide3 = {
 		infantry_power = 0.1
-		merc_leader_army_tradition = 0.5
 	}
 	adven_ide4 = {
-		leader_land_shock = 1
+		merc_leader_army_tradition = 0.66
 	}
 	adven_ide5 = {
 		possible_condottieri = 0.5
@@ -362,7 +361,7 @@ offensive_ideas = { #Grand Plan
 	}
 
 	bonus = {
-		land_forcelimit_modifier = 0.15
+		land_forcelimit_modifier = 0.10
 	}
 
 	bayonet_leaders = {
@@ -372,8 +371,7 @@ offensive_ideas = { #Grand Plan
 		no_cost_for_reinforcing = yes
 	}
 	superior_firepower = {
-		land_morale = 0.1
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.15
 	}
 	glorious_arms = {
 	    global_regiment_cost = -0.1
@@ -383,7 +381,6 @@ offensive_ideas = { #Grand Plan
 	}
 	grand_army = {
 		manpower_recovery_speed = 0.15
-		regiment_manpower_usage = -0.05
 	}
 	napoleonic_warfare = {
 		land_maintenance_modifier = -0.05
@@ -402,7 +399,7 @@ special_forces_ideas = { # Special Forces
 	}
 
 	bonus = {
-		discipline = 0.025
+		cav_to_inf_ratio = 0.15
 		artificers_loyalty_modifier = 0.1
 	}
 	special_forces_1 = {
@@ -439,26 +436,29 @@ diplomatic_ideas = { #international ideas #done
 	}
 	
 	bonus = {
-        trade_efficiency = 0.05
-		imperial_authority = 0.05
+		imperial_authority = 0.10
+		province_warscore_cost = -0.15
 	}
 
 	foreign_embassies = {
-		envoy_travel_time = -0.5
-		dip_advisor_cost = -0.25
+		envoy_travel_time = -0.33
+		ae_impact = -0.1
+		
 	}
 	cabinet = {
 		reduced_stab_impacts = yes
 	}
 	grand_banquets = {
-		ae_impact = -0.1
+		dip_advisor_cost = -0.25
+		reasons_to_elect = 25
 	}
 	benign_diplomats = {
-		can_fabricate_for_vassals = yes
 		diplomatic_upkeep = 2
+		monthly_favor_modifier = 0.1
 	}
 	experienced_diplomats  = {
 		diplomats = 1
+		improve_relation_modifier = 0.2
 	}
 	flexible_negotiation = {
 		monarch_diplomatic_power = 1
@@ -493,13 +493,12 @@ spy_ideas = { #Culture Ideas
 		NOT = { has_idea_group = diplomatic_ideas }
 	}
 	
-	bonus = {
-        trade_efficiency = 0.05
-		imperial_authority = 0.05
+	bonus = {	
+		manpower_in_own_culture_provinces = 0.10
 	}
 
 	efficient_spies = {
-		prestige_decay = -0.01
+		culture_conversion_time = -0.15
 	}	
 	
 	agent_training = {
@@ -507,19 +506,20 @@ spy_ideas = { #Culture Ideas
 	}
 
 	vetting = {
-		global_missionary_strength = 0.01
+			global_unrest = -2
 	}
 
 	state_propaganda = {
-		max_absolutism = 20
+		max_absolutism = 10
 	}
 	
 	claim_fabrication = {
-		same_culture_advisor_cost = -0.20
+		
+		same_culture_advisor_cost = -0.15
 	}
 	
 	privateers = {
-		manpower_in_own_culture_provinces = 0.20
+		development_cost_in_primary_culture = -0.1
 	}
 
 	audit_checks = {
@@ -539,13 +539,13 @@ maritime_ideas = { #Marines Ideas
 	}
 
 	bonus = {
-        trade_efficiency = 0.05
-		imperial_authority = 0.05
+      	number_of_cannons_flagship = 100
+		flagship_naval_engagement_modifier = 5
 	}
 
 	merchant_traditions = {
-		transport_power = 0.33
-	}
+		transport_power = 0.69
+			}
 	merchant_marine = {
 		leader_naval_manuever = 1
 	}
@@ -553,7 +553,7 @@ maritime_ideas = { #Marines Ideas
 		navy_tradition = 1
 	}
 	grand_navy = {
-		naval_forcelimit_modifier = 0.2
+		naval_forcelimit_modifier = 0.25
 	}
 	ships_penny = {
 		allowed_marine_fraction = 1
@@ -561,6 +561,7 @@ maritime_ideas = { #Marines Ideas
 	}
 	sea_hawks = {
 		regiment_disembark_speed = 0.25
+		flagship_landing_penalty = 1
 	}
 	naval_fighting_instruction = {
 		global_sailors_modifier = 0.5
@@ -579,12 +580,11 @@ naval_ideas = { #war fleet #done
 	}
 
 	bonus = {
-        trade_efficiency = 0.05
-		imperial_authority = 0.05
+       naval_forcelimit_modifier = 0.5
 	}
 
 	boarding_parties = {
-		global_sailors_modifier = 0.1
+		global_sailors_modifier = 0.10
 	}
 	improved_rams = {
 		naval_maintenance_modifier = -0.1
@@ -603,7 +603,8 @@ naval_ideas = { #war fleet #done
 		global_naval_barrage_cost = -0.5
 	}
 	superior_seamanship = {
-		naval_forcelimit_modifier = 0.5
+		blockade_efficiency = 0.25
+		
 	}
 
 	#until_the_last_man = {
@@ -675,17 +676,19 @@ trade_ideas = { #mercantile #done
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.05
-		imperial_authority = 0.05
+        merchants = 1
+		trade_efficiency = 0.05
 	}
 
 	shrewd_commerce_practise = {
-		global_trade_goods_size_modifier = 0.05
+		trade_range_modifier = 0.33
+		merchants = 1
   	}
   	free_trade = {
-		trade_range_modifier = 0.33
+		global_trade_goods_size_modifier = 0.05
   	}
 	merchant_adventures = {
+		embargo_efficiency = 0.15
 		center_of_trade_upgrade_cost = -0.15
 	}
 	national_trade_policy = {
@@ -699,7 +702,7 @@ trade_ideas = { #mercantile #done
 	}
 	fast_negotiations = {
 		mercantilism_cost = -0.5
-		merchants = 1
+		
 	}
 
 	ai_will_do = {
@@ -746,13 +749,12 @@ exploration_ideas = { #reclamation #done
 	}
 	
 	bonus = {
-        trade_efficiency = 0.05
-		imperial_authority = 0.05
+		vassal_naval_forcelimit_bonus = 0.15
 	}
 
 	quest_for_the_new_world	= {
 		may_explore = yes
-		envoy_travel_time = -0.50
+		envoy_travel_time = -0.33
 	}
 	colonial_ventures = {
 		range = 0.5
@@ -764,14 +766,15 @@ exploration_ideas = { #reclamation #done
 		global_colonial_growth = 30
 	}
 	vice_roys  = {
-		trade_range_modifier = 0.5
+		global_tariffs = 0.25
  	}
 	free_colonies = {
 		idea_claim_colonies = yes
+		treasure_fleet_income = 0.25
 	}
 	global_empire = {
 		colonist_placement_chance = 0.15
-		vassal_forcelimit_bonus = 0.5
+
 	}
 
 	ai_will_do = {
@@ -1009,34 +1012,36 @@ influence_ideas = { #benevolence #done
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.05
-		imperial_authority = 0.05
+		vassal_forcelimit_bonus = 0.15
 	}
 
 	tribute_system = {
-		reduced_liberty_desire = 10
+		reduced_liberty_desire = 15
 	}
 	
 	additional_loyalist_recruitment = {
 		diplomats = 1
+		accept_vassalization_reasons = 10
 	}
 	
 	integrated_elites = {
-		dip_advisor_cost = -0.33
+		diplomatic_upkeep = 2
+		diplomatic_annexation_cost = -0.25
+		
 	}
 	buffer_states = {
-		vassal_forcelimit_bonus = 0.5
+		vassal_income = 0.25
 	}
 	diplomatic_influence = {
 		diplomatic_reputation = 2
 	}
 	postal_service = {
 		allow_client_states = yes
-		liberty_desire_from_subject_development = -0.10
+		
 	}
 	marcher_lords = {
-		diplomatic_upkeep = 2
-		diplomatic_annexation_cost = -0.25
+		vassal_manpower_bonus = 0.15
+		
 		#You can choose a specialisation of subjects, one per subjects (ONLY FOR AI)
 		# -20% Regiment Cost, +20% FL, +20% Manpower, +20% Manpower recovery speed - Military
 		# -20% Development cost, -20% Build Time, -20% Build Cost, +1 Global Building Slot - Economic
@@ -1063,32 +1068,33 @@ the_great_game = { #The Great Game
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.05
-		imperial_authority = 0.05
+        	free_dip_policy = 1
+			can_claim_states = yes
 	}
 
 	tgg1 = {
-		spy_offence = 0.15
+		ae_impact = -0.15
 	}
 	tgg2 = {
-		accept_vassalization_reasons = 10
-		liberty_desire_from_subject_development = -0.1
+		monthly_splendor = 2
 	}
 	tgg3 = {
-		ae_impact = -0.1
+		power_projection_from_insults = 1
+		rival_change_cost = -1
 	}
 	tgg4 = {
-		power_projection_from_insults = 1
+		max_absolutism = 20
+		yearly_absolutism = 2.5
 	}
 	tgg5 = {
-		advisor_cost = -0.10
+		all_estate_loyalty_equilibrium = 0.1
+		all_estate_possible_privileges = 1
 	}
 	tgg6 = {
 		monarch_lifespan = 5
 	}
 	tgg7 = {
-		max_absolutism = 20
-		yearly_absolutism = 2.5
+		unjustified_demands = -0.2
 	}
 	
 	ai_will_do = {
@@ -1100,8 +1106,7 @@ shadows_and_daggers = { #TBD
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.05
-		imperial_authority = 0.05
+        artillery_levels_available_vs_fort = 1
 	}
 
 	s_d1 = {
@@ -1113,22 +1118,20 @@ shadows_and_daggers = { #TBD
 		dip_advisor_cost = -0.1
 	}
 	s_d3 = {
-		embargo_efficiency = 0.30
+		privateer_efficiency = 0.25
 	}
 	s_d4 = {
 		national_focus_years = -99 #Instant
 	}
 	s_d5 = {
 		diplomats = 1
-		yearly_corruption = -0.1
-		
+		yearly_corruption = -0.15
 	}
 	s_d6 = {
-		rebel_support_efficiency = 1
+		rebel_support_efficiency = 2
 	}
 	s_d7 = {
 		spy_offence = 1
-		siege_ability = 0.2
 	}
 	
 	ai_will_do = {
@@ -1187,7 +1190,7 @@ innovativeness_ideas = { #Technocratic Ideas #CoT
 	}
 
 	bonus = {
-		development_cost = -0.05
+		idea_cost = -0.1
 	}
 
 	patron_of_art  = {
@@ -1195,24 +1198,23 @@ innovativeness_ideas = { #Technocratic Ideas #CoT
 	}
 	empiricism = {
 		advisor_pool = 2
+		female_advisor_chance = 0.33
 	}
 	scientific_revolution = {
-		advisor_cost = -0.1
+		advisor_cost = -0.15
 	}
 	dynamic_court = {
-		female_advisor_chance = 0.33
 		may_recruit_female_generals = yes
+		reform_progress_growth = 0.15
 	}
 	print_culture = {
-		global_institution_spread = 0.25 #institution spread
+		global_institution_spread = 0.33 #institution spread
 	}
 	optimism = {
-		idea_cost = -0.05
-		reform_progress_growth = 0.10
+		innovativeness_gain = 1
 	}
 	formalized_officer_corps = {
-		technology_cost = -0.05
-		innovativeness_gain = 1
+		technology_cost = -0.10
 	}
 
 	ai_will_do = {
@@ -1240,27 +1242,21 @@ religious_ideas = { #zealotry ideas #done
 	}
 
 	bonus = {
-		development_cost = -0.05
+		manpower_in_true_faith_provinces = 0.10
 	}
 
 	missionary_schools = {
 		reverse_relation_with_same_religion = 25
+		missionaries = 1
 	}
 	church_attendance_duty = {
 		global_missionary_strength = 0.02
 	}
 	divine_supremacy = {
 		max_absolutism = 10
-		church_influence_modifier = 0.05
-		church_loyalty_modifier = 0.05
+		church_loyalty_modifier = 0.1
 	}
 	devoutness = {
-		missionaries = 1
-	}
-	religious_tradition = {
-		manpower_in_true_faith_provinces = 0.15
-	}
-	inquisition = {
 		tolerance_own = 2
 		papal_influence = 1
 		devotion = 0.5
@@ -1271,10 +1267,16 @@ religious_ideas = { #zealotry ideas #done
 		yearly_doom_reduction = 1
 		yearly_authority = 0.5
 		yearly_patriarch_authority = 0.005
+		harmonization_speed = 0.2
+	}
+	religious_tradition = {
+		enforce_religion_cost = -0.5
+	}
+	inquisition = {
+		missionaries = 1
+		missionary_maintenance_cost = -0.15
 	}
 	deus_vult = {
-		culture_conversion_cost = -0.20
-		same_culture_advisor_cost = -0.15
 		cb_on_religious_enemies = yes
 	}
 
