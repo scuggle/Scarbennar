@@ -409,7 +409,7 @@ special_forces_ideas = { # Special Forces
 		regiment_disembark_speed = 0.5
 	}
 	special_forces_3 = {
-		special_unit_forcelimit = 0.15
+		special_unit_forcelimit = 0.25
 	}
 	special_forces_4 = {
 		leader_land_manuever = 1
@@ -422,7 +422,7 @@ special_forces_ideas = { # Special Forces
 		cavalry_power = 0.05
 	}
 	special_forces_7 = {
-		special_unit_cost_modifier = -0.2
+		special_unit_cost_modifier = -0.25
 	}
 }
 
@@ -461,10 +461,10 @@ diplomatic_ideas = { #international ideas #done
 		improve_relation_modifier = 0.2
 	}
 	flexible_negotiation = {
-		monarch_diplomatic_power = 1
+		dip_tech_cost_modifier = -0.1
 	}
 	diplomatic_corps = {
-		dip_tech_cost_modifier = -0.1
+		
 		diplomatic_reputation = 2
 	}
 
@@ -677,7 +677,7 @@ trade_ideas = { #mercantile #done
 
 	bonus = {
         merchants = 1
-		trade_efficiency = 0.05
+		trade_efficiency = 0.15
 	}
 
 	shrewd_commerce_practise = {
@@ -688,7 +688,7 @@ trade_ideas = { #mercantile #done
 		global_trade_goods_size_modifier = 0.05
   	}
 	merchant_adventures = {
-		embargo_efficiency = 0.15
+		naval_tradition_from_trade = 0.15
 		center_of_trade_upgrade_cost = -0.15
 	}
 	national_trade_policy = {
@@ -1068,15 +1068,14 @@ the_great_game = { #The Great Game
 	category = DIP
 
 	bonus = {
-        	free_dip_policy = 1
-			can_claim_states = yes
+			monarch_diplomatic_power = 1
 	}
 
 	tgg1 = {
 		ae_impact = -0.15
 	}
 	tgg2 = {
-		monthly_splendor = 2
+		monarch_lifespan = 5
 	}
 	tgg3 = {
 		power_projection_from_insults = 1
@@ -1091,10 +1090,11 @@ the_great_game = { #The Great Game
 		all_estate_possible_privileges = 1
 	}
 	tgg6 = {
-		monarch_lifespan = 5
+		
+		free_dip_policy = 1
 	}
 	tgg7 = {
-		unjustified_demands = -0.2
+		unjustified_demands = -0.15
 	}
 	
 	ai_will_do = {
@@ -1270,7 +1270,7 @@ religious_ideas = { #zealotry ideas #done
 		harmonization_speed = 0.2
 	}
 	religious_tradition = {
-		enforce_religion_cost = -0.5
+		warscore_cost_vs_other_religion = -0.25
 	}
 	inquisition = {
 		missionaries = 1
@@ -1297,30 +1297,31 @@ humanist_ideas = { #External Ideas #done
 	}
 	
 	bonus = {
-		development_cost = -0.05
+		min_autonomy_in_territories = -0.15
 	}
 
 	tolerance_idea = {
-		years_of_nationalism = -5
+		years_of_nationalism = -10
 	}
 	local_traditions = {
-		global_unrest = -1
+		global_unrest = -2
 	}
 	ecumenism = {
 		no_religion_penalty = yes
 	}
 	indirect_rule = {
-		global_autonomy = -0.05
-		global_monthly_devastation = -0.05
+		global_autonomy = -0.10
+		global_monthly_devastation = -0.10
 	}
 	cultural_ties = {
-		core_creation = -0.1
+		core_creation = -0.15
 	}
 	benevolence = {	
-		country_admin_power = 1
+		autonomy_change_time = -0.50
+		num_accepted_cultures = 2
 	}
 	humanist_tolerance = {
-		governing_capacity_modifier = 0.5
+		governing_capacity_modifier = 0.20
 	}
 	
 	ai_will_do = {
@@ -1336,7 +1337,7 @@ focus_inwards = { #Internal Ideas
 	}
 
 	bonus = {
-		development_cost = -0.05
+		centralize_state_cost = -0.50
 	}
 
 	foc_inw1 = {
@@ -1345,23 +1346,24 @@ focus_inwards = { #Internal Ideas
 		republican_tradition = 0.25
 	}
 	foc_inw2 = {
-		all_estate_loyalty_equilibrium = 0.05
+		all_estate_loyalty_equilibrium = 0.10
+		loyalty_change_on_revoked = 0.05
 	}
 	foc_inw3 = { 
-		tolerance_own = 1
-		global_missionary_strength = 0.01
+		local_prosperity_growth = 0.2
 	}
 	foc_inw4 = {
-		manpower_in_own_culture_provinces = 0.1
+		monthly_splendor = 2
 	}
 	foc_inw5 = {
-		country_admin_power = 1
+		estate_interaction_cooldown_modifier = -0.2
 	}
 	foc_inw6 = {
-		build_cost = -0.1
+		max_absolutism = 15
+		yearly_absolutism = 0.1
 	}
 	foc_inw7 = {
-		monthly_reform_progress = 0.25
+		global_tax_modifier = 0.20
 	}
 	
 	ai_will_do = {
@@ -1380,18 +1382,20 @@ administrative_ideas = { #government: monarchy
 	}
 
 	bonus = {
-		development_cost = -0.05
+		max_absolutism_effect = 0.20
 	}
 
 	organised_mercenary_payment = {
-		heir_chance = 0.5
+		heir_chance = 1
+		legitimacy = 1
 	}
 	adaptability = {
-		legitimacy = 0.5
+		prestige_decay = -0.01
+		promote_culture_cost = -1
 	}
 	benefits_for_mercenaries = {
-		same_culture_advisor_cost = -0.1
-		culture_conversion_cost = -0.1
+		same_culture_advisor_cost = -0.15
+		culture_conversion_cost = -0.10
 	}
 	bookkeeping = {
 		administrative_efficiency = 0.05
@@ -1401,7 +1405,7 @@ administrative_ideas = { #government: monarchy
 		max_absolutism = 10
 	}
 	administrative_efficiency_idea = {
-		monarch_admin_power = 1
+		monarch_admin_power = 2
 	}
 	civil_servants = {
 		#Enables 'Coming of Age' Event, when your Heir turns 16, you get an event letting you increase their stats by 2 (player's choice)
@@ -1429,29 +1433,29 @@ plutocracy_ideas = { #government: republic
 	}
 
 	bonus = {
-		development_cost = -0.05
+		merchants = 1
 	}
 
 	tradition_of_payment = {
-		idea_cost = -0.025
+		advisor_cost = -0.05
+		advisor_pool = 2
 	}
 	abolished_serfdom = {
-		advisor_cost = -0.05
-		advisor_pool = 1
+		monarch_lifespan = 5
 	}
 	bill_of_rights = {
 		candidate_random_bonus = 1
 	}
 	free_merchants = {
-		monarch_lifespan = 5
-		prestige_decay = -0.005
+		trade_company_investment_cost = -0.15
+		mercantilism_cost = -0.1
 	}
 	free_subjects = {
-		global_autonomy = -0.05
+		global_autonomy = -0.10
 	}
 	free_cities = {
 		merc_maintenance_modifier = -0.20
-		adventurers_loyalty_modifier = 0.05
+		adventurers_loyalty_modifier = 0.10
 	}
 	emancipation = {
 		republican_tradition = 0.4
@@ -1474,7 +1478,7 @@ theocracy_gov_ideas = { #government: theocracy
 	}
 	
 	bonus = {
-		development_cost = -0.05
+		free_adm_policy = 1
 	}
 	
 	servants_of_god = {
@@ -1485,20 +1489,21 @@ theocracy_gov_ideas = { #government: theocracy
 		monarch_lifespan = 5
 	}
 	friends_in_high_places = {
-		country_admin_power = 2
+		harsh_treatment_cost = -0.20
+		stability_cost_modifier = -0.25
 	}
 	flesh_is_weak = {
 		tolerance_own = 3
 	}
 	alpha_and_omega = {
-		global_tax_modifier = 0.33
+		global_tax_modifier = 0.50
 	}
-	conviction_of_sin = {
-		harsh_treatment_cost = -0.20
-		stability_cost_modifier = -0.2
+	conviction_of_sin = {	
+		country_admin_power = 1
 	}
 	martyrs = {
-		free_adm_policy = 1
+		missionaries = 1
+		enforce_religion_cost = -0.5
 	}
 
 }
@@ -1660,12 +1665,11 @@ expansion_ideas = { #frontiers #done
 	important = yes
 
 	bonus = {
-		development_cost = -0.05
+		auto_explore_adjacent_to_colony = yes
 	}
 
 	additional_colonists = {
-		auto_explore_adjacent_to_colony = yes
-		global_colonial_growth = 15
+		global_colonial_growth = 20
 	}
 	additional_merchants = {
 		colonists = 1
@@ -1674,13 +1678,15 @@ expansion_ideas = { #frontiers #done
 		movement_speed = 0.1
 	}
 	factories = {
-		colonist_placement_chance = 0.05
+		colonist_placement_chance = 0.10
 	}
 	additional_diplomats = {
 		diplomats = 1
+		expel_minorities_cost = -0.30
 	}
 	general_colonization_law  = {
 		merchants = 1
+		
 	}
 	competetive_merchants  = {
 		native_assimilation = 0.33
