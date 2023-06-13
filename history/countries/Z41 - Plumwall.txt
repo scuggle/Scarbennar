@@ -10,3 +10,16 @@ capital = 281 # Plumwall
 national_focus = ADM
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_magisterium }
+
+1443.9.24 = {
+	monarch = {
+		name = "Aril"
+		dynasty = "Dhanvar"	
+		birth_date = 1415.9.24
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+
