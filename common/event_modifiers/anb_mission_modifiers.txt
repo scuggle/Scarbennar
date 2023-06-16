@@ -2865,7 +2865,7 @@ grombar_strong_and_disciplined = {
 }
 
 grombar_strong_kingdom_policy = {
-	expel_minorities_cost = -0.5
+	culture_conversion_cost = -0.25
 }
 
 grombar_strong_kingdom_1 = {
