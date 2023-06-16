@@ -45,6 +45,7 @@ X01_ideas = {
 		production_efficiency = 0.20
 	}
 	X01_seven = {
+		discipline = 0.05
 		infantry_shock = 0.2
 	}
 }
