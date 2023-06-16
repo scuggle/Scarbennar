@@ -1,10 +1,13 @@
 
 #490 - Barahonas
 
-owner = U05
-controller = U05
-add_core = U05
+#owner = U05
+#controller = U05
+#add_core = U05
 #add_core = U01
+owner = L28
+controller = L28
+add_core = L28
 culture = kheteratan
 religion = khetist
 
