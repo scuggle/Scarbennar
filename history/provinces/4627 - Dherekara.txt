@@ -1,8 +1,7 @@
 
 # No previous file for PROV4627
-owner = R64
-controller = R64
-add_core = R64
+owner = R78
+controller = R78
 add_core = R78
 culture = shamadhan
 religion = high_philosophy

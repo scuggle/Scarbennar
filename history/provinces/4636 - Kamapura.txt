@@ -1,8 +1,7 @@
 
 # No previous file for Banten
-owner = R62
-controller = R62
-add_core = R62
+owner = R78
+controller = R78
 add_core = R78
 culture = shamadhan
 religion = high_philosophy

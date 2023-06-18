@@ -1,8 +1,7 @@
 
 # No previous file for Banten
-owner = R62
-controller = R62
-add_core = R62
+owner = R80
+controller = R80
 add_core = R80
 add_core = R79
 culture = kamtarhid

@@ -1,10 +1,10 @@
 
 # No previous file for Banten
-owner = R62
-controller = R62
-add_core = R62
-culture = boar_command
-religion = godlost
+owner = R64
+controller = R64
+add_core = R64
+culture = brown_orc
+religion = old_dookan
 
 hre = no
 
