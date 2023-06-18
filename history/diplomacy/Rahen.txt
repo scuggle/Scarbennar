@@ -39,13 +39,6 @@ alliance = {
 	start_date = 1444.1.1
 	end_date = 1500.1.1
 }
-#Rajnadghada - Dhenijanraj
-alliance = {
-	first = R07
-	second = R51
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
 #Sarnavan - Tilathi
 vassal = {
 	first = R10
