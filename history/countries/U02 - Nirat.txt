@@ -28,5 +28,5 @@ capital = 473
 		siege = 4
 		trait = inspirational_leader_general_personality
 	}
-	set_country_flag  = nirat_defiance
+	#set_country_flag  = nirat_defiance
 }
