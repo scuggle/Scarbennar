@@ -2865,7 +2865,7 @@ grombar_strong_and_disciplined = {
 }
 
 grombar_strong_kingdom_policy = {
-	culture_conversion_cost = -0.25
+	global_missionary_strength = 0.02
 }
 
 grombar_strong_kingdom_1 = {
