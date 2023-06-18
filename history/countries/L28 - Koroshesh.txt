@@ -1,6 +1,6 @@
 
 setup_vision = yes
-government = monarchy
+government = republic
 add_government_reform = technocracy_republic_reform
 government_rank = 2
 primary_culture = delta_gnome
