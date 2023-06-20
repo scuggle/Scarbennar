@@ -3281,6 +3281,7 @@ anbenncost={
 			2804.000000 1513.000000 2788.000000 1520.000000 2785.000000 1548.000000 
 		}
 	}
+
 	outgoing={
 		name="eastern_dameshead"
 		path={
@@ -3288,6 +3289,15 @@ anbenncost={
 		}
 		control={
 			2833.000000 1522.000000 2852.000000 1532.000000 2867.000000 1556.000000 
+		}
+	}
+		outgoing={
+			name="northern_dameshead"
+			path={
+			1283 1253 1267
+		}
+			control={
+
 		}
 	}
 	members={
