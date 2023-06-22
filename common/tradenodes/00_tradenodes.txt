@@ -2713,6 +2713,26 @@ freecestir={
 	}
 	ai_will_propagate_through_trade=yes
 }
+silvermere={
+	location=785
+	color={
+		200 200 255 
+	}
+	inland=yes
+	outgoing={
+		name="middle_alen"
+		path={
+			729 
+		}
+		control={
+			3037.000000 1650.000000 2997.000000 1682.000000 
+		}
+	}
+	members={
+		767 756 834 835 829 821 825 823 820 809 783 788 790 794 795 796 785 786 787 789 784 764 766 765 792 781 782 772 773 774 768 769 770 771 776 780 779 778 777 775 422 
+	}
+	ai_will_propagate_through_trade=yes
+}
 middle_alen={
 	location=229
 	color={
