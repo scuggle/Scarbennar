@@ -180,37 +180,4 @@ country_decisions = {
 			}
 		}
 	}	
-	switch_regent_court = {
-		potential = {
-			ai = no
-			religion = regent_court
-		}
-		allow = {
-			is_at_war = no
-			has_regency = no
-			has_consort_regency = no
-			adm_power = 100
-			dip_power = 100
-			mil_power = 100
-			OR = {
-				hre_religion = regent_court
-				AND = {
-					hre_religion_locked = no
-					hre_leagues_enabled = no
-				}
-			}
-			#NOT = {
-			#	has_country_flag = changed_deity
-			#}
-		}
-		effect = {
-			add_adm_power = -100
-			add_dip_power = -100
-			add_mil_power = -100
-			country_event = { 
-				id = regent_court.1
-			}
-			#hidden_effect = { set_country_flag = changed_deity }
-		}
-	}
 }	
