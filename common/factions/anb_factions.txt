@@ -208,10 +208,6 @@ hob_wolf_command = {
 	always = yes
 
 	modifier = {
-		improve_relation_modifier = -0.1
-		
-		land_attrition = -0.1
-		movement_speed = 0.1
 	}
 }
 
@@ -221,10 +217,6 @@ hob_boar_command = {
 	always = yes
 
 	modifier = {
-		war_exhaustion = 0.02
-		
-		reinforce_cost_modifier = -0.10
-		shock_damage_received = -0.1
 	}
 }
 
@@ -234,10 +226,6 @@ hob_lion_command = {
 	always = yes
 
 	modifier = {
-		idea_cost = 0.1
-		
-		leader_land_shock = 1
-		land_morale = 0.05
 	}
 }
 
@@ -247,10 +235,6 @@ hob_dragon_command = {
 	always = yes
 
 	modifier = {
-		global_tax_modifier = -0.1
-		
-		may_recruit_female_generals = yes
-		leader_land_fire = 2
 	}
 }
 
@@ -260,10 +244,6 @@ hob_elephant_command = {
 	always = yes
 
 	modifier = {
-		prestige_decay = 0.01
-		
-		years_of_nationalism = -5
-		global_unrest = -2
 	}
 }
 
@@ -273,10 +253,6 @@ hob_tiger_command = {
 	always = yes
 
 	modifier = {
-		yearly_corruption = 0.1
-		
-		advisor_cost = -0.1
-		stability_cost_modifier = -0.1
 	}
 }
 

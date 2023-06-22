@@ -819,6 +819,7 @@ ruler_is_human = {
 			ruler_culture = ikilshebe
 			ruler_culture = zovanwe
 			ruler_culture = kuivendi
+			ruler_culture = echenka
 
 			#Mengi
 			ruler_culture = ofehibi
@@ -827,7 +828,6 @@ ruler_is_human = {
 			ruler_culture = yeteferen
 			ruler_culture = sitewosi
 			ruler_culture = korewosi
-			ruler_culture = gaariira
 
 			#Baashidi
 			ruler_culture = ashamadi
@@ -838,6 +838,7 @@ ruler_is_human = {
 			#Tanizu
 			ruler_culture = tanizu
 			ruler_culture = dakinshi
+			ruler_culture = antmvura
 		}
 	}
 }
@@ -1425,6 +1426,7 @@ consort_is_human = {
 			consort_culture = ikilshebe
 			consort_culture = zovanwe
 			consort_culture = kuivendi
+			consort_culture = echenka
 
 
 			#Mengi
@@ -1434,7 +1436,6 @@ consort_is_human = {
 			consort_culture = yeteferen
 			consort_culture = sitewosi
 			consort_culture = korewosi
-			consort_culture = gaariira
 
 			#Baashidi
 			consort_culture = ashamadi
@@ -1445,6 +1446,7 @@ consort_is_human = {
 			#Tanizu
 			consort_culture = tanizu
 			consort_culture = dakinshi
+			consort_culture = antmvura
 		}
 	}
 }
@@ -2031,6 +2033,7 @@ heir_is_human = {
 			heir_culture = ikilshebe
 			heir_culture = zovanwe
 			heir_culture = kuivendi
+			heir_culture = echenka
 
 
 			#Mengi
@@ -2040,7 +2043,6 @@ heir_is_human = {
 			heir_culture = yeteferen
 			heir_culture = sitewosi
 			heir_culture = korewosi
-			heir_culture = gaariira
 
 			#Baashidi
 			heir_culture = ashamadi
@@ -2051,6 +2053,7 @@ heir_is_human = {
 			#Tanizu
 			heir_culture = tanizu
 			heir_culture = dakinshi
+			heir_culture = antmvura
 		}
 	}
 }
@@ -2347,7 +2350,6 @@ monstrous_culture = {
 		culture_group = ogre
 		culture_group = degenerated_elf
 		culture_group = lizardfolk
-		culture_group = adzalan_lizardfolk
 	}
 	NOT = {
 		culture = feng_harpy
@@ -2378,7 +2380,6 @@ culture_is_short_lived = {
 		culture_group = harimari
 		culture_group = kobold
 		culture_group = lizardfolk
-		culture_group = adzalan_lizardfolk
 		culture_group = orcish
 		culture_group = gnollish
 		culture_group = goblin
@@ -2560,10 +2561,7 @@ culture_is_kobold = {
 }
 
 culture_is_lizardfolk = {
-	OR = {
-		culture_group = lizardfolk
-		culture_group = adzalan_lizardfolk
-	}
+	culture_group = lizardfolk
 }
 
 culture_is_ogre = {
@@ -3187,7 +3185,6 @@ has_human_advisor = {
 			employed_advisor = { culture = yeteferen }
 			employed_advisor = { culture = sitewosi }
 			employed_advisor = { culture = korewosi }
-			employed_advisor = { culture = gaariira }
 			employed_advisor = { culture = ashamadi }
 			employed_advisor = { culture = dhebiji }
 			employed_advisor = { culture = suhratbi }
@@ -3196,6 +3193,7 @@ has_human_advisor = {
 			employed_advisor = { culture = guryadagga }
 			employed_advisor = { culture = tanizu }
 			employed_advisor = { culture = dakinshi }
+			employed_advisor = { culture = antmvura }
 		}
 	}
 }
@@ -3390,7 +3388,6 @@ has_human_advisor_of_category = {
 			employed_advisor = { category = $category$ culture = yeteferen }
 			employed_advisor = { category = $category$ culture = sitewosi }
 			employed_advisor = { category = $category$ culture = korewosi }
-			employed_advisor = { category = $category$ culture = gaariira }
 			employed_advisor = { category = $category$ culture = ashamadi }
 			employed_advisor = { category = $category$ culture = dhebiji }
 			employed_advisor = { category = $category$ culture = suhratbi }
@@ -3399,6 +3396,7 @@ has_human_advisor_of_category = {
 			employed_advisor = { category = $category$ culture = guryadagga }
 			employed_advisor = { category = $category$ culture = tanizu }
 			employed_advisor = { category = $category$ culture = dakinshi }
+			employed_advisor = { category = $category$ culture = antmvura }
 		}
 	}
 }
@@ -3909,6 +3907,7 @@ has_human_accepted_culture = {
 		accepted_culture = ikilshebe
 		accepted_culture = zovanwe
 		accepted_culture = kuivendi
+		accepted_culture = echenka
 
 		#Mengi
 		accepted_culture = ofehibi
@@ -3917,7 +3916,6 @@ has_human_accepted_culture = {
 		accepted_culture = yeteferen
 		accepted_culture = sitewosi
 		accepted_culture = korewosi
-		accepted_culture = gaariira
 
 		#Baashidi
 		accepted_culture = ashamadi
@@ -3928,6 +3926,7 @@ has_human_accepted_culture = {
 		#Tanizu
 		accepted_culture = tanizu
 		accepted_culture = dakinshi
+		accepted_culture = antmvura
 
 		# Break in case of emergency!
 		# accepted_culture = nurcestiran
