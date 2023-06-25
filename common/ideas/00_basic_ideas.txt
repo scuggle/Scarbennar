@@ -433,10 +433,6 @@ special_forces_ideas = { # Special Forces
 diplomatic_ideas = { #international ideas #done 
 	category = DIP
 
-	trigger = {
-		NOT = { has_idea_group = spy_ideas }
-	}
-	
 	bonus = {
 		imperial_authority = 0.10
 		province_warscore_cost = -0.15
@@ -488,11 +484,55 @@ diplomatic_ideas = { #international ideas #done
 	}
 }
 
+minority_ideas = { #Minority ideas WIP
+	category = DIP
+
+	trigger = {
+		NOT = { has_idea_group = spy_ideas }
+	}
+	
+	bonus = {	
+		manpower_in_own_culture_provinces = 0.10
+	}
+
+	minority_ideas_01 = {
+		global_unrest = -1
+	}	
+	
+	minority_ideas_02 = {
+		global_unrest = -2
+	}
+
+	minority_ideas_03 = {
+		global_unrest = -3
+	}
+
+	minority_ideas_04 = {
+		global_unrest = -4
+	}
+	
+	minority_ideas_05 = {
+		global_unrest = -5
+	}
+	
+	minority_ideas_06 = {
+		global_unrest = -6
+	}
+
+	minority_ideas_07 = {
+		global_unrest = -7
+	}
+
+	ai_will_do = {
+		factor = 0.75
+	}
+}
+
 spy_ideas = { #Culture Ideas
 	category = DIP
 
 	trigger = {
-		NOT = { has_idea_group = diplomatic_ideas }
+		NOT = { has_idea_group = minority_ideas }
 	}
 	
 	bonus = {	
@@ -610,34 +650,6 @@ naval_ideas = { #war fleet #done
 		navy_tradition = 1
 	}
 
-	#until_the_last_man = {
-	#	morale_damage_received = -0.1
-	#}
-	#
-	#improved_body_armor = {
-	#	shock_damage_received = -0.1
-	#}
-	#
-	#terrain_defence = {
-	#	fire_damage_received = -0.1
-	#}
-	#
-	#homeland_specialization = {
-	#	attack_bonus_in_capital_terrain = yes
-	#}
-	#
-	#guerilla_warfare_defense = {
-	#	global_defender_dice_roll_bonus = 1
-	#}
-	#
-	#relentless_charge = {
-	#	global_attacker_dice_roll_bonus = 1
-	#}
-	#
-	#ditch_defense = {
-	#	garrison_damage = 0.5
-	#	garrison_size = 0.25
-	#}
 	
 	ai_will_do = {
 		factor = 0.31
@@ -1458,11 +1470,11 @@ plutocracy_ideas = { #government: republic
 		global_autonomy = -0.10
 	}
 	free_cities = {
-		merc_maintenance_modifier = -0.20
+		merc_maintenance_modifier = -0.10
 		adventurers_loyalty_modifier = 0.10
 	}
 	emancipation = {
-		republican_tradition = 0.4
+		republican_tradition = 0.25
 		mercenary_discipline = 0.025
 	}
 
@@ -1493,7 +1505,7 @@ theocracy_gov_ideas = { #government: theocracy
 		monarch_lifespan = 5
 	}
 	friends_in_high_places = {
-		harsh_treatment_cost = -0.20
+		global_religious_conversion_resistance = -0.9
 		stability_cost_modifier = -0.25
 	}
 	flesh_is_weak = {
@@ -1513,7 +1525,7 @@ theocracy_gov_ideas = { #government: theocracy
 
 }
 
-horde_gov_ideas = { #Government: Horde ## Redo
+horde_gov_ideas = { #Government: Tribal ## Redo
 	category = ADM
 
 	trigger = {
@@ -1680,20 +1692,21 @@ expansion_ideas = { #frontiers #done
 	}
 
 	additional_colonists = {
-		global_colonial_growth = 20
+		
+		diplomats = 1
+		expel_minorities_cost = -0.50
 	}
 	additional_merchants = {
 		colonists = 1
 	}
 	faster_colonists = {
-		movement_speed = 0.1
+		global_colonial_growth = 10
 	}
 	factories = {
 		colonist_placement_chance = 0.10
 	}
 	additional_diplomats = {
-		diplomats = 1
-		expel_minorities_cost = -0.50
+		global_colonial_growth = 20
 	}
 	general_colonization_law  = {
 		merchants = 1
