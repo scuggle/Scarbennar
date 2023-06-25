@@ -508,7 +508,7 @@ spy_ideas = { #Culture Ideas
 	}
 
 	vetting = {
-			global_unrest = -2
+		global_unrest = -2
 	}
 
 	state_propaganda = {
@@ -517,15 +517,15 @@ spy_ideas = { #Culture Ideas
 	
 	claim_fabrication = {
 		
-		same_culture_advisor_cost = -0.15
+		same_culture_advisor_cost = -0.05
 	}
 	
 	privateers = {
-		development_cost_in_primary_culture = -0.1
+		development_cost_in_primary_culture = -0.05
 	}
 
 	audit_checks = {
-		culture_conversion_cost = -0.33
+		culture_conversion_cost = -0.20
 	}
 
 	ai_will_do = {
@@ -541,8 +541,8 @@ maritime_ideas = { #Marines Ideas
 	}
 
 	bonus = {
-      	number_of_cannons_flagship = 100
-		flagship_naval_engagement_modifier = 5
+
+		naval_forcelimit_modifier = 0.25
 	}
 
 	merchant_traditions = {
@@ -552,17 +552,18 @@ maritime_ideas = { #Marines Ideas
 		leader_naval_manuever = 1
 	}
 	sheltered_ports = {
-		navy_tradition = 1
+		global_naval_barrage_cost = -0.5
 	}
 	grand_navy = {
-		naval_forcelimit_modifier = 0.25
+		number_of_cannons_flagship = 100
+		flagship_naval_engagement_modifier = 5
 	}
 	ships_penny = {
 		allowed_marine_fraction = 1
 		#Upgrades Marines (the bonus infantry ideas gave before)
 	}
 	sea_hawks = {
-		regiment_disembark_speed = 0.25
+		regiment_disembark_speed = 0.50
 		flagship_landing_penalty = 1
 	}
 	naval_fighting_instruction = {
@@ -582,31 +583,31 @@ naval_ideas = { #war fleet #done
 	}
 
 	bonus = {
-       naval_forcelimit_modifier = 0.5
+       naval_forcelimit_modifier = 0.25
 	}
 
 	boarding_parties = {
-		global_sailors_modifier = 0.10
+		global_sailors_modifier = 0.15
 	}
 	improved_rams = {
 		naval_maintenance_modifier = -0.1
 	}
 	naval_cadets = {
-		galley_power = 0.1
-		heavy_ship_power = 0.1
+		blockade_efficiency = 0.25
+
 	}
 	naval_glory = {
-		ship_durability = 0.05
+		galley_power = 0.1
+		heavy_ship_power = 0.1
 	}
 	press_gangs = {
 		naval_morale = 0.1
 	}
 	oak_forests_for_ships = {
-		global_naval_barrage_cost = -0.5
+		ship_durability = 0.05
 	}
 	superior_seamanship = {
-		blockade_efficiency = 0.25
-		
+		navy_tradition = 1
 	}
 
 	#until_the_last_man = {
@@ -961,7 +962,7 @@ exploration_ideas = { #reclamation #done
 			OR = {
 				tag = A05 #Reveria
 				tag = U08 #Ekha
-				#tag = A33 #Verne
+				tag = A33 #Verne
 				tag = A79 #Gnomish Hierarchy
 				tag = A09 #Sorncost
 			}
@@ -970,17 +971,17 @@ exploration_ideas = { #reclamation #done
 			factor = 20
 			OR = {
 				tag = Z08 #Bjarnrik
-				#tag = A11 #Pearlsedge
-				#tag = A47 #Eborthil
-				#tag = A29 #Busilar
-				#tag = A05 #Reveria
-				#tag = U08 #Ekha
+				tag = A11 #Pearlsedge
+				tag = A47 #Eborthil
+				tag = A29 #Busilar
+				tag = A05 #Reveria
+				tag = U08 #Ekha
 				tag = A19 #Portnamm
 				tag = A80 #Iochand
-				#tag = Z08 #Bjarnrik
-				#tag = A33 #Verne
+				tag = Z08 #Bjarnrik
+				tag = A33 #Verne
 				tag = Z10 #Revrhavn
-				#tag = A79 #Gnomish Hierarchy
+				tag = A79 #Gnomish Hierarchy
 			}
 		}
 		modifier = {
@@ -1038,8 +1039,7 @@ influence_ideas = { #benevolence #done
 		diplomatic_reputation = 2
 	}
 	postal_service = {
-		allow_client_states = yes
-		
+		allow_client_states = yes		
 	}
 	marcher_lords = {
 		vassal_manpower_bonus = 0.15
@@ -1066,7 +1066,7 @@ influence_ideas = { #benevolence #done
 	}
 }
 
-the_great_game = { #The Great Game
+the_great_game = { #The Great Game		## REDO
 	category = DIP
 
 	bonus = {
@@ -1104,7 +1104,7 @@ the_great_game = { #The Great Game
 	}
 }
 
-shadows_and_daggers = { #TBD
+shadows_and_daggers = { #Shadow and daggers ie dick head ideas
 	category = DIP
 
 	bonus = {
@@ -1131,9 +1131,11 @@ shadows_and_daggers = { #TBD
 	}
 	s_d6 = {
 		rebel_support_efficiency = 2
+		spy_action_cost_modifier = -0.25
 	}
 	s_d7 = {
 		spy_offence = 1
+		no_claim_cost_increasement = yes
 	}
 	
 	ai_will_do = {
@@ -1184,7 +1186,7 @@ shadows_and_daggers = { #TBD
 
 # ADMINISTRATIVE
 
-innovativeness_ideas = { #Technocratic Ideas #CoT
+innovativeness_ideas = { #Technocratic Ideas 
 	category = ADM
 
 	trigger = {
@@ -1358,7 +1360,7 @@ focus_inwards = { #Internal Ideas
 		monthly_splendor = 2
 	}
 	foc_inw5 = {
-		estate_interaction_cooldown_modifier = -0.2
+		estate_interaction_cooldown_modifier = -0.25
 	}
 	foc_inw6 = {
 		max_absolutism = 15
@@ -1384,7 +1386,7 @@ administrative_ideas = { #government: monarchy
 	}
 
 	bonus = {
-		max_absolutism_effect = 0.20
+		max_absolutism_effect = 0.50
 	}
 
 	organised_mercenary_payment = {
@@ -1461,7 +1463,7 @@ plutocracy_ideas = { #government: republic
 	}
 	emancipation = {
 		republican_tradition = 0.4
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.025
 	}
 
 	ai_will_do = {
@@ -1501,7 +1503,8 @@ theocracy_gov_ideas = { #government: theocracy
 		global_tax_modifier = 0.50
 	}
 	conviction_of_sin = {	
-		country_admin_power = 1
+		monarch_admin_power = 1
+		devotion = 0.5
 	}
 	martyrs = {
 		missionaries = 1
@@ -1510,11 +1513,16 @@ theocracy_gov_ideas = { #government: theocracy
 
 }
 
-horde_gov_ideas = { #Government: Horde
+horde_gov_ideas = { #Government: Horde ## Redo
 	category = ADM
 
 	trigger = {
-		government = tribal
+		
+	OR = {
+				government = tribal
+				has_reform = greentide_horde
+				has_reform = harpy_matriarchy_reform
+			}
 		NOT = { has_idea_group = administrative_ideas }
 		NOT = { has_idea_group = plutocracy_ideas }
 		NOT = { has_idea_group = theocracy_gov_ideas }
@@ -1531,12 +1539,13 @@ horde_gov_ideas = { #Government: Horde
 		years_of_nationalism = -5
 	}
 	mandate_of_the_khan = {
-		merchants = 1
+
 	}
 	there_shall_be_no_grass = {
 		nobles_loyalty_modifier = 0.10
 		nomadic_tribes_loyalty_modifier = 0.10
 		monstrous_tribes_loyalty_modifier = 0.10
+
 	}
 	horde_loyalty = {
 		global_regiment_cost = -0.10
@@ -1569,7 +1578,7 @@ economic_ideas = { #industrial ideas
 	}
 
 	bureaucracy = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.15
 	}
 	organised_construction = {
 		build_cost = -0.05
@@ -1583,12 +1592,11 @@ economic_ideas = { #industrial ideas
 		global_prosperity_growth = 0.15
 	}
 	centralization = {
-		great_project_upgrade_cost = -0.1
+		great_project_upgrade_cost = -0.25
 		monthly_splendor = 2
 	}
 	nationalistic_enthusiasm = {
-		build_time = -0.1
-		build_cost = -0.05
+		build_time = -0.15
 	}
 	smithian_economics = {
 		production_efficiency = 0.15
@@ -1621,11 +1629,11 @@ economic_ideas = { #industrial ideas
 	}
 }
 
-logistical_ideas = { #Administration
+logistical_ideas = { #Capital Ideas ##Redo Turn this into a minorities benifits ideas
 	category = ADM
 
 	bonus = {
-		development_cost = -0.05
+		attack_bonus_in_capital_terrain = 1 #Keep
 	}
 	logsi_ide1 = {
 		core_creation = -0.15 
@@ -1643,10 +1651,11 @@ logistical_ideas = { #Administration
 		yearly_corruption = -0.1
 	}
 	logsi_ide6 = {
-		move_capital_cost_modifier = -0.20
+		state_maintenance_modifier = -0.25
 	}
 	logsi_ide7 = {
-		state_maintenance_modifier = -0.25
+		
+		move_capital_cost_modifier = -0.50 
 	}
 
 	ai_will_do = {
@@ -1684,7 +1693,7 @@ expansion_ideas = { #frontiers #done
 	}
 	additional_diplomats = {
 		diplomats = 1
-		expel_minorities_cost = -0.30
+		expel_minorities_cost = -0.50
 	}
 	general_colonization_law  = {
 		merchants = 1
