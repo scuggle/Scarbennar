@@ -1102,12 +1102,6 @@ setup_vision = {
 			6124 = {
 				discover_country = ROOT
 			}
-			west_castanor_region = {
-				discover_country = ROOT
-			}
-			inner_castanor_region = {
-				discover_country = ROOT
-			}
 			197 = {	#Greenscale's capital
 				undiscover_country = ROOT
 			}
