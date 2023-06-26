@@ -439,12 +439,11 @@ minority_ideas = { #Minority ideas WIP
 	}
 	
 	bonus = {	
-		manpower_in_accepted_culture_provinces = 0.05
+		manpower_in_accepted_culture_provinces = 0.10
 	}
 
 	minority_ideas_01 = {
-
-		relation_with_accepted_culture = 25
+		years_of_nationalism = -5
 	}	
 	
 	minority_ideas_02 = {
@@ -454,20 +453,20 @@ minority_ideas = { #Minority ideas WIP
 	minority_ideas_03 = {
 		tolerance_heathen = 2
 		tolerance_heretic = 2
-		
 	}
 
 	minority_ideas_04 = {
-		religious_unity = 0.25
+		tolerance_of_heathens_capacity = 2
+		tolerance_of_heretics_capacity = 2
 	}
 	
 	minority_ideas_05 = {
-		global_unrest = -6
+		advisor_cost = -0.1
 	}
 	
 	minority_ideas_06 = {
-		
-		num_of_parliament_issues = 1
+		religious_unity = 0.25
+		relation_with_accepted_culture = 25
 	}
 
 	minority_ideas_07 = {
@@ -496,19 +495,18 @@ spy_ideas = { #Culture Ideas
 	}	
 	
 	agent_training = {
-		years_of_nationalism = -5
+		global_rebel_suppression_efficiency = 0.50
 	}
 
 	vetting = {
-		global_unrest = -2
+		stability_cost_modifier = -0.15
 	}
 
 	state_propaganda = {
-		max_absolutism = 10
+		yearly_corruption = -0.1
 	}
 	
 	claim_fabrication = {
-		
 		same_culture_advisor_cost = -0.10
 	}
 	
@@ -538,17 +536,20 @@ maritime_ideas = { #Marines Ideas
 	}
 
 	merchant_traditions = {
-		transport_power = 0.69
+		free_navy_leader_pool = 2
 			}
 	merchant_marine = {
-		leader_naval_manuever = 1
+		
+		transport_power = 0.69
+		light_ship_power = 0.20
 	}
 	sheltered_ports = {
 		global_naval_barrage_cost = -0.5
 	}
 	grand_navy = {
+		
+		leader_naval_manuever = 2
 		number_of_cannons_flagship = 100
-		flagship_naval_engagement_modifier = 5
 	}
 	ships_penny = {
 		allowed_marine_fraction = 1
@@ -579,14 +580,14 @@ naval_ideas = { #war fleet #done
 	}
 
 	boarding_parties = {
-		global_sailors_modifier = 0.15
-	}
-	improved_rams = {
+		
 		naval_maintenance_modifier = -0.1
 	}
-	naval_cadets = {
+	improved_rams = {
 		blockade_efficiency = 0.25
-
+	}
+	naval_cadets = {
+		global_sailors_modifier = 0.15
 	}
 	naval_glory = {
 		galley_power = 0.1
@@ -769,16 +770,14 @@ exploration_ideas = { #reclamation #done
 		}
 		modifier = {
 			factor = 0
-			current_age = age_of_revolutions #too late
+			current_age = age_of_revolutions 
 		}
 		modifier = {
 			factor = 0
 			NOT = {
 				any_owned_province = {
 					has_port = yes
-					# sea_zone = {
-					# 	NOT = { area = eastern_mediterrenean_area }
-					# }
+
 				}
 			}
 			NOT = { 
@@ -788,7 +787,7 @@ exploration_ideas = { #reclamation #done
 				} 
 			}
 		}
-		#Anbennar - Totally redid this factor
+
 		modifier = {
 			factor = 0.5
 			NOT = {
@@ -850,10 +849,7 @@ exploration_ideas = { #reclamation #done
 				}
 			}
 		}
-		# modifier = {
-		# 	factor = 10
-		# 	technology_group = high_american
-		# }
+
 		modifier = {
 			factor = 2.0
 			num_of_ports = 5
@@ -979,21 +975,19 @@ diplomatic_ideas = { #international ideas #done
 	category = DIP
 
 	bonus = {
-		imperial_authority = 0.10
+	
 		province_warscore_cost = -0.15
 	}
 
 	foreign_embassies = {
 		envoy_travel_time = -0.33
 		ae_impact = -0.1
-		
 	}
 	cabinet = {
 		reduced_stab_impacts = yes
 	}
 	grand_banquets = {
-		dip_advisor_cost = -0.25
-		reasons_to_elect = 25
+		dip_advisor_cost = -0.15
 	}
 	benign_diplomats = {
 		diplomatic_upkeep = 2
@@ -1007,7 +1001,6 @@ diplomatic_ideas = { #international ideas #done
 		dip_tech_cost_modifier = -0.1
 	}
 	diplomatic_corps = {
-		
 		diplomatic_reputation = 2
 	}
 
@@ -1085,10 +1078,12 @@ the_great_game = { #The Great Game		## REDO
 
 	bonus = {
 			monarch_diplomatic_power = 1
+			imperial_authority = 0.10
 	}
 
 	tgg1 = {
 		ae_impact = -0.15
+		reasons_to_elect = 25
 	}
 	tgg2 = {
 		monarch_lifespan = 5
@@ -1096,6 +1091,7 @@ the_great_game = { #The Great Game		## REDO
 	tgg3 = {
 		power_projection_from_insults = 1
 		rival_change_cost = -1
+		
 	}
 	tgg4 = {
 		max_absolutism = 20
@@ -1219,7 +1215,7 @@ innovativeness_ideas = { #Technocratic Ideas
 		female_advisor_chance = 0.33
 	}
 	scientific_revolution = {
-		advisor_cost = -0.15
+		advisor_cost = -0.10
 	}
 	dynamic_court = {
 		may_recruit_female_generals = yes
@@ -1412,7 +1408,7 @@ administrative_ideas = { #government: monarchy
 		promote_culture_cost = -1
 	}
 	benefits_for_mercenaries = {
-		same_culture_advisor_cost = -0.15
+		same_culture_advisor_cost = -0.10
 		culture_conversion_cost = -0.10
 	}
 	bookkeeping = {
@@ -1426,9 +1422,7 @@ administrative_ideas = { #government: monarchy
 		monarch_admin_power = 2
 	}
 	civil_servants = {
-		#Enables 'Coming of Age' Event, when your Heir turns 16, you get an event letting you increase their stats by 2 (player's choice)
 		years_to_integrate_personal_union = -40
-		#Enables a decision to make vassals into Personal unions
 	}
 
 	ai_will_do = {
