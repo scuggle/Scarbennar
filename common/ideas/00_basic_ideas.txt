@@ -430,59 +430,6 @@ special_forces_ideas = { # Special Forces
 
 ### DIPLOMATIC
 
-diplomatic_ideas = { #international ideas #done 
-	category = DIP
-
-	bonus = {
-		imperial_authority = 0.10
-		province_warscore_cost = -0.15
-	}
-
-	foreign_embassies = {
-		envoy_travel_time = -0.33
-		ae_impact = -0.1
-		
-	}
-	cabinet = {
-		reduced_stab_impacts = yes
-	}
-	grand_banquets = {
-		dip_advisor_cost = -0.25
-		reasons_to_elect = 25
-	}
-	benign_diplomats = {
-		diplomatic_upkeep = 2
-		monthly_favor_modifier = 0.1
-	}
-	experienced_diplomats  = {
-		diplomats = 1
-		improve_relation_modifier = 0.2
-	}
-	flexible_negotiation = {
-		dip_tech_cost_modifier = -0.1
-	}
-	diplomatic_corps = {
-		
-		diplomatic_reputation = 2
-	}
-
-	ai_will_do = {
-		factor = 0.5
-
-		modifier = {
-			factor = 2
-			is_emperor = yes
-		}
-		modifier = { 	
-			factor = 0.75 
-			NOT = { monthly_dip = 7 }
-		}
-		modifier = {
-			factor = 1.25
-			personality = ai_diplomat 
-		}
-	}
-}
 
 minority_ideas = { #Minority ideas WIP
 	category = DIP
@@ -492,35 +439,40 @@ minority_ideas = { #Minority ideas WIP
 	}
 	
 	bonus = {	
-		manpower_in_own_culture_provinces = 0.10
+		manpower_in_accepted_culture_provinces = 0.05
 	}
 
 	minority_ideas_01 = {
-		global_unrest = -1
+
+		relation_with_accepted_culture = 25
 	}	
 	
 	minority_ideas_02 = {
-		global_unrest = -2
+		num_accepted_cultures = 2
 	}
 
 	minority_ideas_03 = {
-		global_unrest = -3
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+		
 	}
 
 	minority_ideas_04 = {
-		global_unrest = -4
+		religious_unity = 0.25
 	}
 	
 	minority_ideas_05 = {
-		global_unrest = -5
+		global_unrest = -6
 	}
 	
 	minority_ideas_06 = {
-		global_unrest = -6
+		
+		num_of_parliament_issues = 1
 	}
 
 	minority_ideas_07 = {
-		global_unrest = -7
+		global_unrest = -2
+		#accepted minorities now give 0.25 goods produced, small minorities give 0.10
 	}
 
 	ai_will_do = {
@@ -557,7 +509,7 @@ spy_ideas = { #Culture Ideas
 	
 	claim_fabrication = {
 		
-		same_culture_advisor_cost = -0.05
+		same_culture_advisor_cost = -0.10
 	}
 	
 	privateers = {
@@ -1023,6 +975,60 @@ exploration_ideas = { #reclamation #done
 	}
 }
 
+diplomatic_ideas = { #international ideas #done 
+	category = DIP
+
+	bonus = {
+		imperial_authority = 0.10
+		province_warscore_cost = -0.15
+	}
+
+	foreign_embassies = {
+		envoy_travel_time = -0.33
+		ae_impact = -0.1
+		
+	}
+	cabinet = {
+		reduced_stab_impacts = yes
+	}
+	grand_banquets = {
+		dip_advisor_cost = -0.25
+		reasons_to_elect = 25
+	}
+	benign_diplomats = {
+		diplomatic_upkeep = 2
+		monthly_favor_modifier = 0.1
+	}
+	experienced_diplomats  = {
+		diplomats = 1
+		improve_relation_modifier = 0.2
+	}
+	flexible_negotiation = {
+		dip_tech_cost_modifier = -0.1
+	}
+	diplomatic_corps = {
+		
+		diplomatic_reputation = 2
+	}
+
+	ai_will_do = {
+		factor = 0.5
+
+		modifier = {
+			factor = 2
+			is_emperor = yes
+		}
+		modifier = { 	
+			factor = 0.75 
+			NOT = { monthly_dip = 7 }
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_diplomat 
+		}
+	}
+}
+
 influence_ideas = { #benevolence #done
 	category = DIP
 
@@ -1055,10 +1061,6 @@ influence_ideas = { #benevolence #done
 	}
 	marcher_lords = {
 		vassal_manpower_bonus = 0.15
-		
-		#You can choose a specialisation of subjects, one per subjects (ONLY FOR AI)
-		# -20% Regiment Cost, +20% FL, +20% Manpower, +20% Manpower recovery speed - Military
-		# -20% Development cost, -20% Build Time, -20% Build Cost, +1 Global Building Slot - Economic
 	}
 
 	ai_will_do = {
@@ -1224,7 +1226,7 @@ innovativeness_ideas = { #Technocratic Ideas
 		reform_progress_growth = 0.15
 	}
 	print_culture = {
-		global_institution_spread = 0.33 #institution spread
+		global_institution_spread = 0.33 
 	}
 	optimism = {
 		innovativeness_gain = 1
@@ -1250,7 +1252,7 @@ innovativeness_ideas = { #Technocratic Ideas
 	}
 }
 
-religious_ideas = { #zealotry ideas #done
+religious_ideas = { #zealotry ideas 
 	category = ADM
 
 	trigger = {
@@ -1305,7 +1307,7 @@ religious_ideas = { #zealotry ideas #done
 	}
 }
 
-humanist_ideas = { #External Ideas #done
+humanist_ideas = { #External Ideas 
 	category = ADM
 
 	trigger = {
@@ -1345,7 +1347,7 @@ humanist_ideas = { #External Ideas #done
 	}
 }
 
-focus_inwards = { #Internal Ideas
+focus_inwards = { #Internal Ideas Redo
 	category = ADM
 
 	trigger = {
@@ -1597,15 +1599,13 @@ economic_ideas = { #industrial ideas
 	}
 	national_bank = {
 		inflation_reduction = 0.05
-		interest = -0.25
 	}
 	debt_and_loans = {
 		global_monthly_devastation = -0.05
-		global_prosperity_growth = 0.15
+		global_prosperity_growth = 0.10
 	}
 	centralization = {
 		great_project_upgrade_cost = -0.25
-		monthly_splendor = 2
 	}
 	nationalistic_enthusiasm = {
 		build_time = -0.15
@@ -1637,48 +1637,6 @@ economic_ideas = { #industrial ideas
 		modifier = {
 			factor = 1.3
 			num_of_cities = 50
-		}
-	}
-}
-
-logistical_ideas = { #Capital Ideas ##Redo Turn this into a minorities benifits ideas
-	category = ADM
-
-	bonus = {
-		attack_bonus_in_capital_terrain = 1 #Keep
-	}
-	logsi_ide1 = {
-		core_creation = -0.15 
-	}
-	logsi_ide2 = {
-		 interest = -0.5 
-	}
-	logsi_ide3 = {
-		administrative_efficiency = 0.05
-	}
-	logsi_ide4 = {
-		global_tax_modifier = 0.10
-	}
-	logsi_ide5 = {
-		yearly_corruption = -0.1
-	}
-	logsi_ide6 = {
-		state_maintenance_modifier = -0.25
-	}
-	logsi_ide7 = {
-		
-		move_capital_cost_modifier = -0.50 
-	}
-
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			has_idea_group = religious_ideas
-		}
-		modifier = {
-			factor = 3
-			religion_group = faithless
 		}
 	}
 }
@@ -1833,6 +1791,48 @@ expansion_ideas = { #frontiers #done
 				technology_group = tech_bulwari
 				technology_group = tech_triunic
 			}
+		}
+	}
+}
+
+logistical_ideas = { #Capital Ideas ##Redo 
+	category = ADM
+
+	bonus = {
+		attack_bonus_in_capital_terrain = 1 #Keep
+	}
+	logsi_ide1 = {
+		core_creation = -0.15 
+	}
+	logsi_ide2 = {
+		 interest = -0.5 
+	}
+	logsi_ide3 = {
+		administrative_efficiency = 0.05
+	}
+	logsi_ide4 = {
+		global_tax_modifier = 0.10
+	}
+	logsi_ide5 = {
+		yearly_corruption = -0.1
+	}
+	logsi_ide6 = {
+		state_maintenance_modifier = -0.25
+	}
+	logsi_ide7 = {
+		
+		move_capital_cost_modifier = -0.50 
+	}
+
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 3
+			religion_group = faithless
 		}
 	}
 }

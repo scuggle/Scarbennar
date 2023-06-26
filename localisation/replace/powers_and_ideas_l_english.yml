@@ -109,7 +109,7 @@
  lead_ide7_desc:0 "Our leaders are simply made from something different to common men."
  leadership_ideas_bonus:0 "Completed Leadership Ideas"
 
- defensive_ideas:0 "§LGarrison Ideas§!"
+ defensive_ideas:0 "§lGarrison Ideas§!"
  battlefield_commisions:0 "Siege Masters"
  battlefield_commisions_desc:0 "We know how to build and defend castles, just as well as we know how to tear them down."
  military_drill:0 "Castle Towns"
@@ -126,7 +126,7 @@
  improved_foraging_desc:0 "No cannon is more devastating than a siege cannon, the trick is making it mobile enough to hit more than static targets."
  defensive_ideas_bonus:0 "Completed Garrison Ideas"
 
- quality_ideas:0 "§LSiege Ideas§!"
+ quality_ideas:0 "§lSiege Ideas§!"
  private_to_marshal:0 "Peerless Warriors"
  private_to_marshal_desc:0 "Our soldiers are both fierce and fearless, everyone of them worth 2 soldiers of lesser nations."
  quality_education:0 "Military Society"
