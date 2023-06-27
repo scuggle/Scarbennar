@@ -431,7 +431,7 @@ special_forces_ideas = { # Special Forces
 ### DIPLOMATIC
 
 
-minority_ideas = { #Minority ideas WIP
+minority_ideas = { #Minority ideas 
 	category = DIP
 
 	trigger = {
@@ -444,10 +444,12 @@ minority_ideas = { #Minority ideas WIP
 
 	minority_ideas_01 = {
 		years_of_nationalism = -5
+		relation_with_accepted_culture = 25	
 	}	
 	
 	minority_ideas_02 = {
 		num_accepted_cultures = 2
+		promote_culture_cost = -0.50
 	}
 
 	minority_ideas_03 = {
@@ -466,7 +468,6 @@ minority_ideas = { #Minority ideas WIP
 	
 	minority_ideas_06 = {
 		religious_unity = 0.25
-		relation_with_accepted_culture = 25
 	}
 
 	minority_ideas_07 = {
@@ -644,33 +645,31 @@ trade_ideas = { #mercantile #done
 	category = DIP
 
 	bonus = {
-        merchants = 1
-		trade_efficiency = 0.15
+		global_own_trade_power = 0.15
 	}
-
 	shrewd_commerce_practise = {
-		trade_range_modifier = 0.33
+		trade_efficiency = 0.15
 		merchants = 1
   	}
   	free_trade = {
-		global_trade_goods_size_modifier = 0.05
-  	}
-	merchant_adventures = {
 		naval_tradition_from_trade = 0.15
 		center_of_trade_upgrade_cost = -0.15
+  	}
+	merchant_adventures = {
+		global_trade_goods_size_modifier = 0.05
 	}
 	national_trade_policy = {
-		caravan_power = 0.15
+		caravan_power = 0.25
 	}
 	overseas_merchants = {
 		trade_steering = 0.15
 	}
 	trade_manipulation = {
-		global_own_trade_power = 0.15
+		placed_merchant_power = 15
 	}
 	fast_negotiations = {
-		mercantilism_cost = -0.5
-		
+		merchants = 1
+		mercantilism_cost = -0.25
 	}
 
 	ai_will_do = {
@@ -866,11 +865,7 @@ exploration_ideas = { #reclamation #done
 			factor = 2.0
 			num_of_ports = 20
 		}
-#		modifier = {	#sun elves wanting to reclaim homeland
-#			factor = 1000
-#			primary_culture = sun_elf
-#			num_of_ports = 5
-#		}
+
 		modifier = {	#this makes spawned adventurers etc take exploration
 			factor = 100
 			AND = {
@@ -975,8 +970,7 @@ diplomatic_ideas = { #international ideas #done
 	category = DIP
 
 	bonus = {
-	
-		province_warscore_cost = -0.15
+		province_warscore_cost = -0.20
 	}
 
 	foreign_embassies = {
@@ -984,7 +978,7 @@ diplomatic_ideas = { #international ideas #done
 		ae_impact = -0.1
 	}
 	cabinet = {
-		reduced_stab_impacts = yes
+		diplomatic_reputation = 2
 	}
 	grand_banquets = {
 		dip_advisor_cost = -0.15
@@ -1001,7 +995,8 @@ diplomatic_ideas = { #international ideas #done
 		dip_tech_cost_modifier = -0.1
 	}
 	diplomatic_corps = {
-		diplomatic_reputation = 2
+		
+		reduced_stab_impacts = yes
 	}
 
 	ai_will_do = {
@@ -1030,27 +1025,27 @@ influence_ideas = { #benevolence #done
 	}
 
 	tribute_system = {
-		reduced_liberty_desire = 15
-	}
-	
-	additional_loyalist_recruitment = {
+		
 		diplomats = 1
 		accept_vassalization_reasons = 10
 	}
 	
-	integrated_elites = {
+	additional_loyalist_recruitment = {
 		diplomatic_upkeep = 2
-		diplomatic_annexation_cost = -0.25
-		
+	}
+	
+	integrated_elites = {
+		liberty_desire_from_subject_development = -0.15
 	}
 	buffer_states = {
-		vassal_income = 0.25
-	}
-	diplomatic_influence = {
 		diplomatic_reputation = 2
 	}
+	diplomatic_influence = {
+		vassal_income = 0.25
+	}
 	postal_service = {
-		allow_client_states = yes		
+		allow_client_states = yes
+		diplomatic_annexation_cost = -0.15		
 	}
 	marcher_lords = {
 		vassal_manpower_bonus = 0.15
@@ -1073,40 +1068,40 @@ influence_ideas = { #benevolence #done
 	}
 }
 
-the_great_game = { #The Great Game		## REDO
+the_great_game = { #The Great Game	
 	category = DIP
 
 	bonus = {
-			monarch_diplomatic_power = 1
-			imperial_authority = 0.10
+			free_dip_policy = 1
 	}
 
 	tgg1 = {
-		ae_impact = -0.15
-		reasons_to_elect = 25
+	
+		prestige = 1
 	}
 	tgg2 = {
-		monarch_lifespan = 5
-	}
-	tgg3 = {
 		power_projection_from_insults = 1
 		rival_change_cost = -1
-		
+	}
+	tgg3 = {
+		estate_interaction_cooldown_modifier = -0.2
+		all_estate_possible_privileges = 1	
 	}
 	tgg4 = {
-		max_absolutism = 20
-		yearly_absolutism = 2.5
+		all_estate_loyalty_equilibrium = 0.1
+		loyalty_change_on_revoked = 0.05
 	}
 	tgg5 = {
-		all_estate_loyalty_equilibrium = 0.1
-		all_estate_possible_privileges = 1
+		ae_impact = -0.15
+		unjustified_demands = -0.15
 	}
 	tgg6 = {
-		
-		free_dip_policy = 1
+		monthly_splendor = 2
+		reasons_to_elect = 25
 	}
 	tgg7 = {
-		unjustified_demands = -0.15
+		imperial_authority = 0.10
+		monthly_reform_progress = 0.2
 	}
 	
 	ai_will_do = {
