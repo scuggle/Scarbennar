@@ -12,45 +12,632 @@ country_event = {
 		AND = {
 			has_idea = minority_ideas_07
 			any_owned_province = {
-				NOT = {
+				OR = {
+				###########Add modifier when minority is accepted or integrated but no modifier exists
+				###########Large Minorities
+				AND = {
 					OR = {
+						has_province_modifier = human_minority_coexisting_large
+						has_province_modifier = human_minority_integrated_large
+							}
+					NOT = {
 						has_province_modifier = cot_human_min
+						}
+				}
+				##########
+				AND = {
+					OR = {
+						has_province_modifier = elven_minority_coexisting_large
+						has_province_modifier = elven_minority_integrated_large
+							}
+					NOT = {
 						has_province_modifier = cot_elf_min
+						}
+				}
+				##########
+				AND = {
+					OR = {
+						has_province_modifier = dwarven_minority_coexisting_large
+						has_province_modifier = dwarven_minority_integrated_large
+							}
+					NOT = {
 						has_province_modifier = cot_dwarf_min
+						}
+				}
+				##########
+				AND = {
+					OR = {
+						has_province_modifier = gnomish_minority_coexisting_large
+						has_province_modifier = gnomish_minority_integrated_large
+							}
+					NOT = {
 						has_province_modifier = cot_gnome_min
-						has_province_modifier = cot_halfling_	min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = halfling_minority_coexisting_large
+						has_province_modifier = halfling_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_halfling_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = goblin_minority_coexisting_large
+						has_province_modifier = goblin_minority_integrated_large
+							}
+					NOT = {
 						has_province_modifier = cot_goblin_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = elven_orcish_coexisting_large
+						has_province_modifier = elven_orcish_integrated_large
+							}
+					NOT = {
 						has_province_modifier = cot_orc_min
-						has_province_modifier = cot_horc_min
-						has_province_modifier = cot_helf_min
-						has_province_modifier = cot_kobold_min
-						has_province_modifier = cot_tiger_min
-						has_province_modifier = cot_centaur_min
-						has_province_modifier = cot_ogre_min
-						has_province_modifier = cot_troll_min
-						has_province_modifier = cot_gnoll_min
-						has_province_modifier = cot_harpy_min
-						has_province_modifier = cot_ruin_min
-						has_province_modifier = cot_hobgob_min
-						has_province_modifier = cot_human_min_small
-						has_province_modifier = cot_elf_min_small
-						has_province_modifier = cot_dwarf_min_small
-						has_province_modifier = cot_gnome_min_small
-						has_province_modifier = cot_halfling_min_small
-						has_province_modifier = cot_goblin_min_small
-						has_province_modifier = cot_orc_min_small
-						has_province_modifier = cot_horc_min_small
-						has_province_modifier = cot_helf_min_small
-						has_province_modifier = cot_kobold_min_small
-						has_province_modifier = cot_tiger_min_small
-						has_province_modifier = cot_centaur_min_small
-						has_province_modifier = cot_ogre_min_small
-						has_province_modifier = cot_troll_min_small
-						has_province_modifier = cot_gnoll_min_small
-						has_province_modifier = cot_harpy_min_small
-						has_province_modifier = cot_ruin_min_small
-						has_province_modifier = cot_hobgob_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = half_elven_minority_coexisting_large
+						has_province_modifier = half_elven_minority_integrated_large
+							}
+					NOT = {
+					has_province_modifier = cot_helf_min
 					}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = kobold_minority_coexisting_large
+						has_province_modifier = kobold_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_kobold_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = harimari_minority_coexisting_large
+						has_province_modifier = harimari_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_tiger_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = centaur_minority_coexisting_large
+						has_province_modifier = centaur_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_centaur_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = ogre_minority_coexisting_large
+						has_province_modifier = ogre_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_ogre_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = troll_minority_coexisting_large
+						has_province_modifier = troll_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_troll_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = gnollish_minority_coexisting_large
+						has_province_modifier = gnollish_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_gnoll_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = harpy_minority_coexisting_large
+						has_province_modifier = harpy_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_harpy_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = ruinborn_minority_coexisting_large
+						has_province_modifier = ruinborn_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_ruin_min
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = hobgoblin_minority_coexisting_large
+						has_province_modifier = hobgoblin_minority_integrated_large
+							}
+					NOT = {
+						has_province_modifier = cot_hobgob_min
+						}
+				}
+				#############Small Minorities
+				AND = {
+					OR = {
+						has_province_modifier = human_minority_coexisting_small
+						has_province_modifier = human_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_human_min_small
+						}
+				}
+				##########
+				AND = {
+					OR = {
+						has_province_modifier = elven_minority_coexisting_small
+						has_province_modifier = elven_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_elf_min_small
+						}
+				}
+				##########
+				AND = {
+					OR = {
+						has_province_modifier = dwarven_minority_coexisting_small
+						has_province_modifier = dwarven_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_dwarf_min_small
+						}
+				}
+				##########
+				AND = {
+					OR = {
+						has_province_modifier = gnomish_minority_coexisting_small
+						has_province_modifier = gnomish_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_gnome_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = halfling_minority_coexisting_small
+						has_province_modifier = halfling_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_halfling_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = goblin_minority_coexisting_small
+						has_province_modifier = goblin_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_goblin_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = elven_orcish_coexisting_small
+						has_province_modifier = elven_orcish_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_orc_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = half_elven_minority_coexisting_small
+						has_province_modifier = half_elven_minority_integrated_small
+							}
+					NOT = {
+					has_province_modifier = cot_helf_min_small
+					}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = kobold_minority_coexisting_small
+						has_province_modifier = kobold_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_kobold_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = harimari_minority_coexisting_small
+						has_province_modifier = harimari_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_tiger_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = centaur_minority_coexisting_small
+						has_province_modifier = centaur_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_centaur_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = ogre_minority_coexisting_small
+						has_province_modifier = ogre_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_ogre_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = troll_minority_coexisting_small
+						has_province_modifier = troll_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_troll_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = gnollish_minority_coexisting_small
+						has_province_modifier = gnollish_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_gnoll_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = harpy_minority_coexisting_small
+						has_province_modifier = harpy_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_harpy_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = ruinborn_minority_coexisting_small
+						has_province_modifier = ruinborn_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_ruin_min_small
+						}
+				}
+				AND = {
+					OR = {
+						has_province_modifier = hobgoblin_minority_coexisting_small
+						has_province_modifier = hobgoblin_minority_integrated_small
+							}
+					NOT = {
+						has_province_modifier = cot_hobgob_min_small
+						}
+				}
+				###########Remove modifier when minority goes to oppressed
+				###########Large Minorities
+				AND = {
+					has_province_modifier = cot_human_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = human_minority_coexisting_large
+					has_province_modifier = human_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_elf_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = elven_minority_coexisting_large
+					has_province_modifier = elven_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_dwarf_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = dwarven_minority_coexisting_large
+					has_province_modifier = dwarven_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_gnome_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = gnomish_minority_coexisting_large
+					has_province_modifier = gnomish_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_halfling_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = halfling_minority_coexisting_large
+					has_province_modifier = halfling_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_goblin_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = goblin_minority_coexisting_large
+					has_province_modifier = goblin_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_orc_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = orcish_minority_coexisting_large
+					has_province_modifier = orcish_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_helf_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = half_elven_minority_coexisting_large
+					has_province_modifier = half_elven_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_kobold_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = kobold_minority_coexisting_large
+					has_province_modifier = kobold_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_tiger_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = harimari_minority_coexisting_large
+					has_province_modifier = harimari_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_centaur_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = centaur_minority_coexisting_large
+					has_province_modifier = centaur_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_ogre_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = ogre_minority_coexisting_large
+					has_province_modifier = ogre_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_troll_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = troll_minority_coexisting_large
+					has_province_modifier = troll_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_gnoll_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = gnollish_minority_coexisting_large
+					has_province_modifier = gnollish_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_harpy_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = harpy_minority_coexisting_large
+					has_province_modifier = harpy_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_ruin_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = ruinborn_minority_coexisting_large
+					has_province_modifier = ruinborn_minority_integrated_large
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_hobgoblin_min
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = hobgoblin_minority_coexisting_large
+					has_province_modifier = hobgoblin_minority_integrated_large
+								}
+							}
+				}
+				#############Small Minorities
+				AND = {
+					has_province_modifier = cot_human_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = human_minority_coexisting_small
+					has_province_modifier = human_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_elf_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = elven_minority_coexisting_small
+					has_province_modifier = elven_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_dwarf_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = dwarven_minority_coexisting_small
+					has_province_modifier = dwarven_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_gnome_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = gnomish_minority_coexisting_small
+					has_province_modifier = gnomish_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_halfling_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = halfling_minority_coexisting_small
+					has_province_modifier = halfling_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_goblin_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = goblin_minority_coexisting_small
+					has_province_modifier = goblin_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_orc_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = orcish_minority_coexisting_small
+					has_province_modifier = orcish_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_helf_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = half_elven_minority_coexisting_small
+					has_province_modifier = half_elven_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_kobold_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = kobold_minority_coexisting_small
+					has_province_modifier = kobold_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_tiger_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = harimari_minority_coexisting_small
+					has_province_modifier = harimari_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_centaur_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = centaur_minority_coexisting_small
+					has_province_modifier = centaur_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_ogre_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = ogre_minority_coexisting_small
+					has_province_modifier = ogre_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_troll_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = troll_minority_coexisting_small
+					has_province_modifier = troll_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_gnoll_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = gnollish_minority_coexisting_small
+					has_province_modifier = gnollish_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_harpy_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = harpy_minority_coexisting_small
+					has_province_modifier = harpy_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_ruin_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = ruinborn_minority_coexisting_small
+					has_province_modifier = ruinborn_minority_integrated_small
+								}
+							}
+				}
+				AND = {
+					has_province_modifier = cot_hobgoblin_min_small
+					NOT = 	{
+						OR = 	{
+					has_province_modifier = hobgoblin_minority_coexisting_small
+					has_province_modifier = hobgoblin_minority_integrated_small
+								}
+							}
+				}
+				
 				}
 			}
 		}
@@ -103,6 +690,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_human_minority_trigger = yes
+				OR = {
+					has_province_modifier = human_minority_coexisting_large
+					has_province_modifier = human_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_human_min
@@ -112,6 +703,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_elven_minority_trigger =  yes
+				OR = {
+					has_province_modifier = elven_minority_coexisting_large
+					has_province_modifier = elven_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_elf_min
@@ -121,6 +716,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_dwarven_minority_trigger = yes
+				OR = {
+					has_province_modifier = dwarven_minority_coexisting_large
+					has_province_modifier = dwarven_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_dwarf_min
@@ -130,6 +729,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_gnomish_minority_trigger = yes
+				OR = {
+					has_province_modifier = gnomish_minority_coexisting_large
+					has_province_modifier = gnomish_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_gnome_min
@@ -139,6 +742,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_halfling_minority_trigger = yes
+				OR = {
+					has_province_modifier = halfling_minority_coexisting_large
+					has_province_modifier = halfling_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_halfling_min
@@ -148,6 +755,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_goblin_minority_trigger = yes
+				OR = {
+					has_province_modifier = goblin_minority_coexisting_large
+					has_province_modifier = goblin_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_goblin_min
@@ -157,6 +768,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_orcish_minority_trigger = yes
+				OR = {
+					has_province_modifier = orcish_minority_coexisting_large
+					has_province_modifier = orcish_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_orc_min
@@ -166,6 +781,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_half_orcish_minority_trigger = yes
+				OR = {
+					has_province_modifier = half_orcish_minority_coexisting_large
+					has_province_modifier = half_orcish_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_horc_min
@@ -175,6 +794,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_half_elven_minority_trigger = yes
+				OR = {
+					has_province_modifier = half_elven_minority_coexisting_large
+					has_province_modifier = half_elven_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_helf_min
@@ -184,6 +807,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_kobold_minority_trigger = yes
+				OR = {
+					has_province_modifier = kobold_minority_coexisting_large
+					has_province_modifier = kobold_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_kobold_min
@@ -193,6 +820,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_harimari_minority_trigger = yes
+				OR = {
+					has_province_modifier = harimari_minority_coexisting_large
+					has_province_modifier = harimari_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_tiger_min
@@ -202,6 +833,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_centaur_minority_trigger = yes
+				OR = {
+					has_province_modifier = centaur_minority_coexisting_large
+					has_province_modifier = centaur_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_centaur_min
@@ -211,6 +846,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_ogre_minority_trigger = yes
+				OR = {
+					has_province_modifier = ogre_minority_coexisting_large
+					has_province_modifier = ogre_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_ogre_min
@@ -220,6 +859,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_troll_minority_trigger = yes
+				OR = {
+					has_province_modifier = troll_minority_coexisting_large
+					has_province_modifier = troll_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_troll_min
@@ -229,6 +872,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_gnollish_minority_trigger = yes
+				OR = {
+					has_province_modifier = gnollish_minority_coexisting_large
+					has_province_modifier = gnollish_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_gnoll_min
@@ -238,6 +885,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_harpy_minority_trigger = yes
+				OR = {
+					has_province_modifier = harpy_minority_coexisting_large
+					has_province_modifier = harpy_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_harpy_min
@@ -247,6 +898,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_ruinborn_minority_trigger = yes
+				OR = {
+					has_province_modifier = ruinborn_minority_coexisting_large
+					has_province_modifier = ruinborn_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_ruin_min
@@ -256,6 +911,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_large_hobgoblin_minority_trigger = yes
+				OR = {
+					has_province_modifier = hobgoblin_minority_coexisting_large
+					has_province_modifier = hobgoblin_minority_integrated_large
+				}
 			}
 			add_province_modifier = {
 				name = cot_hobgob_min
@@ -265,6 +924,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_human_minority_trigger = yes 
+				OR = {
+					has_province_modifier = human_minority_coexisting_small
+					has_province_modifier = human_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_human_min_small
@@ -274,6 +937,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_elven_minority_trigger = yes 
+				OR = {
+					has_province_modifier = elven_minority_coexisting_small
+					has_province_modifier = elven_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_elf_min_small
@@ -283,6 +950,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_dwarven_minority_trigger = yes 
+				OR = {
+					has_province_modifier = dwarven_minority_coexisting_small
+					has_province_modifier = dwarven_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_dwarf_min_small
@@ -292,6 +963,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_gnomish_minority_trigger = yes 
+				OR = {
+					has_province_modifier = gnomish_minority_coexisting_small
+					has_province_modifier = gnomish_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_gnome_min_small
@@ -301,6 +976,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_halfling_minority_trigger = yes 
+				OR = {
+					has_province_modifier = halfling_minority_coexisting_small
+					has_province_modifier = halfling_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_halfling_min_small
@@ -310,6 +989,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_kobold_minority_trigger = yes 
+				OR = {
+					has_province_modifier = kobold_minority_coexisting_small
+					has_province_modifier = kobold_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_kobold_min_small
@@ -319,6 +1002,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_gnollish_minority_trigger = yes 
+				OR = {
+					has_province_modifier = gnollish_minority_coexisting_small
+					has_province_modifier = gnollish_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_gnoll_min_small
@@ -328,6 +1015,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_harpy_minority_trigger = yes 
+				OR = {
+					has_province_modifier = harpy_minority_coexisting_small
+					has_province_modifier = harpy_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_harpy_min_small
@@ -337,6 +1028,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_goblin_minority_trigger = yes 
+				OR = {
+					has_province_modifier = goblin_minority_coexisting_small
+					has_province_modifier = goblin_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_goblin_min_small
@@ -346,6 +1041,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_orcish_minority_trigger = yes 
+				OR = {
+					has_province_modifier = orcish_minority_coexisting_small
+					has_province_modifier = orcish_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_orc_min_small
@@ -355,6 +1054,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_harimari_minority_trigger = yes 
+				OR = {
+					has_province_modifier = harimari_minority_coexisting_small
+					has_province_modifier = harimari_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_tiger_min_small
@@ -364,6 +1067,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_half_orcish_minority_trigger = yes 
+				OR = {
+					has_province_modifier = half_orcish_minority_coexisting_small
+					has_province_modifier = half_orcish_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_horc_min_small
@@ -373,6 +1080,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_half_elven_minority_trigger = yes 
+				OR = {
+					has_province_modifier = half_elven_minority_coexisting_small
+					has_province_modifier = half_elven_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_helf_min_small
@@ -382,6 +1093,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_ogre_minority_trigger = yes 
+				OR = {
+					has_province_modifier = ogre_minority_coexisting_small
+					has_province_modifier = ogre_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_ogre_min_small
@@ -391,6 +1106,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_troll_minority_trigger = yes 
+				OR = {
+					has_province_modifier = troll_minority_coexisting_small
+					has_province_modifier = troll_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_troll_min_small
@@ -400,6 +1119,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_centaur_minority_trigger = yes 
+				OR = {
+					has_province_modifier = centaur_minority_coexisting_small
+					has_province_modifier = centaur_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_centaur_min_small
@@ -409,6 +1132,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_ruinborn_minority_trigger = yes 
+				OR = {
+					has_province_modifier = ruinborn_minority_coexisting_small
+					has_province_modifier = ruinborn_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_ruin_min_small
@@ -418,6 +1145,10 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_small_hobgoblin_minority_trigger = yes 
+				OR = {
+					has_province_modifier = hobgoblin_minority_coexisting_small
+					has_province_modifier = hobgoblin_minority_integrated_small
+				}
 			}
 			add_province_modifier = {
 				name = cot_hobgob_min_small
