@@ -480,7 +480,7 @@ minority_ideas = { #Minority ideas
 	}
 }
 
-spy_ideas = { #Culture Ideas
+spy_ideas = { #Cultural Unity Ideas
 	category = DIP
 
 	trigger = {
@@ -524,7 +524,7 @@ spy_ideas = { #Culture Ideas
 	}
 }
 
-maritime_ideas = { #Marines Ideas
+maritime_ideas = { #Merchant Marines Ideas
 	category = DIP
 
 	trigger = {
@@ -569,7 +569,7 @@ maritime_ideas = { #Marines Ideas
 		}
 	}
 
-naval_ideas = { #war fleet #done
+naval_ideas = { #Naval Dominance Ideas
 	category = DIP
 
 	trigger = {
@@ -1400,7 +1400,7 @@ administrative_ideas = { #government: monarchy
 	}
 	adaptability = {
 		prestige_decay = -0.01
-		promote_culture_cost = -1
+		promote_culture_cost = -0.5
 	}
 	benefits_for_mercenaries = {
 		same_culture_advisor_cost = -0.10
@@ -1418,6 +1418,7 @@ administrative_ideas = { #government: monarchy
 	}
 	civil_servants = {
 		years_to_integrate_personal_union = -40
+		nobles_loyalty_modifier = 0.10
 	}
 
 	ai_will_do = {
@@ -1494,6 +1495,7 @@ theocracy_gov_ideas = { #government: theocracy
 	}
 	by_the_grace_of_god = {
 		monarch_lifespan = 5
+		church_loyalty_modifier = 0.1
 	}
 	friends_in_high_places = {
 		global_religious_conversion_resistance = -0.9
@@ -1536,28 +1538,27 @@ horde_gov_ideas = { #Government: Tribal ## Redo
 	}
 
 	horse_lords = {
-		global_monthly_devastation = -0.1
+		global_institution_spread = 0.5
 	}
 	beyond_the_sun = {
-		years_of_nationalism = -5
+		
 	}
 	mandate_of_the_khan = {
-
+		monarch_lifespan = 5
 	}
 	there_shall_be_no_grass = {
 		nobles_loyalty_modifier = 0.10
 		nomadic_tribes_loyalty_modifier = 0.10
 		monstrous_tribes_loyalty_modifier = 0.10
-
 	}
 	horde_loyalty = {
-		global_regiment_cost = -0.10
+		technology_cost = -0.05
 	}
 	watchers_of_the_silk_road = {
-		reduced_liberty_desire = 10
+		reform_progress_growth = 0.25
 	}
 	a_magnanimous_empire = {
-		harsh_treatment_cost = -0.50
+		monarch_admin_power = 1
 	}
 
 	ai_will_do = {
