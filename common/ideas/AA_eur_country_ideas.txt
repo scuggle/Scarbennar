@@ -979,40 +979,41 @@ X23_ideas = {
 #Northern League
 X24_ideas = {
 	start = {
-		prestige_decay = -0.01
-		advisor_cost = -0.15
+		global_unrest = -2 #no more elven rascism; more tolerant regime
+		war_exhaustion = -0.03 #alenics are tough or smt
 	}
 
 	bonus = {
-		core_creation = -0.15
+		stability_cost_modifier = -0.15 #the ruler is chosen by the magnates and thus must remain loyal to them
 	}
-
+	
 	trigger = {
 		tag = X24
 	}
-	free = yes
-
+	free = yes		#will be added at load.
+	
 	X24_one = {
-		religious_unity = 0.15
+		trade_efficiency = 0.1 #burghers run the nation
 	}
 	X24_two = {
-		fire_damage = 0.1
+		global_trade_goods_size_modifier = 0.2 #industrial revolution, black alen
 	}
 	X24_three = {
-		global_manpower_modifier = 0.15
+		land_morale = 0.15 #since the greentide, gawed has never won over lorent, the northern league has, people gain faith in the new leadership
 	}
 	X24_four = {
-		artillery_cost = -0.1
+		naval_forcelimit_modifier = 0.1 #our realm is split in two, the only connection is frostbridges, we need a fleet so that the north isnt isolated from us
 	}
 	X24_five = {
-		leader_land_fire = 1
+		land_forcelimit_modifier = 0.10
+		global_manpower_modifier = 0.10 #industrial revolution brings population boom, more men to send to death
 	}
 	X24_six = {
-		artillery_power = 0.1
+		fire_damage = 0.15 #northern league got suspiciously powerful guns from certain smallfolks
 	}
 	X24_seven = {
-		siege_ability = 0.15			
-	}	
+		infantry_fire = 0.15 #many soldiers were originally hunters, they have more experience with guns
+	}
 }
 
 #Griffon Empire ideas
