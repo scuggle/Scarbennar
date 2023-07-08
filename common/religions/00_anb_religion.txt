@@ -136,7 +136,7 @@ cannorian = {
 					define_advisor = {
 						type = theologian
 						skill = 3
-						cost_multiplier = -0.75
+						cost_multiplier = 0.75
 						female = yes
 					}
 				}
