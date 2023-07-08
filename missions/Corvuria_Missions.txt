@@ -921,7 +921,10 @@ A59_centralize = {
 		position = 7
 		
 		trigger = {
-			tag = A59
+			OR = {
+				tag = A59
+				tag = X11
+			}
 		    estate_loyalty = { estate = estate_vampires loyalty = 50 }
 		    estate_influence = { estate = estate_vampires influence = 50 }
 			NOT = { estate_influence = { estate = estate_church influence = 50 } }
