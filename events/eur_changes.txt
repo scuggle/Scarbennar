@@ -1,0 +1,41 @@
+namespace = eur_changes
+
+province_event = {	#corinite build cost blessing
+	id = eur_changes.1109
+	title = eur_changes.1109.t
+	desc = eur_changes.1109.desc
+	picture = DIPLOMACY_eventPicture
+			
+	is_triggered_only = yes
+	
+	option = {	#
+		name = eur_changes.1109.a
+		area = {add_province_modifier = {name = corinite_communities_aspect_modifier duration = 3650}}
+	}
+}
+province_event = {	#corinite dev cost blessing
+	id = eur_changes.1110
+	title = eur_changes.1110.t
+	desc = eur_changes.1110.desc
+	picture = DIPLOMACY_eventPicture
+			
+	is_triggered_only = yes
+	
+	option = {	#
+		name = eur_changes.1109.a
+		area = {add_province_modifier = {name = corinite_diplomatic_rabbi_aspect_modifier duration = 3650}}
+	}
+}
+province_event = {	#corinite missionary blessing
+	id = eur_changes.1111
+	title = eur_changes.1111.t
+	desc = eur_changes.1111.desc
+	picture = DIPLOMACY_eventPicture
+			
+	is_triggered_only = yes
+	
+	option = {	#
+		name = eur_changes.1109.a
+		area = {add_province_modifier = {name = corinite_abrahamic_aspect_modifier duration = 3650}}
+	}
+}

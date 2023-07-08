@@ -61,16 +61,195 @@ cannorian = {
 
 		country = {
 			leader_land_shock = 1
-			land_morale = 0.1
+			manpower_in_true_faith_provinces = 0.10
 		}
 		country_as_secondary = {
-			leader_land_shock = 1
-			land_morale = 0.1
+			land_morale = 0.05
 		}
 
 		hre_heretic_religion = yes
-		uses_karma = yes
+		uses_judaism_power = yes
+		aspects_name = CORIN_ASPECTS
 		allow_female_defenders_of_the_faith = yes
+
+		aspects = {
+			corinite_rosh_hashanah_aspect
+			corinite_simchat_torah_aspect
+			corinite_sukkot_aspect
+			corinite_communities_aspect
+			corinite_diplomatic_rabbi_aspect
+			corinite_abrahamic_aspect
+			corinite_yom_kippur_aspect
+			corinite_remember_passover_aspect
+			corinite_purim_teachings_aspect
+		}
+
+		celebrate = {
+			cost = 200
+			potential = {
+			}
+			allow = {
+				custom_trigger_tooltip = {
+					tooltip = CORINITE_HAS_ASPECT
+					AND = {
+						OR = {
+							has_church_aspect = corinite_rosh_hashanah_aspect
+							has_church_aspect = corinite_simchat_torah_aspect
+							has_church_aspect = corinite_sukkot_aspect
+						}
+						OR = {
+							has_church_aspect = corinite_communities_aspect
+							has_church_aspect = corinite_abrahamic_aspect
+							has_church_aspect = corinite_diplomatic_rabbi_aspect
+						}
+						OR = {
+							has_church_aspect = corinite_yom_kippur_aspect
+							has_church_aspect = corinite_remember_passover_aspect
+							has_church_aspect = corinite_purim_teachings_aspect
+						}
+					}
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						has_church_aspect = corinite_rosh_hashanah_aspect
+					}
+					custom_tooltip = celebrate_has_adm_aspect_tooltip
+					change_government_reform_progress = 15
+					add_legitimacy = 10
+					add_republican_tradition = 3
+					add_devotion = 5
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						add_heir_claim = 5
+					}
+					custom_tooltip = SEPERATOR_TOOLTIP
+				}
+				if = {
+					limit = {
+						has_church_aspect = corinite_simchat_torah_aspect
+					}
+					custom_tooltip = celebrate_has_adm_aspect_tooltip
+					define_advisor = {
+						type = theologian
+						skill = 3
+						cost_multiplier = -0.75
+						female = yes
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = corinite_sukkot_aspect
+					}
+					custom_tooltip = celebrate_has_adm_aspect_tooltip
+					add_years_of_income = 0.2
+					add_inflation = -1
+				}
+				if = {
+					limit = {
+						has_church_aspect = corinite_communities_aspect
+					}					
+					custom_tooltip = celebrate_has_dip_aspect_tooltip
+					custom_tooltip = corinite_communities_aspect_tooltip
+					hidden_effect = {
+						random_owned_province = {
+							limit = {
+								area_for_scope_province = {
+									type = all
+									religion = ROOT
+									is_state_core = ROOT
+									controlled_by = ROOT
+									NOT = {has_province_modifier = corinite_communities_aspect_modifier}
+								}
+							}
+							province_event = {id = bertus_changes.1109}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = corinite_diplomatic_rabbi_aspect
+					}					
+					custom_tooltip = celebrate_has_dip_aspect_tooltip
+					custom_tooltip = corinite_diplomatic_rabbi_aspect_tooltip
+					hidden_effect = {
+						random_owned_province = {
+							limit = {
+								area_for_scope_province = {
+									type = all
+									religion = ROOT
+									is_state_core = ROOT
+									controlled_by = ROOT
+									NOT = {has_province_modifier = corinite_diplomatic_rabbi_aspect_modifier}
+								}
+							}
+							province_event = {id = bertus_changes.1110}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = corinite_abrahamic_aspect
+					}						
+					custom_tooltip = celebrate_has_dip_aspect_tooltip			
+					custom_tooltip = corinite_abrahamic_aspect_tooltip
+					hidden_effect = {
+						random_owned_province = {
+							limit = {
+								area_for_scope_province = {
+									NOT = {religion = ROOT}
+									is_state_core = ROOT
+									controlled_by = ROOT
+									NOT = {has_province_modifier = corinite_abrahamic_aspect_modifier}
+								}
+							}
+							province_event = {id = bertus_changes.1111}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = corinite_yom_kippur_aspect
+					}				
+					custom_tooltip = celebrate_has_mil_aspect_tooltip	
+					add_yearly_manpower = 1
+				}
+				if = {
+					limit = {
+						has_church_aspect = corinite_remember_passover_aspect
+					}				
+					custom_tooltip = celebrate_has_mil_aspect_tooltip	
+					create_general = {
+						tradition = 50
+						add_shock = 1
+						add_manuever = 1
+						culture = ROOT
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = corinite_purim_teachings_aspect
+					}				
+					custom_tooltip = celebrate_has_mil_aspect_tooltip	
+					add_country_modifier = {
+						name = corinite_purim_teachings_aspect_modifier
+						duration = 730
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { NOT = { has_country_flag = has_celebrated_festival } }
+						set_country_flag = has_celebrated_festival
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {

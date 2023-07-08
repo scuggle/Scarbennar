@@ -2393,6 +2393,14 @@ on_separate_war_lost = {
 # root = loser country, from = winner country
 on_battle_lost_country = {
 	#on_battle_ended_effect = yes 1.35
+	if = {	#New Corinite
+		limit = {
+			has_country_modifier = corinite_purim_teachings_aspect_modifier
+		}
+		ROOT = {
+			remove_country_modifier = corinite_purim_teachings_aspect_modifier
+		}
+	}
 	# battle_cult_spreading_effect = yes #Scripted effect for fetishist cult mechanics.
 	ROOT = { jaddari_deioderan_battle_counter_update = { value = -1 } }
 	random_events = {
@@ -2787,6 +2795,21 @@ on_battle_won_unit = {
 # root = winning country, from = loser country
 on_battle_won_country = {
 	#on_battle_ended_effect = yes
+	if = {	#New Corinite
+		limit = {
+			ROOT = {
+				religion = corinite
+				has_church_aspect = corinite_purim_teachings_aspect
+			}
+		}
+		ROOT = {
+			remove_country_modifier = corinite_purim_teachings_aspect_modifier
+			add_country_modifier = {
+				name = corinite_purim_teachings_aspect_modifier
+				duration = 730
+			}
+		}
+	}
 	on_battle_won_country_effect = yes #1.35
 	if = {
 		limit = { religion = goblinic_shamanism  NOT = { FROM = { OR = { tag = REB tag = NAT } } } }

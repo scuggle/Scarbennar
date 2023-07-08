@@ -1,0 +1,162 @@
+#New Corinite
+corinite_rosh_hashanah_aspect = {	#ADM aspect
+	cost = 100
+	modifier = {
+		monthly_reform_progress_modifier = 0.2
+	}
+	monarch_power = adm
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 2
+			unrest = 4
+			NOT = { stability = 0 }
+		}
+	}
+}
+
+corinite_simchat_torah_aspect = {	#ADM aspect
+	cost = 100
+	modifier = {
+		same_culture_advisor_cost = -0.1
+	}
+	monarch_power = adm
+	ai_will_do = {factor = 15}
+}
+
+corinite_sukkot_aspect = {	#ADM aspect
+	cost = 100
+	modifier = {
+		interest = -0.25
+	}
+	monarch_power = adm
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 4
+			num_of_loans = 2
+		}
+		modifier = {
+			factor = 7
+			num_of_loans = 6
+		}
+	}
+}
+
+corinite_communities_aspect = {	#DIP aspect
+	cost = 100
+	effect = {
+	}
+	modifier = {
+		tolerance_own = 2
+	}
+	monarch_power = dip
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 10
+			dominant_religion = jewish
+		}
+		modifier = {
+			factor = 0.01
+			NOT = { dominant_religion = jewish }
+		}
+	}
+}
+
+corinite_diplomatic_rabbi_aspect = {	#DIP aspect
+	cost = 100
+	effect = {
+	}
+	modifier = {
+		improve_relation_modifier = 0.2
+		development_cost = -0.05
+	}
+	monarch_power = dip
+	ai_will_do = {factor = 15}
+}
+
+corinite_abrahamic_aspect = {	#DIP aspect
+	cost = 100
+	effect = {	
+	}
+	modifier = {
+		global_missionary_strength = 0.02
+	}
+	monarch_power = dip
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			dominant_religion = jewish
+		}
+		modifier = {
+			factor = 10
+			NOT = { dominant_religion = jewish }
+		}
+	}
+}
+
+corinite_yom_kippur_aspect = {	#MIL aspect
+	cost = 100
+	modifier = {	
+		infantry_cost = -0.1
+	}
+	effect = {	#extra manpower recovery/drill while at peace
+		custom_tooltip = corinite_yom_kippur_aspect_tooltip
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_at_war = yes
+			NOT = { manpower_percentage = 0.9 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { manpower_percentage = 0.5 }
+		}
+	}
+}
+
+corinite_remember_passover_aspect = {	#MIL aspect
+	cost = 100
+	modifier = {
+		defensiveness = 0.25
+	}
+	effect = {	#extra garrison/attrition
+		custom_tooltip = corinite_remember_passover_aspect_tooltip
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+corinite_purim_teachings_aspect = {	#MIL aspect
+	cost = 100
+	modifier = {
+		shock_damage = 0.10
+		shock_damage_received = -0.05
+	}
+	effect = {	#extra morale dmg/reinforce when win a battle
+		custom_tooltip = corinite_purim_teachings_aspect_tooltip
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
