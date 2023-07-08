@@ -110,6 +110,12 @@ A17_branch_1 = {
 					limit = { NOT = { is_subject_of = ROOT } is_subject = yes }
 					add_liberty_desire = 20
 				}
+				else = {
+					add_historical_friend = A17
+					ROOT = {
+						add_historical_friend = A09
+					}
+				}
 			}
 		}
 	}
