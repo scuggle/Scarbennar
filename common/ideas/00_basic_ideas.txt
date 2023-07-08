@@ -182,7 +182,7 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 		allow_mercenary_drill = yes
 	}
 	adven_ide7 = {
-		#TODO: Mercenaries do not cost prof
+		#TODO: Add a tooltip
 		merc_independent_from_trade_range = yes
 	}
 

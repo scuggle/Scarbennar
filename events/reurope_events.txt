@@ -231,8 +231,8 @@ country_event = {
 				}
 				AND = {
 					OR = {
-						has_province_modifier = elven_orcish_coexisting_small
-						has_province_modifier = elven_orcish_integrated_small
+						has_province_modifier = orcish_coexisting_small
+						has_province_modifier = orcish_integrated_small
 							}
 					NOT = {
 						has_province_modifier = cot_orc_min_small
