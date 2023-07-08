@@ -249,7 +249,7 @@ ghavaanaj_1_2 = {
 		trigger = {
 			has_global_modifier_value = {
 				which = cavalry_power
-				value = 0.5
+				value = 0.35
 			}
 			government = monarchy
 		}
@@ -279,7 +279,7 @@ ghavaanaj_1_2 = {
 		trigger = {
 			has_global_modifier_value = {
 				which = cavalry_power
-				value = 0.6
+				value = 0.4
 			}
 			mil = 6
 			capital_scope = {
@@ -704,7 +704,7 @@ ghavaanaj_2_2 = {
 		trigger = {
 			has_global_modifier_value = {
 				which = cavalry_power
-				value = 1
+				value = 0.5
 			}
 		}
 		
