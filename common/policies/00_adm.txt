@@ -17,7 +17,6 @@ vass_reform_the_goverment_1 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 2
 			}
 		}
@@ -36,7 +35,6 @@ vass_reform_the_goverment_1 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 1
 		}
 		NOT = {
@@ -72,7 +70,6 @@ vass_increased_taxes_1 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 2
 			}
 		}
@@ -91,7 +88,6 @@ vass_increased_taxes_1 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 1
 		}
 		NOT = {
@@ -148,7 +144,6 @@ vass_building_spree_1 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 2
 			}
 		}
@@ -167,7 +162,6 @@ vass_building_spree_1 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 1
 		}
 		NOT = {
@@ -204,7 +198,6 @@ vass_centralization_effort_1 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 2
 			}
 		}
@@ -223,7 +216,6 @@ vass_centralization_effort_1 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 1
 		}
 		NOT = {
@@ -259,7 +251,6 @@ vass_reduce_inflation_1 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 2
 			}
 		}
@@ -278,7 +269,6 @@ vass_reduce_inflation_1 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 1
 		}
 		NOT = {
@@ -318,7 +308,6 @@ vass_tighten_the_belt_1 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 2
 			}
 		}
@@ -337,7 +326,6 @@ vass_tighten_the_belt_1 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 1
 		}
 		NOT = {
@@ -379,7 +367,6 @@ vass_reform_the_goverment_2 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 3
 			}
 		}
@@ -395,7 +382,6 @@ vass_reform_the_goverment_2 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 2
 		}
 	}
@@ -413,7 +399,6 @@ vass_reform_the_goverment_2 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 2
 		}
 		NOT = {
@@ -448,7 +433,6 @@ vass_increased_taxes_2 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 3
 			}
 		}
@@ -464,7 +448,6 @@ vass_increased_taxes_2 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 2
 		}
 	}
@@ -482,7 +465,6 @@ vass_increased_taxes_2 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 2
 		}
 		NOT = {
@@ -538,7 +520,6 @@ vass_building_spree_2 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 3
 			}
 		}
@@ -554,7 +535,6 @@ vass_building_spree_2 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 2
 		}
 	}
@@ -572,7 +552,6 @@ vass_building_spree_2 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 2
 		}
 		NOT = {
@@ -609,7 +588,6 @@ vass_centralization_effort_2 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 3
 			}
 		}
@@ -625,7 +603,6 @@ vass_centralization_effort_2 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 2
 		}
 	}
@@ -643,7 +620,6 @@ vass_centralization_effort_2 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 2
 		}
 		NOT = {
@@ -678,7 +654,6 @@ vass_reduce_inflation_2 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 3
 			}
 		}
@@ -694,7 +669,6 @@ vass_reduce_inflation_2 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 2
 		}
 	}
@@ -712,7 +686,6 @@ vass_reduce_inflation_2 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 2
 		}
 		NOT = {
@@ -751,7 +724,6 @@ vass_tighten_the_belt_2 = {
 				full_idea_group = economic_ideas
 				full_idea_group = logistical_ideas
 				full_idea_group = expansion_ideas
-				full_idea_group = capital_ideas
 				amount = 3
 			}
 		}
@@ -767,7 +739,6 @@ vass_tighten_the_belt_2 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 2
 		}
 	}
@@ -785,7 +756,6 @@ vass_tighten_the_belt_2 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 2
 		}
 		NOT = {
@@ -827,7 +797,6 @@ vass_reform_the_goverment_3 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 3
 		}
 	}
@@ -845,7 +814,6 @@ vass_reform_the_goverment_3 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 3
 		}
 		NOT = {
@@ -880,7 +848,6 @@ vass_increased_taxes_3 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 3
 		}
 	}
@@ -898,7 +865,6 @@ vass_increased_taxes_3 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 3
 		}
 		NOT = {
@@ -953,7 +919,6 @@ vass_building_spree_3 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 3
 		}
 	}
@@ -971,7 +936,6 @@ vass_building_spree_3 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 3
 		}
 		NOT = {
@@ -1006,7 +970,6 @@ vass_centralization_effort_3 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 3
 		}
 	}
@@ -1024,7 +987,6 @@ vass_centralization_effort_3 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 3
 		}
 		NOT = {
@@ -1061,7 +1023,6 @@ vass_reduce_inflation_3 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 3
 		}
 	}
@@ -1079,7 +1040,6 @@ vass_reduce_inflation_3 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 3
 		}
 		NOT = {
@@ -1117,7 +1077,6 @@ vass_tighten_the_belt_3 = {
 				has_idea_group = economic_ideas
 				has_idea_group = logistical_ideas
 				has_idea_group = expansion_ideas
-				has_idea_group = capital_ideas
 				amount = 3
 		}
 	}
@@ -1135,7 +1094,6 @@ vass_tighten_the_belt_3 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = capital_ideas
 		amount = 3
 		}
 		NOT = {

@@ -251,3 +251,7 @@ economy_mutagen_4 = {
 	interest = -0.25
 	inflation_action_cost = -0.25
 }
+economy_mutagen_5 = {
+	global_tax_modifier = 0.2
+	tax_income = 24
+}

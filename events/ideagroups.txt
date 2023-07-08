@@ -8836,7 +8836,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 	}
 
 	mean_time_to_happen = {
@@ -8870,7 +8870,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 		is_at_war = yes
 		NOT = { 
 			has_country_modifier = defensive_stance
@@ -8900,7 +8900,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 	}
 
 	mean_time_to_happen = {
@@ -8927,7 +8927,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 		NOT = { 
 			has_country_modifier = disrespecting_the_ancestors
 		}
@@ -8957,7 +8957,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 	}
 
 	mean_time_to_happen = {
@@ -8980,7 +8980,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 		NOT = { 
 			has_country_modifier = overconfidence
 		}
@@ -9009,7 +9009,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 	}
 
 	mean_time_to_happen = {
@@ -9034,7 +9034,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 		is_at_war = no
 	}
 
@@ -9077,7 +9077,7 @@ country_event = {
 		is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 		any_owned_province = { 
 			has_owner_culture = no
 			OR = {
@@ -9142,7 +9142,7 @@ country_event = {
 		is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = horde_gov_ideas
 	}
 
 	mean_time_to_happen = {
@@ -9232,7 +9232,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = infrastructure_ideas 
+		has_idea_group = logistical_ideas 
 		NOT = { has_country_modifier = road_maintenance_modifier }
 		NOT = { has_country_modifier = no_road_maintenance_modifier }
 	}
@@ -9289,7 +9289,7 @@ country_event = {
 	is_triggered_only = yes
 	goto = prosperity_province
 	trigger = {
-		has_idea_group = infrastructure_ideas 
+		has_idea_group = logistical_ideas 
 		NOT = { has_country_modifier = shared_prosperity_modifier }
 	}
 
@@ -9331,8 +9331,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = infrastructure_ideas 
-		has_idea = expanded_infrastructure_network
+		has_idea_group = logistical_ideas 
+		has_idea = logsi_ide6
 		NOT = { has_country_modifier = inaccurate_road_maps }
 		OR = {
 			NOT = { has_country_flag = had_road_maps_moment }
@@ -9379,7 +9379,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = infrastructure_ideas 
+		has_idea_group = logistical_ideas 
 		NOT = { has_country_modifier = insufficient_construction_supplies }
 	}
 
@@ -9406,7 +9406,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = infrastructure_ideas 
+		has_idea_group = logistical_ideas 
 		any_owned_province = {
 			is_in_capital_area = yes
 			is_overseas = no
@@ -9497,7 +9497,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = infrastructure_ideas 
+		has_idea_group = logistical_ideas 
 		OR = {
 			NOT = { has_country_flag = had_regional_boom }
 			had_country_flag = {
@@ -9559,7 +9559,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = infrastructure_ideas 
+		has_idea_group = logistical_ideas 
 		NOT = { has_country_modifier = talented_architect }
 	}
 
@@ -9609,7 +9609,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = infrastructure_ideas
+		has_idea_group = logistical_ideas
 	}
 
 	mean_time_to_happen = {
@@ -9658,7 +9658,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = infrastructure_ideas 
+		has_idea_group = logistical_ideas 
 		NOT = { has_country_modifier = administrative_challenges }
 	}
 
@@ -9690,7 +9690,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = infrastructure_ideas
+		has_idea_group = logistical_ideas
 	}
 
 	mean_time_to_happen = {
@@ -9716,7 +9716,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		has_idea_group = the_great_game 
 	}
 
 	mean_time_to_happen = {
@@ -9744,7 +9744,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		has_idea_group = the_great_game 
 		NOT = { has_ruler_modifier = embarassing_display_modifier }
 	}
 
@@ -9778,7 +9778,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		has_idea_group = the_great_game 
 		has_any_estates = yes
 	}
 
@@ -9805,7 +9805,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		has_idea_group = the_great_game 
 		has_any_estates = yes
 	}
 
@@ -9832,7 +9832,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas
+		has_idea_group = the_great_game
 		is_free_or_tributary_trigger = yes
 		NOT = { has_country_flag = noble_man_exiled_dynasty_member }
 		NOT = { has_country_flag = noble_man_exiled_politician }
@@ -10418,7 +10418,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		has_idea_group = the_great_game 
 		OR = {
 			num_of_loans = 5
 			is_bankrupt = yes
@@ -10446,7 +10446,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		has_idea_group = the_great_game 
 	}
 
 	mean_time_to_happen = {
@@ -10471,7 +10471,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		has_idea_group = the_great_game 
 		
 	}
 
@@ -10520,7 +10520,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = adventurer_ideas_vaass 
 		is_at_war = yes 
 		NOT = { has_country_modifier = great_reputation_modifier } 
 	}
@@ -10548,7 +10548,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = adventurer_ideas_vaass 
 		if = {
 			limit = { has_dlc = "Cradle of Civilization" } 
 			NOT = { army_professionalism = 0.5 }
@@ -10588,7 +10588,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = adventurer_ideas_vaass
 		NOT = { has_country_modifier = "trust_from_mercs" }
 	}
 
@@ -10615,7 +10615,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = adventurer_ideas_vaass
 		NOT = { has_country_modifier = "glut_of_mercs" }
 	}
 
@@ -10644,7 +10644,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = adventurer_ideas_vaass
 		NOT = { has_country_modifier = "payment_demands" }
 		is_at_war = yes	
 		num_of_mercenaries = 1
@@ -10673,7 +10673,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = adventurer_ideas_vaass 
 	}
 
 	mean_time_to_happen = {
@@ -10696,7 +10696,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = adventurer_ideas_vaass 
 		NOT = { has_country_modifier = mercenary_leadership }
 	}
 
@@ -10766,7 +10766,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = adventurer_ideas_vaass 
 		any_hired_mercenary_company = {
 			NOT = { has_company_manpower = 0.75 }
 		}
@@ -10806,7 +10806,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = adventurer_ideas_vaass 
 		NOT = { has_country_modifier = negative_mercenary_reputation }
 		num_of_hired_mercenary_companies = 4
 	}

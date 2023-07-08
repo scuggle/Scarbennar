@@ -34,7 +34,10 @@ country_decisions = {
 			gerudia_superregion= {
 				discover_country = ROOT
 			}
-			salahad_superregion= {
+			north_salahad_superregion= {
+				discover_country = ROOT
+			}
+			south_salahad_superregion= {
 				discover_country = ROOT
 			}
 			torn_sea_superregion= {
@@ -88,19 +91,10 @@ country_decisions = {
 			east_indies_superregion= {
 				discover_country = ROOT
 			}
-			western_sarhal_superregion= {
-				discover_country = ROOT
-			}
-			eastern_sarhal_superregion= {
-				discover_country = ROOT
-			}
-			southern_sarhal_superregion= {
-				discover_country = ROOT
-			}
 			north_aelantir_coast_area = {
 				discover_country = ROOT
 			}
-			south_aelantir_coast_region = {
+			southeast_aelantir_coast_region = {
 				discover_country = ROOT
 			}
 			north_uelos_lament_ocean_region= {

@@ -80,7 +80,7 @@ spriteType = {
          texturefile = "gfx//interface//great_projects//great_project_port_jaher.dds"
      }
 ########
-Examples
+#Examples
 ########
 
 
@@ -96,7 +96,4 @@ Examples
 
 
 ##Add more here
-
-
-
 }

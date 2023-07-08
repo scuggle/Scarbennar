@@ -30,7 +30,7 @@ country_decisions = {
 					OR={
 						has_subterranean_race = yes
 						AND = {
-							has_integrated_dwarven_pop = yes
+							has_integrated_dwarven_pop_trigger = yes
 							has_province_modifier = human_hold_3
 							ROOT = {
 								mission_completed = marrhold_hole
@@ -45,7 +45,7 @@ country_decisions = {
 				adm_tech = 5
 			}
 			else = {
-				capital_scope = { has_integrated_dwarven_pop = yes }
+				capital_scope = { has_integrated_dwarven_pop_trigger = yes }
 				OR={adm_tech = 7
 					AND={
 						has_province_modifier = human_hold_3

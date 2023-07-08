@@ -139,7 +139,13 @@ country_event = {
 		name = "pirates.1.a"
 		ai_chance = { factor = 20 }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { 
+				OR = {
+					has_active_policy = vass_a_melting_pot_1
+					has_active_policy = vass_a_melting_pot_2
+					has_active_policy = vass_a_melting_pot_3
+				}
+			}
 			define_ruler = {
 				mil = 1
 				adm = 4
@@ -166,7 +172,13 @@ country_event = {
 		name = "pirates.1.b"
 		ai_chance = { factor = 20 }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { 
+				OR = {
+					has_active_policy = vass_a_melting_pot_1
+					has_active_policy = vass_a_melting_pot_2
+					has_active_policy = vass_a_melting_pot_3
+				}
+			}
 			define_ruler = {
 				dip = 4
 				adm = 1
@@ -193,7 +205,13 @@ country_event = {
 		name = "pirates.1.c"
 		ai_chance = { factor = 20 }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { 
+				OR = {
+					has_active_policy = vass_a_melting_pot_1
+					has_active_policy = vass_a_melting_pot_2
+					has_active_policy = vass_a_melting_pot_3
+				}
+			}
 			define_ruler = {
 				mil = 4
 				adm = 1
@@ -761,7 +779,13 @@ country_event = {
 		ai_chance = { factor = 20 }
 		trigger = { has_faction = mykx_xhazobkult }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { 
+				OR = {
+					has_active_policy = vass_a_melting_pot_1
+					has_active_policy = vass_a_melting_pot_2
+					has_active_policy = vass_a_melting_pot_3
+				}
+			}
 			define_ruler = {
 				mil = 4
 				adm = 1

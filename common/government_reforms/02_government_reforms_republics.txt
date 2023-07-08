@@ -7320,7 +7320,7 @@ voltenu_corpocracy = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes	#changed this from no
 	potential = {
-		tag = X99
+		tag = X13
 		NOT = { has_reform = crown_colony_government }
 		NOT = { has_reform = private_enterprise_colony_government }
 		NOT = { has_reform = self_governing_colony_government }
@@ -7328,7 +7328,7 @@ voltenu_corpocracy = {
 	}
 	trigger = {
 		OR = {
-			tag = X99
+			tag = X13
 		}
 	}
 	duration = 4

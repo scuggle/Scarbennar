@@ -773,7 +773,7 @@ age_of_absolutism = {
 				capital_scope = { continent = serpentspine }
 			}
 			effect = {
-				custom_tooltip = ab_dwarven_reclamation_tooltip
+				custom_tooltip = ab_serpentspine_reclamation_tooltip
 			}
 			ai_will_do = {
 				factor = 1000

@@ -1,7 +1,6 @@
 ﻿namespace = reurope_i_events #i = ideas
 
-
-
+#Minorties
 country_event = {
 	id = reurope_i_events.200
 	title = reurope_i_events.200.t
@@ -74,8 +73,8 @@ country_event = {
 				}
 				AND = {
 					OR = {
-						has_province_modifier = elven_orcish_coexisting_large
-						has_province_modifier = elven_orcish_integrated_large
+						has_province_modifier = orcish_minority_coexisting_large
+						has_province_modifier = orcish_minority_integrated_large
 							}
 					NOT = {
 						has_province_modifier = cot_orc_min
@@ -231,8 +230,8 @@ country_event = {
 				}
 				AND = {
 					OR = {
-						has_province_modifier = orcish_coexisting_small
-						has_province_modifier = orcish_integrated_small
+						has_province_modifier = orcish_minority_coexisting_small
+						has_province_modifier = orcish_minority_integrated_small
 							}
 					NOT = {
 						has_province_modifier = cot_orc_min_small
@@ -475,7 +474,7 @@ country_event = {
 							}
 				}
 				AND = {
-					has_province_modifier = cot_hobgoblin_min
+					has_province_modifier = cot_hobgob_min
 					NOT = 	{
 						OR = 	{
 					has_province_modifier = hobgoblin_minority_coexisting_large
@@ -629,7 +628,7 @@ country_event = {
 							}
 				}
 				AND = {
-					has_province_modifier = cot_hobgoblin_min_small
+					has_province_modifier = cot_hobgob_min_small
 					NOT = 	{
 						OR = 	{
 					has_province_modifier = hobgoblin_minority_coexisting_small

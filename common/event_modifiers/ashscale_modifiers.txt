@@ -93,7 +93,7 @@ ash_resisted = {
 
 ash_converted = {
 	missionaries = 1
-	global_missionary_strength = .02
+	global_missionary_strength = 0.02
 }
 
 ash_securing_nest = {

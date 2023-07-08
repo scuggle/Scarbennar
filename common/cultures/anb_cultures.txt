@@ -83,7 +83,6 @@ anbennarian = {
 		dynasty_names = {
 			"síl Themarenn" "síl Estallen" "síl Deamóine" "síl Gabmórionn" "síl Bennon" "síl Leslinpár" "síl Aranmas" "síl Terr" Silurion "síl Varainé" Konwell Silistra "síl Vivin"
 			"síl Esta" "sína Gren" "sílna Hat" "síl Estadeir" "síl Seinathíl"
-			#more names 
 			Seinpírártharn Farran "sina Vartràs" "sina Vardemele" "sina Ciobispár" "síl na Kormistgrái" "of Dogwood" "of Roysamfloo" "of Arkfloat" "of Bargedock" "sina Lanassionn" "of Coraston" "of Carrotrows" "síl Esmarton" "sina Darovionn" "of Wincestir" "sina Gabnamm" "of Camirsville" "síl na Falahvar" "of Peargrove" "sina Dizâlstunad" "sina Yaddervanhoop" "sina Cúwbeloch" "of Weavers Rock" "of Erel" "sina Rhaebór" "síl Balgarionn" "of Builderstemple" "síl na Drominarsaraor" "of Maiden's Hill" "sina Quicksprout" "of Heartwood" "sina Brassblare" "of Heraldbrook"
 		}
 	}
@@ -221,6 +220,14 @@ alenic = {
 	marrodic = {	#the western plains dudes
 		primary = B36 #Marrhold
 		
+		dynasty_names = {
+			Griffonmark Griffonhill "of Marrhold" Marr Marrod Griffonsgate Marrhyl "sina Marrton" "of Thadston" "of Falcon's Nest" "of Tailfeather" "of Endicott" "of Newton" "of Ridley" "of Winfield"
+		}
+	}
+
+	imperial_marr = {	#the western plains dudes
+		primary = M01 #Marrhold
+
 		dynasty_names = {
 			Griffonmark Griffonhill "of Marrhold" Marr Marrod Griffonsgate Marrhyl "sina Marrton" "of Thadston" "of Falcon's Nest" "of Tailfeather" "of Endicott" "of Newton" "of Ridley" "of Winfield"
 		}
@@ -1536,7 +1543,7 @@ gnollish = {
 	}
 	flamemarked_gnoll = {
 	}
-	fieldstalker_gnoll = 
+	fieldstalker_gnoll = {
 		primary = F72 #Haraagtseda
 		dynasty_names = { 
 		Ironpelt Junkborn Scrapfang Trashjaw Coppertooth Mudcrest Swampflesh Grimsniffer Tearpaw Growlspear Rashskull Ridgeborn Shredspear Shredclaw Pawclaw Gashfur Bloodfur Mudfur Mudpaw Brashaxe Deadcoat Deadfang 

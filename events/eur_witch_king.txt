@@ -89,7 +89,7 @@ country_event = {
         }
     }
         OR = {has_country_flag = witch_king_diplo
-            has_country_modifier = 1_relations_removed^
+            has_country_modifier = 1_relations_removed
             has_country_modifier = 2_relations_removed
             has_country_modifier = 3_relations_removed
             has_country_modifier = 4_relations_removed
@@ -99,11 +99,6 @@ country_event = {
             has_country_modifier = 8_relations_removed
             has_country_modifier = 9_relations_removed
             has_country_modifier = 10_relations_removed
-            has_country_modifier = 11_relations_removed
-            has_country_modifier = 12_relations_removed
-            has_country_modifier = 13_relations_removed
-            has_country_modifier = 14_relations_removed
-            has_country_modifier = 15_relations_removed
 
             }
 		AND = { is_month = 0 NOT = { is_month = 1}}

@@ -421,7 +421,11 @@ country_event = {
 		NOT = {
 			has_country_flag = female_mercs
 		}
-		has_active_policy = mandatory_service
+		OR = {
+			has_active_policy = vass_a_melting_pot_1
+			has_active_policy = vass_a_melting_pot_2
+			has_active_policy = vass_a_melting_pot_3
+		}
 	}
 	
 	mean_time_to_happen = {

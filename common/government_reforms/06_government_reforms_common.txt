@@ -4367,7 +4367,7 @@ lockean_proviso_reform = {
 	trigger = {
 		OR = { 
 			full_idea_group = economic_ideas
-			full_idea_group = infrastructure_ideas 
+			full_idea_group = logistical_ideas 
 		}
 		if = {
 			limit = {

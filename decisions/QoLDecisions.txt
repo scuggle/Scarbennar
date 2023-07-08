@@ -524,41 +524,4 @@ country_decisions = {
 			}
 		}
 	}
-	
-	Qol_manage_manufacturies = {
-		
-		potential = {
-			ai = no
-			has_country_flag = Qol_flag		
-			has_country_flag = Qol_buildings_interface
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		allow = {			
-			custom_trigger_tooltip = {
-				tooltip = Qol_manufacturies_tooltip
-				any_owned_province = {
-					OR = {
-						has_building = wharf
-						has_building = weapons
-						has_building = textile
-						has_building = plantations
-						has_building = tradecompany
-						has_building = farm_estate
-						has_building = mills
-						has_building = furnace
-						has_building = ramparts
-						has_building = soldier_households
-						has_building = impressment_offices
-						has_building = state_house
-					}
-				}
-			}
-			is_at_war = no
-		}
-		effect = {
-			country_event = { id = Qol_events.1 }
-		}
-	}
 }
