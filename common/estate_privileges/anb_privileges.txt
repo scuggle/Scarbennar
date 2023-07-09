@@ -1419,7 +1419,6 @@ estate_adventurers_organization_exploration_society = {
 	can_revoke = { always = no }
 	on_granted = {
 		clear_adventurers_organization_effect = yes
-		#TODO 
 	}
 	penalties = {
 	}

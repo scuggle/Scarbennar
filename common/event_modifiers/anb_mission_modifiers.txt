@@ -19633,7 +19633,7 @@ Z36_balgars_dream = {
 }
 
 Z36_rail_dwarf_advice = {
-	movement_speed = 0.2 # TODO too powerful?
+	movement_speed = 0.2 
 }
 
 Z36_horse_rail = {
@@ -24655,7 +24655,6 @@ H61_plum_orchards = {
 
 H61_blooming_tribal_amicability = {
 	prestige = 0.1
-	#TODO ask modifiers
 }
 
 H61_winning_the_debate = {

@@ -8478,7 +8478,6 @@ chose_rememberance = { }
 
 secret_society_timer = { }
 
-#BUG
 katikkiri_timer = { }
 
 abatembuzy_timer = { }

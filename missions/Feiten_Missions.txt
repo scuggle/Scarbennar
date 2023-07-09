@@ -1279,11 +1279,11 @@ feiten_missions_2_world = {
 		provinces_to_highlight = { }
 		
 		trigger = {
-			# TODO once Insyaa is in
+			#  once Insyaa is in
 		}
 		
 		effect = {
-			# TODO once Insyaa is in
+			#  once Insyaa is in
 		}
 	}
 	
@@ -1297,11 +1297,11 @@ feiten_missions_2_world = {
 		provinces_to_highlight = { }
 		
 		trigger = {
-			# TODO once Insyaa is in
+			# once Insyaa is in
 		}
 		
 		effect = {
-			# TODO once Insyaa is in
+			#  once Insyaa is in
 		}
 	}
 	
@@ -1315,11 +1315,11 @@ feiten_missions_2_world = {
 		provinces_to_highlight = { }
 		
 		trigger = {
-			# TODO once Insyaa is in
+			#  once Insyaa is in
 		}
 		
 		effect = {
-			# TODO once Insyaa is in
+			#  once Insyaa is in
 		}
 	}
 	
@@ -1333,11 +1333,11 @@ feiten_missions_2_world = {
 		provinces_to_highlight = { }
 		
 		trigger = {
-			# TODO once Insyaa is in
+			#  once Insyaa is in
 		}
 		
 		effect = {
-			# TODO once Insyaa is in
+			#  once Insyaa is in
 		}
 	}
 	
@@ -2334,11 +2334,11 @@ feiten_missions_3_world = {
 		provinces_to_highlight = { }
 		
 		trigger = {
-			# TODO once Sarhal is in
+			#  once Sarhal is in
 		}
 		
 		effect = {
-			# TODO once Sarhal is in
+			#  once Sarhal is in
 		}
 	}
 	
@@ -2352,11 +2352,11 @@ feiten_missions_3_world = {
 		provinces_to_highlight = { }
 		
 		trigger = {
-			# TODO once Sarhal is in
+			#  once Sarhal is in
 		}
 		
 		effect = {
-			# TODO once Sarhal is in
+			#  once Sarhal is in
 		}
 	}
 	

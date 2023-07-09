@@ -4942,7 +4942,7 @@ on_mandate_of_heaven_gained = {
 	#	change_technology_group = chinese
 	#	change_unit_type = chinese
 	#}
-	# TODO commented pending rework, so nations like jaddari can take the mandate without getting their reforms broken
+	# 
 	#if = {
 	#	limit = {
 	#		OR = {
@@ -7473,8 +7473,6 @@ on_four_year_pulse_2 = {
 		race_setup_events.2		#Ai only event
 		#Moved to on_thri_yearly_pulse_2
 		# race_setup_events.9		#Expel/Purge opinions
-
-		# #TODO: add event 5
 
 		# racial_modifiers.6		#just in case
 

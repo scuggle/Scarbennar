@@ -258,7 +258,7 @@ country_event = {
 					id = orcish_tolerance_events.13
 				}
 			}
-			## TODO
+			## 
 			#Orcish Soldiers of Fortune
 			#Orcish Freeman calls for liberation
 			#Orc Bands Seek a fight

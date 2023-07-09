@@ -132,7 +132,7 @@ veykoda_vareynn_branch = {
 				}
 				country_event = { id = flavor_arverynn.14 days = 60 }
 			}
-			#set_country_flag = G35_buycev_flag #Unlocks additional mercenary companies #TODO
+			#set_country_flag = G35_buycev_flag #Unlocks additional mercenary companies #
 		}
 	}
 	##Mission End

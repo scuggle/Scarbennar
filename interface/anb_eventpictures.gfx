@@ -325,7 +325,7 @@ spriteTypes = {
 	
 #####	COWBOYS (American dream)		#####
 
-# TODO commented until a fix for blank images when lacking the DLC - don't use DLC images!
+#  commented until a fix for blank images when lacking the DLC - don't use DLC images!
 	
 #	spriteType = {	#Ebenmas
 #		name = "H34_EXPLORERS_eventPicture"

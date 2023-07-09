@@ -1722,7 +1722,7 @@ the_angel_kamniel_reform = {
 	}
 	allow_normal_conversion = no
 	legacy_equivalent = monastic_order_government
-	icon = "religious_leader"	#TODO new icon
+	icon = "religious_leader"
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {

@@ -1186,7 +1186,7 @@ hammerhome_3 = {
 	}
 	
 	Z36_balgar_would_be_proud = {
-		# TODO, need to do bypasses and such.
+		# , need to do bypasses and such.
         icon = mission_feast
         position = 10
         required_missions = {

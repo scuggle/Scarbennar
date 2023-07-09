@@ -89,7 +89,7 @@ spriteTypes = {
 
 
 
-	# TODO temporary monument pictures
+	#  temporary monument pictures
 	spriteType = {
 		name = "GFX_great_project_deathsand_lab"
 		texturefile = "gfx//interface//great_projects//great_project_ellora_caves.dds"

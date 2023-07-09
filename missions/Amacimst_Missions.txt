@@ -214,7 +214,7 @@ G26_kill_them_all_branch = {
 		}
 		}
 		effect = {
-			set_country_flag = G27_ear_bounty_flag #TODO: Have this affect cursed ones events
+			set_country_flag = G27_ear_bounty_flag #: Have this affect cursed ones events
 			country_event = { id = flavour_amacimst.3 } #Vitresoln Ear Exchange
 		}
 	}
@@ -404,7 +404,7 @@ G26_kill_them_all_branch = {
 		effect = {
 			add_mil_power = -200
 			add_treasury = -500
-			custom_tooltip = amethyst_knights_company_tt #TODO
+			custom_tooltip = amethyst_knights_company_tt #
 			unlock_merc_company = {
 				merc_company = merc_amacimst_the_amethyst_order
 			}
@@ -575,7 +575,7 @@ G26_amethyst_branch = {
 			}			
 		}
 		effect = {
-			custom_tooltip = G26_ranches_tt #TODO localize
+			custom_tooltip = G26_ranches_tt # localize
 			hidden_effect = {
 				every_province = {
 					limit = {
@@ -584,12 +584,12 @@ G26_amethyst_branch = {
 					}
 					add_permanent_province_modifier = {
 						duration = -1
-						name = G26_amethyst_ranches #TODO localize
+						name = G26_amethyst_ranches # localize
 					}
 				}
 			}
 			add_country_modifier = {
-				name = G26_great_ranches_nation_mod #TODO localize
+				name = G26_great_ranches_nation_mod # localize
 				duration = 3650
 			}
 		}
@@ -1091,7 +1091,7 @@ G26_protectors_of_the_ynn_branch = {
 				}
 				create_iosahar = { tag = G34 }
 			}
-			custom_tooltip = G26_unity_of_dolindha_reward_tt #TODO
+			custom_tooltip = G26_unity_of_dolindha_reward_tt #
 			hidden_effect = {
 				every_known_country = {
 					limit = {

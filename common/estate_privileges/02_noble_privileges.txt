@@ -2919,7 +2919,7 @@ estate_nobles_mestnichestvo = {
 	# }
 	# ai_will_do = {
 		# factor = 1
-	# }#TODO
+	# }
 # }
 estate_nobles_consolidated_noble_contracts = {
 	icon = privilege_centralized

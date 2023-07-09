@@ -1174,7 +1174,7 @@ country_event = {
 
 		add_prestige = 50
 
-		#TODO: add custom tooltip
+		#: add custom tooltip
 
 		random_province = {
 			limit = {

@@ -4277,7 +4277,7 @@ country_event = {
 	# This event is only here to have a generic template that is more easily moddable and is only here for the INITIAL calculation (these priorities may change for ai over time)
 	# It sets the goal for how it handles specific races (integration, coexistance or oppression)
 	
-	# TODO: more factors to change it? if its past 1650 we remove the hate monsters goal
+	# : more factors to change it? if its past 1650 we remove the hate monsters goal
 	immediate = {
 		hidden_effect = {
 			# Sets up basic goal (coexistence)
