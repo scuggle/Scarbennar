@@ -550,17 +550,6 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
-		ab_reavers_resurgent = {
-			allow = {
-				culture_group = gerudian
-			}
-			modifier = {
-				naval_morale = 0.2
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
 	}
 }
 
@@ -780,23 +769,23 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_sun_cult_resurgence = {
-			allow = {
-				OR = {
-					religion = bulwari_sun_cult
-					religion = old_bulwari_sun_cult
-					religion = the_jadd
-				}
-				government_rank = 3
-			}
-			effect = {
-				custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
-				set_country_flag = age_ability_sun_cult_resurgence_flag
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
+		# ab_sun_cult_resurgence = {
+		# 	allow = {
+		# 		OR = {
+		# 			religion = bulwari_sun_cult
+		# 			religion = old_bulwari_sun_cult
+		# 			religion = the_jadd
+		# 		}
+		# 		government_rank = 3
+		# 	}
+		# 	effect = {
+		# 		custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
+		# 		set_country_flag = age_ability_sun_cult_resurgence_flag
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 10
+		# 	}
+		# }
 	}
 }
 
@@ -1001,6 +990,17 @@ age_of_revolutions = {
 		 		development_cost = -0.15
 		 		build_cost = -0.05
 		 	}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_reavers_resurgent = {
+			allow = {
+				culture_group = gerudian
+			}
+			modifier = {
+				naval_morale = 0.2
+			}
 			ai_will_do = {
 				factor = 100
 			}
