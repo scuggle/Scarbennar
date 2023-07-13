@@ -16,7 +16,7 @@ historical_friend = A40 #Acromton
 
 1303.9.3 = {
 	monarch = {
-		name = "Artorian 'the Vengeful'" #This is the grandson of Literally no one
+		name = "Artorian 'The Vengeful'" #This is the grandson of Literally no one
 		dynasty = "Sunspit"
 		birth_date = 1303.9.3
 		adm = 2
