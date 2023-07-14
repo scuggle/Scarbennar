@@ -1550,7 +1550,7 @@ tluukt_4 = {
 			add_country_modifier = { name = tluukt_permanent_records duration = -1 }
 			if = {
 				limit = { NOT = { has_ruler_modifier = tluukt_the_rule_of_tluukt } }
-				#hidden_effect = { country_event = { id = flavour_tluukt.100 days = 3 } } #TODO - DELETE THIS after the disaster is implemented.
+				#hidden_effect = { country_event = { id = flavour_tluukt.100 days = 3 } } # - DELETE THIS after the disaster is implemented.
 			}
 		}
 	}

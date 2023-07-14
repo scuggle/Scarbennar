@@ -1000,7 +1000,7 @@ country_event = {
 }
 
 # Harpy killing travellers
-#TODO: Troy's monster system
+#: Troy's monster system
 country_event = {
 	id = harpy_tolerance_events.8
 	title = harpy_tolerance_events.8.t

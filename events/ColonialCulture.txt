@@ -86,7 +86,7 @@ country_event = {
 			}
 		}
 		
-		hidden_effect = {	#TODO: Valorborn getting racist against non mestizos
+		hidden_effect = {	#: Valorborn getting racist against non mestizos
 			subtract_variable = {
 				which = elven_race_tolerance_ai
 				value = 10

@@ -1009,7 +1009,7 @@ H61_3 = {
 			}
 		}
 		
-		effect = { #Excess of plums event pulse TODO event not yet made
+		effect = { #Excess of plums event pulse  event not yet made
 			1842 = {
 				change_trade_goods = wine
 				add_permanent_province_modifier = {
@@ -1083,7 +1083,7 @@ H61_3 = {
 			NOT = { any_owned_province = {
 				has_province_modifier = H61_growing_trees
 			} }
-			ciodsibh_area = { #TODO might need dlc conditions
+			ciodsibh_area = { # might need dlc conditions
 				is_prosperous = yes
 			}
 			yanudahna_area = {
@@ -1317,7 +1317,7 @@ H61_3 = {
 			1882 = {
 				center_of_trade = 1
 			}
-			#custom_tooltip = H61_thorny_tradeways_tt #TODO     for the next mission
+			#custom_tooltip = H61_thorny_tradeways_tt #     for the next mission
 			hidden_effect = {
 				if = {
 					limit = {
@@ -1370,7 +1370,7 @@ H61_3 = {
 			OR = {
 				any_ally = {
 					custom_trigger_tooltip = { 
-						tooltip = H61_our_influence_in_the_bay_ttt  #TODO
+						tooltip = H61_our_influence_in_the_bay_ttt  #
 						has_country_flag = H61_trade_partner
 					}
 					has_opinion = {
@@ -1384,7 +1384,7 @@ H61_3 = {
 						}
 					}
 				}
-				1042 = { #TODO
+				1042 = { #
 					owner = {
 						has_spy_network_from = {
 							who = ROOT
@@ -1454,7 +1454,7 @@ H61_3 = {
 				}
 			}
 			else = {
-				custom_tooltip = H61_our_influence_in_the_bay_ett #TODO
+				custom_tooltip = H61_our_influence_in_the_bay_ett #
 			}
 		}
 	}
@@ -1486,7 +1486,7 @@ H61_3 = {
 					type = inquisitor
 				}
 			}
-			#TODO two curia investments
+			# two curia investments
 			curia_treasury_contribution = 2 # used in a trigger somewhere else, needs to be tested, then raise to 2
 			high_tolerance_ruinborn_race_trigger = yes
 		}
@@ -1537,7 +1537,7 @@ H61_4 = {
 		}
 		
 		effect = {
-			custom_tooltip = H61_embodying_damish_values_tt1 #TODO might need to edit
+			custom_tooltip = H61_embodying_damish_values_tt1 # might need to edit
 			tooltip = {
 				add_country_modifier = {
 					name = H61_students_of_damish_excellence
@@ -1681,7 +1681,7 @@ H61_4 = {
 					duration = -1
 				}
 			}
-			for = { #test, probably needs tooltip TODO
+			for = { #test, probably needs tooltip 
 				amount = 5
 				effect = "
 					random_owned_province = {
@@ -1715,7 +1715,7 @@ H61_4 = {
 		trigger = {
 			religion = ravelian
 			OR = {
-				Z97 = { #TODO might need a tooltip or optimization, also needs more conditions for if you are papal controller, or papal controller has rivaled you as well maybe
+				Z97 = { # might need a tooltip or optimization, also needs more conditions for if you are papal controller, or papal controller has rivaled you as well maybe
 					has_opinion = {
 						who = ROOT
 						value = 150
@@ -1768,7 +1768,7 @@ H61_4 = {
 				# latest institution present
 				num_of_times_expanded_infrastructure = 1
 			}
-			#TODO up to change overall
+			# up to change overall
 		}
 		
 		effect = {
@@ -1808,7 +1808,7 @@ H61_4 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = H61_the_mystery_of_the_proto_sarda_tt
-				has_country_flag = H61_ancestors_of_the_sarda #make sure event has added this TODO
+				has_country_flag = H61_ancestors_of_the_sarda #make sure event has added this 
 			}
 			if = {
 				limit = { has_dlc = "Leviathan" }
@@ -1861,7 +1861,7 @@ H61_4 = {
 			dip_power = 100
 			mil_power = 100
 			NOT = {
-				has_country_modifier = H61_renewed_interest_in_adventure #TODO this isn't in draft as a trigger, check events, there are conditions for completing after, make sure to double check
+				has_country_modifier = H61_renewed_interest_in_adventure # this isn't in draft as a trigger, check events, there are conditions for completing after, make sure to double check
 			}
 		}
 		
@@ -1995,7 +1995,7 @@ H61_5 = {
 					who = ROOT
 					value = 100
 				}
-				capital_scope = { #TODO conquistador leading dont think I can do
+				capital_scope = { # conquistador leading dont think I can do
 					cavalry_in_province = 3
 					cavalry_in_province = ROOT
 					unit_has_leader = yes
@@ -2119,13 +2119,13 @@ H61_5 = {
 				limit = {
 					has_dlc = "Rule Britannia"
 				}
-				innovativeness = 50 #TODO check if alternative is needed
+				innovativeness = 50 # check if alternative is needed
 			}
 			num_artifice_inventions_discovered = { VAL = 1 }
 		}
 		
 		effect = {
-			country_event = { id = flavour_plumstead.55 } #TODO 3 unique artifice inventions
+			country_event = { id = flavour_plumstead.55 } # 3 unique artifice inventions
 		}
 	}
 	

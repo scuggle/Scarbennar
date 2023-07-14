@@ -852,7 +852,7 @@ country_event = {
 }
 
 # Human highwaymen
-#TODO - MAKE THIS TROY's MONSTER SYSTEM
+# - MAKE THIS TROY's MONSTER SYSTEM
 country_event = {
 	id = human_tolerance_events.7
 	title = human_tolerance_events.7.t

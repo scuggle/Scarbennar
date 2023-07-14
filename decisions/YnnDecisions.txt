@@ -981,7 +981,7 @@ country_decisions = {
 					}
 				}
 				AND = {
-					province_id = 1191		#TODO replace with "has_province_modifier = drozma_dragon_prince"
+					province_id = 1191
 					OR = {
 						NOT = { infantry_in_province = 10 }
 						NOT = { infantry_in_province = ROOT }

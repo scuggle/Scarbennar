@@ -529,8 +529,6 @@ cannorian = {
 					concilatory = {	#Sanctified
 						church_loyalty_modifier = 0.1	#the church likes having artificers under their control really
 						yearly_corruption = -0.1 #? less red tape and stuff
-
-						#TODO - if possible, make this give 1 artificer point
 					}
 				}
 			}

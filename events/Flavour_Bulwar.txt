@@ -1184,7 +1184,7 @@ country_event = {
     option = {
         name = bulwar_flavour.19.c
         # peasants of no concern
-        # TODO: once monster system is implemented, change this to add monsters to province
+        # : once monster system is implemented, change this to add monsters to province
 		reduce_stability_or_adm_power = yes
 	}
 }

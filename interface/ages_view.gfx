@@ -519,6 +519,52 @@ spriteTypes = {
 		name = "GFX_ab_monstrous_rule"
 		texturefile = "gfx/interface/ages/ab_tributary_conversion_cost_modifier.dds"
 	}
+
+	#rEurope
+	spriteType = {
+		name = "GFX_ab_adventurers_of_escann"
+		texturefile = "gfx/interface/ages/ab_adventurers_of_escann.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_cannorian_exploration"
+		texturefile = "gfx/interface/ages/ab_cannorian_exploration.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_serpentspine_wars_of_consolidation"
+		texturefile = "gfx/interface/ages/ab_serpentspine_wars_of_consolidation.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_spirit_of_adean"
+		texturefile = "gfx/interface/ages/ab_spirit_of_adean.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_elven_renaissance"
+		texturefile = "gfx/interface/ages/ab_elven_renaissance.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_reavers_resurgent"
+		texturefile = "gfx/interface/ages/ab_reavers_resurgent.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_wars_of_supremacy"
+		texturefile = "gfx/interface/ages/ab_wars_of_supremacy.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_iron_fist_over_bulwar"
+		texturefile = "gfx/interface/ages/ab_max_absolutism.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_anti_magic_measures"
+		texturefile = "gfx/interface/ages/ab_fire_damage_recieved.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_serpentspine_reclamation"
+		texturefile = "gfx/interface/ages/ab_build_cost.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_legacy_of_monsters"
+		texturefile = "gfx/interface/ages/ab_development_cost.dds"
+	}
 	
 	# Age of Reformation Abilities
 	spriteType = {

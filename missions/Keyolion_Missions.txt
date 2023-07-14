@@ -1508,7 +1508,7 @@ G58_4_missions = {
 						duration = 18250
 					}
 				}
-				#TODO - This should become an event that Empkeios clicks to notify them of the modifier.
+				# - This should become an event that Empkeios clicks to notify them of the modifier.
 				#When Empkeios MT gets done.
 				hidden_effect = {
 					2595 = { #Empkeios

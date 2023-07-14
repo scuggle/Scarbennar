@@ -183,7 +183,7 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 	}
 	adven_ide7 = {
 		#TODO: Add a tooltip
-		merc_independent_from_trade_range = yes
+		#merc_independent_from_trade_range = yes
 	}
 
 	ai_will_do = {

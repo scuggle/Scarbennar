@@ -3,7 +3,7 @@ namespace = azkare
 
 #Notes
 #Event to turn Sarisung to sarisung culture
-#TODO turn 20% rep effects into events allowing players to choose 20/40/60/80 rep
+# turn 20% rep effects into events allowing players to choose 20/40/60/80 rep
 #human tolerance 4 event custom option
 
 #Citadel of Dawn
@@ -1056,7 +1056,7 @@ country_event = {
 	}
 }
 
-#TODO: Set up ai factors
+#: Set up ai factors
 #Arawkelin event: How do we Answer? ADM
 country_event = {
 	id = azkare.23
@@ -1612,7 +1612,7 @@ country_event = {
 	
 	trigger = {
 		tag = Y86
-		has_country_flag = azkare_elves_flock_to_azkare_flag #TODO
+		has_country_flag = azkare_elves_flock_to_azkare_flag #
 	}
 	
 	mean_time_to_happen = {
@@ -3123,7 +3123,7 @@ country_event = {
 	}
 }
 
-#TODO
+#
 
 #Growth of Haless events. Events that fire upon certain conditions unrelated to mission tree and such.
 
@@ -3388,7 +3388,7 @@ country_event = {
 	title = azkare.205.t
 	desc = azkare.205.d
 	picture = EUROPEAN_REFUGEES_eventPicture
-	trigger = { #Increase the frequency if you have had event azkare.15 #TODO
+	trigger = { #Increase the frequency if you have had event azkare.15 #
 		OR = {
 			tag = Y86
 			tag = Y00

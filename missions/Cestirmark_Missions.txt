@@ -2353,7 +2353,7 @@ united_concord_1 = {
 		}
 
 		trigger = {
-			#TODO: replace that with Nortiochand does not exist when they're added
+			#: replace that with Nortiochand does not exist when they're added
 			cymailean_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2394,7 +2394,7 @@ united_concord_1 = {
 			}
 			hidden_effect = { 
 				country_event = {
-					id = flavor_cestirmark.375 #TODO: THE MACHINE
+					id = flavor_cestirmark.375 #: THE MACHINE
 					days = 365
 					random = 1460
 				}

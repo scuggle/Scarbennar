@@ -2441,7 +2441,7 @@ country_event = {
 }
 
 #Shedding the Blood of Castan
-#TODO Fix claims trigger + Reenable
+# Fix claims trigger + Reenable
 # country_event = {
 # 	id = deepwoods.39
 # 	title = deepwoods.39.t
