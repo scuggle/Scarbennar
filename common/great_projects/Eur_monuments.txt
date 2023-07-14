@@ -2162,41 +2162,13 @@ lake_city = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -2311,41 +2283,13 @@ nirakhet_grotto = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -2460,41 +2404,13 @@ angel_crater = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -2609,41 +2525,13 @@ Roost_Port = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -2758,41 +2646,13 @@ merfolk_embassy = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -2907,41 +2767,13 @@ mount_dendugma = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -3056,41 +2888,13 @@ kunolo_harbour = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -3205,41 +3009,13 @@ zerat_township = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -3354,41 +3130,13 @@ tanuki_mint = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -3503,41 +3251,13 @@ sarhal_pagoda = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -3652,41 +3372,13 @@ temple_forge = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -3801,41 +3493,13 @@ yetmesira_monument_tbd = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -3950,41 +3614,13 @@ northern_shadow_swamp_fortress = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -4099,41 +3735,13 @@ southern_shadow_swamp_fortress = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -4248,41 +3856,13 @@ naval_checkpoint = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -4397,41 +3977,13 @@ nakazy_shrine_monument = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -4546,41 +4098,13 @@ elinalo_shrine_monument = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -4695,41 +4219,13 @@ turozi_shrine_monument = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -4844,41 +4340,13 @@ hoblin_goblet = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -4993,41 +4461,13 @@ shadow_swamp_heart = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -5142,41 +4582,13 @@ corruption_grotto = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
@@ -5291,41 +4703,13 @@ square_of_liberty = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
 	can_upgrade_trigger = {
 		AND = {
-			custom_trigger_tooltip = {
-				tooltip = cannorian_monuments_can_use_tooltip_nathalaire
-					OR = {
-						culture_group = anbennarian
-						culture = imperial_halfling
-						culture = imperial_gnome
-						culture = moon_elf
-						culture = silver_dwarf
-						culture = wexonard
-						culture = vertesker
-						culture = roilsardi
-						culture_group = dostanorian_g
-						culture = castanorian
-					}
-			}
+
 			province_is_or_accepts_culture = yes
 		}
 	}	
