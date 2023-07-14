@@ -1498,7 +1498,7 @@ theocracy_gov_ideas = { #government: theocracy
 		church_loyalty_modifier = 0.1
 	}
 	friends_in_high_places = {
-		global_religious_conversion_resistance = -0.9
+		global_religious_conversion_resistance = 0.9
 		stability_cost_modifier = -0.25
 	}
 	flesh_is_weak = {
