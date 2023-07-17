@@ -173,8 +173,8 @@ vass_building_spree_1 = {
         }
     }
 
-	build_cost = -0.05
-	build_time = 0.10
+	build_cost = 0.05
+	build_time = -0.10
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -284,7 +284,7 @@ vass_reduce_inflation_1 = {
     }
 
 	inflation_reduction = 0.1
-	interest = 0.25
+	interest = 0.10
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -341,7 +341,7 @@ vass_tighten_the_belt_1 = {
     }
 
 	inflation_reduction = -0.10
-	interest = -0.25
+	interest = -0.10
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -563,8 +563,8 @@ vass_building_spree_2 = {
         }
     }
 
-	build_cost = -0.10
-	build_time = 0.15
+	build_cost =  0.075
+	build_time = -0.15
 
 	
 	ai_will_do = {
@@ -700,8 +700,8 @@ vass_reduce_inflation_2 = {
         }
     }
 
-	inflation_reduction = 0.15
-	interest = 0.50
+	inflation_reduction = 0.20
+	interest = 0.20
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -770,8 +770,8 @@ vass_tighten_the_belt_2 = {
         }
     }
 
-	inflation_reduction = -0.15
-	interest = -0.50
+	inflation_reduction = -0.20
+	interest = -0.20
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -947,8 +947,8 @@ vass_building_spree_3 = {
         }
     }
 
-	build_cost = -0.15
-	build_time = 0.25
+	build_cost = 0.10
+	build_time = -0.20
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -1054,8 +1054,8 @@ vass_reduce_inflation_3 = {
         }
     }
 
-	inflation_reduction = 0.25
-	interest = 1
+	inflation_reduction = 0.30
+	interest = 0.30
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -1108,8 +1108,8 @@ vass_tighten_the_belt_3 = {
         }
     }
 
-	inflation_reduction = -0.25
-	interest = -1
+	inflation_reduction = -0.30
+	interest = -0.30
 	
 	ai_will_do = {
 		factor = 0.8		
