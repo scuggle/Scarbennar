@@ -537,14 +537,15 @@ maritime_ideas = { #Merchant Marines Ideas
 
 	merchant_traditions = {
 		free_navy_leader_pool = 2
+		
 			}
 	merchant_marine = {
-		
-		transport_power = 0.69
-		light_ship_power = 0.20
+		global_naval_barrage_cost = -0.5
 	}
 	sheltered_ports = {
-		global_naval_barrage_cost = -0.5
+		
+		light_ship_power = 0.20
+		naval_tradition_from_trade = 0.25
 	}
 	grand_navy = {
 		
@@ -1319,7 +1320,6 @@ humanist_ideas = { #External Ideas
 	}
 	indirect_rule = {
 		global_autonomy = -0.10
-		global_monthly_devastation = -0.10
 	}
 	cultural_ties = {
 		core_creation = -0.15
@@ -1349,29 +1349,27 @@ focus_inwards = { #Internal Ideas Redo
 	}
 
 	foc_inw1 = {
-		devotion = 0.5
-		legitimacy = 0.5
-		republican_tradition = 0.25
+		state_maintenance_modifier = -0.25
 	}
 	foc_inw2 = {
-		all_estate_loyalty_equilibrium = 0.10
-		loyalty_change_on_revoked = 0.05
+		stability_cost_modifier = -0.20
 	}
 	foc_inw3 = { 
-		local_prosperity_growth = 0.2
+		local_prosperity_growth = 0.1
 	}
 	foc_inw4 = {
-		monthly_splendor = 2
+		global_monthly_devastation = -0.1
 	}
 	foc_inw5 = {
-		estate_interaction_cooldown_modifier = -0.25
+		expand_infrastructure_cost_modifier = -0.50
 	}
 	foc_inw6 = {
-		max_absolutism = 15
+		parliament_backing_chance = 0.25
 		yearly_absolutism = 0.1
 	}
 	foc_inw7 = {
-		global_tax_modifier = 0.20
+		global_tax_modifier = 0.30
+		
 	}
 	
 	ai_will_do = {
@@ -1444,21 +1442,21 @@ plutocracy_ideas = { #government: republic
 	}
 
 	tradition_of_payment = {
-		advisor_cost = -0.05
+		adm_advisor_cost = -0.1
 		advisor_pool = 2
 	}
 	abolished_serfdom = {
 		monarch_lifespan = 5
 	}
 	bill_of_rights = {
-		candidate_random_bonus = 1
+		global_autonomy = -0.10
 	}
 	free_merchants = {
 		trade_company_investment_cost = -0.15
-		mercantilism_cost = -0.1
+		mercantilism_cost = -0.15
 	}
 	free_subjects = {
-		global_autonomy = -0.10
+		candidate_random_bonus = 1
 	}
 	free_cities = {
 		merc_maintenance_modifier = -0.10
@@ -1533,19 +1531,21 @@ horde_gov_ideas = { #Government: Tribal ## Redo
 	}
 
 	bonus = {
-		development_cost = -0.05
+			development_cost = -0.05
 	}
 
 	horse_lords = {
-		global_institution_spread = 0.5
+		tribal_development_growth = 0.02
+		build_cost = -0.05
 	}
 	beyond_the_sun = {
-		
+		global_institution_spread = 0.5
 	}
 	mandate_of_the_khan = {
 		monarch_lifespan = 5
 	}
 	there_shall_be_no_grass = {
+		monarch_admin_power = 1
 		nobles_loyalty_modifier = 0.10
 		nomadic_tribes_loyalty_modifier = 0.10
 		monstrous_tribes_loyalty_modifier = 0.10
@@ -1557,7 +1557,7 @@ horde_gov_ideas = { #Government: Tribal ## Redo
 		reform_progress_growth = 0.25
 	}
 	a_magnanimous_empire = {
-		monarch_admin_power = 1
+		monarch_military_power = 1
 	}
 
 	ai_will_do = {
@@ -1791,25 +1791,25 @@ logistical_ideas = { #Capital Ideas ##Redo
 		attack_bonus_in_capital_terrain = 1 #Keep
 	}
 	logsi_ide1 = {
-		core_creation = -0.15 
+		
 	}
 	logsi_ide2 = {
-		 interest = -0.5 
+		 
 	}
 	logsi_ide3 = {
-		administrative_efficiency = 0.05
+		
 	}
 	logsi_ide4 = {
-		global_tax_modifier = 0.10
+		
 	}
 	logsi_ide5 = {
-		yearly_corruption = -0.1
+		
 	}
 	logsi_ide6 = {
-		state_maintenance_modifier = -0.25
+		
 	}
 	logsi_ide7 = {
-		move_capital_cost_modifier = -0.50 
+		
 	}
 
 	ai_will_do = {
