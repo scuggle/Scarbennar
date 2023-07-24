@@ -178,13 +178,12 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 		possible_condottieri = 0.5
 	}
 	adven_ide6 = {
-		mercenary_manpower = 0.2
-		allow_mercenary_drill = yes
+		mercenary_manpower = 0.1
 	}
 	adven_ide7 = {
-			merc_independent_from_trade_range = yes
+			#Add a tooltip
+			allow_mercenary_drill = yes
 	}
-
 	ai_will_do = {
 		factor = 0.4
 	}
