@@ -436,7 +436,7 @@ X10_ideas = {
 		trade_range_modifier = 0.25
 	}
 	X10_two = {
-		interest = -0.5
+		interest = -0.25
 		mercantilism_cost = -0.3
 	}
 	X10_three = {

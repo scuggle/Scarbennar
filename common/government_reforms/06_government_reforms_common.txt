@@ -4412,7 +4412,7 @@ embrace_the_economic_theory_reform = {
 		}
 	}
 	modifiers = {
-		interest = -0.5
+		interest = -0.25
 		inflation_reduction = 0.2
 	}
 	ai = {

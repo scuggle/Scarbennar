@@ -402,7 +402,7 @@ treasurer = {
 	
 	# Bonus
 	global_tax_modifier = 0.1
-	interest = -0.5
+	expand_infrastructure_cost_modifier = -0.25
 	
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
