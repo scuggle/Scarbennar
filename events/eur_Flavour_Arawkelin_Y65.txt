@@ -1,0 +1,250 @@
+namespace = araw_mission_event
+country_event = {
+	id = araw_mission_event.1
+	title = araw_mission_event.1.t 
+	desc = araw_mission_event.1.d 
+	picture = no
+	is_triggered_only = yes
+	option = {
+		name = araw_mission_event.1.a	#full elven/half elven
+		add_country_modifier = {
+			name = arawkellin_elven_legions_modifier #modifier giving 5% discipline, -5% force limit, -7.5% manpower modifier, +15% land maintenance cost, yet to be localized
+			duration = -1	#permanent
+		}
+	}
+	option = {
+		name = araw_mission_event.1.b #mixed legions
+		add_country_modifier = {
+			name = arawkellin_mixed_legions_modifier #modifier giving 2.5% discpline, +5% land maintenance cost, yet to be localized
+			duration = -1 #permanent
+		}
+	}
+}
+country_event = {
+	id = araw_mission_event.2
+	title = araw_mission_event.2.t 
+	desc = araw_mission_event.2.d 
+	picture = no
+	is_triggered_only = yes
+	option = {
+		name = araw_mission_event.2.a
+		4720 = {
+			if = {
+				limit = {
+					has_province_modifier = elven_minority_integrated_small
+				}
+				add_province_modifier = {
+					name = elven_minority_integrated_large
+					duration = -1	#permanent
+				}
+				remove_province_modifier = elven_minority_integrated_small
+			}
+			if = {
+				limit = {
+					has_province_modifier = elven_minority_integrated_large
+				}
+				add_province_modifier = {
+					name = elven_majority_integrated
+					duration = -1	#permanent
+				}
+				remove_province_modifier = elven_minority_integrated_large
+				change_culture = sunrise_elf
+			}
+		}
+	}
+	option = {
+		trigger = {
+			4718 = {	#mangayan
+				owned_by = y65
+				has_elven_majority_trigger = no 
+			}
+		}
+		name = araw_mission_event.2.b
+		4718 = {	#mangayan
+			if = {
+				limit = {
+					has_province_modifier = elven_minority_integrated_small
+				}
+				add_province_modifier = {
+					name = elven_minority_integrated_large
+					duration = -1	#permanent
+				}
+				remove_province_modifier = elven_minority_integrated_small
+			}
+			if = {
+				limit = {
+					has_province_modifier = elven_minority_integrated_large
+				}
+				add_province_modifier = {
+					name = elven_majority_integrated
+					duration = -1	#permanent
+				}
+				remove_province_modifier = elven_minority_integrated_large
+				change_culture = sunrise_elf
+			}
+			if = {
+				limit = {
+					has_elven_minority_trigger = no
+				}
+				add_province_modifier = {
+					name = elven_minority_integrated_small
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = araw_mission_event.3
+	title = araw_mission_event.3.t 
+	desc = araw_mission_event.3.d 
+	picture = no
+	is_triggered_only = yes
+	option = {
+		name = araw_mission_event.3.a	#no slavery
+		add_country_modifier = {
+			name = araw_raheni_trade_modifier	#modifier giving 10% trade effiency, yet to be localized
+			duration = -1	#permanent
+		}
+		1361 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1	#permanent
+				power = 20
+				key = araw_raheni_trade 
+			}
+		}
+	}
+	option = {
+		name = araw_mission_event.3.b	#enslave the people of Bomdan
+		remove_country_modifier = home_of_warriors_modifier
+		add_country_modifier = {
+			name = araw_enslaving_bom_modifier	#modifier giving -10% manpower, 15% trade effiency, yet to be localized
+			duration = -1	#permanent
+		}
+		4570 = {
+			add_province_modifier = {
+				name = slave_entrepot
+				duration = -1	#permanent
+			}
+			change_trade_goods = slaves
+		}
+		random_owned_province = {
+			limit = {
+				NOt = { trade_goods = slaves }
+				culture_group = bom
+			}
+			change_trade_goods = slaves
+			add_province_modifier = {
+				name = araw_slave_centre_modifier # modifier giving +0.5 goods produced, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+		random_owned_province = {
+			limit = {
+				NOt = { trade_goods = slaves }
+				culture_group = bom
+			}
+			change_trade_goods = slaves
+			add_province_modifier = {
+				name = araw_slave_centre_modifier # modifier giving +0.5 goods produced, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+		every_owned_province = {
+			limit = {
+				culture_group = bom
+			}
+			add_unrest = 5
+		}
+	}
+	option = {
+		name = araw_mission_event.3.c 	#enslave the pirates
+		trigger = {
+			any_owned_province = {
+				culture = forest_yan	#naaamyjut
+			}
+		}
+		4700 = { #lindou
+			add_province_modifier = {
+				name = araw_slave_centre_modifier
+				duration = -1	#permanent
+			}
+			add_province_modifier = {
+				name = slave_entrepot
+				duration = -1	#permanent
+			}
+			if = {
+				limit = {
+					NOT = { trade_goods = slaves }
+				}
+				change_trade_goods = slaves
+			}
+		}
+		add_country_modifier = {
+			name = araw_revenge_on_pirates_modifier	#modifier giving -2 national unrest, 15% trade effiency, 5% trade power, -20% privateer effiency, yet to be localized
+			duration = -1
+		}
+		every_owned_province = {
+			limit = {
+				culture = forest_yan
+			}
+			add_unrest = 12
+		}
+	}
+	option = {
+		name = araw_mission_event.3.dd	#enslave the harimari
+		trigger = {
+			any_owned_province = {
+				OR = {
+					has_harimari_majority_trigger = yes
+					has_harimari_minority_trigger = yes
+				}
+			}
+			high_tolerance_harimari_race_trigger = no
+		}
+		add_country_modifier = {
+			name = harimari_slaving_modifier	#modifier giving 0.5 yearly prestige, 10% trade effiency, 2.5% morale of armies, yet to be localized
+			duration = -1	#permanent
+		}
+		4570 = {
+			add_province_modifier = {
+				name = slave_entrepot
+				duration = -1	#permanent
+			}
+			change_trade_goods = slaves
+		}
+		every_owned_province = {
+			limit = {
+				has_harimari_majority_trigger = yes
+			}
+			add_unrest = 10
+		}
+		every_owned_province = {
+			limit = {
+				has_harimari_minority_trigger = yes
+			}
+			add_unrest = 5
+		}
+		large_decrease_of_harimari_tolerance_effect = yes
+	}
+}
+country_event = {
+	id = araw_mission_event.4
+	title = araw_mission_event.4.t 
+	desc = araw_mission_event.4.d 
+	picture = no
+	is_triggered_only = yes
+	option = {
+		name = araw_mission_event.4.a 
+		override_country_name = "Arawrising-empire"
+	}
+	option = {
+		name = araw_mission_event.4.b 
+		override_country_name = Arawkand
+	}
+	option = {
+		name = araw_mission_event.4.c 
+		override_country_name = "Araw-esralm"
+	}
+}
