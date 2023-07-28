@@ -109,6 +109,7 @@ country_decisions = {
 			840 = {	#To North Citadel
 				move_capital_effect = yes
 			}
+			#TODO: Check if this culture exists
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
