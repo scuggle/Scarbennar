@@ -1,5 +1,5 @@
 country_decisions = {
-
+    #TODO: Seems to be bugged, if you at any point become a subject
     M01_form_Griffon_Empire = {
         major = yes
         potential = {
