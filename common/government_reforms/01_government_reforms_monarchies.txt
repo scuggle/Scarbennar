@@ -11486,3 +11486,25 @@ raghamidesh_merchant_kingdom_reform = {
 		factor = 20
 	}
 }
+cestirande_diplomacy_reform = {
+	icon = "absolutist_france_reform"
+	potential = {
+		has_reform = cestirande_diplomacy_reform
+	}
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	modifiers = {
+		diplomatic_reputation = 1
+		improve_relation_modifier = 0.15
+		spy_offence = 0.1
+		no_stability_loss_on_monarch_death = yes
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		claim_states = yes
+	}
+	ai = {
+		factor = 20
+	}
+}

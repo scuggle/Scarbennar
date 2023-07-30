@@ -306,6 +306,7 @@ monarchy = {
 				tluukt_xalgekyr_reform
 				arverynnic_administration_reform
 				chien_ancestral_council_reform
+				cestirande_diplomacy_reform
 			}
 		}
 		state_and_religion = { #Tier 4

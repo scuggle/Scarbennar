@@ -1,0 +1,161 @@
+﻿l_english:
+#TODO: Descriptions
+ A98_knight_estates_title:0 "Knightly Estates"
+ A98_knight_estates_desc:0 "TBD"
+
+ A98_our_pride_title:0 "Our Pride"
+ A98_our_pride_desc:0 "TBD"
+
+ A98_new_lances_title:0 "New Lances"
+ A98_new_lances_desc:0 "TBD"
+
+ A98_knighthood_title:0 "Knighthood"
+ A98_knighthood_desc:0 "TBD"
+
+ A98_revitilize_capital_title:0 "Revitilize our Capital"
+ A98_revitilize_capital_desc:0 "TBD"
+
+ A98_control_luna_trade_title:0 "Control Luna River Trade"
+ A98_control_luna_trade_desc:0 "TBD"
+
+ A98_develop_galeinn_title:0 "Deepen the Mine"
+ A98_develop_galeinn_desc:0 "TBD"
+
+ A98_leverage_our_position_title:0 "Leverage our Position"
+ A98_leverage_our_position_desc:0 "TBD"
+
+ A98_empires_heart_title:0 "The Empire's Heart"
+ A98_empires_heart_desc:0 "TBD"
+
+ A98_an_old_rivalry_title:0 "An old Rivalry"
+ A98_an_old_rivalry_desc:0 "TBD"
+
+ A98_pashainey_heartland_title:0 "The Pashainey Heartland"
+ A98_pashainey_heartland_desc:0 "TBD"
+
+ A98_weaken_verne_title:0 "Weaken Verne"
+ A98_weaken_verne_desc:0 "TBD"
+
+ A98_in_our_way_title:0 "The Last to Stand"
+ A98_in_our_way_desc:0 "TBD"
+
+ A98_a_true_victory_title:0 "A True Victory"
+ A98_a_true_victory_desc:0 "TBD"
+
+ A98_relations_with_emperor_title:0 "Relations with the Emperor"
+ A98_relations_with_emperor_desc:0 "TBD"
+
+ A98_woe_to_the_defeated_title:0 "Woe to the Defeated"
+ A98_woe_to_the_defeated_desc:0 "TBD"
+
+ A98_march_on_istralore_title:0 "March on Istralore"
+ A98_march_on_istralore_desc:0 "TBD"
+
+ A98_finish_the_job_title:0 "Finish the Job"
+ A98_finish_the_job_desc:0 "TBD"
+
+ A98_anbennarian_hegemon_title:0 "Anbennarian Hegemon"
+ A98_anbennarian_hegemon_desc:0 "TBD"
+
+ A98_reform_the_order_title:0 "Reform the Order"
+ A98_reform_the_order_desc:0 "TBD"
+
+ A98_a_new_dawn_title:0 "A New Dawn"
+ A98_a_new_dawn_desc:0 "TBD"
+
+ A98_undermine_wex_title:0 "Undermine Wex"
+ A98_undermine_wex_desc:0 "TBD"
+
+ A98_usurp_usurper_title:0 "Usurp the Usurper"
+ A98_usurp_usurper_desc:0 "TBD"
+
+ A98_pashainey_empire_title:0 "A Pashainey Empire"
+ A98_pashainey_empire_desc:0 "TBD"
+
+#Events
+ flavor_cestirande.1.t: "A True Victory"
+ flavor_cestirande.1.d: "TBD"
+ flavor_cestirande.1.a: "Now, we have won!"
+ flavor_cestirande.2.t: "The Aranthil Purchase"
+ flavor_cestirande.2.d: "TBD"
+ flavor_cestirande.2.a: "Send the offer"
+ flavor_cestirande.2.b: "We have no need to ask"
+ flavor_cestirande.3.t: "The Aranthil Purchase"
+ flavor_cestirande.3.d: "TBD"
+ flavor_cestirande.3.a: "Accept"
+ flavor_cestirande.3.b: "Refuse"
+ flavor_cestirande.4.t: "The Mages' Response"
+ flavor_cestirande.4.d: "TBD They accept the deal"
+ flavor_cestirande.4.a: "They have chosen wisely"
+ flavor_cestirande.5.t: "The Mages' Response"
+ flavor_cestirande.5.d: "TBD They refuse the deal"
+ flavor_cestirande.5.a: "It was worth a try"
+ flavor_cestirande.6.t: "Findings in the mine"
+ flavor_cestirande.6.d: "TBD"
+ flavor_cestirande.6.a: "Ok"
+ flavor_cestirande.7.t: "An Offer from Cestirande"
+ flavor_cestirande.7.d: "A rising Cestirande has offered us a chance of taking what they believe to be our rightful place under their banner."
+ flavor_cestirande.7.a: "Accept Vassalization"
+ flavor_cestirande.7.b: "Refuse Vassalization"
+ flavor_cestirande.8.t: "[From.GetName] Accepts Vassalization"
+ flavor_cestirande.8.d: "The noble and loyal country of [From.GetName] has accepted our rightful rule."
+ flavor_cestirande.8.a: "Long Live Cestirande!"
+ flavor_cestirande.9.t: "[From.GetName] Refuses Vassalization"
+ flavor_cestirande.9.d: "The traitorous country of [From.GetName] has refused our offer... do they not know where they came from?!"
+ flavor_cestirande.9.a: "We will take what is ours."
+
+ flavor_cestirande.10.t: "Woe to the Defeated"
+ flavor_cestirande.10.d: "Time has come to send our petition to the emperor to revoke the electorship of the losers."
+ flavor_cestirande.10.a: "Send the petition."
+
+ incident_cestirande_lilac_wars: "Aftermath of the Lilac Wars"
+ incident_cestirande_lilac_wars_member_alert: "Cestirande is petitioning the emperor to revoke the electorships of Istralore and Moonhaven as losers of the Lilac Wars."
+ incident_cestirande_lilac_wars_emperor_alert: "Cestirande is petitioning the emperor to revoke the electorships of Istralore and Moonhaven as losers of the Lilac Wars."
+
+ flavor_cestirande.11.t: "Aftermath of the Lilac Wars"
+ flavor_cestirande.11.d: "Cestirande is petitioning the emperor to revoke the electorships of Istralore and Moonhaven as losers of the Lilac Wars."
+ flavor_cestirande.11.a: "Refuse."
+ flavor_cestirande.11.b: "Revoke the electorships, but do not give it to Cestirande."
+ flavor_cestirande.11.c: "Support Cestirande's petition."
+
+ flavor_cestirande.12.t: "Result of the Petition"
+ flavor_cestirande.12.d: "The emperor has rejected our petition entirely. We will have to expand our influence another way."
+ flavor_cestirande.12.d2: "The emperor has acknowledged our petition, but went back on their word."
+ flavor_cestirande.12.d3: "Not only has the emperor acknowledged our petition, it has been enforced. We are now an elector."
+ flavor_cestirande.12.a: "Bastard."
+ flavor_cestirande.12.b: "A betrayal, but not an unexpected one."
+ flavor_cestirande.12.c: "What a great day!"
+
+#Modifiers
+ A98_prepare_for_war: "Ride to War!"
+ A98_cestirander_subterfuge: "Cestirander Influence"
+ A98_stand_against_wyverns: "Wyvern Countermeasures"
+ A98_cestirande_victorious: "Cestirande Victorious"
+ A98_relations_emperor: "Contacts at the Imperial Court"
+ A98_reform_order: "Reform of the Longlance Order"
+ A98_a_new_order: "A New Order"
+ A98_diplomatic_expertise: "Diplomatic Expertise"
+ A98_emperor: "Under new Management"
+ A_98_order_1: "Knightly Estates"
+ A_98_order_2: "Our Pride"
+ A_98_order_3: "New Lances"
+ A_98_order_4: "Knighthood"
+ A98_revitalized_capital: "A Rising Capital"
+ A98_luna_river_toll: "Luna River Toll"
+ A98_cestirander_intervention: "Cestirander Intervention"
+ A98_galeinn_mine: "Galeinn Mine"
+ A98_pashainey_empire: "A Pashainey Empire"
+ A98_empire_heart: "Empire's Heart"
+
+#Privileges
+ estate_nobles_longlance_knights: "Longlance Knights"
+ estate_nobles_longlance_knights_desc: "TBD"
+
+#Goverment
+ cestirande_diplomacy_reform: "Cestirander Diplomacy"
+ cestirande_diplomacy_reform_desc: "TBD"
+
+#Tooltips
+ cestirande_galeinn_mine_tt:0 "TBD"
+ cestirande_halve_hegemony_reqs_tt:0 "\n§PReduced requirements to attain any Hegemony§!"
+ A98_undermine_wex_tt:1 " Electors are:\nBacking §Y[Root.GetName]§! to become Emperor.\nHave at least §Y100§! opinion of §Y[Root.GetName]§!."

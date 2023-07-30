@@ -6944,3 +6944,28 @@ estate_church_glozok_the_allknowing = {
 		factor = 1
 	}
 }
+
+estate_nobles_longlance_knights = {
+	icon = privilege_raise_host
+	max_absolutism = 5
+	loyalty = 5
+	influence = 15
+	is_valid = {
+		tag = A98
+		mission_completed = A98_knighthood
+	}
+	can_select = {
+		tag = A98
+		mission_completed = A98_knighthood
+	}
+	penalties = {
+		artillery_power = -0.05
+	}
+	benefits = {
+		cavalry_flanking = 50
+		movement_speed = 0.1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

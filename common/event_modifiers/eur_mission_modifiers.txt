@@ -240,7 +240,7 @@ A_98_order_3 = {
 	global_tax_modifier = 0.1
 }
 A_98_order_4 = {
-	cavalry_power = 0.15
+	cavalry_power = 0.10
 	global_tax_modifier = 0.2
 }
 A98_reform_order = {
@@ -260,4 +260,26 @@ A98_diplomatic_expertise = {
 A98_emperor = {
 	imperial_authority = 0.05
 	prestige = 1.5
+}
+A98_revitalized_capital = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
+}
+A98_luna_river_toll = {
+	province_trade_power_value = 20
+}
+A98_cestirander_intervention = {
+	global_trade_power = -0.15
+}
+A98_galeinn_mine = {
+	trade_goods_size = 1
+}
+A98_pashainey_empire = {
+	yearly_absolutism = 1
+	max_absolutism = 15
+	max_absolutism_effect = 0.3
+}
+A98_empire_heart = {
+	global_allowed_num_of_manufactories = 1
+	development_cost = -0.05
 }
