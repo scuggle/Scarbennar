@@ -18,16 +18,7 @@ araw_elven_tree = {
 		}
 	}
 	
-	half_elven_acceptance = {
-		icon = geneva_conventions
-		required_missions = { elven_acceptance }
-		trigger = {
-			high_tolerance_half_elven_race_trigger = yes
-		}
-		effect = {
-			add_army_professionalism = 0.025
-			}
-	}
+	
 	
 	create_elven_legions = {
 		icon = mission_assemble_an_army
@@ -762,6 +753,17 @@ araw_conquest_right_inner_branch = {
 		tag = Y65
 		NOT = { map_setup = map_setup_random }
 	}
+	half_elven_acceptance = {
+		icon = geneva_conventions
+		required_missions = { elven_acceptance }
+		position = 2
+		trigger = {
+			high_tolerance_half_elven_race_trigger = yes
+		}
+		effect = {
+			add_army_professionalism = 0.025
+			}
+	}
 	take_the_eastern_lupulan_hills = {
 		icon = mission_mnd_khm_protect_the_cham
 		required_missions = { conquer_the_jungles }
@@ -1011,4 +1013,3 @@ araw_conquest_right_inner_branch = {
 		}
 	}
 }
-		
