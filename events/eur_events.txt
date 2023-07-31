@@ -1,10 +1,10 @@
-﻿namespace = reurope_i_events #i = ideas
+﻿namespace = reurope
 
 #Minorties
 country_event = {
-	id = reurope_i_events.200
-	title = reurope_i_events.200.t
-	desc = reurope_i_events.200.d
+	id = reurope.200
+	title = reurope.200.t
+	desc = reurope.200.d
 	picture = BIG_STAR_IN_SKY_eventPicture
 
 	trigger = {
@@ -685,7 +685,7 @@ country_event = {
 	}
 
 	option = {
-		name = reurope_i_events.200
+		name = reurope.200
 		every_owned_province = {
 			limit = {
 				has_large_human_minority_trigger = yes
@@ -1158,9 +1158,9 @@ country_event = {
 }
 
 country_event = {
-	id = reurope_i_events.201
-	title = reurope_i_events.201.t
-	desc = reurope_i_events.201.d
+	id = reurope.201
+	title = reurope.201.t
+	desc = reurope.201.d
 	picture = BIG_STAR_IN_SKY_eventPicture
 
 	hidden = yes
@@ -1195,7 +1195,7 @@ country_event = {
 	}
 
 	option = {
-		name = reurope_i_events.201.a
+		name = reurope.201.a
 		every_owned_province = {
 			remove_province_modifier = cot_human_min
 			remove_province_modifier = cot_elf_min

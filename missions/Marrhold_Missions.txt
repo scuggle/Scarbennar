@@ -2429,7 +2429,7 @@ griffon_empire_expand = {
 
 		effect = {
 			add_country_modifier = {
-				name = ge_unifier_of_Castanor
+				name = ge_unifier_of_castanor
 				duration = 3650
 			}
 			country_event = {

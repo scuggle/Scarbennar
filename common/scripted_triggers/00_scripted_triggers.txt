@@ -3607,7 +3607,6 @@ has_any_active_incomplete_idea_group_of_category = {
                 AND = { has_idea_group = defensive_ideas       		NOT = { full_idea_group = defensive_ideas } }
                 AND = { has_idea_group = quality_ideas           	NOT = { full_idea_group = quality_ideas } }
                 AND = { has_idea_group = quantity_ideas             NOT = { full_idea_group = quantity_ideas } }
-                AND = { has_idea_group = mercenary_ideas        	NOT = { full_idea_group = mercenary_ideas } }
                 AND = { has_idea_group = naval_ideas				NOT = { full_idea_group = naval_ideas } }
 				#AND = { has_idea_group = indigenous_ideas     NOT = { full_idea_group = indigenous_ideas } }
             }

@@ -19,16 +19,16 @@ country_decisions = {
 			kheionai_superregion= {
 				discover_country = ROOT
 			}
-			north_aelantir_superregion= {
+			broken_lands_superregion= {
 				discover_country = ROOT
 			}
 			effelai_superregion= {
 				discover_country = ROOT
 			}
-			greater_taychend_superregion= {
+			taychend_superregion= {
 				discover_country = ROOT
 			}
-			ruined_sea_superregion= {
+			ruin_proper_superregion = {
 				discover_country = ROOT
 			}
 			gerudia_superregion= {
@@ -40,7 +40,7 @@ country_decisions = {
 			south_salahad_superregion= {
 				discover_country = ROOT
 			}
-			torn_sea_superregion= {
+			torn_gates_superregion= {
 				discover_country = ROOT
 			}
 			ynn_superregion= {

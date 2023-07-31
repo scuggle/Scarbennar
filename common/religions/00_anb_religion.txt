@@ -165,7 +165,7 @@ cannorian = {
 									NOT = {has_province_modifier = corinite_communities_aspect_modifier}
 								}
 							}
-							province_event = {id = bertus_changes.1109}
+							province_event = {id = eur_changes.1109}
 						}
 					}
 				}
@@ -186,7 +186,7 @@ cannorian = {
 									NOT = {has_province_modifier = corinite_diplomatic_rabbi_aspect_modifier}
 								}
 							}
-							province_event = {id = bertus_changes.1110}
+							province_event = {id = eur_changes.1110}
 						}
 					}
 				}
@@ -206,7 +206,7 @@ cannorian = {
 									NOT = {has_province_modifier = corinite_abrahamic_aspect_modifier}
 								}
 							}
-							province_event = {id = bertus_changes.1111}
+							province_event = {id = eur_changes.1111}
 						}
 					}
 				}

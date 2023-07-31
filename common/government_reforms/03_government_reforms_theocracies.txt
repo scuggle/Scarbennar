@@ -1781,7 +1781,6 @@ balrijin_sage_council_reform = {
 }
 
 namasonamizruku_reform = {
-
 	icon = "shaman"
 	allow_normal_conversion = yes
 	legacy_equivalent = feudal_monarchy

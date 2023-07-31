@@ -92,20 +92,25 @@ country_event = {
 				south_sarhal_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_north_aelantir_region }
-					north_aelantir_superregion = { destroy_province_permanently = yes }
+					broken_lands_superregion = { destroy_province_permanently = yes }
 					ynn_superregion = { destroy_province_permanently = yes }
 					eordand_superregion = { destroy_province_permanently = yes }
 				#Following are subregions of North Aelantir part of Torn Sea Superregion
 					haraf_region = { destroy_province_permanently = yes }
 					tor_nayyi_region = { destroy_province_permanently = yes }
-					ruined_sea_superregion = { destroy_province_permanently = yes }
+					ruin_proper_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_south_aelantir_region }
 				
 				#Following are subregions of Taychend Superregion
-					taychend_region = { destroy_province_permanently = yes }
+					#taychend_region = { destroy_province_permanently = yes }
 					larankarha_highlands_region = { destroy_province_permanently = yes }
 					chendhya_region = { destroy_province_permanently = yes }
+					yodhanchend_region = { destroy_province_permanently = yes }
+					larankarha_highlands_region = { destroy_province_permanently = yes }
+					southern_coast_region = { destroy_province_permanently = yes }
+					kalavend_region = { destroy_province_permanently = yes }
+					gauraddhi_region = { destroy_province_permanently = yes }
 				#Following are subregions of Kheionai Superregion
 					mteibas_valley_region = { destroy_province_permanently = yes }
 					andic_reach_region = { destroy_province_permanently = yes }

@@ -2,6 +2,8 @@
 #Griffon Empire#
 ################
 
+#TODO: Those modifiers need loc
+
 ge_abundance_of_stone = {
 	build_time = -0.15
 }
