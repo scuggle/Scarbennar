@@ -8,7 +8,7 @@ infantry_ideas = { #  Infantry/Fire
 	}
 
 	bonus = {
-		infantry_fire = 0.15
+		infantry_power = 0.1
 	}
 
 	inf_ide1 = {
@@ -48,7 +48,7 @@ aristocracy_ideas = { # Cavalry/Shock
 	}
 
 	bonus = {
-		infantry_shock = 0.15
+		cavalry_power = 0.1
 	}
 	
 	noble_knights = {
@@ -117,7 +117,7 @@ at_standing = { # Professional
 	}
 	
 	bonus = {
-		discipline = 0.025
+		discipline = 0.05
 	}
 
 	at_sta1 = {
@@ -181,8 +181,8 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 		mercenary_manpower = 0.1
 	}
 	adven_ide7 = {
-			#Add a tooltip
-			allow_mercenary_drill = yes
+		#Add a tooltip
+		allow_mercenary_drill = yes
 	}
 	ai_will_do = {
 		factor = 0.4
@@ -207,7 +207,7 @@ quantity_ideas = { # Logistics
 		movement_speed = 0.10
 	}
 	enforced_service = {
-		leader_land_siege = 1
+		leader_siege = 1
 		manpower_recovery_speed = 0.15
 	}
 	the_old_and_infirm = {
@@ -217,9 +217,7 @@ quantity_ideas = { # Logistics
 		reinforce_speed = 0.10
 	}
 	garrison_conscription = {
-		infantry_power = 0.05
-		cavalry_power = 0.05
-		artillery_power = 0.05
+		artillery_power = 0.1
 		leader_land_manuever = 2
 	}
 	expanded_supply_trains = {
@@ -260,8 +258,8 @@ leadership_ideas = { #Leadership
 		reserves_organisation = 0.25
 	}
 	lead_ide6 = {
-		military_tactics = 0.1
-		army_tradition_from_battle = 0.25
+		yearly_army_professionalism = 0.02
+		army_tradition_from_battle = 0.5
 	}
 	lead_ide7 = {
 		general_cost = -0.1
@@ -300,7 +298,7 @@ defensive_ideas = { # Garrison
 		global_supply_limit_modifier = 0.25
 	}
 	supply_trains = {
-		artillery_power = 0.1
+		artillery_power = 0.05
 		artillery_cost = -0.15
 	}
 	improved_foraging = {
@@ -367,7 +365,7 @@ offensive_ideas = { #Grand Plan
 		global_supply_limit_modifier = 0.25
 	}
 	national_conscripts = {
-		no_cost_for_reinforcing = yes
+		global_regiment_recruit_speed = -0.2
 	}
 	superior_firepower = {
 		land_morale = 0.1
@@ -557,16 +555,16 @@ maritime_ideas = { #Merchant Marines Ideas
 	}
 	sea_hawks = {
 		regiment_disembark_speed = 0.50
-		flagship_landing_penalty = 1
+		landing_penalty = 1
 	}
 	naval_fighting_instruction = {
 		global_sailors_modifier = 0.5
 	}
 
-		ai_will_do = {
-			factor = 0
-		}
+	ai_will_do = {
+		factor = 0
 	}
+}
 
 naval_ideas = { #Naval Dominance Ideas
 	category = DIP
