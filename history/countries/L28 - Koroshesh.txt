@@ -4,7 +4,7 @@ government = republic
 add_government_reform = technocracy_republic_reform
 government_rank = 1
 primary_culture = delta_gnome
-religion = khetist
+religion = elikhetist
 technology_group = tech_salahadesi
 
 capital = 463

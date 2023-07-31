@@ -511,7 +511,7 @@ setup_vision = {
 						tag = U02
 					}
 				}
-				tijarikhet_region = {
+				nirakhet_range_region = {
 					discover_country = ROOT
 				}
 				fangaula_superregion = {
@@ -606,7 +606,7 @@ setup_vision = {
 			
 			
 			#Discover Salad and Middle Sarhal
-			tijarikhet_region = {
+			nirakhet_range_region = {
 				discover_country = ROOT
 			}
 			horashesh_region = {
@@ -728,7 +728,7 @@ setup_vision = {
 			
 			
 			#Discover Salahad and East Sarhal
-			mengi_region = {
+			madriamilak_region = {
 				discover_country = ROOT
 			}
 			gebahiri_region = {
@@ -1317,6 +1317,10 @@ setup_vision = {
 				sea_of_follies_area = { 
 					discover_country = ROOT
 				}
+				#Davharral trade node
+				1348 = {
+					discover_country = ROOT
+				}
 				
 				4367 = {	#Rahen
 					undiscover_country = ROOT
@@ -1595,6 +1599,15 @@ setup_vision = {
 			northeast_haless_coast_region = {
 				discover_country = ROOT
 			}
+			guifa_zahab_region = {
+				discover_country = ROOT
+			}
+			gebahiri_region = {
+				discover_country = ROOT
+			}
+			yetmesira_area = {
+				discover_country = ROOT
+			}
 			
 			#Kharunyana
 			4647 = {
@@ -1660,6 +1673,11 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			4656 = {
+				discover_country = ROOT
+			}
+
+			#Sarhal Wastelands
+			5672 = {
 				discover_country = ROOT
 			}
 		}
@@ -1730,7 +1748,11 @@ setup_vision = {
 			limit = {
 				capital_scope = {
 					superregion = south_haless_superregion
-					NOT = { region = lupulan_rainforest_region }
+					OR = {
+						NOT = { region = lupulan_rainforest_region }
+						owner = { tag = Y64 }
+						owner = { tag = Y65 }
+					}
 				}
 			}
 			rahen_superregion = {
@@ -1750,6 +1772,15 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			northeast_haless_coast_region = {
+				discover_country = ROOT
+			}
+			gebahiri_region = {
+				discover_country = ROOT
+			}
+			madriamilak_region = {
+				discover_country = ROOT
+			}
+			guifa_zahab_region = {
 				discover_country = ROOT
 			}
 			
@@ -1814,6 +1845,31 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			4656 = {
+				discover_country = ROOT
+			}
+
+			#Sarhal Wastlands
+			5672 = {
+				discover_country = ROOT
+			}
+			5561 = {
+				discover_country = ROOT
+			}
+			6119 = {
+				discover_country = ROOT
+			}
+			6596 = {
+				discover_country = ROOT
+			}
+			5537 = {
+				discover_country = ROOT
+			}
+
+			#Sarhal Lakes
+			1911 = {
+				discover_country = ROOT
+			}
+			1655 = {
 				discover_country = ROOT
 			}
 		}
@@ -1948,7 +2004,7 @@ setup_vision = {
 			horashesh_region = {
 				discover_country = ROOT
 			}
-			tijarikhet_region = {
+			nirakhet_range_region = {
 				discover_country = ROOT
 			}
 			fahvanosy_region = {
@@ -2244,7 +2300,7 @@ setup_vision = {
 			horashesh_region = {
 				discover_country = ROOT
 			}
-			tijarikhet_region = {
+			nirakhet_range_region = {
 				discover_country = ROOT
 			}
 			fahvanosy_region = {
@@ -2447,11 +2503,11 @@ setup_vision = {
 			}
 		}
 
-		#Tijarikhet
+		#Nirakhet Range
 		if = {
 			limit = {
 				capital_scope = {
-					region = tijarikhet_region
+					region = nirakhet_range_region
 				}
 			}
 
@@ -2467,7 +2523,7 @@ setup_vision = {
 			horashesh_region = {
 				discover_country = ROOT
 			}
-			tijarikhet_region = {
+			nirakhet_range_region = {
 				discover_country = ROOT
 			}
 			fahvanosy_region = {
@@ -2639,7 +2695,7 @@ setup_vision = {
 			limit = {
 				OR = {
 					capital_scope = {
-						region = mengi_region
+						region = madriamilak_region
 					}
 					capital_scope = {
 						region = gebahiri_region
@@ -2978,7 +3034,7 @@ setup_vision = {
 			horashesh_region = {
 				discover_country = ROOT
 			}
-			tijarikhet_region = {
+			nirakhet_range_region = {
 				discover_country = ROOT
 			}
 			south_sarhal_coast_region = {
@@ -3236,7 +3292,10 @@ setup_vision = {
 		if = {
 			limit = {
 				capital_scope = {
-					superregion = south_sarhal_superregion
+					OR = {
+						region = guifa_guyamva_region
+						superregion = south_sarhal_superregion
+					}
 					NOT = { region = jasiir_jadid_region }
 				}
 			}
@@ -3289,7 +3348,7 @@ setup_vision = {
 			horashesh_region = {
 				discover_country = ROOT
 			}
-			tijarikhet_region = {
+			nirakhet_range_region = {
 				discover_country = ROOT
 			}
 			guifa_guyamva_region = {
@@ -3428,7 +3487,7 @@ setup_vision = {
 			limit = {
 				OR = {
 					capital_scope = {
-						superregion = greater_taychend_superregion
+						superregion = taychend_superregion
 					}
 					capital_scope = {
 						superregion = kheionai_superregion
@@ -3440,9 +3499,12 @@ setup_vision = {
 					OR = {
 						culture_group = kheionai_ruinborn_elf
 						culture_group = taychendi_ruinborn_elf
+						tag = J73
+						tag = J74
+						tag = J72
 					}
 				}
-				greater_taychend_superregion = {
+				taychend_superregion = {
 					discover_country = ROOT
 				}
 				kheionai_superregion = {
@@ -3573,16 +3635,16 @@ setup_vision = {
 				chendhya_region = {
 					discover_country = ROOT
 				}
-				rantiandi_area = {
+				darkalyndar_area = {
 					discover_country = ROOT
 				}
-				klerektoram_area = {
+				korrimutren_area = {
 					discover_country = ROOT
 				}
-				yarkonda_area = {
+				caergaraen_area = {
 					discover_country = ROOT
 				}
-				tarassukorrim_area = {
+				clematar_area = {
 					discover_country = ROOT
 				}
 				2462 = {
@@ -3883,9 +3945,6 @@ setup_vision = {
 				limit = {
 					primary_culture = cheshoshi
 				}
-				tlayxtlaroyan_area = {
-					discover_country = ROOT
-				}
 				xochibarcel_quixo_area = {
 					discover_country = ROOT
 				}
@@ -3904,14 +3963,8 @@ setup_vision = {
 				cuecuaden_area = {
 					discover_country = ROOT
 				}
-				2108 = {
+				naftlachilar_area = {
 					discover_country = ROOT
-				}
-				2097 = {
-					undiscover_country = ROOT
-				}
-				1950 = {
-					undiscover_country = ROOT
 				}
 			}
 		}

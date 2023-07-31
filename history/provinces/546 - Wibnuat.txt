@@ -9,7 +9,7 @@ controller = L28
 add_core = L28
 #add_core = U01
 culture = kheteratan
-religion = khetist
+religion = elikhetist
 
 hre = no
 

@@ -8,7 +8,7 @@ owner = L26
 controller = L26
 add_core = L26
 culture = irsmahapan
-religion = khetist
+religion = elikhetist
 
 hre = no
 

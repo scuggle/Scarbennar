@@ -8,7 +8,7 @@ owner = L28
 controller = L28
 add_core = L28
 culture = kheteratan
-religion = khetist
+religion = elikhetist
 
 hre = no
 
