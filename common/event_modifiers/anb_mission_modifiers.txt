@@ -2898,6 +2898,25 @@ grombar_great_golden_mine = {
 	trade_goods_size = 2.0
 }
 
+## New Grombar Modifiers
+
+grombar_gulletpeak_fortress = {
+	local_defensiveness = 0.25
+	local_manpower_modifier = 0.1
+	local_friendly_movement_speed = 0.1
+	local_hostile_movement_speed = 0.1
+	garrison_growth = 0.05
+	local_development_cost = -0.1
+}
+
+
+Z50_bal_vroren_renovations = {
+	local_great_project_upgrade_cost = -0.5
+}
+
+
+
+
 #Khozrugan Modifiers
 
 khozrugan_in_honor_of_our_god = {

@@ -65,7 +65,7 @@ merc_iron_company = {
 		tag = Z50 #Grombar
 		has_unlocked_merc_company = { merc_company = merc_iron_company }
 	}
-	cost_modifier = 0.75
+	cost_modifier = 0.50
 	modifier = {
 		shock_damage_received = -0.1
 		fire_damage_received = -0.1
@@ -1484,5 +1484,26 @@ merc_raggedy_gun_knights = {
 	cost_modifier = 1
 	modifier = {
 		cav_to_inf_ratio = 1.0
+	}
+}
+
+# The Gray Company
+merc_the_gray_company = {
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    regiments_per_development = 0.075
+    home_province = 740 # Bal Vroren (Ur Sarmozd)
+	cavalry_weight = 0.1
+	cavalry_cap = 4
+    artillery_weight = 0.1
+    trigger = {
+		tag = Z50 #Grombar
+		has_unlocked_merc_company = { merc_company = merc_the_gray_company }
+	}
+	cost_modifier = 0.50
+	modifier = {
+		shock_damage_received = -0.1
+		fire_damage_received = -0.10
+		shock_damage = 0.1
+		land_morale = 0.1
 	}
 }
