@@ -204,7 +204,7 @@ cestirande_2_missions = {
 					has_building = workshop
 					has_building = counting_house
 				}
-				has_building = manufactory
+				has_manufactory_trigger = yes
 			}
 		}
 

@@ -421,7 +421,7 @@ araw_conquest_central_branch = {
 			has_country_modifier = trading_in_chinaware
 		}
 		provinces_to_highlight = {
-			trade_goods = porcelain
+			trade_good = porcelain
 			NOT = { owned_by = ROOT }
 		}
 		effect = {
@@ -431,7 +431,7 @@ araw_conquest_central_branch = {
 			}
 			every_province = {
 				limit = {
-					trade_goods = porcelain
+					trade_good = porcelain
 				}
 				add_permanent_claim = ROOT
 			}

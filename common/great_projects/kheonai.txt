@@ -441,7 +441,7 @@ warded_city_lok = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_defensiveness 0.15
+			local_defensiveness = 0.15
 		}
 		area_modifier = {
 			institution_growth = 0.1
@@ -463,7 +463,7 @@ warded_city_lok = {
 			factor = 5000
 		}
 		province_modifiers = {
-			local_defensiveness 0.25
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 			institution_growth = 0.15

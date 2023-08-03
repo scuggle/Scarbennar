@@ -685,7 +685,7 @@ country_event = {
 	}
 
 	option = {
-		name = reurope.200
+		name = reurope.200.a
 		every_owned_province = {
 			limit = {
 				has_large_human_minority_trigger = yes
