@@ -2,6 +2,8 @@
  crusade_evil: "Crusade against Evil"
  crusade_evil_desc: "Kill it before it lays eggs!"
 
+ eur_privateer_debuff:0 "Privateer Debuff"
+
 #Idea set crap
  cot_human_min:0 "Human Minority Workers"
  cot_elf_min:0 "Elven Minority Workers"

@@ -16,6 +16,11 @@ corinite_purim_teachings_aspect_modifier = {
 	land_morale = 0.10 
 }
 
+#Privateer debuff
+eur_privateer_debuff = {
+	privateer_efficiency = -0.4
+}
+
 #Witch-Kings
 1_relations_removed = {
 	diplomatic_upkeep = -1

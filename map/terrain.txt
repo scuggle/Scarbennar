@@ -43,7 +43,7 @@ categories =  {
 		defence = 1
 		movement_cost = 1.25
 		supply_limit = 2		
-		local_development_cost = 0.55
+		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.75		
 		
 		terrain_override = {		
@@ -631,7 +631,7 @@ categories =  {
 
 		movement_cost = 1.5
 		defence = 1
-		local_development_cost = 0.4
+		local_development_cost = 0.20
 		nation_designer_cost_multiplier = 0.8
 		supply_limit = 5
 		
@@ -746,7 +746,7 @@ categories =  {
 
 		movement_cost = 1.05
 		supply_limit = 4
-		local_development_cost = 0.55
+		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.8
 		
 		terrain_override = { 

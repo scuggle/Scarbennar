@@ -1,5 +1,6 @@
 namespace = eur_changes
 
+#Corinite
 province_event = {	#corinite build cost blessing
 	id = eur_changes.1109
 	title = eur_changes.1109.t
@@ -37,5 +38,30 @@ province_event = {	#corinite missionary blessing
 	option = {	#
 		name = eur_changes.1109.a
 		area = {add_province_modifier = {name = corinite_abrahamic_aspect_modifier duration = 3650}}
+	}
+}
+
+#Pirateer efficiency debuff
+country_event = {
+	id = eur_changes.1
+	title = eur_changes.1.t
+	desc = eur_changes.1.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			has_country_modifier = eur_privateer_debuff
+		} 
+	}
+
+	option = {
+		name = eur_changes.1.a
+		add_country_modifier = {
+			name = eur_privateer_debuff
+			duration = -1
+		}
 	}
 }

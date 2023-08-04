@@ -175,6 +175,9 @@ on_startup = {
 		shatteredcrown.0 #lore disclaimer
 		dwarven_pantheon.300 #rubyhold and ozovar starting event
 		
+		#eur
+		eur_changes.1
+
 		anb_settings.1			#Settings - /!\ keep it at the bottom of the list
 	}
 
@@ -5941,6 +5944,7 @@ on_yearly_pulse = {
 	events = {
 		#Pillar of Gates
 		#sarhal_relics.19
+		eur_changes.1
 	}
 	if = { limit = { tag = I03 } country_event = { id = flavor_vazhatun.100 } }
 }

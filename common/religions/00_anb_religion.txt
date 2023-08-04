@@ -45,7 +45,8 @@ cannorian = {
 			}
 		}
 
-		heretic = { OLD_PANTHEON }
+		declare_war_in_regency = yes
+        heretic = { OLD_PANTHEON }
 	}
 
 	corinite = {
@@ -326,7 +327,8 @@ cannorian = {
 			}
 		}
 
-		heretic = { AGRADOS }
+		declare_war_in_regency = yes
+        heretic = { AGRADOS }
 
 		date = 1510.1.1
 	}
@@ -446,7 +448,8 @@ cannorian = {
 		}
 
 
-		heretic = { PURITAN }
+		declare_war_in_regency = yes
+        heretic = { PURITAN }
 
 		date = 1550.1.1
 
@@ -801,7 +804,8 @@ cannorian = {
 			}
 		}
 
-		heretic = { STARPRAISERS }
+		declare_war_in_regency = yes
+        heretic = { STARPRAISERS }
 
 		uses_isolationism = yes
 	}
@@ -840,7 +844,8 @@ cannorian = {
 			}
 		}
 
-		heretic = { BHAKTI }
+		declare_war_in_regency = yes
+        heretic = { BHAKTI }
 
 
 	}
@@ -869,7 +874,8 @@ faithless = {
 			technology_cost = -0.05
 			possible_policy = 1
 		}
-		heretic = { TAOIST }
+		declare_war_in_regency = yes
+        heretic = { TAOIST }
 		uses_harmony = yes
 	}
 
@@ -884,7 +890,8 @@ faithless = {
 			possible_mil_policy = 1
 			discipline = 0.025
 		}
-		heretic = { CHAOS_WORSHIPPERS }
+		declare_war_in_regency = yes
+        heretic = { CHAOS_WORSHIPPERS }
 		personal_deity = yes
 
 		harmonized_modifier = harmonized_godlost
@@ -916,7 +923,8 @@ faithless = {
 			}
 		}
 
-		heretic = { EIONIST }
+		declare_war_in_regency = yes
+        heretic = { EIONIST }
 
 		harmonized_modifier = harmonized_kheionism
 	}
@@ -957,7 +965,8 @@ faithless = {
 			add_prestige = -100
 		}
 
-		heretic = { CHAOS_WORSHIPPERS }
+		declare_war_in_regency = yes
+        heretic = { CHAOS_WORSHIPPERS }
 
 		harmonized_modifier = harmonized_black_doctrine
 	}
@@ -1004,7 +1013,8 @@ khetist = {
 			}
 		}
 
-		heretic = { AAKHETIST PEYUMAAW }
+		declare_war_in_regency = yes
+        heretic = { AAKHETIST PEYUMAAW }
 
 		gurus = {
 			khetarch_baqtkhet_ii = {
@@ -1212,7 +1222,8 @@ khetist = {
 			}
 		}
 
-		heretic = { AAKHETIST PEYUMAAW }
+		declare_war_in_regency = yes
+        heretic = { AAKHETIST PEYUMAAW }
 
 		gurus = {
 			khetarch_baqtkhet_ii = {
@@ -1425,7 +1436,8 @@ khetist = {
 			}
 		}
 
-		heretic = { AAKHETIST PEYUMAAW }
+		declare_war_in_regency = yes
+        heretic = { AAKHETIST PEYUMAAW }
 
 		date = 1511.1.1
 
@@ -1714,7 +1726,8 @@ gnollish = {
 			}
 		}
 
-		heretic = { BAINIST }
+		declare_war_in_regency = yes
+        heretic = { BAINIST }
 	}
 
 	kvangahga = {
@@ -1752,7 +1765,8 @@ gnollish = {
 			}
 		}
 		
-		heretic = { WASTER }
+		declare_war_in_regency = yes
+        heretic = { WASTER }
 	}
 	
 	harmonized_modifier = harmonized_gnollish
@@ -1791,7 +1805,8 @@ dwarven = {
 			}
 		}
 
-		heretic = { DEIST }
+		declare_war_in_regency = yes
+        heretic = { DEIST }
 
 		holy_sites = { 4119 4039 2931 4078 526 2963 4269 }
 
@@ -1832,7 +1847,8 @@ dwarven = {
 			#add_country_modifier = { name = conversion_zeal duration = 3650 }
 		}
 
-		heretic = { DEIST }
+		declare_war_in_regency = yes
+        heretic = { DEIST }
 
 		uses_judaism_power = yes
 		aspects_name = dwarven_pantheon_aspects
@@ -2038,7 +2054,8 @@ dwarven = {
 			}
 		}
 
-		heretic = { DEIST }
+		declare_war_in_regency = yes
+        heretic = { DEIST }
 		uses_isolationism = yes
 	}
 
@@ -2148,7 +2165,8 @@ elven = {
 			}
 		}
 
-		heretic = { GUARDIAN }
+		declare_war_in_regency = yes
+        heretic = { GUARDIAN }
 	}
 
 	soise_vio = {
@@ -2178,7 +2196,8 @@ elven = {
 			}
 		}
 
-		heretic = { GUARDIAN }
+		declare_war_in_regency = yes
+        heretic = { GUARDIAN }
 	}
 
 	nur_dahvaraesa = {
@@ -2207,7 +2226,8 @@ elven = {
 			}
 		}
 
-		heretic = { GUARDIAN }
+		declare_war_in_regency = yes
+        heretic = { GUARDIAN }
 	}
 
 	harmonized_modifier = harmonized_elven
@@ -2257,7 +2277,8 @@ bulwari = {
 			}
 		}
 
-		heretic = { ECLIPSE }
+		declare_war_in_regency = yes
+        heretic = { ECLIPSE }
 	}
 
 	old_bulwari_sun_cult = {
@@ -2299,7 +2320,8 @@ bulwari = {
 			}
 		}
 
-		heretic = { ECLIPSE }
+		declare_war_in_regency = yes
+        heretic = { ECLIPSE }
 	}
 
 	the_jadd = {
@@ -2334,7 +2356,8 @@ bulwari = {
 			}
 		}
 
-		heretic = { ECLIPSE }
+		declare_war_in_regency = yes
+        heretic = { ECLIPSE }
 	}
 
 	crusade_name = HOLY_WAR
@@ -2380,7 +2403,8 @@ gerudian = {
 			}
 		}
 
-		heretic = { AWAKER }
+		declare_war_in_regency = yes
+        heretic = { AWAKER }
 	}
 
 	harmonized_modifier = harmonized_gerudian
@@ -2436,7 +2460,8 @@ orcish = {
 			}
 		}
 
-		heretic = { DENIER }
+		declare_war_in_regency = yes
+        heretic = { DENIER }
 	}
 
 	old_dookan = {
@@ -2478,7 +2503,8 @@ orcish = {
 			}
 		}
 
-		heretic = { DENIER }
+		declare_war_in_regency = yes
+        heretic = { DENIER }
 	}
 
 	bulgu_orazan = {
@@ -2520,7 +2546,8 @@ orcish = {
 			}
 		}
 
-		heretic = { DENIER }
+		declare_war_in_regency = yes
+        heretic = { DENIER }
 	}
 
 	harmonized_modifier = harmonized_orcish
@@ -2645,7 +2672,8 @@ dragon_cult = {
 			}
 		}
 
-		heretic = { DENIER }
+		declare_war_in_regency = yes
+        heretic = { DENIER }
 	}
 
 	drozma_tur = {
@@ -2672,7 +2700,8 @@ dragon_cult = {
 			}
 		}
 
-		heretic = { YNN_DROZMA }
+		declare_war_in_regency = yes
+        heretic = { YNN_DROZMA }
 	}
 
 	kobold_serpent_cult = {
@@ -2707,7 +2736,8 @@ dragon_cult = {
 			}
 		}
 
-		heretic = { DENIER }
+		declare_war_in_regency = yes
+        heretic = { DENIER }
 	}
 
 	harmonized_modifier = harmonized_dragon_cult
@@ -2735,7 +2765,8 @@ goblin = {
 		}
 
 		fetishist_cult = yes
-		heretic = { CHAOS_WORSHIPPERS }
+		declare_war_in_regency = yes
+        heretic = { CHAOS_WORSHIPPERS }
 	}
 
 	harmonized_modifier = harmonized_goblin
@@ -2775,7 +2806,8 @@ harpy_cults = {
 		}
 		aspects_name = ANGLICAN_ASPECTS
 
-		heretic = { PREY }
+		declare_war_in_regency = yes
+        heretic = { PREY }
 	}
 
 	harmonized_modifier = harmonized_harpy_cults
@@ -2818,7 +2850,8 @@ aelantiri = {
 			}
 		}
 
-		heretic = { WEEPING_TREE }
+		declare_war_in_regency = yes
+        heretic = { WEEPING_TREE }
 	}
 
 	dotimism = {
@@ -2931,7 +2964,8 @@ aelantiri = {
 			local_missionary_strength = 0.02
 		}
 
-		heretic = { BEAR_SPIRIT }
+		declare_war_in_regency = yes
+        heretic = { BEAR_SPIRIT }
 	}
 
 	raeldaeriach = {
@@ -2961,7 +2995,8 @@ aelantiri = {
 				duration = 3650
 			}
 		}
-		heretic = { }
+		declare_war_in_regency = yes
+        heretic = { }
 	}
 
 	etchings_of_the_deep = {
@@ -2987,7 +3022,8 @@ aelantiri = {
 			}
 		}
 
-		heretic = { BLACK_STONE_IDOLATER }
+		declare_war_in_regency = yes
+        heretic = { BLACK_STONE_IDOLATER }
 
 	}
 
@@ -3013,7 +3049,8 @@ aelantiri = {
 				duration = 3650
 			}
 		}
-		heretic = { LEH'OREALL }
+		declare_war_in_regency = yes
+        heretic = { LEH'OREALL }
 
 	}
 
@@ -3060,7 +3097,8 @@ cheshoshi_religion = {
 			}
 		}
 
-		heretic = { RUINED_GODS }
+		declare_war_in_regency = yes
+        heretic = { RUINED_GODS }
 	}
 
 	harmonized_modifier = harmonized_cheshoshi
@@ -3097,7 +3135,8 @@ harafic = {
 			}
 		}
 
-		heretic = { BLANK_MASKS }
+		declare_war_in_regency = yes
+        heretic = { BLANK_MASKS }
 	}
 
 	#Mister_Domino 1385 and Pivert08
@@ -3141,7 +3180,8 @@ harafic = {
 				duration = 3650
 			}
 		}
-		heretic = { DI'IIKUNAIL'NE }
+		declare_war_in_regency = yes
+        heretic = { DI'IIKUNAIL'NE }
 	}
 	jaakaiin = {
 		color = { 32 178 170 }
@@ -3173,7 +3213,8 @@ harafic = {
 				duration = 3650
 			}
 		}
-		heretic = { CH'OOKAIIN }
+		declare_war_in_regency = yes
+        heretic = { CH'OOKAIIN }
 	}
 	eotomolaque = {
 		color = { 235 180 20 }
@@ -3203,7 +3244,8 @@ harafic = {
 				duration = 3650
 			}
 		}
-		heretic = { EOTEPN }
+		declare_war_in_regency = yes
+        heretic = { EOTEPN }
 	}
 
 	harmonized_modifier = harmonized_harafic
@@ -3253,7 +3295,8 @@ effelai = {
 			effelai_the_tumor
 		}
 
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 
 		}
 	}
@@ -3298,7 +3341,8 @@ effelai = {
 			effelai_the_tumor
 		}
 
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 
 		}
 	}
@@ -3331,7 +3375,8 @@ effelai = {
 			}
 		}
 
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 
 		}
 	}
@@ -3370,7 +3415,8 @@ effelai = {
 			effelai_the_tumor
 		}
 
-		heretic = { SENIIBONA }
+		declare_war_in_regency = yes
+        heretic = { SENIIBONA }
 
 	}
 	orwaii = {
@@ -3402,7 +3448,8 @@ effelai = {
 			}
 		}
 
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 
 		}
 	}
@@ -3435,7 +3482,8 @@ effelai = {
 				duration = 3650
 			}
 		}
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 			LEECHMOTHER
 		}
 	}
@@ -3476,7 +3524,8 @@ taychendi = {
 			}
 		}
 
-		heretic = { NOGOD }
+		declare_war_in_regency = yes
+        heretic = { NOGOD }
 
 		religious_reforms = yes
 		personal_deity = yes
@@ -3506,7 +3555,8 @@ taychendi = {
 			}
 		}
 
-		heretic = { NOGOD }
+		declare_war_in_regency = yes
+        heretic = { NOGOD }
 
 		personal_deity = yes
 	}
@@ -3552,7 +3602,8 @@ ynnic = {
 		authority = yes
 		religious_reforms = yes
 		reform_tooltip = YRW_REFORM_TOOLTIP
-		heretic = { YNN_DAMMIC_CULT }
+		declare_war_in_regency = yes
+        heretic = { YNN_DAMMIC_CULT }
 
 	}
 
@@ -3583,7 +3634,8 @@ ynnic = {
 		authority = yes
 		religious_reforms = yes
 		reform_tooltip = YRW_REFORM_TOOLTIP
-		heretic = { YNN_DAMMIC_CULT }
+		declare_war_in_regency = yes
+        heretic = { YNN_DAMMIC_CULT }
 
 	}
 
@@ -3626,7 +3678,8 @@ ynnic = {
 			}
 		}
 
-		heretic = { SCARIFICATION }
+		declare_war_in_regency = yes
+        heretic = { SCARIFICATION }
 
 	}
 
@@ -3669,7 +3722,8 @@ devandi = {
 			}
 		}
 
-		heretic = { WAENAEALAZH }
+		declare_war_in_regency = yes
+        heretic = { WAENAEALAZH }
 	}
 
 	askaeorg = {
@@ -3699,7 +3753,8 @@ devandi = {
 			}
 		}
 
-		heretic = { SAERZAERN }
+		declare_war_in_regency = yes
+        heretic = { SAERZAERN }
 	}
 
 	harmonized_modifier = harmonized_devandi
@@ -3752,7 +3807,8 @@ fey_religion = {
 		}
 		aspects_name = FEYCOURTRITUALS
 
-		heretic = { CHAOS_WORSHIPPERS }
+		declare_war_in_regency = yes
+        heretic = { CHAOS_WORSHIPPERS }
 	}
 	eordellon = {
 		color = { 253 232 199 }
@@ -3781,7 +3837,8 @@ fey_religion = {
 		}
 
 		uses_piety = yes
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 			LANNANSIT #FeyLover
 			ARRFATH
 			SARMADFATH
@@ -3815,7 +3872,8 @@ fey_religion = {
 		}
 
 		uses_piety = yes
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 			LANNANSIT #FeyLover
 			SARMADFATH
 			FOGHARFATH
@@ -3848,7 +3906,8 @@ fey_religion = {
 		}
 
 		uses_piety = yes
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 			LANNANSIT #FeyLover
 			ARRFATH
 			FOGHARFATH
@@ -3881,7 +3940,8 @@ fey_religion = {
 		}
 
 		uses_piety = yes
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 			LANNANSIT #FeyLover
 			ARRFATH
 			SARMADFATH
@@ -3914,7 +3974,8 @@ fey_religion = {
 		}
 
 		uses_piety = yes
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 			LANNANSIT #FeyLover
 			ARRFATH
 			SARMADFATH
@@ -3948,7 +4009,7 @@ fey_religion = {
 		}
 		uses_piety = yes
 		declare_war_in_regency = yes
-		heretic = { EVIL_SPIRIT DEMONWORSHIPPERS }
+        heretic = { EVIL_SPIRIT DEMONWORSHIPPERS }
 	}
 
 	vechnogejzn = {
@@ -3975,7 +4036,8 @@ fey_religion = {
 			}
 		}
 
-		heretic = { THE_FLAMETAKEN }
+		declare_war_in_regency = yes
+        heretic = { THE_FLAMETAKEN }
 
 	}
 
@@ -4000,7 +4062,8 @@ fey_religion = {
 			}
 		}
 		uses_piety = yes
-		heretic = { ROGUE_WARLOCK }
+		declare_war_in_regency = yes
+        heretic = { ROGUE_WARLOCK }
 	}
 
 	harmonized_modifier = harmonized_fey_religion
@@ -4447,7 +4510,8 @@ raheni = {
 			}
 		}
 
-		heretic = { RAHENI_GODS }
+		declare_war_in_regency = yes
+        heretic = { RAHENI_GODS }
 	}
 	suhans_praxis = {
 		color = { 193 105 228 }
@@ -4482,7 +4546,8 @@ raheni = {
 				duration = 3650
 			}
 		}
-		heretic = { RAHENI_GODS }
+		declare_war_in_regency = yes
+        heretic = { RAHENI_GODS }
 	}
 	harmonized_modifier = harmonized_raheni
 	crusade_name = HOLY_WAR
@@ -4547,7 +4612,8 @@ halessi = {
 			}
 		}
 
-		heretic = { FORBIDDEN_PATH }
+		declare_war_in_regency = yes
+        heretic = { FORBIDDEN_PATH }
 
 	}
 
@@ -4596,7 +4662,8 @@ halessi = {
 			}
 		}
 
-		heretic = { ONI_DISSIDENTS }
+		declare_war_in_regency = yes
+        heretic = { ONI_DISSIDENTS }
 
 	}
 
@@ -4667,7 +4734,8 @@ halessi = {
 			huszien_special_mil_aspect
 		}
 
-		heretic = { THE_SEALED_ONES }
+		declare_war_in_regency = yes
+        heretic = { THE_SEALED_ONES }
 
 		celebrate = {
 			cost = 200
@@ -5123,7 +5191,8 @@ halessi = {
 			}
 		}
 
-		heretic = { DARK_SHAMANS }
+		declare_war_in_regency = yes
+        heretic = { DARK_SHAMANS }
 
 	}
 
@@ -5151,7 +5220,8 @@ halessi = {
 			}
 		}
 
-		heretic = { FACE_STEALERS }
+		declare_war_in_regency = yes
+        heretic = { FACE_STEALERS }
 	}
 
 	levaajan = {
@@ -5184,7 +5254,8 @@ halessi = {
 			}
 		}
 
-		heretic = { THE_ETERNAL_WORSHIP }
+		declare_war_in_regency = yes
+        heretic = { THE_ETERNAL_WORSHIP }
 	}
 
 	umun_omi = {
@@ -5216,7 +5287,8 @@ halessi = {
 			}
 		}
 
-		heretic = { SERVANTS_OF_THE_ENTITY }
+		declare_war_in_regency = yes
+        heretic = { SERVANTS_OF_THE_ENTITY }
 	}
 
 	harmonized_modifier = harmonized_halessi
@@ -5257,7 +5329,8 @@ triunic_lake = {
 			}
 		}
 
-		heretic = { OGTOCHODSAKS }
+		declare_war_in_regency = yes
+        heretic = { OGTOCHODSAKS }
 	}
 
 	yukel_followers = {	#Trade Goddess
@@ -5286,7 +5359,8 @@ triunic_lake = {
 			}
 		}
 
-		heretic = { OGTOCHODSAKS }
+		declare_war_in_regency = yes
+        heretic = { OGTOCHODSAKS }
 	}
 
 	enuuk_followers = {	#Production Goddess
@@ -5314,7 +5388,8 @@ triunic_lake = {
 			}
 		}
 
-		heretic = { OGTOCHODSAKS }
+		declare_war_in_regency = yes
+        heretic = { OGTOCHODSAKS }
 	}
 
 	kalyin_worshippers = {
@@ -5343,7 +5418,8 @@ triunic_lake = {
 			}
 		}
 
-		heretic = { OGTOCHODSAKS }
+		declare_war_in_regency = yes
+        heretic = { OGTOCHODSAKS }
 		
 		date = 1530.1.1
 	}
@@ -5381,7 +5457,8 @@ triunic_lake = {
 			}
 		}
 
-		heretic = {
+		declare_war_in_regency = yes
+        heretic = {
 
 		}
 	}
@@ -5412,7 +5489,8 @@ triunic_lake = {
 			}
 		}
 
-		heretic = { CULT_SOITI }
+		declare_war_in_regency = yes
+        heretic = { CULT_SOITI }
 		
 		date = 1610.1.1
 	}
@@ -5453,7 +5531,8 @@ giantkin = {
 			}
 		}
 
-		heretic = { CHAOS_WORSHIPPERS }
+		declare_war_in_regency = yes
+        heretic = { CHAOS_WORSHIPPERS }
 	}
 
 	mountain_watchers = {
@@ -5492,7 +5571,8 @@ giantkin = {
 			}
 		}
 
-		heretic = { CHAOS_WORSHIPPERS }
+		declare_war_in_regency = yes
+        heretic = { CHAOS_WORSHIPPERS }
 	}
 	harmonized_modifier = harmonized_giantkin
 
@@ -5527,7 +5607,8 @@ centaur_religion = {
 			}
 		}
 
-		heretic = { CHAOS_WORSHIPPERS }
+		declare_war_in_regency = yes
+        heretic = { CHAOS_WORSHIPPERS }
 	}
 
 	harmonized_modifier = harmonized_fey_religion
@@ -5564,7 +5645,8 @@ infernal_religion = {
 			}
 		}
 
-		heretic = { AGRADOSIAN_ELECT DEMONWORSHIPPERS }
+		declare_war_in_regency = yes
+        heretic = { AGRADOSIAN_ELECT DEMONWORSHIPPERS }
 	}
 
 	harmonized_modifier = harmonized_infernal
@@ -5600,7 +5682,8 @@ tanibic_religion = {
 			}
 		}
 
-		heretic = { BEGGAISTS }
+		declare_war_in_regency = yes
+        heretic = { BEGGAISTS }
 	}
 
 	noukahi_pantheon = {	
@@ -5624,7 +5707,8 @@ tanibic_religion = {
 			}
 		}
 
-		heretic = { ZUVANISTS }
+		declare_war_in_regency = yes
+        heretic = { ZUVANISTS }
 	}
 
 	fangaula_pantheon = {	
@@ -5647,7 +5731,8 @@ tanibic_religion = {
 			}
 		}
 
-		heretic = { KAINISTS }
+		declare_war_in_regency = yes
+        heretic = { KAINISTS }
 	}
 
 	mother_akan = {
@@ -5679,7 +5764,8 @@ tanibic_religion = {
 			}
 		}
 
-		heretic = { FATHER_AKAN }
+		declare_war_in_regency = yes
+        heretic = { FATHER_AKAN }
 	}
 
 	
@@ -5735,7 +5821,8 @@ hag_religion = {
 		religious_reforms = yes
 		reform_tooltip = NIGHT_COVEN_REFORM_TOOLTIP
 
-		heretic = { LOCAL_CULTS }
+		declare_war_in_regency = yes
+        heretic = { LOCAL_CULTS }
 	}
 
 	shadow_pact = {
@@ -5753,7 +5840,8 @@ hag_religion = {
 			local_missionary_strength = 0.02 #why do we have this?
 		}
 		
-		heretic = { HAGGISTS }
+		declare_war_in_regency = yes
+        heretic = { HAGGISTS }
 	}
 
 	harmonized_modifier = harmonized_hag
@@ -5788,7 +5876,8 @@ lizardfolk_religion = {
 			}
 		}
 
-		heretic = { STAR_GOD_WORSHIPPERS DRAGONBORN }
+		declare_war_in_regency = yes
+        heretic = { STAR_GOD_WORSHIPPERS DRAGONBORN }
 	}
 
 	zaradyrra = {	
@@ -5812,7 +5901,8 @@ lizardfolk_religion = {
 			}
 		}
 
-		heretic = { CURSED }
+		declare_war_in_regency = yes
+        heretic = { CURSED }
 	}
 	
 	harmonized_modifier = harmonized_lizardfolk
@@ -5879,7 +5969,8 @@ eltibhen_religion = {
 				duration = 3650
 			}
 		}
-		heretic = { NOGOD }
+		declare_war_in_regency = yes
+        heretic = { NOGOD }
 		
 		harmonized_modifier = harmonized_gotiriei
 		crusade_name = HOLY_WAR
@@ -5916,7 +6007,8 @@ east_sarhal_religion = {
 			}
 		}
 
-		heretic = { ARDIMYANAR }
+		declare_war_in_regency = yes
+        heretic = { ARDIMYANAR }
 		harmonized_modifier = harmonized_angelic
 	}
 
@@ -5956,7 +6048,8 @@ east_sarhal_religion = {
 			}
 		}
 
-		heretic = { DESPOLIERS }
+		declare_war_in_regency = yes
+        heretic = { DESPOLIERS }
 		harmonized_modifier = harmonized_tanizu
 	}
 
@@ -5999,7 +6092,8 @@ east_sarhal_religion = {
 			}
 		}
 
-		heretic = { DESPOLIERS }
+		declare_war_in_regency = yes
+        heretic = { DESPOLIERS }
 		harmonized_modifier = harmonized_tanizu
 	}
 
@@ -6026,7 +6120,8 @@ east_sarhal_religion = {
 			}
 		}
 
-		heretic = { STARPRAISERS }
+		declare_war_in_regency = yes
+        heretic = { STARPRAISERS }
 
 		uses_isolationism = yes
 		harmonized_modifier = harmonized_baashidi
@@ -6056,7 +6151,8 @@ east_sarhal_religion = {
 			}
 		}
 
-		heretic = { JINN_CULTISTS }
+		declare_war_in_regency = yes
+        heretic = { JINN_CULTISTS }
 		harmonized_modifier = harmonized_baashidi
 	}
 
@@ -6085,7 +6181,8 @@ east_sarhal_religion = {
 			}
 		}
 
-		heretic = { HABAB_ZARR }
+		declare_war_in_regency = yes
+        heretic = { HABAB_ZARR }
 		harmonized_modifier = harmonized_baashidi
 	}
 }

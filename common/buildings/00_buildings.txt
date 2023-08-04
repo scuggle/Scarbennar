@@ -109,7 +109,7 @@ temple = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.4
+		local_tax_modifier = 0.5
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes
@@ -526,6 +526,7 @@ coastal_defence = {
 	modifier = {
 		blockade_force_required = 0.5
 		hostile_disembark_speed = 1.0
+		hostile_fleet_attrition = 5
 		block_slave_raid = yes
 	}
 
@@ -957,7 +958,7 @@ naval_battery = {
 	modifier = {
 		blockade_force_required = 1.0
 		hostile_disembark_speed = 2.0
-		hostile_fleet_attrition = 5
+		hostile_fleet_attrition = 10
 		block_slave_raid = yes
 	}
 
@@ -976,7 +977,7 @@ cathedral = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.03
-		local_tax_modifier = 0.6
+		local_tax_modifier = 1
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes

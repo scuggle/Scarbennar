@@ -1650,7 +1650,7 @@ private_enterprise_colony_government = {
 	}
 	legacy_equivalent = colonial_government_legacy
 	modifiers = {
-		global_ship_trade_power = 0.2
+		global_ship_trade_power = 0.1
 		embracement_cost = -0.1
 		merchants = 1
 		production_efficiency = 0.05
@@ -1709,7 +1709,6 @@ self_governing_colony_government = {
 	legacy_equivalent = colonial_government_legacy
 	modifiers = {
 		build_cost = -0.1
-		development_cost = -0.1
 		embracement_cost = -0.1
 		state_maintenance_modifier = -0.25
 		max_absolutism = 40
