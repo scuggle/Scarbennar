@@ -73,7 +73,7 @@ country_event = {
 		add_devotion = 5
 		add_republican_tradition = 2
 
-		add_karma = 5
+		add_church_power = 30
 	}
 	#Other
 	#option = { they wouldn't care. Just hard rain no big significance
@@ -141,7 +141,7 @@ province_event = {
 		}
 		add_devastation = 10
 
-		owner = { add_karma = -10 }
+		owner = { add_church_power = -10 }
 	}
 	#Other
 	option = {
@@ -223,7 +223,7 @@ province_event = {
 			value = 5
 		}
 
-		owner = { add_karma = -5 }
+		owner = { add_church_power = -5 }
 	}
 	#Other
 	option = {
@@ -953,14 +953,14 @@ country_event = {
 			loyalty = -5
 		}
 
-		add_karma = -5
+		add_church_power = -5
 	}
 	#Pay for repair
 	option = {
 		name = "deluge.8.b"
 		add_treasury = -50
 
-		add_karma = 5
+		add_church_power = 5
 	}
 }
 
@@ -1025,7 +1025,7 @@ country_event = {
 			duration = 3650 #10 years
 		}
 
-		add_karma = -10
+		add_church_power = -10
 	}
 	#Other
 	#option = {
@@ -1110,7 +1110,7 @@ province_event = {
 			value = -10
 		}
 
-		owner = { add_karma = -5 }
+		owner = { add_church_power = -5 }
 	}
 	#Other
 	option = {
@@ -1187,7 +1187,7 @@ province_event = {
 		}
 		owner = { add_manpower = -1 }
 
-		owner = { add_karma = -5 }
+		owner = { add_church_power = -5 }
 	}
 	#help them
 	option = {
@@ -1197,7 +1197,7 @@ province_event = {
 		}
 		owner = { add_treasury = -30 }
 
-		owner = { add_karma = 5 }
+		owner = { add_church_power = 5 }
 	}
 	#Other
 	option = {
@@ -1367,7 +1367,7 @@ country_event = {
 			duration = 365
 		}
 
-		add_karma = -5
+		add_church_power = -5
 	}
 	#Pay for repair
 	option = {
@@ -1380,6 +1380,6 @@ country_event = {
 			duration = 730
 		}
 
-		add_karma = 5
+		add_church_power = 5
 	}
 }

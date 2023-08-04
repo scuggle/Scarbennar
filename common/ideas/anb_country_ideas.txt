@@ -1449,7 +1449,7 @@ A45_ideas = {
 	}
 	A45_istralorian_reformers = {
 		religious_unity = 0.1
-		yearly_karma_decay = 0.1
+		monthly_church_power = 0.1
 	}
 	A45_heirs_of_the_estadha = {
 		global_unrest = -1
@@ -2094,7 +2094,7 @@ B33_ideas = {
 	}
 	B33_blade_priests = {
 		papal_influence = 2
-		yearly_karma_decay = 0.1
+		monthly_church_power = 0.1
 		church_power_modifier = 0.1
 		legitimacy = 1
 		devotion = 1
@@ -4286,7 +4286,7 @@ B42_ideas = {
 	}
 	B42_self_civilization = {
 		diplomatic_reputation = 1
-		yearly_karma_decay = 0.1
+		monthly_church_power = 0.1
 	}
 	old_ways_forest_goblins_from_the_fringes = {
 		land_maintenance_modifier = -0.1
@@ -4895,6 +4895,7 @@ G06_ideas = {
 	trigger = {
 		OR = {
 			tag = G06
+			tag = G13
 		}
 	}
 	free = yes
@@ -14783,7 +14784,7 @@ F56_ideas = {
 #Valorpoint
 H36_ideas = {
 	start = {
-		yearly_karma_decay = 0.1
+		monthly_church_power = 0.1
 		global_regiment_cost = -0.1
 	}
 

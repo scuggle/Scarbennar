@@ -6,7 +6,7 @@ corinite_independent_preachers = {
 }
 
 corinite_cult_of_personality = {
-	yearly_karma_decay = 0.1
+	monthly_church_power = 0.1
 }
 
 corinite_defensive_war_dogma = {

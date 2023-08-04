@@ -21,7 +21,7 @@ lanjinhui_lanjin_hall = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -30,7 +30,7 @@ lanjinhui_lanjin_hall = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -153,7 +153,7 @@ jiantsiang_temple_of_the_ascendant_soul = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -162,7 +162,7 @@ jiantsiang_temple_of_the_ascendant_soul = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -226,7 +226,7 @@ jiantsiang_temple_of_the_ascendant_soul = {
 				type = army_reformer
 				name = "Kubaka of the Ascendant Flame"
 				skill = 3
-				culture = east_harimari
+				culture = serene_harimari
 				religion = high_philosophy
 				location = 4925
 				discount = yes

@@ -1250,7 +1250,7 @@ B45_ideas = {
  	}
  	B45_continuing_the_fight = {
  		global_manpower_modifier = 0.05		#surrounded by enemies, their leaders implemented easy consciption laws and use the rabble to fight against the enemies of corrin
-		yearly_karma_decay = 0.01
+		missionaries = 1
  	}
  	B45_corrin_is_a_goblin = {
 		global_missionary_strength = 0.02	#later with corrinite proclamation some goblins start claiming that she was a goblin while still mortal.

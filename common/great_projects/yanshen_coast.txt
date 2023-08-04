@@ -21,7 +21,7 @@ tianlou_jewel_of_yanshen = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -30,7 +30,7 @@ tianlou_jewel_of_yanshen = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -137,7 +137,7 @@ tianlou_xuezhefang_eunuch_academy = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -146,7 +146,7 @@ tianlou_xuezhefang_eunuch_academy = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -295,7 +295,7 @@ jiangdu_haoshitzi = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -304,7 +304,7 @@ jiangdu_haoshitzi = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -431,7 +431,7 @@ luoyip_house_of_fire_and_water = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -440,7 +440,7 @@ luoyip_house_of_fire_and_water = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -565,7 +565,7 @@ yinquan_the_conquerors_hotspring = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -574,7 +574,7 @@ yinquan_the_conquerors_hotspring = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	

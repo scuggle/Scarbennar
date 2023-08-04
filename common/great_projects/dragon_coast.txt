@@ -399,7 +399,7 @@ kobildzan_kobildzex_guild_of_trapsmiths = {
 			artificers_loyalty_modifier = 0.10
 		}
 		on_upgraded = {
-			owner = (
+			owner = {
 				mission_reward_artifice_points_1 = yes
 			}
 		}
@@ -425,7 +425,7 @@ kobildzan_kobildzex_guild_of_trapsmiths = {
 			artificers_loyalty_modifier = 0.10
 		}
 		on_upgraded = {
-			owner = (
+			owner = {
 				mission_reward_artifice_points_2 = yes
 			}
 		}

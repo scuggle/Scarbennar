@@ -877,7 +877,7 @@ country_event = {
 		add_yearly_manpower = 0.5
 		add_war_exhaustion = -2.5
 
-		add_karma = -10
+		add_church_power = -10
 	}
 
 	option = {
@@ -897,7 +897,7 @@ country_event = {
 
 		add_war_exhaustion = -5
 
-		add_karma = 10
+		add_church_power = 10
 	}
 
 }
@@ -937,7 +937,7 @@ country_event = {
 	option = {
 		name = corinite.201.a
 
-		add_karma = -5
+		add_church_power = -5
 
 		event_target:target_province = {
 			add_devastation = 30
@@ -982,7 +982,7 @@ country_event = {
 			}
 		}
 
-		add_karma = -10
+		add_church_power = -10
 	}
 
 	option = {	#We must help defend their positions
@@ -1000,7 +1000,7 @@ country_event = {
 		}
 
 		add_dip_power = -30
-		add_karma = 10
+		add_church_power = 10
 	}
 
 }
@@ -1038,7 +1038,7 @@ country_event = {
 			}
 		}
 
-		add_karma = 10
+		add_church_power = 10
 		add_prestige = -5
 	}
 
@@ -1056,7 +1056,7 @@ country_event = {
 			}
 		}
 
-		add_karma = -10
+		add_church_power = -10
 		add_country_modifier = {
 			name = corinite_independent_preachers
 			duration = 3650
@@ -1154,7 +1154,7 @@ country_event = {
 			}
 		}
 
-		add_karma = -10
+		add_church_power = -10
 		add_mil_power = -50
 	}
 
@@ -1233,7 +1233,7 @@ country_event = {
 		}
 
 		add_prestige = 5
-		add_karma = 10
+		add_church_power = 10
 	}
 }
 # I wasn't sure how to do modifiers, can you toss in minus unrest for a couple years on .b above, if that's balanced enough?

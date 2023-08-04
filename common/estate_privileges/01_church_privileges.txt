@@ -506,7 +506,7 @@ estate_church_clerical_ministers = {
 			}
 		}
 		modifier = {
-			yearly_karma_decay = 0.05
+			monthly_church_power = 0.05
 		}
 	}
 	conditional_modifier = {

@@ -22,7 +22,7 @@ xiadao_liusibao = {
 			OR = {
 				culture_group = yan
 				culture_group = middle_raheni
-				culture = east_harimari
+				culture = serene_harimari
 				culture = feng_harpy
 			}
 		}
@@ -33,7 +33,7 @@ xiadao_liusibao = {
 			OR = {
 				culture_group = yan
 				culture_group = middle_raheni
-				culture = east_harimari
+				culture = serene_harimari
 				culture = feng_harpy
 			}
 		}
@@ -145,7 +145,7 @@ jilin_szienlou = {
 			OR = {
 				culture_group = yan
 				culture_group = middle_raheni
-				culture = east_harimari
+				culture = serene_harimari
 				culture = feng_harpy
 			}
 		}
@@ -156,7 +156,7 @@ jilin_szienlou = {
 			OR = {
 				culture_group = yan
 				culture_group = middle_raheni
-				culture = east_harimari
+				culture = serene_harimari
 				culture = feng_harpy
 			}
 		}
@@ -263,7 +263,7 @@ gundhaghidur_library_of_insight = {
 			OR = {
 				culture_group = yan
 				culture_group = middle_raheni
-				culture = east_harimari
+				culture = serene_harimari
 				culture = feng_harpy
 			}
 		}
@@ -274,7 +274,7 @@ gundhaghidur_library_of_insight = {
 			OR = {
 				culture_group = yan
 				culture_group = middle_raheni
-				culture = east_harimari
+				culture = serene_harimari
 				culture = feng_harpy
 			}
 		}
@@ -405,7 +405,7 @@ aoshan_hanging_temple = {
 			OR = {
 				culture_group = yan
 				culture_group = middle_raheni
-				culture = east_harimari
+				culture = serene_harimari
 				culture = feng_harpy
 			}
 		}
@@ -418,7 +418,7 @@ aoshan_hanging_temple = {
 			OR = {
 				culture_group = yan
 				culture_group = middle_raheni
-				culture = east_harimari
+				culture = serene_harimari
 				culture = feng_harpy
 			}
 		}
@@ -548,7 +548,7 @@ lapnam_amrik_khram_ptaa_national_academy = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -557,7 +557,7 @@ lapnam_amrik_khram_ptaa_national_academy = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	

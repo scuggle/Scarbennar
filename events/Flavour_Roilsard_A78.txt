@@ -792,7 +792,7 @@ country_event = {
 		custom_tooltip = remains_ruler
 
 		add_scaled_republican_tradition = -20
-		add_karma = -5
+		add_church_power = -5
 	}
 }
 

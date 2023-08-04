@@ -21,7 +21,7 @@ adventurer_1 = {
 			total_development = 150
 			adm_power = 150
 
-			NOT = { has_reform = adventurer_reform }
+			
 			#Esthil - gets own MT after 1 month
 			if = {
 				limit = { tag = B54 }
@@ -66,7 +66,7 @@ adventurer_1 = {
 			num_of_provinces_in_states = 8
 			gems = 1
 
-			NOT = { has_reform = adventurer_reform }
+			
 			#Esthil - gets own MT after 1 month
 			if = {
 				limit = { tag = B54 }
@@ -96,7 +96,7 @@ adventurer_1 = {
 			num_of_provinces_in_states = 3
 			gold = 1
 
-			NOT = { has_reform = adventurer_reform }
+			
 			#Esthil - gets own MT after 1 month
 			if = {
 				limit = { tag = B54 }
@@ -132,7 +132,7 @@ adventurer_1 = {
 					}				
 			}
 			
-			NOT = { has_reform = adventurer_reform }
+			
 			#Esthil - gets own MT after 1 month
 			if = {
 				limit = { tag = B54 }
@@ -196,7 +196,7 @@ adventurer_1 = {
 			num_of_provinces_in_states = 3
 			iron = 1
 
-			NOT = { has_reform = adventurer_reform }
+			
 			#Esthil - gets own MT after 1 month
 			if = {
 				limit = { tag = B54 }
@@ -584,7 +584,7 @@ adventurer_5 = {
         }
 		trigger = {
 			dip_power = 150
-			NOT = { has_reform = adventurer_reform }
+			
 			#Esthil - gets own MT after 1 month
 			if = {
 				limit = { tag = B54 }

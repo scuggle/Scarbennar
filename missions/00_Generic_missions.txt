@@ -826,7 +826,14 @@ twisting_missions_goverment = {
 		position = 9
 		required_missions = { army_1 economic_1 government_1 } 
 		trigger = { 
-			reform_level = 3
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				reform_level = 2
+			} else = {
+				reform_level = 3
+			}
 			capital_scope = {
 				if = {
 					limit = {
@@ -859,7 +866,14 @@ twisting_missions_goverment = {
 		position = 10
 		required_missions = { army_2 economic_2 government_2 } 
 		trigger = { 
-			reform_level = 5
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				reform_level = 4
+			} else = {
+				reform_level = 5
+			}
 			capital_scope = {
 				if = {
 					limit = {
@@ -893,7 +907,14 @@ twisting_missions_goverment = {
 		position = 11
 		required_missions = { army_3 economic_3 government_3 } 
 		trigger = { 
-			reform_level = 7
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				reform_level = 5
+			} else = {
+				reform_level = 7
+			}
 			capital_scope = {
 				if = {
 					limit = {
@@ -927,7 +948,14 @@ twisting_missions_goverment = {
 		position = 12
 		required_missions = { army_4 economic_4 government_4 } 
 		trigger = { 
-			reform_level = 9
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				reform_level = 6
+			} else = {
+				reform_level = 9
+			}
 			capital_scope = {
 				if = {
 					limit = {

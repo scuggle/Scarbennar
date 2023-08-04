@@ -117,7 +117,7 @@ just_personality = {
 	nation_designer_cost = 2
 
 	#Anbennar
-	yearly_karma_decay = 0.025
+	monthly_church_power = 0.025
 
 } #1 less bad
 
@@ -188,7 +188,7 @@ righteous_personality = {
 	nation_designer_cost = 2
 
 	#Anbennar
-	yearly_karma_decay = 0.025
+	monthly_church_power = 0.025
 
 } #1 better, 1 less bad
 
@@ -972,7 +972,7 @@ pious_personality = {
 	nation_designer_cost = 2
 
 	#Anbennar
-	yearly_karma_decay = 0.025
+	monthly_church_power = 0.025
 } #1 Less bad
 
 #Economic/Administrative Traits
@@ -1818,7 +1818,7 @@ bold_fighter_personality = {
 	nation_designer_cost = 2
 
 	#Anbennar
-	yearly_karma_decay = 0.025
+	monthly_church_power = 0.025
 } #
 strict_personality = {
 	ruler_allow = {
@@ -1939,7 +1939,7 @@ inspiring_leader_personality = {
 	nation_designer_cost = 5
 
 	#Anbennar
-	yearly_karma_decay = 0.025
+	monthly_church_power = 0.025
 } #1 better
 martial_educator_personality = {
 	ruler_allow = {

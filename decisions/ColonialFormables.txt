@@ -18,12 +18,19 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_former_colonial_nation = yes
-			is_free_or_tributary_trigger = yes
+			#is_former_colonial_nation = yes
+			#is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_endralliande
 				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				OR = {
+					region = ravenous_isle_region
+					region = endralliande_region
+				}
 			}
 			NOT = { exists = G10 }
 		}
@@ -72,13 +79,17 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_former_colonial_nation = yes
-			is_free_or_tributary_trigger = yes
+			#is_former_colonial_nation = yes
+			#is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_noruin
 				region = trollsbay_region
 				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				region = trollsbay_region
 			}
 			NOT = { exists = G11 }
 		}
@@ -127,13 +138,17 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_former_colonial_nation = yes
-			is_free_or_tributary_trigger = yes
+			#is_former_colonial_nation = yes
+			#is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_noruin
 				region = bloodgroves_region
 				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				region = bloodgroves_region
 			}
 			NOT = { exists = G12 }
 		}
@@ -182,13 +197,17 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_former_colonial_nation = yes
-			is_free_or_tributary_trigger = yes
+			#is_former_colonial_nation = yes
+			#is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_noruin
 				region = reapers_coast_region
 				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				region = reapers_coast_region
 			}
 			NOT = { exists = G13 }
 		}
@@ -211,6 +230,10 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_prestige = 25
 			set_country_flag = changed_from_colonial_nation

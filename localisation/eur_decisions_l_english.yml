@@ -52,5 +52,7 @@
 
 reveal_all_title: "Reveal the World!"
 reveal_all_desc: "The world has become more interconnected than ever, allowing us to make contact with far away countries and peoples."
-switch_regent_court_title: "Change Personal Deity"
-switch_regent_court_desc: "The deities that are part of the Regent Court are not in conflict with one another, allowing us to change the personal deity of our ruler."
+set_subject_color_title: "Change subject colour"
+set_subject_color_desc: "Change the map colour of your subjects to your own"
+restore_subject_color_title: "Restore subject map color"
+restore_subject_color_desc: "Restore the original colour of your subjects"

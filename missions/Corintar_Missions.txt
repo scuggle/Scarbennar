@@ -1287,7 +1287,7 @@ corintar_3_missions = {
 			if = {
 				limit = { has_dlc = "Common Sense" }
 				OR = {
-					NOT = { karma = 0 }
+					NOT = { church_power < 150 }
 					at_war_with_religious_enemy = yes
 				}
 			}
@@ -1301,7 +1301,7 @@ corintar_3_missions = {
 			add_devotion = 10
 			if = {
 				limit = { has_dlc = "Common Sense" }
-				add_karma = -10
+				add_church_power = -10
 			}
 			add_country_modifier = {
 				name = corintar_rabid_recruits
@@ -1465,15 +1465,16 @@ corintar_3_missions = {
 					NOT = { current_age = age_of_absolutism }
 					NOT = { current_age = age_of_revolutions }
 				}
-				NOT = { karma = -90 }
+				church_power = 200
 			}
 			else_if = {
 				limit = { has_dlc = "Common Sense" }
-				NOT = { karma = -33 }
+				church_power = 200
 			}
 		}
 		
 		effect = {
+			add_church_power = -200
 			add_stability = -1
 			custom_tooltip = corintar_remove_chapters_tt
 			hidden_effect = {
@@ -1490,8 +1491,9 @@ corintar_3_missions = {
 					every_neighbor_country = {
 						limit = {
 							religion = corinite
-							karma = -33
+							church_power = 200
 						}
+						add_church_power = -200
 						country_event = { 
 							id = flavor_corintar.10
 							days = 30
@@ -1736,8 +1738,7 @@ corintar_3_missions = {
 			religion = corinite
 			if = {
 				limit = { has_dlc = "Common Sense" }
-				karma = -33
-				NOT = { karma = 33 }
+				church_power = 200
 			}
 			OR = {
 				any_known_country = {
@@ -1774,6 +1775,7 @@ corintar_3_missions = {
 		}
 		
 		effect = {
+			add_church_power = -200
 			add_country_modifier = {
 				name = corintar_theological_debate
 				duration = 3650
@@ -1796,8 +1798,7 @@ corintar_3_missions = {
 			religion = corinite
 			if = {
 				limit = { has_dlc = "Common Sense" }
-				karma = -10
-				NOT = { karma = 10 }
+				church_power = 200
 			}
 			NOT = { has_country_modifier = corintar_agents_in_training }
 			NOT = { has_country_modifier = corintar_theological_debate }
@@ -1805,6 +1806,7 @@ corintar_3_missions = {
 		}
 		
 		effect = {
+			add_church_power = -200
 			add_stability = 1
 			if = {
 				limit = {

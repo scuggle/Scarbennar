@@ -570,7 +570,7 @@ country_event = {
 		}
 
 		#Anbennar
-		add_karma = 5
+		add_church_power = 5
 	}
 	option = {
 		name = church_estate_events.1.b #We will find the money elsewhere.
@@ -685,7 +685,7 @@ country_event = {
 			estate = estate_church
 			loyalty = -15
 		}
-		add_karma = -10
+		add_church_power = -10
 		add_years_of_income = 0.35
 		add_estate_influence_modifier = {
 			estate = estate_church
@@ -716,7 +716,7 @@ country_event = {
 			}
 		}
 		add_prestige = 5
-		add_karma = 10
+		add_church_power = 10
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 10
@@ -1153,7 +1153,7 @@ country_event = {
 
 		
 		#Anbennar
-		add_karma = -10
+		add_church_power = -10
 	}
 }
 
@@ -1208,7 +1208,7 @@ country_event = {
 
 		
 		#Anbennar
-		add_karma = 10
+		add_church_power = 10
 	}
 	option = {
 		name = church_estate_events.6.b #Disagree
@@ -1631,7 +1631,7 @@ country_event = {
 
 		
 		#Anbennar
-		add_karma = -5
+		add_church_power = -5
 	}
 	option = {
 		name = church_estate_events.9.b #
@@ -1672,7 +1672,7 @@ country_event = {
 
 		
 		#Anbennar
-		add_karma = 5
+		add_church_power = 5
 	}
 }
 

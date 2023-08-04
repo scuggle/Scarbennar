@@ -1591,8 +1591,9 @@ autonomous_vassal = {
 	overlord_can_attack = no
 	overlord_protects_external = yes
 	takes_diplo_slot = yes
+	can_release_in_peace = yes
 	
-	max_government_rank = 1
+	max_government_rank = 2
 	trust_on_start = 40
 	base_liberty_desire = -5
 	#forcelimit_bonus = 1.0
@@ -1604,7 +1605,7 @@ autonomous_vassal = {
 	liberty_desire_revolution = 10.0
 	
 	# Subject Interactions:
-	scutage = no
+	scutage = yes
 	embargo_rivals = yes
 	sacrifice_ruler = yes
 	sacrifice_heir = yes
@@ -1613,7 +1614,7 @@ autonomous_vassal = {
 	subsidize_armies = yes
 	send_additional_troops = yes
 	
-	send_officers = yes
+	send_officers = no
 	
 	# Modifiers:
 	overlord_opinion_modifier = is_vassal

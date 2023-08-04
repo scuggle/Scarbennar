@@ -9,7 +9,7 @@ corinite_abrahamic_aspect_modifier = {
 	local_culture_conversion_cost = -0.2
 }
 corinite_diplomatic_rabbi_aspect_modifier = {
-	local_development_cost = -0.2
+	local_development_cost = -0.10
 }
 corinite_purim_teachings_aspect_modifier = {
 	reinforce_speed = 0.2

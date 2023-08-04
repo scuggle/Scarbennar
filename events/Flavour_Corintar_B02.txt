@@ -426,7 +426,7 @@ country_event = {
 				has_dlc = "Common Sense"
 				religion = corinite
 			}
-			add_karma = 10
+			add_church_power = 20
 		}
 	}
 	
@@ -1346,11 +1346,11 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.3
-			karma = 0
+			church_power = 100
 		}
 		modifier = {
 			factor = 1.3
-			karma = 33
+			church_power = 150
 		}
 	}
 	
@@ -1390,7 +1390,7 @@ country_event = {
 		name = flavor_corintar.40.a
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_karma = -5
+			add_church_power = -5
 		}
 		event_target:corintarget_violence = {
 			if = {
@@ -1475,7 +1475,7 @@ country_event = {
 		ai_chance = { factor = 75 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_karma = -5
+			add_church_power = -5
 		}
 		
 		random_list = {
@@ -1525,7 +1525,7 @@ country_event = {
 		ai_chance = { factor = 25 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_karma = 5
+			add_church_power = 5
 		}
 		
 		event_target:corintarget_rebels = {
@@ -1576,7 +1576,7 @@ country_event = {
 		ai_chance = { factor = 75 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_karma = -5
+			add_church_power = -5
 		}
 		
 		add_yearly_manpower = 1
@@ -1601,7 +1601,7 @@ country_event = {
 		ai_chance = { factor = 25 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_karma = 5
+			add_church_power = 5
 		}
 		
 		add_prestige = -10
@@ -1658,7 +1658,7 @@ country_event = {
 		ai_chance = { factor = 10 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_karma = -10
+			add_church_power = -10
 		}
 		declare_war_with_cb = {
 			who = event_target:corintarget_war
@@ -1695,7 +1695,7 @@ country_event = {
 		ai_chance = { factor = 90 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_karma = 10
+			add_church_power = 10
 		}
 		
 		add_prestige = -20
@@ -1716,11 +1716,11 @@ country_event = {
 	id = flavor_corintar.50
 	title = flavor_corintar.50.t
 	desc = {
-		trigger = { NOT = { karma = 0 } }
+		trigger = { NOT = { church_power = 0 } }
 		desc = flavor_corintar.50.da
 	}
 	desc = {
-		trigger = { karma = 0 }
+		trigger = { church_power = 0 }
 		desc = flavor_corintar.50.db
 	}
 	picture = SWORD_OF_OSMAN_eventPicture
@@ -1741,15 +1741,15 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { karma = 0 }
-			add_karma = -10
+			limit = { church_power = 200 }
+			add_church_power = -10
 			add_country_modifier = {
 				name = corintar_acc_hk
 				duration = 3650
 			}
 		}
 		else = {
-			add_karma = 10
+			add_church_power = 10
 			add_country_modifier = {
 				name = corintar_acc_lk
 				duration = 3650
@@ -1780,15 +1780,15 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { karma = 0 }
-			add_karma = 10
+			limit = { church_power = 200 }
+			add_church_power = 10
 			add_country_modifier = {
 				name = corintar_rej_hk
 				duration = 3650
 			}
 		}
 		else = {
-			add_karma = -10
+			add_church_power = -10
 			add_country_modifier = {
 				name = corintar_rej_lk
 				duration = 3650
@@ -1848,11 +1848,11 @@ country_event = {
 		OR = {
 			AND = {
 				has_country_modifier = corintar_acc_hk
-				NOT = { karma = 33 }
+				NOT = { church_power = 33 }
 			}
 			AND = {
 				has_country_modifier = corintar_acc_lk
-				karma = -33
+				church_power = 0
 			}
 			AND = {
 				NOT = { has_country_modifier = corintar_acc_hk }
@@ -1890,11 +1890,11 @@ country_event = {
 		OR = {
 			AND = {
 				has_country_modifier = corintar_acc_hk
-				karma = 33
+				church_power = 33
 			}
 			AND = {
 				has_country_modifier = corintar_acc_lk
-				NOT = { karma = -33 }
+				NOT = { church_power = 0 }
 			}
 		}
 	}
@@ -1929,11 +1929,11 @@ country_event = {
 		OR = {
 			AND = {
 				has_country_modifier = corintar_rej_hk
-				NOT = { karma = 33 }
+				NOT = { church_power = 33 }
 			}
 			AND = {
 				has_country_modifier = corintar_rej_lk
-				karma = -33
+				church_power = 0
 			}
 		}
 	}
@@ -1964,11 +1964,11 @@ country_event = {
 		OR = {
 			AND = {
 				has_country_modifier = corintar_rej_hk
-				karma = 33
+				church_power = 33
 			}
 			AND = {
 				has_country_modifier = corintar_rej_lk
-				NOT = { karma = -33 }
+				NOT = { church_power = 0 }
 			}
 		}
 	}
@@ -2658,10 +2658,10 @@ country_event = {
 						has_country_modifier = corintar_rej_hk
 					}
 				}
-				add_karma = -10
+				add_church_power = -10
 			}
 			else = {
-				add_karma = 10
+				add_church_power = 10
 			}
 		}
 	}
@@ -2727,15 +2727,15 @@ country_event = {
 					}
 				}
 			}
-			add_karma = -10
+			add_church_power = -10
 			event_target:corintarget_guidee = {
-				add_karma = 10
+				add_church_power = 10
 			}
 		}
 		else = {
-			add_karma = 10
+			add_church_power = 10
 			event_target:corintarget_guidee = {
-				add_karma = -10
+				add_church_power = -10
 			}
 		}
 	}
@@ -2752,15 +2752,15 @@ country_event = {
 					}
 				}
 			}
-			add_karma = 10
+			add_church_power = 10
 			event_target:corintarget_guidee = {
-				add_karma = -10
+				add_church_power = -10
 			}
 		}
 		else = {
-			add_karma = -10
+			add_church_power = -10
 			event_target:corintarget_guidee = {
-				add_karma = 10
+				add_church_power = 10
 			}
 		}
 	}
@@ -2802,10 +2802,10 @@ country_event = {
 						has_country_modifier = corintar_rej_hk
 					}
 				}
-				add_karma = -10
+				add_church_power = -10
 			}
 			else = {
-				add_karma = 10
+				add_church_power = 10
 			}
 		}
 		add_estate_loyalty = {
@@ -2859,7 +2859,7 @@ country_event = {
 		add_manpower = -2
 		event_target:corintarget_guidee = {
 			add_manpower = 2
-			add_karma = -10
+			add_church_power = -10
 		}
 	}
 	

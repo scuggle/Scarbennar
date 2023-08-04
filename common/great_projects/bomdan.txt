@@ -21,7 +21,7 @@ prukakhin_bazaar_of_blood_and_ivory = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -30,7 +30,7 @@ prukakhin_bazaar_of_blood_and_ivory = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -163,7 +163,7 @@ phaethmen_di_phaemruk_shipyard_district = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -172,7 +172,7 @@ phaethmen_di_phaemruk_shipyard_district = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -296,7 +296,7 @@ phaethmen_di_the_saccharine_garden = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -305,7 +305,7 @@ phaethmen_di_the_saccharine_garden = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -419,7 +419,7 @@ lapnam_amrik_weapon_market = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -428,7 +428,7 @@ lapnam_amrik_weapon_market = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -553,7 +553,7 @@ lapnam_amrik_teplinbasiet_arena = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -562,7 +562,7 @@ lapnam_amrik_teplinbasiet_arena = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -670,7 +670,7 @@ bim_lau_necropolis = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -679,7 +679,7 @@ bim_lau_necropolis = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = bom
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	

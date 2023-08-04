@@ -133,7 +133,7 @@ country_event = {
 				add_mil_power = 50
 			}
 		}
-		add_karma = -5
+		add_church_power = -5
 	}
 	option = { # Buccaneer candidate
 		name = "pirates.1.a"
@@ -166,7 +166,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 	}
 	option = { # Smugglers candidate
 		name = "pirates.1.b"
@@ -199,7 +199,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 	}
 	option = { # Captains candidate
 		name = "pirates.1.c"
@@ -232,7 +232,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 	}
 	option = { # Blackbeard!
 		name = "pirates.1.d"

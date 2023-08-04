@@ -1413,7 +1413,7 @@ country_event = {
 				}
 			}
 		}
-		add_karma = -5
+		add_church_power = -5
 	}
 	option = {
 		name = mountainshark_events.28.b # Current ruler stays, Shark Ruler
@@ -1686,7 +1686,7 @@ country_event = {
 				}
 			}
 		}
-		add_karma = -5
+		add_church_power = -5
 	}
 	option = {
 		name = mountainshark_events.28.c # Current ruler stays
@@ -1804,7 +1804,7 @@ country_event = {
 				}
 			}
 		}
-		add_karma = -5
+		add_church_power = -5
 	}
 	option = {
 		name = mountainshark_events.28.d # Genius candidate
@@ -1863,7 +1863,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -1928,7 +1928,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -1993,7 +1993,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2058,7 +2058,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2123,7 +2123,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2188,7 +2188,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2253,7 +2253,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2318,7 +2318,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2383,7 +2383,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2718,7 +2718,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2763,7 +2763,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2808,7 +2808,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2853,7 +2853,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2898,7 +2898,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2943,7 +2943,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -2988,7 +2988,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -3033,7 +3033,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -3078,7 +3078,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -3415,7 +3415,7 @@ country_event = {
 				}
 			}
 		}
-		add_karma = -5
+		add_church_power = -5
 	}
 	option = {
 		name = mountainshark_events.28.d # Genius candidate
@@ -3454,7 +3454,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {
@@ -3483,7 +3483,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_karma = 10
+		add_church_power = 10
 		if = {
 			limit = { has_government_attribute = elections_influence_estates }
 			add_estate_loyalty_by_class_adm = {

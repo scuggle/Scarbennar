@@ -174,4 +174,56 @@ country_decisions = {
 			}
 		}
 	}	
+
+	set_subject_color = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			AI = no
+			num_of_subjects = 1
+			any_subject_country = {
+				NOT = { has_country_flag = has_overriden_color_flag }
+			}
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			every_subject_country = {
+				change_country_color = {
+					country = overlord
+				}
+				set_country_flag = has_overriden_color_flag
+			}
+		}
+	}
+
+	restore_subject_color = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			AI = no
+			num_of_subjects = 1
+			any_subject_country = {
+				has_country_flag = has_overriden_color_flag
+			}
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			every_subject_country = {
+				restore_country_color = yes 
+				clr_country_flag = has_overriden_color_flag
+			}
+		}
+	}
 }	
