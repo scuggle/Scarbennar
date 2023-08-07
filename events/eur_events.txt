@@ -21,7 +21,7 @@ country_event = {
 							}
 					NOT = {
 						has_province_modifier = cot_human_min
-						}
+					}
 				}
 				##########
 				AND = {
@@ -31,7 +31,7 @@ country_event = {
 							}
 					NOT = {
 						has_province_modifier = cot_elf_min
-						}
+					}
 				}
 				##########
 				AND = {
@@ -41,7 +41,7 @@ country_event = {
 							}
 					NOT = {
 						has_province_modifier = cot_dwarf_min
-						}
+					}
 				}
 				##########
 				AND = {
@@ -51,7 +51,7 @@ country_event = {
 							}
 					NOT = {
 						has_province_modifier = cot_gnome_min
-						}
+					}
 				}
 				AND = {
 					OR = {
@@ -60,7 +60,7 @@ country_event = {
 							}
 					NOT = {
 						has_province_modifier = cot_halfling_min
-						}
+					}
 				}
 				AND = {
 					OR = {
@@ -641,6 +641,7 @@ country_event = {
 			}
 		}
 	}
+
 	hidden = yes
 
 	immediate = {
@@ -663,6 +664,7 @@ country_event = {
 			remove_province_modifier = cot_harpy_min
 			remove_province_modifier = cot_ruin_min
 			remove_province_modifier = cot_hobgob_min
+
 			remove_province_modifier = cot_human_min_small
 			remove_province_modifier = cot_elf_min_small
 			remove_province_modifier = cot_dwarf_min_small
@@ -1169,28 +1171,6 @@ country_event = {
 			NOT = {
 				has_idea = minority_ideas_07
 			}
-			any_owned_province = {
-				OR = {
-					has_province_modifier = cot_human_min
-					has_province_modifier = cot_elf_min
-					has_province_modifier = cot_dwarf_min
-					has_province_modifier = cot_gnome_min
-					has_province_modifier = cot_halfling_min
-					has_province_modifier = cot_goblin_min
-					has_province_modifier = cot_orc_min
-					has_province_modifier = cot_horc_min
-					has_province_modifier = cot_helf_min
-					has_province_modifier = cot_kobold_min
-					has_province_modifier = cot_tiger_min
-					has_province_modifier = cot_centaur_min
-					has_province_modifier = cot_ogre_min
-					has_province_modifier = cot_troll_min
-					has_province_modifier = cot_gnoll_min
-					has_province_modifier = cot_harpy_min
-					has_province_modifier = cot_ruin_min
-					has_province_modifier = cot_hobgob_min
-				}
-			}
 		}
 	}
 
@@ -1215,6 +1195,25 @@ country_event = {
 			remove_province_modifier = cot_harpy_min
 			remove_province_modifier = cot_ruin_min
 			remove_province_modifier = cot_hobgob_min
+
+			remove_province_modifier = cot_human_min_small
+			remove_province_modifier = cot_elf_min_small
+			remove_province_modifier = cot_dwarf_min_small
+			remove_province_modifier = cot_gnome_min_small
+			remove_province_modifier = cot_halfling_min_small
+			remove_province_modifier = cot_goblin_min_small
+			remove_province_modifier = cot_orc_min_small
+			remove_province_modifier = cot_horc_min_small
+			remove_province_modifier = cot_helf_min_small
+			remove_province_modifier = cot_kobold_min_small
+			remove_province_modifier = cot_tiger_min_small
+			remove_province_modifier = cot_centaur_min_small
+			remove_province_modifier = cot_ogre_min_small
+			remove_province_modifier = cot_troll_min_small
+			remove_province_modifier = cot_gnoll_min_small
+			remove_province_modifier = cot_harpy_min_small
+			remove_province_modifier = cot_ruin_min_small
+			remove_province_modifier = cot_hobgob_min_small
 		}
 	}
 }
