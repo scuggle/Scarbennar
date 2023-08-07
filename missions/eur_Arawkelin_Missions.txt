@@ -96,7 +96,9 @@ araw_elven_tree = {
 		required_missions = { elves_of_azkare }
 		position = 9
 		trigger = {
-			development = 900
+			development_in_provinces = {
+				value = 900
+			}
 			4955 = { owned_by = ROOT }
 			4963 = { owned_by = ROOT }	
 			4071 = { owned_by = ROOT }
@@ -418,10 +420,13 @@ araw_conquest_central_branch = {
 				value = 2
 				trade_goods = chinaware
 			}
-			has_country_modifier = trading_in_chinaware
+			trading_bonus = {
+				trade_goods = chinaware
+				value = yes
+			}
 		}
 		provinces_to_highlight = {
-			trade_good = porcelain
+			trade_goods = chinaware
 			NOT = { owned_by = ROOT }
 		}
 		effect = {
@@ -431,7 +436,7 @@ araw_conquest_central_branch = {
 			}
 			every_province = {
 				limit = {
-					trade_good = porcelain
+					trade_goods = chinaware
 				}
 				add_permanent_claim = ROOT
 			}
@@ -565,6 +570,7 @@ araw_conquest_left_inner_branch = {
 				remove_country_modifier = harimari_slaving_modifier
 				add_country_modifier = {
 					name = harimari_slaving_modifier2 #modifier giving 1yearly prestige, 15% trade effiency, 5% morale of armies
+					duration = -1
 				}
 			}
 		}
