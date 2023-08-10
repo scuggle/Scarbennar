@@ -1781,43 +1781,35 @@ expansion_ideas = { #frontiers #done
 	}
 }
 
-logistical_ideas = { #Capital Ideas ##Redo 
-	category = ADM
+# logistical_ideas = { #Capital Ideas ##Redo 
+# 	category = ADM
 
-	bonus = {
-		attack_bonus_in_capital_terrain = 1 #Keep
-	}
-	logsi_ide1 = {
+# 	bonus = {
+# 		attack_bonus_in_capital_terrain = 1 #Keep
+# 	}
+# 	logsi_ide1 = {
 		
-	}
-	logsi_ide2 = {
+# 	}
+# 	logsi_ide2 = {
 		 
-	}
-	logsi_ide3 = {
+# 	}
+# 	logsi_ide3 = {
 		
-	}
-	logsi_ide4 = {
+# 	}
+# 	logsi_ide4 = {
 		
-	}
-	logsi_ide5 = {
+# 	}
+# 	logsi_ide5 = {
 		
-	}
-	logsi_ide6 = {
+# 	}
+# 	logsi_ide6 = {
 		
-	}
-	logsi_ide7 = {
+# 	}
+# 	logsi_ide7 = {
 		
-	}
+# 	}
 
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			has_idea_group = religious_ideas
-		}
-		modifier = {
-			factor = 3
-			religion_group = faithless
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.9
+# 	}
+# }
