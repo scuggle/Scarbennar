@@ -91,9 +91,9 @@ colonial_endralliande = {
 	}
 	names = {
 		trigger = {
-			tag = U01	#Kheterata
+			religion_group = khetist
 		}
-		name = "COLONIAL_ENDRALLIANDE_Elikhets_Ambition"
+		name = "COLONIAL_ENDRALLIANDE_Maut_Akhet"
 	}
 	names = {
 		trigger = {
@@ -181,6 +181,24 @@ colonial_endralliande = {
 			}
 		}
 		name = "COLONIAL_ENDRALLIANDE_Daccasded"
+	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_ENDRALLIANDE_Tuuiong"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_ENDRALLIANDE_Yuandugang"
 	}
 	
 	# Generic
@@ -360,12 +378,11 @@ colonial_noruin = {
 		name = "COLONIAL_NORUIN_Beesbay"
 	}
 
-	#Reapers Coast
 	names = {
 		trigger = {
-			tag = U01	#Kheterata
+			religion_group = khetist
 		}
-		name = "COLONIAL_NORUIN_New_Nirat"
+		name = "COLONIAL_NORUIN_A'humtwa"
 	}
 
 	#Bloodgroves
@@ -425,12 +442,6 @@ colonial_noruin = {
 	}
 	names = {
 		trigger = {
-			tag = U01	#Kheterata
-		}
-		name = "COLONIAL_NORUIN_New_Koroshesh"
-	}
-	names = {
-		trigger = {
 			tag = U07	#Viakkoc
 		}
 		name = "COLONIAL_NORUIN_Viakkoc_Bay"
@@ -483,6 +494,24 @@ colonial_noruin = {
 			primary_culture = iochander		#Iochand
 		}
 		name = "COLONIAL_NORUIN_New_Iochand"
+	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_NORUIN_Limian"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}				
+		}
+		name = "COLONIAL_NORUIN_Thianhowan"
 	}
 	
 	# Generic
@@ -586,9 +615,9 @@ colonial_soruin = {
 	}
 	names = {
 		trigger = {
-			tag = U01	#Kheterata
+			religion_group = khetist
 		}
-		name = "COLONIAL_SORUIN_New_Golkora"
+		name = "COLONIAL_SORUIN_Mnoura'ouyeh"
 	}
 	names = {
 		trigger = {
@@ -665,6 +694,24 @@ colonial_soruin = {
 		}
 		name = "COLONIAL_SORUIN_New_Portnamm"
 	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_SORUIN_Simsu"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_SORUIN_Luklinbu"
+	}
 	
 	# Generic
 	names = {
@@ -739,6 +786,12 @@ colonial_isles = {
 			tag = A11	#Pearlsedge
 		}
 		name = "COLONIAL_ISLES_Sferia"
+	}
+	names = {
+		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_ISLES_Ngixahast"
 	}
 	names = {
 		trigger = {
@@ -836,7 +889,26 @@ colonial_isles = {
 		}
 		name = "COLONIAL_ISLES_Rooin_Islands"
 	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_ISLES_Singlo"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_ISLES_Zhuyangdao"
+	}
 	
+
 	# Generic
 	names = {
 		name = "COLONIAL_ISLES_Root_Culture_GetName_Isles"
@@ -877,6 +949,12 @@ colonial_leechden = {
 			tag = A29 #Busilar
 		}
 		name = "COLONIAL_LEECHDEN_Lion_Marsh"
+	}
+	names = {
+		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_LEECHDEN_Huquersha'"
 	}
 	names = {
 		trigger = {
@@ -934,6 +1012,24 @@ colonial_leechden = {
 		}
 		name = "COLONIAL_LEECHDEN_Flookjungle"
 	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_LEECHDEN_Huiling"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_LEECHDEN_Yunmengze"
+	}
 
 	# Generic
 	names = {
@@ -975,9 +1071,9 @@ colonial_lai_peninsula = {
 	}
 	names = {
 		trigger = {
-			tag = U01	#Kheterata
+			religion_group = khetist
 		}
-		name = "COLONIAL_LAI_PENINSULA_New_Anarat"
+		name = "COLONIAL_LAI_PENINSULA_Ka'imnou"
 	}
 	names = {
 		trigger = {
@@ -1055,6 +1151,26 @@ colonial_lai_peninsula = {
 		name = "COLONIAL_LAI_PENINSULA_New_Southroy"
 	}
 	
+	# Feiten - Beikdugang
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_LAI_PENINSULA_Tshuiluan"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_LAI_PENINSULA_Laipingxiang"
+	}
+	
 	# Generic
 	names = {
 		name = "COLONIAL_LAI_PENINSULA_Root_Culture_GetName_Lai"
@@ -1091,6 +1207,12 @@ colonial_amadia = {
 			tag = A31 #Moonhaven
 		}
 		name = "COLONIAL_AMADIA_Nur_Moonhaven"
+	}
+	names = {
+		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_AMADIA_Ma'ahha'ou"
 	}
 	names = {
 		trigger = {
@@ -1148,6 +1270,26 @@ colonial_amadia = {
 			primary_culture = iochander		#Iochand
 		}
 		name = "COLONIAL_AMADIA_Silverchand"
+	}
+	
+	# Feiten - Beikdugang
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_AMADIA_Gintsi"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_AMADIA_Baiyingya"
 	}
 	
 	# Generic
@@ -1233,9 +1375,35 @@ colonial_kheionai = {
 	}
 	names = {
 		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_KHEIONAI_Quebhtah"
+	}
+	names = {
+		trigger = {
 			primary_culture = iochander		#Iochand
 		}
 		name = "COLONIAL_KHEIONAI_Thinkerchand"
+	}
+	
+	# Feiten - Beikdugang
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_KHEIONAI_Biktsiu"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_KHEIONAI_Langtaojin"
 	}
 
 	# Generic
@@ -1275,6 +1443,12 @@ colonial_haraf = {
 			tag = A29 #Busilar
 		}
 		name = "COLONIAL_HARAF_New_Lorincrag"
+	}
+	names = {
+		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_HARAF_Imyehhou'taour"
 	}
 	names = {
 		trigger = {
@@ -1336,7 +1510,25 @@ colonial_haraf = {
 		}
 		name = "COLONIAL_HARAF_Fellowshire"
 	}
-	
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_HARAF_Bokguan"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_HARAF_Haohansha"
+	}
+
 	# Generic
 	names = {
 		name = "COLONIAL_HARAF_Root_Culture_GetName_Haraf"
@@ -1406,12 +1598,6 @@ colonial_haraf = {
 			# tag = A29 #Busilar
 		# }
 		# name = "COLONIAL_YNN_Nur_Derancestir"
-	# }
-	# names = {
-		# trigger = {
-			# tag = U01	#Kheterata
-		# }
-		# name = "COLONIAL_YNN_Old_Sorrow"
 	# }
 	# names = {
 		# trigger = {
@@ -1491,6 +1677,12 @@ colonial_upper_ynn = {
 	}
 	names = {
 		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_UPPER_YNN_Xta'hmt"
+	}
+	names = {
+		trigger = {
 			primary_culture = creek_gnome	#Portnamm
 		}
 		name = "COLONIAL_UPPER_YNN_Obvengrodroy"
@@ -1500,6 +1692,24 @@ colonial_upper_ynn = {
 			primary_culture = iochander		#Iochand
 		}
 		name = "COLONIAL_UPPER_YNN_Upper_Grodroy"
+	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_UPPER_YNN_Tingkang"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_UPPER_YNN_Yinliucheng"
 	}
 	
 	# Generic
@@ -1547,6 +1757,12 @@ colonial_lower_ynn = {
 	}
 	names = {
 		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_LOWER_YNN_A'hmtsahr"
+	}
+	names = {
+		trigger = {
 			primary_culture = creek_gnome	#Portnamm
 		}
 		name = "COLONIAL_LOWER_YNN_Ondergrodroy"
@@ -1556,6 +1772,24 @@ colonial_lower_ynn = {
 			primary_culture = iochander		#Iochand
 		}
 		name = "COLONIAL_LOWER_YNN_Lower_Grodroy"
+	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_LOWER_YNN_Phiklau"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_LOWER_YNN_Bikjiangpan"
 	}
 	
 	# Generic
@@ -1603,6 +1837,12 @@ colonial_expanse = {
 	}
 	names = {
 		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_EXPANSE_A'hmtoumrt"
+	}
+	names = {
+		trigger = {
 			primary_culture = creek_gnome	#Portnamm
 		}
 		name = "COLONIAL_EXPANSE_Troockiochand"
@@ -1612,6 +1852,24 @@ colonial_expanse = {
 			primary_culture = iochander		#Iochand
 		}
 		name = "COLONIAL_EXPANSE_Expansechand"
+	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_EXPANSE_Kuangyeh"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_EXPANSE_Dongfengyuan"
 	}
 	
 	# Generic
@@ -1653,6 +1911,12 @@ colonial_dalaire = {
 			tag = A11	#Pearlsedge
 		}
 		name = "COLONIAL_DALAIRE_West_Timberfort"
+	}
+	names = {
+		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_DALAIRE_Nboudhnt"
 	}
 	names = {
 		trigger = {
@@ -1723,6 +1987,26 @@ colonial_dalaire = {
 		name = "COLONIAL_DALAIRE_Sildfjords"
 	}
 	
+	# Feiten - Beikdugang
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_DALAIRE_Thiathai"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_DALAIRE_Yaoszuean"
+	}
+	
 	# Generic
 	names = {
 		name = "COLONIAL_DALAIRE_Root_Culture_GetName_Dalaire"
@@ -1771,6 +2055,12 @@ colonial_broken_sea = {
 	}
 	names = {
 		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_BROKEN_SEA_Ourrtguebb"
+	}
+	names = {
+		trigger = {
 			OR = {
 				tag = A06	#Nimscodd
 				tag = A79	#Gnomish Hierarchy
@@ -1812,12 +2102,6 @@ colonial_broken_sea = {
 	}
 	names = {
 		trigger = {
-			tag = Y15	#Beikdugang
-		}
-		name = "COLONIAL_BROKEN_SEA_Jikguanghai"
-	}
-	names = {
-		trigger = {
 			culture_group = halfling
 		}
 		name = "COLONIAL_BROKEN_SEA_Crumbsea"
@@ -1833,6 +2117,24 @@ colonial_broken_sea = {
 			primary_culture = iochander		#Iochand
 		}
 		name = "COLONIAL_BROKEN_SEA_Frozenchand"
+	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_BROKEN_SEA_Thianti"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_BROKEN_SEA_Jikguanghai"
 	}
 	
 	# Generic
@@ -1865,6 +2167,12 @@ colonial_taychend = {
 			tag = A31 #Moonhaven
 		}
 		name = "COLONIAL_TAYCHEND_Ivrandirlethail"
+	}
+	names = {
+		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_TAYCHEND_Kahfouint"
 	}
 	names = {
 		trigger = {
@@ -1926,7 +2234,25 @@ colonial_taychend = {
 		}
 		name = "COLONIAL_TAYCHEND_Butterside"
 	}
-	
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target
+		}
+		name = "COLONIAL_TAYCHEND_Khimling"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_TAYCHEND_Taiqingshan"
+	}
+
 	# Generic
 	names = {
 		name = "COLONIAL_TAYCHEND_Root_Culture_GetName_Taychend"
@@ -1964,6 +2290,12 @@ colonial_eordand = {
 			}
 		}
 		name = "COLONIAL_EORDAND_Nur_Silverwoods"
+	}
+	names = {
+		trigger = {
+			religion_group = khetist
+		}
+		name = "COLONIAL_EORDAND_Ourka'"
 	}
 	names = {
 		trigger = {
@@ -2006,12 +2338,6 @@ colonial_eordand = {
 	}
 	names = {
 		trigger = {
-			tag = Y15	#Beikdugang
-		}
-		name = "COLONIAL_EORDAND_Szianlingzhou"
-	}
-	names = {
-		trigger = {
 			culture_group = halfling
 		}
 		name = "COLONIAL_EORDAND_Seasonfarthings"
@@ -2021,6 +2347,24 @@ colonial_eordand = {
 			primary_culture = iochander		#Iochand
 		}
 		name = "COLONIAL_EORDAND_Nimsglades"
+	}
+	names = {
+		trigger = {
+			tag = event_target:feiten_or_was_feiten_target	#Feiten
+		}
+		name = "COLONIAL_EORDAND_Tanting"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = Y15				#Beikdugang
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y15
+				}
+			}
+		}
+		name = "COLONIAL_EORDAND_Szianlingzhou"
 	}
 	
 	# Generic

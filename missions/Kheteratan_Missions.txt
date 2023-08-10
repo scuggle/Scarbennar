@@ -127,38 +127,34 @@
 # 			NOT = { exists = U10 }
 # 		}
 		
-# 		effect = {
-# 			383 = {
-# 				if = {
-# 					limit = {
-# 						NOT = {
-# 							is_permanent_claim = ROOT
-# 							is_core = ROOT
-# 						}
-# 					}
-# 					add_permanent_claim = ROOT
-# 				}
-# 			}
-# 			oris_area = {
-# 				limit = {
-# 					NOT = { is_core = ROOT }
-# 					NOT = { is_permanent_claim = ROOT }
-# 				}
-# 				add_permanent_claim = ROOT
-# 			}
-# 			deshak_area = {
-# 				limit = {
-# 					NOT = { is_core = ROOT }
-# 					NOT = { is_permanent_claim = ROOT }
-# 				}
-# 				add_permanent_claim = ROOT
-# 			}
-# 			add_casus_belli = {
-# 				target = U06
-# 				type = cb_vassalize_mission
-# 			}
-# 		}
-# 	}
+	# 	effect = {
+	# 		383 = {
+	# 			if = {
+	# 				limit = {
+	# 					NOT = {
+	# 						is_permanent_claim = ROOT
+	# 						is_core = ROOT
+	# 					}
+	# 				}
+	# 				add_permanent_claim = ROOT
+	# 			}
+	# 		}
+	# 		oris_area = {
+	# 			limit = {
+	# 				NOT = { is_core = ROOT }
+	# 				NOT = { is_permanent_claim = ROOT }
+	# 			}
+	# 			add_permanent_claim = ROOT
+	# 		}
+	# 		deshak_area = {
+	# 			limit = {
+	# 				NOT = { is_core = ROOT }
+	# 				NOT = { is_permanent_claim = ROOT }
+	# 			}
+	# 			add_permanent_claim = ROOT
+	# 		}
+	# 	}
+	# }
 	
 # 	kheterata_subjugate_deshak = {
 # 		icon = mission_have_two_subjects
