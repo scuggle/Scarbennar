@@ -33,23 +33,19 @@ national_focus_tellum_1 {
 }
 
 exotic_trading_post_1 {
-	trade_goods_size_modifier = -0.33
 	trade_goods_size = -0.25
 }
 
 exotic_trading_post_2 {
-	trade_goods_size_modifier = 1
 	local_development_cost = -0.10
 	local_manpower_modifier = 0.5
 }
 
 exotic_trading_post_3 {
-	trade_goods_size = 3
 	local_manpower_modifier = 0.5
 }
 
 exotic_trading_post_4 {
-	trade_goods_size = 2
 	local_institution_spread = 1
 	trade_value_modifier = 0.5
 }
@@ -126,7 +122,7 @@ rebuilding_efforts_tellum {
 }
 
 capital_management_1 {
-	local_development_cost = -0.15
+	local_development_cost = -0.05
 	supply_limit_modifier = 0.50
 	governing_capacity = 25
 }
@@ -144,34 +140,34 @@ capital_management_3 {
 }
 
 oasis_capital_tellum {
-	local_development_cost = -0.20
+	local_development_cost = -0.15
 	attrition = 1
 }
 
 port_capital_tellum {
-	local_development_cost = -0.15
-	province_trade_power_modifier = 0.5
+	local_development_cost = -0.10
+	province_trade_power_modifier = 0.25
 	province_trade_power_value = 5
 }
 
 natural_capital_tellum {
-	local_development_cost = -0.10
-	trade_goods_size = 1
+	local_development_cost = -0.05
+	trade_goods_size = 0.5
 }
 
 fortress_capital_tellum {
-	local_development_cost = -0.15
+	local_development_cost = -0.10
 	local_defensiveness = 0.66
 }
 
 frozen_capital_tellum {
-	local_development_cost = -0.15
+	local_development_cost = -0.10
 	attrition = 1
 }
 
 prosperous_capital_tellum {
-	local_development_cost = -0.15
-	trade_value_modifier = 0.5
+	local_development_cost = -0.10
+	trade_value_modifier = 0.25
 }
 
 arid_arctic_balance {

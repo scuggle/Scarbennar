@@ -1377,3 +1377,70 @@ insult_no_maidens = {
 		}
 	}
 }
+
+insult_eur_1 = {
+	trigger = {
+		from = {
+			culture_group = orcish
+		}
+	}
+}
+
+insult_eur_2 = {
+	trigger = {
+		ai = no
+	}
+}
+
+insult_eur_3 = {
+	trigger = {
+		ai = no
+	}
+}
+
+insult_eur_4 = {
+	trigger = {
+		culture_group = dwarven
+	}
+}
+
+insult_eur_5 = {
+	trigger = {
+		ai = no
+	}
+}
+
+insult_eur_6 = {
+	trigger = {
+		ai = no
+	}
+}
+
+insult_eur_7 = {
+	trigger = {
+		ai = no
+	}
+}
+
+insult_eur_8 = {
+	trigger = {
+		ai = no
+		from = {
+			has_won_war_against = {
+				who = THIS
+			}
+		}
+	}
+}
+
+insult_eur_9 = {
+	trigger = {
+		ai = no
+	}
+}
+
+insult_eur_10 = {
+	trigger = {
+		ai = no
+	}
+}

@@ -477,8 +477,8 @@ age_of_reformation = {
 		
 		ab_adventurer_armies = {
 			modifier = {
-				mercenary_manpower = 0.25
-				merc_maintenance_modifier = -0.33
+				infantry_power = 0.05
+				cavalry_power = 0.05
 			}
 			ai_will_do = {
 				factor = 10

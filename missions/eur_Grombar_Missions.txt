@@ -1,5 +1,7 @@
 # ## Grombar Mt Expanded Created By @Barbarossa. Contact me on Discord
 
+#TODO: A mission in Shattered crown requires the grombar missions. They are commented out rn. Re enable them if this is finished.
+
 # grombar_vrorenmarch = {
 # 	slot = 1
 # 	generic = no

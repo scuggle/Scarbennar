@@ -5945,8 +5945,8 @@ on_yearly_pulse = {
 		#Pillar of Gates
 		#sarhal_relics.19
 		eur_changes.1
-		reurope.200
-		reurope.201
+		reurope_events.200
+		reurope_events.201
 	}
 	if = { limit = { tag = I03 } country_event = { id = flavor_vazhatun.100 } }
 }

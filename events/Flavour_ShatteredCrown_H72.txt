@@ -1999,13 +1999,13 @@ country_event = {
 				exists = yes
 				junior_union_with = H72
 				NOT = { liberty_desire = 50 }
-				NOT = { mission_completed = Z50_king_of_orcs_and_humans }
+				#NOT = { mission_completed = Z50_king_of_orcs_and_humans }
 			}
 			Z50 = {
 				exists = yes
 				junior_union_with = H72
 				NOT = { liberty_desire = 50 }
-				NOT = { mission_completed = Z50_king_of_orcs_and_humans }
+				#NOT = { mission_completed = Z50_king_of_orcs_and_humans }
 			}
 		}
 	}

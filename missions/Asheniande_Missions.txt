@@ -1252,6 +1252,7 @@ A60_corvuria_union_group = {
 						who = A59
 						value = 0
 					}
+					total_development = A59
 					estate_loyalty = { estate = estate_vampires loyalty = 60 }
 					estate_loyalty = { estate = estate_nobles loyalty = 45 }
 				}
@@ -1263,6 +1264,7 @@ A60_corvuria_union_group = {
 		
 		effect = {
 			inherit = A59
+			add_dip_power = -200
 			add_country_modifier = { 
     			name = "ashen_collusion_buff"
 				duration = -1

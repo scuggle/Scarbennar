@@ -1059,6 +1059,9 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	shock_damage = -0.3
 	fire_damage = -0.3
 	# fire_damage_received = -0.3
+
+	mercenary_cost = 5
+	merc_maintenance_modifier = 5
 	
 	war_exhaustion = -0.02	#negates attrition war exhaustion
 	
