@@ -22,6 +22,7 @@ monstrous_nation = {
 	}
 	diplomatic_reputation = -1
 	unjustified_demands = -0.5
+	governing_capacity = 150
 }
 
 ###########################################
