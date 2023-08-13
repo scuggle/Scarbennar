@@ -823,10 +823,6 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
-<<<<<<< Updated upstream
-			interest = -0.10
-=======
->>>>>>> Stashed changes
 		}
 
 		on_upgraded = {
@@ -851,10 +847,6 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
-<<<<<<< Updated upstream
-			interest = -0.15
-=======
->>>>>>> Stashed changes
 		}
 
 		on_upgraded = {
