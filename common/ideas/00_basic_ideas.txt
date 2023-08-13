@@ -738,7 +738,6 @@ exploration_ideas = { #reclamation #done
 	}
 	global_empire = {
 		colonist_placement_chance = 0.15
-
 	}
 
 	ai_will_do = {
@@ -1207,7 +1206,7 @@ innovativeness_ideas = { #Technocratic Ideas
 		female_advisor_chance = 0.33
 	}
 	scientific_revolution = {
-		advisor_cost = -0.10
+		advisor_cost = -0.15
 	}
 	dynamic_court = {
 		may_recruit_female_generals = yes
@@ -1352,7 +1351,7 @@ focus_inwards = { #Internal Ideas Redo
 		stability_cost_modifier = -0.20
 	}
 	foc_inw3 = { 
-		local_prosperity_growth = 0.1
+		global_prosperity_growth = 0.1
 	}
 	foc_inw4 = {
 		global_monthly_devastation = -0.1
@@ -1362,7 +1361,7 @@ focus_inwards = { #Internal Ideas Redo
 	}
 	foc_inw6 = {
 		parliament_backing_chance = 0.25
-		yearly_absolutism = 0.1
+		yearly_absolutism = 1
 	}
 	foc_inw7 = {
 		global_tax_modifier = 0.30
@@ -1439,7 +1438,7 @@ plutocracy_ideas = { #government: republic
 	}
 
 	tradition_of_payment = {
-		adm_advisor_cost = -0.1
+		adm_advisor_cost = -0.2
 		advisor_pool = 2
 	}
 	abolished_serfdom = {
