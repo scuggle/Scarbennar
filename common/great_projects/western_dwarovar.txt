@@ -1209,10 +1209,6 @@ khugdihr_bank = {
 		country_modifiers = {
 			inflation_reduction = 0.05
 			inflation_action_cost = -0.15
-<<<<<<< Updated upstream
-			interest = -0.10
-=======
->>>>>>> Stashed changes
 		}
 		on_upgraded = {
 		}
@@ -1233,10 +1229,6 @@ khugdihr_bank = {
 		country_modifiers = {
 			inflation_reduction = 0.07
 			inflation_action_cost = -0.20
-<<<<<<< Updated upstream
-			interest = -0.15
-=======
->>>>>>> Stashed changes
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -1267,10 +1259,6 @@ khugdihr_bank = {
 		country_modifiers = {
 			inflation_reduction = 0.10
 			inflation_action_cost = -0.25
-<<<<<<< Updated upstream
-			interest = -0.25
-=======
->>>>>>> Stashed changes
 		}
 		on_upgraded = {
 			owner = {

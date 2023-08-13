@@ -89,10 +89,6 @@ damescrown_grand_exchange = {
 			trade_goods_size_modifier = 0.05
 		}
 		country_modifiers = {
-<<<<<<< Updated upstream
-			interest = -0.1
-=======
->>>>>>> Stashed changes
 		}
 		on_upgraded = {
 		}
@@ -111,10 +107,6 @@ damescrown_grand_exchange = {
 			trade_goods_size_modifier = 0.075
 		}
 		country_modifiers = {
-<<<<<<< Updated upstream
-			interest = -0.15
-=======
->>>>>>> Stashed changes
 			center_of_trade_upgrade_cost = -0.1
 		}
 		on_upgraded = {
@@ -143,10 +135,6 @@ damescrown_grand_exchange = {
 			trade_goods_size_modifier = 0.10
 		}
 		country_modifiers = {
-<<<<<<< Updated upstream
-			interest = -0.25
-=======
->>>>>>> Stashed changes
 			center_of_trade_upgrade_cost = -0.2
 		}
 		on_upgraded = {
