@@ -529,7 +529,7 @@ ordstun_branch = {
 					}
 				}
 				4093 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
@@ -620,7 +620,7 @@ lodhum_branch = {
 					}
 				}
 				2973 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
@@ -712,7 +712,7 @@ skomdihr_branch = {
 					}
 				}
 				4100 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
@@ -803,7 +803,7 @@ shazstun_branch = {
 					}
 				}
 				2942 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
@@ -895,7 +895,7 @@ orghelo_branch = {
 					}
 				}
 				4238 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
