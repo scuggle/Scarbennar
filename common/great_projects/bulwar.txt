@@ -1301,7 +1301,7 @@ stone_palace = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			advisor_cost = -0.025
+			advisor_cost = -0.010
 			yearly_corruption = -0.05
 		}
 		on_upgraded = {
@@ -1319,7 +1319,7 @@ stone_palace = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			advisor_cost = -0.05
+			advisor_cost = -0.025
 			yearly_corruption = -0.075
 		}
 		on_upgraded = {
@@ -1337,7 +1337,7 @@ stone_palace = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			advisor_cost = -0.075
+			advisor_cost = -0.05
 			yearly_corruption = -0.1
 		}
 		on_upgraded = {
