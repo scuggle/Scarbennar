@@ -5608,7 +5608,7 @@ khug_asra_reform_republic = {
 	}
 	modifiers = {
 		country_admin_power = 1
-		interest = -0.5
+		interest = -0.25
 		burghers_influence_modifier = 0.10
 	}
 }
@@ -7411,7 +7411,7 @@ voltenu_corpocracy = {
 	modifiers = {
 		idea_cost = -0.1
 		technology_cost = -0.1
-		interest = -0.5
+		interest = -0.25
 		global_monthly_devastation = 0.01
 		global_autonomy = -0.05
 		production_efficiency = 0.1

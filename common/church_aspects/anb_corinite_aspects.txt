@@ -31,7 +31,7 @@ corinite_simchat_torah_aspect = {	#ADM aspect
 corinite_sukkot_aspect = {	#ADM aspect
 	cost = 100
 	modifier = {
-		interest = -0.25
+		interest = -0.15
 	}
 	monarch_power = adm
 	ai_will_do = {

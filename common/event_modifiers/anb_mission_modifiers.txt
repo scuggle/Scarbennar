@@ -179,7 +179,7 @@ gawed_gawedi_naval_expansion = {
 }
 
 gawed_deland_council = {
-	interest = -0.5
+	interest = -0.25
 	global_trade_power = 0.15
 	global_tax_modifier = 0.10
 	burghers_influence_modifier = 0.05
@@ -5763,7 +5763,7 @@ phoenix_empire_palace_stables = {
 }
 phoenix_empire_palace_treasury = {
 	picture = "phoenix_palace_wing"
-	interest = -1
+	interest = -0.25
 	inflation_reduction = 0.1
 }
 phoenix_empire_palace_temple = {
@@ -7717,7 +7717,7 @@ castonath_patricians_increased_defensive_investment = {
 patrician_control_of_monetary_affairs = {
 	trade_efficiency = 0.1
 	development_cost = -0.05
-	interest = -0.5
+	interest = -0.15
 }
 castonath_patricians_shoring_up_the_crags = {
 	local_development_cost = -0.2
@@ -19856,7 +19856,7 @@ G35_imperial_mint = {
 	inflation_reduction = -0.1
 	global_tax_modifier = 0.1
 	local_development_cost = -0.1
-	interest = -0.5
+	interest = -0.25
 }
 G35_rapid_urbanization = {
 	local_build_cost = -0.25
@@ -19883,7 +19883,7 @@ G35_a_compromise_reached = {
 G35_taxed_arverynn_citizens = {
 	global_tax_modifier = -0.25
 	global_unrest = 5
-	interest = 0.5
+	interest = 0.25
 }
 G35_sarda_stability = {
 	global_prosperity_growth = 0.1
@@ -23268,11 +23268,11 @@ U14_angry_af = {
 }
 
 U14_bankers = {
-	interest = -0.5
+	interest = -0.25
 }
 
 U14_goblin_bankers = {
-	interest = -0.5
+	interest = -0.25
 }
 
 U14_compromised_defences = {

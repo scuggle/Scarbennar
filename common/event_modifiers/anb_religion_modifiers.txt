@@ -1559,7 +1559,7 @@ IC_forsara_chosen_2 = {
 }
 
 IC_forsara_chosen_3 = {
-	interest = -2
+	interest = -1
 }
 
 IC_kazraiel_chosen = {

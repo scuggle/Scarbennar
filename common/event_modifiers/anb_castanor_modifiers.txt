@@ -913,7 +913,7 @@ castanor_succesion_war_white_walls_defense = {
 }
 castanor_succession_war_break_free = {
 	trade_efficiency = 0.33
-	interest = -1
+	interest = -0.5
 }
 castanor_succession_war_show_me_the_money = {
 	is_mercenary_modifier = yes

@@ -651,7 +651,7 @@ wealth_3 = {
 		NOT = { has_church_aspect = wealth_3 }
 	}
 	modifier = {
-		interest = -0.5
+		interest = -0.25
 	}
 	ai_will_do = {
 		factor = 15

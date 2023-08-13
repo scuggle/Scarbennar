@@ -58,7 +58,7 @@ centaur_the_red_storm_ai_luck = {
 	land_maintenance_modifier = -0.20
 	country_admin_power = 1
 	yearly_corruption = -0.1
-	interest = -1
+	interest = -0.5
 	inflation_reduction = 0.1
 }
 

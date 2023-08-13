@@ -148,7 +148,7 @@ estate_middlecastes_organization_caste_dhenijanraj = {
 			}
 		}
 		modifier = {
-			interest = -0.5 #Half modifier, dwarves share the caste
+			interest = -0.25 #Half modifier, dwarves share the caste
 		}
 	}
 	conditional_modifier = { # Half Hobgoblin

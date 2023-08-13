@@ -826,7 +826,7 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
-			interest = -0.25
+			interest = -0.10
 		}
 
 		on_upgraded = {
@@ -851,7 +851,7 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
-			interest = -0.5
+			interest = -0.15
 		}
 
 		on_upgraded = {

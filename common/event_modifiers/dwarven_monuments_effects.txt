@@ -76,7 +76,7 @@ tuwad_dhumakon_gardens_prosperity {
 }
 
 khugdihr_bank_generous_interest_rates {
-	interest = -0.5
+	interest = -0.25
 }
 
 earthseed_missionaries {

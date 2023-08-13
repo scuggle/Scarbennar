@@ -36,7 +36,7 @@ estate_jains = {
 		build_cost = -0.10
 	}	
 	country_modifier_angry = {
-		interest = 1
+		interest = 0.25
 		global_unrest = 2
 	}
 	land_ownership_modifier = {

@@ -2525,7 +2525,7 @@ artifice_invention_arithmatons = {
 	benefits = {
 		global_tax_modifier = 0.1
 		inflation_reduction = 0.1
-		interest = -0.5
+		interest = -0.25
 	}
 	ai_will_do = {
 		factor = 50

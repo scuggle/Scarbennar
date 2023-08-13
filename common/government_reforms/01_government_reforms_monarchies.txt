@@ -9288,7 +9288,7 @@ khug_asra_reform_monarchy = {
 	}
 	modifiers = {
 		country_admin_power = 1
-		interest = -0.5
+		interest = -0.25
 		burghers_influence_modifier = 0.10
 	}
 }

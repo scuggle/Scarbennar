@@ -953,7 +953,7 @@ A25_ideas = {
 		diplomats = 1
 	}
 	A25_banking_clan = {	#InterGalactic Banking Clan
-		interest = -0.5
+		interest = -0.25
 	}
 	A25_cannorian_trade_posts = {
 		global_foreign_trade_power = 0.1
@@ -1807,7 +1807,7 @@ A64_ideas = {
 		mercenary_manpower = 0.5
 	}
 	A64_appleton_bank = {
-		interest = -0.5
+		interest = -0.25
 	}
 	A64_finding_rotten_apples = {
 		global_unrest = -1
@@ -2957,7 +2957,7 @@ Z11_ideas = {
 		defensiveness = 0.10
 	}
 	Z11_silf_bank = {
-		interest = -0.5
+		interest = -0.25
 		inflation_reduction = 0.05
 	}
 	Z11_far_gerudian_frontier = {
@@ -4255,7 +4255,7 @@ B40_ideas = {
 		diplomatic_reputation = 1
 	}
 	B40_trusted_promises_of_payment = {
-		interest = -0.5
+		interest = -0.25
 		inflation_reduction = 0.1
 	}
 }
@@ -9517,7 +9517,7 @@ R10_ideas = {
 R11_ideas = {
 	start = {
 		shock_damage = 0.10
-		interest = -0.5
+		interest = -0.25
 	}
 
 	bonus = {
@@ -10230,7 +10230,7 @@ B36_ideas = {
 #Asraport
 G90_ideas = {
 	start = {
-		interest = -0.5 #Bank of Asra
+		interest = -0.25 #Bank of Asra
 		global_colonial_growth = 15 #Bank of Asra colony, dwarves hesitant to settle elsewhere
 	}
 	bonus = {
@@ -12308,7 +12308,7 @@ H47_ideas = {
 		tolerance_heathen = 2
 	}
 	J52_banking_systems = {
-		interest = -0.5
+		interest = -0.25
 	}
 	J52_new_administration = {
 		free_adm_policy = 1
@@ -12995,7 +12995,7 @@ J53_ideas = {
 		advisor_cost = -0.1
 	}
 	I91_economics_laws = {
-		interest = -1
+		interest = -0.5
 		inflation_reduction = 0.1
 	}
 }
@@ -13369,7 +13369,7 @@ G82_ideas = {
 		idea_cost = -0.1
 	}
 	G82_vaults_of_uyas_enret = {
-		interest = -0.5
+		interest = -0.25
 		prestige = 0.5
 	}
 	G82_a_glass_of_pheni = {
@@ -14736,7 +14736,7 @@ H45_ideas = {
 	}
 
 	bonus = {
-		interest = -1 #economy built on the backbone of sharing wealth over trying to make a profit through predatory loans
+		interest = -0.3 #economy built on the backbone of sharing wealth over trying to make a profit through predatory loans
 	}
 
 	trigger = {
@@ -16235,7 +16235,7 @@ A53_ideas = {
 	free = yes
 
 	A53_the_imperial_mint = {
-		interest = -0.5
+		interest = -0.3
 	}
 	A53_the_everlucky_chargers = {
 		cavalry_power = 0.15
@@ -19769,7 +19769,7 @@ F41_ideas = {
 F44_ideas = {
 	start = {
 		merchants = 1
-		interest = -1
+		interest = -0.25
 	}
 
 	bonus = {
@@ -20196,7 +20196,7 @@ F32_ideas = { #Pirates of a resource poor peninsula, influenced by gnolls
 		adm_tech_cost_modifier = -0.1
 	}
 	F32_familial_finances = { #The family relations among the Drolas allows local families from every walk of life to take easy loans from anyone and favourable rates
-		interest = -0.5
+		interest = -0.25
 	}
 	F32_matriarchs_of_the_drolas = { #Ever since the gnolls ruled over the Drolas, the women have played a promiment role in life, sometimes even running the show
 		advisor_pool = 2
@@ -21195,7 +21195,7 @@ H09_ideas = {
 		global_tax_modifier = 0.15
 	}
 	H09_gifts_exchange = { #elaborate gifts exchange ritual between iadth families, trust that each other will uphold their end of the deal
-		interest = -0.5
+		interest = -0.25
 	}
 	H09_corrupted_tuathak_military_traditions = { #although they have been turned away from their autumnal obsession, the tuathak militarism and warrior code persists... although with not quite the same grit
 		global_manpower_modifier = 0.15
@@ -22803,7 +22803,7 @@ F75_ideas = {
 		leader_land_shock = 1
 	}
 	F75_golden_races = { #If there is one thing outsiders know our realm for, it is horse racing. Held every year in our capital, the Hurasu Lismu, the ?Golden Races? bring together breeders and racers from all across Bulwar to participate. But in addition to those who participate, the event also attracts gamblers of all stripes, trying their luck to win big. And if there?s anyone who benefits from that, it?s the banks and moneylenders of our realm. So as long as we continue to sponsor these races, tha banks will have our back in hard times.
-		interest = -0.5
+		interest = -0.25
 	}
 	F75_the_qanun = { #When violence consumes Bulwar, as cities burn and armies clash, the one thing that can always unite us is music. And there is no serenade that the humans and elves of Bulwar like more than the singing strings of a qanun. A traditional instrument that is believed to have its roots in Avamezan. The instrument is played resting on either the musician's lap or a table in front of them, with the strings arrayed horizontally. It is then played with both hands, one for the higher register, and one for the lower. The sound produced is nearly ethereal in its beauty, and can cause any in the area to stop to hear the ghostly hum of the quanun.
 		improve_relation_modifier = 0.20
@@ -27478,7 +27478,7 @@ S22_ideas = {
     }
 
     S22_idea4 = {
-    	interest = -0.5
+    	interest = -0.25
     }
 
     S22_idea5 = {

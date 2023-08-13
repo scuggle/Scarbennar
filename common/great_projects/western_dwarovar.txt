@@ -1215,7 +1215,7 @@ khugdihr_bank = {
 		country_modifiers = {
 			inflation_reduction = 0.05
 			inflation_action_cost = -0.15
-			interest = -0.25
+			interest = -0.10
 		}
 		on_upgraded = {
 		}
@@ -1236,7 +1236,7 @@ khugdihr_bank = {
 		country_modifiers = {
 			inflation_reduction = 0.07
 			inflation_action_cost = -0.20
-			interest = -0.5
+			interest = -0.15
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -1267,7 +1267,7 @@ khugdihr_bank = {
 		country_modifiers = {
 			inflation_reduction = 0.10
 			inflation_action_cost = -0.25
-			interest = -0.75
+			interest = -0.25
 		}
 		on_upgraded = {
 			owner = {

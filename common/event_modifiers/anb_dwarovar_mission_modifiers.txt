@@ -1536,7 +1536,7 @@ khug_generous_to_investors = {
 khug_asra_bank_hq = {
 	tax_income = 60
 	inflation_action_cost = -0.25
-	interest = -0.5
+	interest = -0.25
 	picture = "advisor_cost"
 }
 khug_defensive_fortifications = {
@@ -5269,13 +5269,13 @@ H84_mega_foundry = {
 H84_mountainshark_bank = {
 	merchants = 1
 	province_trade_power_modifier = 0.5
-	interest = -0.5
+	interest = -0.25
 }
 
 H84_mega_mint = {
 	merchants = 2
 	province_trade_power_modifier = 1
-	interest = -1
+	interest = -0.5
 }
 
 # Mountainshark Candidate Modifiers

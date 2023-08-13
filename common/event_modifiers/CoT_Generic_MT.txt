@@ -244,7 +244,7 @@ economy_mutagen_3 = {
 	global_tax_modifier = 0.2
 }
 economy_mutagen_4 = {
-	interest = -0.25
+	interest = -0.15
 	inflation_action_cost = -0.25
 }
 economy_mutagen_5 = {
