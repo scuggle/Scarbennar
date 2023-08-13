@@ -310,7 +310,6 @@ gundhaghidur_library_of_insight = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			innovativeness_gain = 0.1
 			advisor_pool = 1
 		}
 		on_upgraded = {
@@ -333,7 +332,6 @@ gundhaghidur_library_of_insight = {
 		}
 		country_modifiers = {
 			technology_cost = -0.025
-			innovativeness_gain = 0.2
 			advisor_pool = 2
 		}
 		on_upgraded = {
@@ -365,7 +363,6 @@ gundhaghidur_library_of_insight = {
 		}
 		country_modifiers = {
 			technology_cost = -0.05
-			innovativeness_gain = 0.33
 			advisor_pool = 3
 		}
 		on_upgraded = {

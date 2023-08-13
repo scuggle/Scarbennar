@@ -221,7 +221,6 @@ amlharaz_assembly = {
 			diplomatic_reputation = 0.25
 		}
 		on_upgraded = {
-			add_base_production = 1
 		}
 	}
 	tier_2 = {
@@ -240,7 +239,6 @@ amlharaz_assembly = {
 			diplomatic_reputation = 0.5
 		}
 		on_upgraded = {
-			add_base_production = 2
 			define_advisor = {
 				type = statesman
 				name = "Thorin Silvertongue"
@@ -270,7 +268,6 @@ amlharaz_assembly = {
 			allow_client_states = yes
 		}
 		on_upgraded = {
-		add_base_production = 3
 			owner = {
 				add_country_modifier = {
 					name = amlharaz_assembly_hold_council
@@ -379,7 +376,7 @@ fortress_of_verkal_vazkron = {
 			local_defensiveness = 0.25
 		}
 		country_modifiers = {
-			defensiveness = 0.075
+			defensiveness = 0.05
 			hostile_attrition = 0.25
 		}
 		on_upgraded = {
@@ -409,7 +406,7 @@ fortress_of_verkal_vazkron = {
 			
 		}
 		country_modifiers = {
-			defensiveness = 0.1
+			defensiveness = 0.075
 			hostile_attrition = 0.5
 		}
 		on_upgraded = {
@@ -500,7 +497,7 @@ hall_of_the_ancestors = {
 			trade_value_modifier = 0.025
 		}
 		country_modifiers = {
-			manpower_in_true_faith_provinces = 0.05
+			manpower_in_true_faith_provinces = 0.01
 			tolerance_own = 0.5
 		}
 		on_upgraded = {
@@ -519,7 +516,7 @@ hall_of_the_ancestors = {
 			trade_value_modifier = 0.05
 		}
 		country_modifiers = {
-			manpower_in_true_faith_provinces = 0.1
+			manpower_in_true_faith_provinces = 0.025
 			tolerance_own = 1
 			idea_cost = -0.025
 		}
@@ -539,7 +536,7 @@ hall_of_the_ancestors = {
 			trade_value_modifier = 0.10
 		}
 		country_modifiers = {
-			manpower_in_true_faith_provinces = 0.15
+			manpower_in_true_faith_provinces = 0.05
 			tolerance_own = 1.5
 			idea_cost = -0.05
 		}
@@ -630,7 +627,7 @@ er_natvir_railyard = {
 			local_friendly_movement_speed = 0.1
 		}
 		country_modifiers = {
-			movement_speed = 0.05
+			movement_speed = 0.025
 			envoy_travel_time = -0.1 
 		}
 		on_upgraded = {
@@ -651,9 +648,9 @@ er_natvir_railyard = {
 			local_friendly_movement_speed = 0.2
 		}
 		country_modifiers = {
-			movement_speed = 0.075
+			movement_speed = 0.05
 			envoy_travel_time = -0.2
-			global_supply_limit_modifier = 0.15
+			global_supply_limit_modifier = 0.10
 		}
 		on_upgraded = {
 		}
@@ -673,9 +670,9 @@ er_natvir_railyard = {
 			local_friendly_movement_speed = 0.33
 		}
 		country_modifiers = {
-			movement_speed = 0.1
+			movement_speed = 0.075
 			envoy_travel_time = -0.33
-			global_supply_limit_modifier = 0.33
+			global_supply_limit_modifier = 0.15
 		}
 		on_upgraded = {
 			owner = {
@@ -913,7 +910,6 @@ mithradhum_academy = {
 		}
 		country_modifiers = {
 			army_tradition_decay = -0.001
-			yearly_army_professionalism = 0.001
 		}
 		on_upgraded = {
 		}
@@ -933,7 +929,6 @@ mithradhum_academy = {
 		}
 		country_modifiers = {
 			army_tradition_decay = -0.003
-			yearly_army_professionalism = 0.002
 		}
 		on_upgraded = {
 			owner = {
@@ -959,14 +954,13 @@ mithradhum_academy = {
 		}
 		country_modifiers = {
 			army_tradition_decay = -0.005
-			yearly_army_professionalism = 0.003
 		}
 		on_upgraded = {
 			add_building = university
 			owner = {
 				random_list = {
 					60 = {
-						add_mil_power = 100
+						add_mil_power = 50
 					}
 					25 = {
 						change_mil = 1
@@ -1087,7 +1081,7 @@ orldhum_estates = {
 		country_modifiers = {
 			nobles_influence_modifier = 0.025
 			nobles_loyalty_modifier = 0.075
-			global_autonomy = -0.03
+			global_autonomy = -0.02
 		}
 		on_upgraded = {
 			add_base_manpower = 2
@@ -1114,7 +1108,7 @@ orldhum_estates = {
 		country_modifiers = {
 			nobles_influence_modifier = 0.05
 			nobles_loyalty_modifier = 0.1
-			global_autonomy = -0.05
+			global_autonomy = -0.03
 			general_cost = -0.1
 		}
 		on_upgraded = {
@@ -1215,7 +1209,10 @@ khugdihr_bank = {
 		country_modifiers = {
 			inflation_reduction = 0.05
 			inflation_action_cost = -0.15
+<<<<<<< Updated upstream
 			interest = -0.10
+=======
+>>>>>>> Stashed changes
 		}
 		on_upgraded = {
 		}
@@ -1236,7 +1233,10 @@ khugdihr_bank = {
 		country_modifiers = {
 			inflation_reduction = 0.07
 			inflation_action_cost = -0.20
+<<<<<<< Updated upstream
 			interest = -0.15
+=======
+>>>>>>> Stashed changes
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -1267,7 +1267,10 @@ khugdihr_bank = {
 		country_modifiers = {
 			inflation_reduction = 0.10
 			inflation_action_cost = -0.25
+<<<<<<< Updated upstream
 			interest = -0.25
+=======
+>>>>>>> Stashed changes
 		}
 		on_upgraded = {
 			owner = {
@@ -1360,8 +1363,8 @@ orlazam_food_silos = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			land_attrition = -0.025
-			reinforce_speed = 0.05
+			land_attrition = -0.01
+			reinforce_speed = 0.01
 		}
 		on_upgraded = {
 		}
@@ -1380,8 +1383,8 @@ orlazam_food_silos = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			land_attrition = -0.05
-			reinforce_speed = 0.075
+			land_attrition = -0.025
+			reinforce_speed = 0.025
 			global_prosperity_growth = 0.5
 		}
 		on_upgraded = {
@@ -1402,8 +1405,8 @@ orlazam_food_silos = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			land_attrition = -0.1
-			reinforce_speed = 0.1
+			land_attrition = -0.05
+			reinforce_speed = 0.05
 			global_prosperity_growth = 1
 		}
 		on_upgraded = {
@@ -1547,7 +1550,6 @@ ramvault_mines = {
 		country_modifiers = {
 			cavalry_cost = -0.15
 			cav_to_inf_ratio = 0.25
-			leader_land_manuever = 1
 		}
 		on_upgraded = {
 			add_base_production = 2
@@ -1643,8 +1645,8 @@ vazhatun_observatory = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			adm_tech_cost_modifier = -0.025
-			dip_tech_cost_modifier = -0.025
+			adm_tech_cost_modifier = -0.01
+			dip_tech_cost_modifier = -0.01
 		}
 		on_upgraded = {
 			owner = { 
@@ -1667,8 +1669,8 @@ vazhatun_observatory = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			adm_tech_cost_modifier = -0.05
-			dip_tech_cost_modifier = -0.05
+			adm_tech_cost_modifier = -0.025
+			dip_tech_cost_modifier = -0.025
 		}
 		on_upgraded = {
 			owner = { 
@@ -1692,8 +1694,8 @@ vazhatun_observatory = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			adm_tech_cost_modifier = -0.1
-			dip_tech_cost_modifier = -0.1
+			adm_tech_cost_modifier = -0.05
+			dip_tech_cost_modifier = -0.05
 		}
 		on_upgraded = {
 			owner = { 
@@ -1948,7 +1950,7 @@ jorkad_aqueduct = {
 		}
 		country_modifiers = {
 			state_maintenance_modifier = -0.15
-			garrison_size = 0.25
+			garrison_size = 0.15
 		}
 		on_upgraded = {
 		}
@@ -1973,7 +1975,7 @@ jorkad_aqueduct = {
 		}
 		country_modifiers = {
 			state_maintenance_modifier = -0.25
-			garrison_size = 0.33
+			garrison_size = 0.20
 		}
 		on_upgraded = {
 		}
@@ -2061,11 +2063,9 @@ sedadhum_mining_settlement = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			shock_damage = 0.02
 			shock_damage_received = -0.01
 		}
 		on_upgraded = {
-			add_base_production = 1
 			change_trade_goods = mithril
 			add_permanent_province_modifier = {
 				name = sedadhum_discovery_of_mithril
@@ -2088,11 +2088,9 @@ sedadhum_mining_settlement = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			shock_damage = 0.06
-			shock_damage_received = -0.03
+			shock_damage_received = -0.025
 		}
 		on_upgraded = {
-			add_base_production = 2
 		}
 	}
 	tier_3 = {
@@ -2110,11 +2108,9 @@ sedadhum_mining_settlement = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			shock_damage = 0.1
 			shock_damage_received = -0.05
 		}
 		on_upgraded = {
-			add_base_production = 3
 			owner = {
 				add_country_modifier = {
 					name = sedadhum_mithril_plated_soldiers

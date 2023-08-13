@@ -130,7 +130,6 @@ prukakhin_bazaar_of_blood_and_ivory = {
 			trade_range_modifier = 0.33
 			burghers_loyalty_modifier = 0.1
 			burghers_influence_modifier = 0.05
-			placed_merchant_power = 5
 		}
 		on_upgraded = {
 			add_estate_loyalty = {
@@ -265,9 +264,9 @@ phaethmen_di_phaemruk_shipyard_district = {
 					name = "Kakada of Bomdan"
 					trait = ram_raider_personality
 					fire = 3
-					shock = 8
-					manuever = 5
-					siege = 0
+					shock = 3
+					manuever = 3
+					siege = 1
 				}
 			}
 		}
@@ -342,7 +341,7 @@ phaethmen_di_the_saccharine_garden = {
 		}
 		country_modifiers = {
 			prestige_decay = -0.001
-			recover_army_morale_speed = 0.05
+			recover_army_morale_speed = 0.025
 		}
 		on_upgraded = {
 			add_base_tax = 1
@@ -364,7 +363,7 @@ phaethmen_di_the_saccharine_garden = {
 		}
 		country_modifiers = {
 			prestige_decay = -0.003
-			recover_army_morale_speed = 0.1
+			recover_army_morale_speed = 0.075
 		}
 		on_upgraded = {
 			add_base_tax = 1
@@ -387,7 +386,7 @@ phaethmen_di_the_saccharine_garden = {
 		}
 		country_modifiers = {
 			prestige_decay = -0.005
-			recover_army_morale_speed = 0.15
+			recover_army_morale_speed = 0.10
 			monthly_splendor = 1
 		}
 		on_upgraded = {
@@ -465,7 +464,7 @@ lapnam_amrik_weapon_market = {
 		}
 		country_modifiers = {
 			daulophs_loyalty_modifier = 0.025
-			infantry_power = 0.05
+			infantry_power = 0.025
 		}
 		on_upgraded = {
 			add_estate_loyalty = {
@@ -492,7 +491,6 @@ lapnam_amrik_weapon_market = {
 			daulophs_loyalty_modifier = 0.05
 			daulophs_influence_modifier = 0.025
 			infantry_power = 0.05
-			cavalry_power = 0.05
 		}
 		on_upgraded = {
 			add_estate_loyalty = {
@@ -518,9 +516,7 @@ lapnam_amrik_weapon_market = {
 		country_modifiers = {
 			daulophs_loyalty_modifier = 0.1
 			daulophs_influence_modifier = 0.05
-			infantry_power = 0.05
-			cavalry_power = 0.05
-			artillery_power = 0.05
+			infantry_power = 0.075
 		}
 		on_upgraded = {
 			add_estate_loyalty = {
@@ -620,7 +616,7 @@ lapnam_amrik_teplinbasiet_arena = {
 		country_modifiers = {
 			prestige_from_land = 1
 			army_tradition_from_battle = 0.5
-			land_maintenance_modifier = -0.05
+			land_maintenance_modifier = -0.025
 		}
 		on_upgraded = {
 		}
@@ -641,7 +637,7 @@ lapnam_amrik_teplinbasiet_arena = {
 		country_modifiers = {
 			prestige_from_land = 1.5
 			army_tradition_from_battle = 1
-			land_maintenance_modifier = -0.1
+			land_maintenance_modifier = -0.05
 		}
 		on_upgraded = {
 		}
@@ -756,7 +752,6 @@ bim_lau_necropolis = {
 		country_modifiers = {
 			reform_progress_growth = 0.15
 			stability_cost_modifier = -0.15
-			free_dip_policy = 1
 		}
 		on_upgraded = {
 		}

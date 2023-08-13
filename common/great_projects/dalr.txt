@@ -80,7 +80,7 @@ bjarnrik_staple_port_of_konungrhavn = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			range = 0.1
+			range = 0.05
 			transport_attrition = -0.1
 		}
 		on_upgraded = {
@@ -100,7 +100,7 @@ bjarnrik_staple_port_of_konungrhavn = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			range = 0.15
+			range = 0.075
 			transport_attrition = -0.2
 			ship_durability = 0.025
 		}
@@ -121,7 +121,7 @@ bjarnrik_staple_port_of_konungrhavn = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			range = 0.25
+			range = 0.1
 			transport_attrition = -0.33
 			ship_durability = 0.05
 		}

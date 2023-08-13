@@ -108,7 +108,6 @@ tianlou_jewel_of_yanshen = {
 		country_modifiers = {
 			prestige = 0.5
 			trade_efficiency = 0.1
-			merchants = 1
 		}
 		on_upgraded = {
 		}
@@ -366,7 +365,6 @@ jiangdu_haoshitzi = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.1
-			mercantilism_cost = -0.1
 			burghers_loyalty_modifier = 0.05
 			burghers_influence_modifier = 0.025
 		}
@@ -394,7 +392,6 @@ jiangdu_haoshitzi = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.15
-			mercantilism_cost = -0.2
 			burghers_loyalty_modifier = 0.1
 			burghers_influence_modifier = 0.05
 		}
@@ -475,7 +472,7 @@ luoyip_house_of_fire_and_water = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			siege_ability = 0.025
+			siege_ability = 0.01
 		}
 		on_upgraded = {
 			owner = { 
@@ -497,8 +494,7 @@ luoyip_house_of_fire_and_water = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			siege_ability = 0.05
-			idea_cost = -0.025
+			siege_ability = 0.025
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -529,8 +525,7 @@ luoyip_house_of_fire_and_water = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			siege_ability = 0.1
-			idea_cost = -0.05
+			siege_ability = 0.05
 			advisor_pool = 1
 		}
 		on_upgraded = {
