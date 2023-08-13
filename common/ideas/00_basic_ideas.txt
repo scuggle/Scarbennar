@@ -181,7 +181,6 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 		mercenary_manpower = 0.1
 	}
 	adven_ide7 = {
-		#Add a tooltip
 		allow_mercenary_drill = yes
 	}
 	ai_will_do = {
