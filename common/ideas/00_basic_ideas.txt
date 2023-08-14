@@ -257,7 +257,7 @@ leadership_ideas = { #Leadership
 		reserves_organisation = 0.25
 	}
 	lead_ide6 = {
-		army_tradition_decay = 0.005
+		army_tradition_decay = -0.005
 		army_tradition_from_battle = 0.5
 	}
 	lead_ide7 = {

@@ -21,6 +21,12 @@ eur_privateer_debuff = {
 	privateer_efficiency = -0.4
 }
 
+#Skewered Drake colony buff
+skewered_drake_colony = {
+	colonist_placement_chance = 0.1
+	global_colonial_growth = 25
+}
+
 #Witch-Kings
 1_relations_removed = {
 	diplomatic_upkeep = -1
