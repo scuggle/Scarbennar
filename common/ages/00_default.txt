@@ -511,6 +511,7 @@ age_of_reformation = {
 		ab_spirit_of_adean = {
 			allow = {
 				religion = regent_court
+				NOT = { has_age_ability = ab_corinite_crusaders }
 			}
 			modifier = {
 				land_morale = 0.1
@@ -541,6 +542,7 @@ age_of_reformation = {
 		ab_corinite_crusaders = {
 			allow = {
 				religion = corinite
+				NOT = { has_age_ability = ab_spirit_of_adean }
 			}
 			modifier = {
 				shock_damage = 0.15
