@@ -65,11 +65,13 @@ lanjinhui_lanjin_hall = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			adm_advisor_cost = -0.05
+			adm_advisor_cost = -0.1
 		}
 		on_upgraded = {
 			change_trade_goods = paper
-
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
 		}
 	}
 	tier_2 = {
@@ -85,7 +87,8 @@ lanjinhui_lanjin_hall = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			adm_advisor_cost = -0.075
+			adm_advisor_cost = -0.15
+			idea_cost = -0.025
 			technology_cost = -0.025
 		}
 		on_upgraded = {
@@ -98,7 +101,9 @@ lanjinhui_lanjin_hall = {
 				location = 4930
 				discount = yes
 			}
-
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
 		}
 	}
 	tier_3 = {
@@ -114,11 +119,14 @@ lanjinhui_lanjin_hall = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			adm_advisor_cost = -0.1
+			adm_advisor_cost = -0.2
+			idea_cost = -0.05
 			technology_cost = -0.05
 		}
 		on_upgraded = {
-
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
 		}
 	}
 }
@@ -209,7 +217,8 @@ jiantsiang_temple_of_the_ascendant_soul = {
 			local_unrest = -3
 		}
 		country_modifiers = {
-			war_exhaustion = -0.02
+			war_exhaustion = -0.03
+			fire_damage_received = -0.025
 			shock_damage_received = -0.025
 		}
 		on_upgraded = {
@@ -238,7 +247,8 @@ jiantsiang_temple_of_the_ascendant_soul = {
 			local_unrest = -5
 		}
 		country_modifiers = {
-			war_exhaustion = -0.03
+			war_exhaustion = -0.05
+			fire_damage_received = -0.05
 			shock_damage_received = -0.05
 		}
 		on_upgraded = {

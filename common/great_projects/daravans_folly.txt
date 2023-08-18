@@ -94,7 +94,8 @@ nathalaire_city_of_pirates = {
 		}
 		country_modifiers = {
 			spy_offence = 0.10
-			privateer_efficiency = 0.05
+			privateer_efficiency = 0.10
+			dip_advisor_cost = -0.10
 		}
 		on_upgraded = {
 		}
@@ -115,7 +116,8 @@ nathalaire_city_of_pirates = {
 		}
 		country_modifiers = {
 			spy_offence = 0.15
-			privateer_efficiency = 0.075
+			privateer_efficiency = 0.15
+			dip_advisor_cost = -0.15
 		}
 		on_upgraded = {
 			add_base_production = 2
@@ -147,7 +149,8 @@ nathalaire_city_of_pirates = {
 		}
 		country_modifiers = {
 			spy_offence = 0.25
-			privateer_efficiency = 0.1
+			privateer_efficiency = 0.25
+			dip_advisor_cost = -0.25
 		}
 		on_upgraded = {
 			add_base_production = 2

@@ -73,6 +73,7 @@ lorentaine_mage_academy = {
 		province_modifiers = {
 			local_development_cost = -0.05
 			local_defensiveness = 0.1
+			allowed_num_of_manufactories = 1
 		}
 		area_modifier = {
 		}
@@ -103,6 +104,7 @@ lorentaine_mage_academy = {
 		province_modifiers = {
 			local_development_cost = -0.1
 			local_defensiveness = 0.2
+			allowed_num_of_manufactories = 1
 		}
 		area_modifier = {
 		}
@@ -119,7 +121,7 @@ lorentaine_mage_academy = {
 			}
 			define_advisor = {
 				type = court_mage
-				name = "Paulius McMageman"
+				name = "Elduvar Bladern"
 				skill = 3
 				culture = moon_elf
 				religion = regent_court
@@ -138,12 +140,14 @@ lorentaine_mage_academy = {
 		province_modifiers = {
 			local_development_cost = -0.15
 			local_defensiveness = 0.33
+			allowed_num_of_manufactories = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
 			mages_influence_modifier = 0.05
 			mages_loyalty_modifier = 0.1
+			all_power_cost = -0.025
 		}
 		on_upgraded = {
 			owner = {
@@ -158,12 +162,13 @@ lorentaine_mage_academy = {
 					duration = 7300
 				}
 				define_general = {
-					name = "'Mr Wizard'"
+					name = "Calassa Castanern"
 					trait = war_wizard_personality
-					fire = 0
-					shock = 6
+					fire = 2
+					shock = 8
 					manuever = 0
-					siege = 3
+					siege = 4
+					female = yes
 				}
 			}
 		}
@@ -248,7 +253,7 @@ lorent_new_adea_naval_school = {
 		}
 		country_modifiers = {
 			admiral_cost = -0.05
-			capture_ship_chance = 0.025
+			capture_ship_chance = 0.05
 		}
 		on_upgraded = {
 			add_base_production = 1
@@ -270,7 +275,7 @@ lorent_new_adea_naval_school = {
 		}
 		country_modifiers = {
 			admiral_cost = -0.1
-			capture_ship_chance = 0.05
+			capture_ship_chance = 0.1
 		}
 		on_upgraded = {
 			add_base_production = 2
@@ -292,7 +297,7 @@ lorent_new_adea_naval_school = {
 		country_modifiers = {
 			admiral_cost = -0.15
 			admiral_skill_gain_modifier = 0.01
-			capture_ship_chance = 0.10
+			capture_ship_chance = 0.15
 		}
 		on_upgraded = {
 			add_base_production = 3
@@ -442,10 +447,10 @@ deranne_westport_gateway_to_aelantir = {
 				define_explorer = {
 					name = "Artorian Agnel"
 					trait = accomplished_sailor_personality
-					fire = 2
+					fire = 4
 					shock = 2
-					manuever = 4
-					siege = 2
+					manuever = 8
+					siege = 0
 				}
 			}
 		}
@@ -572,7 +577,7 @@ minara_temple = {
 			factor = 5000
 		}
 		province_modifiers = {
-			local_development_cost = -0.10
+			local_development_cost = -0.15
 		}
 		area_modifier = {
 			local_tax_modifier = 0.33

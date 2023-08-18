@@ -91,7 +91,7 @@ kara_targu = {
 			local_defensiveness = 0.1
 		}
 		country_modifiers = {
-			global_trade_goods_size_modifier = 0.025
+			global_trade_goods_size_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -142,7 +142,7 @@ kara_targu = {
 			allowed_num_of_buildings = 1
 		}
 		country_modifiers = {
-			global_trade_goods_size_modifier = 0.075
+			global_trade_goods_size_modifier = 0.1
 			
 		}
 		on_upgraded = {
@@ -381,6 +381,7 @@ silent_repose = {
 		}
 		country_modifiers = {
 			war_exhaustion_cost = -0.03
+			war_exhaustion = -0.03
 		}
 		on_upgraded = {
 		}
@@ -399,6 +400,7 @@ silent_repose = {
 		}
 		country_modifiers = {
 			war_exhaustion_cost = -0.06
+			war_exhaustion = -0.06
 			tolerance_heretic = 1
 			tolerance_heathen = 1
 		}
@@ -421,6 +423,7 @@ silent_repose = {
 		}
 		country_modifiers = {
 			war_exhaustion = -0.10
+			war_exhaustion_cost = -0.10
 			advisor_pool = 1
 			tolerance_heretic = 2
 			tolerance_heathen = 2
@@ -569,7 +572,7 @@ lost_ship = {
 		}
 		on_upgraded = {
 			remove_province_modifier = harpy_minority_oppressed_large
-			change_culture = firanyan_harpy
+			change_culture = cannorian_harpy
 			add_permanent_province_modifier = {
 				name = harpy_minority_integrated_large
 				duration = -1
@@ -578,126 +581,126 @@ lost_ship = {
 	}
 }
 
-#black_pillar = {
-#	start = 5476
-#	date = 01.01.01
-#	time = { 
-#		months = 120	
-#	}
-#	build_cost = 1000
-#	can_be_moved = yes
-#	starting_tier = 0
-#	type = monument
-#
-#	build_trigger = {
-#		AND = {
-#			Development = 30
-#			culture_group = gnollish
-#		}
-#		province_is_or_accepts_culture = yes
-#	}
-#
-#	on_built = {
-#	}
-#
-#	on_destroyed = {
-#	}
-#
-#	can_use_modifiers_trigger = {
-#		AND = {
-#			Development = 30
-#			culture_group = gnollish
-#		}
-#		province_is_or_accepts_culture = yes
-#	}
-#
-#	can_upgrade_trigger = {
-#		AND = {
-#			Development = 30
-#			culture_group = gnollish
-#		}
-#		province_is_or_accepts_culture = yes
-#	}
-#
-#	keep_trigger = {
-#	}
-#
-#	tier_0 = {
-#		upgrade_time = {
-#			months = 0
-#		}
-#		cost_to_upgrade = {
-#			factor = 0
-#		}
-#		province_modifiers = {
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#
-#	tier_1 = {
-#		upgrade_time = {
-#			months = 120
-#		}
-#		cost_to_upgrade = {
-#			factor = 1000
-#		}
-#		province_modifiers = {
-#			local_unrest = 5
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {	
-#			raze_power_gain = 0.10		
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#
-#	tier_2 = {
-#		upgrade_time = {
-#			months = 240
-#		}
-#		cost_to_upgrade = {
-#			factor = 2500
-#		}
-#		province_modifiers = {
-#			local_unrest = 10
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#			raze_power_gain = 0.20	
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#
-#	tier_3 = {
-#		upgrade_time = {
-#			months = 480
-#		}
-#		cost_to_upgrade = {
-#			factor = 5000
-#		}
-#		province_modifiers = {
-#			local_unrest = 15
-#		}
-#		area_modifier = {
-#
-#		}
-#		country_modifiers = {
-#			raze_power_gain = 0.30
-#			missionaries = 1
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#}
+black_pillar = {
+	start = 5476
+	date = 01.01.01
+	time = { 
+		months = 120	
+	}
+	build_cost = 1000
+	can_be_moved = yes
+	starting_tier = 0
+	type = monument
+
+	build_trigger = {
+		AND = {
+			Development = 30
+			culture_group = gnollish
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		AND = {
+			Development = 30
+			culture_group = gnollish
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	can_upgrade_trigger = {
+		AND = {
+			Development = 30
+			culture_group = gnollish
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_unrest = 5
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+			raze_power_gain = 0.10		
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_unrest = 10
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			raze_power_gain = 0.20	
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_unrest = 15
+		}
+		area_modifier = {
+
+		}
+		country_modifiers = {
+			raze_power_gain = 0.30
+			missionaries = 1
+		}
+		on_upgraded = {
+		}
+	}
+}
 
 
 
@@ -815,7 +818,7 @@ khenak_copper_mine = {
 		}
 
 		province_modifiers = {
-			trade_goods_size = 1.5
+			trade_goods_size = 2.0
 		}
 
 		area_modifier = {
@@ -823,6 +826,10 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
+<<<<<<< HEAD
+=======
+			interest = -0.10
+>>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 		}
 
 		on_upgraded = {
@@ -839,7 +846,7 @@ khenak_copper_mine = {
 		}
 
 		province_modifiers = {
-			trade_goods_size = 2.0
+			trade_goods_size = 3.0
 		}
 
 		area_modifier = {
@@ -847,6 +854,10 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
+<<<<<<< HEAD
+=======
+			interest = -0.15
+>>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 		}
 
 		on_upgraded = {
@@ -943,6 +954,7 @@ tier_1 = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			merchants = 1
 		}
 		on_upgraded = {
 		}
@@ -961,7 +973,8 @@ tier_1 = {
 			trade_goods_size_modifier = 0.1
 		}
 		country_modifiers = {
-			global_trade_power = 0.025
+			merchants = 1
+			global_trade_power = 0.05
 		}
 		on_upgraded = {
 		}
@@ -980,7 +993,8 @@ tier_1 = {
 			trade_goods_size_modifier = 0.2
 		}
 		country_modifiers = {
-			global_trade_power = 0.05
+			merchants = 2
+			global_trade_power = 0.1
 		}
 		on_upgraded = {
 		}
@@ -1121,6 +1135,7 @@ diplomatic_palace = {
 		country_modifiers = {
 			diplomatic_reputation = 2
 			envoy_travel_time = -0.33
+			diplomatic_upkeep = 1
 			fabricate_claims_cost = -0.2
 		}
 		on_upgraded = {
@@ -1385,7 +1400,7 @@ harpy_onsen = {
 		country_modifiers = {
 			heir_chance = 1
 			war_exhaustion = -0.02
-			manpower_recovery_speed = 0.025
+			manpower_recovery_speed = 0.05
 		}
 
 		on_upgraded = {
@@ -1414,11 +1429,13 @@ harpy_onsen = {
 		country_modifiers = {
 			heir_chance = 2
 			war_exhaustion = -0.03
-			manpower_recovery_speed = 0.05
+			manpower_recovery_speed = 0.1
 		}
 
 		on_upgraded = {
-
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
 		}
 	}
 }
@@ -1482,7 +1499,7 @@ trinaire = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			drill_decay_modifier = -0.025
+			drill_decay_modifier = -0.05
 		}
 		on_upgraded = {
 		}
@@ -1502,7 +1519,8 @@ trinaire = {
 			local_manpower_modifier = 0.15
 		}
 		country_modifiers = {
-			drill_decay_modifier = -0.05
+			drill_decay_modifier = -0.10
+			advisor_cost = -0.1
 		}
 		on_upgraded = {
 		}
@@ -1522,8 +1540,9 @@ trinaire = {
 			local_manpower_modifier = 0.25
 		}
 		country_modifiers = {
-			drill_decay_modifier = -0.075
-			special_unit_forcelimit = 0.05
+			drill_decay_modifier = -0.15
+			advisor_cost = -0.2
+			special_unit_forcelimit = 0.1
 		}
 		on_upgraded = {
 		}
@@ -1616,7 +1635,7 @@ date = 01.01.01
 		}
 		country_modifiers = {
 			mercantilism_cost = -0.05
-			embracement_cost = -0.05
+			global_institution_spread = 0.1
 		}
 		on_upgraded = {
 		}
@@ -1634,8 +1653,9 @@ date = 01.01.01
 		area_modifier = {
 		}
 		country_modifiers = {
-			mercantilism_cost = -0.075
-			embracement_cost = -0.1
+			mercantilism_cost = -0.1
+			global_institution_spread = 0.2
+			embracement_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -1653,8 +1673,9 @@ date = 01.01.01
 		area_modifier = {
 		}
 		country_modifiers = {
-			mercantilism_cost = -0.10
-			embracement_cost = -0.15
+			mercantilism_cost = -0.15
+			global_institution_spread = 0.3
+			embracement_cost = -0.1
 		}
 		on_upgraded = {
 		}
@@ -1766,7 +1787,6 @@ tier_1 = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_regiment_cost = -0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -1798,7 +1818,7 @@ tier_1 = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_regiment_cost = -0.05
+			global_regiment_cost = -0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -2071,6 +2091,7 @@ port_jaher = {
 		}
 
 		country_modifiers = {
+			global_autonomy = -0.01	
 			global_tariffs = 0.05
 			treasure_fleet_income = 0.05			
 		}
@@ -2095,6 +2116,7 @@ port_jaher = {
 		}
 
 		country_modifiers = {
+			global_autonomy = -0.025
 			global_tariffs = 0.1
 			treasure_fleet_income = 0.1
 		}
@@ -2115,7 +2137,8 @@ port_jaher = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_tariffs = 0.15
+			global_autonomy = -0.05
+			global_tariffs = 0.2
 			treasure_fleet_income = 0.2
 		}
 		on_upgraded = {

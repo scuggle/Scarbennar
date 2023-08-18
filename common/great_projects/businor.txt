@@ -77,7 +77,7 @@ eborthil_toref_citadel = {
 			local_defensiveness = 0.1
 			local_sailors_modifier = 0.25
 			blockade_force_required = 0.25
-
+			hostile_fleet_attrition = 3
 		}
 		area_modifier = {
 			hostile_disembark_speed = 0.25
@@ -98,17 +98,17 @@ eborthil_toref_citadel = {
 			local_defensiveness = 0.2
 			local_sailors_modifier = 0.5
 			blockade_force_required = 0.5
-
+			hostile_fleet_attrition = 5
 		}
 		area_modifier = {
 			hostile_disembark_speed = 0.5
-
+			local_defender_dice_roll_bonus = 1
 		}
 		country_modifiers = {
-			allowed_marine_fraction = 0.025
+			allowed_marine_fraction = 0.05
 		}
 		on_upgraded = {
-
+			add_building = coastal_defence
 		}
 	}
 	tier_3 = {
@@ -122,17 +122,17 @@ eborthil_toref_citadel = {
 			local_defensiveness = 0.33
 			local_sailors_modifier = 1
 			blockade_force_required = 1
-
+			hostile_fleet_attrition = 10
 		}
 		area_modifier = {
 			hostile_disembark_speed = 1
-
+			local_defender_dice_roll_bonus = 1
 		}
 		country_modifiers = {
-			allowed_marine_fraction = 0.05
+			allowed_marine_fraction = 0.1
 		}
 		on_upgraded = {
-
+			add_building = naval_battery
 		}
 	}
 }

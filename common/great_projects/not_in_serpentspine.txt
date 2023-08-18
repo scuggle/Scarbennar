@@ -88,7 +88,7 @@ rubyhold_academy = {
 		}
 		country_modifiers = {
 			spy_offence = 0.15
-			idea_cost = -0.01
+			idea_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -108,7 +108,7 @@ rubyhold_academy = {
 		}
 		country_modifiers = {
 			spy_offence = 0.20
-			idea_cost = -0.025
+			idea_cost = -0.075
 		}
 		on_upgraded = {
 		}
@@ -129,7 +129,7 @@ rubyhold_academy = {
 		}
 		country_modifiers = {
 			spy_offence = 0.25
-			idea_cost = -0.05
+			idea_cost = -0.1
 		}
 		on_upgraded = {
 			center_of_trade = 1
@@ -241,7 +241,7 @@ ovdal_tungr_port_hold = {
 		area_modifier = {	
 		}
 		country_modifiers = {
-		flagship_durability = 0.025
+		ship_durability = 0.025
 		navy_tradition_decay = -0.003
 		}
 		on_upgraded = {
@@ -249,10 +249,10 @@ ovdal_tungr_port_hold = {
 				define_admiral = {
 					name = "Sevrund Shalebeard"
 					trait = ironside_personality
-					fire = 3
+					fire = 8
 					shock = 2
-					manuever = 2
-					siege = 5
+					manuever = 4
+					siege = 2
 				}
 			}
 		}
@@ -272,6 +272,7 @@ ovdal_tungr_port_hold = {
 		area_modifier = {		
 		}
 		country_modifiers = {
+		ship_durability = 0.05
 		navy_tradition_decay = -0.005
 		flagship_durability = 0.5
 		}
@@ -373,7 +374,7 @@ marrhold_gate_to_the_serpentspine = {
 			local_manpower_modifier = 0.1
 		}
 		country_modifiers = {
-			mil_advisor_cost = -0.05
+			mil_advisor_cost = -0.1
 			army_tradition_from_battle = 0.5
 		}
 		on_upgraded = {
@@ -394,7 +395,7 @@ marrhold_gate_to_the_serpentspine = {
 			local_manpower_modifier = 0.2
 		}
 		country_modifiers = {
-			mil_advisor_cost = -0.075
+			mil_advisor_cost = -0.15
 			army_tradition_from_battle = 0.75
 		}
 		on_upgraded = {
@@ -425,19 +426,19 @@ marrhold_gate_to_the_serpentspine = {
 			local_manpower_modifier = 0.33
 		}
 		country_modifiers = {
-			mil_advisor_cost = -0.1
+			mil_advisor_cost = -0.2
 			army_tradition_from_battle = 1
 		}
 		on_upgraded = {
 			center_of_trade = 1
 			owner = {
 				define_general = {
-					name = "Matt of Marhold"
+					name = "Eren Jeager"
 					trait = goal_oriented_personality
-					fire = 3
-					shock = 3
+					fire = 2
+					shock = 8
 					manuever = 5
-					siege = 1
+					siege = 2
 				}
 				add_country_modifier = {
 					name = marrhold_tatake_tatake
@@ -686,8 +687,8 @@ silverforge_strongbellow_academy = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			mil_tech_cost_modifier = -0.025
-			artillery_power = 0.025
+			mil_tech_cost_modifier = -0.05
+			artillery_power = 0.05
 		}
 		on_upgraded = {
 		}
@@ -706,8 +707,8 @@ silverforge_strongbellow_academy = {
 		area_modifier = {	
 		}
 		country_modifiers = {
-			mil_tech_cost_modifier = -0.05
-			artillery_power = 0.05
+			mil_tech_cost_modifier = -0.075
+			artillery_power = 0.075
 		}
 		on_upgraded = {
 			add_permanent_province_modifier = {
@@ -730,8 +731,8 @@ silverforge_strongbellow_academy = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			mil_tech_cost_modifier = -0.075
-			artillery_power = 0.075
+			mil_tech_cost_modifier = -0.1
+			artillery_power = 0.10
 		}
 		on_upgraded = {
 			center_of_trade = 1
@@ -740,10 +741,10 @@ silverforge_strongbellow_academy = {
 				define_general = {
 					name = "Grun Strongbellow Jr."
 					trait = siege_specialist_personality
-					fire = 3
-					shock = 1
-					manuever = 2
-					siege = 4
+					fire = 8
+					shock = 3
+					manuever = 3
+					siege = 6
 				}
 			}
 		}

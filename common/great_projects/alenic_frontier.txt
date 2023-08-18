@@ -142,7 +142,7 @@ freecestir_mustering_grounds = {
 			local_manpower_modifier = 0.33
 		}
 		country_modifiers = {
-			land_forcelimit_modifier = 0.075
+			land_forcelimit_modifier = 0.1
 		}
 		on_upgraded = {
 			owner = {

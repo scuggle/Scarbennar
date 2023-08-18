@@ -64,11 +64,11 @@ warded_city_deg = {
 			local_manpower = 1
 		}
 		area_modifier = {
-			local_manpower_modifier = 0.05
+			local_manpower_modifier = 0.1
 		}
 		country_modifiers = {
 			prestige_from_land = 0.5
-			war_exhaustion = -0.01
+			war_exhaustion = -0.02
 		}
 		on_upgraded = {
 		}
@@ -85,11 +85,12 @@ warded_city_deg = {
 			local_manpower = 2
 		}
 		area_modifier = {
-			local_manpower_modifier = 0.10
+			local_manpower_modifier = 0.15
 		}
 		country_modifiers = {
 			prestige_from_land = 1
-			war_exhaustion = -0.02
+			general_cost = -0.10
+			war_exhaustion = -0.03
 			nobles_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
@@ -107,11 +108,12 @@ warded_city_deg = {
 			local_manpower = 5
 		}
 		area_modifier = {
-			local_manpower_modifier = 0.15
+			local_manpower_modifier = 0.33
 		}
 		country_modifiers = {
 			prestige_from_land = 1.5
-			war_exhaustion = -0.03
+			general_cost = -0.15
+			war_exhaustion = -0.05
 			nobles_loyalty_modifier = 0.1
 		}
 		on_upgraded = {
@@ -186,6 +188,7 @@ warded_city_orm = {
 			allowed_num_of_buildings = 1
 		}
 		country_modifiers = {
+			trade_range_modifier = 0.1
 			global_trade_power = 0.05
 		}
 		on_upgraded = {
@@ -206,7 +209,8 @@ warded_city_orm = {
 			allowed_num_of_buildings = 1
 		}
 		country_modifiers = {
-			global_trade_power = 0.075
+			trade_range_modifier = 0.2
+			global_trade_power = 0.1
 		}
 		on_upgraded = {
 		}
@@ -227,7 +231,8 @@ warded_city_orm = {
 		}
 		country_modifiers = {
 			merchants = 1
-			global_trade_power = 0.10
+			trade_range_modifier = 0.33
+			global_trade_power = 0.15
 			burghers_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
@@ -299,7 +304,7 @@ warded_city_khe = {
 			local_defensiveness = 0.1
 		}
 		area_modifier = {
-			local_development_cost = -0.05
+			local_development_cost = -0.1
 		}
 		country_modifiers = {
 			production_efficiency = 0.1
@@ -319,7 +324,7 @@ warded_city_khe = {
 			local_defensiveness = 0.15
 		}
 		area_modifier = {
-			local_development_cost = -0.075
+			local_development_cost = -0.15
 			trade_goods_size_modifier = 0.1
 		}
 		country_modifiers = {
@@ -341,7 +346,7 @@ warded_city_khe = {
 			local_defensiveness = 0.25
 		}
 		area_modifier = {
-			local_development_cost = -0.1
+			local_development_cost = -0.2
 			trade_goods_size_modifier = 0.2
 		}
 		country_modifiers = {
@@ -466,7 +471,7 @@ warded_city_lok = {
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.03
-			religious_unity = 0.2
+			religious_unity = 0.3
 			church_loyalty_modifier = 0.1
 		}
 		on_upgraded = {
@@ -542,6 +547,7 @@ warded_city_okt = {
 			trade_goods_size_modifier = 0.10
 		}
 		country_modifiers = {
+			advisor_cost = -0.15
 			global_colonial_growth = 20
 		}
 		on_upgraded = {
@@ -562,6 +568,7 @@ warded_city_okt = {
 			trade_goods_size_modifier = 0.20
 		}
 		country_modifiers = {
+			advisor_cost = -0.20
 			global_colonial_growth = 30
 		}
 		on_upgraded = {
@@ -582,6 +589,7 @@ warded_city_okt = {
 			trade_goods_size_modifier = 0.35
 		}
 		country_modifiers = {
+			advisor_cost = -0.25
 			global_colonial_growth = 50
 		}
 		on_upgraded = {
@@ -654,6 +662,7 @@ warded_city_arp = {
 			trade_goods_size = 0.5
 		}
 		area_modifier = {
+			trade_value_modifier = 0.1
 		}
 		country_modifiers = {
 			burghers_loyalty_modifier = 0.05
@@ -675,6 +684,7 @@ warded_city_arp = {
 			trade_goods_size = 2
 		}
 		area_modifier = {
+			trade_value_modifier = 0.15
 		}
 		country_modifiers = {
 			burghers_loyalty_modifier = 0.05
@@ -696,6 +706,7 @@ warded_city_arp = {
 			trade_goods_size = 3
 		}
 		area_modifier = {
+			trade_value_modifier = 0.20
 		}
 		country_modifiers = {
 			burghers_loyalty_modifier = 0.1

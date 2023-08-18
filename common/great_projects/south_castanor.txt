@@ -167,6 +167,7 @@ marrhold_the_feather_academy = {
 		country_modifiers = {
 			movement_speed = 0.1
 			cavalry_flanking = 0.5
+			leader_land_manuever = 1
 		}
 		on_upgraded = {
 			owner = {
@@ -326,7 +327,7 @@ bladeskeep = {
 		country_modifiers = {
 			nobles_loyalty_modifier = 0.075
 			nobles_influence_modifier = 0.025
-			global_autonomy = -0.01
+			global_autonomy = -0.02
 		}
 		on_upgraded = {
 		}
@@ -347,7 +348,7 @@ bladeskeep = {
 		country_modifiers = {
 			nobles_loyalty_modifier = 0.10
 			nobles_influence_modifier = 0.05
-			global_autonomy = -0.02
+			global_autonomy = -0.03
 			administrative_efficiency = 0.025
 		}
 		on_upgraded = {
@@ -541,6 +542,7 @@ esthili_academy_of_magic = {
 		country_modifiers = {
 			mages_influence_modifier = 0.05
 			mages_loyalty_modifier = 0.1
+			monarch_military_power = 1
 		}
 		on_upgraded = {
 			add_base_tax = -100

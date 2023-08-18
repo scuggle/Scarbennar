@@ -248,6 +248,7 @@ ovdal_kanzad_cannon_foundry = {
 		}
 		country_modifiers = {
 			artillery_cost = -0.05
+			artillery_fire = 0.1
 		}
 		on_upgraded = {
 		}
@@ -267,16 +268,17 @@ ovdal_kanzad_cannon_foundry = {
 		}
 		country_modifiers = {
 			artillery_cost = -0.075
+			artillery_fire = 0.15
 		}
 		on_upgraded = {
 			owner = {
 				define_general = {
 					name = "Thorgrim 'The Cannon' Flamebeard"
 					trait = cannoneer_personality
-					fire = 5
-					shock = 2
-					manuever = 2
-					siege = 3
+					fire = 8
+					shock = 1
+					manuever = 3
+					siege = 5
 				}
 			}
 		}
@@ -300,6 +302,7 @@ ovdal_kanzad_cannon_foundry = {
 		}
 		country_modifiers = {
 			artillery_cost = -0.10
+			artillery_fire = 0.2
 			artillery_levels_available_vs_fort = 1
 		}
 		on_upgraded = {
@@ -393,6 +396,7 @@ grozumdhir_green_gate = {
 		area_modifier = {			
 		}
 		country_modifiers = {
+			num_accepted_cultures = 1
 			tolerance_heathen = 1
 		}
 		on_upgraded = {
@@ -412,7 +416,7 @@ grozumdhir_green_gate = {
 		area_modifier = {			
 		}
 		country_modifiers = {
-			num_accepted_cultures = 1
+			num_accepted_cultures = 2
 			tolerance_heathen = 2
 		}
 		on_upgraded = {
@@ -433,7 +437,7 @@ grozumdhir_green_gate = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			num_accepted_cultures = 2
+			num_accepted_cultures = 3
 			tolerance_heathen = 3
 			tolerance_of_heathens_capacity = 1
 		}
@@ -683,7 +687,7 @@ hul_as_krakazol_breweries = {
 		area_modifier = {			
 		}
 		country_modifiers = {
-			manpower_recovery_speed = 0.025
+			manpower_recovery_speed = 0.05
 		}
 		region_modifier = {
 			local_unrest = -1
@@ -709,7 +713,7 @@ hul_as_krakazol_breweries = {
 			local_unrest = -2
 		}
 		country_modifiers = {
-			manpower_recovery_speed = 0.05
+			manpower_recovery_speed = 0.1
 		}
 		on_upgraded = {
 		}
@@ -733,7 +737,8 @@ hul_as_krakazol_breweries = {
 			local_unrest = -3
 		}
 		country_modifiers = {
-			manpower_recovery_speed = 0.075
+			manpower_recovery_speed = 0.15
+			leader_land_shock = 1
 		}
 		on_upgraded = {
 		}
