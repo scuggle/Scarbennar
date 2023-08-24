@@ -20,7 +20,7 @@ X18 = "countries/Silver Band.txt"
 X19 = "countries/Airgethil.txt"
 X20 = "countries/Falahen.txt"
 X21 = "countries/Wabensoyo.txt"
-X22 = "countries/Southroy.txt"
+#RIP Southroy
 X23 = "countries/Triarchy.txt"
 X24 = "countries/Northern_League.txt"
 
