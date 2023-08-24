@@ -56,6 +56,7 @@ cestirande_1_missions = {
 				name = A_98_order_2
 				duration = -1
 			}
+			remove_country_modifier = A_98_order_1
 			every_owned_province = {
 				limit = {
 					trade_goods = livestock
@@ -86,6 +87,7 @@ cestirande_1_missions = {
 				name = A_98_order_3
 				duration = -1
 			}
+			remove_country_modifier = A_98_order_2
 			#TODO: Add something more here
 		} 
 	}
@@ -108,6 +110,7 @@ cestirande_1_missions = {
 				name = A_98_order_4
 				duration = -1
 			}
+			remove_country_modifier = A_98_order_3
 			set_estate_privilege = estate_nobles_longlance_knights
 			#TODO: Custom tooltip
 		} 
@@ -422,6 +425,7 @@ cestirande_3_missions = {
 
 		trigger = {
 			galeinn_area = {
+				type = all
 				is_core = ROOT
 			}
 			295 = {
@@ -455,6 +459,7 @@ cestirande_3_missions = {
 
 		trigger = {
 			middle_luna_area = {
+				type = all
 				OR = {
 					is_core = ROOT
 					is_core = A61
@@ -676,13 +681,15 @@ cestirande_4_missions = {
 		trigger = {
 			alliance_with = emperor
 			emperor = {
-				has_opinion_modifier = {
-					who = ROOT
-					modifier = lilac_wars_rose_party_member
-				}
-				has_opinion = {
-					who = ROOT
-					value = 190
+				OR = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = lilac_wars_rose_party_member
+					}
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
 				}
 			}
 			diplomatic_reputation = A31
@@ -808,6 +815,7 @@ cestirande_5_missions = {
 				name = A98_reform_order
 				duration = 3650
 			}
+			remove_country_modifier = A_98_order_4
 		} 
 	}
 
