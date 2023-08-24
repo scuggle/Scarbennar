@@ -7,7 +7,7 @@ owner = L27
 controller = L27
 add_core = L27
 culture = shasoura
-religion = elikhetist
+religion = aakhetist
 
 hre = no
 

@@ -182,70 +182,70 @@
 # 				country_or_non_sovereign_subject_holds = ROOT
 # 			}
 # 		}
-		
-# 		effect = {
-# 			400 = {
-# 				if = {
-# 					limit = {
-# 						NOT = {
-# 							is_permanent_claim = ROOT
-# 							is_core = ROOT
-# 						}
-# 					}
-# 					add_permanent_claim = ROOT
-# 				}
-# 			}
-# 			akan_mountains_area = {
-# 				limit = {
-# 					NOT = { is_core = ROOT }
-# 					NOT = { is_permanent_claim = ROOT }
-# 				}
-# 				add_permanent_claim = ROOT
-# 			}
-# 			middle_akan_area = {
-# 				limit = {
-# 					NOT = { is_core = ROOT }
-# 					NOT = { is_permanent_claim = ROOT }
-# 				}
-# 				add_permanent_claim = ROOT
-# 			}
-# 			isle_of_tef_area = {
-# 				limit = {
-# 					NOT = { is_core = ROOT }
-# 					NOT = { is_permanent_claim = ROOT }
-# 				}
-# 				add_permanent_claim = ROOT
-# 			}
-# 			add_casus_belli = {
-# 				target = A47
-# 				type = cb_vassalize_mission
-# 			}
-# 		}
-# 	}
-	
+#		
+#		effect = {
+#			400 = {
+#				if = {
+#					limit = {
+#						NOT = {
+#							is_permanent_claim = ROOT
+#							is_core = ROOT
+#						}
+#					}
+#					add_permanent_claim = ROOT
+#				}
+#			}
+#			akasik_mountains_area = {
+#				limit = {
+#					NOT = { is_core = ROOT }
+#					NOT = { is_permanent_claim = ROOT }
+#				}
+#				add_permanent_claim = ROOT
+#			}
+#			middle_akasik_area = {
+#				limit = {
+#					NOT = { is_core = ROOT }
+#					NOT = { is_permanent_claim = ROOT }
+#				}
+#				add_permanent_claim = ROOT
+#			}
+#			isle_of_tef_area = {
+#				limit = {
+#					NOT = { is_core = ROOT }
+#					NOT = { is_permanent_claim = ROOT }
+#				}
+#				add_permanent_claim = ROOT
+#			}
+#			add_casus_belli = {
+#				target = A47
+#				type = cb_vassalize_mission
+#			}
+#		}
+#	}
+#	
 # 	kheterata_conquer_viakkoc = {
 # 		icon = mission_cannons_firing
 # 		required_missions = { kheterata_subjugate_deshak }
-		
-# 		provinces_to_highlight = {
-# 			OR = {
-# 				area = middle_akan_area
-# 				area = akan_mountains_area
-# 			}
-# 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-# 		}
-		
-# 		trigger = {
-# 			middle_akan_area = {
-# 				type = all
-# 				country_or_non_sovereign_subject_holds = ROOT
-# 			}
-# 			akan_mountains_area = {
-# 				type = all
-# 				country_or_non_sovereign_subject_holds = ROOT
-# 			}
-# 		}
-		
+#		
+#		provinces_to_highlight = {
+#			OR = {
+#				area = middle_akasik_area
+#				area = akasik_mountains_area
+#			}
+#			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#		}
+#		
+#		trigger = {
+#			middle_akasik_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			akasik_mountains_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#		}
+#		
 # 		effect = {
 # 			ekha_area = {
 # 				limit = {

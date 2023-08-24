@@ -820,7 +820,7 @@ exploration_ideas = { #reclamation #done
 						region = west_dameshead_region
 						region = east_dameshead_region
 						region = businor_region
-						region = akan_region
+						region = akasik_region
 						area = vrorenmarch_area
 					}
 				}
@@ -838,7 +838,7 @@ exploration_ideas = { #reclamation #done
 					OR = {
 						region = lencenor_region
 						region = dragon_coast_region
-						region = akan_region
+						region = akasik_region
 						area = vrorenmarch_area
 					}
 				}

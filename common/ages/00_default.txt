@@ -730,10 +730,28 @@ age_of_absolutism = {
 		
 		ab_escanni_consolidation_wars = {
 			allow = {
-				OR = {
-					capital_scope = { region = west_castanor_region}
-					capital_scope = { region = south_castanor_region}
-					capital_scope = { region = inner_castanor_region}
+				if = {
+					limit = {
+						tag = B34
+					}
+					OR = {
+						OR = {
+							capital_scope = { region = west_castanor_region }
+							capital_scope = { region = south_castanor_region }
+							capital_scope = { region = inner_castanor_region }
+						}
+						AND = {
+							tag = B34
+							capital = 350
+						}
+					}
+				}
+				else = {
+					OR = {
+						capital_scope = { region = west_castanor_region }
+						capital_scope = { region = south_castanor_region }
+						capital_scope = { region = inner_castanor_region }
+					}
 				}
 			}
 			modifier = {
@@ -782,7 +800,6 @@ age_of_absolutism = {
 		# 	}
 		# 	effect = {
 		# 		custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
-		# 		set_country_flag = age_ability_sun_cult_resurgence_flag
 		# 	}
 		# 	ai_will_do = {
 		# 		factor = 10
