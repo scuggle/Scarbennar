@@ -1156,8 +1156,9 @@ country_event = {
 		name = xhazobkult_events.1104.a	
 		
 		hidden_effect = {
-			restore_country_color = yes
-			restore_country_name = yes
+			#restore_country_color = yes
+			#restore_country_name = yes
+			change_tag = event_target:xhaz_original
 			add_stability = -1
 			add_patriarch_authority = -1
 			every_owned_province = {
@@ -1202,10 +1203,12 @@ country_event = {
 			country_event = {
 				id = magic_ruler.102
 			}
-			override_country_name = GREAT_XHAZ
-			change_country_color = {
-				color = { 181 230 29 }
-			}
+			#override_country_name = GREAT_XHAZ
+			#change_country_color = {
+			#	color = { 181 230 29 }
+			#}
+			change_tag = X03
+			save_event_target_as = xhaz_original
 			set_country_flag = xhazob_alive
 			country_event = {
 				id = magic_ruler.100
