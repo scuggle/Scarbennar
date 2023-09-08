@@ -20,10 +20,10 @@ fixed_capital = 8 # Cannot move capital away from this province & no power cost 
 1440.1.1 = {
 	monarch = {
 		name = "Feliz The Flat"
+		birth_date = 1413.1.1
 		adm = 3
 		dip = 5
 		mil = 1
-		
 	}
 	add_ruler_personality = charismatic_negotiator_personality
 }
