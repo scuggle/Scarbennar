@@ -27,38 +27,6 @@ skewered_drake_colony = {
 	global_colonial_growth = 25
 }
 
-#Witch-Kings
-1_relations_removed = {
-	diplomatic_upkeep = -1
-}
-2_relations_removed = {
-	diplomatic_upkeep = -2
-}
-3_relations_removed = {
-	diplomatic_upkeep = -3
-}
-4_relations_removed = {
-	diplomatic_upkeep = -4
-}
-5_relations_removed = {
-	diplomatic_upkeep = -5
-}
-6_relations_removed = {
-	diplomatic_upkeep = -6
-}
-7_relations_removed = {
-	diplomatic_upkeep = -7
-}
-8_relations_removed = {
-	diplomatic_upkeep = -8
-}
-9_relations_removed = {
-	diplomatic_upkeep = -9
-}
-10_relations_removed = {
-	diplomatic_upkeep = -10
-}
-
 #roleplay modifiers
 ####################
 goods_production_boost_1 = {
