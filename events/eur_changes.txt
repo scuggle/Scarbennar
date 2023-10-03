@@ -65,3 +65,33 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = eur_changes.2
+	title = eur_changes.2.t
+	desc = eur_changes.2.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	trigger = {
+		tag = H74
+		ai = no
+		is_year = 1445
+	}
+
+	option = {
+		name = eur_changes.2.a
+		add_country_modifier = {
+			name = chaingrasper_initial_buff
+			duration = 7200
+		}
+		tree_of_stone_region = {
+			discover_country = ROOT
+		}
+	}
+}

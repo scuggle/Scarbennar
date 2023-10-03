@@ -27,6 +27,13 @@ skewered_drake_colony = {
 	global_colonial_growth = 25
 }
 
+#Chaingrasper buff
+chaingrasper_initial_buff = {
+	global_tax_income = 36
+	colonist_placement_chance = 0.1
+	global_colonial_growth = 25
+}
+
 #roleplay modifiers
 ####################
 goods_production_boost_1 = {
