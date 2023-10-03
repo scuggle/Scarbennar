@@ -546,6 +546,7 @@ dwarovar_claimer = {
 	land_forcelimit = 10
 	land_morale = 0.3
 	global_supply_limit_modifier = 0.5
+	own_territory_dice_roll_bonus = 1
 }
 
 inward_military = {
