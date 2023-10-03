@@ -194,6 +194,16 @@ country_decisions = {
 		}
 		effect = {
 			every_subject_country = {
+				limit = {
+					NOT = {
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+					}
+				}
 				change_country_color = {
 					country = overlord
 				}
@@ -221,6 +231,16 @@ country_decisions = {
 		}
 		effect = {
 			every_subject_country = {
+				limit = {
+					NOT = {
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+					}
+				}
 				restore_country_color = yes 
 				clr_country_flag = has_overriden_color_flag
 			}

@@ -1283,6 +1283,9 @@ elven = {
 	}
 	sea_elf = {
 	}
+	dark_moon_elf = {
+		primary = X18
+	}
 	dynasty_names = { 
 	
 		#Generic Moon Elf Cannorized
