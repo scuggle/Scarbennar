@@ -58,13 +58,7 @@ country_decisions = {
 			escann_superregion= {
 				discover_country = ROOT
 			}
-			northern_expanse_superregion= {
-				discover_country = ROOT
-			}
 			forbidden_lands_superregion= {
-				discover_country = ROOT
-			}
-			north_haless_superregion= {
 				discover_country = ROOT
 			}
 			rahen_superregion= {
@@ -88,7 +82,16 @@ country_decisions = {
 			deepwoods_portal_superregion= {
 				discover_country = ROOT
 			}
-			east_indies_superregion= {
+			fangaula_superregion = {
+				discover_country = ROOT
+			}
+			west_sarhal_superregion = {
+				discover_country = ROOT
+			}
+			east_sarhal_superregion = {
+				discover_country = ROOT
+			}
+			south_sarhal_superregion = {
 				discover_country = ROOT
 			}
 			north_aelantir_coast_area = {
