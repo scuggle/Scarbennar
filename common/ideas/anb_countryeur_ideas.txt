@@ -863,7 +863,9 @@ X21_ideas = {
 	}
 
 	trigger = {
-		tag = X21
+		OR = {
+			tag = X21
+		}
 	}
 	free = yes
 
@@ -890,50 +892,6 @@ X21_ideas = {
 	}	
 }
 
-#Southroy
-X22_ideas = {
-	start = {
-		infantry_power = 0.10
-		morale_damage_received = -0.05
-	}
-
-	bonus = {
-		discipline = 0.05
-	}
-
-	trigger = {
-		tag = X22
-	}
-	free = yes
-
-	X22_one = {
-		years_of_nationalism = -5
-		province_warscore_cost = -0.1
-	}
-	X22_two = {
-		prestige = 1
-		diplomatic_upkeep = 2
-	}
-	X22_three = {
-		colonists = 1
-		naval_forcelimit_modifier = 0.2
-	}
-	X22_four = {
-		ae_impact = -0.1
-		unjustified_demands = -0.2
-	}
-	X22_five = {
-		global_trade_goods_size_modifier = 0.1							
-	}
-	X22_six = {
-		hostile_attrition = 1
-		fort_maintenance_modifier = -0.2
-	}
-	X22_seven = {
-		global_manpower_modifier = 0.1
-	}	
-}
-
 # Triarchy
 X23_ideas = {
   start = {
@@ -946,7 +904,9 @@ X23_ideas = {
 	}
 
 	trigger = {
-		tag = X23
+		OR = {
+			tag = X23
+		}
 	}
 	free = yes
 
@@ -988,7 +948,9 @@ X24_ideas = {
 	}
 	
 	trigger = {
-		tag = X24
+		OR = {
+			tag = X24
+		}
 	}
 	free = yes		#will be added at load.
 	
@@ -1028,7 +990,9 @@ M01_ideas = {
 	}
 	
 	trigger = {
-		tag = M01
+		OR = {
+			tag = M01
+		}
 	}
 	free = yes
 	
@@ -1113,7 +1077,9 @@ B46_ideas = {
 	}
 
 	trigger = {
-		tag = B46
+		OR = {
+			tag = B46
+		}
 	}
 	free = yes
 
@@ -1154,7 +1120,9 @@ B44_ideas = {
 	}
 
 	trigger = {
-		tag = B44
+		OR = {
+			tag = B44
+		}
 	}
 	free = yes
 
@@ -1196,7 +1164,9 @@ B43_ideas = {
 	}
 
 	trigger = {
-		tag = B43
+		OR = {
+			tag = B43
+		}
 	}
 	free = yes
 
@@ -1235,7 +1205,9 @@ B45_ideas = {
  	}
 
  	trigger = {
-		tag = B45
+		OR = {
+			tag = B45
+		}
  	}
  	free = yes
 
@@ -1264,46 +1236,6 @@ B45_ideas = {
 		special_unit_forcelimit= 0.10		#goblins in power armour fighting for corrin
  	}	
 }
-
-#Empire of Anbennar
-#Z01_ideas = {
-#	start = {
-#		diplomatic_reputation = 2
-#		free_policy = 1
-#	}
-#
-#	bonus = {
-#		administrative_efficiency = 0.1
-#	}
-#
-#	trigger = {
-#		tag = Z01
-#	}
-#	free = yes
-#
-#	Z01_one = {
-#		global_manpower_modifier = 0.2
-#	}
-#	Z01_two = {
-#		land_morale = 0.15
-#		infantry_shock = 0.2
-#	}
-#	Z01_three = {
-#		improve_relation_modifier = 0.33
-#	}
-#	Z01_four = {
-#		trade_efficiency = 0.2
-#	}
-#	Z01_five = {
-#		core_creation = -0.2
-#	}
-#	Z01_six = {
-#		discipline = 0.05
-#	}
-#	Z01_seven = {
-#		governing_capacity_modifier = 0.2
-#	}	
-#}
 
 #COT
 V02_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
@@ -1351,46 +1283,6 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 	}
 }
 
-#Coppertown
-#A69_ideas = {
-#	start = {
-# 		global_trade_goods_size_modifier = 0.10				
-#		shock_damage_received = -0.10						
-# 	}
-#
-# 	bonus = {
-# 		artillery_fire = 0.15							
-# 	}
-#
-# 	trigger = {
-#		tag = A69
-# 	}
-# 	free = yes
-#
-#	A69_one = {
-# 		artillery_cost = -0.10						
-#	}
-# 	A69_two = {
-# 		build_cost = -0.10
-# 		build_time = -0.10							
-# 	}
-# 	A69_three = {
-# 		fire_damage = 0.15							
-# 	}
-# 	A69_four = {
-# 		production_efficiency = 0.10				
-# 	}
-# 	A69_five = {
-# 		merchants = 1								 	
-#	}
-# 	A69_six = {
-# 		fort_maintenance_modifier = -0.2			 
-# 	}
-# 	A69_seven = {
-# 		artillery_power = 0.10						 
-# 	}	
-#}
-
 #Frozenmaw TBD
 Z18_ideas = {
 	start = {
@@ -1403,7 +1295,9 @@ Z18_ideas = {
 	}
 
 	trigger = {
-		tag = Z18
+		OR = {
+			tag = Z18
+		}
 	}
 	free = yes
 
