@@ -1286,7 +1286,7 @@ gnolltauz_area = {
 }
 
 zeewix_area = {
-	5478 5479 5480
+	5478 5479 5480 5481
 }
 
 saymas_area = {
@@ -1562,7 +1562,7 @@ leta_muhaqaar_area = {
 }
 
 shena_muhaqaar_area = {
-	5481 5485 5486 5487 5692
+	5485 5486 5487 5692
 }
 
 peta_ra_thusk_area = {
