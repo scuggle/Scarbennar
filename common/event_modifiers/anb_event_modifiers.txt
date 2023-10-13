@@ -203,6 +203,10 @@ exwes_estuary_modifier = {
 	province_trade_power_value = 5 
 }
 
+dragonheights_estuary_modifier = {
+	province_trade_power_value = 10
+	}
+
 widderoy_estuary_modifier = {
 	province_trade_power_value = 2.5 #cos its in 2 provinces
 	picture = "estuary_icon"
