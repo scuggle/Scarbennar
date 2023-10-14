@@ -216,19 +216,19 @@ X05_ideas = {
 		heavy_ship_power = 0.15
 	}
 	X05_four = {
-		naval_maintenance_modifier = -0.25
-		naval_morale = 0.2
+		naval_maintenance_modifier = -0.10
+		naval_morale = 0.10
 	}
 	X05_five = {
 		global_trade_power = 0.2
 		colonists = 1
 	}
 	X05_six = {
-		land_attrition = -0.2
+		land_attrition = -0.15
 		hostile_attrition = 1
 	}
 	X05_seven = {
-		infantry_shock = 0.15
+		infantry_shock = 0.10
 		infantry_power = 0.1
 	}
 }
@@ -768,12 +768,12 @@ X17_ideas = {
 # Airgethil
 X19_ideas = {
 	start = {
-		fort_maintenance_modifier = -0.15 #done
-		trade_steering = 0.2 #done
+		fort_maintenance_modifier = -0.15 
+		land_morale = 0.10
 	}
 
 	bonus = {
-		manpower_recovery_speed = 0.20 #done
+		manpower_recovery_speed = 0.20 
 	}
 	
 	trigger = {
@@ -784,26 +784,27 @@ X19_ideas = {
 	free = yes		#will be added at load.
 	
 	X19_one = {
-		culture_conversion_cost = -0.20 #done
+		manpower_in_own_culture_provinces = 0.15
 	}
 	X19_two = {
-		defensiveness = 0.20 #done
+		defensiveness = 0.20 
 	}
 	X19_three = {
-		diplomats = 1 #done
-		improve_relation_modifier = 0.15 #done
+		diplomats = 1 
+		same_culture_advisor_cost = -0.10
 	}
 	X19_four = {
-		land_attrition = -0.1 #done
+		land_attrition = -0.15
 	}
 	X19_five = {
-		caravan_power = 0.15 #done
+		caravan_power = 0.20 
 	}
 	X19_six = {
-		same_culture_advisor_cost = -0.15 #done
+		max_absolutism = 10
+		max_absolutism_effect = 0.1
 	}
 	X19_seven = {
-		leader_land_manuever = 1 #done
+		leader_land_manuever = 1
 	}
 }
 

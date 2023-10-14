@@ -123,6 +123,7 @@ has_river_estuary_trigger = {
 			has_province_modifier = cadderoy_estuary_modifier
 			has_province_modifier = rafn_estuary_modifier
 			has_province_modifier = gopatri_estuary_modifier
+			has_province_modifier = gopatri_estuary_modifier
 		}
 	}
 }
