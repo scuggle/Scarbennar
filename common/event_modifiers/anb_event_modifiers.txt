@@ -202,6 +202,10 @@ oddanroy_estuary_modifier = {
 exwes_estuary_modifier = {
 	province_trade_power_value = 5 
 }
+crannog_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon" 
+}
 
 dragonheights_estuary_modifier = {
 	province_trade_power_value = 10
