@@ -68,7 +68,7 @@ azjakuma_give_chi_to_shirgrii = { #give chi to shirgrii
 }
 
 lefthand_eldritch_foresight = {	#90 day duration
-	all_power_cost = -0.33
+	all_power_cost = -0.15
 }
 
 lefthand_unnatural_plant_growth = {	#5 year duration
