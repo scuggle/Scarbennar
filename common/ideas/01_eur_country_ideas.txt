@@ -159,7 +159,7 @@ X04_ideas = {
 	free = yes		#will be added at load.
 	
 	X04_one = {
-		mercenary_discipline = 0.1
+		mercenary_discipline = 0.075
 		mercenary_cost = -0.4
 	}
 	X04_two = {

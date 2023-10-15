@@ -1668,7 +1668,7 @@ A58_ideas = {
 	}
 	A58_damerian_adventurer_companies = {
 		mercenary_cost = -0.15
-		mercenary_discipline = 0.1
+		mercenary_discipline = 0.075
 	}
 	A58_legacy_of_the_damerian_republic = {
 		prestige = 1
@@ -6159,7 +6159,7 @@ F47_ideas = {
 		trade_steering = 0.20
 	}
 	A16_the_wine_watchers = {
-		mercenary_discipline = 0.1
+		mercenary_discipline = 0.05
 	}
 	A16_a_street_for_every_wine = {
 		development_cost = -0.1
@@ -21613,7 +21613,7 @@ H31_ideas = {
 	}
 	H31_ruinborn_soldiers = {
 		mercenary_cost = -0.1
-		mercenary_discipline = 0.1
+		mercenary_discipline = 0.05
 	}
 	H31_artificer_traps = {
 		defensiveness = 0.05
@@ -25937,7 +25937,7 @@ G02_ideas = {
 	}
 	G02_the_wrestling_bands = {
 		mercenary_cost = -0.10
-		mercenary_discipline = 0.10
+		mercenary_discipline = 0.05
 	}
 	G02_one_mask_one_nation = {
 		max_absolutism = 10
@@ -28852,7 +28852,7 @@ L07_ideas = {
 		improve_relation_modifier = 0.15
 	}
 	L07_the_imbushid_guarantee = {
-		mercenary_discipline = 0.10
+		mercenary_discipline = 0.05
 	}
 	L07_syncretic_faith = {
 		tolerance_heathen = 2
