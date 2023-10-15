@@ -282,6 +282,6 @@ A98_pashainey_empire = {
 	max_absolutism_effect = 0.3
 }
 A98_empire_heart = {
-	global_allowed_num_of_manufactories = 1
-	development_cost = -0.05
+	allowed_num_of_manufactories = 1
+	local_development_cost = -0.05
 }
