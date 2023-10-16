@@ -1194,7 +1194,7 @@ innovativeness_ideas = { #Technocratic Ideas
 	}
 
 	bonus = {
-		idea_cost = -0.1
+		idea_cost = -0.05
 	}
 
 	patron_of_art  = {
@@ -1213,9 +1213,10 @@ innovativeness_ideas = { #Technocratic Ideas
 	}
 	print_culture = {
 		global_institution_spread = 0.33 
+		artificers_loyalty_modifier = 0.1
 	}
 	optimism = {
-		innovativeness_gain = 1
+		innovativeness_gain = 50
 	}
 	formalized_officer_corps = {
 		technology_cost = -0.10
@@ -1301,7 +1302,7 @@ humanist_ideas = { #External Ideas
 	}
 	
 	bonus = {
-		min_autonomy_in_territories = -0.15
+		min_local_autonomy = -5
 	}
 
 	tolerance_idea = {
@@ -1311,7 +1312,7 @@ humanist_ideas = { #External Ideas
 		global_unrest = -2
 	}
 	ecumenism = {
-		no_religion_penalty = yes
+		trade_company_investment_cost = -0.1
 	}
 	indirect_rule = {
 		global_autonomy = -0.10
@@ -1324,7 +1325,7 @@ humanist_ideas = { #External Ideas
 		num_accepted_cultures = 2
 	}
 	humanist_tolerance = {
-		governing_capacity_modifier = 0.20
+		governing_capacity_modifier = 0.15
 	}
 	
 	ai_will_do = {
@@ -1642,21 +1643,21 @@ expansion_ideas = { #frontiers #done
 		colonists = 1
 	}
 	faster_colonists = {
-		global_colonial_growth = 10
+		min_autonomy_in_territories = -0.10
 	}
 	factories = {
-		colonist_placement_chance = 0.10
+		colonist_placement_chance = 0.20
 	}
 	additional_diplomats = {
-		global_colonial_growth = 20
+		global_colonial_growth = 30
 	}
 	general_colonization_law  = {
 		merchants = 1
-		
+		trade_steering = 0.1
 	}
 	competetive_merchants  = {
-		native_assimilation = 0.33
-		native_uprising_chance = -2
+		native_assimilation = 0.50
+		native_uprising_chance = -0.50
 	}
 
 	ai_will_do = {
