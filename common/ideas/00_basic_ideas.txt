@@ -1189,16 +1189,12 @@ shadows_and_daggers = { #Shadow and daggers ie dick head ideas
 innovativeness_ideas = { #Technocratic Ideas 
 	category = ADM
 
-	trigger = {
-		NOT = { has_idea_group = religious_ideas }
-	}
-
 	bonus = {
 		idea_cost = -0.05
 	}
 
 	patron_of_art  = {
-		free_adm_policy = 1
+		innovativeness_gain = 0.5
 	}
 	empiricism = {
 		advisor_pool = 2
@@ -1216,7 +1212,7 @@ innovativeness_ideas = { #Technocratic Ideas
 		artificers_loyalty_modifier = 0.1
 	}
 	optimism = {
-		innovativeness_gain = 0.5
+		free_policy = 1
 	}
 	formalized_officer_corps = {
 		technology_cost = -0.10
@@ -1241,10 +1237,6 @@ innovativeness_ideas = { #Technocratic Ideas
 
 religious_ideas = { #zealotry ideas 
 	category = ADM
-
-	trigger = {
-		NOT = { has_idea_group = innovativeness_ideas }
-	}
 
 	bonus = {
 		manpower_in_true_faith_provinces = 0.10
@@ -1297,10 +1289,6 @@ religious_ideas = { #zealotry ideas
 humanist_ideas = { #External Ideas 
 	category = ADM
 
-	trigger = {
-		NOT = { has_idea_group = focus_inwards }
-	}
-	
 	bonus = {
 		min_local_autonomy = -5
 	}
@@ -1335,10 +1323,6 @@ humanist_ideas = { #External Ideas
 
 focus_inwards = { #Internal Ideas Redo
 	category = ADM
-
-	trigger = {
-		NOT = { has_idea_group = humanist_ideas }
-	}
 
 	bonus = {
 		centralize_state_cost = -0.50
