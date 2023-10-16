@@ -1,9 +1,10 @@
 
 #90 - Vlaanderen | 
 
-owner = B69
-controller = B69
-add_core = B69
+owner = A01
+controller = A01
+add_core = A01
+add_core = A09
 culture = sorncosti
 religion = regent_court
 

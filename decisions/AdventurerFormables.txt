@@ -17,8 +17,9 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = B34
-			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
+			custom_tooltip = luciande_nation_settling_advice_tt
+			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
 			
 			add_prestige = 25
@@ -121,6 +122,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = B37
+			swap_non_generic_missions = yes
+			custom_tooltip = rogeria_nation_settling_advice_tt
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
 			add_prestige = 25
@@ -140,7 +143,6 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -164,9 +166,10 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = B38
+			swap_non_generic_missions = yes
+			custom_tooltip = elikhand_nation_settling_advice_tt
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
-			swap_non_generic_missions = yes
 			add_prestige = 25
 			adventurer_legacy_effect = yes
 			set_country_flag = adventurer_derived_government
@@ -339,9 +342,10 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = B48
+			swap_non_generic_missions = yes
+			custom_tooltip = ravenmarch_nation_settling_advice_tt
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
-			swap_non_generic_missions = yes
 
 			add_prestige = 25
 			adventurer_legacy_effect = yes
@@ -427,10 +431,11 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = B50
+			swap_non_generic_missions = yes
+			custom_tooltip = newshire_nation_settling_advice_tt
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
 
-			swap_non_generic_missions = yes
 			add_prestige = 25
 			adventurer_legacy_effect = yes
 			set_country_flag = adventurer_derived_government
@@ -603,6 +608,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = B54
+			swap_non_generic_missions = yes
+			custom_tooltip = esthil_nation_settling_advice_tt
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
 
@@ -620,7 +627,6 @@ country_decisions = {
 					days = 18250
 				}
 			}
-			swap_non_generic_missions = yes
 
 			if = {
 				limit = { has_custom_ideas = no }
@@ -693,10 +699,11 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = Z36
+			swap_non_generic_missions = yes
+			custom_tooltip = hammerhome_nation_settling_advice_tt
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
 
-			swap_non_generic_missions = yes
 			add_prestige = 25
 			adventurer_legacy_effect = yes
 			set_country_flag = adventurer_derived_government

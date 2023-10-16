@@ -387,6 +387,12 @@ setup_vision = {
 			4178 = {
 				discover_country = ROOT
 			}
+			3610 = {
+				discover_country = ROOT
+			}
+			3611 = {
+				discover_country = ROOT
+			}
 			
 			#salahadesi deserts
 			1793 = {
@@ -494,13 +500,10 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			
-			221 = {	#Gaweton
-				undiscover_country = ROOT
-			}
-			349 = {	#Arbaran
-				undiscover_country = ROOT
-			}
 			4367 = {	#Rahen
+				undiscover_country = ROOT
+			}
+			6601 = {
 				undiscover_country = ROOT
 			}
 			#Kheterata vision of Sarhal
@@ -2139,10 +2142,10 @@ setup_vision = {
 			3201 = { 
 				discover_country = ROOT
 			}
-			north_sil_berkhens_land = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
+			sil_berkhens_land_area = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
 				undiscover_country = ROOT
 			}
-			south_sil_berkhens_land_area = {
+			far_uelos_isles_area = {
 				undiscover_country = ROOT
 			}
 			5791 = {
@@ -2296,10 +2299,10 @@ setup_vision = {
 			6031 = {
 				discover_country = ROOT
 			}
-			north_sil_berkhens_land = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
+			sil_berkhens_land_area = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
 				undiscover_country = ROOT
 			}
-			south_sil_berkhens_land_area = {
+			far_uelos_isles_area = {
 				undiscover_country = ROOT
 			}
 		}
@@ -2519,10 +2522,10 @@ setup_vision = {
 			narasad_area = {
 				discover_country = ROOT
 			}
-			north_sil_berkhens_land = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
+			sil_berkhens_land_area = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
 				undiscover_country = ROOT
 			}
-			south_sil_berkhens_land_area = {
+			far_uelos_isles_area = {
 				undiscover_country = ROOT
 			}
 			
@@ -2647,6 +2650,9 @@ setup_vision = {
 			1467 = {
 				discover_country = ROOT
 			}
+			1651 = {
+				discover_country = ROOT
+			}
 			1653 = {
 				discover_country = ROOT
 			}
@@ -2707,10 +2713,10 @@ setup_vision = {
 			6060 = {
 				undiscover_country = ROOT
 			}
-			north_sil_berkhens_land = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
+			sil_berkhens_land_area = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
 				undiscover_country = ROOT
 			}
-			south_sil_berkhens_land_area = {
+			far_uelos_isles_area = {
 				undiscover_country = ROOT
 			}
 		}
@@ -2724,6 +2730,9 @@ setup_vision = {
 					}
 					capital_scope = {
 						region = gebahiri_region
+					}
+					capital_scope = {
+						region = dreksaret_region
 					}
 				}
 			}
@@ -2739,7 +2748,7 @@ setup_vision = {
 			gulf_of_rahen_area = {
 				discover_country = ROOT
 			}
-			kedwali_gulf_area = {
+			kedwali_gulf_region = {
 				discover_country = ROOT
 			}
 			1640 = {
@@ -2877,10 +2886,19 @@ setup_vision = {
 			6127 = {
 				discover_country = ROOT
 			}
+			3226 = {
+				discover_country = ROOT
+			}
 			5848 = {
 				discover_country = ROOT
 			}
+			3227 = {
+				discover_country = ROOT
+			}
 			6063 = {
+				discover_country = ROOT
+			}
+			3229 = {
 				discover_country = ROOT
 			}
 			6571 = {
@@ -2984,6 +3002,9 @@ setup_vision = {
 			east_sarhal_superregion = {
 				discover_country = ROOT
 			}
+			guifa_zahab_region = {
+				discover_country = ROOT
+			}
 			yezel_mora_region = {
 				undiscover_country = ROOT
 			}
@@ -3002,7 +3023,7 @@ setup_vision = {
 			gulf_of_rahen_area = {
 				discover_country = ROOT
 			}
-			kedwali_gulf_area = {
+			kedwali_gulf_region = {
 				discover_country = ROOT
 			}
 			arawkelin_area = {
@@ -3107,6 +3128,9 @@ setup_vision = {
 				1331 = {
 					discover_country = ROOT
 				}
+				3141 = {
+					discover_country = ROOT
+				}
 				1446 = {
 					discover_country = ROOT
 				}
@@ -3167,10 +3191,16 @@ setup_vision = {
 				1640 = {
 					undiscover_country = ROOT
 				}
+				3223 = {
+					undiscover_country = ROOT
+				}
 				1790 = {
 					discover_country = ROOT
 				}
 				6589 = {
+					discover_country = ROOT
+				}
+				1904 = {
 					discover_country = ROOT
 				}
 				1656 = {
@@ -3245,7 +3275,7 @@ setup_vision = {
 			mabeedi_sea_area = {
 				discover_country = ROOT
 			}
-			kedwali_gulf_area = {
+			kedwali_gulf_region = {
 				discover_country = ROOT
 			}
 			ringlet_sea_area = {
@@ -3362,6 +3392,9 @@ setup_vision = {
 			1910 = {
 				discover_country = ROOT
 			}
+			1651 = {
+				discover_country = ROOT
+			}
 			1653 = {
 				discover_country = ROOT
 			}
@@ -3413,6 +3446,9 @@ setup_vision = {
 			6589 = {
 				discover_country = ROOT
 			}
+			1904 = {
+				discover_country = ROOT
+			}
 			1344 = {
 				discover_country = ROOT
 			}
@@ -3443,10 +3479,16 @@ setup_vision = {
 			1331 = {
 				discover_country = ROOT
 			}
+			3141 = {
+				discover_country = ROOT
+			}
 			1446 = {
 				discover_country = ROOT
 			}
 			1447 = {
+				discover_country = ROOT
+			}
+			1651 = {
 				discover_country = ROOT
 			}
 			1640 = {
@@ -3470,13 +3512,16 @@ setup_vision = {
 			1353 = {
 				undiscover_country = ROOT
 			}
+			3223 = {
+				undiscover_country = ROOT
+			}
 			6654 = {
 				undiscover_country = ROOT
 			}
-			north_sil_berkhens_land = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
+			sil_berkhens_land_area = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
 				undiscover_country = ROOT
 			}
-			south_sil_berkhens_land_area = {
+			far_uelos_isles_area = {
 				undiscover_country = ROOT
 			}
 		}
@@ -3511,7 +3556,7 @@ setup_vision = {
 			mabeedi_sea_area = {
 				discover_country = ROOT
 			}
-			kedwali_gulf_area = {
+			kedwali_gulf_region = {
 				discover_country = ROOT
 			}
 			kirksanlashan_area = {
@@ -3557,6 +3602,9 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			1910 = {
+				discover_country = ROOT
+			}
+			1651 = {
 				discover_country = ROOT
 			}
 			1653 = {
@@ -3622,11 +3670,17 @@ setup_vision = {
 			1331 = {
 				discover_country = ROOT
 			}
+			3141 = {
+				discover_country = ROOT
+			}
 			1446 = {
 				discover_country = ROOT
 			}
 			1447 = {
 				discover_country = ROOT
+			}
+			3223 = {
+				undiscover_country = ROOT
 			}
 			5541 = {
 				undiscover_country = ROOT
@@ -3667,10 +3721,10 @@ setup_vision = {
 			6650 = {
 				undiscover_country = ROOT
 			}
-			north_sil_berkhens_land = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
+			sil_berkhens_land_area = {	#these are those islands southwest of fahvanosy in the middle of uelos lament
 				undiscover_country = ROOT
 			}
-			south_sil_berkhens_land_area = {
+			far_uelos_isles_area = {
 				undiscover_country = ROOT
 			}
 		}
@@ -3843,6 +3897,15 @@ setup_vision = {
 				2462 = {
 					discover_country = ROOT
 				}
+				taychend_superregion = {
+					discover_country = ROOT
+				}
+				2512 = {
+					discover_country = ROOT
+				}
+				2507 = {
+					discover_country = ROOT
+				}
 				
 				#Seas
 				1546 = {
@@ -3861,6 +3924,21 @@ setup_vision = {
 					discover_country = ROOT
 				}
 				1712 = {
+					discover_country = ROOT
+				}
+				1547 = {
+					discover_country = ROOT
+				}
+				1545 = {
+					discover_country = ROOT
+				}
+				1703 = {
+					discover_country = ROOT
+				}
+				1543 = {
+					discover_country = ROOT
+				}
+				1544 = {
 					discover_country = ROOT
 				}
 				
@@ -3896,6 +3974,24 @@ setup_vision = {
 					discover_country = ROOT
 				}
 				4169 = {
+					discover_country = ROOT
+				}
+				6121 = {
+					discover_country = ROOT
+				}
+				6122 = {
+					discover_country = ROOT
+				}
+				3204 = {
+					discover_country = ROOT
+				}
+				3203 = {
+					discover_country = ROOT
+				}
+				3202 = {
+					discover_country = ROOT
+				}
+				6749 = {
 					discover_country = ROOT
 				}
 				
@@ -4367,13 +4463,37 @@ setup_vision = {
 			forbidden_lands_superregion = {
 				discover_country = ROOT
 			}
+			#Wasteland
 			1327 = {
 				discover_country = ROOT
 			}
+			6505 = {
+				discover_country = ROOT
+			}
+			4133 = {
+				discover_country = ROOT
+			}
+			4134 = {
+				discover_country = ROOT
+			}
+			4135 = {
+				discover_country = ROOT
+			}
+			#Sea tiles
 			northern_sea_region = {
 				discover_country = ROOT
 			}
+			1668 = {
+				undiscover_country = ROOT
+			}
+			#Lakes
 			1784 = {
+				discover_country = ROOT
+			}
+			1894 = {
+				discover_country = ROOT
+			}
+			5083 = {
 				discover_country = ROOT
 			}
 		}

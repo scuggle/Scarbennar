@@ -183,7 +183,7 @@ sea_zone = {
 }
 
 land_province = {
-	max_attrition = 10						#Maximum Attrition is 5
+	max_attrition = 5						#Maximum Attrition is 5
 	local_manpower_modifier = 0.25			#25% of manpower.
 	local_has_musketeers = yes #1.35
 	local_has_streltsy = yes #1.35
@@ -317,7 +317,7 @@ patriarch_authority_local = {
 
 #for the country
 patriarch_authority_global = {
-	discipline = 0.05
+	discipline = 0.075
 	global_regiment_cost = -0.2
 	
 	global_unrest = 4
@@ -481,7 +481,7 @@ devastation = { #1.35
 
 prosperity = {
 	local_development_cost = -0.1
-	trade_goods_size_modifier = 0.10
+	trade_goods_size_modifier = 0.25
 	local_autonomy = -0.05
 }
 
@@ -580,7 +580,7 @@ left_trade_company = {
 
 
 scorched_earth = {
-	local_hostile_movement_speed = -0.25
+	local_hostile_movement_speed = -0.50
 	local_monthly_devastation = 0.25
 }
 
@@ -589,7 +589,7 @@ scorched_earth = {
 ##########################################################################
 
 base_values = {
-	max_absolutism = 80
+	max_absolutism = 65
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..
 	missionaries = 1						#1 missionary
@@ -670,8 +670,6 @@ positive_stability = {
 	mages_loyalty_modifier = 0.02
 	pen_harmaceuticals_influence = 0.02
 	monthly_allclan_pandemonium_power = -0.05
-
-	monthly_karma = 0.1
 }
 
 privateering = {
@@ -699,8 +697,6 @@ negative_stability = {
 	pen_clodhoppers_influence = 0.003
 	monthly_allclan_pandemonium_power = 0.05
 
-	monthly_karma = -0.1
-
 	yearly_authority = 1
 }
 #Anbennar
@@ -708,7 +704,6 @@ positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
 	global_unrest = -2
 	ahati_loyalty_modifier = 0.1
 	stability_cost_modifier = -0.2
-	land_morale = 0.1
 }
 #Anbennar
 negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mandate
@@ -717,8 +712,8 @@ negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mand
 	land_morale = -0.1
 	global_tax_modifier = -0.3
 	production_efficiency = -0.3
-	reduced_liberty_desire = -30 
-	meritocracy = -2
+	reduced_liberty_desire = -25 
+	meritocracy = -0.5
 }
 #Anbennar
 lost_mandate_of_heaven = {
@@ -770,7 +765,6 @@ bankruptcy = {
 	bureaucrats_influence = 0.25
 	mr_guilds_influence = 0.25
 	manpower_recovery_speed = -1.0
-	mercenary_manpower = -2.0
 	sailors_recovery_speed = -1.0
 	advisor_cost = 0.5
 	monthly_fervor_increase = -1
@@ -823,8 +817,6 @@ peace = {
 	tec_brilliance_influence = 0.02
 	pen_erectors_influence = 0.05
 	pen_harmaceuticals_influence = 0.05
-
-	monthly_karma = 0.5
 }
 
 unconditional_surrender = {
@@ -976,7 +968,6 @@ defender_of_faith = {
 
 defender_of_faith_refused_cta = {
 	diplomatic_reputation = -1
-	all_power_cost	= 0.10
 }
 
 emperor = {
@@ -1116,16 +1107,16 @@ devotion = {
 }
 
 #Anbennar
-# Multiplied by current meritocracy - 50
+# Multiplied by current meritocracy - 50 #auirus translation: half these numbers is what you get at 100 meritocracy 
 meritocracy = {
 	diplomatic_reputation = 4
 	advisor_pool = 6
 	administrative_efficiency = 0.1
+	monarch_lifespan = 0.5
 }
 #Anbennar
-# Multiplied by 50 - meritocracy
+# Multiplied by 50 - meritocracy #auirus translation: half these numbers is what you get at 0 meritocracy, in addition to the modifiers above
 low_meritocracy = {
-	monarch_lifespan = -0.25
 }
 
 # Scaled, multiplied by current corruption / 100
@@ -1299,7 +1290,7 @@ prestige = {
 	tec_brilliance_influence = 0.15
 	nl_trade_barons_influence = 0.15
 	vampires_loyalty_modifier = 0.05
-	pen_discombobulatorium_influence = 0.15
+	pen_discombobulatorium_influence = 0.05
 	
 	mages_loyalty_modifier = 0.05
 	artificers_loyalty_modifier = 0.05
@@ -1367,6 +1358,9 @@ religious_unity = {
 	church_loyalty_modifier = 0.05
 	brahmins_hindu_loyalty_modifier = 0.05
 	yearly_harmony = 1
+
+	#Anbennar
+	pen_clodhoppers_influence = 0.05
 }
 
 inverse_religious_unity = {
@@ -1459,15 +1453,14 @@ liberty_desire = { #1.35
 is_great_power = {						#Only works with Rights of Man DLC enabled
 	prestige_decay = -0.01
 	embracement_cost = -0.1
-	max_absolutism = 15
-	global_manpower_modifier = 0.1
+	max_absolutism = 5
 	
 	#Anbennar
 	monthly_adventurer_unity = -10
 }
 
 in_golden_era = {
-	all_power_cost = -0.05
+	all_power_cost = -0.1
 	global_trade_goods_size_modifier = 0.1
 	land_morale = 0.1
 	naval_morale = 0.1
@@ -1650,7 +1643,7 @@ subject_nation = {
 }
 
 vassal_nation = {
-	development_cost = 0.1
+	development_cost = 0.5
 }
 
 kruman_nation = {
@@ -1667,11 +1660,6 @@ kruman_subject = {
 
 ynnic_iosahar_subject = {
 	land_forcelimit	= 6
-}
-
-ynnic_iosahar_overlord = {
-	land_forcelimit = 0.5
-	yearly_authority = 0.5
 }
 
 primitive_nation = {
@@ -1841,7 +1829,8 @@ support_loyalists = {
 }
 
 send_officers = {
-	land_morale = 0.1
+	discipline = 0.05
+	land_morale = 0.2
 }
 
 divert_trade = {
@@ -1861,15 +1850,12 @@ karma_just_right =
 	#You have emulated Corin's ways as a chivalrous god of war. Warring against those who are unjust and protecting those under your banner without being complacent and corrupt.
 	#Witch Kings will develop a cult of personality and allow themselves to trend down to this really well, to show how they've pretty much subverted and corrupted the system to be infalliable
 
-	devotion = 1 
-	legitimacy = 1
-	yearly_absolutism = 1
-
-	diplomatic_reputation = 2
-	manpower_in_true_faith_provinces = 0.1
-	shock_damage = 0.1
-	global_unrest = -1
-
+	infantry_power = 0.1
+	siege_ability = 0.1
+	defensiveness = 0.1
+	yearly_corruption = -0.1
+	#ae_impact = -0.1	might replace corruption with this based on feedback
+	tolerance_own = 1
 }
 
 karma_too_high =
@@ -1881,13 +1867,11 @@ karma_too_high =
 	#New Ones -> You focus too much on protecc. 
 	#You as a ruler have become complacent and have become to attached to protecting your own. You become to not care about the greater world and you forsake your duty to end evil and are simply content with bringing evil at bay... much like those in the Regent Court
 
-	yearly_corruption = -0.1
-	#global_unrest = -1
-	diplomatic_reputation = 1
-	#shock_damage_received = 0.10
-
-	#yearly_corruption = 0.01 
-	global_unrest = 2
+	infantry_power = 0.05
+	defensiveness = 0.1
+	reform_progress_growth = 0.1
+	inflation_reduction = 0.1
+	global_unrest = -1
 }
 
 karma_too_low =
@@ -1899,14 +1883,11 @@ karma_too_low =
 	#New Ones -> You focus too much on atacc (a la Agrados).
 	#You as a ruler have become blinded by zeal, and see everyone that is against you as unjust and evil. The people see this too and have become a crusading rabble of pitchforks against any who opposite them, they are ready to take arms for the smallest injustice
 
-	cb_on_religious_enemies = yes
-	manpower_in_true_faith_provinces = 0.15
-	#shock_damage = 0.10
-
-	global_unrest = 2
-	#tolerance_heathen = -1 
-	#tolerance_heretic = -1 
-
+	infantry_power = 0.05
+	siege_ability = 0.1
+	land_forcelimit_modifier = 0.1
+	war_exhaustion = -0.03
+	overextension_impact_modifier = -0.15
 }
 
 ########################################
@@ -2269,6 +2250,39 @@ final_paradigm_scholar_modifier = {
 	autonomy_change_time = -0.25
 }
 
+#Irdaeos Worship Schools
+filustkhuga_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	global_manpower_modifier = 0.05
+}
+
+irdukhuga_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	merchants = 1
+}
+
+maslekhuga_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	reinforce_speed = 0.05
+}
+
+malukhuga_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	shock_damage_received = -0.05
+}
+
 ########################################
 # Regiment Types Modifiers
 ########################################
@@ -2285,10 +2299,10 @@ army_drill_modifier = { # Used by an entire army, is the average of all subunits
 
 #Anbennar
 janissary_regiment = {
-	morale_damage = 0.1
 	morale_damage_received = -0.1
-	shock_damage = 0.1
-	reinforce_cost_modifier = 0.75
+	shock_damage = 0.15
+	reinforce_cost_modifier = 0.5
+	land_maintenance_modifier = 0.25
 }
 
 cawa_regiment = {
@@ -2382,13 +2396,13 @@ revolutionary_guard_regiment = {
 }
 
 innovativeness = {
-	all_power_cost	= -0.05
+	all_power_cost	= -0.1
 	army_tradition_decay = -0.01
 	navy_tradition_decay = -0.01
 
 	#Anbennar
 	tec_brilliance_influence = 0.01
-	pen_discombobulatorium_influence = 0.01
+	pen_discombobulatorium_influence = 0.05
 }
 
 rajput_regiment = {
@@ -2463,7 +2477,7 @@ expanded_infrastructure = {
 	ship_recruit_speed = -0.15
 	local_defensiveness = 0.05
 	garrison_growth = 0.05
-	local_development_cost = -0.1
+	local_development_cost = -0.15
 	local_production_efficiency = 0.05
 	local_tax_modifier = 0.1
 	local_manpower_modifier = 0.05
@@ -2509,12 +2523,12 @@ num_accepted_cultures = {
 
 ruler_adm = {
 	monthly_council_consensus = 0.1
-	meritocracy = 0.15  #0.05 after events are made
+	meritocracy = 0.1  #0.05 after events are made
 }
 
 ruler_dip = {
 	monthly_council_consensus = 0.1
-	meritocracy = 0.15 #0.05 after events are made
+	meritocracy = 0.1 #0.05 after events are made
 }
 
 ruler_mil = {
