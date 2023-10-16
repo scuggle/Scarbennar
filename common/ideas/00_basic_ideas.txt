@@ -1216,7 +1216,7 @@ innovativeness_ideas = { #Technocratic Ideas
 		artificers_loyalty_modifier = 0.1
 	}
 	optimism = {
-		innovativeness_gain = 50
+		innovativeness_gain = 0.5
 	}
 	formalized_officer_corps = {
 		technology_cost = -0.10
