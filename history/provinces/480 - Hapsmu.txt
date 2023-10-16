@@ -1,8 +1,9 @@
 
 # No previous file for Pegaya Orda
 
-owner = U09
-controller = U09
+owner = L26
+controller = L26
+add_core = L26
 add_core = U09
 add_core = U01
 culture = hapremiti
