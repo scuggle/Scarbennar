@@ -25,9 +25,9 @@ country_decisions = {
 					}
 				}
 			}
-			colonial_endralliande = {
-				owned_by = ROOT
-			}
+			#colonial_endralliande = {
+			#	owned_by = ROOT
+			#}
 		}
 		allow = {
 			hidden_trigger = {
@@ -121,9 +121,9 @@ country_decisions = {
 					}
 				}
 			}
-			colonial_noruin = {
-				owned_by = ROOT
-			}
+			#colonial_noruin = {
+			#	owned_by = ROOT
+			#}
 		}
 		allow = {
 			hidden_trigger = {
@@ -218,9 +218,9 @@ country_decisions = {
 					}
 				}
 			}
-			colonial_noruin = {
-				owned_by = ROOT
-			}
+			#colonial_noruin = {
+			#	owned_by = ROOT
+			#}
 		}
 		allow = {
 			hidden_trigger = {
@@ -314,9 +314,9 @@ country_decisions = {
 					}
 				}
 			}		
-			colonial_noruin = {
-				owned_by = ROOT
-			}
+			#colonial_noruin = {
+			#	owned_by = ROOT
+			#}
 		}
 		allow = {
 			hidden_trigger = {
@@ -410,9 +410,9 @@ country_decisions = {
 					}
 				}
 			}			
-			colonial_soruin = {
-				owned_by = ROOT
-			}
+			#colonial_soruin = {
+			#	owned_by = ROOT
+			#}
 		}
 		allow = {
 			hidden_trigger = {
