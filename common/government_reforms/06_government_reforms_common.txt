@@ -2536,7 +2536,7 @@ doppelsoldner_reform = {
 		}
 	}
 	custom_attributes = {
-		mercs_do_not_cost_army_professionalism = yes
+		#mercs_do_not_cost_army_professionalism = yes
 	}
 	
 	ai = {
