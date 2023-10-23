@@ -432,8 +432,8 @@ escanni = {
 			"síl Crowne" "síl Aranmas" "síl Crothán" "síl Ebenaire" "síl Aramar" "sílna Gol" "of Ainway" Silnara "of Vanbury" "síl Gabmórionn" "síl Themarenn" "síl Estallen" "sina Demelecestir" "sina Varpár" "síl na Arademele" "síl na Arasùil" "sina Dhanmeweri" "sina Drasevionn" "síl Gabara" "síl Miosádh"
 		} 
 	}
-	estairey = {
-		primary = B51 #Estaire
+	falconian = {
+		primary = B51 #Falconia
 		dynasty_names = {
 			"síl Themarenn" "síl Estallen" "síl Deamóine" "síl Gabmórionn" "síl Bennon" "síl Leslinpár" "síl Aranmas" "síl Terr" Silurion "síl Varainé" Konwell Silistra "síl Vivin"
 			"síl Esta" "sína Gren" "sílna Hat" "síl Estadeir" "síl Seinathíl"
