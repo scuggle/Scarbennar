@@ -436,7 +436,7 @@ country_event = {
 		escanni_culture_shift = { to_culture = newfoot_halfling }
 	}
 	
-	option = { # Falconia
+	option = { # Estaire
 		name = marcher.2.a
 		trigger = {
 			OR = {
@@ -449,7 +449,7 @@ country_event = {
 			factor = 1000
 		}
 		
-		escanni_culture_shift = { to_culture = falconian }
+		escanni_culture_shift = { to_culture = estairey }
 	}
 	
 	option = { # Anbenland
@@ -1024,12 +1024,12 @@ country_event = { #Change culture of conquered adventurer provinces
 				}
 				change_culture = nurcestiran
 			}
-			if = { #Falconia
+			if = { #Estaire
 				limit = {
 					NOT = { culture = ROOT }
 					culture = esmari
 				}
-				change_culture = falconian
+				change_culture = estairey
 			}
 			if = { #Alenor
 				limit = {
@@ -1183,11 +1183,11 @@ country_event = { #Change culture of conquered adventurer provinces
 				}
 				change_culture = nurcestiran
 			}
-			if = { #Falconia
+			if = { #Estaire
 				limit = {
 					culture = esmari
 				}
-				change_culture = falconian
+				change_culture = estairey
 			}
 			if = { #Alenor
 				limit = {

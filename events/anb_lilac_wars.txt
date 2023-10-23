@@ -455,7 +455,7 @@ country_event = {
 	trigger = {
 		culture = esmari
 		NOT = { tag = A43 } #Ryalan Temple
-		NOT = { tag = B08 } #Band of the Hawk
+		NOT = { tag = B08 } #Gallant Friends
 		NOT = { is_year = 1450 }
 	}
 	
