@@ -697,7 +697,7 @@ ruler_is_human = {
 			ruler_culture = stalboric
 			ruler_culture = ravenmarcher
 			ruler_culture = ionnic
-			ruler_culture = estairey
+			ruler_culture = falconian
 			ruler_culture = anbenlander
 			ruler_culture = nurcestiran
 			ruler_culture = esthili
@@ -1471,7 +1471,7 @@ consort_is_human = {
 			consort_culture = stalboric
 			consort_culture = ravenmarcher
 			consort_culture = ionnic
-			consort_culture = estairey
+			consort_culture = falconian
 			consort_culture = anbenlander
 			consort_culture = nurcestiran
 			consort_culture = esthili
@@ -2092,7 +2092,7 @@ heir_is_human = {
 			heir_culture = stalboric
 			heir_culture = ravenmarcher
 			heir_culture = ionnic
-			heir_culture = estairey
+			heir_culture = falconian
 			heir_culture = anbenlander
 			heir_culture = nurcestiran
 			heir_culture = esthili
@@ -3287,7 +3287,7 @@ has_human_advisor = {
 			employed_advisor = { culture = stalboric }
 			employed_advisor = { culture = ravenmarcher }
 			employed_advisor = { culture = ionnic }
-			employed_advisor = { culture = estairey }
+			employed_advisor = { culture = falconian }
 			employed_advisor = { culture = anbenlander }
 			employed_advisor = { culture = nurcestiran }
 			employed_advisor = { culture = esthili }
@@ -3497,7 +3497,7 @@ has_human_advisor_of_category = {
 			employed_advisor = { category = $category$ culture = stalboric }
 			employed_advisor = { category = $category$ culture = ravenmarcher }
 			employed_advisor = { category = $category$ culture = ionnic }
-			employed_advisor = { category = $category$ culture = estairey }
+			employed_advisor = { category = $category$ culture = falconian }
 			employed_advisor = { category = $category$ culture = anbenlander }
 			employed_advisor = { category = $category$ culture = nurcestiran }
 			employed_advisor = { category = $category$ culture = esthili }
@@ -4010,7 +4010,7 @@ has_human_accepted_culture = {
 		accepted_culture = stalboric
 		accepted_culture = ravenmarcher
 		accepted_culture = ionnic
-		accepted_culture = estairey
+		accepted_culture = falconian
 		accepted_culture = anbenlander
 		accepted_culture = nurcestiran
 		accepted_culture = esthili

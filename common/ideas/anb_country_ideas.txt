@@ -4377,7 +4377,7 @@ B49_ideas = {
 	}
 }
 
-#Estaire Ideas
+#Falconia Ideas
 B51_ideas = {
 	start = {
 		manpower_recovery_speed = 0.1
