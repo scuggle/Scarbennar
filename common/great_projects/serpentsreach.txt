@@ -447,7 +447,6 @@ arg_ordstun_great_clast_shafts = {
 			development = 40
 				custom_trigger_tooltip = {
 					tooltip = dwarven_monuments_can_use_tooltip
-					owner = {
 						OR = {
 							culture_group = dwarven
 							culture_group = goblin
@@ -455,7 +454,6 @@ arg_ordstun_great_clast_shafts = {
 							culture = black_orc
 							culture = mossmouth_ogre
 						}
-					}
 				}
 				province_is_or_accepts_culture = yes
 		}
