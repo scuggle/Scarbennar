@@ -5899,7 +5899,7 @@ F46_ideas = {
 	}
 	F46_desert_phoenix = {
 		leader_land_manuever = 1
-		cavalry_power = 0.25
+		cavalry_power = 0.20
 	}
 	F46_the_golden_highway = {
 		caravan_power = 0.2
