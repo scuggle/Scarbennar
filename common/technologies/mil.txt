@@ -115,6 +115,7 @@ technology = {
 	enable = noruin_1_biwuchas
 	enable = noruin_1_braves
 	enable = goblin_1_goblin_horde
+	enable = grasshoppermuncher_1_grasshopper_riders
 	enable = exodus_goblin_1_perzuk_volunteers
 	enable = exodus_goblin_1_sheep_riders
 	enable = cave_goblin_1_clan_rabble
