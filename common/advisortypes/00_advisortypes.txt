@@ -69,7 +69,7 @@ philosopher = {
 		modifier = {
 			governing_capacity_modifier = 0.03
 		}
-	}	
+	}	#hi
 
 	# skill_scaled_modifier = {
 	# 	trigger = { 
