@@ -1618,7 +1618,6 @@ expansion_ideas = { #frontiers #done
 	}
 
 	additional_colonists = {
-		
 		diplomats = 1
 		expel_minorities_cost = -0.50
 	}
