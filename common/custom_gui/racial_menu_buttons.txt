@@ -28,6 +28,7 @@ custom_button = {
     name = racial_mil_menu
     potential = {
 		ai = no
+		always = no		#eur Disabled
 	}
 	trigger = {
 		hidden_trigger = {
