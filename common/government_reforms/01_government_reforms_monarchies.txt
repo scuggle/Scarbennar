@@ -11471,7 +11471,6 @@ harpy_matriarchy_reform = {
 	nation_designer_trigger = {
 		OR = {
 			ruler_culture = firanyan_harpy
-			ruler_culture = cannorian_harpy
 			ruler_culture = siadunan_harpy
 		}
 	}
@@ -11589,7 +11588,6 @@ siadan_harpy_empire = {
         OR = {
             ruler_culture = firanyan_harpy
             ruler_culture = siadunan_harpy
-			ruler_culture = cannorian_harpy
         }
     }
     legacy_equivalent = ottoman_government_legacy

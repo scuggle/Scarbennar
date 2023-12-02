@@ -539,7 +539,7 @@ lost_ship = {
 				female = yes
 				skill = 3
 				religion = elven_forebears
-				culture = cannorian_harpy
+				culture = firanyan_harpy
 				location = 1001
 				discount = yes
 			}
@@ -571,7 +571,7 @@ lost_ship = {
 		}
 		on_upgraded = {
 			remove_province_modifier = harpy_minority_oppressed_large
-			change_culture = cannorian_harpy
+			change_culture = siadunan_harpy
 			add_permanent_province_modifier = {
 				name = harpy_minority_integrated_large
 				duration = -1
@@ -825,10 +825,7 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
-<<<<<<< HEAD
-=======
 			interest = -0.10
->>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 		}
 
 		on_upgraded = {
@@ -853,10 +850,7 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
-<<<<<<< HEAD
-=======
 			interest = -0.15
->>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 		}
 
 		on_upgraded = {
