@@ -188,6 +188,14 @@ country_decisions = {
 			num_of_subjects = 1
 			any_subject_country = {
 				NOT = { has_country_flag = has_overriden_color_flag }
+				NOT = {
+					OR = {
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
+					}
+				}
 			}
 		}
 		provinces_to_highlight = {
@@ -225,6 +233,14 @@ country_decisions = {
 			num_of_subjects = 1
 			any_subject_country = {
 				has_country_flag = has_overriden_color_flag
+				NOT = {
+					OR = {
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
+					}
+				}
 			}
 		}
 		provinces_to_highlight = {
@@ -246,6 +262,32 @@ country_decisions = {
 				}
 				restore_country_color = yes 
 				clr_country_flag = has_overriden_color_flag
+			}
+		}
+	}
+	
+	restore_own_color = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			has_country_flag = has_overriden_color_flag
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			restore_country_color = yes 
+			clr_country_flag = has_overriden_color_flag
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				is_subject = no
 			}
 		}
 	}
