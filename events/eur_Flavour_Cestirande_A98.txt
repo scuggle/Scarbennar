@@ -32,6 +32,7 @@ country_event = {
     desc = flavor_cestirande.2.d
     picture = ELECTION_REPUBLICAN_eventPicture
     fire_only_once = yes
+	is_triggered_only = yes
 	
 	option = {
 		name = flavor_cestirande.2.a
