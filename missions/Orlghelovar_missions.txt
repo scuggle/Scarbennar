@@ -7,6 +7,7 @@ orlghelovar_1p2s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -140,6 +141,7 @@ orlghelovar_1p1s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -208,6 +210,7 @@ orlghelovar_1p4s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -383,6 +386,7 @@ orlghelovar_1p5s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -450,6 +454,7 @@ orlghelovar_1p3s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -515,6 +520,7 @@ orlghelovar_2p5s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -704,6 +710,7 @@ orlghelovar_2p4s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -856,6 +863,7 @@ orlghelovar_2p3s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1012,6 +1020,7 @@ orlghelovar_2p1s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1194,6 +1203,7 @@ orlghelovar_2p2s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1435,6 +1445,7 @@ orlghelovar_2bp5s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1560,6 +1571,7 @@ orlghelovar_2bp4s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1613,6 +1625,7 @@ orlghelovar_3p1s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1652,6 +1665,7 @@ orlghelovar_3p2s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1733,6 +1747,7 @@ orlghelovar_3p3snt = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1777,6 +1792,7 @@ orlghelovar_glass_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1822,6 +1838,7 @@ orlghelovar_glass_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1870,6 +1887,7 @@ orlghelovar_glass_3a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1910,6 +1928,7 @@ orlghelovar_glass_3b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1950,6 +1969,7 @@ orlghelovar_glass_final = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1991,6 +2011,7 @@ orlghelovar_3p3su = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2080,6 +2101,7 @@ orlghelovar_bonus_mg = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2132,6 +2154,7 @@ orlghelovar_light_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2197,6 +2220,7 @@ orlghelovar_magic_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2251,6 +2275,7 @@ orlghelovar_magic_2a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2287,6 +2312,7 @@ orlghelovar_magic_3a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2327,6 +2353,7 @@ orlghelovar_magic_3b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2377,6 +2404,7 @@ orlghelovar_magic_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2416,6 +2444,7 @@ orlghelovar_black_damestear_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2493,6 +2522,7 @@ orlghelovar_black_damestear_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2541,6 +2571,7 @@ orlghelovar_black_damestear_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2609,6 +2640,7 @@ orlghelovar_black_damestear_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2663,6 +2695,7 @@ orlghelovar_black_damestear_research_center = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2703,6 +2736,7 @@ orlghelovar_magical_bullets_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2743,6 +2777,7 @@ orlghelovar_magical_bullets_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2791,6 +2826,7 @@ orlghelovar_sapphire_glass_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2896,6 +2932,7 @@ orlghelovar_sapphire_glass_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2938,6 +2975,7 @@ orlghelovar_microscope_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2975,6 +3013,7 @@ orlghelovar_microscope_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3049,6 +3088,7 @@ orlghelovar_microscope_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3087,6 +3127,7 @@ orlghelovar_medicine_1 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3170,6 +3211,7 @@ orlghelovar_medicine_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3277,6 +3319,7 @@ orlghelovar_lad_1a = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3349,6 +3392,7 @@ orlghelovar_lad_1b = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3400,6 +3444,7 @@ orlghelovar_lad_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3444,6 +3489,7 @@ orlghelovar_lad_advanced_1 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3512,6 +3558,7 @@ orlghelovar_lad_advanced_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3551,6 +3598,7 @@ orlghelovar_armour_protection_1 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3597,6 +3645,7 @@ orlghelovar_armour_protection_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3688,6 +3737,7 @@ orlghelovar_armour_protection_3 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3739,6 +3789,7 @@ orlghelovar_military_1 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3778,6 +3829,7 @@ orlghelovar_military_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {

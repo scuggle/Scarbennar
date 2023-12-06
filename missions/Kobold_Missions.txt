@@ -5,6 +5,7 @@ KOB_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = kobold
 		capital_scope = { superregion = western_cannor_superregion }
 	}
@@ -122,6 +123,7 @@ KOB_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = kobold
 		capital_scope = { superregion = western_cannor_superregion }
 	}
@@ -411,6 +413,7 @@ KOB_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = kobold
 		capital_scope = { superregion = western_cannor_superregion }
 	}

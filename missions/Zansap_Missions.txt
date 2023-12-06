@@ -4,6 +4,7 @@ zansap_1_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F43
 				AND = {
@@ -20,6 +21,7 @@ zansap_2_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F43
 			AND = {
@@ -493,6 +495,7 @@ zansap_3_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F43
 				AND = {
@@ -1241,6 +1244,7 @@ zansap_4_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F43
 			AND = {
@@ -1669,6 +1673,7 @@ zansap_5_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F43
 			AND = {

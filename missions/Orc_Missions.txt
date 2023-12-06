@@ -4,6 +4,7 @@ orc_rivals = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -74,6 +75,7 @@ orc_pillage_2 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -210,6 +212,7 @@ orc_trade = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -261,6 +264,7 @@ orc_domination = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -329,6 +333,7 @@ orc_pillage = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -383,6 +388,7 @@ orc_production = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -449,6 +455,7 @@ orc_aftermath_of_the_greentide_branch = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -594,6 +601,7 @@ orc_success_branch = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -753,6 +761,7 @@ orc_stability = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -781,6 +790,7 @@ orc_diplomacy = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -842,6 +852,7 @@ orc_capital = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -925,6 +936,7 @@ orc_development = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {

@@ -7,6 +7,7 @@ vacyntassi_incident_slot_1 = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F31 #Eduz-Vacyn
 		NOT = { is_incident_happened = incident_thirteenth_night }
 	}
@@ -63,6 +64,7 @@ vacyntassi_incident_slot_2 = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F31 #Eduz-Vacyn
 		NOT = { is_incident_happened = incident_thirteenth_night }
 	}
@@ -180,6 +182,7 @@ vacyntassi_incident_slot_3 = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F31 #Eduz-Vacyn
 		NOT = { is_incident_happened = incident_thirteenth_night }
 	}
@@ -341,6 +344,7 @@ vacyntassi_incident_slot_4 = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F31 #Eduz-Vacyn
 		NOT = { is_incident_happened = incident_thirteenth_night }
 	}
@@ -435,6 +439,7 @@ vacyntassi_incident_slot_5 = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F31 #Eduz-Vacyn
 		NOT = { is_incident_happened = incident_thirteenth_night }	
 	}
@@ -493,6 +498,7 @@ vacyntassi_slot_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F31 #Eduz-Vacyn
 			AND = {
@@ -847,6 +853,7 @@ vacyntassi_slot_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F31 #Eduz-Vacyn
 			AND = {
@@ -1333,6 +1340,7 @@ vacyntassi_slot_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F31 #Eduz-Vacyn
 			AND = {
@@ -1691,6 +1699,7 @@ vacyntassi_slot_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F31 #Eduz-Vacyn
 			AND = {
@@ -2062,6 +2071,7 @@ vacyntassi_slot_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F31 #Eduz-Vacyn
 			AND = {

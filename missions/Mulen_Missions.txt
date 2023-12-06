@@ -4,6 +4,7 @@ mulen_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F50
 	}
 	has_country_shield = yes
@@ -689,6 +690,7 @@ mulen_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F50
 	}
 	has_country_shield = yes
@@ -1889,6 +1891,7 @@ mulen_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F50
 	}
 	has_country_shield = yes
@@ -2512,6 +2515,7 @@ mulen_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F50
 	}
 	has_country_shield = yes
@@ -3540,6 +3544,7 @@ mulen_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F50
 	}
 	has_country_shield = yes

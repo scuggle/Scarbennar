@@ -9,7 +9,8 @@ seghdihr_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_axe_for_sword = {
 		icon = crush_heretic_strongholds
@@ -266,7 +267,8 @@ seghdihr_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_candle_lit = {
 		icon = mission_mage_general
@@ -646,7 +648,8 @@ seghdihr_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_side_by_side = {
 		icon = mission_son_fetishist_alliances
@@ -940,7 +943,8 @@ seghdihr_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_seg_band = {
 		icon = mission_landsknecht_soldier
@@ -1152,7 +1156,8 @@ seghdihr_5 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_restore_gate = {
 		icon = mission_dha_thatchil
@@ -1412,7 +1417,8 @@ seghdihr_1b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
@@ -1907,7 +1913,8 @@ seghdihr_2b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
@@ -2128,7 +2135,8 @@ seghdihr_3b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
@@ -2444,7 +2452,8 @@ seghdihr_4b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
@@ -2664,7 +2673,8 @@ seghdihr_5b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
@@ -3048,7 +3058,8 @@ seghdihr_1c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}
@@ -3448,7 +3459,8 @@ seghdihr_2c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}
@@ -3647,7 +3659,8 @@ seghdihr_3c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}
@@ -3770,7 +3783,8 @@ seghdihr_4c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}
@@ -3950,7 +3964,8 @@ seghdihr_5c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}

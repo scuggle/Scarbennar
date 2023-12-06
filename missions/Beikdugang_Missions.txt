@@ -5,6 +5,7 @@ Y15_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y15 #Beikdugang
 	}
 	has_country_shield = yes
@@ -1105,6 +1106,7 @@ Y15_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y15 #Beikdugang
 	}
 	has_country_shield = yes
@@ -1768,6 +1770,7 @@ Y15_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y15 #Beikdugang
 	}
 	has_country_shield = yes
@@ -2968,6 +2971,7 @@ Y15_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y15 #Beikdugang
 	}
 	has_country_shield = yes
@@ -4019,6 +4023,7 @@ Y15_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y15 #Beikdugang
 	}
 	has_country_shield = yes

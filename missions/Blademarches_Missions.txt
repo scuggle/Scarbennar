@@ -5,6 +5,7 @@ blademarches_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B33
 	}
 	
@@ -82,6 +83,7 @@ blademarches_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B33
 	}
 	
@@ -341,6 +343,7 @@ blademarches_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B33
 	}
 	
@@ -665,6 +668,7 @@ blademarches_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B33
 	}
 	
@@ -949,6 +953,7 @@ blademarches_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B33
 	}
 	

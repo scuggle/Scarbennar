@@ -5,7 +5,8 @@ siadan_series_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = F48 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F48 } 
 
 	siadan_the_talon_and_the_pen = {
 		icon = mission_vedic_education
@@ -56,7 +57,8 @@ siadan_series_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = F48 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F48 } 
 
 	siadan_an_age_of_eclipse = {
 		icon = mission_star_comet
@@ -153,7 +155,8 @@ siadan_series_3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = F48 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F48 } 
 
 	siadan_ready_the_host = {
 		icon = mission_build_up_to_force_limit
@@ -417,7 +420,8 @@ siadan_series_4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = F48 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F48 } 
 
 	siadan_blood_pact_redefined = {
 		icon = mission_confrontation
@@ -521,7 +525,8 @@ siadan_series_5 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = F48 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F48 } 
 
 	siadan_settling_the_vale = {
 		icon = mission_expand_into_the_forest
@@ -760,6 +765,7 @@ siadan_series_1_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F48
 		has_country_flag = siadan_part_2
 	}
@@ -1055,6 +1061,7 @@ siadan_series_2_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F48
 		has_country_flag = siadan_part_2
 	}
@@ -1350,6 +1357,7 @@ siadan_series_3_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F48
 		has_country_flag = siadan_part_2
 	}
@@ -1668,6 +1676,7 @@ siadan_series_4_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F48
 		has_country_flag = siadan_part_2
 	}
@@ -2484,6 +2493,7 @@ siadan_series_5_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F48
 		has_country_flag = siadan_part_2
 	}

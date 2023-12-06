@@ -5,6 +5,7 @@ G32_internal = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -285,6 +286,7 @@ G32_internal_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -528,6 +530,7 @@ G32_western_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -697,6 +700,7 @@ G32_ynns_soldiers = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -756,6 +760,7 @@ G32_ynns_soldiers_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -846,6 +851,7 @@ G32_ynn_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -1133,6 +1139,7 @@ G32_ynn_expansion_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -1247,6 +1254,7 @@ G32_glorious_warfare_harafe = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -1318,6 +1326,7 @@ G32_eastern_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -1516,6 +1525,7 @@ G32_eastern_expansion_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -1561,6 +1571,7 @@ G32_glorious_warfare_outsiders = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -1721,6 +1732,7 @@ G32_companions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -1921,6 +1933,7 @@ G32_outsiders = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -1991,6 +2004,7 @@ G32_outsiders_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -2067,6 +2081,7 @@ G32_glorious_warfare_eordan = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes

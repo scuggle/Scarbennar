@@ -6,6 +6,7 @@ slot = 1
 	generic = no
 	ai = yes 
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F34
 			AND = {
@@ -224,6 +225,7 @@ slot = 2
 	generic = no
 	ai = yes 
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F34
 			AND = {
@@ -404,6 +406,7 @@ slot = 3
 	generic = no
 	ai = yes 
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F34
 			AND = {
@@ -708,6 +711,7 @@ slot = 4
 	generic = no
 	ai = yes 
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F34
 			AND = {
@@ -930,6 +934,7 @@ azka_evran_naval_stuff = {
 	generic = no
 	ai = yes 
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F34
 			AND = {

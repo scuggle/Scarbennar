@@ -4,6 +4,7 @@ ernatvir_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I06
 	}
 	
@@ -155,6 +156,7 @@ ernatvir_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I06
 	}
 	
@@ -361,6 +363,7 @@ ernatvir_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I06
 	}
 
@@ -508,6 +511,7 @@ ernatvir_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I06
 	}
 
@@ -875,6 +879,7 @@ ernatvir_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I06
 	}
 

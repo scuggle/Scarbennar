@@ -3,6 +3,7 @@ birsartanses_first_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F21
 			AND = {
@@ -242,6 +243,7 @@ birsartanses_second_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F21
 			AND = {
@@ -622,6 +624,7 @@ birsartanses_third_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F21
 			AND = {
@@ -801,6 +804,7 @@ birsartanses_fourth_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F21
 			AND = {
@@ -1077,6 +1081,7 @@ birsartanses_fifth_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F21
 			AND = {

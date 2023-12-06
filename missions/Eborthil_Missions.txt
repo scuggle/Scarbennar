@@ -4,6 +4,7 @@ A47_cannor = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -299,6 +300,7 @@ A47_akasik = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -520,6 +522,7 @@ A47_cash = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -759,6 +762,7 @@ A47_navy = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -1144,6 +1148,7 @@ A47_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -1359,6 +1364,7 @@ A47_exploration = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -1433,6 +1439,7 @@ A47_aelantir = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -1645,6 +1652,7 @@ A47_western_aelantir = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -1780,6 +1788,7 @@ A47_heart = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes

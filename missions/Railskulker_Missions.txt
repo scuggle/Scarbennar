@@ -5,6 +5,7 @@ railskulker_column_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 	}
 }
@@ -15,6 +16,7 @@ railskulker_column_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		}
 	
@@ -76,6 +78,7 @@ railskulker_column_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		}
 		
@@ -287,6 +290,7 @@ railskulker_column_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		}
 		
@@ -533,6 +537,7 @@ railskulker_column_5 = {
 	ai=yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		}
 		
@@ -564,6 +569,7 @@ railskulker_column_1_pt2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt2
 		}
@@ -740,6 +746,7 @@ railskulker_column_2_pt2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt2
 		}
@@ -909,6 +916,7 @@ railskulker_column_3_pt2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt2
 		}
@@ -1034,6 +1042,7 @@ railskulker_column_4_pt2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt2
 		}
@@ -1455,6 +1464,7 @@ railskulker_column_5_pt2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt2
 		}
@@ -1543,6 +1553,7 @@ railskulker_column_1_pt3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt3
 	}
@@ -1663,6 +1674,7 @@ railskulker_column_2_pt3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt3
 		}
@@ -1707,6 +1719,7 @@ railskulker_column_3_pt3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt3
 		}
@@ -1953,6 +1966,7 @@ railskulker_column_4_pt3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt3
 		}
@@ -2016,6 +2030,7 @@ railskulker_column_5_pt3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H75
 		has_country_flag = railskulker_missions_pt3
 		}

@@ -4,6 +4,7 @@ countsleague_first_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B55
 	}
 	has_country_shield = yes
@@ -104,6 +105,7 @@ countsleague_second_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B55
 	}
 	has_country_shield = yes
@@ -232,6 +234,7 @@ countsleague_third_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B55
 	}
 	has_country_shield = yes
@@ -456,6 +459,7 @@ countsleague_fourth_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B55
 	}
 	has_country_shield = yes
@@ -557,6 +561,7 @@ countsleague_fifth_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B55
 	}
 	has_country_shield = yes

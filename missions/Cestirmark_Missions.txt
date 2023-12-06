@@ -5,6 +5,7 @@ cestirmark_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -337,6 +338,7 @@ cestirmark_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -744,6 +746,7 @@ cestirmark_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -1039,6 +1042,7 @@ cestirmark_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -1641,6 +1645,7 @@ cestirmark_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -2108,6 +2113,7 @@ united_concord_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -2491,6 +2497,7 @@ united_concord_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -2783,6 +2790,7 @@ united_concord_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -3427,6 +3435,7 @@ united_concord_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -3942,6 +3951,7 @@ united_concord_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -4282,6 +4292,7 @@ union_placeholder = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		NOT = { has_country_flag = united_concord }
 	}

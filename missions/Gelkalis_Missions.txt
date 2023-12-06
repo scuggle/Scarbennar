@@ -6,6 +6,7 @@ gelkalis_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F26
 			and = {
@@ -377,6 +378,7 @@ gelkalis_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F26
 			and = {
@@ -861,6 +863,7 @@ gelkalis_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F26
 			and = {
@@ -1385,6 +1388,7 @@ gelkalis_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F26
 			and = {
@@ -1844,6 +1848,7 @@ gelkalis_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F26
 			and = {

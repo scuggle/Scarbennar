@@ -5,6 +5,7 @@ dameria_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A58
 	}
 	
@@ -194,6 +195,7 @@ dameria_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A58
 	}
 	
@@ -407,6 +409,7 @@ dameria_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A58
 	}
 	
@@ -537,6 +540,7 @@ dameria_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A58
 	}
 	
@@ -824,6 +828,7 @@ dameria_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A58
 	}
 	

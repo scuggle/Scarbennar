@@ -4,7 +4,8 @@ freemarches_missions_1_early= {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = {	tag = H51	}
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	tag = H51	}
 	has_country_shield = yes
 	
 	freemarches_into_the_valley = {
@@ -122,7 +123,8 @@ freemarches_missions_2_early= {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = {	tag = H51	}
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	tag = H51	}
 	has_country_shield = yes
 	
 	freemarches_diplomatic_outreach = {
@@ -241,7 +243,8 @@ freemarches_missions_3_early= {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = {	tag = H51	}
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	tag = H51	}
 	has_country_shield = yes
 	
 	freemarches_the_cursed_heart = {
@@ -416,6 +419,7 @@ freemarches_missions_4_early= {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H51
 	}
 	has_country_shield = yes
@@ -475,6 +479,7 @@ freemarches_missions_5_early= {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H51
 	}
 	has_country_shield = yes
@@ -518,7 +523,8 @@ freemarches_missions_1_established_ynn= {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		tag = H51
 	}
 	has_country_shield = yes
@@ -639,7 +645,8 @@ freemarches_missions_1_established_cursed_ones= {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		tag = H51
 	}
 	has_country_shield = yes
@@ -706,7 +713,8 @@ freemarches_missions_2_established_cursed_ones= {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		tag = H51
 	}
 	has_country_shield = yes
@@ -938,7 +946,8 @@ freemarches_missions_3_established_rudmen_expansion= {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		tag = H51
 	}
 	has_country_shield = yes
@@ -1200,7 +1209,8 @@ freemarches_missions_4_established= {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		tag = H51
 	}
 	has_country_shield = yes
@@ -1334,6 +1344,7 @@ freemarches_missions_5_established_religious= {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H51
 	}
 	has_country_shield = yes
@@ -1431,6 +1442,7 @@ freemarches_missions_5_established_religious_end_rc_or_corinite= {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H51
 		OR = {
 			religion = regent_court
@@ -1477,6 +1489,7 @@ freemarches_missions_5_established_religious_end_ravelian= {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H51
 		religion = ravelian
 	}
@@ -1525,7 +1538,8 @@ freemarches_missions_5_established_conquest= {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		tag = H51
 	}
 	has_country_shield = yes

@@ -4,6 +4,7 @@ veykoda_vareynn_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
             tag = G35
             AND = {
@@ -396,6 +397,7 @@ conquest_sarda_middle = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		 OR = {
             tag = G35
             AND = {
@@ -871,6 +873,7 @@ rightful_rulers_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		 OR = {
             tag = G35
             AND = {
@@ -1532,6 +1535,7 @@ reform_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
             tag = G35
             AND = {
@@ -2203,6 +2207,7 @@ economy_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
             tag = G35
             AND = {

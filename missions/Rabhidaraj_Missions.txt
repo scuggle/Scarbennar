@@ -6,6 +6,7 @@ rabhidaraj_2_1 = {
 	has_country_shield = yes
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R52
 	}
 
@@ -270,6 +271,7 @@ rabhidaraj_1_1 = {
 	has_country_shield = yes
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R52
 	}
 
@@ -528,6 +530,7 @@ rabhidaraj_3_1 = {
 	has_country_shield = yes
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R52
 	}
 
@@ -677,6 +680,7 @@ rabhidaraj_4_1 = {
 	has_country_shield = yes
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R52
 	}
 
@@ -896,6 +900,7 @@ rabhidaraj_5_1 = {
 	has_country_shield = yes
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R52
 	}
 

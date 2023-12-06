@@ -4,6 +4,7 @@ dartax_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F22
 			AND = {
@@ -466,6 +467,7 @@ dartax_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F22
 			AND = {
@@ -870,6 +872,7 @@ dartax_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F22
 			AND = {
@@ -1290,6 +1293,7 @@ dartax_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F22
 			AND = {
@@ -1554,6 +1558,7 @@ dartax_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F22
 			AND = {

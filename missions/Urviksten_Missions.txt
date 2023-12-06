@@ -5,7 +5,8 @@ urviksten_missions1 = {
 	ai = yes 
 	has_country_shield = yes
 	
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		OR = {
 			tag = Z15
 			AND = {
@@ -372,6 +373,7 @@ urviksten_missions2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z15
 			AND = {
@@ -938,7 +940,8 @@ urviksten_missions3 = {
 	ai = yes 
 	has_country_shield = yes
 	
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		OR = {
 			tag = Z15
 			AND = {
@@ -1419,7 +1422,8 @@ blastanor_missions3 = {
 	ai = yes 
 	has_country_shield = yes
 	
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		OR = {
 			tag = Z15
 			AND = {
@@ -1569,7 +1573,8 @@ urviksten_missions4 = {
 	ai = yes 
 	has_country_shield = yes
 	
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		OR = {
 			tag = Z15
 			AND = {
@@ -2011,7 +2016,8 @@ urviksten_missions5 = {
 	ai = yes 
 	has_country_shield = yes
 	
-	potential = {	
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }	
 		OR = {
 			tag = Z15
 			AND = {

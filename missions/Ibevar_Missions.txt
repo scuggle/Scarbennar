@@ -6,6 +6,7 @@ ibevar_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	
@@ -119,6 +120,7 @@ ibevar_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	
@@ -370,6 +372,7 @@ ibevar_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	
@@ -705,6 +708,7 @@ ibevar_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	
@@ -980,6 +984,7 @@ ibevar_5 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	

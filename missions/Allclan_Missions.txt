@@ -7,6 +7,7 @@ allclan_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 	}
 	
@@ -52,6 +53,7 @@ allclan_1_2 = {
 	has_country_shield = no
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 		has_country_flag = I98_erection_frenzy_flag
 	}
@@ -211,6 +213,7 @@ allclan_1_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 	}
 
@@ -340,6 +343,7 @@ allclan_1_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 		has_country_flag = I98_oops_haha_flag
 	}
@@ -372,6 +376,7 @@ allclan_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 	}
 	
@@ -453,6 +458,7 @@ allclan_2_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 		has_country_flag = I98_erection_frenzy_flag
 	}
@@ -515,6 +521,7 @@ allclan_2_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 	}
 
@@ -737,6 +744,7 @@ allclan_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 	}
 	
@@ -1472,6 +1480,7 @@ allclan_3_2 = {
 	has_country_shield = no
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 		has_country_flag = I98_rocket_ready
 	}
@@ -1517,6 +1526,7 @@ allclan_3_3 = {
 	has_country_shield = no
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 		has_country_flag = I98_may_come_down_flag
 	}
@@ -1549,6 +1559,7 @@ allclan_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 	}
 	
@@ -2117,6 +2128,7 @@ allclan_5 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 	}
 	
@@ -2899,6 +2911,7 @@ allclan_5_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I98
 		has_country_flag = I98_did_the_thing
 	}

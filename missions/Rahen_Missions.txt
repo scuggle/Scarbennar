@@ -6,6 +6,7 @@ rahen_prabhi = {
 	has_country_shield = no
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_reform = prabhi_reform
 	}
 	
@@ -62,6 +63,7 @@ rahen_senapti = {
 	has_country_shield = no
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_reform = senapti_reform
 	}
 	
@@ -98,6 +100,7 @@ rahen_resources = {
 	has_country_shield = no
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		capital_scope = { superregion = rahen_superregion }
 	}
 	
@@ -208,6 +211,7 @@ rahen_high_philosophy = {
 	has_country_shield = no
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		capital_scope = { religion = high_philosophy }
 	}
 	

@@ -6,6 +6,7 @@ vanrahar_0 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = R41
 			tag = R43
@@ -231,6 +232,7 @@ vanrahar_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = R41
 			tag = R43
@@ -626,6 +628,7 @@ vanrahar_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = R41
 			tag = R43
@@ -958,6 +961,7 @@ vanrahar_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = R41
 			tag = R43
@@ -1149,6 +1153,7 @@ vanrahar_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = R41
 			tag = R43

@@ -58,3 +58,5 @@
  restore_subject_color_desc: "Restore the original colour of your subjects"
  restore_own_color_title: "Restore our own color"
  restore_own_color_desc: "Restore your original color after being overwritten by an overlord"
+ set_generic_mt_title: "Choose the Generic MT"
+ set_generic_mt_desc: "This decision is PERMANENT. Forming another country will NOT change your MT. Choose wisely."

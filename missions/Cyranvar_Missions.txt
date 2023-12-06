@@ -6,6 +6,7 @@ cyranvar_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I45
 	}
 	
@@ -495,6 +496,7 @@ cyranvar_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I45
 	}
 	
@@ -761,6 +763,7 @@ cyranvar_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I45
 	}
 	
@@ -990,6 +993,7 @@ cyranvar_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I45
 	}
 	
@@ -1329,6 +1333,7 @@ cyranvar_5 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I45
 	}
 	

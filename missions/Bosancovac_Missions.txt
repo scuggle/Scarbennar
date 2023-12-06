@@ -4,6 +4,7 @@ bosancovac_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G33
 			AND = {
@@ -545,6 +546,7 @@ bosancovac_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G33
 			AND = {
@@ -1168,6 +1170,7 @@ bosancovac_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G33
 			AND = {
@@ -1923,6 +1926,7 @@ bosancovac_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G33
 			AND = {
@@ -2704,6 +2708,7 @@ bosancovac_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G33
 			AND = {

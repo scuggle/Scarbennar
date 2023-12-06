@@ -6,6 +6,7 @@ ghavaanaj_1_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture = ghavaanaj
 		NOT = { tag = Y31 }
 		government = monarchy
@@ -123,6 +124,7 @@ ghavaanaj_1_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R72
 	}
 	
@@ -328,6 +330,7 @@ ghavaanaj_2_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture = ghavaanaj
 		NOT = { tag = Y31 }
 		government = monarchy
@@ -455,6 +458,7 @@ ghavaanaj_2_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R72
 	}
 	
@@ -753,6 +757,7 @@ ghavaanaj_3_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture = ghavaanaj
 		NOT = { tag = Y31 }
 		government = monarchy
@@ -934,6 +939,7 @@ ghavaanaj_3_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R72
 	}
 	
@@ -1182,6 +1188,7 @@ ghavaanaj_4_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture = ghavaanaj
 		NOT = { tag = Y31 }
 		government = monarchy
@@ -1235,6 +1242,7 @@ ghavaanaj_4_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R72
 	}
 	
@@ -1580,6 +1588,7 @@ ghavaanaj_5_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture = ghavaanaj
 		NOT = { tag = Y31 }
 		government = monarchy
@@ -1678,6 +1687,7 @@ ghavaanaj_5_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R72
 	}
 	

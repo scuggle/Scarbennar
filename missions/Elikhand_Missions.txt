@@ -5,6 +5,7 @@ B38_early_internal = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -596,6 +597,7 @@ B38_elikhetist_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -1030,6 +1032,7 @@ B38_early_khet = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -1406,6 +1409,7 @@ B38_escann = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -1837,6 +1841,7 @@ B38_early_nation = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -2210,6 +2215,7 @@ B38_crown = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -2788,6 +2794,7 @@ B38_early_solidify = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -3112,6 +3119,7 @@ B38_wonders = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -3692,6 +3700,7 @@ B38_early_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -4069,6 +4078,7 @@ B38_sphinx_horses = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 	}
 	has_country_shield = yes
@@ -4276,6 +4286,7 @@ B38_mummy_lord = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B38 #Elikhand
 		has_country_flag = b38_entef_ruler
 	}

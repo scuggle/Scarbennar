@@ -3,6 +3,7 @@ kairncal_missions = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H05
 	}
 	

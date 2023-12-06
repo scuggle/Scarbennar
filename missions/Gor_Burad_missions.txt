@@ -8,6 +8,7 @@ gor_burad_1a = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 	}
 	has_country_shield = yes	
@@ -225,6 +226,7 @@ gor_burad_2a = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 	}
 	has_country_shield = yes	
@@ -319,6 +321,7 @@ gor_burad_3a = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 	}
 	has_country_shield = yes	
@@ -449,6 +452,7 @@ gor_burad_4a = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 	}
 	has_country_shield = yes	
@@ -625,6 +629,7 @@ gor_burad_5a = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 	}
 	has_country_shield = yes	
@@ -728,6 +733,7 @@ gor_burad_1b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_b
 	}
@@ -943,6 +949,7 @@ gor_burad_2b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_b
 	}
@@ -1067,6 +1074,7 @@ gor_burad_3b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_b
 	}
@@ -1399,6 +1407,7 @@ gor_burad_4b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_b
 	}
@@ -1586,6 +1595,7 @@ gor_burad_5b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_b
 	}
@@ -1698,6 +1708,7 @@ gor_burad_1c = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_c
 	}
@@ -1842,6 +1853,7 @@ gor_burad_2c = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_c
 	}
@@ -1923,6 +1935,7 @@ gor_burad_3c = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_c
 	}
@@ -2211,6 +2224,7 @@ gor_burad_4c = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_c
 	}
@@ -2401,6 +2415,7 @@ gor_burad_5c = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I16
 		has_country_flag = gor_burad_mt_c
 	}

@@ -5,6 +5,7 @@ isobelin_1_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 	}
 	has_country_shield = yes
@@ -292,6 +293,7 @@ isobelin_mission_2_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 	}
 	has_country_shield = yes
@@ -484,6 +486,7 @@ isobelin_3_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 	}
 	has_country_shield = yes
@@ -806,6 +809,7 @@ isobelin_4_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 	}
 	has_country_shield = yes
@@ -990,6 +994,7 @@ isobelin_5_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 	}
 	has_country_shield = yes
@@ -1330,6 +1335,7 @@ isobelin_1_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_awakening_city
 	}
@@ -1914,6 +1920,7 @@ isobelin_2_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_awakening_city
 	}
@@ -2171,6 +2178,7 @@ isobelin_3_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_awakening_city
 	}
@@ -2415,6 +2423,7 @@ isobelin_4_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_awakening_city
 	}
@@ -2769,6 +2778,7 @@ isobelin_5_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_awakening_city
 	}
@@ -3049,6 +3059,7 @@ isobelin_1_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_arising_city
 
@@ -3164,6 +3175,7 @@ isobelin_2_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_arising_city
 	}
@@ -3215,6 +3227,7 @@ isobelin_3_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_arising_city
 	}
@@ -3604,6 +3617,7 @@ isobelin_4_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_arising_city
 	}
@@ -3693,6 +3707,7 @@ isobelin_5_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G91
 		#mission_completed = isobelin_mission_an_arising_city
 	}

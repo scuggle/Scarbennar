@@ -5,7 +5,8 @@ verkalskomdihr_innovations = {
 	slot = 1 
 	generic = no
 	ai = yes 
-	potential = { tag = I13 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I13 }
 	has_country_shield = yes
 	
 	verkalskomdihr_flintlock_schematics = {
@@ -203,7 +204,8 @@ verkalskomdihr_internal_development = {
 	slot = 2 
 	generic = no
 	ai = yes 
-	potential = { tag = I13 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I13 }
 	has_country_shield = yes
 	
 	verkalskomdihr_repair_the_warding_gate = { 
@@ -660,7 +662,8 @@ verkalskomdihr_deepwoods_development = {
 	slot = 3
 	generic = no
 	ai = yes 
-	potential = { tag = I13 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I13 }
 	has_country_shield = yes
 	
 	verkalskomdihr_reform_the_forest_rangers = { 
@@ -1054,7 +1057,8 @@ verkalskomdihr_expansion = {
 	slot = 4
 	generic = no
 	ai = yes 
-	potential = { tag = I13 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I13 }
 	has_country_shield = yes
 	
 	verkalskomdihr_secure_our_surroundings = { 
@@ -1508,7 +1512,8 @@ verkalskomdihr_trade = {
 	slot = 5
 	generic = no
 	ai = yes 
-	potential = { tag = I13 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I13 }
 	has_country_shield = yes
 	
 	verkalskomdihr_trading_in_dwarovar = { 

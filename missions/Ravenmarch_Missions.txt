@@ -4,7 +4,8 @@ ravenmarch_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = B48 }
 	
 	ravenmarch_dostans_way = {
 		icon = mission_alone_in_the_forest
@@ -529,7 +530,8 @@ ravenmarch_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = B48 }
 	
 	ravenmarch_secure_holdings = {
 		icon = mission_white_tower
@@ -1334,7 +1336,8 @@ ravenmarch_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = B48 }
 	
 	ravenmarch_vernham = {
 		icon = defend_the_city
@@ -2223,7 +2226,8 @@ ravenmarch_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = B48 }
 	
 	ravenmarch_broken_blade = {
 		icon = unite_the_realm
@@ -2906,7 +2910,8 @@ ravenmarch_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = B48 }
 	
 	ravenmarch_forests_edge = {
 		icon = mission_misty_forest

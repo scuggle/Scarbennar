@@ -4,7 +4,8 @@ G60_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60
@@ -198,7 +199,8 @@ G60_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60
@@ -440,7 +442,8 @@ G60_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60
@@ -750,7 +753,8 @@ G60_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60
@@ -986,7 +990,8 @@ G60_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60
@@ -1094,7 +1099,8 @@ G60_1_missions_reveal = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60
@@ -1155,7 +1161,8 @@ G60_3_missions_first_reveal = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60
@@ -1189,7 +1196,8 @@ G60_3_missions_second_reveal = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60
@@ -1291,7 +1299,8 @@ G60_4_missions_second_reveal = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60
@@ -1354,7 +1363,8 @@ G60_5_missions_reveal = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = G60
 			was_tag = G60

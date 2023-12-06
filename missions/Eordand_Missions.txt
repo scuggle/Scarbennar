@@ -4,6 +4,7 @@ eordand_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 	}
 	
@@ -788,6 +789,7 @@ eordand_1_domandrod = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eord_seasonal_completed
 	}
@@ -909,6 +911,7 @@ eordand_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 	}
 	
@@ -1350,6 +1353,7 @@ eordand_2_domandrod = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eord_seasonal_completed
 	}
@@ -1408,6 +1412,7 @@ eordand_deepwoods_conquest_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eordand_deepwoods_conquer
 	}
@@ -1540,6 +1545,7 @@ eordand_deepwoods_ally_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eordand_deepwoods_ally
 	}
@@ -1589,6 +1595,7 @@ eordand_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 	}
 	
@@ -1722,6 +1729,7 @@ eordand_spring_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = spring_court
 	}
@@ -1826,6 +1834,7 @@ eordand_summer_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = summer_court
 	}
@@ -1906,6 +1915,7 @@ eordand_autumn_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = autumn_court
 	}
@@ -1982,6 +1992,7 @@ eordand_winter_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = winter_court
 	}
@@ -2098,6 +2109,7 @@ eordand_eordellon_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = eordellon
 	}
@@ -2235,6 +2247,7 @@ eordand_3_domandrod = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eord_seasonal_completed
 	}
@@ -2553,6 +2566,7 @@ eordand_deepwoods_conquest_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eordand_deepwoods_conquer
 	}
@@ -2904,6 +2918,7 @@ eordand_deepwoods_ally_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eordand_deepwoods_ally
 	}
@@ -3174,6 +3189,7 @@ eordand_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 	}
 	
@@ -3418,6 +3434,7 @@ eordand_4_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 	}
 	
@@ -3670,6 +3687,7 @@ eordand_4_domandrod = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eord_seasonal_completed
 	}
@@ -3728,6 +3746,7 @@ eordand_deepwoods_conquest_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eordand_deepwoods_conquer
 	}
@@ -3788,6 +3807,7 @@ eordand_deepwoods_ally_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eordand_deepwoods_ally
 	}
@@ -3904,6 +3924,7 @@ eordand_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 	}
 	
@@ -4193,6 +4214,7 @@ eordand_spring_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = spring_court
 	}
@@ -4238,6 +4260,7 @@ eordand_summer_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = summer_court
 	}
@@ -4302,6 +4325,7 @@ eordand_autumn_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = autumn_court
 	}
@@ -4357,6 +4381,7 @@ eordand_winter_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = winter_court
 	}
@@ -4404,6 +4429,7 @@ eordand_eordellon_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		religion = eordellon
 	}
@@ -4468,6 +4494,7 @@ eordand_5_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 	}
 	
@@ -4821,6 +4848,7 @@ eordand_5_domandrod = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H21
 		has_country_flag = eord_seasonal_completed
 	}

@@ -4,6 +4,7 @@ A45_west_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A45
 	}
 	has_country_shield = yes
@@ -309,6 +310,7 @@ A45_east_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A45
 	}
 	has_country_shield = yes
@@ -731,6 +733,7 @@ A45_corinite_emperor = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A45
 	}
 	has_country_shield = yes
@@ -959,6 +962,7 @@ A45_istralore_army = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A45
 	}
 	has_country_shield = yes
@@ -1196,6 +1200,7 @@ A45_misc_moonhaven = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A45
 	}
 	has_country_shield = yes

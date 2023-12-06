@@ -3,7 +3,8 @@ verkalgulan_government_missions = {
 	slot = 1 
 	generic = no
 	ai = yes 
-	potential = { tag = F47 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F47 }
 	has_country_shield = yes
 	
 	verkalgulan_the_great_purge = { 
@@ -229,7 +230,8 @@ verkalgulan_world_bank_missions = {
 	slot = 2
 	generic = no
 	ai = yes 
-	potential = { tag = F47 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F47 }
 	has_country_shield = yes
 	
 	verkalgulan_new_vault_magisters = { 
@@ -423,7 +425,8 @@ verkalgulan_the_delve_missions = {
 	slot = 3
 	generic = no
 	ai = yes 
-	potential = { tag = F47 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F47 }
 	has_country_shield = yes
 	
 	verkalgulan_deepen_the_citadel_delve = { 
@@ -727,7 +730,8 @@ verkalgulan_the_citadel_missions = {
 	slot = 4
 	generic = no
 	ai = yes 
-	potential = { tag = F47 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F47 }
 	has_country_shield = yes
 	
 	verkalgulan_start_digging = { 
@@ -973,7 +977,8 @@ verkalgulan_great_works_missions = {
 	slot = 5
 	generic = no
 	ai = yes 
-	potential = { tag = F47 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = F47 }
 	has_country_shield = yes
 	
 	verkalgulan_forward_fortifications = { 

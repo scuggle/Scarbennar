@@ -4,6 +4,7 @@ corintar_1_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
 		has_country_flag = formed_corintar_flag
 	}
@@ -648,6 +649,7 @@ corintar_2_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
 		has_country_flag = formed_corintar_flag
 	}
@@ -1033,6 +1035,7 @@ corintar_3_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
 		has_country_flag = formed_corintar_flag
 	}
@@ -1938,6 +1941,7 @@ corintar_4_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
 		has_country_flag = formed_corintar_flag
 	}
@@ -2556,6 +2560,7 @@ corintar_5_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
 		has_country_flag = formed_corintar_flag
 	}

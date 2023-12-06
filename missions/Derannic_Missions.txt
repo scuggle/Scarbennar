@@ -5,6 +5,7 @@ deranne_slot1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A02
 	}
 	has_country_shield = yes
@@ -310,6 +311,7 @@ deranne_slot2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A02
 	}
 	has_country_shield = yes
@@ -552,6 +554,7 @@ deranne_slot3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A02
 	}
 	has_country_shield = yes
@@ -910,6 +913,7 @@ deranne_slot4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A02
 	}
 	has_country_shield = yes
@@ -1098,6 +1102,7 @@ deranne_slot5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A02
 	}
 	has_country_shield = yes

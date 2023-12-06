@@ -3,6 +3,7 @@ arawkelin_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 	}
 	has_country_shield = yes
@@ -356,6 +357,7 @@ arawkelin_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 	}
 	has_country_shield = yes
@@ -666,6 +668,7 @@ arawkelin_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 	}
 	has_country_shield = yes
@@ -1017,6 +1020,7 @@ arawkelin_4_blank = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 	}
 	has_country_shield = yes
@@ -1026,6 +1030,7 @@ arawkelin_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 	}
 	has_country_shield = yes
@@ -1371,6 +1376,7 @@ arawkelin_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 	}
 	has_country_shield = yes

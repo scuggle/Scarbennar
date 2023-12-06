@@ -3,6 +3,7 @@ R51_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R51
 	}
 	has_country_shield = yes
@@ -393,6 +394,7 @@ R51_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R51
 	}
 	has_country_shield = yes
@@ -922,6 +924,7 @@ R51_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R51
 	}
 	has_country_shield = yes
@@ -1296,6 +1299,7 @@ R51_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R51
 	}
 	has_country_shield = yes
@@ -1946,6 +1950,7 @@ R51_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R51
 	}
 	has_country_shield = yes

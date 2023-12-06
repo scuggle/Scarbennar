@@ -5,6 +5,7 @@ zongji_branch_1_1 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y25
 			AND = {
@@ -314,6 +315,7 @@ zongji_branch_2_1 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y25
 			AND = {
@@ -529,6 +531,7 @@ zongji_branch_3_1 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y25
 			AND = {
@@ -916,6 +919,7 @@ zongji_branch_4_1 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y25
 			AND = {
@@ -1291,6 +1295,7 @@ zongji_branch_5_1 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y25
 			AND = {

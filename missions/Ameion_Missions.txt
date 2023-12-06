@@ -9,6 +9,7 @@ G52_1 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -290,6 +291,7 @@ G52_2 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -1254,6 +1256,7 @@ G52_3 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -2102,6 +2105,7 @@ G52_4 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -2861,6 +2865,7 @@ G52_5 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	

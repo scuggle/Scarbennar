@@ -6,6 +6,7 @@ venail_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A21
 	}
 	
@@ -228,6 +229,7 @@ venail_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A21
 	}
 	
@@ -693,6 +695,7 @@ venail_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A21
 	}
 	

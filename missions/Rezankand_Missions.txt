@@ -6,6 +6,7 @@ rezankand_1_a = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H66
 	}
 	
@@ -272,6 +273,7 @@ rezankand_1_b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H67
 	}
 	
@@ -713,6 +715,7 @@ rezankand_2_a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H66
 			tag = H67
@@ -825,6 +828,7 @@ rezankand_2_b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H67
 	}
 	
@@ -1315,6 +1319,7 @@ rezankand_3_a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H66
 			tag = H67
@@ -1454,6 +1459,7 @@ rezankand_3_b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H67
 	}
 	
@@ -2041,6 +2047,7 @@ rezankand_4_a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H67
 	}
 	
@@ -2094,6 +2101,7 @@ rezankand_4_b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H67
 			tag = H66
@@ -2150,6 +2158,7 @@ rezankand_4_c = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H67
 	}
 	
@@ -2519,6 +2528,7 @@ rezankand_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H67
 	}
 	

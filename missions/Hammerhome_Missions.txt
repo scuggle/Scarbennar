@@ -2,7 +2,8 @@ hammerhome_1 = {
 	slot = 1
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -289,7 +290,8 @@ hammerhome_2 = {
     slot = 2            
     generic = no           
     ai = yes                 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -627,7 +629,8 @@ hammerhome_3 = {
     slot = 3            
     generic = no           
     ai = yes                 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -1314,7 +1317,8 @@ hammerhome_4 = {
     slot = 4            
     generic = no           
     ai = yes                 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -1570,7 +1574,8 @@ hammerhome_5 = {
 	slot = 5
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -1767,7 +1772,8 @@ hammerhome_1b = {
 	slot = 1
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}
@@ -2153,7 +2159,8 @@ hammerhome_2b = {
 	slot = 2
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}
@@ -2353,7 +2360,8 @@ hammerhome_3b = {
 	slot = 3
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}
@@ -2804,7 +2812,8 @@ hammerhome_4b = {
 	slot = 4
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}
@@ -2991,7 +3000,8 @@ hammerhome_5b = {
 	slot = 5
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}

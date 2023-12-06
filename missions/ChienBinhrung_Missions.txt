@@ -9,6 +9,7 @@ chien_1 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
         OR = { 
             tag = Y72 
             was_tag = Y72
@@ -270,7 +271,8 @@ chien_1_question = { #None of these missions should be possible to complete.
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
         OR = { 
             tag = Y72 
             was_tag = Y72
@@ -336,7 +338,8 @@ chien_1_rp = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
         OR = { 
             tag = Y72 
             was_tag = Y72
@@ -466,7 +469,8 @@ chien_1_ma = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
         OR = { 
             tag = Y72 
             was_tag = Y72
@@ -609,7 +613,8 @@ chien_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
         OR = { 
             tag = Y72 
             was_tag = Y72
@@ -1024,7 +1029,8 @@ chien_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
         OR = { 
             tag = Y72 
             was_tag = Y72
@@ -1611,7 +1617,8 @@ chien_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
         OR = { 
             tag = Y72 
             was_tag = Y72
@@ -2037,7 +2044,8 @@ chien_5 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
         OR = { 
             tag = Y72 
             was_tag = Y72

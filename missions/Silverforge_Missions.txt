@@ -3,6 +3,7 @@ A73_Remove_Wex = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A73 #Silverforge
 	}
 	has_country_shield = yes
@@ -737,6 +738,7 @@ A73_soldier_up = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A73 #Silverforge
 	}
 	has_country_shield = yes
@@ -1298,6 +1300,7 @@ A73_complete_hold = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A73 #Silverforge
 	}
 	has_country_shield = yes
@@ -1872,6 +1875,7 @@ A73_remove_ibevar = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A73 #Silverforge
 	}
 	has_country_shield = yes
@@ -2761,6 +2765,7 @@ A73_orc_stuff = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A73 #Silverforge
 	}
 	has_country_shield = yes

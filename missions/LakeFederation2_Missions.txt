@@ -5,6 +5,7 @@ J33_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 	}
 	
@@ -111,6 +112,7 @@ J33_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 	}
 	
@@ -284,6 +286,7 @@ J33_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 	}
 	
@@ -372,6 +375,7 @@ J33_4_GUNS = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = guns_of_the_lake
 	}
@@ -593,6 +597,7 @@ J33_5_GUNS = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = guns_of_the_lake
 	}
@@ -793,6 +798,7 @@ J33_4_SOLDIER = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = soldiers_of_the_lake
 	}
@@ -983,6 +989,7 @@ J33_5_SOLDIER = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = soldiers_of_the_lake
 	}
@@ -1244,6 +1251,7 @@ J33_4_CHILDRENS = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = childrens_of_the_lake
 	}
@@ -1497,6 +1505,7 @@ J33_5_CHILDRENS = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = childrens_of_the_lake
 	}
@@ -1727,6 +1736,7 @@ J33_4_WORKERS = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = workers_of_the_lake
 	}
@@ -1960,6 +1970,7 @@ J33_5_WORKERS = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = workers_of_the_lake
 	}
@@ -2203,6 +2214,7 @@ J33_4_TRADERS = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = traders_of_the_lake
 	}
@@ -2772,6 +2784,7 @@ J33_5_TRADERS = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = traders_of_the_lake
 	}
@@ -3301,6 +3314,7 @@ J33_4_CITIZEN = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = citizens_of_the_lake
 	}
@@ -3754,6 +3768,7 @@ J33_5_CITIZEN = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J33
 		has_country_modifier = citizens_of_the_lake
 	}

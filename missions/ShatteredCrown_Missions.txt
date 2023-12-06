@@ -4,6 +4,7 @@ shatteredcrown_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes
@@ -593,6 +594,7 @@ shatteredcrown_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes
@@ -1013,6 +1015,7 @@ shatteredcrown_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes
@@ -1409,6 +1412,7 @@ shatteredcrown_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes
@@ -1956,6 +1960,7 @@ shatteredcrown_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes

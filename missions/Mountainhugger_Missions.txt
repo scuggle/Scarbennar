@@ -5,6 +5,7 @@ mountainhugger_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {
@@ -259,6 +260,7 @@ mountainhugger_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {
@@ -544,6 +546,7 @@ mountainhugger_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {
@@ -797,6 +800,7 @@ mountainhugger_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {
@@ -1043,6 +1047,7 @@ mountainhugger_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {

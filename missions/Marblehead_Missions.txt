@@ -3,6 +3,7 @@ marblehead_west_conquest = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U15
 			AND = {
@@ -190,6 +191,7 @@ marblehead_near_west = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U15
 			AND = {
@@ -455,6 +457,7 @@ marblehead_central = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U15
 			AND = {
@@ -771,6 +774,7 @@ marblehead_near_east = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U15
 			AND = {
@@ -1020,6 +1024,7 @@ marblehead_east = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U15
 			AND = {

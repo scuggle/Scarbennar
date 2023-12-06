@@ -4,7 +4,8 @@ moonhaven_regent_court_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 	
 	A31_varivar = {
 		icon = mission_luther_theses
@@ -401,7 +402,8 @@ moonhaven_corinite_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 	
 	A31_istralore = {
 		icon = mission_noble_council
@@ -661,7 +663,8 @@ moonhaven_development_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 
 	A31_redglades = {
 		icon = mission_princess_writing
@@ -1087,7 +1090,8 @@ moonhaven_colonial_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 
 	A31_venail = {
 		icon = mission_rb_grow_the_channel
@@ -1543,7 +1547,8 @@ moonhaven_exploration_missions = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 	has_country_shield = yes
 	
 	A31_celmaldor = {

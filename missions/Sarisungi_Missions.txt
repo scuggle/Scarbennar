@@ -4,6 +4,7 @@ kethur_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R21
 	}
 	has_country_shield = yes
@@ -75,6 +76,7 @@ metropolis_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R21
 	}
 	has_country_shield = yes
@@ -160,6 +162,7 @@ nundujisbid_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R21
 	}
 	has_country_shield = yes
@@ -251,6 +254,7 @@ porcelain_diplomacy_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R21
 	}
 	has_country_shield = yes
@@ -417,6 +421,7 @@ sarisung_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R21
 	}
 	has_country_shield = yes
@@ -625,6 +630,7 @@ sarkhani_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R21
 	}
 	has_country_shield = yes
@@ -723,6 +729,7 @@ southern_connection_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R21
 	}
 	has_country_shield = yes
@@ -782,6 +789,7 @@ river_trading_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R21
 	}
 	has_country_shield = yes
@@ -864,6 +872,7 @@ khappur_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R21
 	}
 	has_country_shield = yes

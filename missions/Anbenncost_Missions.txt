@@ -6,6 +6,7 @@ anbenncost_1 = {
 	has_country_shield = yes
 	potential = {
 		tag = A38
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	anbenncost_mobilise_watch = {
@@ -111,6 +112,7 @@ anbenncost_2 = {
 	has_country_shield = yes
 	potential = {
 		tag = A38
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	anbenncost_trade_fleet = {
@@ -347,6 +349,7 @@ anbenncost_3 = {
 	has_country_shield = yes
 	potential = {
 		tag = A38
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	anbenncost_day_in_city = {
@@ -570,6 +573,7 @@ anbenncost_4 = {
 	has_country_shield = yes
 	potential = {
 		tag = A38
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	anbenncost_a_new_anbenncost = {
@@ -818,6 +822,7 @@ anbenncost_5 = {
 	has_country_shield = yes
 	potential = {
 		tag = A38
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	anbenncost_upgrade_watchtowers = {

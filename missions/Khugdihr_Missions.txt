@@ -5,6 +5,7 @@ khugdihr_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 	}
 	
@@ -213,6 +214,7 @@ khugdihr_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 	}
 	
@@ -408,6 +410,7 @@ khugdihr_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 	}
 	
@@ -646,6 +649,7 @@ khugdihr_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 	}
 	
@@ -927,6 +931,7 @@ khugdihr_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 	}
 	
@@ -1125,6 +1130,7 @@ khugdihr_1_pt_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 		has_country_flag = khugdihr_missions_part_2
 	}
@@ -1295,6 +1301,7 @@ khugdihr_2_pt_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 		has_country_flag = khugdihr_missions_part_2
 	}
@@ -1480,6 +1487,7 @@ khugdihr_3_pt_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 		has_country_flag = khugdihr_missions_part_2
 	}
@@ -1750,6 +1758,7 @@ khugdihr_4_pt_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 		has_country_flag = khugdihr_missions_part_2
 	}
@@ -2005,6 +2014,7 @@ khugdihr_5_pt_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I07
 		has_country_flag = khugdihr_missions_part_2
 	}

@@ -6,6 +6,7 @@ Y63_missions_1a = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y63
 		has_global_flag = khom_civilwar_honsai_won_war
 	}
@@ -180,6 +181,7 @@ Y63_missions_1b = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y63
 		NOT = { has_global_flag =  khom_civilwar_honsai_won_war }
 	}
@@ -391,6 +393,7 @@ Y63_missions_1 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y63
 	}
 	has_country_shield = yes
@@ -541,6 +544,7 @@ Y63_missions_2 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y63
 	}
 	has_country_shield = yes
@@ -1243,6 +1247,7 @@ Y63_missions_3 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y63
 	}
 	has_country_shield = yes
@@ -1939,6 +1944,7 @@ Y63_missions_4 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y63
 	}
 	has_country_shield = yes
@@ -2374,6 +2380,7 @@ Y63_missions_5 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y63
 	}
 	has_country_shield = yes

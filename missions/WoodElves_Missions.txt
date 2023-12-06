@@ -5,6 +5,7 @@ deepwoods_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = wood_elf
 		NOT = { tag = I45 }
 	}
@@ -47,6 +48,7 @@ deepwoods_1_b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = wood_elf
 		has_global_flag = end_verdant_pact
 	}
@@ -90,6 +92,7 @@ deepwoods_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = wood_elf
 		NOT = { tag = I45 }
 	}
@@ -203,6 +206,7 @@ deepwoods_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = wood_elf
 		NOT = { tag = I45 }
 	}
@@ -286,6 +290,7 @@ deepwoods_3_b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = wood_elf
 		has_global_flag = end_verdant_pact
 		NOT = { tag = I45 }
@@ -378,6 +383,7 @@ deepwoods_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = wood_elf
 		NOT = { tag = I45 }
 	}
@@ -409,6 +415,7 @@ deepwoods_4_b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = wood_elf
 		has_global_flag = end_verdant_pact
 		NOT = { tag = I45 }
@@ -445,6 +452,7 @@ deepwoods_4_c = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = wood_elf
 		NOT = { tag = I45 }
 	}

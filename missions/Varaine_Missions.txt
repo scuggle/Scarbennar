@@ -3,6 +3,7 @@ A99_column_1_part_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes
@@ -344,6 +345,7 @@ A99_column_2_part_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes
@@ -629,6 +631,7 @@ A99_column_3_part_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes
@@ -905,6 +908,7 @@ A99_column_4_part_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes
@@ -1143,6 +1147,7 @@ A99_column_5_part_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes
@@ -1377,6 +1382,7 @@ A99_column_1_part_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes
@@ -1691,6 +1697,7 @@ A99_column_2_part_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes
@@ -1924,6 +1931,7 @@ A99_column_3_part_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes
@@ -2035,6 +2043,7 @@ A99_column_4_part_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes
@@ -2284,6 +2293,7 @@ A99_column_5_part_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A99
 	}
 	has_country_shield = yes

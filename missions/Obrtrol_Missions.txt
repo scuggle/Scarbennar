@@ -4,6 +4,7 @@ obrtrol_missiontree_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -243,6 +244,7 @@ obrtrol_missiontree_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -364,6 +366,7 @@ obrtrol_missiontree_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -674,6 +677,7 @@ obrtrol_missiontree_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -766,6 +770,7 @@ obrtrol_missiontree_5 = {
  	generic = no
  	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -1093,6 +1098,7 @@ obrtrol_missiontree_1_b = {
  	generic = no
  	ai = yes
  	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
  	}
 	
@@ -1332,6 +1338,7 @@ obrtrol_missiontree_2_b = {
  	generic = no
  	ai = yes
  	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
  	}
 	
@@ -1615,6 +1622,7 @@ obrtrol_missiontree_3_b = {
  	generic = no
  	ai = yes
  	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
  	}
 	
@@ -1816,6 +1824,7 @@ obrtrol_missiontree_4_b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
 	}
 	
@@ -2126,6 +2135,7 @@ obrtrol_missiontree_5_b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
 	}
 	

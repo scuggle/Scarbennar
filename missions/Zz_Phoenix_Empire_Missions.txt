@@ -7,6 +7,7 @@ phoenix_empire_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F38
 		NOT = { was_tag = F52 }
 	}
@@ -999,6 +1000,7 @@ phoenix_empire_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F38
 		NOT = { was_tag = F52 }
 	}
@@ -1599,6 +1601,7 @@ phoenix_empire_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F38
 		NOT = { was_tag = F52 }
 	}
@@ -2292,6 +2295,7 @@ phoenix_empire_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F38
 		NOT = { was_tag = F52 }
 	}
@@ -2831,6 +2835,7 @@ phoenix_empire_5 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F38
 		NOT = { was_tag = F52 }
 	}

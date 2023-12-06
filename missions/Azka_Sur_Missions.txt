@@ -4,6 +4,7 @@ azka_sur_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
         or = {
             tag = U20
             and = {
@@ -417,6 +418,7 @@ azka_sur_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
         or = {
             tag = U20
             and = {
@@ -770,6 +772,7 @@ azka_sur_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
         or = {
             tag = U20
             and = {
@@ -1152,6 +1155,7 @@ azka_sur_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
         or = {
             tag = U20
             and = {
@@ -1567,6 +1571,7 @@ azka_sur_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
         or = {
             tag = U20
             and = {

@@ -5,6 +5,7 @@ KOB_3_commun = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 	}
 	
@@ -33,6 +34,7 @@ KOB_1_artificier = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_artificier_path
 	}
@@ -243,6 +245,7 @@ KOB_2_artificier = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_artificier_path
 	}
@@ -399,6 +402,7 @@ KOB_3_artificier = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_artificier_path
 	}
@@ -603,6 +607,7 @@ KOB_4_artificier = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_artificier_path
 	}
@@ -788,6 +793,7 @@ KOB_5_artificier = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_artificier_path
 	}
@@ -913,6 +919,7 @@ KOB_1_dragon = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_dragon_path
 	}
@@ -1041,6 +1048,7 @@ KOB_2_dragon = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_dragon_path
 	}
@@ -1214,6 +1222,7 @@ KOB_3_dragon = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_dragon_path
 	}
@@ -1471,6 +1480,7 @@ KOB_4_dragon = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_dragon_path
 	}
@@ -1573,6 +1583,7 @@ KOB_5_dragon = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z38
 		has_country_flag = kobold_dragon_path
 	}

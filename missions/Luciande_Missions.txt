@@ -3,7 +3,8 @@ luciande_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_lucian
 	}	
@@ -178,7 +179,8 @@ luciande_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_lucian
 	}
@@ -422,7 +424,8 @@ luciande_2_ending_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_deadest_quiet
 		has_country_flag = B34_lucian
@@ -627,7 +630,8 @@ luciande_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_lucian
 	}
@@ -933,7 +937,8 @@ luciande_3_middle_missions_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_forever_silent
 		has_country_flag = B34_lucian
@@ -982,7 +987,8 @@ luciande_3_middle_missions_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_making_preparations
 		has_country_flag = B34_lucian
@@ -1026,7 +1032,8 @@ luciande_3_ending_missions_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = luciande_finished_war
 		has_country_flag = B34_lucian
@@ -1072,7 +1079,8 @@ luciande_3_ending_missions_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_deadest_quiet
 		has_country_flag = B34_lucian
@@ -1137,7 +1145,8 @@ luciande_3_ending_missions_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_on_the_hunt
 		has_country_flag = B34_lucian
@@ -1176,7 +1185,8 @@ luciande_3_ending_missions_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_end_of_hunt
 		has_country_flag = B34_lucian
@@ -1226,7 +1236,8 @@ luciande_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_lucian
 	} #luciande
@@ -1501,6 +1512,7 @@ luciande_4_ending_missions = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B34
 		has_country_flag = B34_deadest_quiet
 		has_country_flag = B34_lucian
@@ -1690,6 +1702,7 @@ luciande_slot_5_blank = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B34 #luciande
 		has_country_flag = B34_lucian
 	}
@@ -1701,7 +1714,8 @@ luciande_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_lucian
 	}

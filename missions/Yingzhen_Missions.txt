@@ -4,6 +4,7 @@ yingzhen_start_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y10
 	}
 	has_country_shield = yes
@@ -156,6 +157,7 @@ yingzhen_start_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y10
 	}
 	has_country_shield = yes
@@ -350,6 +352,7 @@ yingzhen_start_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y10
 	}
 	has_country_shield = yes
@@ -478,6 +481,7 @@ yingzhen_unified_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y10
 		has_country_flag = yanszin_unification
 	}
@@ -641,6 +645,7 @@ yingzhen_unified_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y10
 		has_country_flag = yanszin_unification
 	}
@@ -816,6 +821,7 @@ yingzhen_unified_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y10
 		has_country_flag = yanszin_unification
 	}
@@ -1201,6 +1207,7 @@ yingzhen_unified_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y10
 		has_country_flag = yanszin_unification
 	}
@@ -1526,6 +1533,7 @@ yingzhen_unified_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y10
 		has_country_flag = yanszin_unification
 	}

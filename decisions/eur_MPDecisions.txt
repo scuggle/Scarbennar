@@ -291,4 +291,31 @@ country_decisions = {
 			}
 		}
 	}
+
+	set_generic_mt = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			NOT = { is_year = 1445 }
+			NOT = { has_country_flag = chose_generic_mt }
+		}
+		allow = {
+			NOT = { is_year = 1445 }
+		}
+		effect = {
+			set_country_flag = chose_generic_mt
+			swap_non_generic_missions = yes
+
+			FROM = {
+				hidden_effect = {
+					play_sound = "decision"
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }	

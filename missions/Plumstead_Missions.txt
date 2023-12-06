@@ -9,6 +9,7 @@ H61_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H61 # Plumstead
 	}
 	
@@ -439,6 +440,7 @@ H61_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H61 # Plumstead
 	}
 	
@@ -833,6 +835,7 @@ H61_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H61 # Plumstead
 	}
 	
@@ -1552,6 +1555,7 @@ H61_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H61 # Plumstead
 	}
 	
@@ -1949,6 +1953,7 @@ H61_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H61 # Plumstead
 	}
 	

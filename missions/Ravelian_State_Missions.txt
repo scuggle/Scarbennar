@@ -5,7 +5,8 @@ col_1_post_D2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = second_ravelian_council
 	} 
 
@@ -127,7 +128,8 @@ col_1_post_D3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = third_ravelian_council
 	} 
 
@@ -178,7 +180,8 @@ col_1_post_D4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = fourth_ravelian_council
 	} 
 
@@ -212,7 +215,8 @@ col_2_start = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 } 
 
 	Z97_interplanar_forays = {
 		icon = mission_artificier_experience
@@ -248,7 +252,8 @@ col_2_post_D1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = first_ravelian_council
 	} 
 
@@ -294,7 +299,8 @@ col_2_post_D2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = second_ravelian_council
 	} 
 
@@ -428,7 +434,8 @@ col_2_post_D3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = third_ravelian_council
 	} 
 
@@ -468,7 +475,8 @@ col_2_post_D4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = fourth_ravelian_council
 	} 
 
@@ -612,7 +620,8 @@ col_3_start = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 } 
 
 	Z97_take_aranthil = {
 		icon = mission_conquer_50_development
@@ -697,7 +706,8 @@ col_3_post_D2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = second_ravelian_council
 	} 
 
@@ -744,7 +754,8 @@ col_3_post_D3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 	has_global_flag = third_ravelian_council
 	} 
 
@@ -852,7 +863,8 @@ col_3_post_D4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = fourth_ravelian_council
 	} 
 
@@ -946,7 +958,8 @@ col_4_start = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 } 
 
 	Z97_restore_old_imperial_court = {
 		icon = mission_arca_ore
@@ -1023,7 +1036,8 @@ col_4_post_D3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = third_ravelian_council
 	} 
 
@@ -1069,7 +1083,8 @@ col_4_post_D4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 
 		has_global_flag = fourth_ravelian_council
 	} 
 
@@ -1151,7 +1166,8 @@ col_5_start = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z97 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z97 } 
 
 	Z97_enact_ravelian_technocracy = {
 		icon = mission_female_throne

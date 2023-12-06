@@ -4,6 +4,7 @@ bianfang_missions_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y09
 			AND = {
@@ -198,6 +199,7 @@ bianfang_missions_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y09
 			AND = {
@@ -426,6 +428,7 @@ bianfang_missions_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y09
 			AND = {
@@ -679,6 +682,7 @@ bianfang_missions_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y09
 			AND = {
@@ -878,6 +882,7 @@ bianfang_missions_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y09
 			AND = {
@@ -1031,6 +1036,7 @@ bianfang_liang_missions_1 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 	}
@@ -1364,6 +1370,7 @@ bianfang_liang_missions_2 = {
 	has_country_shield = yes
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 	}
@@ -1599,6 +1606,7 @@ bianfang_liang_missions_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 	}
@@ -1778,6 +1786,7 @@ bianfang_liang_missions_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 	}
@@ -1954,6 +1963,7 @@ bianfang_liang_missions_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 	}
@@ -2332,6 +2342,7 @@ bianfang_yanification_missions_2 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 		has_country_flag = unlock_yanification_missions
@@ -2425,6 +2436,7 @@ bianfang_liang_missions_2_second = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 	}
@@ -2508,6 +2520,7 @@ bianfang_yanification_missions_3 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 		has_country_flag = unlock_yanification_missions
@@ -2639,6 +2652,7 @@ bianfang_yanification_missions_3_second = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 		has_country_flag = unlock_yanification_missions
@@ -2733,6 +2747,7 @@ bianfang_liang_missions_3_second = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 	}
@@ -2770,6 +2785,7 @@ bianfang_yanification_missions_4 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 		has_country_flag = unlock_yanification_missions
@@ -2824,6 +2840,7 @@ bianfang_liang_missions_4_second = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 	}
@@ -2983,6 +3000,7 @@ bianfang_rahen_missions_2 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 		has_country_flag = unlock_rahen_missions
@@ -3068,6 +3086,7 @@ bianfang_rahen_missions_3 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 		has_country_flag = unlock_rahen_missions
@@ -3109,6 +3128,7 @@ bianfang_rahen_missions_4 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z66
 		was_tag = Y09
 		has_country_flag = unlock_rahen_missions

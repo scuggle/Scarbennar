@@ -1,10 +1,11 @@
 
 twisting_missions = {
 	slot = 3
-	generic = yes
+	ai = yes
+	generic = no
 	has_country_shield = yes
 	potential = {
-		NOT = { has_country_flag = chose_generic_mt }
+		has_country_flag = chose_generic_mt
 	}
 
 
@@ -104,14 +105,12 @@ twisting_missions = {
 	}
 }
 
-
-
 expansion_missions = {
 	slot = 2
-	generic = yes
+	generic = no
 	has_country_shield = yes
 	potential = {
-		NOT = { has_country_flag = chose_generic_mt }
+		has_country_flag = chose_generic_mt
 	}
 
 
@@ -318,10 +317,11 @@ expansion_missions = {
 
 economic_missions = {
 	slot = 4
-	generic = yes
+	generic = no
+	ai = yes
 	has_country_shield = yes
 	potential = {
-		NOT = { has_country_flag = chose_generic_mt }
+		has_country_flag = chose_generic_mt
 	}
 
 
@@ -576,7 +576,8 @@ economic_missions = {
 
 trade_missions = {
 	slot = 3
-	generic = yes
+	generic = no
+	ai = yes
 	has_country_shield = yes
 	potential = {
 	    NOT = { 
@@ -586,7 +587,7 @@ trade_missions = {
 		has_country_flag = economic_tellum_flag
 		has_country_flag = trade_tellum_flag
 		}
-		NOT = { has_country_flag = chose_generic_mt }
+		has_country_flag = chose_generic_mt
 	}
 
 
@@ -606,10 +607,11 @@ trade_missions = {
 
 twisting_missions_goverment = {
 	slot = 3
-	generic = yes
+	generic = no
+	ai = yes
 	has_country_shield = yes
 	potential = {
-		NOT = { has_country_flag = chose_generic_mt }
+		has_country_flag = chose_generic_mt
 	}
 
 
@@ -985,11 +987,12 @@ twisting_missions_goverment = {
 
 front_lines_tellum_missions = {
 	slot = 3
-	generic = yes
+	generic = no
+	ai = yes
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = front_lines_tellum_flag
-	   NOT = { has_country_flag = chose_generic_mt }
+	   has_country_flag = chose_generic_mt
 	}
 
 
@@ -1046,11 +1049,12 @@ front_lines_tellum_missions = {
 
 support_tellum_missions = {
 	slot = 3
-	generic = yes
+	generic = no
+	ai = yes
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = support_tellum_flag
-	   NOT = { has_country_flag = chose_generic_mt }
+	   has_country_flag = chose_generic_mt
 	}
 
 
@@ -1101,11 +1105,12 @@ support_tellum_missions = {
 
 artificers_tellum_missions = {
 	slot = 3
-	generic = yes
+	generic = no
+	ai = yes
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = artificers_tellum_flag
-	   NOT = { has_country_flag = chose_generic_mt }
+	   has_country_flag = chose_generic_mt
 	}
 
 
@@ -1173,11 +1178,12 @@ artificers_tellum_missions = {
 
 economic_tellum_missions = {
 	slot = 3
-	generic = yes
+	generic = no
+	ai = yes
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = economic_tellum_flag
-	   NOT = { has_country_flag = chose_generic_mt }
+	   has_country_flag = chose_generic_mt
 	}
 
 
@@ -1234,11 +1240,12 @@ economic_tellum_missions = {
 
 trade_tellum_missions = {
 	slot = 3
-	generic = yes
+	generic = no
+	ai = yes
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = trade_tellum_flag
-	   NOT = { has_country_flag = chose_generic_mt }
+	   has_country_flag = chose_generic_mt
 	}
 
 
@@ -1294,5 +1301,25 @@ trade_tellum_missions = {
     			duration = -1  
 			}
 		}
+	}
+}
+
+placeholder_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		has_country_flag = chose_generic_mt
+	}
+}
+
+placeholder_missions_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		has_country_flag = chose_generic_mt
 	}
 }

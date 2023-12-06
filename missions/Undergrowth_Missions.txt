@@ -4,6 +4,7 @@ goblin_den_column_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H88
 			tag = H92
@@ -87,6 +88,7 @@ goblin_den_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H88
 			tag = H92
@@ -1114,6 +1116,7 @@ goblin_den_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H88
 			tag = H92
@@ -1338,6 +1341,7 @@ goblin_den_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H88
 			tag = H92

@@ -4,6 +4,7 @@ A16_branch_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}
@@ -194,6 +195,7 @@ A16_branch_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}
@@ -541,6 +543,7 @@ A16_branch_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}
@@ -964,6 +967,7 @@ A16_branch_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1430,6 +1434,7 @@ A16_branch_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}

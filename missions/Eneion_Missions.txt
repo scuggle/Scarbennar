@@ -7,7 +7,8 @@ G55_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G55 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G55 }
 
 	G55_1_1_petition_degakheion = {
 		icon = mission_have_two_subjects
@@ -346,7 +347,8 @@ G55_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G55 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G55 }
 	
 	G55_2_2_build_up_eneion = {
 		icon = mission_arverynn_street
@@ -757,7 +759,8 @@ G55_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G55 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G55 }
 
 	G55_3_1_settle_the_borderland = {
 		icon = mission_green_village
@@ -1303,7 +1306,8 @@ G55_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G55 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G55 }
 	
 	G55_4_2_up_the_eneionam = {
 		icon = mission_alone_in_the_wood
@@ -1746,7 +1750,8 @@ G55_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G55 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G55 }
 
 	G55_5_1_fill_the_library = {
 		icon = mission_big_house

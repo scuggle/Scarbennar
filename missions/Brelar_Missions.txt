@@ -4,6 +4,7 @@ G27_branch_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G27
 			AND = {
@@ -97,6 +98,7 @@ G27_branch_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G27
 			AND = {
@@ -412,6 +414,7 @@ G27_branch_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G27
 			AND = {
@@ -705,6 +708,7 @@ G27_branch_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G27
 			AND = {
@@ -1169,6 +1173,7 @@ G27_branch_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G27
 			AND = {
@@ -1403,6 +1408,7 @@ G27_breluslad_branch_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G27
 		has_country_flag = g27_breluslad_flag
 	}
@@ -2136,6 +2142,7 @@ G27_breluslad_branch_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G27
 		has_country_flag = g27_breluslad_flag
 	}
@@ -2676,6 +2683,7 @@ G27_breluslad_branch_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G27
 		has_country_flag = g27_breluslad_flag
 	}
@@ -3903,6 +3911,7 @@ G27_breluslad_branch_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G27
 		has_country_flag = g27_breluslad_flag
 	}
@@ -4387,6 +4396,7 @@ G27_breluslad_branch_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G27
 		has_country_flag = g27_breluslad_flag
 	}
@@ -5079,6 +5089,7 @@ G27_imperial_branch_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_country_flag = g27_imperial_flag
 		OR = {
 			tag = G27
@@ -5298,6 +5309,7 @@ G27_imperial_branch_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_country_flag = g27_imperial_flag
 		OR = {
 			tag = G27
@@ -5639,6 +5651,7 @@ G27_imperial_branch_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_country_flag = g27_imperial_flag
 		OR = {
 			tag = G27
@@ -5919,6 +5932,7 @@ G27_imperial_branch_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_country_flag = g27_imperial_flag
 		OR = {
 			tag = G27
@@ -6163,6 +6177,7 @@ G27_imperial_branch_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_country_flag = g27_imperial_flag
 		OR = {
 			tag = G27

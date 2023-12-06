@@ -4,6 +4,7 @@ F27_gelkalis = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F27
 	}
 	has_country_shield = yes
@@ -337,6 +338,7 @@ F27_southern_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F27
 	}
 	has_country_shield = yes
@@ -863,6 +865,7 @@ F27_tech_and_reform = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F27
 	}
 	has_country_shield = yes
@@ -1045,6 +1048,7 @@ F27_western_conquest = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F27
 	}
 	has_country_shield = yes
@@ -1259,6 +1263,7 @@ F27_hermit_harpies = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F27
 	}
 	has_country_shield = yes

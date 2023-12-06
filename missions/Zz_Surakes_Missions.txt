@@ -4,6 +4,7 @@ surakes_slot_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F52
 		NOT = { was_tag = F38 }
 	}
@@ -383,6 +384,7 @@ surakes_slot_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F52
 		NOT = { was_tag = F38 }
 	}
@@ -881,6 +883,7 @@ surakes_slot_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F52
 		NOT = { was_tag = F38 }
 	}

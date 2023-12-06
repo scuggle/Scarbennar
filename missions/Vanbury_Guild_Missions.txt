@@ -5,6 +5,7 @@ vanbury_guild_eordand = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G97
 	}
 	has_country_shield = yes
@@ -445,6 +446,7 @@ vanbury_guild_kheionai = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G97
 	}
 	has_country_shield = yes
@@ -785,6 +787,7 @@ vanbury_guild_capital = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G97
 	}
 	has_country_shield = yes
@@ -945,6 +948,7 @@ vanbury_guild_weapons = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G97
 	}
 	has_country_shield = yes
@@ -1242,6 +1246,7 @@ vanbury_guild_misc = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G97
 	}
 	has_country_shield = yes

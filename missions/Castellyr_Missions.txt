@@ -4,6 +4,7 @@ castellyr_first_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B31
 		
 	}
@@ -136,6 +137,7 @@ castellyr_second_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B31
 		
 	}
@@ -326,6 +328,7 @@ castellyr_third_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B31
 		
 	}
@@ -481,6 +484,7 @@ castellyr_fourth_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B31
 		
 	}
@@ -632,6 +636,7 @@ castellyr_fifth_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B31
 		
 	}

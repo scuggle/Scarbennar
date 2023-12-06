@@ -3,6 +3,7 @@ elizna_military = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U05
 			AND = {
@@ -190,6 +191,7 @@ elizna_bulwar = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U05
 			AND = {
@@ -453,6 +455,7 @@ elizna_navy = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U05
 			AND = {
@@ -744,6 +747,7 @@ elizna_kheterata = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U05
 			AND = {
@@ -1009,6 +1013,7 @@ elizna_religion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U05
 			AND = {

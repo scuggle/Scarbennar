@@ -4,6 +4,7 @@ marrhold = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B36
 		
 	}
@@ -303,6 +304,7 @@ marrhold_two = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B36
 	}
 	has_country_shield = yes
@@ -623,6 +625,7 @@ marrhold_three = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B36
 	}
 	has_country_shield = yes
@@ -1249,6 +1252,7 @@ marrhold_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B36
 	}
 	has_country_shield = yes
@@ -1623,6 +1627,7 @@ marrhold_five = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B36
 		
 	}

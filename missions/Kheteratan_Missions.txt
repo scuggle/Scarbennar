@@ -4,6 +4,7 @@ mandate_mt_2 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U01
 			tag = U02
@@ -193,6 +194,7 @@ mandate_mt_3 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U01
 			tag = U02
@@ -406,6 +408,7 @@ mandate_mt_4 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U01
 			tag = U02
@@ -576,6 +579,7 @@ mandate_mt_5 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U01
 			tag = U02
@@ -879,6 +883,7 @@ mandate_mt_kheterata_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = U01
 		dynasty = "Crodamos"
 	}
@@ -1086,6 +1091,7 @@ mandate_mt_nirat_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = U02
 	}
 	has_country_shield = yes
@@ -1285,6 +1291,7 @@ mandate_mt_aakheta_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = U04
 	}
 	has_country_shield = yes
@@ -1458,6 +1465,7 @@ mandate_mt_koroshesh_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = L28
 	}
 	has_country_shield = yes

@@ -5,6 +5,7 @@ I89_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -227,6 +228,7 @@ I89_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -491,6 +493,7 @@ I89_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -650,6 +653,7 @@ I89_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -882,6 +886,7 @@ I89_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1037,6 +1042,7 @@ I89_battle_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1085,6 +1091,7 @@ I89_battle_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1133,6 +1140,7 @@ I89_battle_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1181,6 +1189,7 @@ I89_battle_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1229,6 +1238,7 @@ I89_battle_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	

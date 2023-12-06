@@ -5,7 +5,8 @@ lodhum_fake_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H77 
 		NOT = { has_country_flag = lodhum_intro_full_complete }
 	}
@@ -15,7 +16,8 @@ lodhum_fake_4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H77 
 		NOT = { has_country_flag = lodhum_intro_full_complete }
 	}
@@ -26,7 +28,8 @@ lodhum_intro_part_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H77 
 		NOT = { has_country_flag = lodhum_intro_full_complete }
 	}
@@ -60,6 +63,7 @@ lodhum_intro_part_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H77
 		has_country_flag = lodhum_intro_1_complete
 	}
@@ -98,6 +102,7 @@ lodhum_intro_part_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H77
 		has_country_flag = lodhum_intro_1_complete
 		has_country_flag = lodhum_intro_2_complete
@@ -130,6 +135,7 @@ lodhum_intro_part_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H77
 		has_country_flag = lodhum_intro_1_complete
 		has_country_flag = lodhum_intro_2_complete
@@ -167,6 +173,7 @@ lodhum_start_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -301,6 +308,7 @@ lodhum_start_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -373,6 +381,7 @@ lodhum_start_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -496,6 +505,7 @@ lodhum_start_3b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -600,6 +610,7 @@ lodhum_start_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -657,6 +668,7 @@ lodhum_start_4b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -751,6 +763,7 @@ lodhum_start_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -975,6 +988,7 @@ lodhum_feywoods_branch_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1420,6 +1434,7 @@ lodhum_feywoods_branch_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1519,6 +1534,7 @@ lodhum_bulwar_branch_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1627,6 +1643,7 @@ lodhum_bulwar_branch_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1851,6 +1868,7 @@ lodhum_part2_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1941,6 +1959,7 @@ lodhum_part2_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2139,6 +2158,7 @@ lodhum_part2_1b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2261,6 +2281,7 @@ lodhum_part2_2b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2407,6 +2428,7 @@ lodhum_part2_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2470,6 +2492,7 @@ lodhum_part2_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2598,6 +2621,7 @@ lodhum_part2_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3084,6 +3108,7 @@ lodhum_part3_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3162,6 +3187,7 @@ lodhum_part3_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3381,6 +3407,7 @@ lodhum_part3_1b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3453,6 +3480,7 @@ lodhum_part3_2b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3556,6 +3584,7 @@ lodhum_part3_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3850,6 +3879,7 @@ lodhum_part3_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3980,6 +4010,7 @@ lodhum_part3_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4176,6 +4207,7 @@ lodhum_part3_5b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4337,6 +4369,7 @@ lodhum_part3_4b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4373,6 +4406,7 @@ lodhum_part3_5c = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4414,6 +4448,7 @@ lodhum_part4_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4802,6 +4837,7 @@ lodhum_part4_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4981,6 +5017,7 @@ lodhum_part4_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -5060,6 +5097,7 @@ lodhum_part4_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -5350,6 +5388,7 @@ lodhum_part4_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {

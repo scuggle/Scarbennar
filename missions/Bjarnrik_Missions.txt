@@ -6,6 +6,7 @@ bjarnrik1_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	
@@ -415,6 +416,7 @@ bjarnrik2_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	
@@ -866,6 +868,7 @@ bjarnrik3_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	
@@ -1209,6 +1212,7 @@ bjarnrik4_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	
@@ -1647,6 +1651,7 @@ bjarnrik5_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	

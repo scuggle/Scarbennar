@@ -5,6 +5,7 @@ J53_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
 		NOT = { has_country_modifier = lake_federation_member }
 	}
@@ -311,6 +312,7 @@ J53_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
 		NOT = { has_country_modifier = lake_federation_member }
 	}
@@ -653,6 +655,7 @@ JXX_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J49
 			tag = J50
@@ -693,6 +696,7 @@ J53_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
 		NOT = { has_country_modifier = lake_federation_member }
 	}
@@ -1252,6 +1256,7 @@ J53_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
 		NOT = { has_country_modifier = lake_federation_member }
 	}
@@ -1542,6 +1547,7 @@ J53_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
 		NOT = { has_country_modifier = lake_federation_member }
 	}

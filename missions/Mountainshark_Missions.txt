@@ -3,6 +3,7 @@ H84_column_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 	}
 	has_country_shield = yes
@@ -245,6 +246,7 @@ H84_column_1_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 		has_country_flag = mountainshark_post_embers
 	}
@@ -418,6 +420,7 @@ H84_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 	}
 	has_country_shield = yes
@@ -707,6 +710,7 @@ H84_column_2_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 		has_country_flag = mountainshark_post_embers
 	}
@@ -980,6 +984,7 @@ H84_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 	}
 	has_country_shield = yes
@@ -1244,6 +1249,7 @@ H84_column_3_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 		has_country_flag = mountainshark_post_embers
 	}
@@ -1550,6 +1556,7 @@ H84_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 	}
 	has_country_shield = yes
@@ -1761,6 +1768,7 @@ H84_column_4_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 		has_country_flag = mountainshark_post_embers
 	}
@@ -2040,6 +2048,7 @@ H84_column_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 	}
 	has_country_shield = yes
@@ -2393,6 +2402,7 @@ H84_column_5_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H84
 		has_country_flag = mountainshark_post_embers
 	}

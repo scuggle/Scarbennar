@@ -3,7 +3,8 @@ karashar_city = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = { tag = Z57 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z57 }
 	has_country_shield = yes
 	
 	karashar_conquer_ovdal_tungr = {
@@ -225,6 +226,7 @@ karashar_bahar = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z57
 	}
 	has_country_shield = yes
@@ -491,6 +493,7 @@ karashar_sareyand_and_gnolls = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z57
 	}
 	has_country_shield = yes
@@ -928,6 +931,7 @@ karashar_far_salahad = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z57
 	}
 	has_country_shield = yes
@@ -1329,6 +1333,7 @@ karashar_harpy_hills_and_bulwar = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z57
 	}
 	has_country_shield = yes

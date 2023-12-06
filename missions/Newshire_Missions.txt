@@ -4,6 +4,7 @@ newshire_missions_1 = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 	}
 	has_country_shield = yes
@@ -169,6 +170,7 @@ newshire_missions_2 = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 	}
 	has_country_shield = yes
@@ -530,6 +532,7 @@ newshire_missions_3 = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 	}
 	has_country_shield = yes
@@ -975,6 +978,7 @@ newshire_missions_4 = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 	}
 	has_country_shield = yes
@@ -1468,6 +1472,7 @@ newshire_blanks_5 = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 	}
 	has_country_shield = yes
@@ -1478,6 +1483,7 @@ newshire_missions_5 = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 	}
 	has_country_shield = yes
@@ -1914,6 +1920,7 @@ newshire_missions_2b = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 		has_country_flag = newshire_no_going_back
 	}
@@ -2071,6 +2078,7 @@ newshire_missions_3b = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 		has_country_flag = newshire_no_going_back
 	}
@@ -2232,6 +2240,7 @@ newshire_missions_4b = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 		has_country_flag = newshire_no_going_back
 	}
@@ -2376,6 +2385,7 @@ newshire_missions_2c = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 		has_country_flag = newshire_bad_dream
 	}
@@ -2586,6 +2596,7 @@ newshire_missions_3c = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 		has_country_flag = newshire_bad_dream
 	}
@@ -2658,6 +2669,7 @@ newshire_missions_4c = {
 	ai = yes
 	generic = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B50
 		has_country_flag = newshire_bad_dream
 	}

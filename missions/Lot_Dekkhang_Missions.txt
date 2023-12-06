@@ -3,6 +3,7 @@ lot_dekkhang_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes
@@ -430,6 +431,7 @@ lot_dekkhang_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes
@@ -821,6 +823,7 @@ lot_dekkhang_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes
@@ -1240,6 +1243,7 @@ lot_dekkhang_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes
@@ -1552,6 +1556,7 @@ lot_dekkhang_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes

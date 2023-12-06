@@ -10,6 +10,7 @@ DADV_1 = {
 			have_had_reform = dwarovar_adventurer_reform
 		}
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_mapping_the_dwarovar = {
@@ -168,6 +169,7 @@ DADV_2 = {
 		culture_group = dwarven
 		has_reform = dwarovar_adventurer_reform
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_defence_forces = {
@@ -292,6 +294,7 @@ DADV_3 = {
 		culture_group = dwarven
 		has_reform = dwarovar_adventurer_reform
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_a_hold_reclaimed = {
@@ -475,6 +478,7 @@ DADV_4 = {
 		culture_group = dwarven
 		has_reform = dwarovar_adventurer_reform
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_clear_the_way = {
@@ -605,6 +609,7 @@ DADV_5 = {
 		culture_group = dwarven
 		has_reform = dwarovar_adventurer_reform
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_diamonds_rubies = {

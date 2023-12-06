@@ -3,6 +3,7 @@ azjakuma_missiontree_1_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -140,6 +141,7 @@ azjakuma_missiontree_2_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -286,6 +288,7 @@ azjakuma_missiontree_3_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -520,6 +523,7 @@ azjakuma_missiontree_4_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -614,6 +618,7 @@ azjakuma_missiontree_5_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -789,6 +794,7 @@ azjakuma_missiontree_1_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}
@@ -1237,6 +1243,7 @@ azjakuma_missiontree_2_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}
@@ -1732,6 +1739,7 @@ azjakuma_missiontree_3_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}
@@ -2105,6 +2113,7 @@ azjakuma_missiontree_4_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}
@@ -2519,6 +2528,7 @@ azjakuma_missiontree_5_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}

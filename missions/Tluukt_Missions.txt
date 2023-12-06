@@ -6,6 +6,7 @@ tluukt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -564,6 +565,7 @@ tluukt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -1178,6 +1180,7 @@ tluukt_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -1429,6 +1432,7 @@ tluukt_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -1695,6 +1699,7 @@ tluukt_4e = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -1770,6 +1775,7 @@ tluukt_3j = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 	}
@@ -1964,6 +1970,7 @@ tluukt_4j = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 	}
@@ -2069,6 +2076,7 @@ tluukt_5j = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 	}
@@ -2318,6 +2326,7 @@ tluukt_5j_siadanlen = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 		NOT = { has_country_flag = tluukt_kogzokka }
@@ -2390,6 +2399,7 @@ tluukt_5j_kogzokka = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 		has_country_flag = tluukt_kogzokka
@@ -2488,6 +2498,7 @@ tluukt_3z = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_zokka
 	}
@@ -2625,6 +2636,7 @@ tluukt_4z = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_zokka
 	}
@@ -2760,6 +2772,7 @@ tluukt_5z = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_zokka
 	}
@@ -3137,6 +3150,7 @@ tluukt_4s = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_stale
 	}
@@ -3176,6 +3190,7 @@ tluukt_5s = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_stale
 	}
@@ -3340,6 +3355,7 @@ tluukt_1b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}
@@ -3494,6 +3510,7 @@ tluukt_2b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}
@@ -3813,6 +3830,7 @@ tluukt_3b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}
@@ -4310,6 +4328,7 @@ tluukt_4b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}
@@ -4834,6 +4853,7 @@ tluukt_5b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}

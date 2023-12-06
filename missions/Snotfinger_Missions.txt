@@ -3,6 +3,7 @@ H89_column_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes
@@ -281,6 +282,7 @@ H89_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes
@@ -525,6 +527,7 @@ H89_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes
@@ -868,6 +871,7 @@ H89_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes
@@ -1112,6 +1116,7 @@ H89_column_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes

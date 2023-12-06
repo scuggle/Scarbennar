@@ -5,6 +5,7 @@ marble_1_tng = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I11
 			AND = {
@@ -328,6 +329,7 @@ marble_2_tng = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I11
 			AND = {
@@ -653,6 +655,7 @@ marble_3_tng = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I11
 			AND = {
@@ -1290,6 +1293,7 @@ marble_4_tng = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I11
 			AND = {
@@ -1765,6 +1769,7 @@ marble_5_tng = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I11
 			AND = {
