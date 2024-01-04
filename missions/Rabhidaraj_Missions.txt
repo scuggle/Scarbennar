@@ -123,14 +123,14 @@ rabhidaraj_2_1 = {
 		trigger = {
 			OR = {
 				overlord = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 					has_opinion = {
 						who = ROOT
 						value = 100
 					}
 				}
 				R52 = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 				}
 			}
 			treasury = 200
@@ -181,7 +181,7 @@ rabhidaraj_2_1 = {
 					}
 				}
 				R52 = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 				}
 			}
 			diplomatic_reputation = 1
@@ -451,7 +451,7 @@ rabhidaraj_1_1 = {
 					}
 				}
 				R52 = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 				}
 			}
 		}
@@ -487,7 +487,7 @@ rabhidaraj_1_1 = {
 					}
 				}
 				R52 = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 				}
 			}
 		}
@@ -508,7 +508,7 @@ rabhidaraj_1_1 = {
 		}
 		position = 9
 		trigger = {
-			has_reform = raja_reform
+			has_government_attribute = is_raja
 			stability = 3
 		}
 		effect = {
@@ -631,7 +631,7 @@ rabhidaraj_3_1 = {
 					}
 				}
 				R52 = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 				}
 			}
 		}
@@ -691,7 +691,7 @@ rabhidaraj_4_1 = {
 		trigger = {
 			OR = {
 				overlord = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 					marriage_with = ROOT
 					has_opinion = {
 						who = ROOT
@@ -699,7 +699,7 @@ rabhidaraj_4_1 = {
 					}
 				}
 				R52 = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 				}
 			}
 		}
@@ -780,7 +780,7 @@ rabhidaraj_4_1 = {
 					}
 				}
 				R52 = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 				}
 			}
 			treasury = 200

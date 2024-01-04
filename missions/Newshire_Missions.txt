@@ -662,6 +662,12 @@ newshire_missions_3 = {
 		effect = {
 			rohibon_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {	
 					change_culture = ROOT
 					change_religion = ROOT
@@ -940,24 +946,33 @@ newshire_missions_3 = {
 				loyalty = 40
 			}
 		}
-		
 		effect = {
 			custom_tooltip = displacement_escin_tooltip
 			777 = {
 				change_province_name = "Sunvale"
 				rename_capital = "Sunvale"
-				hidden_effect = {
-					change_culture = ROOT
-					change_religion = ROOT
-				}
-				add_province_modifier = {
-					name = newshire_displaced_settlers
-					duration = 3650
-				}
 			}
 			custom_tooltip = newshire_headquarters_tooltip
 			custom_tooltip = newshire_consequences_tooltip
 			hidden_effect = {
+				if = {
+					limit = {
+						777 = {
+							OR = {
+								NOT = { culture = ROOT }
+								NOT = { religion = ROOT }
+							}
+						}
+					}
+					777 = {
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = newshire_displaced_settlers
+							duration = 3650
+						}
+					}
+				}
 				777 = {
 					add_province_modifier = {
 						name = newshire_headquarters
@@ -1024,6 +1039,12 @@ newshire_missions_4 = {
 			}
 			adenica_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {
 					change_culture = ROOT
 					change_religion = ROOT
@@ -1035,6 +1056,12 @@ newshire_missions_4 = {
 			}
 			upcreek_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {
 					change_culture = ROOT
 					change_religion = ROOT
@@ -1046,6 +1073,12 @@ newshire_missions_4 = {
 			}
 			taran_plains_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {
 					change_culture = ROOT
 					change_religion = ROOT
@@ -1097,6 +1130,12 @@ newshire_missions_4 = {
 		effect = {
 			silvervord_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {
 					change_culture = ROOT
 					change_religion = ROOT
@@ -1153,6 +1192,12 @@ newshire_missions_4 = {
 		effect = {
 			merescker_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {
 					change_culture = ROOT
 					change_religion = ROOT
@@ -1243,6 +1288,12 @@ newshire_missions_4 = {
 		effect = {
 			verteben_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {
 					change_culture = ROOT
 					change_religion = ROOT
@@ -1254,6 +1305,12 @@ newshire_missions_4 = {
 			}
 			valefort_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {
 					change_culture = ROOT
 					change_religion = ROOT
@@ -2049,6 +2106,12 @@ newshire_missions_2b = {
 			add_adm_power = -150
 			nortmere_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {	
 					change_culture = ROOT
 					change_religion = ROOT
@@ -2060,6 +2123,12 @@ newshire_missions_2b = {
 			}
 			lower_nath_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {	
 					change_culture = ROOT
 					change_religion = ROOT
@@ -2356,6 +2425,12 @@ newshire_missions_4b = {
 		effect = {
 			vernham_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {	
 					change_culture = ROOT
 					change_religion = ROOT
@@ -2367,6 +2442,12 @@ newshire_missions_4b = {
 			}
 			oudeben_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {	
 					change_culture = ROOT
 					change_religion = ROOT
@@ -2737,6 +2818,12 @@ newshire_missions_4c = {
 		effect = {
 			burnoll_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {	
 					change_culture = ROOT
 					change_religion = ROOT
@@ -2748,6 +2835,12 @@ newshire_missions_4c = {
 			}
 			themin_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {	
 					change_culture = ROOT
 					change_religion = ROOT
@@ -2759,6 +2852,12 @@ newshire_missions_4c = {
 			}
 			southgate_area = {
 				custom_tooltip = displacement_tooltip
+				limit = {
+					OR = {
+						NOT = { culture = ROOT }
+						NOT = { religion = ROOT }
+					}
+				}
 				hidden_effect = {	
 					change_culture = ROOT
 					change_religion = ROOT

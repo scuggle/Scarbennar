@@ -1088,7 +1088,7 @@ Y63_missions_2 = {
 						trade_goods = gems
 						amount = 25
 					}
-					capital_scope = { trade_goods = damestear }
+					capital_scope = { NOT = { trade_goods = gems } }
 				}
 			}
 			else_if = {
@@ -1098,7 +1098,7 @@ Y63_missions_2 = {
 						trade_goods = gems
 						amount = 18
 					}
-					capital_scope = { trade_goods = damestear }
+					capital_scope = { NOT = { trade_goods = gems } }
 				}
 			}
 			else_if = {
@@ -1108,7 +1108,7 @@ Y63_missions_2 = {
 						trade_goods = gems
 						amount = 20
 					}
-					capital_scope = { trade_goods = damestear }
+					capital_scope = { NOT = { trade_goods = gems } }
 				}
 			}
 			else = {
@@ -1117,7 +1117,7 @@ Y63_missions_2 = {
 						trade_goods = gems
 						amount = 15
 					}
-					capital_scope = { trade_goods = damestear }
+					capital_scope = { NOT = { trade_goods = gems } }
 				}
 			}
 			OR = {
