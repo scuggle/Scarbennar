@@ -92,3 +92,7 @@
  eur_changes.2.t:0 "Chaingrasper Ascendent"
  eur_changes.2.d:0 "tbd"
  eur_changes.2.a:0 "We will take everything we can get."
+ eur_changes.3.t:0 "Generic MT Choice"
+ eur_changes.3.d:0 "This choice is irrevocable"
+ eur_changes.3.a:0 "Keep Original MT"
+ eur_changes.3.b:0 "Get Generic MT"

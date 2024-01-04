@@ -114,6 +114,10 @@ country_event = {
 			has_country_flag = feudal_escann_kingdom
 			has_country_flag = orc_nation_formed
 			has_country_flag = adventurer_derived_government
+			AND = {
+				tag = Z34
+				was_tag = X18
+			}
 		}
 	}
 
