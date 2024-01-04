@@ -107,6 +107,7 @@ country_event = {
 		NOT = {
 			has_country_modifier = eur_spy_buff
 		} 
+		is_part_of_hre = yes
 	}
 
 	option = {
