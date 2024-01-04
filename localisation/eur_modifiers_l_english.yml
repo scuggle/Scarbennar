@@ -3,6 +3,7 @@
  crusade_evil_desc: "Kill it before it lays eggs!"
 
  eur_privateer_debuff:0 "Privateer Debuff"
+ eur_spy_buff:0 "Spy Buff"
 
 #Idea set crap
  cot_human_min:0 "Human Minority Workers"
