@@ -160,10 +160,10 @@ X04_ideas = {
 	
 	X04_one = {
 		mercenary_discipline = 0.075
-		mercenary_cost = -0.4
+		mercenary_cost = -0.2
 	}
 	X04_two = {
-		development_cost = -0.15
+		development_cost = -0.1
 		trade_efficiency = 0.2
 	}
 	X04_three = {
