@@ -256,7 +256,7 @@ X06_ideas = {
 		global_colonial_growth = 25
 	}
 	X06_two = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.1
 	}
 	X06_three = {
 		navy_tradition = 0.25
@@ -273,7 +273,7 @@ X06_ideas = {
 		land_morale = 0.1
 	}
 	X06_seven = {
-		global_manpower_modifier = 0.2
+		reinforce_speed = 0.10
 	}
 }
 
@@ -890,47 +890,6 @@ X21_ideas = {
 	}	
 }
 
-# Triarchy
-X23_ideas = {
-  start = {
-	  possible_policy = 1
-		advisor_cost = -0.15
-	}
-
-	bonus = {
-		production_efficiency = 0.15
-	}
-
-	trigger = {
-		tag = X23
-	}
-	free = yes
-
-	X23_one = {
-		fire_damage_received = -0.05
-		shock_damage_received = -0.05
-	}
-	X23_two = {
-		naval_forcelimit_modifier = 0.15
-	}
-	X23_three = {
-		idea_cost = -0.05
-	}
-	X23_four = {
-		leader_land_fire = 1
-		leader_naval_fire = 1
-	}
-	X23_five = {
-		special_unit_forcelimit = 0.20 	
-	}
-	X23_six = {
-		shock_damage = 0.10
-		fire_damage = 0.10
-	}
-	X23_seven = {
-		artillery_power = 0.10						
-	}	
-}
 
 #Northern League
 X24_ideas = {

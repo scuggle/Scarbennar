@@ -7458,27 +7458,6 @@ voltenu_corpocracy = {
 	}
 }
 
-triarchy_reform = {
-	icon = "fraternite_reform"
-	allow_normal_conversion = yes
-	lock_level_when_selected = yes
-	potential = {
-		tag = X23
-	}
-	modifiers = {
-		advisor_pool = 3
-		max_absolutism = -20
-		num_accepted_cultures = 2
-		administrative_efficiency = -0.05
-		advisor_cost = -0.1
-	}
-	custom_attributes {
-		cannot_become_dictatorship = yes
-	}
-	ai = {
-		factor = 2.5
-	}
-}
 #Amgremos Pirate Republic
 
 thasaros_kheinisi = {
