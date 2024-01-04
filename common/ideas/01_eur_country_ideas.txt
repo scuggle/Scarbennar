@@ -326,7 +326,7 @@ X07_ideas = {
 X08_ideas = {
 	start = {
 		diplomatic_reputation = 1 #I For one welcome our Elven Overlords.
-		light_ship_power = 0.1 #Legacy of Celmaldor
+		naval_morale = 0.1 #Legacy of Celmaldor
 	}
 	bonus = {
 		fire_damage_received = -0.10 #Dáine, Glass Armour
@@ -346,8 +346,8 @@ X08_ideas = {
 		prestige_decay = -0.01
 	}
 	X08_three = { #The Dalássa [Noble Lances].
-		cavalry_power = 0.15
-		cav_to_inf_ratio = 0.2
+		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.25
 	}
 	X08_four = { #House Icewind
 		trade_efficiency = 0.15
