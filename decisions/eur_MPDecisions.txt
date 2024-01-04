@@ -300,6 +300,11 @@ country_decisions = {
 		potential = {
 			NOT = { is_year = 1445 }
 			NOT = { has_country_flag = chose_generic_mt }
+			NOT = { 
+				capital_scope = {
+					province_is_valid_for_escanni_wars = yes
+				}
+			}
 		}
 		allow = {
 			NOT = { is_year = 1445 }
