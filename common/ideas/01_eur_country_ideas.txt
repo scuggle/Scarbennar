@@ -329,7 +329,7 @@ X08_ideas = {
 		light_ship_power = 0.1 #Legacy of Celmaldor
 	}
 	bonus = {
-		fire_damage_received = -0.05 #Dáine, Glass Armour
+		fire_damage_received = -0.10 #Dáine, Glass Armour
 	}
 	trigger = {
 		OR = {
@@ -357,8 +357,7 @@ X08_ideas = {
 		culture_conversion_cost = -0.25
 	}
 	X08_six = { #The Gilded Court of Seiranar.
-		dip_tech_cost_modifier = -0.1
-		adm_tech_cost_modifier = -0.1
+		technology_cost = -0.1
 	}
 	X08_seven = { #Sons of Alen, welcome and respected
 		global_institution_spread = 0.2
