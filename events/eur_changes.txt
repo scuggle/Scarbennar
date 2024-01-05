@@ -41,6 +41,33 @@ province_event = {	#corinite missionary blessing
 	}
 }
 
+country_event = {
+	id = eur_changes.0
+	title = eur_changes.0.t
+	desc = eur_changes.0.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = eur_changes_done
+		} 
+	}
+
+	option = {
+		name = eur_changes.0.a
+		country_event = {
+			id = eur_changes.1
+		}
+		country_event = {
+			id = eur_changes.4
+		}
+		set_country_flag = eur_changes_done
+	}
+}
+
 #Pirateer efficiency debuff
 country_event = {
 	id = eur_changes.1
@@ -62,6 +89,32 @@ country_event = {
 		add_country_modifier = {
 			name = eur_privateer_debuff
 			duration = -1
+		}
+	}
+}
+
+#EoA spy network buff
+country_event = {
+	id = eur_changes.4
+	title = eur_changes.4.t
+	desc = eur_changes.4.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			has_country_modifier = eur_spy_buff
+		} 
+		is_part_of_hre = yes
+	}
+
+	option = {
+		name = eur_changes.4.a
+		add_country_modifier = {
+			name = eur_spy_buff
+			duration = 18250
 		}
 	}
 }

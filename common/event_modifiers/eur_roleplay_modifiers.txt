@@ -16,9 +16,12 @@ corinite_purim_teachings_aspect_modifier = {
 	land_morale = 0.10 
 }
 
-#Privateer debuff
+#Startup Events
 eur_privateer_debuff = {
 	privateer_efficiency = -0.4
+}
+eur_spy_buff = {
+	spy_offence = 0.2
 }
 
 #Skewered Drake colony buff

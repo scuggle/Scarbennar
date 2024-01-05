@@ -1043,10 +1043,10 @@ lizardfolk_military = {
 }
 
 undead_military = {				#Zombies and skeletons created with necromancy
-	global_manpower_modifier = 1	#1.2 B
-	infantry_cost = -0.5 #5 A
-	mercenary_manpower = -0.25
-	land_forcelimit_modifier = 1 #4 S
+	global_manpower_modifier = 0.5	#1.2 B
+	infantry_cost = -0.4 #5 A
+	mercenary_manpower = -1
+	land_forcelimit_modifier = 0.5 #4 S
 	land_attrition = -0.75	#3.3 D
 	
 	manpower_recovery_speed = 0.1 #10 A
@@ -1057,7 +1057,7 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	#5 + 0.6 + 4 + 3.3  + 10 + 0.66 + 2 - 7.5 - 0.5 = 17.56
 	
 	movement_speed = -0.4 #-7.5 B
- 	drill_gain_modifier = -0.75 #-0.5 B
+ 	drill_gain_modifier = -1 #-0.5 B
 	
  	# infantry_power = -0.2
 	# cavalry_power = 0.2
@@ -1076,10 +1076,10 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	
 	reserves_organisation = 4 		# 4 D Unbreakable
 	# morale_damage_received = -0.9 # 4 A Unbreakable
-	# shock_damage_received = -0.3
+	shock_damage_received = 0.3
 	shock_damage = -0.3
 	fire_damage = -0.3
-	# fire_damage_received = -0.3
+	fire_damage_received = 0.3
 
 	mercenary_cost = 5
 	merc_maintenance_modifier = 5

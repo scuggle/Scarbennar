@@ -50,15 +50,11 @@ witch_king_modifier = {	#the witch king event should also give a ruler_flag, so 
 	improve_relation_modifier = -0.2
 	
 	legitimacy = 1
-	global_unrest = 2
+	global_unrest = 3
 	stability_cost_modifier = -0.5
 	unjustified_demands = -0.33
 	
 	max_absolutism = 10
-	
-	land_morale = 0.1
-	naval_morale = 0.1
-	discipline = 0.075
 	
 	ae_impact = 0.20
 	#diplomatic_upkeep = -4
