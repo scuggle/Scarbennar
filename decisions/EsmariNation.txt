@@ -57,6 +57,8 @@ country_decisions = {
 				hidden_trigger = {
 					primary_culture = esmari
 				}
+				tag = A73
+				tag = A81
 				is_at_war = no
 				is_free_or_tributary_trigger = yes	
 				adm_tech = 10
