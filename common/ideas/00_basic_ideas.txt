@@ -61,8 +61,8 @@ aristocracy_ideas = { # Cavalry/Shock
 		shock_damage = 0.1
 		global_regiment_cost = -0.05
 	}
-	serfdom = {
-		assault_fort_ability = 0.33
+	serfdom = { #the serfs dont know how to fire with artillery
+		artillery_shock = 0.5
 	}
 	noble_resilience = {
 		land_attrition = -0.10
@@ -556,7 +556,8 @@ maritime_ideas = { #Merchant Marines Ideas
 		landing_penalty = -1
 	}
 	naval_fighting_instruction = {
-		global_sailors_modifier = 0.5
+		global_sailors_modifier = 0.33
+		transport_hull_size_modifier = 0.25
 	}
 
 	ai_will_do = {
@@ -588,6 +589,7 @@ naval_ideas = { #Naval Dominance Ideas
 	naval_glory = {
 		galley_power = 0.1
 		heavy_ship_power = 0.1
+		transport_power = 0.1
 	}
 	press_gangs = {
 		naval_morale = 0.1
@@ -1015,7 +1017,7 @@ influence_ideas = { #benevolence #done
 	category = DIP
 
 	bonus = {
-		vassal_forcelimit_bonus = 0.15
+		vassal_forcelimit_bonus = 0.5
 	}
 
 	tribute_system = {
@@ -1029,7 +1031,7 @@ influence_ideas = { #benevolence #done
 	}
 	
 	integrated_elites = {
-		liberty_desire_from_subject_development = -0.15
+		liberty_desire = -25
 	}
 	buffer_states = {
 		diplomatic_reputation = 2
@@ -1039,10 +1041,10 @@ influence_ideas = { #benevolence #done
 	}
 	postal_service = {
 		allow_client_states = yes
-		diplomatic_annexation_cost = -0.15		
+		diplomatic_annexation_cost = -0.2		
 	}
 	marcher_lords = {
-		vassal_manpower_bonus = 0.15
+		vassal_manpower_bonus = 0.25
 	}
 
 	ai_will_do = {

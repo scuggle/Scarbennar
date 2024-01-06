@@ -4210,6 +4210,7 @@ B47_ideas = {
 	}
 	B47_the_winged_cuirassiers = {
 		cavalry_power = 0.15
+		transport_power = 0.1 #Winged Transports
 	}
 }
 
