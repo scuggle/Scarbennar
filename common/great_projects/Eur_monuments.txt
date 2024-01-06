@@ -82,7 +82,7 @@ kara_targu = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1500
 		}
 		province_modifiers = {
 		province_trade_power_value = 5
@@ -102,7 +102,7 @@ kara_targu = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 5000
 		}
 		province_modifiers = {
 		province_trade_power_value = 10
@@ -132,7 +132,7 @@ kara_targu = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 8000
 		}
 		province_modifiers = {
 		province_trade_power_value = 20
@@ -222,7 +222,7 @@ elven_mountain = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 1000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.1
@@ -242,7 +242,7 @@ elven_mountain = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -263,7 +263,7 @@ elven_mountain = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 10000
+			factor = 5000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
@@ -397,6 +397,7 @@ silent_repose = {
 		local_defensiveness = 0.1
 		}
 		area_modifier = {
+			local_unrest = -2
 		}
 		country_modifiers = {
 			war_exhaustion_cost = -0.02
@@ -418,7 +419,7 @@ silent_repose = {
 			local_defensiveness = 0.15
 		}
 		area_modifier = {
-
+			local_unrest = -5
 		}
 		country_modifiers = {
 			war_exhaustion = -0.03
@@ -654,7 +655,7 @@ black_pillar = {
 		area_modifier = {
 		}
 		country_modifiers = {	
-			raze_power_gain = 0.05		
+			raze_power_gain = 0.075		
 		}
 		on_upgraded = {
 		}
@@ -673,7 +674,7 @@ black_pillar = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			raze_power_gain = 0.10	
+			raze_power_gain = 0.15	
 		}
 		on_upgraded = {
 		}
@@ -693,7 +694,7 @@ black_pillar = {
 
 		}
 		country_modifiers = {
-			raze_power_gain = 0.15
+			raze_power_gain = 0.225
 			missionaries = 1
 		}
 		on_upgraded = {
@@ -948,6 +949,7 @@ tier_1 = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.05
+			global_ship_trade_power = 0.05
 		}
 		on_upgraded = {
 		}
@@ -967,6 +969,7 @@ tier_1 = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.075
+			global_ship_trade_power = 0.1
 		}
 		on_upgraded = {
 		}
@@ -987,6 +990,7 @@ tier_1 = {
 		country_modifiers = {
 			merchants = 1
 			global_trade_power = 0.1
+			global_ship_trade_power = 0.15
 		}
 		on_upgraded = {
 		}
@@ -1079,12 +1083,14 @@ diplomatic_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_tax_modifier = 0.05
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
 			diplomatic_reputation = 1
 			envoy_travel_time = -0.20
+			improve_relation_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -1099,6 +1105,7 @@ diplomatic_palace = {
 		}
 
 		province_modifiers = {
+			local_tax_modifier = 0.075
 		}
 
 		area_modifier = {
@@ -1106,7 +1113,8 @@ diplomatic_palace = {
 
 		country_modifiers = {
 			diplomatic_reputation = 1
-			envoy_travel_time = -0.25
+			envoy_travel_time = -0.20
+			improve_relation_modifier = 0.075
 			fabricate_claims_cost = -0.1
 		}
 		on_upgraded = {
@@ -1121,12 +1129,14 @@ diplomatic_palace = {
 			factor = 5000
 		}
 		province_modifiers = {
+			local_tax_modifier = 0.1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
 			diplomatic_reputation = 2
-			envoy_travel_time = -0.33
+			envoy_travel_time = -0.25
+			improve_relation_modifier = 0.1
 			diplomatic_upkeep = 1
 			fabricate_claims_cost = -0.2
 		}
@@ -1219,7 +1229,7 @@ tier_0 = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1500
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
@@ -1242,7 +1252,7 @@ tier_0 = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3750
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
@@ -1265,7 +1275,7 @@ tier_0 = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7500
 		}
 		province_modifiers = {
 			local_development_cost = -0.2
@@ -1357,7 +1367,7 @@ harpy_onsen = {
 		}
 
 		province_modifiers = {
-
+			local_manpower_modifier = 0.1
 		}
 
 		area_modifier = {
@@ -1383,10 +1393,11 @@ harpy_onsen = {
 		}
 
 		province_modifiers = {
+			local_manpower_modifier = 0.2
 		}
 
 		area_modifier = {
-
+			local_development_cost = -0.05
 		}
 
 		country_modifiers = {
@@ -1410,7 +1421,7 @@ harpy_onsen = {
 		}
 
 		province_modifiers = {
-
+			local_manpower_modifier = 0.5
 
 		}
 
@@ -1490,7 +1501,7 @@ trinaire = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			drill_decay_modifier = -0.05
+			drill_decay_modifier = -0.1
 		}
 		on_upgraded = {
 		}
@@ -1510,7 +1521,7 @@ trinaire = {
 			local_manpower_modifier = 0.15
 		}
 		country_modifiers = {
-			drill_decay_modifier = -0.10
+			drill_decay_modifier = -0.15
 		}
 		on_upgraded = {
 		}
@@ -1530,7 +1541,7 @@ trinaire = {
 			local_manpower_modifier = 0.25
 		}
 		country_modifiers = {
-			drill_decay_modifier = -0.15
+			drill_decay_modifier = -0.25
 		}
 		on_upgraded = {
 		}
@@ -1737,6 +1748,7 @@ tier_1 = {
 		province_modifiers = {
 			local_defensiveness = 0.15
 			local_manpower_modifier = 0.25
+			local_development_cost = -0.075
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1767,6 +1779,7 @@ tier_1 = {
 		province_modifiers = {
 			local_defensiveness = 0.25
 			local_manpower_modifier = 0.5
+			local_development_cost = -0.15
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1797,6 +1810,7 @@ tier_1 = {
 		province_modifiers = {
 			local_defensiveness = 0.33
 			local_manpower_modifier = 1
+			local_development_cost = -0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2080,8 +2094,8 @@ port_jaher = {
 
 		country_modifiers = {
 			global_autonomy = -0.01	
-			global_tariffs = 0.05
-			treasure_fleet_income = 0.05			
+			global_tariffs = 0.075
+			treasure_fleet_income = 0.075			
 		}
 
 		on_upgraded = {
@@ -2105,8 +2119,8 @@ port_jaher = {
 
 		country_modifiers = {
 			global_autonomy = -0.025
-			global_tariffs = 0.1
-			treasure_fleet_income = 0.1
+			global_tariffs = 0.15
+			treasure_fleet_income = 0.15
 		}
 		on_upgraded = {
 		}
