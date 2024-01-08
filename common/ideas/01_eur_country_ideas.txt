@@ -530,7 +530,8 @@ X12_ideas = {
 		caravan_power = 0.15 
 	}
 	X12_three = {
-		fire_damage = 0.1
+		envoy_travel_time = -0.2
+		diplomats = 1
 	}
 	X12_four = {
 		cavalry_flanking = 1
