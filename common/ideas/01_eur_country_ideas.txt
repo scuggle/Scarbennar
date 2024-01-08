@@ -554,7 +554,7 @@ X13_ideas = {
 	}
 
 	bonus = {
-		global_unrest = -2
+		fire_damage = 0.2
 	}
 	
 	trigger = {
@@ -565,11 +565,10 @@ X13_ideas = {
 	free = yes		#will be added at load.
 	
 	X13_one = {
-		special_unit_forcelimit = 0.1
+		rajput_fraction = 0.15
 	}
 	X13_two = {
-		vassal_income = 0.2
-		vassal_forcelimit_bonus = 0.5
+		infantry_fire = 0.15
 	}
 	X13_three = {
 		technology_cost = -0.1
@@ -582,7 +581,7 @@ X13_ideas = {
 		development_cost = -0.10
 	}
 	X13_six = {
-		production_efficiency = 0.1
+		production_efficiency = 0.15
 	}
 	X13_seven = {
 		trade_company_investment_cost = -0.15
@@ -654,7 +653,7 @@ X15_ideas = {
 	}
 	X15_two = {
 		innovativeness_gain = 1
-		special_unit_forcelimit = 0.2
+		rajput_fraction = 0.2
 	}
 	X15_three = {
 		development_cost = -0.1
