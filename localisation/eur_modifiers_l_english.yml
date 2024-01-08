@@ -2,7 +2,7 @@
  crusade_evil: "Crusade against Evil"
  crusade_evil_desc: "Kill it before it lays eggs!"
 
- eur_privateer_debuff:0 "Privateer Debuff"
+ eur_balancing_modifier:0 "Privateer Debuff"
  eur_spy_buff:0 "Spy Buff"
 
 #Idea set crap

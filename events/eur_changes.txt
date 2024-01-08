@@ -80,14 +80,14 @@ country_event = {
 
 	trigger = {
 		NOT = {
-			has_country_modifier = eur_privateer_debuff
+			has_country_modifier = eur_balancing_modifier
 		} 
 	}
 
 	option = {
 		name = eur_changes.1.a
 		add_country_modifier = {
-			name = eur_privateer_debuff
+			name = eur_balancing_modifier
 			duration = -1
 		}
 	}
