@@ -1,8 +1,12 @@
 ﻿l_english:
  crusade_evil: "Crusade against Evil"
  crusade_evil_desc: "Kill it before it lays eggs!"
+ marine_ideas_stronger_marines_buff: "Stronger Marines"
+ marine_ideas_stronger_marines_buff_desc: "Space Marines"
+ new_world_nerf: "New World Nerf"
+ new_world_nerf_desc: "Devving is OP in the new world. Cope and Seethe"
 
- eur_balancing_modifier:0 "Privateer Debuff"
+ eur_balancing_modifier:0 "Balancing Modifier"
  eur_spy_buff:0 "Spy Buff"
 
 #Idea set crap
