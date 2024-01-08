@@ -239,7 +239,7 @@ alenic = {
 	}
 
 	imperial_marr = {	#the western plains dudes
-		primary = M01 #Marrhold
+		primary = X25 #Marrhold
 
 		dynasty_names = {
 			Griffonmark Griffonhill "of Marrhold" Marr Marrod Griffonsgate Marrhyl "sina Marrton" "of Thadston" "of Falcon's Nest" "of Tailfeather" "of Endicott" "of Newton" "of Ridley" "of Winfield"
