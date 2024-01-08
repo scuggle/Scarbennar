@@ -1102,44 +1102,6 @@ B44_ideas = {
 	}	
 }
 
-#Flying Hound
-B43_ideas = {
-	start = {
-		build_cost = -0.15							#Stereotypical Greedy Goblins who pinch pennies
-		global_tax_modifier = 0.15					#See above
-	}
-
-	bonus = {
-		development_cost = -0.1						#Focused on inwards development
-	}
-
-	trigger = {
-		tag = B43
-	}
-	free = yes
-
-	B43_one = {
-		mercenary_discipline = 0.05					#Eye for quality even with mercs
-	}
-	B43_two = {
-		hostile_attrition = 1						#Attached to their homeland, will guerilla like crazy	
-	}
-	B43_three = {
-		production_efficiency = 0.10				#Disregarding war matters leaves time for optimizing processes
-	}
-	B43_four = {
-		global_monthly_devastation = -0.1			#Gotta repair damage asap
-	}
-	B43_five = {
-		mercenary_manpower = 0.20					#Bundle deals 	
-	}
-	B43_six = {
-		fort_maintenance_modifier = -0.2			#Regularly checking fortresses leaves room to streamline maintenance 
-	}
-	B43_seven = {
-		country_admin_power = 1						#These goblins know how to run a business... err country 
-	}	
-}
 
 #Headwearer
 B45_ideas = {
