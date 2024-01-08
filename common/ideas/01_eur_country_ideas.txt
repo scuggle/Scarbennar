@@ -507,12 +507,12 @@ X11_ideas = {
 #Greengate
 X12_ideas = {
 	start = {
-		diplomatic_reputation = 1
-		global_trade_power = 0.15
+		cavalry_power = 0.25
+		global_tax_modifier = 0.2 
 	}
 
 	bonus = {
-		caravan_power = 0.1
+		cavalry_fire = 0.5
 	}
 	
 	trigger = {
@@ -526,31 +526,30 @@ X12_ideas = {
 		global_institution_spread = 0.2
 	}
 	X12_two = {
-		mercenary_cost = -0.3
-		merc_maintenance_modifier = -0.1
+		movement_speed = 0.10
+		caravan_power = 0.15 
 	}
 	X12_three = {
-		diplomatic_upkeep = 2
-		improve_relation_modifier = 0.15
+		fire_damage = 0.1
 	}
 	X12_four = {
-		num_accepted_cultures = 2
+		cavalry_flanking = 1
 	}
 	X12_five = {
-		defensiveness = 0.2
+		prestige_decay = -0.01
 	}
 	X12_six = {
-		rebel_support_efficiency = 0.5
+		trade_steering = 0.1
 	}
 	X12_seven = {
-		free_adm_policy = 1
+		cavalry_cost = -0.2 #negate small folk cav cost, so ends up having same cost as human cav
 	}
 }
 
 #Voltenu
 X13_ideas = {
 	start = {
-		global_trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.2
 		innovativeness_gain = 1
 	}
 
@@ -1102,44 +1101,6 @@ B44_ideas = {
 	}	
 }
 
-#Flying Hound
-B43_ideas = {
-	start = {
-		build_cost = -0.15							#Stereotypical Greedy Goblins who pinch pennies
-		global_tax_modifier = 0.15					#See above
-	}
-
-	bonus = {
-		development_cost = -0.1						#Focused on inwards development
-	}
-
-	trigger = {
-		tag = B43
-	}
-	free = yes
-
-	B43_one = {
-		mercenary_discipline = 0.05					#Eye for quality even with mercs
-	}
-	B43_two = {
-		hostile_attrition = 1						#Attached to their homeland, will guerilla like crazy	
-	}
-	B43_three = {
-		production_efficiency = 0.10				#Disregarding war matters leaves time for optimizing processes
-	}
-	B43_four = {
-		global_monthly_devastation = -0.1			#Gotta repair damage asap
-	}
-	B43_five = {
-		mercenary_manpower = 0.20					#Bundle deals 	
-	}
-	B43_six = {
-		fort_maintenance_modifier = -0.2			#Regularly checking fortresses leaves room to streamline maintenance 
-	}
-	B43_seven = {
-		country_admin_power = 1						#These goblins know how to run a business... err country 
-	}	
-}
 
 #Headwearer
 B45_ideas = {
