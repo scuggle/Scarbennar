@@ -55,10 +55,12 @@ country_decisions = {
 			AND = {
 				owns_core_province = 266	# Esmaraine
 				hidden_trigger = {
+					OR = { 
 					primary_culture = esmari
+					tag = A73
+					tag = A81
 				}
-				tag = A73
-				tag = A81
+				}
 				is_at_war = no
 				is_free_or_tributary_trigger = yes	
 				adm_tech = 10
