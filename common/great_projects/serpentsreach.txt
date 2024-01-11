@@ -74,7 +74,7 @@ gor_burad_fireglass_forge = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 2500
 		}
 		province_modifiers = {
 			trade_goods_size = 1
@@ -96,7 +96,7 @@ gor_burad_fireglass_forge = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 8000
 		}
 		province_modifiers = {
 			trade_goods_size = 2
@@ -117,7 +117,7 @@ gor_burad_fireglass_forge = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 12000
 		}
 		province_modifiers = {
 			trade_goods_size = 3
@@ -481,7 +481,7 @@ arg_ordstun_great_clast_shafts = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 2250
 		}
 		province_modifiers = {
 			local_development_cost = -0.05
@@ -501,7 +501,7 @@ arg_ordstun_great_clast_shafts = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 4500
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
@@ -521,7 +521,7 @@ arg_ordstun_great_clast_shafts = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 9000
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
@@ -530,7 +530,7 @@ arg_ordstun_great_clast_shafts = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			development_cost = -0.1
+			development_cost = -0.075
 			production_efficiency = 0.1
 		}
 		on_upgraded = {
@@ -636,7 +636,7 @@ orlghelovar_great_waterfall = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -656,7 +656,7 @@ orlghelovar_great_waterfall = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 8000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
@@ -768,7 +768,7 @@ shaztundihr_marble_gate = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			fort_maintenance_modifier = -0.05
+			fort_maintenance_modifier = -0.15
 			prestige = 0.1
 		}
 		on_upgraded = {
@@ -779,7 +779,7 @@ shaztundihr_marble_gate = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -788,7 +788,7 @@ shaztundihr_marble_gate = {
 		area_modifier = {			
 		}
 		country_modifiers = {
-			fort_maintenance_modifier = -0.1
+			fort_maintenance_modifier = -0.2
 			prestige = 0.25	
 		}
 		on_upgraded = {
@@ -799,7 +799,7 @@ shaztundihr_marble_gate = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 5000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
@@ -808,7 +808,7 @@ shaztundihr_marble_gate = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			fort_maintenance_modifier = -0.15
+			fort_maintenance_modifier = -0.25
 			monthly_splendor = 1
 			prestige = 0.5
 		}
