@@ -279,7 +279,7 @@ X06_ideas = {
 #The Reach
 X07_ideas = {
 	start = {
-		global_trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.1
 		trade_efficiency = 0.15
 	}
 
