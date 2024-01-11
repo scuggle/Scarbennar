@@ -225,7 +225,7 @@ oddanroy_estuary_modifier = {
 }
 
 widderoy_estuary_modifier = {
-	province_trade_power_value = 5 #cos its in 2 provinces
+	province_trade_power_value = 2.5 #cos its in 2 provinces
 	picture = "estuary_icon"
 }
 
@@ -3116,4 +3116,17 @@ imperial_injunction_on_conquest = {
 amadia_early_damestear = {
 	trade_goods_size_modifier = -0.5
 	local_development_cost = 0.2
+}
+
+#new
+exwes_estuary_modifier = {
+	province_trade_power_value = 5 
+}
+crannog_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon" 
+}
+
+dragonheights_estuary_modifier = {
+	province_trade_power_value = 10
 }
