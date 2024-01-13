@@ -394,6 +394,12 @@ renaissance = {
 			}
 		}
 		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				has_manufactory_trigger = yes
+			}
+		modifier = {
 			factor = 0.05
 			scale = yes
 			potential = {
