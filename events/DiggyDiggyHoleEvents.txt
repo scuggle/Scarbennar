@@ -558,11 +558,7 @@ province_event = {
 			factor = 0.9
 			has_integrated_dwarven_pop_trigger = yes
 		}
-		modifier = {
-			factor = 1.5
-			owner = { NOT = { has_country_modifier = dwarven_administration } }
-		}
-		
+			
 		modifier = {
 			factor = 0.8
 			owner = { owns = 676 }
@@ -5864,10 +5860,6 @@ country_event = {
 	mean_time_to_happen = {
 		months = 150
 		
-		modifier = {
-			factor = 0.5
-			NOT = { has_country_modifier = dwarven_administration }
-		}
 	}
 	
 	trigger = {
@@ -5920,10 +5912,6 @@ country_event = {
 	mean_time_to_happen = {
 		years = 20
 		
-		modifier = {
-			factor = 0.70
-			NOT = { has_country_modifier = dwarven_administration }
-		}
 	}
 	
 	trigger = {
@@ -6006,10 +5994,6 @@ country_event = {
 	mean_time_to_happen = {
 		years = 30
 		
-		modifier = {
-			factor = 0.5
-			NOT = { has_country_modifier = dwarven_administration }
-		}
 	}
 	
 	trigger = {
@@ -6128,10 +6112,6 @@ country_event = {
 			}
 		}
 		
-		modifier = {
-			factor = 0.75
-			NOT = { has_country_modifier = dwarven_administration }
-		}
 	}
 	
 	trigger = {
@@ -6408,10 +6388,6 @@ country_event = {
 	mean_time_to_happen = {
 		years = 50
 		
-		modifier = {
-			factor = 0.5
-			NOT = { has_country_modifier = dwarven_administration }
-		}
 	}
 	
 	trigger = {
