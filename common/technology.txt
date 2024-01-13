@@ -184,7 +184,7 @@ groups = {
 	}
 	#Boek,Cheshoshi,Teira,Kwineh
 	tech_noruin = {
-		start_level = 1
+		start_level = 3
 		start_cost_modifier = 2.5
 		is_primitive = yes
 	}
@@ -206,7 +206,7 @@ groups = {
 		}
 	}
 	tech_south_aelantiri = {
-		start_level = 1
+		start_level = 3
 		start_cost_modifier = 2.5
 		is_primitive = yes
 	}
@@ -252,7 +252,7 @@ groups = {
 	}
 	#Undead
 	tech_undead = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -340,7 +340,7 @@ groups = {
 		}
 	}
 	tech_wood_elf = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
 			trigger = {
@@ -394,7 +394,7 @@ groups = {
 	}
 	#Gnolls
 	tech_gnollish = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -412,7 +412,7 @@ groups = {
 	}
 	#Kobolds
 	tech_kobold = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -429,7 +429,7 @@ groups = {
 		}
 	}
 	tech_darkscale_kobold = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -464,7 +464,7 @@ groups = {
 	}
 	#Harpies
 	tech_firanyan_harpy = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -481,7 +481,7 @@ groups = {
 		}
 	}
 	tech_siadunan_harpy = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -516,7 +516,7 @@ groups = {
 	}
 	#Orcs
 	tech_orcish = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -533,7 +533,7 @@ groups = {
 		}
 	}
 	tech_black_orcish = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -550,7 +550,7 @@ groups = {
 		}
 	}
 	tech_east_orcish = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -568,7 +568,7 @@ groups = {
 	}
 	#Goblins
 	tech_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -585,7 +585,7 @@ groups = {
 		}
 	}
 	tech_exodus_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -602,7 +602,7 @@ groups = {
 		}
 	}
 	tech_cave_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -620,7 +620,7 @@ groups = {
 	}
 	#Troll
 	tech_troll = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -638,7 +638,7 @@ groups = {
 	}
 	#Ogre
 	tech_ogre = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -694,7 +694,7 @@ groups = {
 	}
 	#Centaurs
 	tech_centaur = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -707,7 +707,7 @@ groups = {
 	}
 	#Lizardfolk
 	tech_lizardfolk = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0
 	}
 	
@@ -732,13 +732,13 @@ groups = {
 	
 	#Andeios Tribals 
 	tech_bharbhen = {
-		start_level = 1
+		start_level = 3
 		start_cost_modifier = 0
 	}
 
 	#swamp trolls
 	tech_swamp_troll = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 	}
 
@@ -756,7 +756,7 @@ groups = {
 
 	#Harafic Natives
 	tech_harafic = {
-		start_level = 1
+		start_level = 3
 		start_cost_modifier = 0
 	}
 	
@@ -767,7 +767,7 @@ groups = {
 	}
 	# Forest Goblins
 	tech_forest_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -792,7 +792,7 @@ groups = {
 	
 	#Eastern Cave Goblins (For Tree of Stone and Jade Mines Goblins)
 	tech_east_cave_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_unit_type = tech_cave_goblin
 		nation_designer_cost = {
@@ -812,7 +812,7 @@ groups = {
 	
 	#For the settled Chendhyans in Taychend
     tech_east_bharbhen = { 
-        start_level = 2
+        start_level = 3
         start_cost_modifier = 0
         nation_designer_unit_type = tech_bharbhen
     }
@@ -927,7 +927,7 @@ groups = {
 		nation_designer_unit_type = sub_saharan
 	}
 	central_african = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.65
 		nation_designer_unit_type = sub_saharan
 	}
@@ -956,32 +956,32 @@ groups = {
 		}
 	}
 	sub_saharan = { #West African
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.6
 	}
 	north_american = {
-		start_level = 1
+		start_level = 3
 		start_cost_modifier = 2.5
 		is_primitive = yes
 	}
 	mesoamerican = {
-		start_level = 1
+		start_level = 3
 		start_cost_modifier = 1.5
 		is_primitive = yes
 	}
 	south_american = {
-		start_level = 1
+		start_level = 3
 		start_cost_modifier = 2.5
 		is_primitive = yes
 	}
 	andean = {
-		start_level = 1
+		start_level = 3
 		start_cost_modifier = 1.5
 		nation_designer_unit_type = south_american
 		is_primitive = yes
 	}	
 	aboriginal_tech = {
-		start_level = 1
+		start_level = 3
 		start_cost_modifier = 2.5
 		is_primitive = yes
 		nation_designer_cost = {
@@ -989,7 +989,7 @@ groups = {
 		}
 	}
 	polynesian_tech = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 2
 		is_primitive = yes
 		nation_designer_cost = {
