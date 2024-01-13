@@ -654,6 +654,12 @@ new_world_i = {
 			factor = 5
 			scale = yes
 			potential = {
+				has_shipyard_building_trigger = yes
+			}
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
 				owner = {
 					is_colonial_nation = yes
 				}
