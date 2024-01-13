@@ -181,6 +181,12 @@ feudalism = {
 			}
 		}
 		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				has_tax_building_trigger = yes
+			}
+		modifier = {
 			factor = 0.1
 			scale = yes
 			potential = {
