@@ -186,6 +186,7 @@ feudalism = {
 			potential = {
 				has_tax_building_trigger = yes
 			}
+		}
 		modifier = {
 			factor = 0.1
 			scale = yes
@@ -399,6 +400,7 @@ renaissance = {
 			potential = {
 				has_manufactory_trigger = yes
 			}
+		}
 		modifier = {
 			factor = 0.05
 			scale = yes
@@ -656,6 +658,7 @@ new_world_i = {
 			potential = {
 				has_shipyard_building_trigger = yes
 			}
+		}
 		modifier = {
 			factor = 5
 			scale = yes
@@ -886,6 +889,7 @@ printing_press = {
 								has_building = state_house
 			
 		}
+	}
 	}
 }
 			}
