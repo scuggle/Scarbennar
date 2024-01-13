@@ -219,3 +219,8 @@ neg_local_missionary_strength_1 = {
 neg_local_missionary_strength_2 = {
 	local_missionary_strength = -0.02
 }
+
+#Monster debuff
+monster_debuff = {
+	military_tactics = -0.1
+	land_morale_constant = -0.3
