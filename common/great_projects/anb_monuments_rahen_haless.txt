@@ -147,7 +147,7 @@ aksa_sanuyego = {
 
 		country_modifiers = {
 			global_ship_trade_power = 0.45
-			local_own_coast_naval_combat_bonus = 1
+			
 		}
 
 		on_upgraded = {
@@ -241,7 +241,7 @@ balkhangfa_palace = {
 		}
 
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 500
 		}
 
 		province_modifiers = {
@@ -313,7 +313,7 @@ balkhangfa_palace = {
 
 		
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 12000
 		}
 
 		
@@ -416,7 +416,7 @@ feiten_aerodrome = {
 		}
 		
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 2500
 		}
 		
 		province_modifiers = {
@@ -489,7 +489,7 @@ feiten_aerodrome = {
 		}
 		
 		cost_to_upgrade = {
-			factor = 10000
+			factor = 12000
 		}
 		
 		province_modifiers = {
@@ -609,7 +609,7 @@ hall_of_endless_debate = {
 		}
 
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 500
 		}
 
 		province_modifiers = {
@@ -639,7 +639,7 @@ hall_of_endless_debate = {
 		}
 
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3000
 		}
 
 		province_modifiers = {
@@ -672,7 +672,7 @@ hall_of_endless_debate = {
 		}
 
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 6000
 		}
 
 		province_modifiers = {
@@ -973,7 +973,7 @@ golden_palace = {
 		}
 
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3500
 		}
 
 		province_modifiers = {
@@ -1025,7 +1025,7 @@ golden_palace = {
 		}
 
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 6000
 		}
 
 		province_modifiers = {
@@ -1156,7 +1156,7 @@ godswall = {
 		}
 
 		country_modifiers = {
-			global_missionary_strength = 0.01
+			global_missionary_strength = 0.02
 		}
 
 		on_upgraded = {
@@ -1184,7 +1184,7 @@ godswall = {
 		}
 
 		country_modifiers = {
-			global_missionary_strength = 0.01
+			global_missionary_strength = 0.02
 			missionaries = 1
 			church_loyalty_modifier = 0.1
 		}

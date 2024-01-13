@@ -108,7 +108,7 @@ bone_citadel = {
 		}
 
 		country_modifiers = {
-			global_missionary_strength = 0.005
+			global_missionary_strength = 0.01
 			tolerance_own = 0.5
 			reduced_liberty_desire = 10
 		}
@@ -144,7 +144,7 @@ bone_citadel = {
 
 
 		country_modifiers = {
-			global_missionary_strength = 0.01
+			global_missionary_strength = 0.015
 			governing_capacity_modifier = 0.10
 			tolerance_own = 1
 			reduced_liberty_desire = 15
@@ -183,7 +183,7 @@ bone_citadel = {
 
 		
 		country_modifiers = {
-			global_missionary_strength = 0.02
+			global_missionary_strength = 0.025
 			governing_capacity_modifier = 0.25
 			tolerance_own = 1
 			reduced_liberty_desire = 15
@@ -572,7 +572,7 @@ ynnic_dam_mocbarja = {
 		}
 
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 4000
 		}
 
 		province_modifiers = {
@@ -1422,7 +1422,7 @@ ynnic_teal_keep = {
 		}
 
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 500
 		}
 
 		province_modifiers = {
@@ -1458,7 +1458,7 @@ ynnic_teal_keep = {
 		}
 
 		country_modifiers = {
-			reduced_liberty_desire = 10
+			reduced_liberty_desire = 15
 			advisor_pool = 1
 		}
 
@@ -1787,6 +1787,7 @@ ynnic_grand_temple_svemel = {
 
 		country_modifiers = {
 			tolerance_own = 1
+			global_missionary_strength = 0.01
 		}
 
 		on_upgraded = {
@@ -1813,6 +1814,7 @@ ynnic_grand_temple_svemel = {
 		country_modifiers = {
 			tolerance_own = 1.5
 			church_loyalty_modifier = 0.1
+			global_missionary_strength = 0.02
 		}
 
 		on_upgraded = {
@@ -1846,6 +1848,7 @@ ynnic_grand_temple_svemel = {
 			tolerance_own = 2
 			church_loyalty_modifier = 0.1
 			missionaries = 1
+			global_missionary_strength = 0.03
 		}
 
 		on_upgraded = {
@@ -1987,7 +1990,7 @@ ynnic_precursor_dome_stanyrhrada = {
 		}
 
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 500
 		}
 
 		province_modifiers = {
