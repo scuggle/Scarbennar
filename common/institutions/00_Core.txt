@@ -876,6 +876,20 @@ printing_press = {
 			}
 		}
 		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				has_manufactory_trigger = { #Province Scope
+					custom_trigger_tooltip = {
+						tooltip = has_manufactory_trigger_tooltip
+							OR = {
+								has_building = state_house
+			
+		}
+	}
+}
+			}
+		modifier = {
 			factor = 0.1
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
