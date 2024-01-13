@@ -1530,7 +1530,7 @@ A49_ideas = {
 #Dameria ideas
 A58_ideas = {
 	start = {
-		heir_chance = 0.5
+		infantry_fire = 0.15
 		improve_relation_modifier = 0.3
 	}
 
@@ -1565,7 +1565,8 @@ A58_ideas = {
 		prestige = 1
 	}
 	A58_anbenncost_the_city_of_the_worlds_desire = {
-		global_own_trade_power = 0.2
+		development_cost = 0.1
+		global_trade_goods_size_modifier = 0.15
 	}
 }
 
