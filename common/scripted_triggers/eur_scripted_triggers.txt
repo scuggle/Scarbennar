@@ -33,3 +33,37 @@ has_custom_MT = {
 		}
 	}
 }
+
+#Mounstrous Starting Debuff - You're stronger than you should be
+starting_monster = {
+	if = {
+		is_year = 1444
+	}
+	NOT = {
+		is_year = 1445
+		}
+	AND = {
+		has_country_modifier = gnollish_military
+		}
+	OR = {
+		has_country_modifier = goblin_military
+		}
+	OR = {
+		has_country_modifier = harpy_military
+		}
+	OR = {
+		has_country_modifier = kobold_military
+		}
+	OR = {
+		has_country_modifier = orcish_military
+		}
+	OR = {
+		has_country_modifier = troll_military
+		}
+	OR = {
+		has_country_modifier = centaur_military
+		}
+	OR = {
+		has_country_modifier = ogre_military
+		}
+	
