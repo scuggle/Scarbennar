@@ -1,4 +1,4 @@
- 
+
 country_decisions = {
 
 	pashaine_nation = {
