@@ -138,7 +138,7 @@ at_standing = { # Professional
 		leader_cost = -0.10
 	}
 	at_sta6 = {	
-		yearly_army_professionalism = 0.0025
+		yearly_army_professionalism = 0.005
 		drill_decay_modifier = -0.2
 	}
 	at_sta7 = {
@@ -196,8 +196,8 @@ quantity_ideas = { # Logistics
 	}
 	
 	bonus = {
-		shock_damage_received = -0.05
-		fire_damage_received = -0.05
+		shock_damage_received = -0.075
+		fire_damage_received = -0.075
 	}
 	mass_army = {
 		land_attrition = -0.2
@@ -301,7 +301,7 @@ defensive_ideas = { # Garrison
 		artillery_cost = -0.15
 	}
 	improved_foraging = {
-		garrison_damage = 0.33
+		garrison_damage = 0.25
 	}
 
 	ai_will_do = {
@@ -338,7 +338,7 @@ quality_ideas = { #Siege
 	}
 	copper_bottoms = {
 		leader_siege = 1
-		artillery_barrage_cost = -0.5
+		artillery_barrage_cost = -0.33
 	}
 	massed_battery = {
 		artillery_levels_available_vs_fort = 1
@@ -406,7 +406,7 @@ special_forces_ideas = { # Special Forces
 	}
 	special_forces_3 = {
 		special_unit_forcelimit = 0.33
-		allowed_rajput_fraction = 0.33
+	
 	}
 	special_forces_4 = {
 		leader_land_fire = 1
@@ -416,7 +416,7 @@ special_forces_ideas = { # Special Forces
 	}
 	special_forces_6 = {
 		infantry_power = 0.1
-		cavalry_power = 0.05
+		cavalry_power = 0.01
 	}
 	special_forces_7 = {
 		special_unit_cost_modifier = -0.25
@@ -1072,7 +1072,7 @@ the_great_game = { #The Great Game
 	}
 
 	tgg1 = {
-	
+		yearly_corruption = -0.1
 		prestige = 1
 	}
 	tgg2 = {
@@ -1269,6 +1269,7 @@ religious_ideas = { #zealotry ideas
 	}
 	religious_tradition = {
 		warscore_cost_vs_other_religion = -0.25
+		same_religion_advisor_cost = -0.15
 	}
 	inquisition = {
 		missionaries = 1
@@ -1291,7 +1292,7 @@ humanist_ideas = { #External Ideas
 	category = ADM
 
 	bonus = {
-		min_local_autonomy = -5
+		min_local_autonomy = -10
 	}
 
 	tolerance_idea = {
@@ -1301,7 +1302,7 @@ humanist_ideas = { #External Ideas
 		global_unrest = -2
 	}
 	ecumenism = {
-		trade_company_investment_cost = -0.1
+		trade_company_investment_cost = -0.15
 	}
 	indirect_rule = {
 		global_autonomy = -0.10
@@ -1339,7 +1340,7 @@ focus_inwards = { #Internal Ideas Redo
 		global_prosperity_growth = 0.1
 	}
 	foc_inw4 = {
-		global_monthly_devastation = -0.1
+		monthly_reform_progress = 0.2
 	}
 	foc_inw5 = {
 		expand_infrastructure_cost_modifier = -0.50
