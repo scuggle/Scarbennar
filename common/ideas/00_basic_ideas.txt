@@ -416,7 +416,7 @@ special_forces_ideas = { # Special Forces
 	}
 	special_forces_6 = {
 		infantry_power = 0.1
-		cavalry_power = 0.01
+		cavalry_power = 0.1
 	}
 	special_forces_7 = {
 		special_unit_cost_modifier = -0.25
