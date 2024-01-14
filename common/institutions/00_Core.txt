@@ -180,13 +180,7 @@ feudalism = {
 				}
 			}
 		}
-		modifier = {
-			factor = 5
-			scale = yes
-			potential = {
-				has_tax_building_trigger = yes
-			}
-		}
+
 		modifier = {
 			factor = 0.1
 			scale = yes
@@ -394,13 +388,7 @@ renaissance = {
 				}
 			}
 		}
-		modifier = {
-			factor = 5
-			scale = yes
-			potential = {
-				has_manufactory_trigger = yes
-			}
-		}
+
 		modifier = {
 			factor = 0.05
 			scale = yes
@@ -652,13 +640,7 @@ new_world_i = {
 				}
 			}
 		}
-		modifier = {
-			factor = 5
-			scale = yes
-			potential = {
-				has_shipyard_building_trigger = yes
-			}
-		}
+
 		modifier = {
 			factor = 5
 			scale = yes
@@ -878,21 +860,7 @@ printing_press = {
 				}
 			}
 		}
-		modifier = {
-			factor = 5
-			scale = yes
-			potential = {
-				has_manufactory_trigger = { #Province Scope
-					custom_trigger_tooltip = {
-						tooltip = has_manufactory_trigger_tooltip
-							OR = {
-								has_building = state_house
-			
-		}
-	}
-	}
-}
-			}
+
 		modifier = {
 			factor = 0.1
 			scale = yes
