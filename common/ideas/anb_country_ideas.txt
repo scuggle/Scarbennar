@@ -3820,7 +3820,7 @@ Z55_ideas = {
 	}
 }
 
-#Kuxhezt�
+#Kuxheztï¿½
 Z56_ideas = {
 	start = {
 		global_trade_goods_size_modifier = 0.1
@@ -4186,7 +4186,7 @@ B47_ideas = {
         global_unrest = -2
     }
     trigger = {
-        tag = B47 # Stalb�r
+        tag = B47 # Stalbór
     }
     free = yes
 
@@ -9450,7 +9450,7 @@ Z57_ideas = {
 	}
 }
 
-#Crathánor
+#CrathÃ¡nor
 U17_ideas = {
     start = {
         legitimacy = 1
@@ -14237,7 +14237,7 @@ H35_ideas = {
 	}
 }
 
-#Dasmatuš Ideas
+#DasmatuÅ¡ Ideas
 F56_ideas = {
 	start = {
 		may_perform_slave_raid = yes
@@ -17356,10 +17356,12 @@ F58_ideas = {
 	free = yes
 
 	F58_the_children_united = { #Union of the 3 akasi kingdoms
-		stability_cost_modifier = -0.1
+		infantry_power = 0.05
+		shock_damage = 0.05
 	}
 	F58_mothers_bounty = { #Ore from the mountains and fertile soil
 		global_trade_goods_size_modifier = 0.15
+		trade_range_modifier = 0.25
 	}
 	F58_madakas_matakasi = { #Guardians of Mother Akasik, a holy order devoted to protecting the faithful of Mother Akasik
 		land_morale = 0.1
@@ -17370,13 +17372,16 @@ F58_ideas = {
 		trade_steering = 0.15
 	}
 	F58_peace_of_akasik = { #Laws protecting the rights of every citizen of Akasik
-		global_unrest = -2
+		global_unrest = -1
+		diplomatic_reputation = 1
 	}
 	F58_akasikwak = { #Small coastal markets built in foreign cities by akasi to facilitate trade from their homeland
-		global_trade_power = 0.1
+		global_trade_power = 0.2
+		light_ship_power = 0.5
 	}
 	F58_study_of_the_four_planes = { #Research into the elemental planes and the planetouched
 		all_power_cost = -0.025
+		global_colonial_growth = 20
 	}
 }
 
@@ -22215,7 +22220,7 @@ U68_ideas = {
         devotion = 1
         horde_unity = 1
     }
-    U68_hand_and_wing = { #together with the thavo’i against the colonizers. they will not be exploited
+    U68_hand_and_wing = { #together with the thavoâi against the colonizers. they will not be exploited
 		morale_damage_received = -0.1
     }
     U68_paradise_carnival= { #yearly celebrations for all manner of things, and an excuse to party and meet potential partners, for business or more personal matters
@@ -26631,7 +26636,7 @@ L75_ideas = {
 	free = yes
 
 	L75_endorsed_by_the_naga = {
-		diplomatic_reputation = 1 #A group of naga from Zerat, recognizing kakhazajar’s important position at the edge of Yezel Mora, migrated over there and now try to persuade other nations of the need to support Kakhazajar.
+		diplomatic_reputation = 1 #A group of naga from Zerat, recognizing kakhazajarâs important position at the edge of Yezel Mora, migrated over there and now try to persuade other nations of the need to support Kakhazajar.
 	}
 	L75_guardians_at_the_edge_of_the_world = {
 		fort_maintenance_modifier = -0.15 #Fortifying is easier because that's all they do
@@ -26646,7 +26651,7 @@ L75_ideas = {
 		build_cost = -0.10 #Rebuilding Charac, same modifier as the Charach NI
 	}
 	L75_strike_at_the_heart = {
-		global_heathen_missionary_strength = 0.02 #Not content just protecting the land from Yezel Mora, they’re now gonna invade and cleanse it.
+		global_heathen_missionary_strength = 0.02 #Not content just protecting the land from Yezel Mora, theyâre now gonna invade and cleanse it.
 	}
 	L75_khagagaya_drives = {
 		war_exhaustion = -0.02 #Population funding expeditions makes them more loyal...
@@ -27173,7 +27178,7 @@ L37_ideas = {
 	}
 }
 
-#Lelanàn
+#LelanÃ n
 L36_ideas = {
 	start = {
 		diplomatic_reputation = 1
@@ -27184,7 +27189,7 @@ L36_ideas = {
 	}
 	
 	trigger = {
-		tag = L36 #Lelanàn
+		tag = L36 #LelanÃ n
 	}
 	free = yes
 	
@@ -27197,7 +27202,7 @@ L36_ideas = {
 	L36_temporal_authority = { #took advantage of the kolo temple being in disarray for a few years, became head of faith. 
 		church_loyalty_modifier = 0.1
 	}
-	L36_a_modern_ananoma = { #from sleepy temple-town to big city. Guided by an economically savvy power couple. Built like an old ananoma, but modernized. And it’s still growing
+	L36_a_modern_ananoma = { #from sleepy temple-town to big city. Guided by an economically savvy power couple. Built like an old ananoma, but modernized. And itâs still growing
 		build_cost = -0.1
 	}
 	L36_temples_of_love = { #i bet you can guess what these are
@@ -29064,8 +29069,8 @@ L23_ideas = {
 # Nenfi Ideas
 L24_ideas = {
 	start = {
-		cavalry_cost = -0.15 # nenfi people start as pastoralists, same logic as cav buffs rec’d by Jagab Faru
-		global_autonomy = -0.05 # moved “how the turn tables” here
+		cavalry_cost = -0.15 # nenfi people start as pastoralists, same logic as cav buffs recâd by Jagab Faru
+		global_autonomy = -0.05 # moved âhow the turn tablesâ here
 	}
 	
 	bonus = {
@@ -29083,7 +29088,7 @@ L24_ideas = {
 
 	}
 	
-	L24_cow_custodians={ # the nenfi people have a tradition of exchanging cattle between villages in a form of credit, where the contract involving the cow is tattooed on the cow’s skin. this system of credit let the nenfi people mobilize more wealth than their neighbors and made the later transition from pastoralism to trade easier
+	L24_cow_custodians={ # the nenfi people have a tradition of exchanging cattle between villages in a form of credit, where the contract involving the cow is tattooed on the cowâs skin. this system of credit let the nenfi people mobilize more wealth than their neighbors and made the later transition from pastoralism to trade easier
 		interest=-0.5
 	}
 	
@@ -29098,7 +29103,7 @@ L24_ideas = {
 		
 	}
 
-	L24_shelter_tree= { #the nenfi people are sheltered under the tree of God (reference to flag). the tree references a specific tree that was planted by Dojawờ Iru Iyyagba, which is now a shrine where people pray for rain during drought
+	L24_shelter_tree= { #the nenfi people are sheltered under the tree of God (reference to flag). the tree references a specific tree that was planted by Dojawá» Iru Iyyagba, which is now a shrine where people pray for rain during drought
 		tolerance_own = 2
 	}
 	
@@ -30940,7 +30945,7 @@ F80_ideas = {
 L58_ideas = {
 	start = {
 		merchants = 1 #Big city with traders from all over
-		global_spy_defence = 0.2 #They’ve become adept at dealing with Fetengoni and Meretgaban attempting to interfere with their internal affairs
+		global_spy_defence = 0.2 #Theyâve become adept at dealing with Fetengoni and Meretgaban attempting to interfere with their internal affairs
 	}
 	bonus = {
 		prestige_decay = -0.01 #Great city of Mengi literature
@@ -30951,7 +30956,7 @@ L58_ideas = {
 	}
 	free = yes
 	
-	L58_a_slave_city_built_by_slaves = { #Fetengoni’s slaves built Yetmesira, and their skeletal remains are often found whenever foundational repairs or demolitions are undercarried. After that initial founding there was a law that every slave being sold in the city had to work for at least two weeks in construction or repair in the city before being sold on.
+	L58_a_slave_city_built_by_slaves = { #Fetengoniâs slaves built Yetmesira, and their skeletal remains are often found whenever foundational repairs or demolitions are undercarried. After that initial founding there was a law that every slave being sold in the city had to work for at least two weeks in construction or repair in the city before being sold on.
 		build_cost = -0.1
 	}
 	L58_centre_of_the_eastern_trade = { #Many Yeteferen and Metobesi states chose Yetmesira as a port of choice to trade slaves through, partly due to proximity, partly to avoid supporting coastal kingdoms increasingly seen as the puppets of Raheni merchants.
@@ -30960,7 +30965,7 @@ L58_ideas = {
 	L58_melekinetihadi = { #The upper class of the city are among the few mengi who can sit about and write all day. This first text was written in the early days of the city and is largely read as a religious allegory for the Mengi's first steps into the Holy Land.
 		tolerance_own = 2
 	}
-	L58_rabble_rouser_routines = { #Yetmesira was the base of operations of Eyes-Skyward’s crusade, they witnessed all of the crusaders’ strict military tactics. Their city military is based around the same organisation as the crusaders.
+	L58_rabble_rouser_routines = { #Yetmesira was the base of operations of Eyes-Skywardâs crusade, they witnessed all of the crusadersâ strict military tactics. Their city military is based around the same organisation as the crusaders.
 		drill_decay_modifier = -0.25
 	}
 	L58_merchants_visit = { #
@@ -30991,17 +30996,17 @@ G03_ideas = {
 	free = yes
 
 	G03_masters_of_the_deep_jungle = {
-		shock_damage = 0.1 #They are masters in ambushing due to their knowledge of the jungle. Mention the Brothers� Migration.
+		shock_damage = 0.1 #They are masters in ambushing due to their knowledge of the jungle. Mention the Brothersï¿½ Migration.
 	}
 	G03_tliyam_kyin = {
 		build_cost = -0.05 
-		global_prov_trade_power_modifier = 0.05 #They live where Tslakiir, the Kooras brother, found the Paleptaiinky and decided that the migration was finished. It�s a floating bridge-city on the Harafroy. Big Kooras population center, though a lesser one than the Leptone city. Tli�yam Kyin means city on the river (new words, tli� meaning on the in Kooras and Kyin meaning city in Kooras).
+		global_prov_trade_power_modifier = 0.05 #They live where Tslakiir, the Kooras brother, found the Paleptaiinky and decided that the migration was finished. Itï¿½s a floating bridge-city on the Harafroy. Big Kooras population center, though a lesser one than the Leptone city. Tliï¿½yam Kyin means city on the river (new words, tliï¿½ meaning on the in Kooras and Kyin meaning city in Kooras).
 	}
 	G03_half_blooded = {
 		legitimacy = 1
 		devotion = 1
 		republican_tradition = 0.3
-		horde_unity = 1 #Large Paleptaiinky descent. However, it is now more nobles and chiefs that claim that they�re half-Paleptaiinky rather than them actually being one, similarly to the Anbennarian �half-elves� that actually only have 1/100 of elf blood.
+		horde_unity = 1 #Large Paleptaiinky descent. However, it is now more nobles and chiefs that claim that theyï¿½re half-Paleptaiinky rather than them actually being one, similarly to the Anbennarian ï¿½half-elvesï¿½ that actually only have 1/100 of elf blood.
 	}
 	G03_the_riftwatchers = {
 		institution_spread_from_true_faith = 0.2 #Due to their large Paleptaiinky descent, Kooras is the home of most Riftwatchers as well. Some of them manage to control their ability and to get visions in a consistent manner.
@@ -31013,7 +31018,7 @@ G03_ideas = {
 		trade_steering = 0.2 #Haraf'ne upstream and gnomes downstream are good allies and trade partners of Kooras. Trade between the two also passes through Kooras and Tli'yam Kyin. Bustling goblin and kobold communities form from the trade route. However, the artificer states end up taking over the tribe due to them.
 	}
 	G03_eternally_misunderstood = { 
-		tolerance_heathen = 2 #They like the Silent Watchers and think that while they may have been heathens, Dikaal�s punishment was way too harsh. 
+		tolerance_heathen = 2 #They like the Silent Watchers and think that while they may have been heathens, Dikaalï¿½s punishment was way too harsh. 
 	}
 }
 
@@ -31073,20 +31078,20 @@ U29_ideas = {
 	free = yes
 
 	U29_the_grand_field = {
-		global_supply_limit_modifier = 0.25 #They live in the large, bountiful plains of the Kooras, reminding them of the savannahs of the Haraf’ne.
+		global_supply_limit_modifier = 0.25 #They live in the large, bountiful plains of the Kooras, reminding them of the savannahs of the Harafâne.
 	}
 	U29_the_tribe_without_a_kyin = {
 		build_time = -0.1
-		movement_speed = 0.075 #They are called “the tribe without a Kyin” by the other Kooras due to them not having a big city like the Tli’yam Kyin and the Tsewee Kyin. They still have a big cool building, namely a grand stable complex for all of their horses, but it is highly mobile.
+		movement_speed = 0.075 #They are called âthe tribe without a Kyinâ by the other Kooras due to them not having a big city like the Tliâyam Kyin and the Tsewee Kyin. They still have a big cool building, namely a grand stable complex for all of their horses, but it is highly mobile.
 	}
 	U29_horsemasters_of_the_tokal = {
-		cavalry_power = 0.15 #Again, nomadic lifestyle and Haraf’ne ancestry. They have the only actually good terrain for cavalry of the Kooras and the only tribe to extensively use them.
+		cavalry_power = 0.15 #Again, nomadic lifestyle and Harafâne ancestry. They have the only actually good terrain for cavalry of the Kooras and the only tribe to extensively use them.
 	}
 	U29_kaiineloo = {
 		monarch_diplomatic_power = 1 #The local magical population, this time they are singers who do bardic magic. (Kaiineloo = singer in Kooras)
 	}
 	U29_sing_to_the_great_ancestors = {
-		stability_cost_modifier = -0.15 #Revere their Haraf’ne ancestors, still keep some Dai’Nadeilhil beliefs, most notably the tale of the Great Haraf’ne Men.
+		stability_cost_modifier = -0.15 #Revere their Harafâne ancestors, still keep some DaiâNadeilhil beliefs, most notably the tale of the Great Harafâne Men.
 	}
 	U29_songs_of_war_and_peace = {
 		land_morale = 0.05
@@ -31123,7 +31128,7 @@ U28_ideas = {
 	}
 	U28_the_five_kyin = {
 		build_cost = -0.05 
-		build_time = -0.1 #The Five Kyin, or Cities, are Tli�yam Kyin, Tsewee Kyin, Gommoport, Zurzumexia and Mestikardu.
+		build_time = -0.1 #The Five Kyin, or Cities, are Tliï¿½yam Kyin, Tsewee Kyin, Gommoport, Zurzumexia and Mestikardu.
 	}
 	U28_once_a_people_of_two = { 
 		all_power_cost = -0.025 #Lore about the origin of the Kooras. Namely, they were born from the mix of the Haraf'ne and Paleptaiinky cultures. This would also touch on the Riftwatchers.
@@ -31156,19 +31161,19 @@ U30_ideas = {
 	free = yes
 
 	U30_the_death_masks = {
-		morale_damage = 0.1 #Syncretism of Kalun Masks and DCoC (Death Cult of Cheshosh) beliefs. They wear masks like the rest of the Mayte, except they aren’t coloured and made out of the very bones of Silent Watchers, making them fearful enemies. Explains how they still revere the King Mask as the remains of the Limbless God’s skull, participating in the Necali Tournaments, and also have a different vision of the “bones/soul” part of the DCoC. They believe that the Sin of the elves was much more about physical than spiritual imperfection, so they wear the bones of sinners to hide their own Sin, while believing that the souls of the faithful, which are stored in the masks, are what make Cheshosh stronger by joining him in death, essentially resulting in a reverse version of the DCoC beliefs (will have different aspect flavor when the DCoC mechanics are done).
+		morale_damage = 0.1 #Syncretism of Kalun Masks and DCoC (Death Cult of Cheshosh) beliefs. They wear masks like the rest of the Mayte, except they arenât coloured and made out of the very bones of Silent Watchers, making them fearful enemies. Explains how they still revere the King Mask as the remains of the Limbless Godâs skull, participating in the Necali Tournaments, and also have a different vision of the âbones/soulâ part of the DCoC. They believe that the Sin of the elves was much more about physical than spiritual imperfection, so they wear the bones of sinners to hide their own Sin, while believing that the souls of the faithful, which are stored in the masks, are what make Cheshosh stronger by joining him in death, essentially resulting in a reverse version of the DCoC beliefs (will have different aspect flavor when the DCoC mechanics are done).
 	}
 	U30_eastern_shadows = {
-		same_religion_advisor_cost = -0.1 #Explains how some Mayte even came to worship the DCoC. The Bone Citadel had Mayte subjects they converted in eastern Haraf until 1267, when something (will have to be defined, would be cool to link to the Shadow Plane) happened that started the “king of the hill” period in the Reaper’s Coast and cut off the subservient Mayte, who became the Quitl.
+		same_religion_advisor_cost = -0.1 #Explains how some Mayte even came to worship the DCoC. The Bone Citadel had Mayte subjects they converted in eastern Haraf until 1267, when something (will have to be defined, would be cool to link to the Shadow Plane) happened that started the âking of the hillâ period in the Reaperâs Coast and cut off the subservient Mayte, who became the Quitl.
 	}
 	U30_spirit_feuds = {
-		stability_cost_modifier = -0.15 #Blood feuds are settled through battles to the “death”, where the loser has their mask destroyed. Their soul is believed to have joined Cheshosh, and they are exiled from society.
+		stability_cost_modifier = -0.15 #Blood feuds are settled through battles to the âdeathâ, where the loser has their mask destroyed. Their soul is believed to have joined Cheshosh, and they are exiled from society.
 	}
 	U30_the_skull_of_cheshosh = {
-		war_exhaustion = -0.03 #History between 1444 and the arrival of Cannorians. A Necali Tournament is held in 1445 and is attended by the chiefs of many tribes, including the rulers of Benter and Quitl (and Mayte, but that’s a given for a Necali Tournament). The finale ends up being between the three chiefs and is eventually won by the Quitl chief, who returns to his tribe with the King Mask he believes is the skull of the Limbless God. That is obviously unacceptable for the Kalun Masks Mayte, marking the start of a period of conflicts between the tribes, which is eventually won by the Mayte in 1487 who establish the King Mask being passed down through heritage (they don’t stop the Necali Tournaments). This is basically a canon version of the thunderdome system I am planning.
+		war_exhaustion = -0.03 #History between 1444 and the arrival of Cannorians. A Necali Tournament is held in 1445 and is attended by the chiefs of many tribes, including the rulers of Benter and Quitl (and Mayte, but thatâs a given for a Necali Tournament). The finale ends up being between the three chiefs and is eventually won by the Quitl chief, who returns to his tribe with the King Mask he believes is the skull of the Limbless God. That is obviously unacceptable for the Kalun Masks Mayte, marking the start of a period of conflicts between the tribes, which is eventually won by the Mayte in 1487 who establish the King Mask being passed down through heritage (they donât stop the Necali Tournaments). This is basically a canon version of the thunderdome system I am planning.
 	}
 	U30_sharp_edges = {
-		shock_damage = 0.1 #They live on the Rim, which possesses quality iron. After Cannorians arrive they start to make blades and are surprisingly good at it. Also talk about how life on the Rim is different and how they call it their home area “the Rimworld”. Double entendre with the sharp edges of their blades and the Rim being the edge of Haraf.
+		shock_damage = 0.1 #They live on the Rim, which possesses quality iron. After Cannorians arrive they start to make blades and are surprisingly good at it. Also talk about how life on the Rim is different and how they call it their home area âthe Rimworldâ. Double entendre with the sharp edges of their blades and the Rim being the edge of Haraf.
 	}
 	U30_a_shelter = {
 		development_cost_in_primary_culture = -0.1 #They become a safe haven for Mayte fleeing Cannorian oppression, as Benter and Mayte get conquered by Minaria and the CLSTC, and take the head of the local anti-Cannorian front, losing their pariah status in the eyes of the other Mayte.
@@ -33107,7 +33112,7 @@ S23_ideas = {
 	}
 	free = yes
 	
-	S23_born_from_little = { #intro of how the settlements on the left bank of the keygas were founded, their development, and hisost yamok�s founding as a kingdom in the 1300s. 
+	S23_born_from_little = { #intro of how the settlements on the left bank of the keygas were founded, their development, and hisost yamokï¿½s founding as a kingdom in the 1300s. 
 		build_cost = -0.1
 	}
 	S23_seble_the_indomitable_queen = { #warrior queen, legendary
@@ -33419,7 +33424,7 @@ R63_ideas = {
 L95_ideas = {
 	start = {
 		infantry_cost = -0.1 #People flock to our standards already armed and ready to fight
-		advisor_cost = -0.1 #We have more naga than most, they�re the advisor caste	
+		advisor_cost = -0.1 #We have more naga than most, theyï¿½re the advisor caste	
 	}
 	bonus = {
 		infantry_power = 0.1 #This was changed during balance review, TODO
@@ -33756,7 +33761,7 @@ B76_ideas = {
 		prestige = 0.5
 	}
 	
-	B76_peasant_lords = { # The nobility of Horsegarden is close to the peasantry, they work together, and the lords take the most skilled commoner as advisor. This led to many horsegarden commoner becoming notable figure within Lencori history like Avery the Smith, or El�anore �Goldweaver� who thanks to the duke's advice, worked for the royal family.
+	B76_peasant_lords = { # The nobility of Horsegarden is close to the peasantry, they work together, and the lords take the most skilled commoner as advisor. This led to many horsegarden commoner becoming notable figure within Lencori history like Avery the Smith, or Elï¿½anore ï¿½Goldweaverï¿½ who thanks to the duke's advice, worked for the royal family.
 		same_culture_advisor_cost = -0.1
 		advisor_pool = 1
 	}
@@ -34189,10 +34194,10 @@ J79_ideas = {
 		mages_loyalty_modifier = 0.1
 		advisor_pool = 1
     }
-    J79_bowcrafters_of_the_edge = { # the bow has always been one the main weapons of Katelperai, because of its use defending the walls. They have also become masters of the art of “Bowcrafting”, which is essentially using relics and precursor trinkets to modify bows, a proto-form of Taychendi artificery.
+    J79_bowcrafters_of_the_edge = { # the bow has always been one the main weapons of Katelperai, because of its use defending the walls. They have also become masters of the art of âBowcraftingâ, which is essentially using relics and precursor trinkets to modify bows, a proto-form of Taychendi artificery.
 		fire_damage = 0.1
     }
-    J79_the_vitikalingovita = { # Camnan Senjita was a ruler of Katelperai in the late 1400s, who served various rulers during the wars of the two heroes, fighting under his father, Kalazhil, and Erankar, and meeting Laskaris. He would draw on his experiences to write the “Vitikalingovita”, a fictionalised account of the period, which, despite exaggerations or twisting of the historical record, is nonetheless considered one of the most authoritative sources for the 30 year period between the start of Laskaris’ invasion and the death of Laskaris.
+    J79_the_vitikalingovita = { # Camnan Senjita was a ruler of Katelperai in the late 1400s, who served various rulers during the wars of the two heroes, fighting under his father, Kalazhil, and Erankar, and meeting Laskaris. He would draw on his experiences to write the âVitikalingovitaâ, a fictionalised account of the period, which, despite exaggerations or twisting of the historical record, is nonetheless considered one of the most authoritative sources for the 30 year period between the start of Laskarisâ invasion and the death of Laskaris.
 		prestige_decay = -0.01
     }
     J79_the_scouring_of_katelperai = { # sun elves go brrrrrrrrrrrrrrrrrrr
@@ -34261,14 +34266,14 @@ J77_ideas = {
     }
     free = yes
 
-    J77_the_crossed_swords_of_yodhanpir = { # kattisangamar’s most dominant landmark is the twin statues that guard either side of the Vyech, their swords meeting above the river, right before it diverges into the crossing that gives Kattisangamar its name. These great statues are the clearest example of the love the Sangamari have for their weapons, with Kattisangamar forging the finest and sharpest sabres and swords in all of Andeios.
+    J77_the_crossed_swords_of_yodhanpir = { # kattisangamarâs most dominant landmark is the twin statues that guard either side of the Vyech, their swords meeting above the river, right before it diverges into the crossing that gives Kattisangamar its name. These great statues are the clearest example of the love the Sangamari have for their weapons, with Kattisangamar forging the finest and sharpest sabres and swords in all of Andeios.
 		production_efficiency = 0.05
 		shock_damage = 0.05
     }
-    J77_raiders_from_the_hills = { # Since its founding, Kattisangamar raiders have descended from the Iron Hills for slaves, loot, and glory, terrorising the cities of the Kalavend and striking fear into the hearts of urban garrisons and village militias up and down the river. In part because of this reputation, even the mere sight of a massed charge of the city’s sabre-warriors has been known to rout regiments.
+    J77_raiders_from_the_hills = { # Since its founding, Kattisangamar raiders have descended from the Iron Hills for slaves, loot, and glory, terrorising the cities of the Kalavend and striking fear into the hearts of urban garrisons and village militias up and down the river. In part because of this reputation, even the mere sight of a massed charge of the cityâs sabre-warriors has been known to rout regiments.
 		loot_amount = 0.5
     }
-    J77_the_takasangamar_kings = { # the Sangamar Kings of the Iron hills originate from Kattisangamar in the early 800s, when the clan’s raider founder, Takasheran Sangamar, seized power and then conquered the rest of the Iron hills. Though his successors would move their family’s capital to Gophira, those who remained in Kattisangamar never forgot Takasheran’s ties to the cities, taking the name “Takasangamar” in his honour, and though the three Sanagamar clans might each retain the distinctive looks of Takasheran – piercing blue eyes and pitch-black hair – only the Takasangamar Kings can be said to truly emulate his swordsmanship, tenacity and raider ambitions.
+    J77_the_takasangamar_kings = { # the Sangamar Kings of the Iron hills originate from Kattisangamar in the early 800s, when the clanâs raider founder, Takasheran Sangamar, seized power and then conquered the rest of the Iron hills. Though his successors would move their familyâs capital to Gophira, those who remained in Kattisangamar never forgot Takasheranâs ties to the cities, taking the name âTakasangamarâ in his honour, and though the three Sanagamar clans might each retain the distinctive looks of Takasheran â piercing blue eyes and pitch-black hair â only the Takasangamar Kings can be said to truly emulate his swordsmanship, tenacity and raider ambitions.
 		leader_land_shock = 1
     }
     J77_the_battle_of_masialendi = { # the granicus and issus merged into one. Shame theres basically no place to talk about the stand outside Tirsin 
@@ -34325,7 +34330,7 @@ L76_ideas = {
 	}
 }
 
-#Ainethán
+#AinethÃ¡n
 B75_ideas = {
 	start = {
 		prestige = 1
@@ -34337,7 +34342,7 @@ B75_ideas = {
 	}
 	
 	trigger = {
-		tag = B75 #Ainethán
+		tag = B75 #AinethÃ¡n
 	}
 	free = yes
 	
@@ -34572,7 +34577,7 @@ J73_ideas = {
         all_estate_loyalty_equilibrium = 0.05
     }
     
-    J73_power_of_the_guaraddhi = { #due to the lifestyle of Zaernmaera�s population, an impressive portion of the population can easily become warriors (theyre all steppe nomads). Way larger army sizes than one would assume.
+    J73_power_of_the_guaraddhi = { #due to the lifestyle of Zaernmaeras population, an impressive portion of the population can easily become warriors (theyre all steppe nomads). Way larger army sizes than one would assume.
         land_forcelimit_modifier = 0.15
     }
     

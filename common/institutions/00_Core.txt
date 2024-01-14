@@ -181,6 +181,13 @@ feudalism = {
 			}
 		}
 		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				has_tax_building_trigger = yes
+			}
+		}
+		modifier = {
 			factor = 0.1
 			scale = yes
 			potential = {
@@ -385,6 +392,13 @@ renaissance = {
 					NOT = { owned_by = ROOT }
 					renaissance = 100
 				}
+			}
+		}
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				has_manufactory_trigger = yes
 			}
 		}
 		modifier = {
@@ -642,6 +656,13 @@ new_world_i = {
 			factor = 5
 			scale = yes
 			potential = {
+				has_shipyard_building_trigger = yes
+			}
+		}
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
 				owner = {
 					is_colonial_nation = yes
 				}
@@ -857,6 +878,21 @@ printing_press = {
 				}
 			}
 		}
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				has_manufactory_trigger = { #Province Scope
+					custom_trigger_tooltip = {
+						tooltip = has_manufactory_trigger_tooltip
+							OR = {
+								has_building = state_house
+			
+		}
+	}
+	}
+}
+			}
 		modifier = {
 			factor = 0.1
 			scale = yes
