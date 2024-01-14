@@ -17356,10 +17356,12 @@ F58_ideas = {
 	free = yes
 
 	F58_the_children_united = { #Union of the 3 akasi kingdoms
-		stability_cost_modifier = -0.1
+		infantry_power = 0.05
+		shock_damage = 0.05
 	}
 	F58_mothers_bounty = { #Ore from the mountains and fertile soil
 		global_trade_goods_size_modifier = 0.15
+		trade_range_modifier = 0.25
 	}
 	F58_madakas_matakasi = { #Guardians of Mother Akasik, a holy order devoted to protecting the faithful of Mother Akasik
 		land_morale = 0.1
@@ -17370,13 +17372,16 @@ F58_ideas = {
 		trade_steering = 0.15
 	}
 	F58_peace_of_akasik = { #Laws protecting the rights of every citizen of Akasik
-		global_unrest = -2
+		global_unrest = -1
+		diplomatic_reputation = 1
 	}
 	F58_akasikwak = { #Small coastal markets built in foreign cities by akasi to facilitate trade from their homeland
-		global_trade_power = 0.1
+		global_trade_power = 0.2
+		light_ship_power = 0.5
 	}
 	F58_study_of_the_four_planes = { #Research into the elemental planes and the planetouched
 		all_power_cost = -0.025
+		global_colonial_growth = 20
 	}
 }
 
