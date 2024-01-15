@@ -27,30 +27,11 @@ estate_artificers_organization_international_gommo = {
 		if = {
 			limit = { has_artificers_organization_privilege = yes }
 			
-			NOT = {
-				estate_influence = {
-					estate = estate_artificers
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 30
-			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_artificers
-						loyalty = 60
-					}
-				}
-				dip_power = 100
+		
+		
+			
 				stability = 1
-			}
-			else = {
-				dip_power = 200
-				stability = 2
-			}
+			
 		}
 	}
 	can_revoke = {
@@ -68,20 +49,11 @@ estate_artificers_organization_international_gommo = {
 				has_artificers_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_artificers_organization_international_gommo }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_artificers
-						loyalty = 60
-					}
-				}
-				add_dip_power = -100
+		
+			
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_dip_power = -200
-			}
+			
+		
 			custom_tooltip = estate_artificers_organization_cost_tooltip
 			custom_tooltip = estate_artificers_organization_revoke_tooltip
 			clear_artificers_organization_effect = yes
@@ -139,31 +111,12 @@ estate_artificers_organization_state = {
 		if = {
 			limit = { has_artificers_organization_privilege = yes }
 			
-			NOT = {
-				estate_influence = {
-					estate = estate_artificers
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 30
-			}
+
+	
 			
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_artificers
-						loyalty = 60
-					}
-				}
-				dip_power = 100
+				
 				stability = 1
-			}
-			else = {
-				dip_power = 200
-				stability = 2
-			}
+			
 		}
 	}
 	can_revoke = {
@@ -181,20 +134,11 @@ estate_artificers_organization_state = {
 				has_artificers_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_artificers_organization_state }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_artificers
-						loyalty = 60
-					}
-				}
-				add_dip_power = -100
+
+	
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_dip_power = -200
-			}
+				
+			
 			custom_tooltip = estate_artificers_organization_cost_tooltip
 			custom_tooltip = estate_artificers_organization_revoke_tooltip
 			clear_artificers_organization_effect = yes
@@ -260,30 +204,11 @@ estate_artificers_organization_independent_unions = {
 	can_select = {
 		if = {
 			limit = { has_artificers_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_artificers
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 30
-			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_artificers
-						loyalty = 60
-					}
-				}
-				dip_power = 100
+	
+
+	
 				stability = 1
-			}
-			else = {
-				dip_power = 200
-				stability = 2
-			}
+			
 		}
 	}
 	can_revoke = {
@@ -301,20 +226,11 @@ estate_artificers_organization_independent_unions = {
 				has_artificers_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_artificers_organization_independent_unions }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_artificers
-						loyalty = 60
-					}
-				}
-				add_dip_power = -100
+
+			
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_dip_power = -200
-			}
+			
+			
 			custom_tooltip = estate_artificers_organization_cost_tooltip
 			custom_tooltip = estate_artificers_organization_revoke_tooltip
 			clear_artificers_organization_effect = yes
@@ -354,30 +270,12 @@ estate_artificers_organization_ravelian_control = {
 	can_select = {
 		if = {
 			limit = { has_artificers_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_artificers
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 30
-			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_artificers
-						loyalty = 60
-					}
-				}
-				dip_power = 100
+		
+		
+	
+			
 				stability = 1
-			}
-			else = {
-				dip_power = 200
-				stability = 2
-			}
+			
 		}
 	}
 	can_revoke = {
@@ -468,30 +366,12 @@ estate_artificers_organization_sun_elf = {
 	can_select = {
 		if = {
 			limit = { has_artificers_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_artificers
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 30
-			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_artificers
-						loyalty = 60
-					}
-				}
-				dip_power = 100
+			
+			
+			
+			
 				stability = 1
-			}
-			else = {
-				dip_power = 200
-				stability = 2
-			}
+			
 		}
 	}
 	can_revoke = {
@@ -511,20 +391,11 @@ estate_artificers_organization_sun_elf = {
 				has_artificers_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_artificers_organization_sun_elf }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_artificers
-						loyalty = 60
-					}
-				}
-				add_dip_power = -100
+		
+			
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_dip_power = -200
-			}
+				
+			
 			custom_tooltip = estate_artificers_organization_cost_tooltip
 			custom_tooltip = estate_artificers_organization_revoke_tooltip
 			clear_artificers_organization_effect = yes

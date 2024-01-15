@@ -30,29 +30,10 @@ estate_mages_organization_magisterium = {
 		}
 		if = {
 			limit = { has_mages_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_mages
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_mages
-				loyalty = 30
-			}
+
 			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_mages
-						loyalty = 60
-					}
-				}
-				adm_power = 100
+
 				stability = 1
-			}
-			else = {
-				adm_power = 200
-				stability = 2
 			}
 		}
 		has_discovered = 8 #Anbenncost
@@ -67,20 +48,10 @@ estate_mages_organization_magisterium = {
 				has_mages_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_mages_organization_magisterium }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_mages
-						loyalty = 60
-					}
-				}
-				add_adm_power = -100
+
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_adm_power = -200
-			}
+
+			
 			custom_tooltip = estate_mages_organization_cost_tooltip
 			custom_tooltip = estate_mages_organization_revoke_tooltip
 			clear_mages_organization_effect = yes
@@ -200,30 +171,10 @@ estate_mages_organization_state = {
 	can_select = {
 		if = {
 			limit = { has_mages_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_mages
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_mages
-				loyalty = 30
-			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_mages
-						loyalty = 60
-					}
-				}
-				adm_power = 100
-				stability = 1
-			}
-			else = {
-				adm_power = 200
-				stability = 2
-			}
+
+		
+stability = 1
+
 		}
 	}
 	can_revoke = {
@@ -236,20 +187,11 @@ estate_mages_organization_state = {
 				has_mages_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_mages_organization_state }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_mages
-						loyalty = 60
-					}
-				}
-				add_adm_power = -100
+	
+			
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_adm_power = -200
-			}
+			
+			
 			custom_tooltip = estate_mages_organization_cost_tooltip
 			custom_tooltip = estate_mages_organization_revoke_tooltip
 			clear_mages_organization_effect = yes
@@ -294,31 +236,13 @@ estate_mages_organization_guilds = {
 	can_select = {
 		if = {
 			limit = { has_mages_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_mages
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_mages
-				loyalty = 30
-			}
 
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_mages
-						loyalty = 60
-					}
-				}
-				adm_power = 100
+			
+
+	
+	
 				stability = 1
-			}
-			else = {
-				adm_power = 200
-				stability = 2
-			}
+			
 		}
 	}
 	can_revoke = {
@@ -331,20 +255,10 @@ estate_mages_organization_guilds = {
 				has_mages_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_mages_organization_guilds }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_mages
-						loyalty = 60
-					}
-				}
-				add_adm_power = -100
+		
+			
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_adm_power = -200
-			}
+				
 			custom_tooltip = estate_mages_organization_cost_tooltip
 			custom_tooltip = estate_mages_organization_revoke_tooltip
 			clear_mages_organization_effect = yes
@@ -389,30 +303,13 @@ estate_mages_organization_religious = {
 	can_select = {
 		if = {
 			limit = { has_mages_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_mages
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_mages
-				loyalty = 30
-			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_mages
-						loyalty = 60
-					}
-				}
-				adm_power = 100
+
+
+
+			
+
 				stability = 1
-			}
-			else = {
-				adm_power = 200
-				stability = 2
-			}
+			
 		}
 	}
 	can_revoke = {
@@ -425,20 +322,11 @@ estate_mages_organization_religious = {
 				has_mages_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_mages_organization_religious }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_mages
-						loyalty = 60
-					}
-				}
-				add_adm_power = -100
+
+			
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_adm_power = -200
-			}
+				
+			
 			custom_tooltip = estate_mages_organization_cost_tooltip
 			custom_tooltip = estate_mages_organization_revoke_tooltip
 			clear_mages_organization_effect = yes
@@ -1051,31 +939,12 @@ estate_adventurers_organization_chronicler_grants = {
 	can_select = {
 		if = {
 			limit = { has_adventurers_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_adventurers
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_adventurers
-				loyalty = 30
-			}
 
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_adventurers
-						loyalty = 60
-					}
-				}
-				mil_power = 100
+
+
+	
 				stability = 1
-			}
-			else = {
-				mil_power = 200
-				stability = 2
-			}
+			
 		}
 		has_discovered = 8 #Anbenncost
 	}
@@ -1088,20 +957,11 @@ estate_adventurers_organization_chronicler_grants = {
 				has_adventurers_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_adventurers_organization_chronicler_grants }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_adventurers
-						loyalty = 60
-					}
-				}
-				add_mil_power = -100
+
+			
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_mil_power = -200
-			}
+				
+			
 			custom_tooltip = estate_adventurers_organization_cost_tooltip
 			custom_tooltip = estate_adventurers_organization_revoke_tooltip
 			clear_adventurers_organization_effect = yes
@@ -1144,30 +1004,12 @@ estate_adventurers_organization_licensed_adventurers = {
 	can_select = {
 		if = {
 			limit = { has_adventurers_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_adventurers
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_adventurers
-				loyalty = 30
-			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_adventurers
-						loyalty = 60
-					}
-				}
-				mil_power = 100
+
+		
+	
+			
 				stability = 1
-			}
-			else = {
-				mil_power = 200
-				stability = 2
-			}
+			
 		}
 	}
 	can_revoke = {
@@ -1179,20 +1021,10 @@ estate_adventurers_organization_licensed_adventurers = {
 				has_adventurers_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_adventurers_organization_licensed_adventurers }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_adventurers
-						loyalty = 60
-					}
-				}
-				add_mil_power = -100
+
+
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_mil_power = -200
-			}
+
 			custom_tooltip = estate_adventurers_organization_cost_tooltip
 			custom_tooltip = estate_adventurers_organization_revoke_tooltip
 			clear_adventurers_organization_effect = yes
@@ -1234,30 +1066,13 @@ estate_adventurers_organization_land_of_adventure = {
 	can_select = {
 		if = {
 			limit = { has_adventurers_organization_privilege = yes }
-			NOT = {
-				estate_influence = {
-					estate = estate_adventurers
-					influence = 25
-				}
-			}
-			estate_loyalty = {
-				estate = estate_adventurers
-				loyalty = 30
-			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_adventurers
-						loyalty = 60
-					}
-				}
-				mil_power = 100
+	
+
+
+
+		
 				stability = 1
-			}
-			else = {
-				mil_power = 200
-				stability = 2
-			}
+			
 		}
 	}
 	can_revoke = {
@@ -1269,20 +1084,10 @@ estate_adventurers_organization_land_of_adventure = {
 				has_adventurers_organization_privilege = yes
 				NOT = { has_estate_privilege = estate_adventurers_organization_land_of_adventure }
 			}
-			if = {
-				limit = {
-					estate_loyalty = {
-						estate = estate_adventurers
-						loyalty = 60
-					}
-				}
-				add_mil_power = -100
+		
+			
 				add_stability = -1
-			}
-			else = {
-				add_stability = -2
-				add_mil_power = -200
-			}
+		
 			custom_tooltip = estate_adventurers_organization_cost_tooltip
 			custom_tooltip = estate_adventurers_organization_revoke_tooltip
 			clear_adventurers_organization_effect = yes
