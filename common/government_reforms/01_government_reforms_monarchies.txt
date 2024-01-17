@@ -11877,7 +11877,7 @@ techno_monarchy_reform = { #CoT Ashscale
 		advisor_cost = -0.10
 		advisor_pool = 1
 		female_advisor_chance = 0.33
-		special_unit_forcelimit = 0.2 #artificers
+		allowed_rajput_fraction = 0.2 #artificers
 		max_absolutism = -10
 		administrative_efficiency = -0.05 #worse at expanding
 		
