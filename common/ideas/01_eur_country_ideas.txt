@@ -38,7 +38,7 @@ X01_ideas = {
 		mil_advisor_cost = -0.33
 	}
 	X01_five = {
-		global_sailors_modifier = 0.33
+		global_sailors_modifier = 0.2
 		allowed_marine_fraction = 0.2
 	}
 	X01_six = {
