@@ -1135,13 +1135,7 @@ artificers_tellum_missions = {
 				change_trade_goods = precursor_relics
 				set_province_flag = permanent_precursor_relics
 			}
-			random_province = {
-				limit = {
-					owned_by = ROOT
-				}
-				change_trade_goods = precursor_relics
-				set_province_flag = permanent_precursor_relics
-			}
+			#removed one province
 		}
 	}
 	artificers_tellum_2 = {
