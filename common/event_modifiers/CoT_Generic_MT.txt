@@ -84,7 +84,7 @@ artificers_tellumm_3 {
 	is_rajput_modifier = yes 
 	infantry_fire = 0.25 
 	fire_damage_received = -0.10
-	infantry_power = 0.10 
+	infantry_power = 0.05 
 }
 
 economic_tellumm_1 {

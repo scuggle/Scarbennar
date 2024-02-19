@@ -268,14 +268,14 @@ gnomish_military = {
 	artillery_levels_available_vs_fort = 1
 	artillery_power = 0.1				#2 S / 
 	heavy_ship_power = 0.1				#1 B / gnomish hulks
-	allowed_rajput_fraction = 0.3 		#artificers
+	allowed_rajput_fraction = 0.2 		#artificers
 	
 	#3 + 0.5 + 0.75 = 4.25
 
 	#Negatives	
 	manpower_recovery_speed = -0.15		#-3 B / reproduction
 	
-	infantry_power = -0.1				#-1 A /
+	infantry_power = -0.05				#-1 A /
 	cavalry_cost = 0.2				#-2 B / standard small person cav malus
 	#shock_damage_received = 0.1			#-1 C /		They don't receive a shock damage malus. Part of their racial mil
 	galley_power = -0.2					#-1 D / you need long legs for galleys... and, well..
@@ -291,7 +291,7 @@ gnomish_military_artificer_buff = {
 	#Rajput only modifiers need to be their own modifiers and this is crucial for the racial mil to work so they also get this
 	
 	#Positives
-	infantry_power = 0.15
+	infantry_power = 0.05
 	infantry_fire = 0.15
 	
 	is_rajput_modifier = yes 

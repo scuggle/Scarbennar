@@ -119,7 +119,7 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
-		
+		ai = yes
 		NOT = { crown_land_share = 11 }
 		OR = {
 			AND = {

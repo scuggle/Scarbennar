@@ -15370,7 +15370,7 @@ I98_ideas = {
 
 	I98_explosive_construction = {
 		development_cost = -0.1
-		build_time = -0.05
+		build_time = -0.075
 	}
 	I98_blazing_the_trail = {
 		global_institution_spread = 0.25
@@ -15378,6 +15378,8 @@ I98_ideas = {
 	}
 	I98_all_goblins_home = {
 		prestige_decay = -0.01
+		manpower_in_culture_group_provinces = 0.1
+		manpower_in_own_culture_provinces = 0.1
 	}
 	I98_passion_for_progress = {
 		technology_cost = -0.1

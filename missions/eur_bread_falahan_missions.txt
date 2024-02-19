@@ -603,7 +603,7 @@ falahan_inner_right_branch = {
 				owned_by = ROOT 
 				is_core = ROOT
 			}
-			magairous_area = {	
+			zagnabad_area = {	
 				type = all 
 				owned_by = ROOT
 				is_core = ROOT
@@ -612,7 +612,7 @@ falahan_inner_right_branch = {
 		provinces_to_highlight = {
 			OR = {
 				area = medbahar_area
-				area = magairous_area
+				area = zagnabad_area
 			}
 			OR = {
 				NOT = { is_core = ROOT }
