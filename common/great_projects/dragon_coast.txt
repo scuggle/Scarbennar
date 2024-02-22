@@ -418,7 +418,7 @@ kobildzan_kobildzex_guild_of_trapsmiths = {
 		area_modifier = {
 		}
 		region_modifier = {
-			local_hostile_attrition =  = 1.5
+			local_hostile_attrition = 1.5
 			local_defensiveness = 0.2
 		}
 		country_modifiers = {	

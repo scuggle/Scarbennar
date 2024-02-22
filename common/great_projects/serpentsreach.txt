@@ -454,7 +454,6 @@ arg_ordstun_great_clast_shafts = {
 							culture = black_orc
 							culture = mossmouth_ogre
 						}
-					}
 				}
 				province_is_or_accepts_culture = yes
 		}
