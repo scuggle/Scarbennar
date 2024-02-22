@@ -60,3 +60,5 @@
  restore_own_color_desc: "Restore your original color after being overwritten by an overlord"
  set_generic_mt_title: "Choose the Generic MT"
  set_generic_mt_desc: "This decision is PERMANENT. Forming another country will NOT change your MT. Choose wisely."
+ invest_splendor_title: "Invest Splendor"
+ invest_splendor_desc: "Use 800 splendor to increase your monarch power."
