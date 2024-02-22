@@ -519,45 +519,46 @@ spy_ideas = { #Cultural Unity Ideas
 	}
 }
 
-maritime_ideas = { #Merchant Marines Ideas
+maritime_ideas = { #Ruler of the Waves Ideas
 	category = DIP
 
 	trigger = {
-		NOT = { has_idea_group = naval_ideas }
+		NOT = { has_idea_group = trade_ideas }
+		NOT = { has_idea_group = exploration_ideas }
+		adm_tech = 5
 	}
 
 	bonus = {
 
-		naval_forcelimit_modifier = 0.25
+		naval_forcelimit_modifier = 0.2
 	}
 
 	merchant_traditions = {
-		free_navy_leader_pool = 2
-		
+		may_explore = yes
+		global_ship_cost = -0.1
 			}
 	merchant_marine = {
-		global_naval_barrage_cost = -0.5
+		colonists = 1
+		allowed_marine_fraction = 0.25
 	}
 	sheltered_ports = {
-		
-		light_ship_power = 0.20
-		naval_tradition_from_trade = 0.25
+		range = 0.5
+		naval_attrition = -0.3
 	}
 	grand_navy = {
-		leader_naval_manuever = 2
-		navy_tradition = 1
+		global_colonial_growth = 30
 	}
 	ships_penny = {
-		allowed_marine_fraction = 1
-		#Upgrades Marines (the bonus infantry ideas gave before)
+		colonist_placement_chance = 0.1
+		#Upgrades Marines	
 	}
 	sea_hawks = {
-		regiment_disembark_speed = 0.50
-		landing_penalty = -1
+		ship_durability = 0.05
+		ship_power_propagation = 0.5
 	}
 	naval_fighting_instruction = {
-		global_sailors_modifier = 0.33
-		transport_hull_size_modifier = 0.25
+		naval_morale = 0.05
+		siege_blockade_progress = 1
 	}
 
 	ai_will_do = {
@@ -565,108 +566,118 @@ maritime_ideas = { #Merchant Marines Ideas
 	}
 }
 
-naval_ideas = { #Naval Dominance Ideas
+#naval_ideas = { #Naval Dominance Ideas
+	#category = DIP
+
+	#trigger = {
+		#NOT = { has_idea_group = maritime_ideas }
+		#}
+
+	#bonus = {
+       #naval_forcelimit_modifier = 0.25
+	#}
+
+	#boarding_parties = {
+		
+		#naval_maintenance_modifier = -0.1
+	#}
+	#improved_rams = {
+		#blockade_efficiency = 0.25
+	#}
+	#naval_cadets = {
+		#global_sailors_modifier = 0.15
+	#}
+	#naval_glory = {
+		#galley_power = 0.1
+		#heavy_ship_power = 0.1
+		#transport_power = 0.1
+	#}
+	#press_gangs = {
+		#naval_morale = 0.1
+	#}
+	#oak_forests_for_ships = {
+		#ship_durability = 0.05
+	#}
+	#superior_seamanship = {
+		#navy_tradition = 1
+	#}
+#}
+
+	
+	#ai_will_do = {
+		#factor = 0.31
+		#modifier = {
+		#	factor = 0
+		#	is_tribal = yes
+		#}
+		#modifier = {
+			#factor = 0
+			#primitives = yes
+		#}
+		#modifier = {
+			#factor = 0
+			#NOT = { num_of_ports = 1 }
+			#NOT = { is_colonial_nation = yes }
+		#}
+		#modifier = {
+			#factor = 0.31
+			#NOT = { num_of_ports = 10 }
+		#}
+		#modifier = {
+			#factor = 0.31
+			#num_of_cities = 50
+		#}
+
+		#modifier = {
+			#factor = 10
+			#OR = {
+				#has_reform = pirate_republic_reform
+				#has_reform = pirate_kingdom
+				#has_reform = war_against_the_world_government
+				#has_reform = black_market_consortium_government
+			#}
+		#}
+	#}
+#}
+
+trade_ideas = { #Trade Empire #done
 	category = DIP
 
 	trigger = {
 		NOT = { has_idea_group = maritime_ideas }
+		NOT = { has_idea_group = exploration_ideas }
+		adm_tech = 5
 	}
-
-	bonus = {
-       naval_forcelimit_modifier = 0.25
-	}
-
-	boarding_parties = {
-		
-		naval_maintenance_modifier = -0.1
-	}
-	improved_rams = {
-		blockade_efficiency = 0.25
-	}
-	naval_cadets = {
-		global_sailors_modifier = 0.15
-	}
-	naval_glory = {
-		galley_power = 0.1
-		heavy_ship_power = 0.1
-		transport_power = 0.1
-	}
-	press_gangs = {
-		naval_morale = 0.1
-	}
-	oak_forests_for_ships = {
-		ship_durability = 0.05
-	}
-	superior_seamanship = {
-		navy_tradition = 1
-	}
-
 	
-	ai_will_do = {
-		factor = 0.31
-		modifier = {
-			factor = 0
-			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			primitives = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-			NOT = { is_colonial_nation = yes }
-		}
-		modifier = {
-			factor = 0.31
-			NOT = { num_of_ports = 10 }
-		}
-		modifier = {
-			factor = 0.31
-			num_of_cities = 50
-		}
-
-		modifier = {
-			factor = 10
-			OR = {
-				has_reform = pirate_republic_reform
-				has_reform = pirate_kingdom
-				has_reform = war_against_the_world_government
-				has_reform = black_market_consortium_government
-			}
-		}
-	}
-}
-
-trade_ideas = { #mercantile #done
-	category = DIP
-
 	bonus = {
-		global_own_trade_power = 0.15
+		merchants = 1
 	}
 	shrewd_commerce_practise = {
-		trade_efficiency = 0.15
+		may_explore = yes
 		merchants = 1
   	}
   	free_trade = {
-		naval_tradition_from_trade = 0.15
-		center_of_trade_upgrade_cost = -0.15
+		colonists = 1
+		trade_steering = 0.1
   	}
 	merchant_adventures = {
-		global_trade_goods_size_modifier = 0.05
-	}
-	national_trade_policy = {
-		caravan_power = 0.25
-	}
-	overseas_merchants = {
-		trade_steering = 0.15
-	}
-	trade_manipulation = {
+		range = 0.5
 		placed_merchant_power = 15
 	}
-	fast_negotiations = {
-		merchants = 1
+	national_trade_policy = {
+		global_colonial_growth = 30
+	}
+	overseas_merchants = {
+		trade_efficiency = 0.1
+		colonist_placement_chance = 0.1
+	}
+	trade_manipulation = {
 		mercantilism_cost = -0.25
+		center_of_trade_upgrade_cost = -0.2
+	}
+	fast_negotiations = {
+		trade_range_modifier = 0.5
+		trade_company_investment_cost = -0.2
 	}
 
 	ai_will_do = {
@@ -704,16 +715,18 @@ trade_ideas = { #mercantile #done
 	}
 }
 
-exploration_ideas = { #reclamation #done
+exploration_ideas = { #Trustee #done
 	category = DIP
 	important = yes
 
 	trigger = {
+		NOT = { has_idea_group = trade_ideas }
+		NOT = { has_idea_group = maritime_ideas }
 		adm_tech = 5
 	}
 	
 	bonus = {
-		vassal_naval_forcelimit_bonus = 0.15
+		global_trade_goods_size = 0.1
 	}
 
 	quest_for_the_new_world	= {
@@ -721,23 +734,27 @@ exploration_ideas = { #reclamation #done
 		envoy_travel_time = -0.33
 	}
 	colonial_ventures = {
-		range = 0.5
+		colonists = 1
+		global_trade_goods_size_modifier = 0.1
 	}
 	overseas_exploration = {
-		colonists = 1
+		range = 0.5
+		native_assimilation = 0.5
 	}
 	land_of_opportunity = {
 		global_colonial_growth = 30
 	}
 	vice_roys  = {
-		global_tariffs = 0.25
+		colonist_placement_chance = 0.1
+		caravan_power = 0.25
  	}
 	free_colonies = {
-		idea_claim_colonies = yes
-		treasure_fleet_income = 0.25
+		global_tariffs = 0.25
+		liberty_desire_from_subject_development = -0.25
 	}
 	global_empire = {
-		colonist_placement_chance = 0.15
+		expel_minorities_cost = -0.50
+		vassal_income = 0.15
 	}
 
 	ai_will_do = {
@@ -991,7 +1008,7 @@ diplomatic_ideas = { #international ideas #done
 		dip_tech_cost_modifier = -0.1
 	}
 	diplomatic_corps = {
-		
+		idea_claim_colonies = yes
 		reduced_stab_impacts = yes
 	}
 
@@ -1045,6 +1062,7 @@ influence_ideas = { #benevolence #done
 	}
 	marcher_lords = {
 		vassal_manpower_bonus = 0.25
+		can_transfer_vassal_wargoal = yes
 	}
 
 	ai_will_do = {
