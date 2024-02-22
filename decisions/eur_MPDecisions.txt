@@ -323,4 +323,23 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
+	invest_splendor = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			ai = no
+		}
+		allow = {
+			splendor = 800
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_splendor = -800
+		}
+	}
 }	
