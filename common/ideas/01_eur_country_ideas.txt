@@ -566,7 +566,7 @@ X13_ideas = {
 	free = yes		#will be added at load.
 	
 	X13_one = {
-		rajput_fraction = 0.15
+		allowed_rajput_fraction = 0.15
 	}
 	X13_two = {
 		infantry_fire = 0.15
@@ -654,7 +654,7 @@ X15_ideas = {
 	}
 	X15_two = {
 		innovativeness_gain = 1
-		rajput_fraction = 0.2
+		allowed_rajput_fraction = 0.2
 	}
 	X15_three = {
 		development_cost = -0.1
@@ -1055,49 +1055,6 @@ B46_ideas = {
 	}
 	B46_seven = {
 		global_unrest = -1					#Makes for good crowd control
-	}	
-}
-
-#Flung Head
-B44_ideas = {
-	start = {
-		all_power_cost = -0.025
-		technology_cost = 0.05					#	Quite Magocratic
-		monarch_lifespan = 5					#	Chiefs Bloodlain is magic and lives long
-	}
-
-	bonus = {
-		all_estate_loyalty_equilibrium = 0.05			# Rules strongly over estates
-	}
-
-	trigger = {
-		tag = B44
-	}
-	free = yes
-
-	B44_one = {
-		heir_chance = 0.5
-		monthly_heir_claim_increase = 0.05				# Magic is valued, makes new heirs until one is a mage
-	}
-	B44_two = {
-		prestige = 1									# Magic prowess respected even outside nation	
-	}
-	B44_three = {
-		siege_ability = 0.15							# Low level Mages help with siege
-	}
-	B44_four = {
-		caravan_power = 0.15							# Kick out unwelcome traders by force if necessary	
-		embargo_efficiency = 0.25
-	}
-	B44_five = {
-		land_morale = 0.1
-		shock_damage = 0.05								# Mages mixed into regular troopa	
-	}
-	B44_six = {
-		advisor_cost = -0.15							# Rules strongly over advisors
-	}
-	B44_seven = {
-		global_regiment_cost = -0.1						# Magic support lightens the need for good equipment for other troops, thus cheaper
 	}	
 }
 

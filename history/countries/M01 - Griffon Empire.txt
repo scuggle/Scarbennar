@@ -1,9 +1,0 @@
-
-setup_vision = yes
-government = monarchy
-add_government_reform = griffon_empire_reform
-government_rank = 3
-primary_culture = imperial_marr
-religion = corinite
-technology_group = tech_cannorian
-capital = 4097

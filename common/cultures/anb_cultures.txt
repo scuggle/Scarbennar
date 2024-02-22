@@ -1173,6 +1173,10 @@ escanni = {
 		primary = B62 #Moredhal
 	}
 
+	imperial_marr = {
+		primary = X25 #Griffon Empire
+	}
+
 	dynasty_names = {
 		"of Oldhaven" "síl Burnoll" "síl Cast" "síl Anor" "síl Acenthán"
 		
