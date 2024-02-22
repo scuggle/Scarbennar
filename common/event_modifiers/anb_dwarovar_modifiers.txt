@@ -1183,6 +1183,7 @@ dwarovar_adventurer_legacy_4 = {
 ##################################
 remnant_legacy = {
 	colonists = -3
+	land_forcelimit = 5
 }
 
 remnant_dig = {
