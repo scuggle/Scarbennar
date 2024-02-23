@@ -546,7 +546,8 @@ maritime_ideas = { #Ruler of the Waves Ideas
 		naval_attrition = -0.3
 	}
 	grand_navy = {
-		global_colonial_growth = 30
+		global_colonial_growth = 10
+		leader_naval_manuever = 1
 	}
 	ships_penny = {
 		colonist_placement_chance = 0.1
@@ -665,7 +666,8 @@ trade_ideas = { #Trade Empire #done
 		placed_merchant_power = 15
 	}
 	national_trade_policy = {
-		global_colonial_growth = 30
+		global_colonial_growth = 10
+		global_foreign_trade_power = 0.1
 	}
 	overseas_merchants = {
 		trade_efficiency = 0.1
@@ -742,14 +744,15 @@ exploration_ideas = { #Trustee #done
 		native_assimilation = 0.5
 	}
 	land_of_opportunity = {
-		global_colonial_growth = 30
+		global_colonial_growth = 10
+		vassal_forcelimit_bonus = 0.1
 	}
 	vice_roys  = {
 		colonist_placement_chance = 0.1
 		caravan_power = 0.25
  	}
 	free_colonies = {
-		global_tariffs = 0.25
+		global_tariffs = 0.15
 		liberty_desire_from_subject_development = -0.25
 	}
 	global_empire = {
