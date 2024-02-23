@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
   diggy.1.t:0 "[Root.GetName] Hold"
   diggy.1.d:0 "After many years of effort, we have finally finished the new districts of our Hold. This feat of architecture and engineering offers us many opportunities for expansion in the future."
   diggy.1.a:0 "[Root.strikeTheEarth] strike the [Root.swearAtTheEarth] earth!"
@@ -2672,3 +2672,4 @@ l_english:
   diggy.415.d:0 "It is well known to our merchants that the slave trade in Escann is a profitable and sprawling business, but now, Cannorian slavers look to us to supply their endless need for cheap labour. We do have a sizeable portion of orcish slaves ourselves, so the question is: Are we willing to part with them?"
   diggy.415.a:0 "It does not matter to us where the orcs work their lives away"
   diggy.415.b:0 "They are ours and ours to keep"
+
