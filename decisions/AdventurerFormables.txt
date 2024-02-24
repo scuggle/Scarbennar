@@ -6,6 +6,7 @@ country_decisions = {
 		potential = {
 			has_reform = adventurer_reform
 			NOT = { tag = B02 }
+			NOT = { tag = X18 }
 			is_playing_custom_nation = no
 		}
 		allow = {
