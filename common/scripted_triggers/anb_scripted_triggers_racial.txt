@@ -575,6 +575,7 @@ ruler_is_elven = {
 			ruler_culture = wood_elf
 			ruler_culture = sea_elf
 			ruler_culture = sunrise_elf
+			ruler_culture = dark_moon_elf
 		}
 	}
 }
@@ -1373,6 +1374,7 @@ consort_is_elven = {
 			consort_culture = wood_elf
 			consort_culture = sea_elf
 			consort_culture = sunrise_elf
+			consort_culture = dark_moon_elf
 		}
 	}
 }
@@ -2149,6 +2151,7 @@ heir_is_elven = {
 			heir_culture = wood_elf
 			heir_culture = sea_elf
 			heir_culture = sunrise_elf
+			heir_culture = dark_moon_elf
 		}
 	}
 }
