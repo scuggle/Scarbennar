@@ -179,7 +179,9 @@ country_decisions = {
 			}
 			set_country_flag = formed_black_castanor_flag
 			clr_country_flag = knightly_order_adventurer
-			
+			country_event = {
+				id = eur_changes.3
+			}
 		}
 		ai_will_do = {
 			factor = 1
