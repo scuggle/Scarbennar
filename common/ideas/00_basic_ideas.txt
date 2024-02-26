@@ -741,7 +741,7 @@ exploration_ideas = { #Trustee #done
 	}
 	overseas_exploration = {
 		range = 0.5
-		native_assimilation = 0.5
+		embargo_efficiency = 0.1
 	}
 	land_of_opportunity = {
 		global_colonial_growth = 10
