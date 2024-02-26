@@ -990,7 +990,6 @@ country_event = {
 		NOT = { has_country_flag = locked_racial_administration }
 		NOT = { has_country_flag = dukedal_lost }
 		NOT = { has_country_flag = dinam_elutur_lost }
-		ai = yes
 	}
 	
 	immediate = {
