@@ -189,3 +189,33 @@ country_event = {
 			}
 	}
 }
+
+#Gelkalis is made an autonomous vassal
+country_event = {
+	id = eur_changes.5
+	title = eur_changes.5.t
+	desc = eur_changes.5.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = F26
+		ai = no
+	}
+
+	option = {
+		name = eur_changes.5.a
+		grant_independence = yes
+		F21 = {
+			create_subject = {
+				subject_type = autonomous_vassal
+				subject = F26
+			}
+		}
+	}
+}
