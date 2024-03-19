@@ -1,8 +1,10 @@
 
 # No previous file for Akaz Zorek
+owner = X28
+controller = X28
+add_core = X28
 culture = flamemarked_gnoll
-religion = xhazobkult
-capital = ""
+religion = infernal_court
 
 hre = no
 
@@ -10,14 +12,12 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-trade_goods = unknown
+trade_goods = tobacco
 
-native_size = 2
-native_ferocity = 7
-native_hostileness = 10
+capital = ""
 
 
-
+is_city = yes
 
 
 
