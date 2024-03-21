@@ -52,7 +52,6 @@ country_decisions = {
 	current_monstrous_level = {
 		potential = {
 			ai = no
-			has_country_modifier = monstrous_nation
 			has_country_flag = removing_monstrous
 		}
 		

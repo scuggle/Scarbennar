@@ -1228,7 +1228,7 @@ X28_ideas = { #This is the formable for the country, the starting counrty has Ko
 	X28_fireball = { #I cast fireball
 		shock_damage = 0.1
 	}
-	X28_infernal_suppresion = { #Draconic Rule
+	X28_infernal_suppresion = { #By fire be cleansed.
 		global_autonomy = -0.05
 	}
 }
