@@ -52,6 +52,7 @@ country_decisions = {
 	current_monstrous_level = {
 		potential = {
 			ai = no
+			has_country_modifier = monstrous_nation
 			has_country_flag = removing_monstrous
 		}
 		
@@ -67,9 +68,8 @@ country_decisions = {
 
 are_we_there_yet = {
 	potential = {
-		ai = no
 		has_country_modifier = monstrous_nation
-		has_country_flag = removing_monstrous
+		adm_tech = 9
 	}
 
 	allow = {
@@ -81,5 +81,9 @@ are_we_there_yet = {
 		add_dip_power = -100
 		add_mil_power = -100
 		subtract_variable = { monstrousPoints = 50 }
+	}
+
+	ai_will_do = {
+		factor = 0
 	}
 }

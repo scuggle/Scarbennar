@@ -1438,12 +1438,60 @@ setup_vision = {
 			
 		}		
 		
+		#Flamemarked Gnolls
+		else_if = {
+			limit = {
+					{ tag = X28 }
+				}
+			}
+			businor_region = {
+				discover_country = ROOT
+			}
+			4167 = {
+				discover_country = ROOT
+			}
+			4162 = {
+				discover_country = ROOT
+			}
+			6553 = {
+				discover_country = ROOT
+			}
+			east_dameshead_region = {
+				discover_country = ROOT
+			}
+			the_borders_region = {
+				discover_country = ROOT
+			}
+			daravans_folly_region = {
+				discover_country = ROOT
+			}
+			ourdia_region = {
+				discover_country = ROOT
+			}
+			sea_of_stone_area = {
+				discover_country = ROOT
+			}
+			sea_of_follies_area = {
+				discover_country = ROOT
+			}
+			damesneck_sea_area = {
+				discover_country = ROOT
+			}
+			1282 = {
+				discover_country = ROOT
+			}
+			1280 = {
+				discover_country = ROOT
+			}
+			1975 = {
+				discover_country = ROOT
+			}
+		}
+		
 		#Hill Gnolls
 		else_if = {
 			limit = {
-				OR = {
 					{ tag = A49 }
-					{ tag = X28 }
 				}
 			}
 			businor_region = {
