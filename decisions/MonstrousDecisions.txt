@@ -65,3 +65,22 @@ country_decisions = {
 		}
 	}
 }
+
+are_we_there_yet = {
+	potential = {
+		ai = no
+		has_country_modifier = monstrous_nation
+		has_country_flag = removing_monstrous
+	}
+
+	allow = {
+		always = yes
+	}
+
+	effect = {
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		subtract_variable = { monstrousPoints = 50 }
+	}
+}
