@@ -1189,3 +1189,46 @@ Z18_ideas = {
 		global_sailors_modifier = 0.15
 	}
 }
+
+#Folly Gnoll
+X28_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
+	start = {
+		fire_damage_received = -0.1
+		missionaries = 1
+	}
+
+	bonus = {
+		development_cost = -0.1	
+	}
+
+	trigger = {
+		OR = {
+			tag = X28
+		}	
+	}
+
+	free = yes
+
+	X28_infernal_army = { #Infernal court is stronk
+		discipline = 0.05
+	}
+	X28_intimidation = { #We can intimidate trader
+		global_trade_power = 0.15
+	}
+	X28_fiery_ships = { #You can't simply burn our fleet
+		ship_durability = 0.1
+		prestige = 0.5
+	}
+	X28_infernal_court = { #We're a hub for Infernal worshipers
+		same_religion_advisor_cost = -0.2
+	}
+	X28_endless_army = { #We come from the depths of Hell
+		land_forcelimit_modifier = 0.1
+	}
+	X28_fireball = { #I cast fireball
+		shock_damage = 0.1
+	}
+	X28_infernal_suppresion = { #Draconic Rule
+		global_autonomy = -0.05
+	}
+}
