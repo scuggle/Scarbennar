@@ -384,4 +384,47 @@ country_decisions = {
 		}
 	}
 
+	orc_pity_mana = {
+		major = yes
+		potential = {
+			ai = no
+			OR = {
+				primary_culture = gray_orc
+				primary_culture = green_orc
+				primary_culture = brown_orc
+				primary_culture = black_orc
+				culture_group = harpy
+				culture_group = troll
+			}
+		}
+
+		allow = {
+			ai = no
+			NOT = {
+				adm_tech = 3
+			}
+			NOT = {
+				has_country_flag = has_pity_mana
+			}
+			OR = {
+				primary_culture = gray_orc
+				primary_culture = green_orc
+				primary_culture = brown_orc
+				primary_culture = black_orc
+				culture_group = harpy
+				culture_group = troll
+			}
+		}
+
+		effect = {
+			add_adm_power = 300
+			add_dip_power = 300
+			add_mil_power = 300
+			set_country_flag = has_pity_mana
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }	
