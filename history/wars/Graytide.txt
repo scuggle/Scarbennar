@@ -13,6 +13,7 @@ war_goal = {
 	add_defender = Z48
 	add_defender = Z49
 	add_defender = Z15
+	add_defender = Z19 #Broken Jaw
 }
 #Gray Orcs win
 1444.11.1 = {
@@ -22,4 +23,5 @@ war_goal = {
 	rem_defender = Z48
 	rem_defender = Z49
 	rem_defender = Z15
+	rem_defender = Z19 #Broken Jaw
 }
