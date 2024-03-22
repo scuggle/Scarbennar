@@ -427,4 +427,97 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
+	feudal_escann_is_back = {
+		major = yes
+		potential = {
+			ai = no
+			OR = {
+				tag = X19 #Aigerthil
+				tag = B39 #Wyvernheart
+				tag = B40 #Alenor
+				tag = B52 #Anbenland
+				tag = B34 #Luciande
+				tag = B35 #Ancardia
+				tag = B38 #Elikhand
+				tag = B37 #Rogieria
+				tag = B50 #Newshire
+				tag = B53 #Núrcestir
+				tag = Z37 #Covenblad
+				tag = B49 #Araionn
+				tag = B48 #Ravenmarch
+				tag = B47 #Stálbor
+				tag = B51 #Estaire
+				tag = B54 #Esthil
+				tag = Z36 #Hammerhome
+				tag = Z35 #Rósande
+			}
+			NOT = {
+				has_country_flag = clicked_feudal_escann_is_back
+			}
+		}
+
+		allow = {
+			ai = no
+			OR = {
+				tag = X19 #Aigerthil
+				tag = B39 #Wyvernheart
+				tag = B40 #Alenor
+				tag = B52 #Anbenland
+				tag = B34 #Luciande
+				tag = B35 #Ancardia
+				tag = B38 #Elikhand
+				tag = B37 #Rogieria
+				tag = B50 #Newshire
+				tag = B53 #Núrcestir
+				tag = Z37 #Covenblad
+				tag = B49 #Araionn
+				tag = B48 #Ravenmarch
+				tag = B47 #Stálbor
+				tag = B51 #Estaire
+				tag = B54 #Esthil
+				tag = Z36 #Hammerhome
+				tag = Z35 #Rósande
+			}
+			NOT = {
+				has_country_flag = clicked_feudal_escann_is_back
+			}
+		}
+
+		effect = {
+			if = { #Luciande
+				limit = { tag = B34 }
+				hidden_effect = {
+					set_country_flag = has_vampires_estate
+					set_country_flag = recent_masquerade_disaster
+					country_event = { id = vampires_estate_events.1000 days = 30 }
+				}
+			}
+			if = {
+				limit = { has_country_flag = B34_lucian }
+				change_government = monarchy
+				hidden_effect = {
+					add_government_reform = autocracy_reform
+				}
+				country_event = { id = flavor_luciande.37 days = 1 }
+			}
+			else_if = {
+				limit = { tag = B54 } #esthil
+				country_event = { id = flavor_esthil.7 }
+			}
+			else = { country_event = { id = marcher.1 days = 1 } }
+#			country_event = { id = adventurer.2 days = 10 }
+			hidden_effect = {
+				country_event = { #new culture event, 10 years after their debuff runs out
+					id = marcher.2
+					days = 25550
+				}
+			}
+			set_country_flag = clicked_feudal_escann_is_back
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }	

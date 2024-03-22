@@ -8,11 +8,11 @@ country_decisions = {
 			NOT = { has_country_flag = formed_corintar_flag }
 		}
 		allow = {
-			has_reform = found_our_nation
+			#has_reform = found_our_nation
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			#num_of_cities = 5
-			adm_tech = 7
+			#adm_tech = 7
 		}
 		effect = {
 			set_country_flag = formed_corintar_flag
@@ -29,7 +29,7 @@ country_decisions = {
 			set_country_flag = no_formable_culture_shift
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		ai_importance = 400
 	}

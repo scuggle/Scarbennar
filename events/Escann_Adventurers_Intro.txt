@@ -15,7 +15,10 @@ country_event = {
 		NOT = {
 			is_year = 1445
 		}
-		tag = B19
+		OR = {
+			tag = B19
+			tag = Z37 #Covenblad
+		}
 	}
 	
 	option = {
@@ -39,7 +42,10 @@ country_event = {
 		NOT = {
 			is_year = 1445
 		}
-		tag = B09
+		OR = {
+			tag = B09
+			tag = B49 #Araionn
+		}
 	}
 	
 	option = {
