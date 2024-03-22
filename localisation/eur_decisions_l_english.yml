@@ -62,3 +62,6 @@
  set_generic_mt_desc: "This decision is PERMANENT. Forming another country will NOT change your MT. Choose wisely."
  invest_splendor_title: "Invest Splendor"
  invest_splendor_desc: "Use 800 splendor to increase your monarch power."
+
+ are_we_there_yet_title: "Speed up Demonsterization §T (-50)§"
+ are_we_there_yet_desc: "This takes way too long."

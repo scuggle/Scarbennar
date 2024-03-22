@@ -342,4 +342,46 @@ country_decisions = {
 			add_splendor = -800
 		}
 	}
+
+	are_we_there_yet = {
+		major = yes	
+		potential = {
+			ai = no
+			has_country_flag = removing_monstrous
+		}
+
+		allow = {
+			adm_tech = 9
+			has_country_modifier = monstrous_nation
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			NOT = {
+				check_variable = {
+					which = sped_up_demonsterization_count
+					value = 2
+				}
+			}
+		}
+
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			decrease_monstrous_10 = yes
+			decrease_monstrous_10 = yes
+			decrease_monstrous_10 = yes
+			decrease_monstrous_10 = yes
+			decrease_monstrous_10 = yes
+			change_variable = {
+				which = sped_up_demonsterization_count
+				value = 1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 }	
