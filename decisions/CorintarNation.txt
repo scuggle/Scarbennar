@@ -16,13 +16,13 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = formed_corintar_flag
-			swap_non_generic_missions = yes
+			#swap_non_generic_missions = yes
 			custom_tooltip = corintar_nation_settling_advice_tt
-			add_prestige = 25
-			adventurer_legacy_effect = yes
+			#add_prestige = 25
+			#adventurer_legacy_effect = yes
 			country_event = { id = flavor_corintar.0 days = 1 }
 			
-			hidden_effect = {
+			#hidden_effect = {
 				clr_country_flag = knightly_order_adventurer
 			}
 			set_country_flag = adventurer_derived_government

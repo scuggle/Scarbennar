@@ -99,8 +99,8 @@ country_event = {
 			limit = { NOT = { government = theocracy } }
 			change_government = theocracy
 		}
-		add_government_reform = monastic_order_reform
-		hidden_effect = { lose_reforms = 10 add_government_reform = monastic_order_reform }
+		#add_government_reform = monastic_order_reform
+		#hidden_effect = { lose_reforms = 10 add_government_reform = monastic_order_reform }
 	}	
 	
 	#Optional
@@ -139,7 +139,7 @@ country_event = {
 		name = "flavor_corintar.1.a"
 		ai_chance = { factor = 40 }	
 		define_heir = {
-		dynasty = "síl Corin"
+		dynasty = "sï¿½l Corin"
 			age = 16
 			male = yes
 			adm = 1

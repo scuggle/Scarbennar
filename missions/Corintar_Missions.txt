@@ -6,7 +6,7 @@ corintar_1_missions = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		has_country_flag = formed_corintar_flag
+		#has_country_flag = formed_corintar_flag
 	}
 	
 	corintar_the_fields_of_burnoll = {
