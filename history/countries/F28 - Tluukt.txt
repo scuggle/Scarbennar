@@ -8,6 +8,8 @@ technology_group = tech_gnollish
 
 capital = 687
 
+historical_friend = X28 #Konnolzerv
+
 1413.2.15 = {
 	monarch = {
 		name = "Tluukt"

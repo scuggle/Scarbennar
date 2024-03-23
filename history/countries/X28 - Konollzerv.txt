@@ -10,6 +10,7 @@ technology_group = tech_gnollish
 capital = 448
 
 historical_rival = A59 #Corvuria
+historical_rival = A60 #Asheniande
 historical_friend = F28 #Tluukt
 historical_friend = A49 #Xanzerbxis
 

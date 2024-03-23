@@ -9,11 +9,11 @@ setup_vision = {
 				capital_scope = {
 					continent = europe
 				}
-				NOT = {
-					capital_scope = {
-						superregion = deepwoods_superregion
-					}
-				}
+				#NOT = {
+				#	capital_scope = {
+				#		superregion = deepwoods_superregion
+				#	}
+				#}
 				NOT = {
 					is_adventurer = yes
 					monstrous_culture = yes
@@ -1119,23 +1119,29 @@ setup_vision = {
 					capital_scope = {
 						region = forlorn_vale_region
 					}
-				}
-				NOT = {
 					capital_scope = {
-						region = dostanor_region
+						superregion = gerudia_superregion
 					}
-				}
-				NOT = {
 					capital_scope = {
-						region = ourdia_region
-					}
+						superregion = western_cannor_superregion
+					}										
 				}
-				NOT = {
-					capital_scope = {
-						region = daravans_folly_region
-					}
-				}
-				NOT = { tag = A32 tag = A77 } # Hide for these guys as well
+				#NOT = {
+				#	capital_scope = {
+				#		region = dostanor_region
+				#	}
+				#}
+				#NOT = {
+				#	capital_scope = {
+				#		region = ourdia_region
+				#	}
+				#}
+				#NOT = {
+				#	capital_scope = {
+				#		region = daravans_folly_region
+				#	}
+				#}
+				#NOT = { tag = A32 tag = A77 } # Hide for these guys as well
 				# NOT = {
 					# capital_scope = {
 						# continent = serpentspine

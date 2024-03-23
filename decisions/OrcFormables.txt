@@ -52,7 +52,7 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			add_prestige = 25
-			orc_legacy_effect = yes
+			#orc_legacy_effect = yes
 			set_country_flag = orc_nation_formed
 			clr_country_flag = knightly_order_adventurer
 			country_event = { id = orcform.1 days = 1 }
@@ -132,7 +132,7 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			add_prestige = 25
-			orc_legacy_effect = yes
+			#orc_legacy_effect = yes
 			set_country_flag = orc_nation_formed
 			clr_country_flag = knightly_order_adventurer
 			country_event = { id = orcform.1 days = 1 }
@@ -206,7 +206,7 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			add_prestige = 25
-			orc_legacy_effect = yes
+			#orc_legacy_effect = yes
 			set_country_flag = orc_nation_formed
 			clr_country_flag = knightly_order_adventurer
 			country_event = { id = orcform.1 days = 1 }
@@ -284,7 +284,7 @@ country_decisions = {
 			swap_non_generic_missions = yes
 
 			add_prestige = 25
-			orc_legacy_effect = yes
+			#orc_legacy_effect = yes
 			set_country_flag = orc_nation_formed
 			clr_country_flag = knightly_order_adventurer
 			country_event = { id = orcform.1 days = 1 }

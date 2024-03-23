@@ -43,7 +43,7 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			NOT = { exists = X13 }
-			mission_completed = goblin_new_nation
+			#mission_completed = goblin_new_nation
 			owns_core_province = 831	#South Castanoth
 			num_of_owned_provinces_with = {
 				value = 10

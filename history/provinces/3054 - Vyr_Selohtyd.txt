@@ -1,6 +1,12 @@
 
-culture = wood_elf
-religion = fey_court
+owner = I38
+controller = I38
+add_core = I38
+culture = green_orc
+religion = great_dookan
+
+is_city = yes
+
 hre = no
 trade_goods = fur
 base_tax = 1
