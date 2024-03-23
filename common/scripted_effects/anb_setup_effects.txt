@@ -15,7 +15,7 @@ setup_vision = {
 				#	}
 				#}
 				NOT = {
-					is_adventurer = yes
+					#is_adventurer = yes
 					monstrous_culture = yes
 				}
 			}
