@@ -108,3 +108,7 @@ cot_ruin_min_small = {
 cot_hobgob_min_small = {
 	trade_goods_size = 0.05
 }
+
+eur_religious_unity_boost = {
+	religious_unity = 0.75
+}

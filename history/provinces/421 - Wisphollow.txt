@@ -5,7 +5,7 @@ owner = X28
 controller = X28
 add_core = X28
 culture = flamemarked_gnoll
-religion = xhazobkult
+religion = regent_court
 
 hre = no
 

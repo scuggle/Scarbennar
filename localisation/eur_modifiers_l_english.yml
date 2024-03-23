@@ -104,3 +104,6 @@
  eur_changes.5.t:0 "Gelkalis Playable?"
  eur_changes.5.d:0 "Gelkalis is cope, so they get to be an autonomous vassal at least."
  eur_changes.5.a:0 "Got it"
+
+eur_religious_unity_boost: "Religious Unity Boost."
+eur_religious_unity_boost.desc: "+75% Religious Unity."

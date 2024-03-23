@@ -25,7 +25,7 @@ historical_friend = A49 #Xanzerbxis
 	}
     add_ruler_personality = careful_personality
 	add_country_modifier = {
-		modifier = { religious_unity = 0.75 }
+		name = eur_religious_unity_boost
 		duration = 5475
 	}
 }
