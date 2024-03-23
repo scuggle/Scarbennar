@@ -4,7 +4,7 @@ owner = X28
 controller = X28
 add_core = X28
 culture = flamemarked_gnoll
-religion = regent_court
+religion = xhazobkult
 
 hre = no
 
@@ -20,7 +20,7 @@ is_city = yes
 
 add_permanent_province_modifier = {
 	name = religious_zeal_at_conv
-	duration = 36500
+	duration = 3650
 }
 
 

@@ -20,7 +20,7 @@ is_city = yes
 
 add_permanent_province_modifier = {
 	name = religious_zeal_at_conv
-	duration = 36500
+	duration = 3650
 }
 
 
