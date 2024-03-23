@@ -24,4 +24,8 @@ historical_friend = A49 #Xanzerbxis
 		mil = 2
 	}
     add_ruler_personality = careful_personality
+	add_country_modifier = {
+		religious_unity = 0.75
+		duration = 9.525
+	}
 }
