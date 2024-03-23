@@ -110,5 +110,6 @@ cot_hobgob_min_small = {
 }
 
 eur_religious_unity_boost = {
-	religious_unity = 0.75
+	religious_unity = 0.5
+	tolerance_heathen = 2
 }

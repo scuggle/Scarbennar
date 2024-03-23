@@ -651,7 +651,7 @@ corintar_2_missions = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		has_country_flag = formed_corintar_flag
+		#has_country_flag = formed_corintar_flag
 	}
 
 	corintar_grannvale_recruits = {
@@ -1037,7 +1037,7 @@ corintar_3_missions = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		has_country_flag = formed_corintar_flag
+		#has_country_flag = formed_corintar_flag
 	}
 
 	corintar_a_base_of_operations = {
@@ -1943,7 +1943,7 @@ corintar_4_missions = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		has_country_flag = formed_corintar_flag
+		#has_country_flag = formed_corintar_flag
 	}
 
 	corintar_united_under_corin = {
@@ -2562,7 +2562,7 @@ corintar_5_missions = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		has_country_flag = formed_corintar_flag
+		#has_country_flag = formed_corintar_flag
 	}
 	
 	corintar_lothanes_legacy = {
