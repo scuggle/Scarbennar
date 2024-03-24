@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 # No previous file for Concho
 
@@ -17,4 +18,23 @@ trade_goods = iron
 
 native_size = 41
 native_ferocity = 8
+=======
+
+# No previous file for Concho
+
+culture = green_orc
+religion = great_dookan
+capital = ""
+tribal_owner = B25
+hre = no
+
+base_tax = 2
+base_production = 3
+base_manpower = 1
+
+trade_goods = unknown
+
+native_size = 41
+native_ferocity = 8
+>>>>>>> Stashed changes
 native_hostileness = 9

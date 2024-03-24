@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 # No previous file for Ilheus
 owner = B50
@@ -22,3 +23,27 @@ is_city = yes
 native_size = 0
 native_ferocity = 0
 native_hostileness = 0
+=======
+
+# No previous file for Ilheus
+culture = green_orc
+religion = great_dookan
+
+hre = no
+
+base_tax = 3
+base_production = 3
+base_manpower = 1
+
+trade_goods = unknown
+center_of_trade = 1
+tribal_owner = B22
+
+capital = ""
+
+is_city = yes
+
+native_size = 34
+native_ferocity = 8
+native_hostileness = 8
+>>>>>>> Stashed changes

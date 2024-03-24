@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 # No previous file for Quijos
 owner = B54
@@ -16,4 +17,22 @@ trade_goods = fish
 
 native_size = 53
 native_ferocity = 6
+=======
+
+# No previous file for Quijos
+culture = common_goblin
+religion = goblinic_shamanism
+capital = ""
+tribal_owner = B44
+hre = no
+
+base_tax = 3
+base_production = 4
+base_manpower = 2
+
+trade_goods = fish
+
+native_size = 53
+native_ferocity = 6
+>>>>>>> Stashed changes
 native_hostileness = 3
