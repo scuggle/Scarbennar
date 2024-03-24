@@ -604,6 +604,7 @@ noble_elite_reform = {
 		NOT = { has_reform = obsidian_council_reform }
 		NOT = { tag = Y15 }
 		NOT = { culture_group = dwarven }
+		NOT = { culture_group = goblin }
 	}
 	modifiers = {
 		army_tradition = 0.5
@@ -2231,15 +2232,11 @@ technocracy_republic_reform = {
 	}
 	
 	modifiers = {
-		advisor_cost = -0.20
+		advisor_cost = -0.15
 		advisor_pool = 1
 		female_advisor_chance = 0.33
-		technology_cost = -0.1
-		allowed_rajput_fraction = 0.2 #artificers
-		max_absolutism = -20
+		allowed_rajput_fraction = 0.1 #artificers
 		administrative_efficiency = -0.05 #worse at expanding
-		
-		
 		artificers_influence_modifier = 0.1
 	}
 	
@@ -2247,7 +2244,6 @@ technocracy_republic_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		is_technocracy = yes
-		disables_regular_estates = yes
 	}
 	effect = {
 		add_country_modifier = {
@@ -3634,6 +3630,7 @@ religious_values_reform = {
 		NOT = { 
 			has_reform = northern_league_magnates 
 			culture_group = dwarven
+			culture_group = goblin
 		}
 	}
 	modifiers = {
@@ -3930,6 +3927,34 @@ elected_clanspeakers_reform = {
 	}
 }
 
+aelantir_branch_reform = {
+	icon = "aelantir_branch"
+	allow_normal_conversion = yes
+	potential = {
+		OR = { 
+		tag = G97
+		tag = G98
+		}
+		is_revolutionary = no
+	}
+	trigger = {
+		OR = {
+		tag = G97
+		tag = G98
+		}
+	}
+	modifiers = {
+		candidate_random_bonus = 1
+		max_absolutism = 10
+	}
+	custom_attributes = {
+		metropolis_election = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 #Frequency of Elections / Consolidation of Power
 
 frequent_elections_reform = {
@@ -4002,6 +4027,7 @@ lottery_reform = {
 			has_government_attribute = is_pirate_republic_reform
 			
 			#anbennar
+			culture_group = goblin
 			has_government_attribute = anb_special_elections
 			has_reform = obsidian_council_reform
 			has_reform = malacnar_republic_reform
@@ -4561,6 +4587,7 @@ provincial_governments_reform = {
 	
 	potential = {
 		NOT = { has_reform = golden_republic_reform }
+		NOT = { culture_group = goblin }
 	}
 	
 	modifiers = {
@@ -5500,6 +5527,7 @@ moral_principle_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { # Anbennar
+			culture_group = goblin
 			has_reform = northern_league_magnates
 		}
 	}
@@ -7856,7 +7884,7 @@ brelar_ynnic_dynastic_republic = {
 }
 
 breluslad_north_confluence = {
-	icon = parliamentary_reform
+	icon = "parliamentary_reform"
 	allow_normal_conversion = no
 	potential = {
 		has_reform = breluslad_north_confluence
@@ -7907,6 +7935,8 @@ medasi_reform = {
 		locked_government_type = yes
 		anb_special_elections = yes
 		cannot_become_dictatorship = yes
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
 	}
 }
 
@@ -8006,5 +8036,57 @@ haraf_kinah_conclave = {
 	modifiers = {
 		all_estate_loyalty_equilibrium = 0.1
 		max_absolutism = 10
+	}
+}
+crathanori_assembly = {
+	icon = "politician"
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = -40
+		merchants = 1
+		republican_tradition = 0.15
+		trade_efficiency = 0.1	
+		advisor_cost = -0.10	
+	}
+	valid_for_nation_designer = no
+	nation_designer_cost = 40
+	legacy_equivalent = merchant_republic
+	potential = {
+		AND = {
+			tag = U17
+			mission_completed = crathanor_embrace_the_two_principles
+		}
+	}
+	boost_income = yes
+	duration = 4
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		is_merchant_republic = yes
+		elections_increase_factions_influence = yes
 	}
 }

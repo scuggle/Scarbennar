@@ -1,3 +1,4 @@
+
 # Do not change tags in here without changing every other reference to them.
 # If adding new dieties, make sure they are uniquely named.
 
@@ -40,6 +41,35 @@ castellos = {
 			factor = 0.25
 			has_global_flag = "castellos_is_dead"
 		}
+	}
+}
+
+lightfather = {
+	legitimacy = 1
+	republican_tradition = 0.3
+	devotion = 1
+	horde_unity = 1
+	country_admin_power = 1
+	
+	potential = {
+        OR = {
+            religion = cannorian_pantheon
+            religion = regent_court
+        }
+        has_global_flag = "castellos_is_dead_pantheonic_council"
+		AND = {
+			OR = {
+				tag = U17
+				was_tag = U17
+			}
+			has_global_flag  = crathanor_lightfather
+		}
+	}
+
+	sprite = 1
+	
+	ai_will_do = {
+		factor = 100
 	}
 }
 
@@ -323,7 +353,7 @@ munas_moonsinger = {
 munas_upgraded = { #ex munas_moonsinger_ibevar
 	colonist_placement_chance = 0.1
 	leader_naval_manuever = 1
-	trade_efficiency = 0.1
+	country_diplomatic_power = 1
 	
 	potential = {
 		OR = {
@@ -715,7 +745,7 @@ falah = {
 # A falah variant for the freemarches
 falah_upgraded = {
 	movement_speed = 0.1
-	army_tradition = 0.5
+	discipline = 0.025
 	infantry_power = 0.1
 	
 	potential = {

@@ -48,6 +48,8 @@ historical_friend = R07
 		name = raj_closed_senapti_ranks
 		duration = -1
 	}
+	set_ruler_flag = is_indranayar
+
 	heir = {
 		name = "Indrapalar"
 		monarch_name = "Indrapalar I"

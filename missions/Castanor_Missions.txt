@@ -1,3 +1,4 @@
+# 
 # Why are there so many different blocks and even copies of missions? Because dynamic missions are cancer and I never want to do them again
 # add_nationalism is broken and only seems to add/remove unrest from its own pool (not the amount added when you conquer a province) - remind me to delete the add_unrest = -3 if Paradox ever fixes add_nationalism
 # the scripted trigger 'culture_is_human = yes' does NOT seem work when used in any trigger IN AN EFFECT BLOCK, it still works IN THE TRIGGER BLOCK, don't change unless this is fixed
@@ -5708,6 +5709,9 @@ castanor_3_missions_divenori = {
 					add_accepted_culture = hapremiti
 					add_accepted_culture = irsmahapan
 					add_accepted_culture = shasouran
+					add_accepted_culture = korosheshi
+					add_accepted_culture = tijarikheti
+					add_accepted_culture = horakheti
 					add_accepted_culture = desha
 					add_accepted_culture = far_akasi
 					add_accepted_culture = khasani
@@ -5716,6 +5720,9 @@ castanor_3_missions_divenori = {
 				add_accepted_culture = hapremiti
 				add_accepted_culture = irsmahapan
 				add_accepted_culture = shasouran
+				add_accepted_culture = korosheshi
+				add_accepted_culture = tijarikheti
+				add_accepted_culture = horakheti
 				add_accepted_culture = desha
 				add_accepted_culture = far_akasi
 				add_accepted_culture = khasani
@@ -7141,7 +7148,7 @@ castanor_4_missions = {
 				}
 				else = {
 					random_subject_country = {
-						limit = { vertesk_area = { owned_by = THIS } }
+						limit = { vertesk_area = { owned_by = PREV } }
 						release_with_religion_and_culture = { tag = A23 religion = ROOT culture = vertesker }
 					}
 				}

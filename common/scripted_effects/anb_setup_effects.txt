@@ -1496,10 +1496,7 @@ setup_vision = {
 		
 		#Hill Gnolls
 		else_if = {
-			limit = {
-					{ tag = A49 }
-				}
-			}
+			limit = { tag = A49 }
 			businor_region = {
 				discover_country = ROOT
 			}

@@ -1,9 +1,9 @@
 
 # No previous file for Banten
-# owner = R02
-# controller = R02
-# add_core = R02
-# add_core = S75
+#owner = Y53
+#controller = Y53
+#add_core = Y53
+#add_core = S75
 
 owner = X21
 controller = X21
