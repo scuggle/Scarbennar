@@ -1,9 +1,11 @@
 
 # No previous file for Jauja
+owner = B29
+controller = B29
+add_core = B29
 culture = green_orc
 religion = great_dookan
 capital = ""
-tribal_owner = B29
 hre = no
 
 base_tax = 1
