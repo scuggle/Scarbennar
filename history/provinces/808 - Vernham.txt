@@ -1,9 +1,9 @@
 
 # No previous file for Cuzco
 
-owner = B13
-controller = B13
-add_core = B13
+owner = B47
+controller = B47
+add_core = B47
 culture = busilari
 religion = regent_court
 
@@ -17,7 +17,7 @@ trade_goods = grain
 center_of_trade = 2
 
 capital = ""
-tribal_owner = B13
+
 
 is_city = yes
 

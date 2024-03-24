@@ -1,7 +1,8 @@
 
 # No previous file for Mexico
-culture = green_orc
-religion = great_dookan
+owner = B25
+controller = B25
+add_core = B25
 capital = ""
 tribal_owner = B25
 hre = no

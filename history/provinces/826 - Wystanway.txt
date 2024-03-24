@@ -1,9 +1,10 @@
 
 # No previous file for Choco
-
-tribal_owner = B02 
-culture = green_orc
-religion = great_dookan
+owner = B02
+controller = B02
+add_core = B02
+culture = corintari
+religion = regent_court
 
 hre = no
 

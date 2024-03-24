@@ -1,8 +1,8 @@
 
 #802
-owner = B14
-controller = B14
-add_core = B14
+owner = B48
+controller = B48
+add_core = B48
 culture = corvurian
 religion = regent_court
 hre = no
