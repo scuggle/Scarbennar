@@ -1,8 +1,8 @@
 
 # No previous file for Crato
-owner = B03
-controller = B03
-add_core = B03
+owner = B40
+controller = B40
+add_core = B40
 culture = gawedi
 religion = regent_court
 

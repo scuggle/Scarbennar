@@ -1,10 +1,12 @@
 
 # No previous file for Hotan
-
+owner = B45
+controller = B45
+add_core = B45
 culture = common_goblin
 religion = goblinic_shamanism
 capital = ""
-trade_goods = fur
+trade_goods = gems #fur
 tribal_owner = B45
 hre = no
 

@@ -1,9 +1,12 @@
 
 # No previous file for Gerudswatch
+owner = B27
+controller = B27
+add_core = B27
 culture = green_orc
 religion = great_dookan
 capital = ""
-trade_goods = unknown
+trade_goods = fur
 tribal_owner = B27
 hre = no
 

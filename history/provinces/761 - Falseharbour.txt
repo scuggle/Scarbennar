@@ -1,7 +1,8 @@
 
 # No previous file for Espirito Santo
-culture = green_orc
-religion = great_dookan
+owner = B22
+controller = B22
+add_core = B22
 capital = ""
 tribal_owner = B22
 hre = no

@@ -1,7 +1,10 @@
 
 # No previous file for Cicigar
-culture = green_orc
-religion = great_dookan
+owner = B45
+controller = B45
+add_core = B45
+culture = common_goblin
+religion = goblinic_shamanism
 capital = ""
 trade_goods = livestock
 tribal_owner = B45

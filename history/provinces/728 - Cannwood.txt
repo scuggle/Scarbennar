@@ -1,9 +1,11 @@
 
 # No previous file for Tuwan
-culture = green_orc
-religion = great_dookan
+owner = B40
+controller = B40
+add_core = B40
+culture = gawedi
+religion = regent_court
 capital = ""
-tribal_owner = B22
 hre = no
 
 base_tax = 1

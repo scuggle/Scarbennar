@@ -1,9 +1,9 @@
 
 # No previous file for Lothian
 
-owner = B16
-controller = B16
-add_core = B16
+owner = B52
+controller = B52
+add_core = B52
 culture = anbenncoster
 religion = regent_court
 
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-trade_goods = unknown
+trade_goods = fur
 
 capital = ""
 
