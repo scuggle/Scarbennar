@@ -1,11 +1,13 @@
 
 # No previous file for Guachichil
-
-culture = green_orc
-religion = great_dookan
+owner = B42
+controller = B42
+add_core = B42
+culture = forest_goblin
+religion = goblinic_shamanism
 capital = ""
 tribal_owner = B42
-trade_goods = unknown
+trade_goods = grain
 
 hre = no
 

@@ -1,9 +1,9 @@
 
 # No previous file for Concepcion
 
-owner = B06
-controller = B06
-add_core = B06
+owner = B35
+controller = B35
+add_core = B35
 culture = west_damerian
 religion = regent_court
 
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-trade_goods = unknown
+trade_goods = livestock
 
 capital = ""
 

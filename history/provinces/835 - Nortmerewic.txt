@@ -1,9 +1,9 @@
 
 # No previous file for Panama
 
-owner = B05
-controller = B05
-add_core = B05
+owner = B53
+controller = B53
+add_core = B53
 culture = east_damerian
 religion = regent_court
 

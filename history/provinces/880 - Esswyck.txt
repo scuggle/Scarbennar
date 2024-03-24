@@ -1,5 +1,8 @@
 
 # No previous file for Pueblo
+owner = B21
+controller = B21
+add_core = B21
 culture = green_orc
 religion = great_dookan
 capital = ""
@@ -10,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 
-trade_goods = unknown
+trade_goods = iron
 center_of_trade = 2
 
 native_size = 86
