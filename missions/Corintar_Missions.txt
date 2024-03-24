@@ -4,9 +4,8 @@ corintar_1_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		#has_country_flag = formed_corintar_flag
+		has_country_flag = formed_corintar_flag
 	}
 	
 	corintar_the_fields_of_burnoll = {
@@ -649,9 +648,8 @@ corintar_2_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		#has_country_flag = formed_corintar_flag
+		has_country_flag = formed_corintar_flag
 	}
 
 	corintar_grannvale_recruits = {
@@ -1035,9 +1033,8 @@ corintar_3_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		#has_country_flag = formed_corintar_flag
+		has_country_flag = formed_corintar_flag
 	}
 
 	corintar_a_base_of_operations = {
@@ -1266,7 +1263,7 @@ corintar_3_missions = {
 			if = {
 				limit = { has_dlc = "Common Sense" }
 				OR = {
-					NOT = { church_power < 150 }
+					NOT = { karma = 0 }
 					at_war_with_religious_enemy = yes
 				}
 			}
@@ -1280,7 +1277,7 @@ corintar_3_missions = {
 			add_devotion = 10
 			if = {
 				limit = { has_dlc = "Common Sense" }
-				add_church_power = -10
+				add_karma = -10
 			}
 			add_country_modifier = {
 				name = corintar_rabid_recruits
@@ -1444,16 +1441,15 @@ corintar_3_missions = {
 					NOT = { current_age = age_of_absolutism }
 					NOT = { current_age = age_of_revolutions }
 				}
-				church_power = 200
+				NOT = { karma = -90 }
 			}
 			else_if = {
 				limit = { has_dlc = "Common Sense" }
-				church_power = 200
+				NOT = { karma = -33 }
 			}
 		}
 		
 		effect = {
-			add_church_power = -200
 			add_stability = -1
 			custom_tooltip = corintar_remove_chapters_tt
 			hidden_effect = {
@@ -1470,9 +1466,8 @@ corintar_3_missions = {
 					every_neighbor_country = {
 						limit = {
 							religion = corinite
-							church_power = 200
+							karma = -33
 						}
-						add_church_power = -200
 						country_event = { 
 							id = flavor_corintar.10
 							days = 30
@@ -1742,7 +1737,8 @@ corintar_3_missions = {
 			religion = corinite
 			if = {
 				limit = { has_dlc = "Common Sense" }
-				church_power = 200
+				karma = -33
+				NOT = { karma = 33 }
 			}
 			OR = {
 				any_known_country = {
@@ -1779,7 +1775,6 @@ corintar_3_missions = {
 		}
 		
 		effect = {
-			add_church_power = -200
 			add_country_modifier = {
 				name = corintar_theological_debate
 				duration = 3650
@@ -1802,7 +1797,8 @@ corintar_3_missions = {
 			religion = corinite
 			if = {
 				limit = { has_dlc = "Common Sense" }
-				church_power = 200
+				karma = -10
+				NOT = { karma = 10 }
 			}
 			NOT = { has_country_modifier = corintar_agents_in_training }
 			NOT = { has_country_modifier = corintar_theological_debate }
@@ -1810,7 +1806,6 @@ corintar_3_missions = {
 		}
 		
 		effect = {
-			add_church_power = -200
 			add_stability = 1
 			if = {
 				limit = {
@@ -1920,9 +1915,8 @@ corintar_4_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		#has_country_flag = formed_corintar_flag
+		has_country_flag = formed_corintar_flag
 	}
 
 	corintar_united_under_corin = {
@@ -2532,9 +2526,8 @@ corintar_5_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B02 # Corintar
-		#has_country_flag = formed_corintar_flag
+		has_country_flag = formed_corintar_flag
 	}
 	
 	corintar_lothanes_legacy = {

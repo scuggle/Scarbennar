@@ -1737,11 +1737,11 @@ rogieria_slot_3 = {
 		
 		trigger = {
 			religion = corinite
-			church_power = 200
+			karma = -33
+			NOT = { karma = 33 }
 		}
 		
 		effect = {
-			add_church_power = -200
 			add_country_modifier = {
 				name = rogieria_piety_lothane
 				duration = 9125

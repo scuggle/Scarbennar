@@ -7738,7 +7738,7 @@ castonath_patricians_crags_stagnation = {
 castanor_corin_in_pantheonway = {
 	monthly_fervor_increase = 1
 	devotion = 1
-	monthly_church_power = 0.1
+	monthly_karma = 0.1
 }
 castanor_corin_refused_from_pantheonway = {
 	monthly_fervor_increase = -0.5
@@ -14756,19 +14756,19 @@ corintar_offering_guidance = {
 }
 
 corintar_acc_hk = {
-	monthly_church_power = -0.1
+	monthly_karma = -0.1
 }
 
 corintar_rej_hk = {
-	monthly_church_power = 0.1
+	monthly_karma = 0.1
 }
 
 corintar_acc_lk = {
-	monthly_church_power = 0.1
+	monthly_karma = 0.1
 }
 
 corintar_rej_lk = {
-	monthly_church_power = -0.1
+	monthly_karma = -0.1
 }
 
 corintar_balance_failed = {

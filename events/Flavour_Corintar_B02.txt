@@ -99,8 +99,8 @@ country_event = {
 			limit = { NOT = { government = theocracy } }
 			change_government = theocracy
 		}
-		#add_government_reform = monastic_order_reform
-		#hidden_effect = { lose_reforms = 10 add_government_reform = monastic_order_reform }
+		add_government_reform = monastic_order_reform
+		hidden_effect = { lose_reforms = 10 add_government_reform = monastic_order_reform }
 	}	
 	
 	#Optional
@@ -139,7 +139,7 @@ country_event = {
 		name = "flavor_corintar.1.a"
 		ai_chance = { factor = 40 }	
 		define_heir = {
-		dynasty = "sï¿½l Corin"
+		dynasty = "síl Corin"
 			age = 16
 			male = yes
 			adm = 1
@@ -426,7 +426,7 @@ country_event = {
 				has_dlc = "Common Sense"
 				religion = corinite
 			}
-			add_church_power = 20
+			add_karma = 10
 		}
 	}
 	
@@ -1346,11 +1346,11 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.3
-			church_power = 100
+			karma = 0
 		}
 		modifier = {
 			factor = 1.3
-			church_power = 150
+			karma = 33
 		}
 	}
 	
@@ -1390,7 +1390,7 @@ country_event = {
 		name = flavor_corintar.40.a
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_church_power = -5
+			add_karma = -5
 		}
 		event_target:corintarget_violence = {
 			if = {
@@ -1475,7 +1475,7 @@ country_event = {
 		ai_chance = { factor = 75 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_church_power = -5
+			add_karma = -5
 		}
 		
 		random_list = {
@@ -1525,7 +1525,7 @@ country_event = {
 		ai_chance = { factor = 25 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_church_power = 5
+			add_karma = 5
 		}
 		
 		event_target:corintarget_rebels = {
@@ -1576,7 +1576,7 @@ country_event = {
 		ai_chance = { factor = 75 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_church_power = -5
+			add_karma = -5
 		}
 		
 		add_yearly_manpower = 1
@@ -1601,7 +1601,7 @@ country_event = {
 		ai_chance = { factor = 25 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_church_power = 5
+			add_karma = 5
 		}
 		
 		add_prestige = -10
@@ -1660,7 +1660,7 @@ country_event = {
 		ai_chance = { factor = 10 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_church_power = -10
+			add_karma = -10
 		}
 		declare_war_with_cb = {
 			who = event_target:corintarget_war
@@ -1696,7 +1696,7 @@ country_event = {
 		ai_chance = { factor = 90 }
 		if = {
 			limit = { has_dlc = "Common Sense" }
-			add_church_power = 10
+			add_karma = 10
 		}
 
 		add_prestige = -20
@@ -1717,11 +1717,11 @@ country_event = {
 	id = flavor_corintar.50
 	title = flavor_corintar.50.t
 	desc = {
-		trigger = { NOT = { church_power = 0 } }
+		trigger = { NOT = { karma = 0 } }
 		desc = flavor_corintar.50.da
 	}
 	desc = {
-		trigger = { church_power = 0 }
+		trigger = { karma = 0 }
 		desc = flavor_corintar.50.db
 	}
 	picture = SWORD_OF_OSMAN_eventPicture
@@ -1742,15 +1742,15 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { church_power = 200 }
-			add_church_power = -10
+			limit = { karma = 0 }
+			add_karma = -10
 			add_country_modifier = {
 				name = corintar_acc_hk
 				duration = 3650
 			}
 		}
 		else = {
-			add_church_power = 10
+			add_karma = 10
 			add_country_modifier = {
 				name = corintar_acc_lk
 				duration = 3650
@@ -1781,15 +1781,15 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { church_power = 200 }
-			add_church_power = 10
+			limit = { karma = 0 }
+			add_karma = 10
 			add_country_modifier = {
 				name = corintar_rej_hk
 				duration = 3650
 			}
 		}
 		else = {
-			add_church_power = -10
+			add_karma = -10
 			add_country_modifier = {
 				name = corintar_rej_lk
 				duration = 3650
@@ -1849,11 +1849,11 @@ country_event = {
 		OR = {
 			AND = {
 				has_country_modifier = corintar_acc_hk
-				NOT = { church_power = 33 }
+				NOT = { karma = 33 }
 			}
 			AND = {
 				has_country_modifier = corintar_acc_lk
-				church_power = 0
+				karma = -33
 			}
 			AND = {
 				NOT = { has_country_modifier = corintar_acc_hk }
@@ -1891,11 +1891,11 @@ country_event = {
 		OR = {
 			AND = {
 				has_country_modifier = corintar_acc_hk
-				church_power = 33
+				karma = 33
 			}
 			AND = {
 				has_country_modifier = corintar_acc_lk
-				NOT = { church_power = 0 }
+				NOT = { karma = -33 }
 			}
 		}
 	}
@@ -1930,11 +1930,11 @@ country_event = {
 		OR = {
 			AND = {
 				has_country_modifier = corintar_rej_hk
-				NOT = { church_power = 33 }
+				NOT = { karma = 33 }
 			}
 			AND = {
 				has_country_modifier = corintar_rej_lk
-				church_power = 0
+				karma = -33
 			}
 		}
 	}
@@ -1965,11 +1965,11 @@ country_event = {
 		OR = {
 			AND = {
 				has_country_modifier = corintar_rej_hk
-				church_power = 33
+				karma = 33
 			}
 			AND = {
 				has_country_modifier = corintar_rej_lk
-				NOT = { church_power = 0 }
+				NOT = { karma = -33 }
 			}
 		}
 	}
@@ -2665,10 +2665,10 @@ country_event = {
 						has_country_modifier = corintar_rej_hk
 					}
 				}
-				add_church_power = -10
+				add_karma = -10
 			}
 			else = {
-				add_church_power = 10
+				add_karma = 10
 			}
 		}
 	}
@@ -2734,15 +2734,15 @@ country_event = {
 					}
 				}
 			}
-			add_church_power = -10
+			add_karma = -10
 			event_target:corintarget_guidee = {
-				add_church_power = 10
+				add_karma = 10
 			}
 		}
 		else = {
-			add_church_power = 10
+			add_karma = 10
 			event_target:corintarget_guidee = {
-				add_church_power = -10
+				add_karma = -10
 			}
 		}
 	}
@@ -2759,15 +2759,15 @@ country_event = {
 					}
 				}
 			}
-			add_church_power = 10
+			add_karma = 10
 			event_target:corintarget_guidee = {
-				add_church_power = -10
+				add_karma = -10
 			}
 		}
 		else = {
-			add_church_power = -10
+			add_karma = -10
 			event_target:corintarget_guidee = {
-				add_church_power = 10
+				add_karma = 10
 			}
 		}
 	}
@@ -2809,10 +2809,10 @@ country_event = {
 						has_country_modifier = corintar_rej_hk
 					}
 				}
-				add_church_power = -10
+				add_karma = -10
 			}
 			else = {
-				add_church_power = 10
+				add_karma = 10
 			}
 		}
 		add_estate_loyalty = {
@@ -2866,7 +2866,7 @@ country_event = {
 		add_manpower = -2
 		event_target:corintarget_guidee = {
 			add_manpower = 2
-			add_church_power = -10
+			add_karma = -10
 		}
 	}
 	

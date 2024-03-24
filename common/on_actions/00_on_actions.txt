@@ -142,6 +142,7 @@ on_startup = {
 		dwarven_pantheon.300 #rubyhold and ozovar starting event
 		#eur
 		eur_changes.1
+		eur_changes.4
 
 		#khet civil war
 		#khet_civil_war.1
@@ -5304,6 +5305,7 @@ on_yearly_pulse = { #trigger 20.12 every year
 		#Pillar of Gates
 		#sarhal_relics.19
 		eur_changes.1
+		eur_changes.4
 		reurope_events.200
 		reurope_events.201
 		effelai_bloom.0

@@ -444,7 +444,7 @@ country_event = {
 			duration = 3650
 		}
 
-		add_church_power = 20
+		add_karma = 20
 		
 		#Little bonus for the emperor for removing witch-princes
 		if = {

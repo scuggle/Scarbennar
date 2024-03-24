@@ -1147,49 +1147,6 @@ X27_ideas = { #This is the formable for the country, the starting counrty has Ko
 	}
 }
 
-#Frozenmaw
-Z18_ideas = {
-	start = {
-		war_exhaustion_cost = -0.20
-		reduced_liberty_desire = 10
-	}
-
-	bonus = {
-		can_transfer_vassal_wargoal = yes
-	}
-
-	trigger = {
-		tag = Z18
-	}
-	free = yes
-
-	Z18_one = {
-		global_unrest = -1
-	}
-	Z18_two = {
-		assault_fort_ability = 0.25
-		
-	}
-	Z18_three = {
-		vassal_forcelimit_bonus = 0.25
-		
-	}
-	Z18_four = {
-		diplomatic_reputation = 1
-		relation_with_other_culture = 10
-	}
-	Z18_five = {
-		infantry_power = 0.10
-	}
-	Z18_six = {
-		vassal_income = 0.30
-	}
-	Z18_seven = {
-		vassal_naval_forcelimit_bonus = 0.25
-		global_sailors_modifier = 0.15
-	}
-}
-
 #Folly Gnoll
 X28_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
 	start = {
