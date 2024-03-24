@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 
 # No previous file for Sotuta
 owner = B25
@@ -17,23 +16,4 @@ center_of_trade = 1
 
 native_size = 68
 native_ferocity = 8
-=======
-
-# No previous file for Sotuta
-culture = green_orc
-religion = great_dookan
-capital = ""
-tribal_owner = B25
-hre = no
-
-base_tax = 3
-base_production = 5
-base_manpower = 2
-
-trade_goods = unknown
-center_of_trade = 1
-
-native_size = 68
-native_ferocity = 8
->>>>>>> Stashed changes
 native_hostileness = 8

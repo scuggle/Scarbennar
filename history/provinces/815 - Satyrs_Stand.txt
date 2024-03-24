@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 
 # No previous file for Iquitos
 owner = B47
@@ -17,22 +16,4 @@ trade_goods = naval_supplies
 
 native_size = 78
 native_ferocity = 7
-=======
-
-# No previous file for Iquitos
-culture = green_orc
-religion = great_dookan
-capital = ""
-tribal_owner = B29
-hre = no
-
-base_tax = 2
-base_production = 6
-base_manpower = 1
-
-trade_goods = unknown
-
-native_size = 78
-native_ferocity = 7
->>>>>>> Stashed changes
 native_hostileness = 8
