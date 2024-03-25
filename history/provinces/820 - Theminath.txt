@@ -1,8 +1,8 @@
 
 # No previous file for Quito
-owner = B02
-controller = B02
-add_core = B02
+owner = B44
+controller = B44
+add_core = B44
 add_core = B54
 culture = aldresian
 religion = regent_court
