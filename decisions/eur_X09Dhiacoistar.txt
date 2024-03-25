@@ -59,8 +59,6 @@ country_decisions = {
 					#province_id = 3	#Old_Damenath
                 }
             }
-
-
 		}
 		effect = {
 			change_tag = X09
