@@ -1,7 +1,8 @@
 
 # No previous file for Rottenstep
-owner = B22
-controller = B22
+owner = B37
+controller = B37
+add_core = B37
 add_core = B22
 culture = green_orc
 religion = great_dookan

@@ -1,8 +1,9 @@
 
 # No previous file for Cuzco
 
-owner = B47
-controller = B47
+owner = B29
+controller = B29
+add_core = B29
 add_core = B47
 culture = busilari
 religion = regent_court

@@ -1,7 +1,8 @@
 
 # No previous file for Chiquitos
-owner = B47
-controller = B47
+owner = B48
+controller = B48
+add_core = B48
 add_core = B47
 culture = busilari
 religion = regent_court

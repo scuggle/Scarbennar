@@ -1,14 +1,15 @@
 
 # No previous file for Belize
-owner = Z37
-controller = Z37
+owner = Z36
+controller = Z36
+add_core = Z36
 add_core = Z37
 culture = aldresian
 religion = regent_court
 capital = ""
 hre = no
 
-base_tax = 4
+base_tax = 6
 base_production = 6
 base_manpower = 5
 

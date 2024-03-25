@@ -1,7 +1,8 @@
 
 # No previous file for Salinan
-owner = B28
-controller = B28
+owner = B25
+controller = B25
+add_core = B25
 add_core = B28
 culture = green_orc
 religion = great_dookan

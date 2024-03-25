@@ -1,8 +1,9 @@
 
 # No previous file for Zacatula
 
-owner = Z37
-controller = Z37
+owner = Z36
+controller = Z36
+add_core = Z36
 add_core = Z37
 culture = aldresian
 religion = regent_court

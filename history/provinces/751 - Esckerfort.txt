@@ -1,7 +1,8 @@
 
 # No previous file for Ceara
-owner = B40
-controller = B40
+owner = B50
+controller = B50
+add_core = B50
 add_core = B40
 culture = gawedi
 religion = regent_court

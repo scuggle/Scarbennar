@@ -1,7 +1,8 @@
 
 # No previous file for Huancavelica
-owner = B51
-controller = B51
+owner = B41
+controller = B41
+add_core = B41
 add_core = B51
 culture = esmari
 religion = regent_court

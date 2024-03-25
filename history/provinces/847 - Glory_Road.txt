@@ -1,7 +1,8 @@
 
 # No previous file for Mixtec
-owner = Z37
-controller = Z37
+owner = X19
+controller = X19
+add_core = X19
 add_core = Z37
 culture = aldresian
 religion = regent_court

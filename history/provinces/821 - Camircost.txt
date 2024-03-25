@@ -1,7 +1,8 @@
 
 # No previous file for Quijos
-owner = B54
-controller = B54
+owner = B44
+controller = B44
+add_core = B44
 add_core = B54
 culture = aldresian
 religion = regent_court

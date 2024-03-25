@@ -1,7 +1,8 @@
 
 # No previous file for Vitebsk
-owner = B46
-controller = B46
+owner = B38
+controller = B38
+add_core = B38
 add_core = B46
 culture = common_goblin
 religion = goblinic_shamanism

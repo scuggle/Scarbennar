@@ -1,8 +1,9 @@
 
 # No previous file for Lothian
 
-owner = B52
-controller = B52
+owner = B34
+controller = B34
+add_core = B34
 add_core = B52
 culture = anbenncoster
 religion = regent_court

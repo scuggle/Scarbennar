@@ -1,7 +1,8 @@
 
 # No previous file for Cochimi
-owner = B28
-controller = B28
+owner = B55
+controller = B55
+add_core = B55
 add_core = B28
 culture = green_orc
 religion = great_dookan

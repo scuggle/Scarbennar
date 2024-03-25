@@ -3,8 +3,9 @@
 culture = anbenncoster
 religion = regent_court
 capital = ""
-owner = B52
-controller = B52
+owner = B34
+controller = B34
+add_core = B34
 add_core = B52
 
 hre = no

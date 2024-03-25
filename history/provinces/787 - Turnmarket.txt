@@ -8,9 +8,9 @@ religion = regent_court
 
 hre = no
 
-base_tax = 4
-base_production = 7
-base_manpower = 3
+base_tax = 3
+base_production = 8
+base_manpower = 4
 
 trade_goods = iron
 

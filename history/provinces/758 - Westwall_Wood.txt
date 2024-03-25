@@ -1,9 +1,9 @@
 
 # No previous file for Goias
-owner = B37
-controller = B37
-add_core = B37
-culture = east_damerian
+owner = B50
+controller = B50
+add_core = B50
+culture = redfoot_halfling
 religion = regent_court
 capital = ""
 hre = no

@@ -1,7 +1,8 @@
 
 # No previous file for Burnoll
-owner = B54
-controller = B54
+owner = B02
+controller = B02
+add_core = B02
 add_core = B54
 culture = aldresian
 religion = regent_court

@@ -1,7 +1,8 @@
 
 # No previous file for Quito
-owner = B54
-controller = B54
+owner = B02
+controller = B02
+add_core = B02
 add_core = B54
 culture = aldresian
 religion = regent_court
@@ -9,7 +10,7 @@ religion = regent_court
 hre = no
 
 base_tax = 4
-base_production = 4
+base_production = 6
 base_manpower = 4
 
 trade_goods = livestock

@@ -10,7 +10,7 @@ add_core = B34
 
 hre = no
 
-base_tax = 1
+base_tax = 3
 base_production = 1
 base_manpower = 1
 

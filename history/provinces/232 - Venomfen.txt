@@ -1,8 +1,9 @@
 
-# No previous file for Bragança
+# No previous file for Braganï¿½a
 
-owner = B22
-controller = B22
+owner = B37
+controller = B37
+add_core = B37
 add_core = B22
 culture = green_orc
 religion = great_dookan

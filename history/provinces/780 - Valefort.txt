@@ -8,7 +8,7 @@ owner = B35
 controller = B35
 add_core = B35
 
-base_tax = 1
+base_tax = 3
 base_production = 4
 base_manpower = 3
 

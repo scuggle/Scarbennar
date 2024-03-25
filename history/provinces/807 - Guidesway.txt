@@ -1,14 +1,15 @@
 
 # No previous file for Abancay
-owner = B47
-controller = B47
+owner = B48
+controller = B48
 add_core = B47
+add_core = B48
 culture = busilari
 religion = regent_court
 capital = ""
 hre = no
 
-base_tax = 1
+base_tax = 3
 base_production = 2
 base_manpower = 1
 

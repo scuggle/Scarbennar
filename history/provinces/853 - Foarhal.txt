@@ -9,9 +9,9 @@ capital = ""
 tribal_owner = B30
 hre = no
 
-base_tax = 4
-base_production = 7
-base_manpower = 5
+base_tax = 7
+base_production = 8
+base_manpower = 6
 
 trade_goods = iron
 
