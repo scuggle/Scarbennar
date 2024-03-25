@@ -9,7 +9,7 @@ controller = B48
 add_core = B48
 
 base_tax = 1
-base_production = 1
+base_production = 5
 base_manpower = 1
 
 trade_goods = iron
