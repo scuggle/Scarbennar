@@ -1,16 +1,16 @@
-
 country_decisions = {
 
 	X09_form_nation = {
 		major = yes
 		potential = {
 			OR = {
-				tag = A10
-				tag = A41
-				tag = A85
-				tag = A53
-				tag = A43
-				tag = A77
+				tag = A10 #Minaran Temple
+				tag = A41 #Damish Temple
+				tag = A53 #Aramari Temple
+				tag = A43 #Ryalan Temple
+				#####these arent actually temples####
+				#tag = A77 #Orda Aldresia
+				#tag = A85 #Magisterium
 			}
 			NOT = { has_country_flag = formed_X09_flag }
 			NOT = { tag = Z01 } #Empire of Anbennar
@@ -39,12 +39,26 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
 			NOT = { exists = X09 }
-			owns_core_province = 97
-			owns_core_province = 423
-			owns_core_province = 265
-			owns_core_province = 3
-			owns_core_province = 4
-			owns_core_province = 249
+			num_of_owned_provinces_with = {
+                value = 3
+                OR = {
+					province_id = 97 	#Minar
+					province_id = 265 	#Ryalanar
+					province_id = 4		#Moonmount
+					province_id = 249	#Aramar
+					province_id = 840	#Trialmount/North Citadel
+					province_id = 831	#South Castonath
+					province_id = 451	#Nathalaire
+					province_id = 151	#Beepeck
+					province_id = 352	#Ibevar
+					province_id = 82	#New Adea
+					province_id = 332	#Corseton
+					province_id = 266	#Esmaraine
+					#####these arent actually temples####
+					#province_id = 423 	#Arca Aldresia
+					#province_id = 3	#Old_Damenath
+                }
+            }
 		}
 		effect = {
 			change_tag = X09
