@@ -54,13 +54,14 @@ new_world_nerf = {
 	development_cost = 0.2
 }
 
+
 there_is_nothing_to_colonize = {
 	potential = {
 		always = yes
 	}
 	trigger = {
 		capital_scope = {
-			superregion = escann
+			superregion = escann_superregion
 		}
 		NOT = { is_year = 1484 }
 	}
