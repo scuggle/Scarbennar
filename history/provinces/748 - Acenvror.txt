@@ -5,6 +5,7 @@ add_core = B39
 culture = vernman
 religion = regent_court
 hre = no
+fort_15th = yes
 
 base_tax = 6
 base_production = 4

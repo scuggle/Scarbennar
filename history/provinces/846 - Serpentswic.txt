@@ -7,8 +7,8 @@ capital = ""
 tribal_owner = B25
 hre = no
 
-base_tax = 3
-base_production = 5
+base_tax = 5
+base_production = 6
 base_manpower = 2
 
 trade_goods = paper

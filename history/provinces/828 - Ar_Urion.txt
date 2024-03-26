@@ -8,6 +8,7 @@ religion = regent_court
 capital = ""
 tribal_owner = B30
 hre = no
+fort_15th = yes
 
 base_tax = 3
 base_production = 7

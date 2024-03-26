@@ -7,6 +7,7 @@ culture = roilsardi
 religion = regent_court
 
 hre = no
+fort_15th = yes
 
 base_tax = 7
 base_production = 8

@@ -11,7 +11,7 @@ ancardia_escanni_academy_of_war = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 1
-	starting_tier = 0
+	starting_tier = 1
 	type = monument
 	build_trigger = {	
 	}
@@ -193,7 +193,7 @@ adenica_longlance_knights_academy = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 1
-	starting_tier = 0
+	starting_tier = 1
 	type = monument
 	build_trigger = {	
 	}

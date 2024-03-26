@@ -922,7 +922,7 @@ bal_mire = {
 
 	can_be_moved = no
 
-	starting_tier = 0
+	starting_tier = 1
 
 	#project type
 	type = monument
@@ -1098,7 +1098,7 @@ the_north_citadel = {
 
 	can_be_moved = no
 
-	starting_tier = 0
+	starting_tier = 1
 
 	#project type
 	type = monument
