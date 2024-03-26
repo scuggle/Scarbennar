@@ -3751,7 +3751,7 @@ Z52_ideas = {
 		leader_land_shock = 1
 	}
 	bonus = {
-		possible_adm_policy = 1
+		free_adm_policy = 1
 	}
 
 	trigger = {
@@ -3761,6 +3761,7 @@ Z52_ideas = {
 
 	Z52_white_walls_of_castanor = {
 		fort_maintenance_modifier = -0.20
+		defensiveness = 0.1
 	}
 	Z52_issue_of_the_alen_river = {
 		caravan_power = 0.2
@@ -3769,7 +3770,7 @@ Z52_ideas = {
 		build_cost = -0.1
 	}
 	Z52_secrets_of_dvarven_artillery = {
-		artillery_power = 0.1
+		artillery_power = 0.15
 	}
 	Z52_serpentspine_mines = {
 		production_efficiency = 0.1
