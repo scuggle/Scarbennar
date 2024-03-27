@@ -367,8 +367,8 @@ X08_ideas = {
 #Temples United
 X09_ideas = {
 	start = {
-		cb_on_religious_enemies = yes
-		manpower_in_true_faith_provinces = 0.25
+		enforce_religion_cost = -0.5
+		manpower_in_true_faith_provinces = 0.15
 	}
 
 	bonus = {
