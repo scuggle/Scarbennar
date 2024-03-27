@@ -368,7 +368,7 @@ X08_ideas = {
 X09_ideas = {
 	start = {
 		cb_on_religious_enemies = yes
-		extra_manpower_at_religious_war = yes
+		manpower_in_true_faith_provinces = 0.25
 	}
 
 	bonus = {
