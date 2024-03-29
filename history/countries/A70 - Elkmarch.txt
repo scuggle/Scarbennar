@@ -7,6 +7,15 @@ primary_culture = bluefoot_halfling
 religion = regent_court
 technology_group = tech_halfling
 
+
+historical_rival = A69
+historical_rival = A12
+historical_friend = A07
+historical_friend = A65
+historical_friend = A71
+historical_friend = A66
+
+
 capital = 206
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
@@ -21,4 +30,20 @@ capital = 206
 		mil = 4
 	}
 	add_ruler_personality = embezzler_personality
+}
+
+add_trust = {
+    who = A71
+    value = 50
+    mutual = yes
+}
+add_trust = {
+    who = A65
+    value = 50
+    mutual = yes
+}
+add_trust = {
+    who = A66
+    value = 50
+    mutual = yes
 }

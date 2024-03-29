@@ -1,0 +1,130 @@
+# Alliance Group 1
+alliance = {
+	first = A70
+	second = A71
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A70
+	second = A65
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A70
+	second = A66
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A70
+	second = A07
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A07
+	second = A71
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A07
+	second = A65
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A07
+	second = A66
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A71
+	second = A65
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A07
+	second = A66
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A65
+	second = A66
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A71
+	second = A66
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+
+# Alliance Group 2
+
+alliance = {
+	first = A08
+	second = A69
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A08
+	second = A68
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A08
+	second = A64
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A08
+	second = A63
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A69
+	second = A68
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A69
+	second = A64
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A69
+	second = A63
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A68
+	second = A64
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A68
+	second = A63
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}
+alliance = {
+	first = A64
+	second = A63
+	start_date = 1430.1.1
+	end_date = 1909.1.1
+}

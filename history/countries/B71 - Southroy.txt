@@ -8,6 +8,7 @@ religion = regent_court
 technology_group = tech_cannorian
 capital = 128 # Southroy
 
+historical_friend = A67
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 1000.1.1 = { set_estate_privilege = estate_artificers_organization_international_gommo }
