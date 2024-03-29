@@ -12,7 +12,7 @@ capital = 787
 
 1438.3.10 = {
 	monarch = {
-		name = "Reán síl na Arasùil"
+		name = "ReÃ¡n sÃ­l na ArasÃ¹il"
 		birth_date = 1405.1.20
 		adm = 6
 		dip = 4

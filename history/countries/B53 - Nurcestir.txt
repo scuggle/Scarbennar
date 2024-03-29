@@ -30,3 +30,5 @@ capital = 767
 	add_ruler_personality = well_connected_personality
 	set_ruler_flag = set_immortality
 }
+
+set_country_flag = adventurer_derived_government

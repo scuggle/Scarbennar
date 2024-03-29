@@ -22,3 +22,5 @@ capital = 774
 	}
 	add_ruler_personality = martial_educator_personality
 }
+
+set_country_flag = adventurer_derived_government

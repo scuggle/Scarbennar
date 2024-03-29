@@ -15,7 +15,7 @@ capital = 766
 1443.10.5 = {
 	monarch = {
 		name = "Aldred"
-		dynasty = "s�l Tch�veren"
+		dynasty = "síl Tcháveren"
 		birth_date = 1405.8.11
 		adm = 2
 		dip = 1
@@ -25,3 +25,5 @@ capital = 766
 	add_ruler_personality = cruel_personality
 	add_ruler_personality = mage_personality
 }
+
+set_country_flag = adventurer_derived_government

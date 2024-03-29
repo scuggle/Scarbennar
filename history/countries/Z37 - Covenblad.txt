@@ -14,7 +14,7 @@ capital = 817
 1438.3.10 = {
 	monarch = {
 		name = "Galinda"
-		dynasty = "s�l na E�n"
+		dynasty = "síl na Eán"
 		culture = aldresian
 		adm = 6
 		dip = 2
@@ -25,9 +25,9 @@ capital = 817
 	add_ruler_personality = mage_personality
 	add_ruler_personality = kind_hearted_personality
 	heir = {
-		name = "Re�nna"
-		dynasty = "s�l na E�n"
-		monarch_name = "Re�nna I"
+		name = "Reánna"
+		dynasty = "síl na Eán"
+		monarch_name = "Reánna I"
 		birth_date = 1428.7.3
 		death_date = 1481.3.2
 		claim = 95
@@ -39,3 +39,5 @@ capital = 817
 	}
 	add_heir_personality = scholar_personality
 }
+
+set_country_flag = adventurer_derived_government

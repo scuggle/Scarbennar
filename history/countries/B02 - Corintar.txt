@@ -31,3 +31,5 @@ add_accepted_culture = esmari
 	}
 	add_ruler_personality = inspiring_leader_personality
 }
+
+set_country_flag = adventurer_derived_government

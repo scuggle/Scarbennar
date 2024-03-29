@@ -19,7 +19,7 @@ add_accepted_culture = anbenncoster
 1443.2.2 = {
 	monarch = {
 		name = "Lucian"
-		dynasty = "s�l na Toars"
+		dynasty = "síl na Toars"
 		birth_date = 1417.11.4
 		adm = 2
 		dip = 2
@@ -33,3 +33,5 @@ add_accepted_culture = anbenncoster
 	ruler_become_vampire = yes
 	reset_vampire_age = yes # Nobody knew him before this
 }
+
+set_country_flag = adventurer_derived_government

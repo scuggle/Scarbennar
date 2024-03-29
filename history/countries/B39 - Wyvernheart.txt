@@ -15,7 +15,7 @@ capital = 748
 1437.4.8 = {
 	monarch = {
 		name = "Cicera"
-		dynasty = "s�l Treunnaire"
+		dynasty = "síl  Treunnaire"
 		adm = 4
 		dip = 2
 		mil = 4
@@ -24,3 +24,5 @@ capital = 748
 	}
 	add_ruler_personality = inspiring_leader_personality
 }
+
+set_country_flag = adventurer_derived_government

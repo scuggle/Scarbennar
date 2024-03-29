@@ -26,3 +26,5 @@ add_accepted_culture = aldresian
 	add_ruler_personality = fierce_negotiator_personality
 	set_ruler_flag = set_immortality
 }
+
+set_country_flag = adventurer_derived_government
