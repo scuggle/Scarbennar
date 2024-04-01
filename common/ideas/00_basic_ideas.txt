@@ -1418,12 +1418,15 @@ administrative_ideas = { #government: monarchy
 
 	bonus = {
 		max_absolutism_effect = 0.50
+		imperial_authority = 0.1
+		imperial_mandate = 0.05
 		possible_adm_policy = 1
 	}
 
 	organised_mercenary_payment = {
 		heir_chance = 1
 		legitimacy = 1
+		meritocracy = 0.5
 	}
 	adaptability = {
 		prestige_decay = -0.01
@@ -1515,6 +1518,7 @@ theocracy_gov_ideas = { #government: theocracy
 	
 	bonus = {
 		free_adm_policy = 1
+		imperial_mandate = 0.05
 		possible_adm_policy = 1
 	}
 	
@@ -1539,6 +1543,7 @@ theocracy_gov_ideas = { #government: theocracy
 	conviction_of_sin = {	
 		monarch_admin_power = 1
 		devotion = 0.5
+		meritocracy = 0.5
 	}
 	martyrs = {
 		missionaries = 1
