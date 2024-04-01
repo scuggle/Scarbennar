@@ -737,17 +737,17 @@ roaming_horde = {
 	maintain_dynasty = yes
 
 	modifiers = {
-		global_manpower_modifier = 0.3
-		land_forcelimit_modifier = 0.20
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.15
 		#land_maintenance_modifier = -0.20
 		#movement_speed = 0.2
-		reinforce_cost_modifier = -0.35
-		reform_progress_growth = -0.5
-		global_institution_spread = -0.3
-		diplomatic_upkeep = -2
+		reinforce_cost_modifier = -0.25
+		reform_progress_growth = -0.2
+		global_institution_spread = -0.15
+		diplomatic_upkeep = -1
 		
-		land_maintenance_modifier = -0.35
-		movement_speed = 0.35
+		land_maintenance_modifier = -0.25
+		movement_speed = 0.25
 		
 		loot_amount = 0.20
 		land_attrition = -0.15
