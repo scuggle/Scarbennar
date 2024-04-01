@@ -9,7 +9,7 @@ religion = great_dookan
 capital = ""
 trade_goods = salt
 center_of_trade = 1
-tribal_owner = B22
+#tribal_owner = B22
 hre = no
 fort_15th = yes
 

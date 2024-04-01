@@ -7,7 +7,7 @@ culture = green_orc
 religion = great_dookan
 capital = ""
 trade_goods = fur
-tribal_owner = B27
+#tribal_owner = B27
 hre = no
 
 base_tax = 2

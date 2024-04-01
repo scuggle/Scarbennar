@@ -4,7 +4,7 @@ owner = B25
 controller = B25
 add_core = B25
 capital = ""
-tribal_owner = B25
+#tribal_owner = B25
 hre = no
 
 base_tax = 5

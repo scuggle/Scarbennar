@@ -8,7 +8,7 @@ culture = green_orc
 religion = great_dookan
 capital = ""
 trade_goods = salt
-tribal_owner = B22
+#tribal_owner = B22
 
 hre = no
 

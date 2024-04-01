@@ -6,7 +6,7 @@ add_core = B42
 culture = forest_goblin
 religion = goblinic_shamanism
 capital = ""
-tribal_owner = B42
+#tribal_owner = B42
 hre = no
 
 base_tax = 2

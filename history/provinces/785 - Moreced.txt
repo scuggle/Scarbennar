@@ -6,7 +6,7 @@ add_core = B49
 culture = crownsman
 religion = regent_court
 capital = ""
-tribal_owner = B23
+#tribal_owner = B23
 hre = no
 
 base_tax = 3

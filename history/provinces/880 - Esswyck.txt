@@ -6,7 +6,7 @@ add_core = B21
 culture = green_orc
 religion = great_dookan
 capital = ""
-tribal_owner = B28
+#tribal_owner = B28
 hre = no
 
 base_tax = 3

@@ -7,7 +7,7 @@ add_core = B47
 culture = busilari
 religion = regent_court
 capital = ""
-tribal_owner = B41
+#tribal_owner = B41
 hre = no
 
 base_tax = 2
