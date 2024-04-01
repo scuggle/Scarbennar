@@ -22,6 +22,7 @@ country_event = {
 			add_government_reform = konolkhatep_reform
 		}
 		ai_chance = { factor = 5 }
+		set_meritocracy = 50
 	}
 	
 	#nirakhetist
@@ -34,5 +35,6 @@ country_event = {
 			add_government_reform = konolkhatep_reform
 		}
 		ai_chance = { factor = 0 }
+		set_meritocracy = 50
 	}
 }
