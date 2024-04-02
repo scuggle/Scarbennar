@@ -5,6 +5,7 @@ velsfadhecai_missions_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {	
 			tag = G38
 			AND = {
@@ -217,6 +218,7 @@ velsfadhecai_missions_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G38
 			AND = {
@@ -370,6 +372,7 @@ velsfadhecai_missions_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {	
 			tag = G38
 			AND = {
@@ -546,6 +549,7 @@ velsfadhecai_missions_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {	
 			tag = G38
 			AND = {
@@ -776,6 +780,7 @@ velsfadhecai_missions_1b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {	
 			tag = G38
 			AND = {
@@ -1122,6 +1127,7 @@ velsfadhecai_missions_2b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {	
 			tag = G38
 			AND = {
@@ -1536,6 +1542,7 @@ velsfadhecai_missions_3b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {	
 			tag = G38
 			AND = {
@@ -2128,6 +2135,7 @@ velsfadhecai_missions_4b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {	
 			tag = G38
 			AND = {
@@ -2417,6 +2425,7 @@ velsfadhecai_missions_5b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {	
 			tag = G38
 			AND = {

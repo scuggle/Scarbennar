@@ -7,7 +7,10 @@ G53_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G53 }
+	potential = { 
+		tag = G53 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	G53_1_1_the_Gulf_of_Slaves = {
 		icon = colonize_the_cape
@@ -396,7 +399,10 @@ G53_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G53 }
+	potential = { 
+		tag = G53
+		NOT = { has_country_flag = chose_generic_mt }
+	 }
 
 	G53_2_1_The_Chendhya_Route = {
 		icon = mission_merchant_trip
@@ -658,7 +664,10 @@ G53_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G53 }
+	potential = { 
+		tag = G53
+		NOT = { has_country_flag = chose_generic_mt }
+	 }
 
 	G53_3_3_In_Chendhyan_Fields = {
 		icon = mission_tree_fishing
@@ -1066,7 +1075,10 @@ G53_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G53 }
+	potential = { 
+		tag = G53
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	G53_4_1_A_Settlers_Nation = {
 		icon = mission_colonial
@@ -1659,7 +1671,10 @@ G53_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G53 }
+	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = G53
+	}
 
 	G53_5_1_Sugar_From_Keyolion = {
 		icon = mission_sw_yucca_plants
@@ -2101,6 +2116,7 @@ G53_1_extra_missions = {
 	ai = yes 
 	has_country_shield = yes
 	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = G53 
 		has_country_flag = G53_Slaver_Victory_flag
 	}
@@ -2324,6 +2340,7 @@ G53_2_extra_missions = {
 	ai = yes 
 	has_country_shield = yes
 	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = G53 
 		has_country_flag = G53_Slaver_Victory_flag
 	}
@@ -2678,6 +2695,7 @@ G53_3_extra_missions = {
 	ai = yes 
 	has_country_shield = yes
 	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = G53 
 		has_country_flag = G53_Slaver_Victory_flag
 	}

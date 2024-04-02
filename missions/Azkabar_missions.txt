@@ -6,6 +6,7 @@ azkabar_1 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F35
 			AND = {
@@ -103,6 +104,7 @@ azkabar_2 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F35
 			AND = {
@@ -262,6 +264,7 @@ azkabar_3 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F35
 			AND = {
@@ -430,6 +433,7 @@ azkabar_4 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F35
 			AND = {
@@ -526,6 +530,7 @@ azkabar_5 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F35
 			AND = {
@@ -694,8 +699,9 @@ azkabar_1_b = {
 	ai = yes 
 	has_country_shield = yes
 	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = F35 
-				has_country_flag = azkabar_part2
+		has_country_flag = azkabar_part2
 	}
 
 	F35_for_leuz1 = {#4
@@ -892,6 +898,7 @@ azkabar_2_b = {
 	ai = yes 
 	has_country_shield = yes
 	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = F35 
 		has_country_flag = azkabar_part2
 	}
@@ -1088,6 +1095,7 @@ azkabar_3_b = {
 	ai = yes 
 	has_country_shield = yes
 	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = F35 
 		has_country_flag = azkabar_part2
 	}
@@ -1334,6 +1342,7 @@ azkabar_4_b = {
 	ai = yes 
 	has_country_shield = yes
 	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = F35 
 		has_country_flag = azkabar_part2
 	}
@@ -1444,6 +1453,7 @@ azkabar_5_b = {
 	ai = yes 
 	has_country_shield = yes
 	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = F35 
 		has_country_flag = azkabar_part2
 	}

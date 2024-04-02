@@ -3,7 +3,10 @@ U07_viakkoc_slot_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U07 } 
+	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = U07 
+	} 
 
 	U07_forlon_pack = {
 		icon = mission_desert_rider
@@ -372,7 +375,10 @@ U07_viakkoc_slot_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U07 } 
+	potential = { 
+		tag = U07 
+		NOT = { has_country_flag = chose_generic_mt }
+	} 
 
 	U07_overlord_of_the_west = {
 		icon = mission_embassy_to_the_west
@@ -1050,7 +1056,10 @@ U07_viakkoc_slot_3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U07 } 
+	potential = { 
+		tag = U07 
+		NOT = { has_country_flag = chose_generic_mt }
+	} 
 
 	U07_finishing_the_fight = {
 		icon = mission_redcoats
@@ -1793,7 +1802,10 @@ U07_viakkoc_slot_4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U07 } 
+	potential = { 
+		tag = U07 
+		NOT = { has_country_flag = chose_generic_mt }
+	} 
 
 	U07_scourge_of_the_east = {
 		icon = mission_impaled_soldies
@@ -2275,7 +2287,10 @@ U07_viakkoc_slot_5 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U07 } 
+	potential = { 
+		tag = U07 
+		NOT = { has_country_flag = chose_generic_mt }
+	} 
 
 	U07_queen_of_the_hill = {
 		icon = mission_hill_gnoll_auxilaries

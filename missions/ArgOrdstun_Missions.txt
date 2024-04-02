@@ -6,7 +6,10 @@ H76_1_first = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H76 }
+	potential = { 
+		tag = H76 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	H76_call_to_the_surfacers = {
 		icon = mission_diplomatic_relation
@@ -74,7 +77,10 @@ H76_2_first = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H76 }
+	potential = { 
+		tag = H76 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	H76_soft_and_brittle = {
 		icon = mission_confrontation
@@ -396,7 +402,10 @@ H76_3_first = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H76 }
+	potential = { 
+		tag = H76 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	H76_breaking_the_mold = {
 		icon = mission_dwarf
@@ -812,7 +821,10 @@ H76_4_first = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H76 }
+	potential = { 
+		tag = H76 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	H76_back_to_the_depths = {
 		icon = mission_underground_cave
@@ -1019,7 +1031,10 @@ H76_5_first = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H76 }
+	potential = { 
+		tag = H76
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	H76_the_decrepit_gate = {
 		icon = mission_door_trade
@@ -1170,6 +1185,7 @@ H76_1_second = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = H76
 		has_country_flag = H76_second_part
 	}
@@ -1644,6 +1660,7 @@ H76_2_second = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = H76
 		has_country_flag = H76_second_part
 	}
@@ -2256,6 +2273,7 @@ H76_3_second = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = H76
 		has_country_flag = H76_second_part
 	}
@@ -2528,6 +2546,7 @@ H76_4_second = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = H76
 		has_country_flag = H76_second_part
 	}
@@ -2974,6 +2993,7 @@ H76_5_second = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = H76
 		has_country_flag = H76_second_part
 	}

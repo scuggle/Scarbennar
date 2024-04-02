@@ -3,6 +3,7 @@ falahan_left_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = X20
 		NOT = { map_setup = map_setup_random }
 	}
@@ -226,6 +227,7 @@ falahan_left_inner_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = X20
 		NOT = { map_setup = map_setup_random }
 	}
@@ -459,6 +461,7 @@ falahan_inner_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = X20
 		NOT = { map_setup = map_setup_random }
 	}
@@ -590,6 +593,7 @@ falahan_inner_right_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = X20
 		NOT = { map_setup = map_setup_random }
 	}
@@ -812,6 +816,7 @@ falahan_right_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = X20
 		NOT = { map_setup = map_setup_random }
 	}

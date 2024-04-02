@@ -5,7 +5,10 @@ G56_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G56 }
+	potential = { 
+		tag = G56
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	G56_1_1_looking_outwards = {
 		icon = mission_alone_in_the_forest
@@ -511,7 +514,10 @@ G56_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G56 }
+	potential = { 
+		tag = G56
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	G56_2_2_claim_the_mainland = {
 		icon = mission_green_village
@@ -1100,7 +1106,10 @@ G56_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G56 }
+	potential = { 
+		tag = G56 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	G56_3_1_the_independence_movement = {
 		icon = mission_build_up_to_force_limit
@@ -2369,7 +2378,10 @@ G56_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G56 }
+	potential = { 
+		tag = G56 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	G56_4_1_looking_for_help = {
 		icon = mission_have_two_subjects
@@ -3036,7 +3048,10 @@ G56_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G56 }
+	potential = { 
+		tag = G56 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	G56_5_1_new_trade_partners = {
 		icon = mission_dominate_home_trade_node

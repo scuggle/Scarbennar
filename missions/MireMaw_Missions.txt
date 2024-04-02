@@ -5,6 +5,7 @@ miremaw_two = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J32
 			tag = J48
@@ -316,6 +317,7 @@ miremaw_three = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J32
 			tag = J48
@@ -507,6 +509,7 @@ miremaw_four = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J32
 			tag = J48
@@ -685,6 +688,7 @@ miremaw_five = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J32
 			tag = J48
@@ -763,7 +767,10 @@ vrilbesh_one = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = { tag = J48 }
+	potential = { 
+		tag = J48
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	has_country_shield = yes
 	
 	miremaw_settling_pass = {
@@ -892,7 +899,10 @@ vrilbesh_two = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = { tag = J48 }
+	potential = { 
+		tag = J48 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	has_country_shield = yes
 	
 	miremaw_hegemon_of_pass = {
@@ -1134,7 +1144,10 @@ vrilbesh_three = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = { tag = J48 }
+	potential = { 
+		tag = J48 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	has_country_shield = yes
 	
 	miremaw_pipe_works = {
@@ -1320,7 +1333,10 @@ vrilbesh_four = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = { tag = J48 }
+	potential = { 
+		tag = J48
+		NOT = { has_country_flag = chose_generic_mt }
+	 }
 	has_country_shield = yes
 	
 	miremaw_exerting_our_influence = {
@@ -1541,7 +1557,10 @@ vrilbesh_five = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = { tag = J48 }
+	potential = { 
+		tag = J48
+		NOT = { has_country_flag = chose_generic_mt }
+	 }
 	has_country_shield = yes
 	
 	miremaw_consolidating_our_belongings = {
