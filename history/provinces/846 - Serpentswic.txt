@@ -6,6 +6,8 @@ add_core = B25
 capital = ""
 #tribal_owner = B25
 hre = no
+religion = great_dookan
+culture = green_orc
 
 base_tax = 5
 base_production = 6

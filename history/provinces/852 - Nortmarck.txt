@@ -4,6 +4,8 @@ owner = B25
 controller = B25
 add_core = B25
 capital = ""
+religion = great_dookan
+culture = green_orc
 #tribal_owner = B25
 hre = no
 
