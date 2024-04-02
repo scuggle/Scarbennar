@@ -4,8 +4,8 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 2
 primary_culture = hapremiti
-religion = regent_court
-technology_group = tech_cannorian
+religion = elikhetist
+technology_group = tech_salahadesi
 capital = 777
 
 
