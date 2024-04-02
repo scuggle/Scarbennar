@@ -1645,7 +1645,7 @@ IC_mesner_bene = {
 }
 
 IC_mesner_chosen = {
-	all_power_cost = -0.1
+	all_power_cost = -0.05
 }
 
 IC_hedine_chosen = {
@@ -1670,7 +1670,7 @@ IC_forsara_chosen_2 = {
 }
 
 IC_forsara_chosen_3 = {
-	interest = -1
+	interest = -0.5
 }
 
 IC_kazraiel_chosen = {
