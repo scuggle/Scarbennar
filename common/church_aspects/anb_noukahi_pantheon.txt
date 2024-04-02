@@ -19,6 +19,7 @@ noukahi_bond_over_shared_beliefs = {
 
 	modifier = {
 		tolerance_heretic = 2  
+		tolerance_heathen = 1
 	}
 	ai_will_do = {
 		factor = 1
@@ -41,7 +42,7 @@ noukahi_promote_the_griots = {
 	is_blessing = yes
 
 	modifier = {
-		same_religion_advisor_cost = -0.1
+		same_religion_advisor_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 10
@@ -53,7 +54,7 @@ noukahi_establish_the_pilgrimages = {
 	is_blessing = yes
 
 	modifier = {
-		global_trade_power = 0.1
+		global_trade_power = 0.15
 	}
 	ai_will_do = {
 		factor = 10
@@ -104,7 +105,7 @@ noukahi_defence_of_our_beliefs = {
 	is_blessing = yes
 
 	modifier = {
-		infantry_cost = -0.1
+		infantry_power = 0.1
 	}
 	ai_will_do = {
 		factor = 10

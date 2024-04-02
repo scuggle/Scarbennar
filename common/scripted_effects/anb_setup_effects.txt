@@ -1446,10 +1446,7 @@ setup_vision = {
 		
 		#Flamemarked Gnolls
 		else_if = {
-			limit = {
-					{ tag = X28 }
-				}
-			}
+			limit = { tag = X28 }
 			businor_region = {
 				discover_country = ROOT
 			}
