@@ -1148,7 +1148,7 @@ X27_ideas = { #This is the formable for the country, the starting counrty has Ko
 }
 
 #Folly Gnoll
-X28_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
+X28_ideas = { #Konollzerv
 	start = {
 		fire_damage_received = -0.1
 		missionaries = 1
@@ -1187,5 +1187,51 @@ X28_ideas = { #This is the formable for the country, the starting counrty has Ko
 	}
 	X28_infernal_suppresion = { #By fire be cleansed.
 		global_autonomy = -0.05
+	}
+}
+
+X29_ideas = { #Tcharialt
+start = {
+		fire_damage_received = -0.1
+		merchants = 1
+	}
+
+	bonus = {
+		development_cost = -0.05
+		naval_morale = 0.05	
+	}
+
+	trigger = {
+		OR = {
+			tag = X29
+		}	
+	}
+
+	free = yes
+
+	X29_one = { #
+		build_cost = -0.1
+	}
+	X29_two = { #
+		land_morale = 0.1
+	}
+	X29_three = { #
+		colonists = 1
+		global_colonial_growth = 10
+	}
+	X29_four = { #
+		trade_efficiency = 0.1
+	}
+	X29_five = { #
+		global_regiment_cost = -0.1
+	}
+	X29_six = { #
+		culture_conversion_cost = -0.2
+	}
+	X29_seven = { #
+		legitimacy = 1
+		republican_tradition = 0.3
+		meritocracy = 0.5
+		devotion = 0.5
 	}
 }
