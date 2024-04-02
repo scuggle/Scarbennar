@@ -25,7 +25,7 @@ country_decisions = {
 				
 				tag = A72 #Arannen
 				AND = {
-					dynasty = "sÃ­l Vivin"
+					dynasty = "síl Vivin"
 					owns_core_province = 904	# Arannen
 					owns_core_province = 311	# Ashfield
 					owns_core_province = 441	# Arca Corvur
