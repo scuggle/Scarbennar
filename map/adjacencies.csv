@@ -336,5 +336,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 93;85;sea;1264;-1;-1;-1;-1;rEurope
 86;40;sea;1292;-1;-1;-1;-1;rEurope
 551;582;sea;1311;-1;-1;-1;-1;rEurope
+6601;3238;sea;3079;3140;738;3117;746;Tibokyuye-Tebobava_rEurope
+3238;5763;sea;3075;3103;753;3106;789;Tebobava-New Hookfield_rEurope
+6623;3245;sea;3087;3349;603;3379;613;Rambatsan-Lelatam_rEurope
+5829;3254;sea;4333;3355;535;3383;550;Ananiltra-Monjanosy_rEurope
+3254;5833;sea;1460;3387;550;3400;571;Monjanosy-Agaya_rEurope
 
 -1;-1;;-1;-1;-1;-1;-1;-1;
