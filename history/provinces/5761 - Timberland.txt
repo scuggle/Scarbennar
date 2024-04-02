@@ -1,21 +1,23 @@
 # No previous file for Chisca
+
+owner = X29
+controller = X29
+add_core = X29
 capital = ""
 culture = jiromji
 religion = elven_forebears
 trade_goods = tropical_wood
 
-owner = X29
-controller = X29
-add_core = X29
+is_city = yes
 
 
 hre = no
 base_tax = 2
 base_production = 3
 base_manpower = 2
-native_size = 74
-native_ferocity = 6
-native_hostileness = 7
+#native_size = 74
+#native_ferocity = 6
+#native_hostileness = 7
 
 add_permanent_province_modifier = {
 	name = elven_minority_integrated_large
