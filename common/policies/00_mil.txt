@@ -190,7 +190,7 @@ eur_siege_warfare = {
     }
 
 	artillery_power = 0.075
-	artillery_levels_available_vs_fort = 3
+	artillery_levels_available_vs_fort = 1
 	
 	ai_will_do = {
 		factor = 0.8		
