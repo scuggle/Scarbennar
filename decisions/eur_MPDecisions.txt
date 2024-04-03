@@ -394,7 +394,8 @@ country_decisions = {
 				primary_culture = brown_orc
 				primary_culture = black_orc
 				culture_group = harpy
-				culture_group = troll
+				culture_group = giantkind
+				culture_group = gnollish
 			}
 		}
 
@@ -412,15 +413,25 @@ country_decisions = {
 				primary_culture = brown_orc
 				primary_culture = black_orc
 				culture_group = harpy
-				culture_group = troll
+				culture_group = giantkind
+				culture_group = gnollish
 			}
 		}
 
 		effect = {
-			add_adm_power = 300
-			add_dip_power = 300
-			add_mil_power = 300
-			set_country_flag = has_pity_mana
+			if = {
+				limit = { culture_group = gnollish}
+				add_adm_power = 150
+				add_dip_power = 150
+				add_mil_power = 150
+				set_country_flag = has_pity_mana
+			}
+			else = {
+				add_adm_power = 300
+				add_dip_power = 300
+				add_mil_power = 300
+				set_country_flag = has_pity_mana
+			}
 		}
 
 		ai_will_do = {
