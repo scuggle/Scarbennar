@@ -1,10 +1,10 @@
 
 #128 - K�rnten
 
-owner = X22
-controller = X22
-add_core = X22
-culture = low_lorentish
+owner = B71
+controller = B71
+add_core = B71
+culture = iochander
 religion = regent_court
 hre = no
 base_tax = 3

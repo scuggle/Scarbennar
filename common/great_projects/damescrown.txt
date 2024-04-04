@@ -89,7 +89,10 @@ damescrown_grand_exchange = {
 			trade_goods_size_modifier = 0.05
 		}
 		country_modifiers = {
-			interest = -0.25
+<<<<<<< HEAD
+=======
+			interest = -0.1
+>>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 		}
 		on_upgraded = {
 		}
@@ -108,7 +111,10 @@ damescrown_grand_exchange = {
 			trade_goods_size_modifier = 0.1
 		}
 		country_modifiers = {
-			interest = -0.5
+<<<<<<< HEAD
+=======
+			interest = -0.15
+>>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 			center_of_trade_upgrade_cost = -0.1
 		}
 		on_upgraded = {
@@ -137,7 +143,10 @@ damescrown_grand_exchange = {
 			trade_goods_size_modifier = 0.15
 		}
 		country_modifiers = {
-			interest = -0.75
+<<<<<<< HEAD
+=======
+			interest = -0.25
+>>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 			center_of_trade_upgrade_cost = -0.2
 		}
 		on_upgraded = {

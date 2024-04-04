@@ -6,6 +6,7 @@ selphergi1_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = selphereg
 		NOT = {
 			tag = H01
@@ -153,6 +154,7 @@ selphergi1_missions = {
 				add_permanent_claim = ROOT
 			}
 			country_event = { id = eordand.3 }
+			custom_tooltip = selpherag_demands_of_the_domandrod_tt
 		}
 	}
 }
@@ -162,6 +164,7 @@ selpheregi3_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = selphereg
 		NOT = {
 			tag = H01
@@ -227,6 +230,7 @@ selpheregi4_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = selphereg
 		NOT = {
 			tag = H01
@@ -321,6 +325,7 @@ selpheregi5_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = selphereg
 		NOT = {
 			tag = H01

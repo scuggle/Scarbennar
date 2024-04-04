@@ -1,67 +1,221 @@
-#Witch-Kings
-1_relations_removed = {
-	diplomatic_upkeep = -1
+#New Corinite
+corinite_communities_aspect_modifier = {
+	local_build_cost = -0.2
+	local_build_time = -0.2
 }
-2_relations_removed = {
-	diplomatic_upkeep = -2
+corinite_abrahamic_aspect_modifier = {
+	local_missionary_maintenance_cost = -0.5
+	local_missionary_strength = 0.05
+	local_culture_conversion_cost = -0.2
 }
-3_relations_removed = {
-	diplomatic_upkeep = -3
+corinite_diplomatic_rabbi_aspect_modifier = {
+	local_development_cost = -0.10
 }
-4_relations_removed = {
-	diplomatic_upkeep = -4
-}
-5_relations_removed = {
-	diplomatic_upkeep = -5
-}
-6_relations_removed = {
-	diplomatic_upkeep = -6
-}
-7_relations_removed = {
-	diplomatic_upkeep = -7
-}
-8_relations_removed = {
-	diplomatic_upkeep = -8
-}
-9_relations_removed = {
-	diplomatic_upkeep = -9
-}
-10_relations_removed = {
-	diplomatic_upkeep = -10
+corinite_purim_teachings_aspect_modifier = {
+	reinforce_speed = 0.2
+	land_morale = 0.10 
 }
 
-#Military
-rp_military_morale_positive = {
+#Startup Events
+eur_balancing_modifier = {
+	privateer_efficiency = -0.4
+	diplomats = 1
+}
+eur_spy_buff = {
+	spy_offence = 0.2
+}
+
+#Skewered Drake colony buff
+skewered_drake_colony = {
+	colonist_placement_chance = 0.1
+	global_colonial_growth = 25
+}
+
+#Chaingrasper buff
+chaingrasper_initial_buff = {
+	global_tax_income = 36
+	colonist_placement_chance = 0.1
+	global_colonial_growth = 25
+}
+
+#roleplay modifiers
+####################
+goods_production_boost_1 = {
+	trade_goods_size_modifier = 0.1
+}
+goods_production_boost_2 = {
+	trade_goods_size_modifier = 0.2
+}
+goods_production_boost_3 = {
+	trade_goods_size_modifier = 0.33
+}
+goods_flat_production_boost_1 = {
+	trade_goods_size = 0.5
+}
+goods_flat_production_boost_2 = {
+	trade_goods_size = 1
+}
+local_prod_efficiency_modifier_1 = {
+	local_production_efficiency = 0.1
+}
+prod_efficiency_modifier_1 = {
+	production_efficiency = 0.1
+}
+prod_efficiency_modifier_2 = {
+	production_efficiency = 0.2
+}
+local_trade_power_boost_1 = {
+	province_trade_power_modifier = 0.1
+}
+local_trade_power_boost_2 = {
+	province_trade_power_modifier = 0.25
+}
+local_trade_power_flat_boost_1 = {
+	province_trade_power_value = 0.5
+}
+local_trade_power_flat_boost_2 = {
+	province_trade_power_value = 1
+}
+manpower_recovery_speed_modifier_1 = {
+	manpower_recovery_speed = 0.1
+}
+manpower_recovery_speed_modifier_2 = {
+	manpower_recovery_speed = 0.2
+}
+local_manpower_modifier_1 = {
+	local_manpower_modifier = 0.1
+}
+local_manpower_modifier_2 = {
+	local_manpower_modifier = 0.2
+}
+local_manpower_modifier_3 = {
+	local_manpower_modifier = 0.33
+}
+local_tax_modifier_1 = {
+	local_tax_modifier = 0.1
+}
+local_tax_modifier_2 = {
+	local_tax_modifier = 0.2
+}
+global_tax_modifier_1 = {
+	global_tax_modifier = 0.1
+}
+global_tax_modifier_2 = {
+	global_tax_modifier = 0.2
+}
+global_tax_income_1 = {
+	global_tax_income = 12
+}
+global_tax_income_2 = {
+	global_tax_income = 24
+}
+land_morale_1 = {
+	land_morale = 0.05
+}
+land_morale_2 = {
 	land_morale = 0.1
 }
-rp_military_morale_negative = {
-	land_morale = -0.1
+global_missionary_strength_1 = {
+	global_missionary_strength = 0.01
+}
+local_missionary_strength_1 = {
+	local_missionary_strength = 0.01
+}
+local_missionary_strength_2 = {
+	local_missionary_strength = 0.02
 }
 
-#Navy
 
-#Diplomacy
-
-#Economy
-
-#Expansion
-
-#Technology
-
-#Court
-
-#Government
-
-#Estates
-
-#EoA
-
-#Culture
-
-#Espionage
-
-#Religion
-
-#Colonisation
-
-#Trade
+#######
+#negative roleplay modifiers
+#######
+neg_goods_production_boost_1 = {
+	trade_goods_size_modifier = -0.1
+}
+neg_goods_production_boost_2 = {
+	trade_goods_size_modifier = -0.2
+}
+neg_goods_production_boost_3 = {
+	trade_goods_size_modifier = -0.33
+}
+neg_goods_flat_production_boost_1 = {
+	trade_goods_size = -0.5
+}
+neg_goods_flat_production_boost_2 = {
+	trade_goods_size = -1
+}
+neg_local_prod_efficiency_modifier_1 = {
+	local_production_efficiency = -0.1
+}
+neg_prod_efficiency_modifier_1 = {
+	production_efficiency = -0.1
+}
+neg_prod_efficiency_modifier_2 = {
+	production_efficiency = -0.2
+}
+devastation_ticker_1 = {
+	local_monthly_devastation = 0.1
+}
+devastation_ticker_2 = {
+	local_monthly_devastation = 0.2
+}
+neg_local_trade_power_boost_1 = {
+	province_trade_power_modifier = -0.1
+}
+neg_local_trade_power_boost_2 = {
+	province_trade_power_modifier = -0.25
+}
+neg_local_trade_power_flat_boost_1 = {
+	province_trade_power_value = -0.5
+}
+neg_local_trade_power_flat_boost_2 = {
+	province_trade_power_value = -1
+}
+neg_manpower_recovery_speed_modifier_1 = {
+	manpower_recovery_speed = -0.1
+}
+neg_manpower_recovery_speed_modifier_2 = {
+	manpower_recovery_speed = -0.2
+}
+neg_local_manpower_modifier_1 = {
+	local_manpower_modifier = -0.1
+}
+neg_local_manpower_modifier_2 = {
+	local_manpower_modifier = -0.2
+}
+neg_local_manpower_modifier_3 = {
+	local_manpower_modifier = -0.33
+}
+neg_local_tax_modifier_1 = {
+	local_tax_modifier = -0.1
+}
+neg_local_tax_modifier_2 = {
+	local_tax_modifier = -0.2
+}
+neg_global_tax_modifier_1 = {
+	global_tax_modifier = -0.1
+}
+neg_global_tax_modifier_2 = {
+	global_tax_modifier = -0.2
+}
+neg_global_tax_income_1 = {
+	global_tax_income = -12
+}
+neg_global_tax_income_2 = {
+	global_tax_income = -24
+}
+neg_land_morale_1 = {
+	land_morale = -0.05
+}
+neg_land_morale_2 = {
+	land_morale = -0.1
+}
+neg_global_missionary_strength_1 = {
+	global_missionary_strength = -0.01
+}
+neg_local_missionary_strength_1 = {
+	local_missionary_strength = -0.01
+}
+neg_local_missionary_strength_2 = {
+	local_missionary_strength = -0.02
+}

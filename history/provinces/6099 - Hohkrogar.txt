@@ -3,8 +3,8 @@
 owner = U10
 controller = U10
 add_core = U10
-culture = west_sandfang_gnoll
-religion = xhazobkult
+culture = windhowler_gnoll
+religion = kvangahga
 
 hre = no
 

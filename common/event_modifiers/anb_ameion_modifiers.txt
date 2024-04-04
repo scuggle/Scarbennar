@@ -2,7 +2,8 @@
 G52_destiny = {
 	nobles_influence_modifier = 0.1
 	nobles_loyalty_modifier = 0.1
-	fort_maintenance_modifier = -0.2
+	drill_gain_modifier = 0.50
+	drill_decay_modifier = -0.25
 }
 
 G52_laskaris_legacy = {
@@ -395,7 +396,7 @@ G52_republican_zeal_1 = { #Republican AI
 	diplomatic_reputation = 1
 }
 G52_republican_zeal_2 = { #Republican AI (hidden)
-	interest = -1
+	interest = -0.5
 	fort_maintenance_modifier = -0.50
 	reserves_organisation = 0.25
 	mercenary_cost = -0.2
@@ -410,7 +411,7 @@ G52_monarchist_zeal_1 = { #Monarchist AI
 	max_absolutism = 20
 }
 G52_monarchist_zeal_2 = { #Monarchist AI (hidden)
-	interest = -1
+	interest = -0.5
 	fort_maintenance_modifier = -0.50
 	reserves_organisation = 0.25
 	global_regiment_cost = -0.2

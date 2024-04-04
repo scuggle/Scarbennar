@@ -2,6 +2,8 @@
 #Griffon Empire#
 ################
 
+#TODO: Those modifiers need loc
+
 ge_abundance_of_stone = {
 	build_time = -0.15
 }
@@ -77,4 +79,282 @@ X22_redglades_modifier = {
 X22_victorious_modifier = {
 	prestige_decay = -0.05
 	monthly_splendor = 0.5
+}
+
+#Arawkelin
+elves_of_azkare_modifier = {
+	fire_damage = 0.1
+}
+avenged_hiderion_modifier = {
+	land_morale = 0.15
+	manpower_recovery_speed = 0.2
+}
+elven_supremacy_declared_modifier = {
+	global_unrest = 3
+	development_cost = 0.05
+	manpower_recovery_speed = 0.2
+}
+arawkellin_expeditions_modifier = {
+	land_morale = 0.05
+	land_attrition = -0.05
+	manpower_recovery_speed = 0.1
+}
+lupulan_port_modifier = {
+	local_development_cost = -0.05
+	province_trade_power_modifier = 0.1
+	supply_limit_modifier  = 0.25
+}
+recruiting_sirtani_raiders_modifier = {
+	loot_amount = 0.1
+	land_attrition = -0.1
+	movement_speed = 0.05
+}
+thriumph_over_ghost_emperor_modifier = {
+	land_morale = 0.15
+	prestige  = 0.5
+}
+baihon_xinh_put_to_rest = {
+	improve_relation_modifier = 0.25
+}
+hands_on_the_porcelain_trade_modifier = {
+	trade_efficiency = 0.05
+}
+relative_safe_waters_modifiers = {
+	global_trade_power = 0.1
+}
+home_of_warriors_modifier = {
+	global_manpower_modifier = 0.1
+	manpower_recovery_speed = 0.05
+	land_forcelimit_modifier = 0.05
+}
+harimari_eclipsed_modifier = {
+	prestige = 0.5
+	land_morale = 0.05
+}
+pingho_pacified_modifier = {
+	colonists = 1
+	global_colonial_growth = 15
+	global_trade_power = 0.1
+}
+kelino_united_modifier = {
+	manpower_recovery_speed = 0.1
+}
+dual_treasure_ports_modifier = {
+	trade_value_modifier = 0.1
+	province_trade_power_modifier = 0.05
+}
+araw_gate_of_the_east_modifier = {
+	defensiveness = 0.25
+	province_trade_power_modifier = 0.05
+}
+subjugators_of_thidinkai_modifier = {
+	prestige = 0.5
+	global_unrest = -2
+}
+treasure_fleet_leverage_modifier = {
+	trade_efficiency = 0.1
+}
+harimari_slaving_modifier = {
+	prestige = 0.5
+	trade_efficiency = 0.1
+	land_morale = 0.025
+}
+harimari_slaving_modifier2 = {
+	prestige = 1
+	trade_efficiency = 0.15
+	land_morale = 0.05
+}
+arawkellin_elven_legions_modifier = {
+	discipline = 0.05
+	land_forcelimit_modifier = -0.05
+	land_maintenance_modifier = 0.15
+}
+arawkellin_mixed_legions_modifier = {
+	discipline = 0.025
+	land_maintenance_modifier = 0.05
+}
+araw_raheni_trade_modifier = {
+	trade_efficiency = 0.1
+}
+araw_enslaving_bom_modifier = {
+	global_manpower_modifier = -0.1
+	trade_efficiency = 0.15
+}
+araw_slave_centre_modifier = {
+	trade_goods_size = 0.5
+}
+araw_revenge_on_pirates_modifier = {
+	global_unrest = -2
+	trade_efficiency = 0.15
+	global_trade_power = 0.5
+	privateer_efficiency = -0.2
+}
+araw_bom_slave_armies_modifier = {
+	land_morale = 0.075
+	trade_efficiency = 0.05
+	land_forcelimit_modifier = -0.1
+	land_maintenance_modifier = -0.05
+}
+imperial_ambitions_arawkellin_modifier = {
+	years_of_nationalism  = -5
+	unjustified_demands = -0.2
+	administrative_efficiency = 0.05
+}
+arawrising_empire_modifier = {
+	land_morale = 0.1
+	global_manpower_modifier = 0.05
+	land_forcelimit_modifier = 0.05
+}
+araw_unity_of_people_modifier = {
+	global_manpower_modifier = 0.1
+	land_forcelimit_modifier = 0.075
+	development_cost = -0.05
+	num_accepted_cultures = 1
+}
+
+#Cestirande
+A98_prepare_for_war = {
+	manpower_recovery_speed = 0.1
+	land_morale = 0.05
+}
+A98_cestirander_subterfuge = {
+	defensiveness = -0.15
+}
+A98_stand_against_wyverns = {
+	shock_damage_received = -0.1
+}
+A98_cestirande_victorious = {
+	shock_damage_received = -0.1
+	land_morale = 0.05
+}
+A98_relations_emperor = {
+	diplomatic_reputation = 1
+	ae_impact = -0.1
+}
+A_98_order_1 = {
+	cavalry_power = 0.10
+}
+A_98_order_2 = {
+	cavalry_power = 0.05
+}
+A_98_order_3 = {
+	cavalry_power = 0.10
+	global_tax_modifier = 0.1
+}
+A_98_order_4 = {
+	cavalry_power = 0.10
+	global_tax_modifier = 0.2
+}
+A98_reform_order = {
+	cavalry_power = -0.1
+	cavalry_cost = 0.5
+	global_tax_modifier = -0.3
+}
+A98_a_new_order = {
+	cavalry_power = 0.15
+	core_creation = -0.1
+	state_governing_cost = -0.2
+}
+A98_diplomatic_expertise = {
+	spy_offence = 0.2
+	diplomatic_upkeep = 1
+}
+A98_emperor = {
+	imperial_authority = 0.05
+	prestige = 1.5
+}
+A98_revitalized_capital = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
+}
+A98_luna_river_toll = {
+	province_trade_power_value = 20
+}
+A98_cestirander_intervention = {
+	global_trade_power = -0.15
+}
+A98_galeinn_mine = {
+	trade_goods_size = 1
+}
+A98_pashainey_empire = {
+	yearly_absolutism = 1
+	max_absolutism = 15
+	max_absolutism_effect = 0.3
+}
+A98_empire_heart = {
+	allowed_num_of_manufactories = 1
+	local_development_cost = -0.05
+}
+########################
+#falahan modifiers
+########################
+fal_harpy_saphire_town_modifier = {
+	local_development_cost = -0.05
+	supply_limit_modifier = 0.5
+}
+fal_pirate_nest_modifier = {
+	hostile_fleet_attrition = 1
+	local_sailors_modifier = 0.25
+}
+fal_a_drift_wood_fleet_modifier = {
+	capture_ship_chance = 0.1
+}
+fal_plentiful_food_production_modifier = {
+	development_cost= -0.05
+	manpower_recovery_speed = 0.25
+}
+fal_harpy_raiding_contingent_modifier = {
+	local_hostile_attrition = 1
+}
+fal_major_raiding_modifier = {
+	manpower_recovery_speed = 0.20
+	global_manpower_modifier = 0.1
+}
+fal_getting_majorly_raided_modifier = {
+	local_manpower_modifier = -0.5
+	local_monthly_devastation = 0.2
+}
+fal_restoration_of_elizna_modifier = {
+	local_development_cost = -0.2
+	local_build_cost = -0.1
+}
+fal_swarm_formed_modifier = {
+	land_morale = 0.1
+	movement_speed = 0.05
+}
+tungr_naval_yards_modifier = {
+	local_ship_cost = -0.2
+	ship_recruit_speed = -0.5
+}
+fal_tungr_naval_yards_modifier = {
+	naval_maintenance_modifier = -0.05
+}
+fal_harpy_land_base_modifier = {
+	local_hostile_attrition = 1
+	province_trade_power_value = 5
+}
+fal_hold_digging_modifier = {
+	local_development_cost = -0.2
+}
+fal_growth_using_pillage_modifier = {
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+}
+fal_plentiful_men_modifier = {
+	local_development_cost = -0.05
+	local_manpower_modifier = 0.2
+}
+fal_goblin_casino_modifier = {
+	local_tax_modifier = 0.2
+	local_unrest = 5
+}
+fal_copper_hulls_province_modifier = {
+	local_production_efficiency = -0.1
+}
+fal_copper_hulls_modifier = {
+	ship_durability = 0.075
+}
+fal_attractive_saphires_modifier = {
+	local_manpower_modifier = 0.2
+	development_cost = -0.05
 }

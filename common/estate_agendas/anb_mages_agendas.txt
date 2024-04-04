@@ -261,6 +261,9 @@ estate_mages_spy_on_rival = {
 			exists = no
 		}
 	}
+	invalid_trigger = {
+		event_target:agenda_country = { is_subject = yes }
+	}
 	provinces_to_highlight = {
 		is_capital_of = event_target:agenda_country
 	}
@@ -279,16 +282,16 @@ estate_mages_spy_on_rival = {
 		}
 		add_dip_power = 50
 	}
-        failing_effect = {
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_mages
+		add_estate_loyalty_modifier = {
+			estate = estate_mages
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 #Universities
@@ -431,6 +434,7 @@ estate_mages_conquer_damestear = {
 			}
 			any_owned_province = { #No need for this agenda if covered by a mission
 				trade_goods = damestear
+				has_discovered = ROOT
 			}
 			ROOT = {
 				knows_country = prev
@@ -480,6 +484,7 @@ estate_mages_conquer_damestear = {
 				}
 				any_owned_province = { #No need for this agenda if covered by a mission
 					trade_goods = damestear
+					has_discovered = ROOT
 				}
 				ROOT = {
 					knows_country = prev
@@ -493,13 +498,14 @@ estate_mages_conquer_damestear = {
 			random_owned_province = {
 				limit = {
 					trade_goods = damestear
+					has_discovered = ROOT
 				}
 				save_event_target_as = agenda_province
 			}
 			random_owned_province = {
 				limit = {
 					trade_goods = damestear
-
+					has_discovered = ROOT
 					any_neighbor_province = {
 						owned_by = root
 					}
@@ -603,6 +609,7 @@ estate_mages_conquer_precursor_relics = {
 			}
 			any_owned_province = { #No need for this agenda if covered by a mission
 				trade_goods = precursor_relics
+				has_discovered = ROOT
 			}
 			ROOT = {
 				knows_country = prev
@@ -652,6 +659,7 @@ estate_mages_conquer_precursor_relics = {
 				}
 				any_owned_province = { #No need for this agenda if covered by a mission
 					trade_goods = precursor_relics
+					has_discovered = ROOT
 				}
 				ROOT = {
 					knows_country = prev
@@ -665,13 +673,14 @@ estate_mages_conquer_precursor_relics = {
 			random_owned_province = {
 				limit = {
 					trade_goods = precursor_relics
+					has_discovered = ROOT
 				}
 				save_event_target_as = agenda_province
 			}
 			random_owned_province = {
 				limit = {
 					trade_goods = precursor_relics
-
+					has_discovered = ROOT
 					any_neighbor_province = {
 						owned_by = root
 					}
@@ -1898,7 +1907,7 @@ estate_mages_ally_pro_mage_countries = {
 			is_subject_of_type = great_daimyo_vassal
 			is_subject_of_type = daimyo_vassal
 			is_subject_of_type = daimyo_xiaken_vassal
-			is_subject_of_type = tributary_state
+			is_subject_of_type = tributary_state_anb
 		}
 		any_known_country = {
 			has_estate = estate_mages # has loyal mages
@@ -1921,7 +1930,7 @@ estate_mages_ally_pro_mage_countries = {
 				AND = { # Case 1: Country is not in the Raj
 					OR = { # target is not a subject or is a tributary (is not in the Raj)
 						is_subject = no
-						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_anb
 					}
 					ROOT = { # Country is not in the Raj
 						AND = { 
@@ -1979,7 +1988,7 @@ estate_mages_ally_pro_mage_countries = {
 					AND = {
 						OR = {
 							is_subject = no
-							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_anb
 						}
 						ROOT = {
 							AND = { 

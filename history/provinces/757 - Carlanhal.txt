@@ -1,18 +1,18 @@
 
 # No previous file for Ilheus
-owner = B19
-controller = B19
-add_core = B19
-culture = aldresian
+owner = B50
+controller = B50
+add_core = B50
+culture = redfoot_halfling
 religion = regent_court
 
 hre = no
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 8
+base_production = 6
+base_manpower = 6
 
-trade_goods = unknown
+trade_goods = tobacco
 center_of_trade = 1
 
 capital = ""

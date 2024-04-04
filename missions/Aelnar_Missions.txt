@@ -5,6 +5,7 @@ aelnar_2_elsa = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_modifier = aelnar_icy_ambitions
 		has_country_flag = the_frozen_star
@@ -31,7 +32,7 @@ aelnar_2_elsa = {
 	}
 	
 	Z43_thirsting_queen = {
-		icon = mission_thirsting_queen
+		icon = mission_thirsting_queen_2
 		position = 2
 		required_missions = {
 			Z43_empowerment
@@ -75,6 +76,7 @@ aelnar_4_elsa_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_modifier = aelnar_icy_ambitions
 		has_country_flag = the_frozen_star
@@ -190,6 +192,7 @@ aelnar_5_elsa_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_modifier = aelnar_icy_ambitions
 		has_country_flag = the_frozen_star
@@ -253,6 +256,7 @@ aelnar_5_sicrheior_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 	}
@@ -330,6 +334,7 @@ aelnar_4_sicrheior_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 	}
@@ -364,6 +369,7 @@ aelnar_2_sicrheior_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 	}
@@ -431,6 +437,7 @@ aelnar_2_calasandur_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 	}
@@ -498,6 +505,7 @@ aelnar_4_calasandur_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 	}
@@ -527,6 +535,7 @@ aelnar_5_calasandur_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 	}
@@ -587,12 +596,13 @@ aelnar_4_dahvar_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
 	
 	Z43_religious_fervor = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 1
 		
 		trigger = {
@@ -616,6 +626,7 @@ aelnar_2_dahvar_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -695,6 +706,7 @@ aelnar_5_dahvar_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -753,6 +765,7 @@ aelnar_1_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 	
@@ -943,6 +956,7 @@ aelnar_1_elsa = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_modifier = aelnar_icy_ambitions
 		has_country_flag = the_frozen_star
@@ -999,6 +1013,7 @@ aelnar_1_sicrheior_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 	}
@@ -1077,6 +1092,7 @@ aelnar_1_calasandur_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 	}
@@ -1132,6 +1148,7 @@ aelnar_1_dahvar_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -1192,6 +1209,7 @@ aelnar_1_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 
@@ -1222,6 +1240,7 @@ aelnar_1_dahvar_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -1256,6 +1275,7 @@ aelnar_1_calasandur_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 		has_country_flag = rianvisa_calasandur_rule_6
@@ -1288,6 +1308,7 @@ aelnar_1_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 	
@@ -1323,6 +1344,7 @@ aelnar_1_sicrheior_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 		has_ruler_flag = sicrheior_son
@@ -1335,7 +1357,7 @@ aelnar_1_sicrheior_2 = {
 		trigger = {
 			stability = 3
 			legitimacy = 95
-			average_effective_unrest = -3
+			average_effective_unrest = 3
 			custom_trigger_tooltip = {
 				tooltip = sicrheior_son_tooltip
 				has_ruler_flag = sicrheior_son
@@ -1487,6 +1509,7 @@ aelnar_1_calasandur_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 		has_country_flag = rianvisa_calasandur_rule_3
@@ -1608,6 +1631,7 @@ aelnar_2_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 	
@@ -1869,6 +1893,7 @@ aelnar_2_elsa_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_modifier = aelnar_icy_ambitions
 		has_country_flag = the_frozen_star
@@ -1905,6 +1930,7 @@ aelnar_2_sicrheior_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 	}
@@ -1947,6 +1973,7 @@ aelnar_2_calasandur_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 	}
@@ -1983,6 +2010,7 @@ aelnar_2_dahvar_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -2015,6 +2043,7 @@ aelnar_2_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 	
@@ -2329,6 +2358,7 @@ aelnar_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 	
@@ -2885,6 +2915,7 @@ aelnar_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 	
@@ -3005,7 +3036,13 @@ aelnar_4 = {
 				}
 				add_base_production = 3
 				add_base_tax = 2
-				center_of_trade = 2
+				if = {
+					limit = { province_has_center_of_trade_of_level = 1 }
+					add_center_of_trade_level = 2
+				}
+				else = {
+					center_of_trade = 2
+				}
 				set_province_flag = aelnar_trade_capital
 			}
 		}
@@ -3156,6 +3193,7 @@ aelnar_4_sicrheior_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 	}
@@ -3288,6 +3326,7 @@ aelnar_4_calasandur_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 		has_country_flag = rianvisa_calasandur_rule_2
@@ -3345,6 +3384,7 @@ aelnar_4_lithiel = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = lithiel_ideas
 	}
@@ -3408,6 +3448,7 @@ aelnar_4_elsa = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_modifier = aelnar_icy_ambitions
 	}
@@ -3480,6 +3521,7 @@ aelnar_4_dahvar_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -3514,6 +3556,7 @@ aelnar_4_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 	
@@ -3604,7 +3647,7 @@ aelnar_4_2 = {
 		}
 		
 		effect = {
-			taychend_region = {
+			taychend_superregion = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -3623,19 +3666,19 @@ aelnar_4_2 = {
 		}
 		
 		provinces_to_highlight = {
-			region = taychend_region
+			superregion = taychend_superregion
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 20
-				region = taychend_region
+				superregion = taychend_superregion
 			}
 		}
 		
 		effect = {
-			taychend_region = {
+			taychend_superregion = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -3697,12 +3740,12 @@ aelnar_4_2 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					region = taychend_region
+					superregion = taychend_superregion
 					NOT = {
 						ROOT = {
 							num_of_owned_provinces_with = {
 								value = 40
-								region = taychend_region
+								superregion = taychend_superregion
 							}
 						}
 					}
@@ -3712,19 +3755,8 @@ aelnar_4_2 = {
 					NOT = {
 						ROOT = {
 							num_of_owned_provinces_with = {
-								value = 40
+								value = 20
 								region = chendhya_region
-							}
-						}
-					}
-				}
-				AND = {
-					region = larankarha_highlands_region
-					NOT = {
-						ROOT = {
-							num_of_owned_provinces_with = {
-								value = 25
-								region = larankarha_highlands_region
 							}
 						}
 					}
@@ -3736,15 +3768,11 @@ aelnar_4_2 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 40
-				region = taychend_region
+				superregion = taychend_superregion
 			}
 			num_of_owned_provinces_with = {
-				value = 40
+				value = 20
 				region = chendhya_region
-			}
-			num_of_owned_provinces_with = {
-				value = 25
-				region = larankarha_highlands_region
 			}
 		}
 		
@@ -3768,6 +3796,7 @@ aelnar_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 	
@@ -3922,6 +3951,7 @@ aelnar_5_sicrheior_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 	}
@@ -4081,6 +4111,7 @@ aelnar_5_calasandur_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 		has_country_flag = rianvisa_calasandur_rule_2
@@ -4218,6 +4249,7 @@ aelnar_5_lithiel = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = lithiel_ideas
 	}
@@ -4343,6 +4375,7 @@ aelnar_5_elsa = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_modifier = aelnar_icy_ambitions
 	}
@@ -4484,6 +4517,7 @@ aelnar_5_dahvar_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -4575,7 +4609,7 @@ aelnar_5_dahvar_2 = {
 	}
 	
 	Z43_the_elven_constellation = {
-		icon = mission_elven_constellation
+		icon = mission_star_comet
 		position = 11
 		required_missions = {
 			Z43_the_divine_solution
@@ -4605,6 +4639,7 @@ aelnar_5_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 	}
 	
@@ -4730,6 +4765,7 @@ aelnar_5_calasandur_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 		has_country_flag = rianvisa_calasandur_rule_4
@@ -4755,7 +4791,7 @@ aelnar_5_calasandur_3 = {
 	}
 	
 	Z43_total_control = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 16
 		required_missions = {
 			Z43_state_infiltration
@@ -4807,13 +4843,14 @@ aelnar_5_calasandur_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 		has_country_flag = rianvisa_calasandur_rule_5
 	}
 	
 	Z43_the_all_seeing_eye = {
-		icon = mission_make_it_fall
+		icon = mission_thirsting_queen
 		position = 18
 		required_missions = {
 			Z43_the_covenant_shroud
@@ -4842,6 +4879,7 @@ aelnar_1_dahvar_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -4961,6 +4999,7 @@ aelnar_5_dahvar_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -5081,6 +5120,7 @@ aelnar_3_dahvar = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_dahvar_rule
 	}
@@ -5133,6 +5173,7 @@ aelnar_3_calasandur_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_calasandur_rule
 	}
@@ -5177,6 +5218,7 @@ aelnar_3_sicrheior_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 	}
@@ -5218,6 +5260,7 @@ aelnar_5_sicrheior_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = rianvisa_sicrheior_rule
 	}
@@ -5529,6 +5572,7 @@ aelnar_1_elissa_magy = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = aelnar_empowerment
 	}
@@ -5675,6 +5719,7 @@ aelnar_5_elissa_magy = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z43
 		has_country_flag = aelnar_empowerment
 	}

@@ -1,13 +1,16 @@
 
 # No previous file for Quijos
-culture = common_goblin
-religion = goblinic_shamanism
+owner = B44
+controller = B44
+add_core = B44
+add_core = B54
+culture = aldresian
+religion = regent_court
 capital = ""
-tribal_owner = B44
 hre = no
 
 base_tax = 3
-base_production = 2
+base_production = 4
 base_manpower = 2
 
 trade_goods = fish

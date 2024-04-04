@@ -1,0 +1,929 @@
+cestirande_1_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
+
+	A98_knight_estates = {
+		icon = mission_eastern_european_city
+		position = 2
+		required_missions = { A98_revitilize_capital } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			crown_land_share = 20
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+		} 
+
+		effect = {
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 5
+			}
+			add_country_modifier = {
+				name = A_98_order_1
+				duration = 3650
+			}
+			add_treasury = 200
+		} 
+	}
+
+	A98_our_pride = {
+		icon = confront_the_lombards
+		position = 3
+		required_missions = { A98_knight_estates } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			cavalry_fraction = 0.5
+			282 = {
+				has_building = workshop
+			}
+			296 = {
+				has_building = workshop
+			}
+			906 = {
+				has_building = workshop
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = A_98_order_2
+				duration = -1
+			}
+			remove_country_modifier = A_98_order_1
+			every_owned_province = {
+				limit = {
+					trade_goods = livestock
+				}
+				add_base_manpower = 2
+			}
+		} 
+	}
+
+	A98_new_lances = {
+		icon = league_of_the_public_weal
+		position = 4
+		required_missions = {
+			A98_develop_galeinn
+			A98_our_pride
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			treasury = 1000
+			mil_power = 100
+		}
+
+		effect = {
+			add_mil_power = -100
+			add_treasury = -1000
+			add_country_modifier = {
+				name = A_98_order_3
+				duration = -1
+			}
+			remove_country_modifier = A_98_order_2
+			#TODO: Add something more here
+		} 
+	}
+
+	A98_knighthood = {
+		icon = mission_knight
+		position = 5
+		required_missions = { A98_new_lances } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			prestige = 100
+			has_reform = cavalry_warfare_reform
+			has_reform = aristocratic_court_reform
+			has_estate = estate_nobles
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = A_98_order_4
+				duration = -1
+			}
+			remove_country_modifier = A_98_order_3
+			set_estate_privilege = estate_nobles_longlance_knights
+			#TODO: Custom tooltip
+		} 
+	}
+}
+
+cestirande_2_missions = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
+
+	A98_revitilize_capital = {
+		icon = mission_early_game_buildings
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			capital_scope = {
+				num_of_times_improved_by_owner = 5
+				is_prosperous = yes
+				#TODO: Maybe add tooltip if needed
+			}
+		}
+
+		effect = {
+			327 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = A98_revitalized_capital
+					duration = 3650
+				}
+			}
+		} 
+	}
+
+	A98_control_luna_trade = {
+		icon = mission_se_along_the_river
+		position = 2
+		required_missions = { A98_revitilize_capital } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			327 = {
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+			}
+			dip_power = 100
+			trade_embargoing = Z03
+			trade_embargoing = A61
+		}
+
+		effect = {
+			add_dip_power = -100
+			327 = {
+				add_province_modifier = {
+					name = A98_luna_river_toll
+					duration = -1
+				}
+			}
+			Z03 = {
+				add_country_modifier = {
+					name = A98_cestirander_intervention
+					duration = 7300
+				}
+			}
+			A61 = {
+				add_country_modifier = {
+					name = A98_cestirander_intervention
+					duration = 7300
+				}
+			}
+		} 
+	}
+
+	A98_develop_galeinn = {
+		icon = mission_entrepot_of_india
+		position = 3
+		required_missions = {
+			A98_control_luna_trade
+			A98_pashainey_heartland
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			295 = {
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				has_manufactory_trigger = yes
+			}
+		}
+
+		effect = {
+			295 = {
+				add_base_production = 3
+				add_province_modifier = {
+					name = A98_galeinn_mine
+					duration = -1
+				}
+			}
+			country_event = {
+				id = flavor_cestirande.6
+				days = 3650
+			}
+		} 
+	}
+
+	A98_leverage_our_position = {
+		icon = mission_swiss_mercenaries_flipped
+		position = 4
+		required_missions = { A98_develop_galeinn } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = {
+					OR = {
+						exists = Z03
+						exists = A61
+						exists = A55
+						exists = A82
+					}
+				}
+				dip_power = 200
+				if = {
+					limit = { exists = Z03 }
+					has_guaranteed = Z03
+					Z03 = {
+						subsidised_percent_amount = { 
+							value = 0.75
+						}
+					}
+				}
+				if = {
+					limit = { exists = A61 }
+					has_guaranteed = A61
+					A61 = {
+						subsidised_percent_amount = { 
+							value = 0.75
+						}
+					}
+				}
+				if = {
+					limit = { exists = A55 }
+					has_guaranteed = A55
+					A55 = {
+						subsidised_percent_amount = { 
+							value = 0.75
+						}
+					}
+				}
+				if = {
+					limit = { exists = A82 }
+					has_guaranteed = A82
+					A82 = {
+						subsidised_percent_amount = { 
+							value = 0.75
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						exists = Z03
+						exists = A61
+						exists = A55
+						exists = A82
+					}
+				}
+				add_dip_power = -200
+				if = {
+					limit = { exists = Z03 }
+					Z03 = {
+						country_event = {
+							id = flavor_cestirande.7
+							days = 60
+							random = 30
+						}
+					}
+				}
+				if = {
+					limit = { exists = A61 }
+					A61 = {
+						country_event = {
+							id = flavor_cestirande.7
+							days = 60
+							random = 30
+						}
+					}
+				}
+				if = {
+					limit = { exists = A55 }
+					A55 = {
+						country_event = {
+							id = flavor_cestirande.7
+							days = 60
+							random = 30
+						}
+					}
+				}
+				if = {
+					limit = { exists = A82 }
+					A82 = {
+						country_event = {
+							id = flavor_cestirande.7
+							days = 60
+							random = 30
+						}
+					}
+				}
+			}
+			else = {
+				add_prestige = 30
+				add_prestige_or_monarch_power = yes
+			}
+		} 
+	}
+
+	A98_empires_heart = {
+		icon = mission_city_prosperity
+		position = 5
+		required_missions = { A98_leverage_our_position } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			development_in_provinces = {
+				value = 800
+				region = east_dameshead_region
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = {
+					region = east_dameshead_region
+					OR = {
+						has_terrain = city_terrain
+						has_terrain = farmlands
+					}
+				}
+				add_province_modifier = {
+					name = A98_empire_heart
+					duration = -1
+				}
+			}
+		} 
+	}
+}
+
+cestirande_3_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
+
+	A98_an_old_rivalry = {
+		icon = mission_confrontation
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			army_size_percentage = 1
+			num_of_generals = 1
+			A84 = {
+				OR = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = insulted
+					}
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = scornfully_insulted
+					}
+				}
+			}
+			trade_embargoing = A84
+		}
+
+		effect = {
+			galeinn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = A98_prepare_for_war
+				duration = 3650
+			}
+		} 
+	}
+
+	A98_pashainey_heartland = {
+		icon = mission_empire
+		position = 2
+		required_missions = { A98_an_old_rivalry } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			galeinn_area = {
+				type = all
+				is_core = ROOT
+			}
+			295 = {
+				num_of_times_improved_by_owner = 3
+			}
+		}
+
+		effect = {
+			middle_luna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			heartlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
+	}
+
+	A98_weaken_verne = {
+		icon = mch_bypass_great_wall
+		position = 3
+		required_missions = { A98_pashainey_heartland } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			middle_luna_area = {
+				type = all
+				OR = {
+					is_core = ROOT
+					is_core = A61
+					is_core = Z03
+				}
+			}
+			has_spy_network_in = {
+				who = A33
+				value = 50
+			}
+			army_strength = {
+				who = A33
+				value = 1.25
+			}
+			mil_power = 50
+		}
+
+		effect = {
+			add_mil_power = -50
+			eastneck_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			menibor_loop_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			A33 = {
+				add_country_modifier = {
+					name = A98_cestirander_subterfuge
+					duration = 1825
+				}
+			}
+			add_country_modifier = {
+				name = A98_stand_against_wyverns
+				duration = 1825
+			}
+		} 
+	}
+
+	A98_in_our_way = {
+		icon = mission_three_death
+		position = 4
+		required_missions = { A98_weaken_verne } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			NOT = {
+				eastneck_area = {
+					type = any
+					owned_by = A33
+				}
+			}
+			NOT = {
+				menibor_loop_area = {
+					type = any
+					owned_by = A33
+				}
+			}
+		}
+
+		effect = {
+			verne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wyvernmark_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
+	}
+
+	A98_a_true_victory = {
+		icon = spread_the_von_wettins
+		position = 5
+		required_missions = { A98_in_our_way A98_leverage_our_position } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = {
+					A82 = {
+						is_subject_of = ROOT
+					}
+				}
+				eastneck_area = {
+					type = all
+					OR = {
+						AND = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+						AND = {
+							owned_by = A82
+							is_core = A82
+						}
+					}
+				}
+			}
+			else = {
+				eastneck_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+
+
+
+			if = {
+				limit = {
+					A55 = {
+						is_subject_of = ROOT
+					}
+				}
+				menibor_loop_area = {
+					type = all
+					OR = {
+						AND = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+						AND = {
+							owned_by = A55
+							is_core = A55
+						}
+					}
+				}
+			}
+			else = {
+				menibor_loop_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+			verne_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			wyvernmark_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = flavor_cestirande.1
+			}
+		} 
+	}
+}
+
+cestirande_4_missions = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
+
+	A98_relations_with_emperor = {
+		icon = mission_alliances
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			alliance_with = emperor
+			emperor = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			OR = {
+				employed_advisor = {
+					category = DIP
+					type = diplomat
+				}
+				employed_advisor = {
+					category = DIP
+					type = statesman
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = A98_relations_emperor
+				duration = 3650
+			}
+			country_event = {
+				id = flavor_cestirande.2
+			}
+		} 
+	}
+
+	A98_woe_to_the_defeated = {
+		icon = mission_impaled_soldies
+		position = 2
+		required_missions = { A98_relations_with_emperor } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			alliance_with = emperor
+			emperor = {
+				OR = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = lilac_wars_rose_party_member
+					}
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
+				}
+			}
+			diplomatic_reputation = A31
+			diplomatic_reputation = A45
+		}
+
+		effect = {
+			if = {
+				limit = {  
+					has_dlc = "Emperor" 
+				}
+				country_event = {
+					id = flavor_cestirande.10
+					days = 15
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { has_dlc = "Emperor" }
+				}
+				emperor = {
+					country_event = {
+						id = flavor_cestirande.11
+						days = 15
+					}
+				}
+			}
+		} 
+	}
+
+	A98_march_on_istralore = {
+		icon = mission_lit_march_west
+		position = 3
+		required_missions = {
+			A98_woe_to_the_defeated
+			A98_pashainey_heartland
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			owns_or_non_sovereign_subject_of = 278
+			owns_or_non_sovereign_subject_of = 109
+		}
+
+		effect = {
+			east_dameshead_region = {
+				limit = {
+					owned_by = A45
+				}
+				add_permanent_claim = root
+			}
+		} 
+	}
+
+	A98_finish_the_job = {
+		icon = mission_beheading
+		position = 4
+		required_missions = { A98_march_on_istralore } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			NOT = {
+				exists = A45
+			}
+		}
+
+		effect = {
+			east_dameshead_region = {
+				limit = {
+					owned_by = A31
+				}
+				add_permanent_claim = root
+			}
+		} 
+	}
+
+	A98_anbennarian_hegemon = {
+		icon = mission_thinking_king
+		position = 5
+		required_missions = {
+			A98_finish_the_job                                                                                                                                                                                                                                                                                                                                                                                                                        
+			A98_in_our_way
+			A98_usurp_usurper
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			NOT = {
+				exists = A31
+			}
+			army_size = 100
+		}
+
+		effect = {
+			custom_tooltip = cestirande_halve_hegemony_reqs_tt
+			set_country_flag = halve_hegemony_requirements
+		} 
+	}
+}
+
+cestirande_5_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
+
+	A98_reform_the_order = {
+		icon = mission_court_education
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			has_estate_privilege = estate_nobles_longlance_knights
+			adm_power = 150
+			treasury = 2000
+		}
+
+		effect = {
+			add_adm_power = -150
+			add_treasury = -2000
+			add_country_modifier = {
+				name = A98_reform_order
+				duration = 3650
+			}
+			remove_country_modifier = A_98_order_4
+		} 
+	}
+
+	A98_a_new_dawn = {
+		icon = mission_book_of_royal_degrees
+		position = 2
+		required_missions = { A98_reform_the_order } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			NOT = {
+				has_country_modifier = A98_reform_order
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = A98_a_new_order
+				duration = -1
+			}
+			add_prestige_excess_to_splendour_effect = { VAL=20 }
+		} 
+	}
+
+	A98_undermine_wex = {
+		icon = mission_whisper
+		position = 3
+		required_missions = { A98_woe_to_the_defeated } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			A48 = {
+				alliance_with = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+			calc_true_if = {
+				desc = A98_undermine_wex_tt
+				all_elector = {
+					preferred_emperor = ROOT
+					has_opinion = { who = ROOT value = 100 }
+				}
+				amount = 3
+			}
+		}
+
+		effect = {
+			greater_bardswood_area = {
+				limit = {
+					owned_by = A30
+				}
+				add_claim = A48
+			}
+			add_country_modifier = {
+				name = A98_diplomatic_expertise
+				duration = 7300
+			}
+		} 
+	}
+
+	A98_usurp_usurper = {
+		icon = mission_moon_throne
+		position = 4
+		required_missions = { A98_undermine_wex } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			is_emperor = yes
+			has_won_war_against = {
+				who = A30
+				max_years_since = 50
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = A98_emperor
+				duration = -1
+			}
+			add_government_reform = cestirande_diplomacy_reform
+		} 
+	}
+
+	A98_pashainey_empire = {
+		icon = mission_monarch_in_throne_room
+		position = 5
+		required_missions = { A98_usurp_usurper } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				hre_reform_passed = emperor_privilegia_de_non_appelando
+				hre_reform_passed = emperor_geteilte_macht
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = A98_pashainey_empire
+				duration = -1
+			}
+		} 
+	}
+}

@@ -6,6 +6,7 @@ busilar_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	
@@ -161,6 +162,7 @@ busilar_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	
@@ -325,6 +327,7 @@ busilar_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	
@@ -494,7 +497,7 @@ busilar_3 = {
 		}
 	}
 	
-	A29_westend_pillar = {
+	A29_katrano_pillar = {
 		icon = mission_conquer_tunisia
 		position = 8
 		
@@ -523,7 +526,7 @@ busilar_3 = {
 		
 		required_missions = {
 			A29_the_imperial_cub
-			A29_westend_pillar
+			A29_katrano_pillar
 			A29_a_symbol_of_our_protection
 		}
 
@@ -547,8 +550,8 @@ busilar_3 = {
 		}
 		
 		provinces_to_highlight = {
-			trade_company_region = trade_company_akan
-			culture = west_sandfang_gnoll
+			trade_company_region = trade_company_divenhal_gate
+			culture = seascourge_gnoll
 			NOT = {
 				province_id = 6091
 				province_id = 6092
@@ -565,8 +568,8 @@ busilar_3 = {
 		
 		trigger = {
 			owns_all_provinces = {
-				trade_company_region = trade_company_akan
-				culture = west_sandfang_gnoll
+				trade_company_region = trade_company_divenhal_gate
+				culture = seascourge_gnoll
 				NOT = {
 					province_id = 6091
 					province_id = 6092
@@ -584,7 +587,7 @@ busilar_3 = {
 		effect = {
 			every_owned_province = {
 				limit = {
-					culture = west_sandfang_gnoll
+					culture = seascourge_gnoll
 					AND = {
 						area = deshak_area
 						NOT = { province_id = 403 }
@@ -596,10 +599,10 @@ busilar_3 = {
 			}
 			every_owned_province = {
 				limit = {
-					culture = west_sandfang_gnoll
+					culture = seascourge_gnoll
 					OR = {
-						area = akan_mountains_area
-						area = middle_akan_area
+						area = akasik_mountains_area
+						area = middle_akasik_area
 						province_id = 403
 					}
 				}
@@ -609,13 +612,13 @@ busilar_3 = {
 			}
 			every_owned_province = {
 				limit = {
-					culture = west_sandfang_gnoll
+					culture = seascourge_gnoll
 					OR = {
 						area = akarat_area
 						area = ekha_area
 					}
 				}
-				change_culture = far_akani
+				change_culture = far_akasi
 				change_religion = ROOT
 				add_devastation = 10
 			}
@@ -630,6 +633,7 @@ busilar_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	
@@ -838,14 +842,14 @@ busilar_4 = {
 		}
 		
 		effect = {
-			middle_akan_area = {
+			middle_akasik_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			akan_mountains_area = {
+			akasik_mountains_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -865,18 +869,18 @@ busilar_4 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = middle_akan_area
-				area = akan_mountains_area
+				area = middle_akasik_area
+				area = akasik_mountains_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			middle_akan_area = {
+			middle_akasik_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			akan_mountains_area = {
+			akasik_mountains_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -988,6 +992,7 @@ busilar_5 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	

@@ -39,7 +39,7 @@ estate_eunuchs_anb = {
 		}
 		NOT = { tag = Y05 }
 		NOT = { has_country_flag = anti_eunuch_country }
-		NOT = { overlord = { has_reform = raja_reform } }
+		NOT = { overlord = { has_government_attribute = is_raja } }
 
 		OR = {
 			has_reform = eunuch_republic
@@ -145,8 +145,8 @@ estate_eunuchs_anb = {
 				has_disaster = estate_mages_disaster
 				has_disaster = estate_artificers_disaster
 				has_disaster = estate_adventurers_disaster
-				#has_disaster = estate_middlecastes_disaster #TODO: create disaster
-				#has_disaster = estate_lowercastes_distaster #TODO: create disaster
+				#has_disaster = estate_middlecastes_disaster
+				#has_disaster = estate_lowercastes_distaster
 				#has_disaster = estate_brahmins_disaster
 				#has_disaster = estate_jains_disaster
 			}
@@ -163,8 +163,8 @@ estate_eunuchs_anb = {
 				has_disaster = estate_mages_disaster
 				has_disaster = estate_artificers_disaster
 				has_disaster = estate_adventurers_disaster
-				#has_disaster = estate_middlecastes_disaster #TODO: create disaster
-				#has_disaster = estate_lowercastes_distaster #TODO: create disaster
+				#has_disaster = estate_middlecastes_disaster
+				#has_disaster = estate_lowercastes_distaster
 				#has_disaster = estate_brahmins_disaster
 				#has_disaster = estate_jains_disaster
 			}

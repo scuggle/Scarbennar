@@ -4,6 +4,7 @@ A17_branch_0 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -71,6 +72,7 @@ A17_branch_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -109,6 +111,12 @@ A17_branch_1 = {
 				if = {
 					limit = { NOT = { is_subject_of = ROOT } is_subject = yes }
 					add_liberty_desire = 20
+				}
+				else = {
+					add_historical_friend = A17
+					ROOT = {
+						add_historical_friend = A09
+					}
 				}
 			}
 		}
@@ -246,6 +254,7 @@ A17_branch_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -431,6 +440,7 @@ A17_branch_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -549,7 +559,7 @@ A17_branch_3 = {
 			add_dip_power = -100
 			every_owned_province = {
 				limit = { region = lencenor_region culture = derannic }
-				add_culture_construction = {	#This is erroring
+				add_culture_construction = {
 					speed = 0.5
 					cost = 0
 				}
@@ -573,7 +583,7 @@ A17_branch_3 = {
 			add_casus_belli = {
 				target = A05
 				type = cb_trade_war_triggered
-				months = 18250
+				months = 600
 			}
 		}
 	}
@@ -699,6 +709,7 @@ A17_branch_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -836,6 +847,7 @@ A17_enteben_0 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}
@@ -1075,6 +1087,7 @@ A17_enteben_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}
@@ -1301,6 +1314,7 @@ A17_enteben_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}
@@ -1610,6 +1624,7 @@ A17_enteben_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}
@@ -1915,6 +1930,7 @@ A17_enteben_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}

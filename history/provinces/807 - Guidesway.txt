@@ -1,13 +1,16 @@
 
 # No previous file for Abancay
-culture = green_orc
-religion = great_dookan
+owner = B48
+controller = B48
+add_core = B47
+add_core = B48
+culture = busilari
+religion = regent_court
 capital = ""
-tribal_owner = B29
 hre = no
 
-base_tax = 1
-base_production = 1
+base_tax = 3
+base_production = 2
 base_manpower = 1
 
 trade_goods = salt

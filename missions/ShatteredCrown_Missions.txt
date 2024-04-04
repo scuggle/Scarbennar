@@ -4,6 +4,7 @@ shatteredcrown_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes
@@ -364,7 +365,7 @@ shatteredcrown_1 = {
 	}
 	
 	H72_onto_the_dagrinrod = {
-		icon = mission_magisterium_breakthrought
+		icon = mission_crystal_cave
 		required_missions = { H72_second_conclave_of_shamans }
 		position = 10
 		
@@ -593,6 +594,7 @@ shatteredcrown_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes
@@ -676,7 +678,7 @@ shatteredcrown_2 = {
 	}
 	
 	H72_onto_the_dwarovrod = {
-		icon = mission_magisterium_breakthrought
+		icon = mission_crystal_cave
 		required_missions = { H72_first_conclave_of_shamans }
 		position = 3
 		
@@ -1013,6 +1015,7 @@ shatteredcrown_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes
@@ -1264,7 +1267,7 @@ shatteredcrown_3 = {
 	}
 	
 	H72_onto_the_argrod = {
-		icon = mission_magisterium_breakthrought
+		icon = mission_crystal_cave
 		required_missions = { H72_second_conclave_of_shamans }
 		position = 10
 		
@@ -1409,6 +1412,7 @@ shatteredcrown_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes
@@ -1878,15 +1882,15 @@ shatteredcrown_4 = {
 		trigger = {
 			if = {
 				limit = { Z54 = { is_subject_of = ROOT } }
-				3071 = { owned_by = Z54	fort_level = 1 }
-				3048 = { owned_by = Z54	fort_level = 1 }
-				3054 = { owned_by = Z54	fort_level = 1 }
-				3068 = { owned_by = Z54	fort_level = 1 }
-				3053 = { owned_by = Z54	fort_level = 1 }
-				3050 = { owned_by = Z54	fort_level = 1 }
-				3063 = { owned_by = Z54	fort_level = 1 }
-				3059 = { owned_by = Z54	fort_level = 1 }
-				3049 = { owned_by = Z54	fort_level = 1 }
+				3071 = { owned_by = Z54 any_neighbor_province = { owned_by = Z54	fort_level = 1 } }
+				3048 = { owned_by = Z54 any_neighbor_province = { owned_by = Z54	fort_level = 1 } }
+				3054 = { owned_by = Z54 any_neighbor_province = { owned_by = Z54	fort_level = 1 } }
+				3068 = { owned_by = Z54 any_neighbor_province = { owned_by = Z54	fort_level = 1 } }
+				3053 = { owned_by = Z54 any_neighbor_province = { owned_by = Z54	fort_level = 1 } }
+				3050 = { owned_by = Z54 any_neighbor_province = { owned_by = Z54	fort_level = 1 } }
+				3063 = { owned_by = Z54 any_neighbor_province = { owned_by = Z54	fort_level = 1 } }
+				3059 = { owned_by = Z54 any_neighbor_province = { owned_by = Z54	fort_level = 1 } }
+				3049 = { owned_by = Z54 any_neighbor_province = { owned_by = Z54	fort_level = 1 } }
 				deepwoods_superregion = {
 					type = all
 					OR = {
@@ -1896,15 +1900,15 @@ shatteredcrown_4 = {
 				}
 			}
 			else = {
-				3071 = { owned_by = I46	fort_level = 1 }
-				3048 = { owned_by = I46	fort_level = 1 }
-				3054 = { owned_by = I46	fort_level = 1 }
-				3068 = { owned_by = I46	fort_level = 1 }
-				3053 = { owned_by = I46	fort_level = 1 }
-				3050 = { owned_by = I46	fort_level = 1 }
-				3063 = { owned_by = I46	fort_level = 1 }
-				3059 = { owned_by = I46	fort_level = 1 }
-				3049 = { owned_by = I46	fort_level = 1 }
+				3071 = { owned_by = I46 any_neighbor_province = { owned_by = I46	fort_level = 1 } }
+				3048 = { owned_by = I46 any_neighbor_province = { owned_by = I46	fort_level = 1 } }
+				3054 = { owned_by = I46 any_neighbor_province = { owned_by = I46	fort_level = 1 } }
+				3068 = { owned_by = I46 any_neighbor_province = { owned_by = I46	fort_level = 1 } }
+				3053 = { owned_by = I46 any_neighbor_province = { owned_by = I46	fort_level = 1 } }
+				3050 = { owned_by = I46 any_neighbor_province = { owned_by = I46	fort_level = 1 } }
+				3063 = { owned_by = I46 any_neighbor_province = { owned_by = I46	fort_level = 1 } }
+				3059 = { owned_by = I46 any_neighbor_province = { owned_by = I46	fort_level = 1 } }
+				3049 = { owned_by = I46 any_neighbor_province = { owned_by = I46	fort_level = 1 } }
 				deepwoods_superregion = {
 					type = all
 					OR = {
@@ -1927,7 +1931,6 @@ shatteredcrown_4 = {
 						limit = { superregion = deepwoods_superregion }
 						change_culture = green_orc
 						hidden_effect = {
-							update_racial_province_majority = yes
 							change_religion = PREV
 						}
 					}
@@ -1943,7 +1946,6 @@ shatteredcrown_4 = {
 						limit = { superregion = deepwoods_superregion }
 						change_culture = emerald_orc
 						hidden_effect = {
-							update_racial_province_majority = yes
 							change_religion = PREV
 						}
 					}
@@ -1958,6 +1960,7 @@ shatteredcrown_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H72
 	}
 	has_country_shield = yes

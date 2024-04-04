@@ -94,7 +94,6 @@ has_river_estuary_trigger = {
 			has_province_modifier = alen_estuary_modifier
 			has_province_modifier = vroren_estuary_modifier
 			has_province_modifier = esmar_estuary_modifier
-			has_province_modifier = pearlywine_estuary_modifier
 			has_province_modifier = luna_estuary_modifier
 			has_province_modifier = mothers_sorrow_estuary_modifier
 			has_province_modifier = hapa_estuary_modifier
@@ -122,6 +121,8 @@ has_river_estuary_trigger = {
 			has_province_modifier = passing_river_estuary_modifier
 			has_province_modifier = cadderoy_estuary_modifier
 			has_province_modifier = rafn_estuary_modifier
+			has_province_modifier = gopatri_estuary_modifier
+			has_province_modifier = gopatri_estuary_modifier
 		}
 	}
 }
@@ -217,7 +218,6 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = alen_estuary_modifier
 			has_province_modifier = vroren_estuary_modifier
 			has_province_modifier = esmar_estuary_modifier
-			has_province_modifier = pearlywine_estuary_modifier
 			has_province_modifier = luna_estuary_modifier
 			has_province_modifier = mothers_sorrow_estuary_modifier
 			has_province_modifier = hapa_estuary_modifier
@@ -245,7 +245,22 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = passing_river_estuary_modifier
 			has_province_modifier = cadderoy_estuary_modifier
 			has_province_modifier = rafn_estuary_modifier
+			has_province_modifier = gopatri_estuary_modifier
 		}
+	}
+}
+
+#Has special Trade modifier
+has_special_trade_modifier = {
+	OR = {
+		has_province_modifier = sound_toll
+		has_province_modifier = bosphorous_sound_toll
+		has_province_modifier = trade_post_modifier
+		has_province_modifier = tur_hormuz_toll_modifier
+		has_province_modifier = birth_of_a_new_city_dip
+		has_province_modifier = birthplace_of_the_new_world
+		has_province_modifier = growth_of_global_trade
+		has_province_modifier = dominant_trade_hub
 	}
 }
 
@@ -253,7 +268,7 @@ has_no_river_estuary_trigger = {
 province_with_special_goods_produced_trigger = {
 	OR = {
 		# has_province_modifier = stora_kopparberget_modifier # Anbennar
-		has_province_modifier = granary_of_the_mediterranean
+		has_province_modifier = granary_of_the_divenhal
 		has_province_modifier = ven_murano_glass_industry
 		has_province_modifier = diamond_mines_of_golconda_modifier
 		has_province_modifier = coffea_arabica_modifier
@@ -292,7 +307,7 @@ province_with_special_goods_produced_trigger = {
 province_without_special_goods_produced_trigger = {
 	NOT = {
 		# has_province_modifier = stora_kopparberget_modifier # Anbennar
-		has_province_modifier = granary_of_the_mediterranean
+		has_province_modifier = granary_of_the_divenhal
 		has_province_modifier = ven_murano_glass_industry
 		has_province_modifier = diamond_mines_of_golconda_modifier
 		has_province_modifier = coffea_arabica_modifier
@@ -324,6 +339,7 @@ province_without_special_goods_produced_trigger = {
 		has_province_modifier = lorent_bottlemaking_monopoly
 		has_province_modifier = unguldavor_steel_hill
 		has_province_modifier = ghankedhen_rahens_foundry
+		has_province_modifier = heart_of_raheni_alchemy
 	}
 }
 
@@ -338,6 +354,7 @@ is_religious_center_province = {
 		province_id = 409
 		province_id = 2221
 		province_id = 2095
+		province_id = 4435
 		
 		province_id = 840 #Trialmount
 		province_id = 249 #Aramar

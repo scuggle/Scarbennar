@@ -3,9 +3,28 @@ setup_vision = yes
 government = republic
 add_government_reform = adventurer_republic_reform
 government_rank = 1
-primary_culture = silver_dwarf
+primary_culture = stone_dwarf
 religion = regent_court
 technology_group = tech_dwarven
 capital = 817
+add_accepted_culture = aldresian
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+#Eranel's leader lore: dorf, respected balgarsmith. If being descended from Balgar is too wacky, the dynasty is just how good he is at building shit.
+1437.4.8 = {
+	monarch = {
+		name = "Kraig"
+		dynasty = "Balgarsblood"
+		adm = 5
+		dip = 1
+		mil = 3
+		birth_date = 1363.7.19
+	}
+	
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = naive_personality
+	set_ruler_flag = set_immortality
+}
+
+set_country_flag = adventurer_derived_government

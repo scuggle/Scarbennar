@@ -1,14 +1,16 @@
 
 # - North Castonath
-
-culture = green_orc
-religion = great_dookan
+owner = B44
+controller = B44
+add_core = B44
+culture = common_goblin
+religion = goblinic_shamanism
 capital = ""
-tribal_owner = B30
+is_city = yes
 hre = no
 
 base_tax = 5
-base_production = 5
+base_production = 10
 base_manpower = 4
 
 native_size = 200

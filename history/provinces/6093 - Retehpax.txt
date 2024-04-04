@@ -1,7 +1,7 @@
 
 # No previous file for Nakhchivan
-culture = west_sandfang_gnoll
-religion = xhazobkult
+culture = windhowler_gnoll
+religion = kvangahga
 capital = ""
 
 hre = no

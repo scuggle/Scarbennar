@@ -31,7 +31,7 @@ historical_units = {
 	ynnic_18_knights_of_vareynn
 	ynnic_19_enchanted_castle_wardens
 	ynnic_23_rilsean_wardens
-	ynnic_23_vitre_balgarico
+	ynnic_23_vitre_argezico
 	ynnic_26_dismounted_ynnic_knights
 	ynnic_28_veykodan_sabretooth_riders
 	ynnic_30_longbow_knights
@@ -41,7 +41,6 @@ monarch_names = {
 
 
 	#Generic Dolindhan Names
-	"Alarenka #0" = -20
 	"Adrjon #1" = 50
 	"Alarn #0" = 50
 	"Aldarad #0" = 50
@@ -147,6 +146,7 @@ monarch_names = {
 	"Vitsred #0" = 50
 	"Ysarad #0" = 50
 	
+	"Alarenka #0" = -20
 	"Alarna #0" = -20
 	"Alariandrel #0" = -20
 	"Alesdja #0" = -20

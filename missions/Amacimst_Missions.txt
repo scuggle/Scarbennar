@@ -18,6 +18,7 @@ G26_kill_them_all_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -214,7 +215,7 @@ G26_kill_them_all_branch = {
 		}
 		}
 		effect = {
-			set_country_flag = G27_ear_bounty_flag #TODO: Have this affect cursed ones events
+			set_country_flag = G27_ear_bounty_flag #: Have this affect cursed ones events
 			country_event = { id = flavour_amacimst.3 } #Vitresoln Ear Exchange
 		}
 	}
@@ -404,7 +405,7 @@ G26_kill_them_all_branch = {
 		effect = {
 			add_mil_power = -200
 			add_treasury = -500
-			custom_tooltip = amethyst_knights_company_tt #TODO
+			custom_tooltip = amethyst_knights_company_tt #
 			unlock_merc_company = {
 				merc_company = merc_amacimst_the_amethyst_order
 			}
@@ -433,6 +434,7 @@ G26_amethyst_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -575,7 +577,7 @@ G26_amethyst_branch = {
 			}			
 		}
 		effect = {
-			custom_tooltip = G26_ranches_tt #TODO localize
+			custom_tooltip = G26_ranches_tt # localize
 			hidden_effect = {
 				every_province = {
 					limit = {
@@ -584,12 +586,12 @@ G26_amethyst_branch = {
 					}
 					add_permanent_province_modifier = {
 						duration = -1
-						name = G26_amethyst_ranches #TODO localize
+						name = G26_amethyst_ranches # localize
 					}
 				}
 			}
 			add_country_modifier = {
-				name = G26_great_ranches_nation_mod #TODO localize
+				name = G26_great_ranches_nation_mod # localize
 				duration = 3650
 			}
 		}
@@ -821,6 +823,7 @@ G26_protectors_of_the_ynn_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -1091,7 +1094,7 @@ G26_protectors_of_the_ynn_branch = {
 				}
 				create_iosahar = { tag = G34 }
 			}
-			custom_tooltip = G26_unity_of_dolindha_reward_tt #TODO
+			custom_tooltip = G26_unity_of_dolindha_reward_tt #
 			hidden_effect = {
 				every_known_country = {
 					limit = {
@@ -1115,12 +1118,36 @@ G26_protectors_of_the_ynn_branch = {
 		}
 		position = 7
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				AND = {
+					area = kaztakri_area
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_city = no
+					}
+				}
+				AND = {
+					area = hradavezl_area
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_city = no
+					}
+				}
+				AND = {
+					province_id = 1138	#Vels Bacar
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
 		}
 		trigger = {
 			kaztakri_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					is_city = no
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			hradavezl_area = {
 				type = all
@@ -1467,6 +1494,7 @@ G26_river_priests_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -1677,6 +1705,12 @@ G26_river_priests_branch = {
 		effect = {
 			custom_tooltip = G26_dolindhan_rzentur_nobility_tt
 			hidden_effect = {
+				U33 = {
+					every_core_province = {
+						cede_province = U33
+					}
+				}
+				create_iosahar = { tag = U33 }
 				every_known_country = {
 					limit = {
 						culture = rzentur
@@ -1684,6 +1718,7 @@ G26_river_priests_branch = {
 					define_heir = {
 						culture = dolindhan
 						religion = ROOT
+						age = 15
 					}
 					kill_ruler = yes
 					add_liberty_desire = 25
@@ -1715,7 +1750,6 @@ G26_river_priests_branch = {
 			}
 			G30 = { #Mocvare
 				is_subject_of = ROOT
-				is_subject_of_type = ynnic_iosahar
 			}
 			adm_power = 100
 			treasury = 200
@@ -1728,9 +1762,14 @@ G26_river_priests_branch = {
 					name = G26_high_priest_of_fisvare
 					duration = -1
 				}
-				spawn_rebels = {
-					size = 1
-					type = religious_rebels
+				if = {
+					limit = {
+						religion = drozma_tur
+					}
+					spawn_rebels = {
+						size = 1
+						type = religious_rebels
+					}
 				}
 			}
 			G22 = { #Svemel/Fisvare
@@ -1837,6 +1876,7 @@ G26_inquisition_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -1849,8 +1889,7 @@ G26_inquisition_branch = {
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = uslad_area
-				area = drevkenuc_area
+				area = drevonsred_area
 				is_capital_of = G29
 			}
 		}
@@ -1989,7 +2028,7 @@ G26_inquisition_branch = {
 		}
 		trigger = {
 			any_known_country = {
-				technology_group = tech_cannorian
+				has_cannorian_tech_group = yes
 			}
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				value = 15
@@ -2043,7 +2082,7 @@ G26_inquisition_branch = {
 		}
 		trigger = {
 			any_known_country = {
-				technology_group = tech_cannorian
+				has_cannorian_tech_group = yes
 			}
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				value = 15
@@ -2086,7 +2125,7 @@ G26_inquisition_branch = {
 			calc_true_if = {
 				amount = 5
 				all_known_country = {
-					technology_group = tech_cannorian
+					has_cannorian_tech_group = yes
 					has_opinion_modifier = {
 						who = ROOT
 						modifier = scornfully_insulted
@@ -2176,27 +2215,6 @@ G26_inquisition_branch = {
 			}
 			if = {
 				limit = {
-					has_country_flag = yrw_4b_reform
-				}
-				hidden_effect = {
-					set_country_flag = G26_dont_come_here
-					country_event = {
-						id = flavour_amacimst.200
-						days = 5
-					}
-				}
-				every_subject_country = {
-					hidden_effect = {
-						set_country_flag = G26_dont_come_here
-						country_event = {
-							id = flavour_amacimst.200
-							days = 5
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
 					has_country_flag = yrw_3b_reform
 					has_country_flag = yrw_4b_reform
 				}
@@ -2206,34 +2224,6 @@ G26_inquisition_branch = {
 				add_country_modifier = {
 					name = G26_banned_cannorian_thought
 					duration = -1
-				}
-				every_owned_province = {
-					limit = {
-						OR = {
-							culture = sarda
-							culture = dolindhan
-						}
-					}
-					remove_province_modifier = G26_lordly_oversight
-					add_province_modifier = {
-						name = G26_traditional_ynnic_values
-						duration = -1
-					}
-				}
-				every_subject_country = {
-					every_owned_province = {
-						limit = {
-							OR = {
-								culture = sarda
-								culture = dolindhan
-							}
-						}
-						remove_province_modifier = G26_lordly_oversight
-						add_province_modifier = {
-							name = G26_traditional_ynnic_values
-							duration = -1
-						}
-					}
 				}
 			}
 			else_if = {

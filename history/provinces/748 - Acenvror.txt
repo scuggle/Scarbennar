@@ -1,14 +1,15 @@
 # No previous file for Belem
-owner = B12
-controller = B12
-add_core = B12
+owner = B39
+controller = B39
+add_core = B39
 culture = vernman
 religion = regent_court
 hre = no
+fort_15th = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 4
+base_manpower = 4
 
 trade_goods = fur
 

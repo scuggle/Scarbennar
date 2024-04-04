@@ -2,7 +2,8 @@ hammerhome_1 = {
 	slot = 1
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -289,7 +290,8 @@ hammerhome_2 = {
     slot = 2            
     generic = no           
     ai = yes                 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -356,7 +358,7 @@ hammerhome_2 = {
 					share = 35
 				}
 			}
-			2868 = {
+			4236 = {
 				trade_share = {
 					country = I07
 					share = 35
@@ -438,11 +440,7 @@ hammerhome_2 = {
 			custom_trigger_tooltip = {
 				tooltip = Z36_friendship_unbound_tt
 				I07 = { 
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = improved_relation
-						value = 100
-					}
+					has_100_opinion_improved_relation = { target = ROOT }
 				}
 			}
 			OR = {
@@ -627,7 +625,8 @@ hammerhome_3 = {
     slot = 3            
     generic = no           
     ai = yes                 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -1186,7 +1185,7 @@ hammerhome_3 = {
 	}
 	
 	Z36_balgar_would_be_proud = {
-		# TODO, need to do bypasses and such.
+		# , need to do bypasses and such.
         icon = mission_feast
         position = 10
         required_missions = {
@@ -1258,28 +1257,51 @@ hammerhome_3 = {
 		}
 
 		effect = {
-			custom_tooltip = Z36_balgar_upgrade_corinite_or_ravellian_tt
+			custom_tooltip = Z36_balgar_upgrade_ravelian_tt
+			custom_tooltip = Z36_balgar_upgrade_corinite_tt
+			custom_tooltip = Z36_balgar_would_be_proud_balgar_upgrade
 			country_event = { id = flavor_hammerhome.6 } # Notification, upgrades Balgar.
 			set_country_flag = Z36_expanded_missions
 			override_country_name = BALGARIC_EMPIRE
 			swap_non_generic_missions = yes
 			if = {
-				limit = { religion = regent_court }
-				custom_tooltip = Z36_balgar_would_be_proud_balgar_upgrade
-				hidden_effect = {
-					set_country_flag = Z36_balgar_upgrade				
-				}
-				change_personal_deity = balgar_khug
-			}
-			else_if = {
-				limit = { 
+				limit = {
 					OR = {
+						religion = regent_court
 						religion = corinite
-						religion = ravelian
 					}
 				}
+				hidden_effect = {
+					set_country_flag = upgraded_balgar				
+				}
+				if = {
+					limit = { religion = regent_court }
+					change_personal_deity = balgar_upgraded
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_country_flag = balgar_order_picked }
+						every_owned_province = {
+							if = {
+								limit = { holy_order = balgar_order }
+								add_permanent_province_modifier = {
+									name = corinite_balgar_upgraded
+									duration = -1
+								}
+							}
+						}
+						clr_country_flag = corinite_mil_order_picked
+						country_event = {
+							id = corinite.302
+							days = 7
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { religion = ravelian }
 				add_country_modifier = { 
-					name = Z36_corinite
+					name = Z36_ravelian
 					duration = -1
 				}
 			}
@@ -1291,7 +1313,8 @@ hammerhome_4 = {
     slot = 4            
     generic = no           
     ai = yes                 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -1308,7 +1331,7 @@ hammerhome_4 = {
 				area = castonath_area
 				province_id = 840
 			}
-			NOT = { has_building = temple }
+			NOT = { has_tax_building_trigger = yes }
 			NOT = { owned_by = ROOT }			
 		}
 
@@ -1316,11 +1339,11 @@ hammerhome_4 = {
 			castonath_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-				has_building = temple
+				has_tax_building_trigger = yes
 			}
 			840 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_building = temple
+				has_tax_building_trigger = yes
 			}
 		}
 
@@ -1547,7 +1570,8 @@ hammerhome_5 = {
 	slot = 5
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 	}
     has_country_shield = yes  
@@ -1744,7 +1768,8 @@ hammerhome_1b = {
 	slot = 1
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}
@@ -1758,11 +1783,21 @@ hammerhome_1b = {
 		}
 		
 		trigger = {
-			I07 = {
-				num_of_owned_provinces_with	= {
-					value = 10
-					has_terrain = dwarven_road
+			OR = {
+				I07 = {
+					num_of_owned_provinces_with	= {
+						value = 10
+						has_terrain = dwarven_road
+					}
 				}
+				I24 = {
+					was_tag = I07
+					num_of_owned_provinces_with	= {
+						value = 10
+						has_terrain = dwarven_road
+					}					
+				}
+			
 			}
 			2864 = {
 				OR = {
@@ -2003,7 +2038,10 @@ hammerhome_1b = {
 			}
 			treasury = 10000
 			manpower = 20
-			has_global_flag = marrhold_tunnel_opened
+			custom_trigger_tooltip = {
+				tooltip = Z36_the_marrodic_express_trigger_tt_2
+				has_global_flag = marrhold_tunnel_opened
+			}
 		}
 		
 		effect = {
@@ -2071,7 +2109,7 @@ hammerhome_1b = {
 		trigger = {
 			estate_loyalty = { estate = estate_artificers loyalty = 60 }
 			treasury = 25000
-			artifice_has_points_for_basic = yes # Might be too much?
+			artifice_has_points_10 = yes # Might be too much?
 			730 = {
 				base_production = 15
 			}
@@ -2108,7 +2146,7 @@ hammerhome_1b = {
 					}
 				}
 			}
-			artifice_granted_basic = yes
+			artifice_granted_10 = yes
 			hidden_effect = {
 				country_event = { id = flavor_hammerhome.7 days = 3650 }			
 			}
@@ -2120,7 +2158,8 @@ hammerhome_2b = {
 	slot = 2
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}
@@ -2192,6 +2231,9 @@ hammerhome_2b = {
 				}
 				I07 = {
 					owns = 4128
+				}
+				I24 = {
+					was_tag = I07
 				}				
 			}
 		}
@@ -2220,15 +2262,21 @@ hammerhome_2b = {
 		}
 		
 		trigger = {
-			I07 = {
-				OR = {
-					owns = 4236
-					num_of_owned_provinces_with = {
-						value = 3
-						trade_goods = mithril
+			OR = {
+				I07 = {
+					OR = {
+						owns = 4236
+						num_of_owned_provinces_with = {
+							value = 3
+							trade_goods = mithril
+						}
 					}
 				}
+				I24 = {
+					was_tag = I07
+				}			
 			}
+			
 			mil_power = 100
 		}
 		
@@ -2253,8 +2301,15 @@ hammerhome_2b = {
 		
 		trigger = {
 			total_development = 1000
-			I07 = {
-				total_development = 1000
+			OR = {
+				I07 = {
+					total_development = 1000
+				}
+				I24 = {
+					was_tag = I07
+					total_development = 1000
+				}
+			
 			}
 		}
 		
@@ -2281,6 +2336,19 @@ hammerhome_2b = {
 							duration = -1
 						}
 					}
+					if = {
+						limit = {
+							I24 = {
+								was_tag = I07
+							}
+						}
+						I24 = {
+							add_country_modifier = { 
+								name = Z36_balgaric_union_strengthened
+								duration = -1
+							}
+						}
+					}
 				}
 			}
 		}
@@ -2291,7 +2359,8 @@ hammerhome_3b = {
 	slot = 3
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}
@@ -2521,13 +2590,16 @@ hammerhome_3b = {
 						}
 					}
 				}
-				#any_known_country = { 	Doesn't seem to work?
-					#OR = {
-					#	production_leader = fungi
-					#	production_leader = serpentbloom
-					#}
-					#has_opinion = { who = ROOT value = 150 }
-				#}
+				I24 = {
+					was_tag = I07
+					num_of_owned_provinces_with = {
+						value = 5
+						OR = {
+							trade_goods = fungi
+							trade_goods = serpentbloom 
+						}
+					}
+				}
 			}
 			dip_power = 100
 			manpower = 5
@@ -2562,32 +2634,42 @@ hammerhome_3b = {
 				province_id = 862
 			}
 			NOT = { owned_by = ROOT }
-			NOT = { has_building = furnace }
+			NOT = { has_manufactory_trigger = yes }
 		}
 
 		trigger = {
 			estate_loyalty = { estate = estate_artificers loyalty = 50 }
+			has_institution	= manufactories
 			treasury = 25000
 			730 = {
 				owned_by = ROOT
-				has_building = furnace
+				base_production = 10
+				has_manufactory_trigger = yes
 			}
 			802 = {
 				owned_by = ROOT
-				has_building = furnace
+				base_production = 10
+				has_manufactory_trigger = yes
 			}
 			848 = {
 				owned_by = ROOT
-				has_building = furnace
+				base_production = 10
+				has_manufactory_trigger = yes
 			}
 			862 = {
 				owned_by = ROOT
-				has_building = furnace
+				base_production = 10
+				has_manufactory_trigger = yes
 			}
 		}
 		
 		effect = {
 			add_treasury = -25000
+			if = {
+				limit = { has_dlc = "Rule Britannia" }
+				custom_tooltip = earlier_coal_available_tt
+			}
+			set_country_flag = earlier_coal_available
 			730 = {
 				add_permanent_province_modifier	 = { 
 					name = Z36_kraig_forge_prov_mod
@@ -2729,7 +2811,8 @@ hammerhome_4b = {
 	slot = 4
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}
@@ -2780,6 +2863,12 @@ hammerhome_4b = {
 		position = 12
 		required_missions = { 
 			Z36_balgars_gifts_regiven
+		}
+		
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_human_majority_trigger = yes
+			NOT = { base_manpower = 10 }
 		}
 		
 		trigger = {
@@ -2910,7 +2999,8 @@ hammerhome_5b = {
 	slot = 5
 	generic = no
 	ai = yes 
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = Z36 # Hammerhome
 		has_country_flag = Z36_expanded_missions
 	}
@@ -3098,6 +3188,26 @@ hammerhome_5b = {
 		position = 15
 		required_missions = { 
 			Z36_supply_the_construction
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 230
+				province_id = 229
+				province_id = 231
+				province_id = 248
+				province_id = 355
+				province_id = 358
+				province_id = 710
+				province_id = 725
+				province_id = 726
+				province_id = 730
+				province_id = 732
+				province_id = 741
+				province_id = 742
+				province_id = 778
+				province_id = 779
+			}
 		}
 
 		trigger = {

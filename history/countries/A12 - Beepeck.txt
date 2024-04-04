@@ -8,12 +8,26 @@ primary_culture = imperial_halfling
 religion = regent_court
 technology_group = tech_halfling
 
+historical_rival = A07
+historical_rival = A70
+historical_rival = A71
+historical_rival = A65
+historical_rival = A66
+historical_rival = A63
+historical_rival = A67
+historical_rival = A68
+historical_rival = A69
+historical_rival = A08
+
 capital = 151
 fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
 
 elector = yes
 
-1000.1.1 = { set_estate_privilege = estate_mages_organization_magisterium }
+1000.1.1 = { 
+	set_estate_privilege = estate_mages_organization_magisterium 
+	set_country_flag = new_imperial_candidate_gain_magisterium
+}
 
 1422.1.1 = { set_country_flag = lilac_wars_rose_party }
 

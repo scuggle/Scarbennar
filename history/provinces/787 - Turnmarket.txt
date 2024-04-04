@@ -1,18 +1,19 @@
 
 # No previous file for Picunmapu
-owner = B09
-controller = B09
-add_core = B09
+owner = B49
+controller = B49
+add_core = B49
 culture = crownsman
 religion = regent_court
 
 hre = no
+fort_15th = yes
 
-base_tax = 2
-base_production = 2
-base_manpower = 1
+base_tax = 3
+base_production = 8
+base_manpower = 4
 
-trade_goods = unknown
+trade_goods = iron
 
 capital = ""
 

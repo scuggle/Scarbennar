@@ -1,0 +1,78 @@
+
+# country_decisions = {
+
+# 	X03_form_nation = {
+# 		major = yes
+# 		potential = {
+# 			culture_group = gnollish
+# 			NOT = { has_country_flag = formed_X03_flag }
+# 			NOT = { tag = X03 }
+# 			OR = {
+# 				ai = no
+# 				is_playing_custom_nation = no
+# 			}
+# 			is_colonial_nation = no
+# 			OR = {
+# 				is_former_colonial_nation = no
+# 				AND = {
+# 					is_former_colonial_nation = yes
+# 					ai = no
+# 				}
+# 			}
+# 			normal_or_historical_nations = yes
+# 			was_never_end_game_tag_trigger = yes
+# 		}
+# 		provinces_to_highlight = {
+# 			superregion = bulwar_superregion
+# 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+# 			NOT = {
+# 				ROOT = {
+# 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+# 						value = 100
+# 						superregion = bulwar_superregion
+# 					}
+# 				}
+# 			}
+# 		}
+# 		allow = {
+# 			is_at_war = no
+# 			is_free_or_tributary_trigger = yes		
+# 			NOT = { exists = X03 }
+
+#             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+# 				value = 100
+# 				superregion = bulwar_superregion
+# 			}
+# 			owns_core_province = 487
+# 			owns_core_province = 5476
+# 			owns_core_province = 687
+# 			owns_core_province = 475
+# 			owns_core_province = 571
+# 			owns_core_province = 601
+# 			OR = {
+# 				owns_core_province = 442
+# 				owns_core_province = 393
+# 			}
+# 		}
+# 		effect = {
+# 			change_tag = X03
+# 			hidden_effect = { restore_country_name = yes }
+# 			#remove_non_electors_emperors_from_empire_effect = yes
+			
+# 			add_country_modifier = {
+# 				name = "centralization_modifier"
+# 				duration = 7300
+# 			}
+# 			add_prestige = 50
+# 			if = {
+# 				limit = { has_custom_ideas = no }
+# 				country_event = { id = ideagroups.1 } #Swap Ideas
+# 			}
+# 			set_country_flag = formed_X03_flag
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 	}
+	
+# }

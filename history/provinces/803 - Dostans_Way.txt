@@ -1,16 +1,18 @@
 
 # No previous file for Moxos
-culture = green_orc
-religion = great_dookan
+culture = corvurian
+religion = regent_court
 capital = ""
-tribal_owner = B29
 hre = no
+owner = B48
+controller = B48
+add_core = B48
 
 base_tax = 1
-base_production = 1
+base_production = 5
 base_manpower = 1
 
-trade_goods = unknown
+trade_goods = iron
 
 capital = ""
 

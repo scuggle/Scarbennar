@@ -1,13 +1,16 @@
 
 # No previous file for The North Citadel
-culture = green_orc
-religion = great_dookan
+owner = B30
+controller = B30
+add_core = B30
+add_core = Z37
+culture = aldresian
+religion = regent_court
 capital = ""
-tribal_owner = B30
 hre = no
 
-base_tax = 3
-base_production = 3
+base_tax = 4
+base_production = 9
 base_manpower = 4
 
 trade_goods = gems

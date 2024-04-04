@@ -8,7 +8,7 @@ country_event = {
 	picture = SETTINGS_MAIN_eventPicture
 	
 	is_triggered_only = yes
-	
+
 	trigger = {
 		ai = no
 		NOT = { has_global_flag = settings_done }
@@ -16,16 +16,13 @@ country_event = {
 	}
 	
 	immediate = {
-		set_global_flag = settings_opened 
-		###MANUALLY SETTING THE FLAGS FOR WHICH REGIONS TO DELETE FOR CAMPAIGN
-		# set_global_flag = delete_east_serpentspine_region
-		# set_global_flag = delete_west_serpentspine_region
-		# set_global_flag = delete_deepwoods_region
-		# set_global_flag = delete_south_aelantir_region
-		# set_global_flag = delete_north_aelantir_region
-		# set_global_flag = delete_forbidden_plains_region
-		# set_global_flag = delete_south_sarhal_region
-		###MANUALLY SETTING THE FLAGS FOR WHICH REGIONS TO DELETE FOR CAMPAIGN
+		hidden_effect = {
+			set_global_flag = settings_opened
+			if = { limit = { any_country = { ai = no } }
+				set_country_flag = settings_multiplayer
+				set_global_flag = achievements_disabled
+			}
+		}
 	}
 	
 	#Delete Region
@@ -48,15 +45,46 @@ country_event = {
 		hidden_effect = { country_event = { id = anb_settings.98 } }
 	}
 	
+	#Achievements
+	option = {	#enable
+		name = anb_settings.1.c
+		trigger = { has_global_flag = achievements_disabled }
+		if = { limit = { has_country_flag = settings_multiplayer }
+			custom_tooltip = settings_achievement_disabled_tt
+		}
+		else = {
+			custom_tooltip = settings_achievement_tt
+			clr_global_flag = achievements_disabled
+		}
+		clr_global_flag = settings_opened
+		hidden_effect = { country_event = { id = anb_settings.98 } }
+	}
+	option = {	#disable
+		name = anb_settings.1.cx
+		trigger = { NOT = { has_global_flag = achievements_disabled } }
+		custom_tooltip = settings_achievement_tt
+		set_global_flag = achievements_disabled
+		clr_global_flag = settings_opened
+		hidden_effect = { country_event = { id = anb_settings.98 } }
+	}
+	
 	#empty option for spacing
 	option = {
 		name = anb_settings.1.empty
+		clr_global_flag = settings_opened
+		hidden_effect = { country_event = { id = anb_settings.98 } }
+	}
+	
+	#empty option for spacing
+	option = {
+		name = anb_settings.1.empty
+		clr_global_flag = settings_opened
 		hidden_effect = { country_event = { id = anb_settings.98 } }
 	}
 	
 	#Leave settings
 	option = {
-		name = anb_settings.1.c
+		name = anb_settings.1.s
 		custom_tooltip = settings_wont_be_available_tt
 		if = {
 			limit = {
@@ -92,20 +120,25 @@ country_event = {
 				south_sarhal_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_north_aelantir_region }
-					north_aelantir_superregion = { destroy_province_permanently = yes }
+					broken_lands_superregion = { destroy_province_permanently = yes }
 					ynn_superregion = { destroy_province_permanently = yes }
 					eordand_superregion = { destroy_province_permanently = yes }
 				#Following are subregions of North Aelantir part of Torn Sea Superregion
 					haraf_region = { destroy_province_permanently = yes }
 					tor_nayyi_region = { destroy_province_permanently = yes }
-					ruined_sea_superregion = { destroy_province_permanently = yes }
+					ruin_proper_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_south_aelantir_region }
 				
 				#Following are subregions of Taychend Superregion
-					taychend_region = { destroy_province_permanently = yes }
+					#taychend_region = { destroy_province_permanently = yes }
 					larankarha_highlands_region = { destroy_province_permanently = yes }
 					chendhya_region = { destroy_province_permanently = yes }
+					yodhanchend_region = { destroy_province_permanently = yes }
+					larankarha_highlands_region = { destroy_province_permanently = yes }
+					southern_coast_region = { destroy_province_permanently = yes }
+					kalavend_region = { destroy_province_permanently = yes }
+					gauraddhi_region = { destroy_province_permanently = yes }
 				#Following are subregions of Kheionai Superregion
 					mteibas_valley_region = { destroy_province_permanently = yes }
 					andic_reach_region = { destroy_province_permanently = yes }
@@ -158,7 +191,7 @@ country_event = {
 				shikenkhiin_area = { destroy_province_permanently = yes }
 				onrek_area = { destroy_province_permanently = yes }
 				shik_dozein_area = { destroy_province_permanently = yes }
-				#shik_dazar_area = { destroy_province_permanently = yes } # to have working treasure fleet
+				shik_dazar_area = { destroy_province_permanently = yes } #needed to have working treasure fleet
 
 			}
 			if = { limit = { has_global_flag = delete_haless_region }
@@ -196,16 +229,18 @@ country_event = {
 		trigger = { OR = { has_global_flag = great_conqueror has_global_flag = mythical_conqueror } }
 		clr_global_flag = great_conqueror
 		clr_global_flag = mythical_conqueror
+		custom_tooltip = no_conquerors_tooltip
 		hidden_effect = { country_event = { id = anb_settings.99 } }
 	}
 	option = {
 		name = anb_settings.2.ax
 		trigger = { NOT = { has_global_flag = great_conqueror } NOT = { has_global_flag = mythical_conqueror } }
+		custom_tooltip = no_conquerors_tooltip
 		hidden_effect = { country_event = { id = anb_settings.99 } }
 	}
 
 	
-	#Let them in
+	#Great Conquerors
 	option = {
 		name = anb_settings.2.b
 		trigger = { NOT = { has_global_flag = great_conqueror } }
@@ -221,7 +256,7 @@ country_event = {
 		hidden_effect = { country_event = { id = anb_settings.99 } }
 	}
 	
-	#Oh boi
+	#Mythical Conquerors
 	option = {
 		name = anb_settings.2.c
 		trigger = { NOT = { has_global_flag = mythical_conqueror } }
@@ -237,26 +272,36 @@ country_event = {
 		hidden_effect = { country_event = { id = anb_settings.99 } }
 	}
 	
-	#Oh boi
+	#Great Conqueror Variance
 	option = {
 		name = anb_settings.2.dd
-		trigger = { has_global_flag = random_conqueror_targets }
-		clr_global_flag = random_conqueror_targets 
+		trigger = { NOT = { has_global_flag = variant_conqueror } }
+		set_global_flag = variant_conqueror
 		custom_tooltip = random_conqueror_targets_tooltip
 		hidden_effect = { country_event = { id = anb_settings.99 } }
 	}
 	option = {
 		name = anb_settings.2.ddx
-		trigger = { NOT = { has_global_flag = random_conqueror_targets } }
-		set_global_flag = random_conqueror_targets 
+		trigger = { has_global_flag = variant_conqueror }
+		clr_global_flag = variant_conqueror
 		custom_tooltip = random_conqueror_targets_tooltip
 		hidden_effect = { country_event = { id = anb_settings.99 } }
 	}
 	
-	#empty option for spacing
+	#Delayed Conquerors
 	option = {
-		name = anb_settings.1.empty
-		hidden_effect = { country_event = { id = anb_settings.98 } }
+		name = anb_settings.2.e
+		trigger = { NOT = { has_global_flag = delayed_conquerors } }
+		set_global_flag = delayed_conquerors
+		custom_tooltip = delayed_conqueror_tooltip
+		hidden_effect = { country_event = { id = anb_settings.99 } }
+	}
+	option = {
+		name = anb_settings.2.ex
+		trigger = { has_global_flag = delayed_conquerors }
+		clr_global_flag = delayed_conquerors
+		custom_tooltip = delayed_conqueror_tooltip
+		hidden_effect = { country_event = { id = anb_settings.99 } }
 	}
 	
 	#Go back

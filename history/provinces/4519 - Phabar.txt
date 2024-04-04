@@ -1,9 +1,10 @@
 
 # No previous file for Banten
-owner = R62
-controller = R62
-add_core = R62
+owner = R63
+controller = R63
+add_core = R63
 add_core = R11
+add_core = R84
 culture = khedarid
 religion = high_philosophy
 

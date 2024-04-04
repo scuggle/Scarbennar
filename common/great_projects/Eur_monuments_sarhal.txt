@@ -1,0 +1,2662 @@
+# #################################HERE BE SARHAL PLACEHOLDERS######################################################
+# #City in lake
+# lake_city = {
+# 	start = 5648
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Muhaqaar Mage academy
+# nirakhet_grotto = {
+# 	start = 5483
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Angel Crater
+# angel_crater = {
+# 	start = 6118
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Roost Port
+# Roost_Port = {
+# 	start = 6659
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Merfolk Embassy
+# merfolk_embassy = {
+# 	start = 6052
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Mount Dendugma
+# mount_dendugma = {
+# 	start = 5808
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Kunolo Harbour
+# kunolo_harbour = {
+# 	start = 5710
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Zerat Township
+# zerat_township = {
+# 	start = 5921
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Mint thingy
+# tanuki_mint = {
+# 	start = 5577
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Sarhal_Pagoda
+# sarhal_pagoda = {
+# 	start = 5558
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Temple Forge
+# temple_forge = {
+# 	start = 5442
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Yetmesira, dunno what
+# yetmesira_monument_tbd = {
+# 	start = 5529
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Northern Shadow Swamp Fortress
+# northern_shadow_swamp_fortress = {
+# 	start = 6710
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Southern Shadow Swamp Fortress
+# southern_shadow_swamp_fortress = {
+# 	start = 5616
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Naval Checkpoint
+# naval_checkpoint = {
+# 	start = 6077
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Shrine of the Nakazy Sisters
+# nakazy_shrine_monument = {
+# 	start = 5823
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Shrine of Elinalo
+# elinalo_shrine_monument = {
+# 	start = 6608
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Shrine of Turozi
+# turozi_shrine_monument = {
+# 	start = 6634
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #The Goblet of Hoblin
+# hoblin_goblet = {
+# 	start = 5448
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Heart of the Shadow Swamp
+# shadow_swamp_heart = {
+# 	start = 6685
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Grotto of Corruption
+# corruption_grotto = {
+# 	start = 6062
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
+
+# #Market Place of Liberation
+# square_of_liberty = {
+# 	start = 5881
+# 	date = 01.01.01
+# 	time = {
+# 		months = 0
+# 	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 1
+# 	starting_tier = 0
+# 	type = monument
+# 	build_trigger = {	
+# 	}
+# 	on_built = {		
+# 	}
+# 	on_destroyed = {	
+# 	}
+# 	can_use_modifiers_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	can_upgrade_trigger = {
+# 		AND = {
+
+# 			province_is_or_accepts_culture = yes
+# 		}
+# 	}	
+# 	keep_trigger = {
+# 	}
+
+# tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.1
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.25
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 0.5
+# 			reform_progress_growth = 0.05
+# 			prestige = 0.25
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.15
+# 			local_monthly_devastation = -0.05
+# 			local_tax_modifier = 0.50
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 1
+# 			reform_progress_growth = 0.1
+# 			prestige = 0.5
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			local_development_cost = -0.2
+# 			local_monthly_devastation = -0.1
+# 			local_tax_modifier = 0.75
+# 		}
+# 		area_modifier = {
+# 			local_monthly_devastation = -0.05
+# 		}
+# 		country_modifiers = {
+# 			monthly_splendor = 2
+# 			reform_progress_growth = 0.15
+# 			prestige = 1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }

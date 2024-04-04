@@ -1,0 +1,115 @@
+
+country_decisions = {
+
+	X01_form_nation = {
+		major = yes
+		potential = {
+			capital_scope = {
+				OR = {
+					region = gerudian_frontier_region
+					region = dalr_region
+					region = alenic_reach_region
+				}
+			}
+			OR = {
+				culture_group = reachman
+				culture_group = gerudian
+				primary_culture = city_goblin
+				primary_culture = white_reachman
+				primary_culture = blue_reachman
+			}
+			NOT = { has_country_flag = formed_X01_flag }
+			NOT = { tag = X01 }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {
+			adm_tech = 10
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = X01 }
+
+            num_of_owned_provinces_with = {
+				value = 20
+				region = gerudian_frontier_region
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				region = dalr_region
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				region = alenic_reach_region
+			}
+			owns_core_province = 956
+			owns_core_province = 967
+			owns_core_province = 959
+			owns_core_province = 999
+			owns_core_province = 696
+			owns_core_province = 985
+			owns_core_province = 978
+			owns_core_province = 740
+			owns_core_province = 723
+			owns_core_province = 701
+		}
+		effect = {
+			change_tag = X01
+			hidden_effect = { restore_country_name = yes }
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			
+			gerudian_frontier_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = X01
+			}
+			dalr_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = X01
+			}
+			alenic_reach_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = X01
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_X01_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

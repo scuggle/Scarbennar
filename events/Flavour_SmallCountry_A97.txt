@@ -352,8 +352,8 @@ country_event = {
 		NOT = { tag = Z97 } #Ravelian State
 		A97 = {
 			exists = yes
-		#	ai = yes
-		#	was_player = no
+			ai = yes
+			was_player = no
 			NOT = { truce_with = ROOT }
 		}
 		is_free_or_tributary_trigger = yes

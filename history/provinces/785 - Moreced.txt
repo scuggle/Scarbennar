@@ -1,16 +1,19 @@
 
 # No previous file for Pehuenmapu
-culture = green_orc
-religion = great_dookan
+owner = B49
+controller = B49
+add_core = B49
+culture = crownsman
+religion = regent_court
 capital = ""
-tribal_owner = B23
+#tribal_owner = B23
 hre = no
 
 base_tax = 3
-base_production = 2
+base_production = 6
 base_manpower = 2
 
-trade_goods = unknown
+trade_goods = glass
 center_of_trade = 2
 
 native_size = 56

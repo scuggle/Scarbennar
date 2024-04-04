@@ -3,10 +3,32 @@ setup_vision = yes
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 2
-primary_culture = kheteratan
-religion = regent_court
-technology_group = tech_cannorian
+primary_culture = hapremiti
+religion = elikhetist
+technology_group = tech_salahadesi
 capital = 777
 
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1438.3.10 = {
+	monarch = {
+		name = "Entef"
+		dynasty = "of Wibnuat"
+		birth_date = 1405.12.3
+		adm = 3
+		dip = 6
+		mil = 4
+	}
+	add_ruler_personality = well_advised_personality
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = mage_personality
+	set_ruler_flag = conjuration_1
+	set_ruler_flag = enchantment_1
+	set_ruler_flag = evocation_1
+	set_ruler_flag = illusion_1
+	set_ruler_flag = transmutation_1
+	set_ruler_flag = initialized_magic_flags
+}
+
+set_country_flag = adventurer_derived_government

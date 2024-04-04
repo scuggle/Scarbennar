@@ -118,6 +118,7 @@ just_personality = {
 
 	#Anbennar
 	yearly_karma_decay = 0.025
+	immortal = 0
 
 } #1 less bad
 
@@ -165,10 +166,11 @@ righteous_personality = {
 			government = monarchy
 			AND = {
 				government = theocracy
-				uses_devotion = no
+				NOT = { uses_devotion = yes } #NOT is necessary, breaks otherwise
+				NOT = { has_adventurer_reform = yes }
 			}
 		}
-		NOT = { has_reform = celestial_empire }
+		NOT = { is_emperor_of_china = yes }
 		NOT = { government = tribal }
 		NOT = { government = native }
 	}
@@ -188,6 +190,7 @@ righteous_personality = {
 
 	#Anbennar
 	yearly_karma_decay = 0.025
+	immortal = 0
 
 } #1 better, 1 less bad
 
@@ -255,6 +258,7 @@ tolerant_personality = {
 	tolerance_heathen = 1
 	wants_ecumenical_council = yes
 	nation_designer_cost = 2
+	immortal = 0
 }
 
 kind_hearted_personality = {
@@ -296,7 +300,9 @@ kind_hearted_personality = {
 	alliance_acceptance = 10
 	
 	war_exhaustion = -0.05
+	meritocracy = 0.15 #Anbennar
 	nation_designer_cost = 5
+	immortal = 0
 } # 1 better
 
 free_thinker_personality = {
@@ -384,7 +390,9 @@ free_thinker_personality = {
 	
 	idea_cost = -0.05
 	artificers_loyalty_modifier = 0.05
+	meritocracy = 0.15 #Anbennar
 	nation_designer_cost = 2
+	immortal = 0
 } #1 easier event, 1 better event
 
 well_connected_personality = {
@@ -441,6 +449,7 @@ well_connected_personality = {
 	
 	advisor_cost = -0.2
 	nation_designer_cost = 2
+	immortal = 0
 } #1 better event
 
 calm_personality = {
@@ -486,6 +495,7 @@ calm_personality = {
 	
 	stability_cost_modifier = -0.10
 	nation_designer_cost = 2
+	immortal = 0
 } #1 easier event
 
 careful_personality = {
@@ -550,6 +560,7 @@ careful_personality = {
 	
 	ae_impact = -0.10
 	nation_designer_cost = 5
+	immortal = 0
 } #modifies scandal at court, 
 
 secretive_personality = {
@@ -607,6 +618,7 @@ secretive_personality = {
 	
 	global_spy_defence = 0.2
 	nation_designer_cost = 2
+	immortal = 0
 }
 
 intricate_web_weaver_personality = {
@@ -674,6 +686,7 @@ intricate_web_weaver_personality = {
 	
 	spy_offence = 0.3
 	nation_designer_cost = 2
+	immortal = 0
 } #1 easier event
 fertile_personality = {
 	#personality_events.21
@@ -737,7 +750,9 @@ fertile_personality = {
 	royal_marriage_acceptance = 20
 	
 	heir_chance = 0.5
+	meritocracy = 0.25 #Anbennar
 	nation_designer_cost = 2
+	immortal = 0
 }
 
 well_advised_personality = {
@@ -783,6 +798,7 @@ well_advised_personality = {
 	
 	advisor_pool = 1
 	nation_designer_cost = 2
+	immortal = 0
 } #2 better events
 
 benevolent_personality = {
@@ -847,7 +863,9 @@ benevolent_personality = {
 	gift_chance = 25
 	
 	reduced_liberty_desire = 5
+	meritocracy = 0.25 #Anbennar
 	nation_designer_cost = 2
+	immortal = 0
 }
 
 zealot_personality = { 
@@ -925,6 +943,7 @@ zealot_personality = {
 	global_missionary_strength = 0.01
 	artificers_loyalty_modifier = -0.05
 	nation_designer_cost = 2
+	immortal = 0
 }#1 better event, 1 less bad
 pious_personality = {
 	#personality_events.27
@@ -952,6 +971,7 @@ pious_personality = {
 
 	allow = {
 		government = theocracy
+		uses_devotion = yes
 	}
 	
 	chance = {
@@ -972,6 +992,7 @@ pious_personality = {
 
 	#Anbennar
 	yearly_karma_decay = 0.025
+	immortal = 0
 } #1 Less bad
 
 #Economic/Administrative Traits
@@ -1032,6 +1053,7 @@ lawgiver_personality = {
 	
 	global_autonomy = -0.05
 	nation_designer_cost = 5
+	immortal = 0
 } #2 easier events
 
 midas_touched_personality = {
@@ -1105,7 +1127,9 @@ midas_touched_personality = {
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
 	
 	global_tax_modifier = 0.1 
+	meritocracy = 0.15 #Anbennar
 	nation_designer_cost = 2
+	immortal = 0
 } #Opens Exceptional Year, 1 better event
 
 incorruptible_personality = {
@@ -1170,6 +1194,7 @@ incorruptible_personality = {
 	
 	yearly_corruption = -0.05
 	nation_designer_cost = 2
+	immortal = 0
 } #1 better, 1 less bad
 
 architectural_visionary_personality = {
@@ -1227,6 +1252,7 @@ architectural_visionary_personality = {
 	
 	build_cost = -0.1
 	nation_designer_cost = 2
+	immortal = 0
 }
 
 scholar_personality = {
@@ -1280,6 +1306,7 @@ scholar_personality = {
 	
 	technology_cost = -0.05
 	nation_designer_cost = 5
+	immortal = 0
 } #comet chance less likely and makes it good (1 easier event), 2 easier events
 entrepreneur_personality = {
 	#personality_events.33
@@ -1341,6 +1368,7 @@ entrepreneur_personality = {
 	
 	trade_efficiency = 0.1
 	nation_designer_cost = 2
+	immortal = 0
 } #Opens Exceptional Year, 1 better event, 3 less bad
 
 industrious_personality = {
@@ -1390,7 +1418,9 @@ industrious_personality = {
 	
 	global_trade_goods_size_modifier = 0.1
 	artificers_loyalty_modifier = 0.05
+	meritocracy = 0.15 #Anbennar
 	nation_designer_cost = 2
+	immortal = 0
 } #Opens Exceptional Year, 1 better event
 
 expansionist_personality = {
@@ -1477,6 +1507,7 @@ expansionist_personality = {
 	
 	global_colonial_growth = 15
 	nation_designer_cost = 2
+	immortal = 0
 } #Better Event
 
 #Diplomacy Traits
@@ -1546,7 +1577,9 @@ charismatic_negotiator_personality = {
 	other_ai_peace_term_bonus = 10
 	
 	diplomatic_reputation = 1
+	meritocracy = 0.25 #Anbennar
 	nation_designer_cost = 2
+	immortal = 0
 } #1 easier event, 2 better events
 
 silver_tongue_personality = {
@@ -1617,7 +1650,9 @@ silver_tongue_personality = {
 	other_ai_war_chance_multiplier = 0.5
 	
 	improve_relation_modifier = 0.2
+	meritocracy = 0.25 #Anbennar
 	nation_designer_cost = 2
+	immortal = 0
 } #2 easier events, 3 better events
 
 #Military Traits
@@ -1688,7 +1723,7 @@ conqueror_personality = {
 	chance = {
 		
 	}
-	
+	immortal = 0
 }
 
 tactical_genius_personality = {
@@ -1753,6 +1788,7 @@ tactical_genius_personality = {
 	
 	leader_land_manuever = 1
 	nation_designer_cost = 2
+	immortal = 0
 } #1 better
 bold_fighter_personality = {
 	ruler_allow = {
@@ -1818,6 +1854,7 @@ bold_fighter_personality = {
 
 	#Anbennar
 	yearly_karma_decay = 0.025
+	immortal = 0
 } #
 strict_personality = {
 	ruler_allow = {
@@ -1868,9 +1905,10 @@ strict_personality = {
 	wants_avoid_loans = yes
 	wants_ecumenical_council = yes
 	
-	discipline = 0.025
+	discipline = 0.05
 
 	nation_designer_cost = 5
+	immortal = 0
 } #1 easier event
 
 inspiring_leader_personality = {
@@ -1935,10 +1973,12 @@ inspiring_leader_personality = {
 	}
 	
 	land_morale = 0.05
+	meritocracy = 0.15 #Anbennar
 	nation_designer_cost = 5
 
 	#Anbennar
 	yearly_karma_decay = 0.025
+	immortal = 0
 } #1 better
 martial_educator_personality = {
 	ruler_allow = {
@@ -1991,6 +2031,7 @@ martial_educator_personality = {
 	
 	army_tradition_decay = -0.01
 	nation_designer_cost = 2
+	immortal = 0
 } #1 easier event, 2 better events
 
 navigator_personality = {
@@ -2030,12 +2071,12 @@ navigator_personality = {
 			AND = {
 				has_game_started = no
 				is_playing_custom_nation = yes
-				NOT = { technology_group = north_american }
-				NOT = { technology_group = mesoamerican }
-				NOT = { technology_group = south_american }
-				NOT = { religion = nahuatl }
-				NOT = { religion = inti }
-				NOT = { religion = mesoamerican_religion }
+				#NOT = { technology_group = north_american }
+				#NOT = { technology_group = mesoamerican }
+				#NOT = { technology_group = south_american }
+				#NOT = { religion = nahuatl }
+				#NOT = { religion = inti }
+				#NOT = { religion = mesoamerican_religion }
 			}
 			AND = {
 				num_of_ports = 1
@@ -2055,12 +2096,14 @@ navigator_personality = {
 	
 	ship_durability = 0.1
 	nation_designer_cost = 2
+	immortal = 0
 } #1 better event
 
 fierce_negotiator_personality = {
 	ruler_allow = {
 		allow = {
 			DIP = 3
+			NOT = { has_country_modifier = centaur_military }
 		}
 	
 		chance = {
@@ -2078,6 +2121,7 @@ fierce_negotiator_personality = {
 	heir_allow = {
 		allow = {
 			heir_DIP = 3
+			NOT = { has_country_modifier = centaur_military }
 		}
 	
 		chance = {
@@ -2091,6 +2135,7 @@ fierce_negotiator_personality = {
 	consort_allow = {
 		allow = {
 			consort_DIP = 3
+			NOT = { has_country_modifier = centaur_military }
 		}
 
 		chance = {
@@ -2113,6 +2158,7 @@ fierce_negotiator_personality = {
 	
 	merc_maintenance_modifier = -0.25
 	nation_designer_cost = 2
+	immortal = 0
 } #1 easier event
 
 ###############################################
@@ -2220,6 +2266,7 @@ babbling_buffoon_personality = {
 	chance = {
 		
 	}
+	immortal = 0
 } #Scandal at court more likely
 
 embezzler_personality = {
@@ -2319,6 +2366,7 @@ embezzler_personality = {
 	
 	yearly_corruption = 0.05
 	nation_designer_cost = -2
+	immortal = 0
 } #1 easier event, 4 better event, 1 less bad
 infertile_personality = {
 	ruler_allow = {
@@ -2431,6 +2479,7 @@ infertile_personality = {
 	
 	heir_chance = -0.5
 	nation_designer_cost = -2
+	immortal = 0
 }
 drunkard_personality = {
 	ruler_allow = {
@@ -2528,7 +2577,9 @@ drunkard_personality = {
 	wants_loans = yes
 	
 	trade_efficiency = -0.10
+	meritocracy = 0.25 #Anbennar
 	nation_designer_cost = -2
+	immortal = 0
 } #Scandal at court more likely
 sinner_personality = {
 
@@ -2618,11 +2669,12 @@ sinner_personality = {
 	}
 	
 	allow = {
-		OR = {
-			religion_group = christian
-			religion_group = muslim
-			religion_group = jewish_group
-		}
+		always = no # TODO anbennar should we make it possible to get sinners?
+		#OR = {
+		#	religion_group = christian
+		#	religion_group = muslim
+		#	religion_group = jewish_group
+		#}
 	}
 	
 	chance = {
@@ -2633,7 +2685,9 @@ sinner_personality = {
 	wants_to_appoint_cardinals_in_his_own_land = yes
 	
 	tolerance_own = -2
+	meritocracy = 0.25 #Anbennar
 	nation_designer_cost = -2
+	immortal = 0
 } #1 better
 greedy_personality = {
 	ruler_allow = {
@@ -2765,6 +2819,7 @@ greedy_personality = {
 	trade_league_acceptance = -10
 	global_tax_modifier = -0.1
 	nation_designer_cost = -2
+	immortal = 0
 } #2 better
 cruel_personality = {
 
@@ -2863,6 +2918,7 @@ cruel_personality = {
 	
 	global_unrest = 2
 	nation_designer_cost = -2
+	immortal = 0
 } #4 less bad
 naive_personality = {
 	ruler_allow = {
@@ -2975,6 +3031,7 @@ naive_personality = {
 	
 	improve_relation_modifier = -0.2
 	nation_designer_cost = -2
+	immortal = 0
 } #1 Less bad event
 
 craven_personality = {
@@ -2982,6 +3039,7 @@ craven_personality = {
 		allow = {
 			NOT = { ruler_has_personality = inspiring_leader_personality }
 			NOT = { ruler_has_personality = bold_fighter_personality }
+			NOT = { ruler_has_personality = xhazobs_chosen_personality }
 		}
 	
 		chance = {
@@ -3081,6 +3139,7 @@ craven_personality = {
 	
 	land_morale = -0.05
 	nation_designer_cost = -2
+	immortal = 0
 }
 loose_lips_personality = {
 	ruler_allow = {
@@ -3178,6 +3237,7 @@ loose_lips_personality = {
 	
 	global_spy_defence = -0.2
 	nation_designer_cost = -2
+	immortal = 0
 }
 obsessive_perfectionist_personality = {
 	ruler_allow = {
@@ -3274,7 +3334,9 @@ obsessive_perfectionist_personality = {
 	wants_avoid_ugly_borders = yes
 	
 	build_cost = 0.1
+	meritocracy = 0.25 #Anbennar
 	nation_designer_cost = -2
+	immortal = 0
 } #1 better, 1 less bad
 malevolent_personality = {
 	ruler_allow = {
@@ -3376,75 +3438,21 @@ malevolent_personality = {
 	
 	reduced_liberty_desire = -5
 	nation_designer_cost = -2
+	immortal = 0
 } #1 less bad
 
-# Immortal, for games converted from CKII, but also available in Nation Designer.
+# Immortal, for long-lived rulers
 immortal_personality = {
 	
-	consort_allow = {
-		allow = {
-			OR = {
-				consort_is_elven = yes
-				consort_is_dwarven = yes
-				consort_is_gnomish = yes
-				consort_is_half_elven = yes
-			}
-		}
-
-		chance = {
-			modifier = {
-				factor = 1000
-				always = yes
-			}
-		}
-	}
-	
-	heir_allow = {
-		allow = {
-			OR = {
-				heir_is_elven = yes
-				heir_is_dwarven = yes
-				heir_is_gnomish = yes
-				heir_is_half_elven = yes
-			}
-		}
-
-		chance = {
-			modifier = {
-				factor = 1000
-				always = yes
-			}
-		}
-	}
-	
-	ruler_allow = {
-		allow = {
-			OR = {
-				ruler_is_elven = yes
-				ruler_is_dwarven = yes
-				ruler_is_gnomish = yes
-				ruler_is_half_elven = yes
-			}
-		}
-	
-		chance = {
-			modifier = {
-				factor = 1000
-				always = yes
-			}
-		}
-	}
-	
-	allow = {	
+	allow = {
+		always = no
 	}
 	
 	chance = {
 		modifier = {
-			factor = -2
 		}
 	}
-
-	immortal = 1 # dummy modifier only used to get the right icon
+	immortal = 0 # dummy modifier only used to get the right icon
 	nation_designer_cost = 800
 	static = yes # Makes nation_designer_cost not scale with age etc. 
 }
@@ -3467,6 +3475,7 @@ legendary_pirate_personality = {
 	different_religion_war_multiplier = 0.8
 	razing = yes
 	nation_designer_cost = 10
+	immortal = 0
 }
 
 #Emperor of China Personalities
@@ -3537,7 +3546,7 @@ humane_personality = {
 
 	allow = {
 		has_dlc = "Mandate of Heaven"
-		has_reform = celestial_empire
+		is_emperor_of_china = yes
 	}
 
 	chance = {
@@ -3559,6 +3568,7 @@ humane_personality = {
 
 	imperial_mandate = 0.05
 	nation_designer_cost = 2
+	immortal = 0
 }
 
 petty_personality = {
@@ -3642,7 +3652,7 @@ petty_personality = {
 
 	allow = {
 		has_dlc = "Mandate of Heaven"
-		has_reform = celestial_empire
+		is_emperor_of_china = yes
 	}
 
 	chance = {
@@ -3664,6 +3674,7 @@ petty_personality = {
 
 	imperial_mandate = -0.05
 	nation_designer_cost = -2
+	immortal = 0
 }
 
 reformist_personality = {
@@ -3729,6 +3740,7 @@ legendary_conqueror_personality = {
 	building_budget_multiplier = 0.2
 	gift_chance = -50
 	wants_land = yes
+	immortal = 0
 }
 
 great_engineer_personality = {
@@ -3739,6 +3751,7 @@ great_engineer_personality = {
 	build_cost = -0.15
 	build_time = -0.5
 	nation_designer_cost = 10
+	immortal = 0
 }
 
 patron_of_arts_personality = {
@@ -3794,6 +3807,7 @@ patron_of_arts_personality = {
 	technology_cost = -0.05
 	idea_cost = -0.05
 	nation_designer_cost = 5
+	immortal = 0
 }
 
 fu_papal_puppetmaster_personality = {
@@ -3802,6 +3816,7 @@ fu_papal_puppetmaster_personality = {
 	prestige = 1 
 	unrest_catholic_provinces = -2
 	nation_designer_cost = 5
+	immortal = 0
 }
 
 iron_crowned_personality = {
@@ -3819,6 +3834,7 @@ iron_crowned_personality = {
 	
 	chance = {	
 	}
+	immortal = 0
 }
 
 peasant_revolt_leader_personality = {
@@ -3834,6 +3850,7 @@ peasant_revolt_leader_personality = {
 	
 	chance = {	
 	}
+	immortal = 0
 }
 ## Anbennar
 
@@ -3847,13 +3864,15 @@ mage_personality = {	#Powerful Mage
 			NOT = { has_heir_flag = is_a_secret_homunculus }
 			NOT = { has_consort_flag = is_a_secret_homunculus }
 			NOT = { has_ruler_modifier = homunculus_ruler }
-			NOT = { culture_group = hobgoblin }
+			NOT = { has_reform = hobgoblin_stratocracy_reform }
+			NOT = { is_subject_of = R62 }
 			NOT = {
 				AND = {
 					religion = bulwari_sun_cult
 					has_country_flag = nsc_human_country_magic_prohibition
 				}
 			}
+			NOT = { has_country_flag = LF_mages_banned }
 		}
 	
 		chance = {
@@ -3931,6 +3950,7 @@ mage_personality = {	#Powerful Mage
 					ruler_culture = tuathak
 					ruler_culture = snecboth
 					ruler_culture = farrani
+					has_ruler_flag = elven_father
 				}
 			}
 			
@@ -3965,7 +3985,6 @@ mage_personality = {	#Powerful Mage
 					ruler_culture = amethyst_dwarf
 					ruler_culture = emerald_dwarf
 					ruler_culture = jade_dwarf
-					ruler_culture = malachite_dwarf
 					ruler_culture = amber_dwarf
 					ruler_culture = citrine_dwarf
 					ruler_culture = garnet_dwarf
@@ -3997,6 +4016,12 @@ mage_personality = {	#Powerful Mage
 				factor = 2
 				has_country_flag = ameion_mages
 			}
+
+			modifier = {
+				factor = 2
+				is_emperor_of_china = yes
+				empire_of_china_reform_passed = taste_magic_reform
+			}
 		}
 	}
 	heir_allow = {
@@ -4006,6 +4031,7 @@ mage_personality = {	#Powerful Mage
 				NOT = { has_heir_flag = is_a_secret_homunculus }
 			}
 			NOT = { has_heir_flag = heir_consort_mage_personality }
+			NOT = { has_country_flag = command_slave_state_flag }
 		}
 	
 		chance = {
@@ -4097,6 +4123,8 @@ mage_personality = {	#Powerful Mage
 					heir_culture = tuathak
 					heir_culture = snecboth
 					heir_culture = farrani
+					has_heir_flag = elven_father
+					mission_completed = seinathil_bardic_college
 				}
 			}
 			
@@ -4131,7 +4159,6 @@ mage_personality = {	#Powerful Mage
 					heir_culture = amethyst_dwarf
 					heir_culture = emerald_dwarf
 					heir_culture = jade_dwarf
-					heir_culture = malachite_dwarf
 					heir_culture = amber_dwarf
 					heir_culture = citrine_dwarf
 					heir_culture = garnet_dwarf
@@ -4158,6 +4185,12 @@ mage_personality = {	#Powerful Mage
 			modifier = {
 				factor = 2
 				has_country_flag = ameion_mages
+			}
+
+			modifier = {
+				factor = 2
+				is_emperor_of_china = yes
+				empire_of_china_reform_passed = taste_magic_reform
 			}
 		}
 	}
@@ -4280,7 +4313,6 @@ mage_personality = {	#Powerful Mage
 					consort_culture = amethyst_dwarf
 					consort_culture = emerald_dwarf
 					consort_culture = jade_dwarf
-					consort_culture = malachite_dwarf
 					consort_culture = amber_dwarf
 					consort_culture = citrine_dwarf
 					consort_culture = garnet_dwarf
@@ -4322,6 +4354,7 @@ mage_personality = {	#Powerful Mage
 	monarch_lifespan = 0.25
 	yearly_patriarch_authority = 0.01
 	reasons_to_elect = 25
+	meritocracy = 0.15 #Anbennar
 	
 	easy_war_chance_multiplier = 2
 	war_chance_multiplier = 1.5
@@ -4329,6 +4362,7 @@ mage_personality = {	#Powerful Mage
 	wants_to_appoint_cardinals_in_his_own_land = yes	#ravelian mages want ravelian cardinals
 
 	nation_designer_cost = 100
+	immortal = 0
 } #1 easier event
 
 great_conqueror_personality = {
@@ -4379,7 +4413,7 @@ great_conqueror_personality = {
 	#Economy AI shit
 	building_budget_multiplier = 1.75 # Will invest much more in buildings
 	gift_chance = -50 # Doesn't give his money away
-	
+	immortal = 0
 }
 
 mythical_conqueror_personality = {
@@ -4430,16 +4464,16 @@ mythical_conqueror_personality = {
 	#Economy AI shit
 	building_budget_multiplier = 1.75 # Will invest much more in buildings
 	gift_chance = -50 # Doesn't give his money away
-	
+	immortal = 0
 }
 
-mongoose_shifter_personality = {
+xhazobs_chosen_personality = {
 	ruler_allow = {
 		allow = {
 			always = no
 		}
 	}
-
+	
 	heir_allow = {
 		allow = {
 			always = no
@@ -4451,79 +4485,328 @@ mongoose_shifter_personality = {
 			always = no
 		}
 	}
+	
+	allow = {
+		ai = no
+	}
+	chance = {
+		modifier = {
+			factor = -1
+		}
+	}
+	
+	yearly_patriarch_authority = 0.01
+	province_warscore_cost = -0.2
+	max_absolutism_effect = 0.1
+	global_autonomy = -0.05
+	election_cycle = 40
+	nation_designer_cost = 800
+	
+	# War AI shit
+	enemy_strength_multiplier = 0.9 # Will slightly underestimate enemy force, more chance to declare war
+	easy_war_chance_multiplier = 50 # Will declare easy war more often
+	war_chance_multiplier = 8 # More chance to declare war
+	wants_land = yes # Wants land, duh
+	other_ai_peace_term_bonus = 50 # Will negotiate better peace deals
+	immortal = 0
+}
+
+
+mongoose_shifter_personality = {
+	ruler_allow = {
+		allow = {
+			OR = {
+				ruler_religion = beast_memory
+				ruler_culture = tanizu
+				ruler_culture = dakinshi
+				ruler_culture = antmvura
+				ruler_culture = kombedak
+				ruler_culture = umsozidak
+				ruler_culture = wakoodak
+			}
+		}
+
+		chance = {
+			modifier = {
+				factor = 1
+			}
+			modifier = {
+				factor = 0.5
+				mil = 3
+			}
+			modifier = {
+				factor = 1
+				mil = 6
+			}
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			OR = {
+				heir_religion = beast_memory
+				heir_culture = tanizu
+				heir_culture = dakinshi
+				heir_culture = antmvura
+				heir_culture = kombedak
+				heir_culture = umsozidak
+				heir_culture = wakoodak
+			}
+		}
+		chance = {
+			modifier = {
+				factor = 1
+			}
+			modifier = {
+				factor = 0.5
+				heir_mil = 3
+			}
+			modifier = {
+				factor = 1
+				heir_mil = 6
+			}
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			OR = {
+				consort_religion = beast_memory
+				consort_culture = tanizu
+				consort_culture = dakinshi
+				consort_culture = antmvura
+				consort_culture = kombedak
+				consort_culture = umsozidak
+				consort_culture = wakoodak
+			}
+			NOT = {
+				consort_has_personality = mongoose_shifter_personality
+				consort_has_personality = leopard_shifter_personality
+				consort_has_personality = elephant_shifter_personality
+			}
+		}
+		chance = {
+			modifier = {
+				factor = 1
+			}
+			modifier = {
+				factor = 0.5
+				consort_mil = 3
+			}
+			modifier = {
+				factor = 1
+				consort_mil = 6
+			}
+		}
+	}
+
+
 
     land_morale = 0.05
     monarch_lifespan = 0.2
 
+	nation_designer_cost = 800
 	enemy_strength_multiplier = 0.75 # Mongoose shifters are bold
 	easy_war_chance_multiplier = 1.5 # Wants to go fight
 	war_chance_multiplier = 8 # wants to go fight
 	wants_land = yes #ambitious
-	wants_heathen_land = yes
-	wants_heretic_land = yes #irrelevant
-	different_religion_war_multiplier = 1.5
-	peace_desire = -10
+	immortal = 0
 }
 
 leopard_shifter_personality = {
 	ruler_allow = {
 		allow = {
-			always = no
+			OR = {
+				ruler_religion = beast_memory
+				ruler_culture = tanizu
+				ruler_culture = dakinshi
+				ruler_culture = antmvura
+				ruler_culture = kombedak
+				ruler_culture = umsozidak
+				ruler_culture = wakoodak
+			}
+		}
+
+		chance = {
+			modifier = {
+				factor = 1
+			}
+			modifier = {
+				factor = 0.5
+				mil = 3
+			}
+			modifier = {
+				factor = 1
+				mil = 6
+			}
 		}
 	}
 
 	heir_allow = {
 		allow = {
-			always = no
+			OR = {
+				heir_religion = beast_memory
+				heir_culture = tanizu
+				heir_culture = dakinshi
+				heir_culture = antmvura
+				heir_culture = kombedak
+				heir_culture = umsozidak
+				heir_culture = wakoodak
+			}
+		}
+		chance = {
+			modifier = {
+				factor = 1
+			}
+			modifier = {
+				factor = 0.5
+				heir_mil = 3
+			}
+			modifier = {
+				factor = 1
+				heir_mil = 6
+			}
 		}
 	}
 	
 	consort_allow = {
 		allow = {
-			always = no
+			OR = {
+				consort_religion = beast_memory
+				consort_culture = tanizu
+				consort_culture = dakinshi
+				consort_culture = antmvura
+				consort_culture = kombedak
+				consort_culture = umsozidak
+				consort_culture = wakoodak
+			}
+			NOT = {
+				consort_has_personality = mongoose_shifter_personality
+				consort_has_personality = leopard_shifter_personality
+				consort_has_personality = elephant_shifter_personality
+			}
+		}
+		chance = {
+			modifier = {
+				factor = 1
+			}
+			modifier = {
+				factor = 0.5
+				consort_mil = 3
+			}
+			modifier = {
+				factor = 1
+				consort_mil = 6
+			}
 		}
 	}
 
     trade_efficiency = 0.1
     monarch_lifespan = 0.2
 
+	nation_designer_cost = 800
 	enemy_strength_multiplier = 1.15 # cautious
 	easy_war_chance_multiplier = 20 # Hunter pouncing
 	other_ai_peace_term_bonus = 20
-	building_budget_multiplier = 1.5 # Will invest much more in buildings
-	other_ai_help_us_multiplier = 2 # diplomats
-	other_ai_war_chance_multiplier = 0.75
-	alliance_acceptance = 5
+	send_warning_desire = 10
+	immortal = 0
 }
 
 elephant_shifter_personality = {
 	ruler_allow = {
 		allow = {
-			always = no
+			OR = {
+				ruler_religion = beast_memory
+				ruler_culture = tanizu
+				ruler_culture = dakinshi
+				ruler_culture = antmvura
+				ruler_culture = kombedak
+				ruler_culture = umsozidak
+				ruler_culture = wakoodak
+			}
+		}
+
+		chance = {
+			modifier = {
+				factor = 1
+			}
+			modifier = {
+				factor = 0.5
+				mil = 3
+			}
+			modifier = {
+				factor = 1
+				mil = 6
+			}
 		}
 	}
 
 	heir_allow = {
 		allow = {
-			always = no
+			OR = {
+				heir_religion = beast_memory
+				heir_culture = tanizu
+				heir_culture = dakinshi
+				heir_culture = antmvura
+				heir_culture = kombedak
+				heir_culture = umsozidak
+				heir_culture = wakoodak
+			}
+		}
+		chance = {
+			modifier = {
+				factor = 1
+			}
+			modifier = {
+				factor = 0.5
+				heir_mil = 3
+			}
+			modifier = {
+				factor = 1
+				heir_mil = 6
+			}
 		}
 	}
 	
 	consort_allow = {
 		allow = {
-			always = no
+			OR = {
+				consort_religion = beast_memory
+				consort_culture = tanizu
+				consort_culture = dakinshi
+				consort_culture = antmvura
+				consort_culture = kombedak
+				consort_culture = umsozidak
+				consort_culture = wakoodak
+			}
+			NOT = {
+				consort_has_personality = mongoose_shifter_personality
+				consort_has_personality = leopard_shifter_personality
+				consort_has_personality = elephant_shifter_personality
+			}
+		}
+		chance = {
+			modifier = {
+				factor = 1
+			}
+			modifier = {
+				factor = 0.5
+				consort_mil = 3
+			}
+			modifier = {
+				factor = 1
+				consort_mil = 6
+			}
 		}
 	}
 
     build_cost = -0.1
     monarch_lifespan = 0.2
 
-	easy_war_chance_multiplier = 0.5 # cares about the weak
-	war_chance_multiplier = 0.8 # war harms the herd
+	nation_designer_cost = 800
 	building_budget_multiplier = 2 # Will invest much more in buildings
 	gift_chance = 50 # helps others
-	other_ai_help_us_multiplier = 1.5 # the herd sticks together
-	other_ai_war_chance_multiplier = 0.9
-	send_warning_desire = 10
+	war_chance_multiplier = 0.8
 	alliance_acceptance = 10
+	immortal = 0
 }

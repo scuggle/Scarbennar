@@ -11,6 +11,16 @@ capital = 984
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_religious }
 
+
+if = { 
+	limit = { has_dlc = "Lions of the North" }
+	add_country_modifier = {
+		name = ebonsteel_stockpiles
+		duration = -1
+	}
+}
+
+
 1422.7.19 = {
 	monarch = {
 		name = "Karl II"
@@ -21,8 +31,8 @@ capital = 984
 		mil = 6
 		
 		leader = {
-			name = "Karl II Ebonfrost"     # Name of the leader
-			type = general       # Type of leader: general, admiral, explorer, conquistidor
+			name = "Karl II Ebonfrost"	 # Name of the leader
+			type = general	   # Type of leader: general, admiral, explorer, conquistidor
 			fire = 0
 			shock = 6
 			manuever = 4

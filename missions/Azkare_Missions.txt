@@ -19,6 +19,7 @@ hiderion_branch_azkare = { #Hiderion improvement branch
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -113,6 +114,7 @@ khao_elnak_branch_azkare = { #Khao Elnak Conquest Branch/Lady Mya Satae
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -217,6 +219,7 @@ ngoen_branch_azkare = { #Lo Ngoen conquest/ The Lord Rama Buakae/Guardian of the
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -246,7 +249,13 @@ ngoen_branch_azkare = { #Lo Ngoen conquest/ The Lord Rama Buakae/Guardian of the
 		}
 		
 		effect = {
-			ngoen_area = {
+			4777 = {
+				add_permanent_claim = ROOT
+			}
+			4940 = {
+				add_permanent_claim = ROOT
+			}
+			4781 = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -260,15 +269,18 @@ ngoen_branch_azkare = { #Lo Ngoen conquest/ The Lord Rama Buakae/Guardian of the
 		}
 		
 		provinces_to_highlight = {
-			area = ngoen_area
+			OR = {
+				province_id = 4777
+				province_id = 4940
+				province_id = 4781
+			}
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			ngoen_area = {
-				type = all
-				owned_by = ROOT
-			}
+			owns = 4777
+			owns = 4940
+			owns = 4781
 		}
 		
 		effect = {
@@ -336,7 +348,9 @@ ngoen_branch_azkare = { #Lo Ngoen conquest/ The Lord Rama Buakae/Guardian of the
 		
 		provinces_to_highlight = {
 			OR = {
-				area = ngoen_area
+				province_id = 4777
+				province_id = 4940
+				province_id = 4781
 				area = kaiden_area
 				area = phakphon_area
 				area = thirabnir_area
@@ -350,8 +364,15 @@ ngoen_branch_azkare = { #Lo Ngoen conquest/ The Lord Rama Buakae/Guardian of the
 		}
 		
 		trigger = {
-			ngoen_area = {
-				type = all
+			4777 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			4940 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			4781 = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
@@ -383,6 +404,7 @@ ngoen_branch_azkare = { #Lo Ngoen conquest/ The Lord Rama Buakae/Guardian of the
 			}
 			hidden_effect = { azkare_parliament_setup = yes }
 			add_government_reform = azkare_court
+			set_country_flag = azkare_guardian_of_the_townships_completed_flag
 		}
 	}
 }
@@ -393,6 +415,7 @@ thirabnir_branch_azkare = { #Thirabnir vassalization/The Brothers
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -533,6 +556,7 @@ economy_branch_azkare = { #Develop Azkare/townships
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -695,6 +719,7 @@ citadel_azkare = { #Improve the Citadel
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -773,6 +798,7 @@ restore_reputation_azkare = { #Sending the Call, improve elf reputation
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -835,7 +861,9 @@ restore_reputation_azkare = { #Sending the Call, improve elf reputation
 						area = thirabnir_area
 						area = kaiden_area
 						area = phakphon_area
-						area = ngoen_area
+						province_id = 4777
+						province_id = 4940
+						province_id = 4781
 					}
 					NOT = { is_prosperous = yes }
 				}
@@ -845,7 +873,9 @@ restore_reputation_azkare = { #Sending the Call, improve elf reputation
 						area = thirabnir_area
 						area = kaiden_area
 						area = phakphon_area
-						area = ngoen_area
+						province_id = 4777
+						province_id = 4940
+						province_id = 4781
 					}
 					NOT = { num_of_times_improved_by_owner = 5 }
 					NOT = {
@@ -855,7 +885,9 @@ restore_reputation_azkare = { #Sending the Call, improve elf reputation
 								OR = {
 									area = thirabnir_area
 									area = kaiden_area
-									area = ngoen_area
+									province_id = 4777
+									province_id = 4940
+									province_id = 4781
 									area = phakphon_area
 								}
 								num_of_times_improved_by_owner = 5
@@ -912,7 +944,9 @@ restore_reputation_azkare = { #Sending the Call, improve elf reputation
 					OR = {
 						area = thirabnir_area
 						area = kaiden_area
-						area = ngoen_area
+						province_id = 4777
+						province_id = 4940
+						province_id = 4781
 						area = phakphon_area
 					}
 					num_of_times_improved_by_owner = 5
@@ -930,7 +964,7 @@ restore_reputation_azkare = { #Sending the Call, improve elf reputation
 	}
 	
 	azkare_sending_the_call = {
-		icon = mission_embrace_our_destiny
+		icon = mission_new_dawn
 		position = 6
 		required_missions = {
 			azkare_jaerels_values
@@ -1137,6 +1171,7 @@ arawkelin_adm_azkare = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -1349,6 +1384,7 @@ arawkelin_dip_azkare = { #Arawkelin dip mission
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -1538,6 +1574,7 @@ arawkelin_mil_azkare = { #Arawkelin mil mission
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -1649,6 +1686,7 @@ rainforest_azkare = { #Rainforest and ringlet isles
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -1681,6 +1719,7 @@ rainforest_azkare = { #Rainforest and ringlet isles
 				}
 				AND = {
 					region = lupulan_rainforest_region
+					is_city = yes
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 			}
@@ -1699,7 +1738,10 @@ rainforest_azkare = { #Rainforest and ringlet isles
 				}
 			}
 			owns_all_provinces = {
-				region = lupulan_rainforest_region
+				AND = {
+					region = lupulan_rainforest_region
+					is_city = yes
+				}
 			}
 		}
 		
@@ -1756,6 +1798,7 @@ bomdan_azkare = { #Conquer bomdan
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -1931,9 +1974,6 @@ bomdan_azkare = { #Conquer bomdan
 			}
 			4797 = {
 				change_culture = swallow_command
-				hidden_effect = {
-					update_racial_province_majority = yes
-				}
 			}
 		}
 	}
@@ -2225,6 +2265,7 @@ baihon_xinh_azkare = { #Conquer Baihon Xinh
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -2400,6 +2441,7 @@ baihon_xinh_azkare = { #Conquer Baihon Xinh
 						area = amkamsek_area
 					}
 					NOT = { owned_by = ROOT }
+					is_city = yes
 				}
 				AND = {
 					province_id = 4701
@@ -2421,8 +2463,12 @@ baihon_xinh_azkare = { #Conquer Baihon Xinh
 			}
 			amkamsek_area = { #Own Cay Cam Sinh Area
 				type = all
-				owned_by = ROOT
+				OR = { 
+					owned_by = ROOT 
+					is_city = no
+				}
 			}
+			
 			# 4701 = { #Make Cay Cam Sinh a pirate-hunter Port
 				# has_shipyard_building_trigger = yes
 				# has_dock_building_trigger = yes
@@ -2580,6 +2626,7 @@ east_thidinkai_azkare = { #Conquer east thidinkai
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -2987,6 +3034,9 @@ east_thidinkai_azkare = { #Conquer east thidinkai
 					days = 365
 				}
 			}
+			country_event = {
+				id = azkare.50
+			}
 		}
 	}
 	
@@ -3093,6 +3143,7 @@ military_1_azkare = { #Improve Military, preperations for Jaerelic Legions
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -3586,6 +3637,7 @@ connect_the_continent_azkare = { #Golden Highway, Major ports
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	
@@ -4248,6 +4300,7 @@ improve_economy_azkare = { #Improve Haless's economy, protect the little man
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	
@@ -5041,6 +5094,7 @@ public_view_azkare = { #Improve the standing of SE and Elves, radiant campaigns,
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	
@@ -6033,6 +6087,7 @@ academies_azkare = { #Academies, Convocationary guard, command conquest, develop
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	
@@ -6365,7 +6420,7 @@ academies_azkare = { #Academies, Convocationary guard, command conquest, develop
 	}
 	
 	azkare_destroy_the_command = {
-		icon = mission_in_the_name_of_the_fallen
+		icon = mission_burning_castle
 		position = 24
 		required_missions = {
 			azkare_source_of_the_yan
@@ -6737,6 +6792,7 @@ legions_azkare = { #Jaerelic legions, conquer Yanshen, Develop rahen
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	

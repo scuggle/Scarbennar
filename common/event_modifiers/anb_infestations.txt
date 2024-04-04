@@ -305,7 +305,7 @@ infestation_dragon_hostile = {
 # event chain reward, granting some permanent financial benefits, instead of claiming 
 # the hoard itself.
 infestation_dragon_leveraged_hoard = {
-    interest = -1
+    interest = -0.5
     inflation_reduction = 0.05
     prestige = 0.5
 }

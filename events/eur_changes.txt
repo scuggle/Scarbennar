@@ -1,0 +1,153 @@
+
+#Pirateer efficiency debuff
+country_event = {
+	id = eur_changes.1
+	title = eur_changes.1.t
+	desc = eur_changes.1.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			has_country_modifier = eur_balancing_modifier
+		} 
+	}
+
+	option = {
+		name = eur_changes.1.a
+		add_country_modifier = {
+			name = eur_balancing_modifier
+			duration = -1
+		}
+	}
+}
+
+#EoA spy network Buff
+country_event = {
+	id = eur_changes.4
+	title = eur_changes.4.t
+	desc = eur_changes.4.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			has_country_modifier = eur_spy_buff
+		} 
+		is_part_of_hre = yes
+	}
+
+	option = {
+		name = eur_changes.4.a
+		add_country_modifier = {
+			name = eur_spy_buff
+			duration = 18250
+		}
+	}
+}
+
+#Chaingrasper Buff
+country_event = {
+	id = eur_changes.2
+	title = eur_changes.2.t
+	desc = eur_changes.2.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	trigger = {
+		tag = H74
+		ai = no
+		is_year = 1445
+	}
+
+	option = {
+		name = eur_changes.2.a
+		add_country_modifier = {
+			name = chaingrasper_initial_buff
+			duration = 7200
+		}
+		tree_of_stone_region = {
+			discover_country = ROOT
+		}
+	}
+}
+
+#Choose generic MT after forming escann nation with MT
+country_event = {
+	id = eur_changes.3
+	title = eur_changes.3.t
+	desc = eur_changes.3.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		OR = {
+			has_country_modifier = legacy_of_adventurers_modifier
+			has_country_modifier = legacy_of_greentide_invaders_modifier
+			has_country_flag = formed_diggy_formable
+		}
+	}
+
+	option = {
+		name = eur_changes.3.a
+		ai_chance = { factor = 100 }
+		add_prestige = 10
+	}
+
+	option = {
+		name = eur_changes.3.b
+		ai_chance = { factor = 0 }
+		set_country_flag = chose_generic_mt
+			swap_non_generic_missions = yes
+
+			FROM = {
+				hidden_effect = {
+					play_sound = "decision"
+				}
+			}
+	}
+}
+
+#Gelkalis is made an autonomous vassal
+country_event = {
+	id = eur_changes.5
+	title = eur_changes.5.t
+	desc = eur_changes.5.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = F26
+		ai = no
+	}
+
+	option = {
+		name = eur_changes.5.a
+		grant_independence = yes
+		F21 = {
+			create_subject = {
+				subject_type = autonomous_vassal
+				subject = F26
+			}
+		}
+	}
+}

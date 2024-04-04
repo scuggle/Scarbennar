@@ -29,7 +29,7 @@ estate_uppercastes = {
 			# NOT = { has_estate = estate_rajput }
 		# }
 		OR = {
-			NOT = { has_reform = celestial_empire }
+			NOT = { is_emperor_of_china = yes }
 			has_dlc = "Mandate of Heaven"
 		}
 		is_nomad = no
@@ -57,7 +57,6 @@ estate_uppercastes = {
 	country_modifier_happy = {
 		manpower_recovery_speed = 0.2
 		land_maintenance_modifier = -0.1
-		monthly_support_heir_gain = 0.33
 	}
 	country_modifier_neutral = {
 		manpower_recovery_speed = 0.2
@@ -111,8 +110,8 @@ estate_uppercastes = {
 				has_disaster = estate_mages_disaster
 				has_disaster = estate_artificers_disaster
 				has_disaster = estate_adventurers_disaster
-				#has_disaster = estate_middlecastes_disaster #TODO: create disaster
-				#has_disaster = estate_lowercastes_distaster #TODO: create disaster
+				#has_disaster = estate_middlecastes_disaster 
+				#has_disaster = estate_lowercastes_distaster 
 				#has_disaster = estate_brahmins_disaster
 				#has_disaster = estate_jains_disaster
 			}
@@ -139,8 +138,8 @@ estate_uppercastes = {
 				has_disaster = estate_mages_disaster
 				has_disaster = estate_artificers_disaster
 				has_disaster = estate_adventurers_disaster
-				#has_disaster = estate_middlecastes_disaster #TODO: create disaster
-				#has_disaster = estate_lowercastes_distaster #TODO: create disaster
+				#has_disaster = estate_middlecastes_disaster 
+				#has_disaster = estate_lowercastes_distaster 
 				#has_disaster = estate_brahmins_disaster
 				#has_disaster = estate_jains_disaster
 			}

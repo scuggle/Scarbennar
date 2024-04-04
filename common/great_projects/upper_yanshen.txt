@@ -153,7 +153,7 @@ bianfang_huangpo_academy_of_war = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -162,7 +162,7 @@ bianfang_huangpo_academy_of_war = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -197,7 +197,7 @@ bianfang_huangpo_academy_of_war = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.001
+			yearly_army_professionalism = 0.0025
 			land_attrition = -0.05
 		}
 		on_upgraded = {
@@ -217,7 +217,7 @@ bianfang_huangpo_academy_of_war = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.002
+			yearly_army_professionalism = 0.005
 			land_attrition = -0.1
 		}
 		on_upgraded = {
@@ -247,7 +247,7 @@ bianfang_huangpo_academy_of_war = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.003
+			yearly_army_professionalism = 0.005
 			land_attrition = -0.15
 			leader_land_manuever = 1
 		}
@@ -292,7 +292,7 @@ guhe_the_cheng_of_guhe = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 				culture = goldscale_kobold
 			}
 		}
@@ -302,7 +302,7 @@ guhe_the_cheng_of_guhe = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 				culture = goldscale_kobold
 			}
 		}
@@ -414,7 +414,7 @@ bianfang_vermillion_gate = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	
@@ -423,7 +423,7 @@ bianfang_vermillion_gate = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 			}
 		}
 	}	

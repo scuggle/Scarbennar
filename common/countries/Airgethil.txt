@@ -18,27 +18,10 @@ historical_idea_groups = {
 }
 
 historical_units = {
-	elven_1_elven_archers
-	elven_1_elven_knights
-	elven_5_rangers
-	elven_6_horse_archers
-	elven_9_bladedancers
-	elven_10_reinforced_elven_knights
-	elven_12_elven_phalanx
-	elven_14_caracole_horse_archers
-	elven_15_reformed_archers
-	elven_18_wind_riders
-	elven_19_pistoliers
-	elven_23_mounted_rangers
-	elven_23_velocity_infantry
-	elven_26_advanced_velocity_infantry
-	elven_28_dragon_lancers
-	elven_28_reformed_rangers
-	elven_30_elven_new_army
 }
 
 monarch_names = {
-	"Adrahel #0" = 10
+	"Adrahel #1" = 10
 	"Alarian #0" = 10
 	"Aldarian #0" = 10
 	"Aldarion #0" = 10
@@ -83,7 +66,7 @@ monarch_names = {
 	"Galindor #0" = 10
 	"Gelehorn #0" = 10
 	"Gelmonias #0" = 10
-	"Ibenion #0" = 10
+	"Ibenion #2" = 100
 	"Ivran #0" = 10
 	"Ivrandil #0" = 10
 	"Ivrandir #0" = 10
@@ -128,7 +111,7 @@ monarch_names = {
 	"Imariel #0" = -5
 	"Vehari #0" = -5
 	"Veharia #0" = -5
-	"Varila #0" = -5
+	"Varila #0" = -2
 	"Varilia #0" = -5
 	"Panoril #0" = -5
 	"Liandiel #0" = -5
@@ -151,9 +134,7 @@ leader_names = {
 	Searrow Windarrow Truearrow Truesight Trueblade Truehair Truebow Truespell Trueseer Truehunter Truehand 
 }
 
-
 ship_names = {
-
 	#Generic Cannorian
 	Adamant Advantage Adventure Advice Answer Ardent Armada Arrogant Assistance Association Assurance Atlas Audacious 
 	Bear Beaver "Black Galley" "Black Pinnace" "Black Prince" "Black Blood" Captain Centurion Coronation Courage Crocodile Crown
@@ -172,30 +153,13 @@ ship_names = {
 	Survey Surveillance Cow Ox Bird Hawk Sovereign Emperor Count Lord Baron
 
 	Knight Paladin Dragonslayer Cleric Rogue Fighter Ranger Sorcerer Wizard Warlock Monk Druid
-	Strenght Dexterity Constitution Intelligence Wisdom Charisma
-	
-	#Elven
-	Lunpyr Agraseina
-	
-	#Regent Court Deities
-	Castellos Dame "The Dame" Halanna Ysh Yshtralania Agrados Adean Esmaryal Ryala Edronias Falah Nerat Ara Minara Munas Moonsinger Nathalyne Begga Corin Balgar
-	Uelos Draxos Aesanna
-	
-	#Lorent-specific
-	"Black Rose" Rose "Great Rose" "High Rose" "Ashen Rose" "Water Rose" "Waterlilly" "Rose Galley" Rosebush Rosekiss 
-	Reán Kylian Lorenan Rewalt Rewan Ruben "Sweet Ioriel" "Lady Ioriel" "Great Ioriel" "Red Ioriel" "Maidenrose"
-	"Prince Reán" "Prince Kylian" "Prince Ruben" "Prince of the Redglades" "Prince of Lorenith"
-	"Great Reán" "Great Kylian" "Old Lorenan" "Great Lorenan" "Great Rewalt" "Great Ruben"
-	"Royal Reán" "Royal Kylian" "Blood Lorenan" "Royal Ruben"
-	Eilisín "Lady Eilisín" "Sweet Eilisín" "Lovely Eilisín" Madaléin "Lady Madaléin" "Sweet Madaléin" "Lovely Madaléin" "Madaléin and Eilisín"
-	Lorentainé "Great Lorentainé" "Red Lorentainé" "Loyal Lorentainé" Lorenith Oldport Bloodwine Ionnidar Redfort
-
+	Strength Dexterity Constitution Intelligence Wisdom Charisma
 }
 
 army_names = {
-	"Airgethil Army" "Lord's Army" "The Band of Airgethil" "Army of $PROVINCE$"
+	"Ibevari Army" "Elven Army" "Army of the Forest" "Army of the Glades" "Army of $PROVINCE$"
 }
 
 fleet_names = {
-	"Airgethil Navy" "Moon Squadron" "Munas Squadron" "Remnant Squadron"
+	"Ibevari Navy" "Elven Navy" "Damescrown Squadron" "Dameshead Squadron" "Damesneck Squadron" "Moon Squadron" "Remnant Squadron" "Wanderer Squadron" "Seeker Squadron"
 }

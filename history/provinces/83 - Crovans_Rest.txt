@@ -1,9 +1,9 @@
 
 #83 - Nassau | 
 
-owner = A14
-controller = A14
-add_core = A14
+owner = B69
+controller = B69
+add_core = B69
 culture = low_lorentish
 religion = regent_court
 

@@ -1,13 +1,16 @@
 
 # No previous file for Bahia
-culture = green_orc
-religion = great_dookan
+owner = B53
+controller = B53
+add_core = B53
+culture = east_damerian
+religion = regent_court
 capital = ""
-tribal_owner = B23
 hre = no
+fort_15th = yes
 
-base_tax = 4
-base_production = 3
+base_tax = 6
+base_production = 5
 base_manpower = 3
 
 trade_goods = fish

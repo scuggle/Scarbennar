@@ -1,7 +1,7 @@
 namespace = khom_civilwar
 
 #startup events
-country_event = { #Ma Hoang startup event
+country_event = { #Mo Hoang startup event
 	id = khom_civilwar.1
 	title = khom_civilwar.1.t
 	desc = khom_civilwar.1.d
@@ -14,6 +14,7 @@ country_event = { #Ma Hoang startup event
 	option = {
 		name = khom_civilwar.1.a
 		ai_chance = { factor = 100 }
+		custom_tooltip = khom_civilwar_mahoang_start_tt
 		add_treasury = 400
 		add_opinion = {
 			who = Y71
@@ -79,6 +80,7 @@ country_event = { #Hon Sai startup event
 	option = {
 		name = khom_civilwar.2.a
 		ai_chance = { factor = 100 }
+		custom_tooltip = khom_civilwar_honsai_start_tt
 		add_opinion = {
 			who = Y72
 			modifier = khom_civilwar_allied_in_war
@@ -115,6 +117,7 @@ country_event = { #Kudet Kai startup event
 	option = {
 		name = khom_civilwar.3.a
 		ai_chance = { factor = 100 }
+		custom_tooltip = khom_civilwar_kudetkai_start_tt
 		add_opinion = {
 			who = Y67
 			modifier = khom_civilwar_allied_in_war
@@ -147,6 +150,7 @@ country_event = { #Chien Binhrung startup event
 	option = {
 		name = khom_civilwar.4.a
 		ai_chance = { factor = 100 }
+		custom_tooltip = khom_civilwar_chienbinhrung_start_tt
 		add_opinion = {
 			who = Y66
 			modifier = khom_civilwar_allied_in_war
@@ -167,7 +171,7 @@ country_event = { #Chien Binhrung startup event
 }
 
 #people interfere
-country_event = { #Verkal Ozovar choose whether to help Ma Hoang
+country_event = { #Verkal Ozovar choose whether to help Mo Hoang
 	id = khom_civilwar.10
 	title = khom_civilwar.10.t
 	desc = khom_civilwar.10.d
@@ -179,8 +183,8 @@ country_event = { #Verkal Ozovar choose whether to help Ma Hoang
 	
 	option = {	#of course we'll help
 		name = khom_civilwar.10.a
-		ai_chance = { factor = 80 }
-		custom_tooltip = khom_civilwar_offer_to_join_ma_hoang_tt
+		ai_chance = { factor = 100 }
+		custom_tooltip = khom_civilwar_offer_to_join_mo_hoang_tt
 		hidden_effect = {
 			Y67 = {
 				country_event = {
@@ -188,7 +192,7 @@ country_event = { #Verkal Ozovar choose whether to help Ma Hoang
 					days = 1
 				}
 			}
-			set_country_flag = Y63_ma_hoang_friendship_flag
+			set_country_flag = Y63_mo_hoang_friendship_flag
 		}
 		add_country_modifier = {
 			name = Y63_dwarven_expeditionary_force
@@ -205,26 +209,18 @@ country_event = { #Verkal Ozovar choose whether to help Ma Hoang
 	
 	option = {	#It's not in our interests
 		name = khom_civilwar.10.b
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				Y67 = {
-					ai = no
-				}
-			}
-		}
+		ai_chance = { factor = 0 }
 		hidden_effect = {
 			remove_historical_friend = Y67
 			Y67 = {
 				remove_historical_friend = Y63
 			}
-			set_country_flag = Y63_ma_hoang_angy_flag
+			set_country_flag = Y63_mo_hoang_angy_flag
 		}
 	}
 }
 
-country_event = { #Ma Hoang recieves offer from Verkal Ozovar
+country_event = { #Mo Hoang recieves offer from Verkal Ozovar
 	id = khom_civilwar.11
 	title = khom_civilwar.11.t
 	desc = khom_civilwar.11.d
@@ -273,7 +269,7 @@ country_event = { #Ma Hoang recieves offer from Verkal Ozovar
 	}
 }
 
-country_event = { #Verkal Ozovar, Ma Hoang accepted
+country_event = { #Verkal Ozovar, Mo Hoang accepted
 	id = khom_civilwar.12
 	title = khom_civilwar.12.t
 	desc = khom_civilwar.12.d
@@ -337,7 +333,7 @@ country_event = { #Verkal Ozovar, Ma Hoang accepted
 	}
 }
 
-country_event = { #Verkal Ozovar, Ma Hoang refused
+country_event = { #Verkal Ozovar, Mo Hoang refused
 	id = khom_civilwar.13
 	title = khom_civilwar.13.t
 	desc = khom_civilwar.13.d
@@ -357,7 +353,7 @@ country_event = { #Verkal Ozovar, Ma Hoang refused
 	}
 }
 
-country_event = { #Hebat Hari choose whether to join
+country_event = { #Jaya Raya choose whether to join
 	id = khom_civilwar.15
 	title = khom_civilwar.15.t
 	desc = khom_civilwar.15.d
@@ -369,7 +365,7 @@ country_event = { #Hebat Hari choose whether to join
 	
 	option = {	#we will help our friends!
 		name = khom_civilwar.15.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 100 }
 		custom_tooltip = khom_civilwar_offer_to_join_hon_sai_tt
 		Y66 = {
 			country_event = {
@@ -381,19 +377,11 @@ country_event = { #Hebat Hari choose whether to join
 	
 	option = {	#bitch out
 		name = khom_civilwar.15.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				Y66 = {
-					ai = no
-				}
-			}
-		}
+		ai_chance = { factor = 0 }
 	}
 }
 
-country_event = { #Hon Sai recieves offer from Hebat Hari
+country_event = { #Hon Sai recieves offer from Jaya Raya
 	id = khom_civilwar.16
 	title = khom_civilwar.16.t
 	desc = khom_civilwar.16.d
@@ -404,7 +392,7 @@ country_event = { #Hon Sai recieves offer from Hebat Hari
 	option = {	#accept help
 		name = khom_civilwar.16.a
 		ai_chance = { factor = 100 }
-		custom_tooltip = khom_civilwar_accept_hebat_hari_offer_tt
+		custom_tooltip = khom_civilwar_accept_jaya_raya_offer_tt
 		set_global_flag = khom_civilwar_hebathari_joins
 		create_alliance = Y76
 		add_opinion = {
@@ -461,7 +449,7 @@ country_event = { #Hon Sai recieves offer from Hebat Hari
 	}
 }
 
-country_event = { #Hebat Hari, Hon Sai accepted
+country_event = { #Jaya Raya, Hon Sai accepted
 	id = khom_civilwar.17
 	title = khom_civilwar.17.t
 	desc = khom_civilwar.17.d
@@ -499,7 +487,7 @@ country_event = { #Hebat Hari, Hon Sai accepted
 	}
 }
 
-country_event = { #Hebat Hari, Hon Sai refused
+country_event = { #Jaya Raya, Hon Sai refused
 	id = khom_civilwar.18
 	title = khom_civilwar.18.t
 	desc = khom_civilwar.18.d
@@ -523,27 +511,15 @@ country_event = { #Sirtan choose who to join
 	
 	is_triggered_only = yes
 	
-	option = {	#reach out to Ma Hoang
+	option = {	#reach out to Mo Hoang
 		name = khom_civilwar.20.a
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				NOT = {
-					has_global_flag = khom_civilwar_verkalozovar_joins
-				}
-			}
-			modifier = {
-				factor = 0
-				has_global_flag = khom_civilwar_verkalozovar_joins
-			}
-		}
+		ai_chance = { factor = 0 }
 		trigger = {
 			NOT = {
 				has_country_flag = khom_civilwar_mahoang_refuses_sirtan
 			}
 		}
-		custom_tooltip = khom_civilwar_offer_to_join_ma_hoang_tt
+		custom_tooltip = khom_civilwar_offer_to_join_mo_hoang_tt
 		Y67 = {
 			country_event = {
 				id = khom_civilwar.22
@@ -553,7 +529,7 @@ country_event = { #Sirtan choose who to join
 	}
 	option = {	#reach out to Hon Sai
 		name = khom_civilwar.20.b
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 100 }
 		trigger = {
 			NOT = {
 				has_country_flag = khom_civilwar_honsai_refuses_sirtan
@@ -636,15 +612,15 @@ country_event = { #Sirtan choose who to join recursive version
 
 	is_triggered_only = yes
 	
-	option = {	#reach out to Ma Hoang
+	option = {	#reach out to Mo Hoang
 		name = khom_civilwar.20.a
-		ai_chance = { factor = 67 }
+		ai_chance = { factor = 100 }
 		trigger = {
 			NOT = {
 				has_country_flag = khom_civilwar_mahoang_refuses_sirtan
 			}
 		}
-		custom_tooltip = khom_civilwar_offer_to_join_ma_hoang_tt
+		custom_tooltip = khom_civilwar_offer_to_join_mo_hoang_tt
 		Y67 = {
 			country_event = {
 				id = khom_civilwar.22
@@ -654,7 +630,7 @@ country_event = { #Sirtan choose who to join recursive version
 	}
 	option = {	#reach out to Hon Sai
 		name = khom_civilwar.20.b
-		ai_chance = { factor = 67 }
+		ai_chance = { factor = 100 }
 		trigger = {
 			NOT = {
 				has_country_flag = khom_civilwar_honsai_refuses_sirtan
@@ -670,7 +646,7 @@ country_event = { #Sirtan choose who to join recursive version
 	}
 	option = {	#raid everyone
 		name = khom_civilwar.20.c
-		ai_chance = { factor = 33 }
+		ai_chance = { factor = 0 }
 		set_global_flag = khom_civilwar_sirtan_is_raiding_everyone
 		add_country_modifier = {
 			name = khom_civilwar_active_raiders
@@ -712,7 +688,7 @@ country_event = { #Sirtan choose who to join recursive version
 	}
 }
 
-country_event = { #Ma Hoang recieves offer from Sirtan
+country_event = { #Mo Hoang recieves offer from Sirtan
 	id = khom_civilwar.22
 	title = khom_civilwar.22.t
 	desc = khom_civilwar.22.d
@@ -722,7 +698,7 @@ country_event = { #Ma Hoang recieves offer from Sirtan
 	
 	option = {	#accept help
 		name = khom_civilwar.22.a
-		ai_chance = { factor = 75 }
+		ai_chance = { factor = 100 }
 		custom_tooltip = khom_civilwar_accept_sirtan_offer_tt
 		set_global_flag = khom_civilwar_sirtan_joins_mahoang
 		add_country_modifier = {
@@ -748,7 +724,7 @@ country_event = { #Ma Hoang recieves offer from Sirtan
 	
 	option = {	#refuse help
 		name = khom_civilwar.22.b
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 0 }
 		Y73 = {
 			set_country_flag = khom_civilwar_mahoang_refuses_sirtan
 		}
@@ -766,7 +742,7 @@ country_event = { #Ma Hoang recieves offer from Sirtan
 	}
 }
 
-country_event = { #Sirtan, Ma Hoang accepted
+country_event = { #Sirtan, Mo Hoang accepted
 	id = khom_civilwar.23
 	title = khom_civilwar.23.t
 	desc = khom_civilwar.23.d
@@ -835,7 +811,7 @@ country_event = { #Hon Sai recieves offer from Sirtan
 	
 	option = {	#accept help
 		name = khom_civilwar.24.a
-		ai_chance = { factor = 75 }
+		ai_chance = { factor = 100 }
 		custom_tooltip = khom_civilwar_accept_sirtan_offer_tt
 		set_global_flag = khom_civilwar_sirtan_joins_honsai
 		add_country_modifier = {
@@ -860,7 +836,7 @@ country_event = { #Hon Sai recieves offer from Sirtan
 	}
 	option = {	#refuse help
 		name = khom_civilwar.24.b
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 0 }
 		Y73 = {
 			set_country_flag = khom_civilwar_honsai_refuses_sirtan
 		}
@@ -937,7 +913,7 @@ country_event = { #Sirtan, Hon Sai accepted
 	}
 }
 
-country_event = { #Ma Hoang gets mercenary support
+country_event = { #Mo Hoang gets mercenary support
 	id = khom_civilwar.26
 	title = khom_civilwar.26.t
 	desc = khom_civilwar.26.d
@@ -1104,7 +1080,7 @@ country_event = { #Ma Hoang gets mercenary support
 }
 
 	#Post War events
-country_event = { #Ma Hoang wins part 1
+country_event = { #Mo Hoang wins part 1
 	id = khom_civilwar.49
 	title = khom_civilwar.49.t
 	desc = khom_civilwar.49.d
@@ -1212,7 +1188,7 @@ country_event = { #Ma Hoang wins part 1
 		}
 	}
 }
-country_event = { #Ma Hoang wins part 2
+country_event = { #Mo Hoang wins part 2
 	id = khom_civilwar.50
 	title = khom_civilwar.50.t
 	desc = khom_civilwar.50.d
@@ -1409,9 +1385,9 @@ country_event = { #Hon Sai wins
 			limit = {
 				has_global_flag = khom_civilwar_hebathari_joins
 			}
-			custom_tooltip = khom_civilwar_aid_to_hebat_hari_tt
+			custom_tooltip = khom_civilwar_aid_to_jaya_raya_tt
 			add_country_modifier = {
-				name = khom_civilwar_supporting_hebat_hari
+				name = khom_civilwar_supporting_jaya_raya
 				duration = 10950
 			}
 		}
@@ -1498,7 +1474,7 @@ country_event = { #Hon Sai wins
 #	}
 #}
 
-	#Ma Hoang victory events
+	#Mo Hoang victory events
 country_event = { #Kudet Kai victory rewards
 	id = khom_civilwar.53
 	title = khom_civilwar.53.t
@@ -1599,6 +1575,7 @@ country_event = { #Chien Binhrung loss
 			name = khom_civilwar_broken_spirit
 			duration = 3650
 		}
+		set_country_flag = chien_lost
 	}
 }
 
@@ -1617,7 +1594,7 @@ country_event = { #Verkal Ozovar victory rewards
 	}
 }
 
-country_event = { #Hebat Hari loss
+country_event = { #Jaya Raya loss
 	id = khom_civilwar.56
 	title = khom_civilwar.56.t
 	desc = khom_civilwar.56.d
@@ -1625,9 +1602,9 @@ country_event = { #Hebat Hari loss
 	
 	is_triggered_only = yes
 	
-	option = {	#Suck up to Ma Hoang
+	option = {	#Suck up to Mo Hoang
 		name = khom_civilwar.56.a
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 100 }
 		Y67 = {
 			country_event = {
 				id = khom_civilwar.57
@@ -1638,11 +1615,11 @@ country_event = { #Hebat Hari loss
 	
 	option = {	#They are unworthy
 		name = khom_civilwar.56.b
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 0 }
 	}
 }
 
-country_event = { #Ma Hoang recieves oath of fealty from Hebat Hari
+country_event = { #Mo Hoang recieves oath of fealty from Jaya Raya
 	id = khom_civilwar.57
 	title = khom_civilwar.57.t
 	desc = khom_civilwar.57.d
@@ -1650,7 +1627,7 @@ country_event = { #Ma Hoang recieves oath of fealty from Hebat Hari
 
 	is_triggered_only = yes
 	
-	option = {	#make Hebat Hari a vassal
+	option = {	#make Jaya Raya a vassal
 		name = khom_civilwar.57.a
 		ai_chance = { factor = 100 }
 		create_subject = {
@@ -1685,7 +1662,7 @@ country_event = { #Ma Hoang recieves oath of fealty from Hebat Hari
 	}
 }
 
-country_event = { #Hebat Hari, Ma Hoang accepted
+country_event = { #Jaya Raya, Mo Hoang accepted
 	id = khom_civilwar.58
 	title = khom_civilwar.58.t
 	desc = khom_civilwar.58.d
@@ -1699,7 +1676,7 @@ country_event = { #Hebat Hari, Ma Hoang accepted
 	}
 }
 
-country_event = { #Hebat Hari, Ma Hoang refused
+country_event = { #Jaya Raya, Mo Hoang refused
 	id = khom_civilwar.59
 	title = khom_civilwar.59.t
 	desc = khom_civilwar.59.d
@@ -1713,7 +1690,7 @@ country_event = { #Hebat Hari, Ma Hoang refused
 	}
 }
 
-country_event = { #Sirtan join Ma Hoang and win
+country_event = { #Sirtan join Mo Hoang and win
 	id = khom_civilwar.60
 	title = khom_civilwar.60.t
 	desc = khom_civilwar.60.d
@@ -1725,19 +1702,19 @@ country_event = { #Sirtan join Ma Hoang and win
 		name = khom_civilwar.60.a
 		ai_chance = { factor = 100 }
 		khom_ma_area = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		4696 = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		4704 = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		4762 = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		binhrunghin_area = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		add_government_power = {
 			mechanic_type = tribal_federation_mechanic
@@ -1800,6 +1777,7 @@ country_event = { #Chien Binhrung victory rewards
 	option = {	#VICTORY!
 		name = khom_civilwar.71.a
 		ai_chance = { factor = 100 }
+		set_country_flag = chien_won
 		4749 = {
 			add_permanent_claim = Y72
 			if = {
@@ -1890,7 +1868,7 @@ country_event = { #Verkal Ozovar loss
 	}
 }
 
-country_event = { #Hebat Hari win
+country_event = { #Jaya Raya win
 	id = khom_civilwar.73
 	title = khom_civilwar.73.t
 	desc = khom_civilwar.73.d
@@ -1920,26 +1898,26 @@ country_event = { #Sirtan join Hon Sai and win
 		name = khom_civilwar.74.a
 		ai_chance = { factor = 100 }
 		phonan_area = {
-			add_devastation = 50
+			add_devastation = 25
 			remove_loot = {
 				who = ROOT
 				amount = 100
 			}
 		}
 		ananhu_area = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		4764 = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		kasainam_area = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		4752 = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		4753 = {
-			add_devastation = 50
+			add_devastation = 25
 		}
 		add_government_power = {
 			mechanic_type = tribal_federation_mechanic
@@ -1955,7 +1933,7 @@ country_event = { #Sirtan join Hon Sai and win
 	}
 }
 
-country_event = { #Sirtan join Ma Hoang and lose
+country_event = { #Sirtan join Mo Hoang and lose
 	id = khom_civilwar.75
 	title = khom_civilwar.75.t
 	desc = khom_civilwar.75.d

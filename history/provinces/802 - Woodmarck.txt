@@ -1,15 +1,16 @@
 
 #802
-owner = B14
-controller = B14
-add_core = B14
+owner = B48
+controller = B48
+add_core = B48
 culture = corvurian
 religion = regent_court
 hre = no
+fort_15th = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 4
 
 trade_goods = livestock
 

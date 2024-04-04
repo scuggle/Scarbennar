@@ -1,16 +1,18 @@
 
 # No previous file for Cayenne
-culture = green_orc
-religion = great_dookan
+owner = X19
+controller = X19
+add_core = X19
+culture = moon_elf
+religion = regent_court
 capital = ""
-tribal_owner = B26
 hre = no
 
 base_tax = 3
-base_production = 3
+base_production = 6
 base_manpower = 3
 
-trade_goods = unknown
+trade_goods = copper
 
 native_size = 69
 native_ferocity = 10

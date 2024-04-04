@@ -1,0 +1,534 @@
+country_decisions = {
+
+	reveal_all = {
+		potential= {
+			NOT = { has_country_flag = reveal_everything }
+			is_year = 1550
+			AI = no
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_country_flag = reveal_everything
+			bulwar_superregion = {
+				discover_country = ROOT
+			}
+			kheionai_superregion= {
+				discover_country = ROOT
+			}
+			broken_lands_superregion= {
+				discover_country = ROOT
+			}
+			effelai_superregion= {
+				discover_country = ROOT
+			}
+			taychend_superregion= {
+				discover_country = ROOT
+			}
+			ruin_proper_superregion = {
+				discover_country = ROOT
+			}
+			gerudia_superregion= {
+				discover_country = ROOT
+			}
+			north_salahad_superregion= {
+				discover_country = ROOT
+			}
+			south_salahad_superregion= {
+				discover_country = ROOT
+			}
+			torn_gates_superregion= {
+				discover_country = ROOT
+			}
+			ynn_superregion= {
+				discover_country = ROOT
+			}
+			eordand_superregion= {
+				discover_country = ROOT
+			}
+			yanshen_superregion= {
+				discover_country = ROOT
+			}
+			east_serpentspine_superregion= {
+				discover_country = ROOT
+			}
+			escann_superregion= {
+				discover_country = ROOT
+			}
+			forbidden_lands_superregion= {
+				discover_country = ROOT
+			}
+			rahen_superregion= {
+				discover_country = ROOT
+			}
+			north_haless_superregion= {
+				discover_country = ROOT
+			}
+			south_haless_superregion= {
+				discover_country = ROOT
+			}
+			western_cannor_superregion= {
+				discover_country = ROOT
+			}
+			west_serpentspine_superregion= {
+				discover_country = ROOT
+			}
+			deepwoods_superregion= {
+				discover_country = ROOT
+			}
+			deepwoods_portal_superregion= {
+				discover_country = ROOT
+			}
+			fangaula_superregion = {
+				discover_country = ROOT
+			}
+			west_sarhal_superregion = {
+				discover_country = ROOT
+			}
+			east_sarhal_superregion = {
+				discover_country = ROOT
+			}
+			south_sarhal_superregion = {
+				discover_country = ROOT
+			}
+			north_aelantir_coast_area = {
+				discover_country = ROOT
+			}
+			southeast_aelantir_coast_region = {
+				discover_country = ROOT
+			}
+			north_uelos_lament_ocean_region= {
+				discover_country = ROOT
+			}
+			south_uelos_lament_ocean_region= {
+				discover_country = ROOT
+			}
+			south_sarhal_coast_region= {
+				discover_country = ROOT
+			}
+			west_salahad_coast_region= {
+				discover_country = ROOT
+			}
+			cleaved_sea_coast_region= {
+				discover_country = ROOT
+			}
+			north_ocean_of_the_lost_region= {
+				discover_country = ROOT
+			}
+			south_ocean_of_the_lost_region= {
+				discover_country = ROOT
+			}
+			punctured_coast_region= {
+				discover_country = ROOT
+			}
+			west_aelantir_coast_region= {
+				discover_country = ROOT
+			}
+			torn_sea_region= {
+				discover_country = ROOT
+			}
+			outer_torn_sea_region= {
+				discover_country = ROOT
+			}
+			northern_sea_region= {
+				discover_country = ROOT
+			}
+			ringlet_sea_region= {
+				discover_country = ROOT
+			}
+			gulf_of_rahen_region= {
+				discover_country = ROOT
+			}
+			northeast_haless_coast_region= {
+				discover_country = ROOT
+			}
+			kedwali_gulf_region= {
+				discover_country = ROOT
+			}
+			dameshead_sea_region= {
+				discover_country = ROOT
+			}
+			giants_grave_sea_region= {
+				discover_country = ROOT
+			}
+			divenhal_sea_region= {
+				discover_country = ROOT
+			}
+			westcoast_region= {
+				discover_country = ROOT
+			}
+			northern_thaw_region= {
+				discover_country = ROOT
+			}
+			broken_sea_region= {
+				discover_country = ROOT
+			}
+			western_broken_sea_region= {
+				discover_country = ROOT
+			}
+			ruined_sea_region= {
+				discover_country = ROOT
+			}
+			calamity_pass_region= {
+				discover_country = ROOT
+			}
+		}
+	}	
+
+	set_subject_color = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			AI = no
+			num_of_subjects = 1
+			any_subject_country = {
+				NOT = { has_country_flag = has_overriden_color_flag }
+				NOT = {
+					OR = {
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					NOT = {
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+					}
+				}
+				change_country_color = {
+					country = overlord
+				}
+				set_country_flag = has_overriden_color_flag
+			}
+		}
+	}
+
+	restore_subject_color = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			AI = no
+			num_of_subjects = 1
+			any_subject_country = {
+				has_country_flag = has_overriden_color_flag
+				NOT = {
+					OR = {
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					NOT = {
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+					}
+				}
+				restore_country_color = yes 
+				clr_country_flag = has_overriden_color_flag
+			}
+		}
+	}
+	
+	restore_own_color = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			has_country_flag = has_overriden_color_flag
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			restore_country_color = yes 
+			clr_country_flag = has_overriden_color_flag
+		}
+		ai_will_do = {
+			factor = 1.0
+			modifier = {
+				factor = 0
+				is_subject = yes
+			}
+		}
+	}
+
+	set_generic_mt = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			NOT = { is_year = 1445 }
+			NOT = { has_country_flag = chose_generic_mt }
+			NOT = { 
+				capital_scope = {
+					province_is_valid_for_escanni_wars = yes
+				}
+			}
+		}
+		allow = {
+			NOT = { is_year = 1445 }
+		}
+		effect = {
+			set_country_flag = chose_generic_mt
+			swap_non_generic_missions = yes
+
+			FROM = {
+				hidden_effect = {
+					play_sound = "decision"
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	invest_splendor = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			ai = no
+		}
+		allow = {
+			splendor = 800
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_splendor = -800
+		}
+	}
+
+	are_we_there_yet = {
+		major = yes	
+		potential = {
+			ai = no
+			has_country_flag = removing_monstrous
+		}
+
+		allow = {
+			adm_tech = 9
+			has_country_modifier = monstrous_nation
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			NOT = {
+				check_variable = {
+					which = sped_up_demonsterization_count
+					value = 2
+				}
+			}
+		}
+
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			decrease_monstrous_10 = yes
+			decrease_monstrous_10 = yes
+			decrease_monstrous_10 = yes
+			decrease_monstrous_10 = yes
+			decrease_monstrous_10 = yes
+			change_variable = {
+				which = sped_up_demonsterization_count
+				value = 1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	orc_pity_mana = {
+		major = yes
+		potential = {
+			ai = no
+			OR = {
+				primary_culture = gray_orc
+				primary_culture = green_orc
+				primary_culture = brown_orc
+				primary_culture = black_orc
+				culture_group = harpy
+				culture_group = giantkind
+				culture_group = gnollish
+			}
+		}
+
+		allow = {
+			ai = no
+			NOT = {
+				adm_tech = 3
+			}
+			NOT = {
+				has_country_flag = has_pity_mana
+			}
+			OR = {
+				primary_culture = gray_orc
+				primary_culture = green_orc
+				primary_culture = brown_orc
+				primary_culture = black_orc
+				culture_group = harpy
+				culture_group = giantkind
+				culture_group = gnollish
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { culture_group = gnollish}
+				add_adm_power = 150
+				add_dip_power = 150
+				add_mil_power = 150
+				set_country_flag = has_pity_mana
+			}
+			else = {
+				add_adm_power = 300
+				add_dip_power = 300
+				add_mil_power = 300
+				set_country_flag = has_pity_mana
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	feudal_escann_is_back = {
+		major = yes
+		potential = {
+			ai = no
+			OR = {
+				tag = X19 #Aigerthil
+				tag = B39 #Wyvernheart
+				tag = B40 #Alenor
+				tag = B52 #Anbenland
+				tag = B34 #Luciande
+				tag = B35 #Ancardia
+				tag = B38 #Elikhand
+				tag = B37 #Rogieria
+				tag = B50 #Newshire
+				tag = B53 #Núrcestir
+				tag = Z37 #Covenblad
+				tag = B49 #Araionn
+				tag = B48 #Ravenmarch
+				tag = B47 #Stálbor
+				tag = B51 #Estaire
+				tag = B54 #Esthil
+				tag = Z36 #Hammerhome
+				tag = Z35 #Rósande
+			}
+			NOT = {
+				has_country_flag = clicked_feudal_escann_is_back
+			}
+		}
+
+		allow = {
+			ai = no
+			OR = {
+				tag = X19 #Aigerthil
+				tag = B39 #Wyvernheart
+				tag = B40 #Alenor
+				tag = B52 #Anbenland
+				tag = B34 #Luciande
+				tag = B35 #Ancardia
+				tag = B38 #Elikhand
+				tag = B37 #Rogieria
+				tag = B50 #Newshire
+				tag = B53 #Núrcestir
+				tag = Z37 #Covenblad
+				tag = B49 #Araionn
+				tag = B48 #Ravenmarch
+				tag = B47 #Stálbor
+				tag = B51 #Estaire
+				tag = B54 #Esthil
+				tag = Z36 #Hammerhome
+				tag = Z35 #Rósande
+			}
+			NOT = {
+				has_country_flag = clicked_feudal_escann_is_back
+			}
+		}
+
+		effect = {
+			if = { #Luciande
+				limit = { tag = B34 }
+				hidden_effect = {
+					set_country_flag = has_vampires_estate
+					set_country_flag = recent_masquerade_disaster
+					country_event = { id = vampires_estate_events.1000 days = 30 }
+				}
+			}
+			if = {
+				limit = { has_country_flag = B34_lucian }
+				change_government = monarchy
+				hidden_effect = {
+					add_government_reform = autocracy_reform
+				}
+				country_event = { id = flavor_luciande.37 days = 1 }
+			}
+			else_if = {
+				limit = { tag = B54 } #esthil
+				country_event = { id = flavor_esthil.7 }
+			}
+			else = { country_event = { id = marcher.1 days = 1 } }
+#			country_event = { id = adventurer.2 days = 10 }
+			hidden_effect = {
+				country_event = { #new culture event, 10 years after their debuff runs out
+					id = marcher.2
+					days = 25550
+				}
+			}
+			set_country_flag = clicked_feudal_escann_is_back
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}	

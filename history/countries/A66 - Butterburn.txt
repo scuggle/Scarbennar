@@ -7,6 +7,15 @@ primary_culture = bluefoot_halfling
 religion = regent_court
 technology_group = tech_halfling
 
+historical_rival = A63
+historical_rival = A12
+historical_friend = A07
+historical_friend = A71
+historical_friend = A70
+historical_friend = A65
+
+
+
 capital = 103
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }

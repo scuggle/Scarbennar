@@ -1,19 +1,20 @@
 
 # No previous file for this thing
 
-owner = X18
-controller = X18
-add_core = X18
+owner = X19
+controller = X19
+add_core = X19
 culture = moon_elf
 religion = regent_court
 
 hre = no
+fort_15th = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 4
+base_manpower = 4
 
-trade_goods = unknown
+trade_goods = paper
 
 capital = ""
 

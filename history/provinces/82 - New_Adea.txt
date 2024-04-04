@@ -1,9 +1,9 @@
 
 #82 - Lippe | 
 
-owner = A15
-controller = A15
-add_core = A15
+owner = B69
+controller = B69
+add_core = B69
 culture = low_lorentish
 religion = regent_court
 

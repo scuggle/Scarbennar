@@ -50,15 +50,11 @@ witch_king_modifier = {	#the witch king event should also give a ruler_flag, so 
 	improve_relation_modifier = -0.2
 	
 	legitimacy = 1
-	global_unrest = 2
+	global_unrest = 3
 	stability_cost_modifier = -0.5
 	unjustified_demands = -0.33
 	
 	max_absolutism = 10
-	
-	land_morale = 0.1
-	naval_morale = 0.1
-	discipline = 0.075
 	
 	ae_impact = 0.20
 	#diplomatic_upkeep = -4
@@ -71,7 +67,7 @@ witch_king_modifier = {	#the witch king event should also give a ruler_flag, so 
 	
 	republican_tradition = -1
 
-	yearly_karma_decay = 0.05 #subverts the corinite faith. they are might makes right and cult of personality around them
+	monthly_karma = -0.05 #subverts the corinite faith. they are might makes right and cult of personality around them
 }
 
 witch_king_death = {
@@ -283,20 +279,18 @@ magic_realm_enchantment_modify_memories_forget_atrocities = {
 
 magic_realm_evocation_war_magic_1 = {
 	land_morale = 0.05
-	shock_damage = 0.2
+	shock_damage = 0.05
 }
 
 magic_realm_evocation_war_magic_2 = {
 	land_morale = 0.1
-	shock_damage = 0.2
-	fire_damage_received = -0.1
+	shock_damage = 0.1
 }
 	
 
 magic_realm_evocation_war_magic_3 = {
 	land_morale = 0.1
-	shock_damage = 0.3
-	fire_damage_received = -0.2
+	shock_damage = 0.15
 }
 
 #Illusion
@@ -657,4 +651,8 @@ military_engineer_homunculus = {
 quartermaster_homunculus = { 
 	reinforce_speed = 0.33
 	country_military_power = 1
+}
+
+allow_war_wizard_after_exile_delay = {
+	#set for 1 day, define_ruler_to_general does not work after a returning ruler who was a general until 1 day has passed or the game has been reloaded
 }

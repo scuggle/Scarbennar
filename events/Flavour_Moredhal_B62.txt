@@ -691,7 +691,7 @@ country_event = {
 					claim = 100
 				}
 				add_ruler_personality = mage_personality
-				set_dynasty = "sï¿½l na Eï¿½n"
+				set_dynasty = "síl na Eán"
 				add_country_modifier = { 
 					name = last_hope_of_escann
 					duration = -1

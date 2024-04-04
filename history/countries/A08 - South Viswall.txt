@@ -7,6 +7,14 @@ primary_culture = visfoot_halfling
 religion = regent_court
 technology_group = tech_halfling
 
+historical_rival = A07
+historical_rival = A12
+historical_friend = A63
+historical_friend = A64
+historical_friend = A68
+historical_friend = A69
+
+
 capital = 63
 fixed_capital = 63 # Cannot move capital away from this province & no power cost to move to it
 
@@ -20,4 +28,25 @@ fixed_capital = 63 # Cannot move capital away from this province & no power cost
 		dip = 1
 		mil = 1
 	}
+}
+
+add_trust = {
+    who = A69
+    value = 50
+    mutual = yes
+}
+add_trust = {
+    who = A68
+    value = 50
+    mutual = yes
+}
+add_trust = {
+    who = A64
+    value = 50
+    mutual = yes
+}
+add_trust = {
+    who = A63
+    value = 50
+    mutual = yes
 }

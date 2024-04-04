@@ -39,13 +39,6 @@ alliance = {
 	start_date = 1444.1.1
 	end_date = 1500.1.1
 }
-#Rajnadghada - Dhenijanraj
-alliance = {
-	first = R07
-	second = R51
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
 #Sarnavan - Tilathi
 vassal = {
 	first = R10
@@ -435,21 +428,21 @@ march = {
 #########################
 
 #Thunderfist Clan
-dependency = {
-	subject_type = "slave_state"
-	first = R62
-	second = R63
-	start_date = 1444.1.1
-	end_date = 1600.1.1
-}
-# Greenshade Clan
-dependency = {
-	subject_type = "slave_state"
-	first = R62
-	second = R64
-	start_date = 1444.1.1
-	end_date = 1600.1.1
-}
+#dependency = {
+#	subject_type = "slave_state"
+#	first = R62
+#	second = R63
+#	start_date = 1444.1.1
+#	end_date = 1600.1.1
+#}
+# Bloodsong Clan
+#dependency = {
+#	subject_type = "slave_state"
+#	first = R62
+#	second = R64
+#	start_date = 1444.1.1
+#	end_date = 1600.1.1
+#}
 # Blackstep Clan
 dependency = {
 	subject_type = "slave_state"
@@ -458,7 +451,7 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1600.1.1
 }
-# Earthsplitter clan
+# Stolen Gem clan
 dependency = {
 	subject_type = "slave_state"
 	first = R62

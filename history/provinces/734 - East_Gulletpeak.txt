@@ -3,7 +3,7 @@
 owner = Z20
 controller = Z20
 add_core = Z20
-tribal_owner = Z20
+#tribal_owner = Z20
 culture = common_goblin
 religion = goblinic_shamanism
 capital = ""
@@ -11,9 +11,11 @@ capital = ""
 hre = no
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 4
+fort_15th = yes
+
+base_tax = 4
+base_production = 5
+base_manpower = 5
 
 trade_goods = gems
 

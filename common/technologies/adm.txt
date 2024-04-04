@@ -27,6 +27,8 @@ technology = { #Tribal Government
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
 
+	#effect = { } # When a country researches the technology
+
 	warcamp = yes
 	guild_hall = yes
 	native_fortified_house = yes
@@ -143,7 +145,7 @@ technology = { #Courthouse
 
 	allowed_idea_groups = 3
 	courthouse = yes
-	governing_capacity = 100
+	governing_capacity = 150
 
 }
 
@@ -201,7 +203,7 @@ technology = { #Early Modern Administration
 	
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
-	governing_capacity = 100
+	governing_capacity = 150
 	state_house = yes
 }
 
@@ -292,7 +294,7 @@ technology = { #National Sovereignty
 		global_trade = 0.3
 	}
 
-	governing_capacity = 250
+	governing_capacity = 300
 }
 
 technology = { #Cathedral
@@ -323,7 +325,7 @@ technology = { #Absolute Rulership
 
 	allowed_idea_groups = 7
 	republican_dictatorship = yes
-	governing_capacity = 250
+	governing_capacity = 300
 }
 
 technology = { #Land Clearance
@@ -392,7 +394,7 @@ technology = { #Bonds and Tontines
 	}
 	
 	counting_house = yes  
-	governing_capacity = 250
+	governing_capacity = 300
 }
 
 technology = { #Improved Production
@@ -443,7 +445,7 @@ technology = { #Modern Bureaucracy
 
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1	
-	governing_capacity = 250
+	governing_capacity = 300
 }
 
 technology = { #Rotherham Plough
@@ -517,7 +519,7 @@ technology = { #Revolutionary Ideals
 	
 	revolutionary_republic = yes
 	revolutionary_empire = yes
-	governing_capacity = 500
+	governing_capacity = 600
 }
 
 technology = { #Four Field Rotation

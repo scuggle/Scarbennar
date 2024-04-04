@@ -3,7 +3,8 @@ gemradcurt_2_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H16 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H16 } 
 
 	gemradcurt_dead_trial_at_darblath = {
 		icon = mission_necromancy
@@ -184,7 +185,8 @@ gemradcurt_3_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H16 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H16 } 
 
 	gemradcurt_unite_the_winter = {
 		icon = mission_missive
@@ -305,9 +307,11 @@ gemradcurt_3_1 = {
 			tamharcroc_area = { add_permanent_claim = ROOT }
 
 			if = {
-				limit = {  
-					H18 = { vassal_of = ROOT }
-					H17 = { vassal_of = ROOT }
+				limit = {
+					OR = {
+						H18 = { vassal_of = ROOT }
+						H17 = { vassal_of = ROOT }
+					}
 				}
 
 				country_event = {
@@ -440,7 +444,7 @@ gemradcurt_3_1 = {
 	}
 
 	gemradcurt_the_long_night = {
-		icon = mission_make_it_fall
+		icon = mission_magy
 		position = 6
 		required_missions = {
 			gemradcurt_the_instruments_of_life
@@ -474,7 +478,8 @@ gemradcurt_4_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H16 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H16 } 
 
 	gemradcurt_winter_alone = {
 		icon = mission_alone_in_the_forest
@@ -627,7 +632,8 @@ gemradcurt_4_1_eordand = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16
 		NOT = { has_country_flag = gemradcurt_immariel_rules } 
 	} 
@@ -655,7 +661,8 @@ gemradcurt_1_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 
@@ -712,16 +719,18 @@ gemradcurt_1_2 = {
 		icon = mission_frozen_star
 		position = 9
 		required_missions = { gemradcurt_spring_and_summer } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			superregion = eordand_superregion
+				is_city = yes
+				NOT = { religion = winter_court }
+		}
 
 		trigger = {  
 			eordand_superregion = {
 				type = all
 				OR = {
 					religion = winter_court
-					religion = raeldaeriach
-					religion = no_religion
-					region = domandrod_region
+					is_city = no
 				}
 			}
 
@@ -1033,7 +1042,8 @@ gemradcurt_2_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 
@@ -1380,7 +1390,7 @@ gemradcurt_2_2 = {
 				region = veykoda_region
 				colonial_region = colonial_noruin
 			}
-			owner = { technology_group = tech_cannorian }
+			owner = { has_cannorian_tech_group = yes }
 		} 
 
 		trigger = {  
@@ -1399,7 +1409,7 @@ gemradcurt_2_2 = {
 					calc_true_if = {
 						amount = 3
 						all_known_country = {
-							technology_group = tech_cannorian
+							has_cannorian_tech_group = yes
 							capital_scope = {
 								OR = {
 									region = epednan_expanse_region
@@ -1413,7 +1423,7 @@ gemradcurt_2_2 = {
 				calc_true_if = {
 					amount = 3
 					all_known_country = {
-						technology_group = tech_cannorian
+						has_cannorian_tech_group = yes
 						capital_scope = {
 							OR = {
 								region = epednan_expanse_region
@@ -1421,14 +1431,7 @@ gemradcurt_2_2 = {
 								colonial_region = colonial_noruin
 							}
 						}
-						custom_trigger_tooltip = {
-							tooltip = gemradcurt_improved_relations_90_tt
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = improved_relation
-								value = 90
-							}
-						}
+						has_90_opinion_improved_relation = { target = ROOT }
 					}
 				}
 			}
@@ -1436,20 +1439,13 @@ gemradcurt_2_2 = {
 				calc_true_if = {
 					amount = 3
 					all_known_country = {
-						technology_group = tech_cannorian
+						has_cannorian_tech_group = yes
 						capital_scope = {
 							OR = {
 								continent = europe
 							}
 						}
-						custom_trigger_tooltip = {
-							tooltip = gemradcurt_improved_relations_90_tt
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = improved_relation
-								value = 90
-							}
-						}
+						has_90_opinion_improved_relation = { target = ROOT }
 					}
 				}
 			}
@@ -1546,7 +1542,8 @@ gemradcurt_3_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 
@@ -1643,7 +1640,7 @@ gemradcurt_3_2 = {
 	}
 
 	gemradcurt_cold_command = {
-		icon = mission_thirsting_queen
+		icon = mission_thirsting_queen_2
 		position = 10
 		required_missions = { gemradcurt_public_relations } 
 		provinces_to_highlight = {  } 
@@ -1675,7 +1672,10 @@ gemradcurt_3_2 = {
 
 		trigger = {  
 			is_evocation_3 = yes
-			is_conjuration_2 = yes
+			OR = { 
+				is_conjuration_3 = yes
+				is_conjuration_2 = yes
+			}
 			adm_power = 200
 			dip_power = 200
 			mil_power = 200
@@ -1726,7 +1726,6 @@ gemradcurt_3_2 = {
 		}
 		provinces_to_highlight = {  
 			OR = {
-				area = velildeven_area
 				area = arkchgozhar_area
 			}
 			OR = {
@@ -1737,19 +1736,7 @@ gemradcurt_3_2 = {
 			}
 		} 
 
-		trigger = {  
-			velildeven_area = {
-				type = all
-				owned_by = ROOT
-				development = 6
-				OR = {
-					has_production_building_trigger = yes
-					AND = {
-						trade_goods = gold
-						has_manpower_building_trigger = yes
-					}
-				}
-			}
+		trigger = {
 			arkchgozhar_area = {
 				type = all
 				owned_by = ROOT
@@ -1764,20 +1751,7 @@ gemradcurt_3_2 = {
 			}
 		} 
 
-		effect = {  
-			velildeven_area = {
-				add_province_modifier = {
-					name = gemradcurt_eigenrac_reokest
-					duration = -1
-				}
-				gemradcurt_add_hearthwards = yes
-				random_list = {
-					40 = { change_trade_goods = iron }
-					40 = { change_trade_goods = copper }
-					200 = { change_trade_goods = naval_supplies }
-				}
-			}
-
+		effect = {
 			arkchgozhar_area = {
 				add_province_modifier = {
 					name = gemradcurt_eigenrac_reokest
@@ -2118,7 +2092,8 @@ gemradcurt_4_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 
@@ -2220,14 +2195,7 @@ gemradcurt_4_2 = {
 					}
 				}
 
-				custom_trigger_tooltip = {
-					tooltip = gemradcurt_improved_relations_100_tt
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = improved_relation
-						value = 100
-					}
-				}
+				has_100_opinion_improved_relation = { target = ROOT }
 
 				has_opinion_modifier = { 
 					who = ROOT 
@@ -2294,7 +2262,7 @@ gemradcurt_4_2 = {
 					type = all
 					OR = {
 						owned_by = ROOT
-						province_id = 1487
+						province_id = 2821
 					}
 				}
 				
@@ -2521,14 +2489,7 @@ gemradcurt_4_2 = {
 				amount = 5
 				all_known_country = {
 					capital_scope = { continent = europe }
-					custom_trigger_tooltip = {
-						tooltip = gemradcurt_improved_relations_50_tt
-						has_opinion_modifier = {
-							who = ROOT
-							modifier = improved_relation
-							value = 50
-						}
-					}
+					has_50_opinion_improved_relation = { target = ROOT }
 				}
 			}	
 
@@ -2538,7 +2499,7 @@ gemradcurt_4_2 = {
 					share = 80
 				}
 			}
-			1517 = { #Sella
+			1583 = { #Sella
 				trade_share = {
 					country = ROOT
 					share = 10
@@ -2562,7 +2523,8 @@ gemradcurt_5_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 
@@ -2703,9 +2665,8 @@ gemradcurt_5_2 = {
 		required_missions = { gemradcurt_end_the_ironhunger } 
 		provinces_to_highlight = {  
 			OR = {
-				area = velildeven_area
 				area = arkchgozhar_area
-				area = mrazhrelai_area 
+				area = munapeim_area
 			}
 		} 
 
@@ -2713,22 +2674,27 @@ gemradcurt_5_2 = {
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
-					area = velildeven_area
 					area = arkchgozhar_area
-					area = mrazhrelai_area
+					area = munapeim_area
 				}
 			}
 
-			any_known_country = {
-				capital_scope = {
-					OR = {
-						region = rzenta_region
-						area = pomvasonn_area
-					}
+			OR = {
+				rzenta_region = {
+					type = all
+					owned_by = ROOT
 				}
-				has_spy_network_from = {
-					who = ROOT
-					value = 30
+				any_known_country = {
+					capital_scope = {
+						OR = {
+							region = rzenta_region
+							area = pomvasonn_area
+						}
+					}
+					has_spy_network_from = {
+						who = ROOT
+						value = 30
+					}
 				}
 			}
 		} 

@@ -10,3 +10,27 @@ capital = 330 # Acromton
 national_focus = MIL
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_magisterium }
+
+1438.9.10 = {
+	monarch = {
+		name = "Kynin I"
+		dynasty = "Rubincross"
+		birth_date = 1398.9.10
+		adm = 4
+		dip = 3
+		mil = 0
+	}
+}
+
+1439.5.5 = {
+	heir = {
+		name = "Rerinspur"
+		monarch_name = "Rerinspur I"
+		dynasty = "Rubincross"
+		birth_date = 1399.9.10
+		claim = 65
+		adm = 3
+		dip = 6
+		mil = 4
+	}
+}

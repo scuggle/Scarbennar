@@ -1,0 +1,30 @@
+
+setup_vision = yes
+government = monarchy
+add_government_reform = elective_monarchy_reform
+government_rank = 1
+primary_culture = low_lorentish
+religion = regent_court
+technology_group = tech_cannorian
+capital = 83 # Crovan's Rest
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+1422.1.1 = { set_country_flag = lilac_wars_rose_party }
+
+historical_rival = A09 #Sorncost
+
+
+1409.3.2 = {
+	monarch = {
+		name = "Aurain I 'The Inheritor'"
+		dynasty = "Sil Crovan"
+		birth_date = 1403.2.4
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+add_ruler_personality = martial_educator_personality
+add_ruler_personality = infertile_personality
+add_ruler_personality = secretive_personality

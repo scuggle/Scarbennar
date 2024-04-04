@@ -9,7 +9,8 @@ barumand_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z53 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z53 }
 	barumand_smiths_of_tamashrug = {
 		icon = mission_state_manufactories
 		position = 3
@@ -93,7 +94,7 @@ barumand_1 = {
 		trigger = {
 			if = {
 				limit = {
-					has_dlc = "Cradle of Civilisation"
+					has_dlc = "Cradle of Civilization"
 				}
 				army_professionalism = 0.2
 			}
@@ -249,15 +250,7 @@ barumand_1 = {
 					key = barumand_bonus_trade
 				}
 			}
-			840 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 100
-					key = barumand_bonus_trade
-				}
-			}
-			785 = {
+			833 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
@@ -275,7 +268,8 @@ barumand_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z53 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z53 }
 
 	barumand_long_march = {
 		icon = mission_assemble_an_army
@@ -513,7 +507,7 @@ barumand_2 = {
 							}
 						}
 						total_development = 100
-						is_subject_of_type_with_overlord = { type = tributary_state who = Z53 }
+						is_subject_of_type_with_overlord = { type = tributary_state_anb who = Z53 }
 					}
 				}
 			}
@@ -573,7 +567,7 @@ barumand_2 = {
 					tooltip = barumand_four_tributary_tt
 					calc_true_if = {
 						all_subject_country = {
-							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_anb
 							has_opinion = { who = ROOT value = 100 } 
 							NOT = { liberty_desire = 10 } 
 						}
@@ -607,7 +601,7 @@ barumand_2 = {
                 limit = {
                     calc_true_if = {
                         all_subject_country = {
-                            is_subject_of_type = tributary_state
+                            is_subject_of_type = tributary_state_anb
 							has_opinion = { who = ROOT value = 100 } 
                             NOT = { liberty_desire = 10 } 
                         }
@@ -618,7 +612,7 @@ barumand_2 = {
 				hidden_effect = {
 					random_subject_country = {
 						limit = {
-							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_anb
 							has_opinion = { who = ROOT value = 100 } 
 							NOT = { liberty_desire = 10 }
 							NOT = { is_subject_of_type = kruman }
@@ -633,7 +627,7 @@ barumand_2 = {
 					}
 					random_subject_country = {
 						limit = {
-							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_anb
 							has_opinion = { who = ROOT value = 100 } 
 							NOT = { liberty_desire = 10 } 
 							NOT = { is_subject_of_type = kruman }
@@ -648,7 +642,7 @@ barumand_2 = {
 					}
 					random_subject_country = {
 						limit = {
-							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_anb
 							has_opinion = { who = ROOT value = 180 } 
 							NOT = { liberty_desire = 10 } 
 							NOT = { is_subject_of_type = kruman }
@@ -663,7 +657,7 @@ barumand_2 = {
 					}
 					random_subject_country = {
 						limit = {
-							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_anb
 							has_opinion = { who = ROOT value = 180 } 
 							NOT = { liberty_desire = 10 } 
 							NOT = { is_subject_of_type = kruman }
@@ -868,7 +862,8 @@ barumand_3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z53 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z53 }
 	barumand_willing_army = {
 		icon = mission_have_two_subjects
 		position = 1
@@ -1276,7 +1271,8 @@ barumand_4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z53 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z53 }
 	barumand_change_within = {
 		icon = mission_orc_chillin
 		position = 2
@@ -1319,7 +1315,7 @@ barumand_4 = {
 			}
 		}
 		effect = {
-			custom_tooltip = harpylen_reduced_monstrous_tooltip
+			custom_tooltip = ayarallen_reduced_monstrous_tooltip
 			decrease_monstrous_5 = yes
 			capital_scope = {
 				area = {
@@ -1586,7 +1582,7 @@ barumand_4 = {
 								area = cursewood_area
 							}
 						}
-						NOT = { is_subject_of_type_with_overlord = { type = tributary_state who = Z53 } }
+						NOT = { is_subject_of_type_with_overlord = { type = tributary_state_anb who = Z53 } }
 					}
 					amount = 9
 				}
@@ -2050,7 +2046,8 @@ barumand_5 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Z53 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Z53 }
 
 	barumand_corins_teachings = {
 		icon = mission_corin
@@ -2113,7 +2110,7 @@ barumand_5 = {
 		effect = {
 			custom_tooltip = barumand_improved_interfaith_dialogue_tooltip
 			set_country_flag = improved_interfaith_dialogue
-			custom_tooltip = harpylen_reduced_monstrous_tooltip
+			custom_tooltip = ayarallen_reduced_monstrous_tooltip
 			decrease_monstrous_5 = yes
 			add_adm_power = -100
 			add_dip_power = -100

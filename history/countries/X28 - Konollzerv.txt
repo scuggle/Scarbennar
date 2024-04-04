@@ -1,0 +1,31 @@
+# 
+setup_vision = yes
+government = tribal
+add_government_reform = gnoll_pack
+government_rank = 1
+primary_culture = flamemarked_gnoll
+religion = infernal_court
+technology_group = tech_gnollish
+
+capital = 448
+
+historical_rival = A59 #Corvuria
+historical_rival = A60 #Asheniande
+historical_friend = F28 #Tluukt
+historical_friend = A49 #Xanzerbxis
+
+1437.2.9 = {
+	monarch = {
+		name = "Yzhed I"
+		dynasty = "Flameborn"
+		birth_date = 1424.9.7
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+    add_ruler_personality = careful_personality
+	add_country_modifier = {
+		name = eur_religious_unity_boost
+		duration = 5475
+	}
+}

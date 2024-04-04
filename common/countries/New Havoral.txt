@@ -40,7 +40,6 @@ historical_units = {
 monarch_names = {
 
 	#Generic Anbennarian Name List
-	"Adeline #0" = -1
 	"Adelar #0" = 10
 	"Ademar #0" = 10
 	"Adran #0" = 10
@@ -126,6 +125,7 @@ monarch_names = {
 	"Vincen #0" = 10
 	"Willam #0" = 10
 	
+	"Adeline #0" = -1
 	"Adra #0" = -1
 	"Alara #0" = -1
 	"Aldresia #0" = -1
@@ -194,7 +194,7 @@ leader_names = {
 	"of Dainsgrove" "of Soholaire" "of Arbeloch" "of Fyrga's fang" "of Mountainsroot" "of Velencestir" "of Deepgrove" "of Vathres" "of Cuigalscamp"
 	
 	#Country Neighbours
-	"of West Tipney" "of Corinsfield" "of Balgabar"
+	"of West Tipney" "of Corinsfield" "of Argezvale"
 
 	#Generic Ynn
 	"of Sarda" "of Dolindha" "of Rzenta" Ynnern Lencthán Stencthán "of the Trollsbay"

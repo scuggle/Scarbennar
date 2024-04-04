@@ -1,13 +1,16 @@
 
 # No previous file for Vitebsk
-culture = green_orc
-religion = great_dookan
+owner = B38
+controller = B38
+add_core = B38
+add_core = B46
+culture = common_goblin
+religion = goblinic_shamanism
 capital = ""
-tribal_owner = B46
 hre = no
 
 base_tax = 1
-base_production = 1
+base_production = 3
 base_manpower = 1
 
 trade_goods = livestock

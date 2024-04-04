@@ -13,7 +13,7 @@ country_decisions = {
 				is_elector = yes
 			}
 			religion = emperor
-			treasury = 6000
+			treasury = 2000
 			NOT = { num_of_loans = 1 }
 			NOT = { corruption = 1 }
 			is_in_deficit = no
@@ -71,7 +71,7 @@ country_decisions = {
 			emperor = {
 				trust = {
 					who = ROOT
-					value = 80
+					value = 60
 				}
 			}
 			NOT = { war_with = emperor }

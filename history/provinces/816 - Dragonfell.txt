@@ -1,14 +1,18 @@
 
 # No previous file for Tumbes
-culture = green_orc
-religion = great_dookan
+owner = Z35
+controller = Z35
+add_core = Z35
+add_core = B51
+culture = esmari
+religion = regent_court
 capital = ""
-tribal_owner = B29
+is_city = yes
 hre = no
 
 base_tax = 2
-base_production = 1
-base_manpower = 2
+base_production = 2
+base_manpower = 4
 
 trade_goods = grain
 

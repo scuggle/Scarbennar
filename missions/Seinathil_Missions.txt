@@ -4,6 +4,7 @@ seinathil_missions_column_0 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes
@@ -214,6 +215,7 @@ seinathil_missions_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes
@@ -470,6 +472,7 @@ seinathil_missions_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes
@@ -617,6 +620,7 @@ seinathil_missions_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes
@@ -821,9 +825,8 @@ seinathil_missions_column_4 = {
 			treasury = 1000
 		}
 		
-		effect = {
+		effect = { #there is a check for mission completed
 			custom_tooltip = seinathil_modernize_college_tt
-			set_country_flag = A90_modern_college
 			add_treasury = -1000
 		}
 	}
@@ -923,6 +926,7 @@ seinathil_missions_column_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes

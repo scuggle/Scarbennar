@@ -1,13 +1,17 @@
 
 # No previous file for Urionmar
-culture = green_orc
-religion = great_dookan
+owner = B02
+controller = B02
+add_core = B02
+culture = corintari
+religion = regent_court
 capital = ""
-tribal_owner = B30
+#tribal_owner = B30
 hre = no
+fort_15th = yes
 
 base_tax = 3
-base_production = 2
+base_production = 7
 base_manpower = 2
 
 trade_goods = iron

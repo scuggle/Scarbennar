@@ -4,9 +4,10 @@ colonisation_efforts = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -59,9 +60,10 @@ dragon_forge_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -196,9 +198,10 @@ becoming_a_country_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -360,9 +363,10 @@ early_conquests = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -451,9 +455,10 @@ extras_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -489,9 +494,10 @@ ordstun_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -529,7 +535,7 @@ ordstun_branch = {
 					}
 				}
 				4093 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
@@ -579,9 +585,10 @@ lodhum_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -620,7 +627,7 @@ lodhum_branch = {
 					}
 				}
 				2973 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
@@ -671,9 +678,10 @@ skomdihr_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -712,7 +720,7 @@ skomdihr_branch = {
 					}
 				}
 				4100 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
@@ -762,9 +770,10 @@ shazstun_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -803,7 +812,7 @@ shazstun_branch = {
 					}
 				}
 				2942 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
@@ -854,9 +863,10 @@ orghelo_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -895,7 +905,7 @@ orghelo_branch = {
 					}
 				}
 				4238 = {
-					change_culture = zutarzexi_kobold
+					change_culture = darkscale_kobold
 					change_religion = kobold_dragon_cult
 				}
 			}
@@ -946,9 +956,10 @@ kobold_reach_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -1038,9 +1049,10 @@ inward_perfection_route = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -1118,9 +1130,10 @@ religious_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}

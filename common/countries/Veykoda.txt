@@ -32,14 +32,13 @@ historical_units = {
 	ynnic_18_knights_of_vareynn
 	ynnic_19_enchanted_castle_wardens
 	ynnic_23_rilsean_wardens
-	ynnic_23_vitre_balgarico
+	ynnic_23_vitre_argezico
 	ynnic_26_dismounted_ynnic_knights
 	ynnic_28_veykodan_sabretooth_riders
 	ynnic_30_longbow_knights
 }
 
 monarch_names = {
-	"Alarev  #0" = -20
 	"Adharo #0" = 50
 	"Alar #0" = 50
 	"Aldhar #0" = 50
@@ -98,6 +97,7 @@ monarch_names = {
 	"Varno #0" = 50
 	"Varyl #0" = 50
 	
+	"Alarev  #0" = -20
 	"Alara  #0" = -20
 	"Lerethle  #0" = -20
 	"Arita  #0" = -20

@@ -1,17 +1,17 @@
 
 # No previous file for Panama
 
-owner = B05
-controller = B05
-add_core = B05
+owner = B53
+controller = B53
+add_core = B53
 culture = east_damerian
 religion = regent_court
 
 hre = no
 
-base_tax = 3
-base_production = 2
-base_manpower = 3
+base_tax = 8
+base_production = 5
+base_manpower = 6
 
 trade_goods = fish
 

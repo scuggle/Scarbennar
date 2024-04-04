@@ -1,0 +1,29 @@
+
+setup_vision = yes
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 25
+primary_culture = new_moon_elf
+add_accepted_culture = jiromji
+religion = elven_forebears
+technology_group = tech_elven
+capital = 5758 # Ninakaire
+
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1443.7.2 = {
+	monarch = {
+		name = "Balrion 'Sweet Tooth'"
+		birth_date = 1303.1.3
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+	
+	add_ruler_personality = tolerant_personality
+	add_ruler_personality = entrepreneur_personality
+	add_ruler_personality = expansionist_personality
+	set_ruler_flag = set_immortality
+}

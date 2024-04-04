@@ -7,6 +7,15 @@ primary_culture = redfoot_halfling
 religion = regent_court
 technology_group = tech_halfling
 
+
+historical_rival = A65
+historical_rival = A12
+historical_friend = A63
+historical_friend = A64
+historical_friend = A69
+historical_friend = A08
+
+
 capital = 159
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
@@ -19,4 +28,15 @@ capital = 159
 		dip = 2
 		mil = 3
 	}
+}
+
+add_trust = {
+    who = A64
+    value = 50
+    mutual = yes
+}
+add_trust = {
+    who = A63
+    value = 50
+    mutual = yes
 }

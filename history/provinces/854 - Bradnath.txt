@@ -2,9 +2,9 @@
 # No previous file for Sayultecas
 
 capital = ""
-owner = B18
-controller = B18
-add_core = B18
+owner = Z36
+controller = Z36
+add_core = Z36
 culture = stone_dwarf
 religion = regent_court
 
@@ -12,7 +12,7 @@ religion = regent_court
 hre = no
 
 base_tax = 2
-base_production = 1
+base_production = 4
 base_manpower = 1
 
 trade_goods = iron

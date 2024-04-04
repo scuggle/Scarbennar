@@ -30,7 +30,7 @@ historical_units = {
 	ynnic_15_dragon_roarers
 	ynnic_18_mounted_dragon_roarers
 	ynnic_19_rzentur_pike_and_shot
-	ynnic_23_vitre_balgarico
+	ynnic_23_vitre_argezico
 	ynnic_26_drozmateers
 	ynnic_28_polthkrin_cuirassiers
 	ynnic_30_gospodic_platoon
@@ -39,7 +39,6 @@ historical_units = {
 monarch_names = {
 
 	#Generic Rzentur Names
-	"Alarica #0" = -20
 	"Drhol #0" = 50
 	"Drholko #0" = 50
 	"Olar #0" = 50
@@ -151,6 +150,7 @@ monarch_names = {
 	"Yodzma #0" = 50
 	"Zlotko #0" = 50
 	
+	"Alarica #0" = -20
 	"Alarissa #0" = -20
 	"Aldavora #0" = -20
 	"Alejana #0" = -20

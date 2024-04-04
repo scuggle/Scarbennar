@@ -10,4 +10,19 @@ technology_group = tech_elven
 capital = 5 # Varivar
 national_focus = ADM
 
+historical_friend = A40 #Acromton
+
 1000.1.1 = { set_estate_privilege = estate_mages_organization_magisterium }
+
+1303.9.3 = {
+	monarch = {
+		name = "Artorian 'The Vengeful'" #This is the grandson of Literally no one
+		dynasty = "Sunspit"
+		birth_date = 1303.9.3
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+}

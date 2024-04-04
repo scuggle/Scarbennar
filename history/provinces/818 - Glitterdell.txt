@@ -1,16 +1,19 @@
 
 # No previous file for Canelos
-culture = green_orc
-religion = great_dookan
+owner = Z35
+controller = Z35
+add_core = Z35
+culture = high_lorentish
+religion = regent_court
 capital = ""
-tribal_owner = B42
+ìs_city = yes
 hre = no
 
 base_tax = 3
-base_production = 3
+base_production = 5
 base_manpower = 2
 
-trade_goods = unknown
+trade_goods = cloth
 center_of_trade = 1
 
 native_size = 56

@@ -1,18 +1,21 @@
 
 #485 - Moron
 
-owner = U09
-controller = U09
-add_core = U09
+#owner = U09
+#controller = U09
+#add_core = U09
+owner = L26
+controller = L26
 add_core = L26
+add_core = U01
 culture = irsmahapan
-religion = khetist
+religion = nirakhetist
 
 hre = no
 
-base_tax = 2
-base_production = 3
-base_manpower = 2
+base_tax = 1
+base_production = 2
+base_manpower = 1
 
 trade_goods = livestock
 

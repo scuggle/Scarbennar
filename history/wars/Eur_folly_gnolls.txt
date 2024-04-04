@@ -1,0 +1,39 @@
+
+name = "Flamemarked Gnolls rise up in the Folly"
+war_goal = {
+    type = superiority_monster
+	casus_belli = cb_monster_vs_civ
+}
+
+#Konollzerv rises up
+1439.1.1 = {
+	add_attacker = X28
+	add_defender = I26 #Salla Elyn
+   # add_defender = U12 #Oubbligschild
+   # add_defender = U11 #Landshark
+    add_defender = A74 #Nathalaire
+    add_defender = U17 #Crathánor
+    add_defender = A56 #Celliande
+    add_defender = A57 #Toarnen
+	add_defender = A72 #Arannen
+    add_defender = Z06 #Brinkmarches
+    add_defender = A59 #Corvuria
+    add_defender = A60 #Asheniande
+    add_defender = I35 #Brambleskinner
+}
+#Konollzerv "wins"
+1444.11.1 = {
+	rem_attacker = X28
+	rem_defender = I26 #Salla Elyn
+  #  rem_defender = U12 #Oubbligschild
+   # rem_defender = U11 #Landshark
+    rem_defender = A74 #Nathalaire
+    rem_defender = U17 #Crathánor
+    rem_defender = A56 #Celliande
+    rem_defender = A57 #Toarnen
+	rem_defender = A72 #Arannen
+    rem_defender = Z06 #Brinkmarches
+    rem_defender = A59 #Corvuria
+    rem_defender = A60 #Asheniande
+    rem_defender = I35 #Brambleskinner
+}

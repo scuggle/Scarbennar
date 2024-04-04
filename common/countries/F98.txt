@@ -24,14 +24,13 @@ historical_units = {
 	ynnic_12_malacnar_greatspears
 	ynnic_23_malacnar_companions
 	ynnic_18_knights_of_vareynn
-	ynnic_23_vitre_balgarico
+	ynnic_23_vitre_argezico
 	ynnic_28_veykodan_sabretooth_riders
 }
 
 monarch_names = {
 
 	#Generic Dolindhan Names
-	"Alarenka #0" = -20
 	"Adrjon #0" = 50
 	"Alarn #0" = 50
 	"Aldarad #0" = 50
@@ -138,6 +137,7 @@ monarch_names = {
 	"Vitsred #0" = 50
 	"Ysarad #0" = 50
 	
+	"Alarenka #0" = -20
 	"Alarna #0" = -20
 	"Alariandrel #0" = -20
 	"Alesdja #0" = -20

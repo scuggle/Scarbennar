@@ -1,14 +1,16 @@
 
 # No previous file for Chorotega
-culture = green_orc
-religion = great_dookan
+owner = B53
+controller = B53
+add_core = B53
+culture = east_damerian
+religion = regent_court
 capital = ""
-tribal_owner = B30
 hre = no
 
 base_tax = 2
 base_production = 2
-base_manpower = 2
+base_manpower = 4
 
 trade_goods = grain
 

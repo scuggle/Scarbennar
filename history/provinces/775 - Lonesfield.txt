@@ -1,17 +1,17 @@
 
 # No previous file for Asuncion
-culture = green_orc
-religion = great_dookan
-capital = ""
+culture = roilsardi
+religion = regent_court
+capital = "Lonesfield"
+owner = B34
+controller = B34
+add_core = B34
+is_city = yes
 
 hre = no
 
 base_tax = 1
-base_production = 1
+base_production = 3
 base_manpower = 1
 
 trade_goods = livestock
-
-native_size = 8
-native_ferocity = 5
-native_hostileness = 5

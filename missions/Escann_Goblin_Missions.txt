@@ -4,6 +4,7 @@ EscannGob0 = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -50,10 +51,7 @@ EscannGob0 = {
 		}
 		effect = {
 			capital_scope = {
-				add_institution_embracement = {
-					which = feudalism
-					value = 20
-				}
+				add_next_institution_embracement = 15
 			}
 			add_country_modifier = {
 				name = "goblin_learning_from_new_neighbors"
@@ -143,6 +141,7 @@ EscannGob1 = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -209,7 +208,7 @@ EscannGob1 = {
 			OR = {
 				has_adopted_cult = cannorian_cult
 				religion_group = cannorian
-				religion_group = kheteratan
+				religion_group = khetist
 			}
 		}
 		effect = {
@@ -233,7 +232,7 @@ EscannGob1 = {
 		}
 		trigger = {
 			any_known_country = {
-				technology_group = tech_cannorian
+				has_cannorian_tech_group = yes
 				has_opinion = {
 					who = ROOT
 					value = 0
@@ -291,7 +290,7 @@ EscannGob1 = {
 		}
 		effect = {
 			add_mil_power = 100
-			country_event = { id = escanngoblin.1 days = 0 }
+			country_event = { id = escanngoblin.1 }
 		}
 	}
 	##Mission End
@@ -305,6 +304,7 @@ EscannGob2 = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -339,12 +339,6 @@ EscannGob2 = {
 			manpower_percentage = 0.50
 		}
 		effect = {
-			capital_scope = {
-				add_institution_embracement = {
-					which = feudalism
-					value = 20
-				}
-			}
 			add_country_modifier = {
 				name = "goblin_force_to_defend"
 				duration = 5475
@@ -366,12 +360,6 @@ EscannGob2 = {
 			num_of_cities = 5
 		}
 		effect = {
-			capital_scope = {
-				add_institution_embracement = {
-					which = feudalism
-					value = 20
-				}
-			}
 			add_adm_power = 50
 			add_country_modifier = {
 				name = "goblin_room_to_grow"
@@ -389,7 +377,7 @@ EscannGob2 = {
 		position = 4
 		provinces_to_highlight = {
 			owner = {
-				TAG = ROOT
+				tag = ROOT
 			}
 		}
 		trigger = {
@@ -402,7 +390,7 @@ EscannGob2 = {
 			}
 		}
 		effect = {
-			country_event = { id = escanngoblin.4 days = 0 }
+			country_event = { id = escanngoblin.4 }
 		}
 	}
 	##Mission End
@@ -451,87 +439,66 @@ EscannGob2 = {
 		effect = {
 			if = {
 				limit = {
-					OR = {
-						tag = B43
-						was_tag = B43
-					}
+					tag = B43
 				}
-				add_country_modifier = {
-					name = "goblin_flying_hound_legacy"
-					duration = -1
-				}
+			add_country_modifier = {
+				name = "goblin_flying_hound_legacy"
+				duration = -1
+			}
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = B41
-						was_tag = B41
-					}
+					tag = B41
 				}
-				add_country_modifier = {
-					name = "goblin_earworm_legacy"
-					duration = -1
-				}
+			add_country_modifier = {
+				name = "goblin_earworm_legacy"
+				duration = -1
+			}
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = B42
-						was_tag = B42
-					}
+					tag = B42
 				}
-				add_country_modifier = {
-					name = "goblin_groundhawk_legacy"
-					duration = -1
-				}
+			add_country_modifier = {
+				name = "goblin_groundhawk_legacy"
+				duration = -1
+			}
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = B44
-						was_tag = B44
-					}
+					tag = B44
 				}
-				add_country_modifier = {
-					name = "goblin_flung_head_legacy"
-					duration = -1
-				}
+			add_country_modifier = {
+				name = "goblin_flung_head_legacy"
+				duration = -1
+			}
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = B46
-						was_tag = B46
-					}
+					tag = B46
 				}
-				add_country_modifier = {
-					name = "goblin_grasshopper_muncher_legacy"
-					duration = -1
-				}
+			add_country_modifier = {
+				name = "goblin_grasshopper_muncher_legacy"
+				duration = -1
+			}
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = B45
-						was_tag = B45
-					}
+					tag = B45
 				}
-				add_country_modifier = {
-					name = "goblin_headwearer_legacy"
-					duration = -1
-				}
+			add_country_modifier = {
+				name = "goblin_headwearer_legacy"
+				duration = -1
+			}
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = Z20
-						was_tag = Z20
-					}
+					tag = Z20
 				}
-				add_country_modifier = {
-					name = "goblin_hideguzzler_legacy"
-					duration = -1
-				}
+			add_country_modifier = {
+				name = "goblin_hideguzzler_legacy"
+				duration = -1
+			}
 			}
 		}
 	}
@@ -542,6 +509,7 @@ EscannGob2 = {
 ##BranchEnd 2
 ##BranchStart 3
 EscannGob3 = {
+	NOT = { has_country_flag = chose_generic_mt }
 	slot = 4
 	generic = no
 	ai = yes
@@ -581,12 +549,6 @@ EscannGob3 = {
 			prestige = 20
 		}
 		effect = {
-			capital_scope = {
-				add_institution_embracement = {
-					which = feudalism
-					value = 20
-				}
-			}
 			add_adm_power = 75
 			add_country_modifier = {
 				name = "goblin_no_more_backstabbing"
@@ -611,12 +573,6 @@ EscannGob3 = {
 			}
 		}
 		effect = {
-			capital_scope = {
-				add_institution_embracement = {
-					which = feudalism
-					value = 20
-				}
-			}
 			add_country_modifier = {
 				name = "goblin_safe_homes"
 				duration = 5475
@@ -638,7 +594,7 @@ EscannGob3 = {
 			share_of_starting_income = 2.0
 		}
 		effect = {
-			country_event = { id = escanngoblin.2 days = 0 }
+			country_event = { id = escanngoblin.2 }
 		}
 	}
 	##Mission End
@@ -677,6 +633,7 @@ EscannGob4 = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -817,12 +774,10 @@ EscannGob4 = {
 		}
 		trigger = {
 			OR = {
-				811 = { is_strongest_trade_power = ROOT }
-				840 = { is_strongest_trade_power = ROOT }
-				785 = { is_strongest_trade_power = ROOT }
+				808 = { is_strongest_trade_power = ROOT }
+				833 = { is_strongest_trade_power = ROOT }
 				229 = { is_strongest_trade_power = ROOT }
-				872 = { is_strongest_trade_power = ROOT }
-				888 = { is_strongest_trade_power = ROOT }
+				880 = { is_strongest_trade_power = ROOT }
 			}
 		}
 		effect = {
@@ -848,7 +803,7 @@ EscannGob4 = {
 			has_institution = renaissance
 		}
 		effect = {
-			country_event = { id = escanngoblin.3 days = 0 }
+			country_event = { id = escanngoblin.3 }
 		}
 	}
 	##Mission End

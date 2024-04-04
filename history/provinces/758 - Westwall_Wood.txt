@@ -1,13 +1,15 @@
 
 # No previous file for Goias
-culture = green_orc
-religion = great_dookan
+owner = B50
+controller = B50
+add_core = B50
+culture = redfoot_halfling
+religion = regent_court
 capital = ""
-tribal_owner = B22
 hre = no
 
 base_tax = 2
-base_production = 2
+base_production = 5
 base_manpower = 1
 
 trade_goods = naval_supplies

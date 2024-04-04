@@ -37,6 +37,7 @@ kara_targu = {
 				culture_group = goblin
 				culture_group = gerudian
 				culture_group = giantkind	
+				culture_group = ogre
 			}
 			province_is_or_accepts_culture = yes
 		}
@@ -52,6 +53,7 @@ kara_targu = {
 				culture_group = goblin
 				culture_group = gerudian
 				culture_group = giantkind
+				culture_group = ogre
 			}
 			province_is_or_accepts_culture = yes
 		}
@@ -82,7 +84,7 @@ kara_targu = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1500
 		}
 		province_modifiers = {
 		province_trade_power_value = 5
@@ -102,7 +104,7 @@ kara_targu = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 5000
 		}
 		province_modifiers = {
 		province_trade_power_value = 10
@@ -132,7 +134,7 @@ kara_targu = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 8000
 		}
 		province_modifiers = {
 		province_trade_power_value = 20
@@ -222,7 +224,7 @@ elven_mountain = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 1000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.1
@@ -242,7 +244,7 @@ elven_mountain = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -263,7 +265,7 @@ elven_mountain = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 10000
+			factor = 5000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
@@ -380,8 +382,8 @@ silent_repose = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			war_exhaustion_cost = -0.03
-			war_exhaustion = -0.03
+			war_exhaustion_cost = -0.01
+			war_exhaustion = -0.01
 		}
 		on_upgraded = {
 		}
@@ -397,12 +399,12 @@ silent_repose = {
 		local_defensiveness = 0.1
 		}
 		area_modifier = {
+			local_unrest = -2
 		}
 		country_modifiers = {
-			war_exhaustion_cost = -0.06
-			war_exhaustion = -0.06
-			tolerance_heretic = 1
-			tolerance_heathen = 1
+			war_exhaustion_cost = -0.02
+			war_exhaustion = -0.02
+			advisor_pool = 1
 		}
 		on_upgraded = {
 		}
@@ -419,14 +421,14 @@ silent_repose = {
 			local_defensiveness = 0.15
 		}
 		area_modifier = {
-
+			local_unrest = -5
 		}
 		country_modifiers = {
-			war_exhaustion = -0.10
-			war_exhaustion_cost = -0.10
+			war_exhaustion = -0.03
+			war_exhaustion_cost = -0.03
 			advisor_pool = 1
-			tolerance_heretic = 2
-			tolerance_heathen = 2
+			tolerance_heretic = 1
+			tolerance_heathen = 1
 		}
 		on_upgraded = {
 		}
@@ -490,7 +492,7 @@ lost_ship = {
 			hostile_disembark_speed = 0.05
 			local_defensiveness = 0.05
 			local_ship_cost = -0.05
-			local_ship_repair = 0.05
+			local_ship_repair = 0.025
 			local_sailors_modifier = 0.05
 		}
 		area_modifier = {
@@ -518,7 +520,7 @@ lost_ship = {
 			local_defensiveness = 0.1
 			local_ship_cost = -0.1
 			hostile_fleet_attrition = 1
-			local_ship_repair = 0.1
+			local_ship_repair = 0.05
 			local_sailors_modifier = 0.1
 		}
 
@@ -540,7 +542,7 @@ lost_ship = {
 				female = yes
 				skill = 3
 				religion = elven_forebears
-				culture = cannorian_harpy
+				culture = firanyan_harpy
 				location = 1001
 				discount = yes
 			}
@@ -560,7 +562,7 @@ lost_ship = {
 			local_defensiveness = 0.15
 			local_ship_cost = -0.20
 			hostile_fleet_attrition = 2
-			local_ship_repair = 0.20
+			local_ship_repair = 0.10
 			local_sailors_modifier = 0.20
 			
 		}
@@ -572,7 +574,7 @@ lost_ship = {
 		}
 		on_upgraded = {
 			remove_province_modifier = harpy_minority_oppressed_large
-			change_culture = cannorian_harpy
+			change_culture = siadunan_harpy
 			add_permanent_province_modifier = {
 				name = harpy_minority_integrated_large
 				duration = -1
@@ -655,7 +657,7 @@ black_pillar = {
 		area_modifier = {
 		}
 		country_modifiers = {	
-			raze_power_gain = 0.10		
+			raze_power_gain = 0.075		
 		}
 		on_upgraded = {
 		}
@@ -674,7 +676,7 @@ black_pillar = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			raze_power_gain = 0.20	
+			raze_power_gain = 0.15	
 		}
 		on_upgraded = {
 		}
@@ -694,7 +696,7 @@ black_pillar = {
 
 		}
 		country_modifiers = {
-			raze_power_gain = 0.30
+			raze_power_gain = 0.225
 			missionaries = 1
 		}
 		on_upgraded = {
@@ -826,7 +828,7 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
-			interest = -0.25
+			interest = -0.10
 		}
 
 		on_upgraded = {
@@ -851,7 +853,7 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
-			interest = -0.5
+			interest = -0.15
 		}
 
 		on_upgraded = {
@@ -948,7 +950,8 @@ tier_1 = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			merchants = 1
+			global_trade_power = 0.05
+			global_ship_trade_power = 0.05
 		}
 		on_upgraded = {
 		}
@@ -967,8 +970,8 @@ tier_1 = {
 			trade_goods_size_modifier = 0.1
 		}
 		country_modifiers = {
-			merchants = 1
-			global_trade_power = 0.05
+			global_trade_power = 0.075
+			global_ship_trade_power = 0.1
 		}
 		on_upgraded = {
 		}
@@ -987,8 +990,9 @@ tier_1 = {
 			trade_goods_size_modifier = 0.2
 		}
 		country_modifiers = {
-			merchants = 2
+			merchants = 1
 			global_trade_power = 0.1
+			global_ship_trade_power = 0.15
 		}
 		on_upgraded = {
 		}
@@ -1081,12 +1085,14 @@ diplomatic_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_tax_modifier = 0.05
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
 			diplomatic_reputation = 1
 			envoy_travel_time = -0.20
+			improve_relation_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -1101,6 +1107,7 @@ diplomatic_palace = {
 		}
 
 		province_modifiers = {
+			local_tax_modifier = 0.075
 		}
 
 		area_modifier = {
@@ -1108,7 +1115,8 @@ diplomatic_palace = {
 
 		country_modifiers = {
 			diplomatic_reputation = 1
-			envoy_travel_time = -0.25
+			envoy_travel_time = -0.20
+			improve_relation_modifier = 0.075
 			fabricate_claims_cost = -0.1
 		}
 		on_upgraded = {
@@ -1123,12 +1131,14 @@ diplomatic_palace = {
 			factor = 5000
 		}
 		province_modifiers = {
+			local_tax_modifier = 0.1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
 			diplomatic_reputation = 2
-			envoy_travel_time = -0.33
+			envoy_travel_time = -0.25
+			improve_relation_modifier = 0.1
 			diplomatic_upkeep = 1
 			fabricate_claims_cost = -0.2
 		}
@@ -1221,7 +1231,7 @@ tier_0 = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1500
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
@@ -1244,7 +1254,7 @@ tier_0 = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3750
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
@@ -1267,7 +1277,7 @@ tier_0 = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7500
 		}
 		province_modifiers = {
 			local_development_cost = -0.2
@@ -1286,6 +1296,7 @@ tier_0 = {
 		}
 	}
 }
+####Lovers Roost Bathhouse
 harpy_onsen = {
 	start = 669		#Lovers Roost
 
@@ -1358,7 +1369,7 @@ harpy_onsen = {
 		}
 
 		province_modifiers = {
-
+			local_manpower_modifier = 0.1
 		}
 
 		area_modifier = {
@@ -1384,10 +1395,11 @@ harpy_onsen = {
 		}
 
 		province_modifiers = {
+			local_manpower_modifier = 0.2
 		}
 
 		area_modifier = {
-
+			local_development_cost = -0.05
 		}
 
 		country_modifiers = {
@@ -1411,7 +1423,7 @@ harpy_onsen = {
 		}
 
 		province_modifiers = {
-
+			local_manpower_modifier = 0.5
 
 		}
 
@@ -1487,12 +1499,11 @@ trinaire = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.15
-			local_manpower_modifier = 0.15
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			drill_decay_modifier = -0.05
+			drill_decay_modifier = -0.1
 		}
 		on_upgraded = {
 		}
@@ -1512,8 +1523,7 @@ trinaire = {
 			local_manpower_modifier = 0.15
 		}
 		country_modifiers = {
-			drill_decay_modifier = -0.10
-			advisor_cost = -0.1
+			drill_decay_modifier = -0.15
 		}
 		on_upgraded = {
 		}
@@ -1533,9 +1543,7 @@ trinaire = {
 			local_manpower_modifier = 0.25
 		}
 		country_modifiers = {
-			drill_decay_modifier = -0.15
-			advisor_cost = -0.2
-			special_unit_forcelimit = 0.1
+			drill_decay_modifier = -0.25
 		}
 		on_upgraded = {
 		}
@@ -1693,6 +1701,7 @@ crannog_home = {
 			OR = {
 				culture_group = kobold
 				culture = moorman
+				culture = moorman_r
 			}
 		}
 		province_is_or_accepts_culture = yes
@@ -1709,6 +1718,7 @@ crannog_home = {
 			OR = {
 				culture_group = kobold
 				culture = moorman
+				culture = moorman_r
 			}
 		}
 		province_is_or_accepts_culture = yes
@@ -1719,6 +1729,7 @@ crannog_home = {
 			OR = {
 				culture_group = kobold
 				culture = moorman
+				culture = moorman_r
 			}
 		}
 		province_is_or_accepts_culture = yes
@@ -1742,6 +1753,7 @@ tier_1 = {
 		province_modifiers = {
 			local_defensiveness = 0.15
 			local_manpower_modifier = 0.25
+			local_development_cost = -0.075
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1772,6 +1784,7 @@ tier_1 = {
 		province_modifiers = {
 			local_defensiveness = 0.25
 			local_manpower_modifier = 0.5
+			local_development_cost = -0.15
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1802,6 +1815,7 @@ tier_1 = {
 		province_modifiers = {
 			local_defensiveness = 0.33
 			local_manpower_modifier = 1
+			local_development_cost = -0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2085,8 +2099,8 @@ port_jaher = {
 
 		country_modifiers = {
 			global_autonomy = -0.01	
-			global_tariffs = 0.05
-			treasure_fleet_income = 0.05			
+			global_tariffs = 0.075
+			treasure_fleet_income = 0.075			
 		}
 
 		on_upgraded = {
@@ -2110,8 +2124,8 @@ port_jaher = {
 
 		country_modifiers = {
 			global_autonomy = -0.025
-			global_tariffs = 0.1
-			treasure_fleet_income = 0.1
+			global_tariffs = 0.15
+			treasure_fleet_income = 0.15
 		}
 		on_upgraded = {
 		}

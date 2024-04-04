@@ -1,13 +1,16 @@
 
 # No previous file for Cochabamba
-culture = green_orc
-religion = great_dookan
+owner = B41
+controller = B41
+add_core = B41
+culture = common_goblin
+religion = goblinic_shamanism
 capital = ""
-tribal_owner = B41
 hre = no
+is_city = yes
 
 base_tax = 1
-base_production = 1
+base_production = 2
 base_manpower = 1
 
 trade_goods = grain

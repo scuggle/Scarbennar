@@ -1,0 +1,182 @@
+
+country_decisions = {
+
+	X15_form_nation = {
+		major = yes
+		potential = {
+			capital_scope = {
+				OR = {
+					region = south_castanor_region
+					region = inner_castanor_region
+					region = west_castanor_region
+				}
+			}
+			primary_culture = common_goblin
+			NOT = { has_country_flag = formed_X15_flag }
+			NOT = { has_country_flag = feudal_escann_kingdom }
+			NOT = { has_country_flag = orc_nation_formed }
+			NOT = { has_country_flag = adventurer_derived_government }
+			NOT = { tag = X15 }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		allow = {
+			adm_tech = 16
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			NOT = { exists = X15 }
+			OR = {
+				mission_completed = goblin_survivors
+				has_country_flag = chose_generic_mt
+			}
+			owns_core_province = 831
+			owns_core_province = 808
+			owns_core_province = 774
+			num_of_owned_provinces_with = {
+				value = 30
+				region = south_castanor_region
+			}
+			num_of_owned_provinces_with = {
+				value = 30
+				region = inner_castanor_region
+			}
+			num_of_owned_provinces_with = {
+				value = 30
+				region = west_castanor_region
+			}
+		}
+		effect = {
+			change_tag = X15
+			set_country_flag = formed_X15_flag
+			set_country_flag = no_formable_culture_shift
+			clr_country_flag = is_a_county
+			hidden_effect = { restore_country_name = yes }
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			south_castanor_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = X15
+			}
+			inner_castanor_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = X15
+			}
+			west_castanor_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = X15
+			}
+			add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = { 
+					has_country_flag = chose_generic_mt 
+					tag = B43
+				}
+			add_country_modifier = {
+				name = "goblin_flying_hound_legacy"
+				duration = -1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = chose_generic_mt
+					tag = B41
+				}
+			add_country_modifier = {
+				name = "goblin_earworm_legacy"
+				duration = -1
+			}
+			}
+			if = {
+				limit = {
+					has_country_flag = chose_generic_mt
+					tag = B42
+				}
+			add_country_modifier = {
+				name = "goblin_groundhawk_legacy"
+				duration = -1
+			}
+			}
+			if = {
+				limit = {
+					has_country_flag = chose_generic_mt
+					tag = B44
+				}
+			add_country_modifier = {
+				name = "goblin_flung_head_legacy"
+				duration = -1
+			}
+			}
+			if = {
+				limit = {
+					has_country_flag = chose_generic_mt
+					tag = B46
+				}
+			add_country_modifier = {
+				name = "goblin_grasshopper_muncher_legacy"
+				duration = -1
+			}
+			}
+			if = {
+				limit = {
+					has_country_flag = chose_generic_mt
+					tag = B45
+				}
+			add_country_modifier = {
+				name = "goblin_headwearer_legacy"
+				duration = -1
+			}
+			}
+			if = {
+				limit = {
+					has_country_flag = chose_generic_mt
+					tag = Z20
+				}
+			add_country_modifier = {
+				name = "goblin_hideguzzler_legacy"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		ai_importance = 400
+	}
+}

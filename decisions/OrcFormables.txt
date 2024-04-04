@@ -28,11 +28,17 @@ country_decisions = {
 			}
 		}
 		allow = {
+			hidden_trigger = {
+				OR = {
+					primary_culture = green_orc
+					primary_culture = gray_orc
+				}
+			}
 			has_institution = feudalism
 			is_at_war = no
-			adm_tech = 10 #1492
+			adm_tech = 7 #1492
 			num_of_owned_provinces_with = {
-				value = 20
+				value = 10
 				superregion = gerudia_superregion
 			}
 		}
@@ -46,24 +52,18 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			add_prestige = 25
-			orc_legacy_effect = yes
+			#orc_legacy_effect = yes
 			set_country_flag = orc_nation_formed
 			clr_country_flag = knightly_order_adventurer
 			country_event = { id = orcform.1 days = 1 }
 			hidden_effect = {
 				country_event = { #new culture event, 10 years after their debuff runs out
 					id = orcform.2
-					days = 5475
+					days = 18250 
 				}
 			}
 			if = {
-				limit = { 
-					has_custom_ideas = no
-					NOT = {
-						tag = Z18
-						was_tag = Z18
-					}
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_grombar_nation
@@ -107,6 +107,12 @@ country_decisions = {
 			}
 		}
 		allow = {
+			hidden_trigger = {
+				OR = {
+					primary_culture = green_orc
+					primary_culture = gray_orc
+				}
+			}
 			has_institution = feudalism
 			OR = { 
 				adm_tech = 8	#1505
@@ -126,14 +132,14 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			add_prestige = 25
-			orc_legacy_effect = yes
+			#orc_legacy_effect = yes
 			set_country_flag = orc_nation_formed
 			clr_country_flag = knightly_order_adventurer
 			country_event = { id = orcform.1 days = 1 }
 			hidden_effect = {
 				country_event = { #new culture event, 10 years after their debuff runs out
 					id = orcform.2
-					days = 5475
+					days = 18250
 				}
 			}
 			if = {
@@ -180,6 +186,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			hidden_trigger = { OR = { primary_culture = green_orc primary_culture = gray_orc } }
 			has_institution = feudalism
 			OR = { 
 				adm_tech = 8	#1505
@@ -199,14 +206,14 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			add_prestige = 25
-			orc_legacy_effect = yes
+			#orc_legacy_effect = yes
 			set_country_flag = orc_nation_formed
 			clr_country_flag = knightly_order_adventurer
 			country_event = { id = orcform.1 days = 1 }
 			hidden_effect = {
 				country_event = { #new culture event, 10 years after their debuff runs out
 					id = orcform.2
-					days = 5475
+					days = 18250
 				}
 			}
 			if = {
@@ -254,6 +261,9 @@ country_decisions = {
 			}
 		}
 		allow = {
+			hidden_trigger = {
+				culture_group = orcish
+			}
 			has_institution = feudalism
 			OR = { 
 				adm_tech = 8	#1505
@@ -274,14 +284,14 @@ country_decisions = {
 			swap_non_generic_missions = yes
 
 			add_prestige = 25
-			orc_legacy_effect = yes
+			#orc_legacy_effect = yes
 			set_country_flag = orc_nation_formed
 			clr_country_flag = knightly_order_adventurer
 			country_event = { id = orcform.1 days = 1 }
 			hidden_effect = {
 				country_event = { #new culture event, 10 years after their debuff runs out
 					id = orcform.2
-					days = 5475
+					days = 18250
 				}
 			}
 			if = {
@@ -320,6 +330,9 @@ country_decisions = {
 			}
 		}
 		allow = {
+			hidden_trigger = {
+				primary_culture = black_orc
+			}
 			has_institution = feudalism
 			OR = {
 				AND = { 
@@ -361,7 +374,7 @@ country_decisions = {
 			hidden_effect = {
 				country_event = { #new culture event, 10 years after their debuff runs out
 					id = orcform.2
-					days = 5475
+					days = 18250 
 				}
 			}
 			if = {
@@ -385,6 +398,44 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		ai_importance = 400
+	}
+	
+	found_tarakar = { #M04
+		major = yes
+		potential = {
+			primary_culture = black_orc
+			NOT = { exists = M04 }
+			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { has_country_flag = orc_nation_formed }
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_reform = roadwarrior_great_convoy }
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {
+			hidden_trigger = {
+				primary_culture = black_orc
+			}
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_tribal = no
+			NOT = { exists = M04 }
+			capital_scope = { has_blorc_trophy_pile_5 = yes }
+			num_of_cities = 50
+		}
+		effect = {
+			change_tag = M04
+			hidden_effect = { restore_country_name = yes }
+			#swap_non_generic_missions = yes
+			#country_event = { id = ideagroups.1 } #Swap Ideas
+			add_country_modifier = { name = centralization_modifier duration = 7300 }
+			add_prestige = 10
+			set_country_flag = orc_nation_formed
+		}
+		ai_will_do = { factor = 1 }
 		ai_importance = 400
 	}
 	

@@ -1,9 +1,9 @@
 
 #106 - Modena | Mistspear
 
-owner = A11
-controller = A11
-add_core = A11
+owner = B69
+controller = B69
+add_core = B69
 culture = low_lorentish
 religion = regent_court
 

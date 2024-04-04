@@ -4,6 +4,7 @@ veykoda_vareynn_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
             tag = G35
             AND = {
@@ -51,9 +52,7 @@ veykoda_vareynn_branch = {
 			set_country_flag = has_pomentere_estates
 			custom_tooltip = ynn_pomentere_estates_info_tt
 			if = {
-				limit = {
-					ai = yes
-				}
+				limit = { NOT = { accepted_culture = veykodan } }
 				add_accepted_culture = veykodan
 			}
 			1141 = {
@@ -132,7 +131,7 @@ veykoda_vareynn_branch = {
 				}
 				country_event = { id = flavor_arverynn.14 days = 60 }
 			}
-			#set_country_flag = G35_buycev_flag #Unlocks additional mercenary companies #TODO
+			#set_country_flag = G35_buycev_flag #Unlocks additional mercenary companies #
 		}
 	}
 	##Mission End
@@ -398,6 +397,7 @@ conquest_sarda_middle = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		 OR = {
             tag = G35
             AND = {
@@ -744,8 +744,7 @@ conquest_sarda_middle = {
 		provinces_to_highlight = {
 			OR = {
 				area = malacnar_area
-				area = drevkenuc_area
-				area = uslad_area
+				area = drevonsred_area
 				owned_by = G32
 			}
 			NOT = {
@@ -759,11 +758,7 @@ conquest_sarda_middle = {
 					exists = no
 				}
 			}
-			uslad_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			drevkenuc_area = {
+			drevonsred_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -878,6 +873,7 @@ rightful_rulers_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		 OR = {
             tag = G35
             AND = {
@@ -1165,7 +1161,6 @@ rightful_rulers_branch = {
 		trigger = {
 			legitimacy = 95
 			num_of_subjects = 5
-			yrw_has_settled_one_reform = yes
 			if = {
 				limit = {
 					G39 = { owns_core_province = 1133 }
@@ -1195,7 +1190,18 @@ rightful_rulers_branch = {
 				}
 			}
 		}
-		effect = {
+		effect = {	
+			custom_tooltip = arverynn_rightful_rulers_authority_bonus_tt
+			hidden_effect = { 
+				if = {
+					limit = {
+						yrw_has_settled_one_reform = yes
+						has_dlc = "El Dorado"
+						primitives = yes
+					}
+					add_authority = 50
+				}
+			}
             if = {
                 limit = {
                     G39 = { 
@@ -1203,13 +1209,6 @@ rightful_rulers_branch = {
                         exists = yes
                     }
                 }
-				if = {
-					limit = { 
-						has_dlc = "El Dorado"
-						primitives = yes
-					}
-					add_authority = 50
-				}
 				else = {
 					add_legitimacy = 50
 					add_devotion = 50
@@ -1220,12 +1219,12 @@ rightful_rulers_branch = {
                 }
                 tooltip = {
                     ROOT = {
-                        create_subject = {
-                            subject_type = ynnic_iosahar
-                            subject = G39
-                        }
+						create_iosahar = {
+							tag = G39
+						}
                     }
                 }
+				
             }
             else_if = {
                 limit = {
@@ -1295,7 +1294,6 @@ rightful_rulers_branch = {
 					add_trust = {
 						who = ROOT
 						value = -10
-						mutual = no
 					}
 					add_opinion = {
 						who = ROOT
@@ -1416,6 +1414,7 @@ rightful_rulers_branch = {
 		}
 		effect = {
 			country_event = { id = flavor_arverynn.100 } #Crafting a Relic of Vyrekynn chain
+			custom_tooltip = G35_relic_of_the_vyrekynn_tt
 		}
 	}
 	##Mission End
@@ -1430,7 +1429,6 @@ rightful_rulers_branch = {
 			OR = {
 				area = pomvasonn_area
 				area = juzondezan_area
-				area = aivndezan_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1448,13 +1446,6 @@ rightful_rulers_branch = {
 			juzondezan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-			}
-			aivndezan_area = {
-				type = all
-				OR = {
-					is_city = no
-					country_or_non_sovereign_subject_holds = ROOT
-				}
 			}
 		}
 		effect = {
@@ -1477,7 +1468,7 @@ rightful_rulers_branch = {
 				area = svemel_area
 				area = munapeim_area
 				area = drozmajaivn_area
-				area = zasich_area
+				area = pomvasonn_area
 			}
 			NOT = {
 				is_city = no
@@ -1491,8 +1482,10 @@ rightful_rulers_branch = {
 			}
 			munapeim_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-
+				OR = {
+					is_city = no
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			drozmajaivn_area = {
 				type = all
@@ -1501,7 +1494,7 @@ rightful_rulers_branch = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
-			zasich_area = {
+			pomvasonn_area = {
 				type = all
 				OR = {
 					is_city = no
@@ -1548,7 +1541,8 @@ reform_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		 OR = {
+    	NOT = { has_country_flag = chose_generic_mt }
+		OR = {
             tag = G35
             AND = {
                 tag = U69
@@ -1924,8 +1918,8 @@ reform_branch = {
 				}
 				G94 = {
 					OR = {
-						is_subject_of = ROOT    #Balgabar exists and is subjugated
-						all_core_province = {    #Balgabar Ynn cores are subjugated
+						is_subject_of = ROOT    #Argezvale exists and is subjugated
+						all_core_province = {    #Argezvale Ynn cores are subjugated
 							OR = {
 								country_or_non_sovereign_subject_holds = ROOT
 								NOT = {
@@ -1947,11 +1941,20 @@ reform_branch = {
 			}
 		}
 		effect = {
-			add_country_modifier = { #Add event doubling this at 10 cannorian subjects TODO
-				name = G35_lord_of_lords
-				duration = -1
+			if = {
+				limit = {
+					calc_true_if = {
+						all_subject_country = { has_cannorian_tech_group = yes }
+						amount = 10
+					}
+				}
+				add_country_modifier = { name = G35_lord_of_lords_2 duration = -1 }
+				custom_tooltip = lord_of_lords_2_tt
 			}
-			custom_tooltip = lord_of_lords_tt
+			else = {
+				add_country_modifier = { name = G35_lord_of_lords duration = -1 }
+				custom_tooltip = lord_of_lords_tt
+			}
 			custom_tooltip = lord_of_lords_release_explain_tt
 			hidden_effect = {
 				if = {
@@ -2219,7 +2222,8 @@ economy_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		 OR = {
+    	NOT = { has_country_flag = chose_generic_mt }
+		OR = {
             tag = G35
             AND = {
                 tag = U69
@@ -2249,6 +2253,7 @@ economy_branch = {
 			add_treasury = 200
 			add_corruption = 5
 			country_event = { id = flavor_arverynn.17 } #Duty and Sacrifice
+			custom_tooltip = G35_promise_of_reclamation_tt
 		}
 	}
 	##Mission End

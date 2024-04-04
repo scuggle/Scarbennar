@@ -10,3 +10,17 @@ capital = 774
 
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1443.10.5 = {
+	monarch = {
+		name = "Gunther"
+		dynasty = "of Mossford"
+		birth_date = 1387.3.8
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+	add_ruler_personality = martial_educator_personality
+}
+
+set_country_flag = adventurer_derived_government

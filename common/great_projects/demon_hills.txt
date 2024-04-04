@@ -21,7 +21,7 @@ hubao_the_tiger_fortress = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 				culture = horned_ogre
 			}
 		}
@@ -31,7 +31,7 @@ hubao_the_tiger_fortress = {
 			province_is_or_accepts_culture = yes
 			OR = {
 				culture_group = yan
-				culture = east_harimari
+				culture = serene_harimari
 				culture = horned_ogre
 			}
 		}
@@ -95,7 +95,7 @@ hubao_the_tiger_fortress = {
 				type = fortification_expert
 				name = "Kabaneri of the Tiger Fortress"
 				skill = 3
-				culture = east_harimari
+				culture = serene_harimari
 				religion = high_philosophy
 				location = 4901
 				discount = yes

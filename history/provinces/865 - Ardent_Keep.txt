@@ -1,17 +1,19 @@
 
 # No previous file for Cochimi
-
+owner = B55
+controller = B55
+add_core = B55
+add_core = B28
 culture = green_orc
 religion = great_dookan
 capital = ""
-tribal_owner = B28
 hre = no
 
 base_tax = 3
-base_production = 2
+base_production = 4
 base_manpower = 2
 
-trade_goods = unknown
+trade_goods = cloth
 center_of_trade = 1
 
 capital = ""

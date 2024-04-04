@@ -6,6 +6,7 @@ H85_truedagger_column_1 = {
 	ai = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes
@@ -55,7 +56,7 @@ H85_truedagger_column_1 = {
 	}
 
 	H85_eternal_loyalty = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 15
 		required_missions = {
 			H85_find_their_homes
@@ -142,6 +143,7 @@ H85_truedagger_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes
@@ -819,6 +821,7 @@ H85_truedagger_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes
@@ -1106,15 +1109,15 @@ H85_truedagger_column_3 = {
 
 		trigger = { 
 			legitimacy = 80
-			OR = {
-				AND = {
+			AND = {
+				OR = {
 					owns = 4147
-					owns = 4236
-				}
-				AND = {
 					4147 = {
 						is_claim = ROOT
 					}
+				}
+				OR = {
+					owns = 4236
 					4236 = {
 						is_claim = ROOT
 					}
@@ -1221,7 +1224,7 @@ H85_truedagger_column_3 = {
 	}
 
 	H85_the_northern_serpentspine = {
-		icon = mission_weather_the_troubles
+		icon = mission_west_serpentspine_map
 		position = 14
 		required_missions = {
 			H85_the_grand_observatory
@@ -1430,6 +1433,7 @@ H85_truedagger_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes
@@ -2113,6 +2117,7 @@ H85_truedagger_column_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes
@@ -2464,7 +2469,10 @@ H85_truedagger_column_5 = {
 				has_province_modifier = truedagger_slave_mines
 				base_production = 12
 				has_manufactory_trigger = yes
-				has_production_building_trigger = yes
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+				}
 			}
 		}
 

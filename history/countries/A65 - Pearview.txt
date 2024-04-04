@@ -7,6 +7,14 @@ primary_culture = bluefoot_halfling
 religion = regent_court
 technology_group = tech_halfling
 
+historical_rival = A68
+historical_rival = A12
+historical_friend = A07
+historical_friend = A71
+historical_friend = A70
+historical_friend = A66
+
+
 capital = 147
 historical_rival = A64
 
@@ -21,4 +29,10 @@ historical_rival = A64
 		dip = 4
 		mil = 2
 	}
+}
+
+add_trust = {
+    who = A66
+    value = 50
+    mutual = yes
 }

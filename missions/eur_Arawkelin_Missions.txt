@@ -1,0 +1,1026 @@
+araw_elven_tree = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = Y65
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	elven_acceptance = {
+		icon = geneva_conventions
+		required_missions = { }
+		trigger = {
+			high_tolerance_elven_race_trigger = yes
+		}
+		effect = {
+			add_army_professionalism = 0.025
+		}
+	}
+	
+	
+	
+	create_elven_legions = {
+		icon = mission_assemble_an_army
+		required_missions = { elven_acceptance }
+		trigger = {
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 7
+					is_city = yes
+					OR = {
+						has_province_modifier = half_elven_minority_integrated_large
+						has_province_modifier = half_elven_minority_integrated_small
+						has_province_modifier = elven_minority_integrated_small
+						has_province_modifier = elven_minority_integrated_large
+					}
+				}
+				num_of_owned_provinces_with = {
+					value = 2
+					is_city = yes
+					OR = {
+						has_province_modifier = half_elven_majority_integrated
+						has_province_modifier = elven_majority_integrated
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = { id = araw_mission_event.1 }
+			add_historical_friend = Y86 #azkare
+		}
+	}
+	elves_of_azkare = {
+		icon = mission_discussion_arch
+		required_missions = { create_elven_legions subjugate_eastern_thidinkai }
+		position = 7
+		trigger = {
+			OR = {
+				Y86 = {
+						vassal_of = Y65
+						NOT = { liberty_desire = 50 }
+					}
+				AND = {
+					NOT = { exists = Y86 }
+					4789 = { owned_by = ROOT }	#azkare
+				}
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = Y86
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = Y86
+				}
+				add_country_modifier = {
+					name = elves_of_azkare_modifier #modifier giving 10% fire damage
+					duration = -1 #permanent
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = Y86 }
+				}
+				add_country_modifier = {
+					name = avenged_hiderion_modifier #modifier giving 15% morale of armies, 20% manpower recovery speed
+					duration = 4475	#15 years
+				}
+			}
+		}
+	}
+	ambitions_of_empire = {
+		icon = mission_empire
+		required_missions = { elves_of_azkare }
+		position = 9
+		trigger = {
+			development_in_provinces = {
+				value = 900
+			}
+			4955 = { owned_by = ROOT }
+			4963 = { owned_by = ROOT }	
+			4071 = { owned_by = ROOT }
+			4565 = { owned_by = ROOT }
+			4941 = { owned_by = ROOT }
+			4703 = { owned_by = ROOT }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4955
+				province_id = 4963
+				province_id = 4071
+				province_id = 4565
+				province_id	= 4941
+				province_id = 4703
+			}
+			NOT = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = imperial_ambitions_arawkellin_modifier #modifier giving -5 years of seperatism, -20% unjustified demands, +5% admin effiency
+				duration = 18250	#50 years
+			}
+			lower_yanshen_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			xianjie_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			rahen_coast_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	elven_supremacy = {
+		icon = mission_assemble_an_army
+		required_missions = { ambitions_of_empire }
+		position = 10
+		trigger = {
+			NOT = { mission_completed = mistakes_of_the_past }
+			high_tolerance_elven_race_trigger = yes
+			#high_tolerance_half_elven_race_trigger = yes
+			OR  = {
+				has_country_modifier = human_administration
+				has_country_modifier = elven_administration
+			}
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 10
+					OR = {
+						has_province_modifier = elven_majority_integrated
+						has_province_modifier = elven_minority_integrated_large
+					}
+				}
+			}
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 20
+					OR = {
+						has_province_modifier = elven_majority_integrated
+						has_province_modifier = elven_minority_integrated_large
+						has_province_modifier = elven_minority_integrated_small
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				has_province_modifier = elven_majority_integrated
+				has_province_modifier = elven_minority_integrated_large
+				has_province_modifier = elven_minority_integrated_small
+				has_province_modifier = elven_minority_oppressed_small
+				has_province_modifier = elven_minority_oppressed_large
+				has_province_modifier = elven_majority_oppressed
+				has_province_modifier = elven_minority_coexisting_small
+				has_province_modifier = elven_minority_coexisting_large
+				has_province_modifier = elven_majority_coexisting
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = elven_supremacy_declared_modifier #modifier giving +3 national unrest, +5% dev cost, +20% mapower recovery speed, -5% force limit
+				duration = 3650 #10 years
+			}
+			if = {
+				limit = { NOT = { has_country_modifier = elven_military } }
+				clear_racial_military = yes
+				add_country_modifier = { 
+					name = elven_military
+					duration = -1  
+				}
+				change_unit_type = tech_east_elven
+			}
+			set_country_flag = araw_elven_supremacy_flag
+		}
+	}
+}
+araw_conquest_central_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = Y65
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	benulan_allies = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 2
+		trigger = {
+			OR = {
+				Y69 = {
+					OR = {
+						alliance_with = ROOT
+						is_subject_of = ROOT
+					}
+				}
+				NOT = { exists = Y69 }	#benula
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = Y69
+		}
+		effect = {
+			add_country_modifier = {
+				name = arawkellin_expeditions_modifier	#5% morale of armies, -5% attrition, +10% manpower recovery speed
+				duration = 4375	#15 years gives 
+			}
+			every_province = {
+				limit = {	
+					region = lupulan_rainforest_region
+					NOT = { country_or_non_sovereign_subject_holds = Y69 }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					OR = {
+						has_terrain = jungle
+						province_id = 4962
+						province_id = 4765
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	conquer_the_jungles = {
+		icon = mission_unite_home_region
+		required_missions = { benulan_allies }
+		position = 3
+		trigger = {
+			lupulan_rainforest_region = {
+				type = all
+				OR = {
+					has_terrain = jungle
+					province_id = 4962
+					province_id = 4765
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = lupulan_rainforest_region
+			OR = {
+				has_terrain = jungle
+				province_id = 4962
+				province_id = 4765
+			}
+		}
+		effect = {
+			every_province  = {
+				limit = {
+					OR = {
+						area = hoangdesinh_area
+						area = sirtan_area
+						area = loratana_area
+						area = thuongidut_area
+						province_id = 4700
+					}
+				}
+				add_claim = ROOT
+			}
+			4962 = {	#hasiksibou
+				add_province_modifier = {
+					name = lupulan_port_modifier	#modifier giving -5% dev cost, +10% trade power, 25% local supply limit
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	
+	
+	
+	take_sirtan = {
+		icon = mission_manchu_warrior
+		required_missions = { conquer_the_jungles }
+		position = 4
+		trigger = {
+			loratana_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sirtan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = loratana_area
+				area = sirtan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = recruiting_sirtani_raiders_modifier #modifier giving +10% looting speed, -10% attrition, +5% movement speed
+				duration = -1	#permanent
+			}
+			every_province = {
+				limit = {
+					OR = {
+						area = khom_ma_area
+						area = nui_phom_area
+						area = nagon_area
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	subjugate_the_khom = {
+		icon = mission_conquer_cuttack
+		required_missions = { take_sirtan }
+		position = 6
+		trigger = {
+			khom_ma_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			nui_phom_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			nagon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = khom_ma_area
+				area = nui_phom_area
+				area = nagon_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = thriumph_over_ghost_emperor_modifier	#modifier giving 15% morale of armies, 0.5 yearly prestige
+				duration = 7300	#20 years
+			}
+			every_province = {
+				limit = {
+					OR = {
+						area = ananhu_area
+						area = phonan_area
+						region = bomdan_region
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	take_phonan = {
+		icon = mission_conquer_cuttack
+		required_missions = { subjugate_the_khom }
+		position = 7
+		trigger = {
+			ananhu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			phonan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = phonan_area
+				area = ananhu_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = baihon_xinh_put_to_rest #modifier giving +25% improve relations
+				duration = -1	#permament
+			}
+		}
+	}
+	porcelain_cities = {
+		icon = mission_asian_city
+		required_missions = { conquer_bonadan subjugate_western_thidinkai }
+		position = 8
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 2
+				trade_goods = chinaware
+			}
+			trading_bonus = {
+				trade_goods = chinaware
+				value = yes
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = chinaware
+			NOT = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = hands_on_the_porcelain_trade_modifier	#modifier giving 5% trade effiency
+				duration = -1
+			}
+			every_province = {
+				limit = {
+					trade_goods = chinaware
+				}
+				add_permanent_claim = ROOT
+			}
+			add_prestige = 10
+		}
+	}
+}
+araw_conquest_left_inner_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = Y65
+		NOT = { map_setup = map_setup_random }
+	}
+	take_pinghoi_mainland = {
+		icon = mission_junk_boat
+		required_missions = { conquer_the_jungles }
+		position = 4
+		trigger = {
+			hoangdesinh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4700 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = hoangdesinh_area
+				province_id = 4700
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = relative_safe_waters_modifiers	#modifier giving 10% trade power
+				duration = 3650	#10 years
+			}
+			every_province = {
+				limit = {
+					OR = {
+						area = amkamsek_area
+						AND = {
+							region = ringlet_isles_region
+							owned_by = Y64	#pinghoi
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	conquer_bonadan = {
+		icon = mission_assemble_an_army
+		required_missions = { subjugate_the_khom }
+		position = 7
+		trigger = {
+			bomdan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		provinces_to_highlight = {
+			region = bomdan_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = home_of_warriors_modifier	#modifier giving 10% manpower, 10% manpower recovery speed, 5% force limit
+				duration = -1	#permament
+			}
+			IF = {
+				limit = {
+					exists = R38
+				}
+				add_casus_belli = {
+				target = R38
+				type = cb_trade_war_triggered
+				months = 120
+				}
+			}
+			every_province = {
+				limit = {
+					area = khindi_area
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eclipse_the_harimari = {
+		icon = mission_the_tiger_triumphant #mission_chinese_general_riding
+		required_missions = { porcelain_cities raheni_trade }
+		position = 9
+		trigger = {
+			NOT = {
+				#calc_true_if = {	
+					any_country = {
+						total_own_and_non_tributary_subject_development = ROOT 
+							OR = {
+								has_country_modifier = harimari_administration
+								has_country_modifier = harimari_military
+							}
+					}
+				#}
+			}
+		}
+		provinces_to_highlight = {
+			owner = {
+				any_other_great_power = {
+					total_own_and_non_tributary_subject_development = ROOT
+					OR = {
+						has_country_modifier = harimari_administration
+						has_country_modifier = harimari_military
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_modifier = harimari_slaving_modifier }
+				}
+				add_country_modifier = {
+					name = harimari_eclipsed_modifier #modifier giving +0.5 yearly prestige, +5% morale of armies
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					has_country_modifier = harimari_slaving_modifier
+				}
+				remove_country_modifier = harimari_slaving_modifier
+				add_country_modifier = {
+					name = harimari_slaving_modifier2 #modifier giving 1yearly prestige, 15% trade effiency, 5% morale of armies
+					duration = -1
+				}
+			}
+		}
+	}
+	forming_our_empire = {
+		required_missions = { mistakes_of_the_past eclipse_the_harimari }
+		position = 11
+		icon = mission_empire
+		trigger = {
+			NOT = { mission_completed = elven_supremacy }
+			government_rank = 3
+			owns_core_province = 4963	#arawkellin
+			owns_core_province = 4701	#cây cam sinh
+			owns_core_province = 4955	#keoaden
+			owns_core_province = 4703	#tuan caoban
+			owns_core_province = 4751	#nirakvonkai
+			owns_core_province = 4580	#khabtei teleni
+			owns_core_province = 4570	#prukakhin
+			owns_core_province = 4565	#bim lau
+			owns_core_province = 4420	#sramaya
+			owns_core_province = 4409	#khiraspid
+			owns_core_province = 4941	#lapman amrik
+			owns_core_province = 4789	#azkare
+			owns_core_province = 6153	#gamdou
+			5424 = {	#verkal ozovar
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				AND = {
+					4871 = { owned_by = ROOT }	#tainlou
+					OR = {
+						4879 = { owned_by = ROOT }	#feiten
+						4859 = { owned_by = ROOT }	#Yanshung
+					}
+				}
+				AND = {
+					sarisung_area = {
+						type = all
+						owned_by = ROOT
+					}
+					4485 = { owned_by = ROOT }	#sharaajgal
+				}
+				AND = {
+					4411 = { owned_by = ROOT } #dhenijasar
+					4367 = { owned_by = ROOT } #sarkashasbid
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4963
+				province_id = 4701
+				province_id = 4955
+				province_id = 4703
+				province_id = 4751
+				province_id = 4580
+				province_id = 4570
+				province_id = 4565
+				province_id = 4420
+				province_id = 4409
+				province_id = 4941
+				province_id = 4789
+				province_id = 6153
+				province_id = 5424
+				AND = {
+					OR = {
+						province_id = 4871
+						province_id = 4879
+						province_id = 4859
+						area = sarisung_area
+						province_id = 4485
+						province_id = 4411
+						province_id = 4367
+					}
+					NOT = { owned_by = ROOT }
+				}
+			}
+			NOT = {
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					AND = {
+						province_id = 5424
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = { id = araw_mission_event.4 }
+			#override_country_name = arawrising_empire
+			add_country_modifier = {
+				name = arawrising_empire_modifier	#modifier giving 10% morale of armies, -5% dev cost, +5% manpower modifier, +5% force limit
+				duration = -1	#permament
+			}
+		}
+	}
+}
+araw_conqest_left_most_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = Y65
+		NOT = { map_setup = map_setup_random }
+	}
+	finish_pinghoi = {
+		icon = mission_junk_boat
+		required_missions = { take_pinghoi_mainland }
+		position = 5
+		trigger = {
+			amkamsek_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = Y64 }
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = amkamsek_area
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				owned_by = Y64
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = pingho_pacified_modifier #+1 colonist, +15 colonist growth, 10% trade power
+				duration = 7300	#20 years
+			}
+		}
+	}
+	retake_our_home = {
+		icon = mission_invade_island
+		required_missions = { finish_pinghoi }
+		position = 6
+		trigger = {
+			ringlet_isles_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = ringlet_isles_region
+			NOT = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = kelino_united_modifier #modifier giving 10% manpower recovery speed
+				duration = -1	#permament
+			}
+		}
+	}
+	raheni_trade = {
+		icon = mission_asian_trader
+		required_missions = { conquer_bonadan }
+		position = 8
+		trigger = {
+			khindi_area = {
+				type = all
+				owned_by = ROOT
+			}
+			#gulf_of_rahen = {
+				#country = ROOT
+				#share = 51
+			#}
+			1361 = { is_strongest_trade_power = ROOT }
+		}
+		provinces_to_highlight = {
+			area = khindi_area
+			NOT = { owned_by = ROOT }
+		}
+		effect = {
+			country_event = { id = araw_mission_event.3	} #event choosing between 3 slave groups or no slavery
+		}
+	}
+}
+araw_conquest_right_inner_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = Y65
+		NOT = { map_setup = map_setup_random }
+	}
+	half_elven_acceptance = {
+		icon = geneva_conventions
+		required_missions = { elven_acceptance }
+		position = 2
+		trigger = {
+			high_tolerance_half_elven_race_trigger = yes
+		}
+		effect = {
+			add_army_professionalism = 0.025
+			}
+	}
+	take_the_eastern_lupulan_hills = {
+		icon = mission_mnd_khm_protect_the_cham
+		required_missions = { conquer_the_jungles }
+		position = 4
+		trigger = {
+			thuongidut_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			area = thuongidut_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			every_province = {
+				limit = {
+					area = binhrunghin_area
+				}
+				add_claim = ROOT
+			}
+			4731 = {	#kaisanthi
+				add_province_modifier = {
+					name = lupulan_port_modifier	#modifier giving -5% dev cost, +10% trade power, 25% local supply limit
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	finish_chien_chung = {
+		icon = mission_mnd_khm_avenge_angkor
+		required_missions = { take_the_eastern_lupulan_hills }
+		position = 5
+		trigger = {
+			binhrunghin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			area = binhrunghin_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			every_province = {
+				limit = {
+					OR = {
+						area = yemakaibo_area
+						area = ngaopho_area
+						area = kasainam_area
+						area = phaktai_area
+					}
+				}
+				add_claim = ROOT
+			}
+			4963 = {	#arawkellin
+				add_province_modifier = {
+					name = dual_treasure_ports_modifier	#modifier giving +10% trade value, +5% trade power
+					duration = -1	#permanent
+				}
+			}
+			4955 = {	#keoaden
+				add_province_modifier = {
+					name = dual_treasure_ports_modifier	#modifier giving +10% trade value, +5% trade power
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	subjugate_eastern_thidinkai = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { finish_chien_chung }
+		position = 6
+		trigger = {
+			yemakaibo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ngaopho_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kasainam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			phaktai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = yemakaibo_area
+				area = ngaopho_area
+				area = kasainam_area
+				area = phaktai_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			4752 = {	#thalomxav
+				add_province_modifier = {
+					name = araw_gate_of_the_east_modifier	#modifier giving 25% fort defense, 5% trade power
+					duration = -1	#permament
+				}
+			}
+			every_province = {
+				limit = {
+					OR = {
+						AND = {
+							area = hinphat_area
+							NOT = { province_id = 5424 }	#verkal ozovar
+						}
+						area = thirabnir_area
+						area = ngoen_area
+						area = kaiden_area
+					}
+				}
+				add_claim = ROOT
+			}
+			add_casus_belli = {
+				target = Y86	#Azkare
+				type = cb_vassalize_mission
+				months = 240
+			}
+		}
+	}
+	subjugate_western_thidinkai = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { subjugate_eastern_thidinkai }
+		position = 7
+		trigger = {
+			hinphat_area = {
+				type = all
+				OR = {
+					province_id = 5425
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			ngoen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			thirabnir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			kaiden_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = hinphat_area
+					NOT = { province_id = 5424 }	#verkal ozovar
+					}
+				area = thirabnir_area
+				area = ngoen_area
+				area = kaiden_area
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = subjugators_of_thidinkai_modifier #modifier giving +0.5 yearly prestige, -2 national unrest
+				duration = -1	#permanent
+			}
+		}
+	}
+	treasure_fleets_from_far_away = {
+		icon = mission_asian_trader
+		required_missions = { subjugate_western_thidinkai }
+		position = 8
+		trigger = {
+			4839 = { owned_by = ROOT }	#zyugok
+			4884 = { owned_by = ROOT }	#cuihiok
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4839
+				province_id = 4884
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = treasure_fleet_leverage_modifier	#modifier giving 10% trade effiency
+				duration = 36500	#100 years
+			}
+		}
+	}
+	mistakes_of_the_past = {
+		icon = mission_alliances
+		required_missions = { ambitions_of_empire }
+		position = 10
+		trigger = {
+			high_tolerance_elven_race_trigger = yes
+			high_tolerance_half_elven_race_trigger = yes
+			has_country_modifier = human_administration
+			NOT = { has_country_modifier = elven_military }
+			num_of_owned_provinces_with = {
+				value = 10
+				OR = {
+					has_province_modifier = elven_majority_integrated
+					has_province_modifier = elven_minority_integrated_large
+					has_province_modifier = elven_minority_integrated_small
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				has_province_modifier = elven_majority_integrated
+				has_province_modifier = elven_minority_integrated_large
+				has_province_modifier = elven_minority_integrated_small
+				has_province_modifier = elven_minority_oppressed_small
+				has_province_modifier = elven_minority_oppressed_large
+				has_province_modifier = elven_majority_oppressed
+				has_province_modifier = elven_minority_coexisting_small
+				has_province_modifier = elven_minority_coexisting_large
+				has_province_modifier = elven_majority_coexisting
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = araw_unity_of_people_modifier 	#modifier giving, 10% manpower, 7.5% force limit, -5% dev cost, +1 max promoted cultures 
+				duration = -1	
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_modifier = harimari_slaving_modifier
+						has_country_modifier = harimari_slaving_modifier2
+					}
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							has_province_modifier = harimari_minority_oppressed_small
+							has_province_modifier = harimari_minority_oppressed_large
+							has_province_modifier = harimari_majority_oppressed
+						}
+					}
+					add_unrest = 10
+				}
+			}
+		}
+	}
+}

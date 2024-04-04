@@ -9,7 +9,8 @@ seghdihr_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_axe_for_sword = {
 		icon = crush_heretic_strongholds
@@ -32,6 +33,7 @@ seghdihr_1 = {
 		effect = {
 			add_treasury = -25
 			define_advisor = {
+				name = "Gilbarad szal-Nabukar"
 				type = commandant
 				skill = 1
 				culture = surani
@@ -40,6 +42,7 @@ seghdihr_1 = {
 			}
 			U20 = {
 				define_advisor = {
+					name = "Kildan Shalehammer"
 					type = commandant
 					skill = 1
 					culture = citrine_dwarf
@@ -205,6 +208,8 @@ seghdihr_1 = {
 						limit = { NOT = { primary_culture = pyrite_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -264,7 +269,8 @@ seghdihr_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_candle_lit = {
 		icon = mission_mage_general
@@ -445,6 +451,8 @@ seghdihr_2 = {
 						limit = { NOT = { primary_culture = gold_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -585,6 +593,8 @@ seghdihr_2 = {
 						limit = { NOT = { primary_culture = topaz_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -644,7 +654,8 @@ seghdihr_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_side_by_side = {
 		icon = mission_son_fetishist_alliances
@@ -909,24 +920,24 @@ seghdihr_3 = {
 		}
 
 		trigger = {
-			adm_power = 250
-			dip_power = 250
-			mil_power = 250
-			legitimacy = 100
+			adm_power = 200
+			dip_power = 200
+			mil_power = 200
+			legitimacy = 90
 			diplomatic_reputation = 3
 			is_at_war = no
 			has_any_disaster = no
 			NOT = { has_country_modifier = seghdihr_mourning }
-			F47 = { years_in_vassalage_under = { who = ROOT years = 15 } }
-			I15 = { years_in_vassalage_under = { who = ROOT years = 15 } }
-			I14 = { years_in_vassalage_under = { who = ROOT years = 15 } }
-			I17 = { years_in_vassalage_under = { who = ROOT years = 15 } }
+			F47 = { years_in_vassalage_under = { who = ROOT years = 10 } }
+			I15 = { years_in_vassalage_under = { who = ROOT years = 10 } }
+			I14 = { years_in_vassalage_under = { who = ROOT years = 10 } }
+			I17 = { years_in_vassalage_under = { who = ROOT years = 10 } }
 		}
 		
 		effect = {
-			add_adm_power = -250
-			add_dip_power = -250
-			add_mil_power = -250
+			add_adm_power = -200
+			add_dip_power = -200
+			add_mil_power = -200
 			country_event = { id = flavor_seghdihr.5 }
 			tooltip = { swap_non_generic_missions = yes }
 		}
@@ -938,7 +949,8 @@ seghdihr_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_seg_band = {
 		icon = mission_landsknecht_soldier
@@ -1070,12 +1082,7 @@ seghdihr_4 = {
 					change_culture = citrine_dwarf
 					change_religion = ROOT
 					hidden_effect = {
-						remove_province_modifier = orcish_minority_coexisting_large
-						remove_province_modifier = orcish_minority_coexisting_small
-						remove_province_modifier = orcish_minority_integrated_large
-						remove_province_modifier = orcish_minority_integrated_small
-						remove_province_modifier = orcish_minority_oppressed_large
-						remove_province_modifier = orcish_minority_oppressed_small
+						remove_racial_minority_any_size = { race = orcish }
 					}
 				}
 				hidden_effect = {
@@ -1098,6 +1105,8 @@ seghdihr_4 = {
 						limit = { NOT = { primary_culture = titanium_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -1150,7 +1159,8 @@ seghdihr_5 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H78 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H78 }
 	
 	seghdihr_restore_gate = {
 		icon = mission_dha_thatchil
@@ -1410,7 +1420,8 @@ seghdihr_1b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
@@ -1578,7 +1589,8 @@ seghdihr_1b = {
 			else = { add_stability_or_adm_power = yes }
 			hidden_effect = {
 				H79 = {
-					add_country_modifier = { name = racial_pop_goblin_purge duration = -1 }
+					generic_start_purge = { race = goblin }
+					increase_free_state_action = { action = genocide }
 					set_variable = { which = goblin_race_tolerance_ai value = 10 }
 					if = {
 						limit = { NOT = { capital = 4247 } }
@@ -1820,12 +1832,15 @@ seghdihr_1b = {
 						limit = { NOT = { capital = 4265 } }
 						set_capital = 4265
 					}
-					add_country_modifier = { name = racial_pop_goblin_purge duration = -1 }
+					generic_start_purge = { race = goblin }
+					increase_free_state_action = { action = genocide }
 					set_variable = { which = goblin_race_tolerance_ai value = 10 }
 					if = {
 						limit = { NOT = { primary_culture = peridot_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -1905,13 +1920,14 @@ seghdihr_2b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
 	
 	seghdihr_watching_backs = {
-		icon = mission_a_sunny_day
+		icon = consolidate_switzerland
 		position = 11
 		required_missions = {
 			seghdihr_scouting_tree
@@ -2126,7 +2142,8 @@ seghdihr_3b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
@@ -2140,9 +2157,9 @@ seghdihr_3b = {
 
 		trigger = {
 			army_size = 60
-			legitimacy = 100
+			legitimacy = 90
 			prestige = 20
-			NOT = { estate_influence = { estate = estate_nobles influence = 30 } }
+			NOT = { estate_influence = { estate = estate_nobles influence = 40 } }
 		}
 		
 		effect = {
@@ -2213,7 +2230,7 @@ seghdihr_3b = {
 			custom_tooltip = seghdihr_only_best_tooltip
 			hidden_effect = {
 				every_owned_province = {
-					limit = { NOT = { province_group = segbandal_hold_province } }
+					limit = { NOT = { province_group = hold_province has_terrain = dwarven_road } }
 					if = {
 						limit = { has_building = training_fields }
 						remove_building = training_fields
@@ -2247,7 +2264,6 @@ seghdihr_3b = {
 				ruler_has_personality = inspiring_leader_personality
 				mil_power = 400
 			}
-			government_reform_progress = 100
 			army_professionalism = 0.3
 			NOT = { army_size = 80 }
 			num_of_generals = 3
@@ -2265,7 +2281,6 @@ seghdihr_3b = {
 				}
 				add_mil_power = -400
 			}
-			change_government_reform_progress = -100
 			country_event = { id = flavor_seghdihr.9 }
 		}
 	}
@@ -2442,7 +2457,8 @@ seghdihr_4b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
@@ -2662,7 +2678,8 @@ seghdihr_5b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part2
 	}
@@ -2734,12 +2751,15 @@ seghdihr_5b = {
 					OR = {
 						AND = {
 							region = far_salahad_region
-							NOT = { has_port = yes }
+							NOT = { 
+								has_port = yes 
+								area = zallirkor_area
+							}
 						}
-						province_id = 684
-						province_id = 583
-						province_id = 6103
-						province_id = 571
+						area = jikarzax_area
+						area = grixek_area
+						area = garpix_zokka_area
+						area = eastern_krahway_area
 					}
 					owner = {
 						NOT = { is_rival = ROOT }
@@ -3043,7 +3063,8 @@ seghdihr_1c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}
@@ -3141,7 +3162,11 @@ seghdihr_1c = {
 						change_government = republic
 					}
 					add_government_reform = seghdihr_syndicates_reform 
+					
 					set_ruler_culture = granite_dwarf
+					clear_fast_ruler_flags = yes
+					set_ruler_flag = dwarven_ruler
+
 					change_primary_culture = granite_dwarf
 					set_ruler_religion = ROOT
 					change_religion = ROOT
@@ -3150,7 +3175,8 @@ seghdihr_1c = {
 						limit = { culture_group = dwarven }
 						change_culture = granite_dwarf
 					}
-					add_country_modifier = { name = racial_pop_goblin_purge duration = -1 }
+					generic_start_purge = { race = goblin }
+					increase_free_state_action = { action = genocide }
 					set_variable = { which = goblin_race_tolerance_ai value = 10 }
 					4284 = {
 						if = {
@@ -3251,7 +3277,11 @@ seghdihr_1c = {
 						change_government = republic
 					}
 					add_government_reform = seghdihr_syndicates_reform 
+					
 					set_ruler_culture = amethyst_dwarf
+					clear_fast_ruler_flags = yes
+					set_ruler_flag = dwarven_ruler
+
 					change_primary_culture = amethyst_dwarf
 					set_ruler_religion = ROOT
 					change_religion = ROOT
@@ -3260,7 +3290,7 @@ seghdihr_1c = {
 						limit = { culture_group = dwarven }
 						change_culture = amethyst_dwarf
 					}
-					add_country_modifier = { name = racial_pop_goblin_purge duration = -1 }
+					generic_start_purge = { race = goblin }
 					set_variable = { which = goblin_race_tolerance_ai value = 10 }
 					4266 = {
 						if = {
@@ -3443,7 +3473,8 @@ seghdihr_2c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}
@@ -3642,7 +3673,8 @@ seghdihr_3c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}
@@ -3746,6 +3778,10 @@ seghdihr_3c = {
 					production_leader = { trade_goods = livestock }
 					production_leader = { trade_goods = paper }
 					production_leader = { trade_goods = wine }
+					production_leader = { trade_goods = coal }
+					production_leader = { trade_goods = chinaware }
+					production_leader = { trade_goods = fish }
+					production_leader = { trade_goods = grain }
 				}
 			}
 		}
@@ -3761,7 +3797,8 @@ seghdihr_4c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}
@@ -3941,7 +3978,8 @@ seghdihr_5c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H78 
 		has_country_flag = seghdihr_part3
 	}
@@ -3956,7 +3994,7 @@ seghdihr_5c = {
 		provinces_to_highlight = {
 			owner = {
 				OR = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 					has_country_flag = raj_vizier
 				}
 			}
@@ -3969,7 +4007,7 @@ seghdihr_5c = {
 				limit = { 
 					4411 = { 
 						owner = { 
-							has_reform = raja_reform 
+							has_government_attribute = is_raja 
 							any_subject_country = { has_country_flag = raj_vizier }
 						}
 					}
@@ -4007,7 +4045,7 @@ seghdihr_5c = {
 				limit = { 
 					4411 = { 
 						owner = { 
-							has_reform = raja_reform 
+							has_government_attribute = is_raja 
 							any_subject_country = { has_country_flag = raj_vizier }
 						}
 					}

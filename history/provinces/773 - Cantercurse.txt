@@ -1,13 +1,15 @@
 
 # No previous file for Banda Oriental
-culture = green_orc
-religion = great_dookan
+owner = B38
+controller = B38
+add_core = B38
+culture = hapremiti
+religion = elikhetist
 capital = ""
-tribal_owner = B46
 hre = no
 
 base_tax = 1
-base_production = 1
+base_production = 4
 base_manpower = 2
 
 trade_goods = livestock

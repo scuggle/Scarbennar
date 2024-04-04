@@ -1,0 +1,196 @@
+country_event = {
+    id = eur_religiousschools.1
+    title = sarhalevents.2.t
+    desc = sarhalevents.2.d
+    picture = MYSTIC_IN_PRAYER_eventPicture
+    
+    trigger = {
+        has_dlc = "Cradle of Civilization"
+        OR = {
+            religion = anzalkatsa
+            religion = zaradyrra
+        }
+        ai = no
+    }
+
+    is_triggered_only = yes
+    
+    option = {
+        name = sarhalevents.2.a #Sculptors of Fate
+        ai_chance = { factor = 1 }
+        trigger = { religion = anzalkatsa }
+        
+        set_religious_school = {
+            group = lizardfolk_religion
+            school = fate_sculptors_school
+        }
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+    }
+    option = {
+        name = sarhalevents.2.b #Sculptors of Being
+        ai_chance = { factor = 1 }
+        trigger = { religion = anzalkatsa }
+        
+        set_religious_school = {
+            group = lizardfolk_religion
+            school = being_sculptors_school
+        }
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+    }
+    option = {
+        name = sarhalevents.2.c #Blade and Needle
+        ai_chance = { factor = 1 }
+        trigger = { religion = zaradyrra }
+        
+        set_religious_school = {
+            group = lizardfolk_religion
+            school = blade_and_needle_school
+        }
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+    }
+    option = {
+        name = sarhalevents.2.dd #Great Cycle
+        ai_chance = { factor = 1 }
+        trigger = { religion = zaradyrra }
+        
+        set_religious_school = {
+            group = lizardfolk_religion
+            school = great_cycle_school
+        }
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+    }
+    option = {
+        name = sarhalevents.2.e #Humble Zeal
+        ai_chance = { factor = 1 }
+        trigger = { religion = zaradyrra }
+        
+        set_religious_school = {
+            group = lizardfolk_religion
+            school = humble_zeal_school
+        }
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+    }
+    option = {
+        name = sarhalevents.2.f #Soul-Song
+        ai_chance = { factor = 1 }
+        trigger = { religion = zaradyrra }
+        
+        set_religious_school = {
+            group = lizardfolk_religion
+            school = soul_song_school
+        }
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+    }
+}
+
+country_event = {
+	id = eur_religiousschools.2
+	title = high_philosophy_events.0.t
+	desc = high_philosophy_events.0.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+    trigger = {
+        has_dlc = "Cradle of Civilization"
+        religion = high_philosophy
+        ai = no
+    }
+
+	is_triggered_only = yes
+	
+	option = {
+		name = high_philosophy_events.0.a #Starry eye
+		ai_chance = { factor = 1 }
+		
+		set_religious_school = {
+			group = raheni
+			school = starry_eye_school
+		}
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+	}
+	option = {
+		name = high_philosophy_events.0.b #Radiant sun
+		ai_chance = { factor = 1 }
+		
+		set_religious_school = {
+			group = raheni
+			school = radiant_sun_school
+		}
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+	}
+	option = {
+		name = high_philosophy_events.0.c #Orange sash
+		ai_chance = { factor = 1 }
+		
+		set_religious_school = {
+			group = raheni
+			school = orange_sash_school
+		}
+         hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+	}
+	option = {
+		name = high_philosophy_events.0.dd #Golden palace
+		ai_chance = { factor = 1 }
+		
+		set_religious_school = {
+			group = raheni
+			school = golden_palace_school
+		}
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+	}
+	option = {
+		name = high_philosophy_events.0.e #Unbroken claw
+		ai_chance = { factor = 1 }
+		
+		set_religious_school = {
+			group = raheni
+			school = unbroken_claw_school
+		}
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+	}
+	option = {
+		name = high_philosophy_events.0.f #Silk turban
+		ai_chance = { factor = 1 }
+		
+		set_religious_school = {
+			group = raheni
+			school = silk_turban_school
+		}
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+	}
+	option = {
+		name = high_philosophy_events.0.g #Ascendant soul
+		ai_chance = { factor = 1 }
+		
+		set_religious_school = {
+			group = raheni
+			school = ascendant_soul_school
+		}
+        hidden_effect = {
+			set_country_flag = eur_changed_religious_school
+		}
+	}
+}

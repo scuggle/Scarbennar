@@ -4,6 +4,7 @@ caamas1_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = caamas
 		NOT = { tag = H21 }
 	}
@@ -138,6 +139,7 @@ caamas1_missions = {
 				days = 365
 			}
 			add_years_of_income = -1.25
+			custom_tooltip = caamas_excavation_of_cadcimn_tt
 		}
 	}
 	
@@ -176,6 +178,7 @@ caamas1_missions = {
 				add_base_production = 2
 				add_base_manpower = 1
 			}
+			custom_tooltip = caamas_foray_into_the_depths_of_cadsimn_tt
 		}
 	}
 }
@@ -185,6 +188,7 @@ caamas2_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = caamas
 		NOT = { tag = H21 }
 	}
@@ -307,11 +311,11 @@ caamas2_missions = {
 		effect = {
 			2088 = {
 				change_culture = caamas
-				change_province_name = "Urdea-Samrad" #New South Summer
-				rename_capital = "Urdea-Samrad"
-				remove_province_modifier = kairncal_urdea_samrad
+				change_province_name = "Urdea Samrad" #New South Summer
+				rename_capital = "Urdea Samrad"
+				remove_province_modifier = kairncal_urdea_samrad_mod
 				add_province_modifier = {
-					name = "caamas_urdea_samrad"
+					name = "caamas_urdea_samrad_mod"
 					duration = -1
 				}
 			}
@@ -324,6 +328,7 @@ caamas3_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = caamas
 		NOT = { tag = H21 }
 	}
@@ -468,6 +473,7 @@ caamas4_missions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = caamas
 		NOT = { tag = H21 }
 	}
@@ -584,6 +590,7 @@ caamas4_missions = {
 				add_permanent_claim = ROOT
 			}
 			country_event = { id = eordand.3 }
+			custom_tooltip = caamas_demands_of_the_domandrod_tt
 		}
 	}
 }
@@ -593,6 +600,7 @@ caamas5_missions_murdkather = { #Murdkather
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H02
 		NOT = { tag = H21 }
 	}
@@ -796,6 +804,7 @@ caamas5_missions_drisleak = { #Dearktir
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H03
 		NOT = { tag = H21 }
 	}
@@ -907,6 +916,7 @@ caamas5_missions_bagcatir = { #Bagcatir
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H07
 		NOT = { tag = H21 }
 	}

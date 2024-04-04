@@ -12,6 +12,8 @@ historical_rival = Z19
 historical_rival = Z47
 capital = 740
 
+1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
 1414.1.1 = {
 	monarch = {
 		name = "Brasûr"
@@ -20,7 +22,7 @@ capital = 740
 		adm = 6
 		dip = 5
 		mil = 6
-    }
+	}
 	add_ruler_personality = strict_personality
 	add_ruler_personality = conqueror_personality
 	add_ruler_personality = expansionist_personality

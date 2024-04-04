@@ -1,15 +1,17 @@
 
 # No previous file for Craven's Walk
-culture = green_orc
-religion = great_dookan
+owner = B37
+controller = B37
+add_core = B37
+culture = east_damerian
+religion = regent_court
 capital = ""
 trade_goods = salt
-tribal_owner = B22
 
 hre = no
 
 base_tax = 1 
-base_production = 1
+base_production = 2
 base_manpower = 1
 
 native_size = 30

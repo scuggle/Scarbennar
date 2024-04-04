@@ -1,0 +1,575 @@
+
+namespace = flavor_cestirande
+
+#TODO: Event pictures
+
+#MT end event
+country_event = {
+    id = flavor_cestirande.1
+    title = flavor_cestirande.1.t
+    desc = flavor_cestirande.1.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_cestirande.1.a
+		ai_chance = {
+			factor = 100
+		}
+		A98 = {
+        	add_country_modifier = {
+            	name = A98_cestirande_victorious
+            	duration = -1
+        	}
+		}
+	}
+}
+
+#Purchase of Aranthil
+country_event = {
+    id = flavor_cestirande.2
+    title = flavor_cestirande.2.t
+    desc = flavor_cestirande.2.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_cestirande.2.a
+		ai_chance = {
+			factor = 30
+		}
+        if = {
+            limit = { exists = A85 }
+            A85 = {
+                country_event = {
+                    id = flavor_cestirande.3
+                    days = 50
+                }
+            }
+        }
+	}
+    option = {
+		name = flavor_cestirande.2.b
+		ai_chance = {
+			factor = 70
+		}
+
+        898 = {
+            add_permanent_claim = ROOT
+        }
+	}
+}
+
+#Purchase of Aranthil - Mag
+#TODO: AI chance
+country_event = {
+    id = flavor_cestirande.3
+    title = flavor_cestirande.3.t
+    desc = flavor_cestirande.3.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = flavor_cestirande.3.a
+		ai_chance = {
+			factor = 1
+		}
+        898 = {
+            cede_province = A98
+        }
+        add_treasury = 500
+        A98 = {
+            country_event = {
+                id = flavor_cestirande.4
+            }
+        }
+	}
+
+    option = {
+		name = flavor_cestirande.3.b
+		ai_chance = {
+			factor = 0
+		}
+        add_prestige = 15
+        A98 = {
+            country_event = {
+                id = flavor_cestirande.5
+            }
+        }
+	}
+}
+
+country_event = {
+    id = flavor_cestirande.4
+    title = flavor_cestirande.4.t
+    desc = flavor_cestirande.4.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            add_treasury = -500
+        }
+    }
+	
+	option = {
+		name = flavor_cestirande.4.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+    id = flavor_cestirande.5
+    title = flavor_cestirande.5.t
+    desc = flavor_cestirande.5.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = flavor_cestirande.5.a
+		ai_chance = {
+			factor = 1
+		}
+        add_prestige = -10
+	}
+}
+
+#Galeinn Mine outcome
+country_event = {
+    id = flavor_cestirande.6
+    title = flavor_cestirande.6.t
+    desc = flavor_cestirande.6.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_cestirande.6.a
+        ai_chance = {
+			factor = 1
+		}
+        custom_tooltip = cestirande_galeinn_mine_tt
+        random_list = {
+            50 = {
+                295 = {
+                    change_trade_goods = copper
+                }
+            }
+            20 = {
+                295 = {
+                    change_trade_goods = iron
+                }
+            }
+            20 = {
+                295 = {
+                    add_base_production = 2
+                }
+            }
+            10 = {
+                295 = {
+                    change_trade_goods = gold
+                }
+            }
+        }
+    }
+}
+
+#Free City Vassals
+country_event = {
+	id = flavor_cestirande.7
+	title = flavor_cestirande.7.t
+	desc = flavor_cestirande.7.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	# Accept
+	option = {
+		name = flavor_cestirande.7.a
+		ai_chance = {
+			factor = 100 
+			
+			modifier = {
+				factor = 1.3
+				
+				historical_friend_with = FROM
+			}
+			
+			modifier = {
+				factor = 1.1
+				
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+			
+			modifier = {
+				factor = 1.15
+				
+				has_opinion = {
+					who = FROM
+					value = 150
+				}
+			}
+			
+			modifier = {
+				factor = 1.2
+				
+				has_opinion = {
+					who = FROM
+					value = 200
+				}
+			}
+			
+			modifier = {
+				factor = 1.15
+				
+				alliance_with = FROM
+			}
+			
+			modifier = {
+				factor = 1.15
+				
+				NOT = { army_size = FROM }
+			}
+			
+			modifier = {
+				factor = 1.2
+				
+				FROM = { is_emperor = yes }
+			}
+		}
+		A98 = { country_event = { id = flavor_cestirande.8 days = 30 random = 10 } }
+	}
+	# Refuse
+	option = {
+		name = flavor_cestirande.7.b
+		ai_chance = {
+			factor = 100 
+			
+			modifier = {
+				factor = 2.5
+				
+				historical_rival_with = FROM
+			}
+			
+			modifier = {
+				factor = 1.1
+				
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.15
+				
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 50
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.5
+				
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 0
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 10
+				
+				is_rival = FROM
+			}
+			
+			modifier = {
+				factor = 1.15
+				
+				army_size = FROM
+			}
+			
+			modifier = {
+				factor = 10
+				
+				is_emperor = yes
+			}
+			
+			modifier = {
+				factor = 1.15
+				
+				is_elector = yes
+			}
+		}
+		A98 = { country_event = { id = flavor_cestirande.9 days = 30 random = 10 } }
+	}
+}
+
+# They Accept Vassalization offer
+country_event = {
+	id = flavor_cestirande.8
+	title = flavor_cestirande.8.t
+	desc = flavor_cestirande.8.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	# Accept
+	option = {
+		name = flavor_cestirande.8.a
+		ai_chance = { factor = 100 }
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+		}
+	}
+}
+
+#They refuse vassalization offer
+country_event = {
+	id = flavor_cestirande.9
+	title = flavor_cestirande.9.t
+	desc = flavor_cestirande.9.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	# Accept
+	option = {
+		name = flavor_cestirande.9.a
+		ai_chance = { factor = 100 }
+		add_casus_belli = {
+			target = FROM
+			type = cb_vassalize_mission
+			months = 600
+		}
+	}
+}
+
+#Strating Incident
+country_event = {
+	id = flavor_cestirande.10
+	title = flavor_cestirande.10.t
+	desc = flavor_cestirande.10.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = A98
+	}
+	
+	option = {
+		name = flavor_cestirande.10.a
+		set_imperial_incident = incident_cestirande_lilac_wars
+	}
+}
+
+# Mock imperial incident
+country_event = {
+	id = flavor_cestirande.11
+	title = flavor_cestirande.11.t
+	desc = flavor_cestirande.11.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = { # reject their claims
+		name = flavor_cestirande.11.a
+		ai_chance = {
+			factor = 0
+		}
+		reverse_add_opinion = {
+			who = A98
+			modifier = refused_our_right_as_elector
+		}
+		hidden_effect = {
+			A98 = {
+				set_country_flag = claims_rejected
+				country_event = { id = flavor_cestirande.12 days = 3 }
+			}
+		}
+	}
+	option = { # acknowledge their claims
+		name = flavor_cestirande.11.b
+		ai_chance = {
+			factor = 10
+		}
+		A31 = {
+			elector = no
+		}
+		A45 = {
+			elector = no
+		}
+		reverse_add_opinion = {
+			who = A31
+			modifier = opinion_took_province
+		}
+		reverse_add_opinion = {
+			who = A45
+			modifier = opinion_took_province
+		}
+		reverse_add_opinion = {
+			who = A98
+			modifier = opinion_took_province
+		}
+		
+		hidden_effect = {
+			A98 = {
+				set_country_flag = claims_acknowledged
+				country_event = { id = flavor_cestirande.12 days = 3 }
+			}
+		}
+	}
+	option = { # enforce their claims
+		name = flavor_cestirande.11.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_opinion = {
+					who = A98
+					value = 125
+				}
+			}
+			modifier = {
+				factor = 1.2
+				has_opinion = {
+					who = A98
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 1.2
+				has_opinion = {
+					who = A98
+					value = 175
+				}
+			}
+			modifier = {
+				factor = 1.2
+				has_opinion = {
+					who = A98
+					value = 199
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion_modifier = {
+					who = A98
+					modifier = sent_gift
+				}
+			}
+			modifier = {
+				factor = 2
+				alliance_with = A98
+			}
+		}
+		A31 = {
+			elector = no
+		}
+		A45 = {
+			elector = no
+		}
+		A98 = {
+			elector = yes
+		}
+		reverse_add_opinion = {
+			who = A98
+			modifier = enforced_our_right_as_elector
+		}
+		reverse_add_opinion = {
+			who = A31
+			modifier = opinion_took_province
+		}
+		reverse_add_opinion = {
+			who = A45
+			modifier = opinion_took_province
+		}
+		hidden_effect = {
+			A98 = {
+				set_country_flag = claims_enforced
+				country_event = { id = flavor_cestirande.12 days = 3 }
+			}
+		}
+	}
+}
+
+# Follow-up
+country_event = {
+	id = flavor_cestirande.12
+	title = flavor_cestirande.12.t
+	desc = {
+		trigger = {
+			has_country_flag = claims_rejected
+		}
+		desc = flavor_cestirande.12.d
+	}
+	desc = {
+		trigger = {
+			has_country_flag = claims_acknowledged
+		}
+		desc = flavor_cestirande.12.d2
+	}
+	desc = {
+		trigger = {
+			has_country_flag = claims_enforced
+		}
+		desc = flavor_cestirande.12.d3
+	}
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		trigger = {
+			has_country_flag = claims_rejected
+		}
+		name = flavor_cestirande.12.a
+	}
+	option = {
+		trigger = {
+			has_country_flag = claims_acknowledged
+		}
+		name = flavor_cestirande.12.b
+	}
+	option = {
+		trigger = {
+			has_country_flag = claims_enforced
+		}
+		name = flavor_cestirande.12.c
+	}
+}

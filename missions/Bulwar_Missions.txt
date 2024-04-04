@@ -6,6 +6,7 @@ bulwar_incident_1 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -81,6 +82,7 @@ bulwar_incident_2 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -102,14 +104,7 @@ bulwar_incident_2 = {
 			F25 = {
 				OR = {
 					has_opinion = { who = ROOT value = 100 }
-					custom_trigger_tooltip = {
-						tooltip = bulwar_opinion_improved_70_tt
-						has_opinion_modifier = {
-							who = ROOT
-							modifier = improved_relation
-							value = 70
-						}
-					}
+					has_70_opinion_improved_relation = { target = ROOT }
 				}
 			}
 			dip_power = 50
@@ -171,6 +166,7 @@ bulwar_incident_3 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -217,14 +213,7 @@ bulwar_incident_3 = {
 						has_opinion = { who = ROOT value = 100 }
 						alliance_with = ROOT
 					}
-					custom_trigger_tooltip = {
-						tooltip = bulwar_opinion_improved_70_tt
-						has_opinion_modifier = {
-							who = ROOT
-							modifier = improved_relation
-							value = 70
-						}
-					}
+					has_70_opinion_improved_relation = { target = ROOT }
 				}
 			}
 			dip_power = 30
@@ -327,6 +316,7 @@ bulwar_incident_4 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -351,14 +341,7 @@ bulwar_incident_4 = {
 						has_opinion = { who = ROOT value = 100 }
 						alliance_with = ROOT
 					}
-					custom_trigger_tooltip = {
-						tooltip = bulwar_opinion_improved_70_tt
-						has_opinion_modifier = {
-							who = ROOT
-							modifier = improved_relation
-							value = 70
-						}
-					}
+					has_70_opinion_improved_relation = { target = ROOT }
 				}
 			}
 			dip_power = 30
@@ -400,6 +383,7 @@ bulwar_incident_5 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -419,14 +403,7 @@ bulwar_incident_5 = {
 				F43 = {
 					OR = {
 						has_opinion = { who = ROOT value = 75 }
-						custom_trigger_tooltip = {
-							tooltip = bulwar_opinion_improved_70_tt
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = improved_relation
-								value = 70
-							}
-						}
+						has_70_opinion_improved_relation = { target = ROOT }
 					}
 				}
 			}
@@ -437,11 +414,11 @@ bulwar_incident_5 = {
 			add_treasury = -50
 			U09 = {
 				add_opinion = { who = F28 modifier = nsc_suspicious_behaviour_big }
-				add_trust = { who = F28 value = -35 mutual = no }
+				add_trust = { who = F28 value = -35 }
 			}
 			F29 = {
 				add_opinion = { who = F28 modifier = nsc_suspicious_behaviour_big }
-				add_trust = { who = F28 value = -35 mutual = no }
+				add_trust = { who = F28 value = -35 }
 			}
 			custom_tooltip = bulwar_rebels_in_tluukt_tt
 		}
@@ -475,6 +452,7 @@ bulwar_quarters_1 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -574,7 +552,7 @@ bulwar_quarters_1 = {
 			}
 			OR = {
 				full_idea_group = economic_ideas
-				full_idea_group = infrastructure_ideas
+				full_idea_group = logistical_ideas
 			}
 			NOT = { inflation = 2 }
 			treasury = 300
@@ -613,6 +591,7 @@ bulwar_quarters_2 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -651,7 +630,7 @@ bulwar_quarters_2 = {
 	}
 	
 	bulwar_through_red_coloured_glass = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = {
 			bulwar_temple_district
 		}
@@ -747,6 +726,7 @@ bulwar_quarters_3 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -956,6 +936,7 @@ bulwar_quarters_4 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1091,6 +1072,7 @@ bulwar_quarters_5 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1220,6 +1202,7 @@ bulwar_1 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1488,6 +1471,7 @@ bulwar_2 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1519,14 +1503,7 @@ bulwar_2 = {
 					else = {
 						F35 = {
 							overlord = { has_spy_network_from = { who = ROOT value = 30 } }
-							custom_trigger_tooltip = {
-								tooltip = bulwar_opinion_improved_70_tt
-								has_opinion_modifier = {
-									who = ROOT
-									modifier = improved_relation
-									value = 70
-								}
-							}
+							has_70_opinion_improved_relation = { target = ROOT }
 							capital_scope = {
 								num_of_units_in_province = {
 									who = ROOT
@@ -1540,14 +1517,7 @@ bulwar_2 = {
 				else = {
 					F35 = {
 						has_spy_network_from = { who = ROOT value = 30 }
-						custom_trigger_tooltip = {
-							tooltip = bulwar_opinion_improved_70_tt
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = improved_relation
-								value = 70
-							}
-						}
+						has_70_opinion_improved_relation = { target = ROOT }
 						capital_scope = {
 							num_of_units_in_province = {
 								who = ROOT
@@ -1566,14 +1536,7 @@ bulwar_2 = {
 					613 = {
 						owner = {
 							has_spy_network_from = { who = ROOT value = 30 }
-							custom_trigger_tooltip = {
-								tooltip = bulwar_opinion_improved_70_tt
-								has_opinion_modifier = {
-									who = ROOT
-									modifier = improved_relation
-									value = 70
-								}
-							}
+							has_70_opinion_improved_relation = { target = ROOT }
 						}
 						num_of_units_in_province = {
 							who = ROOT
@@ -1722,6 +1685,7 @@ bulwar_3 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1994,6 +1958,7 @@ bulwar_4 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -2027,22 +1992,8 @@ bulwar_4 = {
 							overlord = {
 								has_spy_network_from = { who = ROOT value = 30 }
 							}
-							custom_trigger_tooltip = {
-								tooltip = bulwar_sent_gift_tt
-								has_opinion_modifier = {
-									who = ROOT
-									modifier = sent_gift 
-									value = 25
-								}
-							}
-							custom_trigger_tooltip = {
-								tooltip = bulwar_opinion_improved_70_tt
-								has_opinion_modifier = {
-									who = ROOT
-									modifier = improved_relation
-									value = 70
-								}
-							}
+							has_25_opinion_sent_gift = { target = ROOT }
+							has_70_opinion_improved_relation = { target = ROOT }
 						}
 						NOT = { is_incident_active = incident_summit_of_samartal }
 					}
@@ -2050,22 +2001,8 @@ bulwar_4 = {
 				else = {
 					F44 = {
 						has_spy_network_from = { who = ROOT value = 30 }
-						custom_trigger_tooltip = {
-							tooltip = bulwar_sent_gift_tt
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = sent_gift 
-								value = 25
-							}
-						}
-						custom_trigger_tooltip = {
-							tooltip = bulwar_opinion_improved_70_tt
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = improved_relation
-								value = 70
-							}
-						}
+						has_25_opinion_sent_gift = { target = ROOT }
+						has_70_opinion_improved_relation = { target = ROOT }
 					}
 				}
 			}
@@ -2321,6 +2258,7 @@ bulwar_5 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -2342,7 +2280,9 @@ bulwar_5 = {
 		provinces_to_highlight = {
 			OR = {
 				area = grixekyr_area
-				area = jixobix_area
+				province_id = 605
+				province_id = 606
+				province_id = 689
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -2352,9 +2292,18 @@ bulwar_5 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
 			}
-			jixobix_area = {
+			# jixobix_area = {
+			# 	country_or_non_sovereign_subject_holds = ROOT
+			# 	type = all
+			# }
+			605 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				type = all
+			}
+			606 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			689 = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -2390,12 +2339,12 @@ bulwar_5 = {
 		position = 8
 		
 		provinces_to_highlight = {
-			superregion = bulwar_superregion
+			region = bulwar_proper_region
 			owned_by = F28
 		}
 		
 		trigger = {
-			bulwar_superregion = {
+			bulwar_proper_region = {
 				NOT = { owned_by = F28 }
 				type = all
 			}

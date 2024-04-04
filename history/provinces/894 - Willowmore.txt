@@ -1,16 +1,18 @@
 
 # No previous file for Caddo
-culture = green_orc
-religion = great_dookan
+owner = B36
+controller = B36
+add_core = B36
+culture = marrodic
+religion = regent_court
 capital = ""
-tribal_owner = B21
 hre = no
 
 base_tax = 1
-base_production = 1
+base_production = 3
 base_manpower = 1
 
-trade_goods = unknown
+trade_goods = iron
 
 native_size = 55
 native_ferocity = 8

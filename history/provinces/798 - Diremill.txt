@@ -1,13 +1,16 @@
 
 # No previous file for Mbwila
+owner = B41
+controller = B41
+add_core = B41
 culture = common_goblin
 religion = goblinic_shamanism
 capital = ""
-tribal_owner = B41
+is_city = yes
 hre = no
 
 base_tax = 2
-base_production = 1
+base_production = 2
 base_manpower = 2
 
 trade_goods = livestock
