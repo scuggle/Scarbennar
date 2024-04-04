@@ -2635,7 +2635,10 @@ beastfolk_ideas = {
 	bonus = {
 		global_unrest = -2
 	}
-	trigger = { culture = cyazizeta_lizardfolk }
+	trigger = { 
+		culture = cyazizeta_lizardfolk 
+		NOT = { tag = S83 } #Katiradiga
+	}
 	free = yes
 	
 	beastfolk_lizards_and_tanizu = {

@@ -415,7 +415,6 @@ special_forces_ideas = { # Special Forces
 	}
 	special_forces_3 = {
 		special_unit_forcelimit = 0.15
-	
 	}
 	special_forces_4 = {
 		leader_land_fire = 1

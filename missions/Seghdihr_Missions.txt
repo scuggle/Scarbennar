@@ -208,6 +208,8 @@ seghdihr_1 = {
 						limit = { NOT = { primary_culture = pyrite_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -449,6 +451,8 @@ seghdihr_2 = {
 						limit = { NOT = { primary_culture = gold_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -589,6 +593,8 @@ seghdihr_2 = {
 						limit = { NOT = { primary_culture = topaz_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -1099,6 +1105,8 @@ seghdihr_4 = {
 						limit = { NOT = { primary_culture = titanium_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -1581,7 +1589,8 @@ seghdihr_1b = {
 			else = { add_stability_or_adm_power = yes }
 			hidden_effect = {
 				H79 = {
-					add_country_modifier = { name = racial_pop_goblin_purge duration = -1 }
+					generic_start_purge = { race = goblin }
+					increase_free_state_action = { action = genocide }
 					set_variable = { which = goblin_race_tolerance_ai value = 10 }
 					if = {
 						limit = { NOT = { capital = 4247 } }
@@ -1823,12 +1832,15 @@ seghdihr_1b = {
 						limit = { NOT = { capital = 4265 } }
 						set_capital = 4265
 					}
-					add_country_modifier = { name = racial_pop_goblin_purge duration = -1 }
+					generic_start_purge = { race = goblin }
+					increase_free_state_action = { action = genocide }
 					set_variable = { which = goblin_race_tolerance_ai value = 10 }
 					if = {
 						limit = { NOT = { primary_culture = peridot_dwarf } }
 						change_primary_culture = citrine_dwarf
 						set_ruler_culture = citrine_dwarf
+						clear_fast_ruler_flags = yes
+						set_ruler_flag = dwarven_ruler
 					}
 					change_religion = ROOT
 					set_ruler_religion = ROOT
@@ -3150,7 +3162,11 @@ seghdihr_1c = {
 						change_government = republic
 					}
 					add_government_reform = seghdihr_syndicates_reform 
+					
 					set_ruler_culture = granite_dwarf
+					clear_fast_ruler_flags = yes
+					set_ruler_flag = dwarven_ruler
+
 					change_primary_culture = granite_dwarf
 					set_ruler_religion = ROOT
 					change_religion = ROOT
@@ -3159,7 +3175,8 @@ seghdihr_1c = {
 						limit = { culture_group = dwarven }
 						change_culture = granite_dwarf
 					}
-					add_country_modifier = { name = racial_pop_goblin_purge duration = -1 }
+					generic_start_purge = { race = goblin }
+					increase_free_state_action = { action = genocide }
 					set_variable = { which = goblin_race_tolerance_ai value = 10 }
 					4284 = {
 						if = {
@@ -3260,7 +3277,11 @@ seghdihr_1c = {
 						change_government = republic
 					}
 					add_government_reform = seghdihr_syndicates_reform 
+					
 					set_ruler_culture = amethyst_dwarf
+					clear_fast_ruler_flags = yes
+					set_ruler_flag = dwarven_ruler
+
 					change_primary_culture = amethyst_dwarf
 					set_ruler_religion = ROOT
 					change_religion = ROOT
@@ -3269,7 +3290,7 @@ seghdihr_1c = {
 						limit = { culture_group = dwarven }
 						change_culture = amethyst_dwarf
 					}
-					add_country_modifier = { name = racial_pop_goblin_purge duration = -1 }
+					generic_start_purge = { race = goblin }
 					set_variable = { which = goblin_race_tolerance_ai value = 10 }
 					4266 = {
 						if = {

@@ -11,6 +11,8 @@ capital = 377
 
 historical_friend = X28 #Konollzerv
 
+1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
 1442.3.17 = {
 	monarch = {
 		name = "Xanzerbexis"

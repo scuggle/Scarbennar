@@ -9,6 +9,8 @@ technology_group = tech_orcish
 historical_rival = Z18
 capital = 991
 
+1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
 1437.1.7 = {
 	monarch = {
 		name = "Jayuk"

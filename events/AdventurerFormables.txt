@@ -53,9 +53,9 @@ country_event = {
 				has_country_flag = formed_diggy_formable
 			}
 		}	
-		#hidden_effect = {
-			#lose_reforms = 10 # Reset reform progress
-		#}
+		hidden_effect = {
+			lose_reforms = 10 # Reset reform progress
+		}
 		if = {
 			limit = { NOT = { government = monarchy } }
 			change_government = monarchy
@@ -130,6 +130,7 @@ country_event = {
 			NOT = { tag = I08 } #Haraz Orldhum
 			NOT = { tag = I16 } #Gor Burad
 			NOT = { tag = B58 } #Adenica
+			NOT = { tag = I25 } #Verkal Dromak
 		}
 		ai_chance = { 
 			factor = 30
@@ -147,7 +148,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			#lose_reforms = 10 # Reset reform progress
+			lose_reforms = 10 # Reset reform progress
 			if = {
 				limit = {
 					has_ruler_modifier = heir_mage_personality_mod
@@ -248,7 +249,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			#lose_reforms = 10 # Reset reform progress
+			lose_reforms = 10 # Reset reform progress
 		}
 		if = {
 			limit = { NOT = { government = theocracy } }
@@ -439,7 +440,7 @@ country_event = {
 		escanni_culture_shift = { to_culture = newfoot_halfling }
 	}
 	
-	option = { # Falconia
+	option = { # Estaire
 		name = marcher.2.a
 		trigger = {
 			OR = {
@@ -452,7 +453,7 @@ country_event = {
 			factor = 1000
 		}
 		
-		escanni_culture_shift = { to_culture = falconian }
+		escanni_culture_shift = { to_culture = estairey }
 	}
 	
 	option = { # Anbenland
@@ -832,7 +833,23 @@ country_event = {
 		
 		south_aelantir_culture_shift = { to_culture = dhanaenno }
 	}
+		
+	option = { # Rezinkand back up
+	name = colonial_culture.1.a
+	trigger = {
+		OR = {
+			tag = H67
+			was_tag = H66
+		}
+	}
 	
+	ai_chance = {
+		factor = 1000
+	}
+	
+	south_aelantir_culture_shift = { to_culture = dawn_elf }
+}
+
 	option = { # Kiohalen
 		name = colonial_culture.1.a
 		trigger = {
@@ -1050,12 +1067,12 @@ country_event = { #Change culture of conquered adventurer provinces
 				}
 				change_culture = nurcestiran
 			}
-			if = { #Falconia
+			if = { #Estaire
 				limit = {
 					NOT = { culture = ROOT }
 					culture = esmari
 				}
-				change_culture = falconian
+				change_culture = estairey
 			}
 			if = { #Alenor
 				limit = {
@@ -1209,11 +1226,11 @@ country_event = { #Change culture of conquered adventurer provinces
 				}
 				change_culture = nurcestiran
 			}
-			if = { #Falconia
+			if = { #Estaire
 				limit = {
 					culture = esmari
 				}
-				change_culture = falconian
+				change_culture = estairey
 			}
 			if = { #Alenor
 				limit = {
@@ -1329,8 +1346,8 @@ province_event = { #Change culture of conquered Aelantiri provinces
 							region = trollsbay_region
 						}
 						OR = {
-							is_core = H48 #Menib�r Free Company
-							is_core = H49 #Tiru M�ine
+							is_core = H48 #Menibor Free Company
+							is_core = H49 #Tiru Moine
 							# colonial_region = colonial_ynn
 							colonial_region = colonial_upper_ynn
 							colonial_region = colonial_lower_ynn
@@ -1571,8 +1588,8 @@ province_event = { #Change culture of conquered Aelantiri provinces
 						AND = {
 							culture = vernman
 							OR = {
-								is_core = H48 #Menib�r Free Company
-								is_core = H49 #Tiru M�ine
+								is_core = H48 #Menibor Free Company
+								is_core = H49 #Tiru Moine
 							}
 						}
 						AND = {
@@ -1801,8 +1818,8 @@ province_event = { #Change culture of conquered Aelantiri provinces
 			else_if = {
 				limit = {
 					OR = {
-						is_core = H48 #Menib�r Free Company
-						is_core = H49 #Tiru M�ine
+						is_core = H48 #Menibor Free Company
+						is_core = H49 #Tiru Moine
 						# colonial_region = colonial_ynn
 						colonial_region = colonial_upper_ynn
 						colonial_region = colonial_lower_ynn
@@ -2145,8 +2162,8 @@ province_event = { #Change culture of conquered Aelantiri provinces
 			limit = {
 				culture = vernman
 				OR = {
-					is_core = H48 #Menib�r Free Company
-					is_core = H49 #Tiru M�ine
+					is_core = H48 #Menibor Free Company
+					is_core = H49 #Tiru Moine
 				}
 				OR = {
 					# colonial_region = colonial_ynn
