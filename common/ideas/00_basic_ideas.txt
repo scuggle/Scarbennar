@@ -411,7 +411,7 @@ special_forces_ideas = { # Special Forces
 		army_tradition = 0.25
 	}
 	special_forces_2 = {
-		special_unit_manpower_cost_modifier = -0.1
+		siege_ability = 0.05
 	}
 	special_forces_3 = {
 		special_unit_forcelimit = 0.15
@@ -1068,7 +1068,7 @@ influence_ideas = { #benevolence #done
 	}
 	
 	integrated_elites = {
-		liberty_desire = -25
+		reduced_liberty_desire = 25
 	}
 	buffer_states = {
 		diplomatic_reputation = 2
@@ -1106,8 +1106,8 @@ the_great_game = { #The Great Game
 	category = DIP
 
 	bonus = {
-			possible_dip_policy = 1
-			free_dip_policy = 1
+		possible_dip_policy = 1
+		free_dip_policy = 1
 	}
 
 	tgg1 = {

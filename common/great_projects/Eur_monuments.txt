@@ -37,6 +37,7 @@ kara_targu = {
 				culture_group = goblin
 				culture_group = gerudian
 				culture_group = giantkind	
+				culture_group = ogre
 			}
 			province_is_or_accepts_culture = yes
 		}
@@ -52,6 +53,7 @@ kara_targu = {
 				culture_group = goblin
 				culture_group = gerudian
 				culture_group = giantkind
+				culture_group = ogre
 			}
 			province_is_or_accepts_culture = yes
 		}
@@ -1699,6 +1701,7 @@ crannog_home = {
 			OR = {
 				culture_group = kobold
 				culture = moorman
+				culture = moorman_r
 			}
 		}
 		province_is_or_accepts_culture = yes
@@ -1715,6 +1718,7 @@ crannog_home = {
 			OR = {
 				culture_group = kobold
 				culture = moorman
+				culture = moorman_r
 			}
 		}
 		province_is_or_accepts_culture = yes
@@ -1725,6 +1729,7 @@ crannog_home = {
 			OR = {
 				culture_group = kobold
 				culture = moorman
+				culture = moorman_r
 			}
 		}
 		province_is_or_accepts_culture = yes
