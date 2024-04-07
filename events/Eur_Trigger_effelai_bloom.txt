@@ -1,0 +1,98 @@
+#Event to change your religion
+country_event = {
+    id = trigger_effelai_bloom.1
+	title = trigger_effelai_bloom.1.t
+	desc = trigger_effelai_bloom.1.d
+	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
+
+    is_triggered_only = yes
+	
+	hidden = yes
+
+    trigger = {
+	    NOT = {
+			has_global_flag = effelai_blooming_over
+			has_global_flag = effelai_bloom_already_happened
+		}
+	}
+
+    fire_only_once = yes
+	
+	major = yes
+
+    option = {
+        name = trigger_effelai_bloom.1.a 
+        ai_chance = { factor = 0 }
+        trigger = {
+            NOT = {
+                religion = tswohvwohii
+            }
+        }
+        
+        change_religion = { tswohvwohii }
+    }
+    option = {
+        name = trigger_effelai_bloom.1.b 
+        ai_chance = { factor = 0 }
+        trigger = {
+            NOT = {
+                religion = chahinanito
+            }
+        }
+        
+        change_religion = { chahinanito }
+    }
+    option = {
+        name = trigger_effelai_bloom.1.c
+        ai_chance = { factor = 0 }
+        trigger = {
+            NOT = {
+                religion = song_servants
+            }
+        }
+        
+        change_religion = { song_servants }
+    }
+    option = {
+        name = trigger_effelai_bloom.1.e
+        ai_chance = { factor = 0 }
+        trigger = {
+            NOT = {
+                religion = senanset
+            }
+        }
+        
+        change_religion = { senanset }
+    }
+    option = {
+        name = trigger_effelai_bloom.1.f
+        ai_chance = { factor = 0 }
+        trigger = {
+            NOT = {
+                religion = orwaii
+                }
+        }
+        
+        change_religion = { orwaii }
+    }
+    option = {
+        name = trigger_effelai_bloom.1.g
+        ai_chance = { factor = 0 }
+        trigger = {
+            NOT = {
+                religion = leechfather
+            }
+        }
+        
+        change_religion = { leechfather }
+    }
+    option = {
+        name = trigger_effelai_bloom.1.h
+        ai_chance = { factor = 1 }
+        trigger = {
+            always = yes
+        }
+        
+        prestige = 10
+    }
+}
