@@ -1,8 +1,8 @@
 #Event to change your religion
 country_event = {
     id = triggereffelaibloom.1
-	title = triggereffelaibloom.1.t
-	desc = triggereffelaibloom.1.d
+	title = triggereffelaibloom.1_title
+	desc = triggereffelaibloom.1_desc
 	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
 
     is_triggered_only = yes
