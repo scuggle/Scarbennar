@@ -1,3 +1,5 @@
+namespace = eur_religiousschools
+
 country_event = {
     id = eur_religiousschools.1
     title = sarhalevents.2.t
