@@ -89,3 +89,7 @@
  trigger_effelaibloom.1.h:0 "Nah, I'm good."
 
  trigger_effelaibloom_tt:0 "The Effelai Bloom will start in 1 Year and we will get the opportunity to change religion right away!"
+
+ speed_up_ahati_title:0 "Speed up Ahati Disaster"
+ speed_up_ahati_desc:0 "Are you sure you want to do this?"
+ speed_up_ahati_tt:0 "Triggers the Ahati Disaster. §RTHIS WILL KILL YOUR RULER!§"

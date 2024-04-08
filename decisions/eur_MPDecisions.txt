@@ -579,4 +579,37 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
+	speed_up_ahati = {
+		major = yes
+		potential = {
+			ai = no
+			has_estate = estate_ahati
+			NOT {
+				has_country_flag = sped_up_ahati
+			}
+		}
+
+		allow = {
+			ai = no
+			has_estate = estate_ahati
+			NOT {
+				has_country_flag = sped_up_ahati
+			}
+			total_development = 400
+			is_year = 1530
+			estate_influence = { estate = estate_ahati influence = 40 }
+		}
+
+		effect = {
+			custom_tooltip = speed_up_ahati_tt
+			set_country_flag = sped_up_ahati
+			remove_country_modifier = ahati_disaster_timer
+			country_event = { id = ahati_events.100 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }	
