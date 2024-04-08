@@ -569,7 +569,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = trigger_effelaibloom_tt
 			set_country_flag = triggered_effelaibloom
-			country_event = { id = triggereffelaibloom.1 }
+			country_event = { id = trigger_effelaibloom.1 }
 			country_event = { id = effelai_bloom.372 days = 365 }
 			country_event = { id = effelai_bloom.2 days = 365 }
 			add_treasury = -2500

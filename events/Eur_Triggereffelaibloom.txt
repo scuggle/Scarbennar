@@ -3,8 +3,8 @@ namespace = trigger_effelaibloom
 #Event to change your religion
 country_event = {
     id = trigger_effelaibloom.1
-	title = trigger_effelaibloom.1_title
-	desc = trigger_effelaibloom.1_desc
+	title = trigger_effelaibloom.1.t
+	desc = trigger_effelaibloom.1.d
 	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
 
     is_triggered_only = yes
@@ -19,8 +19,8 @@ country_event = {
                 religion = tswohvwohii
             }
         }
-        
-        change_religion = { tswohvwohii }
+
+        change_religion = tswohvwohii 
     }
     option = {
         name = trigger_effelaibloom.1.b 
@@ -31,7 +31,7 @@ country_event = {
             }
         }
         
-        change_religion = { chahinanito }
+        change_religion = chahinanito
     }
     option = {
         name = trigger_effelaibloom.1.c
@@ -42,7 +42,7 @@ country_event = {
             }
         }
         
-        change_religion = { song_servants }
+        change_religion = song_servants
     }
     option = {
         name = trigger_effelaibloom.1.e
@@ -53,7 +53,7 @@ country_event = {
             }
         }
         
-        change_religion = { senanset }
+        change_religion = senanset
     }
     option = {
         name = trigger_effelaibloom.1.f
@@ -64,7 +64,7 @@ country_event = {
                 }
         }
         
-        change_religion = { orwaii }
+        change_religion = orwaii
     }
     option = {
         name = trigger_effelaibloom.1.g
@@ -75,7 +75,7 @@ country_event = {
             }
         }
         
-        change_religion = { leechfather }
+        change_religion = leechfather
     }
     option = {
         name = trigger_effelaibloom.1.h

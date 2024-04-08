@@ -78,8 +78,8 @@
  trigger_effelaibloom_title:0 "§GTrigger the Effelai Bloom§."
  trigger_effelaibloom_desc:0 "It's usually so hard to do this..."
 
- trigger_effelaibloom.1_title:0 "The Effelai Bloom is Nigh!"
- trigger_effelaibloom.1_desc:0 "You can feel the Jungle calling to you... Will you join its cult?"
+ trigger_effelaibloom.1.t:0 "The Effelai Bloom is Nigh!"
+ trigger_effelaibloom.1.d:0 "You can feel the Jungle calling to you... Will you join its cult?"
  trigger_effelaibloom.1.a:0 "Convert to Tswohvwohii."
  trigger_effelaibloom.1.b:0 "Convert to Chahinanito."
  trigger_effelaibloom.1.c:0 "Convert to Song Servants."
