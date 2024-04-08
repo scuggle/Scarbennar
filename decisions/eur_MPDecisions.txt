@@ -532,14 +532,14 @@ country_decisions = {
 		}
 	}
 
-	trigger_effelai_bloom = {
+	trigger_effelaibloom = {
 		major = yes
 		potential = {
 			ai = no
 			NOT = {
 				has_global_flag = effelai_blooming_over
 				has_global_flag = effelai_bloom_already_happened
-				has_country_flag = triggered_effelai_bloom
+				has_country_flag = triggered_effelaibloom
 			}
 			capital_scope = {
                 superregion = effelai_superregion
@@ -567,8 +567,8 @@ country_decisions = {
 		}
 
 		effect = {
-			custom_tooltip = trigger_effelai_bloom_tt
-			set_country_flag = triggered_effelai_bloom
+			custom_tooltip = trigger_effelaibloom_tt
+			set_country_flag = triggered_effelaibloom
 			country_event = { id = triggereffelaibloom.1 }
 			country_event = { id = effelai_bloom.372 days = 365 }
 			country_event = { id = effelai_bloom.2 days = 365 }
