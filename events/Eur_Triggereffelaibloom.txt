@@ -1,87 +1,87 @@
 #Event to change your religion
-country_event = {
-    id = triggereffelaibloom.1
-	title = triggereffelaibloom.1_title
-	desc = triggereffelaibloom.1_desc
-	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
-
-    is_triggered_only = yes
+#country_event = {
+#    id = triggereffelaibloom.1
+#	title = triggereffelaibloom.1_title
+#	desc = triggereffelaibloom.1_desc
+#	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
+#
+#    is_triggered_only = yes
 	
-	major = yes
-
-    option = {
-        name = triggereffelaibloom.1.a 
-        ai_chance = { factor = 0 }
-        trigger = {
-            NOT = {
-                religion = tswohvwohii
-            }
-        }
-        
-        change_religion = { tswohvwohii }
-    }
-    option = {
-        name = triggereffelaibloom.1.b 
-        ai_chance = { factor = 0 }
-        trigger = {
-            NOT = {
-                religion = chahinanito
-            }
-        }
-        
-        change_religion = { chahinanito }
-    }
-    option = {
-        name = triggereffelaibloom.1.c
-        ai_chance = { factor = 0 }
-        trigger = {
-            NOT = {
-                religion = song_servants
-            }
-        }
-        
-        change_religion = { song_servants }
-    }
-    option = {
-        name = triggereffelaibloom.1.e
-        ai_chance = { factor = 0 }
-        trigger = {
-            NOT = {
-                religion = senanset
-            }
-        }
-        
-        change_religion = { senanset }
-    }
-    option = {
-        name = triggereffelaibloom.1.f
-        ai_chance = { factor = 0 }
-        trigger = {
-            NOT = {
-                religion = orwaii
-                }
-        }
-        
-        change_religion = { orwaii }
-    }
-    option = {
-        name = triggereffelaibloom.1.g
-        ai_chance = { factor = 0 }
-        trigger = {
-            NOT = {
-                religion = leechfather
-            }
-        }
-        
-        change_religion = { leechfather }
-    }
-    option = {
-        name = triggereffelaibloom.1.h
-        ai_chance = { factor = 1 }
-        trigger = {
-            always = yes
-        }
-        
-        prestige = 10
-    }
-}
+#	major = yes
+#
+#    option = {
+#        name = triggereffelaibloom.1.a 
+#        ai_chance = { factor = 0 }
+#        trigger = {
+#            NOT = {
+#                religion = tswohvwohii
+#            }
+#        }
+#        
+#        change_religion = { tswohvwohii }
+#    }
+#    option = {
+#        name = triggereffelaibloom.1.b 
+#        ai_chance = { factor = 0 }
+#        trigger = {
+#            NOT = {
+#                religion = chahinanito
+#            }
+#        }
+#        
+#        change_religion = { chahinanito }
+#    }
+#    option = {
+#        name = triggereffelaibloom.1.c
+#        ai_chance = { factor = 0 }
+#        trigger = {
+#            NOT = {
+#                religion = song_servants
+#            }
+#        }
+#        
+#        change_religion = { song_servants }
+#    }
+#    option = {
+#        name = triggereffelaibloom.1.e
+#        ai_chance = { factor = 0 }
+#        trigger = {
+#            NOT = {
+#                religion = senanset
+#            }
+#        }
+#        
+#        change_religion = { senanset }
+#    }
+#    option = {
+#        name = triggereffelaibloom.1.f
+#        ai_chance = { factor = 0 }
+#        trigger = {
+#            NOT = {
+#                religion = orwaii
+#                }
+#        }
+#        
+#        change_religion = { orwaii }
+#    }
+#    option = {
+#        name = triggereffelaibloom.1.g
+#        ai_chance = { factor = 0 }
+#        trigger = {
+#            NOT = {
+#                religion = leechfather
+#            }
+#        }
+#        
+#        change_religion = { leechfather }
+#    }
+#    option = {
+#        name = triggereffelaibloom.1.h
+#        ai_chance = { factor = 1 }
+#        trigger = {
+#            always = yes
+#        }
+#        
+#        prestige = 10
+#    }
+#}
