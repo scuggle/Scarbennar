@@ -1,0 +1,913 @@
+name_space = port_flavour_events
+country_event = {
+	id = port_flavour_events.1
+	title = port_flavour_events.1.t 
+	desc = port_flavour_events.1.d 
+	picture = no
+	is_triggered_only = yes
+	#trigger = {
+	#	
+	#}
+	
+	option = {	#nvm
+		name = port_flavour_events.1.a
+		
+	}
+	option = {	#iochand
+		name = port_flavour_events.1.b 
+		trigger = {
+			iochand_area = {
+				type = all 
+				owned_by = ROOT
+				NOT = { has_province_modifier = port_roy_dyke_modifier }
+			}
+		}
+		iochand_area = {
+			type = all
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	#modifier giving 5% state maintenance modifier, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -15
+		add_treasury = -300
+	}
+	option = {	#applefields
+		name = port_flavour_events.1.c
+		trigger = {
+			applefields_area = {
+				type = all 
+				owned_by = ROOT
+				NOT = { has_province_modifier = port_roy_dyke_modifier }
+			}
+		}
+		applefields_area = {
+			type = all
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	 
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -15
+		add_treasury = -300
+	}
+	option = {	#pearpoint
+		name = port_flavour_events.1.dd
+		trigger = {
+			pearpoint_area = {
+				type = all 
+				owned_by = ROOT
+				NOT = { has_province_modifier = port_roy_dyke_modifier }
+			}
+		}
+		pearpoint_area = {
+			type = all
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -15
+		add_treasury = -300
+	}
+	option = {	#southroy
+		name = port_flavour_events.1.e
+		trigger = {
+			128 = { owned_by = ROOT }
+			NOT = { 128 = { has_province_modifier = port_roy_dyke_modifier } }	
+		}
+		128 = {
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -5
+		add_treasury = -100
+	}
+	option = {	#smallmarches
+		name = port_flavour_events.1.f
+		trigger = {
+			130 = { owned_by = ROOT }
+			NOT = { 130 = { has_province_modifier = port_roy_dyke_modifier } }
+		}
+		130 = {
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -5
+		add_treasury = -100
+	}
+	option = {	#roysfort
+		name = port_flavour_events.1.g
+		trigger = {
+			131 = { owned_by = ROOT }
+			NOT = { 131 = { has_province_modifier = port_roy_dyke_modifier } }
+		}
+		131 = {
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -5
+		add_treasury = -100
+	}
+	option = {	#bigwheat
+		name = port_flavour_events.1.h
+		trigger = {
+			136 = { owned_by = ROOT }
+			NOT = { 136 = { has_province_modifier = port_roy_dyke_modifier } }
+		}
+		136 = {
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -5
+		add_treasury = -100
+	}
+	option = {	#stormpoint
+		name = port_flavour_events.1.i
+		trigger = {
+			140 = { owned_by = ROOT }
+			NOT = { 140 = { has_province_modifier = port_roy_dyke_modifier } }
+		}
+		140 = {
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -5
+		add_treasury = -100
+	}
+	option = {	#manerd
+		name = port_flavour_events.1.j
+		trigger = {
+			144 = { owned_by = ROOT }
+			NOT = { 144 = { has_province_modifier = port_roy_dyke_modifier } }
+		}
+		144 = {
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -5
+		add_treasury = -100
+	}
+	option = {	#norley
+		name = port_flavour_events.1.k
+		trigger = {
+			149 = { owned_by = ROOT }
+			NOT = { 149 = { has_province_modifier = port_roy_dyke_modifier } }
+		}
+		149 = {
+			add_province_modifier = {
+				name = port_roy_dyke_modifier	
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = -5
+		add_treasury = -100
+	}
+}
+country_event = { #add an event for barrowshire to get a centre modifier if you complete the northern part of the network
+	id = port_flavour_events.2
+	title = port_flavour_events.2.t 
+	desc = port_flavour_events.2.d 
+	picture = no
+	trigger = {
+		164 = {	#barrowshire
+			has_province_modifier = port_road_hub_modifier
+			owned_by = ROOT
+		}
+		63 = {	#south viswall
+			has_province_modifier = port_road_hub_modifier
+			owned_by = ROOT
+		}
+		151 = {	#south viswall
+			has_province_modifier = port_road_hub_modifier
+			owned_by = ROOT
+		}
+		165 = {	#newcobble
+			has_province_modifier = port_road_hub_modifier
+			owned_by = ROOT
+		}
+	}
+	mean_time_to_happen = {
+		years = 25
+	}
+	option = {
+		name = port_flavour_events.2.a 
+		164 = {
+			add_province_modifier = {
+				name = port_portnamm_road_centre_modifier #modifier giving 10% trade power and -5% dev cost
+				duration = -1 #permanent
+			}
+		}
+	}
+}
+province_event = {
+	id = port_flavour_events.3
+	title = port_flavour_events.3.t 
+	desc = port_flavour_events.3.d 
+	picture = no
+	trigger = {
+		has_province_modifier = port_road_hub_modifier
+		NOT = { has_province_modifier = port_hub_growth_modifier }	
+	}
+	mean_time_to_happen = {
+		years = 50
+		modifier = {
+			factor = 0.75
+			num_of_neighbor_province = {
+				value = 2
+				has_province_modifier = port_road_modifier	
+			}
+		}
+		modifier = {
+			factor = 0.666
+			num_of_neighbor_province = {
+				value = 3
+				has_province_modifier = port_road_modifier
+			}
+		}
+	}
+	option = {
+		name = port_flavour_events.3.a 
+		add_province_modifier = {
+			name = port_hub_growth_modifier	#modifier giving -10% dev cost and 25% trade power
+			duration = 1825	#5years
+		}
+	}
+}
+province_event = {	#dam building decision
+	id = port_flavour_events.4
+	title = port_flavour_events.4.t 
+	desc = port_flavour_events.4.d 
+	picture = no
+	is_triggered_only = yes 
+	option = {	#do nothing
+		name = port_flavour_events.4.a 
+	}
+	option = {	#smallmarches lake
+		name = port_flavour_events.4.b 
+		130 = {
+			add_province_modifier = {
+				name = port_artificial_lake_modifier	#modifier giving +7.5% state maintenance, yet to be localized
+				duration = -1	#permanent
+			}
+			add_province_modifier = {
+				name = port_lake_creation_evacution_modifier	#modifier giving 5 local unrest and -20% local tax modifier, yet to be localized
+				duration = 3650	#10 years
+			}
+			add_unrest = 5
+			add_devastation = 5
+		}
+		add_adm_power = -10
+		add_treasury = -500
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 4
+		}
+	}
+	option = {	#smallmarches lake
+		name = port_flavour_events.4.c
+		144 = {
+			add_province_modifier = {
+				name = port_artificial_lake_modifier	#modifier giving +7.5% state maintenance
+				duration = -1	#permanent
+			}
+			add_province_modifier = {
+				name = port_lake_creation_evacution_modifier	#modifier giving 5 local unrest and -20% local tax modifier
+				duration = 3650	#10 years
+			}
+			add_unrest = 5
+			add_devastation = 5
+		}
+		add_adm_power = -10
+		add_treasury = -500
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 4
+		}
+	}
+	option = {	#smallmarches lake
+		name = port_flavour_events.4.dd
+		148 = {
+			add_province_modifier = {
+				name = port_artificial_lake_modifier	#modifier giving +7.5% state maintenance
+				duration = -1	#permanent
+			}
+			add_province_modifier = {
+				name = port_lake_creation_evacution_modifier	#modifier giving 5 local unrest and -20% local tax modifier
+				duration = 3650	#10 years
+			}
+			add_unrest = 5
+			add_devastation = 5
+		}
+		add_adm_power = -10
+		add_treasury = -500
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 4
+		}
+	}
+	option = {	#smallmarches lake
+		name = port_flavour_events.4.e
+		167 = {
+			add_province_modifier = {
+				name = port_artificial_lake_modifier	#modifier giving +7.5% state maintenance
+				duration = -1	#permanent
+			}
+			add_province_modifier = {
+				name = port_lake_creation_evacution_modifier	#modifier giving 5 local unrest and -20% local tax modifier
+				duration = 3650	#10 years
+			}
+			add_unrest = 5
+			add_devastation = 5
+		}
+		add_adm_power = -10
+		add_treasury = -500
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 4
+		}
+	}
+}
+province_event = {	#dam building decision
+	id = port_flavour_events.5
+	title = port_flavour_events.5.t 
+	desc = port_flavour_events.5.d 
+	picture = no
+	is_triggered_only = yes 
+	option = {	#do nothing
+		name = port_flavour_events.5.a 
+	}
+	option = {
+		name = port_flavour_events.5.b
+		129 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.b
+		129 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.c
+		141 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.d
+		142 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.e
+		143 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.f
+		126 = {	#portnamm
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.g
+		163 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.h
+		139 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.i
+		137 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.j
+		103 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.k
+		147 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.l
+		165 = {
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.m
+		128 = {	#southroy
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.n
+		130 = {	#smallmarches
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.l
+		131 = {	#roysfort
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.o
+		136 = {	#bigwheat
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.p
+		140 = {	#stormpoint
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.q
+		144 = {	#manerd
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.5.r
+		149 = {	#norley
+			add_province_modifier = {
+				name = port_dug_river_modifier	#modifier giving +5% state maintenance
+				duration = -1	#permanent
+			}
+		}
+		add_adm_power = 5
+		add_treasury = -250
+		change_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+}
+province_event = {	#canal digging decision
+	id = port_flavour_events.6
+	title = port_flavour_events.6.t 
+	desc = port_flavour_events.6.d 
+	picture = no
+	is_triggered_only = yes 
+	option = {	#do nothing
+		name = port_flavour_events.6.a 
+	}
+	option = {
+		name = port_flavour_events.6.b 
+		128 = {	#southroy
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.c
+		142 = {	#iochand
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.dd 
+		130 = {	#smallmarches
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.e
+		131 = {	#roysfort
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.f
+		132 = {	#greenberry
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.g
+		133 = {	#rosefield
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.h
+		134 = {	#middlewood
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.i
+		136 = {	#bigwheat
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.j
+		166 = {	#merryfield
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.l
+		159 = {	#thomsbridge
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.m
+		135 = {	#tipney
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.n
+		163 = {	#littlebrook
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.o
+		139 = {	#appleton
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.p
+		162 = {	#aelcandar
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.q
+		12 = {	#greymill
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.r
+		76 = {	#oldcourse
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.s
+		149 = {	#norley
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.t
+		147 = {	#pearview
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+	option = {
+		name = port_flavour_events.6.u
+		144 = {	#manerd
+			add_province_modifier = {
+				name = port_irrigation_canal_modifier	#modifier giving 10% goods produced modifier, -2.5% dev cost and 2.5% state maintenance modifier
+				duration = -1	#permanent
+			}
+		}
+		add_treasury = -500
+		subtract_variable = {
+			which = freshwaterreservesvariable
+			value = 1
+		}
+	}
+}
