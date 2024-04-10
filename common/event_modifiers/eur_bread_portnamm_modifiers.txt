@@ -1,0 +1,152 @@
+port_creek_gnomes_united_modifier = {
+	culture_conversion_cost = -0.1
+}
+port_dwarven_metal_influx_modifier = {
+	production_efficiency = 0.05
+}
+port_a_true_gnomish_empire_modifier = {
+	prestige = 1
+	global_unrest = -1
+}
+port_gnomish_imperial_capital_modifier = {
+	province_trade_power_modifier = 0.1
+}
+port_steel_foundries_modifier = {
+	trade_goods_size_modifier = 0.25
+}
+port_resource_aquisition_modifier = {
+	technology_cost = -0.1
+}
+port_resource_aquisition_province_modifier1 = {
+	trade_goods_size_modifier = 0.1
+}
+port_resource_aquisition_province_modifier2 = {
+	trade_goods_size_modifier = 0.05
+}
+port_engineering_corps_modifier = {
+	development_cost = -0.025
+	build_time = -0.1
+}
+port_roy_tamed_modifier = {
+	local_development_cost  = -0.025
+	local_unrest = -2
+	trade_goods_size_modifier = 0.05
+}
+port_a_connected_country_modifier = {
+	governing_capacity_modifier = 0.1
+}
+port_portnamm_road_centre_modifier = {
+	province_trade_power_modifier = 0.1
+	local_development_cost = -0.05
+}
+port_theater_fame_modifier = {
+	improve_relation_modifier = 0.2
+	spy_offence  = 0.15
+}
+port_the_naar_modifier = {
+	spy_offence = 0.2
+}
+port_floodgate_modifier = {
+	local_state_maintenance_modifier = 0.05
+}
+port_protected_from_floods_modifier = {
+	local_state_maintenance_modifier = 0.05
+	local_defensiveness = 0.1
+	local_unrest = -1
+}
+port_purposefully_flooded_province_modifier = {
+	local_defender_dice_roll_bonus = 1
+	local_hostile_movement_speed = -0.33
+	local_monthly_devastation = 1
+	local_unrest = 5
+}
+port_road_hub_modifier = {
+	local_development_cost = -0.1
+	province_trade_power_modifier = 0.25
+	local_friendly_movement_speed  = 0.1
+}
+port_road_modifier = {
+	local_friendly_movement_speed = 0.1
+	province_trade_power_modifier = 0.05
+}
+port_roy_dyke_modifier = {
+	local_state_maintenance_modifier = 0.05
+}
+port_colonial_upstarts_modifier = {
+	global_colonial_growth= 10
+}
+port_new_world_outpost = {
+	local_development_cost = -0.1 
+	province_trade_power_modifier = 0.5
+}
+port_dalaire_controlled_modifier = {
+	development_cost = -0.05
+	build_cost = -0.1
+}
+port_steel_port_modifier = {
+	province_trade_power_modifier = 0.25 
+	development_cost = -0.05
+}
+port_new_world_shipyards_modifier = {
+	local_ship_cost = -0.1
+	ship_recruit_speed = -0.2
+	naval_forcelimit  = 5
+}
+port_colonial_timber_modifier = {
+	ship_cost = -0.1
+}
+konwell_exchange_modifier = {
+	build_cost = -0.025
+}
+port_mechanization_modifier = {
+	trade_goods_size_modifier = 0.25
+}
+port_new_portnamm = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.25
+}
+port_greater_dyes_supply_modifier = {
+	local_unrest = -5 
+	local_development_cost = -0.05
+}
+port_a_connected_country_modifier2 = {
+	governing_capacity_modifier = 0.15
+}
+port_hub_growth_modifier = {
+	local_development_cost = -0.1
+	province_trade_power_modifier = 0.25
+}
+port_major_relic_site = {
+	trade_goods_size_modifier = 0.5
+	local_development_cost = -0.1
+	innovativeness_gain = 0.05
+}
+port_plentiful_relics_modifier = {
+	all_power_cost = 0.025
+}
+port_university_reforms_modifier = {
+	artificer_estate_loyalty_modifier = 0.05
+	innovativeness_gain = 0.25
+	reform_progress_growth = 0.05
+}
+port_agricultural_enthusiasm_modifier = {
+	trade_goods_size_modifier = 0.1
+}
+port_bustling_farmland_modifier = {
+	local_development_cost = -0.05
+}
+port_artificial_lake_modifier = {
+	local_state_maintenance_modifier = 0.075
+}
+port_lake_creation_evacution_modifier = {
+	local_unrest = 5 
+	local_tax_modifier = -0.20
+}
+port_dug_river_modifier = {
+	local_state_maintenance_modifier = 0.05
+}
+port_irrigation_canal_modifier = {
+	trade_goods_size_modifier = 0.1
+	local_development_cost = -0.025
+	local_state_maintenance_modifier = 0.025
+}

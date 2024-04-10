@@ -1,0 +1,1300 @@
+portnamn_left_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = A19	#portnamn 
+		NOT = { map_setup = map_setup_random }
+	}
+	port_kingdom_of_iochand = {
+		position = 1
+		icon = mission_conquer_five_states
+		required_missions = {  }
+		trigger = {
+			iochand_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			southroy_area = {		
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			reaver_coast_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = iochand_area
+				area = reaver_coast_area
+				area = southroy_area
+			}
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			roysfort_area = {
+				add_permanent_claim = ROOT
+			}
+			deranne_area = {
+				add_permanent_claim = ROOT
+			}
+			redglades_area = {
+				add_claim = ROOT
+			}
+			applefields_area = {
+				add_claim = ROOT
+			}
+		}
+	}
+	port_uniting_the_creek_gnomes = {
+		position = 2
+		icon = mission_conquer_five_states
+		required_missions = { port_kingdom_of_iochand }
+		trigger = {
+			roysfort_area = {		
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			deranne_area = {
+				type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = roysfort_area
+				area = deranne_area
+			}
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_creek_gnomes_united_modifier	#modifier giving -10% culture conversion cost, yet to be localized
+				duration = 7300	#20 years
+			}
+		}
+	}
+	port_conquer_lencenor = {
+		position = 3
+		icon = mission_unite_home_region
+		required_missions = { port_uniting_the_creek_gnomes }
+		trigger = {
+			lencenor_region = {
+				type = all
+				OR = {
+					area = west_ruby_mountains_area
+					area = east_ruby_mountains_area
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			NOT = { area = west_ruby_mountains_area }
+			NOT = { area = east_ruby_mountains_area }
+			region = lencenor_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = A20	#rubyhold 
+				}
+				add_casus_belli = {
+					target = A20	#rubyhold 
+					type = cb_vassalize_mission
+					months = 240
+				}
+			}
+		}
+	}
+	port_subjugate_ruby_hold = {
+		position = 4
+		icon = mission_conquer_five_states
+		required_missions = { port_conquer_lencenor }
+		trigger = {
+			A20 = {	#ruby hold 
+				is_subject_of = ROOT 
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = A20	#ruby hold 
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_dwarven_metal_influx_modifier	#modifier giving 5% prod effiency, yet to be localized
+				duration = 18250	#50 years
+			}
+		}
+	}
+	port_compete_with_the_empire = {
+		position = 5
+		icon = mission_conquer_five_states
+		required_missions = { port_subjugate_ruby_hold }
+		trigger = {
+			west_dameshead_region = {
+				type = all
+				owned_by = ROOT 
+			}
+		}
+		provinces_to_highlight = {
+			region = west_dameshead_region
+			NOT = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_a_true_gnomish_empire_modifier	#modifier giving 1 yearly prestige, -1 national unrest, yet to be localized
+				duration = -1	#permanent
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = port_gnomish_imperial_capital_modifier	#modifier giving 10% trade power, yet to be localized
+					duration = -1	
+				}
+			}
+		}
+	}
+	port_ruined_isles = {
+		position = 6 
+		icon = mission_artificer_experience
+		required_missions = { port_international_gommo_institute }
+		trigger = {
+			north_ruined_isles_region = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+				is_city = yes
+			}
+		}
+		provinces_to_highlight = {
+			region = north_ruined_isles_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_colonial_upstarts_modifier	#modifier giving 10colonist growth, yet to be localized
+				duration = 7300	#20 years
+			}
+		}
+	}
+	port_an_outpost = {
+		position = 7
+		required_missions = { port_ruined_isles }
+		trigger = {
+			stalwart_outpost_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+				is_city = yes
+			}
+			2787 = {
+				development = 20
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = stalwart_outpost_area
+					OR = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						is_city = no
+					}
+				}
+				AND = {
+					province_id = 2787
+					NOT = { development = 20 }
+				}
+			}
+		}
+		effect = {
+			2787 = {
+				add_province_modifier = {
+					name = port_new_world_outpost	#modifier giving -10% dev cost and 50% trade power, modifier yet to be localized
+					duration = 18250	#50 years
+				}
+			}
+		}
+	}
+	port_dalaire = {
+		position = 9
+		icon = mission_artificer_experience
+		required_missions = { port_an_outpost }
+		trigger = {
+			dalaire_region = {
+				value = 20
+				country_or_non_sovereign_subject_holds = ROOT 
+				is_city = yes
+			}
+		}
+		provinces_to_highlight = {
+			reion = dalaire_region
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				is_city = no 
+			}
+		}
+		effect = {
+			random_subject_country = {
+				limit = {
+					capital_scope = {
+						region = dalaire_region
+						is_colonial_nation = yes
+					}
+				}
+				add_country_modifier = {
+					name = port_dalaire_controlled_modifier	#modifier giving -5% dev cost and -5% construction cost, yet to be localized
+					duration = 3650	#10 years
+				}
+			}
+		}
+	}
+	port_colonial_steel = {
+		position = 10
+		icon = mission_artificer_experience
+		required_missions = { port_dalaire }
+		trigger = {
+			all_subject_country  = {
+				limit = {
+					is_colonial_nation = yes
+				}
+				trade_goods_produced_amount = {
+					trade_goods = iron 
+					amount = 20
+				}
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = iron
+			OR = {
+				superregion = effelai_superregion
+				superregion = taychend_superregion
+				superregion = ruin_proper_superregion
+				superregion = torn_gates_superregion
+				superregion = ynn_superregion
+				superregion = eordand_superregion
+			}
+		}
+		effect = {
+			random_subject_country = {
+				limit = {
+					is_colonial_nation = yes 
+				}
+				random_owned_province = {
+					limit = {
+						trade_goods = iron
+					}
+					add_province_modifier = {
+						name = port_steel_foundries_modifier
+						duration = -1	#permanent
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						province_has_center_of_trade_of_level = 2
+					}
+					add_province_modifier = {
+						name = port_steel_port_modifier	#modifier giving 25% trade power and -5% dev cost modifier, modifier yet to be localized
+						duration = -1	#permanent
+					}
+				}
+			}
+		}
+	}
+}	
+portnamn_inner_left_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = A19	#portnamn 
+		NOT = { map_setup = map_setup_random }
+	}
+	port_damestear_aquisition = {
+		position = 2
+		icon = mission_crystal_cave
+		required_missions = { port_resource_aquisition }
+		trigger = {
+			trade_goods_produced_amount  = {
+				trade_goods = damestear
+				amount = 3
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = damestear
+			NOT = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_damestear_aquired_modifier	#modifier giving 5% artificer influence, 2.5% loyalty equilibirium and 5% special force limit modifier, yet to be implemented
+				duration = -1	#permanent
+			}
+		}
+	}
+	port_return_of_bay_gnomes = {
+		position = 3
+		icon = mission_unite_home_region
+		required_missions = { port_uniting_the_creek_gnomes }
+		trigger = {
+			gnomish_pass_area = {
+				type = all 
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+			nimscodd_area = {
+				type = all 
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+			dragondowns_area = {
+				type = all 
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+			dragonpoint_area = {
+				type = all 
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = gnomish_pass_area
+				area = nimscodd_area
+				area = dragondowns_area
+				area = dragonpoint_area
+			}
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+		
+		}
+	}
+	port_exchange_with_nimscodd = {
+		position = 4
+		icon = mission_artificer_experience
+		required_missions = { port_corps_of_artificers }
+		trigger = {
+			OR ={
+				AND = {
+					alliance_with = A06	#nimscodd 
+					reverse_has_opinion = {
+						who = A06
+						value = 200
+					}
+				}
+				AND = {
+					NOT = { exists = A06 }
+					169	= {	#nimscodd
+						owned_by = ROOT 
+						is_core = ROOT
+						has_building = university
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				owned_by = A06 
+				province_id = 169
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_nismcodd_exchange_modifier	#modifier giving +1 artificer capacity, 5% artificer influence, 2.5% artificer loyalty and 2.5% land fire damage, yet to be implemented
+				duration = -1	#permanent
+			}
+			if = {
+				limit = {
+					exists = A06
+				}
+				A06 = {
+					add_country_modifier = {
+						name = port_exchange_modifier	#modifier giving +1 artificer capacity, 5% artificer influence, 2.5% artificer loyalty, yet to be implemented, gotta in smth else too
+						duration = -1	#permanent
+					}
+				}
+			}
+		}
+	}
+	port_international_gommo_institute = {
+		position = 5
+		icon = mission_discussion_arch
+		required_missions = { port_exchange_with_giberd port_exchange_with_nimscodd }
+		trigger = {
+			estate_loyalty = {
+				estate = estate_artificers
+				loyalty = 75
+			}
+			estate_influence = {
+				estate = estate_artificers
+				influence = 50
+			}
+			has_estate_privilege = estate_artificers_organization_international_gommo
+		}
+		effect = {
+			remove_country_modifier = port_nismcodd_exchange_modifier
+			remove_country_modifier = port_exchange_with_giberd_modifier
+			add_country_modifier = {
+				name = port_international_gommo_institute_modifier	#modifier giving +3 artificer capacity, 20% artificer influence, 7.5% artificer loyalty, 2.5% land fire damage, 2.5% goods produced modifier and -2 national unrest, modifier yet to be implemented
+				duration = -1	#permanent
+			}
+			if = {
+				limit = {
+					A06 = {
+						has_country_modifier = port_exchange_modifier
+					}
+				}
+				A06 = {
+				remove_country_modifier = port_exchange_modifier
+					add_country_modifier = {
+						name = port_international_gommo_institute_modifier_1	#modifier giving +2 artificer capacity, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and -2 national unrest, modifier yet to be implemented
+						duration = -1	#permanent
+					}
+				}
+			}
+			if = {
+				limit = {
+					A81 = {
+						has_country_modifier = port_exchange_modifier
+					}
+				}
+				A81 = {
+				remove_country_modifier = port_exchange_modifier
+					add_country_modifier = {
+						name = port_international_gommo_institute_modifier_1	#modifier giving +2 artificer capacity, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and -2 national unrest, modifier yet to be implemented
+						duration = -1	#permanent
+					}
+				}
+			}
+			if = {
+				limit = {
+					A79 = {	#hierarchy
+						has_country_modifier = port_exchange_modifier
+					}
+				}
+				A79 = {	#hierarchy
+				remove_country_modifier = port_exchange_modifier
+					add_country_modifier = {
+						name = port_international_gommo_institute_modifier_1	#modifier giving +2 artificer capacity, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and -2 national unrest, modifier yet to be implemented
+						duration = -1	#permanent
+					}
+				}
+			}
+			if = {
+				limit = {
+					275 = { #konwell
+						owner = {	
+							has_country_modifier = port_exchange_modifier
+						}
+					}
+				}
+				275 = {	#konwell
+					owner = {
+						remove_country_modifier = port_exchange_modifier
+						add_country_modifier = {
+							name = port_international_gommo_institute_modifier_1	#modifier giving +2 artificer capacity, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and -2 national unrest, modifier yet to be implemented
+							duration = -1	#permanent
+						}
+					}
+				}
+			}
+		}
+	}
+	port_steel_industry = {
+		position = 6
+		icon = mission_smith
+		required_missions = { port_roadworks }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				trade_goods = iron
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = furnace
+			}
+			trade_goods_produced_amount = {
+				trade_goods = coal
+				amount = 20
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				trade_goods = iron
+				trade_goods = coal
+				has_latent_trade_goods = coal
+			}
+		}
+		effect = {
+			63 = {	#south viswall
+				change_trade_goods = iron
+				add_province_modifier = {
+					name = port_steel_foundries_modifier	#modifier giving 25% goods produced modifier, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+			67 = {	#lorent
+				change_trade_goods = iron
+				add_province_modifier = {
+					name = port_steel_foundries_modifier	#modifier giving 25% goods produced modifier
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	port_colonial_timber = {
+		position = 10
+		icon = mission_artificer_experience
+		required_missions = { port_dalaire }
+		trigger = {
+			all_subject_country  = {
+				limit = {
+					is_colonial_nation = yes
+				}
+				trade_goods_produced_amount = {
+					trade_goods = naval_supplies 
+					amount = 15
+				}
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = naval_supplies
+			OR = {
+				superregion = effelai_superregion
+				superregion = taychend_superregion
+				superregion = ruin_proper_superregion
+				superregion = torn_gates_superregion
+				superregion = ynn_superregion
+				superregion = eordand_superregion
+			}
+		}
+		effect = {
+			random_subject_country = {
+				limit = {
+					is_colonial_nation = yes 
+				}
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						province_has_center_of_trade_of_level = 2
+					}
+					add_province_modifier = {
+						name = port_new_world_shipyards_modifier	#modifier giving -10% local ship cost, -20% ship build time and +5 naval force limit, yet to be localized
+						duration = -1	#permanent
+					}
+				}
+			}
+			add_country_modifier = {
+				name = port_colonial_timber_modifier	#modifier giving -10% ship cost, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+	}
+}
+portnamn_inner_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = A19	#portnamn 
+		NOT = { map_setup = map_setup_random }
+	}
+	port_corps_of_artificers = {
+		position = 3
+		icon = mission_discussion_arch
+		required_missions = { port_damestear_aquisition port_reforming_the_university}
+		trigger = {
+			estate_loyalty = {
+				estate = estate_artificers
+				loyalty = 60
+			} 
+			trade_goods_produced_amount = {
+				trade_goods = gems
+				amount = 8
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = gems 
+			#NOT = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier= {
+				name = port_artificer_corps_modifier	#modifier giving 5% special force limit modifier, +1 artifificer capacity, 10% atrificer influence and 2.5% artificer loyalty, yet to be implemented
+				duration = -1	#permanent
+			}
+		}
+	}
+	port_exchange_with_giberd = {
+		position = 4
+		icon = mission_city_prosperity
+		required_missions = { port_damestear_aquisition }
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = A81	#giberd 
+					reverse_has_opinion = {
+						who = A81
+						value = 200
+					}
+				}
+				AND = {
+					NOT = { exists = A81 }	#giberd
+					271 = { 	#giberd
+						owned_by = ROOT 
+						is_core = ROOT 
+						has_building = university
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				owned_by = A81
+				province_id = 271
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_exchange_with_giberd_modifier	#modifier giving +1 artificer capacity, 5% artificer influence, 2.5% artificer loyalty and 2.5% goods produced
+				duration = -1	#permanent
+			}
+			if = {
+				limit = {
+					exists = A81
+				}
+				A81 = {
+					add_country_modifier = {
+						name = port_exchange_modifier	#modifier giving +1 artificer capacity, 5% artificer influence, 2.5% artificer loyalty, yet to be implemented, gotta in smth else too
+						duration = -1	#permanent
+					}
+				}
+			}
+		}
+	}
+	port_exchange_with_konwell = {
+		position = 5
+		icon = mission_city_prosperity
+		required_missions = { port_exchange_with_giberd }
+		trigger = {
+			275 = {	#konwell
+				has_great_project = {
+						type = konwell_the_imperial_archives
+						tier = 2
+					}
+				owner = {
+					
+					OR = {
+						tag = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					high_tolerance_gnome_race_trigger = yes
+				}
+				OR = {
+					has_gnomish_majority_trigger = yes
+					has_gnomish_minority_trigger = yes
+				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 275	#konwell 
+		}
+		effect = {
+			add_country_modifier = {
+				name = konwell_exchange_modifier	#modifier giving -2.5% construction cost, yet to be localized
+				duration = -1	#permanent
+			}
+			if = {
+				limit = {
+					NOT = {
+						mission_completed = port_international_gommo_institute
+					}
+				}
+				275 = {
+					owner = {
+						add_country_modifier = {
+							name = port_exchange_modifier
+							duration = -1	#permanent
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					mission_completed = port_international_gommo_institute
+				}
+				275 = {
+					owner = {
+						add_country_modifier = {
+							name = port_konwell_gommo_exchange_modifier	#modifier giving +1 artificer capacity, 7.5% artificer influence, 2.5% artificer loyalty, modifier yet to be implemented
+							duration = -1	#permanent
+						}
+					}
+				}
+			}
+		}
+	}
+	port_mechanization = {
+		position = 6
+		icon = mission_city_prosperity
+		required_missions = { port_roadworks}
+		trigger = {
+			126 = {
+				has_building = manufactory
+				development = 40
+				manufactoring = 100
+			}
+			has_institution  = manufactoring
+		}
+		provinces_to_highlight = {
+			province_id = 126	#Portnamn
+		}
+		effect = {
+			126 = {
+				add_province_modifier = {
+					name = port_mechanization_modifier	#modifier giving 25% goods produced, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	port_colonial_dyes = {
+		position = 10
+		icon = mission_artificer_experience
+		required_missions = { port_dalaire }
+		trigger = {
+			all_subject_country  = {
+				limit = {
+					is_colonial_nation = yes
+				}
+				trade_goods_produced_amount = {
+					trade_goods = dyes 
+					amount = 20
+				}
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = dyes
+			OR = {
+				superregion = effelai_superregion
+				superregion = taychend_superregion
+				superregion = ruin_proper_superregion
+				superregion = torn_gates_superregion
+				superregion = ynn_superregion
+				superregion = eordand_superregion
+			}
+		}
+		effect = {
+			random_subject_country = {
+				limit = {
+					is_colonial_nation = yes 
+				}
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						province_has_center_of_trade_of_level = 2
+					}
+					add_province_modifier = {
+						name = port_new_portnamm	#modifier giving -10% local dev cost, 25% production effiency, yet to be localized
+						duration = -1	#permanent
+					}
+					rename_capital = "New Portnamm"
+					change_trade_goods = dyes
+				}
+			}
+			126 = {	#portnamm
+				add_province_modifier = {
+					name = port_greater_dyes_supply_modifier	#modifier giving -5 unrest and -5% dev cost, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+}
+portnamn_inner_right_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = A19	#portnamn 
+		NOT = { map_setup = map_setup_random }
+	}
+	port_resource_aquisition = {
+		position = 1
+		icon = mission_colonial
+		required_missions = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 8
+				OR = {
+					trade_goods = copper
+					trade_goods = iron
+				}
+			}
+			trade_goods_produced_amount = {
+				trade_goods = glass
+				amount = 5
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				trade_goods = copper
+				trade_goods = iron
+				trade_goods = glass
+			}
+			NOT = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_resource_aquisition_modifier	#modifier giving -10% tech cost, yet to be localized
+				duration = 7300	#20 years
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = iron
+						trade_goods = copper
+					}
+				}
+				add_province_modifier = {
+					name = port_resource_aquisition_province_modifier1	#modifier giving 10% local goods produced, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = glass
+				}
+				add_province_modifier = {
+					name = port_resource_aquisition_province_modifier2	#modifier giving 5% local goods produced, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	port_corps_of_engineers = {
+		position = 3
+		icon = mission_colonial
+		required_missions = { port_resource_aquisition port_reforming_the_university }
+		trigger = {
+			innovativeness = 25
+			num_of_owned_provinces_with = {
+				value = 10
+				has_building = workshop
+			}
+			num_of_owned_provinces_with = {	#give decisions to add some universities
+				value = 3
+				has_building = university
+			}
+		}
+		provinces_to_highlight = { }
+		effect = {
+			add_country_modifier = {
+				name = port_engineering_corps_modifier	#modifier giving -2.5% dev cost reduction, -10% construction time, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+	}
+	port_dykes_around_the_roy = {
+		position = 4
+		icon = se_along_the_river 
+		required_missions = { port_corps_of_engineers }
+		trigger = {
+			iochand_area = {
+				type = all 
+				has_province_modifier = port_roy_dyke_modifier
+			}
+			applefields_area = {
+				type = all 
+				has_province_modifier = port_roy_dyke_modifier
+			}
+			pearpoint_area = {
+				type = all 
+				has_province_modifier = port_roy_dyke_modifier
+			}
+			128 = { has_province_modifier = port_roy_dyke_modifier }	#southroy
+			130 = { has_province_modifier = port_roy_dyke_modifier }	#smallmarches
+			131 = { has_province_modifier = port_roy_dyke_modifier }	#roysfort
+			136 = { has_province_modifier = port_roy_dyke_modifier }	#bigwheat
+			140 = { has_province_modifier = port_roy_dyke_modifier }	#stormpoint
+			144 = { has_province_modifier = port_roy_dyke_modifier }	#manerd
+			149 = { has_province_modifier = port_roy_dyke_modifier }	#norley
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = iochand_area
+				area = applefields_area
+				area = pearpoint_area
+				province_id = 128	#southroy
+				province_id = 130	#smallmarches
+				province_id = 131	#roysfort
+				province_id = 136	#bigwheat
+				province_id = 140	#stormpoint
+				province_id = 144	#manerd
+				province_id = 149	#norley
+			}
+			NOT = { has_province_modifier = port_roy_dyke_modifier }
+		}
+		effect = {
+			iochand_area = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	#modifier giving -2.5% dev cost, -2 unrest and 5% goods produced modifier, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+			applefields_area = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			pearpoint_area = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			128 = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			130 = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			131 = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			136 = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			140 = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			140 = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			144 = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			149 = {
+				add_province_modifier = {
+					name = port_roy_tamed_modifier	
+					duration = -1	#permanent
+				}
+			}
+			hidden_effect  = {
+				set_variable = {
+					which = freshwaterreservesvariable
+					value = 2
+				}
+			}
+		}
+	}
+	port_roadworks = {
+		position = 5
+		icon = mission_unite_home_region
+		required_missions = { port_dykes_around_the_roy }
+		trigger = {
+			126 = { has_province_modifier = port_road_hub_modifier }	#portnamm
+			141 = { has_province_modifier = port_road_hub_modifier }	#turnwell
+			165 = { has_province_modifier = port_road_hub_modifier }	#newcobble
+			145 = { has_province_modifier = port_road_hub_modifier }	#olmaddit
+			112 = { has_province_modifier = port_road_hub_modifier }	#westport
+			131 = { has_province_modifier = port_road_hub_modifier }	#roysfort 
+			142 = { has_province_modifier = port_road_modifier }	#iochand, this is here to prevent cheese
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 126
+				province_id = 141
+				province_id = 165
+				province_id = 145
+				province_id = 112
+				province_id = 131
+				province_id = 142
+			}
+			NOT = { has_province_modifier = port_road_hub_modifier }
+			NOT = { has_province_modifier = port_road_modifier }
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_a_connected_country_modifier	#modifier giving 10% gov cap, yet to be localized
+				duration = -1	#permanent
+			}
+			126 = {
+				add_province_modifier = {
+					name = port_portnamm_road_centre_modifier	#modifier giving 10% trade power and -5% dev cost, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	port_expanding_road_network = {
+		position = 6
+		icon = mission_unite_home_region
+		required_missions = { port_roadworks }
+		trigger = {
+			101 = { has_province_modifier = port_road_hub_modifier }	#wineport
+			108 = { has_province_modifier = port_road_hub_modifier }	#rubenaire
+			67 = { has_province_modifier = port_road_hub_modifier }	#lorentaine
+			164 = { has_province_modifier = port_road_hub_modifier }	#barrowshire
+			151 = { has_province_modifier = port_road_hub_modifier }	#beepeck
+			63 = { has_province_modifier = port_road_hub_modifier }	#south viswall 
+			115 = { has_province_modifier = port_road_hub_modifier }	#iorielen
+			158 = { has_province_modifier = port_road_modifier }	#lasean
+			162 = { has_province_modifier = port_road_modifier }	#alcandar
+		}
+		provinces_to_highlight = {
+			OR = {
+				101 = { has_province_modifier = port_road_hub_modifier }	#wineport
+				108 = { has_province_modifier = port_road_hub_modifier }	#rubenaire
+				67 = { has_province_modifier = port_road_hub_modifier }	#lorentaine
+				164 = { has_province_modifier = port_road_hub_modifier }	#barrowshire
+				151 = { has_province_modifier = port_road_hub_modifier }	#beepeck
+				63 = { has_province_modifier = port_road_hub_modifier }	#south viswall 
+				115 = { has_province_modifier = port_road_hub_modifier }	#iorielen
+				158 = { has_province_modifier = port_road_modifier }	#lasean
+				162 = { has_province_modifier = port_road_modifier }	#alcandar
+			}
+			NOT = { has_province_modifier = port_road_hub_modifier }
+			NOT = { has_province_modifier = port_road_modifier }
+		}
+		effect = {
+			remove_country_modifier = port_a_connected_country_modifier
+			add_country_modifier = {
+				name = port_a_connected_country_modifier2	#modifier giving 15% gov cap, yet to be localized
+				duration = -1	#permanent
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = port_road_hub_modifier
+				}
+				add_province_modifier = {
+					name = port_hub_growth_modifier	#modifier giving -10% dev cost and 25% trade power, yet to be localized
+					duration = 7300	#20 years
+				}
+			}
+		}
+	}
+	port_colonial_relics = {
+		position = 10
+		icon = mission_artificer_experience
+		required_missions = { port_dalaire }
+		trigger = {
+			all_subject_country  = {
+				limit = {
+					is_colonial_nation = yes
+				}
+				trade_goods_produced_amount = {
+					trade_goods = precursor_relics 
+					amount = 25
+				}
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = precursor_relics
+			OR = {
+				superregion = effelai_superregion
+				superregion = taychend_superregion
+				superregion = ruin_proper_superregion
+				superregion = torn_gates_superregion
+				superregion = ynn_superregion
+				superregion = eordand_superregion
+			}
+		}
+		effect = {
+			random_subject_country = {
+				limit = {
+					is_colonial_nation = yes 
+				}
+				random_owned_province = {
+					limit = {
+						trade_goods = precursor_relics
+					}
+					add_province_modifier = {
+						name = port_major_relic_site	#modifier giving 50% goods produced, -10% dev cost and 5% innovatinvess gain, yet to be localized
+						duration = -1	#permanent
+					}
+				}
+			}
+			add_country_modifier = {
+				name = port_plentiful_relics_modifier	#modifier giving -2.5% apc, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+	}
+}
+portnamn_right_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = A19	#portnamn 
+		NOT = { map_setup = map_setup_random }
+	}
+	port_theatre_fame = {
+		position = 1
+		icon = mission_averynn_street
+		required_missions = { }
+		trigger = {
+			prestige = 75
+			stability = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_theater_fame_modifier #modifier giving 20% improve relations speed, 15% spy network construction speed, yet to be localized
+				duration = 18250	#50 years
+			}
+		}
+	}
+	port_reforming_the_university = {
+		position = 2
+		icon = mission_artificer_experience
+		required_missions = { port_theatre_fame }
+		trigger = {
+			estate_loyalty = {
+				estate = estate_artificers
+				loyalty = 60
+			}
+			innovativeness = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_university_reforms_modifier	#giving 5% artificer loyalty, 25% innovatinvess gain and 5% reform progress growth, yet to be localized
+				duration = 7300	#20 years
+			}
+		}
+	}
+	port_the_naar = {
+		position = 3
+		icon = mission_dual_diplomacy
+		required_missions = { port_reforming_the_university }
+		trigger = {
+			calc_true_if = {
+				all_neighbor_country = {
+					has_spy_network_from = {
+						WHO = ROOT
+						value = 50
+					}
+				}
+				amount = 5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_the_naar_modifier	#modifier giving 20% spy network construction speed, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+	}
+	port_freshwater_reserves = {
+		position = 5
+		icon = mission_tree_fishing
+		required_missions = { port_dykes_around_the_roy }
+		trigger = {
+			check_variable = {
+				which = freshwaterreservesvariable
+				value = 12
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = small_country_region
+						area = iochand_area
+					}
+					OR = {
+						trade_goods = grain
+						trade_goods = wine 
+						trade_goods = tobacco
+					}
+				}
+				add_province_modifier = {
+					name = port_agricultural_enthusiasm_modifier	#modifier giving 10% goods produced, yet to be localized
+					duration = 7300	#20 years
+				}
+			}
+		}
+	}
+	port_irrigation_canals = {
+		position = 6
+		icon = mission_tree_fishing
+		required_missions = { port_freshwater_reserves }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 18
+				limit = {
+				
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 128	#southroy
+				province_id = 142	#iochand
+				province_id = 130	#smallmarches
+				province_id = 131	#roysfort
+				province_id = 132	#greenberry
+				province_id = 133	#rosefield
+				province_id = 134	#middlewood
+				province_id = 136	#bigwheat
+				province_id = 166	#merryfield
+				province_id = 159	#thomsbridge
+				province_id = 135	#tipney
+				province_id = 163	#littlebrook
+				province_id = 139	#appleton
+				province_id = 162	#aelcandar
+				province_id = 12	#greymill
+				province_id = 76	#old course
+				province_id = 149	#norley
+				province_id = 147	#pearview
+				province_id = 144	#manerd
+			}
+			NOT = {
+				has_province_modifier = port_irrigation_canals
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = port_irrigation_canals
+				}
+				add_province_modifier = {
+					name = port_bustling_farmland_modifier	#modifier giving -5% dev cost modifier, yet to be localized
+					duration = 7300	#20 years
+				}
+			}
+			change_variable = {
+				which = freshwaterreservesvariable
+				value = 3
+			}
+		}
+	}
+}
