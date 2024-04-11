@@ -2778,16 +2778,9 @@ zohebidi_factory = {
 		
 		on_upgraded = {
             medium_increase_of_halfling_tolerance_effect = yes
-            dogo_babolo_area = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-			}
 			5763 = {
                 add_halfling_minority_size_effect = yes
-				add_base_tax = 1
 				add_base_production = 1
-				add_base_manpower = 1
             }
             define_advisor = {
 				type = artist
@@ -2807,9 +2800,7 @@ zohebidi_factory = {
 				change_trade_goods = cocoa
 			}
 			5762 = {
-				add_base_tax = 1
 				add_base_production = 1
-				add_base_manpower = 1
 				add_halfling_minority_size_effect = yes
 				limit = { 
 					NOT = { 
@@ -2823,9 +2814,7 @@ zohebidi_factory = {
 				change_trade_goods = sugar
 			}
             6309 = {
-				add_base_tax = 1
 				add_base_production = 1
-				add_base_manpower = 1
 				add_halfling_minority_size_effect = yes
 				limit = { 
 					NOT = { 
@@ -2839,9 +2828,7 @@ zohebidi_factory = {
 				change_trade_goods = sugar
 			}
             5764 = {
-				add_base_tax = 1
 				add_base_production = 1
-				add_base_manpower = 1
 				add_halfling_minority_size_effect = yes
 				limit = { 
 					NOT = { 
@@ -2891,7 +2878,6 @@ zohebidi_factory = {
 			5763 = {
 				add_base_tax = 1
 				add_base_production = 1
-				add_base_manpower = 1
 				add_halfling_minority_size_effect = yes
 			}
 			if = {
@@ -2903,9 +2889,7 @@ zohebidi_factory = {
 				change_trade_goods = cocoa
 			}
 			5762 = {
-				add_base_tax = 1
 				add_base_production = 1
-				add_base_manpower = 1
 				add_halfling_minority_size_effect = yes
 				limit = { 
 					NOT = { 
@@ -2919,9 +2903,7 @@ zohebidi_factory = {
 				change_trade_goods = sugar
 			}
             6309 = {
-				add_base_tax = 1
 				add_base_production = 1
-				add_base_manpower = 1
 				add_halfling_minority_size_effect = yes
 				limit = { 
 					NOT = { 
@@ -2935,9 +2917,7 @@ zohebidi_factory = {
 				change_trade_goods = sugar
 			}
             5764 = {
-				add_base_tax = 1
 				add_base_production = 1
-				add_base_manpower = 1
 				add_halfling_minority_size_effect = yes
 				limit = { 
 					NOT = { 
