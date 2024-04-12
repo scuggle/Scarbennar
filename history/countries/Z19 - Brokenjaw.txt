@@ -6,7 +6,7 @@ government_rank = 1
 primary_culture = gray_orc
 religion = old_dookan
 technology_group = tech_orcish
-historical_rival = Z18
+#historical_rival = Z18
 capital = 991
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
