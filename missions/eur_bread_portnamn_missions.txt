@@ -5,6 +5,7 @@ portnamn_left_branch = {
 	potential = {
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_kingdom_of_iochand = {
 		position = 1
@@ -312,6 +313,7 @@ portnamn_inner_left_branch = {
 	potential = {
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_damestear_aquisition = {
 		position = 2
@@ -602,6 +604,7 @@ portnamn_inner_branch = {
 	potential = {
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_corps_of_artificers = {
 		position = 3
@@ -824,6 +827,7 @@ portnamn_inner_right_branch = {
 	potential = {
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_resource_aquisition = {
 		position = 1
@@ -1157,6 +1161,7 @@ portnamn_right_branch = {
 	potential = {
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_theatre_fame = {
 		position = 1
