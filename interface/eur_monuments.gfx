@@ -84,6 +84,15 @@ spriteType = {
         name = "GFX_great_project_zohebidi_factory"
          texturefile = "gfx//interface//great_projects//great_project_zohebidi_factory.dds"
     }
+
+    spriteType = {
+        name = "GFX_great_project_emerald_of_the_seas"
+         texturefile = "gfx//interface//great_projects//great_project_emerald_of_the_seas.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_forge_towers"
+         texturefile = "gfx//interface//great_projects//great_project_forge_towers.dds"
+    }
 ########
 #Examples
 ########
