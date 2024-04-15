@@ -1,0 +1,102 @@
+namespace = eur_domandrod_portal
+
+#Portal opens
+#    id = eur_domandrod_portal.1
+#	title = eur_domandrod_portal.1.t 
+#	desc = eur_domandrod_portal.1.d 
+#	picture = no
+#
+ #   is_triggered_only = yes
+
+#    fire_only_once = yes
+
+ #   hidden = yes
+
+  #  trigger = {
+   #     is_year = 1480
+    #}
+
+   # hidden_effect = {
+    #    6241 = {
+     #       set_province_flag = domandrod_fey_portal_open
+      #      add_great_project = {
+		#		type = domandrod_fey_portal
+		#		instant = no
+	#		} 
+    #    }
+	#	6258 = {
+    #        set_province_flag = deepwoods_fey_portal_open
+    #        add_great_project = {
+#				type = deepwoods_fey_portal
+#				instant = no
+#			}
+ #       }
+#        every_country = {
+#				limit = { culture_group =  eordan_ruinborn_elf }
+#				country_event = { id = cyranvar.14 days = 180 }
+#		}
+ #       2027 = {
+#			owner = { set_country_flag = eord_domandrod_opened }
+#			add_great_project = {
+#				type = domandrod_spring_gate
+#				instant = yes
+#			}
+#		}
+#		2042 = {
+#			owner = { set_country_flag = eord_domandrod_opened }
+#			add_great_project = {
+#				type = domandrod_summer_gate
+#				instant = yes
+#			}
+#		}
+#		2003 = {
+#			owner = { set_country_flag = eord_domandrod_opened }
+#			add_great_project = {
+#				type = domandrod_autumn_gate
+#				instant = yes
+#			}
+#		}
+#		1994 = {
+#			owner = { set_country_flag = eord_domandrod_opened }
+#			add_great_project = {
+#				type = domandrod_winter_gate
+#				instant = yes
+#			}
+#		}
+#		1964 = {
+#			owner = { set_country_flag = eord_domandrod_opened }
+#			add_great_project = {
+#				type = domandrod_winter_gate2
+#				instant = yes
+#			}
+#		}
+ #   }
+    
+
+#Cyranvar went isolationist
+#country_event = {
+#	id = eur_domandrod_portal.2
+#	title = eur_domandrod_portal.2.t 
+#	desc = eur_domandrod_portal.2.d 
+#	picture = no
+
+#    is_triggered_only = yes
+
+#   trigger = {
+#        limit = {
+#            region = domandrod_region 
+#            owner = {
+#			    OR = {
+#                    AND = {
+#                        tag = I45
+#                        has_country_flag = cyranvar_isolationist_path
+#                    }
+#                    AND = {
+#                        is_subject_of = I45
+#                        limit = { I45 = { has_country_flag = cyranvar_isolationist_path } }
+#                    }
+#                }
+#		    }
+#        }
+#    }
+#}
