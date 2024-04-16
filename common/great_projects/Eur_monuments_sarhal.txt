@@ -3379,24 +3379,16 @@ labyrinth_of_Yaddirralta = {
  		AND = {
 
  			province_is_or_accepts_culture = yes
-			OR = {
-				government = republic
-				has_parliament = yes
-				revolutionary = yes
-				is_statists_in_power = yes
-			}
+			religion = aakhetist
+			has_owner_religion = yes
  		}
  	}	
  	can_upgrade_trigger = {
  		AND = {
 
  			province_is_or_accepts_culture = yes
-			OR = {
-				government = republic
-				has_parliament = yes
-				revolutionary = yes
-				is_statists_in_power = yes
-			}
+			religion = aakhetist
+			has_owner_religion = yes
  		}
  	}	
  	keep_trigger = {
