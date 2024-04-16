@@ -2540,123 +2540,1049 @@
 # 	}
 # }
 
-# #Market Place of Liberation
-# square_of_liberty = {
-# 	start = 5881
-# 	date = 01.01.01
-# 	time = {
-# 		months = 0
-# 	}
-# 	build_cost = 0
-# 	can_be_moved = no
-# 	move_days_per_unit_distance = 1
-# 	starting_tier = 0
-# 	type = monument
-# 	build_trigger = {	
-# 	}
-# 	on_built = {		
-# 	}
-# 	on_destroyed = {	
-# 	}
-# 	can_use_modifiers_trigger = {
-# 		AND = {
+ #Market Place of Liberation
+ square_of_liberty = { #Samsumbat
+ 	start = 5881
+ 	date = 01.01.01
+ 	time = {
+ 		months = 0
+ 	}
+ 	build_cost = 0
+ 	can_be_moved = no
+ 	move_days_per_unit_distance = 1
+ 	starting_tier = 1
+ 	type = monument
+ 	build_trigger = {	
+ 	}
+ 	on_built = {		
+ 	}
+ 	on_destroyed = {	
+ 	}
+ 	can_use_modifiers_trigger = {
+ 		AND = {
 
-# 			province_is_or_accepts_culture = yes
-# 		}
-# 	}	
-# 	can_upgrade_trigger = {
-# 		AND = {
+ 			province_is_or_accepts_culture = yes
+			OR = {
+				government = republic
+				has_parliament = yes
+				revolutionary = yes
+				is_statists_in_power = yes
+			}
+ 		}
+ 	}	
+ 	can_upgrade_trigger = {
+ 		AND = {
 
-# 			province_is_or_accepts_culture = yes
-# 		}
-# 	}	
-# 	keep_trigger = {
-# 	}
+ 			province_is_or_accepts_culture = yes
+			OR = {
+				government = republic
+				has_parliament = yes
+				revolutionary = yes
+				is_statists_in_power = yes
+			}
+ 		}
+ 	}	
+ 	keep_trigger = {
+ 	}
 
-# tier_0 = {
-# 		upgrade_time = {
-# 			months = 0
-# 		}
-# 		cost_to_upgrade = {
-# 			factor = 0
-# 		}
-# 		province_modifiers = {
-# 		}
-# 		area_modifier = {
-# 		}
-# 		country_modifiers = {
-# 		}
-# 		on_upgraded = {
-# 		}
-# 	}
+ tier_0 = {
+ 		upgrade_time = {
+ 			months = 0
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 0
+ 		}
+ 		province_modifiers = {
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
 
-# 	tier_1 = {
-# 		upgrade_time = {
-# 			months = 120
-# 		}
-# 		cost_to_upgrade = {
-# 			factor = 1000
-# 		}
-# 		province_modifiers = {
-# 			local_development_cost = -0.1
-# 			local_monthly_devastation = -0.05
-# 			local_tax_modifier = 0.25
-# 		}
-# 		area_modifier = {
-# 		}
-# 		country_modifiers = {
-# 			monthly_splendor = 0.5
-# 			reform_progress_growth = 0.05
-# 			prestige = 0.25
-# 		}
-# 		on_upgraded = {
-# 		}
-# 	}
+ 	tier_1 = {
+ 		upgrade_time = {
+ 			months = 120
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 1000
+ 		}
+ 		province_modifiers = {
+ 			
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 			prestige = 0.5
+			legitimacy = 0.33
+			republican_tradition = 0.1
+			rebel_support_efficiency = 0.1
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
 
-# 	tier_2 = {
-# 		upgrade_time = {
-# 			months = 240
-# 		}
-# 		cost_to_upgrade = {
-# 			factor = 2500
-# 		}
-# 		province_modifiers = {
-# 			local_development_cost = -0.15
-# 			local_monthly_devastation = -0.05
-# 			local_tax_modifier = 0.50
-# 		}
-# 		area_modifier = {
-# 		}
-# 		country_modifiers = {
-# 			monthly_splendor = 1
-# 			reform_progress_growth = 0.1
-# 			prestige = 0.5
-# 		}
-# 		on_upgraded = {
-# 		}
-# 	}
+ 	tier_2 = {
+ 		upgrade_time = {
+ 			months = 240
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 3500
+ 		}
+ 		province_modifiers = {
+ 			
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 			prestige = 0.75
+			legitimacy = 0.66
+			republican_tradition = 0.2
+			rebel_support_efficiency = 0.25
+			candidate_random_bonus = 1
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
 
-# 	tier_3 = {
-# 		upgrade_time = {
-# 			months = 480
-# 		}
-# 		cost_to_upgrade = {
-# 			factor = 5000
-# 		}
-# 		province_modifiers = {
-# 			local_development_cost = -0.2
-# 			local_monthly_devastation = -0.1
-# 			local_tax_modifier = 0.75
-# 		}
-# 		area_modifier = {
-# 			local_monthly_devastation = -0.05
-# 		}
-# 		country_modifiers = {
-# 			monthly_splendor = 2
-# 			reform_progress_growth = 0.15
-# 			prestige = 1
-# 		}
-# 		on_upgraded = {
-# 		}
-# 	}
-# }
+ 	tier_3 = {
+ 		upgrade_time = {
+ 			months = 480
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 7000
+ 		}
+ 		province_modifiers = {
+ 			
+ 		}
+ 		area_modifier = {
+ 			
+ 		}
+ 		country_modifiers = {
+ 			prestige = 1
+			legitimacy = 1
+			republican_tradition = 0.3
+			rebel_support_efficiency = 0.5
+			candidate_random_bonus = 1
+			max_revolutionary_zeal= 20
+			max_absolutism = 10
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+ }
+
+#Chocolate factory in not-Benin
+zohebidi_factory = {
+	start = 5763
+
+	date = 1000.06.20
+
+	time = { months = 1 }
+
+	build_cost = 1
+
+	can_be_moved = no
+
+	starting_tier = 0
+
+	# project type
+	type = monument
+
+	build_trigger = { 
+		owner = { OR = { medium_tolerance_halfling_race_trigger = yes high_tolerance_halfling_race_trigger = yes } }
+	}
+
+	on_built = {}
+
+	on_destroyed = {}
+
+	can_use_modifiers_trigger = {
+		owner = { OR = { medium_tolerance_halfling_race_trigger = yes high_tolerance_halfling_race_trigger = yes } }
+	}
+
+	can_upgrade_trigger = {
+		owner = { OR = { medium_tolerance_halfling_race_trigger = yes high_tolerance_halfling_race_trigger = yes } }
+	}
+
+	keep_trigger = {}
+
+	# tier data
+	tier_0 = {
+		upgrade_time = { months = 0 }
+
+		cost_to_upgrade = { factor = 0 }
+
+		province_modifiers = {}
+
+		area_modifier = {}
+
+		country_modifiers = {}
+
+		on_upgraded = {}
+    }
+
+	tier_1 = {
+		upgrade_time = { months = 120 }
+
+		cost_to_upgrade = { factor = 1000 }
+
+		province_modifiers = { 
+			trade_goods_size_modifier = 0.15
+            trade_value_modifier = 0.15
+            trade_goods_size = 0.25
+		}
+
+		area_modifier = {
+
+		}
+
+		country_modifiers = {}
+
+		on_upgraded = {
+			5763 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_halfling_minority_size_effect = yes
+			}
+            medium_increase_of_halfling_tolerance_effect = yes
+            define_advisor = {
+				type = artist
+				name = "Solo Wordweaver"
+				skill = 3
+				religion = nakavy_avo
+				culture = zohebidi
+				location = 5763
+				discount = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						trade_goods = cocoa
+					}
+				}
+				change_trade_goods = cocoa
+            }
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = { months = 240 }
+
+		cost_to_upgrade = { factor = 2500 }
+
+		province_modifiers = { 
+			trade_goods_size_modifier = 0.1
+            trade_goods_size = 0.5
+		}
+
+		area_modifier = {
+			trade_goods_size_modifier = 0.2
+            trade_value_modifier = 0.2
+		}
+
+        country_modifiers = {
+            manpower_recovery_speed = 0.05
+        }
+
+		
+		on_upgraded = {
+            medium_increase_of_halfling_tolerance_effect = yes
+			5763 = {
+                add_halfling_minority_size_effect = yes
+				add_base_production = 1
+            }
+            define_advisor = {
+				type = artist
+				name = "Haingo Wisewords"
+				skill = 4
+				religion = nakavy_avo
+				culture = zohebidi
+				location = 5763
+				discount = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						trade_goods = cocoa
+					}
+				}
+				change_trade_goods = cocoa
+			}
+			5762 = {
+				add_base_production = 1
+				add_halfling_minority_size_effect = yes
+				limit = { 
+					NOT = { 
+						OR = {
+							trade_goods = damestear
+							trade_goods = gold
+							trade_goods = mithril
+						}
+					} 
+				}
+				change_trade_goods = sugar
+			}
+            6309 = {
+				add_base_production = 1
+				add_halfling_minority_size_effect = yes
+				limit = { 
+					NOT = { 
+						OR = {
+							trade_goods = damestear
+							trade_goods = gold
+							trade_goods = mithril
+						}
+					} 
+				}
+				change_trade_goods = sugar
+			}
+            5764 = {
+				add_base_production = 1
+				add_halfling_minority_size_effect = yes
+				limit = { 
+					NOT = { 
+						OR = {
+							trade_goods = damestear
+							trade_goods = gold
+							trade_goods = mithril
+						}
+					} 
+				}
+				change_trade_goods = livestock
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = { months = 360 }
+
+		cost_to_upgrade = {	factor = 5000 }
+
+		
+		province_modifiers = { 
+			trade_goods_size_modifier = 0.2
+            trade_goods_size = 1
+		}
+
+		area_modifier = {
+			trade_goods_size_modifier = 0.3
+            trade_value_modifier = 0.3
+		}
+
+        country_modifiers = {
+            manpower_recovery_speed = 0.1
+        }
+		
+		on_upgraded = {
+            medium_increase_of_halfling_tolerance_effect = yes
+            define_advisor = {
+				type = artist
+				name = "Masana Boldsong"
+				skill = 5
+				religion = nakavy_avo
+				culture = zohebidi
+				location = 5763
+				discount = yes
+			}
+			5763 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_halfling_minority_size_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						trade_goods = cocoa
+					}
+				}
+				change_trade_goods = cocoa
+			}
+			5762 = {
+				add_base_production = 1
+				add_halfling_minority_size_effect = yes
+				limit = { 
+					NOT = { 
+						OR = {
+							trade_goods = damestear
+							trade_goods = gold
+							trade_goods = mithril
+						}
+					} 
+				}
+				change_trade_goods = sugar
+			}
+            6309 = {
+				add_base_production = 1
+				add_halfling_minority_size_effect = yes
+				limit = { 
+					NOT = { 
+						OR = {
+							trade_goods = damestear
+							trade_goods = gold
+							trade_goods = mithril
+						}
+					} 
+				}
+				change_trade_goods = sugar
+			}
+            5764 = {
+				add_base_production = 1
+				add_halfling_minority_size_effect = yes
+				limit = { 
+					NOT = { 
+						OR = {
+							trade_goods = damestear
+							trade_goods = gold
+							trade_goods = mithril
+						}
+					} 
+				}
+				change_trade_goods = livestock
+			}
+		}
+	}
+}
+
+#The Forge-Towers of Tzusik
+forge_towers = {
+	start = 5956 #Tzusik
+
+	date = 1000.06.20
+
+	time = { months = 1 }
+
+	build_cost = 1
+
+	can_be_moved = no
+
+	starting_tier = 1
+
+	# project type
+	type = monument
+
+	build_trigger = { 
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	on_built = {}
+
+	on_destroyed = {}
+
+	can_use_modifiers_trigger = {
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	can_upgrade_trigger = {
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes	
+	}
+
+	keep_trigger = {}
+
+	# tier data
+	tier_0 = {
+		upgrade_time = { months = 0 }
+
+		cost_to_upgrade = { factor = 0 }
+
+		province_modifiers = {}
+
+		area_modifier = {}
+
+		country_modifiers = {}
+
+		on_upgraded = {}
+    }
+
+	tier_1 = {
+		upgrade_time = { months = 120 }
+
+		cost_to_upgrade = { factor = 1000 }
+
+		province_modifiers = { 
+            local_development_cost = -0.1
+            trade_goods_size_ = 0.25
+		}
+
+		area_modifier = {}
+
+		country_modifiers = {
+			production_efficiency = 0.05
+		}
+
+		on_upgraded = {}
+	}
+
+	tier_2 = {
+		upgrade_time = { months = 240 }
+
+		cost_to_upgrade = { factor = 2500 }
+
+		province_modifiers = { 
+            trade_goods_size = 0.5
+			trade_value_modifier = 0.25	
+			local_development_cost = -0.2
+		}
+
+		area_modifier = {}
+
+        country_modifiers = {
+           	production_efficiency = 0.075
+			build_cost = -0.025
+        }
+
+		
+		on_upgraded = {
+			5956 = {
+				change_trade_goods = Iron
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = { months = 360 }
+
+		cost_to_upgrade = {	factor = 5000 }
+
+		
+		province_modifiers = { 
+			local_development_cost = -0.3
+			trade_value_modifier = 0.5
+            trade_goods_size = 1
+		}
+
+		area_modifier = {}
+
+        country_modifiers = {
+            production_efficiency = 0.1
+			build_cost = -0.05
+        }
+		
+		on_upgraded = {}
+	}
+}
+
+#Lighthouse of Karrask
+emerald_of_the_seas = {
+	start = 5898 #Karrask
+
+	date = 1000.06.20
+
+	time = { months = 1 }
+
+	build_cost = 1
+
+	can_be_moved = no
+
+	starting_tier = 2
+
+	# project type
+	type = monument
+
+	build_trigger = { 
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	on_built = {}
+
+	on_destroyed = {}
+
+	can_use_modifiers_trigger = {
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	can_upgrade_trigger = {
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	keep_trigger = {}
+
+	# tier data
+	tier_0 = {
+		upgrade_time = { months = 0 }
+
+		cost_to_upgrade = { factor = 0 }
+
+		province_modifiers = {}
+
+		area_modifier = {}
+
+		country_modifiers = {}
+
+		on_upgraded = {}
+    }
+
+	tier_1 = {
+		upgrade_time = { months = 120 }
+
+		cost_to_upgrade = { factor = 1000 }
+
+		province_modifiers = { 
+			province_trade_power_value = 10
+		}
+
+		area_modifier = {}
+
+		country_modifiers = {
+			trade_steering = 0.05
+		}
+
+		on_upgraded = {
+			add_unit_construction = {
+				type = light_ship
+				amount = 5
+				speed = 0.01
+				cost = 0
+			}
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = { months = 240 }
+
+		cost_to_upgrade = { factor = 2500 }
+
+		province_modifiers = { 
+			province_trade_power_value = 15
+		}
+
+		area_modifier = {}
+
+        country_modifiers = {
+            trade_steering = 0.1
+			merchants = 1
+			global_trade_power = 0.05
+        }
+
+		
+		on_upgraded = {
+ 			add_unit_construction = {
+				type = light_ship
+				amount = 5
+				speed = 0.01
+				cost = 0
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = { months = 360 }
+
+		cost_to_upgrade = {	factor = 5000 }
+
+		
+		province_modifiers = { 
+			province_trade_power_value = 20
+		}
+
+		area_modifier = {}
+
+        country_modifiers = {
+            trade_steering = 0.15
+			merchants = 1
+			global_trade_power = 0.1
+        }
+		
+		on_upgraded = {
+			add_unit_construction = {
+				type = light_ship
+				amount = 5
+				speed = 0.01
+				cost = 0
+			}
+		}
+	}
+}
+#labyrinth library of Yaddirralta
+labyrinth_of_Yaddirralta = {
+	start = 5646 #Shangra
+
+	date = 1000.06.20
+
+	time = { months = 1 }
+
+	build_cost = 1
+
+	can_be_moved = no
+
+	starting_tier = 1
+
+	# project type
+	type = monument
+
+	build_trigger = { 
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	on_built = {}
+
+	on_destroyed = {}
+
+	can_use_modifiers_trigger = {
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	can_upgrade_trigger = {
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	keep_trigger = {}
+
+	# tier data
+	tier_0 = {
+		upgrade_time = { months = 0 }
+
+		cost_to_upgrade = { factor = 0 }
+
+		province_modifiers = {}
+
+		area_modifier = {}
+
+		country_modifiers = {}
+
+		on_upgraded = {}
+    }
+
+	tier_1 = {
+		upgrade_time = { months = 120 }
+
+		cost_to_upgrade = { factor = 1000 }
+
+		province_modifiers = { 
+			
+		}
+
+		area_modifier = {}
+
+		country_modifiers = {
+			technology_cost = -0.05
+			yearly_innovativeness = 0.1
+		}
+
+		on_upgraded = {
+
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = { months = 240 }
+
+		cost_to_upgrade = { factor = 2500 }
+
+		province_modifiers = { 
+			trade_value_modifier = 0.25
+		}
+
+		area_modifier = {}
+
+        country_modifiers = {
+			technology_cost = -0.075
+			yearly_innovativeness = 0.15
+        }
+
+		
+		on_upgraded = {
+ 			change_trade_goods = paper
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = { months = 360 }
+
+		cost_to_upgrade = {	factor = 5000 }
+
+		
+		province_modifiers = { 
+			trade_value_modifier = 0.33
+		}
+
+		area_modifier = {}
+
+        country_modifiers = {
+            technology_cost = -0.1 
+			yearly_innovativeness = 0.2
+        }
+		
+		on_upgraded = {
+			change_trade_goods = precursor_relics
+		}
+	}
+}
+
+ #Aakhetist Fortress
+ bronze_fortress = { #Aramoole
+ 	start = 5870
+ 	date = 01.01.01
+ 	time = {
+ 		months = 0
+ 	}
+ 	build_cost = 0
+ 	can_be_moved = no
+ 	move_days_per_unit_distance = 1
+ 	starting_tier = 1
+ 	type = monument
+ 	build_trigger = {	
+ 	}
+ 	on_built = {		
+ 	}
+ 	on_destroyed = {	
+ 	}
+ 	can_use_modifiers_trigger = {
+ 		AND = {
+
+ 			province_is_or_accepts_culture = yes
+			religion = aakhetist
+			has_owner_religion = yes
+ 		}
+ 	}	
+ 	can_upgrade_trigger = {
+ 		AND = {
+
+ 			province_is_or_accepts_culture = yes
+			religion = aakhetist
+			has_owner_religion = yes
+ 		}
+ 	}	
+ 	keep_trigger = {
+ 	}
+
+ tier_0 = {
+ 		upgrade_time = {
+ 			months = 0
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 0
+ 		}
+ 		province_modifiers = {
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+
+ 	tier_1 = {
+ 		upgrade_time = {
+ 			months = 120
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 1000
+ 		}
+ 		province_modifiers = {
+ 			local_defensiveness = 0.15
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 			prestige_decay = -0.33
+			church_power_modifier = 0.1
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+
+ 	tier_2 = {
+ 		upgrade_time = {
+ 			months = 240
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 2500
+ 		}
+ 		province_modifiers = {
+ 			local_defensiveness = 0.25
+			fort_level = 1
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 			prestige_decay = -0.66
+			church_power_modifier = 0.2
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+
+ 	tier_3 = {
+ 		upgrade_time = {
+ 			months = 480
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 5000
+ 		}
+ 		province_modifiers = {
+ 			local_defensiveness = 0.5
+			fort_level = 1
+			garrison_size = 0.25
+ 		}
+ 		area_modifier = {
+ 			
+ 		}
+ 		country_modifiers = {
+ 			prestige_decay = -1
+			church_power_modifier = 0.3
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+ }
+
+  #Nzery Harpy Hanging Gardens
+ nzeri_hanging_gardens = { #Zerkis
+ 	start = 6125
+ 	date = 01.01.01
+ 	time = {
+ 		months = 0
+ 	}
+ 	build_cost = 0
+ 	can_be_moved = no
+ 	move_days_per_unit_distance = 1
+ 	starting_tier = 1
+ 	type = monument
+ 	build_trigger = {	
+ 	}
+ 	on_built = {		
+ 	}
+ 	on_destroyed = {	
+ 	}
+ 	can_use_modifiers_trigger = {
+ 		owner = { OR = { medium_tolerance_harpy_race_trigger = yes high_tolerance_harpy_race_trigger = yes } }
+ 	}	
+ 	can_upgrade_trigger = {
+ 		owner = { OR = { medium_tolerance_harpy_race_trigger = yes high_tolerance_harpy_race_trigger = yes } }
+	}
+ 	keep_trigger = {
+ 	}
+
+ tier_0 = {
+ 		upgrade_time = {
+ 			months = 0
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 0
+ 		}
+ 		province_modifiers = {
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+
+ 	tier_1 = {
+ 		upgrade_time = {
+ 			months = 120
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 1000
+ 		}
+ 		province_modifiers = {
+ 			
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 			prestige = 0.5
+			heir_chance = 0.33
+			global_unrest = -0.5
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+
+ 	tier_2 = {
+ 		upgrade_time = {
+ 			months = 240
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 2000
+ 		}
+ 		province_modifiers = {
+ 			
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 			prestige = 0.75
+			heir_chance = 0.66
+			global_unrest = -1
+			global_prosperity_growth = 0.1
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+
+ 	tier_3 = {
+ 		upgrade_time = {
+ 			months = 480
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 4000
+ 		}
+ 		province_modifiers = {
+ 			
+ 		}
+ 		area_modifier = {
+ 			
+ 		}
+ 		country_modifiers = {
+ 			prestige = 1
+			heir_chance = 1
+			global_unrest = -1.5
+			global_prosperity_growth = 0.15
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+ }

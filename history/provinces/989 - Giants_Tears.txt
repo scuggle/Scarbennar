@@ -1,15 +1,19 @@
 
 # No previous file for Ontario
+owner = Z19
+controller = Z19
+add_core = Z19
 culture = gray_orc
 religion = old_dookan
 capital = ""
+trade_goods = fur
 
 
 hre = no
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 2
+base_production = 2
+base_manpower = 3
 
 trade_goods = unknown
 

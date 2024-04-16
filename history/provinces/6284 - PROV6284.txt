@@ -1,13 +1,17 @@
 
 # No previous file for PROV6284
-culture = forest_troll
-religion = mountain_watchers
-trade_goods = unknown
+owner = Z47
+controller = Z47
+add_core = Z47
+culture = gray_orc
+religion = old_dookan
+capital = ""
+trade_goods = ivory
 hre = no
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 3
+base_manpower = 3
 
 capital = ""
 

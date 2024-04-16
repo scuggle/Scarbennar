@@ -8,15 +8,15 @@ add_accepted_culture = half_orc
 religion = old_dookan
 technology_group = tech_orcish
 national_focus = MIL
-historical_rival = Z19
-historical_rival = Z47
+#historical_rival = Z19
+#historical_rival = Z47
 capital = 740
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 
 1414.1.1 = {
 	monarch = {
-		name = "Brasûr"
+		name = "BrasÃ»r"
 		dynasty = "Frozenmaw"
 		birth_date = 1399.5.12
 		adm = 6

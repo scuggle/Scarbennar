@@ -22,6 +22,7 @@ country_decisions = {
 		}
 
 		allow = { 
+			adm_tech = 10
 			hidden_trigger = {
 				primary_culture = common_goblin
 			}
@@ -45,18 +46,22 @@ country_decisions = {
 			country_event = { id = ideagroups.1 } #Swap Ideas
 			set_country_flag = formed_escanni_goblin_nation_flag
 
-			every_subject_country = {
-				limit = {
-					OR = {
-						primary_culture = common_goblin
-						primary_culture = forest_goblin
-					}
-					capital_scope = { superregion = escann_superregion }
-				}
-				every_owned_province = {
-					add_core = ROOT
-					cede_province = ROOT
-				}
+			#every_subject_country = {
+			#	limit = {
+			#		OR = {
+			#			primary_culture = common_goblin
+			#			primary_culture = forest_goblin
+			#		}
+			#		capital_scope = { superregion = escann_superregion }
+			#	}
+			#	every_owned_province = {
+			#		add_core = ROOT
+			#		cede_province = ROOT
+			#	}
+			#}
+			add_country_modifier = {
+				name = "mor_looks_outward"
+				duration = 5475
 			}
 		}
 	}

@@ -806,6 +806,8 @@ khenak_copper_mine = {
 		}
 
 		country_modifiers = {
+			interest = -0.05
+			inflation_reduction = 0.05
 		}
 
 		on_upgraded = {
@@ -832,6 +834,7 @@ khenak_copper_mine = {
 
 		country_modifiers = {
 			interest = -0.10
+			inflation_reduction = 0.1
 		}
 
 		on_upgraded = {
@@ -857,6 +860,7 @@ khenak_copper_mine = {
 
 		country_modifiers = {
 			interest = -0.15
+			inflation_reduction = 0.15
 		}
 
 		on_upgraded = {
