@@ -49,50 +49,6 @@ X01_ideas = {
 	}
 }
 
-#Carneter
-X02_ideas = {
-	start = {
-		adm_advisor_cost = -0.2 #Barons of Carneter.
-		stability_cost_modifier = -0.2 #Stubborn Nobles.
-	}
-
-	bonus = {
-		discipline = 0.05
-	}
-	
-	trigger = {
-		OR = {
-			tag = X02
-		}
-	}
-	free = yes		#will be added at load.
-	
-	X02_one = {
-		manpower_in_own_culture_provinces = 0.33
-	}
-	X02_two = {
-		female_advisor_chance = 0.25
-		may_recruit_female_generals = yes
-	}
-	X02_three = {
-		build_time = -0.2
-	}
-	X02_four = {
-		infantry_power = 0.10
-	}
-	X02_five = {
-		diplomats = 1
-		envoy_travel_time = -0.25
-	}
-	X02_six = {
-		production_efficiency = 0.10
-		culture_conversion_cost = -0.10
-	}
-	X02_seven = {
-		global_unrest = -2
-	}
-}
-
 #Great Xhaz
 X03_ideas = {
 	start = {

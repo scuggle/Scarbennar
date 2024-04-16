@@ -1,6 +1,6 @@
 #rEurope
 X01 = "countries/Gerudian_Empire.txt"
-X02 = "countries/Carneter.txt"
+#X02 = "countries/Carneter.txt"
 X03 = "countries/Great_Xhaz.txt"
 X04 = "countries/Damerian_Republic.txt"
 X05 = "countries/Businor.txt"
