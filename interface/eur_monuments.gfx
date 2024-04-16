@@ -93,6 +93,18 @@ spriteType = {
         name = "GFX_great_project_forge_towers"
          texturefile = "gfx//interface//great_projects//great_project_forge_towers.dds"
     }
+    spriteType = {
+        name = "GFX_great_project_nzeri_hanging_gardens"
+         texturefile = "gfx//interface//great_projects//great_project_hanging_gardens.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_bronze_fortress"
+         texturefile = "gfx//interface//great_projects//great_project_bronze_fortress.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_square_of_liberty"
+         texturefile = "gfx//interface//great_projects//great_project_square_of_liberty.dds"
+    }
 ########
 #Examples
 ########
