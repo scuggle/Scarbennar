@@ -2562,11 +2562,13 @@
  		AND = {
 
  			province_is_or_accepts_culture = yes
-			OR = {
-				government = republic
-				has_parliament = yes
-				revolutionary = yes
-				is_statists_in_power = yes
+			owner = {
+				OR = {
+					government = republic
+					has_parliament = yes
+					is_statists_in_power = yes 
+					is_revolutionary = yes
+				}
 			}
  		}
  	}	
@@ -2574,11 +2576,13 @@
  		AND = {
 
  			province_is_or_accepts_culture = yes
-			OR = {
-				government = republic
-				has_parliament = yes
-				revolutionary = yes
-				is_statists_in_power = yes
+			owner = {
+				OR = {
+					government = republic
+					has_parliament = yes
+					is_statists_in_power = yes 
+					is_revolutionary = yes
+				}
 			}
  		}
  	}	
@@ -3052,7 +3056,7 @@ forge_towers = {
 		
 		on_upgraded = {
 			5956 = {
-				change_trade_goods = Iron
+				change_trade_goods = iron
 			}
 		}
 	}
@@ -3380,7 +3384,10 @@ labyrinth_of_Yaddirralta = {
 
  			province_is_or_accepts_culture = yes
 			religion = aakhetist
-			has_owner_religion = yes
+			OR = {
+				has_owner_religion = yes
+				secondary_religion = ROOT
+			}
  		}
  	}	
  	can_upgrade_trigger = {
@@ -3388,7 +3395,10 @@ labyrinth_of_Yaddirralta = {
 
  			province_is_or_accepts_culture = yes
 			religion = aakhetist
-			has_owner_religion = yes
+			OR = {
+				has_owner_religion = yes
+				secondary_religion = ROOT
+			}
  		}
  	}	
  	keep_trigger = {
@@ -3424,7 +3434,7 @@ labyrinth_of_Yaddirralta = {
  		area_modifier = {
  		}
  		country_modifiers = {
- 			prestige_decay = -0.33
+ 			prestige_decay = -0.0033
 			church_power_modifier = 0.1
  		}
  		on_upgraded = {
@@ -3445,7 +3455,7 @@ labyrinth_of_Yaddirralta = {
  		area_modifier = {
  		}
  		country_modifiers = {
- 			prestige_decay = -0.66
+ 			prestige_decay = -0.0066
 			church_power_modifier = 0.2
  		}
  		on_upgraded = {
@@ -3468,7 +3478,7 @@ labyrinth_of_Yaddirralta = {
  			
  		}
  		country_modifiers = {
- 			prestige_decay = -1
+ 			prestige_decay = -0.01
 			church_power_modifier = 0.3
  		}
  		on_upgraded = {
