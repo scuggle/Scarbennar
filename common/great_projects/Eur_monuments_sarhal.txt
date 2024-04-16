@@ -3213,3 +3213,133 @@ emerald_of_the_seas = {
 		}
 	}
 }
+#labyrinth library of Yaddirralta
+labyrinth_of_Yaddirralta = {
+	start = 5646 #Shangra
+
+	date = 1000.06.20
+
+	time = { months = 1 }
+
+	build_cost = 1
+
+	can_be_moved = no
+
+	starting_tier = 1
+
+	# project type
+	type = monument
+
+	build_trigger = { 
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	on_built = {}
+
+	on_destroyed = {}
+
+	can_use_modifiers_trigger = {
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	can_upgrade_trigger = {
+		AND = {
+			OR = {
+				culture_group = lizardfolk
+			}
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	keep_trigger = {}
+
+	# tier data
+	tier_0 = {
+		upgrade_time = { months = 0 }
+
+		cost_to_upgrade = { factor = 0 }
+
+		province_modifiers = {}
+
+		area_modifier = {}
+
+		country_modifiers = {}
+
+		on_upgraded = {}
+    }
+
+	tier_1 = {
+		upgrade_time = { months = 120 }
+
+		cost_to_upgrade = { factor = 1000 }
+
+		province_modifiers = { 
+			
+		}
+
+		area_modifier = {}
+
+		country_modifiers = {
+			technology_cost = -0.05
+			yearly_innovativeness = 0.1
+		}
+
+		on_upgraded = {
+
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = { months = 240 }
+
+		cost_to_upgrade = { factor = 2500 }
+
+		province_modifiers = { 
+			trade_value_modifier = 0.25
+		}
+
+		area_modifier = {}
+
+        country_modifiers = {
+			technology_cost = -0.075
+			yearly_innovativeness = 0.15
+        }
+
+		
+		on_upgraded = {
+ 			change_trade_goods = paper
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = { months = 360 }
+
+		cost_to_upgrade = {	factor = 5000 }
+
+		
+		province_modifiers = { 
+			trade_value_modifier = 0.33
+		}
+
+		area_modifier = {}
+
+        country_modifiers = {
+            technology_cost = -0.1 
+			yearly_innovativeness = 0.2
+        }
+		
+		on_upgraded = {
+			change_trade_goods = precursor_relics
+		}
+	}
+}
