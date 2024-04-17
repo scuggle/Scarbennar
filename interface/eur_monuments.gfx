@@ -105,6 +105,10 @@ spriteType = {
         name = "GFX_great_project_square_of_liberty"
          texturefile = "gfx//interface//great_projects//great_project_square_of_liberty.dds"
     }
+    spriteType = {
+        name = "GFX_great_project_quagga_breeding_grounds"
+         texturefile = "gfx//interface//great_projects//great_project_quagga_breeding_grounds.dds"
+    }
 ########
 #Examples
 ########
