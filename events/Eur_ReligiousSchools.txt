@@ -6,14 +6,14 @@ country_event = {
     desc = sarhalevents.2.d
     picture = MYSTIC_IN_PRAYER_eventPicture
     
-    trigger = {
-        has_dlc = "Cradle of Civilization"
-        OR = {
-            religion = anzalkatsa
-            religion = zaradyrra
-        }
-        ai = no
-    }
+    #trigger = {
+    #    has_dlc = "Cradle of Civilization"
+    #    OR = {
+    #        religion = anzalkatsa
+    #        religion = zaradyrra
+    #    }
+    #    ai = no
+    #}
 
     is_triggered_only = yes
     
@@ -103,11 +103,11 @@ country_event = {
 	desc = high_philosophy_events.0.d
 	picture = MYSTIC_IN_PRAYER_eventPicture
 	
-    trigger = {
-        has_dlc = "Cradle of Civilization"
-        religion = high_philosophy
-        ai = no
-    }
+    #trigger = {
+    #    has_dlc = "Cradle of Civilization"
+    #    religion = high_philosophy
+    #    ai = no
+    #}
 
 	is_triggered_only = yes
 	

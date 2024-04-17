@@ -441,6 +441,9 @@ country_decisions = {
 
 	feudal_escann_is_back = {
 		major = yes
+		color = {
+			90 0 0
+		}
 		potential = {
 			ai = no
 			OR = {
@@ -517,7 +520,7 @@ country_decisions = {
 				country_event = { id = flavor_esthil.7 }
 			}
 			else = { country_event = { id = marcher.1 days = 1 } }
-#			country_event = { id = adventurer.2 days = 10 }
+			#country_event = { id = adventurer.2 days = 10 }
 			hidden_effect = {
 				country_event = { #new culture event, 10 years after their debuff runs out
 					id = marcher.2
@@ -582,10 +585,13 @@ country_decisions = {
 
 	speed_up_ahati = {
 		major = yes
+		color = {
+			90 0 0
+		}
 		potential = {
 			ai = no
 			has_estate = estate_ahati
-			NOT {
+			NOT = {
 				has_country_flag = sped_up_ahati
 			}
 		}
@@ -593,7 +599,7 @@ country_decisions = {
 		allow = {
 			ai = no
 			has_estate = estate_ahati
-			NOT {
+			NOT = {
 				has_country_flag = sped_up_ahati
 			}
 			total_development = 400
@@ -610,6 +616,51 @@ country_decisions = {
 
 		ai_will_do = {
 			factor = 0
+		}
+	}
+
+	change_religious_school = {
+		color = {
+			90 0 0
+		}
+		potential = {
+			ai = no
+			OR = {
+				religion = high_philosophy
+				religion = anzalkatsa
+            	religion = zaradyrra
+			}
+			NOT = {
+				has_country_flag = eur_changed_religious_school
+			}
+		}
+		allow = {
+			ai = no
+			OR = {
+				religion = high_philosophy
+				religion = anzalkatsa
+            	religion = zaradyrra
+			}
+			NOT = {
+				has_country_flag = eur_changed_religious_school
+			}
+		}
+		effect = {
+			if = {
+				limit = { religion = high_philosophy }
+				set_country_flag = eur_changed_religious_school
+				country_event = { id = eur_religiousschools.2 }
+			}
+			if = {
+				limit = {
+					OR = {
+						religion = anzalkatsa
+            			religion = zaradyrra
+					}
+				}
+				set_country_flag = eur_changed_religious_school
+				country_event = { id = eur_religiousschools.1 }
+			}
 		}
 	}
 }	

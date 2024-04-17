@@ -70,8 +70,8 @@
  feudal_escann_is_back_title: "Fire formation event"
  feudal_escann_is_back_desc: "You won't be getting Escanni flavor if you don't click this."
 
- Qol_change_religious_school_title:0 "Swap religious school once"
- Qol_change_religious_school_desc:0 "Feels bad to not be able to."
+ change_religious_school_title:0 "Swap religious school once"
+ change_religious_school_desc:0 "Feels bad to not be able to."
 
  trigger_effelaibloom_title:0 "§GTrigger the Effelai Bloom§."
  trigger_effelaibloom_desc:0 "It's usually so hard to do this..."
