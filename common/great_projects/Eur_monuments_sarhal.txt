@@ -3834,6 +3834,15 @@ labyrinth_of_Yaddirralta = {
 #			global_unrest = -3
 # 		}
 # 		on_upgraded = {
+# 			owner = {
+# 				define_general = {
+# 					name = "Big Chungus"
+# 						fire = 0
+# 						shock = 5
+# 						manuever = 0
+# 						siege = 5
+# 				}
+# 			}
 # 		}
 # 	}
 # }
