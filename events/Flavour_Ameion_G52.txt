@@ -2472,7 +2472,11 @@ country_event = {
 			}
 			every_country = {
 				limit = {
-					full_idea_group = exploration_ideas
+					OR = {
+						full_idea_group = exploration_ideas
+						full_idea_group = maritime_ideas
+						full_idea_group = trade_ideas
+					}
 					capital_scope = { continent = europe }
 					OR = {
 						total_development = 150
@@ -2585,7 +2589,11 @@ country_event = {
 			}
 			every_country = {
 				limit = {
-					full_idea_group = exploration_ideas
+					OR = {
+						full_idea_group = exploration_ideas
+						full_idea_group = maritime_ideas
+						full_idea_group = trade_ideas
+					}
 					capital_scope = { continent = europe }
 					OR = {
 						total_development = 150

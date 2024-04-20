@@ -40,6 +40,8 @@ charter_colonies = {
 		OR = {
 			full_idea_group = expansion_ideas
 			full_idea_group = exploration_ideas
+			full_idea_group = maritime_ideas
+			full_idea_group = trade_ideas
 		}
 	}
 	

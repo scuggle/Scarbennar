@@ -2131,6 +2131,8 @@ mission_to_civilize_reform = {
 			num_of_colonists = 1
 			has_idea_group = exploration_ideas
 			has_idea_group = expansion_ideas
+			has_idea_group = maritime_ideas
+			has_idea_group = trade_ideas
 		}
 	}
 	modifiers = {

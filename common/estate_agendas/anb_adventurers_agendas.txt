@@ -1227,7 +1227,11 @@ estate_adventurers_build_a_fleet = {
 		primitives = no
 		OR = {
 			has_global_flag = new_world_discovered
-			has_idea = quest_for_the_new_world
+			OR = {
+				has_idea = quest_for_the_new_world 
+				has_idea = shrewd_commerce_practise
+				has_idea = merchant_traditions
+			}
 		}
 		any_owned_province = {
 			has_port = yes

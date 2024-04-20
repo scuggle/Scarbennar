@@ -1044,6 +1044,8 @@ feiten_missions_2_established = {
 		trigger = {
 			OR = {
 				full_idea_group = exploration_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group =trade_ideas
 				dip_power = 300
 			}
 			sailors_percentage = 0.90
@@ -1060,7 +1062,11 @@ feiten_missions_2_established = {
 			}
 			add_sailors = -5000
 			if = {
-				limit = { NOT = { full_idea_group = exploration_ideas } }
+				OR = {
+					limit = { NOT = { full_idea_group = exploration_ideas } }
+					limit = { NOT = { full_idea_group = maritime_ideas } }
+					limit = { NOT = { full_idea_group = trade_ideas } }
+				}
 				add_dip_power = -300
 			}
 			add_country_modifier = {
@@ -1925,6 +1931,7 @@ feiten_missions_3_established = {
 				full_idea_group = exploration_ideas
 				full_idea_group = maritime_ideas
 				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
 				navy_tradition = 40
 			}
 		}

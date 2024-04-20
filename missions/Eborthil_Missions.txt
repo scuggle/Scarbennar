@@ -1375,8 +1375,16 @@ A47_exploration = {
 		position = 8
 		
 		trigger = {
-			has_idea_group = exploration_ideas
-			exploration_ideas = 1
+			OR = {
+				has_idea_group = exploration_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = trade_ideas
+			}
+			OR = {
+				exploration_ideas = 1
+				maritime_ideas = 1
+				trade_ideas = 1
+			}
 		}
 		
 		effect = {

@@ -306,7 +306,11 @@ country_decisions = {
 				estate_action = NEW_WORLD_MISSION_CHURCH
 				days = 7300
 			}
-			has_idea_group = exploration_ideas
+			OR = {
+				has_idea_group = exploration_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = maritime_ideas
+			}
 			estate_influence = {
 				estate = estate_church
 				influence = 40

@@ -568,6 +568,8 @@ beyond_akasik_reform = {
 				is_year = 1600
 				has_idea_group = exploration_ideas
 				has_idea_group = expansion_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = trade_ideas
 			}
 		}
 	}

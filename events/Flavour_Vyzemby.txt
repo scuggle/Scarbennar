@@ -1254,7 +1254,11 @@ country_event = { # Azaly Farscribe Returns
 		highlight = yes
 		trigger = {
 			has_country_flag = vyzemby_farscribe_funded
-			has_idea_group = exploration_ideas
+			OR = {
+				has_idea_group = exploration_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = trade_ideas
+			}
 		}
 		define_admiral = {
 			shock = 3

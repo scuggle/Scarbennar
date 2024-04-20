@@ -3116,6 +3116,8 @@ province_is_or_accepts_or_harmonizes_religion = { #if you want to use this trigg
 
 has_not_any_exploration_ideas = {
 	NOT = { has_idea = quest_for_the_new_world }
+	NOT = { has_idea = shrewd_commerce_practise }
+	NOT = { has_idea = merchant_traditions }
 	# NOT = { has_idea = call_of_our_forefathers }
 	# NOT = { has_idea = tonga_oceanic_empire }
 	# NOT = { has_idea = samoa_trade }
@@ -3125,7 +3127,9 @@ has_not_any_exploration_ideas = {
 
 has_any_exploration_idea = {
 	OR = {
-		has_idea = quest_for_the_new_world
+		has_idea = quest_for_the_new_world 
+		has_idea = shrewd_commerce_practise
+		has_idea = merchant_traditions
 		# has_idea = call_of_our_forefathers
 		# has_idea = tonga_oceanic_empire
 		# has_idea = samoa_trade

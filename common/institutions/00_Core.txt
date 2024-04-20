@@ -541,6 +541,8 @@ new_world_i = {
 		continent = europe
 		OR = {
 			owner = { has_idea = quest_for_the_new_world }
+			owner = { has_idea = shrewd_commerce_practise }
+			owner = { has_idea = merchant_traditions }
 			owner = { colony = 1 }
 		}
 	}
@@ -563,7 +565,11 @@ new_world_i = {
 		}
 		is_in_capital_area = yes
 		owner = { 
-			has_idea = quest_for_the_new_world 
+			OR = {
+				has_idea = quest_for_the_new_world 
+				has_idea = shrewd_commerce_practise
+				has_idea = merchant_traditions
+			}
 			OR = {
 				north_america = { has_discovered = PREV }
 				south_america = { has_discovered = PREV }

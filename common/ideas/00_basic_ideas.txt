@@ -742,7 +742,8 @@ exploration_ideas = { #Trustee #done
 	}
 	
 	bonus = {
-		global_trade_goods_size = 0.1
+		global_trade_goods_size = 0.15
+		treasure_fleet_income = 0.25
 		possible_dip_policy = 1
 	}
 
@@ -760,7 +761,7 @@ exploration_ideas = { #Trustee #done
 	}
 	land_of_opportunity = {
 		global_colonial_growth = 10
-		vassal_forcelimit_bonus = 0.1
+		vassal_forcelimit_bonus = 0.15
 	}
 	vice_roys  = {
 		colonist_placement_chance = 0.1
@@ -768,11 +769,11 @@ exploration_ideas = { #Trustee #done
  	}
 	free_colonies = {
 		global_tariffs = 0.15
-		liberty_desire_from_subject_development = -0.25
+		liberty_desire_from_subject_development = -0.3
 	}
 	global_empire = {
 		expel_minorities_cost = -0.50
-		vassal_income = 0.15
+		vassal_income = 0.12
 	}
 
 	ai_will_do = {

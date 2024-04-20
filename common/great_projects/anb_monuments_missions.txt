@@ -360,6 +360,8 @@ beikdugang_lights = {
 		FROM = {
 			OR = {
 				has_idea_group = exploration_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = trade_ideas
 				has_discovered = 8
 			}
 			culture_group = yan
@@ -371,6 +373,8 @@ beikdugang_lights = {
 		FROM = {
 			OR = {
 				has_idea_group = exploration_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = trade_ideas
 				has_discovered = 8
 			}
 			culture_group = yan

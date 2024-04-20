@@ -2872,7 +2872,13 @@ country_event = {
 	option = {
 		name = "personality_events.43.a"
 		trigger = {
-			NOT = { has_idea = quest_for_the_new_world }
+			NOT = { 
+				OR = {
+					has_idea = quest_for_the_new_world 
+					has_idea = shrewd_commerce_practise
+					has_idea = merchant_traditions
+				} 
+			}
 		}
 		define_admiral = {
 			#name = "Nerus the Gentle"

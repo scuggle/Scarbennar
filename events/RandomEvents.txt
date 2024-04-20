@@ -8470,7 +8470,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea = quest_for_the_new_world
+		OR = {
+				has_idea = quest_for_the_new_world 
+				has_idea = shrewd_commerce_practise
+				has_idea = merchant_traditions
+			}
 		capital_scope = { continent = europe }
 		any_owned_province = {
 			is_colony = yes
