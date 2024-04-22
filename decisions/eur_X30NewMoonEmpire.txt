@@ -1,0 +1,86 @@
+
+country_decisions = {
+
+	X30_form_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = formed_X30_flag }
+			NOT = { tag = X30 }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+
+            primary_culture = new_moon_elf
+		}
+		provinces_to_highlight = {
+			#can be left empty
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = X30 }
+
+            primary_culture = new_moon_elf
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = new_moon_elf
+			}
+		}
+		effect = {
+			change_tag = X30
+			hidden_effect = { restore_country_name = yes }
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			
+			#add here
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_X30_flag
+            kubaci_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add__permanent_claim = X30
+			}
+			janama_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add__permanent_claim = X30
+			}
+			dao_nako_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add__permanent_claim = X30
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
