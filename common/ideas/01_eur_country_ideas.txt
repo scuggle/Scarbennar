@@ -1191,3 +1191,52 @@ start = {
 		devotion = 0.5
 	}
 }
+
+X30_ideas = { #New Moon Empire
+	start = {
+		fire_damage_received = -0.15
+		merchants = 1
+	}
+
+	bonus = {
+		development_cost = -0.1
+		naval_morale = 0.05	
+	}
+
+	trigger = {
+		OR = {
+			tag = X30
+		}	
+	}
+
+	free = yes
+
+	X29_one = { #
+		build_cost = -0.1
+	}
+	X29_two = { #
+		land_morale = 0.1
+		heavy_ship_power = 0.05
+	}
+	X29_three = { #
+		global_trade_goods_size_modifier = 0.05
+		global_trade_power = 0.1
+	}
+	X29_four = { #
+		trade_efficiency = 0.1
+	}
+	X29_five = { #
+		global_regiment_cost = -0.1
+		manpower_recovery_speed = 0.05
+	}
+	X29_six = { #
+		culture_conversion_cost = -0.2
+		manpower_in_own_culture_provinces = 0.1
+	}
+	X29_seven = { #
+		legitimacy = 1
+		republican_tradition = 0.3
+		meritocracy = 0.5
+		devotion = 0.5
+	}
+}
