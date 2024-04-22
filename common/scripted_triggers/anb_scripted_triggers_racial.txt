@@ -597,6 +597,7 @@ ruler_is_elven = {
 			ruler_culture = sea_elf
 			ruler_culture = sunrise_elf
 			ruler_culture = dark_moon_elf
+			ruler_culture = new_moon_elf
 		}
 	}
 }
@@ -1408,6 +1409,7 @@ consort_is_elven = {
 			consort_culture = sea_elf
 			consort_culture = sunrise_elf
 			consort_culture = dark_moon_elf
+			consort_culture = new_moon_elf
 		}
 	}
 }
@@ -2193,6 +2195,7 @@ heir_is_elven = {
 			heir_culture = sea_elf
 			heir_culture = sunrise_elf
 			heir_culture = dark_moon_elf
+			heir_culture = new_moon_elf
 		}
 	}
 }
@@ -3326,6 +3329,9 @@ has_elven_advisor = {
 			employed_advisor = { culture = wood_elf }
 			employed_advisor = { culture = sea_elf }
 			employed_advisor = { culture = sunrise_elf }
+			employed_advisor = { culture = dark_moon_elf }
+			employed_advisor = { culture = dark_moon_elf }
+
 		}
 	}
 }
@@ -3343,6 +3349,8 @@ has_elven_advisor_of_category = {
 			employed_advisor = { category = $category$ culture = wood_elf }
 			employed_advisor = { category = $category$ culture = sea_elf }
 			employed_advisor = { category = $category$ culture = sunrise_elf }
+			employed_advisor = { category = $category$ culture = dark_moon_elf }
+			employed_advisor = { category = $category$ culture = new_moon_elf }
 		}
 	}
 }

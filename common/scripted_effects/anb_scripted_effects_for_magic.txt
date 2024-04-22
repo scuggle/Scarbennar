@@ -558,6 +558,7 @@ magic_ruler_initialize_schools = {
 				consort_culture = cliff_gnome
 				consort_culture = creek_gnome
 				consort_culture = imperial_gnome
+				consort_culture = new_moon_elf
 			}
 		}
 		magic_ruler_give_random_spell_school = yes
