@@ -1,0 +1,285 @@
+
+tcharialt1 = {
+    slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		 OR = {
+			tag = X29
+			tag = X30
+		}
+	}
+    tcharialt11 = {
+        icon = mission_warrior_gold
+		required_missions = { }
+		position = 1
+    }
+    tcharialt12 = {
+        icon = mission_galleys_in_port
+		required_missions = { 
+            tcharialt11
+            tcharialt31
+        }
+		position = 2
+    }
+    tcharialt13 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            tcharialt12
+         }
+		position = 3
+    }
+    tcharialt14 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            tcharialt13
+         }
+		position = 4
+    }
+}
+
+tcharialt2 = {
+    slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		 OR = {
+			tag = X29
+			tag = X30
+		}
+	}
+    tcharialt22 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            tcharialt31
+         }
+		position = 2
+    }
+    tcharialt23 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            tcharialt22
+         }
+		position = 3
+    }
+    tcharialt25 = {
+        icon = mission_comet_star_animated
+		required_missions = {
+            tcharialt23
+         }
+		position = 5
+    }
+}
+
+tcharialt3 = {
+    slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		 OR = {
+			tag = X29
+			tag = X30
+		}
+	}
+    tcharialt31 = {
+        icon = mission_alone_in_the_forest
+		required_missions = { }
+		position = 1
+    }
+    tcharialt32 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            tcharialt31
+         }
+		position = 2
+    }
+    tcharialt33 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            tcharialt33
+         }
+		position = 3
+    }
+}
+
+tcharialt5 = {
+    slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		 OR = {
+			tag = X29
+			tag = X30
+		}
+	}
+    tcharialt51 = {
+        icon = mission_galleys_in_port
+		required_missions = { }
+		position = 1
+    }
+    tcharialt52 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            tcharialt51
+         }
+		position = 2
+    }
+    tcharialt53 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            tcharialt52
+         }
+		position = 3
+    }
+    tcharialt54 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            tcharialt53
+         }
+		position = 4
+    }
+}
+
+newmoon2 ={
+    slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		 OR = {
+			tag = X30
+		}
+	}
+    newmoon27 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            newmoon36
+         }
+		position = 7
+    }
+    newmoon28 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            newmoon27
+         }
+		position = 8
+    }
+    newmoon29 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            newmoon28
+         }
+		position = 9
+    }
+}
+
+newmoon3 ={
+    slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		 OR = {
+			tag = X30
+		}
+	}
+    newmoon36 = {
+        icon = mission_new_dawn
+		required_missions = { 
+            tcharialt31
+        }
+		position = 6
+    }
+    newmoon37 = {
+        icon = mission_galleys_in_port
+		required_missions = { 
+            newmoon36
+        }
+		position = 7
+    }
+    newmoon38 = {
+        icon = mission_galleys_in_port
+		required_missions = { 
+            newmoon37
+        }
+		position = 8
+    }
+}
+
+newmoon4 ={
+    slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		 OR = {
+			tag = X30
+		}
+	}
+    newmoon47 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            newmoon36
+         }
+		position = 7
+    }
+    newmoon48 = {
+        icon = mission_galleys_in_port
+		required_missions = {
+            newmoon47
+         }
+		position = 8
+    }
+}
+
+newmoon5 ={
+    slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
+		 OR = {
+			tag = X30
+		}
+	}
+    newmoon56 = {
+        icon = mission_fleet
+		required_missions = {
+            tcharialt31
+         }
+		position = 6
+    }
+    newmoon57 = {
+        icon = mission_hydra
+		required_missions = {
+            newmoon56
+         }
+		position = 7
+    }
+    newmoon58 = {
+        icon = mission_jungle_pilgrim
+		required_missions = { 
+            newmoon57
+        }
+		position = 8
+    }
+    newmoon59 ={
+        icon = mission_precursor_relics
+		required_missions = { 
+            newmoon58
+        }
+		position = 9
+    }
+}
