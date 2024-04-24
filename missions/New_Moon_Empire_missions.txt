@@ -15,6 +15,53 @@ tcharialt1 = {
         icon = mission_warrior_gold
 		required_missions = { }
 		position = 1
+
+        trigger = {
+			army_size = 20
+		}
+
+        effect = {
+            masirijiri_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+            ninki_nanka_bada_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+            azziza_tu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+            asanbosom_tu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+            add_country_modifier = {
+               name =  "NME_morale"
+               duration = 3650
+            }
+            define_general = {
+				name = "Karp the Unyielding"
+                trait = hardy_warrior_personality
+				fire = 2
+				shock = 4
+				manuever = 2
+				siege = 2
+			}
+        }
     }
     tcharialt12 = {
         icon = mission_galleys_in_port
@@ -23,13 +70,202 @@ tcharialt1 = {
             tcharialt31
         }
 		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						region = dao_nako_region
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+		}
+
+        trigger = {
+            OR = {
+                AND = {
+                    L18 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 200
+					    }
+                    }
+                    ROOT = {
+                        religion = fangaulan_pantheon
+                    }
+                }
+                num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 12
+					region = dao_nako_region 
+				}
+            }
+        }
+
+        effect = {
+            if = {
+                AND = {
+                    limit = {   
+                        L18 = {
+                            has_opinion = {
+						        who = ROOT
+						        value = 200
+					        }
+                        }
+                    }
+                    ROOT = {
+                        religion = fangaulan_pantheon
+                    }
+                }
+                vassalize = L18
+                add_permanent_claim = {
+                    5739 = L18
+                    5749 = L18
+                    5748 = L18
+                    5727 = L18
+                }
+                declare_war_with_cb = {
+                    who = L15
+                    casus_belli = cb_conquest
+                }
+            }
+            else = {
+                add_claim = {
+                    5739 = ROOT
+                    5749 = ROOT
+                    5748 = ROOT
+                    5727 = ROOT
+                    5743 = ROOT
+                    5750 = ROOT
+                }
+            }
+        }
     }
+
     tcharialt13 = {
         icon = mission_galleys_in_port
 		required_missions = {
             tcharialt12
         }
 		position = 3
+
+        provinces_to_highlight = {
+			province_id = 5739
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+                AND = {
+                    L18 = {
+                        is_subject_of = FROM
+                    }
+                    NOT = { owned_by = L18 }
+                }
+			}
+            province_id = 5749
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+                AND = {
+                    L18 = {
+                        is_subject_of = FROM
+                    }
+                    NOT = { owned_by = L18 }
+                }
+			}
+            province_id = 5748
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+                AND = {
+                    L18 = {
+                        is_subject_of = FROM
+                    }
+                    NOT = { owned_by = L18 }
+                }
+			}
+            province_id = 5727
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+                AND = {
+                    L18 = {
+                        is_subject_of = FROM
+                    }
+                    NOT = { owned_by = L18 }
+                }
+			}
+            province_id = 5743
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+                AND = {
+                    L18 = {
+                        is_subject_of = FROM
+                    }
+                    NOT = { owned_by = L18 }
+                }
+			}
+            province_id = 5750
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+                AND = {
+                    L18 = {
+                        is_subject_of = FROM
+                    }
+                    NOT = { owned_by = L18 }
+                }
+			}
+		}
+
+        trigger = {
+            owns_or_non_sovereign_subject_of = 5739
+            owns_or_non_sovereign_subject_of = 5749
+            owns_or_non_sovereign_subject_of = 5748
+            owns_or_non_sovereign_subject_of = 5727
+            owns_or_non_sovereign_subject_of = 5743
+            owns_or_non_sovereign_subject_of = 5750
+        }
+
+        effect = {
+            janama_region = {
+                add_claim = ROOT
+            }
+            add_prestige = 15
+            if ={
+                ROOT = {
+                    NOT = { religion = fangaulan_pantheon }
+                }
+                5739 = {
+                    add_nationalism = -10
+                }
+                5749 = {
+                    add_nationalism = -10
+                }
+                5748 = {
+                    add_nationalism = -10
+                }
+                5727 = {
+                    add_nationalism = -10
+                }
+                5743 = {
+                    add_nationalism = -10
+                }
+                5750 = {
+                    add_nationalism = -10
+                }
+            }
+            else = {
+                L18 = {
+                    capital_scope = {
+                        change_culture = new_moon_elf
+                    }
+                    change_primary_culture = new_moon_elf
+                    kill_ruler = yes
+                    add_stability = 1
+                }
+            }
+        }
     }
     tcharialt14 = {
         icon = mission_galleys_in_port
@@ -37,6 +273,72 @@ tcharialt1 = {
             tcharialt13
         }
 		position = 4
+
+        provinces_to_highlight = {
+			OR = {
+                exists = L17
+			    owned_by = L17
+                OR = {
+					area = cikela_jigin_area
+				}
+				NOT = { owned_by = ROOT }
+            }
+		}
+
+        trigger = {
+            OR = {
+                AND = {
+                    L17 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 200
+					    }
+                    }
+                    ROOT = {
+                        religion = fangaulan_pantheon
+                    }
+                }
+                owns_or_non_sovereign_subject_of = {
+					value = 5
+					area = cikela_jigin_area
+				}
+            }
+        }
+
+        effect = {
+            add_prestige = 15
+            add_splendor = 100
+            if = {
+                ROOT = {
+                    NOT = { religion = fangaulan_pantheon }
+                }
+                5738 = {
+                    add_nationalism = -10
+                }
+                5739 = {
+                    add_nationalism = -10
+                }
+                5740 = {
+                    add_nationalism = -10
+                }
+                5741 = {
+                    add_nationalism = -10
+                }
+                6313 = {
+                    add_nationalism = -10
+                }
+            }
+            else = {
+                L17 = {
+                    capital_scope = {
+                        change_culture = new_moon_elf
+                    }
+                    change_primary_culture = new_moon_elf
+                    kill_ruler = yes
+                    add_stability = 1
+                }
+            }
+        }
     }
 }
 
@@ -58,6 +360,107 @@ tcharialt2 = {
             tcharialt31
         }
 		position = 2
+
+        provinces_to_highlight = {
+            superregion = fangaula_superregion
+            AND = {
+                culture = binwarji
+                owner = {
+                    NOT = {
+                        primary_culture = binwarji
+                    }
+                }
+            }
+        }
+
+        trigger = {
+            if = {
+                AND = {
+                    F65 = {
+                        owns_or_non_sovereign_subject_of = {
+                            superregion = fangaula_superregion
+                            culture = binwarji
+                        }
+                        has_spy_network_from = { who = ROOT value = 50 }
+                    }
+                    L22 = {
+                        if = {
+						    limit = { has_dlc = "Dharma" }	
+						    has_opinion_modifier = {
+							    who = ROOT
+							    modifier = scornfully_insulted
+						    }
+					    }
+                    }
+                }
+            }
+            else = {
+                AND = {
+                    F65 = {
+                        AND = {
+                            owns_or_non_sovereign_subject_of = {
+                                superregion = fangaula_superregion
+                                culture = binwarji
+                            }
+                            has_spy_network_from = { who = ROOT value = 50 }
+                        }
+                    }    
+                    L22 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 150
+					    }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            if = {
+                AND = {
+                    F65 = {
+                        owns_or_non_sovereign_subject_of = {
+                            superregion = fangaula_superregion
+                            culture = binwarji
+                        }
+                    }
+                    L22 = {
+                        if = {
+						    limit = { has_dlc = "Dharma" }	
+						    has_opinion_modifier = {
+							    who = ROOT
+							    modifier = scornfully_insulted
+						    }
+					    }
+                    }
+                }
+                add_spy_network_in = {
+					who = F65
+					value = -50
+                }
+                add_permanent_claim = {
+                    limit = {
+                        AND = {
+                            owned_by = F65
+                            culture = binwarji
+                        }
+                    }
+                }
+			}
+            else = {
+                create_alliance = L22
+                declare_war_with_cb = {
+                    who = F65
+                    casus_belli = cb_core
+                }
+                5803 = {
+                    add_core = L22
+                }
+                L22 = {
+                    join_all_offensive_wars_of = ROOT
+                }
+            }
+        }
     }
     tcharialt23 = {
         icon = mission_galleys_in_port
