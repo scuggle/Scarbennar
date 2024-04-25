@@ -438,14 +438,15 @@ tcharialt2 = {
 					who = F65
 					value = -50
                 }
-                add_permanent_claim = {
-                    limit = {
-                        AND = {
-                            owned_by = F65
-                            culture = binwarji
-                        }
-                    }
-                }
+                fangaula_superregion = {
+				    limit = {
+					    NOT = { is_permanent_claim = ROOT	}
+				    	NOT = { is_core = ROOT	}
+                        owned_by = F65
+                        culture = binwarji
+				    }
+				    add_permanent_claim = ROOT
+			    }
 			}
             else = {
                 create_alliance = L22
@@ -468,6 +469,61 @@ tcharialt2 = {
             tcharialt22
         }
 		position = 3
+
+        provinces_to_highlight = {
+            superregion = fangaula_superregion
+            culture = binwarji
+        }
+
+        trigger = {
+            OR = {
+                F65 = {
+                    num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				        value = 0
+				        culture = binwarji
+				        is_city = yes
+			        }
+                }
+                L22 = {
+                    owns_all_provinces = {
+					    culture = binwarji
+			        }
+                }
+            }
+        }
+
+        effect = {
+            if = {
+                L22 = {
+                    owns_all_provinces = {
+					    culture = binwarji
+			        }
+                    alliance_with = ROOT
+                    has_opinion = {
+						    who = ROOT
+						    value = 200
+					    }
+                }
+                create_union = L22
+                L22 = {
+                    capital_scope = {
+                        change_culture = new_moon_elf
+                    }
+                    add_country_modifier = {
+                        name = "NME_liberty_desire"
+                        duration = 18250
+                    }
+                }
+            }
+            else = {
+                every_owned_province = {
+                    limit = {
+                        culture = binwarji
+                    }
+                    add_nationalism = -10
+                }
+            }
+        }
     }
     tcharialt25 = {
         icon = mission_comet_star_animated
@@ -476,6 +532,35 @@ tcharialt2 = {
             tcharialt23
         }
 		position = 5
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						superregion = fangaula_superregion
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 45
+				superregion = fangaula_superregion 
+			}
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "NME_annex"
+                duration = 18250
+            }
+            add_country_modifier = {
+                name = "NMW_culture_conversion"
+                duration = 9125
+            }
+        }
     }
 }
 
@@ -491,17 +576,93 @@ tcharialt3 = {
 			tag = X30
 		}
 	}
+
     tcharialt31 = {
         icon = mission_alone_in_the_forest
 		required_missions = { }
 		position = 1
+
+        trigger = {
+            always = yes
+        }
+
+        effect = {
+            country_event = { id = "tcharialt.1" }
+        }
     }
+    
     tcharialt32 = {
         icon = mission_galleys_in_port
 		required_missions = {
             tcharialt31
         }
 		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+			    AND = {
+				    OR = {
+					    area = dao_nako_coast_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+                AND = {
+				    OR = {
+					    area = bernalia_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+                AND = {
+				    OR = {
+					    area = dogo_babolo_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+		    }
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	    	    OR = {
+				    area = dao_nako_coast_area
+				    area = bernalia_area
+                    area = dogo_babolo_area
+			    }
+			    value = 9
+		    }
+        }
+
+        effect = {
+            dao_nako_coast_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+				    NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+            bernalia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+				    NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+            dogo_babolo_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+				    NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+            dao_nako_region = {
+				limit = {
+					NOT = { is_claim = ROOT	}
+				    NOT = { is_core = ROOT	}
+				}
+				add_claim = ROOT
+			}
+        }
+
     }
     tcharialt33 = {
         icon = mission_galleys_in_port
@@ -509,6 +670,214 @@ tcharialt3 = {
             tcharialt32
         }
 		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+			    AND = {
+				    OR = {
+					    area = dao_nako_coast_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+                AND = {
+				    OR = {
+					    area = bernalia_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+                AND = {
+				    OR = {
+					    area = dogo_babolo_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+		    }
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	    	    OR = {
+				    area = dao_nako_coast_area
+				    area = bernalia_area
+                    area = dogo_babolo_area
+			    }
+			    value = 13
+		    }
+        }
+
+        effect = {
+            add_prestige = 15
+            5807 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            6321 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            5806 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            6319 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            5776 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            5762 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            5763 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            5764 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            6309 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            5775 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            5777 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            6315 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            5767 = {
+                33 = {
+                    add_base_tax = 1
+                }
+                34 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+            If = {
+                NOT = {
+                    num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					    region = dao_nako_region
+					    value = 2
+					    trade_goods = gold
+				    }
+                }
+                5776 = {
+                    change_trade_goods = gold
+                    add_province_modifier = {
+                        name = "NME_extra_goods"
+                        duration = -1
+                    }
+                }
+            }
+            else = {
+                random_owned_province = {
+                    limit = {
+                        trade_goods = gold
+                    }
+                    add_province_modifier = {
+                        name = "NME_extra_goods"
+                        duration = -1
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -531,6 +900,44 @@ tcharialt4 = {
             tcharialt31
         }
 		position = 2
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                has_shipyard_building_trigger = yes
+                value = 4
+            }
+        }
+
+        effect = {
+            random_owned_province = {
+				limit = {
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
+				}
+				add_province_modifier = { name = "NME_shipyards" duration = -1 }
+			}
+            random_owned_province = {
+				limit = {
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
+				}
+				add_province_modifier = { name = "NME_shipyards" duration = -1 }
+			}
+            random_owned_province = {
+				limit = {
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
+				}
+				add_province_modifier = { name = "NME_shipyards" duration = -1 }
+			}
+            random_owned_province = {
+				limit = {
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
+				}
+				add_province_modifier = { name = "NME_shipyards" duration = -1 }
+			}
+        }
     }
 }
 
@@ -550,6 +957,17 @@ tcharialt5 = {
         icon = mission_galleys_in_port
 		required_missions = { }
 		position = 1
+
+        trigger = {
+            naval_forcelimit = 30
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "NME_ship_boom"
+                duration = 7300
+            }
+        }
     }
     tcharialt52 = {
         icon = mission_galleys_in_port
@@ -557,6 +975,188 @@ tcharialt5 = {
             tcharialt51
         }
 		position = 2
+
+        provinces_to_highlight = {
+            province_id = 6615 
+            province_id = 5714
+            province_id = 6599
+            province_id = 5847
+        }
+
+        trigger = {
+            OR = {
+                AND = {
+                    ROOT ={
+                        num_of_light_ship = 30
+                    }
+                    OR = {
+                        AND = {
+                            5847 = {
+                                OR = {
+                                    is_core = ROOT
+                                    limit = {
+                                        owner = {
+                                            alliance_with = ROOT
+                                        }
+                                    }
+                                }
+                            }
+                            NOT = { exists = L06 }
+                        }
+                        L06 = {
+                            has_100_opinion_improved_relation = { target = ROOT }
+                        }
+                    }
+                    OR = {
+                        AND = {
+                            6599 = {
+                                OR = {
+                                    is_core = ROOT
+                                    limit = {
+                                        owner = {
+                                            alliance_with = ROOT
+                                        }
+                                    }
+                                }
+                            }
+                            NOT = { exists = L36 }
+                        }
+                        L36 = {
+                            has_100_opinion_improved_relation = { target = ROOT }
+                        }
+                    }
+                    OR = {
+                        AND = {
+                            6615 = {
+                                OR = {
+                                    is_core = ROOT
+                                    limit = {
+                                        owner = {
+                                            alliance_with = ROOT
+                                        }
+                                    }
+                                }
+                            }
+                            NOT = { exists = L40 }
+                        }
+                        L40 = {
+                            has_100_opinion_improved_relation = { target = ROOT }
+                        }
+                    }
+                    OR = {
+                        AND = {
+                            5714 = {
+                                OR = {
+                                    is_core = ROOT
+                                    limit = {
+                                        owner = {
+                                            alliance_with = ROOT
+                                        }
+                                    }
+                                }
+                            }
+                            NOT = { exists = L53 }
+                        }
+                        L53 = {
+                            has_100_opinion_improved_relation = { target = ROOT }
+                        }
+                    }
+                }
+            }
+        }
+        
+        effect = {
+            if = {
+                limit = {
+                    L06 = {
+                        is_in_trade_league_with = ROOT
+                    }
+                }
+                vassalize = L06
+                zenavuma_area = {
+                    add_core = L06
+                }
+                L06 = {
+                    capital_scope = {
+                        change_culture = new_moon_elf
+                    }
+                    change_primary_culture = new_moon_elf
+                    kill_ruler = yes
+                    add_stability = 1
+                }
+            }
+            if = {
+                limit = {
+                    L36 = {
+                        is_in_trade_league_with = ROOT
+                    }
+                }
+                vassalize = L36
+                nafalofimapo_area = {
+                    add_core = L36
+                }
+                L36 = {
+                    capital_scope = {
+                        change_culture = new_moon_elf
+                    }
+                    change_primary_culture = new_moon_elf
+                    kill_ruler = yes
+                    add_stability = 1
+                }
+            }
+            if = {
+                limit = {
+                    L40 = {
+                        is_in_trade_league_with = ROOT
+                    }
+                }
+                vassalize = L40
+                oronsafa_area = {
+                    add_core = L40
+                }
+                L40 = {
+                    capital_scope = {
+                        change_culture = new_moon_elf
+                    }
+                    change_primary_culture = new_moon_elf
+                    kill_ruler = yes
+                    add_stability = 1
+                }
+            }
+            if = {
+                limit = {
+                    L53 = {
+                        is_in_trade_league_with = ROOT
+                    }
+                }
+                vassalize = L53
+                kunolo_area = {
+                    add_core = L53
+                }
+                L53 = {
+                    capital_scope = {
+                        change_culture = new_moon_elf
+                    }
+                    change_primary_culture = new_moon_elf
+                    kill_ruler = yes
+                    add_stability = 1
+                }
+            }
+            else = {
+                zenavuma_area = {
+                    add_claim = ROOT
+                }
+                nafalofimapo_area = {
+                    add_claim = ROOT
+                }
+                oronsafa_area = {
+                    add_claim = ROOT
+                }
+                kunolo_area = {
+                    add_claim = ROOT
+                }
+            }
+        }
     }
     tcharialt53 = {
         icon = mission_galleys_in_port
@@ -564,6 +1164,404 @@ tcharialt5 = {
             tcharialt52
         }
 		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+			    AND = {
+				    OR = {
+					    area = zenavuma_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+                AND = {
+				    OR = {
+					    area = nafalofimapo_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+                AND = {
+				    OR = {
+					    area = oronsafa_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+                AND = {
+				    OR = {
+					    area = kunolo_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+		    }
+        }
+
+        trigger = {
+            AND = {
+                OR = {
+                    owns_or_non_sovereign_subject_of = {
+                        area = zenavuma_area
+                        value = 4
+                    }
+                    AND = {
+                        any_ally = {
+                            owns_or_non_sovereign_subject_of = {
+                                OR = {
+                                    province_id = 5849
+                                    province_id = 5851
+                                    province_id = 5852
+                                }
+                            }
+                        }
+                        owns_or_non_sovereign_subject_of = {
+                            province_id = 5847
+                        }
+                    }
+                }
+                OR = {
+                    owns_or_non_sovereign_subject_of = {
+                        area = nafalofimapo_area
+                        value = 5
+                    }
+                    AND = {
+                        any_ally = {
+                            owns_or_non_sovereign_subject_of = {
+                                OR = {
+                                    province_id = 5821
+                                    province_id = 6603
+                                    province_id = 6604
+                                    province_id = 5818
+                                }
+                            }
+                        }
+                        owns_or_non_sovereign_subject_of = {
+                            province_id = 6599
+                        }
+                    }
+                }
+                OR = {
+                    owns_or_non_sovereign_subject_of = {
+                        area = oronsafa_area
+                        value = 3
+                    }
+                    AND = {
+                        any_ally = {
+                            owns_or_non_sovereign_subject_of = {
+                                OR = {
+                                    province_id = 5823
+                                    province_id = 5824
+                                }
+                            }
+                        }
+                        owns_or_non_sovereign_subject_of = {
+                            province_id = 6615
+                        }
+                    }
+                }
+                OR = {
+                    owns_or_non_sovereign_subject_of = {
+                        area = kunolo_area
+                        value = 5
+                    }
+                    AND = {
+                        any_ally = {
+                            owns_or_non_sovereign_subject_of = {
+                                OR = {
+                                    province_id = 5805
+                                    province_id = 5710
+                                    province_id = 5712
+                                    province_id = 5713
+                                }
+                            }
+                        }
+                        owns_or_non_sovereign_subject_of = {
+                            province_id = 5714
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    owns_or_non_sovereign_subject_of = {
+                        area = zenavuma_area
+                        value = 4
+                    }
+                }
+                5849 = {
+                    add_nationalism = -10
+                }
+                5851 = {
+                    add_nationalism = -10
+                }
+                5849 = {
+                    add_nationalism = -10
+                }
+                L06 = {
+                    add_country_modifier = {
+                        name = "NME_vassal_buff"
+                        duration = -1
+                    }
+                }
+            }
+            else = {
+                limit = {
+                    any_ally = {
+                        limit = {
+                            NOT = {
+                                owns_or_non_sovereign_subject_of = {
+                                    area = zenavuma_area
+                                    value = 0
+                                }
+                            }
+                        }
+                    }
+                }
+                5847 = {
+                    cede_province = {
+                        limit = {
+                            any_ally = {
+                                limit = {
+                                    NOT = {
+                                        owns_or_non_sovereign_subject_of = {
+                                            area = zenavuma_area
+                                            value = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_core = {
+                        limit = {
+                            any_ally = {
+                                limit = {
+                                    NOT = {
+                                        owns_or_non_sovereign_subject_of = {
+                                            area = zenavuma_area
+                                            value = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                add_dip_power = 100
+                add_treasury = 200
+            }
+            if = {
+                limit = {
+                    owns_or_non_sovereign_subject_of = {
+                        area = nafalofimapo_area
+                        value = 5
+                    }
+                }
+                5821 = {
+                    add_nationalism = -10
+                }
+                6603 = {
+                    add_nationalism = -10
+                }
+                6604 = {
+                    add_nationalism = -10
+                }
+                5818 = {
+                    add_nationalism = -10
+                }
+                L36 = {
+                    add_country_modifier = {
+                        name = "NME_vassal_buff"
+                        duration = -1
+                    }
+                }
+            }
+            else = {
+                limit = {
+                    any_ally = {
+                        limit = {
+                            NOT = {
+                                owns_or_non_sovereign_subject_of = {
+                                    area = nafalofimapo_area
+                                    value = 0
+                                }
+                            }
+                        }
+                    }
+                }
+                6599 = {
+                    cede_province = {
+                        limit = {
+                            any_ally = {
+                                limit = {
+                                    NOT = {
+                                        owns_or_non_sovereign_subject_of = {
+                                            area = nafalofimapo_area
+                                            value = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_core = {
+                        limit = {
+                            any_ally = {
+                                limit = {
+                                    NOT = {
+                                        owns_or_non_sovereign_subject_of = {
+                                            area = nafalofimapo_area
+                                            value = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                add_dip_power = 100
+                add_treasury = 200
+            }
+            if = {
+                limit = {
+                    owns_or_non_sovereign_subject_of = {
+                        area = oronsafa_area
+                        value = 3
+                    }
+                }
+                5823 = {
+                    add_nationalism = -10
+                }
+                5824 = {
+                    add_nationalism = -10
+                }
+                L40 = {
+                    add_country_modifier = {
+                        name = "NME_vassal_buff"
+                        duration = -1
+                    }
+                }
+            }
+            else = {
+                limit = {
+                    any_ally = {
+                        limit = {
+                            NOT = {
+                                owns_or_non_sovereign_subject_of = {
+                                    area = oronsafa_area
+                                    value = 0
+                                }
+                            }
+                        }
+                    }
+                }
+                6615 = {
+                    cede_province = {
+                        limit = {
+                            any_ally = {
+                                limit = {
+                                    NOT = {
+                                        owns_or_non_sovereign_subject_of = {
+                                            area = oronsafa_area
+                                            value = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_core = {
+                        limit = {
+                            any_ally = {
+                                limit = {
+                                    NOT = {
+                                        owns_or_non_sovereign_subject_of = {
+                                            area = oronsafa_area
+                                            value = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                add_dip_power = 100
+                add_treasury = 200
+            }
+            if = {
+                limit = {
+                    owns_or_non_sovereign_subject_of = {
+                        area = kunolo_area
+                        value = 5
+                    }
+                }
+                5805 = {
+                    add_nationalism = -10
+                }
+                5710 = {
+                    add_nationalism = -10
+                }
+                5712 = {
+                    add_nationalism = -10
+                }
+                5713 = {
+                    add_nationalism = -10
+                }
+                L53 = {
+                    add_country_modifier = {
+                        name = "NME_vassal_buff"
+                        duration = -1
+                    }
+                }
+            }
+            else = {
+                limit = {
+                    any_ally = {
+                        limit = {
+                            NOT = {
+                                owns_or_non_sovereign_subject_of = {
+                                    area = kunolo_area
+                                    value = 0
+                                }
+                            }
+                        }
+                    }
+                }
+                5714 = {
+                    cede_province = {
+                        limit = {
+                            any_ally = {
+                                limit = {
+                                    NOT = {
+                                        owns_or_non_sovereign_subject_of = {
+                                            area = kunolo_area
+                                            value = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_core = {
+                        limit = {
+                            any_ally = {
+                                limit = {
+                                    NOT = {
+                                        owns_or_non_sovereign_subject_of = {
+                                            area = kunolo_area
+                                            value = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                add_dip_power = 100
+                add_treasury = 200
+            }
+        }
+
     }
     tcharialt54 = {
         icon = mission_galleys_in_port
@@ -571,6 +1569,135 @@ tcharialt5 = {
             tcharialt53
         }
 		position = 4
+
+        provinces_to_highlight = {
+            OR = {
+			    AND = {
+				    OR = {
+					    area = sil_berkhens_land_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+                AND = {
+				    OR = {
+					    area = velanynosy_area
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+		    }
+        }
+
+        trigger = {
+            OR = {
+                owns_or_non_sovereign_subject_of = {
+                    area = sil_berkhens_land_area
+                    area = velanynosy_area
+                    value = 8
+                }
+                any_ally = {
+                    owns_or_non_sovereign_subject_of = {
+                        area = sil_berkhens_land_area
+                        area = velanynosy_area
+                        value = 8
+                    }
+                }
+            }
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					        area = sil_berkhens_land_area
+                            area = velanynosy_area
+					        trade_goods = cloves
+                            value = 3
+				        }
+                    }
+                }
+                random_owned_province = {
+                    limit = {
+                        NOT = {
+                            trade_goods = gold
+                            trade_goods = cloves
+                            trade_goods = damestear
+                        }
+                        area = sil_berkhens_land_area
+                        area = velanynosy_area
+                    }
+                    add_province_modifier = {
+                        name = "NME_extra_goods"
+                        duration = -1
+                    }
+                    change_trade_goods = cloves
+                }
+                random_owned_province = {
+                    limit = {
+                        NOT = {
+                            trade_goods = gold
+                            trade_goods = cloves
+                            trade_goods = damestear
+                        }
+                        area = sil_berkhens_land_area
+                        area = velanynosy_area
+                    }
+                    add_province_modifier = {
+                        name = "NME_extra_goods"
+                        duration = -1
+                    }
+                    change_trade_goods = cloves
+                }
+            }
+            else_if = {
+                limit = {
+                    num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					    area = sil_berkhens_land_area
+                        area = velanynosy_area
+					    trade_goods = cloves
+                        value = 3
+				    }
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = cloves
+                        area = sil_berkhens_land_area
+                        area = velanynosy_area
+                    }
+                    add_province_modifier = {
+                        name = "NME_extra_goods"
+                        duration = -1
+                    }
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = cloves
+                        area = sil_berkhens_land_area
+                        area = velanynosy_area
+                    }
+                    add_province_modifier = {
+                        name = "NME_extra_goods"
+                        duration = -1
+                    }
+                }
+            }
+            else = {
+                5759 = {
+                    change_trade_goods = cloves
+                    add_province_modifier = {
+                        name = "NME_extra_goods"
+                        duration = -1
+                    }
+                    add_province_modifier = {
+                        name = "NME_province_dev_cost"
+                        duration = -1
+                    }
+                    add_halfling_minority_size_effect = yes
+                }
+                medium_increase_of_halfling_tolerance_effect = yes
+                add_dip_power = 100
+            }
+        }
     }
 }
 

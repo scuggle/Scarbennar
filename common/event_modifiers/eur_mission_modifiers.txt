@@ -358,3 +358,48 @@ fal_attractive_saphires_modifier = {
 	local_manpower_modifier = 0.2
 	development_cost = -0.05
 }
+
+#New Moon Empire Modifiers
+NME_morale = {
+	land_morale = 0.05
+	land_maintenance_modifier = -0.05
+}
+
+NME_liberty_desire = {
+	liberty_desire = -20
+}
+
+NME_annex = {
+	diplomatic_annexation_cost = -0.2
+	years_to_integrate_personal_union = -25
+}
+
+NMW_culture_conversion = {
+	culture_conversion_cost = -0.2
+}
+
+NME_extra_goods = {
+	trade_goods_size = 1
+}
+
+NME_shipyards = {
+	local_manpower = 0.5
+	local_sailors = 250
+}
+
+NME_ship_boom = {
+	global_ship_cost = -0.2
+	ship_trade_power = 0.2
+}
+
+NME_vassal_buff = {
+	global_manpower_modifier = 0.1
+	global_tax_modifier = 0.1
+	global_trade_goods_size_modifier = 0.05
+	global_unrest = -2
+	global_trade_power = 0.1
+}
+
+NME_province_dev_cost = {
+	local_development_cost = -0.2
+}
