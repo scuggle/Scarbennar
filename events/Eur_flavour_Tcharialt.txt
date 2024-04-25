@@ -1,0 +1,38 @@
+namespace = tcharialt
+
+country_event = {
+    id = tcharialt.1
+	title = tcharialt.1.t
+	desc = tcharialt.1.d
+	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
+
+    is_triggered_only = yes
+
+    option = { #stay elven forebear
+        name = tcharialt.1.a 
+        ai_chance = { factor = 100 }
+        trigger = {
+            always = yes
+        }
+
+        add_country_modifier = {
+            name = "NME_religion"
+            duration = 9150
+        }
+    }
+    option = { #go fangaulan
+        name = tcharialt.1.b
+        ai_chance = { factor = 0 }
+        trigger = {
+            always = yes
+        }
+
+        change_religion = fangaulan_pantheon 
+        add_historical_friend = L22
+        L22 = {
+            add_historical_friend = ROOT
+            create_marriage = ROOT
+        }
+        add_prestige = 50
+    }
+}

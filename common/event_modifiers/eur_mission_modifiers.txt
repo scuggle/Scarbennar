@@ -403,3 +403,8 @@ NME_vassal_buff = {
 NME_province_dev_cost = {
 	local_development_cost = -0.2
 }
+
+NME_religion = {
+	global_missionary_strength = 0.015
+	missionaries = 1
+}

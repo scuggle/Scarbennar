@@ -346,22 +346,24 @@ tcharialt2 = {
 
         trigger = {
             if = {
-                AND = {
-                    F65 = {
-                        owns_or_non_sovereign_subject_of = {
-                            superregion = fangaula_superregion
-                            culture = binwarji
+                limit = {
+                    AND = {
+                        F65 = {
+                            owns_or_non_sovereign_subject_of = {
+                                superregion = fangaula_superregion
+                                culture = binwarji
+                            }
+                            has_spy_network_from = { who = ROOT value = 50 }
                         }
-                        has_spy_network_from = { who = ROOT value = 50 }
-                    }
-                    L22 = {
-                        if = {
-						    limit = { has_dlc = "Dharma" }	
-						    has_opinion_modifier = {
-							    who = ROOT
-							    modifier = scornfully_insulted
-						    }
-					    }
+                        L22 = {
+                            if = {
+						        limit = { has_dlc = "Dharma" }	
+						        has_opinion_modifier = {
+							        who = ROOT
+							        modifier = scornfully_insulted
+						        }
+					        }
+                        }
                     }
                 }
             }
@@ -388,21 +390,23 @@ tcharialt2 = {
 
         effect = {
             if = {
-                AND = {
-                    F65 = {
-                        owns_or_non_sovereign_subject_of = {
-                            superregion = fangaula_superregion
-                            culture = binwarji
+                limit = {
+                    AND = {
+                        F65 = {
+                            owns_or_non_sovereign_subject_of = {
+                                superregion = fangaula_superregion
+                                culture = binwarji
+                            }
                         }
-                    }
-                    L22 = {
-                        if = {
-						    limit = { has_dlc = "Dharma" }	
-						    has_opinion_modifier = {
-							    who = ROOT
-							    modifier = scornfully_insulted
-						    }
-					    }
+                        L22 = {
+                            if = {
+						        limit = { has_dlc = "Dharma" }	
+						        has_opinion_modifier = {
+							        who = ROOT
+							        modifier = scornfully_insulted
+						        }
+					        }
+                        }
                     }
                 }
                 add_spy_network_in = {
@@ -465,15 +469,17 @@ tcharialt2 = {
 
         effect = {
             if = {
-                L22 = {
-                    owns_all_provinces = {
-					    culture = binwarji
-			        }
-                    alliance_with = ROOT
-                    has_opinion = {
-						    who = ROOT
-						    value = 200
-					    }
+                limit = {
+                    L22 = {
+                        owns_all_provinces = {
+					        culture = binwarji
+			            }
+                        alliance_with = ROOT
+                        has_opinion = {
+						        who = ROOT
+						        value = 200
+					        }
+                    }
                 }
                 create_union = L22
                 L22 = {
@@ -554,7 +560,12 @@ tcharialt3 = {
 		position = 1
 
         trigger = {
-            always = yes
+            OR = {
+                tag = X29
+                tag = X30
+                was_tag = x29
+                was_tag = x30
+            }
         }
 
         effect = {
@@ -679,155 +690,105 @@ tcharialt3 = {
         effect = {
             add_prestige = 15
             5807 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             6321 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             5806 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             6319 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             5776 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+               random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             5762 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             5763 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             5764 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             6309 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             5775 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             5777 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             6315 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             5767 = {
-                33 = {
-                    add_base_tax = 1
-                }
-                34 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+                random_list = {
+                    1 = { add_base_tax = 1 }
+                    1 = { add_base_production = 1 }
+                    1 = { add_base_manpower = 1 }
                 }
             }
             If = {
-                NOT = {
-                    num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					    region = dao_nako_region
-					    value = 2
-					    trade_goods = gold
-				    }
+                limit = {
+                    NOT = {
+                        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					        region = dao_nako_region
+					        value = 2
+					        trade_goods = gold
+				        }
+                    }
                 }
                 5776 = {
                     change_trade_goods = gold
