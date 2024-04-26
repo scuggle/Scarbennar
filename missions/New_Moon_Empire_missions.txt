@@ -161,6 +161,100 @@ tcharialt1 = {
             tcharialt12
         }
 		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+			    AND = {
+				    OR = {
+					    province_id = 5743
+                        province_id = 5750
+                        province_id = 5739
+                        province_id = 5749
+                        province_id = 5748
+                        province_id = 5727
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+            }
+        }
+
+        trigger = {
+            AND = {
+                5743 = {
+                    OR = {
+                        is_core = ROOT
+                        owned_by_subject_of = ROOT
+                    }
+                }
+                5750 = {
+                    OR = {
+                        is_core = ROOT
+                        owned_by_subject_of = ROOT
+                    }
+                }
+                5739 = {
+                    OR = {
+                        is_core = ROOT
+                        owned_by_subject_of = ROOT
+                    }
+                }
+                5749 = {
+                    OR = {
+                        is_core = ROOT
+                        owned_by_subject_of = ROOT
+                    }
+                }
+                5748 = {
+                    OR = {
+                        is_core = ROOT
+                        owned_by_subject_of = ROOT
+                    }
+                }
+                5727 = {
+                    OR = {
+                        is_core = ROOT
+                        owned_by_subject_of = ROOT
+                    }
+                }
+            }
+        }
+
+        effect = {
+            add_prestige = 15
+            5797 = {
+                add_nationalism = -10
+            }
+            5804= {
+                add_nationalism = -10
+            }
+            5816= {
+                add_nationalism = -10
+            }
+            5813= {
+                add_nationalism = -10
+            }
+            5815= {
+                add_nationalism = -10
+            }
+            5817= {
+                add_nationalism = -10
+            }
+            if = {
+                limit = {
+                    L18 = {
+                        is_subject_of = ROOT
+                    }
+                }
+                L18 = {
+                    capital_scope = {
+                        change_culture = new_moon_elf
+                    }
+                    change_primary_culture = new_moon_elf
+                    kill_ruler = yes
+                    add_stability = 1
+                }
+            }
+        }
     }
     tcharialt14 = {
         icon = mission_galleys_in_port
@@ -168,6 +262,111 @@ tcharialt1 = {
             tcharialt13
         }
 		position = 4
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						area = cikela_jigin_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+        }
+        
+        trigger = {
+            OR = {
+                AND = {
+                    L17 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 200
+					    }
+                    }
+                    ROOT = {
+                        religion = fangaulan_pantheon
+                    }
+                }
+                AND = {
+                    5738 = {
+                        OR = {
+                            is_core = ROOT
+                            owned_by_subject_of = ROOT
+                        }
+                    }
+                    5739 = {
+                        OR = {
+                            is_core = ROOT
+                            owned_by_subject_of = ROOT
+                        }
+                    }
+                    5740 = {
+                        OR = {
+                            is_core = ROOT
+                            owned_by_subject_of = ROOT
+                        }
+                    }
+                    5741 = {
+                        OR = {
+                            is_core = ROOT
+                            owned_by_subject_of = ROOT
+                        }
+                    }
+                    6313 = {
+                        OR = {
+                            is_core = ROOT
+                            owned_by_subject_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    AND = { 
+                        L17 = {
+                            has_opinion = {
+						        who = ROOT
+						        value = 200
+					        }
+                        }
+                        ROOT = {
+                            religion = fangaulan_pantheon
+                        }
+                    }
+                }
+                ROOT = {
+                    vassalize = L17
+                }
+                L17 = {
+                    capital_scope = {
+                        change_culture = new_moon_elf
+                    }
+                    change_primary_culture = new_moon_elf
+                    kill_ruler = yes
+                    add_stability = 1
+                }
+            }
+            else = {
+                5738 = {
+                    add_nationalism = -10
+                }
+                5739  = {
+                    add_nationalism = -10
+                }
+                5740 = {
+                    add_nationalism = -10
+                }
+                5741 = {
+                    add_nationalism = -10
+                }
+                6313 = {
+                    add_nationalism = -10
+                }
+            }
+        }
     }
 }
 
@@ -189,6 +388,117 @@ tcharialt2 = {
             tcharialt31
         }
 		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+			    AND = {
+				    OR = {
+					    province_id = 5797
+                        province_id = 5804
+                        province_id = 5816
+                        province_id = 5813
+                        province_id = 5815
+                        province_id = 5817
+                        province_id = 5803
+                        province_id = 5814
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+            }
+        }
+
+        trigger = {
+            AND = {
+                OR = {
+                    F65 = {
+                        has_spy_network_from = { who = ROOT value = 50 }
+                    }
+                    F65 = {
+                        exists = no
+                    }
+                }
+                OR = {
+                    L22 = {
+                        has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
+						}
+                    }
+                    L22 = {
+                        exists = no
+                    }
+                    L22 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 150
+					    }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    L22 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 150
+					    }
+                    }
+                }
+                add_spy_network_in = {
+					who = F65
+					value = -50
+                }
+                create_alliance = L22
+                5803 = {
+                    add_core = L22
+                }
+                5802 = {
+                    add_core = ROOT
+                }
+                #country_event = { 
+                #    id = "tcharialt.3"
+                #    days = 31
+                #}
+                #L22 = {
+                #    country_event = { id = "tcharialt.4"}
+                #}
+            }
+            else = {
+                add_spy_network_in = {
+					who = F65
+					value = -50
+                }
+                5797 = {
+                    add_permanent_claim = ROOT
+                }
+                5804 = {
+                    add_permanent_claim = ROOT
+                }
+                5816 = {
+                    add_permanent_claim = ROOT
+                }
+                5813 = {
+                    add_permanent_claim = ROOT
+                }
+                5815 = {
+                    add_permanent_claim = ROOT
+                }
+                5817 = {
+                    add_permanent_claim = ROOT
+                }
+                5803 = {
+                    add_permanent_claim = ROOT
+                }
+                5814 = {
+                    add_permanent_claim = ROOT
+                }
+                #country_event = { id = "tcharialt.3" }
+            }
+        }
+
     }
     tcharialt23 = {
         icon = mission_galleys_in_port
@@ -336,6 +646,39 @@ tcharialt2 = {
             tcharialt23
         }
 		position = 5
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						superregion = fangaula_superregion
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 45
+				superregion = fangaula_superregion 
+			}
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "NME_annex"
+                duration = 18250
+            }
+            add_country_modifier = {
+                name = "NMW_culture_conversion"
+                duration = 9125
+            }
+            add_country_modifier = {
+                name = "NMW_gov_cap"
+                duration = -1
+            }
+        }
     }
 }
 

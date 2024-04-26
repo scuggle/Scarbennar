@@ -408,3 +408,9 @@ NME_religion = {
 	global_missionary_strength = 0.015
 	missionaries = 1
 }
+
+NMW_gov_cap = {
+	state_governing_cost = -0.15
+	years_to_integrate_personal_union = -20
+	chance_to_inherit = 0.5
+}

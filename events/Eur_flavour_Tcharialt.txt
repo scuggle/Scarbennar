@@ -67,4 +67,83 @@ country_event = {
     }
 }
 
+#country_event = {
+#    id = tcharialt.3
+#	title = tcharialt.3.t
+#	desc = tcharialt.3.d
+#	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
+#
+#   is_triggered_only = yes
+#
+#    option = { #Attack the gnolls
+#        name = tcharialt.3.a 
+#        ai_chance = { factor = 1 }
+#        trigger = {
+#            F65 = {
+#                exists = yes
+#            }
+#        }
+#        declare_war_with_cb = {
+#            who = F65
+#            casus_belli = cb_civ_vs_monster
+#        }
+        
+#    }
+#    option = { #Attack the gnolls with Binwarji
+#        name = tcharialt.3.b
+#        ai_chance = { factor = 100 }
+#        trigger = {
+#            AND = {
+#                F65 = {
+#                    exists = yes
+#                }
+#                L22 = {
+#                    alliance_with = ROOT
+#                }
+#            }
+#        }
+#        declare_war_with_cb = {
+#            who = F65
+#            casus_belli = cb_core
+#        }
+        
+#    }
+#    option = { #nah dawg
+#        name = tcharialt.3.c
+#        ai_chance = { factor = 0 }
+#        trigger = {
+#            always = yes
+#        }
 
+#        add_prestige = 10
+#    }
+#}
+
+country_event = {
+    id = tcharialt.4
+	title = tcharialt.4.t
+	desc = tcharialt.4.d
+	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
+
+    is_triggered_only = yes
+
+    option = { #time to int
+        name = tcharialt.4.a 
+        ai_chance = { factor = 100 }
+        trigger = {
+            always = yes
+        }
+
+        join_all_offensive_wars_of = X29
+        join_all_offensive_wars_of = X30
+    }
+    option = { #naw
+        name = tcharialt.4.b
+        ai_chance = { factor = 0 }
+        trigger = {
+            always = yes
+        }
+
+        add_prestige = -10
+    }
+}
