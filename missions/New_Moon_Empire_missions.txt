@@ -198,58 +198,133 @@ tcharialt2 = {
 		position = 3
 
         provinces_to_highlight = {
-            superregion = fangaula_superregion
-            culture = binwarji
+            OR = {
+			    AND = {
+				    OR = {
+					    province_id = 5797
+                        province_id = 5804
+                        province_id = 5816
+                        province_id = 5813
+                        province_id = 5815
+                        province_id = 5817
+                        province_id = 5803
+                        province_id = 5814
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+            }
         }
 
         trigger = {
             OR = {
-                F65 = {
-                    num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				        value = 0
-				        culture = binwarji
-				        is_city = yes
-			        }
+                AND = {
+                    5797 = {
+                        owned_by = L22
+                    }
+                    5804= {
+                        owned_by = L22
+                    }
+                    5816= {
+                        owned_by = L22
+                    }
+                    5813= {
+                        owned_by = L22
+                    }
+                    5815= {
+                        owned_by = L22
+                    }
+                    5817= {
+                        owned_by = L22
+                    }
+                    5803= {
+                        owned_by = L22
+                    }
+                    5814= {
+                        owned_by = L22
+                    }
                 }
-                L22 = {
-                    owns_all_provinces = {
-					    culture = binwarji
-			        }
+                AND = {
+                    5797 = {
+                        owned_by = ROOT
+                    }
+                    5804= {
+                        owned_by = ROOT
+                    }
+                    5816= {
+                        owned_by = ROOT
+                    }
+                    5813= {
+                        owned_by = ROOT
+                    }
+                    5815= {
+                        owned_by = ROOT
+                    }
+                    5817= {
+                        owned_by = ROOT
+                    }
+                    5803= {
+                        owned_by = ROOT
+                    }
+                    5814= {
+                        owned_by = ROOT
+                    }
                 }
             }
         }
 
         effect = {
-            if = {
-                limit = {
-                    L22 = {
-                        owns_all_provinces = {
-					        culture = binwarji
-			            }
-                        alliance_with = ROOT
-                        has_opinion = {
-						        who = ROOT
-						        value = 200
-					        }
-                    }
-                }
-                create_union = L22
-                L22 = {
-                    capital_scope = {
-                        change_culture = new_moon_elf
-                    }
-                    add_country_modifier = {
-                        name = "NME_liberty_desire"
-                        duration = 18250
-                    }
-                }
-            }
-            else = {
-                every_owned_province = {
+            custom_tooltip = tcharialt23_tt
+            hidden_effect = {
+                if = {
                     limit = {
-                        culture = binwarji
+                        L22 = {
+                            owns_all_provinces = {
+					            culture = binwarji
+			                }
+                            alliance_with = ROOT
+                            has_opinion = {
+						            who = ROOT
+						            value = 200
+					            }
+                        }
                     }
-                    add_nationalism = -10
+                    create_union = L22
+                    L22 = {
+                        capital_scope = {
+                            change_culture = new_moon_elf
+                        }
+                        add_country_modifier = {
+                            name = "NME_liberty_desire"
+                            duration = 18250
+                        }
+                        add_accepted_culture = new_moon_elf
+                    }
+                }
+                else = {
+                    5797 = {
+                        add_nationalism = -10
+                    }
+                    5804= {
+                        add_nationalism = -10
+                    }
+                    5816= {
+                        add_nationalism = -10
+                    }
+                    5813= {
+                        add_nationalism = -10
+                    }
+                    5815= {
+                        add_nationalism = -10
+                    }
+                    5817= {
+                        add_nationalism = -10
+                    }
+                    5803= {
+                        add_nationalism = -10
+                    }
+                    5814= {
+                        add_nationalism = -10
+                    }
                 }
             }
         }
@@ -284,10 +359,7 @@ tcharialt3 = {
         
         trigger = {
             OR = {
-                tag = X29
-                tag = X30
-                was_tag = x29
-                was_tag = x30
+                always = yes
             }
         }
 
@@ -643,82 +715,84 @@ tcharialt5 = {
         }
 
         trigger = {
-            OR = {
-                AND = {
-                    ROOT ={
-                        num_of_light_ship = 30
-                    }
-                    OR = {
-                        AND = {
-                            5847 = {
-                                OR = {
-                                    is_core = ROOT
-                                    limit = {
-                                        owner = {
-                                            alliance_with = ROOT
-                                        }
-                                    }
+            AND = {
+                ROOT ={
+                    num_of_light_ship = 20
+                }
+                OR = {
+                    AND = {
+                         5847 = {
+                            OR = {
+                                is_core = ROOT
+                                owner = {
+                                    alliance_with = ROOT
                                 }
                             }
-                            NOT = { exists = L06 }
                         }
-                        L06 = {
-                            has_100_opinion_improved_relation = { target = ROOT }
-                        }
+                        NOT = { exists = L06 }
                     }
-                    OR = {
-                        AND = {
-                            6599 = {
-                                OR = {
-                                    is_core = ROOT
-                                    limit = {
-                                        owner = {
-                                            alliance_with = ROOT
-                                        }
-                                    }
+                    L06 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 150
+					    }
+                    }
+                }
+                OR = {
+                    AND = {
+                        6599 = {
+                            OR = {
+                                 is_core = ROOT
+                                owner = {
+                                    alliance_with = ROOT
                                 }
                             }
-                            NOT = { exists = L36 }
                         }
-                        L36 = {
-                            has_100_opinion_improved_relation = { target = ROOT }
-                        }
+                        NOT = { exists = L36 }
                     }
-                    OR = {
-                        AND = {
-                            6615 = {
-                                OR = {
-                                    is_core = ROOT
-                                    limit = {
-                                        owner = {
-                                            alliance_with = ROOT
-                                        }
-                                    }
+                    L36 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 150
+					    }
+                    }
+                }
+                OR = {
+                    AND = {
+                        6615 = {
+                            OR = {
+                                 is_core = ROOT
+                                owner = {
+                                    alliance_with = ROOT
                                 }
                             }
-                            NOT = { exists = L40 }
                         }
-                        L40 = {
-                            has_100_opinion_improved_relation = { target = ROOT }
-                        }
+                        NOT = { exists = L40 }
                     }
-                    OR = {
-                        AND = {
-                            5714 = {
-                                OR = {
-                                    is_core = ROOT
-                                    limit = {
-                                        owner = {
-                                            alliance_with = ROOT
-                                        }
-                                    }
+                    L40 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 150
+					    }
+                    }
+                }
+                OR = {
+                    AND = {
+                        5714 = {
+                            OR = {
+                                 is_core = ROOT
+                                owner = {
+                                    alliance_with = ROOT
                                 }
                             }
-                            NOT = { exists = L53 }
                         }
-                        L53 = {
-                            has_100_opinion_improved_relation = { target = ROOT }
-                        }
+                        NOT = { exists = L53 }
+                    }
+                    L53 = {
+                        has_opinion = {
+						    who = ROOT
+						    value = 150
+					    }
                     }
                 }
             }
