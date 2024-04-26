@@ -12528,3 +12528,67 @@ techno_monarchy_reform = { #CoT Ashscale
 		remove_country_modifier = technocracy_rajput_bonus
 	}
 }
+
+new_moon_elf_monarchy_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	legacy_equivalent = despotic_monarchy
+	potential = {
+		OR = {
+			tag = X29
+			tag = X30
+			has_reform = new_moon_elf_monarchy_reform
+			have_had_reform = new_moon_elf_monarchy_reform
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		merchants = 1
+		nobles_influence_modifier = -0.05
+		burghers_influence_modifier = 0.05
+		#vaisyas_influence_modifier = 0.05
+
+		# Anbennar
+		uppercastes_influence_modifier = -0.05
+		middlecastes_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	boost_income = yes
+	conditional = {
+		allow = {
+			has_dlc = "Leviathan"
+		}
+		allow_draft_transport_ships = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	ai = {
+		factor = 0.75 #generic
+	}
+}

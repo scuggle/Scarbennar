@@ -1,7 +1,7 @@
 
 setup_vision = yes
 government = monarchy
-add_government_reform = plutocratic_reform
+add_government_reform = new_moon_elf_monarchy_reform
 government_rank = 3
 mercantilism = 25
 primary_culture = new_moon_elf

@@ -4,7 +4,7 @@ owner = X29
 controller = X29
 add_core = X29
 culture = jiromji
-religion = elven_forebears
+religion = fangaulan_pantheon
 trade_goods = ivory
 hre = no
 

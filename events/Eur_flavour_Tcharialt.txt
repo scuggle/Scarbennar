@@ -36,3 +36,35 @@ country_event = {
         add_prestige = 100
     }
 }
+
+country_event = {
+    id = tcharialt.2
+	title = tcharialt.2.t
+	desc = tcharialt.2.d
+	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
+
+    is_triggered_only = yes
+
+    option = { #go monarchy
+        name = tcharialt.2.a 
+        ai_chance = { factor = 100 }
+        trigger = {
+            always = yes
+        }
+
+        change_government = monarchy
+        add_government_reform = new_moon_elf_monarchy_reform
+        add_legitimacy = 20
+    }
+    option = { #stay republic
+        name = tcharialt.2.b
+        ai_chance = { factor = 0 }
+        trigger = {
+            always = yes
+        }
+
+        add_prestige = 10
+    }
+}
+
+

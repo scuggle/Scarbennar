@@ -217,6 +217,7 @@ monarchy = {
 				vf_ynnic_feudalism_reform
 				lotus_seat_reform
 				great_corsair_empire_reform
+				new_moon_elf_monarchy_reform
 			}
 		}
 		hereditary_vs_nobility = { #Tier 2
@@ -956,6 +957,7 @@ republic = {
 				frontier_republic_reform
 				haraf_kinah_conclave
 				crathanori_assembly
+				new_moon_elf_republic_reform
 			}
 		}
 		republican_virtues = { #Tier 2

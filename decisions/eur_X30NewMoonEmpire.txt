@@ -48,9 +48,10 @@ country_decisions = {
 			}
 			
 			#add here
-			change_government = monarchy
-			add_government_reform = plutocratic_reform
+			#change_government = monarchy
+			#add_government_reform = plutocratic_reform
 			swap_non_generic_missions = yes
+			country_event = { id = tcharialt.2 }
 			
 			add_country_modifier = {
 				name = "centralization_modifier"

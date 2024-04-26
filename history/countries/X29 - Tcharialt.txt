@@ -1,7 +1,7 @@
 
 setup_vision = yes
 government = republic
-add_government_reform = merchants_reform
+add_government_reform = new_moon_elf_republic_reform
 government_rank = 1
 mercantilism = 25
 primary_culture = new_moon_elf
