@@ -366,7 +366,7 @@ NME_morale = {
 }
 
 NME_liberty_desire = {
-	liberty_desire = -20
+	liberty_desire = -50
 }
 
 NME_annex = {

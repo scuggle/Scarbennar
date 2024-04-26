@@ -33,6 +33,6 @@ country_event = {
             add_historical_friend = ROOT
             create_marriage = ROOT
         }
-        add_prestige = 50
+        add_prestige = 100
     }
 }
