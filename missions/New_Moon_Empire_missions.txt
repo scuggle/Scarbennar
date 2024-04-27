@@ -671,11 +671,11 @@ tcharialt2 = {
                 duration = 18250
             }
             add_country_modifier = {
-                name = "NMW_culture_conversion"
+                name = "NME_culture_conversion"
                 duration = 9125
             }
             add_country_modifier = {
-                name = "NMW_gov_cap"
+                name = "NME_gov_cap"
                 duration = -1
             }
         }
@@ -1240,13 +1240,355 @@ tcharialt5 = {
             tcharialt52
         }
 		position = 3
+
+        provinces_to_highlight = { 
+            OR = {
+			    AND = {
+				    OR = {
+					    area = zenavuma_area #5847
+                        area = nafalofimapo_area #6599
+                        area = oronsafa_area #6615
+                        area = kunolo_area #5714
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+		    }
+        }
+
+        trigger = {
+            L06 = {
+                OR = {
+                    exists = no
+                    is_subject_of = ROOT
+                }
+            }
+            L36 = {
+                OR = {
+                    exists = no
+                    is_subject_of = ROOT
+                }
+            }
+            L40 = {
+                OR = {
+                    exists = no
+                    is_subject_of = ROOT
+                }
+            }
+            L53 = {
+                OR = {
+                    exists = no
+                    is_subject_of = ROOT
+                }
+            }
+            5849 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5851 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5852 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5847 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5821 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            6603 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            6604 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5818 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            6599 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5823 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5824 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            6615 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5805 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5710 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5712 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5713 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+            5714 = {
+                owner = {
+                    OR = {
+                        alliance_with = ROOT
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+        }
+
+        effect = {
+            custom_tooltip = tcharialt53_tt
+            
+            hidden_effect = {
+                5847 = {
+                    center_of_trade = 1
+                    add_center_of_trade_level = 1
+                }
+                6599 = {
+                    center_of_trade = 1
+                    add_center_of_trade_level = 1
+                }
+                6599 = {
+                    center_of_trade = 1
+                    add_center_of_trade_level = 1
+                }
+                5714 = {
+                    center_of_trade = 1
+                    add_center_of_trade_level = 1
+                }
+
+                L06 = {
+                    limit = {
+                        is_subject_of = ROOT
+                    }
+                    add_country_modifier = {
+                        name = "NME_vassal_buff"
+                        duration = -1
+                    }
+                    capital_scope = {
+                        add_unit_construction = {
+		        	        type = light_ship
+		        	        amount = 5
+		        	        speed = 0.01
+		        	        cost = 0
+		                }
+                    }
+                }
+                L36 = {
+                    limit = {
+                        is_subject_of = ROOT
+                    }
+                    add_country_modifier = {
+                        name = "NME_vassal_buff"
+                        duration = -1
+                    }
+                    capital_scope = {
+                        add_unit_construction = {
+		        	        type = light_ship
+		        	        amount = 5
+		        	        speed = 0.01
+		        	        cost = 0
+		                }
+                    }
+                }
+                L40 = {
+                    limit = {
+                        is_subject_of = ROOT
+                    }
+                    add_country_modifier = {
+                        name = "NME_vassal_buff"
+                        duration = -1
+                    }
+                    capital_scope = {
+                        add_unit_construction = {
+		        	        type = light_ship
+		        	        amount = 5
+		        	        speed = 0.01
+		        	        cost = 0
+		                }
+                    }
+                }
+                L53 = {
+                    limit = {
+                        is_subject_of = ROOT
+                    }
+                    add_country_modifier = {
+                        name = "NME_vassal_buff"
+                        duration = -1
+                    }
+                    capital_scope = {
+                        add_unit_construction = {
+		        	        type = light_ship
+		        	        amount = 5
+		        	        speed = 0.01
+		        	        cost = 0
+		                }
+                    }
+                }
+            }
+            
+        }
     }
+
     tcharialt54 = {
         icon = mission_galleys_in_port
 		required_missions = {
             tcharialt53
         }
 		position = 4
+
+        provinces_to_highlight = { 
+            OR = {
+			    AND = {
+				    OR = {
+					    area = sil_berkhens_land_area 
+                        area = far_uelos_isles_area 
+				    }
+				    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    }
+		    }
+        }
+
+        trigger = {
+            sil_berkhens_land_area = {
+                owner = {
+                    alliance_with = ROOT
+                    tag = ROOT
+                    is_subject_of = ROOT
+                }
+            }
+            far_uelos_isles_area = {
+                owner = {
+                    alliance_with = ROOT
+                    tag = ROOT
+                    is_subject_of = ROOT
+                }
+            }
+        }
+
+        effect = {
+            6132 = {
+                change_trade_goods = cloves
+                add_province_modifier = {
+                    name = "NME_extra_goods"
+                    duration = -1
+                }
+            }
+            6130 = {
+                change_trade_goods = cloves
+                add_province_modifier = {
+                    name = "NME_extra_goods"
+                    duration = -1
+                }
+            }
+            5759 = {
+                change_trade_goods = cloves
+                add_province_modifier = {
+                    name = "NME_extra_goods"
+                    duration = -1
+                }
+                add_halfling_minority_size_effect = yes
+            }
+        }
     }
 }
 
@@ -1267,6 +1609,42 @@ newmoon2 ={
             newmoon36
         }
 		position = 7
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						superregion = fangaula_superregion
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+                    NOT = {
+                        culture = new_moon_elf
+                    }
+				}
+			}
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 125
+				superregion = fangaula_superregion
+                culture = new_moon_elf
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit {
+                    superregion = fangaula_superregion
+                }
+                add_half_elven_minority_size_effect = yes
+            }
+            add_country_modifier = {
+                name = "NME_autonomy"
+                duration = -1
+            }
+        }
+
     }
     newmoon28 = {
         icon = mission_galleys_in_port
@@ -1274,6 +1652,43 @@ newmoon2 ={
             newmoon27
         }
 		position = 8
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						province_group = ironwood
+					}
+                    NOT = {
+                        base_production = 10
+                    }
+				}
+			}
+        }
+
+        trigger = {
+            all_owned_province = {
+				OR = { 
+					NOT = { has_province_modifier = ironwood_trees }
+					AND = {
+						has_province_modifier = ironwood_trees
+						base_production = 10
+					}
+				}
+			}
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+			        has_province_modifier = ironwood_trees
+		        }
+		        add_permanent_province_modifier = {
+    		        name = "NME_ironwood"
+			        duration = -1
+		        }
+            }
+        }
     }
     newmoon29 = {
         icon = mission_galleys_in_port
@@ -1281,6 +1696,27 @@ newmoon2 ={
             newmoon28
         }
 		position = 9
+
+        trigger = {
+            OR = {
+                trading_bonus = {
+	                trade_goods = iron
+	                value = yes
+                }
+                production_leader = {
+	                trade_goods = iron
+                }
+            }
+        }
+
+        effect = {
+            custom_tooltip = newmoon29_tt
+            
+            add_country_modifier = {
+                name = "NME_hull"
+                duration = -1
+            }
+        }
     }
 }
 
@@ -1301,6 +1737,38 @@ newmoon3 ={
             tcharialt31
         }
 		position = 6
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						superregion = fangaula_superregion
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 125
+				superregion = fangaula_superregion
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit {
+                    superregion = fangaula_superregion
+                    culture = new_moon_elf
+                }
+                add_human_minority_size_effect = yes
+            }
+            add_country_modifier = {
+                name = "NME_culture_conversion"
+                duration = 9125
+            }
+        }
     }
     newmoon37 = {
         icon = mission_galleys_in_port
@@ -1308,6 +1776,75 @@ newmoon3 ={
             newmoon36
         }
 		position = 7
+
+        trigger = {
+            OR = {
+                any_country = {
+                    is_emperor_of_china = yes
+                    alliance_with = ROOT
+                }
+                AND = {
+                    any_country = {
+                        is_emperor_of_china = yes
+                    }
+                    ROOT = {
+                        is_rival = PREV
+                    }
+                }
+                ROOT = {
+                    is_emperor_of_china = yes
+                }
+                hidden_trigger = {
+				    has_dlc = "Mandate of Heaven"
+				    has_global_flag = empire_of_china_dismantled
+			    }
+            }
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    any_country = {
+                        is_emperor_of_china = yes
+                        alliance_with = ROOT
+                    }
+                }
+                add_historical_friend = ROOT
+            }
+            else = {
+                
+            }
+            if = {
+                limit = {
+                    any_country = {
+                        is_emperor_of_china = yes
+                    }
+                    ROOT = {
+                        is_rival = PREV
+                    }
+                }
+                mothers_sorrow_group = {
+                    add_permanent_claim = ROOT
+                }
+            }
+            else = {
+
+            }
+            if = {
+                limit = {
+                    ROOT = {
+                        is_emperor_of_china = yes
+                    }
+                }
+                add_splendor = 800
+            }
+            else = {
+
+            }
+            add_adm_power = 50
+            add_dip_power = 50
+            add_mil_power = 50
+        }
     }
     newmoon38 = {
         icon = mission_galleys_in_port

@@ -374,7 +374,7 @@ NME_annex = {
 	years_to_integrate_personal_union = -25
 }
 
-NMW_culture_conversion = {
+NME_culture_conversion = {
 	culture_conversion_cost = -0.2
 }
 
@@ -393,11 +393,15 @@ NME_ship_boom = {
 }
 
 NME_vassal_buff = {
-	global_manpower_modifier = 0.1
-	global_tax_modifier = 0.1
-	global_trade_goods_size_modifier = 0.05
+	global_manpower = 5
+	global_sailors = 3000
+	global_tax_modifier = 0.25
+	global_trade_goods_size_modifier = 0.1
 	global_unrest = -2
 	global_trade_power = 0.1
+	land_forcelimit = 3
+	naval_forcelimit = 5
+	global_ship_cost = -0.2
 }
 
 NME_province_dev_cost = {
@@ -409,8 +413,28 @@ NME_religion = {
 	missionaries = 1
 }
 
-NMW_gov_cap = {
+NME_gov_cap = {
 	state_governing_cost = -0.15
 	years_to_integrate_personal_union = -20
 	chance_to_inherit = 0.5
+}
+
+NME_autonomy = {
+	global_autonomy = -0.05
+}
+
+NME_ironwood = {
+	local_development_cost = -0.2
+	local_governing_cost = -0.2
+	trade_value_modifier = 0.15
+	local_production_efficiency = 0.15
+}
+
+NME_hull = {
+	ship_durability = 0.05
+}
+
+NME_culture_conversion = {
+	culture_conversion_cost = -0.25
+	culture_conversion_time = -0.33
 }

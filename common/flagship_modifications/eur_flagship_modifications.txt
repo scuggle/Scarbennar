@@ -1,14 +1,14 @@
 
 ironwood_hull = {
     trigger = {
-		has_country_modifier = tcharialt_ironwood_hull
+		has_country_modifier = NME_hull
 	}
 	modifier = {
-		flagship_durability = 4
+		flagship_durability = 1
         flagship_naval_engagement_modifier = 3
         naval_tradition_in_fleet_modifier = 1
 		number_of_cannons_flagship_modifier = 2
-		naval_maintenance_flagship_modifier = 3
+		naval_maintenance_flagship_modifier = 1
 	}
 	ai_trade_score = {
 		factor = 0
