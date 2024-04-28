@@ -438,3 +438,23 @@ NME_culture_conversion = {
 	culture_conversion_cost = -0.25
 	culture_conversion_time = -0.33
 }
+
+NME_mandate = {
+	imperial_mandate = 0.05
+}
+
+NME_coring = {
+	core_creation = -0.1
+}
+
+NME_halfling_traders = {
+	trade_efficiency = 0.05
+}
+
+NME_horashesh_warriors = {
+	infantry_power = 0.075
+}
+
+NME_missionaries = {
+	global_missionary_strength = 0.02
+}

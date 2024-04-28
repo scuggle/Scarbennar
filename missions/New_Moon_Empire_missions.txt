@@ -1549,14 +1549,63 @@ tcharialt5 = {
         }
 
         trigger = {
-            sil_berkhens_land_area = {
+            6131 = {
                 owner = {
                     alliance_with = ROOT
                     tag = ROOT
                     is_subject_of = ROOT
                 }
             }
-            far_uelos_isles_area = {
+            6132 = {
+                owner = {
+                    alliance_with = ROOT
+                    tag = ROOT
+                    is_subject_of = ROOT
+                }
+            }
+            6133 = {
+                owner = {
+                    alliance_with = ROOT
+                    tag = ROOT
+                    is_subject_of = ROOT
+                }
+            }
+            6134 = {
+                owner = {
+                    alliance_with = ROOT
+                    tag = ROOT
+                    is_subject_of = ROOT
+                }
+            }
+            6135 = {
+                owner = {
+                    alliance_with = ROOT
+                    tag = ROOT
+                    is_subject_of = ROOT
+                }
+            }
+            3234 = {
+                owner = {
+                    alliance_with = ROOT
+                    tag = ROOT
+                    is_subject_of = ROOT
+                }
+            }
+            3235 = {
+                owner = {
+                    alliance_with = ROOT
+                    tag = ROOT
+                    is_subject_of = ROOT
+                }
+            }
+            6129 = {
+                owner = {
+                    alliance_with = ROOT
+                    tag = ROOT
+                    is_subject_of = ROOT
+                }
+            }
+            6130 = {
                 owner = {
                     alliance_with = ROOT
                     tag = ROOT
@@ -1656,9 +1705,7 @@ newmoon2 ={
         provinces_to_highlight = {
             OR = {
 				AND = {
-					OR = {
-						province_group = ironwood
-					}
+					has_province_modifier = ironwood_trees
                     NOT = {
                         base_production = 10
                     }
@@ -1852,10 +1899,37 @@ newmoon3 ={
             newmoon37
         }
 		position = 8
+
+        trigger = {
+            OR = {
+                any_country = {
+                    is_emperor_of_china = yes
+                    alliance_with = ROOT
+                }
+                ROOT = {
+                    is_emperor_of_china = yes
+                }
+                hidden_trigger = {
+				    has_dlc = "Mandate of Heaven"
+				    has_global_flag = empire_of_china_dismantled
+			    }
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "NME_mandate"
+                duration = -1
+            }
+            add_power_projection = {
+                type = 10_permanent_power_projection
+                amount = 10
+            }
+        }
     }
 }
 
-newmoon4 ={
+newmoon4 = {
     slot = 4
 	generic = no
 	ai = yes
@@ -1873,6 +1947,8 @@ newmoon4 ={
             tcharialt42
         }
 		position = 6
+
+        
     }
     newmoon47 = {
         icon = mission_unite_the_small_country
@@ -1880,6 +1956,84 @@ newmoon4 ={
             newmoon36
         }
 		position = 7
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						region = fahvanosy_region
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+        }
+
+        trigger = {
+            OR = {
+                fahvanosy_region = {
+				    type = all
+				    owned_by = ROOT
+				    is_core = ROOT
+			    }
+                AND = {
+                    fahvanosy_region = {
+				        type = all
+				        owned_by = S71
+				        is_core = S71
+			        }
+                    S71 = {
+                        alliance_with = ROOT
+                    }
+                }
+                AND = {
+                    fahvanosy_region = {
+				        type = all
+				        owned_by = S72
+				        is_core = S72
+			        }
+                    S72 = {
+                        alliance_with = ROOT
+                    }
+                }
+                AND = {
+                    fahvanosy_region = {
+				        type = all
+				        owned_by = S77
+				        is_core = S77
+			        }
+                    S77 = {
+                        alliance_with = ROOT
+                    }
+                }
+            }
+        }
+
+        effect = {
+            custom_tooltip = newmoon47_tt
+            if = {
+                limit = {
+                    fahvanosy_region = {
+				        type = all
+				        owned_by = ROOT
+				        is_core = ROOT
+			        }
+                }
+                add_country_modifier = {
+                    name = "NME_coring"
+                    duration = 18250
+                }
+            }
+            else = {
+
+            }
+            horashesh_region = {
+                add_claim = ROOT
+            }
+            add_country_modifier = {
+                name = "NME_halfling_traders"
+                duration = -1
+            }
+        }
     }
     newmoon48 = {
         icon = mission_galleys_in_port
@@ -1887,6 +2041,91 @@ newmoon4 ={
             newmoon47
         }
 		position = 8
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						region = horashesh_region
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+        }
+
+        trigger = {
+            OR = {
+                horashesh_region = {
+				    type = all
+				    owned_by = ROOT
+				    is_core = ROOT
+			    }
+                AND = {
+                    horashesh_region = {
+				        type = all
+				        owned_by = L31
+				        is_core = L31
+			        }
+                    L31 = {
+                        alliance_with = ROOT
+                    }
+                }
+                AND = {
+                    horashesh_region = {
+				        type = all
+				        owned_by = L30
+				        is_core = L30
+			        }
+                    L30 = {
+                        alliance_with = ROOT
+                    }
+                }
+                AND = {
+                    horashesh_region = {
+				        type = all
+				        owned_by = L29
+				        is_core = L29
+			        }
+                    L29 = {
+                        alliance_with = ROOT
+                    }
+                }
+                AND = {
+                    horashesh_region = {
+				        type = all
+				        owned_by = F64
+				        is_core = F64
+			        }
+                    F64 = {
+                        alliance_with = ROOT
+                    }
+                }
+            }
+        }
+
+        effect = {
+            custom_tooltip = newmoon48_tt
+            if = {
+                limit = {
+                    horashesh_region = {
+				        type = all
+				        owned_by = ROOT
+				        is_core = ROOT
+			        }
+                }
+                add_country_modifier = {
+                    name = "NME_missionaries"
+                    duration = 9125
+                }
+            }
+            else = {
+
+            }
+            add_country_modifier = {
+                name = "NME_horashesh_warriors"
+                duration = -1
+            }
+        }
     }
 }
 
