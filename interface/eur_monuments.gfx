@@ -114,12 +114,12 @@ spriteType = {
          texturefile = "gfx//interface//great_projects//great_project_merfolk_embassy.dds"
     }
     spriteType = {
-        name = "GFX_great_project_honey_badger_tannery"
+        name = "GFX_great_project_genie_temple"
          texturefile = "gfx//interface//great_projects//great_project_genie_temple.dds"
     }
     spriteType = {
         name = "GFX_great_project_honey_badger_tannery"
-         texturefile = "gfx//interface//great_projects//great_project_genie_temple.dds"
+         texturefile = "gfx//interface//great_projects//great_project_honey_badger_tannery.dds"
     }
     spriteType = {
         name = "GFX_great_project_temple_of_the_new_moon"

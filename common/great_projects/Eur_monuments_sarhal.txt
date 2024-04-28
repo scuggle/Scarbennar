@@ -4070,7 +4070,7 @@ tier_0 = {
  		}
  		on_upgraded = {
 			6314 = {
-				change_trade_goods = funghi
+				change_trade_goods = fungi
 			}
  		}
  	}

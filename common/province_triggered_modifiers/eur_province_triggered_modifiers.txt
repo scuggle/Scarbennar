@@ -39,6 +39,10 @@ New_moon_temple_1 = {
     trigger = {
         owner = {
             is_subject = yes
+            has_great_project = {
+				type = temple_of_the_new_moon
+				tier = 1
+			}
         }
     }
 
@@ -56,6 +60,10 @@ New_moon_temple_2 = {
     trigger = {
         owner = {
             is_subject = yes
+            has_great_project = {
+				type = temple_of_the_new_moon
+				tier = 2
+			}
         }
     }
 
@@ -73,6 +81,10 @@ New_moon_temple_1 = {
     trigger = {
         owner = {
             is_subject = yes
+            has_great_project = {
+				type = temple_of_the_new_moon
+				tier = 3
+			}
         }
     }
 
