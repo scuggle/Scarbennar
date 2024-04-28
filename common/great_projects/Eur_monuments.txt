@@ -2160,3 +2160,158 @@ port_jaher = {
 		}
 	}
 }
+
+#Lost temple of the New Moon
+ temple_of_the_new_moon = { # thamusand 
+ 	start = 2244 
+ 	date = 01.01.01
+ 	time = {
+ 		months = 0
+ 	}
+ 	build_cost = 0
+ 	can_be_moved = no
+ 	move_days_per_unit_distance = 1
+ 	starting_tier = 0
+ 	type = monument
+ 	build_trigger = {	
+ 	}
+ 	on_built = {		
+ 	}
+ 	on_destroyed = {	
+ 	}
+ 	can_use_modifiers_trigger = {
+ 		AND = {
+			OR = {
+				culture_group = elven
+				culture_group = effelai_ruinborn_elf
+				accepted_culture = new_moon_elf
+				AND = {
+					religion = regent_court
+					owner = {
+						custom_trigger_tooltip = {
+							tooltip = PERSONAL_DEITY_DAME
+							has_personal_deity = the_dame
+						}
+					}
+				}
+			}
+		}
+		province_is_or_accepts_culture = yes	
+ 	}	
+ 	can_upgrade_trigger = {
+ 		AND = {
+			OR = {
+				culture_group = elven
+				culture_group = effelai_ruinborn_elf
+				accepted_culture = new_moon_elf
+				AND = {
+					religion = regent_court
+					owner = {
+						custom_trigger_tooltip = {
+							tooltip = PERSONAL_DEITY_DAME
+							has_personal_deity = the_dame
+						}
+					}
+				}
+			}
+		}
+		province_is_or_accepts_culture = yes	
+	}
+ 	keep_trigger = {
+ 	}
+
+ tier_0 = {
+ 		upgrade_time = {
+ 			months = 0
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 0
+ 		}
+ 		province_modifiers = {
+ 		}
+ 		area_modifier = {
+ 		}
+ 		country_modifiers = {
+ 		}
+ 		on_upgraded = {
+ 		}
+ 	}
+
+ 	tier_1 = {
+ 		upgrade_time = {
+ 			months = 120
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 1000
+ 		}
+ 		province_modifiers = {
+			trade_goods_size_modifier = 0.1
+ 		}
+ 		area_modifier = {
+			trade_goods_size_modifier = 0.1
+ 		}
+ 		country_modifiers = {
+ 			missionaries = 1
+			global_missionary_strength = 0.01
+ 		}
+		region_modifier = {
+			min_autonomy = -10
+		}
+ 		on_upgraded = {
+			
+ 		}
+ 	}
+
+ 	tier_2 = {
+ 		upgrade_time = {
+ 			months = 240
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 2500
+ 		}
+ 		province_modifiers = {
+ 			fort_level = 1
+			trade_goods_size_modifier = 0.2
+ 		}
+ 		area_modifier = {
+			trade_goods_size_modifier = 0.2
+ 		}
+ 		country_modifiers = {
+ 		 	missionaries = 1
+			global_missionary_strength = 0.015
+ 		}
+		region_modifier = {
+			min_autonomy = -20
+		}
+ 		on_upgraded = {
+		
+ 		}
+ 	}
+
+ 	tier_3 = {
+ 		upgrade_time = {
+ 			months = 480
+ 		}
+ 		cost_to_upgrade = {
+ 			factor = 5000
+ 		}
+ 		province_modifiers = {
+ 			fort_level = 1
+			trade_goods_size_modifier = 0.3
+			local_own_coast_naval_combat_bonus = 1
+ 		}
+ 		area_modifier = {
+ 			trade_goods_size_modifier = 0.3
+ 		}
+ 		country_modifiers = {
+ 		 	missionaries = 1
+			global_missionary_strength = 0.02
+ 		}
+		region_modifier = {
+			min_autonomy = -30
+		}
+ 		on_upgraded = {
+			
+ 		}
+ 	}
+}
