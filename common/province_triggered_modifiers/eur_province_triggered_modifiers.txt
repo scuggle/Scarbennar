@@ -30,3 +30,56 @@ isolationist_cyranvar_not_isolating = {
         global_unrest = 10
     }
 }
+
+New_moon_temple_1 = {
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+        owner = {
+            is_subject = yes
+        }
+    }
+
+    overlord = {
+        missionaries = 1
+		global_missionary_strength = 0.01
+    }
+}
+
+New_moon_temple_2 = {
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+        owner = {
+            is_subject = yes
+        }
+    }
+
+    overlord = {
+        missionaries = 1
+		global_missionary_strength = 0.02
+    }
+}
+
+New_moon_temple_1 = {
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+        owner = {
+            is_subject = yes
+        }
+    }
+
+    overlord = {
+        missionaries = 1
+		global_missionary_strength = 0.03
+    }
+}
+
+
