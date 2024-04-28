@@ -1948,6 +1948,27 @@ newmoon4 = {
         }
 		position = 6
 
+        trigger = {
+            OR = {
+                naval_forcelimit = 100
+                full_idea_group = expansion_ideas
+			    full_idea_group = exploration_ideas
+			    full_idea_group = maritime_ideas
+			    full_idea_group = trade_ideas
+            }
+        }
+
+        effect = {
+            define_explorer = {
+				name = "Kureiji Shadowseeker"
+				trait = great_explorer_personality
+				fire = 5
+				shock = 3
+				manuever = 7
+				siege = 2
+			}
+        }
+
         
     }
     newmoon47 = {
@@ -2146,6 +2167,34 @@ newmoon5 ={
             newmoon46
         }
 		position = 7
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						superregion = effelai_superregion
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+        }
+        
+        trigger = {
+            effelai_superregion = {
+				has_discovered = ROOT
+			}
+        }
+
+        effect = {
+            define_conquistador = {
+			    shock = 6
+			    fire = 4
+			    manuever = 5
+			    siege = 2
+			    name = "Lucius the Reclaimer"
+			    trait = goal_oriented_personality
+		    }
+        }
     }
     newmoon58 = {
         icon = mission_jungle_pilgrim
@@ -2153,6 +2202,33 @@ newmoon5 ={
             newmoon57
         }
 		position = 8
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						province_id = 2244
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+        }
+
+        trigger = {
+            2244 = {
+				has_discovered = ROOT
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "NME_colonist"
+                duration = 9125
+            }
+            kiindtir_arbu_area = {
+                add_permanent_claim = ROOT
+            }
+        }
     }
     newmoon59 ={
         icon = mission_precursor_relics
@@ -2160,5 +2236,56 @@ newmoon5 ={
             newmoon58
         }
 		position = 9
+
+        provinces_to_highlight = {
+            OR = {
+				AND = {
+					OR = {
+						area = kiindtir_arbu_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                area = kiindtir_arbu_area
+                value = 4
+            }
+        }
+
+        effect = {
+            2243= {
+                add_base_tax = 2
+                add_base_production = 2
+                add_base_manpower = 2
+            }
+            2244 = {
+                add_base_tax = 3
+                add_base_production = 3
+                add_base_manpower = 3
+                center_of_trade = 1
+                add_center_of_trade_level = 1
+                change_trade_goods = precursor_relics
+            }
+            2245= {
+                add_base_tax = 2
+                add_base_production = 2
+                add_base_manpower = 2
+            }
+            2242= {
+                add_base_tax = 2
+                add_base_production = 2
+                add_base_manpower = 2
+            }
+            add_country_modifier = {
+                name = "NME_great_works"
+                duration = 9125
+            }
+            colonial_lai_peninsula = {
+                add_permanent_claim = ROOT
+            }
+        }
     }
 }

@@ -458,3 +458,13 @@ NME_horashesh_warriors = {
 NME_missionaries = {
 	global_missionary_strength = 0.02
 }
+
+NME_colonist = {
+	colonists = 1
+	colonist_placement_chance = 0.05
+	global_colonial_growth = 30
+}
+
+NME_great_works = {
+	great_project_upgrade_cost = -0.25
+}
