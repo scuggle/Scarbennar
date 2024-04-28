@@ -640,7 +640,7 @@ tcharialt2 = {
         }
     }
     tcharialt25 = {
-        icon = mission_comet_star_animated
+        icon = mission_delighted_mage
 		required_missions = {
             tcharialt14
             tcharialt23
@@ -711,7 +711,7 @@ tcharialt3 = {
         }
     }
     tcharialt32 = {
-        icon = mission_galleys_in_port
+        icon = mission_tree_fishing
 		required_missions = {
             tcharialt31
         }
@@ -783,7 +783,7 @@ tcharialt3 = {
         }
     }
     tcharialt33 = {
-        icon = mission_galleys_in_port
+        icon = mission_misty_forest
 		required_missions = {
             tcharialt32
         }
@@ -1604,7 +1604,7 @@ newmoon2 ={
 		}
 	}
     newmoon27 = {
-        icon = mission_galleys_in_port
+        icon = mission_racial
 		required_missions = {
             newmoon36
         }
@@ -1771,7 +1771,7 @@ newmoon3 ={
         }
     }
     newmoon37 = {
-        icon = mission_galleys_in_port
+        icon = mission_grain_throne_nuzrandu
 		required_missions = { 
             newmoon36
         }
@@ -1847,7 +1847,7 @@ newmoon3 ={
         }
     }
     newmoon38 = {
-        icon = mission_galleys_in_port
+        icon = mission_burning_separation
 		required_missions = { 
             newmoon37
         }
@@ -1875,7 +1875,7 @@ newmoon4 ={
 		position = 6
     }
     newmoon47 = {
-        icon = mission_galleys_in_port
+        icon = mission_unite_the_small_country
 		required_missions = {
             newmoon36
         }
