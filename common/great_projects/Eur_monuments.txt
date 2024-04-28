@@ -2255,7 +2255,7 @@ port_jaher = {
 			global_missionary_strength = 0.01
  		}
 		region_modifier = {
-			min_autonomy = -10
+			min_local_autonomy = -10
 		}
  		on_upgraded = {
 			
@@ -2281,7 +2281,7 @@ port_jaher = {
 			global_missionary_strength = 0.015
  		}
 		region_modifier = {
-			min_autonomy = -20
+			min_local_autonomy = -20
 		}
  		on_upgraded = {
 			
@@ -2308,7 +2308,7 @@ port_jaher = {
 			global_missionary_strength = 0.02
  		}
 		region_modifier = {
-			min_autonomy = -30
+			min_local_autonomy = -30
 		}
  		on_upgraded = {
 			
