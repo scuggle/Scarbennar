@@ -6,7 +6,7 @@ add_core = X29
 capital = ""
 culture = jiromji
 religion = fangaulan_pantheon
-trade_goods = tropical_wood
+trade_goods = iron
 
 is_city = yes
 
