@@ -13,6 +13,7 @@
  newmoon48_tt: "You'll gain +2% missionary strength for 25 years if you own the provinces directly!"
  ironwood_hull: "Ironwood Hull"
  ironwood_hull_designed: "Ironwood Hull"
+ temple_of_the_new_moon_tt: "Overlord will receive +1 missionaries and +1% missionary strength."
 
  tcharialt11_title: "Muster the forces"
  tcharialt11_desc: "placeholder"
@@ -91,4 +92,21 @@
  NME_missionaries: "New Moon Missionaries"
  NME_colonist: "New Moon Colonization"
  NME_great_works: "New Moon Great Works"
+ temple_of_the_new_moon_overlord: "Overlord of the Temple of the New Moon"
+
+ tcharialt.1.t: "The Religion of Tcharialt"
+ tcharialt.1.d: "For long have we been strangers in the faith of Sarhal. Shall we assimilate into the Fangaulan Pantheon or shall we keep worshiping our Elven Forebears?"
+ tcharialt.1.a: "Elves are best."
+ tcharialt.1.b: "We should embrace the local faith."
+ tcharialt.2.t: "The Proclamation of the New Moon Empire"
+ tcharialt.2.d: "An empire this grand has not been seen since the days before the Ashen skies! Long live the New Moon Empire, long may it protect Sarhal and its people!"
+ tcharialt.2.a: "The Emperor should be a Monarch."
+ tcharialt.2.b: "We must not turn our backs on our Grand Republic."
+ tcharialt.5.t: "The Temple of the New Moon"
+ tcharialt.5.d: "For milenia the temple of the new moon has been lost to the jungles of Effelai but finally it has been restored!"
+ tcharialt.5.a: "This is good news!"
+ tcharialt.6.t: "The Temple of the New Moon has been lost!"
+ tcharialt.6.d: "We have lost the overlordship of the Temple of the New Moon"
+ tcharialt.6.a: "Heavens protect us!"
+
  

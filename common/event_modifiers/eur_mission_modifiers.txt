@@ -468,3 +468,8 @@ NME_colonist = {
 NME_great_works = {
 	great_project_upgrade_cost = -0.25
 }
+
+temple_of_the_new_moon_overlord = {
+	missionaries = 1
+	global_missionary_strength = 0.01
+}
