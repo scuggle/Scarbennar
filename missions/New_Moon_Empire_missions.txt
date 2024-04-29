@@ -1812,7 +1812,7 @@ newmoon3 ={
                 add_human_minority_size_effect = yes
             }
             add_country_modifier = {
-                name = "NME_culture_conversion"
+                name = "NME_culture_conversion2"
                 duration = 9125
             }
         }

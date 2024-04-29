@@ -434,7 +434,7 @@ NME_hull = {
 	ship_durability = 0.05
 }
 
-NME_culture_conversion = {
+NME_culture_conversion2 = {
 	culture_conversion_cost = -0.25
 	culture_conversion_time = -0.33
 }
