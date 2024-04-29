@@ -148,81 +148,81 @@ country_event = {
     }
 }
 
-country_event = {
-    id = tcharialt.5
-	title = tcharialt.5.t
-	desc = tcharialt.5.d
-	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
+#country_event = {
+#    id = tcharialt.5#
+#	title = tcharialt.5.t#
+#	desc = tcharialt.5.d#
+#	picture = EFFELAI_BLOOM_ANIMATED_eventPicture#
 
-    is_triggered_only = yes
+#    is_triggered_only = yes#
 
-    trigger = {
-        NOT = {
-            has_country_modifier = temple_of_the_new_moon_overlord
-        }
-        2244 = {
-            has_great_project = {
-                type = temple_of_the_new_moon
-                tier = 1
-            }
-            owner = {
-                is_subject_of = ROOT
-            }
-        }
-    }
+#    trigger = {
+#        NOT = {
+#            has_country_modifier = temple_of_the_new_moon_overlord
+#        }
+#        2244 = {
+#            has_great_project = {
+#                type = temple_of_the_new_moon
+#                tier = 1
+#            }
+#            owner = {
+#                is_subject_of = ROOT
+#            }
+#        }
+#    }#
+#
 
+#    option = { #cool
+#        name = tcharialt.5.a 
+#        ai_chance = { factor = 100 }
+#        trigger = {
+#            always = yes
+#        }
+#        immediate_effect = {
+#            add_country_modifier = {
+#                name = "temple_of_the_new_moon_overlord"
+#                duration = -1
+#            }
+#        }
+#        add_prestige = 10
+#    }
+#   
+#    
+#}
 
-    option = { #cool
-        name = tcharialt.5.a 
-        ai_chance = { factor = 100 }
-        trigger = {
-            always = yes
-        }
-        immediate_effect = {
-            add_country_modifier = {
-                name = "temple_of_the_new_moon_overlord"
-                duration = -1
-            }
-        }
-        add_prestige = 10
-    }
-   
-    
-}
+#country_event = {
+#    id = tcharialt.6#
+#	title = tcharialt.6.t#
+#	desc = tcharialt.6.d#
+#	picture = EFFELAI_BLOOM_ANIMATED_eventPicture#
 
-country_event = {
-    id = tcharialt.6
-	title = tcharialt.6.t
-	desc = tcharialt.6.d
-	picture = EFFELAI_BLOOM_ANIMATED_eventPicture
+#    is_triggered_only = yes#
 
-    is_triggered_only = yes
+#    trigger = {
+#        has_country_modifier = temple_of_the_new_moon_overlord
+#        NOT = {
+#            2244 = {
+#                has_great_project = {
+#                    type = temple_of_the_new_moon
+#                    tier = 1
+#                }
+#                owner = {
+#                    is_subject_of = ROOT
+#                }
+#            }
+#        }
+#    }#
+#
 
-    trigger = {
-        has_country_modifier = temple_of_the_new_moon_overlord
-        NOT = {
-            2244 = {
-                has_great_project = {
-                    type = temple_of_the_new_moon
-                    tier = 1
-                }
-                owner = {
-                    is_subject_of = ROOT
-                }
-            }
-        }
-    }
-
-
-    option = { #yikes
-        name = tcharialt.6.a 
-        ai_chance = { factor = 100 }
-        trigger = {
-            always = yes
-        }
-        immediate_effect = {
-            remove_country_modifier = temple_of_the_new_moon_overlord
-        }
-        add_prestige = -10
-    }
-}
+#    option = { #yikes
+#        name = tcharialt.6.a 
+#        ai_chance = { factor = 100 }
+#        trigger = {
+#            always = yes
+#        }
+#        immediate_effect = {
+#            remove_country_modifier = temple_of_the_new_moon_overlord
+#        }
+#        add_prestige = -10
+#    }
+#}

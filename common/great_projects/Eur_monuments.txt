@@ -2253,7 +2253,7 @@ port_jaher = {
  		country_modifiers = {
  			missionaries = 1
 			global_missionary_strength = 0.01
-			custom_tootip = temple_of_the_new_moon_tt
+			#custom_tootip = temple_of_the_new_moon_tt
  		}
 		region_modifier = {
 			min_local_autonomy = -10
@@ -2280,7 +2280,7 @@ port_jaher = {
  		country_modifiers = {
  		 	missionaries = 1
 			global_missionary_strength = 0.015
-			custom_tootip = temple_of_the_new_moon_tt
+			#custom_tootip = temple_of_the_new_moon_tt
  		}
 		region_modifier = {
 			min_local_autonomy = -20
@@ -2308,7 +2308,7 @@ port_jaher = {
  		country_modifiers = {
  		 	missionaries = 1
 			global_missionary_strength = 0.02
-			custom_tootip = temple_of_the_new_moon_tt
+			#custom_tootip = temple_of_the_new_moon_tt
  		}
 		region_modifier = {
 			min_local_autonomy = -30

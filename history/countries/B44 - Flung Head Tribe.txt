@@ -12,10 +12,10 @@ capital = 829
 monarch = {
 		name = "Gloxee"
 		dynasty = "Flung Head"
-		birth_date = 1421.9.12
-		adm = 1
+		birth_date = 1411.9.12
+		adm = 2
 		dip = 2
-		mil = 5
+		mil = 4
 		female = yes
 	}
 	

@@ -1,8 +1,8 @@
 
 # No previous file for Karankawa
-owner = B21
-controller = B21
-add_core = B21
+owner = B24
+controller = B24
+add_core = B24
 culture = green_orc
 religion = great_dookan
 capital = ""
