@@ -442,7 +442,7 @@ silvelar_silver_spires = {
 		area_modifier = {
 		}
 		region_modifier = {
-			local_tax_modifier = 0.33
+			local_tax_modifier = 0.3
 		}
 		country_modifiers = {
 			monthly_gold_inflation_modifier = -0.5
@@ -576,9 +576,10 @@ menibor_hall_of_the_gallant = {
 		province_modifiers = {
 		}
 		area_modifier = {
+			local_tax_modifier = 0.1
 		}
 		region_modifier = {
-			local_tax_modifier = 0.33
+			local_tax_modifier = 0.25
 		}
 		country_modifiers = {
 			adventurers_influence_modifier = 0.05
