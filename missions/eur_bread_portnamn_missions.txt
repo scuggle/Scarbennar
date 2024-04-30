@@ -3,9 +3,9 @@ portnamn_left_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_kingdom_of_iochand = {
 		position = 1
@@ -224,14 +224,15 @@ portnamn_left_branch = {
 		icon = mission_artificer_experience
 		required_missions = { port_an_outpost }
 		trigger = {
-			dalaire_region = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with  = {
 				value = 20
+				region = dalaire_region
 				country_or_non_sovereign_subject_holds = ROOT 
 				is_city = yes
 			}
 		}
 		provinces_to_highlight = {
-			reion = dalaire_region
+			region = dalaire_region
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				is_city = no 
@@ -257,10 +258,8 @@ portnamn_left_branch = {
 		icon = mission_artificer_experience
 		required_missions = { port_dalaire }
 		trigger = {
-			all_subject_country  = {
-				limit = {
-					is_colonial_nation = yes
-				}
+			any_subject_country   = {
+				is_colonial_nation = yes
 				trade_goods_produced_amount = {
 					trade_goods = iron 
 					amount = 20
@@ -311,9 +310,9 @@ portnamn_inner_left_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_damestear_aquisition = {
 		position = 2
@@ -553,10 +552,8 @@ portnamn_inner_left_branch = {
 		icon = mission_artificer_experience
 		required_missions = { port_dalaire }
 		trigger = {
-			all_subject_country  = {
-				limit = {
-					is_colonial_nation = yes
-				}
+			any_subject_country  = {
+				is_colonial_nation = yes
 				trade_goods_produced_amount = {
 					trade_goods = naval_supplies 
 					amount = 15
@@ -602,9 +599,9 @@ portnamn_inner_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_corps_of_artificers = {
 		position = 3
@@ -772,10 +769,8 @@ portnamn_inner_branch = {
 		icon = mission_artificer_experience
 		required_missions = { port_dalaire }
 		trigger = {
-			all_subject_country  = {
-				limit = {
-					is_colonial_nation = yes
-				}
+			any_subject_country  = {
+				is_colonial_nation = yes
 				trade_goods_produced_amount = {
 					trade_goods = dyes 
 					amount = 20
@@ -825,9 +820,9 @@ portnamn_inner_right_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_resource_aquisition = {
 		position = 1
@@ -1111,10 +1106,8 @@ portnamn_inner_right_branch = {
 		icon = mission_artificer_experience
 		required_missions = { port_dalaire }
 		trigger = {
-			all_subject_country  = {
-				limit = {
-					is_colonial_nation = yes
-				}
+			any_subject_country  = {
+				is_colonial_nation = yes
 				trade_goods_produced_amount = {
 					trade_goods = precursor_relics 
 					amount = 25
@@ -1159,9 +1152,9 @@ portnamn_right_branch = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		tag = A19	#portnamn 
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = chose_generic_mt }
 	}
 	port_theatre_fame = {
 		position = 1
