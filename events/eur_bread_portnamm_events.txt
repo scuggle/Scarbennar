@@ -1,5 +1,4 @@
 namespace = port_flavour_events
-
 country_event = {
 	id = port_flavour_events.1
 	title = port_flavour_events.1.t 
@@ -270,16 +269,14 @@ province_event = {	#dam building decision
 			add_unrest = 5
 			add_devastation = 5
 		}
-		owner = {
-			add_adm_power = -10
-			add_treasury = -500
-		}
+		add_adm_power = -10
+		add_treasury = -500
 		change_variable = {
 			which = freshwaterreservesvariable
 			value = 4
 		}
 	}
-	option = {	#smallmarches lake
+	option = {	#manerd
 		name = port_flavour_events.4.c
 		144 = {
 			add_province_modifier = {
@@ -293,16 +290,14 @@ province_event = {	#dam building decision
 			add_unrest = 5
 			add_devastation = 5
 		}
-		owner = {
-			add_adm_power = -10
-			add_treasury = -500
-		}
+		add_adm_power = -10
+		add_treasury = -500
 		change_variable = {
 			which = freshwaterreservesvariable
 			value = 4
 		}
 	}
-	option = {	#smallmarches lake
+	option = {	#Many Burrows
 		name = port_flavour_events.4.dd
 		148 = {
 			add_province_modifier = {
@@ -316,16 +311,14 @@ province_event = {	#dam building decision
 			add_unrest = 5
 			add_devastation = 5
 		}
-		owner = {
-			add_adm_power = -10
-			add_treasury = -500
-		}
+		add_adm_power = -10
+		add_treasury = -500
 		change_variable = {
 			which = freshwaterreservesvariable
 			value = 4
 		}
 	}
-	option = {	#smallmarches lake
+	option = {	#Royvibobb
 		name = port_flavour_events.4.e
 		167 = {
 			add_province_modifier = {
@@ -339,17 +332,15 @@ province_event = {	#dam building decision
 			add_unrest = 5
 			add_devastation = 5
 		}
-		owner = {
-			add_adm_power = -10
-			add_treasury = -500
-		}
+		add_adm_power = -10
+		add_treasury = -500
 		change_variable = {
 			which = freshwaterreservesvariable
 			value = 4
 		}
 	}
 }
-province_event = {	#dam building decision
+province_event = {	#river digging decision
 	id = port_flavour_events.5
 	title = port_flavour_events.5.t 
 	desc = port_flavour_events.5.d 
@@ -375,7 +366,7 @@ province_event = {	#dam building decision
 	}
 	option = {
 		name = port_flavour_events.5.b
-		129 = {
+		129 = {	#eldergeen
 			add_province_modifier = {
 				name = port_dug_river_modifier	#modifier giving +5% state maintenance
 				duration = -1	#permanent
@@ -390,7 +381,7 @@ province_event = {	#dam building decision
 	}
 	option = {
 		name = port_flavour_events.5.c
-		141 = {
+		141 = {	#turnwell
 			add_province_modifier = {
 				name = port_dug_river_modifier	#modifier giving +5% state maintenance
 				duration = -1	#permanent
@@ -404,8 +395,8 @@ province_event = {	#dam building decision
 		}
 	}
 	option = {
-		name = port_flavour_events.5.d
-		142 = {
+		name = port_flavour_events.5.dd
+		142 = {	#Iochand
 			add_province_modifier = {
 				name = port_dug_river_modifier	#modifier giving +5% state maintenance
 				duration = -1	#permanent
@@ -420,7 +411,7 @@ province_event = {	#dam building decision
 	}
 	option = {
 		name = port_flavour_events.5.e
-		143 = {
+		143 = {	#Carverhold
 			add_province_modifier = {
 				name = port_dug_river_modifier	#modifier giving +5% state maintenance
 				duration = -1	#permanent
