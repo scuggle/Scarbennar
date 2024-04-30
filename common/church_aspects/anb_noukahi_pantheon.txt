@@ -105,7 +105,7 @@ noukahi_defence_of_our_beliefs = {
 	is_blessing = yes
 
 	modifier = {
-		infantry_power = 0.1
+		infantry_power = 0.075
 	}
 	ai_will_do = {
 		factor = 10
