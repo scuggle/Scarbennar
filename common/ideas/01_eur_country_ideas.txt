@@ -370,12 +370,12 @@ X09_ideas = {
 #Dameshead Republic
 X10_ideas = {
 	start = {
-		global_trade_power = 0.1
+		global_trade_power = 0.15
 		trade_efficiency = 0.2
 	}
 
 	bonus = {
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	
 	trigger = {
@@ -398,7 +398,7 @@ X10_ideas = {
 		merchants = 1
 	}
 	X10_four = {
-		naval_forcelimit_modifier = 0.2
+		naval_forcelimit_modifier = 0.25
 		global_ship_trade_power = 0.5
 	}
 	X10_five = {

@@ -1751,7 +1751,7 @@ A79_ideas = {
 	free = yes
 
 	A79_reconstitute_reconstruct_repatriate = {
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	A79_all_small_artillerists = {
 		fire_damage_received = -0.1
@@ -1759,7 +1759,7 @@ A79_ideas = {
 	}
 	A79_damestear_born_damestear_developed = {
 		idea_cost = -0.1
-		production_efficiency = 0.05
+		production_efficiency = 0.075
 	}
 	A79_gnomeostasis = {
 		global_unrest = -2
@@ -2276,10 +2276,10 @@ F24_ideas = {
 		defensiveness = 0.10
 	}
 	F24_land_of_floating_gardens = {
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	F24_heart_of_the_world = {
-		global_trade_power = 0.1
+		global_trade_power = 0.15
 	}
 	F24_port_of_emperors = {
 		naval_maintenance_modifier = -0.2
@@ -3390,7 +3390,7 @@ Z28_ideas = {
 	free = yes		#will be added at load.
 
 	Z28_grandest_city_of_the_reach = { # Bayvic grew to be the biggest city in the reach
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	reachman_chillsbay_traders = { # Generic Reachman Idea
 		trade_efficiency = 0.1
@@ -3408,10 +3408,10 @@ Z28_ideas = {
 	}
 	reachman_fishy_diet = { # Generic Reachman Idea
 		naval_forcelimit_modifier = 0.15
-		sailors_recovery_speed = 0.1
+		sailors_recovery_speed = 0.15
 	}
 	reachman_against_larger_odds = { # Generic Reachman Idea
-		land_morale = 0.1
+		land_morale = 0.125
 	}
 }
 
@@ -3840,7 +3840,7 @@ Z53_ideas = {
 	free = yes
 
 	Z53_riches_of_southern_castanor = {
-		production_efficiency = 0.1
+		production_efficiency = 0.15
 	}
 	Z53_diversity_of_clans = {
 		num_accepted_cultures = 1
@@ -3850,7 +3850,7 @@ Z53_ideas = {
 		diplomatic_reputation = 1
 	}
 	Z53_pacification_of_the_beast = {
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	Z53_defensive_mentality = {
 		defensiveness = 0.2
@@ -4459,7 +4459,7 @@ B48_ideas = {
 B49_ideas = {
 	start = {
 		merchants = 1
-		caravan_power = 0.2
+		caravan_power = 0.25
 	}
 	bonus = {
 		land_maintenance_modifier = -0.1
@@ -4473,22 +4473,22 @@ B49_ideas = {
 		trade_efficiency = 0.1
 	}
 	B49_blessed_guardsmen_of_ara = {
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.075
 	}
 	B49_invisible_hand_of_the_golden_horseshoe_bank = {
-		inflation_reduction = 0.1
+		inflation_reduction = 0.15
 	}
 	B49_incentives_of_aras_faith = {
 		global_missionary_strength = 0.02
 	}
 	B49_rebuilding_the_homestead_act = {
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	B49_mercantile_espionage = {
 		spy_offence = 0.20
 	}
 	B49_pursuit_of_happiness = {
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.25
 	}
 }
 
@@ -5718,7 +5718,7 @@ G63_ideas = {
 H22_ideas = {
 	start = {
 		colonists = 1
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	bonus = {
 		global_trade_power = 0.1
@@ -5733,7 +5733,7 @@ H22_ideas = {
 	}
 	H22_great_men = {
 		advisor_pool = 2
-		advisor_cost = -0.1
+		advisor_cost = -0.15
 	}
 	H22_bigger_boats = {
 		heavy_ship_power = 0.15
@@ -9640,17 +9640,17 @@ F52_ideas = {
 		horde_unity = 0.5
 	}
 	F52_between_cannor_and_rahen = {
-		global_trade_power = 0.2
+		global_trade_power = 0.25
 	}
 	F52_divenhal_domination = {
 		galley_cost = -0.25
 		galley_power = 0.2
 	}
 	F52_freedom_from_gnoll_and_elf = {
-		land_morale = 0.1
+		land_morale = 0.125
 	}
 	F52_the_flooding_of_the_suran = {
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	F52_the_magi_of_bulwar = {
 		all_power_cost = -0.025
@@ -14827,13 +14827,13 @@ G96_ideas = {
 	free = yes
 
 	G96_landfall_promise = { #Landing and making a promise of how they will never be oppressed
-		stability_cost_modifier = -0.10
+		stability_cost_modifier = -0.15
 	}
 	G96_urban_villages = { #There are not many villages more small urban cities
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	G96_new_green_farming = { #Bring orcs so that halflings will not be serfs
-		production_efficiency = 0.10
+		production_efficiency = 0.15
 	}
 	G96_tower_of_vis = { #Really big tower and definitely not compensating
 		prestige = 1
@@ -14854,7 +14854,7 @@ G96_ideas = {
 G91_ideas = {
 	start = {
 		trade_efficiency = 0.1
-		prestige_decay = -0.01
+		prestige_decay = -0.015
 	}
 	bonus = {
 		global_manpower_modifier = 0.15
@@ -14876,13 +14876,13 @@ G91_ideas = {
 		mercenary_manpower= 0.10
 	}
 	G91_a_rising_metropolis = {
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	G91_the_isobelin_stock_exchange = {
-		global_trade_power = 0.20
+		global_trade_power = 0.25
 	}
 	G91_the_agency_of_tax_enforcement = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.15
 	}
 	G91_the_commissioners_act_of_1780 = {
 		build_time = -0.15
@@ -15659,16 +15659,16 @@ I99_ideas = {
 	free = yes
 
 	I99_jazhobedin = {
-		development_cost = -0.15 #massive shanty towns, Jazhobedin "great towns"
+		development_cost = -0.1 #massive shanty towns, Jazhobedin "great towns"
 	}
 	I99_courage_of_the_horde = { #courage of the horde
-		land_morale = 0.1
+		land_morale = 0.125
 	}
 	I99_entry_to_the_kingdom = { #rules over many subjects
 		num_accepted_cultures = 2
 	}
 	I99_the_slum_diggers = { #we have reserves
-		reinforce_speed = 0.1
+		reinforce_speed = 0.125
 		recover_army_morale_speed = 0.10
 	}
 	I99_a_goblin_king = { #Goblin King
@@ -16637,16 +16637,16 @@ Y63_ideas = {
 		diplomatic_reputation = 1
 	}
 	Y63_riches_of_phokhao = { #The tunnels and mines of Phokhao are bountiful with gemstones that only the Nephrite Dwarves can reach
-		production_efficiency = 0.1
+		production_efficiency = 0.15
 	}
 	Y63_bring_the_lost_home = { #A call for the dwarves scattered throughout Haless in small communities to come to Verkal Ozovar
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	Y63_scions_of_gronstunad = { #Gronstunad was the greatest hold in the east, and Verkal Ozovar is its heir
 		prestige = 1
 	}
 	Y63_wizards_of_ozovar = { #I'm not even sorry; More mages in Verkal Ozovar than usual dwarf holds
-		shock_damage = 0.1
+		shock_damage = 0.125
 	}
 	Y63_viridescent_legion = { #Legion of dorfs wearing elaborate enchanted Nephrite armor
 		fire_damage_received = -0.1
@@ -25459,7 +25459,7 @@ F54_ideas = {
 U27_ideas = { #Made by @Ottokard#1942
 	start = {
 		infantry_fire = 0.15 #they enthusiastically adopt guns
-		development_cost = -0.15 #a lot of "free" land
+		development_cost = -0.1 #a lot of "free" land
 	}
 	bonus = {
 		morale_damage_received = -0.10
@@ -25470,10 +25470,10 @@ U27_ideas = { #Made by @Ottokard#1942
 	free = yes
 
 	U27_the_great_charter_of_theinos = { #the constitution
-		stability_cost_modifier = -0.10
+		stability_cost_modifier = -0.15
 	}
 	U27_from_many_came_one = { #access to a large array of talent from across the federation
-		advisor_cost = -0.1
+		advisor_cost = -0.15
 	}
 	U27_built_from_scratch = { #
 		build_cost = -0.10
@@ -33202,8 +33202,8 @@ L86_ideas = {
 #Melakmengi
 L65_ideas = {
 	start = {
-		build_cost = -0.1
-		land_morale = 0.1 #willingly goes to battle against monsters (trolls)
+		build_cost = -0.125
+		land_morale = 0.125 #willingly goes to battle against monsters (trolls)
 	}
 	bonus = {
 		tolerance_own = 2
@@ -33227,7 +33227,7 @@ L65_ideas = {
 		manpower_in_true_faith_provinces = 0.15
 	}
 	L65_order_of_rains = { # section of the semayebaka society that performs the holy duties of summoning the rains. The farm fields regularly receive rains with timetables scheduled months in advance, streamlined with an education system that produces masses of cloud priests. The result is very large crop yields, allowing even the poorest mengi to be well fed
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	L65_a_new_administration_for_a_new_empire = { # melakmengi creates a new bureaucratic state largely inspired by Rahen and Yanshen, which the state uses to weaken the old nobility and ultimately end Mengi feudalism in Madriamilak.
 		governing_capacity_modifier = 0.15
