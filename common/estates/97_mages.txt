@@ -23,9 +23,9 @@ estate_mages = {
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		all_power_cost = -0.05
+		all_power_cost = -0.025
 		imperial_authority = 0.05
-		technology_cost = 0.1
+		technology_cost = 0.05
 		monthly_support_heir_gain = 0.13
 	}
 	country_modifier_neutral = {
