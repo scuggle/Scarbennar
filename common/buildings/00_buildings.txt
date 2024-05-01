@@ -110,6 +110,7 @@ temple = {
 	time = 12
 	modifier = {
 		local_tax_modifier = 0.5
+		local_unrest = -1
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -1006,6 +1007,7 @@ cathedral = {
 	modifier = {
 		local_missionary_strength = 0.03
 		local_tax_modifier = 1
+		local_unrest = -2
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
