@@ -122,7 +122,7 @@ port_major_relic_site = {
 	innovativeness_gain = 0.05
 }
 port_plentiful_relics_modifier = {
-	all_power_cost = 0.025
+	all_power_cost = -0.025
 }
 port_university_reforms_modifier = {
 	artificer_estate_loyalty_modifier = 0.05

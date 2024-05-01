@@ -761,9 +761,9 @@ country_decisions = {
 	}
 	port_building_roads_decision8 = {	#road to viswall
 		potential = {
-			63 = { 
-				NOT = { has_province_modifier = port_road_hub_modifier } #south viswall
-			}	
+			NOT = {
+				63 = { has_province_modifier = port_road_hub_modifier }	#south viswall
+			}
 			mission_completed =  port_roadworks 
 		}
 		allow = {
@@ -1464,7 +1464,6 @@ country_decisions = {
 				167 = {	#royvibobb
 					owned_by = ROOT
 				}
-			}
 		}
 		provinces_to_highlight = {
 			OR = {
