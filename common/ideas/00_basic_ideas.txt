@@ -19,11 +19,12 @@ infantry_ideas = { #  Infantry/Fire
 		mil_tech_cost_modifier = -0.1
 	}
 	inf_ide3 = {
-		fire_damage = 0.10
+		fire_damage = 0.15
 		infantry_cost = -0.1
 	}
 	inf_ide4 = {
-		drill_decay_modifier = -0.2
+		drill_decay_modifier = -0.1
+		reinforce_cost_modifier = -0.10
 	}
 	inf_ide5 = {
 		land_maintenance_modifier = -0.10
@@ -49,7 +50,8 @@ aristocracy_ideas = { # Cavalry/Shock
 	}
 
 	bonus = {
-		cavalry_power = 0.1
+		cavalry_power = 0.075
+		infantry_power = 0.075
 		possible_mil_policy = 1
 	}
 	
@@ -60,21 +62,21 @@ aristocracy_ideas = { # Cavalry/Shock
 		movement_speed = 0.1
 	}
 	local_nobility = {
-		shock_damage = 0.1
+		shock_damage = 0.15
 		global_regiment_cost = -0.05
 	}
 	serfdom = { #the serfs dont know how to fire with artillery
 		artillery_shock = 0.5
 	}
 	noble_resilience = {
-		land_attrition = -0.10
+		land_attrition = -0.15
 	}
 	noble_officers = {
 		leader_land_shock = 1
 		shock_damage_received = -0.05
 	}
 	international_nobility = {
-		reinforce_speed = 0.10
+		reinforce_speed = 0.20
 	}
 	
 
@@ -141,8 +143,8 @@ at_standing = { # Professional
 		leader_cost = -0.10
 	}
 	at_sta6 = {	
-		yearly_army_professionalism = 0.005
-		drill_decay_modifier = -0.2
+		yearly_army_professionalism = 0.01
+		drill_decay_modifier = -0.1
 	}
 	at_sta7 = {
 		prestige = 1
@@ -182,7 +184,7 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 		possible_condottieri = 0.5
 	}
 	adven_ide6 = {
-		mercenary_manpower = 0.1
+		mercenary_manpower = 0.25
 	}
 	adven_ide7 = {
 		allow_mercenary_drill = yes
@@ -218,7 +220,7 @@ quantity_ideas = { # Logistics
 		global_supply_limit_modifier = 0.33
 	}
 	camp_followers = {
-		reinforce_speed = 0.10
+		reinforce_speed = 0.20
 	}
 	garrison_conscription = {
 		artillery_power = 0.1
@@ -226,6 +228,7 @@ quantity_ideas = { # Logistics
 	}
 	expanded_supply_trains = {
 		loot_amount = 5
+		may_build_supply_depot = yes
 	}
 
 	ai_will_do = {
@@ -253,7 +256,7 @@ leadership_ideas = { #Leadership
 	}
 	lead_ide3 = {
 		morale_damage_received = -0.1
-		recover_army_morale_speed = 0.05
+		recover_army_morale_speed = 0.1
 	}
 	lead_ide4 = {
 		leader_land_fire = 1
@@ -267,6 +270,7 @@ leadership_ideas = { #Leadership
 	}
 	lead_ide7 = {
 		general_cost = -0.1
+		free_land_leader_pool = 1
 	}
 	ai_will_do = {
 		factor = 0.4
@@ -298,6 +302,7 @@ defensive_ideas = { # Garrison
 	}
 	regimental_system = {
 		garrison_size = 0.5
+		global_garrison_growth = 0.2
 	}
 	defensive_mentality = {
 		global_supply_limit_modifier = 0.25
@@ -349,6 +354,7 @@ quality_ideas = { #Siege
 	}
 	massed_battery = {
 		artillery_levels_available_vs_fort = 1
+		reinforce_speed = 0.2
 	}
 
 	ai_will_do = {
@@ -370,9 +376,10 @@ offensive_ideas = { #Grand Plan
 
 	bayonet_leaders = {
 		global_supply_limit_modifier = 0.25
+		war_taxes_cost_modifier = -0.5
 	}
 	national_conscripts = {
-		global_regiment_recruit_speed = -0.10
+		global_regiment_recruit_speed = -0.15
 	}
 	superior_firepower = {
 		global_manpower_modifier = 0.10
@@ -408,10 +415,10 @@ special_forces_ideas = { # Special Forces
 		possible_mil_policy = 1
 	}
 	special_forces_1 = {
-		army_tradition = 0.25
+		army_tradition = 0.5
 	}
 	special_forces_2 = {
-		siege_ability = 0.05
+		siege_ability = 0.1
 	}
 	special_forces_3 = {
 		special_unit_forcelimit = 0.15
@@ -428,6 +435,7 @@ special_forces_ideas = { # Special Forces
 	}
 	special_forces_7 = {
 		special_unit_cost_modifier = -0.25
+		backrow_artillery_damage = 0.05
 	}
 }
 
