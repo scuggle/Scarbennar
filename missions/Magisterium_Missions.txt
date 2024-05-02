@@ -278,6 +278,7 @@ magisterium_3 = {
 			524 = {
 				development = 10
 			}
+			ai = no
 		}
 		
 		effect = {
