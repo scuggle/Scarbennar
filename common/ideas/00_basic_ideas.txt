@@ -1247,6 +1247,7 @@ innovativeness_ideas = { #Technocratic Ideas
 
 	patron_of_art  = {
 		innovativeness_gain = 0.5
+		monthly_splendor = 1
 	}
 	empiricism = {
 		advisor_pool = 2
@@ -1267,7 +1268,7 @@ innovativeness_ideas = { #Technocratic Ideas
 		free_policy = 1
 	}
 	formalized_officer_corps = {
-		technology_cost = -0.10
+		technology_cost = -0.05
 	}
 
 	ai_will_do = {
@@ -1301,6 +1302,7 @@ religious_ideas = { #zealotry ideas
 	}
 	church_attendance_duty = {
 		global_missionary_strength = 0.02
+		institution_spread_from_true_faith = 0.5
 	}
 	divine_supremacy = {
 		max_absolutism = 10
@@ -1319,14 +1321,15 @@ religious_ideas = { #zealotry ideas
 		yearly_patriarch_authority = 0.005
 		harmonization_speed = 0.2
 		meritocracy = 0.5
+		curia_powers_cost = -0.1
 	}
 	religious_tradition = {
 		warscore_cost_vs_other_religion = -0.25
-		same_religion_advisor_cost = -0.15
+		same_religion_advisor_cost = -0.2
 	}
 	inquisition = {
 		missionaries = 1
-		missionary_maintenance_cost = -0.15
+		missionary_maintenance_cost = -0.2
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
@@ -1351,9 +1354,11 @@ humanist_ideas = { #External Ideas
 
 	tolerance_idea = {
 		years_of_nationalism = -10
+		territories_governing_cost = -0.1
 	}
 	local_traditions = {
 		global_unrest = -2
+		harsh_treatment_cost = -0.25
 	}
 	ecumenism = {
 		trade_company_investment_cost = -0.15
@@ -1387,18 +1392,21 @@ focus_inwards = { #Internal Ideas Redo
 
 	foc_inw1 = {
 		state_maintenance_modifier = -0.25
+		state_governing_cost = -0.1
 	}
 	foc_inw2 = {
 		stability_cost_modifier = -0.20
 	}
 	foc_inw3 = { 
 		global_prosperity_growth = 0.1
+		centralize_state_cost = -0.2
 	}
 	foc_inw4 = {
 		monthly_reform_progress = 0.2
 	}
 	foc_inw5 = {
 		expand_infrastructure_cost_modifier = -0.50
+		expand_administration_cost = -0.1
 	}
 	foc_inw6 = {
 		parliament_backing_chance = 0.25
@@ -1502,11 +1510,11 @@ plutocracy_ideas = { #government: republic
 	}
 	free_cities = {
 		merc_maintenance_modifier = -0.10
-		adventurers_loyalty_modifier = 0.10
+		burghers_loyalty_modifier = 0.10
 	}
 	emancipation = {
-		republican_tradition = 0.25
-		mercenary_discipline = 0.025
+		republican_tradition = 0.3
+		reelection_cost = -0.1
 	}
 
 	ai_will_do = {
@@ -1531,7 +1539,7 @@ theocracy_gov_ideas = { #government: theocracy
 	}
 	
 	servants_of_god = {
-		global_missionary_strength = 0.01
+		global_missionary_strength = 0.02
 		missionary_maintenance_cost = -0.2
 	}
 	by_the_grace_of_god = {
@@ -1547,6 +1555,7 @@ theocracy_gov_ideas = { #government: theocracy
 	}
 	alpha_and_omega = {
 		global_tax_modifier = 0.50
+		monarch_military_power = 1
 	}
 	conviction_of_sin = {	
 		monarch_admin_power = 1
@@ -1576,8 +1585,8 @@ horde_gov_ideas = { #Government: Tribal ## Redo
 	}
 
 	bonus = {
-			development_cost = -0.05
-			possible_adm_policy = 1
+		development_cost = -0.05
+		possible_adm_policy = 1
 	}
 
 	horse_lords = {
@@ -1586,6 +1595,7 @@ horde_gov_ideas = { #Government: Tribal ## Redo
 	}
 	beyond_the_sun = {
 		global_institution_spread = 0.5
+		embracement_cost = -0.2
 	}
 	mandate_of_the_khan = {
 		monarch_lifespan = 5
@@ -1628,7 +1638,7 @@ economic_ideas = { #industrial ideas
 	}
 
 	bureaucracy = {
-		global_tax_modifier = 0.15
+		global_tax_modifier = 0.2
 	}
 	organised_construction = {
 		build_cost = -0.05
@@ -1638,7 +1648,7 @@ economic_ideas = { #industrial ideas
 	}
 	debt_and_loans = {
 		global_monthly_devastation = -0.05
-		global_prosperity_growth = 0.10
+		global_prosperity_growth = 0.25
 	}
 	centralization = {
 		great_project_upgrade_cost = -0.25
