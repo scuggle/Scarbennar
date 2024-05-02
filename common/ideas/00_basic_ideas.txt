@@ -450,7 +450,7 @@ minority_ideas = { #Minority ideas
 	}
 	
 	bonus = {	
-		manpower_in_accepted_culture_provinces = 0.10
+		manpower_in_accepted_culture_provinces = 0.15
 		possible_dip_policy = 1
 	}
 
@@ -461,7 +461,7 @@ minority_ideas = { #Minority ideas
 	
 	minority_ideas_02 = {
 		num_accepted_cultures = 2
-		promote_culture_cost = -0.50
+		promote_culture_cost = -0.75
 	}
 
 	minority_ideas_03 = {
@@ -470,8 +470,8 @@ minority_ideas = { #Minority ideas
 	}
 
 	minority_ideas_04 = {
-		tolerance_of_heathens_capacity = 2
-		tolerance_of_heretics_capacity = 2
+		tolerance_of_heathens_capacity = 3
+		tolerance_of_heretics_capacity = 3
 	}
 	
 	minority_ideas_05 = {
@@ -480,6 +480,7 @@ minority_ideas = { #Minority ideas
 	
 	minority_ideas_06 = {
 		religious_unity = 0.25
+		relation_with_accepted_culture = 25
 	}
 
 	minority_ideas_07 = {
@@ -506,6 +507,7 @@ spy_ideas = { #Cultural Unity Ideas
 
 	efficient_spies = {
 		culture_conversion_time = -0.15
+		relation_with_same_culture = 25
 	}	
 	
 	agent_training = {
@@ -521,7 +523,7 @@ spy_ideas = { #Cultural Unity Ideas
 	}
 	
 	claim_fabrication = {
-		same_culture_advisor_cost = -0.10
+		same_culture_advisor_cost = -0.15
 	}
 	
 	privateers = {
@@ -529,7 +531,7 @@ spy_ideas = { #Cultural Unity Ideas
 	}
 
 	audit_checks = {
-		culture_conversion_cost = -0.20
+		culture_conversion_cost = -0.25
 	}
 
 	ai_will_do = {
@@ -1016,24 +1018,24 @@ diplomatic_ideas = { #international ideas #done
 
 	foreign_embassies = {
 		envoy_travel_time = -0.33
-		ae_impact = -0.1
+		ae_impact = -0.15
 	}
 	cabinet = {
 		diplomatic_reputation = 2
 	}
 	grand_banquets = {
-		dip_advisor_cost = -0.15
+		dip_advisor_cost = -0.25
 	}
 	benign_diplomats = {
 		diplomatic_upkeep = 2
-		monthly_favor_modifier = 0.1
+		monthly_favor_modifier = 0.15
 	}
 	experienced_diplomats  = {
 		diplomats = 1
-		improve_relation_modifier = 0.2
+		improve_relation_modifier = 0.25
 	}
 	flexible_negotiation = {
-		dip_tech_cost_modifier = -0.1
+		dip_tech_cost_modifier = -0.125
 	}
 	diplomatic_corps = {
 		idea_claim_colonies = yes
@@ -1062,14 +1064,14 @@ influence_ideas = { #benevolence #done
 	category = DIP
 
 	bonus = {
-		vassal_forcelimit_bonus = 0.5
+		vassal_forcelimit_bonus = 1
 		possible_dip_policy = 1
 	}
 
 	tribute_system = {
 		
 		diplomats = 1
-		accept_vassalization_reasons = 10
+		accept_vassalization_reasons = 20
 	}
 	
 	additional_loyalist_recruitment = {
@@ -1081,13 +1083,14 @@ influence_ideas = { #benevolence #done
 	}
 	buffer_states = {
 		diplomatic_reputation = 2
+		chance_to_inherit = 0.25
 	}
 	diplomatic_influence = {
 		vassal_income = 0.25
 	}
 	postal_service = {
 		allow_client_states = yes
-		diplomatic_annexation_cost = -0.2		
+		diplomatic_annexation_cost = -0.25		
 	}
 	marcher_lords = {
 		vassal_manpower_bonus = 0.25
@@ -1120,7 +1123,7 @@ the_great_game = { #The Great Game
 	}
 
 	tgg1 = {
-		yearly_corruption = -0.1
+		yearly_corruption = -0.15
 		prestige = 1
 	}
 	tgg2 = {
@@ -1168,17 +1171,19 @@ shadows_and_daggers = { #Shadow and daggers ie dick head ideas
 	}
 	s_d2 = {
 		global_spy_defence = 0.2
-		dip_advisor_cost = -0.1
+		dip_advisor_cost = -0.2
 	}
 	s_d3 = {
 		privateer_efficiency = 0.25
+		siege_ability = 0.1
 	}
 	s_d4 = {
 		national_focus_years = -99 #Instant
+		no_claim_cost_increasement = yes
 	}
 	s_d5 = {
 		diplomats = 1
-		yearly_corruption = -0.15
+		yearly_corruption = -0.2
 	}
 	s_d6 = {
 		rebel_support_efficiency = 2
@@ -1186,7 +1191,7 @@ shadows_and_daggers = { #Shadow and daggers ie dick head ideas
 	}
 	s_d7 = {
 		spy_offence = 1
-		no_claim_cost_increasement = yes
+		can_chain_claim = yes
 	}
 	
 	ai_will_do = {
