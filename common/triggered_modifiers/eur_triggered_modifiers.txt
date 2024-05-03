@@ -51,7 +51,13 @@ new_world_nerf = {
 			}
 		}
 	}
-	development_cost = 0.2
+	#development_cost = 0.2
+	global_manpower_modifier = -0.1
+	land_forcelimit_modifier = -0.10
+	global_trade_goods_size_modifier = -0.1
+	trade_efficiency = -0.1
+	global_tax_modifier = -0.1
+	production_efficiency = -0.1
 }
 
 
