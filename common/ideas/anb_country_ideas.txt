@@ -1536,7 +1536,7 @@ A58_ideas = {
 	}
 
 	bonus = {
-		land_morale = 0.2
+		land_morale = 0.15
 	}
 
 	trigger = {
