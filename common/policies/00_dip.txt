@@ -415,7 +415,7 @@ eur_one_nation_act = {
 		}
     }
 	culture_conversion_cost = -0.15
-	same_culture_advisor_cost = -0.25
+	same_culture_advisor_cost = -0.15
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -448,7 +448,7 @@ eur_melting_pot = {
 
 		}
     }
-	advisor_cost = -0.15
+	advisor_cost = -0.1
 	advisor_pool = 1
 	num_accepted_cultures = 2
 	ai_will_do = {
