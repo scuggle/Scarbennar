@@ -4,7 +4,7 @@ government = tribal
 add_government_reform = gnoll_pack
 government_rank = 1
 primary_culture = flamemarked_gnoll
-religion = infernal_court
+religion = xhazobkult #infernal_court
 technology_group = tech_gnollish
 
 capital = 448
@@ -24,8 +24,8 @@ historical_friend = A49 #Xanzerbxis
 		mil = 2
 	}
     add_ruler_personality = careful_personality
-	add_country_modifier = {
-		name = eur_religious_unity_boost
-		duration = 5475
-	}
+	#add_country_modifier = {
+	#	name = eur_religious_unity_boost
+	#	duration = 5475
+	#}
 }
