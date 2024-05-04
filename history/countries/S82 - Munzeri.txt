@@ -6,6 +6,8 @@ primary_culture = nzeri_harpy
 religion = nirakhetist
 technology_group = tech_nzeri_harpy
 
+historical_friend = F62
+
 capital = 6125
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_religious }
