@@ -464,7 +464,7 @@ groups = {
 	}
 	#Harpies
 	tech_firanyan_harpy = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -481,7 +481,7 @@ groups = {
 		}
 	}
 	tech_siadunan_harpy = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
