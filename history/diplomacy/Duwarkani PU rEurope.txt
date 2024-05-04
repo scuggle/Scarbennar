@@ -1,0 +1,7 @@
+#Duwarkani PU on Nzeri Harpies
+union = {
+	first = F62
+	second = S82
+	start_date = 1439.5.30
+	end_date = 1500.1.1
+}

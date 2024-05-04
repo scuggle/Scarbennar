@@ -1,5 +1,5 @@
-owner = F62
-controller = F62
+owner = S82
+controller = S82
 add_core = F62
 add_core = S82
 culture = nzeri_harpy
