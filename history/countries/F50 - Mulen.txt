@@ -17,9 +17,9 @@ capital = 2921
 		dynasty = "Muló"
 		birth_date = 1401.8.15
 		female = yes
-		adm = 2
-		dip = 3
-		mil = 5
+		adm = 3
+		dip = 4
+		mil = 3
 	}
 	add_ruler_personality = greedy_personality
 	add_ruler_personality = mage_personality
