@@ -125,6 +125,18 @@ spriteType = {
         name = "GFX_great_project_temple_of_the_new_moon"
          texturefile = "gfx//interface//great_projects//great_project_temple_of_the_new_moon.dds"
     }
+    spriteType = {
+        name = "GFX_great_project_zerat_zatsarya"
+         texturefile = "gfx//interface//great_projects//great_project_zerat_zatsarya.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_northern_shadow_swamp_fortress"
+         texturefile = "gfx//interface//great_projects//great_project_northern_shadow_swamp_fortress.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_southern_shadow_swamp_fortress"
+         texturefile = "gfx//interface//great_projects//great_project_southern_shadow_swamp_fortress.dds"
+    }
 ########
 #Examples
 ########
