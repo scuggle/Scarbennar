@@ -2,6 +2,6 @@
 union = {
 	first = F62
 	second = S82
-	start_date = 1409.5.30
+	start_date = 1404.5.30
 	end_date = 1500.1.1
 }
