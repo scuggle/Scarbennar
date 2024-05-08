@@ -399,15 +399,15 @@ ruler_recently_casted_spell = {
 # }
 magic_estate_aiding_construction_1 = {
 	build_time = -0.1
-	build_cost = -0.1
+	build_cost = -0.075
 }
 magic_estate_aiding_construction_2 = {
 	build_time = -0.2
-	build_cost = -0.2
+	build_cost = -0.15
 }
 magic_estate_aiding_construction_3 = {
 	build_time = -0.3
-	build_cost = -0.3
+	build_cost = -0.225
 }
 
 magic_estate_magnificent_feast_1 = {
