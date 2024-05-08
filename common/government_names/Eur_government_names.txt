@@ -1,0 +1,55 @@
+bronze_dual_government_reform_term = {
+	rank = {
+		1 = BRONZE_HOLD
+		2 = BRONZE_FORTRESS
+		3 = BRONZE_CITADEL
+	}
+
+	ruler_male = {
+		1 = BRONZE_PRIEST
+		2 = BRONZE_HIGH_PRIEST
+		3 = BRONZE_SAINT
+	}
+
+	ruler_female = {
+		1 = BRONZE_PRIESTESS
+		2 = BRONZE_HIGH_PRIESTESS
+		3 = BRONZE_SAINT
+	}
+
+
+	trigger = {
+		AND = {
+			has_reform = bronze_dual_government_reform
+       		NOT = { has_ruler_flag = bronze_monarch_heir }
+		}
+	}
+}
+
+bronze_dual_government_reform_monarch = {
+	rank = {
+		1 = BRONZE_HOLD
+		2 = BRONZE_FORTRESS
+		3 = BRONZE_CITADEL
+	}
+
+	ruler_male = {
+		1 = BRONZE_LORD
+		2 = BRONZE_KING
+		3 = BRONZE_EMPEROR
+	}
+
+	ruler_female = {
+		1 = BRONZE_LORD
+		2 = BRONZE_QUEEN
+		3 = BRONZE_EMPRESS
+	}
+
+
+	trigger = {
+		AND = {
+			has_reform = bronze_dual_government_reform
+        	has_ruler_flag = bronze_monarch_heir
+		}
+	}
+}

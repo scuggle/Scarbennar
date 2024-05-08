@@ -1,0 +1,7 @@
+#Aramoole -> bronze dwarves
+march = {
+	first = F63
+	second = X31
+	start_date = 1439.1.1
+	end_date = 1644.4.22
+}

@@ -4009,6 +4009,7 @@ mage_personality = {	#Powerful Mage
 					dwarovar_goblin_culture_ruler = yes
 					ruler_culture = city_goblin
 					ruler_culture = march_goblin
+					ruler_culture = bronze_dwarf
 				}
 			}
 			modifier = {
@@ -4185,6 +4186,7 @@ mage_personality = {	#Powerful Mage
 					dwarovar_goblin_culture_heir = yes
 					heir_culture = city_goblin
 					heir_culture = march_goblin
+					heir_culture = bronze_dwarf
 				}
 			}
 			
@@ -4341,6 +4343,7 @@ mage_personality = {	#Powerful Mage
 					dwarovar_goblin_culture_consort = yes
 					consort_culture = city_goblin
 					consort_culture = march_goblin
+					consort_culture = bronze_dwarf
 				}
 			}
 		}

@@ -6,6 +6,8 @@ primary_culture = tijarikheti
 religion = aakhetist
 technology_group = tech_salahadesi
 
+historical_friend = X31 #bronze dwarves
+
 capital = 5870
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }

@@ -1,0 +1,52 @@
+﻿l_english:
+ BRONZE_HOLD: "Bronze Hold"
+ BRONZE_FORTRESS: "Bronze Fortress"
+ BRONZE_CITADEL: "Bronze Citadel"
+
+ BRONZE_PRIEST: "Bronze Priest"
+ BRONZE_HIGH_PRIEST: "Bronze High Priest"
+ BRONZE_SAINT: "Bronze Saint"
+ BRONZE_PRIESTESS: "Bronze Priestess"
+ BRONZE_HIGH_PRIESTESS: "Bronze High Priestess"
+
+ BRONZE_LORD: "Bronze Lord"
+ BRONZE_KING: "Bronze King"
+ BRONZE_EMPEROR: "Bronze Emperor"
+ BRONZE_QUEEN: "Bronze Queen"
+ BRONZE_EMPRESS: "Bronze Empress"
+
+
+ bronze_dual_government_reform: "Bronze Dual Government"
+ bronze_dual_government_reform_desc: "Church and Nobility have come into a dicotomy that allows for both powers to democraticaly control the Estate."
+
+
+ bronzedwarves.1.t: "The Bronze Heir"
+ bronzedwarves.1.d: "The time has come to choose new heir for our theocracy. Shall we choose one of the nobles or shall we choose one of our priests as our next ruler?"
+ bronzedwarves.1.a: "A priest, to rule for a decade!"
+ bronzedwarves.1.b: "A noble who will rule for life!"
+
+
+ bronzedwarves.2.t: "The Bronze Ruler"
+ bronzedwarves.2.d: "A new ruler rises to power in the Bervinâl Dhûmankon."
+ bronzedwarves.2.a: "May $MONARCH$ rule well for his decade-long term!"
+ bronzedwarves.2.b: "May $MONARCH$ devote his life to our nation!"
+
+
+ bronzedwarves.3.t: "The term ends"
+ bronzedwarves.3.d: "$MONARCH$ has devoted the last decade to the nation but the time has come to step down."
+ bronzedwarves.3.a: "I love democracy."
+
+ biaakhatep_X32_nation_title: "Form the Bronze Empire"
+ biaakhatep_X32_nation_desc: "The time has come to claim our right as the Stewards of the Sorrow!"
+ 
+ abdicate_bronze_dwarf_title: "Abdicate our Monarch."
+ abdicate_bronze_dwarf_desc: "Our ruler has been found unfit to keep ruling our great nation!"
+
+ bronzedwarves.2.t: "Growing the Pride"
+ bronzedwarves.2.d: "Our growing realm has allowed us to settle more Harimari into our lands."
+ bronzedwarves.2.a: "Welcome to our Pride!"
+ bronzedwarves.2.b: "I think we have enough Harimari..."
+
+ bronzedwarves.2.t: "The Bronze Dual Government"
+ bronzedwarves.2.d: "This is the true form of our nation!"
+ bronzedwarves.2.a: "It's for the best that we return to our roots."

@@ -1,0 +1,46 @@
+setup_vision = yes
+government = theocracy
+add_government_reform = bronze_dual_government_reform
+government_rank = 1
+primary_culture = bronze_dwarf
+religion = aakhetist
+technology_group = tech_east_harimari
+capital = 466
+
+historical_friend = F63 #Aramoole
+
+add_accepted_culture = tijarikheti
+
+add_country_modifier = {
+	name = "dwarven_administration"
+	duration = -1
+	hidden = yes
+}
+add_country_modifier = {
+	name = "harimari_military"
+	duration = -1
+	hidden = yes
+}
+set_country_flag = init_racial_adm_mil
+change_statists_vs_orangists = 0.5
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_state }
+
+1371.8.27 = {
+	monarch = {
+		name = "Odur Bronzebeard"
+		birth_date = 1322.2.7
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+	add_ruler_personality = industrious_personality
+	set_ruler_flag = long_lived_ruler
+	set_ruler_flag = bronze_monarch_heir
+}
+1000.1.1 = { 
+	set_estate_privilege = estate_mages_organization_state 
+	set_country_flag = ancestor_worship_knows_balgar
+	set_country_flag = ancestor_worship_knows_murri
+	set_country_flag = ancestor_worship_knows_krummul
+}

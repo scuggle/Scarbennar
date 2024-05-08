@@ -15,6 +15,7 @@ country_event = {
 		NOT = { has_country_flag = in_adventurer_heir_selection }
 		#NOT = { ruler_is_immortal = yes }	#dunno why this was here, this is to allow lucian of luciande fame to get an heir
 		has_government_attribute = heir
+		NOT = { has_reform = bronze_dual_government_reform }
 	}
 
 	immediate = {

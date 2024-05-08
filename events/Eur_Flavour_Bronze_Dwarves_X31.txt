@@ -1,0 +1,241 @@
+namespace = bronzedwarves
+
+country_event = { #election
+    id = bronzedwarves.1
+	title = bronzedwarves.1.t 
+	desc = bronzedwarves.1.d 
+	picture = no
+	is_triggered_only = yes
+
+    trigger = {
+        AND {
+            has_states_general_mechanic = yes
+            has_reform = bronze_dual_government_reform
+        }
+    }
+
+    option = { #term heir
+        name = bronzedwarves.1.a
+        trigger = {
+            always = yes
+        }
+        if = {
+			limit = { has_country_modifier = dwarven_administration }
+			if = {
+				limit = { has_country_flag = anb_female_long_lived_heir }
+				anb_define_long_lived_heir = { age = 88 female = yes }
+			}
+			else = {
+				anb_define_long_lived_heir = { age = 88 }
+			}
+		}
+        else = {
+            define_heir = {
+            }
+        }
+		change_statists_vs_orangists = -0.5
+        set_heir_flag = bronze_term_heir
+        set_heir_flag = long_lived_ruler
+    }
+
+    option = { #monarch heir
+        name = bronzedwarves.1.b
+        trigger = {
+            always = yes
+        }
+        if = {
+			limit = { has_country_modifier = dwarven_administration }
+			if = {
+				limit = { has_country_flag = anb_female_long_lived_heir }
+				anb_define_long_lived_heir = { age = 88 female = yes }
+			}
+			else = {
+				anb_define_long_lived_heir = { age = 88 }
+			}
+		}
+        else = {
+            define_heir = {
+            }
+        }
+		
+		change_statists_vs_orangists = 0.5
+        set_heir_flag = bronze_monarch_heir
+        set_heir_flag = long_lived_ruler
+    }
+}
+
+country_event = { #ruler comes to power
+	id = bronzedwarves.2
+	title = bronzedwarves.2.t
+	desc = bronzedwarves.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = bronzedwarves.2.a
+        trigger = {
+            NOT = { has_ruler_flag = bronze_monarch_heir }
+        }
+		country_event = { 
+            id = bronzedwarves.3 
+            days = 3650
+        }
+		set_country_flag = bronze_term_set
+        set_ruler_flag = bronze_term_heir
+        set_ruler_flag = long_lived_ruler
+	}
+
+    option = {
+		name = bronzedwarves.2.b
+        trigger = {
+            has_ruler_flag = bronze_monarch_heir
+        }
+		
+		set_country_flag = bronze_term_set
+        set_ruler_flag = long_lived_ruler
+	}		
+}
+
+country_event = { #term is over
+	id = bronzedwarves.3
+	title = bronzedwarves.3.t
+	desc = bronzedwarves.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+
+    option = {
+        name = bronzedwarves.3.a
+        kill_ruler = yes
+    }
+}
+
+country_event = { #Harimari spawner
+	id = bronzedwarves.4
+	title = bronzedwarves.4.t
+	desc = bronzedwarves.4.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+
+    trigger = {
+        AND = {
+            has_reform = bronze_dual_government_reform
+            has_country_modifier = harimari_military
+        }
+    }
+
+    mean_time_to_happen = {
+        years = 10
+
+        modifier = {
+            factor = 0.8
+            any_owned_province = {
+				base_manpower = 5
+				has_coexisting_harimari_pop_trigger = yes
+			}
+        }
+
+        modifier = {
+            factor = 0.8
+            any_owned_province = {
+				base_manpower = 5
+				has_integrated_harimari_pop_trigger = yes
+			}
+        }
+
+        modifier = {
+            factor = 0.9
+            stability = 1
+        }
+
+        modifier = {
+            factor = 0.9
+            stability = 2
+        }
+
+        modifier = {
+            factor = 0.9
+            stability = 3
+        }
+
+        modifier = {
+            factor = 2
+            stability = -1
+        }
+
+        modifier = {
+            factor = 2
+            stability = -2
+        }
+
+        modifier = {
+            factor = 2
+            stability = -3
+        }
+
+        modifier = {
+            factor = 0.5
+            has_country_modifier = bronze_extra_harimari
+        }
+    }
+
+    option = { #gain some cats
+        name = bronzedwarves.4.a
+
+        trigger = {
+            always = yes
+        }
+
+        random_owned_province = {
+            add_harimari_minority_size_effect = yes
+        }
+        add_mil_power = -10
+    }
+
+    option = { #no thanks
+        name = bronzedwarves.4.b 
+
+        trigger = {
+            always = yes
+        }
+
+        add_prestige = -1
+    }
+}
+
+country_event = { #restoring the gov
+    id = bronzedwarves.5
+	title = bronzedwarves.5.t
+	desc = bronzedwarves.5.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+
+    trigger = {
+        AND = {
+            tag = X31
+            NOT = { has_reform = bronze_dual_government_reform }
+        }
+    }
+
+    immediate_effect = {
+        change_government = theocracy
+        add_government_reform = bronze_dual_government_reform
+        add_country_modifier = {
+	        name = "harimari_military"
+	        duration = -1
+	        hidden = yes
+        }
+    }
+
+    option = {
+        name = bronzedwarves.5.a 
+
+        trigger = {
+            always = yes
+        }
+        add_prestige = 1
+    }
+}
