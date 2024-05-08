@@ -4808,7 +4808,7 @@ bronze_dual_government_reform = {
 				hostile_attrition = 1
 				devotion = -0.5
 				#meritocracy = 0.5
-				land_forcelimit_modifier = 0.1
+				shock_damage = 0.05
 			}
 		}
 	}

@@ -36,6 +36,8 @@ country_event = { #election
 		change_statists_vs_orangists = -0.5
         set_heir_flag = bronze_term_heir
         set_heir_flag = long_lived_ruler
+        force_add_ruler_personality = yes
+        force_add_ruler_personality = yes
     }
 
     option = { #monarch heir
@@ -214,9 +216,15 @@ country_event = { #restoring the gov
 	is_triggered_only = yes
 
     trigger = {
-        AND = {
-            tag = X31
-            NOT = { has_reform = bronze_dual_government_reform }
+        OR = {
+            AND = {
+                tag = X31
+                NOT = { has_reform = bronze_dual_government_reform }
+            }
+            AND = {
+                tag = X32
+                NOT = { has_reform = bronze_dual_government_reform }
+            }
         }
     }
 

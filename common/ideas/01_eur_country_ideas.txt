@@ -1273,7 +1273,7 @@ X31_ideas = { #Bronze Dwarves
 	}
 	X31_four = { #
 		backrow_artillery_damage = 0.1
-		fire_damage = 0.05
+		shock_damage_received = -0.05
 	}
 	X31_five = { #
 		development_cost = 0.075
@@ -1322,7 +1322,7 @@ X32_ideas = { #Bronze Dwarves
 	}
 	X32_four = { #
 		backrow_artillery_damage = 0.15
-		fire_damage = 0.05
+		shock_damage_received = -0.05
 	}
 	X32_five = { #
 		development_cost = 0.1
