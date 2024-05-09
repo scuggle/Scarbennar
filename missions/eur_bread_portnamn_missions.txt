@@ -330,7 +330,7 @@ portnamn_inner_left_branch = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = port_damestear_aquired_modifier	#modifier giving 5% artificer influence, 2.5% loyalty equilibirium and 5% special force limit modifier, yet to be implemented
+				name = port_damestear_aquired_modifier	#modifier giving 5% artificer influence, 2.5% loyalty equilibirium and 5% rajputs/artificers fraction, yet to be localized
 				duration = -1	#permanent
 			}
 		}
@@ -371,7 +371,30 @@ portnamn_inner_left_branch = {
 			NOT = { owned_by = ROOT is_core = ROOT }
 		}
 		effect = {
-		
+			nimscodd_area = {
+				limit = {
+					NOT = { culture_group = gnomish }
+				}
+				change_culture = cliff_gnome
+			}
+			gnomish_pass_area = {
+				limit = {
+					NOT = { culture_group = gnomish }
+				}
+				change_culture = cliff_gnome
+			}
+			dragondowns_area = {
+				limit = {
+					NOT = { culture_group = gnomish }
+				}
+				change_culture = cliff_gnome
+			}
+			dragonpoint_area = {
+				limit = {
+					NOT = { culture_group = gnomish }
+				}
+				change_culture = cliff_gnome
+			}
 		}
 	}
 	port_exchange_with_nimscodd = {
@@ -405,7 +428,7 @@ portnamn_inner_left_branch = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = port_nismcodd_exchange_modifier	#modifier giving +1 artificer capacity, 5% artificer influence, 2.5% artificer loyalty and 2.5% land fire damage, yet to be implemented
+				name = port_nismcodd_exchange_modifier	#modifier giving +5 artificer cap, 5% artificer influence, 2.5% artificer loyalty and 2.5% land fire damage, yet to be localized
 				duration = -1	#permanent
 			}
 			if = {
@@ -414,7 +437,7 @@ portnamn_inner_left_branch = {
 				}
 				A06 = {
 					add_country_modifier = {
-						name = port_exchange_modifier	#modifier giving +1 artificer capacity, 5% artificer influence, 2.5% artificer loyalty, yet to be implemented, gotta in smth else too
+						name = port_exchange_modifier	#modifier giving +5 artificer cap, 5% artificer influence, 2.5% artificer loyalty and 5% manpower recovery speed, yet to be localized
 						duration = -1	#permanent
 					}
 				}
@@ -440,7 +463,7 @@ portnamn_inner_left_branch = {
 			remove_country_modifier = port_nismcodd_exchange_modifier
 			remove_country_modifier = port_exchange_with_giberd_modifier
 			add_country_modifier = {
-				name = port_international_gommo_institute_modifier	#modifier giving +3 artificer capacity, 20% artificer influence, 7.5% artificer loyalty, 2.5% land fire damage, 2.5% goods produced modifier and -2 national unrest, modifier yet to be implemented
+				name = port_international_gommo_institute_modifier	#modifier giving +15 artificer cap, 20% artificer influence, 7.5% artificer loyalty, 2.5% land fire damage, 2.5% goods produced modifier and 5% manpower recovery speed, modifier yet to be localized
 				duration = -1	#permanent
 			}
 			if = {
@@ -452,7 +475,7 @@ portnamn_inner_left_branch = {
 				A06 = {
 				remove_country_modifier = port_exchange_modifier
 					add_country_modifier = {
-						name = port_international_gommo_institute_modifier_1	#modifier giving +2 artificer capacity, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and -2 national unrest, modifier yet to be implemented
+						name = port_international_gommo_institute_modifier_1	#modifier giving +10 artificer cap, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and 5% manpower recovery speed, modifier yet to be localized
 						duration = -1	#permanent
 					}
 				}
@@ -466,7 +489,7 @@ portnamn_inner_left_branch = {
 				A81 = {
 				remove_country_modifier = port_exchange_modifier
 					add_country_modifier = {
-						name = port_international_gommo_institute_modifier_1	#modifier giving +2 artificer capacity, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and -2 national unrest, modifier yet to be implemented
+						name = port_international_gommo_institute_modifier_1	
 						duration = -1	#permanent
 					}
 				}
@@ -480,7 +503,7 @@ portnamn_inner_left_branch = {
 				A79 = {	#hierarchy
 				remove_country_modifier = port_exchange_modifier
 					add_country_modifier = {
-						name = port_international_gommo_institute_modifier_1	#modifier giving +2 artificer capacity, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and -2 national unrest, modifier yet to be implemented
+						name = port_international_gommo_institute_modifier_1	
 						duration = -1	#permanent
 					}
 				}
@@ -497,7 +520,7 @@ portnamn_inner_left_branch = {
 					owner = {
 						remove_country_modifier = port_exchange_modifier
 						add_country_modifier = {
-							name = port_international_gommo_institute_modifier_1	#modifier giving +2 artificer capacity, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and -2 national unrest, modifier yet to be implemented
+							name = port_international_gommo_institute_modifier_1	
 							duration = -1	#permanent
 						}
 					}
@@ -623,7 +646,7 @@ portnamn_inner_branch = {
 		}
 		effect = {
 			add_country_modifier= {
-				name = port_artificer_corps_modifier	#modifier giving 5% special force limit modifier, +1 artifificer capacity, 10% atrificer influence and 2.5% artificer loyalty, yet to be implemented
+				name = port_artificer_corps_modifier	#modifier giving 5% rajput fraction, +5 artifificer cap, 10% atrificer influence and 2.5% artificer loyalty, yet to be localized
 				duration = -1	#permanent
 			}
 		}
@@ -659,7 +682,7 @@ portnamn_inner_branch = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = port_exchange_with_giberd_modifier	#modifier giving +1 artificer capacity, 5% artificer influence, 2.5% artificer loyalty and 2.5% goods produced
+				name = port_exchange_with_giberd_modifier	#modifier giving +5 artificer cap, 5% artificer influence, 2.5% artificer loyalty and 2.5% goods produced, yet to be localized
 				duration = -1	#permanent
 			}
 			if = {
@@ -668,7 +691,7 @@ portnamn_inner_branch = {
 				}
 				A81 = {
 					add_country_modifier = {
-						name = port_exchange_modifier	#modifier giving +1 artificer capacity, 5% artificer influence, 2.5% artificer loyalty, yet to be implemented, gotta in smth else too
+						name = port_exchange_modifier	
 						duration = -1	#permanent
 					}
 				}
@@ -732,7 +755,7 @@ portnamn_inner_branch = {
 				275 = {
 					owner = {
 						add_country_modifier = {
-							name = port_konwell_gommo_exchange_modifier	#modifier giving +1 artificer capacity, 7.5% artificer influence, 2.5% artificer loyalty, modifier yet to be implemented
+							name = port_konwell_gommo_exchange_modifier	#modifier giving +5 artificer cap, 7.5% artificer influence, 2.5% artificer loyalty, modifier yet to be implemented
 							duration = -1	#permanent
 						}
 					}
