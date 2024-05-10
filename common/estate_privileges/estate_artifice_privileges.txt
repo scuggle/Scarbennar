@@ -848,7 +848,7 @@ estate_artificers_organization_discombobulatorium = {
 	penalties = {
 	}
 	benefits = {
-		production_efficiency = 0.1
+		production_efficiency = 0.075
 		allowed_rajput_fraction = 0.05
 	}
 	ai_will_do = {
@@ -1284,7 +1284,7 @@ estate_artificers_development_tools = {
 	penalties = {
 	}
 	benefits = {
-		development_cost = -0.1
+		development_cost = -0.075
 	}
 	ai_will_do = {
 		factor = 5
@@ -1545,7 +1545,7 @@ estate_artificers_grant_production_rights = {
 		
 	# }
 	benefits = {
-		production_efficiency = -0.1
+		production_efficiency = -0.075
 	}
 	ai_will_do = {
 		factor = 5
@@ -2447,7 +2447,7 @@ artifice_invention_vendorless_stall = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		trade_efficiency = 0.15
+		trade_efficiency = 0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -3282,8 +3282,8 @@ artifice_invention_mechanim_workforce = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		production_efficiency = 0.1
-		global_trade_goods_size_modifier = 0.1
+		production_efficiency = 0.075
+		global_trade_goods_size_modifier = 0.075
 	}
 	ai_will_do = {
 		factor = 50
@@ -4070,7 +4070,7 @@ artifice_invention_gene_food_cultivation = {
 	benefits = {
 		artificers_privilege_slots = 1
 		#bonuses in paper provinces?
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.075
 	}
 	ai_will_do = {
 		factor = 50
@@ -4129,7 +4129,7 @@ artifice_invention_box_of_holding = {
 	benefits = {
 		artificers_privilege_slots = 1
 		#bonuses in paper provinces?
-		global_tariffs = 0.4
+		global_tariffs = 0.2
 		treasure_fleet_income = 0.1
 	}
 	ai_will_do = {
@@ -6512,7 +6512,7 @@ artifice_invention_scrapperclaws = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		production_efficiency = 0.1
+		production_efficiency = 0.075
 		available_province_loot = 0.15
 	}
 	ai_will_do = {
@@ -6701,7 +6701,7 @@ artifice_invention_burrower_arms = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		build_cost = -0.1
+		build_cost = -0.075
 		fort_maintenance_modifier = -0.15
 	}
 	ai_will_do = {
@@ -7608,8 +7608,8 @@ artifice_invention_weather_predicticator = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		global_trade_goods_size_modifier = 0.1
-		development_cost = -0.15
+		global_trade_goods_size_modifier = 0.075
+		development_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 200
@@ -7789,7 +7789,7 @@ artifice_invention_artifice_powered_magnate_factories = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		global_trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.1
 		development_cost = -0.05
 	}
 	ai_will_do = {
@@ -7850,7 +7850,7 @@ artifice_invention_high_velocity_irrigation = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		production_efficiency = 0.1
+		production_efficiency = 0.075
 		development_cost = -0.075
 	}
 	ai_will_do = {
@@ -8195,8 +8195,8 @@ artifice_invention_spirit_proof_exoskeleton = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		production_efficiency = 0.1
-		trade_goods_size_modifier = 0.05
+		production_efficiency = 0.075
+		trade_goods_size_modifier = 0.025
 	}
 	ai_will_do = {
 		factor = 50
@@ -8549,7 +8549,7 @@ artifice_invention_feiten_nitroglycerin_tnt = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		production_efficiency = 0.1
+		production_efficiency = 0.075
 		development_cost = -0.075
 	}
 	ai_will_do = {
@@ -11943,7 +11943,7 @@ artifice_invention_distance_dissolver  = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		trade_steering = 0.15
+		trade_steering = 0.1
 		trade_range_modifier = 0.5
 	}
 	ai_will_do = {
@@ -12003,7 +12003,7 @@ artifice_invention_crazy_double_drill  = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		build_cost = -0.1
+		build_cost = -0.075
 		build_time = -0.1
 	}
 	ai_will_do = {
@@ -12358,7 +12358,7 @@ artifice_invention_thought_thresher = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		culture_conversion_cost = -0.33
+		culture_conversion_cost = -0.25
 		culture_conversion_time = -0.33
 	}
 	ai_will_do = {
@@ -12418,7 +12418,7 @@ artifice_invention_negotiation_nexus = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		province_warscore_cost = -0.15
+		province_warscore_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 50

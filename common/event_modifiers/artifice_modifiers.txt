@@ -24,7 +24,7 @@ artificer_research_bonus_brilliance_mil = {
 }
 
 artificer_research_bonus_brilliance_ind = {
-	production_efficiency = 0.2
+	production_efficiency = 0.15
 }
 
 artificer_research_bonus_brilliance_society = {
@@ -39,7 +39,7 @@ artificer_research_bonus_technomancy_mil = {
 
 artificer_research_bonus_technomancy_ind = {
 	yearly_corruption = -0.1
-	trade_efficiency = 0.1
+	trade_efficiency = 0.075
 }
 
 artificer_research_bonus_technomancy_society = {
@@ -49,12 +49,12 @@ artificer_research_bonus_technomancy_society = {
 
 artificer_research_bonus_machinery_mil = {
 	backrow_artillery_damage = 0.1
-	global_regiment_cost = -0.1
+	global_regiment_cost = -0.075
 }
 
 artificer_research_bonus_machinery_ind = {
-	global_trade_goods_size_modifier = 0.1
-	global_tariffs = 0.15
+	global_trade_goods_size_modifier = 0.075
+	global_tariffs = 0.1
 }
 
 artificer_research_bonus_machinery_society = {
@@ -235,11 +235,11 @@ artifice_controlled_rage_serum = {
 }
 
 artifice_ageifier_bonus = {
-	local_production_efficiency = 0.2
+	local_production_efficiency = 0.15
 }
 
 artifice_growthbeans_bonus = {
-	local_production_efficiency = 0.15
+	local_production_efficiency = 0.1
 }
 
 artifice_superfast_elevators_bonus = {
