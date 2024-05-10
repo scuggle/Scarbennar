@@ -3995,9 +3995,9 @@ country_event = {
 				}
 			}
 			add_treasury = 25
-			add_adm_power = 15
-			add_dip_power = 15
-			add_mil_power = 15
+			add_adm_power = 12
+			add_dip_power = 12
+			add_mil_power = 12
 		}
 		else_if = {
 			limit = {
@@ -4021,9 +4021,9 @@ country_event = {
 				}
 			}
 			add_treasury = 50
-			add_adm_power = 20
-			add_dip_power = 20
-			add_mil_power = 20
+			add_adm_power = 15
+			add_dip_power = 15
+			add_mil_power = 15
 		}
 		else_if = {
 			limit = {
@@ -4047,9 +4047,9 @@ country_event = {
 				}
 			}
 			add_treasury = 100
-			add_adm_power = 30
-			add_dip_power = 30
-			add_mil_power = 30
+			add_adm_power = 22
+			add_dip_power = 22
+			add_mil_power = 22
 		}
 		else_if = {
 			limit = {
@@ -4063,9 +4063,9 @@ country_event = {
 				}
 			}
 			add_treasury = 150
-			add_adm_power = 40
-			add_dip_power = 40
-			add_mil_power = 40
+			add_adm_power = 30
+			add_dip_power = 30
+			add_mil_power = 30
 		}
 	}
 }
