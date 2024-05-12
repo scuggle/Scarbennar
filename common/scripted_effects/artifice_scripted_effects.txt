@@ -248,7 +248,58 @@ update_artifice_points = {
 				which = MaxArtificePoints
 				which = StaticArtificePoints
 			}
-
+			
+			
+			#portnamm mt
+			if = {
+				limit = { has_country_modifier = port_nismcodd_exchange_modifier }
+				change_variable = {
+					which = MaxArtificePoints
+					value = 5
+				}
+			}
+			if = {
+				limit = { has_country_modifier = port_exchange_modifier }
+				change_variable = {
+					which = MaxArtificePoints
+					value = 5
+				}
+			}
+			if = {
+				limit = { has_country_modifier = port_international_gommo_institute_modifier }
+				change_variable = {
+					which = MaxArtificePoints
+					value = 15
+				}
+			}
+			if = {
+				limit = { has_country_modifier = port_international_gommo_institute_modifier_1 }
+				change_variable = {
+					which = MaxArtificePoints
+					value = 10
+				}
+			}
+			if = {
+				limit = { has_country_modifier = port_artificer_corps_modifier }
+				change_variable = {
+					which = MaxArtificePoints
+					value = 5
+				}
+			}
+			if = {
+				limit = { has_country_modifier = port_exchange_with_giberd_modifier }
+				change_variable = {
+					which = MaxArtificePoints
+					value = 5
+				}
+			}
+			if = {
+				limit = { has_country_modifier = port_konwell_gommo_exchange_modifier }
+				change_variable = {
+					which = MaxArtificePoints
+					value = 5
+				}
+			}
 			# Feiten's mercs cost artificer cap
 			if = {
 				limit = { any_hired_mercenary_company = { template = merc_feiten_lightning_jellyfish } }
