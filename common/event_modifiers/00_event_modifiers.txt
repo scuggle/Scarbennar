@@ -828,8 +828,8 @@ revocation_of_restraint_of_appeals = {
 }
 
 hire_privateers = {
-	embargo_efficiency = 0.75
-	privateer_efficiency = 0.25
+	embargo_efficiency = 0.4
+	privateer_efficiency = 0.1
 	improve_relation_modifier = -0.10
 }
 
