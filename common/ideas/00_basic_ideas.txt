@@ -578,7 +578,7 @@ maritime_ideas = { #Ruler of the Waves Ideas
 	}
 	sea_hawks = {
 		ship_durability = 0.05
-		ship_power_propagation = 0.5
+		ship_power_propagation = 0.3
 	}
 	naval_fighting_instruction = {
 		naval_morale = 0.05
