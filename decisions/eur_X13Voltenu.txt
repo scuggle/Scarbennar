@@ -16,6 +16,8 @@ country_decisions = {
 			NOT = { has_country_flag = adventurer_derived_government }
 			NOT = { tag = X12 }
 			NOT = { tag = X14 }
+			NOT = { tag = B79 }
+			NOT = { tag = X13 }
 			NOT = { tag = X15 }
 			is_colonial_nation = no
 			OR = {
