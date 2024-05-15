@@ -15,7 +15,7 @@ country_decisions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			NOT = {
 				ROOT = { 
-					num_of_provinces_owned_with = {
+					num_of_owned_provinces_with = {
 						value = 40
 						superregion = deepwoods_superregion
 					}
@@ -28,7 +28,7 @@ country_decisions = {
 			}
 			NOT = { exists = I45 }
 			is_at_war = no
-			num_of_provinces_owned_with = {
+			num_of_owned_provinces_with = {
 				value = 40
 				superregion = deepwoods_superregion
 			}
