@@ -1317,9 +1317,9 @@ country_event = {
 					has_ruler_flag = ancestor_spirit_patron
 				}
 			}
-			adm_power = 100
-			dip_power = 100
-			mil_power = 100
+			adm_power = 70
+			dip_power = 70
+			mil_power = 70
 			NOT = { has_ruler_modifier = magic_fortress_cooldown }
 		}
 		ai_chance = {
@@ -1338,9 +1338,9 @@ country_event = {
 			}
 		}
 
-		add_adm_power = -100
-		add_dip_power = -100
-		add_mil_power = -100
+		add_adm_power = -70
+		add_dip_power = -70
+		add_mil_power = -70
 		country_event = { id = magic_ruler.12 }
 		custom_tooltip = magic_fortress_effect_tt
 		custom_tooltip = magic_fortress_desc_tt
@@ -1368,9 +1368,9 @@ country_event = {
 		custom_tooltip = magic_effect_separator_tt
 
 		tooltip = {
-			add_adm_power = -100
-			add_dip_power = -100
-			add_mil_power = -100
+			add_adm_power = -70
+			add_dip_power = -70
+			add_mil_power = -70
 		}
 		custom_tooltip = magic_selected_province_tt
 		custom_tooltip = magic_fortress_effect_tt
@@ -1388,9 +1388,9 @@ country_event = {
 				}
 			}
 			OR = {
-				NOT = { adm_power = 100 }
-				NOT = { dip_power = 100 }
-				NOT = { mil_power = 100 }
+				NOT = { adm_power = 70 }
+				NOT = { dip_power = 70 }
+				NOT = { mil_power = 70 }
 				NOT = { dip_power = 15 }
 				has_ruler_modifier = magic_fortress_cooldown
 			}
@@ -1415,9 +1415,9 @@ country_event = {
 		custom_tooltip = magic_effect_separator_tt
 
 		tooltip = {
-			add_adm_power = -100
-			add_dip_power = -100
-			add_mil_power = -100
+			add_adm_power = -70
+			add_dip_power = -70
+			add_mil_power = -70
 		}
 		custom_tooltip = magic_selected_province_tt
 		custom_tooltip = magic_fortress_effect_tt
@@ -11368,9 +11368,9 @@ country_event = {
 		ai_chance = {
 			factor = 5
 		}
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
+		add_adm_power = 70
+		add_dip_power = 70
+		add_mil_power = 70
 	}
 
 	after = {
