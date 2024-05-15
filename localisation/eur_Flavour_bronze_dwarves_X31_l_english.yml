@@ -42,11 +42,16 @@
  abdicate_bronze_dwarf_title: "Abdicate our Monarch."
  abdicate_bronze_dwarf_desc: "Our ruler has been found unfit to keep ruling our great nation!"
 
- bronzedwarves.2.t: "Growing the Pride"
- bronzedwarves.2.d: "Our growing realm has allowed us to settle more Harimari into our lands."
- bronzedwarves.2.a: "Welcome to our Pride!"
- bronzedwarves.2.b: "I think we have enough Harimari..."
+ bronzedwarves.4.t: "Growing the Pride"
+ bronzedwarves.4.d: "Our growing realm has allowed us to settle more Harimari into our lands."
+ bronzedwarves.4.a: "Welcome to our Pride!"
+ bronzedwarves.4.b: "I think we have enough Harimari..."
 
- bronzedwarves.2.t: "The Bronze Dual Government"
- bronzedwarves.2.d: "This is the true form of our nation!"
- bronzedwarves.2.a: "It's for the best that we return to our roots."
+ bronzedwarves.5.t: "The Bronze Dual Government"
+ bronzedwarves.5.d: "This is the true form of our nation!"
+ bronzedwarves.5.a: "It's for the best that we return to our roots."
+
+ bronzedwarves.6.t: "Experienced Priests"
+ bronzedwarves.6.d: "Our priests are more experienced than a regular noble."
+ bronzedwarves.6.a: "It is time for $MONARCH$'s potential to be known!"
+

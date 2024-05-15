@@ -101,7 +101,7 @@ country_decisions = {
         }
 
         allow = {
-            hidden = {
+            hidden_trigger = {
                 has_ruler_flag = bronze_monarch_heir
             }
             months_of_ruling = 180

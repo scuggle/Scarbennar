@@ -36,8 +36,6 @@ country_event = { #election
 		change_statists_vs_orangists = -0.5
         set_heir_flag = bronze_term_heir
         set_heir_flag = long_lived_ruler
-        force_add_ruler_personality = yes
-        force_add_ruler_personality = yes
     }
 
     option = { #monarch heir
@@ -73,7 +71,18 @@ country_event = { #ruler comes to power
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
-		
+
+    trigger = {
+        has_reform = bronze_dual_government_reform
+        NOT = { has_country_flag = bronze_flag }
+    }
+	
+    immediate = {
+        hidden_effect = {
+            set_country_flag = bronze_flag
+        }
+    }
+
 	option = {
 		name = bronzedwarves.2.a
         trigger = {
@@ -83,9 +92,14 @@ country_event = { #ruler comes to power
             id = bronzedwarves.3 
             days = 3650
         }
+        country_event = { 
+            id = bronzedwarves.6
+            days = 31
+        }
 		set_country_flag = bronze_term_set
         set_ruler_flag = bronze_term_heir
         set_ruler_flag = long_lived_ruler
+        clr_country_flag = bronze_flag
 	}
 
     option = {
@@ -96,6 +110,7 @@ country_event = { #ruler comes to power
 		
 		set_country_flag = bronze_term_set
         set_ruler_flag = long_lived_ruler
+        clr_country_flag = bronze_flag
 	}		
 }
 
@@ -245,5 +260,2740 @@ country_event = { #restoring the gov
             always = yes
         }
         add_prestige = 1
+    }
+}
+
+country_event = { #extra traits for timed rulers
+	id = bronzedwarves.6
+	title = bronzedwarves.6.t
+	desc = bronzedwarves.6.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+
+    option = {
+        name = bronzedwarves.6.a
+        random_list = {
+            2 = {
+                trigger = {
+                    OR = {
+                        NOT = { ruler_has_personality = cruel_personality }
+                        NOT = { ruler_has_personality = just_personality }
+                    }
+                }
+                add_ruler_personality = just_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = cruel_personality }
+                            NOT = { ruler_has_personality = just_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = just_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = righteous_personality }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = righteous_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = righteous_personality }
+                        has_new_dynasty = yes
+                    }
+                }
+                add_ruler_personality = righteous_personality
+            }
+            2 = {
+                trigger = {
+                    NOT = { ruler_has_personality = righteous_personality }
+                }
+                add_ruler_personality = righteous_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = pious_personality }
+                            NOT = { ruler_has_personality = tolerant_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = tolerant_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = pious_personality }
+                            NOT = { ruler_has_personality = tolerant_personality }
+                        }
+                        NOT = { dominant_religion = ROOT }
+                    }
+                }
+                add_ruler_personality = tolerant_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = pious_personality }
+                            NOT = { ruler_has_personality = tolerant_personality }
+                        }
+                        has_idea_group = humanist_ideas
+                    }
+                }
+                add_ruler_personality = tolerant_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = pious_personality }
+                            NOT = { ruler_has_personality = tolerant_personality }
+                        }
+                        has_estate_privilege = estate_dhimmi_dhimmi_education
+                    }
+                }
+                add_ruler_personality = tolerant_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = cruel_personality }
+			                NOT = { ruler_has_personality = malevolent_personality }
+                            NOT = { ruler_has_personality = kind_hearted_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = kind_hearted_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = free_thinker_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = free_thinker_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = free_thinker_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = free_thinker_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = free_thinker_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = free_thinker_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = free_thinker_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = free_thinker_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = well_connected_personality }
+                    }
+                }
+                add_ruler_personality = well_connected_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = well_connected_personality }
+                        ruler_is_foreigner = yes
+                    }
+                }
+                add_ruler_personality = well_connected_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = well_connected_personality }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = well_connected_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = well_connected_personality }
+                        num_of_royal_marriages = 5
+                    }
+                }
+                add_ruler_personality = well_connected_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = calm_personality }
+                    }
+                }
+                add_ruler_personality = calm_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = calm_personality }
+                        is_monarch_leader = no
+                    }
+                }
+                add_ruler_personality = calm_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = naive_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = careful_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = naive_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = careful_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = secretive_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = secretive_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = secretive_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = secretive_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = intricate_web_weaver_personality }
+                        }
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = intricate_web_weaver_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = intricate_web_weaver_personality }
+                        }
+                        DIP = 6
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = intricate_web_weaver_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = well_advised_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = well_advised_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = well_advised_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = well_advised_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = benevolent_personality }
+                            NOT = { ruler_has_personality = malevolent_personality }
+                        }
+                        DIP = 3
+                    }
+                }
+                add_ruler_personality = benevolent_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = benevolent_personality }
+                            NOT = { ruler_has_personality = malevolent_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = benevolent_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = benevolent_personality }
+                            NOT = { ruler_has_personality = malevolent_personality }
+                        }
+                        DIP = 3
+                        vassal = 2
+                    }
+                }
+                add_ruler_personality = benevolent_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                        num_of_missionaries = 2
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                        has_border_with_religious_enemy = yes
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                        is_defender_of_faith = yes
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                        has_estate_privilege = estate_church_clerical_education
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = sinner_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = pious_personality }
+                        }
+                        uses_devotion = yes
+                    }
+                }
+                add_ruler_personality = pious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = sinner_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = pious_personality }
+                        }
+                        dominant_religion = ROOT
+                        uses_devotion = yes
+                    }
+                }
+                add_ruler_personality = pious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = lawgiver_personality }
+                        }
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = lawgiver_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = lawgiver_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = lawgiver_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = midas_touched_personality }
+                            NOT = { ruler_has_personality = greedy_personality }
+                        }
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = midas_touched_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = midas_touched_personality }
+                            NOT = { ruler_has_personality = greedy_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = midas_touched_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = midas_touched_personality }
+                            NOT = { ruler_has_personality = greedy_personality }
+                        }
+                        ADM = 3
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = midas_touched_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = embezzler_personality }
+			                NOT = { has_ruler_modifier = borgia_pope }
+                            NOT = { ruler_has_personality = incorruptible_personality }
+                        }
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = incorruptible_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = embezzler_personality }
+			                NOT = { has_ruler_modifier = borgia_pope }
+                            NOT = { ruler_has_personality = incorruptible_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = incorruptible_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                            NOT = { ruler_has_personality = architectural_visionary_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = architectural_visionary_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                            NOT = { ruler_has_personality = architectural_visionary_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = architectural_visionary_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = scholar_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = scholar_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = scholar_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = scholar_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = entrepreneur_personality }
+                            NOT = { ruler_has_personality = drunkard_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = entrepreneur_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = entrepreneur_personality }
+                            NOT = { ruler_has_personality = drunkard_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = entrepreneur_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = entrepreneur_personality }
+                            NOT = { ruler_has_personality = drunkard_personality }
+                        }
+                        has_government_attribute = is_merchant_republic
+                    }
+                }
+                add_ruler_personality = entrepreneur_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = industrious_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = industrious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = industrious_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = industrious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = industrious_personality }
+                        }
+                        has_government_attribute = is_merchant_republic
+                    }
+                }
+                add_ruler_personality = industrious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                        OR = {
+				            num_of_conquistadors = 1
+				            num_of_explorers = 1
+			            }
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 2 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                        OR = {
+				            num_of_conquistadors = 2
+				            num_of_explorers = 2
+			            }
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                        OR = {
+				        has_idea_group = exploration_ideas
+				        has_idea_group = maritime_ideas
+				        has_idea_group = trade_ideas
+			            }
+			            has_idea_group = expansion_ideas
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = charismatic_negotiator_personality }
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+                        }
+                        DIP = 3
+                    }
+                }
+                add_ruler_personality = charismatic_negotiator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = charismatic_negotiator_personality }
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = charismatic_negotiator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+			                NOT = { ruler_has_personality = naive_personality }
+                            NOT = { ruler_has_personality = silver_tongue_personality }
+                        }
+                        DIP = 3
+                    }
+                }
+                add_ruler_personality = silver_tongue_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+			                NOT = { ruler_has_personality = naive_personality }
+                            NOT = { ruler_has_personality = silver_tongue_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = silver_tongue_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = conqueror_personality }
+                        }
+                        MIL = 3
+                    }
+                }
+                add_ruler_personality = conqueror_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = conqueror_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = conqueror_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = conqueror_personality }
+                        }
+                        MIL = 3
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = conqueror_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tactical_genius_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = tactical_genius_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tactical_genius_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = tactical_genius_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tactical_genius_personality }
+                        }
+                        MIL = 3
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = tactical_genius_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = craven_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = bold_fighter_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = craven_personality }
+                        }
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = bold_fighter_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = craven_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = bold_fighter_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = strict_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = strict_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = strict_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = strict_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = strict_personality }
+                        }
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = strict_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = inspiring_leader_personality }
+                            NOT = { ruler_has_personality = craven_personality }
+                        }
+                        MIL = 3
+                    }
+                }
+                add_ruler_personality = inspiring_leader_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = inspiring_leader_personality }
+                            NOT = { ruler_has_personality = craven_personality }
+                        }
+                        MIL = 3
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = inspiring_leader_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = inspiring_leader_personality }
+                            NOT = { ruler_has_personality = craven_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = inspiring_leader_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = martial_educator_personality }
+                        }
+                        MIL = 3
+                    }
+                }
+                add_ruler_personality = martial_educator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = martial_educator_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = martial_educator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = navigator_personality }
+                        }
+                        DIP = 6
+                        OR = {
+			                AND = {
+				                has_game_started = no
+				                is_playing_custom_nation = yes
+			                }
+			                AND = {
+				                num_of_ports = 1
+				                navy_size = 1
+			                }
+		                }
+		                NOT = {
+			                has_reform = native_basic_reform
+		                }
+                    }
+                }
+                add_ruler_personality = navigator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = fierce_negotiator_personality }
+                        }
+                        DIP = 3
+                    }
+                }
+                add_ruler_personality = fierce_negotiator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = fierce_negotiator_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = fierce_negotiator_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+                            NOT = { ruler_has_personality = charismatic_negotiator_personality }
+			                NOT = { ruler_has_personality = silver_tongue_personality }
+			                NOT = { dip = 5 }
+                        }
+                    }
+                }
+                add_ruler_personality = babbling_buffoon_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = embezzler_personality }
+                            NOT = { ruler_has_personality = incorruptible_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = embezzler_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = drunkard_personality }
+                            NOT = { ruler_has_personality = pious_personality }
+			                NOT = { ruler_has_personality = entrepreneur_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = drunkard_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = pious_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = sinner_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = greedy_personality }
+                            NOT = { ruler_has_personality = midas_touched_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = greedy_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = cruel_personality }
+                            NOT = { ruler_has_personality = just_personality }
+			                NOT = { ruler_has_personality = kind_hearted_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = cruel_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = naive_personality }
+                            NOT = { ruler_has_personality = silver_tongue_personality }
+			                NOT = { ruler_has_personality = careful_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = naive_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = craven_personality }
+                            NOT = { ruler_has_personality = inspiring_leader_personality }
+			                NOT = { ruler_has_personality = bold_fighter_personality }
+			                NOT = { ruler_has_personality = xhazobs_chosen_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = craven_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = intricate_web_weaver_personality }
+		                	NOT = { ruler_has_personality = secretive_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = loose_lips_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                            NOT = { ruler_has_personality = patron_of_arts_personality }
+				            NOT = { ruler_has_personality = architectural_visionary_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = obsessive_perfectionist_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = malevolent_personality }
+                            NOT = { ruler_has_personality = benevolent_personality }
+			                NOT = { ruler_has_personality = kind_hearted_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = malevolent_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = humane_personality }
+                            NOT = { ruler_has_personality = petty_personality }
+                        }
+                        is_emperor_of_china = yes
+                    }
+                }
+                add_ruler_personality = humane_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = humane_personality }
+                            NOT = { ruler_has_personality = petty_personality }
+                        }
+                        is_emperor_of_china = yes
+                    }
+                }
+                add_ruler_personality = petty_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = reformist_personality }
+                        }
+                        ADM = 4
+                    }
+                }
+                add_ruler_personality = reformist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = reformist_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = reformist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = patron_of_arts_personality }
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                        }
+                        ADM = 4
+                    }
+                }
+                add_ruler_personality = patron_of_arts_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = patron_of_arts_personality }
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = patron_of_arts_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_culture = homunculi }
+			            NOT = { has_ruler_flag = is_a_secret_homunculus }
+			            NOT = { has_heir_flag = is_a_secret_homunculus }
+			            NOT = { has_consort_flag = is_a_secret_homunculus }
+			            NOT = { has_ruler_modifier = homunculus_ruler }
+			            NOT = { has_reform = hobgoblin_stratocracy_reform }
+			            NOT = { is_subject_of = R62 }
+			            NOT = {
+				            AND = {
+					            religion = bulwari_sun_cult
+					            has_country_flag = nsc_human_country_magic_prohibition
+				            }
+			            }
+			            NOT = { has_country_flag = LF_mages_banned }
+                        NOT = { ruler_has_personality = mage_personality }
+                    }
+                }
+                add_ruler_personality = mage_personality
+            }
+            4 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_culture = homunculi }
+			            NOT = { has_ruler_flag = is_a_secret_homunculus }
+			            NOT = { has_heir_flag = is_a_secret_homunculus }
+			            NOT = { has_consort_flag = is_a_secret_homunculus }
+			            NOT = { has_ruler_modifier = homunculus_ruler }
+			            NOT = { has_reform = hobgoblin_stratocracy_reform }
+			            NOT = { is_subject_of = R62 }
+			            NOT = {
+				            AND = {
+					            religion = bulwari_sun_cult
+					            has_country_flag = nsc_human_country_magic_prohibition
+				            }
+			            }
+			            NOT = { has_country_flag = LF_mages_banned }
+                        NOT = { ruler_has_personality = mage_personality }
+                        OR = {
+					        has_reform = magical_elite_reform
+					        has_reform = eternal_council
+				        }
+                    }
+                }
+                add_ruler_personality = mage_personality
+            }
+            4 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_culture = homunculi }
+			            NOT = { has_ruler_flag = is_a_secret_homunculus }
+			            NOT = { has_heir_flag = is_a_secret_homunculus }
+			            NOT = { has_consort_flag = is_a_secret_homunculus }
+			            NOT = { has_ruler_modifier = homunculus_ruler }
+			            NOT = { has_reform = hobgoblin_stratocracy_reform }
+			            NOT = { is_subject_of = R62 }
+			            NOT = {
+				            AND = {
+					            religion = bulwari_sun_cult
+					            has_country_flag = nsc_human_country_magic_prohibition
+				            }
+			            }
+			            NOT = { has_country_flag = LF_mages_banned }
+                        NOT = { ruler_has_personality = mage_personality }
+                        is_emperor_of_china = yes
+				        empire_of_china_reform_passed = taste_magic_reform
+                    }
+                }
+                add_ruler_personality = mage_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_culture = homunculi }
+			            NOT = { has_ruler_flag = is_a_secret_homunculus }
+			            NOT = { has_heir_flag = is_a_secret_homunculus }
+			            NOT = { has_consort_flag = is_a_secret_homunculus }
+			            NOT = { has_ruler_modifier = homunculus_ruler }
+			            NOT = { has_reform = hobgoblin_stratocracy_reform }
+			            NOT = { is_subject_of = R62 }
+			            NOT = {
+				            AND = {
+					            religion = bulwari_sun_cult
+					            has_country_flag = nsc_human_country_magic_prohibition
+				            }
+			            }
+			            NOT = { has_country_flag = LF_mages_banned }
+                        NOT = { ruler_has_personality = mage_personality }
+                        ruler_has_personality = scholar_personality
+                    }
+                }
+                add_ruler_personality = mage_personality
+            }
+        }
+        country_event = { id = bronzedwarves.7 }
+    }
+}
+
+country_event = { #extra traits for timed rulers
+	id = bronzedwarves.7
+	title = bronzedwarves.6.t
+	desc = bronzedwarves.6.d
+	picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = bronzedwarves.6.a
+        random_list = {
+            2 = {
+                trigger = {
+                    OR = {
+                        NOT = { ruler_has_personality = cruel_personality }
+                        NOT = { ruler_has_personality = just_personality }
+                    }
+                }
+                add_ruler_personality = just_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = cruel_personality }
+                            NOT = { ruler_has_personality = just_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = just_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = righteous_personality }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = righteous_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = righteous_personality }
+                        has_new_dynasty = yes
+                    }
+                }
+                add_ruler_personality = righteous_personality
+            }
+            2 = {
+                trigger = {
+                    NOT = { ruler_has_personality = righteous_personality }
+                }
+                add_ruler_personality = righteous_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = pious_personality }
+                            NOT = { ruler_has_personality = tolerant_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = tolerant_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = pious_personality }
+                            NOT = { ruler_has_personality = tolerant_personality }
+                        }
+                        NOT = { dominant_religion = ROOT }
+                    }
+                }
+                add_ruler_personality = tolerant_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = pious_personality }
+                            NOT = { ruler_has_personality = tolerant_personality }
+                        }
+                        has_idea_group = humanist_ideas
+                    }
+                }
+                add_ruler_personality = tolerant_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = pious_personality }
+                            NOT = { ruler_has_personality = tolerant_personality }
+                        }
+                        has_estate_privilege = estate_dhimmi_dhimmi_education
+                    }
+                }
+                add_ruler_personality = tolerant_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = cruel_personality }
+			                NOT = { ruler_has_personality = malevolent_personality }
+                            NOT = { ruler_has_personality = kind_hearted_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = kind_hearted_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = free_thinker_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = free_thinker_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = free_thinker_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = free_thinker_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = free_thinker_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = free_thinker_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = free_thinker_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = free_thinker_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = well_connected_personality }
+                    }
+                }
+                add_ruler_personality = well_connected_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = well_connected_personality }
+                        ruler_is_foreigner = yes
+                    }
+                }
+                add_ruler_personality = well_connected_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = well_connected_personality }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = well_connected_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = well_connected_personality }
+                        num_of_royal_marriages = 5
+                    }
+                }
+                add_ruler_personality = well_connected_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = calm_personality }
+                    }
+                }
+                add_ruler_personality = calm_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_has_personality = calm_personality }
+                        is_monarch_leader = no
+                    }
+                }
+                add_ruler_personality = calm_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = naive_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = careful_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = naive_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = careful_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = secretive_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = secretive_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = secretive_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = secretive_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = intricate_web_weaver_personality }
+                        }
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = intricate_web_weaver_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = intricate_web_weaver_personality }
+                        }
+                        DIP = 6
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = intricate_web_weaver_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = well_advised_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = well_advised_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = well_advised_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = well_advised_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = benevolent_personality }
+                            NOT = { ruler_has_personality = malevolent_personality }
+                        }
+                        DIP = 3
+                    }
+                }
+                add_ruler_personality = benevolent_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = benevolent_personality }
+                            NOT = { ruler_has_personality = malevolent_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = benevolent_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = benevolent_personality }
+                            NOT = { ruler_has_personality = malevolent_personality }
+                        }
+                        DIP = 3
+                        vassal = 2
+                    }
+                }
+                add_ruler_personality = benevolent_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                        num_of_missionaries = 2
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                        has_border_with_religious_enemy = yes
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                        is_defender_of_faith = yes
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tolerant_personality }
+			                NOT = { ruler_has_personality = free_thinker_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = zealot_personality }
+                        }
+                        NOT = { has_idea_group = humanist_ideas }
+                        has_estate_privilege = estate_church_clerical_education
+                    }
+                }
+                add_ruler_personality = zealot_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = sinner_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = pious_personality }
+                        }
+                        uses_devotion = yes
+                    }
+                }
+                add_ruler_personality = pious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = sinner_personality }
+			                NOT = { ruler_has_personality = drunkard_personality }
+			                NOT = { ruler_has_personality = tolerant_personality }
+                            NOT = { ruler_has_personality = pious_personality }
+                        }
+                        dominant_religion = ROOT
+                        uses_devotion = yes
+                    }
+                }
+                add_ruler_personality = pious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = lawgiver_personality }
+                        }
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = lawgiver_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = lawgiver_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = lawgiver_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = midas_touched_personality }
+                            NOT = { ruler_has_personality = greedy_personality }
+                        }
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = midas_touched_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = midas_touched_personality }
+                            NOT = { ruler_has_personality = greedy_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = midas_touched_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = midas_touched_personality }
+                            NOT = { ruler_has_personality = greedy_personality }
+                        }
+                        ADM = 3
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = midas_touched_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = embezzler_personality }
+			                NOT = { has_ruler_modifier = borgia_pope }
+                            NOT = { ruler_has_personality = incorruptible_personality }
+                        }
+                        ADM = 3
+                    }
+                }
+                add_ruler_personality = incorruptible_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = embezzler_personality }
+			                NOT = { has_ruler_modifier = borgia_pope }
+                            NOT = { ruler_has_personality = incorruptible_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = incorruptible_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                            NOT = { ruler_has_personality = architectural_visionary_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = architectural_visionary_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                            NOT = { ruler_has_personality = architectural_visionary_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = architectural_visionary_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = scholar_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = scholar_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = scholar_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = scholar_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = entrepreneur_personality }
+                            NOT = { ruler_has_personality = drunkard_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = entrepreneur_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = entrepreneur_personality }
+                            NOT = { ruler_has_personality = drunkard_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = entrepreneur_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = entrepreneur_personality }
+                            NOT = { ruler_has_personality = drunkard_personality }
+                        }
+                        has_government_attribute = is_merchant_republic
+                    }
+                }
+                add_ruler_personality = entrepreneur_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = industrious_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = industrious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = industrious_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = industrious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = industrious_personality }
+                        }
+                        has_government_attribute = is_merchant_republic
+                    }
+                }
+                add_ruler_personality = industrious_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                        OR = {
+				            num_of_conquistadors = 1
+				            num_of_explorers = 1
+			            }
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 2 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                        OR = {
+				            num_of_conquistadors = 2
+				            num_of_explorers = 2
+			            }
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = expansionist_personality }
+                        }
+                        num_of_colonists = 1 
+			            AND = {
+				            has_game_started = no
+				            is_playing_custom_nation = yes
+			            }
+                        OR = {
+				        has_idea_group = exploration_ideas
+				        has_idea_group = maritime_ideas
+				        has_idea_group = trade_ideas
+			            }
+			            has_idea_group = expansion_ideas
+                    }
+                }
+                add_ruler_personality = expansionist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = charismatic_negotiator_personality }
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+                        }
+                        DIP = 3
+                    }
+                }
+                add_ruler_personality = charismatic_negotiator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = charismatic_negotiator_personality }
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = charismatic_negotiator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+			                NOT = { ruler_has_personality = naive_personality }
+                            NOT = { ruler_has_personality = silver_tongue_personality }
+                        }
+                        DIP = 3
+                    }
+                }
+                add_ruler_personality = silver_tongue_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+			                NOT = { ruler_has_personality = naive_personality }
+                            NOT = { ruler_has_personality = silver_tongue_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = silver_tongue_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = conqueror_personality }
+                        }
+                        MIL = 3
+                    }
+                }
+                add_ruler_personality = conqueror_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = conqueror_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = conqueror_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = conqueror_personality }
+                        }
+                        MIL = 3
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = conqueror_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tactical_genius_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = tactical_genius_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tactical_genius_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = tactical_genius_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = tactical_genius_personality }
+                        }
+                        MIL = 3
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = tactical_genius_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = craven_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = bold_fighter_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = craven_personality }
+                        }
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = bold_fighter_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = bold_fighter_personality }
+                            NOT = { ruler_has_personality = careful_personality }
+			                NOT = { ruler_has_personality = craven_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = bold_fighter_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = strict_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = strict_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = strict_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = strict_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = strict_personality }
+                        }
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = strict_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = inspiring_leader_personality }
+                            NOT = { ruler_has_personality = craven_personality }
+                        }
+                        MIL = 3
+                    }
+                }
+                add_ruler_personality = inspiring_leader_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = inspiring_leader_personality }
+                            NOT = { ruler_has_personality = craven_personality }
+                        }
+                        MIL = 3
+                        is_monarch_leader = yes
+                    }
+                }
+                add_ruler_personality = inspiring_leader_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = inspiring_leader_personality }
+                            NOT = { ruler_has_personality = craven_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = inspiring_leader_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = martial_educator_personality }
+                        }
+                        MIL = 3
+                    }
+                }
+                add_ruler_personality = martial_educator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = martial_educator_personality }
+                        }
+                        MIL = 6
+                    }
+                }
+                add_ruler_personality = martial_educator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = navigator_personality }
+                        }
+                        DIP = 6
+                        OR = {
+			                AND = {
+				                has_game_started = no
+				                is_playing_custom_nation = yes
+			                }
+			                AND = {
+				                num_of_ports = 1
+				                navy_size = 1
+			                }
+		                }
+		                NOT = {
+			                has_reform = native_basic_reform
+		                }
+                    }
+                }
+                add_ruler_personality = navigator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = fierce_negotiator_personality }
+                        }
+                        DIP = 3
+                    }
+                }
+                add_ruler_personality = fierce_negotiator_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = fierce_negotiator_personality }
+                        }
+                        DIP = 6
+                    }
+                }
+                add_ruler_personality = fierce_negotiator_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = babbling_buffoon_personality }
+                            NOT = { ruler_has_personality = charismatic_negotiator_personality }
+			                NOT = { ruler_has_personality = silver_tongue_personality }
+			                NOT = { dip = 5 }
+                        }
+                    }
+                }
+                add_ruler_personality = babbling_buffoon_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = embezzler_personality }
+                            NOT = { ruler_has_personality = incorruptible_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = embezzler_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = drunkard_personality }
+                            NOT = { ruler_has_personality = pious_personality }
+			                NOT = { ruler_has_personality = entrepreneur_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = drunkard_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = sinner_personality }
+                            NOT = { ruler_has_personality = pious_personality }
+			                NOT = { ruler_has_personality = zealot_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = sinner_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = greedy_personality }
+                            NOT = { ruler_has_personality = midas_touched_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = greedy_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = cruel_personality }
+                            NOT = { ruler_has_personality = just_personality }
+			                NOT = { ruler_has_personality = kind_hearted_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = cruel_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = naive_personality }
+                            NOT = { ruler_has_personality = silver_tongue_personality }
+			                NOT = { ruler_has_personality = careful_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = naive_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = craven_personality }
+                            NOT = { ruler_has_personality = inspiring_leader_personality }
+			                NOT = { ruler_has_personality = bold_fighter_personality }
+			                NOT = { ruler_has_personality = xhazobs_chosen_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = craven_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = loose_lips_personality }
+                            NOT = { ruler_has_personality = intricate_web_weaver_personality }
+		                	NOT = { ruler_has_personality = secretive_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = loose_lips_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                            NOT = { ruler_has_personality = patron_of_arts_personality }
+				            NOT = { ruler_has_personality = architectural_visionary_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = obsessive_perfectionist_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = malevolent_personality }
+                            NOT = { ruler_has_personality = benevolent_personality }
+			                NOT = { ruler_has_personality = kind_hearted_personality }
+                        }
+                    }
+                }
+                add_ruler_personality = malevolent_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = humane_personality }
+                            NOT = { ruler_has_personality = petty_personality }
+                        }
+                        is_emperor_of_china = yes
+                    }
+                }
+                add_ruler_personality = humane_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = humane_personality }
+                            NOT = { ruler_has_personality = petty_personality }
+                        }
+                        is_emperor_of_china = yes
+                    }
+                }
+                add_ruler_personality = petty_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = reformist_personality }
+                        }
+                        ADM = 4
+                    }
+                }
+                add_ruler_personality = reformist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = reformist_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = reformist_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = patron_of_arts_personality }
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                        }
+                        ADM = 4
+                    }
+                }
+                add_ruler_personality = patron_of_arts_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        OR = {
+                            NOT = { ruler_has_personality = patron_of_arts_personality }
+                            NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+                        }
+                        ADM = 6
+                    }
+                }
+                add_ruler_personality = patron_of_arts_personality
+            }
+            2 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_culture = homunculi }
+			            NOT = { has_ruler_flag = is_a_secret_homunculus }
+			            NOT = { has_heir_flag = is_a_secret_homunculus }
+			            NOT = { has_consort_flag = is_a_secret_homunculus }
+			            NOT = { has_ruler_modifier = homunculus_ruler }
+			            NOT = { has_reform = hobgoblin_stratocracy_reform }
+			            NOT = { is_subject_of = R62 }
+			            NOT = {
+				            AND = {
+					            religion = bulwari_sun_cult
+					            has_country_flag = nsc_human_country_magic_prohibition
+				            }
+			            }
+			            NOT = { has_country_flag = LF_mages_banned }
+                        NOT = { ruler_has_personality = mage_personality }
+                    }
+                }
+                add_ruler_personality = mage_personality
+            }
+            4 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_culture = homunculi }
+			            NOT = { has_ruler_flag = is_a_secret_homunculus }
+			            NOT = { has_heir_flag = is_a_secret_homunculus }
+			            NOT = { has_consort_flag = is_a_secret_homunculus }
+			            NOT = { has_ruler_modifier = homunculus_ruler }
+			            NOT = { has_reform = hobgoblin_stratocracy_reform }
+			            NOT = { is_subject_of = R62 }
+			            NOT = {
+				            AND = {
+					            religion = bulwari_sun_cult
+					            has_country_flag = nsc_human_country_magic_prohibition
+				            }
+			            }
+			            NOT = { has_country_flag = LF_mages_banned }
+                        NOT = { ruler_has_personality = mage_personality }
+                        OR = {
+					        has_reform = magical_elite_reform
+					        has_reform = eternal_council
+				        }
+                    }
+                }
+                add_ruler_personality = mage_personality
+            }
+            4 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_culture = homunculi }
+			            NOT = { has_ruler_flag = is_a_secret_homunculus }
+			            NOT = { has_heir_flag = is_a_secret_homunculus }
+			            NOT = { has_consort_flag = is_a_secret_homunculus }
+			            NOT = { has_ruler_modifier = homunculus_ruler }
+			            NOT = { has_reform = hobgoblin_stratocracy_reform }
+			            NOT = { is_subject_of = R62 }
+			            NOT = {
+				            AND = {
+					            religion = bulwari_sun_cult
+					            has_country_flag = nsc_human_country_magic_prohibition
+				            }
+			            }
+			            NOT = { has_country_flag = LF_mages_banned }
+                        NOT = { ruler_has_personality = mage_personality }
+                        is_emperor_of_china = yes
+				        empire_of_china_reform_passed = taste_magic_reform
+                    }
+                }
+                add_ruler_personality = mage_personality
+            }
+            1 = {
+                trigger = {
+                    AND = {
+                        NOT = { ruler_culture = homunculi }
+			            NOT = { has_ruler_flag = is_a_secret_homunculus }
+			            NOT = { has_heir_flag = is_a_secret_homunculus }
+			            NOT = { has_consort_flag = is_a_secret_homunculus }
+			            NOT = { has_ruler_modifier = homunculus_ruler }
+			            NOT = { has_reform = hobgoblin_stratocracy_reform }
+			            NOT = { is_subject_of = R62 }
+			            NOT = {
+				            AND = {
+					            religion = bulwari_sun_cult
+					            has_country_flag = nsc_human_country_magic_prohibition
+				            }
+			            }
+			            NOT = { has_country_flag = LF_mages_banned }
+                        NOT = { ruler_has_personality = mage_personality }
+                        ruler_has_personality = scholar_personality
+                    }
+                }
+                add_ruler_personality = mage_personality
+            }
+        }
     }
 }
