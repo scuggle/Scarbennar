@@ -1995,8 +1995,8 @@ commandant = {
 	}
 	
 	# Bonus
-	discipline = 0.025
-	drill_gain_modifier = 0.15
+	discipline = 0.05
+	drill_gain_modifier = 0.1
 	
 	skill_scaled_modifier = {
 		trigger = {
