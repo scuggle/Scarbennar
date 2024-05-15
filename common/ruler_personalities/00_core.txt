@@ -1487,10 +1487,12 @@ expansionist_personality = {
 		}
 		modifier = {
 			factor = 1
-			has_idea_group = exploration_ideas
+			OR = {
+				has_idea_group = exploration_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = trade_ideas
+			}
 			has_idea_group = expansion_ideas
-			has_idea_group = maritime_ideas
-			has_idea_group = trade_ideas
 		}
 		# modifier = {
 		# 	factor = 0.5
