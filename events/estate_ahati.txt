@@ -1009,6 +1009,12 @@ country_event = {
 			country_event = { id = ahati_events.170 days = 1825 } #5 years
 			remove_country_modifier = rising_ahati_threat
 		}
+		hidden_effect = {
+			if = {
+				limit = { has_country_modifier = bronze_happy_ahati}
+				country_event = { id = "bronzedwarves.11"}
+			}
+		}
 	}
 }
 
@@ -2603,5 +2609,9 @@ country_event = {
 		else = { set_estate_privilege = estate_ahati_non_khet_steward }
 		
 		ai_chance = { factor = 100 }
+		if = {
+			limit = { has_country_modifier = "bronze_ahati_disaster_buff" }
+			country_event = { id = "bronzedwarves.12" }
+		}
 	}
 }

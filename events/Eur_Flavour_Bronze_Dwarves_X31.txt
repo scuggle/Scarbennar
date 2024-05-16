@@ -2997,3 +2997,191 @@ country_event = { #extra traits for timed rulers
         }
     }
 }
+
+country_event = { #mt reward
+	id = bronzedwarves.8
+	title = bronzedwarves.8.t
+	desc = bronzedwarves.8.d
+	picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    option = { #get a war wizard
+        name = bronzedwarves.8.a 
+
+        trigger = {
+            always = yes
+        }
+        create_war_wizard_effect = yes
+    }
+
+    option = { #get aakhet 
+        name = bronzedwarves.8.b
+
+        trigger = {
+            religion = aakhetist
+        }
+        define_general = {
+			name = "Tehkaa the Bronze"
+            trait = war_wizard_personality
+			fire = 12
+			shock = 12
+			manuever = 12
+			siege = 12
+		}
+        country_event = {
+            id = bronzedwarves.9
+            days = 180
+        }
+    }
+}
+
+country_event = { #mt reward
+	id = bronzedwarves.9
+	title = bronzedwarves.9.t
+	desc = bronzedwarves.9.d
+	picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    immediate_effect = {
+        kill_leader = {
+            type = "Tehkaa the Bronze"
+        }
+    }
+
+    option = { #get a war wizard
+        name = bronzedwarves.9.a 
+
+        trigger = {
+            always = yes
+        }
+        create_war_wizard_effect = yes
+    }
+}
+
+country_event = { #mt reward
+	id = bronzedwarves.10
+	title = bronzedwarves.10.t
+	desc = bronzedwarves.10.d
+	picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    
+
+    option = { #ally aramoole
+        name = bronzedwarves.10.a 
+
+        trigger = {
+            F63 = {
+                exists = yes
+            }
+        }
+        F63 = {
+            release = ROOT
+
+        }
+        create_alliance = F63
+    }
+
+    option = { #f aramoole
+        name = bronzedwarves.10.b 
+
+        trigger = {
+            always = yes
+        }
+        add_country_modifier = {
+            name = "bronze_independence"
+            duration = 3650
+        }
+        add_treasury = -100
+        remove_historical_friend = F63
+        F63 = {
+            remove_historical_friend = ROOT
+        }
+    }
+
+    option = { #f aramoole and go nirakhetist
+        name = bronzedwarves.10.c
+
+        trigger = {
+            always = yes
+        }
+        change_religion = nirakhetist
+        add_prestige = 100
+        add_country_modifier = {
+            name = "bronze_independence"
+            duration = 3650
+        }
+        add_treasury = -100
+        remove_historical_friend = F63
+        F63 = {
+            remove_historical_friend = ROOT
+        }
+    }
+
+    option = { #f aramoole and go elikhetist
+        name = bronzedwarves.10.e
+
+        trigger = {
+            always = yes
+        }
+        change_religion = elikhetist
+        add_prestige = 100
+        add_country_modifier = {
+            name = "bronze_independence"
+            duration = 3650
+        }
+        add_treasury = -100
+        remove_historical_friend = F63
+        F63 = {
+            remove_historical_friend = ROOT
+        }
+    }
+}
+
+country_event = { #mt reward
+	id = bronzedwarves.11
+	title = bronzedwarves.11.t
+	desc = bronzedwarves.11.d
+	picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+
+    option = { #ahati aren't as mad
+        name = bronzedwarves.11.a 
+
+        trigger = {
+            always = yes
+        }
+        add_country_modifier = {
+            name = "bronze_ahati_disaster_buff"
+            duration = -1
+        }
+    }
+}
+
+country_event = { #mt reward
+	id = bronzedwarves.12
+	title = bronzedwarves.12.t
+	desc = bronzedwarves.12.d
+	picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    immediate_effect = {
+        remove_country_modifier = bronze_ahati_disaster_buff
+    }
+
+
+    option = { #disaster over
+        name = bronzedwarves.12.a 
+
+        trigger = {
+            always = yes
+        }
+        add_prestige = 10
+    }
+}

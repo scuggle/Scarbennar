@@ -473,3 +473,76 @@ temple_of_the_new_moon_overlord = {
 	missionaries = 1
 	global_missionary_strength = 0.01
 }
+
+bronze_dev_cost = {
+	development_cost = -0.15
+}
+
+bronze_capital_buff = {
+	local_development_cost = -1
+	local_governing_cost = -0.5
+	trade_value_modifier = 1
+	trade_goods_size = 2
+}
+
+bronze_harimari1 = {
+	global_manpower_modifier = 0.05
+}
+
+bronze_harimari2 = {
+	global_manpower_modifier = 0.1
+}
+
+bronze_harimari3 = {
+	global_manpower_modifier = 0.15
+}
+
+bronze_wide_hold = {
+	defensiveness = 0.1
+	fort_maintenance_modifier = -0.2
+}
+
+bronze_independence = {
+	land_attrition = -0.2
+	land_forcelimit = 5
+	land_maintenance_modifier = -0.1
+	land_morale = 0.1
+	discipline = 0.05
+}
+
+bronze_monuments = {
+	great_project_upgrade_cost = -0.25
+	mages_loyalty_modifier = 0.1
+}
+
+bronze_happy_ahati = {
+	ahati_loyalty_modifier = 0.1
+}
+
+bronze_ahati_disaster_buff = {
+	manpower_recovery_speed = 0.1
+	trade_efficiency = 0.5
+	global_trade_goods_size_modifier = 0.5
+	global_tax_modifier = 0.5
+	land_morale = 0.1
+	ahati_loyalty_modifier = 0.05
+	ahati_influence_modifier = -0.75
+	janissary_cost_modifier = -0.3
+	reduced_liberty_desire = 10
+}
+
+bronze_navy = {
+	naval_forcelimit = 10
+	ship_durability = 0.1
+}
+
+bronze_cannon_finisher = {
+	artillery_bonus_vs_fort = 1
+	artillery_cost = -0.10
+	artillery_barrage_cost = -0.25
+	artillery_power = 0.05
+}
+
+bronze_extra_goods = {
+	trade_goods_size = 1
+}
