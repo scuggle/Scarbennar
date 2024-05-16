@@ -145,8 +145,8 @@ on_startup = {
 		eur_changes.4
 
 		#khet civil war
-		#khet_civil_war.1
-		#khet_civil_war.2
+		khet_civil_war.1
+		khet_civil_war.2
 
 		#aakhetist
 		aakhetist.05
