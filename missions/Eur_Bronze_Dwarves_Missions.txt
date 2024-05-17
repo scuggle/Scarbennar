@@ -109,21 +109,19 @@ bronzemission1 = {
         }
 
         trigger = {
-            every_owned_province = {
-                limit {
-                    region = khetapera_region
-                }
-                OR = {
-                    AND = {
+			num_of_owned_provinces_with = {
+				value = 33
+				OR = {
+					AND = {
                         base_manpower = 10
                         OR = {
                             has_harimari_majority_trigger = yes
 				            has_harimari_minority_trigger = yes
                         }
                     }
-                    development = 30
-                }
-            }
+					development = 30
+				}
+			}
         }
 
         effect = {
@@ -223,6 +221,11 @@ bronzemission2 = {
                 name = "bronze_harimari2"
                 duration = -1
             }
+			add_country_modifier = {
+                name = "bronze_extra_harimari"
+                duration = -1
+				hidden = yes
+            }
             random_owned_province = {
                 add_harimari_minority_size_effect = yes
             }
@@ -230,6 +233,7 @@ bronzemission2 = {
                 add_harimari_minority_size_effect = yes
             }
             medium_increase_of_harimari_tolerance_effect = yes
+			custom_tooltip = bronzemission22.tt
         }
     }
 
@@ -362,6 +366,7 @@ bronzemission3 = {
 				}
 				add_core = ROOT
             }
+			custom_tooltip = bronzemission32.tt
         }
     }
 
@@ -391,13 +396,10 @@ bronzemission3 = {
 
         trigger = {
             OR = {
-                all_country = {
-                    limit = {
-                        capital_scope = {
-                            continent = africa
-                        }
-                    }
-                    NOT = { religion = aakhetist }
+                all_countries_including_self  = {
+					NOT = {
+                    	religion = aakhetist
+					}
                 }
                 AND = {
                     is_defender_of_faith = yes
@@ -408,6 +410,7 @@ bronzemission3 = {
 
         effect = {
             country_event = { id = "bronzedwarves.8"}
+			custom_tooltip = bronzemission33.tt
         }
     }
 }
@@ -446,6 +449,7 @@ bronzemission4 = {
             khetapera_region = {
                 add_claim = ROOT
             }
+			custom_tooltip = bronzemission41.tt
         }
     }
 
@@ -569,7 +573,7 @@ bronzemission5 = {
         icon = mission_heated_battle
 		position = 2
 		required_missions = {
-            bronzemission31
+            bronzemission41
         }
 
         provinces_to_highlight = {
@@ -622,6 +626,7 @@ bronzemission5 = {
         effect = {
             add_meritocracy = 20
             add_mandate = 10
+			custom_tooltip = bronzemission53.tt
         }
     }
 }
@@ -754,6 +759,7 @@ biaakhatep1 = {
             businor_region = {
                 add_permanent_claim = ROOT
             }
+			custom_tooltip = bronzemission16.tt
         }
     }
 
@@ -846,14 +852,15 @@ biaakhatep1 = {
                     duration = -1
                 }
             }
-            1259 = { add_trade_modifier = { who = ROOT duration = -1 power = 50 key = bronze_mt_trade_power } }
+            1296 = { add_trade_modifier = { who = ROOT duration = -1 power = 50 key = bronze_mt_trade_power } }
+			custom_tooltip = bronzemission18.tt
         }
     }
 }
 
 mandate_mt_2 = {
 	slot = 2
-	generic = yes
+	generic = no
 	ai = yes
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
@@ -1037,7 +1044,7 @@ mandate_mt_2 = {
 
 mandate_mt_3 = {
 	slot = 3
-	generic = yes
+	generic = no
 	ai = yes
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
@@ -1257,7 +1264,7 @@ mandate_mt_3 = {
 
 mandate_mt_4 = {
 	slot = 4
-	generic = yes
+	generic = no
 	ai = yes
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
@@ -1422,7 +1429,7 @@ mandate_mt_4 = {
 
 mandate_mt_5 = {
 	slot = 5
-	generic = yes
+	generic = no
 	ai = yes
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }

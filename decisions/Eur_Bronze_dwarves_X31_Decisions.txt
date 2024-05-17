@@ -83,7 +83,7 @@ country_decisions = {
 				add_dwarven_minority_size_effect = yes
 				add_dwarven_minority_size_effect = yes
 			}
-
+			lock_racial_admin = yes
 		}
 		
 		ai_will_do = {

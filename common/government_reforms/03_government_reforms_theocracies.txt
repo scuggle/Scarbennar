@@ -4823,7 +4823,6 @@ bronze_dual_government_reform = {
 		enables_divine_idea_group = yes
 		has_dutch_election = yes
 		locked_government_type = yes
-		lock_racial_admin = yes
 		disabled_purging_harimari = yes
 		disabled_expelling_harimari = yes
 	}

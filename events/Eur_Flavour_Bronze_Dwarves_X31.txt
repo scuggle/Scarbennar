@@ -243,13 +243,15 @@ country_event = { #restoring the gov
         }
     }
 
-    immediate_effect = {
-        change_government = theocracy
-        add_government_reform = bronze_dual_government_reform
-        add_country_modifier = {
-	        name = "harimari_military"
-	        duration = -1
-	        hidden = yes
+    immediate = {
+        effect = {
+            change_government = theocracy
+            add_government_reform = bronze_dual_government_reform
+            add_country_modifier = {
+	            name = "harimari_military"
+	            duration = -1
+	            hidden = yes
+            }
         }
     }
 
@@ -1627,7 +1629,10 @@ country_event = { #extra traits for timed rulers
                 add_ruler_personality = mage_personality
             }
         }
-        country_event = { id = bronzedwarves.7 }
+        country_event = { 
+            id = bronzedwarves.7 
+            days = 31
+        }
     }
 }
 
@@ -3031,7 +3036,7 @@ country_event = { #mt reward
 		}
         country_event = {
             id = bronzedwarves.9
-            days = 180
+            days = 60
         }
     }
 }
@@ -3044,17 +3049,15 @@ country_event = { #mt reward
 
     is_triggered_only = yes
 
-    immediate_effect = {
-        kill_leader = {
-            type = "Tehkaa the Bronze"
-        }
-    }
 
     option = { #get a war wizard
         name = bronzedwarves.9.a 
 
         trigger = {
             always = yes
+        }
+        kill_leader = {
+            type = "Tehkaa the Bronze"
         }
         create_war_wizard_effect = yes
     }
@@ -3078,11 +3081,11 @@ country_event = { #mt reward
                 exists = yes
             }
         }
-        F63 = {
-            release = ROOT
-
-        }
+        grant_independence = yes
         create_alliance = F63
+        5890 = {
+            remove_core = F63
+        }
     }
 
     option = { #f aramoole
@@ -3171,8 +3174,10 @@ country_event = { #mt reward
 
     is_triggered_only = yes
 
-    immediate_effect = {
-        remove_country_modifier = bronze_ahati_disaster_buff
+    immediate = {
+        effect = {
+            remove_country_modifier = bronze_ahati_disaster_buff
+        }
     }
 
 
@@ -3183,5 +3188,6 @@ country_event = { #mt reward
             always = yes
         }
         add_prestige = 10
+        remove_country_modifier = bronze_ahati_disaster_buff
     }
 }
