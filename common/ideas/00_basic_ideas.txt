@@ -1410,7 +1410,7 @@ focus_inwards = { #Internal Ideas Redo
 		monthly_reform_progress = 0.2
 	}
 	foc_inw5 = {
-		expand_infrastructure_cost_modifier = -0.50
+		expand_infrastructure_cost_modifier = -0.33
 		expand_administration_cost = -0.1
 	}
 	foc_inw6 = {
