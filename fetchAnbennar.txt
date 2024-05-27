@@ -11,7 +11,7 @@ git remote -v
 #To pull from Anbennar:
 git fetch Anbennar/new-master
 #Creates new branch "temp" containing all changes from Bitbucket
-git checkout -b temp Anbennar/new-master
+git checkout -b temp Anbennar/new-master/new-master
 #Switches to directory we want to add their stuff to
 git checkout development
 #Merges their stuff into currently selected branch. i.e. "development"
