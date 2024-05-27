@@ -1,3 +1,4 @@
+
 #Orlghelovar		designed and coded by Wagentzu
 #1 Part, Rebuilding a foundation for future growth
 orlghelovar_1p2s = {
@@ -3668,7 +3669,7 @@ orlghelovar_armour_protection_2 = {
 							owner = {
 								NOT = {
 									dwarovar_goblin_culture_primary = yes
-									primary_culture = black_orc
+									dwarovar_orc_culture_primary = yes
 								}
 								has_opinion = {
 									who = ROOT

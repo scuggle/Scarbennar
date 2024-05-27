@@ -1102,6 +1102,17 @@ statesman = {
 			global_unrest = -0.5 
 		}
 	}
+	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = kalsyto_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_kalsyto_influence = 0.1
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -1216,6 +1227,17 @@ naval_reformer = {
 		}
 		modifier = {
 			global_unrest = -0.5 
+		}
+	}
+	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = kalsyto_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_kalsyto_influence = 0.03
 		}
 	}
 
@@ -1338,6 +1360,17 @@ trader = {
 			global_unrest = -0.5 
 		}
 	}
+	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = kalsyto_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_kalsyto_influence = 0.03
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -1455,6 +1488,17 @@ spymaster = {
 			global_unrest = -0.5 
 		}
 	}
+	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = kalsyto_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_kalsyto_influence = 0.03
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -1557,7 +1601,18 @@ colonial_governor = {
 			global_unrest = -0.5 
 		}
 	}
-
+	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = kalsyto_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_kalsyto_influence = 0.03
+		}
+	}
+	
 	chance = {
 		factor = 1
 		modifier = {
@@ -1672,7 +1727,18 @@ diplomat = {
 			global_unrest = -0.5 
 		}
 	}
-
+	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = kalsyto_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_kalsyto_influence = 0.1
+		}
+	}
+	
 	chance = {
 		factor = 1
 		modifier = {
@@ -1774,7 +1840,18 @@ navigator = {
 			global_unrest = -0.5 
 		}
 	}
-
+	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = kalsyto_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_kalsyto_influence = 0.03
+		}
+	}
+	
 	chance = {
 		factor = 1
 		modifier = {

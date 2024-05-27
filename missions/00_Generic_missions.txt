@@ -24,6 +24,19 @@ twisting_missions = {
 				name = "conquest_1_mission"
 				duration = 9125
 			}
+			custom_tooltip = claim_neighbor_province
+			hidden_effect = {
+				every_owned_province = {
+					every_neighbor_province = {
+						limit = {
+							NOT = { owned_by = ROOT }
+							NOT = { is_permanent_claim = ROOT	}
+							NOT = { is_core = ROOT	}
+						}
+						add_claim = ROOT
+					}
+				}
+			}
 		}
 	}
 	conquest_2 = {
@@ -100,6 +113,31 @@ twisting_missions = {
 				name = "conquest_1_mission"
 				duration = 9125
 			}
+			custom_tooltip = home_region_generic_reward
+			tooltip = {
+				add_nationalism = -10
+			}
+			custom_tooltip = perma_claim_neighbor_area
+			hidden_effect = {
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { owned_by = ROOT }
+								NOT = { is_permanent_claim = ROOT    }
+								NOT = { is_core = ROOT    }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						region = capital
+					}
+					add_nationalism = -10
+				}
+			}
 		}
 	}
 }
@@ -138,6 +176,13 @@ expansion_missions = {
 				name = "expansion_1_mission"
 				duration = 9125
 			}
+			define_advisor = {
+				type = diplomat
+				skill = 1
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
 		}
 	}
 	expansion_2 = {
@@ -162,6 +207,9 @@ expansion_missions = {
 			add_country_modifier = {
 				name = "expansion_1_mission"
 				duration = 9125
+			}
+			every_subject_country = {
+				add_liberty_desire = -10
 			}
 		}
 	}
@@ -352,6 +400,33 @@ economic_missions = {
 				name = "trade_1_mission"
 				duration = 9125
 			}
+			if = {
+				limit = {
+					NOT = {
+						navy_tradition = 40
+					}
+				}
+				create_admiral = { tradition = 40 }
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						navy_tradition = 60
+					}
+				}
+				create_admiral = { tradition = 60 }
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						navy_tradition = 80
+					}
+				}
+				create_admiral = { tradition = 80 }
+			}
+			else = {
+				create_admiral = { tradition = 100 }
+			}
 		}
 	}
 	trade_3 = {
@@ -421,6 +496,33 @@ economic_missions = {
     			random = 5
     			tooltip = MUTAGEN_3_TOOLTIP
 			}
+			if = {
+				limit = {
+					NOT = {
+						navy_tradition = 40
+					}
+				}
+				create_explorer = { tradition = 40 }
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						navy_tradition = 60
+					}
+				}
+				create_explorer = { tradition = 60 }
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						navy_tradition = 80
+					}
+				}
+				create_explorer = { tradition = 80 }
+			}
+			else = {
+				create_explorer = { tradition = 100 }
+			}
 		}
 	}
 	ascendancy_2 = {
@@ -464,6 +566,7 @@ economic_missions = {
 				name = "economic_1_mission"
 				duration = 9125
 			}
+			add_corruption = -2
 		}
 	}
 	economic_2 = {
@@ -819,6 +922,21 @@ twisting_missions_goverment = {
 			add_country_modifier = {
 				name = "government_1_mission"
 				duration = 9125
+			}
+			custom_tooltip = perma_claim_neighbor_area
+			hidden_effect = {
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { owned_by = ROOT }
+								NOT = { is_permanent_claim = ROOT    }
+								NOT = { is_core = ROOT    }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
 			}
 		}
 	}

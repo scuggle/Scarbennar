@@ -1985,7 +1985,7 @@ bosancovac_4 = {
 				who = G39
 				value = 100
 			}
-			1139 = { has_trader = G33 }
+			1133 = { has_trader = G33 }
 		}
 
 		effect = {
@@ -2550,7 +2550,7 @@ bosancovac_4 = {
 			custom_tooltip = every_subject_tt
 			tooltip = {
 				random_subject_country = {
-					1139 = {
+					1133 = {
 						add_trade_modifier = {
 							who = PREV
 							duration = 7300
@@ -2562,7 +2562,7 @@ bosancovac_4 = {
 			}
 			hidden_effect = {
 				every_subject_country = {
-					1139 = {
+					1133 = {
 						add_trade_modifier = {
 							who = PREV
 							duration = 7300
@@ -2573,7 +2573,7 @@ bosancovac_4 = {
 				}
 			}
 			custom_tooltip = ---
-			1139 = {
+			1133 = {
 				add_trade_modifier = {
 					who = PREV
 					duration = 7300

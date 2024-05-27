@@ -5,9 +5,17 @@ estate_lion_command = {
 	
 	trigger = {
 		OR = {
-		tag = R62
-		tag = X21
+			tag = R62
+			tag = R95
+			tag = X21
+			AND = {
+				OR = {
+					tag = R94
+					tag = R96
+				}
+				owns = 4311
 			}
+		}
 		has_reform = hobgoblin_stratocracy_reform
 	}
 	

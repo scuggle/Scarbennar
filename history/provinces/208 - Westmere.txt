@@ -4,6 +4,7 @@
 owner = A76
 controller = A76
 add_core = A76
+add_core = A70
 culture = bluefoot_halfling
 religion = regent_court
 

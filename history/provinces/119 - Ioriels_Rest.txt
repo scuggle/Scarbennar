@@ -1,9 +1,8 @@
 
 #119 - Ancona
 
-owner = A17
-controller = A17
-add_core = A17
+owner = B68
+controller = B68
 add_core = B68
 culture = high_lorentish
 religion = regent_court

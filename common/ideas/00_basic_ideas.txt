@@ -847,16 +847,30 @@ exploration_ideas = { #Trustee #done
 				}
 			}
 		}
-		modifier = {
-			factor = 0.01
-			NOT = { has_institution = renaissance }
-			NOT = { tag = A01 }
-			NOT = { tag = A02 }
-			NOT = { tag = A09 }
-			NOT = { tag = A21 }
-		}
+		#modifier = {
+		#	factor = 0.01
+		#	NOT = {
+		#		AND = {
+		#			has_global_flag = delete_cannor_region 
+		#			NOT = { has_global_flag = delete_north_aelantir_region }
+		#			NOT = { has_global_flag = delete_south_aelantir_region }
+		#		}
+		#	}
+		#	NOT = { has_institution = renaissance }
+		#	NOT = { tag = A01 }
+		#	NOT = { tag = A02 }
+		#	NOT = { tag = A09 }
+		#	NOT = { tag = A21 }
+		#}
 		modifier = {
 			factor = 0.1
+			NOT = {
+				AND = {
+					has_global_flag = delete_cannor_region 
+					NOT = { has_global_flag = delete_north_aelantir_region }
+					NOT = { has_global_flag = delete_south_aelantir_region }
+				}
+			}
 			capital_scope = {
 				NOT = {
 					OR = {
@@ -943,8 +957,6 @@ exploration_ideas = { #Trustee #done
 		modifier = {
 			factor = 1000
 			OR = {
-				tag = A01 #Lorent
-				tag = A02 #Deranne
 				tag = A21 #Venail
 				tag = A33 #Verne
 				tag = A11 #Pearlsedge
@@ -982,7 +994,7 @@ exploration_ideas = { #Trustee #done
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 10
 			OR = {
 				tag = A06 #Nimscodd
 				tag = U07 #Viakkoc
@@ -1196,10 +1208,10 @@ shadows_and_daggers = { #Shadow and daggers ie dick head ideas
 	
 	ai_will_do = {
 		factor = 3.5
-		modifier = {
-			factor = 2
-			has_strong_mil_national_ideas = yes 
-		}
+		#modifier = {
+		#	factor = 2
+		#	has_strong_mil_national_ideas = yes 
+		#}
 		modifier = { 
 			factor = 0.75
 			NOT = { monthly_mil = 8 }

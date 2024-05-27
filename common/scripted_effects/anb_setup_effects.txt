@@ -1,3 +1,4 @@
+
 setup_vision = {
 	if = {
 		limit = { exists = yes }
@@ -1208,9 +1209,9 @@ setup_vision = {
 			olavlund_region = {
 				discover_country = ROOT
 			}
-			gerudian_frontier_region = {
-				discover_country = ROOT
-			}
+			#gerudian_frontier_region = {
+			#	discover_country = ROOT
+			#}
 			1885 = {
 				discover_country = ROOT
 			}
@@ -1226,9 +1227,9 @@ setup_vision = {
 			giants_grave_sea_region = {
 				discover_country = ROOT
 			}
-			northern_pass_region = {
-				discover_country = ROOT
-			}
+			#northern_pass_region = {
+			#	discover_country = ROOT
+			#}
 			1251 = {
 				discover_country = ROOT
 			}
@@ -1666,7 +1667,7 @@ setup_vision = {
 				discover_country = ROOT
 			}
 
-			# phokao
+			# phokhao
 			3261 = {
 				discover_country = ROOT
 			}
@@ -1696,22 +1697,22 @@ setup_vision = {
 			kvathagis_area = {
 				discover_country = ROOT
 			}
-			cheni_area = {
+			wakoopakad_area = {
 				discover_country = ROOT
 			}
-			kahuwabumay_area = {
+			kukihombe_area = {
 				discover_country = ROOT
 			}
-			wakoo_area = {
+			juumsozi_area = {
 				discover_country = ROOT
 			}
-			guwazi_area = {
+			rimvuawuni_area = {
 				discover_country = ROOT
 			}
-			digirbonde_area = {
+			5563 = {
 				discover_country = ROOT
 			}
-			kembta_area = {
+			5574 = {
 				discover_country = ROOT
 			}
 			5441 = {
@@ -1748,9 +1749,6 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			5462 = {
-				discover_country = ROOT
-			}
-			5566 = {
 				discover_country = ROOT
 			}
 			igerya_isles_area = {
@@ -1894,22 +1892,22 @@ setup_vision = {
 			kvathagis_area = {
 				discover_country = ROOT
 			}
-			cheni_area = {
+			wakoopakad_area = {
 				discover_country = ROOT
 			}
-			kahuwabumay_area = {
+			kukihombe_area = {
 				discover_country = ROOT
 			}
-			wakoo_area = {
+			juumsozi_area = {
 				discover_country = ROOT
 			}
-			guwazi_area = {
+			rimvuawuni_area = {
 				discover_country = ROOT
 			}
-			digirbonde_area = {
+			5563 = {
 				discover_country = ROOT
 			}
-			kembta_area = {
+			5574 = {
 				discover_country = ROOT
 			}
 			1340 = {
@@ -1937,9 +1935,6 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			igerya_isles_area = {
-				discover_country = ROOT
-			}
-			5566 = {
 				discover_country = ROOT
 			}
 		}
@@ -2059,22 +2054,22 @@ setup_vision = {
 			kvathagis_area = {
 				discover_country = ROOT
 			}
-			cheni_area = {
+			wakoopakad_area = {
 				discover_country = ROOT
 			}
-			kahuwabumay_area = {
+			kukihombe_area = {
 				discover_country = ROOT
 			}
-			wakoo_area = {
+			juumsozi_area = {
 				discover_country = ROOT
 			}
-			guwazi_area = {
+			rimvuawuni_area = {
 				discover_country = ROOT
 			}
-			digirbonde_area = {
+			5563 = {
 				discover_country = ROOT
 			}
-			kembta_area = {
+			5574 = {
 				discover_country = ROOT
 			}
 			1340 = {
@@ -2102,9 +2097,6 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			igerya_isles_area = {
-				discover_country = ROOT
-			}
-			5566 = {
 				discover_country = ROOT
 			}
 			
@@ -2378,6 +2370,9 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			kaxatan_area = {
+				discover_country = ROOT
+			}
+			jagab_faru_area = {
 				discover_country = ROOT
 			}
 			saqraxat_area = {
@@ -2677,6 +2672,9 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			saqraxat_area = {
+				discover_country = ROOT
+			}
+			jagab_faru_area = {
 				discover_country = ROOT
 			}
 			kaxatan_area = {
@@ -3345,7 +3343,7 @@ setup_vision = {
 			denibari_region = {
 				discover_country = ROOT
 			}
-			guifa_guyamva_region = {
+			ishyamtumu_region = {
 				discover_country = ROOT
 			}
 			bamaliwuni_region = {
@@ -3364,7 +3362,7 @@ setup_vision = {
 			limit = {
 				OR = {
 					capital_scope = {
-						region = guifa_guyamva_region
+						region = ishyamtumu_region
 					}
 					capital_scope = {
 						region = bamaliwuni_region
@@ -3459,6 +3457,7 @@ setup_vision = {
 						primary_culture = kombedak
 						primary_culture = umsozidak
 						primary_culture = wakoodak
+						primary_culture = cyazizeta_lizardfolk
 					}
 				}
 				kedwali_gulf_region = {
@@ -3644,7 +3643,7 @@ setup_vision = {
 			bamaliwuni_region = {
 				discover_country = ROOT
 			}
-			guifa_guyamva_region = {
+			ishyamtumu_region = {
 				discover_country = ROOT
 			}
 			mabeedi_sea_area = {
@@ -3906,7 +3905,7 @@ setup_vision = {
 			limit = {
 				capital_scope = {
 					OR = {
-						region = guifa_guyamva_region
+						region = ishyamtumu_region
 						superregion = south_sarhal_superregion
 					}
 					NOT = { region = jasiir_jadid_region }
@@ -3964,7 +3963,7 @@ setup_vision = {
 			khetapera_region = {
 				discover_country = ROOT
 			}
-			guifa_guyamva_region = {
+			ishyamtumu_region = {
 				discover_country = ROOT
 			}
 			bamaliwuni_region = {
@@ -4175,6 +4174,24 @@ setup_vision = {
 					discover_country = ROOT
 				}
 				1550 = {
+					discover_country = ROOT
+				}
+				2507 = {
+					discover_country = ROOT
+				}
+				2380 = {
+					discover_country = ROOT
+				}
+				3204 = {
+					discover_country = ROOT
+				}
+				3203 = {
+					discover_country = ROOT
+				}
+				3202 = {
+					discover_country = ROOT
+				}
+				6749 = {
 					discover_country = ROOT
 				}
 			}
@@ -4429,6 +4446,19 @@ setup_vision = {
 			1692 = {
 				discover_country = ROOT
 			}
+			#Wastelands
+			3314 = {
+				discover_country = ROOT
+			}
+			3288 = {
+				discover_country = ROOT
+			}
+			3281 = {
+				discover_country = ROOT
+			}
+			3275 = {
+				discover_country = ROOT
+			}
 		}
 		
 		#ynn
@@ -4439,7 +4469,7 @@ setup_vision = {
 				}
 				OR = {
 					culture_group = ynnic_ruinborn_elf
-					culture_group = veykodan_ruinborn_elf
+					culture_group = veykodan
 					primary_culture = epednar
 					primary_culture = cursed_ones
 				}
@@ -4475,6 +4505,18 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			6552 = {	#Ynn River
+				discover_country = ROOT
+			}
+			7035 = {	#Ynn River
+				discover_country = ROOT
+			}
+			7036 = {	#Ynn River
+				discover_country = ROOT
+			}
+			7037 = {	#Ynn River
+				discover_country = ROOT
+			}
+			7038 = {	#Ynn River
 				discover_country = ROOT
 			}
 		}
@@ -4593,9 +4635,6 @@ setup_vision = {
 			guardian_islands_area = {
 				discover_country = ROOT
 			}
-			2155 = {
-				discover_country = ROOT
-			}
 			#Sea tiles
 			1557 = {
 				discover_country = ROOT
@@ -4651,6 +4690,53 @@ setup_vision = {
 				2741 = {
 					discover_country = ROOT
 				}
+				#Sea zones
+				1684 = {
+					discover_country = ROOT
+				}
+				1531 = {
+					discover_country = ROOT
+				}
+				1670 = {
+					discover_country = ROOT
+				}
+				1528 = {
+					discover_country = ROOT
+				}
+				1669 = {
+					discover_country = ROOT
+				}
+			}
+			#Vision adjustement for Haraf'ne
+			if = {
+				limit = {
+					primary_culture = harafe
+				}
+				cialeed_area = {
+					discover_country = ROOT
+				}
+				tamsokh_area = {
+					discover_country = ROOT
+				}
+				boruleed_area = {
+					discover_country = ROOT
+				}
+				2825 = {
+					discover_country = ROOT
+				}
+				#Wasteland and sea zone
+				1685 = {
+					discover_country = ROOT
+				}
+				3297 = {
+					discover_country = ROOT
+				}
+				3296 = {
+					discover_country = ROOT
+				}
+				3301 = {
+					discover_country = ROOT
+				}
 			}
 		}
 		
@@ -4700,50 +4786,132 @@ setup_vision = {
 			}
 		}
 		
-		#leechdens
+		#ingai
 		else_if = {
 			limit = {
-				capital_scope = {
-					region = leechdens_region
-				}
-				OR = {
-					culture_group = effelai_ruinborn_elf
-					primary_culture = leechmen
-				}
+				tag = G19
 			}
-			leechdens_region = {
+			tamidand_area = {
 				discover_country = ROOT
 			}
-			#Sea tiles
-			leechdens_area = {
+			truaine_area = {
 				discover_country = ROOT
 			}
-			#Lakes
-			1916 = {
+			tsilust_area = {
 				discover_country = ROOT
 			}
-			1914 = {
+			voauuam_area = {
 				discover_country = ROOT
 			}
-			1917 = {
+			2274 = {
 				discover_country = ROOT
 			}
-			1918 = {
+			#lakes
+			2273 = {
 				discover_country = ROOT
 			}
+		}
+
+		#Kamaraka
+		else_if = {
+			limit = {
+				tag = G18
+			}
+			junglemouth_area = {
+				discover_country = ROOT
+			}
+			central_effelai_area = {
+				discover_country = ROOT
+			}
+		}
+
+		#Xoti'Guao
+		else_if = {
+			limit = {
+				tag = G17
+			}
+			silent_expanse_area = {
+				discover_country = ROOT
+			}
+			hungry_jungle_area = {
+				discover_country = ROOT
+			}
+			2358 = {
+				discover_country = ROOT
+			}
+			2350 = {
+				discover_country = ROOT
+			}
+			2354 = {
+				discover_country = ROOT
+			}
+		}
+
+		#Ae'n Salayno
+		else_if = {
+			limit = {
+				tag = G16
+			}
+			green_river_area = {
+				discover_country = ROOT
+			}
+			trisfersland_area = {
+				discover_country = ROOT
+			}
+			obscured_approach_area = {
+				discover_country = ROOT
+			}
+			2197 = {
+				discover_country = ROOT
+			}
+			2202 = {
+				discover_country = ROOT
+			}
+			#sea
+			1513 = {
+				discover_country = ROOT
+			}
+			1516 = {
+				discover_country = ROOT
+			}
+		}
+
+		#Sel'parura
+		else_if = {
+			limit = {
+				tag = G15
+			}
+			screaming_jungle_area = {
+				discover_country = ROOT
+			}
+			edgewoods_area = {
+				discover_country = ROOT
+			}
+			2213 = {
+				discover_country = ROOT
+			}
+			2220 = {
+				discover_country = ROOT
+			}
+			2221 = {
+				discover_country = ROOT
+			}
+			2228 = {
+				discover_country = ROOT
+			}
+			2229 = {
+				discover_country = ROOT
+			}
+			#sea
+			1530 = {
+				discover_country = ROOT
+			}
+			1536 = {
+				discover_country = ROOT
+			}
+			
+			#lakes
 			1661 = {
-				discover_country = ROOT
-			}
-			1913 = {
-				discover_country = ROOT
-			}
-			1912 = {
-				discover_country = ROOT
-			}
-			1659 = {
-				discover_country = ROOT
-			}
-			1915 = {
 				discover_country = ROOT
 			}
 		}

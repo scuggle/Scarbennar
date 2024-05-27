@@ -18,6 +18,8 @@ cave_goblin_column_5 = {
 			tag = H89
 			tag = H85
 			tag = H84
+			tag = H90
+			was_tag = H90
 		}
 	}
 	has_country_shield = no
@@ -277,6 +279,8 @@ cave_goblin_warband_column_1 = {
 			tag = H89
 			tag = H85
 			tag = H84
+			tag = H90
+			was_tag = H90
 		}
 	}
 	has_country_shield = yes
@@ -430,6 +434,8 @@ cave_goblin_warband_column_2 = {
 			tag = H89
 			tag = H85
 			tag = H84
+			tag = H90
+			was_tag = H90
 		}
 	}
 	has_country_shield = yes
@@ -633,6 +639,8 @@ cave_goblin_warband_column_3 = {
 			tag = H89
 			tag = H85
 			tag = H84
+			tag = H90
+			was_tag = H90
 		}
 	}
 	has_country_shield = yes

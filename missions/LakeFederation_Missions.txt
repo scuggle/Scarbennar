@@ -447,6 +447,10 @@ LAKE_1 = {
 		trigger = {
 			dip_power = 100
 			treasury = 50
+			custom_trigger_tooltip = {
+				tooltip = no_federation_crisis_tooltip
+				NOT = { has_disaster = lake_federation_crisis }
+			}
 		}
 
 		effect = {
@@ -490,6 +494,10 @@ LAKE_1 = {
 				}
 				NOT = {
 					has_country_modifier = lake_mage_grey_1_cooldown
+				}
+				custom_trigger_tooltip = {
+					tooltip = no_federation_crisis_tooltip
+					NOT = { has_disaster = lake_federation_crisis }
 				}
 			}
 		}
@@ -1423,6 +1431,10 @@ LAKE_2 = {
 					advisor = statesman
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = no_federation_crisis_tooltip
+				NOT = { has_disaster = lake_federation_crisis }
+			}
 		}
 
 		effect = {
@@ -1469,6 +1481,10 @@ LAKE_2 = {
 				}
 				NOT = {
 					has_country_modifier = lake_mage_grey_2_cooldown
+				}
+				custom_trigger_tooltip = {
+					tooltip = no_federation_crisis_tooltip
+					NOT = { has_disaster = lake_federation_crisis }
 				}
 			}
 		}
@@ -2423,6 +2439,10 @@ LAKE_3 = {
 			adm_power = 50
 			dip_power = 50
 			mil_power = 50
+			custom_trigger_tooltip = {
+				tooltip = no_federation_crisis_tooltip
+				NOT = { has_disaster = lake_federation_crisis }
+			}
 		}
 
 		effect = {
@@ -2464,6 +2484,10 @@ LAKE_3 = {
 				}
 				NOT = {
 					has_country_modifier = lake_mage_grey_3_cooldown
+				}
+				custom_trigger_tooltip = {
+					tooltip = no_federation_crisis_tooltip
+					NOT = { has_disaster = lake_federation_crisis }
 				}
 			}
 		}
