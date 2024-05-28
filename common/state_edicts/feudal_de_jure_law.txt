@@ -13,6 +13,7 @@ edict_feudal_de_jure_law = {
 	
 	modifier = { # OBS: Modify AI accordingly if this is changed
 		local_unrest = -5
+		institution_growth = 0.5
 	}
 	
 	color = {  116 198 240  }

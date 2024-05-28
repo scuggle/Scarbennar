@@ -356,6 +356,7 @@ age_of_discovery = {
 					value = 100
 					country_or_subject_holds = ROOT
 				}
+				has_estate = estate_monstrous_tribes
 			}
 			effect = {
 				custom_tooltip = age_ability_monstrous_rule_flag_tt

@@ -6240,6 +6240,7 @@ on_bi_yearly_pulse_3 = {
 	if = { #Bulwar Age 1 Ability
 		limit = {
 			has_age_ability = ab_monstrous_rule
+			has_estate = estate_monstrous_tribes
 			development_in_provinces = {
 				OR = {
 					culture_is_human = yes
