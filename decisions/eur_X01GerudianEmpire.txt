@@ -17,6 +17,7 @@ country_decisions = {
 				primary_culture = city_goblin
 				primary_culture = white_reachman
 				primary_culture = blue_reachman
+				primary_culture = jarnklo_harpy
 			}
 			NOT = { has_country_flag = formed_X01_flag }
 			NOT = { tag = X01 }
