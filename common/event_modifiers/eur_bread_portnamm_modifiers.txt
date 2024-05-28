@@ -1,5 +1,5 @@
 port_creek_gnomes_united_modifier = {
-	culture_conversion_cost = -0.1
+	culture_conversion_cost = -0.25
 }
 port_dwarven_metal_influx_modifier = {
 	production_efficiency = 0.05
@@ -9,10 +9,11 @@ port_a_true_gnomish_empire_modifier = {
 	global_unrest = -1
 }
 port_gnomish_imperial_capital_modifier = {
-	province_trade_power_modifier = 0.1
+	province_trade_power_modifier = 0.25
 }
 port_steel_foundries_modifier = {
-	trade_goods_size_modifier = 0.25
+	trade_goods_size_modifier = 0.5
+	trade_value_modifier = 0.25
 }
 port_resource_aquisition_modifier = {
 	technology_cost = -0.1
@@ -36,7 +37,7 @@ port_a_connected_country_modifier = {
 	governing_capacity_modifier = 0.1
 }
 port_portnamm_road_centre_modifier = {
-	province_trade_power_modifier = 0.1
+	province_trade_power_modifier = 0.25
 	local_development_cost = -0.05
 }
 port_theater_fame_modifier = {
@@ -73,7 +74,7 @@ port_roy_dyke_modifier = {
 	local_state_maintenance_modifier = 0.05
 }
 port_colonial_upstarts_modifier = {
-	global_colonial_growth= 10
+	global_colonial_growth= 50
 }
 port_new_world_outpost = {
 	local_development_cost = -0.1 
@@ -154,6 +155,7 @@ port_damestear_aquired_modifier = {
 	estate_artificers_loyalty_modifier = 0.025
 	estate_artificers_influence_modifier = 0.05
 	allowed_rajput_fraction = 0.05
+	land_forcelimit_modifier = -0.05
 }
 port_nismcodd_exchange_modifier = {	#artificer capacity is in artific_scripted_effects
 	estate_artificers_influence_modifier = 0.05
@@ -180,6 +182,7 @@ port_international_gommo_institute_modifier_1 = { #artificer capacity is in arti
 }
 port_artificer_corps_modifier = {	#artificer capacity is in artific_scripted_effects
 	allowed_rajput_fraction = 0.05
+	land_forcelimit_modifier = -0.05
 	estate_artificers_influence_modifier = 0.1
 	estate_artificers_loyalty_modifier = 0.025
 }
