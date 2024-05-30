@@ -25,7 +25,6 @@ eborthil_toref_citadel = {
 				tooltip = cannorian_monuments_can_use_tooltip_businor
 					OR = {
 						culture_group = businori
-						culture_group = divenori
 						culture = castanorian
 						culture = hill_gnoll
 						culture = dovesworn_gnoll
@@ -40,7 +39,6 @@ eborthil_toref_citadel = {
 				tooltip = cannorian_monuments_can_use_tooltip_businor
 					OR = {
 						culture_group = businori
-						culture_group = divenori
 						culture = castanorian
 						culture = hill_gnoll
 					}

@@ -726,7 +726,6 @@ khenak_copper_mine = {
 			Development = 30
 			culture_group = businori
 			OR = {
-				culture_group = divenori
 				culture = castanorian
 				culture = hill_gnoll
 				culture = dovesworn_gnoll
@@ -745,9 +744,7 @@ khenak_copper_mine = {
 		AND = {
 			Development = 30
 			OR = {
-				culture_group = businori
-				culture_group = divenori
-				culture = castanorian
+				culture_group = businori				culture = castanorian
 				culture = hill_gnoll
 			}
 		}
@@ -759,7 +756,6 @@ khenak_copper_mine = {
 			Development = 30
 			OR = {
 				culture_group = businori
-				culture_group = divenori
 				culture = castanorian
 				culture = hill_gnoll
 			}
@@ -2021,7 +2017,6 @@ port_jaher = {
 		AND = {
 			OR = {
 				culture_group = businori
-				culture_group = divenori
 				culture = castanorian
 				culture = hill_gnoll
 				culture = dovesworn_gnoll
@@ -2040,7 +2035,6 @@ port_jaher = {
 		AND = {
 			OR = {
 				culture_group = businori
-				culture_group = divenori
 				culture = castanorian
 				culture = hill_gnoll
 			}
@@ -2055,7 +2049,6 @@ port_jaher = {
 			}
 			OR = {
 				culture_group = businori
-				culture_group = divenori
 				culture = castanorian
 				culture = hill_gnoll
 			}
