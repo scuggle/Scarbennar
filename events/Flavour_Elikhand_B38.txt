@@ -349,7 +349,7 @@ country_event = {
 		name = flavor_elikhand.5.g
 		ai_chance = { factor = 0 }
 		highlight = yes
-		trigger = { full_idea_group = naval_ideas }
+		trigger = { full_idea_group = maritime_ideas }
 		add_country_modifier = {
 			name = elikhand_naval
 			duration = -1

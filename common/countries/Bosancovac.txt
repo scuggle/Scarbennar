@@ -15,7 +15,7 @@ historical_idea_groups = {
 	innovativeness_ideas #contact point with cannorians, not prejudiced about them
 	humanist_ideas #hoomans welcome
 	defensive_ideas
-	naval_ideas #lol
+	spy_ideas #lol
 }
 
 historical_units = {

@@ -6899,7 +6899,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 		NOT = { has_country_modifier = "hardened_oak" }
 	}
 
@@ -6927,7 +6927,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 	}
 
 	mean_time_to_happen = {
@@ -6958,7 +6958,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 		NOT = { has_country_modifier = "patriotic_curriculum" }
 		NOT = { has_country_modifier = "maintenance_curriculum" }
 	}
@@ -6997,7 +6997,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 		NOT = { has_country_modifier = "galley_veterans" }
 		NOT = { has_country_modifier = "heavy_ship_veterans" }
 	}
@@ -7034,7 +7034,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 		any_owned_province = { has_port = yes }
 	}
 
@@ -7070,7 +7070,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 	}
 
 	mean_time_to_happen = {
@@ -7094,7 +7094,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 		any_owned_province = {
 			has_port = yes
 		}
@@ -7126,7 +7126,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 		NOT = { has_country_modifier = "grieving_sailors" }
 	}
 
@@ -7159,7 +7159,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 	}
 
 	mean_time_to_happen = {
@@ -7183,7 +7183,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 		NOT = { has_country_modifier = "repairing_decayed_ships" }
 		NOT = { has_country_modifier = "rotting_wood" }
 		any_owned_province = {
@@ -7223,7 +7223,7 @@ country_event = {
 	
 	trigger = {
 		navy_size_percentage = 0.45
-		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
 		any_owned_province = {
 			has_port = yes
 			NOT = { has_province_modifier = shipyard_fire }

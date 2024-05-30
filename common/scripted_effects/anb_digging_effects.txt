@@ -1354,7 +1354,7 @@ setup_restoration_speed = {
 			multiply_variable = { speed = 1.2 }
 		}
 		if = {
-			limit = { owner = { has_age_ability = ab_serpentspine_reclamation } }
+			limit = { owner = { has_age_ability = ab_dwarven_reclamation } }
 			multiply_variable = { speed = 0.8 }
 		}
 	}
@@ -1646,7 +1646,7 @@ setup_digging_deeper_capital = {
 			multiply_variable = { speed = 1.2 }
 		}
 		if = {
-			limit = { owner = { has_age_ability = ab_serpentspine_reclamation } }
+			limit = { owner = { has_age_ability = ab_dwarven_reclamation } }
 			multiply_variable = { speed = 0.8 }
 		}
 		if = {
@@ -2156,7 +2156,7 @@ setup_digging_deeper_non_capital = {
 			multiply_variable = { speed = 0.8 }
 		}
 		if = {
-			limit = { owner = { has_age_ability = ab_serpentspine_reclamation } }
+			limit = { owner = { has_age_ability = ab_dwarven_reclamation } }
 			multiply_variable = { speed = 0.8 }
 		}
 		if = {

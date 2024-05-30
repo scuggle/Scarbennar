@@ -7,7 +7,7 @@ hre = no
 owner = B43
 controller = B43
 add_core = B43
-is_coty = yes
+is_city = yes
 
 base_tax = 2
 base_production = 3

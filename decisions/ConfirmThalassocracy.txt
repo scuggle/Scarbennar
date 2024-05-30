@@ -7,7 +7,6 @@ country_decisions = {
 				full_idea_group = maritime_ideas
 				full_idea_group = exploration_ideas
 				full_idea_group = trade_ideas
-				full_idea_group = naval_ideas
 			}
 			NOT = { 
 				has_country_modifier = thalassocracy
@@ -122,7 +121,7 @@ country_decisions = {
 				full_idea_group = maritime_ideas
 				full_idea_group = exploration_ideas
 				full_idea_group = trade_ideas
-				full_idea_group = naval_ideas
+				#full_idea_group = naval_ideas
 				# full_idea_group = trade_ideas
 			}
 			is_hegemon = yes

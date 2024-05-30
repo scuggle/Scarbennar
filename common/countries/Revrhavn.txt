@@ -8,7 +8,7 @@ color = { 80  100  150 }
 
 
 historical_idea_groups = {
-	naval_ideas
+	spy_ideas
 	exploration_ideas
 	offensive_ideas
 	expansion_ideas

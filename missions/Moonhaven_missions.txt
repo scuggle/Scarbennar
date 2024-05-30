@@ -1014,7 +1014,7 @@ moonhaven_development_missions = {
 			}
 			OR = {
 				dip_power = 400
-				full_idea_group = naval_ideas
+				#full_idea_group = naval_ideas
 				full_idea_group = maritime_ideas
 			}
 		}
@@ -1024,7 +1024,7 @@ moonhaven_development_missions = {
 				limit = {
 					NOT = {
 						OR = {
-							full_idea_group = naval_ideas
+							#full_idea_group = naval_ideas
 							full_idea_group = maritime_ideas
 						}
 					}
@@ -1349,10 +1349,10 @@ moonhaven_colonial_missions = {
 			}
 			num_of_heavy_ship = 20
 			OR = {
-				AND = {
-					has_idea_group = naval_ideas
-					naval_ideas = 3
-				}
+				#AND = {
+					#has_idea_group = naval_ideas
+					#naval_ideas = 3
+				#}
 				AND = {
 					has_idea_group = maritime_ideas
 					maritime_ideas = 3
@@ -1370,7 +1370,7 @@ moonhaven_colonial_missions = {
 				limit = {
 					NOT = {
 						OR = {
-							naval_ideas = 3
+							#naval_ideas = 3
 							maritime_ideas = 3
 						}
 					}
