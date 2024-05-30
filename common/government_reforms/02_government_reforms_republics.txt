@@ -4234,7 +4234,6 @@ lottery_reform = {
 			has_country_flag = mykx_disable_t3
 			has_reform = anisikheioni_naval_stratocracy
 			has_reform = eternal_council
-			has_reform = triarchy_reform
 			has_reform = ameion_conquerers_reform
 			has_reform = kai_township
 			has_reform = kai_republic
@@ -6040,7 +6039,6 @@ dynastic_rulership_reform = {
 			has_reform = northern_league_magnates
 			has_reform = golden_republic_reform
 			culture_group = dwarven
-			has_reform = triarchy_reform
 			has_reform = united_federation
 		}
 	}

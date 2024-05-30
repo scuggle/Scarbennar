@@ -1733,13 +1733,9 @@ revolution_event_can_happen_trigger = {
 #country scope, used in election events to check whether generated rulers may be female
 republic_with_female_rulers_trigger = {
 	OR = {
-		has_active_policy = vass_a_melting_pot_1
-		has_active_policy = vass_a_melting_pot_2
-		has_active_policy = vass_a_melting_pot_3
 		has_country_modifier = sister_suffragettes
 		has_country_modifier = mary_inheritance_reforms
 		has_reform = democratic_values_reform
-		has_reform = triarchy_reform
 
 		#Anbennar
 		has_country_modifier = harpy_administration

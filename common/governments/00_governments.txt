@@ -981,7 +981,6 @@ republic = {
 				liberte_reform
 				egalite_reform
 				fraternite_reform
-				triarchy_reform
 				# tysyatsky_reform
 				# namestnik_reform
 				# oprichnina_reform

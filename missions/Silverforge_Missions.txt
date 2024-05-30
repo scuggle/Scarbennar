@@ -1390,31 +1390,31 @@ A73_complete_hold = {
 				base_manpower = 6
 			}
 			if = {
-				limit = { has_idea =  logsi_ide1 }
+				limit = { has_idea =  smithian_economics }
 				adm_power = 20
 			}
 			else_if = {
-				limit = { has_idea =  logsi_ide2 }
+				limit = { has_idea =  nationalistic_enthusiasm }
 				adm_power = 60
 			}
 			else_if = {
-				limit = { has_idea =  logsi_ide3 }
+				limit = { has_idea =  centralization }
 				adm_power = 100
 			}
 			else_if = {
-				limit = { has_idea =  logsi_ide4 }
+				limit = { has_idea =  debt_and_loans }
 				adm_power = 140
 			}
 			else_if = {
-				limit = { has_idea =  logsi_ide5 }
+				limit = { has_idea =  national_bank }
 				adm_power = 180
 			}
 			else_if = {
-				limit = { has_idea =  logsi_ide6 }
+				limit = { has_idea =  organised_construction }
 				adm_power = 220
 			}
 			else_if = {
-				limit = { has_idea =  logsi_ide7 }
+				limit = { has_idea =  bureaucracy }
 				adm_power = 260
 			}
 			else = {
@@ -1423,31 +1423,31 @@ A73_complete_hold = {
 			custom_trigger_tooltip = {
 				tooltip = silverforge_tooltip_14_tt
 				if = {
-					limit = { has_idea = logsi_ide1 }
+					limit = { has_idea = smithian_economics }
 					adm_power = 20
 				}
 				else_if = {
-					limit = { has_idea = logsi_ide2 }
+					limit = { has_idea = nationalistic_enthusiasm }
 					adm_power = 60
 				}
 				else_if = {
-					limit = { has_idea = logsi_ide3 }
+					limit = { has_idea = centralization }
 					adm_power = 100
 				}
 				else_if = {
-					limit = { has_idea = logsi_ide4 }
+					limit = { has_idea = debt_and_loans }
 					adm_power = 140
 				}
 				else_if = {
-					limit = { has_idea = logsi_ide5 }
+					limit = { has_idea = national_bank }
 					adm_power = 180
 				}
 				else_if = {
-					limit = { has_idea = logsi_ide6 }
+					limit = { has_idea = organised_construction }
 					adm_power = 220
 				}
 				else_if = {
-					limit = { has_idea = logsi_ide7 }
+					limit = { has_idea = bureaucracy }
 					adm_power = 260
 				}
 				else = {
