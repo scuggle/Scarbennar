@@ -546,3 +546,5 @@ bronze_cannon_finisher = {
 bronze_extra_goods = {
 	trade_goods_size = 1
 }
+
+bronze_extra_harimari = {} 

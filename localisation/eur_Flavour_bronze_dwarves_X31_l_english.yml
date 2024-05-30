@@ -34,6 +34,8 @@
  bronze_navy: "The Bronze Navy"
  bronze_cannon_finisher: "Bronze Cannons"
  bronze_extra_goods: "Extra Bronze"
+ bronze_extra_harimari: "Extra Lions"
+ bronze_extra_harimari_desc: "Increases the rate of Pride growth events."
 
  bronzemission11_title: "Prospecting Copper"
  bronzemission11_desc: "placeholder"

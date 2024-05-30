@@ -8,7 +8,7 @@ country_event = { #election
 	is_triggered_only = yes
 
     trigger = {
-        AND {
+        AND = {
             has_states_general_mechanic = yes
             has_reform = bronze_dual_government_reform
         }
@@ -244,7 +244,7 @@ country_event = { #restoring the gov
     }
 
     immediate = {
-        effect = {
+       # effect = {
             change_government = theocracy
             add_government_reform = bronze_dual_government_reform
             add_country_modifier = {
@@ -252,7 +252,7 @@ country_event = { #restoring the gov
 	            duration = -1
 	            hidden = yes
             }
-        }
+        #}
     }
 
     option = {
@@ -3175,9 +3175,9 @@ country_event = { #mt reward
     is_triggered_only = yes
 
     immediate = {
-        effect = {
+       # effect = {
             remove_country_modifier = bronze_ahati_disaster_buff
-        }
+        #}
     }
 
 

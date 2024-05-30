@@ -3046,7 +3046,7 @@ forge_towers = {
 
 		province_modifiers = { 
             local_development_cost = -0.1
-            trade_goods_size_ = 0.25
+            trade_goods_size = 0.25
 		}
 
 		area_modifier = {}

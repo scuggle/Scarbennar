@@ -84,6 +84,6 @@ country_event = {
             always = yes
         }
         
-        prestige = 10
+        add_prestige = 10
     }
 }
