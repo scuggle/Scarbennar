@@ -187,7 +187,6 @@ beikdugang_arsenal = {
 		FROM = { 
 			OR = {
 				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
 			}
 			culture_group = yan
 		}
@@ -198,7 +197,6 @@ beikdugang_arsenal = {
 		FROM = { 
 			OR = {
 				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
 			}
 			culture_group = yan
 		}

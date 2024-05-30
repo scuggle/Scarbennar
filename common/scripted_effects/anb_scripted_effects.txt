@@ -6022,22 +6022,6 @@ calc_legitimacy_equivalent_absolutism_from_idea_groups = {
 			limit = { full_idea_group = influence_ideas }
 			increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes
 		}
-		if = {
-			limit = { full_idea_group = naval_ideas }
-			increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes
-		}
-		if = {
-			limit = { full_idea_group = court_ideas }
-			increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes
-		}
-		if = {
-			limit = { full_idea_group = mercenary_ideas }
-			increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes
-		}
-		if = {
-			limit = { full_idea_group = infrastructure_ideas }
-			increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes
-		}
 	}
 }
 

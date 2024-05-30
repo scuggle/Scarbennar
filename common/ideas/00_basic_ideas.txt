@@ -590,80 +590,6 @@ maritime_ideas = { #Ruler of the Waves Ideas
 	}
 }
 
-#naval_ideas = { #Naval Dominance Ideas
-	#category = DIP
-
-	#trigger = {
-		#NOT = { has_idea_group = maritime_ideas }
-		#}
-
-	#bonus = {
-       #naval_forcelimit_modifier = 0.25
-	#}
-
-	#boarding_parties = {
-		
-		#naval_maintenance_modifier = -0.1
-	#}
-	#improved_rams = {
-		#blockade_efficiency = 0.25
-	#}
-	#naval_cadets = {
-		#global_sailors_modifier = 0.15
-	#}
-	#naval_glory = {
-		#galley_power = 0.1
-		#heavy_ship_power = 0.1
-		#transport_power = 0.1
-	#}
-	#press_gangs = {
-		#naval_morale = 0.1
-	#}
-	#oak_forests_for_ships = {
-		#ship_durability = 0.05
-	#}
-	#superior_seamanship = {
-		#navy_tradition = 1
-	#}
-#}
-
-	
-	#ai_will_do = {
-		#factor = 0.31
-		#modifier = {
-		#	factor = 0
-		#	is_tribal = yes
-		#}
-		#modifier = {
-			#factor = 0
-			#primitives = yes
-		#}
-		#modifier = {
-			#factor = 0
-			#NOT = { num_of_ports = 1 }
-			#NOT = { is_colonial_nation = yes }
-		#}
-		#modifier = {
-			#factor = 0.31
-			#NOT = { num_of_ports = 10 }
-		#}
-		#modifier = {
-			#factor = 0.31
-			#num_of_cities = 50
-		#}
-
-		#modifier = {
-			#factor = 10
-			#OR = {
-				#has_reform = pirate_republic_reform
-				#has_reform = pirate_kingdom
-				#has_reform = war_against_the_world_government
-				#has_reform = black_market_consortium_government
-			#}
-		#}
-	#}
-#}
-
 trade_ideas = { #Trade Empire #done
 	category = DIP
 
@@ -945,7 +871,6 @@ exploration_ideas = { #Trustee #done
 						culture_group = amadian_ruinborn_elf
 						culture_group = taychendi_ruinborn_elf
 						culture_group = ynnic_ruinborn_elf
-						culture_group = veykodan_ruinborn_elf
 					}
 				}
 			}
@@ -1858,35 +1783,3 @@ expansion_ideas = { #frontiers #done
 	}
 }
 
-# logistical_ideas = { #Capital Ideas ##Redo 
-# 	category = ADM
-
-# 	bonus = {
-# 		attack_bonus_in_capital_terrain = 1 #Keep
-# 	}
-# 	logsi_ide1 = {
-		
-# 	}
-# 	logsi_ide2 = {
-		 
-# 	}
-# 	logsi_ide3 = {
-		
-# 	}
-# 	logsi_ide4 = {
-		
-# 	}
-# 	logsi_ide5 = {
-		
-# 	}
-# 	logsi_ide6 = {
-		
-# 	}
-# 	logsi_ide7 = {
-		
-# 	}
-
-# 	ai_will_do = {
-# 		factor = 0.9
-# 	}
-# }

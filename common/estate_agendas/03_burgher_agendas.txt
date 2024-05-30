@@ -875,7 +875,7 @@ estate_burghers_build_a_fleet = {
 			factor = 2
 			OR = { 
 				has_idea_group = quality_ideas 
-				has_idea_group = naval_ideas
+				has_idea_group = maritime_ideas
 			}
 			navy_size_percentage = 0.05
 		}

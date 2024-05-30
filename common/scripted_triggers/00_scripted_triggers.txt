@@ -2236,7 +2236,6 @@ has_completed_idea_group_of_category = {
 				full_idea_group = defensive_ideas
 				full_idea_group = quality_ideas
 				full_idea_group = quantity_ideas
-				full_idea_group = naval_ideas
 				#full_idea_group = indigenous_ideas
 				full_idea_group = adventurer_ideas_vaass
 				full_idea_group = at_standing
@@ -2281,7 +2280,6 @@ num_of_completed_idea_groups_by_category = {
 			full_idea_group = defensive_ideas
 			full_idea_group = quality_ideas
 			full_idea_group = quantity_ideas
-			full_idea_group = naval_ideas
 			#full_idea_group = indigenous_ideas
 			full_idea_group = adventurer_ideas_vaass
 			full_idea_group = at_standing
@@ -2300,25 +2298,20 @@ num_of_idea_groups_chosen = {
 		has_idea_group = expansion_ideas
 		has_idea_group = administrative_ideas
 		has_idea_group = humanist_ideas
-		has_idea_group = infrastructure_ideas
 		has_idea_group = spy_ideas
 		has_idea_group = diplomatic_ideas
 		has_idea_group = trade_ideas
 		has_idea_group = exploration_ideas
 		has_idea_group = maritime_ideas
 		has_idea_group = influence_ideas
-		has_idea_group = court_ideas
 		has_idea_group = aristocracy_ideas
 		has_idea_group = offensive_ideas
 		has_idea_group = defensive_ideas
 		has_idea_group = quality_ideas
 		has_idea_group = quantity_ideas
-		has_idea_group = naval_ideas
 		has_idea_group = theocracy_gov_ideas
-		has_idea_group = indigenous_ideas
 		has_idea_group = horde_gov_ideas
 		has_idea_group = plutocracy_ideas
-		has_idea_group = mercenary_ideas
 		amount = $amount$
 	}
 }
@@ -3833,7 +3826,7 @@ has_any_active_incomplete_idea_group_of_category = {
                 AND = { has_idea_group = defensive_ideas       		NOT = { full_idea_group = defensive_ideas } }
                 AND = { has_idea_group = quality_ideas           	NOT = { full_idea_group = quality_ideas } }
                 AND = { has_idea_group = quantity_ideas             NOT = { full_idea_group = quantity_ideas } }
-                AND = { has_idea_group = naval_ideas				NOT = { full_idea_group = naval_ideas } }
+                #AND = { has_idea_group = naval_ideas				NOT = { full_idea_group = naval_ideas } }
 				#AND = { has_idea_group = indigenous_ideas     NOT = { full_idea_group = indigenous_ideas } }
             }
         }

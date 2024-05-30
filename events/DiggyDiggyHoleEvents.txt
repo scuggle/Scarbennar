@@ -3462,7 +3462,7 @@ province_event = {
 		
 		modifier = {
 			factor = 0.8
-			owner = { has_age_ability = ab_serpentspine_reclamation }
+			owner = { has_age_ability = ab_dwarven_reclamation }
 		}
 		
 		modifier = {
