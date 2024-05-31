@@ -3,7 +3,8 @@ araw_elven_tree = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
+		always = no
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 		NOT = { map_setup = map_setup_random }
 	}
@@ -214,7 +215,8 @@ araw_conquest_central_branch = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
+		always = no
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 		NOT = { map_setup = map_setup_random }
 	}
@@ -451,7 +453,8 @@ araw_conquest_left_inner_branch = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
+		always = no
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 		NOT = { map_setup = map_setup_random }
 	}
@@ -679,7 +682,8 @@ araw_conqest_left_most_branch = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
+		always = no
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 		NOT = { map_setup = map_setup_random }
 	}
@@ -760,7 +764,8 @@ araw_conquest_right_inner_branch = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
+		always = no
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y65
 		NOT = { map_setup = map_setup_random }
 	}

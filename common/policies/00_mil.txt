@@ -33,7 +33,7 @@ eur_gunpowder_revolution = {
     }
 
 	fire_damage = 0.075
-	general_fire = 1
+	leader_land_fire = 1
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -71,7 +71,7 @@ eur_traditional_tactics = {
     }
 
 	shock_damage = 0.075
-	general_shock = 1
+	leader_land_shock = 1
 	
 	ai_will_do = {
 		factor = 0.8		

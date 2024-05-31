@@ -6001,10 +6001,10 @@ calc_legitimacy_equivalent_absolutism_from_idea_groups = {
 			limit = { full_idea_group = theocracy_gov_ideas }
 			increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes
 		}
-		if = {
-			limit = { full_idea_group = indigenous_ideas }
-			increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes
-		}
+		#if = {
+		#	limit = { full_idea_group = indigenous_ideas }
+		#	increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes
+		#}
 		if = {
 			limit = { full_idea_group = innovativeness_ideas }
 			increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes

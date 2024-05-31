@@ -1325,8 +1325,8 @@ sunijalla_missions_slot_3 = {
 					aristocracy_ideas = 1
 				}
 				AND = {
-					has_idea_group = court_ideas
-					court_ideas = 1
+					has_idea_group = the_great_game
+					the_great_game = 1
 				}
 				dip_power = 200
 			}
@@ -1339,7 +1339,7 @@ sunijalla_missions_slot_3 = {
 					NOT = {
 						OR = {
 							has_idea_group = aristocracy_ideas
-							has_idea_group = court_ideas
+							has_idea_group = the_great_game
 						}
 					}
 				}

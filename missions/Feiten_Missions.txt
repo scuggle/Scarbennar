@@ -1062,10 +1062,12 @@ feiten_missions_2_established = {
 			}
 			add_sailors = -5000
 			if = {
-				OR = {
-					limit = { NOT = { full_idea_group = exploration_ideas } }
-					limit = { NOT = { full_idea_group = maritime_ideas } }
-					limit = { NOT = { full_idea_group = trade_ideas } }
+				limit = {
+					OR ={
+						NOT = { full_idea_group = exploration_ideas }
+						NOT = { full_idea_group = maritime_ideas }
+						NOT = { full_idea_group = trade_ideas }
+					}
 				}
 				add_dip_power = -300
 			}

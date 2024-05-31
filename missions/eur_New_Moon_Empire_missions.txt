@@ -1457,71 +1457,79 @@ tcharialt5 = {
                 }
 
                 L06 = {
-                    limit = {
-                        is_subject_of = ROOT
-                    }
-                    add_country_modifier = {
-                        name = "NME_vassal_buff"
-                        duration = -1
-                    }
-                    capital_scope = {
-                        add_unit_construction = {
-		        	        type = light_ship
-		        	        amount = 5
-		        	        speed = 0.01
-		        	        cost = 0
-		                }
+                    if = {
+                        limit = {
+                            is_subject_of = ROOT
+                        }
+                        add_country_modifier = {
+                            name = "NME_vassal_buff"
+                            duration = -1
+                        }
+                        capital_scope = {
+                            add_unit_construction = {
+                                type = light_ship
+                                amount = 5
+                                speed = 0.01
+                                cost = 0
+                            }
+                        }
                     }
                 }
                 L36 = {
-                    limit = {
-                        is_subject_of = ROOT
-                    }
-                    add_country_modifier = {
-                        name = "NME_vassal_buff"
-                        duration = -1
-                    }
-                    capital_scope = {
-                        add_unit_construction = {
-		        	        type = light_ship
-		        	        amount = 5
-		        	        speed = 0.01
-		        	        cost = 0
-		                }
+                    if = {
+                        limit = {
+                            is_subject_of = ROOT
+                        }
+                        add_country_modifier = {
+                            name = "NME_vassal_buff"
+                            duration = -1
+                        }
+                        capital_scope = {
+                            add_unit_construction = {
+                                type = light_ship
+                                amount = 5
+                                speed = 0.01
+                                cost = 0
+                            }
+                        }
                     }
                 }
                 L40 = {
-                    limit = {
-                        is_subject_of = ROOT
-                    }
-                    add_country_modifier = {
-                        name = "NME_vassal_buff"
-                        duration = -1
-                    }
-                    capital_scope = {
-                        add_unit_construction = {
-		        	        type = light_ship
-		        	        amount = 5
-		        	        speed = 0.01
-		        	        cost = 0
-		                }
+                    if = {
+                        limit = {
+                            is_subject_of = ROOT
+                        }
+                        add_country_modifier = {
+                            name = "NME_vassal_buff"
+                            duration = -1
+                        }
+                        capital_scope = {
+                            add_unit_construction = {
+                                type = light_ship
+                                amount = 5
+                                speed = 0.01
+                                cost = 0
+                            }
+                        }
                     }
                 }
                 L53 = {
-                    limit = {
-                        is_subject_of = ROOT
-                    }
-                    add_country_modifier = {
-                        name = "NME_vassal_buff"
-                        duration = -1
-                    }
-                    capital_scope = {
-                        add_unit_construction = {
-		        	        type = light_ship
-		        	        amount = 5
-		        	        speed = 0.01
-		        	        cost = 0
-		                }
+                    if = {
+                        limit = {
+                            is_subject_of = ROOT
+                        }
+                        add_country_modifier = {
+                            name = "NME_vassal_buff"
+                            duration = -1
+                        }
+                        capital_scope = {
+                            add_unit_construction = {
+                                type = light_ship
+                                amount = 5
+                                speed = 0.01
+                                cost = 0
+                            }
+                        }
                     }
                 }
             }
@@ -1683,10 +1691,10 @@ newmoon2 ={
 
         effect = {
             every_owned_province = {
-                limit {
-                    superregion = fangaula_superregion
+                if = {
+                    limit = { superregion = fangaula_superregion }
+                    add_half_elven_minority_size_effect = yes
                 }
-                add_half_elven_minority_size_effect = yes
             }
             add_country_modifier = {
                 name = "NME_autonomy"
@@ -1805,11 +1813,13 @@ newmoon3 ={
 
         effect = {
             every_owned_province = {
-                limit {
-                    superregion = fangaula_superregion
-                    culture = new_moon_elf
+                if = {
+                    limit = {
+                        superregion = fangaula_superregion
+                        culture = new_moon_elf
+                    }
+                    add_human_minority_size_effect = yes
                 }
-                add_human_minority_size_effect = yes
             }
             add_country_modifier = {
                 name = "NME_culture_conversion2"

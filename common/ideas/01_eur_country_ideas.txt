@@ -49,52 +49,6 @@ X01_ideas = {
 	}
 }
 
-#Great Xhaz
-X03_ideas = {
-	start = {
-		infantry_power = 0.10
-	    advisor_cost = -0.15
-	}
-
-	bonus = {
-		free_mil_policy = 1
-	}
-	
-	trigger = {
-		OR = {
-			tag = X03
-		}
-	}
-	free = yes		#will be added at load.
-	
-	X03_one = {
-		land_forcelimit_modifier = 0.20
-		legitimacy = 1.5
-	}
-	X03_two = {
-		monarch_military_power = 1
-		mil_tech_cost_modifier = -0.05
-	}
-	X03_three = {
-		monthly_reform_progress_modifier = 0.25
-		technology_cost = -0.05
-	}
-	X03_four = {
-		shock_damage = 0.1
-		leader_land_shock = 1
-	}
-	X03_five = {
-		yearly_patriarch_authority = 0.05
-		heir_chance = 0.5
-	}
-	X03_six = {
-		manpower_recovery_speed = 0.15
-	}
-	X03_seven = {
-		global_monthly_devastation = -0.1
-	}
-}
-
 #Damerian Republic
 X04_ideas = {
 	start = {

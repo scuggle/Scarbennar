@@ -9249,7 +9249,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = logistical_ideas 
+		has_idea_group = focus_inwards 
 		NOT = { has_country_modifier = road_maintenance_modifier }
 		NOT = { has_country_modifier = no_road_maintenance_modifier }
 	}
@@ -9306,7 +9306,7 @@ country_event = {
 	is_triggered_only = yes
 	goto = prosperity_province
 	trigger = {
-		has_idea_group = logistical_ideas 
+		has_idea_group = focus_inwards 
 		NOT = { has_country_modifier = shared_prosperity_modifier }
 	}
 
@@ -9348,8 +9348,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = logistical_ideas 
-		has_idea = logsi_ide6
+		has_idea_group = focus_inwards 
+		has_idea = foc_inw6
 		NOT = { has_country_modifier = inaccurate_road_maps }
 		OR = {
 			NOT = { has_country_flag = had_road_maps_moment }
@@ -9396,7 +9396,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = logistical_ideas 
+		has_idea_group = focus_inwards 
 		NOT = { has_country_modifier = insufficient_construction_supplies }
 	}
 
@@ -9423,7 +9423,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = logistical_ideas 
+		has_idea_group = focus_inwards 
 		any_owned_province = {
 			is_in_capital_area = yes
 			is_overseas = no
@@ -9514,7 +9514,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = logistical_ideas 
+		has_idea_group = focus_inwards 
 		OR = {
 			NOT = { has_country_flag = had_regional_boom }
 			had_country_flag = {
@@ -9576,7 +9576,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = logistical_ideas 
+		has_idea_group = focus_inwards 
 		NOT = { has_country_modifier = talented_architect }
 	}
 
@@ -9626,7 +9626,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = logistical_ideas
+		has_idea_group = focus_inwards
 	}
 
 	mean_time_to_happen = {
@@ -9675,7 +9675,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = logistical_ideas 
+		has_idea_group = focus_inwards 
 		NOT = { has_country_modifier = administrative_challenges }
 	}
 
@@ -9707,7 +9707,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = logistical_ideas
+		has_idea_group = focus_inwards
 	}
 
 	mean_time_to_happen = {

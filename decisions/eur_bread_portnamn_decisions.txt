@@ -1,1579 +1,1618 @@
-country_decisions = {
-	port_dyke_building_decision = {
-		potential = {
-			mission_completed = port_corps_of_engineers
-			NOT = { mission_completed = port_dykes_around_the_roy }
-		}
-		allow = {
-			adm_power = 5
-			treasury = 100
-		}
-		provinces_to_highlight = {
-			OR = {
-				area = iochand_area
-				area = applefields_area
-				area = pearpoint_area
-				province_id = 128	#southroy
-				province_id = 130	#smallmarches
-				province_id = 131	#roysfort
-				province_id = 136	#bigwheat
-				province_id = 140	#stormpoint
-				province_id = 144	#manerd
-				province_id = 149	#norley
-			}
-			NOT = { has_province_modifier = port_roy_dyke_modifier }
-		}
-		effect = {
-			country_event = {
-				id = port_flavour_events.1	#event to pick which province you want to build the dyke
-			}
-		}
-	}
-	port_floodgates_building_decision = {
-		potential = {
-			mission_completed = port_dykes_around_the_roy
-			NOT = { 
-				1 = { has_province_modifier = port_floodgate_modifier }	#change id to province floodgates getbuild
-			}
-		}
-		allow = {
-			adm_power = 20
-			treasury = 250
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 140	#stormpoint
-				province_id = 131	#roysfort
-				province_id = 147	#pearview
-			}
-		}
-		effect = {
-			add_treasury = -250
-			add_adm_power = -20
-			140 = {	#stormpoint
-				add_province_modifier = {
-					name = port_floodgate_modifier	#modifier giving state maintenance cost +5%, yet to be localized
-					duration = -1	#permanent
-				}
-			}
-			131 = {	#roysfort
-				add_province_modifier = {
-					name = port_floodgate_modifier	#modifier giving state maintenance cost +5%, 
-					duration = -1	#permanent
-				}
-			}
-			147 = {	#pearview
-				add_province_modifier = {
-					name = port_floodgate_modifier	#modifier giving state maintenance cost +5%, 
-					duration = -1	#permanent
-				}
-			}
-		}
-	}
-	port_flood_dykes_building_decision1 = {
-		potential = {
-			140 = { has_province_modifier = port_floodgate_modifier }
-			126 = { owned_by = ROOT }	#portnamn
-			NOT = { 126 = { has_province_modifier = port_protected_from_floods_modifier } }
-		}
-		allow = {
-			126 = { controlled_by = ROOT }
-			adm_power = 5 
-			treasury = 100
-		}
-		effect = {
-			add_adm_power = -5
-			add_treasury = -100
-			126 = {
-				add_province_modifier = {
-					name = port_protected_from_floods_modifier	#modifier giving 10% defensivness, -1 local unrest, 5% state maintenance cost, yet to be localized
-					duration = -1	#permanent
-				}
-			}
-		}
-	}
-	port_flood_dykes_building_decision2 = {
-		potential = {
-			140 = { has_province_modifier = port_floodgate_modifier }
-			141 = { owned_by = ROOT }	#turnwell
-			NOT = { 141 = { has_province_modifier = port_protected_from_floods_modifier } }
-		}
-		allow = {
-			141 = { controlled_by = ROOT }
-			adm_power = 5 
-			treasury = 100
-		}
-		effect = {
-			add_adm_power = -5
-			add_treasury = -100
-			141 = {
-				add_province_modifier = {
-					name = port_protected_from_floods_modifier	#modifier giving 10% defensivness, -1 local unrest, 5% state maintenance cost, 
-					duration = -1	#permanent
-				}
-			}
-		}
-	}
-	port_floodgate_opening_decision_north = {
-		potential = {
-			140 = { 	#stormpoint
-				has_province_modifier = port_floodgate_modifier 
-				owned_by = ROOT	
-			}	
-		}
-		allow = {
-			140 = { controlled_by = ROOT }
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 140
-				province_id = 144	#manerd 
-				province_id = 141	#turnwel
-				province_id = 142	#iochand
-				province_id = 138	#reavers landing
-				province_id = 129	#eldergreen 
-				province_id = 126	#portnamm
-			}
-			#the provinces north of the rivier roy
-		}
-		effect = {
-			140 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest yet to be localized
-					duration = 1825	#5years
-				}
-			}
-			144 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-					duration = 1825	#5years
-				}
-			}
-			if = {
-				limit = {
-					NOT = { 141 = { has_province_modifier = port_protected_from_floods_modifier } }
-				}
-				141 = {
-					add_province_modifier = {
-						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-						duration = 1825	#5years
-					}
-				}
-			}
-			142 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-					duration = 1825	#5years
-				}
-			}
-			138 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-					duration = 1825	#5years
-				}
-			}
-			129 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-					duration = 1825	#5years
-				}
-			}
-			if = {
-				limit = {
-					NOT = { 126 = { has_province_modifier = port_protected_from_floods_modifier } }
-				}
-				126 = {
-					add_province_modifier = {
-						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-						duration = 1825	#5years
-					}
-				}
-			}
-		}
-	}
-	port_floodgate_opening_decision_centre = {
-		potential = {
-			147 = { 	#butterburn
-				has_province_modifier = port_floodgate_modifier 
-				owned_by = ROOT	
-			}	
-		}
-		allow = {
-			103 = { controlled_by = ROOT }
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 103	#butterburn
-				province_id = 147	#pearview 
-			}
-		}
-		effect = {
-			103 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-					duration = 1825	#5years
-				}
-			}
-			147 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-					duration = 1825	#5years
-				}
-			}
-			if = {
-				limit = {
-					NOT = { 141 = { has_province_modifier = port_protected_from_floods_modifier } }
-				}
-				141 = {
-					add_province_modifier = {
-						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-						duration = 1825	#5years
-					}
-				}
-			}
-		}
-	}
-	port_floodgate_opening_decision_south = {
-		potential = {
-			131 = { 	#roysfort
-				has_province_modifier = port_floodgate_modifier 
-				owned_by = ROOT	
-			}	
-		}
-		allow = {
-			131 = { controlled_by = ROOT }
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 131
-				province_id = 130	#smallmarches 
-				province_id = 128	#southroyn 
-				province_id = 126	#portnamm
-			}
-			#the provinces north of the rivier roy
-		}
-		effect = {
-			131 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-					duration = 1825	#5years
-				}
-			}
-			130 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-					duration = 1825	#5years
-				}
-			}
-			128 = {
-				add_province_modifier = {
-					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-					duration = 1825	#5years
-				}
-			}
-			if = {
-				limit = {
-					NOT = { 126 = { has_province_modifier = port_protected_from_floods_modifier } }
-				}
-				126 = {
-					add_province_modifier = {
-						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
-						duration = 1825	#5years
-					}
-				}
-			}
-		}
-	}
-	port_building_roads_decision1 = {	#road to turnwell
-		potential = {
-			mission_completed = port_dykes_around_the_roy 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 141	#turnwell 
-					province_id = 142	#iochand 
-					province_id = 129	#eldergeen
-					province_id = 126	#portnamn
-				}
-			}
-			adm_power = 10
-			treasury = 250
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 141	#turnwell 
-				province_id = 142	#iochand 
-				province_id = 129	#eldergeen
-				province_id = 126	#portnamn
-			}
-		}
-		effect = {
-			add_adm_power = -10
-			add_treasury = -250
-			if = {
-				limit = {
-					NOT = {
-						126	= { has_province_modifier = port_road_hub_modifier }	#portnamn
-					}
-				}
-				126 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed, yet to be localized
-						duration = -1	#permanent
-					}
-				}
-			}
-			141 = {	#turnwell
-				add_province_modifier = {
-					name = port_road_hub_modifier
-					duration = -1	#permanent
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						129 = { has_province_modifier = port_road_modifier }
-					}
-				}
-				129 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			142 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-		}
-	}
-	port_building_roads_decision2 = {	#road to westport
-		potential = {
-			mission_completed =  port_dykes_around_the_roy 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 112	#westport 
-					province_id = 121	#clearshore 
-					province_id = 123	#thunderward
-					province_id = 126	#portnamn
-					province_id = 128	#southroy
-				}
-			}
-			adm_power = 12
-			treasury = 300
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 112	#westport 
-				province_id = 121	#clearshore 
-				province_id = 123	#thunderward
-				province_id = 126	#portnamn
-				province_id = 128	#southroy
-			}
-		}
-		effect = {
-			add_adm_power = -12
-			add_treasury = -300
-			if = {
-				limit = {
-					NOT = {
-						126	= { has_province_modifier = port_road_hub_modifier }	#portnamn
-					}
-				}
-				126 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			112 = {	#westport
-				add_province_modifier = {
-					name = port_road_hub_modifier
-					duration = -1	#permanent
-				}
-			}
-			121 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			123 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						128 = { has_province_modifier = port_road_modifier }
-					}
-				}
-				128 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-		}
-	}
-	port_building_roads_decision3 = {	#road to roysfort
-		potential = {
-			mission_completed =  port_dykes_around_the_roy 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 131	#roysfort 
-					province_id = 130	#southmarches 
-					province_id = 126	#portnamn
-					province_id = 128	#southroy
-				}
-			}
-			adm_power = 10
-			treasury = 250
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 131	#roysfort 
-				province_id = 130	#southmarches 
-				province_id = 126	#portnamn
-				province_id = 128	#southroy
-			}
-		}
-		effect = {
-			add_adm_power = 10
-			add_treasury = -250
-			if = {
-				limit = {
-					NOT = {
-						126	= { has_province_modifier = port_road_hub_modifier }	#portnamn
-					}
-				}
-				126 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			131 = {	#roysfort
-				add_province_modifier = {
-					name = port_road_hub_modifier
-					duration = -1	#permanent
-				}
-			}
-			130 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						128 = { has_province_modifier = port_road_modifier }
-					}
-				}
-				128 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-		}
-	}
-	port_building_roads_decision4 = {	#road to olmaditt
-		potential = {
-			mission_completed =  port_dykes_around_the_roy 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 145	#olmaditt 
-					province_id = 122	#baynoms 
-					province_id = 126	#portnamn
-					province_id = 140	#stormpoint
-					province_id = 138	#reavers landing
-				}
-			}
-			adm_power = 12
-			treasury = 500
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 145	#olmaditt 
-				province_id = 122	#baynoms 
-				province_id = 126	#portnamn
-				province_id = 140	#stormpoint
-				province_id = 138	#reavers landing
-			}
-		}
-		effect = {
-			add_adm_power = -12
-			add_treasury = -500
-			if = {
-				limit = {
-					NOT = {
-						126	= { has_province_modifier = port_road_hub_modifier }	#portnamn
-					}
-				}
-				126 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			145 = {	#olmaditt
-				add_province_modifier = {
-					name = port_road_hub_modifier
-					duration = -1	#permanent
-				}
-			}
-			122 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			140 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			138 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						129 = { has_province_modifier = port_road_modifier }
-					}
-				}
-				129 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-		}
-	}
-	port_building_roads_decision5 = {	#road to newcobble
-		potential = {
-			mission_completed =  port_dykes_around_the_roy 
-			NOT = {
-				165 = { has_province_modifier = port_road_hub_modifier }
-			}
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 165	#newcobble 
-					province_id = 147	#pearview 
-					province_id = 103	#butterburn
-					province_id = 141	#turnwell
-				}
-			}
-			adm_power = 10
-			treasury = 250
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 165	#newcobble 
-				province_id = 147	#pearview 
-				province_id = 103	#butterburn
-				province_id = 141	#turnwell
-			}
-		}
-		effect = {
-			add_adm_power = -10
-			add_treasury = -250
-			if = {
-				limit = {
-					NOT = {
-						141	= { has_province_modifier = port_road_hub_modifier }	#turnwell
-					}
-				}
-				141 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			165 = {	#newcobble
-				add_province_modifier = {
-					name = port_road_hub_modifier
-					duration = -1	#permanent
-				}
-			}
-			147 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			103 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-		}
-	}
-	port_building_roads_decision6 = {	#road to barrowshire
-		potential = {
-			NOT = {
-				162 = { has_province_modifier = port_road_modifier }	#aelcandar
-			}
-			mission_completed =  port_roadworks 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 165	#newcobble 
-					province_id = 162	#aelcandar 
-					province_id = 164	#barrowshire
-				}
-			}
-			adm_power = 5
-			treasury = 100
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 165	#newcobble 
-				province_id = 162	#aelcandar 
-				province_id = 164	#barrowshire
-			}
-		}
-		effect = {
-			add_adm_power = -5
-			add_treasury = -100
-			if = {
-				limit = {
-					NOT = {
-						164	= { has_province_modifier = port_road_hub_modifier }	#barrowshire
-					}
-				}
-				164 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			162 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-		}
-	}
-	port_building_roads_decision7 = {	#road from roysfort to barrowshire
-		potential = {
-			NOT = {
-				132 = { has_province_modifier = port_road_modifier }	#greenberry
-			}
-			mission_completed =  port_roadworks 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 165	#newcobble 
-					province_id = 132	#greenberry 
-					province_id = 164	#barrowshire
-					province_id = 133	#rosefield
-					province_id = 158	#lasean
-					province_id = 159	#thomsbridge
-				}
-			}
-			adm_power = 8
-			treasury = 200
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 165	#newcobble 
-				province_id = 132	#greenberry 
-				province_id = 164	#barrowshire
-				province_id = 133	#rosefield
-				province_id = 158	#lasean
-				province_id = 159	#thomsbridge
-			}
-		}
-		effect = {
-			add_adm_power = -10
-			add_treasury = -250
-			if = {
-				limit = {
-					NOT = {
-						164	= { has_province_modifier = port_road_hub_modifier }	#barrowshire
-					}
-				}
-				164 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			132 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			133 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			158 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			159 = {
-				add_province_modifier = {
-					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-		}
-	}
-	port_building_roads_decision8 = {	#road to viswall
-		potential = {
-			NOT = {
-				63 = { has_province_modifier = port_road_hub_modifier }	#south viswall
-			}
-			mission_completed =  port_roadworks 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 63	#south viswall 
-					province_id = 160	#coppertown 
-					province_id = 164	#barrowshire
-				}
-			}
-			adm_power = 6
-			treasury = 100
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 63	#south viswall 
-				province_id = 160	#coppertown 
-				province_id = 164	#barrowshire
-			}
-		}
-		effect = {
-			add_adm_power = -4
-			add_treasury = -100
-			if = {
-				limit = {
-					NOT = {
-						164	= { has_province_modifier = port_road_hub_modifier }	#barrowshire
-					}
-				}
-				164 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						63	= { has_province_modifier = port_road_hub_modifier }	#south viswall
-					}
-				}
-				63 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			if = {
-				limit = {
-					160 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				add_adm_power = -4
-				add_treasury = -100
-				160 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-		}
-	}
-	port_building_roads_decision9 = {	#road to beepeck
-		potential = {
-			NOT = {
-				205 = { has_province_modifier = port_road_modifier }	#the strip
-			}
-			mission_completed =  port_roadworks 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 151	#beepeck
-					province_id = 160	#coppertown 
-					province_id = 164	#barrowshire
-					province_id = 60	#east salt marsh
-					province_id = 205	#the strip
-				}
-			}
-			adm_power = 12
-			treasury = 500
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 151	#beepeck 
-				province_id = 160	#coppertown 
-				province_id = 164	#barrowshire
-				province_id = 60	#east salt marsh
-				province_id = 205	#the strip
-			}
-		}
-		effect = {
-			add_adm_power = -12
-			add_treasury = -500
-			if = {
-				limit = {
-					NOT = {
-						164	= { has_province_modifier = port_road_hub_modifier }	#barrowshire
-					}
-				}
-				164 = {
-					add_province_modifier = {
-						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			if = {
-				limit = {
-					160 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				add_adm_power = -4
-				add_treasury = -100
-				160 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-			60 = {
-				add_province_modifier = {
-					name = port_road_modifier
-					duration = -1	#permanent
-				}
-			}
-			205 = {
-				add_province_modifier = {
-					name = port_road_modifier
-					duration = -1	#permanent
-				}
-			}
-		}
-	}
-	port_building_roads_decision10 = {	#road to iorielen
-		potential = {
-			NOT = {
-				162 = { has_province_modifier = port_road_modifier }	#aelcandar
-			}
-			mission_completed =  port_roadworks 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 112	#westport
-					province_id = 113	#derane 
-					province_id = 87	#wesmar
-					province_id = 116	#autumnglade
-					province_id = 115	#iorielen
-				}
-			}
-			adm_power = 12
-			treasury = 500
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 112	#westport 
-				province_id = 113	#derane 
-				province_id = 87	#wesmar
-				province_id = 116	#autumnglade
-				province_id = 115	#iorielen
-			}
-		}
-		effect = {
-			add_adm_power = -12
-			add_treasury = -500
-			116 = {
-				add_province_modifier = {
-					name = port_road_modifier	
-					duration = -1	#permanent
-				}
-			}	
-			115 = {
-				add_province_modifier = {
-					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			if = {
-				limit = {
-					87 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				87 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-				if = {
-				limit = {
-					113 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				113 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-		}
-	}
-	port_building_roads_decision11 = {	#road to lorentaine
-		potential = {
-			NOT = {
-				162 = { has_province_modifier = port_road_modifier }	#aelcandar
-			}
-			mission_completed =  port_roadworks 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 112	#westport
-					province_id = 113	#derane 
-					province_id = 87	#wesmar
-					province_id = 119	#autumnglade
-					province_id = 67	#lorentaine
-					province_id = 74	#kyliande
-				}
-			}
-			adm_power = 12
-			treasury = 500
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 112	#westport 
-				province_id = 113	#derane 
-				province_id = 87	#wesmar
-				province_id = 119	#ioriels rest
-				province_id = 67	#lorentaine
-				province_id = 74	#kyliande
-			}
-		}
-		effect = {
-			add_adm_power = -12
-			add_treasury = -500
-			if = {
-				limit = {
-					119 = {
-						NOT = { has_province_modifier = port_road_modifier }
-					}
-				}
-				119 = {
-					add_province_modifier = {
-						name = port_road_modifier	
-						duration = -1	#permanent
-					}
-				}	
-			}
-			if = {
-				limit = {
-					74 = {
-						NOT = { has_province_modifier = port_road_modifier }
-					}
-				}
-				74 = {
-					add_province_modifier = {
-						name = port_road_modifier	
-						duration = -1	#permanent
-					}
-				}	
-			}
-			67 = {
-				add_province_modifier = {
-					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			if = {
-				limit = {
-					87 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				87 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-				if = {
-				limit = {
-					113 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				113 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-		}
-	}
-	port_building_roads_decision12 = {	#road to rubenaire
-		potential = {
-			NOT = {
-				162 = { has_province_modifier = port_road_modifier }	#aelcandar
-			}
-			mission_completed =  port_roadworks 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 112	#westport
-					province_id = 113	#derane 
-					province_id = 87	#wesmar
-					province_id = 119	#autumnglade
-					province_id = 108	#rubenaire
-					province_id = 74	#kyliande
-					province_id = 114	#madelaire
-				}
-			}
-			adm_power = 12
-			treasury = 500
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 112	#westport 
-				province_id = 113	#derane 
-				province_id = 87	#wesmar
-				province_id = 119	#ioriels rest
-				province_id = 108	#rubenaire
-				province_id = 74	#kyliande
-				province_id = 114	#madelaire
-			}
-		}
-		effect = {
-			add_adm_power = -12
-			add_treasury = -500
-			if = {
-				limit = {
-					119 = {
-						NOT = { has_province_modifier = port_road_modifier }
-					}
-				}
-				119 = {
-					add_province_modifier = {
-						name = port_road_modifier	
-						duration = -1	#permanent
-					}
-				}	
-			}
-			if = {
-				limit = {
-					114 = {
-						NOT = { has_province_modifier = port_road_modifier }
-					}
-				}
-				114 = {
-					add_province_modifier = {
-						name = port_road_modifier	
-						duration = -1	#permanent
-					}
-				}
-				add_adm_power = -2
-				add_treasury = -50
-			}
-			if = {
-				limit = {
-					74 = {
-						NOT = { has_province_modifier = port_road_modifier }
-					}
-				}
-				74 = {
-					add_province_modifier = {
-						name = port_road_modifier	
-						duration = -1	#permanent
-					}
-				}	
-			}
-			108 = {
-				add_province_modifier = {
-					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			if = {
-				limit = {
-					87 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				87 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-				if = {
-				limit = {
-					113 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				113 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-		}
-	}
-	port_building_roads_decision13 = {	#road to wineport
-		potential = {
-			NOT = {
-				162 = { has_province_modifier = port_road_modifier }	#aelcandar
-			}
-			mission_completed =  port_roadworks 
-		}
-		allow = {
-			owns_all_provinces = {
-				OR = {
-					province_id = 112	#westport
-					province_id = 113	#derane 
-					province_id = 87	#wesmar
-					province_id = 119	#autumnglade
-					province_id = 101	#wineport
-					province_id = 74	#kyliande
-					province_id = 114	#madelaire
-					province_id = 95	#nurion
-					province_id = 80	#pircost
-				}
-			}
-			adm_power = 16
-			treasury = 600
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 112	#westport 
-				province_id = 113	#derane 
-				province_id = 87	#wesmar
-				province_id = 119	#ioriels rest
-				province_id = 101	#wineport
-				province_id = 74	#kyliande
-				province_id = 114	#madelaire
-				province_id = 95	#nurion
-				province_id = 80	#pircost
-			}
-		}
-		effect = {
-			add_adm_power = -16
-			add_treasury = -600
-			95 = {
-				add_province_modifier = {
-					name = port_road_modifier	
-					duration = -1	#permanent
-				}
-			}
-			80 = {
-				add_province_modifier = {
-					name = port_road_modifier	
-					duration = -1	#permanent
-				}
-			}
-			if = {
-				limit = {
-					119 = {
-						NOT = { has_province_modifier = port_road_modifier }
-					}
-				}
-				119 = {
-					add_province_modifier = {
-						name = port_road_modifier	
-						duration = -1	#permanent
-					}
-				}	
-			}
-			if = {
-				limit = {
-					114 = {
-						NOT = { has_province_modifier = port_road_modifier }
-					}
-				}
-				114 = {
-					add_province_modifier = {
-						name = port_road_modifier	
-						duration = -1	#permanent
-					}
-				}
-				add_adm_power = -2
-				add_treasury = -50
-			}
-			if = {
-				limit = {
-					74 = {
-						NOT = { has_province_modifier = port_road_modifier }
-					}
-				}
-				74 = {
-					add_province_modifier = {
-						name = port_road_modifier	
-						duration = -1	#permanent
-					}
-				}	
-			}
-			101 = {
-				add_province_modifier = {
-					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
-					duration = -1	#permanent
-				}
-			}
-			if = {
-				limit = {
-					87 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				87 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-				if = {
-				limit = {
-					113 = {
-						NOT = {
-							has_province_modifier = port_road_modifier
-						}
-					}
-				}
-				113 = {
-					add_province_modifier = {
-						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
-						duration = -1	#permanent
-					}
-				}
-			}
-		}
-	}
-	port_founding_the_nia = {
-		potential = {
-			mission_completed = port_the_naar
-			NOT = { has_country_modifier = }
-		}
-		allow = {
-		
-		}
-		effect = {
-		
-		}
-	}
-	port_university_founding1 = {
-		potential = {
-			mission_completed = port_reforming_the_university 
-			NOT = {
-				126 = { has_building = university }
-			}
-		}
-		allow = {
-			is_technocracy = yes	#should work instead
-			#has_government_reform = #artificer reform
-			126 = {	#portnamm
-				owned_by = ROOT
-				development = 30
-				OR = {
-					has_gnomish_majority_trigger = yes
-					has_gnomish_minority_trigger = yes
-				}
-			}
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 60
-			}
-			faction_influence = {
-				faction = tec_mechanists
-				influence = 35
-			}
-			add_adm_power = 20
-		}
-		effect = {
-			126 = {
-				add_building = university
-			}
-			add_adm_power = -20
-		}
-	}
-	port_university_founding2 = {
-		potential = {
-			mission_completed = port_reforming_the_university 
-			NOT = {
-				141 = { has_building = university }
-			}
-		}
-		allow = {
-			is_technocracy = yes	#should work instead
-			#has_government_reform = #artificer reform
-			141 = {	#turnwell
-				owned_by = ROOT
-				development = 30
-				OR = {
-					has_gnomish_majority_trigger = yes
-					has_gnomish_minority_trigger = yes
-				}
-			}
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 60
-			}
-			faction_influence = {
-				faction = tec_mechanists
-				influence = 35
-			}
-			adm_power = 20
-		}
-		effect = {
-			141 = {
-				add_building = university
-			}
-			add_adm_power = -20
-		}
-	}
-	port_university_founding3 = {
-		potential = {
-			mission_completed = port_reforming_the_university 
-			NOT = {
-				112 = { has_building = university }
-			}
-		}
-		allow = {
-			is_technocracy = yes	#should work instead
-			#has_government_reform = #artificer reform
-			112 = {	#westport
-				owned_by = ROOT
-				development = 30
-				OR = {
-					has_gnomish_majority_trigger = yes
-					has_gnomish_minority_trigger = yes
-				}
-			}
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 60
-			}
-			faction_influence = {
-				faction = tec_mechanists
-				influence = 35
-			}
-			adm_power = 20
-		}
-		effect = {
-			112 = {
-				add_building = university
-			}
-			add_adm_power = -20
-		}
-	}
-	port_dam_building_decision = {
-		potential = {
-			mission_completed = port_dykes_around_the_roy
-			#NOT = { mission_completed = port_freshwater_reserves }
-		}
-		allow = {
-			OR = {
-				130 = {	#smallmarches
-					owned_by = ROOT
-				}
-				144 = {	#manerd
-					owned_by = ROOT
-				}
-				148 = {	#many burrows
-					owned_by = ROOT
-				}
-				167 = {	#royvibobb
-					owned_by = ROOT
-				}
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 130
-				province_id = 144
-				province_id = 148
-				province_id = 167
-			}
-			NOT = {
-				has_province_modifier = port_artificial_lake_modifier
-			}
-		}
-		effect = {
-			country_event = {
-				id = port_flavour_events.4
-			}
-		}
-	}
-	port_river_digging_decision = {
-		potential = {
-			mission_completed = port_dykes_around_the_roy
-			#NOT = { mission_completed = port_freshwater_reserves }
-		}
-		allow = {
-			iochand_area = {
-				owned_by = ROOT
-			}
-			applefields_area = {
-				owned_by = ROOT
-			}
-			pearpoint_area = {
-				owned_by = ROOT
-			}
-			128 = {
-				owned_by = ROOT
-			}
-			130 = {
-				owned_by = ROOT
-			}
-			131 = {
-				owned_by = ROOT
-			}
-			136 = {
-				owned_by = ROOT
-			}
-			140 = {
-				owned_by = ROOT
-			}
-			144 = {
-				owned_by = ROOT
-			}
-			149 = {
-				owned_by = ROOT
-			}
-		}
-		provinces_to_highlight = {
-			OR = {
-				area = iochand_area
-				area = applefields_area
-				area = pearpoint_area
-				province_id = 128	#southroy
-				province_id = 130	#smallmarches
-				province_id = 131	#roysfort
-				province_id = 136	#bigwheat
-				province_id = 140	#stormpoint
-				province_id = 144	#manerd
-				province_id = 149	#norley
-			}
-		}
-		effect = {
-			country_event = {
-				id = port_flavour_events.5
-			}
-		}
-	}
-	port_irrigation_canal_decision = {
-		potential = {
-			mission_completed = port_freshwater_reserves
-		}
-		allow = {
-			check_variable = {
-				which = freshwaterreservesvariable
-				value = 1
-			}
-			OR = {
-				province_id = 128	#southroy
-				province_id = 142	#iochand
-				province_id = 130	#smallmarches
-				province_id = 131	#roysfort
-				province_id = 132	#greenberry
-				province_id = 133	#rosefield
-				province_id = 134	#middlewood
-				province_id = 136	#bigwheat
-				province_id = 166	#merryfield
-				province_id = 159	#thomsbridge
-				province_id = 135	#tipney
-				province_id = 163	#littlebrook
-				province_id = 139	#appleton
-				province_id = 162	#aelcandar
-				province_id = 12	#greymill
-				province_id = 76	#old course
-				province_id = 149	#norley
-				province_id = 147	#pearview
-				province_id = 144	#manerd
-			}
-		}
-		effect = {
-			country_event = {
-				id = port_flavour_events.6
-			}
-		}
-	}
-}
+# country_decisions = {
+# 	port_dyke_building_decision = {
+# 		potential = {
+# 			mission_completed = port_corps_of_engineers
+# 			NOT = { mission_completed = port_dykes_around_the_roy }
+# 		}
+# 		allow = {
+# 			adm_power = 5
+# 			treasury = 100
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				area = iochand_area
+# 				area = applefields_area
+# 				area = pearpoint_area
+# 				province_id = 128	#southroy
+# 				province_id = 130	#smallmarches
+# 				province_id = 131	#roysfort
+# 				province_id = 136	#bigwheat
+# 				province_id = 140	#stormpoint
+# 				province_id = 144	#manerd
+# 				province_id = 149	#norley
+# 			}
+# 			NOT = { has_province_modifier = port_roy_dyke_modifier }
+# 		}
+# 		effect = {
+# 			country_event = {
+# 				id = port_flavour_events.1	#event to pick which province you want to build the dyke
+# 			}
+# 		}
+# 	}
+# 	port_floodgates_building_decision = {
+# 		potential = {
+# 			mission_completed = port_dykes_around_the_roy
+# 			NOT = { 
+# 				1 = { has_province_modifier = port_floodgate_modifier }	#change id to province floodgates getbuild
+# 			}
+# 		}
+# 		allow = {
+# 			adm_power = 20
+# 			treasury = 250
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 140	#stormpoint
+# 				province_id = 131	#roysfort
+# 				province_id = 147	#pearview
+# 			}
+# 		}
+# 		effect = {
+# 			add_treasury = -250
+# 			add_adm_power = -20
+# 			140 = {	#stormpoint
+# 				add_province_modifier = {
+# 					name = port_floodgate_modifier	#modifier giving state maintenance cost +5%, yet to be localized
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			131 = {	#roysfort
+# 				add_province_modifier = {
+# 					name = port_floodgate_modifier	#modifier giving state maintenance cost +5%, 
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			147 = {	#pearview
+# 				add_province_modifier = {
+# 					name = port_floodgate_modifier	#modifier giving state maintenance cost +5%, 
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_flood_dykes_building_decision1 = {
+# 		potential = {
+# 			140 = { has_province_modifier = port_floodgate_modifier }
+# 			126 = { owned_by = ROOT }	#portnamn
+# 			NOT = { 126 = { has_province_modifier = port_protected_from_floods_modifier } }
+# 		}
+# 		allow = {
+# 			126 = { controlled_by = ROOT }
+# 			adm_power = 5 
+# 			treasury = 100
+# 		}
+# 		effect = {
+# 			add_adm_power = -5
+# 			add_treasury = -100
+# 			126 = {
+# 				add_province_modifier = {
+# 					name = port_protected_from_floods_modifier	#modifier giving 10% defensivness, -1 local unrest, 5% state maintenance cost, yet to be localized
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_flood_dykes_building_decision2 = {
+# 		potential = {
+# 			140 = { has_province_modifier = port_floodgate_modifier }
+# 			141 = { owned_by = ROOT }	#turnwell
+# 			NOT = { 141 = { has_province_modifier = port_protected_from_floods_modifier } }
+# 		}
+# 		allow = {
+# 			141 = { controlled_by = ROOT }
+# 			adm_power = 5 
+# 			treasury = 100
+# 		}
+# 		effect = {
+# 			add_adm_power = -5
+# 			add_treasury = -100
+# 			141 = {
+# 				add_province_modifier = {
+# 					name = port_protected_from_floods_modifier	#modifier giving 10% defensivness, -1 local unrest, 5% state maintenance cost, 
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_floodgate_opening_decision_north = {
+# 		potential = {
+# 			140 = { 	#stormpoint
+# 				has_province_modifier = port_floodgate_modifier 
+# 				owned_by = ROOT	
+# 			}	
+# 		}
+# 		allow = {
+# 			140 = { controlled_by = ROOT }
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 140
+# 				province_id = 144	#manerd 
+# 				province_id = 141	#turnwel
+# 				province_id = 142	#iochand
+# 				province_id = 138	#reavers landing
+# 				province_id = 129	#eldergreen 
+# 				province_id = 126	#portnamm
+# 			}
+# 			#the provinces north of the rivier roy
+# 		}
+# 		effect = {
+# 			140 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest yet to be localized
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			144 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					NOT = { 141 = { has_province_modifier = port_protected_from_floods_modifier } }
+# 				}
+# 				141 = {
+# 					add_province_modifier = {
+# 						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 						duration = 1825	#5years
+# 					}
+# 				}
+# 			}
+# 			142 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			138 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			129 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					NOT = { 126 = { has_province_modifier = port_protected_from_floods_modifier } }
+# 				}
+# 				126 = {
+# 					add_province_modifier = {
+# 						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 						duration = 1825	#5years
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_floodgate_opening_decision_centre = {
+# 		potential = {
+# 			147 = { 	#butterburn
+# 				has_province_modifier = port_floodgate_modifier 
+# 				owned_by = ROOT	
+# 			}	
+# 		}
+# 		allow = {
+# 			103 = { controlled_by = ROOT }
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 103	#butterburn
+# 				province_id = 147	#pearview 
+# 			}
+# 		}
+# 		effect = {
+# 			103 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			147 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					NOT = { 141 = { has_province_modifier = port_protected_from_floods_modifier } }
+# 				}
+# 				141 = {
+# 					add_province_modifier = {
+# 						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 						duration = 1825	#5years
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_floodgate_opening_decision_south = {
+# 		potential = {
+# 			131 = { 	#roysfort
+# 				has_province_modifier = port_floodgate_modifier 
+# 				owned_by = ROOT	
+# 			}	
+# 		}
+# 		allow = {
+# 			131 = { controlled_by = ROOT }
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 131
+# 				province_id = 130	#smallmarches 
+# 				province_id = 128	#southroyn 
+# 				province_id = 126	#portnamm
+# 			}
+# 			#the provinces north of the rivier roy
+# 		}
+# 		effect = {
+# 			131 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			130 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			128 = {
+# 				add_province_modifier = {
+# 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 					duration = 1825	#5years
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					NOT = { 126 = { has_province_modifier = port_protected_from_floods_modifier } }
+# 				}
+# 				126 = {
+# 					add_province_modifier = {
+# 						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
+# 						duration = 1825	#5years
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision1 = {	#road to turnwell
+# 		potential = {
+# 			mission_completed = port_dykes_around_the_roy 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 141	#turnwell 
+# 					province_id = 142	#iochand 
+# 					province_id = 129	#eldergeen
+# 					province_id = 126	#portnamn
+# 				}
+# 			}
+# 			adm_power = 10
+# 			treasury = 250
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 141	#turnwell 
+# 				province_id = 142	#iochand 
+# 				province_id = 129	#eldergeen
+# 				province_id = 126	#portnamn
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -10
+# 			add_treasury = -250
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						126	= { has_province_modifier = port_road_hub_modifier }	#portnamn
+# 					}
+# 				}
+# 				126 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed, yet to be localized
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			141 = {	#turnwell
+# 				add_province_modifier = {
+# 					name = port_road_hub_modifier
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						129 = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				129 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			142 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision2 = {	#road to westport
+# 		potential = {
+# 			mission_completed =  port_dykes_around_the_roy 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 112	#westport 
+# 					province_id = 121	#clearshore 
+# 					province_id = 123	#thunderward
+# 					province_id = 126	#portnamn
+# 					province_id = 128	#southroy
+# 				}
+# 			}
+# 			adm_power = 12
+# 			treasury = 300
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 112	#westport 
+# 				province_id = 121	#clearshore 
+# 				province_id = 123	#thunderward
+# 				province_id = 126	#portnamn
+# 				province_id = 128	#southroy
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -12
+# 			add_treasury = -300
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						126	= { has_province_modifier = port_road_hub_modifier }	#portnamn
+# 					}
+# 				}
+# 				126 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			112 = {	#westport
+# 				add_province_modifier = {
+# 					name = port_road_hub_modifier
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			121 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			123 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						128 = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				128 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision3 = {	#road to roysfort
+# 		potential = {
+# 			mission_completed =  port_dykes_around_the_roy 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 131	#roysfort 
+# 					province_id = 130	#southmarches 
+# 					province_id = 126	#portnamn
+# 					province_id = 128	#southroy
+# 				}
+# 			}
+# 			adm_power = 10
+# 			treasury = 250
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 131	#roysfort 
+# 				province_id = 130	#southmarches 
+# 				province_id = 126	#portnamn
+# 				province_id = 128	#southroy
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = 10
+# 			add_treasury = -250
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						126	= { has_province_modifier = port_road_hub_modifier }	#portnamn
+# 					}
+# 				}
+# 				126 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			131 = {	#roysfort
+# 				add_province_modifier = {
+# 					name = port_road_hub_modifier
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			130 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						128 = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				128 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision4 = {	#road to olmaditt
+# 		potential = {
+# 			mission_completed =  port_dykes_around_the_roy 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 145	#olmaditt 
+# 					province_id = 122	#baynoms 
+# 					province_id = 126	#portnamn
+# 					province_id = 140	#stormpoint
+# 					province_id = 138	#reavers landing
+# 				}
+# 			}
+# 			adm_power = 12
+# 			treasury = 500
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 145	#olmaditt 
+# 				province_id = 122	#baynoms 
+# 				province_id = 126	#portnamn
+# 				province_id = 140	#stormpoint
+# 				province_id = 138	#reavers landing
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -12
+# 			add_treasury = -500
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						126	= { has_province_modifier = port_road_hub_modifier }	#portnamn
+# 					}
+# 				}
+# 				126 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			145 = {	#olmaditt
+# 				add_province_modifier = {
+# 					name = port_road_hub_modifier
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			122 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			140 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			138 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						129 = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				129 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision5 = {	#road to newcobble
+# 		potential = {
+# 			mission_completed =  port_dykes_around_the_roy 
+# 			NOT = {
+# 				165 = { has_province_modifier = port_road_hub_modifier }
+# 			}
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 165	#newcobble 
+# 					province_id = 147	#pearview 
+# 					province_id = 103	#butterburn
+# 					province_id = 141	#turnwell
+# 				}
+# 			}
+# 			adm_power = 10
+# 			treasury = 250
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 165	#newcobble 
+# 				province_id = 147	#pearview 
+# 				province_id = 103	#butterburn
+# 				province_id = 141	#turnwell
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -10
+# 			add_treasury = -250
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						141	= { has_province_modifier = port_road_hub_modifier }	#turnwell
+# 					}
+# 				}
+# 				141 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			165 = {	#newcobble
+# 				add_province_modifier = {
+# 					name = port_road_hub_modifier
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			147 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			103 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision6 = {	#road to barrowshire
+# 		potential = {
+# 			NOT = {
+# 				162 = { has_province_modifier = port_road_modifier }	#aelcandar
+# 			}
+# 			mission_completed =  port_roadworks 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 165	#newcobble 
+# 					province_id = 162	#aelcandar 
+# 					province_id = 164	#barrowshire
+# 				}
+# 			}
+# 			adm_power = 5
+# 			treasury = 100
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 165	#newcobble 
+# 				province_id = 162	#aelcandar 
+# 				province_id = 164	#barrowshire
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -5
+# 			add_treasury = -100
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						164	= { has_province_modifier = port_road_hub_modifier }	#barrowshire
+# 					}
+# 				}
+# 				164 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			162 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision7 = {	#road from roysfort to barrowshire
+# 		potential = {
+# 			NOT = {
+# 				132 = { has_province_modifier = port_road_modifier }	#greenberry
+# 			}
+# 			mission_completed =  port_roadworks 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 165	#newcobble 
+# 					province_id = 132	#greenberry 
+# 					province_id = 164	#barrowshire
+# 					province_id = 133	#rosefield
+# 					province_id = 158	#lasean
+# 					province_id = 159	#thomsbridge
+# 				}
+# 			}
+# 			adm_power = 8
+# 			treasury = 200
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 165	#newcobble 
+# 				province_id = 132	#greenberry 
+# 				province_id = 164	#barrowshire
+# 				province_id = 133	#rosefield
+# 				province_id = 158	#lasean
+# 				province_id = 159	#thomsbridge
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -10
+# 			add_treasury = -250
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						164	= { has_province_modifier = port_road_hub_modifier }	#barrowshire
+# 					}
+# 				}
+# 				164 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			132 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			133 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			158 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			159 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision8 = {	#road to viswall
+# 		potential = {
+# 			NOT = {
+# 				63 = { has_province_modifier = port_road_hub_modifier }	#south viswall
+# 			}
+# 			mission_completed =  port_roadworks 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 63	#south viswall 
+# 					province_id = 160	#coppertown 
+# 					province_id = 164	#barrowshire
+# 				}
+# 			}
+# 			adm_power = 6
+# 			treasury = 100
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 63	#south viswall 
+# 				province_id = 160	#coppertown 
+# 				province_id = 164	#barrowshire
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -4
+# 			add_treasury = -100
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						164	= { has_province_modifier = port_road_hub_modifier }	#barrowshire
+# 					}
+# 				}
+# 				164 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						63	= { has_province_modifier = port_road_hub_modifier }	#south viswall
+# 					}
+# 				}
+# 				63 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					160 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				add_adm_power = -4
+# 				add_treasury = -100
+# 				160 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision9 = {	#road to beepeck
+# 		potential = {
+# 			NOT = {
+# 				205 = { has_province_modifier = port_road_modifier }	#the strip
+# 			}
+# 			mission_completed =  port_roadworks 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 151	#beepeck
+# 					province_id = 160	#coppertown 
+# 					province_id = 164	#barrowshire
+# 					province_id = 60	#east salt marsh
+# 					province_id = 205	#the strip
+# 				}
+# 			}
+# 			adm_power = 12
+# 			treasury = 500
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 151	#beepeck 
+# 				province_id = 160	#coppertown 
+# 				province_id = 164	#barrowshire
+# 				province_id = 60	#east salt marsh
+# 				province_id = 205	#the strip
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -12
+# 			add_treasury = -500
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						164	= { has_province_modifier = port_road_hub_modifier }	#barrowshire
+# 					}
+# 				}
+# 				164 = {
+# 					add_province_modifier = {
+# 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					160 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				add_adm_power = -4
+# 				add_treasury = -100
+# 				160 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 			60 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			205 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision10 = {	#road to iorielen
+# 		potential = {
+# 			NOT = {
+# 				162 = { has_province_modifier = port_road_modifier }	#aelcandar
+# 			}
+# 			mission_completed =  port_roadworks 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 112	#westport
+# 					province_id = 113	#derane 
+# 					province_id = 87	#wesmar
+# 					province_id = 116	#autumnglade
+# 					province_id = 115	#iorielen
+# 				}
+# 			}
+# 			adm_power = 12
+# 			treasury = 500
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 112	#westport 
+# 				province_id = 113	#derane 
+# 				province_id = 87	#wesmar
+# 				province_id = 116	#autumnglade
+# 				province_id = 115	#iorielen
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -12
+# 			add_treasury = -500
+# 			116 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	
+# 					duration = -1	#permanent
+# 				}
+# 			}	
+# 			115 = {
+# 				add_province_modifier = {
+# 					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					87 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				87 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 				if = {
+# 				limit = {
+# 					113 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				113 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision11 = {	#road to lorentaine
+# 		potential = {
+# 			NOT = {
+# 				162 = { has_province_modifier = port_road_modifier }	#aelcandar
+# 			}
+# 			mission_completed =  port_roadworks 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 112	#westport
+# 					province_id = 113	#derane 
+# 					province_id = 87	#wesmar
+# 					province_id = 119	#autumnglade
+# 					province_id = 67	#lorentaine
+# 					province_id = 74	#kyliande
+# 				}
+# 			}
+# 			adm_power = 12
+# 			treasury = 500
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 112	#westport 
+# 				province_id = 113	#derane 
+# 				province_id = 87	#wesmar
+# 				province_id = 119	#ioriels rest
+# 				province_id = 67	#lorentaine
+# 				province_id = 74	#kyliande
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -12
+# 			add_treasury = -500
+# 			if = {
+# 				limit = {
+# 					119 = {
+# 						NOT = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				119 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	
+# 						duration = -1	#permanent
+# 					}
+# 				}	
+# 			}
+# 			if = {
+# 				limit = {
+# 					74 = {
+# 						NOT = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				74 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	
+# 						duration = -1	#permanent
+# 					}
+# 				}	
+# 			}
+# 			67 = {
+# 				add_province_modifier = {
+# 					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					87 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				87 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 				if = {
+# 				limit = {
+# 					113 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				113 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision12 = {	#road to rubenaire
+# 		potential = {
+# 			NOT = {
+# 				162 = { has_province_modifier = port_road_modifier }	#aelcandar
+# 			}
+# 			mission_completed =  port_roadworks 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 112	#westport
+# 					province_id = 113	#derane 
+# 					province_id = 87	#wesmar
+# 					province_id = 119	#autumnglade
+# 					province_id = 108	#rubenaire
+# 					province_id = 74	#kyliande
+# 					province_id = 114	#madelaire
+# 				}
+# 			}
+# 			adm_power = 12
+# 			treasury = 500
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 112	#westport 
+# 				province_id = 113	#derane 
+# 				province_id = 87	#wesmar
+# 				province_id = 119	#ioriels rest
+# 				province_id = 108	#rubenaire
+# 				province_id = 74	#kyliande
+# 				province_id = 114	#madelaire
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -12
+# 			add_treasury = -500
+# 			if = {
+# 				limit = {
+# 					119 = {
+# 						NOT = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				119 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	
+# 						duration = -1	#permanent
+# 					}
+# 				}	
+# 			}
+# 			if = {
+# 				limit = {
+# 					114 = {
+# 						NOT = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				114 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 				add_adm_power = -2
+# 				add_treasury = -50
+# 			}
+# 			if = {
+# 				limit = {
+# 					74 = {
+# 						NOT = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				74 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	
+# 						duration = -1	#permanent
+# 					}
+# 				}	
+# 			}
+# 			108 = {
+# 				add_province_modifier = {
+# 					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					87 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				87 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 				if = {
+# 				limit = {
+# 					113 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				113 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	port_building_roads_decision13 = {	#road to wineport
+# 		potential = {
+# 			NOT = {
+# 				162 = { has_province_modifier = port_road_modifier }	#aelcandar
+# 			}
+# 			mission_completed =  port_roadworks 
+# 		}
+# 		allow = {
+# 			owns_all_provinces = {
+# 				OR = {
+# 					province_id = 112	#westport
+# 					province_id = 113	#derane 
+# 					province_id = 87	#wesmar
+# 					province_id = 119	#autumnglade
+# 					province_id = 101	#wineport
+# 					province_id = 74	#kyliande
+# 					province_id = 114	#madelaire
+# 					province_id = 95	#nurion
+# 					province_id = 80	#pircost
+# 				}
+# 			}
+# 			adm_power = 16
+# 			treasury = 600
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 112	#westport 
+# 				province_id = 113	#derane 
+# 				province_id = 87	#wesmar
+# 				province_id = 119	#ioriels rest
+# 				province_id = 101	#wineport
+# 				province_id = 74	#kyliande
+# 				province_id = 114	#madelaire
+# 				province_id = 95	#nurion
+# 				province_id = 80	#pircost
+# 			}
+# 		}
+# 		effect = {
+# 			add_adm_power = -16
+# 			add_treasury = -600
+# 			95 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			80 = {
+# 				add_province_modifier = {
+# 					name = port_road_modifier	
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					119 = {
+# 						NOT = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				119 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	
+# 						duration = -1	#permanent
+# 					}
+# 				}	
+# 			}
+# 			if = {
+# 				limit = {
+# 					114 = {
+# 						NOT = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				114 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 				add_adm_power = -2
+# 				add_treasury = -50
+# 			}
+# 			if = {
+# 				limit = {
+# 					74 = {
+# 						NOT = { has_province_modifier = port_road_modifier }
+# 					}
+# 				}
+# 				74 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	
+# 						duration = -1	#permanent
+# 					}
+# 				}	
+# 			}
+# 			101 = {
+# 				add_province_modifier = {
+# 					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
+# 					duration = -1	#permanent
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					87 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				87 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 				if = {
+# 				limit = {
+# 					113 = {
+# 						NOT = {
+# 							has_province_modifier = port_road_modifier
+# 						}
+# 					}
+# 				}
+# 				113 = {
+# 					add_province_modifier = {
+# 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
+# 						duration = -1	#permanent
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	#port_founding_the_nia = {
+# 	#	potential = {
+# 	#		mission_completed = port_the_naar
+# 	#		NOT = { has_country_modifier = }
+# 	#	}
+# 	#	allow = {
+# 	#	
+# 	#	}
+# 	#	effect = {
+# 	#	
+# 	#	}
+# 	#}
+# 	port_university_founding1 = {
+# 		potential = {
+# 			mission_completed = port_reforming_the_university 
+# 			NOT = {
+# 				126 = { has_building = university }
+# 			}
+# 		}
+# 		allow = {
+# 			is_technocracy = yes	#should work instead
+# 			#has_government_reform = #artificer reform
+# 			126 = {	#portnamm
+# 				owned_by = ROOT
+# 				development = 30
+# 				OR = {
+# 					has_gnomish_majority_trigger = yes
+# 					has_gnomish_minority_trigger = yes
+# 				}
+# 			}
+# 			estate_loyalty = {
+# 				estate = estate_artificers
+# 				loyalty = 60
+# 			}
+# 			faction_influence = {
+# 				faction = tec_mechanists
+# 				influence = 35
+# 			}
+# 			adm_power = 20
+# 		}
+# 		effect = {
+# 			126 = {
+# 				add_building = university
+# 			}
+# 			add_adm_power = -20
+# 		}
+# 	}
+# 	port_university_founding2 = {
+# 		potential = {
+# 			mission_completed = port_reforming_the_university 
+# 			NOT = {
+# 				141 = { has_building = university }
+# 			}
+# 		}
+# 		allow = {
+# 			is_technocracy = yes	#should work instead
+# 			#has_government_reform = #artificer reform
+# 			141 = {	#turnwell
+# 				owned_by = ROOT
+# 				development = 30
+# 				OR = {
+# 					has_gnomish_majority_trigger = yes
+# 					has_gnomish_minority_trigger = yes
+# 				}
+# 			}
+# 			estate_loyalty = {
+# 				estate = estate_artificers
+# 				loyalty = 60
+# 			}
+# 			faction_influence = {
+# 				faction = tec_mechanists
+# 				influence = 35
+# 			}
+# 			adm_power = 20
+# 		}
+# 		effect = {
+# 			141 = {
+# 				add_building = university
+# 			}
+# 			add_adm_power = -20
+# 		}
+# 	}
+# 	port_university_founding3 = {
+# 		potential = {
+# 			mission_completed = port_reforming_the_university 
+# 			NOT = {
+# 				112 = { has_building = university }
+# 			}
+# 		}
+# 		allow = {
+# 			is_technocracy = yes	#should work instead
+# 			#has_government_reform = #artificer reform
+# 			112 = {	#westport
+# 				owned_by = ROOT
+# 				development = 30
+# 				OR = {
+# 					has_gnomish_majority_trigger = yes
+# 					has_gnomish_minority_trigger = yes
+# 				}
+# 			}
+# 			estate_loyalty = {
+# 				estate = estate_artificers
+# 				loyalty = 60
+# 			}
+# 			faction_influence = {
+# 				faction = tec_mechanists
+# 				influence = 35
+# 			}
+# 			adm_power = 20
+# 		}
+# 		effect = {
+# 			112 = {
+# 				add_building = university
+# 			}
+# 			add_adm_power = -20
+# 		}
+# 	}
+# 	port_dam_building_decision = {
+# 		potential = {
+# 			mission_completed = port_dykes_around_the_roy
+# 			#NOT = { mission_completed = port_freshwater_reserves }
+# 		}
+# 		allow = {
+# 			OR = {
+# 				130 = {	#smallmarches
+# 					owned_by = ROOT
+# 				}
+# 				144 = {	#manerd
+# 					owned_by = ROOT
+# 				}
+# 				148 = {	#many burrows
+# 					owned_by = ROOT
+# 				}
+# 				167 = {	#royvibobb
+# 					owned_by = ROOT
+# 				}
+# 			}
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 130
+# 				province_id = 144
+# 				province_id = 148
+# 				province_id = 167
+# 			}
+# 			NOT = {
+# 				has_province_modifier = port_artificial_lake_modifier
+# 			}
+# 		}
+# 		effect = {
+# 			country_event = {
+# 				id = port_flavour_events.4
+# 			}
+# 		}
+# 	}
+# 	port_river_digging_decision = {
+# 		potential = {
+# 			mission_completed = port_dykes_around_the_roy
+# 			#NOT = { mission_completed = port_freshwater_reserves }
+# 		}
+# 		allow = {
+# 			iochand_area = {
+# 				owned_by = ROOT
+# 			}
+# 			applefields_area = {
+# 				owned_by = ROOT
+# 			}
+# 			pearpoint_area = {
+# 				owned_by = ROOT
+# 			}
+# 			128 = {
+# 				owned_by = ROOT
+# 			}
+# 			130 = {
+# 				owned_by = ROOT
+# 			}
+# 			131 = {
+# 				owned_by = ROOT
+# 			}
+# 			136 = {
+# 				owned_by = ROOT
+# 			}
+# 			140 = {
+# 				owned_by = ROOT
+# 			}
+# 			144 = {
+# 				owned_by = ROOT
+# 			}
+# 			149 = {
+# 				owned_by = ROOT
+# 			}
+# 		}
+# 		provinces_to_highlight = {
+# 			OR = {
+# 				area = iochand_area
+# 				area = applefields_area
+# 				area = pearpoint_area
+# 				province_id = 128	#southroy
+# 				province_id = 130	#smallmarches
+# 				province_id = 131	#roysfort
+# 				province_id = 136	#bigwheat
+# 				province_id = 140	#stormpoint
+# 				province_id = 144	#manerd
+# 				province_id = 149	#norley
+# 			}
+# 		}
+# 		effect = {
+# 			country_event = {
+# 				id = port_flavour_events.5
+# 			}
+# 		}
+# 	}
+# 	port_irrigation_canal_decision = {
+# 		potential = {
+# 			mission_completed = port_freshwater_reserves
+# 		}
+# 		allow = {
+# 			check_variable = {
+# 				which = freshwaterreservesvariable
+# 				value = 1
+# 			}
+# 			OR = {
+# 				128 = {
+# 					owned_by = ROOT
+# 				}
+# 				142 = {
+# 					owned_by = ROOT
+# 				}
+# 				130 = {
+# 					owned_by = ROOT
+# 				}
+# 				131 = {
+# 					owned_by = ROOT
+# 				}
+# 				132 = {
+# 					owned_by = ROOT
+# 				}
+# 				133 = {
+# 					owned_by = ROOT
+# 				}
+# 				134 = {
+# 					owned_by = ROOT
+# 				}
+# 				136 = {
+# 					owned_by = ROOT
+# 				}
+# 				166 = {
+# 					owned_by = ROOT
+# 				}
+# 				159 = {
+# 					owned_by = ROOT
+# 				}
+# 				135 = {
+# 					owned_by = ROOT
+# 				}
+# 				163 = {
+# 					owned_by = ROOT
+# 				}
+# 				139 = {
+# 					owned_by = ROOT
+# 				}
+# 				162 = {
+# 					owned_by = ROOT
+# 				}
+# 				12 = {
+# 					owned_by = ROOT
+# 				}
+# 				76 = {
+# 					owned_by = ROOT
+# 				}
+# 				149 = {
+# 					owned_by = ROOT
+# 				}
+# 				147 = {
+# 					owned_by = ROOT
+# 				}
+# 				144 = {
+# 					owned_by = ROOT
+# 				}
+# 			}
+# 		}
+# 		effect = {
+# 			country_event = {
+# 				id = port_flavour_events.6
+# 			}
+# 		}
+# 	}
+# }

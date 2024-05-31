@@ -2237,7 +2237,7 @@ isobelin_3_2 = {
 			OR = {
 				full_idea_group = economic_ideas
 				full_idea_group = plutocracy_ideas
-				full_idea_group = infrastructure_ideas
+				full_idea_group = focus_inwards
 				AND = {
 					adm_power = 150
 					dip_power = 150
@@ -2260,7 +2260,7 @@ isobelin_3_2 = {
 					NOT = {
 						full_idea_group = economic_ideas
 						full_idea_group = plutocracy_ideas
-						full_idea_group = infrastructure_ideas						
+						full_idea_group = focus_inwards						
 					}
 				}
 

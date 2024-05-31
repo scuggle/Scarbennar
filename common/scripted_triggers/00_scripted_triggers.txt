@@ -2202,7 +2202,7 @@ has_completed_idea_group_of_category = {
 				full_idea_group = plutocracy_ideas
 				full_idea_group = horde_gov_ideas
 				full_idea_group = focus_inwards
-				full_idea_group = logistical_ideas
+				#full_idea_group = logistical_ideas
 			}
 		}
 	]
@@ -2237,6 +2237,7 @@ has_completed_idea_group_of_category = {
 				full_idea_group = at_standing
 				full_idea_group = leadership_ideas
 				full_idea_group = special_forces_ideas
+				full_idea_group = infantry_ideas
 			}
 		}
 	]
@@ -2246,6 +2247,8 @@ has_completed_idea_group_of_category = {
 num_of_completed_idea_groups_by_category = {
 	calc_true_if = {
 		[[adm_ideas]
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
 			full_idea_group = economic_ideas
@@ -2255,10 +2258,12 @@ num_of_completed_idea_groups_by_category = {
 			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = focus_inwards
-			full_idea_group = logistical_ideas
+			full_idea_group = plutocracy_ideas
 		]
 		[[dip_ideas]
+			full_idea_group = minority_ideas
+			full_idea_group = the_great_game
+			full_idea_group = shadows_and_daggers
 			full_idea_group = spy_ideas
 			full_idea_group = diplomatic_ideas
 			full_idea_group = trade_ideas
@@ -2266,21 +2271,20 @@ num_of_completed_idea_groups_by_category = {
 			full_idea_group = maritime_ideas
 			full_idea_group = influence_ideas
 			#full_idea_group = court_ideas
-			full_idea_group = minority_ideas
-			full_idea_group = the_great_game
-			full_idea_group = shadows_and_daggers
 		]
 		[[mil_ideas]
+			full_idea_group = infantry_ideas
 			full_idea_group = aristocracy_ideas
-			full_idea_group = offensive_ideas
+			full_idea_group = at_standing
+			full_idea_group = adventurer_ideas_vaass
+			full_idea_group = quantity_ideas
+			full_idea_group = leadership_ideas
 			full_idea_group = defensive_ideas
 			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
+			full_idea_group = offensive_ideas
 			#full_idea_group = indigenous_ideas
-			full_idea_group = adventurer_ideas_vaass
-			full_idea_group = at_standing
-			full_idea_group = leadership_ideas
 			full_idea_group = special_forces_ideas
+			#full_idea_group = naval_ideas
 		]
 		amount = $amount$
 	}
@@ -2288,26 +2292,35 @@ num_of_completed_idea_groups_by_category = {
 
 num_of_idea_groups_chosen = {
 	calc_true_if = {
+		has_idea_group = focus_inwards
 		has_idea_group = innovativeness_ideas
 		has_idea_group = religious_ideas
 		has_idea_group = economic_ideas
 		has_idea_group = expansion_ideas
 		has_idea_group = administrative_ideas
 		has_idea_group = humanist_ideas
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = horde_gov_ideas
+		has_idea_group = plutocracy_ideas
+		has_idea_group = minority_ideas
+		has_idea_group = the_great_game
+		has_idea_group = shadows_and_daggers
 		has_idea_group = spy_ideas
 		has_idea_group = diplomatic_ideas
 		has_idea_group = trade_ideas
 		has_idea_group = exploration_ideas
 		has_idea_group = maritime_ideas
 		has_idea_group = influence_ideas
+		has_idea_group = infantry_ideas
 		has_idea_group = aristocracy_ideas
+		has_idea_group = at_standing
+		has_idea_group = adventurer_ideas_vaass
+		has_idea_group = leadership_ideas
 		has_idea_group = offensive_ideas
 		has_idea_group = defensive_ideas
 		has_idea_group = quality_ideas
 		has_idea_group = quantity_ideas
-		has_idea_group = theocracy_gov_ideas
-		has_idea_group = horde_gov_ideas
-		has_idea_group = plutocracy_ideas
+		has_idea_group = special_forces_ideas
 		amount = $amount$
 	}
 }
@@ -3778,7 +3791,7 @@ has_any_active_incomplete_idea_group_of_category = {
             tooltip = has_any_active_incomplete_idea_group_of_category_adm
             OR = {
 				AND = { has_idea_group = focus_inwards 		  NOT = { full_idea_group = focus_inwards } }
-				AND = { has_idea_group = logistical_ideas 	  NOT = { full_idea_group = logistical_ideas } }
+				#AND = { has_idea_group = logistical_ideas 	  NOT = { full_idea_group = logistical_ideas } }
                 AND = { has_idea_group = innovativeness_ideas NOT = { full_idea_group = innovativeness_ideas } }
                 AND = { has_idea_group = religious_ideas      NOT = { full_idea_group = religious_ideas } }
                 AND = { has_idea_group = economic_ideas       NOT = { full_idea_group = economic_ideas } }
@@ -3813,18 +3826,18 @@ has_any_active_incomplete_idea_group_of_category = {
         custom_trigger_tooltip = {
             tooltip = has_any_active_incomplete_idea_group_of_category_mil
             OR = {
-				AND = { has_idea_group = adventurer_ideas_vaass     NOT = { full_idea_group = adventurer_ideas_vaass } }
-				AND = { has_idea_group = at_standing       			NOT = { full_idea_group = at_standing } }
-				AND = { has_idea_group = leadership_ideas       	NOT = { full_idea_group = leadership_ideas } }
-				AND = { has_idea_group = special_forces_ideas       NOT = { full_idea_group = special_forces_ideas } }
+				AND = { has_idea_group = infantry_ideas       		NOT = { full_idea_group = infantry_ideas } }
                 AND = { has_idea_group = aristocracy_ideas       	NOT = { full_idea_group = aristocracy_ideas } }
-                AND = { has_idea_group = offensive_ideas       		NOT = { full_idea_group = offensive_ideas } }
-                AND = { has_idea_group = defensive_ideas       		NOT = { full_idea_group = defensive_ideas } }
-                AND = { has_idea_group = quality_ideas           	NOT = { full_idea_group = quality_ideas } }
+				AND = { has_idea_group = at_standing       			NOT = { full_idea_group = at_standing } }
+				AND = { has_idea_group = adventurer_ideas_vaass     NOT = { full_idea_group = adventurer_ideas_vaass } }
                 AND = { has_idea_group = quantity_ideas             NOT = { full_idea_group = quantity_ideas } }
-                #AND = { has_idea_group = naval_ideas				NOT = { full_idea_group = naval_ideas } }
-				#AND = { has_idea_group = indigenous_ideas     NOT = { full_idea_group = indigenous_ideas } }
-            }
+				AND = { has_idea_group = leadership_ideas       	NOT = { full_idea_group = leadership_ideas } }
+                AND = { has_idea_group = defensive_ideas       		NOT = { full_idea_group = defensive_ideas } }
+                AND = { has_idea_group = quality_ideas           	NOT = { full_idea_group = quality_ideas } }              
+				AND = { has_idea_group = offensive_ideas       		NOT = { full_idea_group = offensive_ideas } }
+				AND = { has_idea_group = special_forces_ideas       NOT = { full_idea_group = special_forces_ideas } }
+				#AND = { has_idea_group = naval_ideas       		NOT = { full_idea_group = naval_ideas } }
+			}
         }
     ]
 }

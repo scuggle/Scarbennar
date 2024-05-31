@@ -6,7 +6,7 @@ add_core = Z35
 culture = high_lorentish
 religion = regent_court
 capital = ""
-ìs_city = yes
+is_city = yes
 hre = no
 
 base_tax = 3

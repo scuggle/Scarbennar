@@ -1825,14 +1825,6 @@ on_separate_war_lost = {
 # country
 # root = loser country, from = winner country
 on_battle_lost_country = {
-	if = {	#New Corinite
-		limit = {
-			has_country_modifier = corinite_purim_teachings_aspect_modifier
-		}
-		ROOT = {
-			remove_country_modifier = corinite_purim_teachings_aspect_modifier
-		}
-	}
 	on_battle_lost_country_effect = yes
 	random_events = {
 		90 = 0
@@ -1861,21 +1853,6 @@ on_battle_won_unit = {
 # root = winning country, from = loser country
 on_battle_won_country = {
 	#on_battle_ended_effect = yes
-	if = {	#New Corinite
-		limit = {
-			ROOT = {
-				religion = corinite
-				has_church_aspect = corinite_purim_teachings_aspect
-			}
-		}
-		ROOT = {
-			remove_country_modifier = corinite_purim_teachings_aspect_modifier
-			add_country_modifier = {
-				name = corinite_purim_teachings_aspect_modifier
-				duration = 730
-			}
-		}
-	}
 	on_battle_won_country_effect = yes #1.35
 
 	random_events = {
@@ -5267,8 +5244,8 @@ on_yearly_pulse = {
 		#sarhal_relics.19
 		eur_changes.1
 		eur_changes.4
-		reurope_events.200
-		reurope_events.201
+		eur_events.200
+		eur_events.201
 		effelai_bloom.0
 		the_command.1971	#Noriko Dragonborn
 		the_command.1974 	#Noriko Reaches Out to the Shuvuush

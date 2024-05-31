@@ -225,18 +225,17 @@ province_event = {
 		years = 50
 		modifier = {
 			factor = 0.75
-			num_of_neighbor_province = {
-				value = 2
+			any_neighbor_province = {
 				has_province_modifier = port_road_modifier	
 			}
 		}
-		modifier = {
-			factor = 0.666
-			num_of_neighbor_province = {
-				value = 3
-				has_province_modifier = port_road_modifier
-			}
-		}
+		#modifier = { Causes errors all_neighbor_province isn't a thing
+		#	factor = 0.666
+		#	all_neighbor_province = {
+		#		value = 3
+		#		has_province_modifier = port_road_modifier
+		#	}
+		#}
 	}
 	option = {
 		name = port_flavour_events.3.a 
@@ -246,7 +245,7 @@ province_event = {
 		}
 	}
 }
-province_event = {	#dam building decision
+country_event = {	#dam building decision
 	id = port_flavour_events.4
 	title = port_flavour_events.4.t 
 	desc = port_flavour_events.4.d 
@@ -340,7 +339,7 @@ province_event = {	#dam building decision
 		}
 	}
 }
-province_event = {	#river digging decision
+country_event = {	#river digging decision
 	id = port_flavour_events.5
 	title = port_flavour_events.5.t 
 	desc = port_flavour_events.5.d 
@@ -635,7 +634,7 @@ province_event = {	#river digging decision
 		}
 	}
 }
-province_event = {	#canal digging decision
+country_event = {	#canal digging decision
 	id = port_flavour_events.6
 	title = port_flavour_events.6.t 
 	desc = port_flavour_events.6.d 

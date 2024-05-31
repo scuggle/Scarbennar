@@ -4185,7 +4185,7 @@ B38_sphinx_horses = {
 				full_idea_group = defensive_ideas
 				full_idea_group = quality_ideas
 				full_idea_group = quantity_ideas
-				full_idea_group = maritime
+				full_idea_group = maritime_ideas
 				amount = 2
 			}
 			mil_power = 150

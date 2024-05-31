@@ -457,6 +457,7 @@ arg_ordstun_great_clast_shafts = {
 				}
 				province_is_or_accepts_culture = yes
 		}
+	}
 	keep_trigger = {
 	}
 	tier_0 = {

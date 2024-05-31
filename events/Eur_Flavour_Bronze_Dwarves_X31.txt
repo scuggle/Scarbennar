@@ -134,7 +134,7 @@ country_event = { #Harimari spawner
 	desc = bronzedwarves.4.d
 	picture = DIPLOMACY_eventPicture
 	
-	is_triggered_only = yes
+	#is_triggered_only = yes
 
     trigger = {
         AND = {

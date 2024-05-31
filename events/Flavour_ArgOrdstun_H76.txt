@@ -2185,7 +2185,7 @@ country_event = {
 	}
 	option = { #Split the land between the estates; we know how to manage them!
 		trigger = {
-			has_idea = recognize_hierarchy
+			has_idea = tgg2
 		}
 		highlight = yes
 		name = flavour_ordstun.105.d

@@ -144,7 +144,7 @@ thangoya_1 = {
             OR = {
                 government_reform_progress = 50
                 economic_ideas = 3
-                infrastructure_ideas = 3
+                focus_inwards = 3
             }
             if = {
                 limit = { thirabnir_mission = yes }
@@ -198,7 +198,7 @@ thangoya_1 = {
                     }
 				"
                 third_custom_tooltip = thangoya_3_infra_ideas
-				third_limit = "infrastructure_ideas = 3"
+				third_limit = "focus_inwards = 3"
 				third_effect = "
                     add_country_modifier = {
                         name = thangoya_long_term_planning

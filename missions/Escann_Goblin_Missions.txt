@@ -509,11 +509,11 @@ EscannGob2 = {
 ##BranchEnd 2
 ##BranchStart 3
 EscannGob3 = {
-	NOT = { has_country_flag = chose_generic_mt }
 	slot = 4
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {

@@ -11,7 +11,7 @@ historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
 	expansion_ideas
-	indigenous_ideas	
+	horde_gov_ideas	
 	administrative_ideas	
 	trade_ideas
 	quality_ideas

@@ -101,7 +101,7 @@ cestirande_1_missions = {
 
 		trigger = {
 			prestige = 100
-			has_reform = cavalry_warfare_reform
+			#has_reform = cavalry_warfare_reform
 			has_reform = aristocratic_court_reform
 			has_estate = estate_nobles
 		}

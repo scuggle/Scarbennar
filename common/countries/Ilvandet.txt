@@ -13,7 +13,7 @@ historical_idea_groups = {
 	influence_ideas
 	defensive_ideas	
 	administrative_ideas	
-	infrastructure_ideas
+	focus_inwards
 	quality_ideas
 	economic_ideas
 }

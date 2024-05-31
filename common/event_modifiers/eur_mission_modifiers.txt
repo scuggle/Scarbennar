@@ -389,7 +389,7 @@ NME_shipyards = {
 
 NME_ship_boom = {
 	global_ship_cost = -0.2
-	ship_trade_power = 0.2
+	ship_trade_power_modifier = 0.2
 }
 
 NME_vassal_buff = {
@@ -537,7 +537,7 @@ bronze_navy = {
 }
 
 bronze_cannon_finisher = {
-	artillery_bonus_vs_fort = 1
+	artillery_levels_available_vs_fort = 1
 	artillery_cost = -0.10
 	artillery_barrage_cost = -0.25
 	artillery_power = 0.05

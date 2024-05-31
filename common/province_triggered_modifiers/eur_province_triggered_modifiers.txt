@@ -1,33 +1,32 @@
 
-
-isolationist_cyranvar_not_isolating = {
-	potential = {
-		#normal_or_historical_nations = yes
-		always = yes
-	}
-
-	trigger = {	
-		owner = {
-			OR = {
-                AND = {
-                    tag = I45
-                    has_country_flag = cyranvar_isolationist_path
-                }
-                AND = {
-                    is_subject_of = I45
-                    limit = { I45 = { has_country_flag = cyranvar_isolationist_path } }
-                }
-            }
-		}
-	}
-
-	I45 = {
-        global_manpower_modifier = -0.2
-        global_trade_goods_size_modifier = -0.2
-        production_efficiency = -0.2
-        trade_efficiency = -0.2
-        global_tax_modifier = -0.2
-        global_unrest = 10
-    }
-}
+#isolationist_cyranvar_not_isolating = {
+#	potential = {
+#		#normal_or_historical_nations = yes
+#		always = yes
+#	}
+#
+#	trigger = {	
+#		owner = {
+#			OR = {
+#                AND = {
+#                    tag = I45
+#                    has_country_flag = cyranvar_isolationist_path
+#                }
+#                AND = {
+#                    is_subject_of = I45
+#                    limit = { I45 = { has_country_flag = cyranvar_isolationist_path } }
+#                }
+#            }
+#		}
+#	}
+#
+#	I45 = {
+#        global_manpower_modifier = -0.2
+#        global_trade_goods_size_modifier = -0.2
+#        production_efficiency = -0.2
+#        trade_efficiency = -0.2
+#        global_tax_modifier = -0.2
+#        global_unrest = 10
+#    }
+#}
 

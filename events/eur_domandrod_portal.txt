@@ -1,4 +1,4 @@
-namespace = eur_domandrod_portal
+#n amespace = eur_domandrod_portal
 
 #Portal opens
 #    id = eur_domandrod_portal.1

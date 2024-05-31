@@ -552,7 +552,7 @@ bulwar_quarters_1 = {
 			}
 			OR = {
 				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
+				full_idea_group = focus_inwards
 			}
 			NOT = { inflation = 2 }
 			treasury = 300

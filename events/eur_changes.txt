@@ -1,3 +1,4 @@
+namespace = eur_changes
 
 #Pirateer efficiency debuff
 country_event = {

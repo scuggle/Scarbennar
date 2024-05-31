@@ -1122,7 +1122,7 @@ moon_mountains = {
 		AND = {
 			has_owner_religion = yes	
 			province_is_or_accepts_culture = yes
-			OR {
+			OR = {
 				religion = old_bulwari_sun_cult
 				religion = the_jadd
 				AND = {
@@ -1141,7 +1141,7 @@ moon_mountains = {
 		AND = {
 			has_owner_religion = yes	
 			province_is_or_accepts_culture = yes
-			OR {
+			OR = {
 				religion = old_bulwari_sun_cult
 				religion = the_jadd
 				AND = {
@@ -1322,11 +1322,7 @@ stone_palace = {
 		area_modifier = {
 		}
 		country_modifiers = {
-<<<<<<< HEAD
-			advisor_cost = -0.010
-=======
 			advisor_cost = -0.05
->>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 			yearly_corruption = -0.05
 		}
 		on_upgraded = {
@@ -1344,13 +1340,8 @@ stone_palace = {
 		area_modifier = {
 		}
 		country_modifiers = {
-<<<<<<< HEAD
-			advisor_cost = -0.025
-			yearly_corruption = -0.075
-=======
 			advisor_cost = -0.1
 			yearly_corruption = -0.1
->>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 		}
 		on_upgraded = {
 		}
@@ -1367,13 +1358,8 @@ stone_palace = {
 		area_modifier = {
 		}
 		country_modifiers = {
-<<<<<<< HEAD
-			advisor_cost = -0.05
-			yearly_corruption = -0.1
-=======
 			advisor_cost = -0.15
 			yearly_corruption = -0.15
->>>>>>> parent of 267f1a8aaa (Stalin Axed The Monuments)
 		}
 		on_upgraded = {
 		}

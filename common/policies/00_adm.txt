@@ -3,29 +3,27 @@ eur_one_nation_under_one = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
-		
+			full_idea_group = plutocracy_ideas
 		}
 	}
     
     max_absolutism = 15
 	yearly_absolutism = 1
-	
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -37,23 +35,22 @@ eur_centralization = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
-		
+			full_idea_group = plutocracy_ideas
 		}
 	}
     
@@ -70,28 +67,26 @@ eur_expand_the_administration = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
-		
+			full_idea_group = plutocracy_ideas
 		}
 	}
     
     governing_capacity_modifier = 0.2
-	
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -108,18 +103,18 @@ eur_embrace_the_new_ideas = {
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
-		
+			full_idea_group = plutocracy_ideas
 		}
 	}
     
@@ -137,29 +132,27 @@ eur_wartime_measures = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
-		
+			full_idea_group = plutocracy_ideas
 		}
 	}
     
     war_taxes_cost_modifier = -1
 	war_exhaustion = -0.01
-	
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -171,29 +164,27 @@ eur_support_the_stonemason_guilds = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
-		
+			full_idea_group = plutocracy_ideas
 		}
 	}
     
     great_project_upgrade_cost = -0.2
 	build_time = -0.1
-	
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -205,22 +196,22 @@ eur_support_the_artists = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
+			full_idea_group = plutocracy_ideas
 		
 		}
 	}
@@ -231,7 +222,6 @@ eur_support_the_artists = {
 	republican_tradition = 0.3
 	horde_unity = 1
 	
-	
 	ai_will_do = {
 		factor = 0.8		
 	}
@@ -241,30 +231,28 @@ eur_religious_tolerance = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
-		
+			full_idea_group = plutocracy_ideas
 		}
 	}
     
     tolerance_heretic = 1
 	tolerance_heathen = 1
 	religious_unity = 0.25
-	
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -275,29 +263,27 @@ eur_reform_the_administration = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
-		
+			full_idea_group = plutocracy_ideas
 		}
 	}
     
     yearly_corruption = -0.01
 	monthly_reform_progress_modifier = 0.25
-	
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -308,29 +294,27 @@ eur_monetary_control = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
+			full_idea_group = plutocracy_ideas
 		
 		}
 		NOT = {
         	OR = {
-            	
             	has_active_policy = eur_loose_market_control
-
             }
         }
 	}
@@ -348,29 +332,27 @@ eur_loose_market_control = {
 
 	potential = {
 		adm_tech = 3
-
 	}
 	
 	allow = {	
 		OR = {
+			full_idea_group = focus_inwards
+			#full_idea_group = logistical_ideas
 			full_idea_group = innovativeness_ideas
 			full_idea_group = religious_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = focus_inwards
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
 			full_idea_group = administrative_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = humanist_ideas
+			#full_idea_group = infrastructure_ideas
 			full_idea_group = theocracy_gov_ideas
 			full_idea_group = horde_gov_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = logistical_ideas
-			full_idea_group = expansion_ideas
+			full_idea_group = plutocracy_ideas
 		
 		}
 		NOT = {
         	OR = {
-            	
             	has_active_policy = eur_monetary_control
-
             }
         }
 	}
