@@ -1,9 +1,13 @@
 
 # No previous file for Demerara
-owner = B39
-controller = B39
-add_core = B39
-culture = vernman
+#owner = B39
+#controller = B39
+#add_core = B39
+#culture = vernman
+owner = Z37
+controller = Z37
+add_core = Z37
+culture = covenbladic
 religion = regent_court
 capital = ""
 

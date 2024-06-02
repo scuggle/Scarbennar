@@ -73,6 +73,11 @@ country_event = {
 			}
 		}
 		else_if = {
+			limit = { tag = B53 } #Nurcestir
+			add_government_reform = damerian_technomonarchy
+			country_event = { id = "anbennar_setup.19" }
+		}
+		else_if = {
 			limit = { tag = B37 } #Rogieria
 			add_government_reform = damerian_monarchy
 		}

@@ -12856,3 +12856,63 @@ vels_bacar_the_panykorun = {
 		diplomats = 1
 	}
 }
+
+damerian_technomonarchy = {
+	icon = "british_queen"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			primary_culture = west_damerian
+			primary_culture = east_damerian
+			primary_culture = rogieran
+			primary_culture = pashainey
+		}
+		OR = {
+			tag = B53
+			was_tag = B53
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "Common Sense"
+	}
+	start_territory_to_estates = 0.3
+	modifiers = {
+		diplomatic_reputation = 1
+		global_unrest = -1
+		max_absolutism = -15
+		nobles_influence_modifier = -0.1
+		nobles_loyalty_modifier = -0.1
+		mages_loyalty_modifier = -0.1
+		mages_influence_modifier = -0.1
+		administrative_efficiency = -0.025
+		artificers_influence_modifier = 0.1
+		advisor_cost = -0.05
+		advisor_pool = 1
+		female_advisor_chance = 0.33
+		allowed_rajput_fraction = 0.05
+		idea_cost = -0.025
+		technology_cost = -0.025
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = { 			
+			has_dlc = "Domination"
+		}
+ 		has_parliament = yes
+ 		custom_attributes = {
+ 			estates_influenced_parliament = yes
+ 		}
+ 	}
+	#custom_attributes = {
+	#	is_technocracy = yes
+	#}
+}

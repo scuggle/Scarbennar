@@ -3,8 +3,10 @@
 owner = X19
 controller = X19
 add_core = X19
-add_core = Z37
-culture = aldresian
+#add_core = Z37
+add_core = B39
+#culture = aldresian
+culture = vernman
 religion = regent_court
 capital = ""
 hre = no

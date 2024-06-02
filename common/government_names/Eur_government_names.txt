@@ -53,3 +53,29 @@ bronze_dual_government_reform_monarch = {
 		}
 	}
 }
+
+damerian_technomonarchy_monarch = {
+	rank = {
+		1 = TECHNO_DUCHY
+		2 = TECHNO_KINGDOM
+		3 = TECHNO_EMPIRE
+	}
+
+	ruler_male = {
+		1 = TECHNO_DUKE
+		2 = TECHNO_KING
+		3 = TECHNO_EMPEROR
+	}
+
+	ruler_female = {
+		1 = TECHNO_LORD
+		2 = TECHNO_QUEEN
+		3 = TECHNO_EMPRESS
+	}
+
+
+	trigger = {
+		has_reform = damerian_technomonarchy
+		tag = B53
+	}
+}

@@ -548,3 +548,7 @@ bronze_extra_goods = {
 }
 
 bronze_extra_harimari = {} 
+
+duwarkani_pu = {
+	years_to_integrate_personal_union = -40
+}

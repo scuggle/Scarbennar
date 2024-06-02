@@ -4,8 +4,10 @@
 owner = Z36
 controller = Z36
 add_core = Z36
-add_core = Z37
-culture = aldresian
+#add_core = Z37
+add_core = B39
+#culture = aldresian
+culture = vernman
 religion = regent_court
 capital = ""
 hre = no

@@ -694,6 +694,7 @@ set_up_artifice_system = {
 				culture_group = kobold
 				culture_group = goblin
 				culture_group = gnomish
+				tag = B53
 			}
 			NOT = { primary_culture = goldscale_kobold }
 		}

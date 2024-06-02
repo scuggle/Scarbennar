@@ -6,7 +6,7 @@ government_rank = 2
 primary_culture = vernman
 religion = regent_court
 technology_group = tech_cannorian
-capital = 748
+capital = 817
 
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }

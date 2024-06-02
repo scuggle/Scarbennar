@@ -60,8 +60,14 @@
  eur_changes.5.d:0 "Gelkalis is cope, so they get to be an autonomous vassal at least."
  eur_changes.5.a:0 "Got it"
 
-eur_religious_unity_boost: "Religious Unity Boost."
-eur_religious_unity_boost.desc: "+50% Religious Unity and +2 Tolerance of Heathens."
+ eur_religious_unity_boost: "Religious Unity Boost."
+ eur_religious_unity_boost.desc: "+50% Religious Unity and +2 Tolerance of Heathens."
 
-there_is_nothing_to_colonize: "The Price of Settlement §B Expires in 1484. §"
-there_is_nothing_to_colonize.desc: "Everything you could've colonize has already been; isn't that great? §B Expires in 1484. §"
+ there_is_nothing_to_colonize: "The Price of Settlement §B Expires in 1484. §"
+ there_is_nothing_to_colonize.desc: "Everything you could've colonize has already been; isn't that great? §B Expires in 1484. §"
+
+ form_duwarkani_pu: "Create Munzeri Personal Union"
+ form_duwarkani_pu.desc: "Form a Personal Union with our friends of Munzeri"
+ formed_duwarkani_pu: "Formed Duwarkani PU"
+ duwarkani_pu: "PU integration bonus"
+ 
