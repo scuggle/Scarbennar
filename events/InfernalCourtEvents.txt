@@ -1007,6 +1007,7 @@ province_event = { #cult provinces
 		owner = { add_years_of_income = -0.5 }
 		hidden_effect = {
 			clr_province_flag = unsuppressed_infernal_cult
+			set_country_flag = eur_declined_infernal_cult
 		}
 	}
 	option = {

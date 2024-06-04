@@ -5408,6 +5408,7 @@ on_yearly_pulse_3 = {
 						NOT = { has_country_flag = infernal_court_conversion_stage_2 }
 						NOT = { has_country_flag = infernal_court_conversion_stage_3 }
 						NOT = { religion = infernal_court }
+						NOT = { has_country_flag = eur_declined_infernal_cult }
 					}
 					OR = {
 						AND = {

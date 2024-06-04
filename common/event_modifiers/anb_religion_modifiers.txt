@@ -916,7 +916,7 @@ IC_devilish_indulgence = {
 }
 infernal_cult_hub = {
 	yearly_corruption = 0.1
-	local_autonomy = 10
+	min_local_autonomy = 10
 	local_unrest = 2
 }
 
