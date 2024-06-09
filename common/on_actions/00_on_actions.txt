@@ -11366,9 +11366,9 @@ on_primary_culture_changed = {
 
 	#Anbennar
 	events = {
-		racial_modifiers.5 #Racial Admin and Military - on primary culture change
-		racial_modifiers.7 #Save primary culture
-		racial_modifiers.8 #Change back primary culture if the country has a locked administration
+		#racial_modifiers.5 #Racial Admin and Military - on primary culture change
+		#racial_modifiers.7 #Save primary culture
+		#racial_modifiers.8 #Change back primary culture if the country has a locked administration
 		monstrous.102 #Remove opinion if no longer monstrous
 
 		escanni_wars.3 # Escanni wars bypass

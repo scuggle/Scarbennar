@@ -40,6 +40,7 @@ custom_button = {
 			NOT = { has_country_flag = racial_pop_menu_opened } # Sorting can mess up if both open
 		}
 		NOT = { has_country_modifier = restructuring_military }
+		always = no
 	}
 	effect = {
 		hidden_effect = {

@@ -9,6 +9,7 @@ country_decisions = {
 					region = olavlund_region
 					region = dalr_region
 					region = alenic_reach_region
+					region = gerudian_frontier_region
 				}
 			}
 			OR = {
@@ -48,7 +49,7 @@ country_decisions = {
 
             num_of_owned_provinces_with = {
 				value = 20
-				region = gerudian_frontier_region
+				region = olavlund_region
 			}
 			num_of_owned_provinces_with = {
 				value = 20
@@ -91,6 +92,12 @@ country_decisions = {
 				add_permanent_claim = X01
 			}
 			alenic_reach_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = X01
+			}
+			olavlund_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
