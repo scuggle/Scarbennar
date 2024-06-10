@@ -7,7 +7,7 @@ primary_culture = stone_dwarf
 religion = regent_court
 technology_group = tech_dwarven
 capital = 817
-add_accepted_culture = aldresian
+add_accepted_culture = vernman
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 
