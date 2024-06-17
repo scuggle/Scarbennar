@@ -32,6 +32,7 @@ custom_button = {
 	trigger = {
 		hidden_trigger = {
 			ai = no
+			always = no
 		}
 		hidden_trigger = {
 			NOT = { has_country_flag = racial_military_menu_opened }
