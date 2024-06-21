@@ -20,11 +20,23 @@ ibevar_temple_of_munas = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
-		has_owner_religion = yes
+		AND = {
+			has_owner_religion = yes
+			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
 				religion = elven_forebears
+				AND = {
+					religion_group = cannorian
+					stability = 1
+					OR = {
+						full_idea_group = minority_ideas
+						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+						stability = 3
+					}
+				}
 			}
+		}
 		AND = {
 			custom_trigger_tooltip = {
 				tooltip = cannorian_monuments_can_use_tooltip_empire_of_anbennar
@@ -44,11 +56,23 @@ ibevar_temple_of_munas = {
 		}
 	}
 	can_upgrade_trigger = {
-		has_owner_religion = yes
+		AND = {
+			has_owner_religion = yes
+			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
 				religion = elven_forebears
+				AND = {
+					religion_group = cannorian
+					stability = 1
+					OR = {
+						full_idea_group = minority_ideas
+						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+						stability = 3
+					}
+				}
 			}
+		}
 		AND = {
 			custom_trigger_tooltip = {
 				tooltip = cannorian_monuments_can_use_tooltip_empire_of_anbennar

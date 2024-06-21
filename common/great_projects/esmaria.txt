@@ -309,7 +309,19 @@ temple_of_ryala = {
 	can_use_modifiers_trigger = {
 		AND = {
 			has_owner_religion = yes
-			religion = regent_court
+			NOT = { religion = infernal_court }
+			OR = {
+				religion = regent_court
+				AND = {
+					religion_group = cannorian
+					stability = 1
+					OR = {
+						full_idea_group = minority_ideas
+						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+						stability = 3
+					}
+				}
+			}
 				custom_trigger_tooltip = {
 					tooltip = cannorian_monuments_can_use_tooltip_empire_of_anbennar
 						OR = {
@@ -330,7 +342,19 @@ temple_of_ryala = {
 	can_upgrade_trigger = {
 		AND = {
 			has_owner_religion = yes
-			religion = regent_court
+			NOT = { religion = infernal_court }
+			OR = {
+				religion = regent_court
+				AND = {
+					religion_group = cannorian
+					stability = 1
+					OR = {
+						full_idea_group = minority_ideas
+						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+						stability = 3
+					}
+				}
+			}
 				custom_trigger_tooltip = {
 					tooltip = cannorian_monuments_can_use_tooltip_empire_of_anbennar
 						OR = {
