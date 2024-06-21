@@ -304,11 +304,23 @@ silent_repose = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
-		has_owner_religion = yes
+		AND = {
+			has_owner_religion = yes
+			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
 				religion = elven_forebears
+				AND = {
+					religion_group = cannorian
+					stability = 1
+					OR = {
+						full_idea_group = minority_ideas
+						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+						stability = 3
+					}
+				}
 			}
+		}
 		AND = {
 			custom_trigger_tooltip = {
 				tooltip = cannorian_monuments_can_use_tooltip_empire_of_anbennar
@@ -328,11 +340,23 @@ silent_repose = {
 		}
 	}
 	can_upgrade_trigger = {
-		has_owner_religion = yes
+		AND = {
+			has_owner_religion = yes
+			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
 				religion = elven_forebears
+				AND = {
+					religion_group = cannorian
+					stability = 1
+					OR = {
+						full_idea_group = minority_ideas
+						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+						stability = 3
+					}
+				}
 			}
+		}
 		AND = {
 			custom_trigger_tooltip = {
 				tooltip = cannorian_monuments_can_use_tooltip_empire_of_anbennar
@@ -382,7 +406,7 @@ silent_repose = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			war_exhaustion_cost = -0.01
+			war_exhaustion_cost = -0.1
 			war_exhaustion = -0.01
 		}
 		on_upgraded = {
@@ -402,7 +426,7 @@ silent_repose = {
 			local_unrest = -2
 		}
 		country_modifiers = {
-			war_exhaustion_cost = -0.02
+			war_exhaustion_cost = -0.2
 			war_exhaustion = -0.02
 			advisor_pool = 1
 		}
@@ -425,7 +449,7 @@ silent_repose = {
 		}
 		country_modifiers = {
 			war_exhaustion = -0.03
-			war_exhaustion_cost = -0.03
+			war_exhaustion_cost = -0.3
 			advisor_pool = 1
 			tolerance_heretic = 1
 			tolerance_heathen = 1
