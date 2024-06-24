@@ -7,6 +7,10 @@ emperor_reichsreform = {
 		local_build_cost = -0.05
 		local_development_cost = -0.05
 	}
+	emperor = {
+		free_city_imperial_authority = 0.5
+		max_free_cities = 3
+	}
 	on_effect = {
 		imperial_ban_allowed = yes
 	}
@@ -23,10 +27,13 @@ emperor_reichsregiment = {
 	}
 	province = {
 		local_unrest = -2
+		local_monthly_devastation = -0.05
 	}
 	emperor = {
 		diplomatic_reputation = 1
 		diplomats = 1
+		max_electors = 1
+		imperial_authority = 0.1
 	}
 	required_reform = emperor_reichsreform
 	gui_container = mainline
@@ -40,8 +47,13 @@ emperor_reichsstabilitaet = {
 	potential = {
 		has_dlc = "Emperor"
 	}
+	
 	province = {
 		local_state_maintenance_modifier = -0.25
+		local_governing_cost = -0.1
+	}
+	emperor = {
+		imperial_authority = 0.1
 	}
 	on_effect = {
 		custom_tooltip = "EXPAND_EMPIRE_CB"
@@ -55,6 +67,10 @@ emperor_gemeinerpfennig = {
 	}
 	all = {
 		diplomatic_reputation = 1
+		ae_impact = -0.1
+	}
+	emperor = {
+		imperial_authority = 0.1
 	}
 	emperor_per_prince = {
 		global_tax_income = 0.5
@@ -74,6 +90,7 @@ emperor_perpetual_diet = {
 	
 	emperor = {
 		free_city_imperial_authority = 0.5
+		imperial_authority = 0.1
 	}
 	on_effect = {
 		custom_tooltip = "PERPETUAL_DIET_ESTABLISHED"
@@ -211,7 +228,8 @@ emperor_rechenschaft = {
 		imperial_authority = 0.01
 	}
 	emperor = {
-		max_electors = 1
+		#max_electors = 1
+		diplomatic_reputation = 2
 	}
 	#Anbennar
 	on_effect = {
