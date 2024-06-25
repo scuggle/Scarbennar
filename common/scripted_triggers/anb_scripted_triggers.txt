@@ -2578,7 +2578,7 @@ is_evil = {
 			has_country_flag = witch_king_flag
 			has_country_flag = exposed_vampire_ruler
 			has_country_flag = exposed_lich_ruler
-			#religion = infernal_court
+			religion = infernal_court
 		}
 	}
 }
@@ -2588,7 +2588,7 @@ is_not_evil = {
 		NOT = { has_country_flag = witch_king_flag }
 		NOT = { has_country_flag = exposed_vampire_ruler }
 		NOT = { has_country_flag = exposed_lich_ruler }
-		#NOT = { religion = infernal_court }
+		NOT = { religion = infernal_court }
 	}
 }
 
