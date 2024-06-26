@@ -1,6 +1,6 @@
 
 # No previous file for Candelaria
-culture = west_damerian #faranean
+culture = ancardian #faranean
 religion = regent_court
 capital = ""
 hre = no
@@ -8,7 +8,7 @@ owner = B35
 controller = B35
 add_core = B35
 
-base_tax = 3
+base_tax = 5
 base_production = 4
 base_manpower = 3
 

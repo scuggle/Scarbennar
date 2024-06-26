@@ -4,7 +4,7 @@ owner = B45
 controller = B45
 add_core = B45
 add_core = B40
-culture = gawedi
+culture = alenori
 religion = regent_court
 
 hre = no

@@ -3,7 +3,7 @@
 owner = Z36
 controller = Z36
 add_core = Z36
-culture = stone_dwarf
+culture = iron_dwarf
 religion = regent_court
 capital = ""
 #tribal_owner = B30

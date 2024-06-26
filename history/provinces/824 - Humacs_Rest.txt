@@ -1,6 +1,6 @@
 
 # No previous file for Mariquita
-culture = high_lorentish
+culture = rosanda
 religion = regent_court
 owner = Z35
 controller = Z35

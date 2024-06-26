@@ -3,7 +3,7 @@ setup_vision = yes
 government = monarchy
 add_government_reform = damerian_technomonarchy
 government_rank = 2
-primary_culture = east_damerian
+primary_culture = nurcestiran
 religion = regent_court
 technology_group = tech_cannorian
 capital = 756
@@ -28,7 +28,7 @@ set_country_flag = init_racial_adm_mil
 	monarch = {
 		name = "Pondo"
 		dynasty = "Fussbolt"
-		culture = east_damerian
+		culture = nurcestiran
 		birth_date = 1190.8.22
 		death_date = 1473.3.15
 		#he died before nurcestir in canon you see :)

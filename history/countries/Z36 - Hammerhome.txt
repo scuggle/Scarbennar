@@ -3,11 +3,11 @@ setup_vision = yes
 government = republic
 add_government_reform = adventurer_republic_reform
 government_rank = 1
-primary_culture = stone_dwarf
+primary_culture = iron_dwarf
 religion = regent_court
 technology_group = tech_dwarven
 capital = 817
-add_accepted_culture = vernman
+add_accepted_culture = heartman
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 

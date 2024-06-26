@@ -1,6 +1,6 @@
 
 # No previous file for Rio de la Plata
-culture = roilsardi
+culture = luciander
 religion = regent_court
 capital = "Hushdell"
 is_city = yes
@@ -12,7 +12,7 @@ hre = no
 
 base_tax = 3
 base_production = 1
-base_manpower = 1
+base_manpower = 3
 
 trade_goods = grain
 

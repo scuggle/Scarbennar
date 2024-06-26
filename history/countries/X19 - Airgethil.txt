@@ -7,7 +7,7 @@ primary_culture = moon_elf
 religion = regent_court
 technology_group = tech_elven
 capital = 743
-add_accepted_culture = vernman
+add_accepted_culture = heartman
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 

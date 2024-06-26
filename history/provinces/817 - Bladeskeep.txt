@@ -3,7 +3,7 @@
 owner = Z35
 controller = Z35
 add_core = Z35
-culture = high_lorentish
+culture = rosanda
 religion = regent_court
 
 hre = no

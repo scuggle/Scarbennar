@@ -1,6 +1,6 @@
 
 # No previous file for Tandil
-culture = west_damerian
+culture = ancardian
 religion = regent_court
 capital = ""
 owner = B35

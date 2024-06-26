@@ -12,8 +12,8 @@ religion = regent_court
 technology_group = tech_cannorian
 capital = 827
 historical_rival = B01 #Greentide
-add_accepted_culture = vernman
-add_accepted_culture = esmari
+add_accepted_culture = heartman
+add_accepted_culture = estairey
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 

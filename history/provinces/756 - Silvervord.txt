@@ -3,7 +3,7 @@
 owner = B53
 controller = B53
 add_core = B53
-culture = east_damerian
+culture = nurcestiran
 religion = regent_court
 capital = ""
 hre = no

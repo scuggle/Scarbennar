@@ -1,6 +1,6 @@
 
 # No previous file for Sao Tome
-culture = east_damerian
+culture = rogieran
 religion = regent_court
 capital = ""
 hre = no

@@ -487,11 +487,11 @@ country_decisions = {
 				tag = Z37 #Covenblad
 				tag = B49 #Araionn
 				tag = B48 #Ravenmarch
-				tag = B47 #Stálbor
+				tag = B47 #Stalbor
 				tag = B51 #Estaire
 				tag = B54 #Esthil
 				tag = Z36 #Hammerhome
-				tag = Z35 #Rósande
+				tag = Z35 #Rosande
 			}
 			NOT = {
 				has_country_flag = clicked_feudal_escann_is_back
@@ -521,12 +521,12 @@ country_decisions = {
 			}
 			else = { country_event = { id = marcher.1 days = 1 } }
 			#country_event = { id = adventurer.2 days = 10 }
-			hidden_effect = {
-				country_event = { #new culture event, 10 years after their debuff runs out
-					id = marcher.2
-					days = 25550
-				}
-			}
+			#hidden_effect = {
+			#	country_event = { #new culture event, 10 years after their debuff runs out
+			#		id = marcher.2
+			#		days = 25550
+			#	}
+			#}
 			set_country_flag = clicked_feudal_escann_is_back
 		}
 

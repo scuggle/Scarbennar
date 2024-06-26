@@ -1,6 +1,6 @@
 
 # No previous file for Alexandria
-culture = roilsardi
+culture = luciander
 religion = regent_court
 capital = "Coldrest"
 is_city = yes
@@ -10,7 +10,7 @@ add_core = B34
 
 hre = no
 
-base_tax = 1
+base_tax = 2
 base_production = 2
 base_manpower = 3
 

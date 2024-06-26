@@ -1,6 +1,6 @@
 
 # No previous file for Arequipa
-culture = corvurian
+culture = ravenmarcher
 religion = regent_court
 capital = ""
 #tribal_owner = B29
