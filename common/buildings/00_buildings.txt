@@ -650,16 +650,16 @@ courthouse = {
 }
 
 dock = {
-	cost = 100
+	cost = 70
 	time = 12
 	build_trigger = {
 		has_port = yes
 	}
 	modifier = {
-		local_sailors_modifier = 0.5
+		local_sailors_modifier = 0.35
 		local_has_man_of_war = yes #1.35
 		local_has_galleass = yes #1.35
-		province_trade_power_value = 2
+		allowed_num_of_buildings = 1
 	}
 
 	on_built = {
@@ -1771,7 +1771,7 @@ town_hall = {
 }
 
 drydock = {
-	cost = 300
+	cost = 210
 	time = 12
 
 	make_obsolete = dock
@@ -1781,10 +1781,10 @@ drydock = {
 	}
 
 	modifier = {
-		local_sailors_modifier = 1.0
+		local_sailors_modifier = 0.7
 		local_has_man_of_war = yes #1.35
 		local_has_galleass = yes #1.35
-		province_trade_power_value = 4
+		allowed_num_of_buildings = 1
 	}
 
 	on_built = {
@@ -3159,8 +3159,8 @@ mage_tower = {
 		local_hostile_attrition = 1
 	}
 	bonus_modifier = {
-		local_development_cost = -0.05
-		tax_income= 2.5
+		#local_development_cost = -0.05
+		tax_income = 1
 		local_hostile_attrition = 1
 		allowed_num_of_manufactories = 1
 	}
