@@ -28,11 +28,13 @@ ibevar_temple_of_munas = {
 				religion = elven_forebears
 				owner = {
 					religion_group = cannorian
-					stability = 1
-					OR = {
-						full_idea_group = minority_ideas
-						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
-						stability = 3
+					owner = {
+						stability = 1
+						OR = {
+							full_idea_group = minority_ideas
+							has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+							stability = 3
+						}
 					}
 				}
 			}
@@ -64,11 +66,13 @@ ibevar_temple_of_munas = {
 				religion = elven_forebears
 				owner = {
 					religion_group = cannorian
-					stability = 1
-					OR = {
-						full_idea_group = minority_ideas
-						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
-						stability = 3
+					owner = {
+						stability = 1
+						OR = {
+							full_idea_group = minority_ideas
+							has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+							stability = 3
+						}
 					}
 				}
 			}
