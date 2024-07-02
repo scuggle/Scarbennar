@@ -5,6 +5,7 @@ country_event = {
     id = flavor_griffon_empire.1
     title = flavor_griffon_empire.1.t
     desc = flavor_griffon_empire.1.d
+    picture = no
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -23,6 +24,7 @@ country_event = {
     id = flavor_griffon_empire.2
     title = flavor_griffon_empire.2.t
     desc = flavor_griffon_empire.2.d
+    picture = no
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -61,6 +63,7 @@ country_event = {
     id = flavor_griffon_empire.3
     title = flavor_griffon_empire.3.t
     desc = flavor_griffon_empire.3.d
+    picture = no
 
     fire_only_once = yes
     is_triggered_only = yes
