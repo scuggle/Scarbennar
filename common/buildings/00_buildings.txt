@@ -32,6 +32,7 @@ marketplace = {
 
 	modifier = {
 		province_trade_power_modifier = 0.5
+		trade_value_modifier = 0.1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -109,7 +110,7 @@ temple = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.5
+		local_tax_modifier = 0.6
 		local_unrest = -1
 	}
 	on_built = {
@@ -227,7 +228,7 @@ barracks = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 0.4
 	}
 	on_built = {
 		# if = {
@@ -322,6 +323,7 @@ shipyard = {
 		local_ship_repair = 0.25
 		local_has_man_of_war = yes #1.35
 		local_has_galleass = yes #1.35
+		blockade_force_required = 0.25
 	}
 	on_built = {
 		add_development_from_building = {
@@ -648,15 +650,16 @@ courthouse = {
 }
 
 dock = {
-	cost = 100
+	cost = 70
 	time = 12
 	build_trigger = {
 		has_port = yes
 	}
 	modifier = {
-		local_sailors_modifier = 0.5
+		local_sailors_modifier = 0.35
 		local_has_man_of_war = yes #1.35
 		local_has_galleass = yes #1.35
+		allowed_num_of_buildings = 1
 	}
 
 	on_built = {
@@ -751,7 +754,7 @@ regimental_camp = {
 	cost = 200
 	time = 12
 	modifier = {
-		land_forcelimit = 1
+		land_forcelimit = 0.75
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -970,6 +973,31 @@ naval_battery = {
 	time = 12
 	build_trigger = {
 		has_port = yes
+		NOT = {
+			area_for_scope_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = naval_battery
+					has_construction = naval_battery
+				}
+			}
+		}
+	}
+
+	keep_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = naval_battery
+					has_construction = naval_battery
+				}
+			}
+		}
 	}
 	on_built = {
 		#Anbennar
@@ -980,6 +1008,7 @@ naval_battery = {
 		hostile_disembark_speed = 2.0
 		hostile_fleet_attrition = 10
 		block_slave_raid = yes
+		allowed_num_of_buildings = 1
 	}
 
 	ai_will_do = {
@@ -1200,6 +1229,7 @@ trade_depot = {
 
 	modifier = {
 		province_trade_power_modifier = 1
+		trade_value_modifier = 0.2
 	}
 
 	on_built = {
@@ -1247,6 +1277,7 @@ grand_shipyard = {
 		local_ship_repair = 0.50
 		local_has_man_of_war = yes #1.35
 		local_has_galleass = yes #1.35
+		blockade_force_required = 0.5
 	}
 
 	on_built = {
@@ -1317,7 +1348,7 @@ training_fields = {
 #	}
 
 	modifier = {
-		local_manpower_modifier = 1
+		local_manpower_modifier = 0.8
 	}
 
 	on_built = {
@@ -1535,6 +1566,7 @@ stock_exchange = {
 
 	modifier = {
 		province_trade_power_modifier = 1.25
+		trade_value_modifier = 0.25
 	}
 
 	on_built = {
@@ -1739,7 +1771,7 @@ town_hall = {
 }
 
 drydock = {
-	cost = 300
+	cost = 210
 	time = 12
 
 	make_obsolete = dock
@@ -1749,9 +1781,10 @@ drydock = {
 	}
 
 	modifier = {
-		local_sailors_modifier = 1.0
+		local_sailors_modifier = 0.7
 		local_has_man_of_war = yes #1.35
 		local_has_galleass = yes #1.35
+		allowed_num_of_buildings = 1
 	}
 
 	on_built = {
@@ -1833,7 +1866,7 @@ conscription_center = {
 #	}
 
 	modifier = {
-		land_forcelimit = 2
+		land_forcelimit = 1.5
 	}
 	on_built = {
 		add_development_from_upgrading_or_building = {
@@ -2022,7 +2055,7 @@ manufactory = {
 	cost = 500
 	time = 60
 	modifier = {
-		trade_goods_size = 1.0
+		trade_goods_size = 1
 	}
 }
 
@@ -2767,10 +2800,10 @@ soldier_households = {
 	}
 
 	modifier = {
-		local_manpower = 0.75
+		local_manpower = 0.5
 	}
 	bonus_modifier = {
-		local_manpower = 0.75
+		local_manpower = 0.5
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -2869,17 +2902,44 @@ impressment_offices = {
 
 	build_trigger = {
 		has_port = yes
+		NOT = {
+			area_for_scope_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = impressment_offices
+					has_construction = impressment_offices
+				}
+			}
+		}
+	}
+
+	keep_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = impressment_offices
+					has_construction = impressment_offices
+				}
+			}
+		}
 	}
 
 	modifier = {
 		local_sailors = 250
 		ship_recruit_speed = -0.1
 		local_ship_cost = -0.05
+		allowed_num_of_buildings = 1
 	}
 	bonus_modifier = {
-		local_sailors = 250
-		ship_recruit_speed = -0.1
-		local_ship_cost = -0.05
+		local_sailors = 500
+		ship_recruit_speed = -0.2
+		local_ship_cost = -0.1
+		allowed_num_of_manufactories = 1
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -2960,6 +3020,8 @@ state_house = {
 		paper
 		glass
 		gems
+		damestear
+		precursor_relics
 	}
 
 	build_trigger = {
@@ -3086,17 +3148,21 @@ mage_tower = {
 	bonus_manufactory = { # Will apply an extra modifier if these goods
 		damestear
 		precursor_relics
+		tea
+		incense
+		tobacco
 	}
 
 	modifier = {
 		local_development_cost = -0.05
-		tax_income = 2
+		tax_income = 2.5
 		local_hostile_attrition = 1
 	}
 	bonus_modifier = {
-		local_development_cost = -0.05
-		tax_income= 2
+		#local_development_cost = -0.05
+		tax_income = 1
 		local_hostile_attrition = 1
+		allowed_num_of_manufactories = 1
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way

@@ -4,7 +4,7 @@
 owner = B35
 controller = B35
 add_core = B35
-culture = west_damerian
+culture = ancardian
 religion = regent_court
 
 hre = no

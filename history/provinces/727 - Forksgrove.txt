@@ -4,12 +4,12 @@ owner = B45
 controller = B45
 add_core = B45
 add_core = B40
-culture = gawedi
+culture = alenori
 religion = regent_court
 capital = ""
 hre = no
 
-base_tax = 1
+base_tax = 3
 base_production = 2
 base_manpower = 1
 

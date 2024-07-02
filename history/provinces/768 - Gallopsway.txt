@@ -1,6 +1,6 @@
 
 # No previous file for Guayra
-culture = anbenncoster
+culture = anbenlander
 religion = regent_court
 capital = ""
 hre = no

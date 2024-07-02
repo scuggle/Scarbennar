@@ -1,6 +1,6 @@
 
 # No previous file for Asuncion
-culture = roilsardi
+culture = luciander
 religion = regent_court
 capital = "Lonesfield"
 owner = B34
@@ -10,7 +10,7 @@ is_city = yes
 
 hre = no
 
-base_tax = 1
+base_tax = 3
 base_production = 3
 base_manpower = 1
 

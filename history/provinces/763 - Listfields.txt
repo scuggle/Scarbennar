@@ -3,7 +3,7 @@
 owner = B37
 controller = B37
 add_core = B37
-culture = east_damerian
+culture = rogieran
 religion = regent_court
 capital = ""
 hre = no

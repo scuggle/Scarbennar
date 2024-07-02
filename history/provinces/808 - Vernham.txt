@@ -5,7 +5,7 @@ owner = B29
 controller = B29
 add_core = B29
 add_core = B47
-culture = busilari
+culture = stalboric
 religion = regent_court
 
 hre = no

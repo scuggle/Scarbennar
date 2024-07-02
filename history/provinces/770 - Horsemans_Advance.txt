@@ -1,6 +1,6 @@
 
 # No previous file for Braslaw
-culture = anbenncoster
+culture = anbenlander
 religion = regent_court
 capital = ""
 owner = B34
@@ -10,7 +10,7 @@ add_core = B52
 
 hre = no
 
-base_tax = 1
+base_tax = 3
 base_production = 2
 base_manpower = 1
 

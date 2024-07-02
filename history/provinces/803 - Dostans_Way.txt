@@ -1,6 +1,6 @@
 
 # No previous file for Moxos
-culture = corvurian
+culture = ravenmarcher
 religion = regent_court
 capital = ""
 hre = no

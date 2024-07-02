@@ -3,7 +3,7 @@ setup_vision = yes
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 2
-primary_culture = aldresian
+primary_culture = esthili
 religion = regent_court
 technology_group = tech_cannorian
 capital = 766
@@ -20,7 +20,7 @@ capital = 766
 		adm = 2
 		dip = 1
 		mil = 3
-		culture = aldresian
+		culture = esthili
 	}
 	add_ruler_personality = cruel_personality
 	add_ruler_personality = mage_personality

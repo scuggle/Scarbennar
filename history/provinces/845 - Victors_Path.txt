@@ -6,12 +6,12 @@ add_core = X19
 #add_core = Z37
 add_core = B39
 #culture = aldresian
-culture = vernman
+culture = heartman
 religion = regent_court
 capital = ""
 hre = no
 
-base_tax = 1
+base_tax = 3
 base_production = 2
 base_manpower = 1
 

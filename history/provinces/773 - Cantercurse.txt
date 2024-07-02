@@ -3,12 +3,12 @@
 owner = B38
 controller = B38
 add_core = B38
-culture = hapremiti
+culture = elikhander
 religion = elikhetist
 capital = ""
 hre = no
 
-base_tax = 1
+base_tax = 2
 base_production = 4
 base_manpower = 2
 

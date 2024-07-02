@@ -3,11 +3,11 @@ setup_vision = yes
 government = monarchy
 add_government_reform = adventurer_kingdom_reform
 government_rank = 1
-primary_culture = high_lorentish
+primary_culture = rosanda
 religion = regent_court
 technology_group = tech_cannorian
 capital = 817
-add_accepted_culture = esmari
+add_accepted_culture = estairey
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 

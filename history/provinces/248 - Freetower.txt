@@ -5,13 +5,13 @@ owner = B34
 controller = B34
 add_core = B34
 add_core = B52
-culture = anbenncoster
+culture = anbenlander
 religion = regent_court
 
 hre = no
 
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 3
 base_manpower = 1
 
 trade_goods = fur

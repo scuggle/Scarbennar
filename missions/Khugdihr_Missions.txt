@@ -1030,7 +1030,7 @@ khugdihr_5 = {
 				849 = {
 					add_core = Z36
 					remove_core = ROOT
-					change_culture = stone_dwarf
+					change_culture = iron_dwarf
 					change_religion = ROOT
 				}
 				create_vassal_with_religion_and_culture = { tag = Z36 religion = ROOT culture = stone_dwarf }

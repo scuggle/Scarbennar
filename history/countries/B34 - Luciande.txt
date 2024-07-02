@@ -3,11 +3,11 @@ setup_vision = yes
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 2
-primary_culture = roilsardi
+primary_culture = luciander
 religion = regent_court
 technology_group = tech_cannorian
 capital = 257
-add_accepted_culture = anbenncoster
+add_accepted_culture = anbenlander
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 

@@ -3,7 +3,7 @@
 owner = B48
 controller = B48
 add_core = B48
-culture = corvurian
+culture = ravenmarcher
 religion = regent_court
 capital = "livestock"
 hre = no

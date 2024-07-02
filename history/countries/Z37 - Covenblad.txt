@@ -15,7 +15,7 @@ capital = 748
 	monarch = {
 		name = "Galinda"
 		dynasty = "síl na Eán"
-		culture = aldresian
+		culture = covenbladic
 		adm = 6
 		dip = 2
 		mil = 4
@@ -34,7 +34,7 @@ capital = 748
 		adm = 3
 		dip = 2
 		mil = 6
-		culture = aldresian
+		culture = covenbladic
 		female = yes
 	}
 	add_heir_personality = scholar_personality
