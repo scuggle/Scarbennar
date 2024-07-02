@@ -1,12 +1,10 @@
-#One time use only
+#One time use only:
 #Adds Anbennar's "new-master" to your github as remote repo
 git remote add Anbennar https://bitbucket.org/JayBean/anbennar-eu4-fork-public-build/src/new-master/ 
 
-
-#To check if it worked
+#To check if it worked:
 #Should now show "Anbennar    https://bitbucket.org/JayBean/anbennar-eu4-fork-public-build/src/new-master/ (fetch)"
 git remote -v
-
 
 #To pull from Anbennar:
 git fetch Anbennar
@@ -17,3 +15,14 @@ git checkout development
 #Merges their stuff into currently selected branch. i.e. "development"
 git merge temp --allow-unrelated-histories		#Fix merge conflicts manually in the github desktop app
 git branch --delete temp
+
+
+#To select specific commits to copy
+#On campaign branch:
+git log (campaign)
+#Copy the commit-hash
+git checkout development
+git cherry-pick (commit-hash) --no-commit
+#Fix conflicts
+#Commit changes
+#Push changes
