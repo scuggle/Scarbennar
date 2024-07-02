@@ -445,9 +445,11 @@ grozumdhir_green_gate = {
 			tolerance_of_heathens_capacity = 1
 		}
 		on_upgraded = {
-			add_country_modifier = {
-				name = grozumdhir_green_gate_friendlier_relations
-				duration = 7300
+			owner = {
+				add_country_modifier = {
+					name = grozumdhir_green_gate_friendlier_relations
+					duration = 7300
+				}
 			}
 		}
 	}

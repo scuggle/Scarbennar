@@ -106,14 +106,16 @@ verkal_gulan_hero_gate = {
 			inflation_reduction = -0.05
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = army_organiser
-				name = "Khadan Goldhammer"
-				skill = 3
-				culture = gold_dwarf
-				religion = ancestor_worship
-				location = 2914
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = army_organiser
+					name = "Khadan Goldhammer"
+					skill = 3
+					culture = gold_dwarf
+					religion = ancestor_worship
+					location = 2914
+					discount = yes
+				}
 			}
 		}
 	}

@@ -266,15 +266,15 @@ gronstunad_trade_halls = {
 					estate = estate_burghers
 					loyalty = 10
 				}
-			}
-			define_advisor = {
-				type = trader
-				name = "Gundobad Goldbeard"
-				skill = 3
-				culture = jade_dwarf
-				religion = ancestor_worship
-				location = 4311
-				discount = yes
+				define_advisor = {
+					type = trader
+					name = "Gundobad Goldbeard"
+					skill = 3
+					culture = jade_dwarf
+					religion = ancestor_worship
+					location = 4311
+					discount = yes
+				}
 			}
 		}
 	}
@@ -340,7 +340,9 @@ verkal_dromak_mage_academy = {
 							culture = black_orc
 							culture = mossmouth_ogre
 							AND = {
-								tag = Y01
+								owner = {
+									tag = Y01
+								}
 								culture = horned_ogre
 							}
 						}
@@ -361,7 +363,9 @@ verkal_dromak_mage_academy = {
 							culture = black_orc
 							culture = mossmouth_ogre
 							AND = {
-								tag = Y01
+								owner = {
+									tag = Y01
+								}
 								culture = horned_ogre
 							}
 						}
@@ -437,15 +441,15 @@ verkal_dromak_mage_academy = {
 					estate = estate_mages
 					loyalty = 10
 				}
-			}
-			define_advisor = {
-				type = court_mage
-				name = "Ragun Greybeard"
-				skill = 3
-				culture = malachite_dwarf
-				religion = ancestor_worship
-				location = 4323
-				discount = yes
+				define_advisor = {
+					type = court_mage
+					name = "Ragun Greybeard"
+					skill = 3
+					culture = malachite_dwarf
+					religion = ancestor_worship
+					location = 4323
+					discount = yes
+				}
 			}
 		}
 	}

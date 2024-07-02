@@ -71,10 +71,12 @@ prukakhin_bazaar_of_blood_and_ivory = {
 			burghers_loyalty_modifier = 0.025
 		}
 		on_upgraded = {
-			add_estate_loyalty = {
+			owner = {
+				add_estate_loyalty = {
 					estate = estate_burghers
 					loyalty = 5
 				}
+			}
 		}
 	}
 	tier_2 = {
@@ -97,18 +99,20 @@ prukakhin_bazaar_of_blood_and_ivory = {
 			burghers_influence_modifier = 0.025
 		}
 		on_upgraded = {
-			add_estate_loyalty = {
+			owner = {
+				add_estate_loyalty = {
 					estate = estate_burghers
 					loyalty = 10
 				}
-			define_advisor = {
-			type = trader
-			name = "Sao Prum"
-			skill = 3
-			culture = biengdi
-			religion = righteous_path
-			location = 4570
-			discount = yes
+				define_advisor = {
+					type = trader
+					name = "Sao Prum"
+					skill = 3
+					culture = biengdi
+					religion = righteous_path
+					location = 4570
+					discount = yes
+				}
 			}
 		}
 	}
@@ -133,10 +137,12 @@ prukakhin_bazaar_of_blood_and_ivory = {
 			placed_merchant_power = 5
 		}
 		on_upgraded = {
-			add_estate_loyalty = {
+			owner = {
+				add_estate_loyalty = {
 					estate = estate_burghers
 					loyalty = 15
 				}
+			}
 		}
 	}
 }
@@ -468,9 +474,11 @@ lapnam_amrik_weapon_market = {
 			infantry_power = 0.05
 		}
 		on_upgraded = {
-			add_estate_loyalty = {
-				estate = estate_daulophs
-				loyalty = 5
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_daulophs
+					loyalty = 5
+				}
 			}
 		}
 	}
@@ -495,9 +503,11 @@ lapnam_amrik_weapon_market = {
 			cavalry_power = 0.05
 		}
 		on_upgraded = {
-			add_estate_loyalty = {
-				estate = estate_daulophs
-				loyalty = 10
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_daulophs
+					loyalty = 10
+				}
 			}
 		}
 	}
@@ -523,9 +533,11 @@ lapnam_amrik_weapon_market = {
 			artillery_power = 0.05
 		}
 		on_upgraded = {
-			add_estate_loyalty = {
-				estate = estate_daulophs
-				loyalty = 15
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_daulophs
+					loyalty = 15
+				}
 			}
 		}
 	}

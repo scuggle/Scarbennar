@@ -110,14 +110,16 @@ damescrown_grand_exchange = {
 			center_of_trade_upgrade_cost = -0.1
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = trader
-				name = "Harold of Damescrown"
-				skill = 3
-				culture = crownsman
-				religion = regent_court
-				location = 234
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = trader
+					name = "Harold of Damescrown"
+					skill = 3
+					culture = crownsman
+					religion = regent_court
+					location = 234
+					discount = yes
+				}
 			}
 		}
 	}
@@ -315,7 +317,7 @@ ara_temple = {
 			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
-				AND = {
+				owner = {
 					religion_group = cannorian
 					stability = 1
 					OR = {
@@ -348,7 +350,7 @@ ara_temple = {
 			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
-				AND = {
+				owner = {
 					religion_group = cannorian
 					stability = 1
 					OR = {

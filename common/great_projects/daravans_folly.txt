@@ -121,15 +121,17 @@ nathalaire_city_of_pirates = {
 		}
 		on_upgraded = {
 			add_base_production = 2
-			define_advisor = {
-			type = spymaster
-			name = "Nara, The Grey Fox"
-			skill = 3
-			culture = nathalairey
-			religion = regent_court
-			location = 451
-			female = yes
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = spymaster
+					name = "Nara, The Grey Fox"
+					skill = 3
+					culture = nathalairey
+					religion = regent_court
+					location = 451
+					female = yes
+					discount = yes
+				}
 			}
 		}
 	}

@@ -481,14 +481,16 @@ bianfang_vermillion_gate = {
 			prestige = 0.25
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = fortification_expert
-				name = "Mozi of Lamwun"
-				skill = 3
-				culture = forest_yan
-				religion = righteous_path
-				location = 4951
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = fortification_expert
+					name = "Mozi of Lamwun"
+					skill = 3
+					culture = forest_yan
+					religion = righteous_path
+					location = 4951
+					discount = yes
+				}
 			}
 		}
 	}

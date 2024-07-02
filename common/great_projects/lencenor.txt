@@ -118,15 +118,15 @@ lorentaine_mage_academy = {
 					estate = estate_mages
 					loyalty = 10
 				}
-			}
-			define_advisor = {
-				type = court_mage
-				name = "Elduvar Bladern"
-				skill = 3
-				culture = moon_elf
-				religion = regent_court
-				location = 67
-				discount = yes
+				define_advisor = {
+					type = court_mage
+					name = "Elduvar Bladern"
+					skill = 3
+					culture = moon_elf
+					religion = regent_court
+					location = 67
+					discount = yes
+				}
 			}
 		}
 	}
@@ -410,14 +410,16 @@ deranne_westport_gateway_to_aelantir = {
 			colonist_placement_chance = 0.025
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = navigator
-				name = "Calas of Westport"
-				skill = 3
-				culture = derannic
-				religion = regent_court
-				location = 112
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = navigator
+					name = "Calas of Westport"
+					skill = 3
+					culture = derannic
+					religion = regent_court
+					location = 112
+					discount = yes
+				}
 			}
 		}
 	}
@@ -480,7 +482,7 @@ minara_temple = {
 			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
-				AND = {
+				owner = {
 					religion_group = cannorian
 					stability = 1
 					OR = {
@@ -507,7 +509,7 @@ minara_temple = {
 			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
-				AND = {
+				owner = {
 					religion_group = cannorian
 					stability = 1
 					OR = {

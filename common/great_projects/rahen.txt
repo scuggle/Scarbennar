@@ -17,13 +17,19 @@ temple_mindanan = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
-		religion = high_philosophy
+		OR = {
+			religion = high_philosophy
+			religion = suhans_praxis
+		}
 		has_owner_religion = yes	
 		province_is_or_accepts_culture = yes
 		culture_group = harimari
 	}	
 	can_upgrade_trigger = {
-		religion = high_philosophy
+		OR = {
+			religion = high_philosophy
+			religion = suhans_praxis
+		}
 		has_owner_religion = yes	
 		province_is_or_accepts_culture = yes
 		culture_group = harimari
@@ -238,8 +244,11 @@ temple_foresight = {
 	can_use_modifiers_trigger = {
 		AND = {
 			has_owner_religion = yes
-			OR {
-				religion = high_philosophy
+			OR = {
+				OR = {
+					religion = high_philosophy
+					religion = suhans_praxis
+				}
 				owner = {
 					has_reform = oracular_order_reform
 					tag = R75
@@ -250,8 +259,11 @@ temple_foresight = {
 	can_upgrade_trigger = {
 		AND = {
 			has_owner_religion = yes
-			OR {
-				religion = high_philosophy
+			OR = {
+				OR = {
+					religion = high_philosophy
+					religion = suhans_praxis
+				}
 				owner = {
 					has_reform = oracular_order_reform
 					tag = R75
@@ -465,7 +477,9 @@ court_dhen = {
 	}
 	can_use_modifiers_trigger = {
 		OR = {
-			has_reform = raja_reform
+			owner = {
+				has_reform = raja_reform
+			}
 			OR = {
 				province_is_or_accepts_culture = yes
 				owner = {
@@ -476,7 +490,9 @@ court_dhen = {
 	}	
 	can_upgrade_trigger = {
 		OR = {
-			has_reform = raja_reform
+			owner = {
+				has_reform = raja_reform
+			}
 			OR = {
 				province_is_or_accepts_culture = yes
 				owner = {
