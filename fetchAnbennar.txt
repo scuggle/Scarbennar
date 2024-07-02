@@ -1,17 +1,17 @@
 #One time use only
 #Adds Anbennar's "new-master" to your github as remote repo
-git remote add Anbennar/new-master https://bitbucket.org/JayBean/anbennar-eu4-fork-public-build/src/new-master/ 
+git remote add Anbennar https://bitbucket.org/JayBean/anbennar-eu4-fork-public-build/src/new-master/ 
 
 
 #To check if it worked
-#Should now show "Anbennar/new-master     https://bitbucket.org/JayBean/anbennar-eu4-fork-public-build/src/new-master/ (fetch)"
+#Should now show "Anbennar    https://bitbucket.org/JayBean/anbennar-eu4-fork-public-build/src/new-master/ (fetch)"
 git remote -v
 
 
 #To pull from Anbennar:
-git fetch Anbennar/new-master
+git fetch Anbennar
 #Creates new branch "temp" containing all changes from Bitbucket
-git checkout -b temp Anbennar/new-master/new-master
+git checkout -b temp Anbennar/new-master
 #Switches to directory we want to add their stuff to
 git checkout development
 #Merges their stuff into currently selected branch. i.e. "development"
