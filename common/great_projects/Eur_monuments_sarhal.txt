@@ -864,19 +864,20 @@
  	}
  	can_use_modifiers_trigger = {
  		AND = {
-			OR = {
-				culture_group = lizardfolk
-				religion = zaradyrra
-				secondary_religion = zaradyrra
-				religion = anzalkatsa
-				secondary_religion = anzalkatsa
+			owner = {
+				OR = {
+					culture_group = lizardfolk
+					religion = zaradyrra
+					secondary_religion = zaradyrra
+					religion = anzalkatsa
+					secondary_religion = anzalkatsa
+				}
 			}
  			province_is_or_accepts_culture = yes
  		}
  	}	
  	can_upgrade_trigger = {
  		AND = {
-
  			province_is_or_accepts_culture = yes
  		}
  	}	
@@ -1478,20 +1479,24 @@
  	}
  	can_use_modifiers_trigger = {
  		AND = {
-			OR = {
-				culture_group = mengi
-				religion = sky_domain
-				secondary_religion = sky_domain
+			owner = {
+				OR = {
+					culture_group = mengi
+					religion = sky_domain
+					secondary_religion = sky_domain
+				}
 			}
  			province_is_or_accepts_culture = yes
  		}
  	}	
  	can_upgrade_trigger = {
  		AND = {
-			OR = {
-				culture_group = mengi
-				religion = sky_domain
-				secondary_religion = sky_domain
+			owner = {
+				OR = {
+					culture_group = mengi
+					religion = sky_domain
+					secondary_religion = sky_domain
+				}
 			}
  			province_is_or_accepts_culture = yes
  		}
@@ -1607,20 +1612,24 @@
  	}
  	can_use_modifiers_trigger = {
  		AND = {
-			OR = {
-				culture_group = mengi
-				religion = sky_domain
-				secondary_religion = sky_domain
+			owner = {
+				OR = {
+					culture_group = mengi
+					religion = sky_domain
+					secondary_religion = sky_domain
+				}
 			}
  			province_is_or_accepts_culture = yes
  		}
  	}	
  	can_upgrade_trigger = {
  		AND = {
-			OR = {
-				culture_group = mengi
-				religion = sky_domain
-				secondary_religion = sky_domain
+			owner = {
+				OR = {
+					culture_group = mengi
+					religion = sky_domain
+					secondary_religion = sky_domain
+				}
 			}
  			province_is_or_accepts_culture = yes
  		}
@@ -3404,23 +3413,25 @@ labyrinth_of_Yaddirralta = {
  	}
  	can_use_modifiers_trigger = {
  		AND = {
-
  			province_is_or_accepts_culture = yes
 			religion = aakhetist
 			OR = {
 				has_owner_religion = yes
-				secondary_religion = ROOT
+				owner = {
+					secondary_religion = ROOT
+				}
 			}
  		}
  	}	
  	can_upgrade_trigger = {
  		AND = {
-
  			province_is_or_accepts_culture = yes
 			religion = aakhetist
 			OR = {
 				has_owner_religion = yes
-				secondary_religion = ROOT
+				owner = {
+					secondary_religion = ROOT
+				}
 			}
  		}
  	}	
@@ -3992,8 +4003,8 @@ tier_0 = {
  	}
  }
 
-  #Leather armor made of honey badgers
- honey_badger_tannery = { # galasi 
+#Leather armor made of honey badgers
+honey_badger_tannery = { # galasi 
  	start = 6314 
  	date = 01.01.01
  	time = {

@@ -399,14 +399,16 @@ marrhold_gate_to_the_serpentspine = {
 			army_tradition_from_battle = 0.75
 		}
 		on_upgraded = {
-			define_advisor = {
-			type = commandant
-			name = "Erwin Smith"
-			skill = 3
-			culture = marrodic
-			religion = regent_court
-			location = 4097
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = commandant
+					name = "Erwin Smith"
+					skill = 3
+					culture = marrodic
+					religion = regent_court
+					location = 4097
+					discount = yes
+				}
 			}
 		}
 	}
@@ -556,14 +558,16 @@ verkal_ozovar_phokhao_citadel = {
 			diplomatic_annexation_cost = -0.075
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = statesman
-				name = "Morzad Silverbeard"
-				skill = 3
-				culture = nephrite_dwarf
-				religion = ancestor_worship
-				location = 5424
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = statesman
+					name = "Morzad Silverbeard"
+					skill = 3
+					culture = nephrite_dwarf
+					religion = ancestor_worship
+					location = 5424
+					discount = yes
+				}
 			}
 		}
 	}

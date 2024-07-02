@@ -116,14 +116,16 @@ freecestir_mustering_grounds = {
 			land_forcelimit_modifier = 0.05
 		}
 		on_upgraded = {
-			define_advisor = {
-			type = army_organiser
-			name = "Edmund of Freecestir"
-			skill = 3
-			culture = arbarani
-			religion = regent_court
-			location = 245
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = army_organiser
+					name = "Edmund of Freecestir"
+					skill = 3
+					culture = arbarani
+					religion = regent_court
+					location = 245
+					discount = yes
+				}
 			}
 		}
 	}
@@ -262,14 +264,16 @@ gawed_castle_gaweton = {
 			province_warscore_cost = -0.05
 		}
 		on_upgraded = {
-			define_advisor = {
-			type = grand_captain
-			name = "Alen of Gaweton"
-			skill = 3
-			culture = gawedi
-			religion = regent_court
-			location = 221
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = grand_captain
+					name = "Alen of Gaweton"
+					skill = 3
+					culture = gawedi
+					religion = regent_court
+					location = 221
+					discount = yes
+				}
 			}
 		}
 	}

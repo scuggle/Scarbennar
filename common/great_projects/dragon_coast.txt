@@ -260,14 +260,16 @@ portnamm_portroy_merchants_guild = {
 			burghers_influence_modifier = 0.025
 		}
 		on_upgraded = {
-			define_advisor = {
-			type = trader
-			name = "Jarnolt Iondo"
-			skill = 3
-			culture = creek_gnome
-			religion = regent_court
-			location = 126
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = trader
+					name = "Jarnolt Iondo"
+					skill = 3
+					culture = creek_gnome
+					religion = regent_court
+					location = 126
+					discount = yes
+				}
 			}
 		}
 	}

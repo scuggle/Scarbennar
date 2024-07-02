@@ -91,14 +91,16 @@ hubao_the_tiger_fortress = {
 			global_supply_limit_modifier = 0.075
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = fortification_expert
-				name = "Kabaneri of the Tiger Fortress"
-				skill = 3
-				culture = serene_harimari
-				religion = high_philosophy
-				location = 4901
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = fortification_expert
+					name = "Kabaneri of the Tiger Fortress"
+					skill = 3
+					culture = serene_harimari
+					religion = high_philosophy
+					location = 4901
+					discount = yes
+				}
 			}
 		}
 	}

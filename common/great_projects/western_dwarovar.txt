@@ -243,14 +243,16 @@ amlharaz_assembly = {
 		}
 		on_upgraded = {
 			add_base_production = 2
-			define_advisor = {
-				type = statesman
-				name = "Thorin Silvertongue"
-				skill = 3
-				culture = kronium_dwarf
-				religion = ancestor_worship
-				location = 4149
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = statesman
+					name = "Thorin Silvertongue"
+					skill = 3
+					culture = kronium_dwarf
+					religion = ancestor_worship
+					location = 4149
+					discount = yes
+				}
 			}
 		}
 	}
@@ -386,14 +388,16 @@ fortress_of_verkal_vazkron = {
 			hostile_attrition = 0.25
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = fortification_expert
-				name = "Belgar Forgewall"
-				skill = 3
-				culture = kronium_dwarf
-				religion = ancestor_worship
-				location = 4122
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = fortification_expert
+					name = "Belgar Forgewall"
+					skill = 3
+					culture = kronium_dwarf
+					religion = ancestor_worship
+					location = 4122
+					discount = yes
+				}
 			}
 		}
 	}
@@ -1243,14 +1247,16 @@ khugdihr_bank = {
 			inflation_action_cost = -0.20
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = master_of_mint
-				name = "Balgor Goldbar"
-				skill = 3
-				culture = agate_dwarf
-				religion = ancestor_worship
-				location = 2863
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = master_of_mint
+					name = "Balgor Goldbar"
+					skill = 3
+					culture = agate_dwarf
+					religion = ancestor_worship
+					location = 2863
+					discount = yes
+				}
 			}
 		}
 	}
@@ -1811,14 +1817,16 @@ krakdhumvror_hold = {
 			harsh_treatment_cost = -0.2
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = commandant
-				name = "Balbar Blackaxe"
-				skill = 3
-				culture = quartz_dwarf
-				religion = ancestor_worship
-				location = 4208
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = commandant
+					name = "Balbar Blackaxe"
+					skill = 3
+					culture = quartz_dwarf
+					religion = ancestor_worship
+					location = 4208
+					discount = yes
+				}
 			}
 		}
 	}

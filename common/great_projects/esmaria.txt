@@ -312,7 +312,7 @@ temple_of_ryala = {
 			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
-				AND = {
+				owner = {
 					religion_group = cannorian
 					stability = 1
 					OR = {
@@ -345,7 +345,7 @@ temple_of_ryala = {
 			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
-				AND = {
+				owner = {
 					religion_group = cannorian
 					stability = 1
 					OR = {

@@ -95,8 +95,10 @@ anbenncost_imperial_palace = {
 			devotion = 0.25
 		}
 		on_upgraded = {
-			add_imperial_influence = 3
-			add_absolutism = 3
+			owner = {
+				add_imperial_influence = 3
+				add_absolutism = 3
+			}
 		}
 	}
 	tier_2 = {
@@ -121,8 +123,10 @@ anbenncost_imperial_palace = {
 			max_absolutism = 5
 		}
 		on_upgraded = {
-			add_imperial_influence = 5
-			add_absolutism = 5
+			owner = {
+				add_imperial_influence = 5
+				add_absolutism = 5
+			}
 		}
 	}
 	tier_3 = {
@@ -148,8 +152,10 @@ anbenncost_imperial_palace = {
 			administrative_efficiency = 0.025
 		}
 		on_upgraded = {
-			add_imperial_influence = 10
-			add_absolutism = 10
+			owner = {
+				add_imperial_influence = 10
+				add_absolutism = 10
+			}
 		}
 	}
 }
@@ -415,14 +421,16 @@ silvelar_silver_spires = {
 			monthly_gold_inflation_modifier = -0.3
 		}
 		on_upgraded = {
-			define_advisor = {
-			type = treasurer
-			name = "Royy Doodlebug"
-			skill = 3
-			culture = imperial_gnome
-			religion = regent_court
-			location = 328
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = treasurer
+					name = "Royy Doodlebug"
+					skill = 3
+					culture = imperial_gnome
+					religion = regent_court
+					location = 328
+					discount = yes
+				}
 			}
 		}
 	}
@@ -542,7 +550,9 @@ menibor_hall_of_the_gallant = {
 			prestige_from_land = 0.25
 		}
 		on_upgraded = {
-			add_prestige = 10
+			owner = {
+				add_prestige = 10
+			}
 		}
 	}
 	tier_2 = {
@@ -563,7 +573,9 @@ menibor_hall_of_the_gallant = {
 			prestige_from_land = 0.5
 		}
 		on_upgraded = {
-			add_prestige = 15
+			owner = {
+				add_prestige = 15
+			}
 		}
 	}
 	tier_3 = {
@@ -587,8 +599,10 @@ menibor_hall_of_the_gallant = {
 			prestige_from_land = 1
 		}
 		on_upgraded = {
-			add_prestige = 25
-			add_splendor = 300
+			owner = {
+				add_prestige = 25
+				add_splendor = 300
+			}
 		}
 	}
 }
@@ -702,14 +716,16 @@ damish_temple_moonmount_library = {
 			advisor_pool = 1
 		}
 		on_upgraded = {
-			define_advisor = {
-			type = philosopher
-			name = "Argneir of Moonmount"
-			skill = 3
-			culture = east_damerian
-			religion = regent_court
-			location = 4
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = philosopher
+					name = "Argneir of Moonmount"
+					skill = 3
+					culture = east_damerian
+					religion = regent_court
+					location = 4
+					discount = yes
+				}
 			}
 		}
 	}

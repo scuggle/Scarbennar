@@ -332,14 +332,16 @@ chien_binhrung_nha_nuhoanha_temple = {
 			diplomatic_reputation = 1.5
 		}
 		on_upgraded = {
-			define_advisor = {
-			type = theologian
-			name = "Sri Suriyothai Han"
-			skill = 3
-			culture = binhrung
-			religion = righteous_path
-			location = 4955
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = theologian
+					name = "Sri Suriyothai Han"
+					skill = 3
+					culture = binhrung
+					religion = righteous_path
+					location = 4955
+					discount = yes
+				}
 			}
 		}
 	}

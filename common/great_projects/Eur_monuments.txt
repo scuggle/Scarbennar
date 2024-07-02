@@ -117,14 +117,16 @@ kara_targu = {
 			global_trade_goods_size_modifier = 0.075
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = trader
-				name = "Bone Stripper of Sashkras"
-				skill = 3
-				religion = feast_of_the_gods
-				culture = mossmouth_ogre
-				location = 4182
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = trader
+					name = "Bone Stripper of Sashkras"
+					skill = 3
+					religion = feast_of_the_gods
+					culture = mossmouth_ogre
+					location = 4182
+					discount = yes
+				}
 			}
 		}
 	}
@@ -310,7 +312,7 @@ silent_repose = {
 			OR = {
 				religion = regent_court
 				religion = elven_forebears
-				AND = {
+				owner = {
 					religion_group = cannorian
 					stability = 1
 					OR = {
@@ -346,7 +348,7 @@ silent_repose = {
 			OR = {
 				religion = regent_court
 				religion = elven_forebears
-				AND = {
+				owner = {
 					religion_group = cannorian
 					stability = 1
 					OR = {
@@ -560,17 +562,18 @@ lost_ship = {
 				name = harpy_minority_oppressed_large
 				duration = -1
 			}
-			define_advisor = {
-				type = naval_reformer
-				name = "Roost Mother Karadesh"
-				female = yes
-				skill = 3
-				religion = elven_forebears
-				culture = firanyan_harpy
-				location = 1001
-				discount = yes
-			}
-				
+			owner = {
+				define_advisor = {
+					type = naval_reformer
+					name = "Roost Mother Karadesh"
+					female = yes
+					skill = 3
+					religion = elven_forebears
+					culture = firanyan_harpy
+					location = 1001
+					discount = yes
+				}
+			}				
 		}
 	}
 
@@ -1517,6 +1520,28 @@ trinaire = {
 	}
 	keep_trigger = {
 	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+
+		}
+
+		on_upgraded = {
+		}
+	}
 	tier_1 = {
 		upgrade_time = {
 			months = 120
@@ -1589,15 +1614,6 @@ wine_league_hq = {
 	starting_tier = 0
 	type = monument
 
-date = 01.01.01
-	time = {
-		months = 0
-	}
-	build_cost = 0
-	can_be_moved = no
-	move_days_per_unit_distance = 0
-	starting_tier = 0
-	type = monument
 	build_trigger = {	
 	}
 	on_built = {		
@@ -1764,8 +1780,30 @@ crannog_home = {
 
 	keep_trigger = {
 	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
 
-tier_1 = {
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
 			months = 120
@@ -1892,15 +1930,15 @@ eaglecrest_kobold_tannery = {
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_culture = yes
 		owner = {
-		has_country_modifier = racial_pop_kobold_purge
-				}
+			has_country_modifier = racial_pop_kobold_purge
+		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_culture = yes
-		owner =		{
+		owner =	{
 			has_country_modifier = racial_pop_kobold_purge
-					}
+		}
 	}
 
 	keep_trigger = {
@@ -2197,18 +2235,16 @@ port_jaher = {
  	on_destroyed = {	
  	}
  	can_use_modifiers_trigger = {
- 		AND = {
+		owner = {
 			OR = {
 				culture_group = elven
 				culture_group = effelai_ruinborn_elf
 				accepted_culture = new_moon_elf
 				AND = {
 					religion = regent_court
-					owner = {
-						custom_trigger_tooltip = {
-							tooltip = PERSONAL_DEITY_DAME
-							has_personal_deity = the_dame
-						}
+					custom_trigger_tooltip = {
+						tooltip = PERSONAL_DEITY_DAME
+						has_personal_deity = the_dame
 					}
 				}
 			}
@@ -2216,18 +2252,16 @@ port_jaher = {
 		province_is_or_accepts_culture = yes	
  	}	
  	can_upgrade_trigger = {
- 		AND = {
+ 		owner = {
 			OR = {
 				culture_group = elven
 				culture_group = effelai_ruinborn_elf
 				accepted_culture = new_moon_elf
 				AND = {
 					religion = regent_court
-					owner = {
-						custom_trigger_tooltip = {
-							tooltip = PERSONAL_DEITY_DAME
-							has_personal_deity = the_dame
-						}
+					custom_trigger_tooltip = {
+						tooltip = PERSONAL_DEITY_DAME
+						has_personal_deity = the_dame
 					}
 				}
 			}

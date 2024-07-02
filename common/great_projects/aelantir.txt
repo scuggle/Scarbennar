@@ -197,14 +197,16 @@ malacnar_city_of_warriors = {
 		}
 		on_upgraded = {
 			add_base_manpower = 2
-			define_advisor = {
-				type = commandant
-				name = "Kalarad yen Sol"
-				skill = 3
-				culture = dolindhan
-				religion = ynn_river_worship
-				location = 1169
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = commandant
+					name = "Kalarad yen Sol"
+					skill = 3
+					culture = dolindhan
+					religion = ynn_river_worship
+					location = 1169
+					discount = yes
+				}
 			}
 		}
 	}
