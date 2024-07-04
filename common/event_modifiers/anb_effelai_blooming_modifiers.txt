@@ -36,7 +36,7 @@ effelai_roots_burned = {
 	local_friendly_movement_speed = 0.15
 	local_defensiveness = -0.1
 	trade_goods_size = 0.001
-	local_development_cost = -0.25
+	local_development_cost = -0.15
 
 	picture = "effelai_roots_burned"
 }
@@ -45,7 +45,7 @@ effelai_hub_burned = {
 	local_friendly_movement_speed = 0.3
 	local_defensiveness = -0.2
 	trade_goods_size = 0.001
-	local_development_cost = -0.3
+	local_development_cost = -0.2
 
 	picture = "effelai_hub_burned"
 }
@@ -67,7 +67,7 @@ effelai_hub_attuned = {
 	picture = "effelai_hub_attuned"
 }
 effelai_slash_and_burn = {
-	local_development_cost = -0.2
+	local_development_cost = -0.05
 
 	picture = "ottoman_decadence_gain_modifier"
 }
@@ -99,7 +99,7 @@ effelai_attunement_tier_2 = {
 }
 effelai_attunement_tier_3 = {
 	all_power_cost = -0.015
-	development_cost = 0.05
+	development_cost = 0.025
 	manpower_in_true_faith_provinces = 0.1
 	monthly_anb_effelai_attuned_resource = 1.5
 
@@ -107,7 +107,7 @@ effelai_attunement_tier_3 = {
 }
 effelai_attunement_tier_4 = {
 	all_power_cost = -0.02
-	development_cost = 0.10
+	development_cost = 0.05
 	manpower_in_true_faith_provinces = 0.125
 	monthly_anb_effelai_attuned_resource = 2
 
@@ -115,7 +115,7 @@ effelai_attunement_tier_4 = {
 }
 effelai_attunement_tier_5 = {
 	all_power_cost = -0.025
-	development_cost = 0.20
+	development_cost = 0.10
 	manpower_in_true_faith_provinces = 0.15
 	monthly_anb_effelai_attuned_resource = 3
 
