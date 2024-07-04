@@ -5,7 +5,7 @@ owner = X33
 controller = X33
 add_core = X33
 culture = delta_gnome
-religion = thought
+religion = the_thought
 
 hre = no
 
