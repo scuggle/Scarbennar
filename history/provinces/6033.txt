@@ -1,22 +1,22 @@
 # No previous file for Anbennar6033
 
 
-owner = L71
-controller = L71
-add_core = L71
+owner = X33
+controller = X33
+add_core = X33
 culture = delta_gnome
-religion = anzalkatsa
+religion = the_thought
 
 hre = no
 
-base_tax = 2
-base_production = 1
+base_tax = 3
+base_production = 4
 base_manpower = 2
 
 trade_goods = naval_supplies
 
 capital = ""
-center_of_trade = 1
+center_of_trade = 2
 is_city = yes
 
 #add_permanent_province_modifier = {
