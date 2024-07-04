@@ -1,0 +1,31 @@
+
+setup_vision = yes
+government = republic
+add_government_reform = technocracy_reform
+government_rank = 1
+primary_culture = delta_gnome
+religion = the_thought
+technology_group = tech_gnomish
+capital = 6033 #Doddcodds
+fixed_capital = 6033
+
+
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_state }
+1000.1.1 = { set_estate_privilege = estate_artificers_organization_independent_unions }
+
+1401.6.11 = {
+	monarch = {
+		name = "Roy"
+		dynasty = "Toolbox"
+		birth_date = 1304.5.3
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+	
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = just_personality
+	set_ruler_flag = long_lived_ruler
+}
