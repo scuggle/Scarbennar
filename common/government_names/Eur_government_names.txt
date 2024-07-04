@@ -76,6 +76,30 @@ damerian_technomonarchy_monarch = {
 
 	trigger = {
 		has_reform = damerian_technomonarchy
-		tag = B53
+	}
+}
+
+ancardian_monarchy_monarch = {
+	rank = {
+		1 = ANCARDIAN_DUCHY
+		2 = ANCARDIAN_KINGDOM
+		3 = ANCARDIAN_EMPIRE
+	}
+
+	ruler_male = {
+		1 = ANCARDIAN_DUKE
+		2 = ANCARDIAN_KING
+		3 = ANCARDIAN_EMPEROR
+	}
+
+	ruler_female = {
+		1 = ANCARDIAN_LADY
+		2 = ANCARDIAN_QUEEN
+		3 = ANCARDIAN_EMPRESS
+	}
+
+
+	trigger = {
+		has_reform = ancardian_monarchy
 	}
 }

@@ -78,8 +78,16 @@ country_event = {
 			country_event = { id = "anbennar_setup.19" }
 		}
 		else_if = {
+			limit = { tag = B35 } #Ancardia
+			add_government_reform = ancardian_monarchy
+		}
+		else_if = {
 			limit = { tag = B37 } #Rogieria
 			add_government_reform = damerian_monarchy
+		}
+		else_if = {
+			limit = { tag = Z35 } #Rosanda
+			add_government_reform = rosanda_wine_lord_reform
 		}
 		else = {
 			add_government_reform = adventurer_kingdom_reform
@@ -215,7 +223,13 @@ country_event = {
 			limit = { NOT = { government = republic } }
 			change_government = republic
 		}
-		add_government_reform = merchants_reform
+		if = {
+			limit = { tag = B49 }
+			add_government_reform = araionn_merchant_reform
+		}
+		else = {
+			add_government_reform = merchants_reform
+		}
 	}
 	
 	#Optional

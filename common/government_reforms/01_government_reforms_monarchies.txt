@@ -12862,14 +12862,10 @@ damerian_technomonarchy = {
 	allow_normal_conversion = no
 	potential = {
 		OR = {
-			primary_culture = west_damerian
-			primary_culture = east_damerian
-			primary_culture = rogieran
-			primary_culture = pashainey
-		}
-		OR = {
 			tag = B53
 			was_tag = B53
+			has_reform = damerian_technomonarchy
+			have_had_reform = damerian_technomonarchy
 		}
 	}
 	valid_for_nation_designer = yes
@@ -12915,4 +12911,84 @@ damerian_technomonarchy = {
 	#custom_attributes = {
 	#	is_technocracy = yes
 	#}
+}
+
+ ancardian_monarchy = {
+ 	icon = "prussian_monarchy"
+ 	allow_normal_conversion = yes
+ 	potential = {
+ 		has_dlc = "Domination"
+ 		NOT = { has_reform = prussian_monarchy_base }
+ 		OR = {
+ 			tag = B35
+			was_tag = B35
+ 			has_reform = ancardian_monarchy
+ 			have_had_reform = ancardian_monarchy
+ 		}
+ 	}
+ 	trigger = {
+		OR = {
+			religion = regent_court
+			religion = corinite
+			religion = ravelian
+			religion = dalcabba
+		}
+ 	}
+ 	modifiers = {
+ 		war_exhaustion = -0.02
+ 		monarch_military_power = 1
+ 		nobles_loyalty_modifier = 0.1
+ 		governing_capacity_modifier = -0.25
+		yearly_army_professionalism = 0.001
+ 	}
+ 	conditional = {
+ 		allow = { has_dlc = "Domination" }
+ 		government_abilities = {
+ 			ancardian_militarization_mechanic
+ 		}
+ 	}
+}
+
+rosanda_wine_lord_reform = {
+	icon = "merchant"
+	allow_normal_conversion = yes
+
+	potential = {
+		OR = {
+			tag = Z35
+			was_tag = Z35
+			has_reform = rosanda_wine_lord_reform
+			have_had_reform = rosanda_wine_lord_reform
+		}
+	}
+	modifiers = {
+		nobles_influence_modifier = 0.1
+	}
+	effect = {
+		custom_tooltip = producing_wine_winelord
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = { trade_goods = wine }
+					add_province_modifier = {
+						name = wine_lord_wine
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = { has_province_modifier = wine_lord_wine }
+				remove_province_modifier = wine_lord_wine
+			}
+		}
+	}
+
+	government_abilities = {
+		rosanda_grain_to_wine
+	}
 }
