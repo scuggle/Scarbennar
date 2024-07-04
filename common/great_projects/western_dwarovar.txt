@@ -975,14 +975,11 @@ mithradhum_academy = {
 			add_building = university
 			owner = {
 				random_list = {
-					60 = {
+					70 = {
 						add_mil_power = 100
 					}
-					25 = {
+					30 = {
 						change_mil = 1
-					}
-					15 = {
-						add_mil_tech = 1
 					}
 				}
 			}

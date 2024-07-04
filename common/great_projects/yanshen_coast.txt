@@ -258,14 +258,11 @@ tianlou_xuezhefang_eunuch_academy = {
 					loyalty = 15
 				}
 				random_list = {
-					60 = {
+					70 = {
 						add_adm_power = 100
 					}
-					25 = {
+					30 = {
 						change_adm = 1
-					}
-					15 = {
-						add_adm_tech = 1
 					}
 				}
 			}
