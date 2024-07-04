@@ -58,6 +58,8 @@ new_world_nerf = {
 	trade_efficiency = -0.1
 	global_tax_modifier = -0.1
 	production_efficiency = -0.1
+	province_warscore_cost = 0.1
+	governing_capacity_modifier = -0.15
 }
 
 
