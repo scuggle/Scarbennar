@@ -482,15 +482,13 @@ minara_temple = {
 			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
+				religion_group = cannorian
 				owner = {
-					religion_group = cannorian
-					owner = {
-						stability = 1
-						OR = {
-							full_idea_group = minority_ideas
-							has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
-							stability = 3
-						}
+					stability = 1
+					OR = {
+						full_idea_group = minority_ideas
+						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+						stability = 3
 					}
 				}
 			}
@@ -511,15 +509,13 @@ minara_temple = {
 			NOT = { religion = infernal_court }
 			OR = {
 				religion = regent_court
+				religion_group = cannorian
 				owner = {
-					religion_group = cannorian
-					owner = {
-						stability = 1
-						OR = {
-							full_idea_group = minority_ideas
-							has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
-							stability = 3
-						}
+					stability = 1
+					OR = {
+						full_idea_group = minority_ideas
+						has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+						stability = 3
 					}
 				}
 			}
