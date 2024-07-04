@@ -1980,17 +1980,17 @@ province_event = {
 						dynasty = "Ecarizuir"
 						adm = 2
 						dip = 4
-						mil = 5
-						age = 99
+						mil = 4
+						age = 50
 						claim = 95
 						culture = sun_elf
 					}
 					add_ruler_personality = mage_personality 
-					set_ruler_flag = evocation_1
-					set_ruler_flag = evocation_2
-					set_ruler_flag = evocation_3
-					set_ruler_flag = abjuration_1
-					set_ruler_flag = abjuration_2
+					#set_ruler_flag = evocation_1
+					#set_ruler_flag = evocation_2
+					#set_ruler_flag = evocation_3
+					#set_ruler_flag = abjuration_1
+					#set_ruler_flag = abjuration_2
 					set_ruler_flag = long_lived_ruler
 
 					country_event = { id = anb_miscevents.22 } # new country setup
@@ -2023,17 +2023,17 @@ province_event = {
 						dynasty = "Ecarizuir"
 						adm = 2
 						dip = 4
-						mil = 5
-						age = 99
+						mil = 4
+						age = 50
 						claim = 95
 						culture = sun_elf
 					}
 					add_ruler_personality = mage_personality 
-					set_ruler_flag = evocation_1
-					set_ruler_flag = evocation_2
-					set_ruler_flag = evocation_3
-					set_ruler_flag = abjuration_1
-					set_ruler_flag = abjuration_2
+					#set_ruler_flag = evocation_1
+					#set_ruler_flag = evocation_2
+					#set_ruler_flag = evocation_3
+					#set_ruler_flag = abjuration_1
+					#set_ruler_flag = abjuration_2
 					set_ruler_flag = long_lived_ruler
 
 					country_event = { id = anb_miscevents.22 } # new country setup
