@@ -359,7 +359,7 @@ A11_ideas = {
 		embargo_efficiency = 0.2
 	}
 	A11_pearls_in_our_name = {
-		global_trade_goods_size_modifier =0.1
+		global_trade_goods_size_modifier = 0.1
 	}
 	A11_bald_heads_glistening_in_the_sun = {
 		land_morale = 0.05
@@ -370,6 +370,7 @@ A11_ideas = {
 	}
 	A11_adeanic_emperors = {
 		imperial_authority = 0.1
+		galley_power = 0.1
 	}
 }
 
