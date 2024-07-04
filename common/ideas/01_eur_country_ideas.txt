@@ -1291,3 +1291,43 @@ X32_ideas = { #Bronze Dwarves
 		free_policy = 1
 	}
 }
+X33_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.15
+		defensiveness = 0.25
+	}
+	bonus = {
+		artillery_fire = 0.25
+	}
+
+	trigger = {
+		tag = X33 #doddcodds
+	}
+	free = yes
+
+	X33_1 = {	#Lizardfolk mercenaries
+		mercenary_manpower = 0.2
+		infantry_power = 0.05
+	}
+	X33_2 = {	#gnomish artisans
+		production_efficiency = 0.15
+	}
+	X33_3 = {	#generale polder
+		reduced_liberty_desire = 10
+		vassal_forcelimit_bonus = 0.25
+		vassal_manpower_bonus = 0.10
+	}
+	X33_4 = {	#building a new hierarchy
+		development_cost = -0.05
+	}
+	X33_5 = {	#Wood plantations
+		heavy_ship_cost = -0.15
+		ship_durability = 0.05
+	}
+	X33_6 = {	#merchant diplomacy
+		merchants = 1
+	}
+	X33_7 = {	#a small people
+		native_assimilation = 0.5
+	}
+}
