@@ -75,3 +75,16 @@ there_is_nothing_to_colonize = {
 	}
 	colonists = -1
 }
+
+reseed_in_serpentspine = {
+	potential = {
+		always = yes
+	}
+	trigger = {
+		capital_scope = {
+			continent = serpentspine
+		}
+		NOT = { is_year = 1500 }
+	}
+	colonists = -5
+}

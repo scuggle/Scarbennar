@@ -552,3 +552,12 @@ bronze_extra_harimari = {}
 duwarkani_pu = {
 	years_to_integrate_personal_union = -40
 }
+
+eur_dwarovar_reseed_buff = {
+	monthly_splendor = 5
+	may_establish_frontier = yes
+	land_morale = 0.2
+	land_maintenance_modifier = -0.2
+	global_manpower = 10
+	land_forcelimit = 10
+}

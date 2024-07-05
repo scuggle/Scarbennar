@@ -1,3 +1,6 @@
+owner = H87
+controller = H87
+add_core = H87
 
 # No previous file for Banten
 owner = F46

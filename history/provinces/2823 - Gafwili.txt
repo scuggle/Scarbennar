@@ -1,3 +1,6 @@
+owner = H91
+controller = H91
+add_core = H91
 
 # No previous file for Moyobamba
 add_permanent_claim = G43

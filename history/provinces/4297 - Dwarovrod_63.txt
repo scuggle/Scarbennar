@@ -1,4 +1,6 @@
-
+owner = H92
+controller = H92
+add_core = H92
 
 
 

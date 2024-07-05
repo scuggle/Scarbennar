@@ -1,4 +1,6 @@
-
+owner = H71
+controller = H71
+add_core = H71
 
 
 

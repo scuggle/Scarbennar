@@ -1,4 +1,6 @@
-
+owner = H97
+controller = H97
+add_core = H97
 
 
 

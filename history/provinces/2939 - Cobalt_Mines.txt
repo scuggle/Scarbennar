@@ -1,4 +1,6 @@
-
+owner = H95
+controller = H95
+add_core = H95
 
 
 

@@ -1,0 +1,259 @@
+#sets the roamers free in the Serpentspine
+eur_release_the_roamers_effect = {
+    4285 = {  #M02 - Dursikari
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4299 = { #H98 - Axebellow Cartel
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4295 = {
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4297 = { #H92 - Poisoned Rock
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4267 = { #H88 - Ambersniffer
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4275 = { #H93 - Dirtwater
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4214 = { #H97 - Company of the Grudgebearers
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4215 = {
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4085 = { #H82 - Greedy Grin
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4228 = { #H83 - Shadowdreamer
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2823 = { #H91 - Roadwarrior
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2878 = { #H86 - Wretched skull
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4070 = { #H90 - Spiderwretch
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2881 = { #H96 - Mithril-arm cartel
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2882 = { 
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4036 = { #H71 - Blackbeard cartel
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2949 = { #X26 - Redscale expedition
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2926 = { #H87 - Thieving arrow
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4034 = { #H81 - Masked Butcher
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2940 = { #H95 - Began's expedition
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2939 = {
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2877 = { #H68 - Ruby company
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4053 = { #H84 - Mountain shark
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4141 = { #H85 - Truedagger
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2996 = { #H70 - Blueshield company
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2871 = { #H80 - Siegebreaker
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    4025 = { #Z55 - Darkscales
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2869 = { #H69 - Forgemaster Union
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2866 = { #H89 - Snotfinger
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    2935 = { #B17 - Asra Expedition
+        every_core_country = {
+            remove_core = PREV
+        }
+        decolonize = THIS
+    }
+    526 = { #ovdal tungr owner
+        owner = {
+            country_event = {
+                id = "diggy_spawnable.1" 
+                days = 1
+            }
+        }
+    }
+    912 = { #silverforge owner
+        owner = {
+            country_event = {
+                id = "diggy_spawnable.2" 
+                days = 1
+            }
+        }
+    }
+    62 = { #rubyhold owner
+        owner = {
+            country_event = {
+                id = "diggy_spawnable.3" 
+                days = 1
+            }
+        }
+    }
+    4397 = { #rajnadhaga owner
+        owner = {
+            country_event = {
+                id = "diggy_spawnable.4" 
+                days = 1
+            }
+        }
+    }
+    B17 = { #asra expedition intro event
+        country_event = {
+            id = "diggy_spawnable.6" 
+        }
+    }
+    H68 = { #ruby company intro event
+        country_event = {
+            id = "diggy_spawnable.7" 
+        }
+    }
+    H70 = { #blueshield intro event
+        country_event = {
+            id = "diggy_spawnable.12" 
+        }
+    }
+    H69 = { #forgemaster union intro event
+        country_event = {
+            id = "diggy_spawnable.13" 
+        }
+        
+    }
+}
+
+eur_one_time_reseed_buff_effect = {
+    add_splendor = 800
+    add_treasury = 300
+    add_manpower = 20
+    change_government_reform_progress = 300
+    add_country_modifier = {
+        name = "eur_dwarovar_reseed_buff"
+        duration = 5475
+    }
+    capital_scope = {
+        add_institution_embracement = {
+            which = feudalism
+            value = 100
+        }
+            add_institution_embracement = {
+            which = renaissance
+            value = 100
+        }
+        add_next_institution_embracement = 100
+    }
+    reset_golden_age = yes
+}

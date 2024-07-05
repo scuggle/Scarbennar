@@ -1,4 +1,6 @@
-
+owner = X26
+controller = X26
+add_core = X26
 
 
 

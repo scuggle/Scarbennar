@@ -1,4 +1,6 @@
-
+owner = Z55
+controller = Z55
+add_core = Z55
 
 
 

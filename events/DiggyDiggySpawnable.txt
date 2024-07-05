@@ -16,14 +16,16 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	goto = spawn_province
 	
-	fire_only_once = yes
-	mean_time_to_happen = { years = 1 }
+	#fire_only_once = yes
+	#mean_time_to_happen = { years = 1 }
 	
-	trigger = {
-		is_year = 1450
-		owns = 526 #ovdal tungr
-		NOT = { has_global_flag = delete_west_serpentspine_region }
-	}
+	#trigger = {
+		#is_year = 1450
+		#owns = 526 #ovdal tungr
+		#NOT = { has_global_flag = delete_west_serpentspine_region }
+	#}
+
+	is_triggered_only = yes
 	
 	immediate = {
 		hidden_effect = {
@@ -169,14 +171,15 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	goto = spawn_province
 	
-	fire_only_once = yes
-	mean_time_to_happen = { years = 1 }
+	#fire_only_once = yes
+	#mean_time_to_happen = { years = 1 }
 	
-	trigger = {
-		is_year = 1460
-		owns = 912
-		NOT = { has_global_flag = delete_west_serpentspine_region }
-	}
+	#trigger = {
+	#	is_year = 1460
+	#	owns = 912
+	#	NOT = { has_global_flag = delete_west_serpentspine_region }
+	#}
+	is_triggered_only = yes
 	
 	immediate = {
 		hidden_effect = {
@@ -295,15 +298,17 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	goto = spawn_province
 	
-	fire_only_once = yes
-	mean_time_to_happen = { years = 1 }
+	#fire_only_once = yes
+	#mean_time_to_happen = { years = 1 }
 	
-	trigger = {
-		is_year = 1450
-		owns = 62
-		NOT = { has_global_flag = delete_west_serpentspine_region }
-	}
+	#trigger = {
+	#	is_year = 1450
+	#	owns = 62
+	#	NOT = { has_global_flag = delete_west_serpentspine_region }
+	#}
 	
+	is_triggered_only = yes
+
 	immediate = {
 		hidden_effect = {
 			random_province = {
@@ -420,14 +425,16 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	goto = spawn_province
 	
-	fire_only_once = yes
-	mean_time_to_happen = { years = 1 }
+	#fire_only_once = yes
+	#mean_time_to_happen = { years = 1 }
 	
-	trigger = {
-		is_year = 1460
-		owns = 4397
-		NOT = { has_global_flag = delete_east_serpentspine_region }
-	}
+	#trigger = {
+	#	is_year = 1460
+	#	owns = 4397
+	#	NOT = { has_global_flag = delete_east_serpentspine_region }
+	#}
+
+	is_triggered_only = yes
 	
 	immediate = {
 		hidden_effect = {
@@ -571,12 +578,12 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	trigger = {
-		NOT = {
-			is_year = 1445
-		}
-		tag = H71
-	}
+	#trigger = {
+	#	NOT = {
+	#		is_year = 1445
+	#	}
+	#	tag = H71
+	#}
 	
 	option = {
 		name = diggy_spawnable.5.a
@@ -605,12 +612,12 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	trigger = {
-		NOT = {
-			is_year = 1445
-		}
-		tag = B17
-	}
+	#trigger = {
+	#	NOT = {
+	#		is_year = 1445
+	#	}
+	#	tag = B17
+	#}
 
 	option = {
 		name = diggy_spawnable.6.a
@@ -633,12 +640,12 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	trigger = {
-		NOT = {
-			is_year = 1445
-		}
-		tag = H68
-	}
+	#trigger = {
+	#	NOT = {
+	#		is_year = 1445
+	#	}
+	#	tag = H68
+	#}
 	
 	option = {
 		name = diggy_spawnable.7.a
@@ -677,9 +684,9 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = H96
-	}
+	#trigger = {
+	#	tag = H96
+	#}
 
 	option = {
 		name = diggy_spawnable.8.a
@@ -709,9 +716,9 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	trigger = {
-		tag = H97
-	}
+	#trigger = {
+	#	tag = H97
+	#}
 	option = {
 		name = diggy_spawnable.9.a
 		ai_chance = {
@@ -738,9 +745,9 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = H95
-	}
+	#trigger = {
+	#	tag = H95
+	#}
 
 	option = {
 		name = diggy_spawnable.10.a
@@ -766,9 +773,9 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = H98
-	}
+	#trigger = {
+	#	tag = H98
+	#}
 
 	option = {
 		name = diggy_spawnable.11.a
@@ -791,12 +798,12 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	trigger = {
-		NOT = {
-			is_year = 1445
-		}
-		tag = H70
-	}
+	#trigger = {
+	#	NOT = {
+	#		is_year = 1445
+	#	}
+	#	tag = H70
+	#}
 	
 	option = {
 		name = diggy_spawnable.12.a
@@ -831,12 +838,12 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	trigger = {
-		NOT = {
-			is_year = 1445
-		}
-		tag = H69
-	}
+	#trigger = {
+	#	NOT = {
+	#		is_year = 1445
+	#	}
+	#	tag = H69
+	#}
 	
 	option = {
 		name = diggy_spawnable.13.a
