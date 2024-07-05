@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_grain_to_wine"
+		texturefile = "gfx//interface//government_mechanics//grain_to_wine.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

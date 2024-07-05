@@ -39,7 +39,7 @@ country_event = {
 			change_dip = 1
 			change_mil = 1
 			hide_skills = yes
-			culture = east_damerian
+			#culture = east_damerian
 		}
 	}
 	
@@ -55,7 +55,7 @@ country_event = {
 			change_dip = 1
 			change_mil = 1
 			hide_skills = yes
-			culture = east_damerian
+			#culture = east_damerian
 		}
 	}
 	
@@ -71,7 +71,7 @@ country_event = {
 			change_dip = 1
 			change_mil = 1
 			hide_skills = yes
-			culture = east_damerian
+			#culture = east_damerian
 		}
 	}
 }

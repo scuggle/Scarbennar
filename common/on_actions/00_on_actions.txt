@@ -12539,6 +12539,7 @@ on_trade_good_changed = {
 					FROM = { has_reform = wine_lord_reform }
 					FROM = { has_reform = roilsard_elective }
 					FROM = { has_reform = wineport_merchants }
+					FROM = { has_reform = rosanda_wine_lord_reform }
 				}
 			}
 			add_province_modifier = {

@@ -1,0 +1,35 @@
+rosanda_grain_to_wine = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 10
+	available = {
+		has_dlc = "Domination"
+		OR = {
+			tag = Z35
+			was_tag = Z35
+			has_unlocked_government_reform_tooltip = {
+ 				government_reform = rosanda_wine_lord_reform
+ 			}
+		}
+	}
+
+    interactions = {
+        grain_to_wine = {
+			icon = GFX_grain_to_wine	
+			trigger = {
+				adm_power = 25
+                any_owned_province = {
+                    trade_goods = grain
+                }
+			}
+			effect = { 
+				random_owned_province = {
+                    limit = { trade_goods = grain }
+                    change_trade_goods = wine
+                    add_base_production = 1
+                }
+				add_adm_power = -25
+			}
+			cooldown_years = 2
+		}
+    }
+}

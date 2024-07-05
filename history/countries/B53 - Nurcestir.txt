@@ -2,7 +2,7 @@
 setup_vision = yes
 government = monarchy
 add_government_reform = damerian_technomonarchy
-government_rank = 2
+government_rank = 1
 primary_culture = nurcestiran
 religion = regent_court
 technology_group = tech_cannorian

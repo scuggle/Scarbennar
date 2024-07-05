@@ -1,0 +1,75 @@
+ancardian_militarization_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 10
+	available = {
+		has_dlc = "Domination"
+		OR = {
+			tag = B35
+			was_tag = B35
+			has_unlocked_government_reform_tooltip = {
+ 				government_reform = ancardian_monarchy
+ 			}
+		}
+	}
+
+	powers = {
+		prussian_militarized_society_3 = {
+			gui = prussian_militarization_gov_mech_3_power
+			show_before_interactions = yes
+			max = 100
+			base_monthly_growth = 0
+			development_scaled_monthly_growth = 0.02
+			scaled_modifier = {
+				modifier = {
+					discipline = 0.025
+					drill_gain_modifier = 1
+					drill_decay_modifier = -0.20
+					reinforce_speed = 0.2
+					land_maintenance_modifier = -0.2
+					monthly_prussian_militarized_society_3 = -0.25
+				}
+			}
+		}
+	}
+	
+	interactions = {
+		
+		boost_militarization = {
+			gui = prussian_militarization_gov_mech_3_interaction
+			icon = GFX_prussian_militarization_upgrade	
+			trigger = {
+				mil_power = 25
+				not = {
+					has_government_power = {
+						mechanic_type = prussian_militarization_mechanic_3
+						power_type = prussian_militarized_society_3
+						value = 100
+					}
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = prussian_militarization_mechanic_3
+					power_type = prussian_militarized_society_3
+					value = 10
+				}
+				add_mil_power = -25
+			}
+			cooldown_years = 0
+			# ai_chance = {
+				# factor = 0
+				# modifier = {
+					# factor = 10
+					# not = {
+						# has_government_power = {
+							# mechanic_type = militarization_mechanic
+							# power_type = militarized_society
+							# value = 90
+						# }
+					# }
+					# mil_power = 500
+				# }
+			# }
+		}
+	}
+}

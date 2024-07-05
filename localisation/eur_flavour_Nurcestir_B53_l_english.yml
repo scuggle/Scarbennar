@@ -4,12 +4,12 @@
  TECHNO_EMPIRE: "Techno-Empire"
  
  TECHNO_DUKE: "Manager"
- TECHNO_KING: "Supervisor"
- TECHNO_EMPEROR: "Overseer"
+ TECHNO_KING: "Overseer"
+ TECHNO_EMPEROR: "Executive"
  
  TECHNO_LORD: "Manager"
- TECHNO_QUEEN: "Supervisor"
- TECHNO_EMPRESS: "Overseer"
+ TECHNO_QUEEN: "Overseer"
+ TECHNO_EMPRESS: "Executive"
  
  damerian_technomonarchy: "Damerian Techno-Monarchy"
  damerian_technomonarchy_desc: "Our friendship with the Gnomes has allowed us to merge artificery into our government!"

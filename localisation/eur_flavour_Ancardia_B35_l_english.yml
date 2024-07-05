@@ -1,0 +1,20 @@
+﻿l_english:
+ ANCARDIAN_DUCHY: "Grand Hold"
+ ANCARDIAN_KINGDOM: "Great Hold"
+ ANCARDIAN_EMPIRE: "Holy Hold"
+ 
+ ANCARDIAN_DUKE: "Grand Chevalier"
+ ANCARDIAN_KING: "Castellan"
+ ANCARDIAN_EMPEROR: "Lord Paladin"
+ 
+ ANCARDIAN_LADY: "Grand Chevaliere"
+ ANCARDIAN_QUEEN: "Castellan"
+ ANCARDIAN_EMPRESS: "Lady Paladin"
+ 
+ ancardian_monarchy: "Ancardian Monarchy"
+ ancardian_monarchy_desc: "Our Knightly kingdom has been created with the most chivalric ways."
+
+ ancardian_militarization_mechanic: "Ancardian Militarization"
+ ancardian_militarization_mechanic_desc: "Our knights are the most chivalrous of all."
+ ability_ancardian_militarization_mechanic: "Ancardian Militarization"
+

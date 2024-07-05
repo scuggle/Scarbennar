@@ -773,15 +773,15 @@ desert_legion = {
 		global_manpower_modifier = 0.2
 		#land_forcelimit_modifier = 0.2
 		#reinforce_cost_modifier = -0.5
-		cavalry_cost = -0.33
+		cavalry_cost = -0.15
 		cav_to_inf_ratio = 0.5
-		movement_speed = 0.3
+		movement_speed = 0.1
 		
 		global_tax_modifier = -0.25
 		production_efficiency = -0.25
-		naval_forcelimit_modifier = -0.9
-		governing_capacity_modifier = -0.25
-		technology_cost = 0.1
+		naval_forcelimit_modifier = -0.5
+		governing_capacity_modifier = -0.4
+		technology_cost = 0.05
 	}
 	
 	custom_attributes = {

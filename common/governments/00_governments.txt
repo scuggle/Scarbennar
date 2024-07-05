@@ -223,6 +223,8 @@ monarchy = {
 				ikatara_reform
 				anzatara_reform
 				damerian_technomonarchy
+				ancardian_monarchy
+				rosanda_wine_lord_reform
 			}
 		}
 		hereditary_vs_nobility = { #Tier 2
@@ -969,6 +971,7 @@ republic = {
 				aelantiri_corporate_state_reform
 				koroshesh_league_reform
 				vels_bacar_bacaran_republic
+				araionn_merchant_reform
 			}
 		}
 		republican_virtues = { #Tier 2
