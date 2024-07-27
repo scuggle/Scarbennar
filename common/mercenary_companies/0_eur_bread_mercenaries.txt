@@ -24,7 +24,7 @@ merc_nzeri_amazons = {
 
 	sprites = { harpy_sprite_pack }
     trigger = {
-		ROOT = { OR = { medium_tolerance_harpy_race_trigger = yes high_tolerance_harpy_race_trigger = yes } }
+		OR = { medium_tolerance_harpy_race_trigger = yes high_tolerance_harpy_race_trigger = yes }
 		NOT = { has_country_modifier = centaur_military }
 	}
 	cost_modifier = 0.75
