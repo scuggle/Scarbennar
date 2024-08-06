@@ -945,7 +945,7 @@ ruinborn_minority_coexisting_small = {
 	local_state_maintenance_modifier = 0.1
 	
 	local_build_cost = -0.05
-	supply_limit_modifier = 0.1
+	supply_limit_modifier = 0.2
 	picture = "pop_icon_ruinborn_sa"
 }
 
@@ -954,7 +954,7 @@ ruinborn_minority_coexisting_large = {
 	local_state_maintenance_modifier = 0.25
 	
 	local_build_cost = -0.1
-	supply_limit_modifier = 0.2
+	supply_limit_modifier = 0.4
 	picture = "pop_icon_ruinborn_la"
 }
 
@@ -963,7 +963,7 @@ ruinborn_minority_integrated_small = {
 	local_autonomy = 0.01
 	
 	local_build_cost = -0.05
-	supply_limit_modifier = 0.1
+	supply_limit_modifier = 0.2
 	local_monthly_devastation = -0.05
 	picture = "pop_icon_ruinborn_si"
 }
@@ -973,7 +973,7 @@ ruinborn_minority_integrated_large = {
 	local_autonomy = 0.025
 	
 	local_build_cost = -0.1
-	supply_limit_modifier = 0.2
+	supply_limit_modifier = 0.4
 	local_monthly_devastation = -0.1
 	picture = "pop_icon_ruinborn_li"
 }
@@ -991,7 +991,7 @@ ruinborn_majority_oppressed = {
 ruinborn_majority_coexisting = {
 	
 	local_build_cost = -0.1
-	supply_limit_modifier = 0.2
+	supply_limit_modifier = 0.4
 	
 	picture = "pop_icon_ruinborn_ma"
 }
@@ -999,7 +999,7 @@ ruinborn_majority_coexisting = {
 ruinborn_majority_integrated = {
 
 	local_build_cost = -0.1
-	supply_limit_modifier = 0.2
+	supply_limit_modifier = 0.4
 	local_monthly_devastation = -0.1
 	
 	local_missionary_strength = 0.01
@@ -1010,7 +1010,7 @@ ruinborn_majority_integrated = {
 ruinborn_majority_primary = {
 
 	local_build_cost = -0.1
-	supply_limit_modifier = 0.2
+	supply_limit_modifier = 0.4
 	local_monthly_devastation = -0.1
 	local_missionary_strength = 0.01
 	
@@ -1023,7 +1023,7 @@ ruinborn_majority_primary = {
 #Orcish - when oppressed they're just cheap manual labour, when integrated they help boost armies
 #Orcish Minority
 orcish_minority_oppressed_small = {
-	local_unrest = 3
+	local_unrest = 1
 	
 	#local_build_cost = -0.05				#Cheap manual labour
 	trade_goods_size_modifier = 0.05		#its slaves now
@@ -1032,7 +1032,7 @@ orcish_minority_oppressed_small = {
 }
 
 orcish_minority_oppressed_large = {
-	local_unrest = 4
+	local_unrest = 2
 	
 	#local_build_cost = -0.1
 	trade_goods_size_modifier = 0.1
@@ -1040,7 +1040,7 @@ orcish_minority_oppressed_large = {
 }
 
 orcish_minority_coexisting_small = {
-	local_unrest = 2
+	local_unrest = 1
 	local_state_maintenance_modifier = 0.1
 	
 	trade_goods_size_modifier = 0.05
@@ -1049,7 +1049,7 @@ orcish_minority_coexisting_small = {
 }
 
 orcish_minority_coexisting_large = {
-	local_unrest = 3
+	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
 	
 	trade_goods_size_modifier = 0.1
@@ -1214,14 +1214,14 @@ kobold_majority_primary = {
 #Gnollish - when oppressed they're just mercs, when integrated are good scavengerfolk
 #Gnollish Minority
 gnollish_minority_oppressed_small = {
-	local_unrest = 2
+	local_unrest = 1
 	
 	trade_goods_size_modifier = 0.05
 	picture = "pop_icon_gnoll_so"
 }
 
 gnollish_minority_oppressed_large = {
-	local_unrest = 4
+	local_unrest = 2
 	
 	trade_goods_size_modifier = 0.1
 	picture = "pop_icon_gnoll_lo"
@@ -1237,7 +1237,7 @@ gnollish_minority_coexisting_small = {
 }
 
 gnollish_minority_coexisting_large = {
-	local_unrest = 3
+	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
 	
 	trade_goods_size_modifier = 0.1
@@ -1308,16 +1308,16 @@ gnollish_majority_primary = {
 #Harpy - when oppressed they're just mercs, when integrated are good scavengerfolk
 #Harpy Minority
 harpy_minority_oppressed_small = {
-	local_unrest = 2
+	local_unrest = 1
 	
-	local_build_time = -0.05
+	local_build_time = -0.1
 	picture = "pop_icon_harpy_so"
 }
 
 harpy_minority_oppressed_large = {
-	local_unrest = 4
+	local_unrest = 2
 	
-	local_build_time = -0.1
+	local_build_time = -0.2
 	picture = "pop_icon_harpy_lo"
 }
 
@@ -1325,16 +1325,16 @@ harpy_minority_coexisting_small = {
 	local_unrest = 1
 	local_state_maintenance_modifier = 0.1
 	
-	local_build_time = -0.05
+	local_build_time = -0.1
 	local_friendly_movement_speed = 0.1			#halfling guides and scouts
 	picture = "pop_icon_harpy_sa"
 }
 
 harpy_minority_coexisting_large = {
-	local_unrest = 3
+	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
 	
-	local_build_time = -0.1
+	local_build_time = -0.2
 	local_friendly_movement_speed = 0.2
 	picture = "pop_icon_harpy_la"
 }
@@ -1343,7 +1343,7 @@ harpy_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
 	local_autonomy = 0.01
 	
-	local_build_time = -0.05
+	local_build_time = -0.1
 	local_friendly_movement_speed = 0.1
 	local_hostile_attrition = 1
 	picture = "pop_icon_harpy_si"
@@ -1353,7 +1353,7 @@ harpy_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
 	local_autonomy = 0.025
 	
-	local_build_time = -0.1
+	local_build_time = -0.2
 	local_friendly_movement_speed = 0.2
 	local_hostile_attrition = 2
 	picture = "pop_icon_harpy_li"
@@ -1362,7 +1362,7 @@ harpy_minority_integrated_large = {
 #Harpy Majority
 harpy_majority_oppressed = {
 	
-	local_build_time = -0.1
+	local_build_time = -0.2
 	
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
@@ -1371,7 +1371,7 @@ harpy_majority_oppressed = {
 
 harpy_majority_coexisting = {
 	
-	local_build_time = -0.1
+	local_build_time = -0.2
 	local_friendly_movement_speed = 0.2
 	
 	picture = "pop_icon_harpy_ma"
@@ -1379,7 +1379,7 @@ harpy_majority_coexisting = {
 
 harpy_majority_integrated = {
 
-	local_build_time = -0.1
+	local_build_time = -0.2
 	local_friendly_movement_speed = 0.2
 	local_hostile_attrition = 2
 	
@@ -1390,7 +1390,7 @@ harpy_majority_integrated = {
 
 harpy_majority_primary = {
 
-	local_build_time = -0.1
+	local_build_time = -0.2
 	local_friendly_movement_speed = 0.2
 	local_hostile_attrition = 2
 	local_missionary_strength = 0.01
@@ -1404,14 +1404,14 @@ harpy_majority_primary = {
 #Goblin Minority
 goblin_minority_oppressed_small = {
 	local_unrest = 1
-	
+	local_production_efficiency = 0.05
 	local_regiment_cost = -0.1
 	picture = "pop_icon_goblin_so"
 }
 
 goblin_minority_oppressed_large = {
 	local_unrest = 2
-	
+	local_production_efficiency = 0.1
 	local_regiment_cost = -0.2
 	picture = "pop_icon_goblin_lo"
 }
@@ -1419,7 +1419,7 @@ goblin_minority_oppressed_large = {
 goblin_minority_coexisting_small = {
 	local_unrest = 1
 	local_state_maintenance_modifier = 0.1
-	
+	local_production_efficiency = 0.05
 	local_regiment_cost = -0.1
 	local_hostile_movement_speed = -0.1
 	picture = "pop_icon_goblin_sa"
@@ -1428,7 +1428,7 @@ goblin_minority_coexisting_small = {
 goblin_minority_coexisting_large = {
 	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
-	
+	local_production_efficiency = 0.1
 	local_regiment_cost = -0.2
 	local_hostile_movement_speed = -0.2
 	picture = "pop_icon_goblin_la"
@@ -1458,7 +1458,7 @@ goblin_minority_integrated_large = {
 goblin_majority_oppressed = {
 	
 	local_regiment_cost = -0.2
-	
+	local_production_efficiency = 0.1
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
 	picture = "pop_icon_goblin_mo"
@@ -1468,7 +1468,7 @@ goblin_majority_coexisting = {
 	
 	local_regiment_cost = -0.2
 	local_hostile_movement_speed = -0.2
-	
+	local_production_efficiency = 0.1
 	picture = "pop_icon_goblin_ma"
 }
 
@@ -1497,32 +1497,32 @@ goblin_majority_primary = {
 #Troll - when oppressed they're just mercs, when integrated are good scavengerfolk
 #Troll Minority
 troll_minority_oppressed_small = {
-	local_unrest = 3
-	
+	local_unrest = 1
+	trade_goods_size = 0.1
 	supply_limit_modifier = 0.05
 	picture = "pop_icon_troll_so"
 }
 
 troll_minority_oppressed_large = {
-	local_unrest = 4
-	
+	local_unrest = 2
+	trade_goods_size = 0.2
 	supply_limit_modifier = 0.1
 	picture = "pop_icon_troll_lo"
 }
 
 troll_minority_coexisting_small = {
-	local_unrest = 2
+	local_unrest = 1
 	local_state_maintenance_modifier = 0.1
-	
+	trade_goods_size = 0.1
 	supply_limit_modifier = 0.05
  	local_hostile_movement_speed = -0.1
 	picture = "pop_icon_troll_sa"
 }
 
 troll_minority_coexisting_large = {
-	local_unrest = 3
+	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
-	
+	trade_goods_size = 0.2
 	supply_limit_modifier = 0.1
  	local_hostile_movement_speed = -0.2
 	picture = "pop_icon_troll_la"
@@ -1531,7 +1531,7 @@ troll_minority_coexisting_large = {
 troll_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
 	local_autonomy = 0.01
-	
+	trade_goods_size = 0.1
 	supply_limit_modifier = 0.05
  	local_hostile_movement_speed = -0.1
 	local_manpower_modifier = 0.1
@@ -1541,7 +1541,7 @@ troll_minority_integrated_small = {
 troll_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
 	local_autonomy = 0.025
-	
+	trade_goods_size = 0.2
 	supply_limit_modifier = 0.1
  	local_hostile_movement_speed = -0.2
 	local_manpower_modifier = 0.2
@@ -1552,7 +1552,7 @@ troll_minority_integrated_large = {
 troll_majority_oppressed = {
 	
 	supply_limit_modifier = 0.1
-	
+	trade_goods_size = 0.2
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
 	picture = "pop_icon_troll_mo"
@@ -1562,7 +1562,7 @@ troll_majority_coexisting = {
 	
 	supply_limit_modifier = 0.1
  	local_hostile_movement_speed = -0.2
-	
+	trade_goods_size = 0.2
 	picture = "pop_icon_troll_ma"
 }
 
@@ -1571,7 +1571,7 @@ troll_majority_integrated = {
 	supply_limit_modifier = 0.1
  	local_hostile_movement_speed = -0.2
 	local_manpower_modifier = 0.2
-	
+	trade_goods_size = 0.2
 	local_missionary_strength = 0.01
 	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_troll_mi"
@@ -1583,39 +1583,39 @@ troll_majority_primary = {
  	local_hostile_movement_speed = -0.2
 	local_manpower_modifier = 0.2
 	local_missionary_strength = 0.01
-	
+	trade_goods_size = 0.2
 	picture = "pop_icon_troll_mp"
 }
 
 #Ogre - oppressed : quick labour cos they strong, coexisting: tax collector brutes, integrated: military lads
 #Ogre Minority
 ogre_minority_oppressed_small = {
-	local_unrest = 3
-	
+	local_unrest = 1
+	local_monthly_devastation = -0.1
 	local_build_time = -0.1
 	picture = "pop_icon_ogre_so"
 }
 
 ogre_minority_oppressed_large = {
-	local_unrest = 4
-	
+	local_unrest = 2
+	local_monthly_devastation = -0.2
 	local_build_time = -0.2
 	picture = "pop_icon_ogre_lo"
 }
 
 ogre_minority_coexisting_small = {
-	local_unrest = 2
+	local_unrest = 1
 	local_state_maintenance_modifier = 0.1
-	
+	local_monthly_devastation = -0.1
 	local_build_time = -0.1
 	local_tax_modifier = 0.05
 	picture = "pop_icon_ogre_sa"
 }
 
 ogre_minority_coexisting_large = {
-	local_unrest = 3
+	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
-	
+	local_monthly_devastation = -0.2
 	local_build_time = -0.2
 	local_tax_modifier = 0.1
 	picture = "pop_icon_ogre_la"
@@ -1624,7 +1624,7 @@ ogre_minority_coexisting_large = {
 ogre_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
 	local_autonomy = 0.01
-	
+	local_monthly_devastation = -0.1
 	local_build_time = -0.1
 	local_tax_modifier = 0.05
 	local_manpower_modifier = 0.1
@@ -1634,7 +1634,7 @@ ogre_minority_integrated_small = {
 ogre_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
 	local_autonomy = 0.025
-	
+	local_monthly_devastation = -0.2
 	local_build_time = -0.2
 	local_tax_modifier = 0.1
 	local_manpower_modifier = 0.2
@@ -1645,7 +1645,7 @@ ogre_minority_integrated_large = {
 ogre_majority_oppressed = {
 	
 	local_build_time = -0.2
-	
+	local_monthly_devastation = -0.2
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
 	picture = "pop_icon_ogre_mo"
@@ -1655,7 +1655,7 @@ ogre_majority_coexisting = {
 	
 	local_build_time = -0.2
 	local_tax_modifier = 0.1
-	
+	local_monthly_devastation = -0.2
 	picture = "pop_icon_ogre_ma"
 }
 
@@ -1664,7 +1664,7 @@ ogre_majority_integrated = {
 	local_build_time = -0.2
 	local_tax_modifier = 0.1
 	local_manpower_modifier = 0.2
-	
+	local_monthly_devastation = -0.2
 	local_missionary_strength = 0.01
 	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_ogre_mi"
@@ -1676,7 +1676,7 @@ ogre_majority_primary = {
 	local_tax_modifier = 0.1
 	local_manpower_modifier = 0.2
 	local_missionary_strength = 0.01
-	
+	local_monthly_devastation = -0.2
 	picture = "pop_icon_ogre_mp"
 }
 
@@ -1685,33 +1685,33 @@ ogre_majority_primary = {
 #Centaur - oppressed: couriers, coexisting: better supply network, integrated: forward scouts
 #Centaur Minority
 centaur_minority_oppressed_small = {
-	local_unrest = 3
-	
-	province_trade_power_modifier = 0.05
+	local_unrest = 1
+	local_friendly_movement_speed = 0.05
+	province_trade_power_modifier = 0.1
 	picture = "pop_icon_centaur_so"
 }
 
 centaur_minority_oppressed_large = {
-	local_unrest = 4
-	
-	province_trade_power_modifier = 0.1
+	local_unrest = 2
+	local_friendly_movement_speed = 0.1
+	province_trade_power_modifier = 0.2
 	picture = "pop_icon_centaur_lo"
 }
 
 centaur_minority_coexisting_small = {
-	local_unrest = 2
+	local_unrest = 1
 	local_state_maintenance_modifier = 0.1
-	
-	province_trade_power_modifier = 0.05
+	local_friendly_movement_speed = 0.05
+	province_trade_power_modifier = 0.1
  	supply_limit_modifier = 0.05
 	picture = "pop_icon_centaur_sa"
 }
 
 centaur_minority_coexisting_large = {
-	local_unrest = 3
+	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
-	
-	province_trade_power_modifier = 0.1
+	local_friendly_movement_speed = 0.1
+	province_trade_power_modifier = 0.2
  	supply_limit_modifier = 0.1
 	picture = "pop_icon_centaur_la"
 }
@@ -1719,8 +1719,8 @@ centaur_minority_coexisting_large = {
 centaur_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
 	local_autonomy = 0.01
-	
-	province_trade_power_modifier = 0.05
+	local_friendly_movement_speed = 0.05
+	province_trade_power_modifier = 0.1
  	supply_limit_modifier = 0.05
 	local_friendly_movement_speed = 0.1
 	picture = "pop_icon_centaur_si"
@@ -1729,8 +1729,8 @@ centaur_minority_integrated_small = {
 centaur_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
 	local_autonomy = 0.025
-	
-	province_trade_power_modifier = 0.1
+	local_friendly_movement_speed = 0.1
+	province_trade_power_modifier = 0.2
  	supply_limit_modifier = 0.1
 	local_friendly_movement_speed = 0.2
 	picture = "pop_icon_centaur_li"
@@ -1739,8 +1739,8 @@ centaur_minority_integrated_large = {
 #Centaur Majority
 centaur_majority_oppressed = {
 	
-	province_trade_power_modifier = 0.1
-	
+	province_trade_power_modifier = 0.2
+	local_friendly_movement_speed = 0.1
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
 	picture = "pop_icon_centaur_mo"
@@ -1748,18 +1748,18 @@ centaur_majority_oppressed = {
 
 centaur_majority_coexisting = {
 	
-	province_trade_power_modifier = 0.1
+	province_trade_power_modifier = 0.2
  	supply_limit_modifier = 0.1
-	
+	local_friendly_movement_speed = 0.1
 	picture = "pop_icon_centaur_ma"
 }
 
 centaur_majority_integrated = {
 
-	province_trade_power_modifier = 0.1
+	province_trade_power_modifier = 0.2
  	supply_limit_modifier = 0.1
 	local_friendly_movement_speed = 0.2
-	
+	local_friendly_movement_speed = 0.1
 	local_missionary_strength = 0.01
 	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_centaur_mi"
@@ -1767,27 +1767,27 @@ centaur_majority_integrated = {
 
 centaur_majority_primary = {
 
-	province_trade_power_modifier = 0.1
+	province_trade_power_modifier = 0.2
  	supply_limit_modifier = 0.1
 	local_friendly_movement_speed = 0.2
 	local_missionary_strength = 0.01
-	
+	local_friendly_movement_speed = 0.1
 	picture = "pop_icon_centaur_mp"
 }
 
 #Harimari - oppressed: begrudging tax collectors, coexisting: tax collectors, integrated: adminstrators (essentially this makes it easier to rule the province)
 #Harimari Minority
 harimari_minority_oppressed_small = {
-	local_unrest = 2
+	local_unrest = 1
 	
-	local_tax_modifier = 0.05
+	local_tax_modifier = 0.1
 	picture = "pop_icon_harimari_so"
 }
 
 harimari_minority_oppressed_large = {
-	local_unrest = 4
+	local_unrest = 2
 	
-	local_tax_modifier = 0.1
+	local_tax_modifier = 0.2
 	picture = "pop_icon_harimari_lo"
 }
 
@@ -1795,7 +1795,7 @@ harimari_minority_coexisting_small = {
 	local_unrest = 1
 	local_state_maintenance_modifier = 0.1
 	
-	local_tax_modifier = 0.05
+	local_tax_modifier = 0.1
  	local_hostile_attrition = 0.5
 	picture = "pop_icon_harimari_sa"
 }
@@ -1804,7 +1804,7 @@ harimari_minority_coexisting_large = {
 	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
 	
-	local_tax_modifier = 0.1
+	local_tax_modifier = 0.2
  	local_hostile_attrition = 1
 	picture = "pop_icon_harimari_la"
 }
@@ -1813,7 +1813,7 @@ harimari_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
 	local_autonomy = 0.01
 	
-	local_tax_modifier = 0.05
+	local_tax_modifier = 0.1
  	local_hostile_attrition = 0.5
 	local_governing_cost = -0.05
 	picture = "pop_icon_harimari_si"
@@ -1823,7 +1823,7 @@ harimari_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
 	local_autonomy = 0.025
 	
-	local_tax_modifier = 0.1
+	local_tax_modifier = 0.2
  	local_hostile_attrition = 1
 	local_governing_cost = -0.1
 	picture = "pop_icon_harimari_li"
@@ -1832,7 +1832,7 @@ harimari_minority_integrated_large = {
 #Harimari Majority
 harimari_majority_oppressed = {
 	
-	local_tax_modifier = 0.1
+	local_tax_modifier = 0.2
 	
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
@@ -1841,7 +1841,7 @@ harimari_majority_oppressed = {
 
 harimari_majority_coexisting = {
 	
-	local_tax_modifier = 0.1
+	local_tax_modifier = 0.2
  	local_hostile_attrition = 1
 	
 	picture = "pop_icon_harimari_ma"
@@ -1849,7 +1849,7 @@ harimari_majority_coexisting = {
 
 harimari_majority_integrated = {
 
-	local_tax_modifier = 0.1
+	local_tax_modifier = 0.2
  	local_hostile_attrition = 1
 	local_governing_cost = -0.1
 	
@@ -1860,7 +1860,7 @@ harimari_majority_integrated = {
 
 harimari_majority_primary = {
 
-	local_tax_modifier = 0.1
+	local_tax_modifier = 0.2
  	local_hostile_attrition = 1
 	local_governing_cost = -0.1
 	local_missionary_strength = 0.01
@@ -1962,29 +1962,29 @@ hobgoblin_majority_primary = {
 #Lizardfolk - when oppressed they are simply a workhorses, but when integrated they help to defend your land and are more willing to equip your armies with their weapons
 #Lizardfolk Minority
 lizardfolk_minority_oppressed_small = {
-	local_unrest = 3
-	local_production_efficiency = 0.05
+	local_unrest = 1
+	local_production_efficiency = 0.1
 	picture = "pop_icon_lizardfolk_so"
 }
 
 lizardfolk_minority_oppressed_large = {
-	local_unrest = 4
-	local_production_efficiency = 0.1
+	local_unrest = 2
+	local_production_efficiency = 0.2
 	picture = "pop_icon_lizardfolk_lo"
 }
 
 lizardfolk_minority_coexisting_small = {
-	local_unrest = 2
+	local_unrest = 1
 	local_state_maintenance_modifier = 0.1
-	local_production_efficiency = 0.05
+	local_production_efficiency = 0.1
 	ship_recruit_speed = -0.10
 	picture = "pop_icon_lizardfolk_sa"
 }
 
 lizardfolk_minority_coexisting_large = {
-	local_unrest = 3
+	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
-	local_production_efficiency = 0.1
+	local_production_efficiency = 0.2
 	ship_recruit_speed = -0.20
 	picture = "pop_icon_lizardfolk_la"
 }
@@ -1992,7 +1992,7 @@ lizardfolk_minority_coexisting_large = {
 lizardfolk_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
 	local_autonomy = 0.01
-	local_production_efficiency = 0.05
+	local_production_efficiency = 0.1
 	ship_recruit_speed = -0.10
 	local_regiment_cost = -0.1
 	picture = "pop_icon_lizardfolk_si"
@@ -2001,7 +2001,7 @@ lizardfolk_minority_integrated_small = {
 lizardfolk_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
 	local_autonomy = 0.025
-	local_production_efficiency = 0.1
+	local_production_efficiency = 0.2
 	ship_recruit_speed = -0.20
 	local_regiment_cost = -0.2
 	picture = "pop_icon_lizardfolk_li"
@@ -2009,20 +2009,20 @@ lizardfolk_minority_integrated_large = {
 
 #Lizardfolk Majority
 lizardfolk_majority_oppressed = {
-	local_production_efficiency = 0.1
+	local_production_efficiency = 0.2
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
 	picture = "pop_icon_lizardfolk_mo"
 }
 
 lizardfolk_majority_coexisting = {
-	local_production_efficiency = 0.1
+	local_production_efficiency = 0.2
 	ship_recruit_speed = -0.20
 	picture = "pop_icon_lizardfolk_ma"
 }
 
 lizardfolk_majority_integrated = {
-	local_production_efficiency = 0.1
+	local_production_efficiency = 0.2
 	ship_recruit_speed = -0.20
 	local_regiment_cost = -0.2
 
@@ -2032,7 +2032,7 @@ lizardfolk_majority_integrated = {
 }
 
 lizardfolk_majority_primary = {
-	local_production_efficiency = 0.1
+	local_production_efficiency = 0.2
 	ship_recruit_speed = -0.20
 	local_regiment_cost = -0.2
 	local_missionary_strength = 0.01
