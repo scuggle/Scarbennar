@@ -2410,7 +2410,7 @@ gerudian = {
 		allowed_conversion = {
 		}
 		country = {
-			stability_cost_modifier = -0.1
+			development_cost = -0.05
 			tolerance_own = 1
 		}
 		country_as_secondary = {
