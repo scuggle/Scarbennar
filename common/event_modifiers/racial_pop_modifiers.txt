@@ -303,7 +303,7 @@ elven_minority_coexisting_large = {
 
 elven_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_tax_modifier = 0.1
 	trade_value_modifier = 0.1
@@ -313,7 +313,7 @@ elven_minority_integrated_small = {
 
 elven_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_tax_modifier = 0.2
 	trade_value_modifier = 0.1
@@ -346,7 +346,7 @@ elven_majority_integrated = {
 	local_production_efficiency = 0.1
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_elf_mi"
 }
 
@@ -397,7 +397,7 @@ dwarven_minority_coexisting_large = {
 
 dwarven_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_fort_maintenance_modifier = -0.075
 	local_build_cost = -0.05
@@ -407,7 +407,7 @@ dwarven_minority_integrated_small = {
 
 dwarven_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_fort_maintenance_modifier = -0.15
 	local_build_cost = -0.1
@@ -440,7 +440,7 @@ dwarven_majority_integrated = {
 	trade_goods_size_modifier = 0.1			#More dwarves allow some to focus on their craft in addition to manual labour
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_dwarf_mi"
 }
 
@@ -491,7 +491,7 @@ gnomish_minority_coexisting_large = {
 
 gnomish_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_production_efficiency = 0.05
 	local_institution_spread = 0.05
@@ -501,7 +501,7 @@ gnomish_minority_integrated_small = {
 
 gnomish_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_production_efficiency = 0.1
 	local_institution_spread = 0.1
@@ -534,7 +534,7 @@ gnomish_majority_integrated = {
 	local_tax_modifier = 0.1
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_gnome_mi"
 }
 
@@ -585,7 +585,7 @@ halfling_minority_coexisting_large = {
 
 halfling_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_development_cost = -0.025
 	province_trade_power_modifier = 0.05		#Halfling wares and stores pop-up
@@ -595,7 +595,7 @@ halfling_minority_integrated_small = {
 
 halfling_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_development_cost = -0.05
 	province_trade_power_modifier = 0.1
@@ -628,7 +628,7 @@ halfling_majority_integrated = {
 	supply_limit_modifier = 0.25				#halfling runners and networks
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_halfling_mi"
 }
 
@@ -679,7 +679,7 @@ human_minority_coexisting_large = {
 
 human_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_manpower_modifier = 0.05			
 	local_development_cost = -0.025
@@ -689,7 +689,7 @@ human_minority_integrated_small = {
 
 human_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_manpower_modifier = 0.1			
 	local_development_cost = -0.05				#There's a reason why humans have huge cities and are the most powerful
@@ -722,7 +722,7 @@ human_majority_integrated = {
 	local_sailors_modifier = 0.2
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_human_mi"
 }
 
@@ -772,7 +772,7 @@ half_orcish_minority_coexisting_large = {
 
 half_orcish_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_manpower_modifier = 0.075
 	local_sailors_modifier = 0.075
@@ -782,7 +782,7 @@ half_orcish_minority_integrated_small = {
 
 half_orcish_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_manpower_modifier = 0.15
 	local_sailors_modifier = 0.15
@@ -815,7 +815,7 @@ half_orcish_majority_integrated = {
 	trade_goods_size_modifier = 0.1
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_half_orc_mi"
 }
 
@@ -866,7 +866,7 @@ half_elven_minority_coexisting_large = {
 
 half_elven_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_tax_modifier = 0.05
 	local_development_cost = -0.025
@@ -876,7 +876,7 @@ half_elven_minority_integrated_small = {
 
 half_elven_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_tax_modifier = 0.1
 	local_development_cost = -0.05
@@ -909,7 +909,7 @@ half_elven_majority_integrated = {
 	local_core_creation = -0.2			#they are diplomats so they can argue your case, in anbennar they are signs of legitimacy
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_half_elf_mi"
 }
 
@@ -960,7 +960,7 @@ ruinborn_minority_coexisting_large = {
 
 ruinborn_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_build_cost = -0.05
 	supply_limit_modifier = 0.1
@@ -970,7 +970,7 @@ ruinborn_minority_integrated_small = {
 
 ruinborn_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_build_cost = -0.1
 	supply_limit_modifier = 0.2
@@ -1003,7 +1003,7 @@ ruinborn_majority_integrated = {
 	local_monthly_devastation = -0.1
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_ruinborn_mi"
 }
 
@@ -1059,7 +1059,7 @@ orcish_minority_coexisting_large = {
 
 orcish_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	trade_goods_size_modifier = 0.05
 	local_manpower_modifier = 0.1
@@ -1069,7 +1069,7 @@ orcish_minority_integrated_small = {
 
 orcish_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	trade_goods_size_modifier = 0.1
 	local_manpower_modifier = 0.2
@@ -1102,7 +1102,7 @@ orcish_majority_integrated = {
 	local_regiment_cost = -0.2
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_orc_mi"
 }
 
@@ -1154,7 +1154,7 @@ kobold_minority_coexisting_large = {
 
 kobold_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_build_cost = -0.1
 	regiment_recruit_speed = -0.1
@@ -1164,7 +1164,7 @@ kobold_minority_integrated_small = {
 
 kobold_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_build_cost = -0.1
 	regiment_recruit_speed = -0.2
@@ -1197,7 +1197,7 @@ kobold_majority_integrated = {
 	local_hostile_attrition = 2
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_kobold_mi"
 }
 
@@ -1247,7 +1247,7 @@ gnollish_minority_coexisting_large = {
 
 gnollish_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	trade_goods_size_modifier = 0.05
 	local_manpower_modifier = 0.05
@@ -1257,7 +1257,7 @@ gnollish_minority_integrated_small = {
 
 gnollish_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	trade_goods_size_modifier = 0.1
 	local_manpower_modifier = 0.1
@@ -1290,7 +1290,7 @@ gnollish_majority_integrated = {
 	province_trade_power_value = 0.1
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_gnoll_mi"
 }
 
@@ -1341,7 +1341,7 @@ harpy_minority_coexisting_large = {
 
 harpy_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_build_time = -0.05
 	local_friendly_movement_speed = 0.1
@@ -1351,7 +1351,7 @@ harpy_minority_integrated_small = {
 
 harpy_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_build_time = -0.1
 	local_friendly_movement_speed = 0.2
@@ -1384,7 +1384,7 @@ harpy_majority_integrated = {
 	local_hostile_attrition = 2
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_harpy_mi"
 }
 
@@ -1436,7 +1436,7 @@ goblin_minority_coexisting_large = {
 
 goblin_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_regiment_cost = -0.1
 	local_hostile_movement_speed = -0.1
@@ -1446,7 +1446,7 @@ goblin_minority_integrated_small = {
 
 goblin_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_regiment_cost = -0.1
 	local_hostile_movement_speed = -0.2
@@ -1479,7 +1479,7 @@ goblin_majority_integrated = {
 	local_production_efficiency = 0.2
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_goblin_mi"
 }
 
@@ -1530,7 +1530,7 @@ troll_minority_coexisting_large = {
 
 troll_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	supply_limit_modifier = 0.05
  	local_hostile_movement_speed = -0.1
@@ -1540,7 +1540,7 @@ troll_minority_integrated_small = {
 
 troll_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	supply_limit_modifier = 0.1
  	local_hostile_movement_speed = -0.2
@@ -1573,7 +1573,7 @@ troll_majority_integrated = {
 	local_manpower_modifier = 0.2
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_troll_mi"
 }
 
@@ -1623,7 +1623,7 @@ ogre_minority_coexisting_large = {
 
 ogre_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_build_time = -0.1
 	local_tax_modifier = 0.05
@@ -1633,7 +1633,7 @@ ogre_minority_integrated_small = {
 
 ogre_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_build_time = -0.2
 	local_tax_modifier = 0.1
@@ -1666,7 +1666,7 @@ ogre_majority_integrated = {
 	local_manpower_modifier = 0.2
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_ogre_mi"
 }
 
@@ -1718,7 +1718,7 @@ centaur_minority_coexisting_large = {
 
 centaur_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	province_trade_power_modifier = 0.05
  	supply_limit_modifier = 0.05
@@ -1728,7 +1728,7 @@ centaur_minority_integrated_small = {
 
 centaur_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	province_trade_power_modifier = 0.1
  	supply_limit_modifier = 0.1
@@ -1761,7 +1761,7 @@ centaur_majority_integrated = {
 	local_friendly_movement_speed = 0.2
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_centaur_mi"
 }
 
@@ -1811,7 +1811,7 @@ harimari_minority_coexisting_large = {
 
 harimari_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_tax_modifier = 0.05
  	local_hostile_attrition = 0.5
@@ -1821,7 +1821,7 @@ harimari_minority_integrated_small = {
 
 harimari_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_tax_modifier = 0.1
  	local_hostile_attrition = 1
@@ -1854,7 +1854,7 @@ harimari_majority_integrated = {
 	local_governing_cost = -0.1
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_harimari_mi"
 }
 
@@ -1902,7 +1902,7 @@ hobgoblin_minority_coexisting_large = {
 
 hobgoblin_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	
 	local_unrest = -1
  	regiment_recruit_speed = -0.1
@@ -1912,7 +1912,7 @@ hobgoblin_minority_integrated_small = {
 
 hobgoblin_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	
 	local_unrest = -2
  	regiment_recruit_speed = -0.2
@@ -1945,7 +1945,7 @@ hobgoblin_majority_integrated = {
 	local_manpower_modifier = 0.2
 	
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_hobgoblin_mi"
 }
 
@@ -1991,7 +1991,7 @@ lizardfolk_minority_coexisting_large = {
 
 lizardfolk_minority_integrated_small = {
 	local_state_maintenance_modifier = 0.3
-	local_autonomy = 0.025
+	local_autonomy = 0.01
 	local_production_efficiency = 0.05
 	ship_recruit_speed = -0.10
 	local_regiment_cost = -0.1
@@ -2000,7 +2000,7 @@ lizardfolk_minority_integrated_small = {
 
 lizardfolk_minority_integrated_large = {
 	local_state_maintenance_modifier = 0.5
-	local_autonomy = 0.05
+	local_autonomy = 0.025
 	local_production_efficiency = 0.1
 	ship_recruit_speed = -0.20
 	local_regiment_cost = -0.2
@@ -2018,7 +2018,6 @@ lizardfolk_majority_oppressed = {
 lizardfolk_majority_coexisting = {
 	local_production_efficiency = 0.1
 	ship_recruit_speed = -0.20
-	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_lizardfolk_ma"
 }
 
@@ -2028,7 +2027,7 @@ lizardfolk_majority_integrated = {
 	local_regiment_cost = -0.2
 
 	local_missionary_strength = 0.01
-	local_culture_conversion_cost = 0.50
+	local_culture_conversion_cost = 0.25
 	picture = "pop_icon_lizardfolk_mi"
 }
 
