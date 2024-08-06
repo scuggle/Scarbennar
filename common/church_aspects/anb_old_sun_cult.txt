@@ -2,7 +2,7 @@ prepare_the_return_of_surakel = {
 	is_blessing = yes
 
 	modifier = {
-		army_tradition = 0.5
+		army_tradition = 0.75
 	}
 	ai_will_do = {
 		factor = 1
@@ -24,7 +24,7 @@ keep_the_light_of_your_children = {
 	is_blessing = yes
 
 	modifier = {
-		idea_cost = -0.05
+		idea_cost = -0.075
 	}
 	ai_will_do = {
 		factor = 1
@@ -35,7 +35,7 @@ speak_no_lies_dark_and_false = {
 	is_blessing = yes
 
 	modifier = {
-		yearly_corruption = -0.1
+		yearly_corruption = -0.15
 	}
 	ai_will_do = {
 		factor = 1
@@ -46,7 +46,7 @@ let_shine_the_light_of_joy = {
 	is_blessing = yes
 
 	modifier = {
-		global_unrest = -1
+		global_unrest = -2
 	}
 	ai_will_do = {
 		factor = 1
