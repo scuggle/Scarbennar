@@ -610,7 +610,7 @@ harmonized_gerudian = {
 }
 
 harmonized_orcish = {
-	infantry_power = 0.05
+	infantry_cost = -0.1
 	religion = yes
 }
 

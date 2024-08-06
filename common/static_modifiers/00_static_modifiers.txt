@@ -2005,7 +2005,7 @@ native_policy_hostile = {
 
 high_harmony = {
 	tolerance_own = 3
-	development_cost = -0.1
+	development_cost = -0.05
 	#meritocracy = 1 #Anbennar
 	legitimacy = 0.5
 	devotion = 1
