@@ -1672,9 +1672,10 @@ cuddliest_bnu = {
 }
 
 reclaiming_dwarovar = {
-	colonists = 1
-	native_uprising_chance = 0.5
+	colonists = 2
+	native_uprising_chance = 1
 	native_assimilation = -1.5
+	global_tax_income = 24
 }
 
 den_of_great_bat = {

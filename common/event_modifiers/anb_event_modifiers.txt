@@ -1095,6 +1095,7 @@ gray_orc_fearsome_conqueror = {
 }
 gray_orc_leader_of_the_gray_orcs = {
 	colonists = 1
+	global_tax_income = 24
 }
 orc_conversion_zeal = {
 	global_missionary_strength = 0.10
