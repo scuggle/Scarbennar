@@ -368,7 +368,7 @@ eur_agressive_warfare = {
 
 		}
     }
-	province_warscore_cost = -0.1
+	years_of_nationalism = -5
 	
 	ai_will_do = {
 		factor = 0.8		

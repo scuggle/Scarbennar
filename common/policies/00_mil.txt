@@ -379,7 +379,7 @@ eur_adventurer_army= {
     }
 
 	mercenary_discipline = 0.025
-	mercenary_manpower = 0.10
+	mercenary_manpower = 0.25
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -487,7 +487,8 @@ eur_military_interventions= {
     }
 
 	prestige_from_land = 1
-	possible_condottieri = 2
+	possible_condottieri = 1
+	mercenary_manpower = 0.1
 	available_province_loot = 0.50
 	
 	ai_will_do = {
