@@ -7,3 +7,5 @@ primary_culture = imperial_marr
 religion = corinite
 technology_group = tech_cannorian
 capital = 4097
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_state }	#Cobalt Circle

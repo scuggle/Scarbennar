@@ -12,18 +12,3 @@ capital = 5758 # Ninakaire
 
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
-
-1443.7.2 = {
-	monarch = {
-		name = "Balrion 'Sweet Tooth'"
-		birth_date = 1303.1.3
-		adm = 2
-		dip = 4
-		mil = 3
-	}
-	
-	add_ruler_personality = tolerant_personality
-	add_ruler_personality = entrepreneur_personality
-	add_ruler_personality = expansionist_personality
-	set_ruler_flag = set_immortality
-}

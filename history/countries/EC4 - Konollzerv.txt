@@ -14,6 +14,8 @@ historical_rival = A60 #Asheniande
 historical_friend = F28 #Tluukt
 historical_friend = A49 #Xanzerbxis
 
+1000.1.1 = { set_estate_privilege = estate_mages_organization_state }	#Cobalt Circle
+
 1437.2.9 = {
 	monarch = {
 		name = "Yzhed I"

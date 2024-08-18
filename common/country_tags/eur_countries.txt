@@ -1,5 +1,5 @@
 #rEurope
-#EA0 = "Nurael.txt"
+EA0 = "countries/Nurael.txt"
 EA1 = "countries/Gerudian_Empire.txt"
 EA2 = "countries/Damerian_Republic.txt"
 EA3 = "countries/Businor.txt"

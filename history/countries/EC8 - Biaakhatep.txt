@@ -24,20 +24,6 @@ add_country_modifier = {
 set_country_flag = init_racial_adm_mil
 change_statists_vs_orangists = 0.5
 
-1000.1.1 = { set_estate_privilege = estate_mages_organization_state }
-
-1371.8.27 = {
-	monarch = {
-		name = "Odur Bronzebeard"
-		birth_date = 1322.2.7
-		adm = 4
-		dip = 3
-		mil = 3
-	}
-	add_ruler_personality = industrious_personality
-	set_ruler_flag = long_lived_ruler
-	set_ruler_flag = bronze_monarch_heir
-}
 1000.1.1 = { 
 	set_estate_privilege = estate_mages_organization_state 
 	set_country_flag = ancestor_worship_knows_balgar

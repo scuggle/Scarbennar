@@ -8,6 +8,8 @@ religion = kobold_dragon_cult
 technology_group = tech_kobold
 capital = 2951
 
+1000.1.1 = { set_estate_privilege = estate_mages_organization_state }	#Cobalt Circle
+
 1440.3.4 = {
 	monarch = {
 		name = "Vitru"

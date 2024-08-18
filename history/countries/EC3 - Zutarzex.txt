@@ -1,0 +1,11 @@
+
+setup_vision = yes
+government = tribal
+add_government_reform = dwarovar_squatter
+government_rank = 1
+primary_culture = redscale_kobold
+religion = kobold_dragon_cult
+technology_group = tech_kobold
+capital = 4039
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_state }	#Cobalt Circle

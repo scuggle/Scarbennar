@@ -1,99 +1,98 @@
 ﻿l_english:
+ ######################################
+ #Custom R/Europe Monument Localisation
+ #####################################
 
-######################################
-#Custom R/Europe Monument Localisation
-#####################################
-
-kara_targu_title: "Trade City of Kara Targu"
-kara_targu: "Trade City of Kara Targu"
-
-elven_mountain_title: "Temple of the Fey"
-elven_mountain: "Temple of the Fey"
-
-black_pillar_title: "THEOBELISKTHEOBELISKTHEOBELISK"
-black_pillar: "THEOBELISKTHEOBELISKTHEOBELISK"
-
-lost_ship_title: "Ancient Migrant Hulk"
-lost_ship: "Ancient Migrant Hulk"
-
-silent_repose_title: "Temple of Silence"
-silent_repose: "Temple of Silence"
-
-khenak_copper_mine_title: "Khenak Copper Mine"
-khenak_copper_mine: "Khenak Copper Mine"
-
-crannog_home_title: "Crannog Home"
-crannog_home: "Crannog Home"
-
-pearl_guild_title: "Jewelpoint Pearling Guild"
-pearl_guild: "Jewelpoint Pearling Guild"
-
-diplomatic_palace_title: "Toarnaire Royal Embassy"
-diplomatic_palace: "Toarnaire Royal Embassy"
-
-raven_hill_Title: "Raven Hill, City Of Sin"
-raven_hill: "Raven Hill, City Of Sin"
-
-trinaire_title: "Trinaire, City Of The Red Glades"
-trinaire: "Trinaire, City Of The Red Glades"
-
-wine_league_hq_title: "Wine League Headquarters"
-wine_league_hq: "Wine League Headquarters"
-
-harpy_onsen_title: "Lovers' Roost Bathhouses"
-harpy_onsen: "Lovers' Roost Bathhouses"
-
-eaglecrest_kobold_tannery_title: "Kobold Tannery"
-eaglecrest_kobold_tannery: "Kobold Tannery"
-
-port_jaher_title: "Port Jaher"
-port_jaher: "Port Jaher"
-
-zohebidi_factory_title: "Lost Zohebidi Factory"
-zohebidi_factory: "Lost Zohebidi Factory"
-
-nzeri_hanging_gardens_title: "Nzeri Hanging Gardens"
-nzeri_hanging_gardens: "Nzeri Hanging Gardens"
-
-bronze_fortress_title: "Bronze Fortress"
-bronze_fortress: "Bronze Fortress"
-
-emerald_of_the_seas_title: "Emerald of the Seas"
-emerald_of_the_seas: "Emerald of the Seas"
-
-forge_towers_title: "Forge-Towers"
-forge_towers: "Forge-Towers"
-
-square_of_liberty_title: "Square of Liberty"
-square_of_liberty: "Square of Liberty"
-
-quagga_breeding_grounds_title: "Quagga Breeding Grounds"
-quagga_breeding_grounds: "Quagga Breeding Grounds"
-
-merfolk_embassy_title: "Merfolk Embassy"
-merfolk_embassy: "Merfolk Embassy"
-
-genie_temple_title: "Temple of Ardimya"
-genie_temple: "Temple of Ardimya"
-
-chungus_exhibition_hall: "Chungus Exhibition Hall"
-chungus_exhibition_hall_desc: "The area of Fangaula is host to a particularly hefty kind of rabbit that thrives in it's steppes and grasslands. This breed of rabbit - known coloquially as the Chungus - can easily reach 5ft in both length and girth, reaching up to 6ft for especially big individuals. The practice of breeding Chunguses is a widespread pastime in Fangaula, leading to the countries nickname of 'Chungaula'. Contests are held throughout the land where breeders compete for the biggest specimen. This particular location holds the exhibition grounds for the countrywide competition where local champions go to showcase their chunguses on a larger stage and hopefully earn the prized title of 'Big Chungus' for their animal."
-
-honey_badger_tannery_title: "Honey Badger Tannery"
-honey_badger_tannery: "Honey Badger Tannery"
-
-temple_of_the_new_moon_title: "Temple of the New Moon"
-temple_of_the_new_moon: "Temple of the New Moon"
-
-New_moon_temple_1: "New Moon Temple 1"
-New_moon_temple_2: "New Moon Temple 2"
-New_moon_temple_3: "New Moon Temple 3"
-
-zerat_zatsarya_title: "Zerat Zatsarya"
-zerat_zatsarya: "Zerat Zatsarya"
-
-northern_shadow_swamp_fortress_title: "Northern Shadow Swamp Fortress"
-northern_shadow_swamp_fortress: "Northern Shadow Swamp Fortress"
-
-southern_shadow_swamp_fortress_title: "Southern Shadow Swamp Fortress"
-southern_shadow_swamp_fortress: "Southern Shadow Swamp Fortress"
+ kara_targu_title: "Trade City of Kara Targu"
+ kara_targu: "Trade City of Kara Targu"
+ 
+ elven_mountain_title: "Temple of the Fey"
+ elven_mountain: "Temple of the Fey"
+ 
+ black_pillar_title: "THEOBELISKTHEOBELISKTHEOBELISK"
+ black_pillar: "THEOBELISKTHEOBELISKTHEOBELISK"
+ 
+ lost_ship_title: "Ancient Migrant Hulk"
+ lost_ship: "Ancient Migrant Hulk"
+ 
+ silent_repose_title: "Temple of Silence"
+ silent_repose: "Temple of Silence"
+ 
+ khenak_copper_mine_title: "Khenak Copper Mine"
+ khenak_copper_mine: "Khenak Copper Mine"
+ 
+ crannog_home_title: "Crannog Home"
+ crannog_home: "Crannog Home"
+ 
+ pearl_guild_title: "Jewelpoint Pearling Guild"
+ pearl_guild: "Jewelpoint Pearling Guild"
+ 
+ diplomatic_palace_title: "Toarnaire Royal Embassy"
+ diplomatic_palace: "Toarnaire Royal Embassy"
+ 
+ raven_hill_Title: "Raven Hill, City Of Sin"
+ raven_hill: "Raven Hill, City Of Sin"
+ 
+ trinaire_title: "Trinaire, City Of The Red Glades"
+ trinaire: "Trinaire, City Of The Red Glades"
+ 
+ wine_league_hq_title: "Wine League Headquarters"
+ wine_league_hq: "Wine League Headquarters"
+ 
+ harpy_onsen_title: "Lovers' Roost Bathhouses"
+ harpy_onsen: "Lovers' Roost Bathhouses"
+ 
+ eaglecrest_kobold_tannery_title: "Kobold Tannery"
+ eaglecrest_kobold_tannery: "Kobold Tannery"
+ 
+ port_jaher_title: "Port Jaher"
+ port_jaher: "Port Jaher"
+ 
+ zohebidi_factory_title: "Lost Zohebidi Factory"
+ zohebidi_factory: "Lost Zohebidi Factory"
+ 
+ nzeri_hanging_gardens_title: "Nzeri Hanging Gardens"
+ nzeri_hanging_gardens: "Nzeri Hanging Gardens"
+ 
+ bronze_fortress_title: "Bronze Fortress"
+ bronze_fortress: "Bronze Fortress"
+ 
+ emerald_of_the_seas_title: "Emerald of the Seas"
+ emerald_of_the_seas: "Emerald of the Seas"
+ 
+ forge_towers_title: "Forge-Towers"
+ forge_towers: "Forge-Towers"
+ 
+ square_of_liberty_title: "Square of Liberty"
+ square_of_liberty: "Square of Liberty"
+ 
+ quagga_breeding_grounds_title: "Quagga Breeding Grounds"
+ quagga_breeding_grounds: "Quagga Breeding Grounds"
+ 
+ merfolk_embassy_title: "Merfolk Embassy"
+ merfolk_embassy: "Merfolk Embassy"
+ 
+ genie_temple_title: "Temple of Ardimya"
+ genie_temple: "Temple of Ardimya"
+ 
+ chungus_exhibition_hall: "Chungus Exhibition Hall"
+ chungus_exhibition_hall_desc: "The area of Fangaula is host to a particularly hefty kind of rabbit that thrives in it's steppes and grasslands. This breed of rabbit - known coloquially as the Chungus - can easily reach 5ft in both length and girth, reaching up to 6ft for especially big individuals. The practice of breeding Chunguses is a widespread pastime in Fangaula, leading to the countries nickname of 'Chungaula'. Contests are held throughout the land where breeders compete for the biggest specimen. This particular location holds the exhibition grounds for the countrywide competition where local champions go to showcase their chunguses on a larger stage and hopefully earn the prized title of 'Big Chungus' for their animal."
+ 
+ honey_badger_tannery_title: "Honey Badger Tannery"
+ honey_badger_tannery: "Honey Badger Tannery"
+ 
+ temple_of_the_new_moon_title: "Temple of the New Moon"
+ temple_of_the_new_moon: "Temple of the New Moon"
+ 
+ New_moon_temple_1: "New Moon Temple 1"
+ New_moon_temple_2: "New Moon Temple 2"
+ New_moon_temple_3: "New Moon Temple 3"
+ 
+ zerat_zatsarya_title: "Zerat Zatsarya"
+ zerat_zatsarya: "Zerat Zatsarya"
+ 
+ northern_shadow_swamp_fortress_title: "Northern Shadow Swamp Fortress"
+ northern_shadow_swamp_fortress: "Northern Shadow Swamp Fortress"
+ 
+ southern_shadow_swamp_fortress_title: "Southern Shadow Swamp Fortress"
+ southern_shadow_swamp_fortress: "Southern Shadow Swamp Fortress"
