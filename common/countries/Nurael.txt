@@ -3,8 +3,7 @@
 
 graphical_culture = elvengfx
 
-color = { 196  243  246 }
-
+color = { 0  242  238 }
 
 
 historical_idea_groups = {
