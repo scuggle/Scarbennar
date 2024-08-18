@@ -1,8 +1,8 @@
 
 # No previous file for Campeche
-owner = X19
-controller = X19
-add_core = X19
+owner = EB7
+controller = EB7
+add_core = EB7
 #add_core = Z37
 add_core = B39
 #culture = aldresian

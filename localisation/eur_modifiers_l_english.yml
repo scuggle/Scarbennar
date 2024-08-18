@@ -59,6 +59,9 @@
  eur_changes.5.t:0 "Gelkalis Playable?"
  eur_changes.5.d:0 "Gelkalis is cope, so they get to be an autonomous vassal at least."
  eur_changes.5.a:0 "Got it"
+ eur_changes.6.t:0 "Fur oversupply"
+ eur_changes.6.d:0 "Aelantiri fur production has caused the price of fur to fall back down."
+ eur_changes.6.a:0 "An industry in decline."
 
  eur_religious_unity_boost: "Religious Unity Boost."
  eur_religious_unity_boost.desc: "+50% Religious Unity and +2 Tolerance of Heathens."

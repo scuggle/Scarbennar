@@ -7,7 +7,7 @@ war_goal = {
 
 #Konollzerv rises up
 1439.1.1 = {
-	add_attacker = X28
+	add_attacker = EC4
 	add_defender = I26 #Salla Elyn
    # add_defender = U12 #Oubbligschild
    # add_defender = U11 #Landshark
@@ -23,7 +23,7 @@ war_goal = {
 }
 #Konollzerv "wins"
 1444.11.1 = {
-	rem_attacker = X28
+	rem_attacker = EC4
 	rem_defender = I26 #Salla Elyn
   #  rem_defender = U12 #Oubbligschild
    # rem_defender = U11 #Landshark

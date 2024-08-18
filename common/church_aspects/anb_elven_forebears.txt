@@ -229,7 +229,7 @@ tanelia_1 = {
 	potential = {
 		OR = {
 			tag = A32
-			tag = X29
+			tag = EC5
 		}
 		NOT = { has_church_aspect = tanelia_1 }
 	}
@@ -339,7 +339,7 @@ arda_1 = {
 	potential = {
 		OR = {
 			tag = A83
-			tag = X29
+			tag = EC5
 		}
 		NOT = { has_church_aspect = arda_1 }
 	}
@@ -615,7 +615,7 @@ wealth_1 = {
 		OR = {
 			tag = H52
 			tag = H53
-			tag = X29
+			tag = EC5
 		}
 		NOT = { has_church_aspect = wealth_1 }
 	}

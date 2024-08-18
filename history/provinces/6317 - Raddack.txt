@@ -1,8 +1,8 @@
 capital = "Lizard Ruins"
 
-owner = X29
-controller = X29
-add_core = X29
+owner = EC5
+controller = EC5
+add_core = EC5
 culture = jiromji
 religion = fangaulan_pantheon
 trade_goods = ivory

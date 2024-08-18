@@ -178,7 +178,7 @@ warband_ideas = { #Orc
 	trigger = {
 		has_reform = dwarovar_warband
 		NOT = { tag = Z55 } # Kobolds should get kobold ideas
-		NOT = { tag = X26 }
+		NOT = { tag = EC2 }
 	}
 	free = yes
 	

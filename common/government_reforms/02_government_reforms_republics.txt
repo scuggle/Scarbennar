@@ -6837,8 +6837,8 @@ northern_league_magnates = {
 		OR = {
 			tag = A13 # Gawed
 			was_tag = A13
-			tag = X24 # Northern League
-			was_tag = X24
+			tag = EC0 # Northern League
+			was_tag = EC0
 			is_subject_of = A13
 		}
 	}
@@ -7663,7 +7663,7 @@ voltenu_corpocracy = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes	#changed this from no
 	potential = {
-		tag = X13
+		tag = EB1
 		NOT = { has_reform = crown_colony_government }
 		NOT = { has_reform = private_enterprise_colony_government }
 		NOT = { has_reform = self_governing_colony_government }
@@ -7671,7 +7671,7 @@ voltenu_corpocracy = {
 	}
 	trigger = {
 		OR = {
-			tag = X13
+			tag = EB1
 		}
 	}
 	duration = 4
@@ -8412,8 +8412,8 @@ new_moon_elf_republic_reform = {
 	legacy_equivalent = merchant_republic
 	potential = {
 		OR = {
-			tag = X29
-			tag = X30
+			tag = EC5
+			tag = EC6
 			primary_culture = new_moon_elf
 		}
 		# NOT = {
@@ -8428,8 +8428,8 @@ new_moon_elf_republic_reform = {
 	}
 	trigger = {
 		OR = {
-			tag = X29
-			tag = X30
+			tag = EC5
+			tag = EC6
 			has_reform = new_moon_elf_republic_reform
 			have_had_reform = new_moon_elf_republic_reform
 		}

@@ -1,6 +1,6 @@
 country_decisions = {
 
-	X09_form_nation = {
+	EA7_form_nation = {
 		major = yes
 		potential = {
 			OR = {
@@ -12,9 +12,9 @@ country_decisions = {
 				#tag = A77 #Orda Aldresia
 				#tag = A85 #Magisterium
 			}
-			NOT = { has_country_flag = formed_X09_flag }
+			NOT = { has_country_flag = formed_EA7_flag }
 			NOT = { tag = Z01 } #Empire of Anbennar
-			NOT = { tag = X09 }
+			NOT = { tag = EA7 }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -38,7 +38,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
-			NOT = { exists = X09 }
+			NOT = { exists = EA7 }
 			num_of_owned_provinces_with = {
                 value = 3
                 OR = {
@@ -61,7 +61,7 @@ country_decisions = {
             }
 		}
 		effect = {
-			change_tag = X09
+			change_tag = EA7
 			hidden_effect = { restore_country_name = yes }
 			#remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -78,7 +78,7 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			set_country_flag = formed_X09_flag
+			set_country_flag = formed_EA7_flag
 		}
 		ai_will_do = {
 			factor = 1

@@ -1,8 +1,8 @@
 # No previous file for Chisca
 
-owner = X29
-controller = X29
-add_core = X29
+owner = EC5
+controller = EC5
+add_core = EC5
 capital = ""
 culture = jiromji
 religion = fangaulan_pantheon

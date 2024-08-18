@@ -1,11 +1,11 @@
 
 country_decisions = {
 
-	X11_form_nation = {
+	EA9_form_nation = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = formed_X11_flag }
-			NOT = { tag = X11 }
+			NOT = { has_country_flag = formed_EA9_flag }
+			NOT = { tag = EA9 }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -40,7 +40,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
-			NOT = { exists = X11 }
+			NOT = { exists = EA9 }
 
             owns_core_province = 904	# Arannen
 			owns_core_province = 311	# Ashfield
@@ -53,7 +53,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_tag = X11
+			change_tag = EA9
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -63,19 +63,19 @@ country_decisions = {
 			
 			dostanor_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X11
+				add_permanent_claim = EA9
 			}
 			daravans_folly_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X11
+				add_permanent_claim = EA9
 			}
 			the_borders_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X11
+				add_permanent_claim = EA9
 			}
 			ashfields_area = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X11
+				add_permanent_claim = EA9
 			}
 			
 			add_country_modifier = {
@@ -87,7 +87,7 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			set_country_flag = formed_X11_flag
+			set_country_flag = formed_EA9_flag
 		}
 		ai_will_do = {
 			factor = 1

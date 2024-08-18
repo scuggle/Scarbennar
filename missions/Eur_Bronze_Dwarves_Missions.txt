@@ -5,8 +5,8 @@
 # 	potential = {
 #         NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
-# 			tag = X31
-# 			tag = X32
+# 			tag = EC7
+# 			tag = EC8
 # 		}
 # 	}
 # 	has_country_shield = yes
@@ -147,8 +147,8 @@
 # 	potential = {
 #         NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
-# 			tag = X31
-# 			tag = X32
+# 			tag = EC7
+# 			tag = EC8
 # 		}
 # 	}
 # 	has_country_shield = yes
@@ -289,8 +289,8 @@
 # 	potential = {
 #         NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
-# 			tag = X31
-# 			tag = X32
+# 			tag = EC7
+# 			tag = EC8
 # 		}
 # 	}
 # 	has_country_shield = yes
@@ -422,8 +422,8 @@
 # 	potential = {
 #         NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
-# 			tag = X31
-# 			tag = X32
+# 			tag = EC7
+# 			tag = EC8
 # 		}
 # 	}
 # 	has_country_shield = yes
@@ -562,8 +562,8 @@
 # 	potential = {
 #         NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
-# 			tag = X31
-# 			tag = X32
+# 			tag = EC7
+# 			tag = EC8
 # 		}
 # 	}
 # 	has_country_shield = yes
@@ -637,7 +637,7 @@
 # 	ai = yes
 # 	potential = {
 #         NOT = { has_country_flag = chose_generic_mt }
-# 		tag = X32
+# 		tag = EC8
 # 	}
 # 	has_country_shield = yes
 
@@ -865,7 +865,7 @@
 # 	potential = {
 #     NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
-# 			tag = X32
+# 			tag = EC8
 # 		}
 # 	}
 # 	has_country_shield = no
@@ -1049,7 +1049,7 @@
 # 	potential = {
 #     NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
-# 			tag = X32
+# 			tag = EC8
 # 		}
 # 	}
 # 	has_country_shield = no
@@ -1269,7 +1269,7 @@
 # 	potential = {
 #     NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
-# 			tag = X32
+# 			tag = EC8
 # 		}
 # 	}
 # 	has_country_shield = no
@@ -1434,7 +1434,7 @@
 # 	potential = {
 #     NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
-# 			tag = X32
+# 			tag = EC8
 # 		}
 # 	}
 # 	has_country_shield = no

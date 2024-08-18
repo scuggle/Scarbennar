@@ -9,11 +9,11 @@ country_decisions = {
 			capital_scope = {
 				superregion = escann_superregion
 			}	
-			NOT = { has_country_flag = formed_X13_flag }
-			NOT = { has_country_flag = formed_X15_flag }
+			NOT = { has_country_flag = formed_EB1_flag }
+			NOT = { has_country_flag = formed_EB3_flag }
 			NOT = { tag = B79 }
-			NOT = { tag = X13 }
-			NOT = { tag = X15 }
+			NOT = { tag = EB1 }
+			NOT = { tag = EB3 }
 			NOT = { exists = B79 }
 			NOT = { has_country_flag = formed_escanni_goblin_nation_flag }
 

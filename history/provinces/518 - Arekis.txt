@@ -1,9 +1,9 @@
 
 #518 - Arekis
 
-owner = X20
-controller = X20
-add_core = X20
+owner = EB8
+controller = EB8
+add_core = EB8
 add_core = U18
 add_core = U17
 culture = firanyan_harpy

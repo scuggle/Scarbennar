@@ -1,7 +1,7 @@
 country_decisions = {
 	fal_goblin_casino = {
 		potential = {
-			tag = X20	#falahan
+			tag = EB8	#falahan
 			owns = 2942	#shazstundihr
 			NOT = {
 				2942 = { has_province_modifier = fal_goblin_casino_modifier }

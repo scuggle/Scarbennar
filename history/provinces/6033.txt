@@ -1,9 +1,9 @@
 # No previous file for Anbennar6033
 
 
-owner = X33
-controller = X33
-add_core = X33
+owner = EC9
+controller = EC9
+add_core = EC9
 culture = delta_gnome
 religion = the_thought
 

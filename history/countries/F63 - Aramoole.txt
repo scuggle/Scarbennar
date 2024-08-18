@@ -6,7 +6,7 @@ primary_culture = tijarikheti
 religion = aakhetist
 technology_group = tech_salahadesi
 
-historical_friend = X31 #bronze dwarves
+historical_friend = EC7 #bronze dwarves
 
 capital = 5870
 

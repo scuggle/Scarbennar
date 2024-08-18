@@ -1,7 +1,7 @@
 
 country_decisions = {
 
-	X04_form_nation = {
+	EA2_form_nation = {
 		major = yes
 		potential = {
 			OR = {
@@ -13,7 +13,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_dameria_flag }
 			NOT = { has_country_flag = formed_pashaine_flag }
 			NOT = { tag = Z01 } #Empire of Anbennar
-			NOT = { tag = X04 }
+			NOT = { tag = EA2 }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -41,7 +41,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
-			NOT = { exists = X04 }
+			NOT = { exists = EA2 }
 			OR = {
 				#owns core Dameshead and is godly ruler or Silmuna
 				AND = {
@@ -78,7 +78,7 @@ country_decisions = {
 			8 = { #Anbenncost
 				move_capital_effect = yes
 			}
-			change_tag = X04
+			change_tag = EA2
 			hidden_effect = { restore_country_name = yes }
 			#remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -88,27 +88,27 @@ country_decisions = {
 			
 			west_damesear_area = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X04
+				add_permanent_claim = EA2
 			}
 			east_damesear_area = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X04
+				add_permanent_claim = EA2
 			}
 			west_dameshead_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X04
+				add_permanent_claim = EA2
 			}
 			damerian_dales_area = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X04
+				add_permanent_claim = EA2
 			}
 			the_commons_area = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X04
+				add_permanent_claim = EA2
 			}
 			heartlands_area = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X04
+				add_permanent_claim = EA2
 			}
 			add_historical_friend = A45	#Istralore
 			add_historical_friend = A41	#Damish Temple

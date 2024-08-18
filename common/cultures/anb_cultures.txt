@@ -1186,7 +1186,7 @@ escanni = {
 
 	#Eur
 	imperial_marr = {
-		primary = X25 #Griffon Empire
+		primary = EC1 #Griffon Empire
 	}
 
 	dynasty_names = {
@@ -2270,7 +2270,7 @@ elven = {
 	}
 	#Eur
 	dark_moon_elf = {
-		primary = X18
+		primary = EB6
 
 		dynasty_names = { 
 		
@@ -2292,7 +2292,7 @@ elven = {
 	}
 	#Eur
 	new_moon_elf = {
-		primary = X29 #Tcharialt
+		primary = EC5 #Tcharialt
 
 		dynasty_names = { 
 		
@@ -2502,7 +2502,7 @@ dwarven = {
 	}
 	#Eur
 	bronze_dwarf = {
-		primary = X31 #Bervinâl Dhûmankon
+		primary = EC7 #Bervinâl Dhûmankon
 	}
 	dynasty_names = { 
 		"az-Run" Grommubanar Dimmal Dwinodum Dwinodar Grudanar Calnoraz Azduran Harrak Throm Throfrum Belarr Belarruz Bofgribal Thingribal "az-Thingr" Calikorbal 

@@ -1,7 +1,7 @@
 
 country_decisions = {
 
-	X10_form_nation = {
+	EA8_form_nation = {
 		major = yes
 		potential = {
 			OR = {
@@ -10,9 +10,9 @@ country_decisions = {
 				tag = A54
 				tag = A23
 			}
-			NOT = { has_country_flag = formed_X10_flag }
+			NOT = { has_country_flag = formed_EA8_flag }
 			NOT = { tag = Z01 } #Empire of Anbennar
-			NOT = { tag = X10 }
+			NOT = { tag = EA8 }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -53,7 +53,7 @@ country_decisions = {
 				limit = { NOT = { tag = A23 } }
 				NOT = { exists = A23 }
 			}			
-			NOT = { exists = X10 }
+			NOT = { exists = EA8 }
 			owns_core_province = 60
 			owns_core_province = 151
 			owns_core_province = 155
@@ -67,7 +67,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_tag = X10
+			change_tag = EA8
 			hidden_effect = { restore_country_name = yes }
 			#remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -77,7 +77,7 @@ country_decisions = {
 
 			damescrown_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X10
+				add_permanent_claim = EA8
 			}
 
 			add_mercantilism = 10
@@ -91,7 +91,7 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			set_country_flag = formed_X10_flag
+			set_country_flag = formed_EA8_flag
 		}
 		ai_will_do = {
 			factor = 1

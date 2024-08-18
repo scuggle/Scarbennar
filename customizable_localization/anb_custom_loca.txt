@@ -15197,10 +15197,10 @@ defined_text = {
 	# text = { localisation_key = FlagW98 trigger = { tag = W98 } }
 	# text = { localisation_key = FlagW99 trigger = { tag = W99 } }
 	# text = { localisation_key = FlagX00 trigger = { tag = X00 } }
-	# text = { localisation_key = FlagX01 trigger = { tag = X01 } }
+	# text = { localisation_key = FlagX01 trigger = { tag = EA1 } }
 	# text = { localisation_key = FlagX02 trigger = { tag = X02 } }
 	# text = { localisation_key = FlagX03 trigger = { tag = X03 } }
-	# text = { localisation_key = FlagX04 trigger = { tag = X04 } }
+	# text = { localisation_key = FlagX04 trigger = { tag = EA2 } }
 	# text = { localisation_key = FlagX05 trigger = { tag = X05 } }
 	# text = { localisation_key = FlagX06 trigger = { tag = X06 } }
 	# text = { localisation_key = FlagX07 trigger = { tag = X07 } }
@@ -15214,7 +15214,7 @@ defined_text = {
 	# text = { localisation_key = FlagX15 trigger = { tag = X15 } }
 	# text = { localisation_key = FlagX16 trigger = { tag = X16 } }
 	# text = { localisation_key = FlagX17 trigger = { tag = X17 } }
-	# text = { localisation_key = FlagX18 trigger = { tag = X18 } }
+	# text = { localisation_key = FlagEB6 trigger = { tag = EB6 } }
 	# text = { localisation_key = FlagX19 trigger = { tag = X19 } }
 	# text = { localisation_key = FlagX20 trigger = { tag = X20 } }
 	# text = { localisation_key = FlagX21 trigger = { tag = X21 } }

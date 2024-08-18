@@ -1,5 +1,5 @@
 country_decisions = {
-    biaakhatep_X32_nation = {
+    biaakhatep_EC8_nation = {
         major = yes
 		potential = {
 			culture = bronze_dwarf
@@ -7,7 +7,7 @@ country_decisions = {
 				tag = U01
 				tag = U02
 				tag = U04
-                tag = X32
+                tag = EC8
 			}
 			if = {
 				limit = { ai = yes }
@@ -30,7 +30,7 @@ country_decisions = {
 			owns_core_province = 466
 			owns_core_province = 475
 			owns_core_province = 5481
-			NOT = { exists = X32 }
+			NOT = { exists = EC8 }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
             if = {
@@ -40,7 +40,7 @@ country_decisions = {
 		}
 		effect = {
 			hidden_effect = { restore_country_name = yes }
-			change_tag = X32 
+			change_tag = EC8 
 			swap_non_generic_missions = yes
 			set_capital = 466
 			remove_non_electors_emperors_from_empire_effect = yes

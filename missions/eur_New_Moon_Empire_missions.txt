@@ -7,8 +7,8 @@ tcharialt1 = {
 	potential = {
         NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = X29
-			tag = X30
+			tag = EC5
+			tag = EC6
 		}
 	}
     tcharialt11 = {
@@ -378,8 +378,8 @@ tcharialt2 = {
 	potential = {
         NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = X29
-			tag = X30
+			tag = EC5
+			tag = EC6
 		}
 	}
     tcharialt22 = {
@@ -690,8 +690,8 @@ tcharialt3 = {
 	potential = {
         NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = X29
-			tag = X30
+			tag = EC5
+			tag = EC6
 		}
 	}
     tcharialt31 = {
@@ -960,8 +960,8 @@ tcharialt4 = {
     potential = {
         NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = X29
-			tag = X30
+			tag = EC5
+			tag = EC6
 		}
 	}
 
@@ -1023,8 +1023,8 @@ tcharialt5 = {
 	potential = {
         NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = X29
-			tag = X30
+			tag = EC5
+			tag = EC6
 		}
 	}
     tcharialt51 = {
@@ -1657,7 +1657,7 @@ newmoon2 ={
 	potential = {
         NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-		    tag = X30
+		    tag = EC6
 		}
 	}
     newmoon27 = {
@@ -1783,7 +1783,7 @@ newmoon3 ={
 	potential = {
         NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = X30
+			tag = EC6
 		}
 	}
     newmoon36 = {
@@ -1947,7 +1947,7 @@ newmoon4 = {
 	potential = {
         NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = X30
+			tag = EC6
 		}
 	}
     
@@ -2168,7 +2168,7 @@ newmoon5 ={
 	potential = {
         NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = X30
+			tag = EC6
 		}
 	}
     newmoon57 = {

@@ -134,8 +134,8 @@ country_event = {
             always = yes
         }
 
-        join_all_offensive_wars_of = X29
-        join_all_offensive_wars_of = X30
+        join_all_offensive_wars_of = EC5
+        join_all_offensive_wars_of = EC6
     }
     option = { #naw
         name = tcharialt.4.b

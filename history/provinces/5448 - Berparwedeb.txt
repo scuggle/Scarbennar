@@ -1,8 +1,8 @@
 
 # No previous file for Banten
-owner = X21
-controller = X21
-add_core = X21
+owner = EB9
+controller = EB9
+add_core = EB9
 add_core = S76
 culture = lion_command
 religion = goblinic_shamanism

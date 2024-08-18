@@ -233,11 +233,11 @@ country_event = { #restoring the gov
     trigger = {
         OR = {
             AND = {
-                tag = X31
+                tag = EC7
                 NOT = { has_reform = bronze_dual_government_reform }
             }
             AND = {
-                tag = X32
+                tag = EC8
                 NOT = { has_reform = bronze_dual_government_reform }
             }
         }

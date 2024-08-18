@@ -2363,7 +2363,7 @@ is_adventurer = {
 			tag = B18
 			tag = B19
 			tag = B20
-			tag = X18
+			tag = EB6
 
 			#Aelantir
 			tag = H42

@@ -7592,6 +7592,126 @@ spriteTypes = {
 		texturefile = "gfx/flags/Z99.tga"
 	}
 	spriteType = {
+		name = "GFX_EA0"
+		texturefile = "gfx/flags/EA0.tga"
+	}
+	spriteType = {
+		name = "GFX_EA1"
+		texturefile = "gfx/flags/EA1.tga"
+	}
+	spriteType = {
+		name = "GFX_EA2"
+		texturefile = "gfx/flags/EA2.tga"
+	}
+	spriteType = {
+		name = "GFX_EA3"
+		texturefile = "gfx/flags/EA3.tga"
+	}
+	spriteType = {
+		name = "GFX_EA4"
+		texturefile = "gfx/flags/EA4.tga"
+	}
+	spriteType = {
+		name = "GFX_EA5"
+		texturefile = "gfx/flags/EA5.tga"
+	}
+	spriteType = {
+		name = "GFX_EA6"
+		texturefile = "gfx/flags/EA6.tga"
+	}
+	spriteType = {
+		name = "GFX_EA7"
+		texturefile = "gfx/flags/EA7.tga"
+	}
+	spriteType = {
+		name = "GFX_EA8"
+		texturefile = "gfx/flags/EA8.tga"
+	}
+	spriteType = {
+		name = "GFX_EA9"
+		texturefile = "gfx/flags/EA9.tga"
+	}
+	spriteType = {
+		name = "GFX_EB0"
+		texturefile = "gfx/flags/EB0.tga"
+	}
+	spriteType = {
+		name = "GFX_EB1"
+		texturefile = "gfx/flags/EB1.tga"
+	}
+	spriteType = {
+		name = "GFX_EB2"
+		texturefile = "gfx/flags/EB2.tga"
+	}
+	spriteType = {
+		name = "GFX_EB3"
+		texturefile = "gfx/flags/EB3.tga"
+	}
+	spriteType = {
+		name = "GFX_EB4"
+		texturefile = "gfx/flags/EB4.tga"
+	}
+	spriteType = {
+		name = "GFX_EB5"
+		texturefile = "gfx/flags/EB5.tga"
+	}
+	spriteType = {
+		name = "GFX_EB6"
+		texturefile = "gfx/flags/EB6.tga"
+	}
+	spriteType = {
+		name = "GFX_EB7"
+		texturefile = "gfx/flags/EB7.tga"
+	}
+	spriteType = {
+		name = "GFX_EB8"
+		texturefile = "gfx/flags/EB8.tga"
+	}
+	spriteType = {
+		name = "GFX_EC9"
+		texturefile = "gfx/flags/EB9.tga"
+	}
+	spriteType = {
+		name = "GFX_EC0"
+		texturefile = "gfx/flags/EC0.tga"
+	}
+	spriteType = {
+		name = "GFX_EC1"
+		texturefile = "gfx/flags/EC1.tga"
+	}
+	spriteType = {
+		name = "GFX_EC2"
+		texturefile = "gfx/flags/EC2.tga"
+	}
+	spriteType = {
+		name = "GFX_EC3"
+		texturefile = "gfx/flags/EC3.tga"
+	}
+	spriteType = {
+		name = "GFX_EC4"
+		texturefile = "gfx/flags/EC4.tga"
+	}
+	spriteType = {
+		name = "GFX_EC5"
+		texturefile = "gfx/flags/EC5.tga"
+	}
+	spriteType = {
+		name = "GFX_EC6"
+		texturefile = "gfx/flags/EC6.tga"
+	}
+	spriteType = {
+		name = "GFX_EC7"
+		texturefile = "gfx/flags/EC7.tga"
+	}
+	spriteType = {
+		name = "GFX_EC8"
+		texturefile = "gfx/flags/EC8.tga"
+	}
+	spriteType = {
+		name = "GFX_EC9"
+		texturefile = "gfx/flags/EC9.tga"
+	}
+	spriteType = {
 		name = "GFX_FlagEmpty"
 		texturefile = "gfx/flags/Empty.tga"
 	}

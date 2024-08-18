@@ -547,7 +547,7 @@ country_event = { #A new Identity
 	option = {
 		name = ash_flavour_events.8.a
 		ROOT = {
-			change_tag = X27
+			change_tag = EC3
 			country_event = { id = ideagroups.1 } #Swap Ideas
 			hidden_effect = {
 				change_government = monarchy
@@ -635,21 +635,21 @@ country_event = { #Discover a few provinces in the beginning
 	hidden = yes
 	trigger = {
 		OR = {
-			tag = X26
-			was_tag = X26
+			tag = EC2
+			was_tag = EC2
 		}
 		is_year = 1444
 	}
 
 	immediate = {
 		2949 = {
-			discover_country = X26
+			discover_country = EC2
 		}
 		4036 = {
-			discover_country = X26
+			discover_country = EC2
 		}
 		2951 = {
-			discover_country = X26
+			discover_country = EC2
 		}
 	}
 

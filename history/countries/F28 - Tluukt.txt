@@ -9,7 +9,7 @@ technology_group = tech_gnollish
 capital = 687
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 
-historical_friend = X28 #Konnolzerv
+historical_friend = EC4 #Konnolzerv
 
 1413.2.15 = {
 	monarch = {

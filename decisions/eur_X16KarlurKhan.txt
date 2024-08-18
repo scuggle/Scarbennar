@@ -1,7 +1,7 @@
 
 country_decisions = {
 
-	X16_form_nation = {
+	EB4_form_nation = {
 		major = yes
 		potential = {
 			capital_scope = {
@@ -12,11 +12,11 @@ country_decisions = {
 				}
 			}
 			primary_culture = green_orc
-			NOT = { has_country_flag = formed_X16_flag }
+			NOT = { has_country_flag = formed_EB4_flag }
 			NOT = { has_country_flag = feudal_escann_kingdom }
 			has_country_flag = orc_nation_formed
 			NOT = { has_country_flag = adventurer_derived_government }
-			NOT = { tag = X16 }
+			NOT = { tag = EB4 }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -43,7 +43,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			NOT = { exists = X16 }
+			NOT = { exists = EB4 }
 			owns_core_province = 831
 			owns_core_province = 832
 			owns_core_province = 833
@@ -61,8 +61,8 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_tag = X16
-			set_country_flag = formed_X16_flag
+			change_tag = EB4
+			set_country_flag = formed_EB4_flag
 			set_country_flag = no_formable_culture_shift
 			clr_country_flag = is_a_county
 			hidden_effect = { restore_country_name = yes }
@@ -76,19 +76,19 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = X16
+				add_claim = EB4
 			}
 			inner_castanor_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = X16
+				add_claim = EB4
 			}
 			west_castanor_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = X16
+				add_claim = EB4
 			}
 			add_prestige = 50
 			add_country_modifier = {

@@ -77,7 +77,7 @@ tewaka_sunka_cult = {
 		OR = {
 			has_unlocked_cult = tewaka_sunka_cult
 			primary_culture = exodus_goblin
-			tag = X21
+			tag = EB9
 		}
 		OR = {
 			NOT = { has_country_flag = uses_primary_cult }
@@ -230,7 +230,7 @@ vortza_lesa_cult = {
 		OR = {
 			has_unlocked_cult = vortza_lesa_cult
 			primary_culture = forest_goblin
-			tag = X21
+			tag = EB9
 		}
 		OR = {
 			NOT = { has_country_flag = uses_primary_cult }
@@ -393,7 +393,7 @@ zvaika_kirba_cult = {
 	OR = {
 		has_unlocked_cult = zvaika_kirba_cult
 		primary_culture = common_goblin
-		tag = X21
+		tag = EB9
 	}
 	OR = {
 			NOT = { has_country_flag = uses_primary_cult }
@@ -427,7 +427,7 @@ vortzo_liezmo_cult = {
 	allow = {
 		OR = {
 			has_unlocked_cult = vortzo_liezmo_cult
-			tag = X21
+			tag = EB9
 			dwarovar_goblin_culture_primary = yes
 			primary_culture = cave_troll
 		}

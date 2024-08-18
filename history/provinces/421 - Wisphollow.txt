@@ -1,9 +1,9 @@
 
 #421 - Shirvan
 
-#owner = X28
-#controller = X28
-#add_core = X28
+#owner = EC4
+#controller = EC4
+#add_core = EC4
 culture = flamemarked_gnoll
 religion = regent_court
 

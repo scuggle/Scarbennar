@@ -4,7 +4,7 @@ falahan_left_branch = {
 	ai = yes
 	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
-		tag = X20
+		tag = EB8
 		NOT = { map_setup = map_setup_random }
 	}
 	
@@ -228,7 +228,7 @@ falahan_left_inner_branch = {
 	ai = yes
 	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
-		tag = X20
+		tag = EB8
 		NOT = { map_setup = map_setup_random }
 	}
 	fal_the_marches = {
@@ -462,7 +462,7 @@ falahan_inner_branch = {
 	ai = yes
 	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
-		tag = X20
+		tag = EB8
 		NOT = { map_setup = map_setup_random }
 	}
 	fal_form_our_swarm = {
@@ -594,7 +594,7 @@ falahan_inner_right_branch = {
 	ai = yes
 	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
-		tag = X20
+		tag = EB8
 		NOT = { map_setup = map_setup_random }
 	}
 	through_medbahar = {
@@ -667,10 +667,10 @@ falahan_inner_right_branch = {
 					#}
 					#save_event_target_as = fal_goblin_fren
 					#add_country_flag = fal_goblin_fren
-					#add_historical_friend = X20
+					#add_historical_friend = EB8
 				#}
 				H87 = {	#thieving arrow
-					add_historical_friend = x20	#falahan
+					add_historical_friend = EB8	#falahan
 				}
 			}
 			if = {
@@ -817,7 +817,7 @@ falahan_right_branch = {
 	ai = yes
 	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
-		tag = X20
+		tag = EB8
 		NOT = { map_setup = map_setup_random }
 	}
 	

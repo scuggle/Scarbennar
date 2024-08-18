@@ -1,7 +1,7 @@
-owner = X31
-controller = X31
+owner = EC7
+controller = EC7
 add_core = F63
-add_core = X31
+add_core = EC7
 culture = tijarikheti
 religion = aakhetist
 

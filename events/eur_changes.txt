@@ -152,3 +152,40 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = eur_changes.6
+	title = eur_changes.6.t
+	desc = eur_changes.6.d
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = {
+		years = 25
+	}
+	trigger = {
+		current_age = age_of_absolutism
+		trade_goods_produced_amount = {
+			trade_goods = fur
+			amount = 40
+		}
+		capital_scope = { 
+			OR = { 
+				continent = north_america 
+				continent = south_america
+			}
+		}
+	}
+	option = {
+		name = eur_changes.6.a 
+		ai_chance = { factor = 100 }
+		change_price = {
+			trade_goods = fur 
+			key = fur_oversupply
+			
+			value = -0.2
+			duration = -1	#permanent
+		}
+	}
+}

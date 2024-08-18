@@ -12709,8 +12709,8 @@ techno_monarchy_reform = { #CoT Ashscale
 		NOT = { has_reform = private_enterprise_colony_government }
 		NOT = { has_reform = self_governing_colony_government }
 		OR = {
-			tag = X27
-			was_tag = X27
+			tag = EC3
+			was_tag = EC3
 		}
 		NOT = { has_reform = obsidian_council_reform }
 		has_reform = techno_monarchy_reform
@@ -12772,8 +12772,8 @@ new_moon_elf_monarchy_reform = {
 	legacy_equivalent = despotic_monarchy
 	potential = {
 		OR = {
-			tag = X29
-			tag = X30
+			tag = EC5
+			tag = EC6
 			has_reform = new_moon_elf_monarchy_reform
 			have_had_reform = new_moon_elf_monarchy_reform
 		}

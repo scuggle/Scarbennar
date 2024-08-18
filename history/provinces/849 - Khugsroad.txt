@@ -1,8 +1,8 @@
 
 # No previous file for Tlapanec
-owner = X19
-controller = X19
-add_core = X19
+owner = EB7
+controller = EB7
+add_core = EB7
 culture = moon_elf
 religion = regent_court
 hre = no

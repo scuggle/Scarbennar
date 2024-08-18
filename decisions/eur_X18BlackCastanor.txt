@@ -1,11 +1,11 @@
 country_decisions = {
 
-	X18_form_nation = {
+	EB6_form_nation = {
 		major = yes
 		potential = {
 			OR = {
-				tag = X18
-				tag = X19
+				tag = EB6
+				tag = EB7
 			}
 			dynasty = "Silurion"
 			NOT = { has_country_flag = formed_black_castanor_flag }

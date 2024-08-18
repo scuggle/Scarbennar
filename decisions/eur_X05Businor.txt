@@ -1,11 +1,11 @@
 
 country_decisions = {
 
-	X05_form_nation = {
+	EA3_form_nation = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = formed_X05_flag }
-			NOT = { tag = X05 }
+			NOT = { has_country_flag = formed_EA3_flag }
+			NOT = { tag = EA3 }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -31,7 +31,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
-			NOT = { exists = X05 }
+			NOT = { exists = EA3 }
 
             AND = {
 				owns_core_province = 380	# Eborthil
@@ -45,7 +45,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_tag = X05
+			change_tag = EA3
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -55,11 +55,11 @@ country_decisions = {
 			
 			businor_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X05
+				add_permanent_claim = EA3
 			}
 			crathanor_area = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = X05
+				add_permanent_claim = EA3
 			}
 			
 			add_country_modifier = {
@@ -71,7 +71,7 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			set_country_flag = formed_X05_flag
+			set_country_flag = formed_EA3_flag
 		}
 		ai_will_do = {
 			factor = 1

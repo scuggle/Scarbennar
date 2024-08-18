@@ -928,7 +928,7 @@ A59_centralize = {
 		trigger = {
 			OR = {
 				tag = A59
-				tag = X11
+				tag = EA9
 			}
 		    estate_loyalty = { estate = estate_vampires loyalty = 50 }
 		    estate_influence = { estate = estate_vampires influence = 50 }

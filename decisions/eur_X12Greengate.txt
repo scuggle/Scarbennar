@@ -1,20 +1,20 @@
 
 country_decisions = {
 
-	X12_form_nation = {
+	EB0_form_nation = {
 		major = yes
 		potential = {
 			capital_scope = {
 				region = west_castanor_region
 			}
 			primary_culture = common_goblin
-			NOT = { has_country_flag = formed_X12_flag }
+			NOT = { has_country_flag = formed_EB0_flag }
 			NOT = { has_country_flag = feudal_escann_kingdom }
 			NOT = { has_country_flag = orc_nation_formed }
 			NOT = { has_country_flag = adventurer_derived_government }
-			NOT = { tag = X14 }
-			NOT = { tag = X13 }
-			NOT = { tag = X15 }
+			NOT = { tag = EB2 }
+			NOT = { tag = EB1 }
+			NOT = { tag = EB3 }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -42,7 +42,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			NOT = { exists = X12 }
+			NOT = { exists = EB0 }
 			mission_completed = goblin_new_nation
 			owns_core_province = 774	#Taranton
 			num_of_owned_provinces_with = {
@@ -51,8 +51,8 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_tag = X12
-			set_country_flag = formed_X12_flag
+			change_tag = EB0
+			set_country_flag = formed_EB0_flag
 			set_country_flag = no_formable_culture_shift
 			clr_country_flag = is_a_county
 			hidden_effect = { restore_country_name = yes }
@@ -66,7 +66,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = X12
+				add_claim = EB0
 			}
 			add_prestige = 50
 			add_country_modifier = {
