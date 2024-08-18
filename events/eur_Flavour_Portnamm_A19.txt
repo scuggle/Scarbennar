@@ -23,7 +23,6 @@ country_event = {
 			}
 		}
 		iochand_area = {
-			type = all
 			add_province_modifier = {
 				name = port_roy_dyke_modifier	#modifier giving 5% state maintenance modifier, yet to be localized
 				duration = -1	#permanent
@@ -42,7 +41,6 @@ country_event = {
 			}
 		}
 		applefields_area = {
-			type = all
 			add_province_modifier = {
 				name = port_roy_dyke_modifier	 
 				duration = -1	#permanent
@@ -61,7 +59,6 @@ country_event = {
 			}
 		}
 		pearpoint_area = {
-			type = all
 			add_province_modifier = {
 				name = port_roy_dyke_modifier	
 				duration = -1	#permanent

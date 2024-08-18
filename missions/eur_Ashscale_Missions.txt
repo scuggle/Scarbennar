@@ -989,7 +989,9 @@ kobold_reach_branch = {
 				}
 				ovdal_lodhum_area = {
 					limit = {
-						province_group = cavern_province
+						NOT = {
+							province_group = hold_province
+						}
 					}
 					add_permanent_province_modifier = {
 						name = ash_shanty
@@ -998,7 +1000,9 @@ kobold_reach_branch = {
 				}
 				stunad_skomdihr_area = {
 					limit = {
-						province_group = cavern_province
+						NOT = {
+							province_group = hold_province
+						}
 					}
 					add_permanent_province_modifier = {
 						name = ash_shanty
@@ -1007,7 +1011,9 @@ kobold_reach_branch = {
 				}
 				arg_ordstun_area = {
 					limit = {
-						province_group = cavern_province
+						NOT = {
+							province_group = hold_province
+						}
 					}
 					add_permanent_province_modifier = {
 						name = ash_shanty
@@ -1017,7 +1023,9 @@ kobold_reach_branch = {
 
 				orlghelovar_area = {
 					limit = {
-						province_group = cavern_province
+						NOT = {
+							province_group = hold_province
+						}
 					}
 					add_permanent_province_modifier = {
 						name = ash_shanty
@@ -1026,7 +1034,9 @@ kobold_reach_branch = {
 				}
 				south_altar_area = {
 					limit = {
-						province_group = cavern_province
+						NOT = {
+							province_group = hold_province
+						}
 					}
 					add_permanent_province_modifier = {
 						name = ash_shanty
