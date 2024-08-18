@@ -1331,3 +1331,40 @@ EC9_ideas = {
 		native_assimilation = 0.5
 	}
 }
+
+EA0_ideas = {
+	start = {
+		infantry_power = 0.05
+		infantry_power = 0.05
+	}
+	bonus = {
+		infantry_power = 0.05
+	}
+
+	trigger = {
+		tag = EA0 #Nurael
+	}
+	free = yes
+
+	EA0_1 = {
+		infantry_power = 0.05
+	}
+	EA0_2 = {
+		infantry_power = 0.05
+	}
+	EA0_3 = {
+		infantry_power = 0.05
+	}
+	EA0_4 = {
+		infantry_power = 0.05
+	}
+	EA0_5 = {
+		infantry_power = 0.05
+	}
+	EA0_6 = {
+		infantry_power = 0.05
+	}
+	EA0_7 = {
+		infantry_power = 0.05
+	}
+}
