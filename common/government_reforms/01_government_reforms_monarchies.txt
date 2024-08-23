@@ -12885,11 +12885,13 @@ damerian_technomonarchy = {
 		administrative_efficiency = -0.025
 		artificers_influence_modifier = 0.1
 		advisor_cost = -0.05
-		advisor_pool = 1
 		female_advisor_chance = 0.33
 		allowed_rajput_fraction = 0.05
-		idea_cost = -0.025
-		technology_cost = -0.025
+	}
+	factions = {
+		tec_brilliance
+		tec_technomancy
+		tec_mechanists
 	}
 
 	conditional = {
@@ -12908,6 +12910,16 @@ damerian_technomonarchy = {
  			estates_influenced_parliament = yes
  		}
  	}
+	effect = {
+		add_country_modifier = {
+			name = technocracy_rajput_bonus
+			duration = -1
+		}
+		artifice_magic_switch_to_artificery_only_mode = yes
+	}
+	removed_effect = {
+		remove_country_modifier = technocracy_rajput_bonus
+	}
 	#custom_attributes = {
 	#	is_technocracy = yes
 	#}
