@@ -848,7 +848,7 @@ F21_diplo_plan = {
 }
 
 F21_milit_plan = {
-	discipline = 0.05
+	discipline = 0.025
 }
 
 F21_admin_plan_upgrade = {
