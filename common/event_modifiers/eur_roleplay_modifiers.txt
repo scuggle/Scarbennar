@@ -3,6 +3,7 @@
 eur_balancing_modifier = {
 	privateer_efficiency = -0.4
 	diplomats = 1
+	global_tariffs = -0.5
 }
 eur_spy_buff = {
 	spy_offence = 0.2
