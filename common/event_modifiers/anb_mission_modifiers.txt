@@ -895,7 +895,7 @@ nimscodd_kobold_cores = {
 }
 
 hierarchy_rebuild_oddansbay_modifier = {
-	development_cost = -0.15
+	development_cost = -0.10
 	administrative_efficiency = -0.3
 }
 
