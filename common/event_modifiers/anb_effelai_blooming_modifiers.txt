@@ -68,7 +68,7 @@ effelai_hub_attuned = {
 }
 effelai_slash_and_burn = {
 	local_development_cost = -0.05
-
+	local_defender_dice_roll_bonus = -1
 	picture = "ottoman_decadence_gain_modifier"
 }
 effelai_mushrooms_cleared = {
