@@ -848,7 +848,7 @@ F21_diplo_plan = {
 }
 
 F21_milit_plan = {
-	discipline = 0.05
+	discipline = 0.025
 }
 
 F21_admin_plan_upgrade = {
@@ -895,7 +895,7 @@ nimscodd_kobold_cores = {
 }
 
 hierarchy_rebuild_oddansbay_modifier = {
-	development_cost = -0.15
+	development_cost = -0.10
 	administrative_efficiency = -0.3
 }
 
@@ -12236,8 +12236,8 @@ A90_imperial_ambitions = {
 }
 
 A90_songs_freedom_triumph = {
-	shock_damage_received = -0.10
-	fire_damage_received = -0.10
+	shock_damage_received = -0.075
+	fire_damage_received = -0.075
 }
 
 A90_songemperor = {
