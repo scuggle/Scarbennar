@@ -12236,8 +12236,8 @@ A90_imperial_ambitions = {
 }
 
 A90_songs_freedom_triumph = {
-	shock_damage_received = -0.10
-	fire_damage_received = -0.10
+	shock_damage_received = -0.075
+	fire_damage_received = -0.075
 }
 
 A90_songemperor = {
