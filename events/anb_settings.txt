@@ -172,6 +172,7 @@ country_event = {
 				western_cannor_superregion = { destroy_province_permanently = yes }
 				escann_superregion = { destroy_province_permanently = yes }
 				gerudia_superregion = { destroy_province_permanently = yes }
+				northern_pass_region = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_deepwoods_region }
 				deepwoods_superregion = { destroy_province_permanently = yes }
@@ -180,7 +181,26 @@ country_event = {
 				rahen_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_forbidden_plains_region }
-				forbidden_lands_superregion = { destroy_province_permanently = yes }
+				#forbidden_lands_superregion = { destroy_province_permanently = yes }
+					ogre_valley_region = { destroy_province_permanently = yes }
+					west_forbidden_plains_region = { destroy_province_permanently = yes }
+					east_forbidden_plains_region = { destroy_province_permanently = yes }
+					serpent_gift_region = { destroy_province_permanently = yes }
+					south_yarikhoi_region = { destroy_province_permanently = yes }
+					north_yarikhoi_region = { destroy_province_permanently = yes }
+					nuzurbokh_region = { destroy_province_permanently = yes }
+					I47 = {
+						remove_country = yes
+					}
+					I58 = {
+						remove_country = yes
+					}
+					I78 = {
+						remove_country = yes
+					}
+					I88 = {
+						remove_country = yes
+					}
 			}
 			if = { limit = { has_global_flag = delete_haless_region }
 				yanshen_superregion = { destroy_province_permanently = yes }
@@ -190,7 +210,12 @@ country_event = {
 				east_serpentspine_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_west_serpentspine_region }
-				west_serpentspine_superregion = { destroy_province_permanently = yes }
+				#west_serpentspine_superregion = { destroy_province_permanently = yes }
+					west_dwarovar_region = { destroy_province_permanently = yes }
+					middle_dwarovar_region = { destroy_province_permanently = yes }
+					serpentreach_region = { destroy_province_permanently = yes }
+					serpents_vale_region = { destroy_province_permanently = yes }
+					yyl_moista_region = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_gozenguun_region } 
 				north_haless_superregion = { destroy_province_permanently = yes }
