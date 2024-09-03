@@ -3095,59 +3095,59 @@ anbennar_T5_human_troll = {
 	}
 }
 
-anbennar_T5_human_army_of_halann = {
-	icon = "human_all"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_adventurer_reform = yes }
-		has_country_modifier = human_military
-	}
-	trigger = {
-		custom_trigger_tooltip = {
-			tooltip = anbennar_T5_human_army_of_halann_tt
-			AND = {
-				high_tolerance_centaur_race_trigger = yes
-				high_tolerance_dwarven_race_trigger = yes
-				high_tolerance_elven_race_trigger = yes
-				high_tolerance_gnollish_race_trigger = yes
-				high_tolerance_gnomish_race_trigger = yes
-				high_tolerance_goblin_race_trigger = yes
-				high_tolerance_half_elven_race_trigger = yes
-				high_tolerance_half_orcish_race_trigger = yes
-				high_tolerance_halfling_race_trigger = yes
-				high_tolerance_harimari_race_trigger = yes
-				high_tolerance_harpy_race_trigger = yes
-				high_tolerance_hobgoblin_race_trigger = yes
-				high_tolerance_human_race_trigger = yes
-				high_tolerance_kobold_race_trigger = yes
-				high_tolerance_lizardfolk_race_trigger = yes
-				# high_tolerance_mechanim_race_trigger = yes
-				high_tolerance_ogre_race_trigger = yes
-				high_tolerance_orcish_race_trigger = yes
-				high_tolerance_ruinborn_race_trigger = yes
-				high_tolerance_troll_race_trigger = yes
-			}
-		}
-	}
-	modifiers = {
-		discipline = 0.05
-		military_tactics = 0.25
-		land_morale = 0.05
-		naval_morale = 0.1
-		fire_damage = 0.05
-		shock_damage = 0.05
-		ship_durability = 0.05
-		leader_land_fire = 1
-		leader_land_shock = 1
-		leader_land_manuever = 1
-		leader_siege = 1
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
+#anbennar_T5_human_army_of_halann = {
+#	icon = "human_all"
+#	allow_normal_conversion = yes
+#	potential = {
+#		NOT = { has_adventurer_reform = yes }
+#		has_country_modifier = human_military
+#	}
+#	trigger = {
+#		custom_trigger_tooltip = {
+#			tooltip = anbennar_T5_human_army_of_halann_tt
+#			AND = {
+#				high_tolerance_centaur_race_trigger = yes
+#				high_tolerance_dwarven_race_trigger = yes
+#				high_tolerance_elven_race_trigger = yes
+#				high_tolerance_gnollish_race_trigger = yes
+#				high_tolerance_gnomish_race_trigger = yes
+#				high_tolerance_goblin_race_trigger = yes
+#				high_tolerance_half_elven_race_trigger = yes
+#				high_tolerance_half_orcish_race_trigger = yes
+#				high_tolerance_halfling_race_trigger = yes
+#				high_tolerance_harimari_race_trigger = yes
+#				high_tolerance_harpy_race_trigger = yes
+#				high_tolerance_hobgoblin_race_trigger = yes
+#				high_tolerance_human_race_trigger = yes
+#				high_tolerance_kobold_race_trigger = yes
+#				high_tolerance_lizardfolk_race_trigger = yes
+#				# high_tolerance_mechanim_race_trigger = yes
+#				high_tolerance_ogre_race_trigger = yes
+#				high_tolerance_orcish_race_trigger = yes
+#				high_tolerance_ruinborn_race_trigger = yes
+#				high_tolerance_troll_race_trigger = yes
+#			}
+#		}
+#	}
+#	modifiers = {
+#		discipline = 0.05
+#		military_tactics = 0.25
+#		land_morale = 0.05
+#		naval_morale = 0.1
+#		fire_damage = 0.05
+#		shock_damage = 0.05
+#		ship_durability = 0.05
+#		leader_land_fire = 1
+#		leader_land_shock = 1
+#		leader_land_manuever = 1
+#		leader_siege = 1
+#	}
+#	
+#	ai = {
+#		factor = 1
+#	}
+#}
+#
 # Ruinborn
 
 anbennar_T5_ruinborn_artificery = {
