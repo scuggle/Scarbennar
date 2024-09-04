@@ -41,7 +41,7 @@ elven_administration = {
 	#1 + 0.75 + 1 + 0.5 + 1 = 4.75
 	
 	#Negatives
-	global_colonial_growth = -40		#-1 B / slow reproduction, not really built for colonizing really (must be boosted via other means)
+	global_colonial_growth = -25		#-1 B / slow reproduction, not really built for colonizing really (must be boosted via other means)
 	
 	technology_cost = 0.05				#-1 S / traditional people and often slow to new ideas as the old guard lives for so long
 	embracement_cost = 0.33				#-3 C / VERY traditional people
@@ -108,7 +108,7 @@ dwarven_administration = {
 	
 	
 	#Negatives
-	global_colonial_growth = -30			#-1 B / slow reproduction
+	global_colonial_growth = -20			#-1 B / slow reproduction
 	
 	dip_tech_cost_modifier = 0.1			#-1 B / in exchange for mil tech boost
 
@@ -309,6 +309,7 @@ goblin_administration = {
 	production_efficiency = 0.10		#0.5 A / goblin factories and workers
 	spy_offence = 0.2					#1 D / intrigue
 	development_cost = -0.05			#1 S / industrialization and rapid population growth
+	global_colonial_growth = 10
 	#global_colonial_growth = 20			#fast population growth, same as kobolds
 	#mercantilism_cost = -0.1			#dumb but flavorful. Wishpig's suggestion
 	
