@@ -908,7 +908,7 @@ hierarchy_industrial_revolution = {
 }
 
 hierarchy_discover_aelantir_modifier = {
-	global_colonial_growth = 20
+	global_colonial_growth = 10
 	colonist_placement_chance = 0.05
 }
 
@@ -917,7 +917,7 @@ hierarchy_lots_of_colonists = {
 }
 
 hierarchy_presence_modifier = {
-	global_colonial_growth = 20
+	global_colonial_growth = 10
 }
 
 hierarchy_noo_widdechand_establish_modifier = {
@@ -950,7 +950,7 @@ nimscodd_the_hierarch_designed = {
 }
 
 hierarchy_noo_nimscodd_modifier = {
-	global_colonial_growth = 20
+	global_colonial_growth = 10
 }
 
 hierarchy_colonise_portnamm_modifier = {
