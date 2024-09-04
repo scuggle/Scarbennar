@@ -913,7 +913,7 @@ hierarchy_discover_aelantir_modifier = {
 }
 
 hierarchy_lots_of_colonists = {
-	global_colonial_growth = 30
+	global_colonial_growth = 20
 }
 
 hierarchy_presence_modifier = {
