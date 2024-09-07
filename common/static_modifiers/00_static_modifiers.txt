@@ -1959,7 +1959,7 @@ karma_too_low =
 
 	war_exhaustion = -0.03
 	global_missionary_strength = 0.01
-	warscore_cost_vs_other_religion = -0.15
+	warscore_cost_vs_other_religion = -0.10
 }
 
 ########################################
