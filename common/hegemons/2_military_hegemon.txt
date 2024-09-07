@@ -45,7 +45,7 @@ military_hegemon = {
 	
 	max = {
 		all_power_cost = -0.05
-		land_forcelimit_modifier = 0.15
+		land_forcelimit_modifier = 0.1
 	}
 	
 }
