@@ -1098,7 +1098,7 @@ shadows_and_daggers = { #Shadow and daggers ie dick head ideas
 	category = DIP
 
 	bonus = {
-        artillery_levels_available_vs_fort = 1
+        	artillery_levels_available_vs_fort = 1
 		possible_dip_policy = 1
 	}
 
