@@ -134,7 +134,7 @@ freecestir_mustering_grounds = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7500
 		}
 		province_modifiers = {
 			province_trade_power_modifier = 0.33
@@ -296,7 +296,7 @@ gawed_castle_gaweton = {
 			republican_tradition = 0.3
 			horde_unity = 1
 			devotion = 1
-			province_warscore_cost = -0.1
+			province_warscore_cost = -0.075
 		}
 		on_upgraded = {
 			owner = {

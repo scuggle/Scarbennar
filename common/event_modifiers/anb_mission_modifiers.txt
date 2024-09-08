@@ -862,7 +862,7 @@ F21_diplo_plan_upgrade = {
 }
 
 F21_milit_plan_upgrade = {
-	discipline = 0.05
+	discipline = 0.025
 	country_military_power = 1
 }
 
