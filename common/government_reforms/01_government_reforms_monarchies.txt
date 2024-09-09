@@ -12930,7 +12930,7 @@ damerian_technomonarchy = {
  	allow_normal_conversion = yes
  	potential = {
  		has_dlc = "Domination"
- 		NOT = { has_reform = prussian_monarchy_base }
+ 		#NOT = { has_reform = prussian_monarchy_base }
  		OR = {
  			tag = B35
 			was_tag = B35
@@ -12956,7 +12956,7 @@ damerian_technomonarchy = {
  	conditional = {
  		allow = { has_dlc = "Domination" }
  		government_abilities = {
- 			ancardian_militarization_mechanic
+			ancardian_militarization_mechanic
  		}
  	}
 }

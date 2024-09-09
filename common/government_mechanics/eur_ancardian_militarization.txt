@@ -6,19 +6,17 @@ ancardian_militarization_mechanic = {
 		OR = {
 			tag = B35
 			was_tag = B35
-			has_unlocked_government_reform_tooltip = {
- 				government_reform = ancardian_monarchy
- 			}
+ 			has_reform = ancardian_monarchy
 		}
 	}
 
 	powers = {
-		prussian_militarized_society_3 = {
-			gui = prussian_militarization_gov_mech_3_power
-			show_before_interactions = yes
+		ancardian_militarization_society = {
+			#gui = prussian_militarization_gov_mech_3_power
 			max = 100
 			base_monthly_growth = 0
 			development_scaled_monthly_growth = 0.02
+			reset_on_new_ruler = no
 			scaled_modifier = {
 				modifier = {
 					discipline = 0.025
@@ -26,7 +24,7 @@ ancardian_militarization_mechanic = {
 					drill_decay_modifier = -0.20
 					reinforce_speed = 0.2
 					land_maintenance_modifier = -0.2
-					monthly_prussian_militarized_society_3 = -0.25
+					monthly_ancardian_militarization_society = -0.25
 				}
 			}
 		}
@@ -35,22 +33,23 @@ ancardian_militarization_mechanic = {
 	interactions = {
 		
 		boost_militarization = {
-			gui = prussian_militarization_gov_mech_3_interaction
-			icon = GFX_prussian_militarization_upgrade	
+			gui = prussian_militarization_gov_mech_1_2
+			cost_type = ancardian_militarization_society
+			center = no
 			trigger = {
 				mil_power = 25
 				not = {
 					has_government_power = {
-						mechanic_type = prussian_militarization_mechanic_3
-						power_type = prussian_militarized_society_3
+						mechanic_type = ancardian_militarization_mechanic
+						power_type = ancardian_militarization_society
 						value = 100
 					}
 				}
 			}
 			effect = { 
 				add_government_power = {
-					mechanic_type = prussian_militarization_mechanic_3
-					power_type = prussian_militarized_society_3
+					mechanic_type = ancardian_militarization_mechanic
+					power_type = ancardian_militarization_society
 					value = 10
 				}
 				add_mil_power = -25
