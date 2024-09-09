@@ -111,6 +111,9 @@ country_event = {
 		hidden_effect = {
 			if = { limit = { has_global_flag = delete_bulwar_region }
 				bulwar_superregion = { destroy_province_permanently = yes }
+				2914 = { destroy_province_permanently = yes }
+				4124 = { destroy_province_permanently = yes }
+
 			}
 			if = { limit = { has_global_flag = delete_north_sarhal_region }
 				gol_region = { destroy_province_permanently = yes }
@@ -200,7 +203,16 @@ country_event = {
 			if = { limit = { has_global_flag = delete_west_serpentspine_region }
 				#west_serpentspine_superregion = { destroy_province_permanently = yes }
 					west_dwarovar_region = { destroy_province_permanently = yes }
-					middle_dwarovar_region = { destroy_province_permanently = yes }
+					middle_dwarovar_region = { 
+						limit = {
+							NOT = {
+								OR = {
+									province_id = 4124
+									province_id = 2914
+								}
+							}
+						}
+						destroy_province_permanently = yes }
 					serpentreach_region = { destroy_province_permanently = yes }
 					serpents_vale_region = { destroy_province_permanently = yes }
 					yyl_moista_region = { destroy_province_permanently = yes }

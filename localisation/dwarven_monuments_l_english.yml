@@ -128,10 +128,10 @@ orlghelovar_great_waterfall_desc: "A masterwork of engineering, the central hall
 #Middle Dwarovar
 ####################
 
-verkal_gulan_hero_gate_title: "The Hero's Gate"
-verkal_gulan_hero_gate: "The Hero's Gate"
-great_project_verkal_gulan_hero_gate: "The Hero's Gate"
-verkal_gulan_hero_gate_desc: "The Hero's Gate of Verkal Gulan was one of the three gates of the hold. While the King's Gate faces the Dwarovar and the Miner's Gate faces the great underground, the Hero's Gate faced outside, protecting Verkal Gulan - and by extension the Dwarovar - from external threats."
+verkal_gulan_hero_gate_title: "The King's Gate"
+verkal_gulan_hero_gate: "The King's Gate"
+great_project_verkal_gulan_hero_gate: "The King's Gate"
+verkal_gulan_hero_gate_desc: "The King's Gate of Verkal Gulan was one of the three gates of the hold. This Gate faces the Dwarovar, and is adorned with examples of dwarven craftsmanship and engineering. It was opened during the time of the second Segbandal, when the Gold Dwarves aided their allies with funds and troops. But when the orcs breached the rails in 816, the gate was closed, and it has sat closed since their isolation."
 
 seghdihr_home_of_the_seg_band_title: "Home of the Seg Band"
 seghdihr_home_of_the_seg_band: "Home of the Seg Band"
