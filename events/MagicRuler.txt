@@ -10336,22 +10336,22 @@ country_event = {
 		}
 		country_event = { id = magic_siege.23 }
 		custom_tooltip = magic_if_siege_magic_succeeds_tt
-		random_list = {
-			30 = {
-				tooltip = {
-					change_controller = ROOT
-					add_devastation = 10
-				}
-			}
-			70 = {
+		#random_list = {
+			#30 = {
+			#	tooltip = {
+			#		change_controller = ROOT
+			#		add_devastation = 10
+			#	}
+			#}
+			#70 = {
 				tooltip = {
 					add_province_modifier = {
 						name = siege_magic_dragon_besieger
-						duration = 14
+						duration = 28
 					}
 				}
-			}
-		}
+			#}
+		#}
 		custom_tooltip = magic_dragon_desc_tt
 	}
 	option = {
@@ -10369,22 +10369,22 @@ country_event = {
 		custom_tooltip = magic_effect_separator_tt
 
 		custom_tooltip = magic_if_siege_magic_succeeds_tt
-		random_list = {
-			30 = {
-				tooltip = {
-					change_controller = ROOT
-					add_devastation = 10
-				}
-			}
-			70 = {
+		#random_list = {
+			#30 = {
+			#	tooltip = {
+			#		change_controller = ROOT
+			#		add_devastation = 10
+			#	}
+			#}
+			#70 = {
 				tooltip = {
 					add_province_modifier = {
 						name = siege_magic_dragon_besieger
-						duration = 14
+						duration = 28
 					}
 				}
-			}
-		}
+			#}
+		#}
 		custom_tooltip = magic_dragon_desc_tt
 	}
 	option = {
