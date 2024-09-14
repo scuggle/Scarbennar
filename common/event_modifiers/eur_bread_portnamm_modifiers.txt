@@ -194,4 +194,13 @@ port_exchange_with_giberd_modifier = {	#artificer capacity is in artific_scripte
 port_konwell_gommo_exchange_modifier = {
 	#estate_artificers_influence_modifier = 0.075
 	#estate_artificers_loyalty_modifier = 0.025
-}	
+}
+port_the_nia_modifier = {
+	rebel_support_efficiency = 0.5
+	spy_offence = 0.25
+	diplomatic_reputation = -1
+}
+port_postal_order_modifier = {
+	global_institution_spread = 0.1
+	global_supply_limit_modifier = 0.05
+}
