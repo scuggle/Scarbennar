@@ -1328,18 +1328,6 @@ country_decisions = {
 			}
 		}
 	}
-	port_founding_the_nia = {
-		potential = {
-			mission_completed = port_the_naar
-			NOT = { has_country_modifier = }
-		}
-		allow = {
-		
-		}
-		effect = {
-		
-		}
-	}
 	port_university_founding1 = {
 		potential = {
 			mission_completed = port_reforming_the_university 
@@ -1579,7 +1567,7 @@ country_decisions = {
 	port_founding_the_nia = {
 		potential = {
 			mission_completed = port_the_naar
-			NOT = { 
+			NOT = { has_country_modifier = port_the_nia_modifier }
 		}
 		allow = {
 			NOT = { prestige = 50 }
