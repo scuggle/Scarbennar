@@ -51,19 +51,19 @@ country_decisions = {
 			add_treasury = -250
 			add_adm_power = -20
 			140 = {	#stormpoint
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_floodgate_modifier	#modifier giving state maintenance cost +5%, yet to be localized
 					duration = -1	#permanent
 				}
 			}
 			131 = {	#roysfort
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_floodgate_modifier	#modifier giving state maintenance cost +5%, 
 					duration = -1	#permanent
 				}
 			}
 			147 = {	#pearview
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_floodgate_modifier	#modifier giving state maintenance cost +5%, 
 					duration = -1	#permanent
 				}
@@ -85,7 +85,7 @@ country_decisions = {
 			add_adm_power = -5
 			add_treasury = -100
 			126 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_protected_from_floods_modifier	#modifier giving 10% defensivness, -1 local unrest, 5% state maintenance cost, yet to be localized
 					duration = -1	#permanent
 				}
@@ -107,7 +107,7 @@ country_decisions = {
 			add_adm_power = -5
 			add_treasury = -100
 			141 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_protected_from_floods_modifier	#modifier giving 10% defensivness, -1 local unrest, 5% state maintenance cost, 
 					duration = -1	#permanent
 				}
@@ -138,13 +138,13 @@ country_decisions = {
 		}
 		effect = {
 			140 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest yet to be localized
 					duration = 1825	#5years
 				}
 			}
 			144 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 					duration = 1825	#5years
 				}
@@ -154,26 +154,26 @@ country_decisions = {
 					NOT = { 141 = { has_province_modifier = port_protected_from_floods_modifier } }
 				}
 				141 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 						duration = 1825	#5years
 					}
 				}
 			}
 			142 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 					duration = 1825	#5years
 				}
 			}
 			138 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 					duration = 1825	#5years
 				}
 			}
 			129 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 					duration = 1825	#5years
 				}
@@ -183,7 +183,7 @@ country_decisions = {
 					NOT = { 126 = { has_province_modifier = port_protected_from_floods_modifier } }
 				}
 				126 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 						duration = 1825	#5years
 					}
@@ -209,13 +209,13 @@ country_decisions = {
 		}
 		effect = {
 			103 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 					duration = 1825	#5years
 				}
 			}
 			147 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 					duration = 1825	#5years
 				}
@@ -225,7 +225,7 @@ country_decisions = {
 					NOT = { 141 = { has_province_modifier = port_protected_from_floods_modifier } }
 				}
 				141 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 						duration = 1825	#5years
 					}
@@ -254,19 +254,19 @@ country_decisions = {
 		}
 		effect = {
 			131 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 					duration = 1825	#5years
 				}
 			}
 			130 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 					duration = 1825	#5years
 				}
 			}
 			128 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 					duration = 1825	#5years
 				}
@@ -276,7 +276,7 @@ country_decisions = {
 					NOT = { 126 = { has_province_modifier = port_protected_from_floods_modifier } }
 				}
 				126 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_purposefully_flooded_province_modifier	#modifier giving +1 defender dice roll penalty, -33% hostile movement speed, +1 monthly devastation, +5 local unrest
 						duration = 1825	#5years
 					}
@@ -318,14 +318,14 @@ country_decisions = {
 					}
 				}
 				126 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed, yet to be localized
 						duration = -1	#permanent
 					}
 				}
 			}
 			141 = {	#turnwell
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_hub_modifier
 					duration = -1	#permanent
 				}
@@ -337,14 +337,14 @@ country_decisions = {
 					}
 				}
 				129 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
 				}
 			}
 			142 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -387,26 +387,26 @@ country_decisions = {
 					}
 				}
 				126 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 						duration = -1	#permanent
 					}
 				}
 			}
 			112 = {	#westport
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_hub_modifier
 					duration = -1	#permanent
 				}
 			}
 			121 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
 			}
 			123 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -418,7 +418,7 @@ country_decisions = {
 					}
 				}
 				128 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -460,20 +460,20 @@ country_decisions = {
 					}
 				}
 				126 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 						duration = -1	#permanent
 					}
 				}
 			}
 			131 = {	#roysfort
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_hub_modifier
 					duration = -1	#permanent
 				}
 			}
 			130 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -485,7 +485,7 @@ country_decisions = {
 					}
 				}
 				128 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -529,32 +529,32 @@ country_decisions = {
 					}
 				}
 				126 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 						duration = -1	#permanent
 					}
 				}
 			}
 			145 = {	#olmaditt
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_hub_modifier
 					duration = -1	#permanent
 				}
 			}
 			122 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
 			}
 			140 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
 			}
 			138 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -566,7 +566,7 @@ country_decisions = {
 					}
 				}
 				129 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -611,26 +611,26 @@ country_decisions = {
 					}
 				}
 				141 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 						duration = -1	#permanent
 					}
 				}
 			}
 			165 = {	#newcobble
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_hub_modifier
 					duration = -1	#permanent
 				}
 			}
 			147 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
 			}
 			103 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -672,14 +672,14 @@ country_decisions = {
 					}
 				}
 				164 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 						duration = -1	#permanent
 					}
 				}
 			}
 			162 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -727,32 +727,32 @@ country_decisions = {
 					}
 				}
 				164 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 						duration = -1	#permanent
 					}
 				}
 			}
 			132 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
 			}
 			133 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
 			}
 			158 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
 			}
 			159 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -794,7 +794,7 @@ country_decisions = {
 					}
 				}
 				164 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -807,7 +807,7 @@ country_decisions = {
 					}
 				}
 				63 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -824,7 +824,7 @@ country_decisions = {
 				add_adm_power = -4
 				add_treasury = -100
 				160 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -871,7 +871,7 @@ country_decisions = {
 					}
 				}
 				164 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -888,20 +888,20 @@ country_decisions = {
 				add_adm_power = -4
 				add_treasury = -100
 				160 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
 				}
 			}
 			60 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier
 					duration = -1	#permanent
 				}
 			}
 			205 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier
 					duration = -1	#permanent
 				}
@@ -941,13 +941,13 @@ country_decisions = {
 			add_adm_power = -12
 			add_treasury = -500
 			116 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	
 					duration = -1	#permanent
 				}
 			}	
 			115 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -961,7 +961,7 @@ country_decisions = {
 					}
 				}
 				87 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -976,7 +976,7 @@ country_decisions = {
 					}
 				}
 				113 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -1025,7 +1025,7 @@ country_decisions = {
 					}
 				}
 				119 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	
 						duration = -1	#permanent
 					}
@@ -1038,14 +1038,14 @@ country_decisions = {
 					}
 				}
 				74 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	
 						duration = -1	#permanent
 					}
 				}	
 			}
 			67 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -1059,7 +1059,7 @@ country_decisions = {
 					}
 				}
 				87 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -1074,7 +1074,7 @@ country_decisions = {
 					}
 				}
 				113 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -1125,7 +1125,7 @@ country_decisions = {
 					}
 				}
 				119 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	
 						duration = -1	#permanent
 					}
@@ -1138,7 +1138,7 @@ country_decisions = {
 					}
 				}
 				114 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	
 						duration = -1	#permanent
 					}
@@ -1153,14 +1153,14 @@ country_decisions = {
 					}
 				}
 				74 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	
 						duration = -1	#permanent
 					}
 				}	
 			}
 			108 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -1174,7 +1174,7 @@ country_decisions = {
 					}
 				}
 				87 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -1189,7 +1189,7 @@ country_decisions = {
 					}
 				}
 				113 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -1238,13 +1238,13 @@ country_decisions = {
 			add_adm_power = -16
 			add_treasury = -600
 			95 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	
 					duration = -1	#permanent
 				}
 			}
 			80 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_modifier	
 					duration = -1	#permanent
 				}
@@ -1256,7 +1256,7 @@ country_decisions = {
 					}
 				}
 				119 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	
 						duration = -1	#permanent
 					}
@@ -1269,7 +1269,7 @@ country_decisions = {
 					}
 				}
 				114 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	
 						duration = -1	#permanent
 					}
@@ -1284,14 +1284,14 @@ country_decisions = {
 					}
 				}
 				74 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	
 						duration = -1	#permanent
 					}
 				}	
 			}
 			101 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = port_road_hub_modifier	#modifier giving -10% dev cost, 25% trade power modifier and 10% friendly movement speed
 					duration = -1	#permanent
 				}
@@ -1305,7 +1305,7 @@ country_decisions = {
 					}
 				}
 				87 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
@@ -1320,7 +1320,7 @@ country_decisions = {
 					}
 				}
 				113 = {
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = port_road_modifier	#modifier giving 5% trade power, 10% friendly movement speed
 						duration = -1	#permanent
 					}
