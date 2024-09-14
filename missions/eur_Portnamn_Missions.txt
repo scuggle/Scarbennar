@@ -9,7 +9,7 @@
  	}
  	port_kingdom_of_iochand = {
  		position = 1
- 		icon = mission_conquer_five_states
+ 		icon = mission_conquer_5_states
  		required_missions = {  }
  		trigger = {
  			iochand_area = {
@@ -53,7 +53,7 @@
  	}
  	port_uniting_the_creek_gnomes = {
  		position = 2
- 		icon = mission_conquer_five_states
+ 		icon = mission_conquer_5_states
  		required_missions = { port_kingdom_of_iochand }
  		trigger = {
  			roysfort_area = {		
@@ -116,7 +116,7 @@
  	}
  	port_subjugate_ruby_hold = {
  		position = 4
- 		icon = mission_conquer_five_states
+ 		icon = mission_conquer_5_states
  		required_missions = { port_conquer_lencenor }
  		trigger = {
  			A20 = {	#ruby hold 
@@ -135,7 +135,7 @@
  	}
  	port_compete_with_the_empire = {
  		position = 5
- 		icon = mission_conquer_five_states
+ 		icon = mission_conquer_5_states
  		required_missions = { port_subjugate_ruby_hold }
  		trigger = {
  			west_dameshead_region = {
@@ -162,7 +162,7 @@
  	}
  	port_ruined_isles = {
  		position = 6 
- 		icon = mission_artificer_experience
+ 		icon = mission_artificier_experience
  		required_missions = { port_international_gommo_institute }
  		trigger = {
  			north_ruined_isles_region = {
@@ -221,7 +221,7 @@
  	}
  	port_dalaire = {
  		position = 9
- 		icon = mission_artificer_experience
+ 		icon = mission_artificier_experience
  		required_missions = { port_an_outpost }
  		trigger = {
  			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with  = {
@@ -255,7 +255,7 @@
  	}
  	port_colonial_steel = {
  		position = 10
- 		icon = mission_artificer_experience
+ 		icon = mission_artificier_experience
  		required_missions = { port_dalaire }
  		trigger = {
  			any_subject_country   = {
@@ -399,7 +399,7 @@
  	}
  	port_exchange_with_nimscodd = {
  		position = 4
- 		icon = mission_artificer_experience
+ 		icon = mission_artificier_experience
  		required_missions = { port_corps_of_artificers }
  		trigger = {
  			OR ={
@@ -716,7 +716,7 @@
  							value = 150
  						}
  					}
- 					high_tolerance_gnome_race_trigger = yes
+ 					high_tolerance_gnomish_race_trigger = yes
  				}
  				OR = {
  					has_gnomish_majority_trigger = yes
@@ -770,9 +770,9 @@
  			126 = {
  				has_building = manufactory
  				development = 40
- 				manufactoring = 100
+ 				manufactories = 100
  			}
- 			has_institution  = manufactoring
+ 			has_institution  = manufactories
  		}
  		provinces_to_highlight = {
  			province_id = 126	#Portnamn
@@ -1180,7 +1180,7 @@
  	}
  	port_theatre_fame = {
  		position = 1
- 		icon = mission_averynn_street
+ 		icon = mission_arverynn_street
  		required_missions = { }
  		trigger = {
  			prestige = 75
@@ -1195,7 +1195,7 @@
  	}
  	port_reforming_the_university = {
  		position = 2
- 		icon = mission_artificer_experience
+ 		icon = mission_artificier_experience
  		required_missions = { port_theatre_fame }
  		trigger = {
  			estate_loyalty = {
