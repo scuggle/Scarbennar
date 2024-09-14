@@ -1452,6 +1452,7 @@ country_decisions = {
 				167 = {	#royvibobb
 					owned_by = ROOT
 				}
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1573,11 +1574,30 @@ country_decisions = {
 			NOT = { prestige = 50 }
 			prestige = 0
 		}
+		effect = {
+			add_country_modifier = {
+				name = port_the_nia_modifier	#modifier giving 50% rebel support efficiency, 25% spy network construction and -1 dip rep, modifier yet to be implemented
+				duration = -1	#permanent
+			}
+		}
 	}
-	effect = {
-		add_country_modifier = {
-			name = port_the_nia_modifier	#modifier giving 50% rebel support efficiency, 25% spy network construction and -1 dip rep, modifier yet to be implemented
-			duration = -1	#permanent
+	port_postal_corps = {
+		potential = {
+			mission_completed = port_roadworks
+		}
+		allow = {
+			adm_power = 100
+			trade_goods_produced_amount  = {
+ 				trade_goods = paper
+ 				amount = 5
+ 			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = port_postal_order_modifier	#modifier giving 10% institution spread and +5% supply modifier, modifier yet to be implemented
+				duration = =1	#permanent
+			}
+			add_adm_power = -100
 		}
 	}
 }
