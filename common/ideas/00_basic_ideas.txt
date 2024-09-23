@@ -949,7 +949,7 @@ diplomatic_ideas = { #international ideas #done
 	category = DIP
 
 	bonus = {
-		province_warscore_cost = -0.20
+		province_warscore_cost = -0.15
 		possible_dip_policy = 1
 	}
 
@@ -969,7 +969,7 @@ diplomatic_ideas = { #international ideas #done
 	}
 	experienced_diplomats  = {
 		diplomats = 1
-		improve_relation_modifier = 0.25
+		improve_relation_modifier = 0.33
 	}
 	flexible_negotiation = {
 		dip_tech_cost_modifier = -0.125

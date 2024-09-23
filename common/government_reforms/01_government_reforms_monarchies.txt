@@ -5557,7 +5557,7 @@ phoenix_empire = {
 	modifiers = {
 		max_absolutism = 15
 		global_autonomy = -0.1
-		province_warscore_cost = -0.1
+		province_warscore_cost = -0.05
 		tolerance_own = 2
 		governing_capacity = 250
 	}
@@ -5594,7 +5594,7 @@ phoenix_empire_mandate = {
 	modifiers = {
 		max_absolutism = 15
 		global_autonomy = -0.1
-		province_warscore_cost = -0.1
+		province_warscore_cost = -0.05
 		tolerance_own = 2
 		governing_capacity = 250
 	}
@@ -11639,7 +11639,7 @@ northen_custodians = {
 		governing_capacity = 100
 		garrison_size = 0.25
 		global_institution_spread = -0.1
-		province_warscore_cost = -0.1
+		province_warscore_cost = -0.05
 		land_forcelimit_modifier = 0.10
 	}
 }
@@ -11663,7 +11663,7 @@ agdirvoeda_empire = {
 		governing_capacity = 100
 		governing_capacity_modifier = 0.20
 		global_institution_spread = -0.1
-		province_warscore_cost = -0.15
+		province_warscore_cost = -0.1
 		land_forcelimit_modifier = 0.20
 		max_absolutism = 10
 	}
