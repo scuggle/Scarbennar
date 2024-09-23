@@ -61,8 +61,8 @@ emp_the_dragon_and_the_skald = {
 }
 
 voyage_of_the_north_raider = {
-	range = 0.15
-	global_tariffs = 0.15
+	range = 0.25
+	global_tariffs = 0.1
 	
 	potential = {
 		religion = skaldhyrric_faith
@@ -85,8 +85,8 @@ voyage_of_the_north_raider = {
 }
 
 emp_voyage_of_the_north_raider = {
-	range = 0.33
-	global_tariffs = 0.33
+	range = 0.5
+	global_tariffs = 0.15
 	
 	potential = {
 		religion = skaldhyrric_faith

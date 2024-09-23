@@ -1540,8 +1540,8 @@ colonial_governor = {
 	}
 	
 	# Bonus
-	global_tariffs = 0.2
-	colonist_placement_chance = 0.05
+	global_tariffs = 0.1
+	colonist_placement_chance = 0.1
 	
 	# skill_scaled_modifier = {
 	# 	trigger = {

@@ -704,8 +704,8 @@ exploration_ideas = { #Trustee #done
 		caravan_power = 0.25
  	}
 	free_colonies = {
-		global_tariffs = 0.15
-		liberty_desire_from_subject_development = -0.3
+		global_tariffs = 0.1
+		liberty_desire_from_subject_development = -0.35
 	}
 	global_empire = {
 		expel_minorities_cost = -0.50

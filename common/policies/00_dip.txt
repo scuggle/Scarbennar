@@ -140,9 +140,9 @@ eur_colonial_act = {
 		
 		}
     }
-	colonist_placement_chance = 0.15
+	colonist_placement_chance = 0.2
 	global_colonial_growth = 25
-	global_tariffs = 0.1
+	global_tariffs = 0.05
 	
 	ai_will_do = {
 		factor = 0.8		
