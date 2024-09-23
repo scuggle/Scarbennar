@@ -4138,7 +4138,7 @@ artifice_invention_box_of_holding = {
 	benefits = {
 		artificers_privilege_slots = 1
 		#bonuses in paper provinces?
-		global_tariffs = 0.2
+		global_tariffs = 0.1
 		treasure_fleet_income = 0.1
 	}
 	ai_will_do = {
