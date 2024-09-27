@@ -157,4 +157,213 @@ spriteTypes = {
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
+	
+	
+	spriteType = {
+		name = "GFX_spider_caravan_preparation_frame"
+		texturefile = "gfx/interface/government_mechanics/spider_caravan/spider_caravan_preparation_frame.dds"
+		loadType = "INGAME"
+	}
+
+	progressbartype = {
+		name = "GFX_spider_caravan_preparation"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/spider_caravan/spider_caravan_preparation_full.dds"
+		textureFile2 = "gfx/interface/government_mechanics/spider_caravan/spider_caravan_preparation_empty.dds"
+		size = { x = 230 y = 12 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+	spriteType = {
+		name = "GFX_spider_caravan_to_ogre_valley"
+		texturefile = "gfx/interface/government_mechanics/spider_caravan/spider_caravan_to_ogre_valley.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_spider_caravan_to_lake_fed"
+		texturefile = "gfx/interface/government_mechanics/spider_caravan/spider_caravan_to_lake_fed.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_spider_caravan_to_bulwar"
+		texturefile = "gfx/interface/government_mechanics/spider_caravan/spider_caravan_to_bulwar.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+
+	progressbartype = {
+		name = "GFX_medasi_power_share_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/medasi_power_share/medasi_power_share_bar_full.dds"
+		textureFile2 = "gfx/interface/government_mechanics/medasi_power_share/medasi_power_share_bar_empty.dds"
+		size = { x = 204 y = 17 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_medasi_power_share_frame"
+		texturefile = "gfx/interface/government_mechanics/medasi_power_share/medasi_power_share_frame.dds"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_jaddari_desert_legion_bg"
+		texturefile = "gfx/interface/government_mechanics/jaddari_desert_legion/jaddari_desert_legion_bg.dds"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_jaddari_desert_legion_bar_frame"
+		texturefile = "gfx/interface/government_mechanics/jaddari_desert_legion/jaddari_desert_legion_bar_frame.dds"
+		loadType = "INGAME"
+	}
+
+	progressbartype = {
+		name = "GFX_jaddari_desert_legion_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/jaddari_desert_legion/jaddari_desert_legion_bar_full.dds"
+		textureFile2 = "gfx/interface/government_mechanics/jaddari_desert_legion/jaddari_desert_legion_bar_empty.dds"
+		size = { x = 238 y = 12 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+	spriteType = {
+		name = "GFX_jaddari_promote_legion_captain"
+		texturefile = "gfx/interface/government_mechanics/jaddari_desert_legion/jaddari_promote_legion_captain.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_jaddari_dance_the_deioderan"
+		texturefile = "gfx/interface/government_mechanics/jaddari_desert_legion/jaddari_dance_the_deioderan.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_jaddari_summon_the_sihrusam"
+		texturefile = "gfx/interface/government_mechanics/jaddari_desert_legion/jaddari_summon_the_sihrusam.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	
+	spriteType = {
+		name = "GFX_karakhanbar_black_hearth_bg"
+		texturefile = "gfx/interface/government_mechanics/karakhanbar_black_hearth/karakhanbar_black_hearth_bg.dds"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_karakhanbar_black_hearth_bar_frame"
+		texturefile = "gfx/interface/government_mechanics/karakhanbar_black_hearth/karakhanbar_black_hearth_bar_frame.dds"
+		loadType = "INGAME"
+	}
+
+	progressbartype = {
+		name = "GFX_karakhanbar_black_hearth_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/karakhanbar_black_hearth/karakhanbar_black_hearth_bar_full.dds"
+		textureFile2 = "gfx/interface/government_mechanics/karakhanbar_black_hearth/karakhanbar_black_hearth_bar_empty.dds"
+		size = { x = 246 y = 23 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+	spriteType = {
+		name = "GFX_karakhanbar_black_hearth_stoke_the_forges"
+		texturefile = "gfx/interface/government_mechanics/karakhanbar_black_hearth/karakhanbar_black_hearth_stoke_the_forges.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_karakhanbar_black_hearth_conflagrate_the_cinders"
+		texturefile = "gfx/interface/government_mechanics/karakhanbar_black_hearth/karakhanbar_black_hearth_conflagrate_the_cinders.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	progressbartype = {
+		name = "GFX_gronstunad_authority_jade_gem_progressbar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_jade_gem.dds"
+		textureFile2 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_gem_frame.dds"
+		size = { x = 4 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_gronstunad_authority_damestear_gem_progressbar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_damestear_gem.dds"
+		textureFile2 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_gem_frame.dds"
+		size = { x = 4 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_gronstunad_authority_granite_gem_progressbar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_granite_gem.dds"
+		textureFile2 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_gem_frame.dds"
+		size = { x = 4 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_gronstunad_authority_amber_gem_progressbar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_amber_gem.dds"
+		textureFile2 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_gem_frame.dds"
+		size = { x = 4 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_gronstunad_authority_emerald_gem_progressbar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_emerald_gem.dds"
+		textureFile2 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_gem_frame.dds"
+		size = { x = 4 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_gronstunad_authority_amethyst_gem_progressbar"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_amethyst_gem.dds"
+		textureFile2 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_gem_frame.dds"
+		size = { x = 4 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_gronstunad_authority_peridot_gem_progressbar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_peridot_gem.dds"
+		textureFile2 = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_gem_frame.dds"
+		size = { x = 4 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+	spriteType = {
+		name = "GFX_gronstunad_frame"
+		texturefile = "gfx/interface/government_mechanics/gronstunad_authority/gronstunad_authority_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
 }

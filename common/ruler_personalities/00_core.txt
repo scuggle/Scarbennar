@@ -1416,6 +1416,10 @@ industrious_personality = {
 			factor = 1
 			has_government_attribute = is_merchant_republic
 		}
+		modifier = { 
+			factor = 3 
+			has_country_flag = karakhanbar_industrious_rulers 
+		}
 	}
 	
 	building_budget_multiplier = 1.2
@@ -1492,11 +1496,7 @@ expansionist_personality = {
 		}
 		modifier = {
 			factor = 1
-			OR = {
-				has_idea_group = exploration_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = trade_ideas
-			}
+			has_idea_group = exploration_ideas
 			has_idea_group = expansion_ideas
 		}
 		# modifier = {
@@ -1684,6 +1684,13 @@ conqueror_personality = {
 				factor = 2
 				has_country_modifier = ynn_zodiac_ruler_3
 			}
+			modifier = {
+				factor = 0.25
+				AND = {
+					has_reform = heroic_realm_reform
+					is_monarch_leader = yes
+				}
+			}
 		}
 	}
 
@@ -1754,6 +1761,13 @@ tactical_genius_personality = {
 				factor = 2
 				has_country_modifier = ynn_zodiac_ruler_16
 			}
+			modifier = {
+				factor = 0.25
+				AND = {
+					has_reform = heroic_realm_reform
+					is_monarch_leader = yes
+				}
+			}
 		}
 	}
 
@@ -1818,6 +1832,13 @@ bold_fighter_personality = {
 				factor = 2
 				has_country_modifier = ynn_zodiac_ruler_3
 			}
+			modifier = {
+				factor = 0.25
+				AND = {
+					has_reform = heroic_realm_reform
+					is_monarch_leader = yes
+				}
+			}
 		}
 	}
 
@@ -1880,6 +1901,13 @@ strict_personality = {
 				factor = 2
 				has_country_modifier = ynn_zodiac_ruler_13
 			}
+			modifier = {
+				factor = 0.25
+				AND = {
+					has_reform = heroic_realm_reform
+					is_monarch_leader = yes
+				}
+			}
 		}
 	}
 
@@ -1940,6 +1968,13 @@ inspiring_leader_personality = {
 				factor = 2
 				has_country_modifier = ynn_zodiac_ruler_5
 			}
+			modifier = {
+				factor = 0.25
+				AND = {
+					has_reform = heroic_realm_reform
+					is_monarch_leader = yes
+				}
+			}
 		}
 	}
 
@@ -1999,6 +2034,13 @@ martial_educator_personality = {
 			modifier = {
 				factor = 1
 				MIL = 6
+			}
+			modifier = {
+				factor = 0.25
+				AND = {
+					has_reform = heroic_realm_reform
+					is_monarch_leader = yes
+				}
 			}
 		}
 	}
@@ -2123,6 +2165,13 @@ fierce_negotiator_personality = {
 			modifier = {
 				factor = 2
 				has_country_modifier = ynn_zodiac_ruler_9
+			}
+			modifier = {
+				factor = 0.25
+				AND = {
+					has_reform = heroic_realm_reform
+					is_monarch_leader = yes
+				}
 			}
 		}
 	}
@@ -3848,7 +3897,12 @@ iron_crowned_personality = {
 
 peasant_revolt_leader_personality = {
 	
-	allow = { has_government_attribute = is_peasants_republic }
+	allow = { 
+		OR = {
+			has_government_attribute = is_peasants_republic 
+			has_country_flag = G54_more_potlf_flag
+		}
+	}
 	morale_damage = 0.1
 	global_unrest = -1
 	nation_designer_cost = 30
@@ -3858,6 +3912,10 @@ peasant_revolt_leader_personality = {
 	wants_land = yes
 	
 	chance = {	
+		modifier = {
+			factor = 2
+			has_country_flag = G54_more_potlf_flag
+		}
 	}
 	immortal = 0
 }
@@ -3918,6 +3976,11 @@ mage_personality = {	#Powerful Mage
 			}
 			
 			modifier = {
+				factor = 2
+				has_estate_privilege = estate_church_khateshala_mutation
+			}
+			
+			modifier = {
 				factor = 1.75
 				OR = {
 					ruler_culture = sun_elf
@@ -3928,8 +3991,6 @@ mage_personality = {	#Powerful Mage
 					ruler_culture = desert_elf
 					ruler_culture = dawn_elf
 					ruler_culture = sea_elf
-					ruler_culture = dark_moon_elf
-					ruler_culture = new_moon_elf
 				}
 			}
 			
@@ -4008,6 +4069,7 @@ mage_personality = {	#Powerful Mage
 					ruler_culture = ungulan_orc
 					ruler_culture = barumand_orc
 					ruler_culture = brown_orc
+					ruler_culture = karakhanbari_orc
 					ruler_culture = karashari_orc
 					ruler_culture = redtusk_orc
 					ruler_culture = common_goblin
@@ -4038,12 +4100,12 @@ mage_personality = {	#Powerful Mage
 	}
 	heir_allow = {
 		allow = {
-			OR = {
-				NOT = { heir_culture = homunculi }
-				NOT = { has_heir_flag = is_a_secret_homunculus }
+			NOT = { 
+				heir_culture = homunculi
+				has_heir_flag = is_a_secret_homunculus
+				has_heir_flag = heir_consort_mage_personality
+				has_country_flag = command_slave_state_flag
 			}
-			NOT = { has_heir_flag = heir_consort_mage_personality }
-			NOT = { has_country_flag = command_slave_state_flag }
 		}
 	
 		chance = {
@@ -4104,8 +4166,6 @@ mage_personality = {	#Powerful Mage
 					heir_culture = desert_elf
 					heir_culture = dawn_elf
 					heir_culture = sea_elf
-					heir_culture = dark_moon_elf
-					heir_culture = new_moon_elf
 				}
 			}
 			
@@ -4185,6 +4245,7 @@ mage_personality = {	#Powerful Mage
 					heir_culture = ungulan_orc
 					heir_culture = barumand_orc
 					heir_culture = brown_orc
+					heir_culture = karakhanbari_orc
 					heir_culture = karashari_orc
 					heir_culture = redtusk_orc
 					heir_culture = common_goblin
@@ -4193,7 +4254,6 @@ mage_personality = {	#Powerful Mage
 					dwarovar_goblin_culture_heir = yes
 					heir_culture = city_goblin
 					heir_culture = march_goblin
-					heir_culture = bronze_dwarf
 				}
 			}
 			
@@ -4263,8 +4323,6 @@ mage_personality = {	#Powerful Mage
 					consort_culture = desert_elf
 					consort_culture = dawn_elf
 					consort_culture = sea_elf
-					consort_culture = dark_moon_elf
-					consort_culture = new_moon_elf
 				}
 			}
 			
@@ -4342,6 +4400,7 @@ mage_personality = {	#Powerful Mage
 					consort_culture = ungulan_orc
 					consort_culture = barumand_orc
 					consort_culture = brown_orc
+					consort_culture = karakhanbari_orc
 					consort_culture = karashari_orc
 					consort_culture = redtusk_orc
 					consort_culture = common_goblin
@@ -4350,7 +4409,6 @@ mage_personality = {	#Powerful Mage
 					dwarovar_goblin_culture_consort = yes
 					consort_culture = city_goblin
 					consort_culture = march_goblin
-					consort_culture = bronze_dwarf
 				}
 			}
 		}
@@ -4370,7 +4428,6 @@ mage_personality = {	#Powerful Mage
 	yearly_absolutism = 0.5
 	may_recruit_female_generals = yes
 	monarch_lifespan = 0.25
-	yearly_patriarch_authority = 0.01
 	reasons_to_elect = 25
 	meritocracy = 0.15 #Anbennar
 	
@@ -4536,7 +4593,6 @@ mongoose_shifter_personality = {
 			OR = {
 				ruler_religion = beast_memory
 				ruler_culture = tanizu
-				ruler_culture = dakinshi
 				ruler_culture = antmvura
 				ruler_culture = kombedak
 				ruler_culture = umsozidak
@@ -4564,7 +4620,6 @@ mongoose_shifter_personality = {
 			OR = {
 				heir_religion = beast_memory
 				heir_culture = tanizu
-				heir_culture = dakinshi
 				heir_culture = antmvura
 				heir_culture = kombedak
 				heir_culture = umsozidak
@@ -4591,7 +4646,6 @@ mongoose_shifter_personality = {
 			OR = {
 				consort_religion = beast_memory
 				consort_culture = tanizu
-				consort_culture = dakinshi
 				consort_culture = antmvura
 				consort_culture = kombedak
 				consort_culture = umsozidak
@@ -4637,7 +4691,6 @@ leopard_shifter_personality = {
 			OR = {
 				ruler_religion = beast_memory
 				ruler_culture = tanizu
-				ruler_culture = dakinshi
 				ruler_culture = antmvura
 				ruler_culture = kombedak
 				ruler_culture = umsozidak
@@ -4665,7 +4718,6 @@ leopard_shifter_personality = {
 			OR = {
 				heir_religion = beast_memory
 				heir_culture = tanizu
-				heir_culture = dakinshi
 				heir_culture = antmvura
 				heir_culture = kombedak
 				heir_culture = umsozidak
@@ -4692,7 +4744,6 @@ leopard_shifter_personality = {
 			OR = {
 				consort_religion = beast_memory
 				consort_culture = tanizu
-				consort_culture = dakinshi
 				consort_culture = antmvura
 				consort_culture = kombedak
 				consort_culture = umsozidak
@@ -4736,7 +4787,6 @@ elephant_shifter_personality = {
 			OR = {
 				ruler_religion = beast_memory
 				ruler_culture = tanizu
-				ruler_culture = dakinshi
 				ruler_culture = antmvura
 				ruler_culture = kombedak
 				ruler_culture = umsozidak
@@ -4764,7 +4814,6 @@ elephant_shifter_personality = {
 			OR = {
 				heir_religion = beast_memory
 				heir_culture = tanizu
-				heir_culture = dakinshi
 				heir_culture = antmvura
 				heir_culture = kombedak
 				heir_culture = umsozidak
@@ -4791,7 +4840,6 @@ elephant_shifter_personality = {
 			OR = {
 				consort_religion = beast_memory
 				consort_culture = tanizu
-				consort_culture = dakinshi
 				consort_culture = antmvura
 				consort_culture = kombedak
 				consort_culture = umsozidak
@@ -4828,6 +4876,7 @@ elephant_shifter_personality = {
 	alliance_acceptance = 10
 	immortal = 0
 }
+
 fire_planetouched_personality = {
 	ruler_allow = {
 		allow = {
@@ -5055,5 +5104,4 @@ life_planetouched_personality = {
 
 	gift_chance = 25
 	alliance_acceptance = 10
-}
 }

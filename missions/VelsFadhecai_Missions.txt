@@ -1963,6 +1963,16 @@ velsfadhecai_missions_3b = {
 			else = {
 				custom_tooltip = vf_readingahead_i_tt
 			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = vf_varlengeilt_captured_flg
+					}
+				}
+				country_event = {
+					id = flavour_velsfadhecai.100
+				}
+			}
 		}
 	}
 

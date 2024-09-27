@@ -61,6 +61,22 @@ marketplace = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					religion = genie_cult
+					has_country_flag = holy_buildings_active
+				}
+			}
+			add_province_modifier = {
+				name = holy_buildings_sailors
+				duration = 7300
+			}
+		}
+
+		merfolk_dynamic_settlement_effect = yes
+
+		gronstunad_building_authority_effect = { value = 1 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -76,6 +92,7 @@ marketplace = {
 
 
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -1 }
 	}
 
 	ai_will_do = {
@@ -114,6 +131,20 @@ workshop = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					religion = genie_cult
+					has_country_flag = holy_buildings_active
+				}
+			}
+			add_province_modifier = {
+				name = holy_buildings_production
+				duration = 7300
+			}
+		}
+
+		gronstunad_building_authority_effect = { value = 1 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -124,6 +155,7 @@ workshop = {
 		remove_province_modifier = eur_worksop_1
 	}
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -1 }
 	}
 
 	allow_in_gold_provinces = no
@@ -205,6 +237,20 @@ temple = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					religion = genie_cult
+					has_country_flag = holy_buildings_active
+				}
+			}
+			add_province_modifier = {
+				name = holy_buildings_tax
+				duration = 7300
+			}
+		}
+
+		gronstunad_building_authority_effect = { value = 1 }
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -258,6 +304,7 @@ temple = {
 		remove_province_modifier = eur_temple_1
 	}
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -1 }
 	}
 	ai_will_do = {
 		factor = 1
@@ -309,6 +356,20 @@ barracks = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					religion = genie_cult
+					has_country_flag = holy_buildings_active
+				}
+			}
+			add_province_modifier = {
+				name = holy_buildings_manpower
+				duration = 7300
+			}
+		}
+
+		gronstunad_building_authority_effect = { value = 1 }
 	}
 	on_destroyed = {
 		# if = {
@@ -333,6 +394,7 @@ barracks = {
 		remove_province_modifier = eur_barracks_1
 	}
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -1 }
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -385,6 +447,9 @@ shipyard = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+		merfolk_dynamic_settlement_effect = yes
+
+		gronstunad_building_authority_effect = { value = 1 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -394,6 +459,7 @@ shipyard = {
 		}
 	}
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -1 }
 	}
 
 	ai_will_do = {
@@ -525,10 +591,20 @@ fort_15th = {
 				add_church_power = 5
 			}
 		}
+		FROM = {
+			if = {
+				limit = {
+					religion = winter_court
+				}
+				add_church_power = 10
+			}
+		}
 		remove_province_modifier = command_elephant_fort_buff
 		
 		#Anbennar
 		anbennar_building_effect = yes
+
+		gronstunad_building_authority_effect = { value = 2 }
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
@@ -549,10 +625,15 @@ fort_15th = {
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
 		}
+		if = { # Anbennar Kobold Traps
+			limit = { has_province_flag = has_kobold_traps }
+			province_event = { id = kobold_traps.8 }
+		}
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -2 }
 	}
 
 	onmap = yes
@@ -589,12 +670,18 @@ coastal_defence = {
 	on_built = {
 		#Anbennar
 		anbennar_building_effect = yes
+
+		gronstunad_building_authority_effect = { value = 1 }
 	}
 	modifier = {
 		blockade_force_required = 0.5
 		hostile_disembark_speed = 1.0
 		hostile_fleet_attrition = 5
 		block_slave_raid = yes
+	}
+
+	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -1 }
 	}
 
 	ai_will_do = {
@@ -642,6 +729,20 @@ courthouse = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					religion = genie_cult
+					has_country_flag = holy_buildings_active
+				}
+			}
+			add_province_modifier = {
+				name = holy_buildings_unrest
+				duration = 7300
+			}
+		}
+
+		gronstunad_building_authority_effect = { value = 1 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -652,6 +753,7 @@ courthouse = {
 		remove_province_modifier = eur_courthouse_1
 	}
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -1 }
 	}
 
 	ai_will_do = {
@@ -745,6 +847,21 @@ dock = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+		if = {
+			limit = {
+				FROM = {
+					religion = genie_cult
+					has_country_flag = holy_buildings_active
+				}
+			}
+			add_province_modifier = {
+				name = holy_buildings_sailors
+				duration = 7300
+			}
+		}
+		merfolk_dynamic_settlement_effect = yes
+
+		gronstunad_building_authority_effect = { value = 1 }
 	}
 
 	on_destroyed = {
@@ -765,6 +882,7 @@ dock = {
 		}
 	}
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -1 }
 	}
 
 	ai_will_do = {
@@ -823,11 +941,13 @@ regimental_camp = {
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
+	on_built = {
 #		FROM = {
 #			add_army_professionalism = 0.005
 #		}
-#	}
+
+		gronstunad_building_authority_effect = { value = 2 }
+	}
 #
 #	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 #	on_destroyed = {
@@ -884,6 +1004,7 @@ regimental_camp = {
 		remove_province_modifier = eur_regimental_camp_1
 	}
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -2 }
 	}
 
 	ai_will_do = {
@@ -991,9 +1112,19 @@ fort_16th = {
 				add_church_power = 5
 			}
 		}
+		FROM = {
+			if = {
+				limit = {
+					religion = winter_court
+				}
+				add_church_power = 10
+			}
+		}
 		remove_province_modifier = command_elephant_fort_buff
 		#Anbennar
 		anbennar_building_effect = yes
+
+		gronstunad_building_authority_effect = { value = 4 }
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
@@ -1007,6 +1138,10 @@ fort_16th = {
 				province_event = { id = kheionai.2 }
 			}
 		}
+		if = { # Anbennar Kobold Traps
+			limit = { has_province_flag = has_kobold_traps }
+			province_event = { id = kobold_traps.8 }
+		}			
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
@@ -1017,6 +1152,8 @@ fort_16th = {
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
 		}
+
+		gronstunad_building_authority_effect = { value = -4 }
 	}
 
 	onmap = yes
@@ -1080,6 +1217,18 @@ naval_battery = {
 	on_built = {
 		#Anbennar
 		anbennar_building_effect = yes
+		if = {
+			limit = { province_id = 4551 owner = { mission_completed = R38_relock_the_gate } }
+			add_province_modifier = { name = bhuvauri_gatehouse_of_rahen duration = -1 }
+		}
+
+		gronstunad_building_authority_effect = { value = 2 }
+	}
+	on_destroyed = {
+		if = {
+			limit = { province_id = 4551 }
+			remove_province_modifier = bhuvauri_gatehouse_of_rahen
+		}
 	}
 	modifier = {
 		blockade_force_required = 1.0
@@ -1177,6 +1326,8 @@ cathedral = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 3 }
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -1247,6 +1398,8 @@ university = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 3 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1347,6 +1500,7 @@ trade_depot = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+		merfolk_dynamic_settlement_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = learning_by_doing_reform_effect } }
 			FROM = { change_government_reform_progress = 4 }
@@ -1364,6 +1518,8 @@ trade_depot = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 3 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1374,6 +1530,7 @@ trade_depot = {
 		remove_province_modifier = eur_market_2
 	}
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -3 }
 	}
 
 	ai_will_do = {
@@ -1409,6 +1566,13 @@ grand_shipyard = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+		merfolk_dynamic_settlement_effect = yes
+		if = {
+			limit = { province_id = 4372 owner = { mission_completed = iyarhashar_bavijay_shipyard } }
+			add_province_modifier = { name = iyarhashar_bavijay_shipyard duration = -1 }
+		}
+
+		gronstunad_building_authority_effect = { value = 3 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1419,6 +1583,10 @@ grand_shipyard = {
 		if = {
 			limit = { has_province_modifier = sca_swe_danish_shipyard }
 			remove_province_modifier = sca_swe_danish_shipyard
+		}
+		if = {
+			limit = { province_id = 4372 has_province_modifier = iyarhashar_bavijay_shipyard }
+			remove_province_modifier = iyarhashar_bavijay_shipyard
 		}
 	}
 	on_obsolete = {
@@ -1511,6 +1679,8 @@ training_fields = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 3 }
 	}
 	on_destroyed = {
 		update_improved_military_buildings_modifier = { #1.35
@@ -1614,6 +1784,14 @@ fort_17th = {
 				add_church_power = 5
 			}
 		}
+		FROM = {
+			if = {
+				limit = {
+					religion = winter_court
+				}
+				add_church_power = 10
+			}
+		}
 		#ANBENNAR - windward stuff
 		if = {
 			limit = {
@@ -1636,6 +1814,8 @@ fort_17th = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+
+		gronstunad_building_authority_effect = { value = 6 }
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
@@ -1657,10 +1837,15 @@ fort_17th = {
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
 		}
+		if = { # Anbennar Kobold Traps
+			limit = { has_province_flag = has_kobold_traps }
+			province_event = { id = kobold_traps.8 }
+		}		
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
 	on_obsolete = {
+		gronstunad_building_authority_effect = { value = -6 }
 	}
 
 	onmap = yes
@@ -1736,6 +1921,7 @@ stock_exchange = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+		merfolk_dynamic_settlement_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = learning_by_doing_reform_effect } }
 			FROM = { change_government_reform_progress = 4 }
@@ -1754,6 +1940,8 @@ stock_exchange = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 4 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1808,6 +1996,8 @@ counting_house = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 4 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1871,6 +2061,8 @@ town_hall = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 2 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1984,6 +2176,9 @@ drydock = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+		merfolk_dynamic_settlement_effect = yes
+
+		gronstunad_building_authority_effect = { value = 3 }
 	}
 
 	on_destroyed = {
@@ -2077,6 +2272,8 @@ conscription_center = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 4 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -2189,6 +2386,14 @@ fort_18th = {
 				add_church_power = 5
 			}
 		}
+		FROM = {
+			if = {
+				limit = {
+					religion = winter_court
+				}
+				add_church_power = 10
+			}
+		}
 		if = {
 			limit = { FROM = { has_estate_privilege = estate_elephant_command_war_room_rights } }
 			FROM = { add_legitimacy = 1 }
@@ -2202,6 +2407,8 @@ fort_18th = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+
+		gronstunad_building_authority_effect = { value = 8 }
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
@@ -2221,6 +2428,10 @@ fort_18th = {
 				province_event = { id = kheionai.2 }
 			}
 		}
+		if = { # Anbennar Kobold Traps
+			limit = { has_province_flag = has_kobold_traps }
+			province_event = { id = kobold_traps.8 }
+		}		
 		remove_province_modifier = command_elephant_fort_buff
 	}
 
@@ -2314,6 +2525,8 @@ wharf = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 
 	on_destroyed = {
@@ -2434,6 +2647,8 @@ weapons = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 
 	on_destroyed = {
@@ -2520,6 +2735,8 @@ textile = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 
 	on_destroyed = {
@@ -2607,6 +2824,8 @@ plantations = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 
 	on_destroyed = {
@@ -2698,6 +2917,8 @@ tradecompany = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 
 	on_destroyed = {
@@ -2790,6 +3011,8 @@ farm_estate = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 
 	on_destroyed = {
@@ -2877,6 +3100,8 @@ mills = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -2950,6 +3175,8 @@ furnace = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 
 	on_destroyed = {
@@ -3028,6 +3255,8 @@ ramparts = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 
 	on_destroyed = { #1.35
@@ -3149,6 +3378,8 @@ soldier_households = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 
 	on_destroyed = {
@@ -3277,6 +3508,8 @@ impressment_offices = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -3395,6 +3628,8 @@ state_house = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
+
+		gronstunad_building_authority_effect = { value = 5 }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -3529,6 +3764,8 @@ mage_tower = {
 				duration = -1
 			}
 		}
+
+		gronstunad_building_authority_effect = { value = 1 }
 	}
 	on_destroyed = {
 		if = {
@@ -4149,40 +4386,6 @@ digging_deeper = {
 	ai_will_do = {
 		factor = 0
 	}
-}
-
-ziggurat_of_surakel = {
-	cost = 1000
-	time = 120
-
-	build_trigger = {
-		has_building = ziggurat_of_surakel
-		# owner = { NOT = { num_of_owned_provinces_with = { value = 2 has_building = ziggurat_of_surakel } } }
-	}
-
-	modifier = {
-		allowed_num_of_buildings = 1
-		local_missionary_strength = -0.08
-		prestige = 1
-	}
-
-	on_built = {
-		hidden_effect = {
-			province_event = { id = dartaxagerdim_events.4 }
-			FROM = { set_country_flag = ziggurat_of_surakel_built }
-		}
-    }
-
-	ai_will_do = {
-		factor = 0
-	}
-
-	on_destroyed = {
-		FROM = {
-			add_prestige = 20
-			add_treasury = 500
-		}
-    }
 }
 
 garden_of_secrets_0 = {

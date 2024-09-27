@@ -1360,7 +1360,38 @@ focus_inwards = { #Internal Ideas Redo
 	}
 	
 	ai_will_do = {
-		factor = 1.0
+		factor = 0.55
+		modifier = {
+			factor = 0
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			any_rival_country = {
+				NOT = { religion = ROOT } 
+			}
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 3
+			religion_group = faithless
+			NOT = { religion = godlost }
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = ADM 
+		}
+		modifier = {
+			factor = 1.25
+			has_idea_group = offensive_ideas 
+		}
 	}
 }
 

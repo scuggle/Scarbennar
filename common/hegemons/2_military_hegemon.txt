@@ -5,8 +5,9 @@ military_hegemon = {
 			limit = {
 				NOT = { has_country_flag = halve_hegemony_requirements }
 				#NOT = { has_country_flag = fra_enable_mil_hegemony_flag }
+				NOT = { has_country_flag = karakhanbar_enable_military_hegemon }
 			}
-			army_size = 600
+			army_size = 800
 		}
 		#else_if = { 
 		#	limit = { 
@@ -23,7 +24,22 @@ military_hegemon = {
 		#		}
 		#	}
 		#}
-		else = { army_size = 300 }
+		else_if = {
+			limit = {
+				is_or_was_tag = { tag = Z54 }
+			}
+			OR = {
+				army_size = 800
+				custom_trigger_tooltip = {
+					tooltip = karakhanbar_complete_mission_tt
+					OR = {
+						mission_completed = Z54_hegemonic_ambitions
+						has_country_flag = karakhanbar_enable_military_hegemon
+					}
+				}
+			}
+		}
+		else = { army_size = 500 }
 		is_great_power = yes
 		NOT = { any_other_great_power = { army_size = root } }
 		NOT = { has_country_modifier = lost_hegemony }

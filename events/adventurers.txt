@@ -57,6 +57,7 @@ country_event = {
 					define_heir = {
 						age = 30
 						hidden = yes
+						male = yes
 					}
 				}
 				30 = {
@@ -76,7 +77,6 @@ country_event = {
 		}
 
 		clr_country_flag = in_adventurer_heir_selection
-		custom_tooltip = theocracy.1.tt
 	}
 
 	
@@ -103,6 +103,7 @@ country_event = {
 					define_heir = {
 						age = 30
 						hidden = yes
+						male = yes
 					}
 				}
 				30 = {
@@ -121,7 +122,6 @@ country_event = {
 			value = -5
 		}
 		clr_country_flag = in_adventurer_heir_selection
-		custom_tooltip = theocracy.1.tt
 	}
 	
 	# A Charismatic Pioneer (+pioneer) this one doesnt show
@@ -147,6 +147,7 @@ country_event = {
 					define_heir = {
 						age = 30
 						hidden = yes
+						male = yes
 					}
 				}
 				30 = {
@@ -165,7 +166,6 @@ country_event = {
 			value = -5
 		}
 		clr_country_flag = in_adventurer_heir_selection
-		custom_tooltip = theocracy.1.tt
 	}
 	
 	# A Shrewd Fortune-Seeker (+fortune seeker) this one doesnt show
@@ -191,6 +191,7 @@ country_event = {
 					define_heir = {
 						age = 30
 						hidden = yes
+						male = yes
 					}
 				}
 				30 = {
@@ -209,7 +210,6 @@ country_event = {
 			value = -5
 		}
 		clr_country_flag = in_adventurer_heir_selection
-		custom_tooltip = theocracy.1.tt
 	}
 	
 	# A Lilac Wars Veteran (guaranteed high mil) this doesnt work
@@ -265,6 +265,7 @@ country_event = {
 								age = 30
 								change_mil = 4
 								hidden = yes
+								male = yes
 							}
 						}
 						30 = {
@@ -303,6 +304,7 @@ country_event = {
 								age = 40
 								change_mil = 4
 								hidden = yes
+								male = yes
 							}
 						}
 						30 = {
@@ -341,6 +343,7 @@ country_event = {
 								age = 50
 								change_mil = 4
 								hidden = yes
+								male = yes
 							}
 						}
 						30 = {
@@ -376,6 +379,7 @@ country_event = {
 								age = 60
 								change_mil = 4
 								hidden = yes
+								male = yes
 							}
 						}
 						30 = {
@@ -417,7 +421,6 @@ country_event = {
 			value = -5
 		}
 		clr_country_flag = in_adventurer_heir_selection
-		custom_tooltip = theocracy.1.tt
 	}
 	
 	# A Noble from our Homeland (+gold)
@@ -495,6 +498,7 @@ country_event = {
 								age = 30
 								culture = PREV
 								hidden = yes
+								male = yes
 							}
 						}
 						30 = {
@@ -534,7 +538,6 @@ country_event = {
 			value = -5
 		}
 		clr_country_flag = in_adventurer_heir_selection
-		custom_tooltip = theocracy.1.tt
 	}
 	
 	
@@ -557,6 +560,7 @@ country_event = {
 						age = 30
 						hidden = yes
 						culture = castellyrian
+						male = yes
 					}
 				}
 				30 = {
@@ -581,6 +585,7 @@ country_event = {
 						age = 30
 						hidden = yes
 						culture = adenner
+						male = yes
 					}
 				}
 				30 = {
@@ -605,6 +610,7 @@ country_event = {
 						age = 30
 						hidden = yes
 						culture = marcher
+						male = yes
 					}
 				}
 				30 = {
@@ -624,8 +630,7 @@ country_event = {
 			value = -5
 		}
 		clr_country_flag = in_adventurer_heir_selection
-		custom_tooltip = theocracy.1.tt
-	}
+		}
 	
 	# A Mage
 	option = {
@@ -659,6 +664,7 @@ country_event = {
 					define_heir = {
 						age = 30
 						hidden = yes
+						male = yes
 					}
 				}
 				30 = {
@@ -677,9 +683,7 @@ country_event = {
 			value = -10
 		}
 		add_prestige = -10
-		clr_country_flag = in_adventurer_heir_selection
-		custom_tooltip = theocracy.1.tt
-		
+		clr_country_flag = in_adventurer_heir_selection		
 		
 		#Something that can randomize
 	}
