@@ -1,11 +1,11 @@
 incomplete_hold = {
 	local_development_cost = 0.5
-	governing_capacity_modifier = -0.5
+	governing_capacity_modifier = -0.25
 	#cannot dig
 }
 
 incomplete_hold_0 = {
-	local_development_cost = 0.75
+	local_development_cost = 0.5
 	#cannot dig
 }
 
