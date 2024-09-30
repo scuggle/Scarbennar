@@ -20,6 +20,14 @@ atlantis = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		province_is_or_accepts_culture = yes
 		culture_group = elven
 	}	
@@ -120,6 +128,14 @@ malacnar_city_of_warriors = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
@@ -260,6 +276,14 @@ vels_bacar_scol_mecynn = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
@@ -381,6 +405,14 @@ grebniesth_hedge_gardens = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
@@ -498,6 +530,14 @@ stanyrhrada_golden_dome = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
@@ -620,6 +660,14 @@ ixazulcucua_leechfathers_maw = {
 		religion = leechfather
 	}	
 	can_upgrade_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		has_owner_religion = yes
 		religion = leechfather
 	}	
@@ -732,6 +780,14 @@ orenkoraim_nakar_koraim = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
