@@ -38,6 +38,14 @@ bone_citadel = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		OR = {		
 			AND = {
 				religion = death_cult_of_cheshosh
@@ -230,6 +238,14 @@ dobondotimveb = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		religion = dotimism
 		has_owner_religion = yes
 	}
@@ -1354,6 +1370,14 @@ ynnic_teal_keep = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		OR = {
 			AND = {
 				culture = sarda
@@ -1532,6 +1556,14 @@ ynnic_tranvit_hippodrome = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		culture = dolindhan
 		province_is_or_accepts_culture = yes
 	}
@@ -1698,6 +1730,14 @@ ynnic_grand_temple_svemel = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		OR = {
 			province_is_or_accepts_religion_group = {
 				religion_group = dragon_cult
@@ -1909,6 +1949,14 @@ ynnic_precursor_dome_stanyrhrada = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		OR = {
 			province_is_or_accepts_religion_group = {
 				religion_group = ynnic
@@ -2100,6 +2148,14 @@ deathsand_lab = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		OR = {
 			culture_group = kheionai_ruinborn_elf
 			culture = eltibhar
@@ -2287,6 +2343,14 @@ city_that_never_sleeps = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		OR = {
 			owner = {
 				OR = {
@@ -2473,10 +2537,16 @@ heart_of_the_effelai = {
 	}
 
 	can_use_modifiers_trigger = {
-		religion_group = effelai
 		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
 			religion_group = effelai
 		}
+		religion_group = effelai
 	}
 
 	can_upgrade_trigger = {
@@ -2683,12 +2753,20 @@ gathgob_lighthouse = {
 	keep_trigger = { }
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+			high_tolerance_ruinborn_race_trigger = yes
+		}
 		culture_group = eordan_ruinborn_elf
 		OR = {
 			has_owner_accepted_culture = yes
 			has_owner_culture = yes
 		}
-		owner = { high_tolerance_ruinborn_race_trigger = yes }
 	}
 
 	can_upgrade_trigger = {
@@ -3135,6 +3213,14 @@ conclavedawn = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		OR = {
 			religion = oren_nayiru
 			religion_group = bulwari
@@ -3302,6 +3388,14 @@ ouraskheion = {
 	}
 
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		OR = {
 			culture_group = kheionai_ruinborn_elf
 			culture_group = devandi_ruinborn_elf

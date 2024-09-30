@@ -17,6 +17,14 @@ warded_city_deg = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
@@ -139,6 +147,14 @@ warded_city_orm = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
@@ -258,6 +274,14 @@ warded_city_khe = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
@@ -377,6 +401,14 @@ warded_city_lok = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
@@ -500,6 +532,14 @@ warded_city_okt = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
@@ -618,6 +658,14 @@ warded_city_arp = {
 	on_destroyed = {	
 	}
 	can_use_modifiers_trigger = {
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
 		AND = {
 			province_is_or_accepts_culture = yes
 			OR = {
