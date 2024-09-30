@@ -922,7 +922,7 @@ gift_of_spring = {
 		country_modifiers = {
 			reinforce_cost_modifier = -0.1
 			global_manpower_modifier = 0.1
-			development_cost = -0.05
+			development_cost = -0.01
 		}
 		on_upgraded = {
 		}
@@ -941,7 +941,7 @@ gift_of_spring = {
 		country_modifiers = {
 			reinforce_cost_modifier = -0.2
 			global_manpower_modifier = 0.15
-			development_cost = -0.1
+			development_cost = -0.02
 		}
 		on_upgraded = {
 		}
@@ -960,7 +960,7 @@ gift_of_spring = {
 		country_modifiers = {
 			reinforce_cost_modifier = -0.33
 			global_manpower_modifier = 0.2
-			development_cost = -0.15
+			development_cost = -0.03
 		}
 		on_upgraded = {
 		}
@@ -1179,7 +1179,7 @@ gift_of_autumn = {
 		country_modifiers = {
 			culture_conversion_cost = -0.1
 			global_autonomy = -0.01
-			technology_cost = -0.025
+			technology_cost = -0.01
 		}
 		on_upgraded = {
 		}
@@ -1198,7 +1198,7 @@ gift_of_autumn = {
 		country_modifiers = {
 			culture_conversion_cost = -0.15
 			global_autonomy = -0.03
-			technology_cost = -0.05
+			technology_cost = -0.025
 		}
 		on_upgraded = {
 		}
@@ -1217,7 +1217,7 @@ gift_of_autumn = {
 		country_modifiers = {
 			culture_conversion_cost = -0.25
 			global_autonomy = -0.05
-			technology_cost = -0.1
+			technology_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -1309,7 +1309,7 @@ gift_of_winter = {
 		country_modifiers = {
 			defensiveness = 0.05
 			land_attrition = -0.05
-			hostile_attrition = 0.5
+			hostile_attrition = 0.25
 		}
 		on_upgraded = {
 		}
@@ -1328,7 +1328,7 @@ gift_of_winter = {
 		country_modifiers = {
 			defensiveness = 0.1
 			land_attrition = -0.1
-			hostile_attrition = 1
+			hostile_attrition = 0.5
 		}
 		on_upgraded = {
 		}
@@ -1347,7 +1347,7 @@ gift_of_winter = {
 		country_modifiers = {
 			defensiveness = 0.15
 			land_attrition = -0.15
-			hostile_attrition = 1.5
+			hostile_attrition = 0.5
 		}
 		on_upgraded = {
 		}
