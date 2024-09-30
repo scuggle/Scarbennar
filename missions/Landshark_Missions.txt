@@ -754,7 +754,7 @@ landshark_4 = {
 
 		trigger = {
 			development_in_provinces = {
-				value = 14
+				value = 16
 				area = west_overmarch_area
 			}
 		}
@@ -794,7 +794,7 @@ landshark_4 = {
 		trigger = {
 			adm_tech = 4
 			manpower_percentage = 0.50
-			treasury = 50
+			treasury = 100
 		}
 
 		effect = {
@@ -807,7 +807,7 @@ landshark_4 = {
 				add_permanent_claim = ROOT
 			}
 			custom_tooltip = landshark_reclamation_efforts_tt
-			add_treasury = -50			
+			add_treasury = -100			
 		}
 	}
 
