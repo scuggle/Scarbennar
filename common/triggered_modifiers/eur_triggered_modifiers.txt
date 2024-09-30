@@ -71,7 +71,11 @@ there_is_nothing_to_colonize = {
 	}
 	trigger = {
 		capital_scope = {
-			superregion = escann_superregion
+			OR = {
+				region = south_castanor_region
+				region = inner_castanor_region
+				region = west_castanor_region
+			}
 		}
 		NOT = { is_year = 1484 }
 	}
