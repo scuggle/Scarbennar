@@ -137,6 +137,18 @@ spriteType = {
         name = "GFX_great_project_southern_shadow_swamp_fortress"
          texturefile = "gfx//interface//great_projects//great_project_southern_shadow_swamp_fortress.dds"
     }
+    spriteType = {
+        name = "GFX_great_project_foundries_of_doddcodds"
+         texturefile = "gfx//interface//great_projects//great_project_foundries_of_doddcodds.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_labyrinth_of_Yaddirralta"
+         texturefile = "gfx//interface//great_projects//great_project_labyrinth_of_Yaddirralta.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_chungus_exhibition_hall"
+         texturefile = "gfx//interface//great_projects//great_project_chungus_exhibition_hall.dds"
+    }
 ########
 #Examples
 ########
