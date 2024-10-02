@@ -257,6 +257,17 @@ racial_pop_lizardfolk_expulsion = {
 	picture = "Expel_minorities_cost"
 }
 
+racial_pop_mechanim_purge = {
+	diplomatic_reputation = -1
+	monthly_karma = -0.20
+	picture = "attrition"
+}
+
+racial_pop_mechanim_expulsion = {
+	monthly_karma = -0.10
+	picture = "Expel_minorities_cost"
+}
+
 
 #Racial Modifiers
 #Divided into maluses and bonuses (each have 2 bonuses, at the smallest oppression it only has 1 of the two)
@@ -1498,14 +1509,14 @@ goblin_majority_primary = {
 #Troll Minority
 troll_minority_oppressed_small = {
 	local_unrest = 1
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 	supply_limit_modifier = 0.05
 	picture = "pop_icon_troll_so"
 }
 
 troll_minority_oppressed_large = {
 	local_unrest = 2
-	trade_goods_size = 0.2
+	trade_goods_size = 0.1
 	supply_limit_modifier = 0.1
 	picture = "pop_icon_troll_lo"
 }
@@ -1513,7 +1524,7 @@ troll_minority_oppressed_large = {
 troll_minority_coexisting_small = {
 	local_unrest = 1
 	local_state_maintenance_modifier = 0.1
-	trade_goods_size = 0.1
+	trade_goods_size = 0.075
 	supply_limit_modifier = 0.05
  	local_hostile_movement_speed = -0.1
 	picture = "pop_icon_troll_sa"
@@ -1522,7 +1533,7 @@ troll_minority_coexisting_small = {
 troll_minority_coexisting_large = {
 	local_unrest = 2
 	local_state_maintenance_modifier = 0.25
-	trade_goods_size = 0.2
+	trade_goods_size = 0.15
 	supply_limit_modifier = 0.1
  	local_hostile_movement_speed = -0.2
 	picture = "pop_icon_troll_la"
@@ -1552,7 +1563,7 @@ troll_minority_integrated_large = {
 troll_majority_oppressed = {
 	
 	supply_limit_modifier = 0.1
-	trade_goods_size = 0.2
+	trade_goods_size = 0.1
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
 	picture = "pop_icon_troll_mo"
@@ -1562,7 +1573,7 @@ troll_majority_coexisting = {
 	
 	supply_limit_modifier = 0.1
  	local_hostile_movement_speed = -0.2
-	trade_goods_size = 0.2
+	trade_goods_size = 0.15
 	picture = "pop_icon_troll_ma"
 }
 
@@ -2040,6 +2051,90 @@ lizardfolk_majority_primary = {
 	picture = "pop_icon_lizardfolk_mp"
 }
 
+#Mechanim - they sure are
+#Mechanim Minority
+mechanim_minority_oppressed_small = {
+	local_unrest = 1
+	local_production_efficiency = 0.075
+	picture = "pop_icon_mechanim_so"
+}
+
+mechanim_minority_oppressed_large = {
+	local_unrest = 2
+	local_production_efficiency = 0.15
+	picture = "pop_icon_mechanim_lo"
+}
+
+mechanim_minority_coexisting_small = {
+	local_unrest = 1
+	local_state_maintenance_modifier = 0.1
+	local_production_efficiency = 0.075
+	local_build_time = -0.05
+	picture = "pop_icon_mechanim_sa"
+}
+
+mechanim_minority_coexisting_large = {
+	local_unrest = 2
+	local_state_maintenance_modifier = 0.25
+	local_production_efficiency = 0.15
+	local_build_time = -0.10
+	picture = "pop_icon_mechanim_la"
+}
+
+mechanim_minority_integrated_small = {
+	local_unrest = 1
+	local_state_maintenance_modifier = 0.30
+	local_autonomy = 0.025
+	local_production_efficiency = 0.075
+	local_build_time = -0.05
+	local_institution_spread = 0.075
+	picture = "pop_icon_mechanim_si"
+}
+
+mechanim_minority_integrated_large = {
+	local_unrest = 2
+	local_state_maintenance_modifier = 0.50
+	local_autonomy = 0.05
+	local_production_efficiency = 0.15
+	local_build_time = -0.10
+	local_institution_spread = 0.15
+	picture = "pop_icon_mechanim_li"
+}
+
+#Mechanim Majority
+mechanim_majority_oppressed = {
+	local_production_efficiency = 0.15
+	local_culture_conversion_cost = -0.25
+	local_culture_conversion_time = -0.25
+	picture = "pop_icon_mechanim_mo"
+}
+
+mechanim_majority_coexisting = {
+	local_production_efficiency = 0.15
+	local_build_time = -0.10
+	local_culture_conversion_cost = 0.25
+	picture = "pop_icon_mechanim_ma"
+}
+
+mechanim_majority_integrated = {
+	local_production_efficiency = 0.15
+	local_build_time = -0.10
+	local_institution_spread = 0.15
+
+	local_missionary_strength = 0.01
+	local_culture_conversion_cost = 0.50
+	picture = "pop_icon_mechanim_mi"
+}
+
+mechanim_majority_primary = {
+	local_production_efficiency = 0.15
+	local_build_time = -0.10
+	local_institution_spread = 0.15
+	local_missionary_strength = 0.01
+	
+	picture = "pop_icon_mechanim_mp"
+}
+
 # Forced to end purge stuff
 
 forced_to_end_human_purge = {
@@ -2118,25 +2213,70 @@ forced_to_end_lizardfolk_purge = {
 	diplomatic_reputation = -1
 }
 
-racial_focus_centaur = {}
-racial_focus_dwarven = {}
-racial_focus_elven = {}
-racial_focus_gnollish = {}
-racial_focus_gnomish = {}
-racial_focus_goblin = {}
-racial_focus_half_elven = {}
-racial_focus_half_orcish = {}
-racial_focus_halfling = {}
-racial_focus_harimari = {}
-racial_focus_harpy = {}
-racial_focus_hobgoblin = {}
-racial_focus_human = {}
-racial_focus_kobold = {}
-racial_focus_ogre = {}
-racial_focus_orcish = {}
-racial_focus_ruinborn = {}
-racial_focus_troll = {}
-racial_focus_lizardfolk = {}
+forced_to_end_mechanim_purge = {
+	diplomatic_reputation = -1
+}
+
+racial_focus_centaur = {
+	picture = "racial_focus"
+}
+racial_focus_dwarven = {
+	picture = "racial_focus"
+}
+racial_focus_elven = {
+	picture = "racial_focus"
+}
+racial_focus_gnollish = {
+	picture = "racial_focus"
+}
+racial_focus_gnomish = {
+	picture = "racial_focus"
+}
+racial_focus_goblin = {
+	picture = "racial_focus"
+}
+racial_focus_half_elven = {
+	picture = "racial_focus"
+}
+racial_focus_half_orcish = {
+	picture = "racial_focus"
+}
+racial_focus_halfling = {
+	picture = "racial_focus"
+}
+racial_focus_harimari = {
+	picture = "racial_focus"
+}
+racial_focus_harpy = {
+	picture = "racial_focus"
+}
+racial_focus_hobgoblin = {
+	picture = "racial_focus"
+}
+racial_focus_human = {
+	picture = "racial_focus"
+}
+racial_focus_kobold = {
+	picture = "racial_focus"
+}
+racial_focus_ogre = {
+	picture = "racial_focus"
+}
+racial_focus_orcish = {
+	picture = "racial_focus"
+}
+racial_focus_ruinborn = {
+	picture = "racial_focus"
+}
+racial_focus_troll = {
+	picture = "racial_focus"
+}
+racial_focus_lizardfolk = {
+	picture = "racial_focus"
+}
+racial_focus_mechanim = {
+	picture = "racial_focus"
+}
 
 expulsion_unrest_modifier = {
 	local_manpower_modifier = -0.33

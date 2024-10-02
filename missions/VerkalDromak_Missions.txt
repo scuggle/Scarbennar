@@ -12,6 +12,7 @@ verkaldromak_11 = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
+	has_country_shield = yes
 	
 	I25_conquest1 = {
 		icon = mission_magnificent_castle
@@ -117,6 +118,7 @@ verkaldromak_21 = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
+	has_country_shield = yes
 
 	I25_medical_school = {
 		icon = mission_settlers_north_america
@@ -153,6 +155,7 @@ verkaldromak_31 = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
+	has_country_shield = yes
 
 	I25_restoration_of_altar = {
 		icon = mission_treasure_room
@@ -459,6 +462,7 @@ verkaldromak_41 = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
+	has_country_shield = yes
 
 	I25_education_of_people = {
 		icon = mission_colonial
@@ -597,6 +601,7 @@ verkaldromak_51 = {
     NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
+	has_country_shield = yes
 
 	I25_diplomat_school = {
 		icon = mission_establish_the_prikazy
@@ -1675,14 +1680,11 @@ verkaldromak_55 = {
 		}
 		
 		trigger = {
-			serpentspine = {
+			hold_province = {
 				type = all
-				AND = {
-					OR = {
-						has_terrain = dwarven_hold
-						has_terrain = dwarven_hold_surface
-					}
+				OR = {
 					owned_by = ROOT
+					NOT = { continent = serpentspine }
 				}
 			}
 		}

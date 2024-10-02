@@ -354,7 +354,7 @@ A11_diplomacy_missions_slot = {
 		position = 1
 		
 		provinces_to_highlight = {
-			province_id = 1270
+			province_id = 1292
 			NOT = {
 				trade_share = {
 					country = A11
@@ -364,7 +364,7 @@ A11_diplomacy_missions_slot = {
 		}
 		
 		trigger = {
-			1270 = {
+			1292 = {
 				trade_share = {
 					country = A11
 					share = 25

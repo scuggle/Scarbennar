@@ -7,8 +7,8 @@ spiderwretch_column_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = H90
 		NOT = { has_country_flag = chose_generic_mt }
+		tag = H90
 	}
 	has_country_shield = yes
 
@@ -246,8 +246,8 @@ spiderwretch_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = H90
 		NOT = { has_country_flag = chose_generic_mt }
+		tag = H90
 	}
 	has_country_shield = yes
 
@@ -296,7 +296,7 @@ spiderwretch_column_2 = {
 			spiderwretch_claim_the_lightlands
 		}
 		provinces_to_highlight = {
-			tag = I90	
+			owner = { tag = I90	}
 		}
 
 		trigger = {
@@ -690,8 +690,8 @@ spiderwretch_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = H90
 		NOT = { has_country_flag = chose_generic_mt }
+		tag = H90
 	}
 	has_country_shield = yes
 
@@ -1336,7 +1336,7 @@ spiderwretch_column_3 = {
 			spiderwretch_the_silk_road
 		}
 		provinces_to_highlight = {
-			province_id = 5054	
+			province_id = 5052	
 		}
 
 		trigger = {
@@ -1378,8 +1378,8 @@ spiderwretch_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = H90
 		NOT = { has_country_flag = chose_generic_mt }
+		tag = H90
 	}
 	has_country_shield = yes
 
@@ -1778,8 +1778,8 @@ spiderwretch_column_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = H90
 		NOT = { has_country_flag = chose_generic_mt }
+		tag = H90
 	}
 	has_country_shield = yes
 

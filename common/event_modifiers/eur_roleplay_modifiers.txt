@@ -22,6 +22,65 @@ chaingrasper_initial_buff = {
 	global_colonial_growth = 25
 }
 
+#Colonial nerfs
+
+eur_worksop_1 = {
+	local_production_efficiency = -0.15
+}
+eur_worksop_2 = {
+	local_production_efficiency = -0.3
+}
+eur_temple_1 = {
+	local_tax_modifier = -0.15
+}
+eur_temple_2 = {
+	local_tax_modifier = -0.3
+}
+eur_market_1 = {
+	province_trade_power_modifier = -0.15
+	trade_value_modifier = -0.075
+}
+eur_market_2 = {
+	province_trade_power_modifier = -0.3
+	trade_value_modifier = -0.15
+}
+eur_market_3 = {
+	province_trade_power_modifier = -0.375
+	trade_value_modifier = -0.1875
+}
+eur_barracks_1 = {
+	local_manpower_modifier = -0.15
+}
+eur_barracks_2 = {
+	local_manpower_modifier = -0.30
+}
+eur_courthouse_1 = {
+	local_governing_cost = 0.075
+	local_autonomy = 0.015
+}
+eur_courthouse_2 = {
+	local_governing_cost = 0.15
+	local_autonomy = 0.03
+}
+eur_regimental_camp_1 = {
+	land_forcelimit = -0.3
+}
+eur_regimental_camp_2 = {
+	land_forcelimit = -0.6
+}
+eur_soldier_household = {
+	local_manpower = -0.2
+}
+eur_manufactory = {
+	trade_goods_size = -0.3
+}
+eur_university = {
+	local_development_cost = 0.05
+}
+eur_mage_tower = {
+	local_development_cost = 0.025
+}
+
 #roleplay modifiers
 ####################
 goods_production_boost_1 = {

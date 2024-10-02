@@ -210,6 +210,7 @@ clear_fast_ruler_flags = {
 	clr_ruler_flag = gnollish_ruler
 	clr_ruler_flag = kobold_ruler
 	clr_ruler_flag = lizardfolk_ruler
+	clr_ruler_flag = mechanim_ruler
 	clr_ruler_flag = halfling_ruler
 	clr_ruler_flag = harimari_ruler
 	clr_ruler_flag = hobgoblin_ruler
@@ -233,6 +234,7 @@ clear_fast_consort_flags = {
 	clr_consort_flag = gnollish_consort
 	clr_consort_flag = kobold_consort
 	clr_consort_flag = lizardfolk_consort
+	clr_consort_flag = mechanim_consort
 	clr_consort_flag = halfling_consort
 	clr_consort_flag = harimari_consort
 	clr_consort_flag = hobgoblin_consort
@@ -256,6 +258,7 @@ clear_fast_heir_flags = {
 	clr_heir_flag = gnollish_heir
 	clr_heir_flag = kobold_heir
 	clr_heir_flag = lizardfolk_heir
+	clr_heir_flag = mechanim_heir
 	clr_heir_flag = halfling_heir
 	clr_heir_flag = harimari_heir
 	clr_heir_flag = hobgoblin_heir
@@ -870,7 +873,24 @@ goblinic_shamanism_event = {
 			}
 		}
 		ROOT = {
-			country_event = { id = goblinic_shamanism_flavor.29 }
+			country_event = { id = goblinic_shamanism_flavor.30 }
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_unlocked_cult = muta_kroozpauz_cult
+				dwarovar_goblin_culture = yes
+			}
+			ROOT = {
+				NOT = {
+					has_unlocked_cult = muta_kroozpauz_cult
+					dwarovar_goblin_culture = yes
+				}
+			}
+		}
+		ROOT = {
+			country_event = { id = goblinic_shamanism_flavor.31 }
 		}
 	}
 }
@@ -2032,6 +2052,7 @@ clear_mages_organization_effect = {
 		remove_estate_privilege = estate_mages_organization_jaherian_statute
 		remove_estate_privilege = estate_mages_organization_onyxguard
 		remove_estate_privilege = estate_mages_organization_proffesional_mihipha
+		remove_estate_privilege = estate_mages_organization_orda_aldresia
 	}
 }
 
@@ -3589,7 +3610,10 @@ return_all_uncored_provinces = { #Make this also release nations that do not exi
 				}
 				save_event_target_as = province_to_cede
 				cede_province = previous_owner
-				owner = { change_religion = event_target:province_to_cede }
+				owner = {
+					change_religion = event_target:province_to_cede
+					remove_country_modifier = conversion_zeal
+				}
 				if = {
 					limit = { ROOT = { overlord = { has_government_attribute = is_raja } } }
 					owner = {
@@ -5250,6 +5274,13 @@ anb_on_development_effect = {
 			}
 			add_church_power = 4
 		}
+		if = {
+			limit = {
+				religion = summer_court
+			}
+			add_church_power = 4
+		}
+		update_nekhei_dev_modifier = yes
 	}
 
 	# Mountainshark T4 Gov Reform
@@ -5264,6 +5295,18 @@ anb_on_development_effect = {
 			hidden = yes
 		}
 	}
+	if = {
+		limit = {  
+			owner = { 
+				has_country_flag = L08_livestock_dev_chance
+				has_estate_privilege = estate_nobles_monopoly_of_livestock
+			}
+		}
+		random = {
+			chance = 10
+			add_base_manpower = 1
+		}
+	}
 }
 
 create_vassal_with_religion_and_culture = {
@@ -5271,6 +5314,7 @@ create_vassal_with_religion_and_culture = {
 	hidden_effect = {
 		$tag$ = {
 			change_religion = $religion$
+			remove_country_modifier = conversion_zeal
 			change_primary_culture = $culture$
 		}
 	}
@@ -5281,6 +5325,7 @@ release_with_religion_and_culture = {
 	hidden_effect = {
 		$tag$ = { 
 			change_religion = $religion$
+			remove_country_modifier = conversion_zeal
 			change_primary_culture = $culture$
 		}
 	}
@@ -6144,6 +6189,45 @@ switch_bayvic_to_bayvek = {
 	}
 }
 
+select_highest_dev_province_with_limit = {
+	set_variable = {
+		which = highest_province_dev
+		value = 0
+	}
+	every_owned_province = {
+		limit = { $limit$ }
+		export_to_variable = {
+			which = temp_dev_check
+			value = development
+		}
+		ROOT = {
+			set_variable = {
+				which = temp_dev_check
+				which = PREV
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					check_variable = {
+						which = temp_dev_check
+						which = highest_province_dev
+					}
+				}
+			}
+			ROOT = {
+				set_variable = {
+					which = highest_province_dev
+					which = temp_dev_check
+				}
+			}
+			save_event_target_as = highest_dev_province_with_limit
+		}
+	}
+	[[effect] event_target:highest_dev_province_with_limit = { $effect$ }]
+}
+
+
 #only does base-game modifications rn. do modded ones by surrounding this effect with the set and remove flag
 create_flagship_with_modifications = {
 	owner = {
@@ -6228,4 +6312,417 @@ select_highest_opinion_country_with_limit = {
 		[[effect] event_target:highest_opinion_country_with_limit = { $effect$ }]
 	}
 
+}
+
+add_random_estate_loyalty = { #Used like add_random_estate_loyalty = { amount = X }
+	pick_random_estate_if_present = { flag = loyalty }
+	if = {
+		limit = { has_country_flag = estate_brahmins_loyalty }
+		add_estate_loyalty = {
+			estate = estate_brahmins
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_brahmins_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_church_loyalty }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_church_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_maratha_loyalty }
+		add_estate_loyalty = {
+			estate = estate_maratha
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_maratha_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_nobles_loyalty }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_nobles_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_burghers_loyalty }
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_burghers_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_cossacks_loyalty }
+		add_estate_loyalty = {
+			estate = estate_cossacks
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_cossacks_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_nomadic_tribes_loyalty }
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_nomadic_tribes_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_mages_loyalty }
+		add_estate_loyalty = {
+			estate = estate_mages
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_mages_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_adventurers_loyalty }
+		add_estate_loyalty = {
+			estate = estate_adventurers
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_adventurers_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_artificers_loyalty }
+		add_estate_loyalty = {
+			estate = estate_artificers
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_artificers_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_monstrous_tribes_loyalty }
+		add_estate_loyalty = {
+			estate = estate_monstrous_tribes
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_monstrous_tribes_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_raj_ministries_loyalty }
+		add_estate_loyalty = {
+			estate = estate_raj_ministries
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_raj_ministriesloyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_uppercastes_loyalty }
+		add_estate_loyalty = {
+			estate = estate_uppercastes
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_uppercastes_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_middlecastes_loyalty }
+		add_estate_loyalty = {
+			estate = estate_middlecastes
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_middlecastes_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_lowercastes_loyalty }
+		add_estate_loyalty = {
+			estate = estate_lowercastes
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_lowercastes_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_vampires_loyalty }
+		add_estate_loyalty = {
+			estate = estate_vampires
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_vampires_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_castonath_patricians_loyalty }
+		add_estate_loyalty = {
+			estate = estate_castonath_patricians
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_castonath_patricians_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_daulophs_loyalty }
+		add_estate_loyalty = {
+			estate = estate_daulophs
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_daulophs_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_eunuchs_anb_loyalty }
+		add_estate_loyalty = {
+			estate = estate_eunuchs_anb
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_eunuchs_anb_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_shinukhorchi_loyalty }
+		add_estate_loyalty = {
+			estate = estate_shinukhorchi
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_shinukhorchi_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_chumijemoya_loyalty }
+		add_estate_loyalty = {
+			estate = estate_chumijemoya
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_chumijemoya_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_ajgriijarul_loyalty }
+		add_estate_loyalty = {
+			estate = estate_ajgriijarul
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_ajgriijarul_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_kabiurgarko_loyalty }
+		add_estate_loyalty = {
+			estate = estate_kabiurgarko
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_kabiurgarko_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_khelorvalshi_loyalty }
+		add_estate_loyalty = {
+			estate = estate_khelorvalshi
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_khelorvalshi_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_wolf_command_loyalty }
+		add_estate_loyalty = {
+			estate = estate_wolf_command
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_wolf_command_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_boar_command_loyalty }
+		add_estate_loyalty = {
+			estate = estate_boar_command
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_boar_command_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_lion_command_loyalty }
+		add_estate_loyalty = {
+			estate = estate_lion_command
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_lion_command_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_dragon_command_loyalty }
+		add_estate_loyalty = {
+			estate = estate_dragon_command
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_dragon_command_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_elephant_command_loyalty }
+		add_estate_loyalty = {
+			estate = estate_elephant_command
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_elephant_command_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_tiger_command_loyalty }
+		add_estate_loyalty = {
+			estate = estate_tiger_command
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_tiger_command_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_gerunanin_loyalty }
+		add_estate_loyalty = {
+			estate = estate_gerunanin
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_gerunanin_loyalty
+	}
+	else_if = {
+		limit = { has_country_flag = estate_ahati_loyalty }
+		add_estate_loyalty = {
+			estate = estate_ahati
+			loyalty = $amount$
+		}
+		clr_country_flag = estate_ahati_loyalty
+	}
+}
+
+force_ai_convert = { #Stops the ai from converting back immediatly if their RU is too low
+	if = {
+		limit = { ai = yes }
+		force_converted = yes
+	}
+}
+
+remove_random_development = { #Unlike add_random_development = -1, this won't attempt to remove development at 1
+	random_list = {
+		1 = {
+			trigger = { base_tax = 2 }
+			add_base_tax = -1
+		}
+		1 = {
+			trigger = { base_production = 2 }
+			add_base_production = -1
+		}
+		1 = {
+			trigger = { base_manpower = 2 }
+			add_base_manpower = -1
+		}
+	}
+}
+
+define_heir_with_minimum_stats = { #This makes it so if your generated heir is below the amount, the stat will be increased to match
+	export_to_variable = {
+		variable_name = heir_adm_var
+		value = heir_adm
+		who = ROOT
+	}
+	set_variable = {
+		which = heir_adm_sub
+		value = $adm_amount$ 
+	}
+	export_to_variable = {
+		variable_name = heir_dip_var
+		value = heir_dip
+		who = ROOT
+	}
+	set_variable = {
+		which = heir_dip_sub
+		value = $dip_amount$ 
+	}
+	export_to_variable = {
+		variable_name = heir_mil_var
+		value = heir_mil
+		who = ROOT
+	}
+	set_variable = {
+		which = heir_mil_sub
+		value = $mil_amount$ 
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = heir_adm_sub
+				which = heir_adm_var
+			}
+		}
+		subtract_variable = {
+			which = heir_adm_sub
+			which = heir_adm_var
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = heir_adm_sub
+					value = 1
+				}
+			}
+			change_variable = {
+				which = heir_adm_sub
+				value = -1
+			}
+			change_heir_adm = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = heir_dip_sub
+				which = heir_dip_var
+			}
+		}
+		subtract_variable = {
+			which = heir_dip_sub
+			which = heir_dip_var
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = heir_dip_sub
+					value = 1
+				}
+			}
+			change_variable = {
+				which = heir_dip_sub
+				value = -1
+			}
+			change_heir_dip = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = heir_mil_sub
+				which = heir_mil_var
+			}
+		}
+		subtract_variable = {
+			which = heir_mil_sub
+			which = heir_mil_var
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = heir_mil_sub
+					value = 1
+				}
+			}
+			change_variable = {
+				which = heir_mil_sub
+				value = -1
+			}
+			change_heir_mil = 1
+		}
+	}
+}
+
+anb_add_accepted_culture_or_dip_power = { #The in-engine version is bugged, won't give dip power
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					accepted_culture = $culture$
+					primary_culture = $culture$
+				}
+			}
+			add_dip_power = 100
+		}
+	}
+	add_accepted_culture_or_dip_power = { culture = $culture$ [[dip_reward] dip_reward = $dip_reward$] [[free] free = $free$] }
+	hidden_effect = {
+		if = {
+			limit = { NOT = { accepted_culture = $culture$ } }
+			add_dip_power = 100
+		}
+	}
+	[[dip_reward]
+		custom_tooltip = ADD_ACCEPTED_CULTURE_SLOT_LIMITATION_TT #If the §YCulture§! is already an §YAccepted Culture§!, or if there are not enough §YSlots§!, gain §G100§! Diplomatic Power instead.
+	]
 }

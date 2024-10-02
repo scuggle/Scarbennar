@@ -8,8 +8,11 @@ HonSai_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y66
+		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = Y66
+			was_tag = Y66
+		}
 	}
 
 	Y66_the_coalition_victory = {
@@ -546,8 +549,11 @@ HonSai_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y66
+		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = Y66
+			was_tag = Y66
+		}
 	}
 
 	Y66_the_reconquest = {
@@ -950,8 +956,11 @@ HonSai_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y66
+		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = Y66
+			was_tag = Y66
+		}
 	}
 
 	Y66_the_internal_strife = {
@@ -1205,6 +1214,8 @@ HonSai_3 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				4755 = { add_permanent_claim = ROOT } #Duandipom
+				4757 = { add_permanent_claim = ROOT } #Phimhmai
 			}
 			country_event = { id = flavor_honsai.21 }
 			custom_tooltip = honsai_reward_tt
@@ -1415,8 +1426,11 @@ HonSai_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y66
+		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = Y66
+			was_tag = Y66
+		}
 	}
 
 	Y66_the_omniopticum = {
@@ -1748,8 +1762,11 @@ HonSai_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y66
+		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = Y66
+			was_tag = Y66
+		}
 	}
 
 	Y66_the_great_survey = {

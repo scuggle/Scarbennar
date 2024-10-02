@@ -77,9 +77,15 @@ command_xiadao_2 = {
 		}
 		
 		trigger = { #! custom tooltip?
-			4618 = { #Shanyutian
-				num_of_units_in_province = { amount = 40 }
-				num_of_units_in_province = { who = ROOT amount = 10 }
+			if = {
+				limit = { ai = yes }
+				4618 = { units_in_province = R62 }
+			}
+			else = {
+				4618 = { #Shanyutian
+					num_of_units_in_province = { amount = 40 }
+					num_of_units_in_province = { who = ROOT amount = 10 }
+				}
 			}
 		}
 		
@@ -654,9 +660,15 @@ command_bianfang_3 = {
 			}
 			owns_or_subject_of = 4826 #Bianfang
 			owns_or_subject_of = 4842 #Jincheng
-			owns_or_subject_of = 4951 #Lamwun
-			if = {
-				limit = { ai = no }
+			if = { #AI absolutely needs Chatzin, but we can go lighter on it here
+				limit = { ai = yes }
+				OR = {
+					owns_or_subject_of = 4951 #Lamwun
+					owns_or_subject_of = 4846 #Szicheng
+				}
+			}
+			else = {
+				owns_or_subject_of = 4951 #Lamwun
 				owns_or_subject_of = 4846 #Szicheng
 			}
 		}
@@ -855,6 +867,18 @@ command_ghavaanaj_3 = {
 		}
 		
 		trigger = {
+			if = {
+				limit = { ai = yes }
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 3
+					OR = {
+						province_id = 4485 #Sharaajaghal
+						province_id = 4506 #Pordhatti
+						province_id = 4466 #Tiltaghar
+						province_id = 4488 #Maharaaja
+					}
+				}
+			}
 			owns_or_subject_of = 4485 #Sharaajaghal
 			owns_or_subject_of = 4506 #Pordhatti
 			owns_or_subject_of = 4466 #Tiltaghar
@@ -1502,14 +1526,28 @@ command_dhenbasana_3 = {
 		}
 		
 		trigger = {
+			if = {
+				limit = { ai = yes }
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					OR = {
+						province_id = 4411
+						province_id = 4391
+						province_id = 4405
+						province_id = 4392
+						province_id = 4417
+						province_id = 4412
+						province_id = 4401
+					}
+				}
+			}
+			else = {
 				4411 = { country_or_non_sovereign_subject_holds = ROOT }
 				4391 = { country_or_non_sovereign_subject_holds = ROOT }
 				4405 = { country_or_non_sovereign_subject_holds = ROOT }
 				4392 = { country_or_non_sovereign_subject_holds = ROOT }
 				4417 = { country_or_non_sovereign_subject_holds = ROOT }
 				4412 = { country_or_non_sovereign_subject_holds = ROOT }
-			if = {
-				limit = { ai = no }
 				4401 = { country_or_non_sovereign_subject_holds = ROOT }
 			}
 		}
@@ -1543,9 +1581,15 @@ command_dhenbasana_4 = {
 		}
 		
 		trigger = {#! custom tt
-			4410 = { #Durdhinana
-				num_of_units_in_province = { amount = 40 }
-				num_of_units_in_province = { who = ROOT amount = 10 }
+			if = {
+				limit = { ai = yes }
+				4410 = { units_in_province = R62 }
+			}
+			else = {
+				4410 = { #Durdhinana
+					num_of_units_in_province = { amount = 40 }
+					num_of_units_in_province = { who = ROOT amount = 10 }
+				}
 			}
 		}
 		
@@ -1605,8 +1649,7 @@ command_rakhadesh_2 = {
 			rakhadesh_region = {
 				any_neighbor_province = {
 					owner = {
-						is_subject_of = ROOT
-						is_subject_of_type = slave_state
+						is_subject_of_type_with_overlord = { who = R62 type = slave_state }
 					}
 				}
 			}
@@ -2520,6 +2563,15 @@ command_sikai_2 = {
 				add_base_production = -2
 				add_base_manpower = -2
 				add_devastation = 50
+				if = { #Makes it marcher goblin if jade march has been released, otherwise undergrowth goblin
+					limit = { 
+						ROOT = { mission_completed = R62_the_jade_march } 
+					}
+					change_culture = march_goblin
+				}
+				else = {
+					change_culture = undergrowth_goblin
+				}
 			}
 			add_treasury = 250
 			add_mil_power = 50
@@ -2796,7 +2848,7 @@ command_baihon_xinh_3 = {
 			if = {
 				limit = { ai = yes }
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 4
+					value = 3
 					OR = {
 						province_id = 4703 #Tuan Caoban
 						province_id = 4764 #Mo Hoang
@@ -2840,9 +2892,15 @@ command_baihon_xinh_4 = {
 		}
 		
 		trigger = {#! custom tt
-			4764 = { #Mo Hoang
-				num_of_units_in_province = { amount = 40 }
-				num_of_units_in_province = { who = ROOT amount = 10 }
+			if = {
+				limit = { ai = yes }
+				4764 = { units_in_province = R62 }
+			}
+			else = {
+				4764 = { #Mo Hoang
+					num_of_units_in_province = { amount = 40 }
+					num_of_units_in_province = { who = ROOT amount = 10 }
+				}
 			}
 		}
 		
@@ -2984,15 +3042,33 @@ command_thidinkai_3 = {
 		}
 		
 		trigger = {
-			owns_or_subject_of = 4751 #Nirakvonkai
-			owns_or_subject_of = 4955 #Keoaden
-			num_of_owned_provinces_with = {
-				value = 10
+			if = {
+				limit = { ai = yes }
 				OR = {
-					area = kasainam_area
-					area = ngaopho_area
-					area = yemakaibo_area
-					area = binhrunghin_area
+					owns_or_subject_of = 4751 #Nirakvonkai
+					owns_or_subject_of = 4955 #Keoaden
+				}
+				num_of_owned_provinces_with = {
+					value = 8
+					OR = {
+						area = kasainam_area
+						area = ngaopho_area
+						area = yemakaibo_area
+						area = binhrunghin_area
+					}
+				}
+			}
+			else = {
+				owns_or_subject_of = 4751 #Nirakvonkai
+				owns_or_subject_of = 4955 #Keoaden
+				num_of_owned_provinces_with = {
+					value = 10
+					OR = {
+						area = kasainam_area
+						area = ngaopho_area
+						area = yemakaibo_area
+						area = binhrunghin_area
+					}
 				}
 			}
 		}
@@ -3270,50 +3346,64 @@ command_lupulan_3 = {
 						province_id = 4964 #Brenulan
 					}
 				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 12
+					OR = {
+						area = loratana_area
+						area = sirtan_area
+						area = sawuladan_area
+						area = harumbasai_area
+						area = tlagukit_area
+						area = gehamteg_area
+						area = brenulan_area
+						area = rewirang_area
+						area = gobusoa_area
+					}
+				}
 			}
 			else = {
 				owns_or_subject_of = 4740 #Sirtan
 				owns_or_subject_of = 4710 #Candiraya
 				owns_or_subject_of = 4962 #Hasiksibou
 				owns_or_subject_of = 4964 #Brenulan
-			}
-			calc_true_if = {
-				amount = 20
-				loratana_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				sirtan_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				sawuladan_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				harumbasai_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				tlagukit_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				gehamteg_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				brenulan_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				rewirang_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				gobusoa_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+				calc_true_if = {
+					amount = 20
+					loratana_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					sirtan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					sawuladan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					harumbasai_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tlagukit_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					gehamteg_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					brenulan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					rewirang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					gobusoa_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 			}
 		}
@@ -3527,7 +3617,10 @@ command_arawkelin_3 = {
 		}
 		
 		trigger = {
-			owns_or_subject_of = 4716 #Aksa Sanuyego
+			if = {
+				limit = { ai = no }
+				owns_or_subject_of = 4716 #Aksa Sanuyego
+			}
 		}
 		
 		effect = {
@@ -3633,9 +3726,15 @@ command_yanszin_2 = {
 		}
 		
 		trigger = {
-			4854 = { #Hudi
-				num_of_units_in_province = { amount = 20 }
-				num_of_units_in_province = { who = ROOT amount = 5 }
+			if = {
+				limit = { ai = yes }
+				4854 = { units_in_province = R62 }
+			}
+			else = {
+				4854 = { #Hudi
+					num_of_units_in_province = { amount = 20 }
+					num_of_units_in_province = { who = ROOT amount = 5 }
+				}
 			}
 		}
 		
@@ -3733,9 +3832,19 @@ command_yanszin_3 = {
 		}
 		
 		trigger = {
-			owns_or_subject_of = 4859 #Yanzhong
-			owns_or_subject_of = 4853 #Anjiang
-			owns_or_subject_of = 4861 #Yangcheng 4867 4930
+			if = {
+				limit = { ai = yes }
+				OR = {
+					owns_or_subject_of = 4859 #Yanzhong
+					owns_or_subject_of = 4853 #Anjiang
+					owns_or_subject_of = 4861 #Yangcheng
+				}
+			}
+			else = {
+				owns_or_subject_of = 4859 #Yanzhong
+				owns_or_subject_of = 4853 #Anjiang
+				owns_or_subject_of = 4861 #Yangcheng
+			}
 		}
 		
 		effect = {
@@ -3766,13 +3875,7 @@ command_yanszin_3 = {
 			4853 = { country_or_non_sovereign_subject_holds = ROOT }
 			4861 = { country_or_non_sovereign_subject_holds = ROOT }
 			if = {
-				limit = { ai = yes }
-				OR = {
-					4867 = { country_or_non_sovereign_subject_holds = ROOT }
-					4930 = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-			}
-			else = {
+				limit = { ai = no }
 				4867 = { country_or_non_sovereign_subject_holds = ROOT }
 				4930 = { country_or_non_sovereign_subject_holds = ROOT }
 			}
@@ -4125,7 +4228,7 @@ command_xianjie_3 = {
 			if = {
 				limit = { ai = yes }
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
+					value = 4
 					OR = {
 						province_id = 4559
 						province_id = 4614
@@ -4395,8 +4498,17 @@ command_zyujyut_3 = {
 		}
 		
 		trigger = {
-			owns_or_subject_of = 4839 #Zyugok
-			owns_or_subject_of = 4884 #Cuihiok
+			if = {
+				limit = { ai = yes }
+				OR = {
+					owns_or_subject_of = 4839 #Zyugok
+					owns_or_subject_of = 4884 #Cuihiok
+				}
+			}
+			else = {
+				owns_or_subject_of = 4839 #Zyugok
+				owns_or_subject_of = 4884 #Cuihiok
+			}
 		}
 		
 		effect = {
@@ -4426,7 +4538,7 @@ command_zyujyut_3 = {
 			if = {
 				limit = { ai = yes }
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 4
+					value = 3
 					OR = {
 						province_id = 4839 #Zyugok
 						province_id = 4884 #Cuihiok
@@ -4676,14 +4788,28 @@ command_tianlou_3 = {
 		
 		trigger = {
 			4871 = { country_or_non_sovereign_subject_holds = ROOT }
-			4868 = { country_or_non_sovereign_subject_holds = ROOT }
-			num_of_owned_provinces_with = {
-				value = 10
-				OR = {
-					area = tianlou_area
-					area = jinjiang_area
-					area = linghui_area
-					area = beidugang_area
+			if = {
+				limit = { ai = yes }
+				num_of_owned_provinces_with = {
+					value = 8
+					OR = {
+						area = tianlou_area
+						area = jinjiang_area
+						area = linghui_area
+						area = beidugang_area
+					}
+				}
+			}
+			else = {
+				4868 = { country_or_non_sovereign_subject_holds = ROOT }
+				num_of_owned_provinces_with = {
+					value = 10
+					OR = {
+						area = tianlou_area
+						area = jinjiang_area
+						area = linghui_area
+						area = beidugang_area
+					}
 				}
 			}
 		}
@@ -4717,6 +4843,10 @@ command_tianlou_4 = {
 		}
 		
 		trigger = {
+			if = {
+				limit = { ai = yes }
+				4870 = { units_in_province = R62 }
+			}
 			4870 = { #Shengdao
 				num_of_units_in_province = { amount = 40 }
 				num_of_units_in_province = { who = ROOT amount = 10 }
@@ -4899,25 +5029,27 @@ command_jiantsiang_3 = {
 					}
 				}
 			}
-			beikyuan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			xuanbing_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			jiantsiang_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			yiguan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			jianzhong_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			else = {
+				beikyuan_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				xuanbing_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				jiantsiang_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				yiguan_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				jianzhong_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		
@@ -5978,22 +6110,26 @@ command_1 = {
 		position = 8
 		
 		trigger = {
-			R63 = { #Thunderfist
-				is_subject_of = ROOT
-				is_subject_of_type = slave_state
-				NOT = { liberty_desire = 50 }
-				check_variable = {
-					which = number_of_times_moved
-					value = 3
+			if = {
+				limit = { exists = R63 }
+				R63 = { #Thunderfist
+					is_subject_of_type_with_overlord = { who = R62 type = slave_state }
+					NOT = { liberty_desire = 50 }
+					check_variable = {
+						which = number_of_times_moved
+						value = 3
+					}
 				}
 			}
-			R64 = { #Bloodsong
-				is_subject_of = ROOT
-				is_subject_of_type = slave_state
-				NOT = { liberty_desire = 50 }
-				check_variable = {
-					which = number_of_times_moved
-					value = 3
+			if = {
+				limit = { exists = R64 }
+				R64 = { #Bloodsong
+					is_subject_of_type_with_overlord = { who = R62 type = slave_state }
+					NOT = { liberty_desire = 50 }
+					check_variable = {
+						which = number_of_times_moved
+						value = 3
+					}
 				}
 			}
 			#! bypass if you loose the slave states in war or something?
@@ -6264,9 +6400,18 @@ command_1 = {
 				value = 40
 				religion = godlost
 			}
-			num_of_owned_provinces_with = {
-				value = 80
-				has_tax_building_trigger = yes
+			if = {
+				limit = { ai = yes }
+				num_of_owned_provinces_with = {
+					value = 60
+					has_tax_building_trigger = yes
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					value = 80
+					has_tax_building_trigger = yes
+				}
 			}
 		}
 		
@@ -6312,10 +6457,7 @@ command_1 = {
 				has_ruler_modifier = command_legendary_leadership
 			}
 			if = {
-				limit = { ai = yes }
-				mil_tech = 16
-			}
-			else = {
+				limit = { ai = no }
 				philosopher = 5
 				estate_loyalty = {
 					estate = estate_lion_command
@@ -6375,7 +6517,7 @@ command_2 = {
 		trigger = {
 			if = {
 				limit = { ai = yes }
-				mil_power = 100
+				mil_tech = 4
 			}
 			else = {
 				estate_loyalty = {
@@ -6383,8 +6525,8 @@ command_2 = {
 					loyalty = 60
 				}
 				advisor = quartermaster
-				mil_power = 100
 			}
+			mil_power = 100Q
 		}
 		
 		effect = {
@@ -6406,10 +6548,7 @@ command_2 = {
 		
 		trigger = {
 			if = {
-				limit = { ai = yes }
-				always = yes
-			}
-			else = {
+				limit = { ai = no }
 				num_of_owned_provinces_with = {
 					value = 5
 					region = shamakhad_region
@@ -6470,7 +6609,7 @@ command_2 = {
 			if = {
 				limit = { ai = yes }
 				OR = {
-					is_year = 1480
+					is_year = 1460
 					NOT = {
 						any_owned_province = {
 							region = shamakhad_region
@@ -6506,12 +6645,9 @@ command_2 = {
 		}
 		
 		trigger = {
+			owns = 4474 #Kamapar
 			if = {
-				limit = { ai = yes }
-				owns_core_province = 4474
-			}
-			else = {
-				owns = 4474 #Kamapar
+				limit = { ai = no }
 				4474 = { religion = godlost }
 			}
 		}
@@ -6641,10 +6777,7 @@ command_2 = {
 		
 		trigger = {
 			if = {
-				limit = { ai = yes }
-				adm_tech = 16
-			}
-			else = {
+				limit = { ai = no }
 				if = {
 					limit = { has_estate_privilege = estate_wolf_command_war_room_rights }
 					estate_loyalty = {
@@ -6687,10 +6820,10 @@ command_2 = {
 						loyalty = 60
 					}
 				}
-				custom_trigger_tooltip = {
-					tooltip = R62_nationalist_teachings_req_tt
-					has_personal_deity = nationalist_teachings
-				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = R62_nationalist_teachings_req_tt
+				has_personal_deity = nationalist_teachings
 			}
 		}
 		
@@ -6755,7 +6888,13 @@ command_2 = {
 		}
 		
 		trigger = {
-			absolutism = 40
+			OR = {
+				absolutism = 40
+				custom_trigger_tooltip = {
+					tooltip = R62_complete_all_campaigns_tt
+					command_completed_all_campaigns = yes
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = R62_the_marshals_dilemma_trigger_tt
 				has_country_flag = command_the_ten_reforms_completed_flag
@@ -6781,7 +6920,13 @@ command_2 = {
 					has_reform = command_obedience
 				}
 				NOT = { average_autonomy = 25 }
-				absolutism = 80
+				OR = {
+					absolutism = 80
+					custom_trigger_tooltip = {
+						tooltip = R62_complete_all_campaigns_tt
+						command_completed_all_campaigns = yes
+					}
+				}
 				crown_land_share = 60
 			}
 			else_if = {
@@ -6799,47 +6944,47 @@ command_2 = {
 						}
 					}
 					stability = 3
-				}
-				if = {
-					limit = { has_estate_privilege = estate_wolf_command_war_room_rights }
-					estate_loyalty = {
-						estate = estate_wolf_command
-						loyalty = 60
+					if = {
+						limit = { has_estate_privilege = estate_wolf_command_war_room_rights }
+						estate_loyalty = {
+							estate = estate_wolf_command
+							loyalty = 60
+						}
 					}
-				}
-				if = {
-					limit = { has_estate_privilege = estate_boar_command_war_room_rights }
-					estate_loyalty = {
-						estate = estate_boar_command
-						loyalty = 60
+					if = {
+						limit = { has_estate_privilege = estate_boar_command_war_room_rights }
+						estate_loyalty = {
+							estate = estate_boar_command
+							loyalty = 60
+						}
 					}
-				}
-				if = {
-					limit = { has_estate_privilege = estate_lion_command_war_room_rights }
-					estate_loyalty = {
-						estate = estate_lion_command
-						loyalty = 60
+					if = {
+						limit = { has_estate_privilege = estate_lion_command_war_room_rights }
+						estate_loyalty = {
+							estate = estate_lion_command
+							loyalty = 60
+						}
 					}
-				}
-				if = {
-					limit = { has_estate_privilege = estate_dragon_command_war_room_rights }
-					estate_loyalty = {
-						estate = estate_dragon_command
-						loyalty = 60
+					if = {
+						limit = { has_estate_privilege = estate_dragon_command_war_room_rights }
+						estate_loyalty = {
+							estate = estate_dragon_command
+							loyalty = 60
+						}
 					}
-				}
-				if = {
-					limit = { has_estate_privilege = estate_tiger_command_war_room_rights }
-					estate_loyalty = {
-						estate = estate_tiger_command
-						loyalty = 60
+					if = {
+						limit = { has_estate_privilege = estate_tiger_command_war_room_rights }
+						estate_loyalty = {
+							estate = estate_tiger_command
+							loyalty = 60
+						}
 					}
-				}
-				if = {
-					limit = { has_estate_privilege = estate_elephant_command_war_room_rights }
-					estate_loyalty = {
-						estate = estate_elephant_command
-						loyalty = 60
+					if = {
+						limit = { has_estate_privilege = estate_elephant_command_war_room_rights }
+						estate_loyalty = {
+							estate = estate_elephant_command
+							loyalty = 60
+						}
 					}
 				}
 			}
@@ -6877,7 +7022,7 @@ command_3 = {
 		trigger = {
 			if = {
 				limit = { ai = yes }
-				always = yes
+				has_country_flag = command_sir_revolt_started
 			}
 			else = {
 				estate_loyalty = {
@@ -6947,7 +7092,7 @@ command_3 = {
 		trigger = {
 			if = {
 				limit = { ai = yes }
-				mil_tech = 6
+				mil_tech = 6 #Make sure they've unlocked barracks
 				treasury = 500
 			}
 			else = {
@@ -7198,6 +7343,13 @@ command_3 = {
 				estate_loyalty = {
 					estate = estate_gerunanin
 					loyalty = 50
+				}
+			}
+			calc_true_if = {
+				amount = 3
+				all_owned_province = {
+					region = xianjie_region
+					culture_is_human = yes
 				}
 			}
 		}
@@ -7570,7 +7722,9 @@ command_3 = {
 			if = {
 				limit = { ai = yes }
 				stability = 1
-				adm_tech = 8
+				owns = 4952
+				owns = 4613
+				owns = 4504
 			}
 			else = {
 				estate_loyalty = {
@@ -7894,7 +8048,7 @@ command_3 = {
 			}
 			NOT = {
 				culture_group = wuhyun
-				culture = honourbound_harimari
+				culture = worthy_harimari
 			}
 		
 		}
@@ -7969,6 +8123,7 @@ command_4 = {
 		
 		effect = {
 			country_event = { id = the_command.14 }
+			custom_tooltip = R62_prepare_new_stewards_effect_tt
 		}
 	}
 	
@@ -8106,6 +8261,18 @@ command_4 = {
 						change_tag = R81
 					}
 				}
+				if = { #Converts Verkal Ozovar to March Goblin if it's already owned
+					limit = { 
+						5424 = { #Verkal Ozovar
+							owned_by = R62
+							culture = undergrowth_goblin
+						}
+					}
+					5424 = { #Verkal Ozovar
+						change_culture = march_goblin 
+					} 
+				}
+				else = { }
 				R81 = {
 					change_government = tribal
 					add_government_reform = dwarovar_squatter
@@ -8200,7 +8367,6 @@ command_4 = {
 				tooltip = R62_the_mithril_forge_trigger_tt
 				if = {
 					limit = { ai = yes }
-					mil_tech = 15
 					OR = {
 						trade_goods_produced_amount = {
 							trade_goods = mithril
@@ -8720,10 +8886,9 @@ command_5 = {
 			mil_power = 50
 			if = {
 				limit = { ai = yes }
-				mil_tech = 4
+				mil_tech = 5
 			}
 			else = {
-				alliance_with = Y01
 				reverse_has_opinion = {
 					who = Y01
 					value = 150
@@ -8747,7 +8912,7 @@ command_5 = {
 		trigger = {
 			if = {
 				limit = { ai = yes }
-				mil_tech = 6
+				mil_tech = 7 #non-complex trigger that overshoots the korashi truce
 			}
 			OR = {
 				Y01 = {
@@ -8764,16 +8929,24 @@ command_5 = {
 		}
 		
 		effect = {
-			if = {
-				limit = {
-					alliance_with = Y01
+			custom_tooltip = R62_a_question_of_allegiance_effect_tt
+			custom_tooltip = command_azjakuma_activated_tt
+			custom_tooltip = azjakuma_backstab_tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							ai = yes
+							alliance_with = Y01
+						}
+					}
+					Y01 = { country_event = { id = the_command.49 } }
 				}
-				Y01 = { country_event = { id = the_command.49 } }
-			}
-			else = {
-				custom_tooltip = command_azjakuma_activated_tt
-				custom_tooltip = azjakuma_backstab_tooltip
-				set_country_flag = command_azjakuma_campaign_unlocked_flag
+				else = {
+					custom_tooltip = command_azjakuma_activated_tt
+					custom_tooltip = azjakuma_backstab_tooltip
+					set_country_flag = command_azjakuma_campaign_unlocked_flag
+				}
 			}
 		}
 	}

@@ -704,8 +704,8 @@ exploration_ideas = { #Trustee #done
 		caravan_power = 0.25
  	}
 	free_colonies = {
-		global_tariffs = 0.15
-		liberty_desire_from_subject_development = -0.3
+		global_tariffs = 0.1
+		liberty_desire_from_subject_development = -0.35
 	}
 	global_empire = {
 		expel_minorities_cost = -0.50
@@ -969,7 +969,7 @@ diplomatic_ideas = { #international ideas #done
 	}
 	experienced_diplomats  = {
 		diplomats = 1
-		improve_relation_modifier = 0.25
+		improve_relation_modifier = 0.33
 	}
 	flexible_negotiation = {
 		dip_tech_cost_modifier = -0.125
@@ -1360,7 +1360,38 @@ focus_inwards = { #Internal Ideas Redo
 	}
 	
 	ai_will_do = {
-		factor = 1.0
+		factor = 0.55
+		modifier = {
+			factor = 0
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			any_rival_country = {
+				NOT = { religion = ROOT } 
+			}
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 3
+			religion_group = faithless
+			NOT = { religion = godlost }
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = ADM 
+		}
+		modifier = {
+			factor = 1.25
+			has_idea_group = offensive_ideas 
+		}
 	}
 }
 

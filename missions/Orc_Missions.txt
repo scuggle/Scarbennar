@@ -6,6 +6,8 @@ orc_rivals = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -77,6 +79,8 @@ orc_pillage_2 = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -214,6 +218,8 @@ orc_trade = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -266,6 +272,8 @@ orc_domination = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -335,6 +343,8 @@ orc_pillage = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -390,6 +400,8 @@ orc_production = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -457,6 +469,8 @@ orc_aftermath_of_the_greentide_branch = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -603,6 +617,8 @@ orc_success_branch = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -763,6 +779,8 @@ orc_stability = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -792,6 +810,8 @@ orc_diplomacy = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -854,6 +874,8 @@ orc_capital = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region
@@ -938,6 +960,8 @@ orc_development = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
+		NOT = { tag = I41 }
+		NOT = { tag = I43 }
 		capital_scope = {
 			OR = {
 				region = forlorn_vale_region

@@ -99,7 +99,6 @@ estate_monstrous_tribes = {
 		estate_monstrous_tribes_guaranteed_leadgership_in_host
 		estate_monstrous_tribes_tribal_host
 		xhazobkult_privilege_organised_sacrifices
-		xhazobkult_privilege_the_weak_serve_the_strong
 		estate_nobles_neighbor_raids
 		estate_monstrous_tribes_emulation_of_the_shark # Mountainshark MT
 		estate_tribes_pyre_flame_use
@@ -134,4 +133,18 @@ estate_monstrous_tribes = {
 	}
 
 	color = { 50 150 50 }
+
+	custom_name = {
+		desc = estate_tribal_flocks
+		trigger = {
+			culture_group = harpy
+		}
+	}
+
+	custom_desc = {
+		desc = estate_tribal_flocks_desc
+		trigger = {
+			culture_group = harpy
+		}
+	}
 }

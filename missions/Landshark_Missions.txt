@@ -754,7 +754,7 @@ landshark_4 = {
 
 		trigger = {
 			development_in_provinces = {
-				value = 20
+				value = 16
 				area = west_overmarch_area
 			}
 		}
@@ -792,7 +792,7 @@ landshark_4 = {
 		}
 
 		trigger = {
-			adm_tech = 3
+			adm_tech = 4
 			manpower_percentage = 0.50
 			treasury = 100
 		}
@@ -855,10 +855,11 @@ landshark_4 = {
 						value = 180
 					}
 				}
-				AND = { #Three Forest Goblin Nations
+				AND = { #Four Forest Goblin Nations
 					NOT = {exists = I35}
 					NOT = {exists = I36}
 					NOT = {exists = I37}
+					NOT = {exists = B82}
 				}
 			}
 			mil_power = 200
