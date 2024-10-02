@@ -1,14 +1,14 @@
-owner = X33
-controller = X33
-add_core = X33
+owner = EC9
+controller = EC9
+add_core = EC9
 culture = skarakara_lizardfolk
 religion = anzalkatsa
 
 hre = no
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 2
+base_production = 2
+base_manpower = 2
 
 trade_goods = gems
 

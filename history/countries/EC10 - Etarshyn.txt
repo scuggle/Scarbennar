@@ -1,0 +1,30 @@
+
+setup_vision = yes
+government = tribal
+#add_government_reform = 
+government_rank = 1
+primary_culture = arraskay_lizardfolk
+religion = anzalkatsa
+technology_group = tech_gnomish
+capital = 6004 #Etarshyn
+religious_school = being_sculptors_school
+technology_group = tech_lizardfolk
+
+
+
+
+1401.6.11 = {
+	monarch = {
+		name = "Rivul"
+		dynasty = "Treestepper"
+		birth_date = 1394.5.3
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+	
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = just_personality
+	set_ruler_flag = long_lived_ruler
+}
