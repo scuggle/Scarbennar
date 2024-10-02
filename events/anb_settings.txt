@@ -10,6 +10,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		tag = B35
 		ai = no
 		NOT = { has_global_flag = settings_done }
 		NOT = { has_global_flag = settings_opened }
