@@ -30,19 +30,7 @@ custom_button = {
 		ai = no
 	}
 	trigger = {
-		hidden_trigger = {
-			ai = no
-			NOT = { has_country_flag = racial_military_menu_opened }
-			NOT = { has_country_flag = racial_pop_menu_opened } # Sorting can mess up if both open
-			has_country_flag = setup_for_races_flag
-		}
-		NOT = { has_country_modifier = restructuring_military }
-		if = {
-			limit = {
-				has_government_attribute = disables_swap_racial_mil
-			}
-			NOT = { has_government_attribute = disables_swap_racial_mil }
-		}
+		always = no
 	}
 	effect = {
 		hidden_effect = {
