@@ -34,3 +34,5 @@ capital = 496
 	465 = { add_core_construction = { speed = 0.75 cost = 0 } }
 	490 = { add_core_construction = { speed = 0.75 cost = 0 } }
 }
+
+add_stability = 1

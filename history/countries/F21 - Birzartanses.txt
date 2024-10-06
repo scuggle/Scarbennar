@@ -44,3 +44,5 @@ historical_rival = F34 #Azka-Evran
 
 	set_heir_flag = long_lived_ruler
 }
+
+add_stability = 1

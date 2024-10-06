@@ -144,7 +144,7 @@ hold_has_parliament = {
 
 gold_hold = {
 	local_gold_depletion_chance_modifier = -1
-	trade_goods_size_modifier = -0.2
+	trade_goods_size_modifier = -0.4
 	picture = "gold_hold"
 }
 

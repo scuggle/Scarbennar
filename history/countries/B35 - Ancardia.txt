@@ -27,3 +27,5 @@ capital = 776
 }
 
 set_country_flag = adventurer_derived_government
+
+add_stability = 1
