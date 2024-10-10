@@ -4,7 +4,10 @@ ekha_missions_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U08 }
+	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = U08 
+	}
 	
 	U08_ekha_the_chase = {
 		icon = mission_torch_fire
@@ -172,7 +175,10 @@ ekha_missions_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U08 }
+	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = U08 
+	}
 	
 	U08_ekha_amend_the_ancient_laws = {
 		icon = mission_diplomacy_missive
@@ -339,7 +345,10 @@ ekha_missions_3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U08 }
+	potential = { 
+		tag = U08 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 		U08_ekha_silver_for_gnolls = {
 			icon = mission_spoils_of_war
@@ -707,7 +716,10 @@ ekha_missions_4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U08 }
+	potential = { 
+		tag = U08 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	U08_ekha_bringing_back_the_silver_armada = {
 		icon = crusader_fleet
@@ -864,12 +876,16 @@ ekha_missions_4 = {
 		}
 	}
 }
+
 ekha_missions_5 = {
 	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = U08 }
+	potential = { 
+		tag = U08
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	U08_ekha_the_role_of_planetouched_in_our_outer_holdings = {
 		icon = mission_mage_general

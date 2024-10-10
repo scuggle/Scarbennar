@@ -5,10 +5,7 @@ unification_of_akasik = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = U08
-			tag = U06
-		}
+		tag = U06
 		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
