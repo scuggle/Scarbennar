@@ -1,4 +1,4 @@
- portnamn_left_branch = {
+portnamn_left_branch = {
  	slot = 1
  	generic = no
  	ai = yes
@@ -184,6 +184,7 @@
  	}
  	port_an_outpost = {
  		position = 7
+		icon = mission_artificier_experience
  		required_missions = { port_ruined_isles }
  		trigger = {
  			stalwart_outpost_area = {
@@ -243,8 +244,8 @@
  				limit = {
  					capital_scope = {
  						region = dalaire_region
- 						is_colonial_nation = yes
  					}
+					is_colonial_nation = yes
  				}
  				add_country_modifier = {
  					name = port_dalaire_controlled_modifier	#modifier giving -5% dev cost and -5% construction cost, yet to be localized
@@ -304,8 +305,8 @@
  			}
  		}
  	}
- }	
- portnamn_inner_left_branch = {
+}	
+portnamn_inner_left_branch = {
  	slot = 2
  	generic = no
  	ai = yes
@@ -345,7 +346,7 @@
  				owned_by = ROOT 
  				is_core = ROOT
  			}
- 			nimscodd_area = {
+			dragonpoint_area = {
  				type = all 
  				owned_by = ROOT 
  				is_core = ROOT
@@ -355,28 +356,16 @@
  				owned_by = ROOT 
  				is_core = ROOT
  			}
- 			dragonpoint_area = {
- 				type = all 
- 				owned_by = ROOT 
- 				is_core = ROOT
- 			}
  		}
  		provinces_to_highlight = {
  			OR = {
  				area = gnomish_pass_area
- 				area = nimscodd_area
  				area = dragondowns_area
  				area = dragonpoint_area
  			}
  			NOT = { owned_by = ROOT is_core = ROOT }
  		}
  		effect = {
- 			nimscodd_area = {
- 				limit = {
- 					NOT = { culture_group = gnomish }
- 				}
- 				change_culture = cliff_gnome
- 			}
  			gnomish_pass_area = {
  				limit = {
  					NOT = { culture_group = gnomish }
@@ -572,7 +561,7 @@
  	}
  	port_colonial_timber = {
  		position = 10
- 		icon = mission_artificer_experience
+ 		icon = mission_artificier_experience
  		required_missions = { port_dalaire }
  		trigger = {
  			any_subject_country  = {
@@ -616,8 +605,8 @@
  			}
  		}
  	}
- }
- portnamn_inner_branch = {
+}
+portnamn_inner_branch = {
  	slot = 3
  	generic = no
  	ai = yes
@@ -788,7 +777,7 @@
  	}
  	port_colonial_dyes = {
  		position = 10
- 		icon = mission_artificer_experience
+ 		icon = mission_artificier_experience
  		required_missions = { port_dalaire }
  		trigger = {
  			any_subject_country  = {
@@ -836,8 +825,8 @@
  			}
  		}
  	}
- }
- portnamn_inner_right_branch = {
+}
+portnamn_inner_right_branch = {
  	slot = 4
  	generic = no
  	ai = yes
@@ -924,7 +913,8 @@
  	}
  	port_dykes_around_the_roy = {
  		position = 4
- 		icon = se_along_the_river 
+ 		#icon = se_along_the_river TODO
+		icon = mission_colonial
  		required_missions = { port_corps_of_engineers }
  		trigger = {
  			iochand_area = {
@@ -1125,7 +1115,7 @@
  	}
  	port_colonial_relics = {
  		position = 10
- 		icon = mission_artificer_experience
+ 		icon = mission_artificier_experience
  		required_missions = { port_dalaire }
  		trigger = {
  			any_subject_country  = {
@@ -1168,8 +1158,8 @@
  			}
  		}
  	}
- }
- portnamn_right_branch = {
+}
+portnamn_right_branch = {
  	slot = 5
  	generic = no
  	ai = yes
@@ -1270,8 +1260,6 @@
  		trigger = {
  			num_of_owned_provinces_with = {
  				value = 18
- 				limit = {				
- 				}
  			}
  		}
  		provinces_to_highlight = {
@@ -1297,13 +1285,13 @@
  				province_id = 144	#manerd
  			}
  			NOT = {
- 				has_province_modifier = port_irrigation_canals
+ 				has_province_modifier = port_irrigation_canal_modifier
  			}
  		}
  		effect = {
  			every_owned_province = {
  				limit = {
- 					has_province_modifier = port_irrigation_canals
+ 					has_province_modifier = port_irrigation_canal_modifier
  				}
  				add_province_modifier = {
  					name = port_bustling_farmland_modifier	#modifier giving -5% dev cost modifier, yet to be localized
