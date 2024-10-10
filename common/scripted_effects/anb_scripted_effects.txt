@@ -6156,6 +6156,11 @@ switch_bayvic_to_bayvek = {
 		}
 		Z28 = {
 			change_primary_culture = city_goblin
+			clear_racial_administration = yes
+			add_country_modifier = {
+				name = goblin_administration
+				duration = -1
+			}
 			set_country_flag = no_longer_monstrous
 			add_accepted_culture = blue_reachman
 			override_country_name = BAYVEK
@@ -6180,6 +6185,11 @@ switch_bayvic_to_bayvek = {
 		hidden_effect = {
 			Z28 = {
 				change_primary_culture = city_goblin
+				clear_racial_administration = yes
+				add_country_modifier = {
+					name = goblin_administration
+					duration = -1
+				}
 				set_country_flag = no_longer_monstrous
 				add_accepted_culture = blue_reachman
 				override_country_name = BAYVEK
