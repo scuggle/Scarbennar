@@ -53,9 +53,9 @@ country_event = {
 				has_country_flag = formed_diggy_formable
 			}
 		}	
-		hidden_effect = {
-			lose_reforms = 10 # Reset reform progress
-		}
+		#hidden_effect = {
+		#	lose_reforms = 10 # Reset reform progress
+		#}
 		if = {
 			limit = { NOT = { government = monarchy } }
 			change_government = monarchy
@@ -163,7 +163,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			lose_reforms = 10 # Reset reform progress
+			#lose_reforms = 10 # Reset reform progress
 			if = {
 				limit = {
 					has_ruler_modifier = heir_mage_personality_mod
