@@ -272,7 +272,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			lose_reforms = 10 # Reset reform progress
+			#lose_reforms = 10 # Reset reform progress
 		}
 		if = {
 			limit = { NOT = { government = theocracy } }
