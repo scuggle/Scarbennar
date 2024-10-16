@@ -13191,17 +13191,22 @@ techno_monarchy_reform = { #CoT Ashscale
 		}
 	}
 	nation_designer_cost = 20
+
+	factions = {
+		tec_brilliance
+		tec_technomancy
+		tec_mechanists
+	}
 		
 	modifiers = {
 		advisor_cost = -0.10
-		advisor_pool = 1
+		#advisor_pool = 1
 		female_advisor_chance = 0.33
-		allowed_rajput_fraction = 0.2 #artificers
+		allowed_rajput_fraction = 0.1 #artificers
 		max_absolutism = -10
-		administrative_efficiency = -0.05 #worse at expanding
-		
-		
-		artificers_influence_modifier = 0.1
+		artificers_loyalty_modifier = 0.1
+		#administrative_efficiency = -0.05 #worse at expanding
+		#artificers_influence_modifier = 0.1
 	}
 	
 	custom_attributes = {
@@ -13209,13 +13214,14 @@ techno_monarchy_reform = { #CoT Ashscale
 		enables_aristocratic_idea_group = no
 		is_technocracy = yes
 		maintain_dynasty = yes
-		disables_regular_estates = yes
+		#disables_regular_estates = yes
 	}
 	effect = {
 		add_country_modifier = {
 			name = technocracy_rajput_bonus
 			duration = -1
 		}
+		artifice_magic_switch_to_artificery_only_mode = yes
 	}
 	removed_effect = {
 		remove_country_modifier = technocracy_rajput_bonus
