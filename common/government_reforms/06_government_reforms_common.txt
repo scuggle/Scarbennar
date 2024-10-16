@@ -332,9 +332,11 @@ penal_colonies_reform = {
 		}
 	}
 	trigger = {
-		has_idea_group = exploration_ideas
-		has_idea_group = maritime_ideas
-		has_idea_group = trade_ideas
+		OR = {
+			has_idea_group = exploration_ideas
+			has_idea_group = maritime_ideas
+			has_idea_group = trade_ideas
+		}
 	}
 	modifiers = {
 		expel_minorities_cost = -1
