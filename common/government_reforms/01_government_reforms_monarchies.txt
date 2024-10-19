@@ -13433,3 +13433,31 @@ rosanda_wine_lord_reform = {
 		rosanda_grain_to_wine
 	}
 }
+
+purple_palace_council_reform = {
+	icon = "purple_palace_council"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = A30
+			was_tag = A30
+		}
+	}
+	maintain_dynasty = yes
+	can_change_primary_culture = no
+	lock_level_when_selected = yes
+	modifiers = {
+		special_unit_forcelimit = 0.2
+		development_cost_in_primary_culture = -0.1
+		mages_influence_modifier = 0.1
+	}
+	government_abilities = {
+		palace_council_influence_mechanic
+	}
+	custom_attributes = {
+		can_enforce_primary_culture = yes
+	}
+	ai = {
+		factor = 5
+	}
+}

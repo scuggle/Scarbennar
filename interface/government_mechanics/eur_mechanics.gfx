@@ -5,4 +5,20 @@ spriteTypes = {
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
+
+	# palace council influence
+	spriteType = {
+		name = "GFX_conduct_administrative_review"
+		texturefile = "gfx/interface/government_mechanics/palace_council_influence/conduct_administrative_review.dds"
+	}
+
+	spriteType = {
+		name = "GFX_conduct_diplomatic_review"
+		texturefile = "gfx/interface/government_mechanics/palace_council_influence/conduct_diplomatic_review.dds"
+	}
+
+	spriteType = {
+		name = "GFX_conduct_military_review"
+		texturefile = "gfx/interface/government_mechanics/palace_council_influence/conduct_military_review.dds"
+	}
 }

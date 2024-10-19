@@ -1,9 +1,12 @@
 country_decisions = {	
 	wexonard_superiority = {
-		#TODO add cooldown with shorter cooldown by mission/countryflag
+		#TODO add cooldown with shorter cooldown by mission/countryflag, increase debuff
 		color = { 138 43 226 }
 		potential = {
-			is_or_was_tag = A30
+			OR = {
+				tag = A30
+				was_tag = A30
+			}
 		}
 		allow = {
 			num_of_owned_provinces_with = {
