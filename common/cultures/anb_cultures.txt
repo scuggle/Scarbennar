@@ -467,6 +467,10 @@ alenic = {
 	}
 
 	wexonard = {
+		province = { 
+			local_has_banners = yes
+			local_amount_of_banners = 1
+		}
 		primary = A30 #Wex
 		dynasty_names = {
 			"síl Wex" "síl Rhinmond" "of Bisan" "of Indlebury" "of Magdalaire" "sina Wexton" "sina Varton" "síl na Casnaslíc" "sina Badgerbite" "of Drunkard's Drop" "of Easton" "of Hyland" "síl Neratin" "of Bridgeton" "of Holmwood" "of Sappington" "of Ingham" "of Kynaston" "of Linwood" "of Mutton" "of Hardwick" "síl Demelsvord" "síl na Dwarovcantir" "síl na Hondenophan" "of Gnollhide Gulch"

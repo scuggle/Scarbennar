@@ -1968,4 +1968,9 @@ spriteTypes = {
 		name = "government_reform_aelantir_branch"
 		texturefile = "gfx//interface//government_reform_icons//aelantir_branch.dds"
 	}
+
+	spriteType = {
+		name = "government_reform_purple_palace_council"
+		texturefile = "gfx//interface//government_reform_icons//purple_palace_council.dds"
+	}
 }

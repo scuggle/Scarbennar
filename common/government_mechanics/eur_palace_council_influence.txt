@@ -1,0 +1,1025 @@
+palace_council_influence_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 4
+	available = {
+	}
+
+	powers = {
+		palace_council_influence = {
+			show_before_interactions = yes
+			max = 100
+			base_monthly_growth = 1
+		}
+	}
+	
+	interactions = {
+		conduct_administrative_review = {
+			icon = GFX_conduct_administrative_review
+			cost_type = palace_council_influence
+			cost = 50
+			trigger = {
+				has_adm_advisor = yes
+			}
+			effect = {
+				used_palace_council_influence = yes
+				if = {
+					limit = { has_country_flag = improved_palace_council_influence_abilities }
+					if = {
+						limit = {
+							philosopher = 1
+						}
+						custom_tooltip = wex_philosopher_1_tt
+						else = {
+						custom_tooltip = wex_philosopher_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_philosopher_2
+							duration = 5475
+						}
+					}
+					if = {
+						limit = {
+							natural_scientist = 1
+						}
+						custom_tooltip = wex_natural_scientist_1_tt
+						else = {
+						custom_tooltip = wex_natural_scientist_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_natural_scientist_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							artist = 1
+						}
+						custom_tooltip = wex_artist_1_tt
+						else = {
+						custom_tooltip = wex_artist_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_artist_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							treasurer = 1
+						}
+						custom_tooltip = wex_treasurer_1_tt
+						else = {
+						custom_tooltip = wex_treasurer_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_treasurer_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							theologian = 1
+						}
+						custom_tooltip = wex_theologian_1_tt
+						else = {
+						custom_tooltip = wex_theologian_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_theologian_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							master_of_mint = 1
+						}
+						custom_tooltip = wex_master_of_mint_1_tt
+						else = {
+						custom_tooltip = wex_master_of_mint_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_master_of_mint_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							inquisitor = 1
+						}
+						custom_tooltip = wex_inquisitor_1_tt
+						else = {
+						custom_tooltip = wex_inquisitor_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_inquisitor_2
+							duration = 5475 
+						}
+					}
+					hidden_effect = {#
+						if = {
+							limit = { philosopher = 1 }
+							add_country_modifier = {
+								name = wex_philosopher_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { natural_scientist = 1 }
+							add_country_modifier = {
+								name = wex_natural_scientist_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { artist = 1 }
+							add_country_modifier = {
+								name = wex_artist_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { treasurer = 1 }
+							add_country_modifier = {
+								name = wex_treasurer_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { theologian = 1 }
+							add_country_modifier = {
+								name = wex_theologian_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { master_of_mint = 1 }
+							add_country_modifier = {
+								name = wex_master_of_mint_2
+								duration = 5475 
+							}
+						}
+						else_if = {
+							limit = { inquisitor = 1 }
+							add_country_modifier = {
+								name = wex_inquisitor_2
+								duration = 5475 
+							}
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							philosopher = 1
+						}
+						custom_tooltip = wex_philosopher_1_tt
+						else = {
+						custom_tooltip = wex_philosopher_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_philosopher_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							natural_scientist = 1
+						}
+						custom_tooltip = wex_natural_scientist_1_tt
+						else = {
+						custom_tooltip = wex_natural_scientist_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_natural_scientist_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							artist = 1
+						}
+						custom_tooltip = wex_artist_1_tt
+						else = {
+						custom_tooltip = wex_artist_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_artist_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							treasurer = 1
+						}
+						custom_tooltip = wex_treasurer_1_tt
+						else = {
+						custom_tooltip = wex_treasurer_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_treasurer_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							theologian = 1
+						}
+						custom_tooltip = wex_theologian_1_tt
+						else = {
+						custom_tooltip = wex_theologian_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_theologian_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							master_of_mint = 1
+						}
+						custom_tooltip = wex_master_of_mint_1_tt
+						else = {
+						custom_tooltip = wex_master_of_mint_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_master_of_mint_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							inquisitor = 1
+						}
+						custom_tooltip = wex_inquisitor_1_tt
+						else = {
+						custom_tooltip = wex_inquisitor_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_inquisitor_1
+							duration = 5475 
+						}
+					}
+					hidden_effect = {#
+						if = {
+							limit = { philosopher = 1 }
+							add_country_modifier = {
+								name = wex_philosopher_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { natural_scientist = 1 }
+							add_country_modifier = {
+								name = wex_natural_scientist_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { artist = 1 }
+							add_country_modifier = {
+								name = wex_artist_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { treasurer = 1 }
+							add_country_modifier = {
+								name = wex_treasurer_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { theologian = 1 }
+							add_country_modifier = {
+								name = wex_theologian_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { master_of_mint = 1 }
+							add_country_modifier = {
+								name = wex_master_of_mint_1
+								duration = 5475
+							}
+						}
+						else_if = {
+							limit = { inquisitor = 1 }
+							add_country_modifier = {
+								name = wex_inquisitor_1
+								duration = 5475 
+							}
+						}
+					}
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+			}
+		}
+		conduct_diplomatic_review = {
+			icon = GFX_conduct_diplomatic_review
+			cost_type = palace_council_influence
+			cost = 50
+			trigger = {
+				has_dip_advisor = yes
+			}
+			effect = {
+				used_palace_council_influence = yes
+				if = {
+					limit = { has_country_flag = improved_palace_council_influence_abilities }
+					if = {
+						limit = {
+							statesman = 1
+						}
+						custom_tooltip = wex_statesman_1_tt
+						else = {
+						custom_tooltip = wex_statesman_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_statesman_2
+							duration = 5475
+						}
+					}
+					if = {
+						limit = {
+							naval_reformer = 1
+						}
+						custom_tooltip = wex_naval_reformer_1_tt
+						else = {
+						custom_tooltip = wex_naval_reformer_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_naval_reformer_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							trader = 1
+						}
+						custom_tooltip = wex_trader_1_tt
+						else = {
+						custom_tooltip = wex_trader_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_trader_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							spymaster = 1
+						}
+						custom_tooltip = wex_spymaster_1_tt
+						else = {
+						custom_tooltip = wex_spymaster_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_spymaster_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							colonial_governor = 1
+						}
+						custom_tooltip = wex_colonial_governor_1_tt
+						else = {
+						custom_tooltip = wex_colonial_governor_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_colonial_governor_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							diplomat = 1
+						}
+						custom_tooltip = wex_diplomat_1_tt
+						else = {
+						custom_tooltip = wex_diplomat_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_diplomat_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							navigator = 1
+						}
+						custom_tooltip = wex_navigator_1_tt
+						else = {
+						custom_tooltip = wex_navigator_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_navigator_2
+							duration = 5475 
+						}
+					}
+					hidden_effect = {#
+						if = {
+							limit = { statesman = 1 }
+							add_country_modifier = {
+								name = wex_statesman_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { naval_reformer = 1 }
+							add_country_modifier = {
+								name = wex_naval_reformer_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { trader = 1 }
+							add_country_modifier = {
+								name = wex_trader_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { spymaster = 1 }
+							add_country_modifier = {
+								name = wex_spymaster_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { colonial_governor = 1 }
+							add_country_modifier = {
+								name = wex_colonial_governor_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { diplomat = 1 }
+							add_country_modifier = {
+								name = wex_diplomat_2
+								duration = 5475 
+							}
+						}
+						else_if = {
+							limit = { navigator = 1 }
+							add_country_modifier = {
+								name = wex_navigator_2
+								duration = 5475 
+							}
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							statesman = 1
+						}
+						custom_tooltip = wex_statesman_1_tt
+						else = {
+						custom_tooltip = wex_statesman_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_statesman_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							naval_reformer = 1
+						}
+						custom_tooltip = wex_naval_reformer_1_tt
+						else = {
+						custom_tooltip = wex_naval_reformer_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_naval_reformer_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							trader = 1
+						}
+						custom_tooltip = wex_trader_1_tt
+						else = {
+						custom_tooltip = wex_trader_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_trader_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							spymaster = 1
+						}
+						custom_tooltip = wex_spymaster_1_tt
+						else = {
+						custom_tooltip = wex_spymaster_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_spymaster_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							colonial_governor = 1
+						}
+						custom_tooltip = wex_colonial_governor_1_tt
+						else = {
+						custom_tooltip = wex_colonial_governor_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_colonial_governor_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							diplomat = 1
+						}
+						custom_tooltip = wex_diplomat_1_tt
+						else = {
+						custom_tooltip = wex_diplomat_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_diplomat_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							navigator = 1
+						}
+						custom_tooltip = wex_navigator_1_tt
+						else = {
+						custom_tooltip = wex_navigator_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_navigator_1
+							duration = 5475 
+						}
+					}
+					hidden_effect = {#
+						if = {
+							limit = { statesman = 1 }
+							add_country_modifier = {
+								name = wex_statesman_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { naval_reformer = 1 }
+							add_country_modifier = {
+								name = wex_naval_reformer_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { trader = 1 }
+							add_country_modifier = {
+								name = wex_trader_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { spymaster = 1 }
+							add_country_modifier = {
+								name = wex_spymaster_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { colonial_governor = 1 }
+							add_country_modifier = {
+								name = wex_colonial_governor_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { diplomat = 1 }
+							add_country_modifier = {
+								name = wex_diplomat_1
+								duration = 5475
+							}
+						}
+						else_if = {
+							limit = { navigator = 1 }
+							add_country_modifier = {
+								name = wex_navigator_1
+								duration = 5475 
+							}
+						}
+					}
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+			}
+		}
+		conduct_military_review = {
+			icon = GFX_conduct_military_review
+			cost_type = palace_council_influence
+			cost = 50
+			trigger = {
+				has_mil_advisor = yes
+			}
+			effect = {
+				used_palace_council_influence = yes
+				if = {
+					limit = { has_country_flag = improved_palace_council_influence_abilities }
+					if = {
+						limit = {
+							army_reformer = 1
+						}
+						custom_tooltip = wex_army_reformer_1_tt
+						else = {
+						custom_tooltip = wex_army_reformer_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_army_reformer_2
+							duration = 5475
+						}
+					}
+					if = {
+						limit = {
+							army_organiser = 1
+						}
+						custom_tooltip = wex_army_organiser_1_tt
+						else = {
+						custom_tooltip = wex_army_organiser_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_army_organiser_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							commandant = 1
+						}
+						custom_tooltip = wex_commandant_1_tt
+						else = {
+						custom_tooltip = wex_commandant_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_commandant_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							quartermaster = 1
+						}
+						custom_tooltip = wex_quartermaster_1_tt
+						else = {
+						custom_tooltip = wex_quartermaster_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_quartermaster_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							recruitmaster = 1
+						}
+						custom_tooltip = wex_recruitmaster_1_tt
+						else = {
+						custom_tooltip = wex_recruitmaster_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_recruitmaster_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							grand_captain = 1
+						}
+						custom_tooltip = wex_grand_captain_1_tt
+						else = {
+						custom_tooltip = wex_grand_captain_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_grand_captain_2
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							fortification_expert = 1
+						}
+						custom_tooltip = wex_fortification_expert_1_tt
+						else = {
+						custom_tooltip = wex_fortification_expert_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_fortification_expert_2
+							duration = 5475 
+						}
+					}
+					hidden_effect = {#
+						if = {
+							limit = { army_reformer = 1 }
+							add_country_modifier = {
+								name = wex_army_reformer_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { army_organiser = 1 }
+							add_country_modifier = {
+								name = wex_army_organiser_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { commandant = 1 }
+							add_country_modifier = {
+								name = wex_commandant_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { quartermaster = 1 }
+							add_country_modifier = {
+								name = wex_quartermaster_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { recruitmaster = 1 }
+							add_country_modifier = {
+								name = wex_recruitmaster_2
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { grand_captain = 1 }
+							add_country_modifier = {
+								name = wex_grand_captain_2
+								duration = 5475 
+							}
+						}
+						else_if = {
+							limit = { fortification_expert = 1 }
+							add_country_modifier = {
+								name = wex_fortification_expert_2
+								duration = 5475 
+							}
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							army_reformer = 1
+						}
+						custom_tooltip = wex_army_reformer_1_tt
+						else = {
+						custom_tooltip = wex_army_reformer_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_army_reformer_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							army_organiser = 1
+						}
+						custom_tooltip = wex_army_organiser_1_tt
+						else = {
+						custom_tooltip = wex_army_organiser_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_army_organiser_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							commandant = 1
+						}
+						custom_tooltip = wex_commandant_1_tt
+						else = {
+						custom_tooltip = wex_commandant_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_commandant_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							quartermaster = 1
+						}
+						custom_tooltip = wex_quartermaster_1_tt
+						else = {
+						custom_tooltip = wex_quartermaster_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_quartermaster_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							recruitmaster = 1
+						}
+						custom_tooltip = wex_recruitmaster_1_tt
+						else = {
+						custom_tooltip = wex_recruitmaster_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_recruitmaster_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							grand_captain = 1
+						}
+						custom_tooltip = wex_grand_captain_1_tt
+						else = {
+						custom_tooltip = wex_grand_captain_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_grand_captain_1
+							duration = 5475 
+						}
+					}
+					if = {
+						limit = {
+							fortification_expert = 1
+						}
+						custom_tooltip = wex_fortification_expert_1_tt
+						else = {
+						custom_tooltip = wex_fortification_expert_2_tt
+						}
+					}
+					tooltip = {
+						add_country_modifier = {
+							name = wex_fortification_expert_1
+							duration = 5475 
+						}
+					}
+					hidden_effect = {#
+						if = {
+							limit = { army_reformer = 1 }
+							add_country_modifier = {
+								name = wex_army_reformer_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { army_organiser = 1 }
+							add_country_modifier = {
+								name = wex_army_organiser_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { commandant = 1 }
+							add_country_modifier = {
+								name = wex_commandant_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { quartermaster = 1 }
+							add_country_modifier = {
+								name = wex_quartermaster_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { recruitmaster = 1 }
+							add_country_modifier = {
+								name = wex_recruitmaster_1
+								duration = 5475 
+							}
+						}
+						else_if = {#
+							limit = { grand_captain = 1 }
+							add_country_modifier = {
+								name = wex_grand_captain_1
+								duration = 5475
+							}
+						}
+						else_if = {
+							limit = { fortification_expert = 1 }
+							add_country_modifier = {
+								name = wex_fortification_expert_1
+								duration = 5475 
+							}
+						}
+					}
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				modifier = {
+					factor = 0
+					is_at_war = no
+				}
+				modifier = {
+					factor = 10
+					is_at_war = yes
+					has_government_power = {
+						mechanic_type = palace_council_influence_mechanic
+						power_type = palace_council_influence
+						value = 95
+					}
+				}
+			}
+		}
+	}
+}

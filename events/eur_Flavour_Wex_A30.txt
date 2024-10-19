@@ -1,0 +1,69 @@
+namespace = flavor_wex_eur
+country_event = {
+	id = flavor_wex_eur.1
+	title = flavor_wex_eur.1.t
+	desc = flavor_wex_eur.1.d
+	picture = COUNCIL_TRENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		#missions
+	}
+
+	option = {
+		name = flavor_wex.15.a
+		ai_chance = { factor = 50 }
+		custom_tooltip = wex_expansion_tt
+		set_country_flag = wex_expansion
+		swap_non_generic_missions = yes
+	}
+	
+	option = {
+		name = flavor_wex.15.b
+		ai_chance = { factor = 50 }
+		custom_tooltip = wex_diplomatic_tt
+		set_country_flag = wex_diplomatic
+		swap_non_generic_missions = yes
+	}
+}
+country_event = {
+	id = flavor_wex_eur.2
+	title = fflavor_wex_eur.2.t
+	desc = flavor_wex_eur.2.d
+	picture = COUNCIL_TRENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		#missions
+	}
+
+	option = {
+		name = flavor_wex.2.a
+		ai_chance = { factor = 100 }
+		custom_tooltip = wex_war_against_bisan_tt
+		declare_war_with_cb = {
+			who = A34
+			casus_belli = cb_nationalist
+		}
+		if = {
+			Z02 = {
+				has_opinion_modifier = {
+					who = A30
+					modifier = insulted
+				}
+			}
+			custom_tooltip = wex_madgalaire_join_war_tt
+		}
+		if = {
+			Z04 = {
+				has_opinion_modifier = {
+					who = A30
+					modifier = insulted
+				}
+			}
+			custom_tooltip = wex_indlebury_join_war_tt
+		}
+	}
+}

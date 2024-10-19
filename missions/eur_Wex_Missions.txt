@@ -1,0 +1,392 @@
+slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = A30
+		NOT = {
+			OR = {
+				has_country_flag = wex_expansion 
+				has_country_flag = wex_diplomatic 
+			} 
+		}
+	}
+
+	A30_imperial_minting = {
+		icon = dominant_economy
+		position = 3
+		required_missions = { A30_the_ironhills } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			249 = {
+				OWNER = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+			any_known_country = {
+				culture_group = dwarven
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+			}
+		}
+
+		effect = {
+			define_advisor = {
+				type = master_of_mint
+				skill = 1
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.4
+			}
+			306 = { change_trade_goods = gold } 
+			249 = { change_trade_goods = gems } 
+		}
+	}
+}
+slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = A30
+		NOT = {
+			OR = {
+				has_country_flag = wex_expansion 
+				has_country_flag = wex_diplomatic 
+			} 
+		}
+	}
+
+	A30_the_ironhills = {
+		icon = mission_expand_into_the_forest
+		position = 2
+		required_missions = { A30_secure_emporership } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			304 = { num_of_times_improved = 3 } 
+			305 = { num_of_times_improved = 3 } 
+		}
+
+		effect = {
+			304 = { change_trade_goods = iron } 
+			305 = { change_trade_goods = iron } 
+		}
+	}
+
+	A30_refill_the_armory = {
+		icon = fra_refine_bombards
+		position = 3
+		required_missions = { A30_the_ironhills } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			trade_goods_produced_amount = {
+				trade_goods = iron
+				amount = 7
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = { 
+					trade_goods = iron 
+				} 
+				add_province_modifier = {
+					name = "wex_armory_refilled"
+					duration = 9125
+				}
+			}
+		}
+	}
+}
+slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = A30
+		NOT = {
+			OR = {
+				has_country_flag = wex_expansion 
+				has_country_flag = wex_diplomatic 
+			} 
+		}
+	}
+
+	A30_secure_emporership = {
+		icon = italia_transalpina
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = { hre_size = 1 } 
+				calc_true_if = {
+					desc = gen_hre_electors.tooltip
+					all_elector = { preferred_emperor = ROOT } 
+					amount = 4
+				}
+			}
+			else = { num_of_allies = 3 } 
+		}
+
+		effect = {
+			define_advisor = {
+				type = statesman
+				skill = 1
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.50
+			}
+		}
+	}
+
+	A30_fill_the_ranks = {
+		icon = mercenary_companies
+		position = 3
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			manpower_percentage = 0.9
+			army_size_percentage = 0.75
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "wex_refilled_reserve"
+				duration = 9125
+			}
+		}
+	}
+
+	A30_form_palace_guards = {
+		icon = mission_swiss_mercenaries_flipped
+		position = 4
+		required_missions = {
+			A30_imperial_minting
+			A30_refill_the_armory
+			A30_fill_the_ranks
+			A30_imperial_coffers
+			A30_fortify_the_keep
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			treasury = 200
+			manpower = 15
+		}
+
+		effect = {
+			custom_tooltip = wex_guards_access_tt
+			add_treasury = -200
+			add_manpower = -15
+			set_country_flag = wex_unlocked_guards
+			hidden_effect = {
+				add_country_modifier = {
+					name = "wex_palace_guards"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	A30_glimpse_of_the_future = {
+		icon = mission_taychend_nanru_nakar_city
+		position = 5
+		required_missions = { A30_form_palace_guards } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  
+			country_event = { 
+				id = flavor_wex_eur.1
+			}
+			custom_tooltip = wex_eur_flavor_1_tt
+		} 
+	}
+}
+slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = A30
+		NOT = {
+			OR = {
+				has_country_flag = wex_expansion 
+				has_country_flag = wex_diplomatic 
+			} 
+		}
+	}
+
+	A30_humiliate_rival = {
+		icon = humiliate_austria
+		position = 2
+		required_missions = { A30_secure_emporership } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = obj_humiliate_rival_tooltip
+					has_country_flag = humiliated_rival
+				}
+				NOT = {
+					any_known_country = {
+						OR = {
+							is_enemy = ROOT
+							is_rival = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+		}
+	}
+
+	A30_fortify_the_keep = {
+		icon = take_constantinople
+		position = 3
+		required_missions = { A30_humiliate_rival } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {
+			306 = {
+				add_province_modifier = {
+					name = "wex_fortified_keep"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = A30
+		NOT = {
+			OR = {
+				has_country_flag = wex_expansion 
+				has_country_flag = wex_diplomatic 
+			} 
+		}
+	}
+
+	A30_lilac_wars_bombards = {
+		icon = mission_guns_of_urban
+		position = 1
+		required_missions = {
+		}
+		provinces_to_highlight = {
+			OR = {
+				is_capital_of = A20
+				is_capital_of = A62
+			}
+			NOT = {
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+		trigger = {
+			if = { limit = { mil_tech = 7 } 
+			treasury = 50
+			}
+			else = {
+				treasury = 100
+			}
+			has_mil_advisor = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					mil_tech = 7
+				}
+				add_treasury = -50
+			}
+			else = {
+				add_treasury = -100
+			}
+			capital_scope = {
+				large_cast_bronze_mortar = ROOT
+				large_cast_bronze_mortar = ROOT
+			}
+			complex_dynamic_effect_without_alternative = {
+				first_custom_tooltip = A30_befriend_telgier_rubyhold_tooltip
+				first_limit = "A62 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					A20 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				"
+				first_effect = "if = { limit = { mil_tech = 7 } 
+					add_treasury = -50
+					}
+					else = {
+						add_treasury = -100
+					}
+					capital_scope = {
+						large_cast_bronze_mortar = ROOT
+						large_cast_bronze_mortar = ROOT
+					}
+				"
+			}
+		}
+	}
+	A30_imperial_coffers = {
+		icon = mission_mnd_maj_end_disaster
+		position = 3
+		required_missions = { 
+			A30_humiliate_rival 
+		} 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = { 
+					has_dlc = "Art of War" 
+				} 
+				num_of_war_reparations = 3
+			}
+		}
+
+		effect = { 
+			306 = { 
+				center_of_trade = 1 
+			}  
+		} 
+	}
+}
