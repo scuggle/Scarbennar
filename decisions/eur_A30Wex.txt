@@ -1,0 +1,57 @@
+country_decisions = {	
+	wexonard_superiority = {
+		#TODO add cooldown with shorter cooldown by mission/countryflag
+		color = { 138 43 226 }
+		potential = {
+			is_or_was_tag = A30
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 1
+				NOT = { 
+					culture = ROOT 	
+				}
+				is_overseas = no
+				continent = europe
+				any_neighbor_province = { 
+						culture = ROOT 
+				}
+				NOT = {
+					has_province_modifier = wex_cleanse
+				}
+			}
+			has_any_disaster = no
+		}
+		effect = {
+			custom_tooltip = wex_tt_1
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						any_neighbor_province = {
+							culture = ROOT 
+						}
+						NOT = { 
+							culture = ROOT 
+						}
+						NOT = { 
+							has_province_modifier = wex_cleanse 
+						}
+						
+					}
+					add_province_modifier = {
+						name = "wex_cleanse"
+						duration = 7300
+					}
+					create_revolt = 1
+					change_culture = ROOT
+					change_religion = ROOT
+					add_devastation = 25
+				}
+			}
+
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
