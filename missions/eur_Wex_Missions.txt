@@ -43,10 +43,13 @@ slot_1 = {
 				skill = 1
 				culture = ROOT
 				religion = ROOT
-				cost_multiplier = 0.4
+				cost_multiplier = 0.5
 			}
-			306 = { change_trade_goods = gold } 
-			249 = { change_trade_goods = gems } 
+			custom_tooltip = wex_imperial_minting_reward_tt
+			hidden_effect = {
+				306 = { change_trade_goods = gold } 
+				249 = { change_trade_goods = gems } 
+			}
 		}
 	}
 }
@@ -79,6 +82,12 @@ slot_2 = {
 		effect = {
 			304 = { change_trade_goods = iron } 
 			305 = { change_trade_goods = iron } 
+			wexhills_area = {
+				add_province_modifier = {
+					name = wex_develop_ironhills
+					duration = 3650
+				}
+			}
 		}
 	}
 
@@ -91,7 +100,7 @@ slot_2 = {
 		trigger = {
 			trade_goods_produced_amount = {
 				trade_goods = iron
-				amount = 7
+				amount = 6
 			}
 		}
 
@@ -134,7 +143,7 @@ slot_3 = {
 				calc_true_if = {
 					desc = gen_hre_electors.tooltip
 					all_elector = { preferred_emperor = ROOT } 
-					amount = 4
+					amount = 3
 				}
 			}
 			else = { num_of_allies = 3 } 
@@ -157,7 +166,7 @@ slot_3 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			manpower_percentage = 0.9
+			manpower_percentage = 0.75
 			army_size_percentage = 0.75
 		}
 
@@ -268,7 +277,15 @@ slot_4 = {
 		required_missions = { A30_humiliate_rival } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			wexhills_area = {
+				has_state_edict = edict_defensive_edict
+			}
+			306 = {
+				num_of_times_expanded_infrastructure = 1
+			}
+			treasury = 200
+		} 
 
 		effect = {
 			306 = {
@@ -277,6 +294,7 @@ slot_4 = {
 					duration = -1
 				}
 			}
+			add_treasury = -200
 		}
 	}
 }
@@ -338,17 +356,20 @@ slot_5 = {
 				large_cast_bronze_mortar = ROOT
 			}
 			complex_dynamic_effect_without_alternative = {
-				first_custom_tooltip = A30_befriend_telgier_rubyhold_tooltip
-				first_limit = "A62 = {
-						has_opinion = {
-							who = ROOT
-							value = 150
+				first_custom_tooltip = wex_befriend_telgier_or_rubyhold_tt
+				first_limit = "
+					OR = {
+						A62 = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
 						}
-					}
-					A20 = {
-						has_opinion = {
-							who = ROOT
-							value = 150
+						A20 = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
 						}
 					}
 				"
@@ -375,18 +396,17 @@ slot_5 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			if = {
-				limit = { 
-					has_dlc = "Art of War" 
-				} 
-				num_of_war_reparations = 3
-			}
+			num_of_war_reparations = 3
 		}
 
 		effect = { 
 			306 = { 
 				center_of_trade = 1 
-			}  
+			}
+			add_country_modifier = {
+				name = wex_imperial_coffer_reward
+				duration = 9.125
+			}
 		} 
 	}
 }

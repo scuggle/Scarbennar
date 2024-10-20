@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 BANNER_REGIMENT:0 "Wexonard Palace Guard\n$EFFECT$"
 ONLY_BANNER_MODIFIER:0 "§YAffects only Wexonard Palace Guard Regiments§!"
@@ -45,7 +45,9 @@ A30_lilac_wars_bombards_desc:0 ""
 
 wex_guards_access_tt:0 "We will implement military reforms to secure our position in the Empire."
 wex_eur_flavor_1_tt:0 "We will be able to choose the future direction for our country."
-
+wex_lothane_ambition_reward_tt:0 "We will reap special rewards if we restore the Grand Duchy while Lothane is still alive!"
+wex_imperial_minting_reward_tt:0 "We will ensure our control over the future monetary concerns of the empire."
+wex_befriend_telgier_or_rubyhold_tooltip: "\n§TIf Telgier or Rubyhold has §G150§! Opinion of us, we will also gain§!"
 
 
 

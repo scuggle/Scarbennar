@@ -175,3 +175,12 @@ wex_fortification_expert_2 = {
 	is_banner_modifier = yes
 	country_military_power = 1
 }
+wex_lothane_ambition = {
+	ae_impact = -0.2
+}
+wex_develop_ironhills = {
+	local_development_cost = -0.15
+}
+wex_imperial_coffer_reward = {
+	global_tax_income = 48
+}

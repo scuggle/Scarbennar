@@ -1,0 +1,211 @@
+wex_exp_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = A30 
+			was_tag = A30
+		}
+		has_country_flag = wex_expansion
+	} 
+
+	A30_punish_the_traitors = {
+		icon = mission_placeholder
+		position = 2
+		required_missions = { A30_lothane_ambition } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  
+
+		} 
+	}
+
+	A30_order_restored = {
+		icon = mission_placeholder
+		position = 3
+		required_missions = { A30_punish_the_traitors } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+wex_exp_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = A30 
+			was_tag = A30
+		}
+		has_country_flag = wex_expansion
+	} 
+
+	A30_intervene_in_sugamber = {
+		icon = mission_placeholder
+		position = 2
+		required_missions = { A30_lothane_ambition } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	A30_question_of_culture = {
+		icon = mission_placeholder
+		position = 4
+		required_missions = {
+			A30_grand_duchy_restoration
+			A30_order_restored
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	A30_legacy_of_lothane = {
+		icon = mission_placeholder
+		position = 5
+		required_missions = {
+			A30_question_of_culture
+			A30_clear_the_border
+			A30_wexonard_troops
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+wex_exp_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = A30 
+			was_tag = A30
+		}
+		has_country_flag = wex_expansion
+	} 
+
+	A30_lothane_ambition = {
+		icon = per_a_new_eranshahr
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+		} 
+
+		effect = { 
+			custom_tooltip = wex_lothane_ambition_reward_tt
+			add_country_modifier = {
+				name = wex_lothane_ambition
+				duration = 9.125
+			}
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+		} 
+	}
+
+	A30_grand_duchy_restoration = {
+		icon = mission_placeholder
+		position = 3
+		required_missions = {
+			A30_punish_the_traitors
+			A30_intervene_in_sugamber
+			A30_push_lilac_war_claims
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	A30_clear_the_border = {
+		icon = mission_placeholder
+		position = 4
+		required_missions = { A30_grand_duchy_restoration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+wex_exp_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = A30 
+			was_tag = A30
+		}
+		has_country_flag = wex_expansion
+	} 
+
+	A30_push_lilac_war_claims = {
+		icon = mission_placeholder
+		position = 2
+		required_missions = { A30_lothane_ambition } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	A30_wexonard_troops = {
+		icon = mission_placeholder
+		position = 4
+		required_missions = { A30_grand_duchy_restoration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+wex_exp_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = A30 
+			was_tag = A30
+		}
+		has_country_flag = wex_expansion
+	} 
+
+	A30_rallying_the_magisters = {
+		icon = mission_placeholder
+		position = 2
+		required_missions = { A30_lothane_ambition } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
