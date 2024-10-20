@@ -14,7 +14,7 @@ country_event = {
 	option = {
 		name = flavor_wex.15.a
 		ai_chance = { factor = 50 }
-		custom_tooltip = wex_expansion_tt
+		custom_tooltip = wex_expansion_tt #TODO tt
 		set_country_flag = wex_expansion
 		swap_non_generic_missions = yes
 	}
@@ -42,10 +42,10 @@ country_event = {
 	option = {
 		name = flavor_wex.2.a
 		ai_chance = { factor = 100 }
-		custom_tooltip = wex_war_against_bisan_tt
+		custom_tooltip = wex_war_against_bisan_tt #TODO tt
 		declare_war_with_cb = {
 			who = A34
-			casus_belli = cb_nationalist
+			casus_belli = cb_nationalist #TODO wexonard invasion cb erstellen
 		}
 		if = {
 			Z02 = {
@@ -54,7 +54,7 @@ country_event = {
 					modifier = insulted
 				}
 			}
-			custom_tooltip = wex_madgalaire_join_war_tt
+			custom_tooltip = wex_madgalaire_join_war_tt #TODO tt
 		}
 		if = {
 			Z04 = {
@@ -63,7 +63,7 @@ country_event = {
 					modifier = insulted
 				}
 			}
-			custom_tooltip = wex_indlebury_join_war_tt
+			custom_tooltip = wex_indlebury_join_war_tt #TODO tt
 		}
 	}
 }

@@ -4,7 +4,7 @@ wex_slot_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A30
+		tag = XXX # A30
 		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
@@ -203,7 +203,7 @@ wex_slot_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A30
+		tag = XXX # A30
 		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
@@ -377,7 +377,7 @@ wex_slot_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A30
+		tag = XXX # A30
 		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
@@ -672,7 +672,7 @@ wex_slot_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A30
+		tag = XXX # A30
 		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
@@ -843,7 +843,7 @@ wex_slot_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A30
+		tag = XXX #A30
 		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
