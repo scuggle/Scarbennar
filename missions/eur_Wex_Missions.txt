@@ -405,7 +405,7 @@ slot_5 = {
 			}
 			add_country_modifier = {
 				name = wex_imperial_coffer_reward
-				duration = 9.125
+				duration = 9125
 			}
 		} 
 	}

@@ -2736,6 +2736,14 @@ estate_burghers_promote_burgher_bookkeeping = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { has_country_flag = wex_buff_burghers_bookkeeping }
+		modifier = {
+			build_cost = -0.1
+			global_prosperity_growth = 0.5
+			global_monthly_devastation = -0.1
+		}
+	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }

@@ -45,11 +45,36 @@ A30_lilac_wars_bombards_desc:0 ""
 
 wex_guards_access_tt:0 "We will implement military reforms to secure our position in the Empire."
 wex_eur_flavor_1_tt:0 "We will be able to choose the future direction for our country."
-wex_lothane_ambition_reward_tt:0 "We will reap special rewards if we restore the Grand Duchy while Lothane is still alive!"
-wex_imperial_minting_reward_tt:0 "We will ensure our control over the future monetary concerns of the empire."
-wex_befriend_telgier_or_rubyhold_tooltip: "\n§TIf Telgier or Rubyhold has §G150§! Opinion of us, we will also gain§!"
+wex_lothane_ambition_reward_tt:0 "We will reap special rewards if we fully restore the Grand Duchy in the Borders Region while Lothane is still alive!"
+wex_imperial_minting_reward_tt:0 "We will ensure our control over the future monetary concerns of the Empire."
+wex_befriend_telgier_or_rubyhold_tooltip:0 "\n§TIf Telgier or Rubyhold has §G150§! Opinion of us, we will also gain§!"
+wex_question_of_culture_reward_tt:0 "We will unlock a decision that will convert non-primary culture provinces bordering to our primary culture. \n\n§PWex must rule!§!"
+
+wex_removed_free_city_requirement_indlebury_tt:0 "Revoke §YFree City Status§! from §YIndlebury§!"
+wex_removed_free_city_requirement_magdalaire_tt:0 "Revoke §YFree City Status§! from §YMagdalaire§!"
+wex_indlebury_magdalaire_join_bisan_tt:0 "§YIndlebury§! and §YMagdalaire§! will seek protection from us by offering their loyalty to Bisan.\n"
+
+wex_intervene_in_sugamber_succession_crisis_tt:0 "\n§TOption 1§!\n§YSugamber§! is in a §YSuccession crisis§!."
+wex_intervene_in_sugamber_spynetwork_tt:0 "\n§TOption 2§!\nOur army is at least §Y200%§! of the size of §YSugamber§!'s army and we have a Spy network of at least size §Y25§! in §YSugamber§!."
+wex_intevene_in_sugamber_dow_union_tt:0 "\n§TIf Sugamber is in a succession crisis,§!"
+wex_intevene_in_sugamber_dow_wexonard_invasion_tt:0 "\n§TIf completed with army size and spy network,§!"
+
+wex_buff_granted_burghers_bookkeeping_1_tt:0 "§TIf we granted the §YMerchant Guilds§! the Privilege §YPromote Merchant Guilds Bookkeeping§!,§!"
+wex_buff_granted_burghers_bookkeeping_2_tt:0 "The §YMerchant Guilds§! Privilege §YPromote Merchant Guilds Bookkeeping§! will now additionally give us up to §G-10%§! Construction Cost, §G0.5§! Global Prosperity Growth and §G-0.10§! Monthly Devastation depending on their Loyalty."
+wex_balgar_yes_tt:0 "\n§TIf Balgar is our Patron God,§!"
+wex_balgar_no_tt:0 "\n§TIf Balgar is not our Patron God,§!"
 
 
+# purple palace council
+
+purple_palace_council_reform:0 "Purple Palace Council"
+palace_council_influence_mechanic:0 "The Purple Assembly"
+palace_council_influence:0 "Palace Council Influence"
+purple_palace_council_reform_desc:0 "The Purple Palace Council represents a new era of governance in Wex, where tradition meets progressive reform. Nestled within the opulent walls of the Purple Palace, this council embodies the unity of noble lineage and scholarly wisdom. Comprised of esteemed advisors and influential leaders, the council aims to steer the realm towards prosperity, stability, and cultural flourishing.\n\nAdorned in rich shades of purple, a color symbolizing royalty and ambition, the council's sessions are held in an elegantly designed chamber, where intricate Wexonard motifs adorn the walls. Each member brings unique expertise, fostering a collaborative environment to address the challenges of the age, from economic development over diplomatic endeavors to military reforms."
+ability_palace_council_influence_mechanic:0 "The Purple Assembly"
+conduct_administrative_review:0 "§YConduct Administrative Review§!"
+conduct_diplomatic_review:0 "§YConduct Diplomatic Review§!"
+conduct_military_review:0 "§YConduct Military Review§!"
 
 wex_philosopher_1_tt:0 "§PPhilosopher§!:"
 wex_philosopher_2_tt:0 "§YPhilosopher§!:"
@@ -94,14 +119,6 @@ wex_grand_captain_2_tt:0 "§YGrand Captain§!:"
 wex_fortification_expert_1_tt:0 "§PFortification Expert§!:"
 wex_fortification_expert_2_tt:0 "§YFortification Expert§!:"
 
-purple_palace_council_reform:0 "Purple Palace Council"
-palace_council_influence_mechanic:0 "The Purple Assembly"
-palace_council_influence:0 "Palace Council Influence"
-purple_palace_council_reform_desc:0 "The Purple Palace Council represents a new era of governance in Wex, where tradition meets progressive reform. Nestled within the opulent walls of the Purple Palace, this council embodies the unity of noble lineage and scholarly wisdom. Comprised of esteemed advisors and influential leaders, the council aims to steer the realm towards prosperity, stability, and cultural flourishing.\n\nAdorned in rich shades of purple, a color symbolizing royalty and ambition, the council's sessions are held in an elegantly designed chamber, where intricate Wexonard motifs adorn the walls. Each member brings unique expertise, fostering a collaborative environment to address the challenges of the age, from economic development over diplomatic endeavors to military reforms."
-ability_palace_council_influence_mechanic:0 "The Purple Assembly"
-conduct_administrative_review:0 "§YConduct Administrative Review§!"
-conduct_diplomatic_review:0 "§YConduct Diplomatic Review§!"
-conduct_military_review:0 "§YConduct Military Review§!"
 
 
 # original Wex locs without missions

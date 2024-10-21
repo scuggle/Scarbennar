@@ -15,24 +15,125 @@ wex_exp_1 = {
 		icon = mission_placeholder
 		position = 2
 		required_missions = { A30_lothane_ambition } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  
-
+		provinces_to_highlight = {  
+			and = {
+				owned_by = Z04
+				Z04 = {
+					has_reform = free_city
+				}
+			}
+			and = {
+				owned_by = Z02
+				Z02 = {
+					has_reform = free_city
+				}
+			}
 		} 
+
+		trigger = {  
+			custom_trigger_tooltip = {
+				tooltip = wex_removed_free_city_requirement_indlebury_tt
+				not = {
+					Z02 = {
+						has_reform = free_city
+					}
+				}
+			} 
+			custom_trigger_tooltip = {
+				tooltip = wex_removed_free_city_requirement_magdalaire_tt
+				not = {
+					Z04 = {
+						has_reform = free_city
+					}
+				}
+			} 
+		}
+		effect = {  
+			custom_tooltip = wex_indlebury_magdalaire_join_bisan_tt
+			hidden_effect = {
+				A34 = {
+					vassalize = Z02
+					vassalize = Z04
+				}
+			} 
+			the_borders_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 
 	A30_order_restored = {
 		icon = mission_placeholder
 		position = 3
 		required_missions = { A30_punish_the_traitors } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				owned_by = A34
+				not = {
+					west_bisan_area = {
+						type = all
+						not = {
+							devastation = 1
+						}
+						owned_by = root
+						}
+					}
+				NOT = {
+					west_bisan_area = {
+						has_building = fort_15th
+						owned_by = ROOT
+					}
+				}
+			}
+		}
 
-		trigger = {  } 
+		trigger = {  
+			A34 = { 
+				exists = no
+			}
+			west_bisan_area = {
+				type = all
+				not = {
+					devastation = 1
+				}
+				owned_by = root
+			}
+			west_bisan_area = {
+				has_building = fort_15th
+				owned_by = ROOT
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			complex_dynamic_effect_without_alternative = {
+				first_custom_tooltip = wex_buff_granted_burghers_bookkeeping_1_tt
+				first_limit = "has_estate_privilege = estate_burghers_promote_burgher_bookkeeping"
+				first_effect = "custom_tooltip = wex_buff_granted_burghers_bookkeeping_2_tt
+						add_stability_or_adm_power = yes
+						set_country_flag = wex_buff_burghers_bookkeeping
+				"
+			}
+			complex_dynamic_effect = {
+				first_custom_tooltip = wex_balgar_yes_tt
+				first_limit = "has_personal_deity = balgar"
+				first_effect = "add_country_modifier = {
+						name = support_of_balgar_burghers
+						duration = 10950
+					}
+				"
+				second_custom_tooltip = wex_balgar_no_tt
+				second_limit = "NOT = { has_personal_deity = balgar }"
+				second_effect = "add_country_modifier = {
+						name = support_of_balgar_burghers
+						duration = 5475
+					}
+				"
+			}
+		}
 	}
 }
 wex_exp_2 = {
@@ -52,11 +153,83 @@ wex_exp_2 = {
 		icon = mission_placeholder
 		position = 2
 		required_missions = { A30_lothane_ambition } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			is_capital_of = A48
+		} 
 
-		trigger = {  } 
+		trigger = {  
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = wex_intervene_in_sugamber_succession_crisis_tt
+					AND = {
+						OR = {
+							has_country_flag = sugamber_succession_war_start
+							has_country_flag = sugamber_ethelbert_rebellion
+							has_country_flag = sugamber_baldwin_rebellion
+							had_country_flag = {
+								flag = had_sugamber_succession_war
+								days = 1825
+							}
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = wex_intervene_in_sugamber_spynetwork_tt
+					AND = {
+						army_strength = {
+							who = A48
+							value = 2
+						}
+						A48 = {
+							has_spy_network_from = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			complex_dynamic_effect_without_alternative = { #TODO create cb type wexonard invasion
+				first_custom_tooltip = wex_intevene_in_sugamber_dow_union_tt
+				first_limit = "OR = {
+					has_country_flag = sugamber_succession_war_start
+					has_country_flag = sugamber_ethelbert_rebellion
+					has_country_flag = sugamber_baldwin_rebellion
+					had_country_flag = {
+						flag = had_sugamber_succession_war
+						days = 1825
+					}
+				}
+				"
+				first_effect = "declare_war_with_cb = {
+					who = A48
+					casus_belli = cb_restore_personal_union
+				}
+				"
+				second_custom_tooltip = wex_intevene_in_sugamber_dow_wexonard_invasion_tt
+				second_limit = "AND = {
+					army_strength = {
+						who = A48
+						value = 2
+					}
+					A48 = {
+						has_spy_network_from = {
+							who = ROOT
+							value = 25
+						}
+					}
+				}
+				"
+				second_effect = "declare_war_with_cb = {
+					who = A48
+					casus_belli = cb_wexonard_invasion 
+				}
+				"
+			}
+		} 
 	}
 
 	A30_question_of_culture = {
@@ -66,11 +239,22 @@ wex_exp_2 = {
 			A30_grand_duchy_restoration
 			A30_order_restored
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			country_or_non_sovereign_subject_holds = ROOT
+			culture = ROOT
+		} 
 
-		trigger = {  } 
+		trigger = {  
+			development_in_provinces = {
+				value = 200
+				culture = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			custom_tooltip = wex_question_of_culture_reward_tt
+			set_country_flag = wex_wexonard_superiority
+		} 
 	}
 
 	A30_legacy_of_lothane = {
@@ -116,7 +300,23 @@ wex_exp_3 = {
 			custom_tooltip = wex_lothane_ambition_reward_tt
 			add_country_modifier = {
 				name = wex_lothane_ambition
-				duration = 9.125
+				duration = 9125
+			}
+			A34 = {
+				every_owned_province = {
+					add_permanent_claim = ROOT
+				}
+			}
+			A72 = {
+				every_owned_province = {
+					add_permanent_claim = ROOT
+				}
+			}
+			294 = {
+				add_permanent_claim = ROOT
+			}
+			903 = {
+				add_permanent_claim = ROOT
 			}
 			add_adm_power = -50
 			add_dip_power = -50
@@ -143,11 +343,25 @@ wex_exp_3 = {
 		icon = mission_placeholder
 		position = 4
 		required_missions = { A30_grand_duchy_restoration } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			NOT = {
+				the_borders_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {  
+			the_borders_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			
+		} 
 	}
 }
 wex_exp_4 = {
@@ -167,11 +381,58 @@ wex_exp_4 = {
 		icon = mission_placeholder
 		position = 2
 		required_missions = { A30_lothane_ambition } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			not = {
+				arannen_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {  
+			arannen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			complex_dynamic_effect = {
+				first_custom_tooltip = wex_tellum_yes_tt
+				first_limit = "A86 = {
+						has_opinion ={
+							who = root
+							value = 200
+						}
+						trust = {
+							who = root
+							value = 50
+						}
+					}
+				"
+				first_effect = "inherit = A86
+				"
+				second_custom_tooltip = wex_tellum_no_tt
+				second_limit = "not = {
+						A86 = {
+							has_opinion ={
+								who = root
+								value = 200
+							}
+							trust = {
+								who = root
+								value = 50
+							}
+						}
+					}
+				"
+				second_effect = "add_adm_power = 150
+				add_prestige = 25
+					}
+				"
+			}
+		} 
 	}
 
 	A30_wexonard_troops = {
