@@ -58,4 +58,62 @@ country_decisions = {
 			factor = 10
 		}
 	}
+	activate_magisters_command = {
+		color = { 138 43 226 }
+		potential = {
+			OR = {
+				tag = A30
+				was_tag = A30
+			}
+			NOT = {
+				has_country_modifier = wex_magisters_command
+			}
+		}
+		allow = {
+			full_idea_group_military = yes
+            army_professionalism = 0.01
+			is_at_war = yes
+			NOT = {
+				has_country_modifier = wex_magisters_command
+			}
+		}
+		effect = {
+			custom_tooltip = wex_activate_magisters_command_tt
+			add_army_professionalism = -0.01
+			hidden_effect = {
+				add_country_modifier = {
+					name = wex_magisters_command
+					duration = -1
+				}
+				set_country_flag = wex_magisters_command_active
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	deactivate_magisters_command = {
+		color = { 138 43 226 }
+		potential = {
+			OR = {
+				tag = A30
+				was_tag = A30
+			}
+			has_country_modifier = wex_magisters_command
+		}
+		allow = {
+			full_idea_group_military = yes
+			has_country_modifier = wex_magisters_command
+		}
+		effect = {
+			custom_tooltip = wex_deactivate_magisters_command_tt
+			hidden_effect = {
+				remove_country_modifier = wex_magisters_command
+				clr_country_flag = wex_magisters_command_active
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

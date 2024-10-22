@@ -64,6 +64,11 @@ wex_buff_granted_burghers_bookkeeping_2_tt:0 "The §YMerchant Guilds§! Privileg
 wex_balgar_yes_tt:0 "\n§TIf Balgar is our Patron God,§!"
 wex_balgar_no_tt:0 "\n§TIf Balgar is not our Patron God,§!"
 
+activate_magisters_command_title:0 "§GActivate§! the Magister's Command"
+deactivate_magisters_command_title:0 "§RDeactivate§! the Magister's Command"
+wex_activate_magisters_command_tt:0 "§GActivate§! the §YMagister's Command§!:\nLand Fire Damage: §G+10.0%§!\nShock Damage: §G+10.0%§!\nYearly Army Professionalism: §R-2.0%§!\n" 
+wex_deactivate_magisters_command_tt:0 "§RDeactivate§! the §YMagister's Command§!"
+
 
 # purple palace council
 

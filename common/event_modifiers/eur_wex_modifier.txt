@@ -2,6 +2,12 @@ wex_palace_guards = {
 	has_banners = yes
 }
 
+wex_magisters_command = {
+	shock_damage = 0.15
+	fire_damage = 0.15
+	yearly_army_professionalism = -0.02
+}
+
 wex_refilled_reserve = {
 	land_forcelimit_modifier = 0.10
 	land_morale = 0.10
