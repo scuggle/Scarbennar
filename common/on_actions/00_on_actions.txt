@@ -3923,6 +3923,7 @@ on_monthly_pulse = {
 
 	events = {
 		magic_ruler.102
+		flavor_wex_eur.3
 	}
 
 	if = {
@@ -5352,6 +5353,7 @@ on_yearly_pulse = {
 		flavor_vazhatun.100
 		deluge.0			#Crimson Deluge events
 		genie_cult.12
+		flavor_wex_eur.4
 	}
 	if = {
 		limit = {

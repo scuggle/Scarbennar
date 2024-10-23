@@ -16,6 +16,13 @@ spriteTypes = {
 		loadType = "INGAME"
 		alwaystransparent = yes
 	}
+	spriteType = { #eur alerts
+		name = "GFX_alerticons_eur_government_mechanics"
+		texturefile = "gfx//interface//alerticons_eur_government_mechanics.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+		alwaystransparent = yes
+	}
 
 	frameAnimatedSpriteType = {
 		name = "GFX_alerticon_banner"

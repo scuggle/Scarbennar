@@ -312,11 +312,15 @@ wex_exp_3 = {
 					add_permanent_claim = ROOT
 				}
 			}
-			294 = {
-				add_permanent_claim = ROOT
+			Z02 = {
+				every_owned_province = {
+					add_permanent_claim = ROOT
+				}
 			}
-			903 = {
-				add_permanent_claim = ROOT
+			Z04 = {
+				every_owned_province = {
+					add_permanent_claim = ROOT
+				}
 			}
 			add_adm_power = -50
 			add_dip_power = -50
@@ -360,7 +364,14 @@ wex_exp_3 = {
 		} 
 
 		effect = {  
-			
+			the_borders_region = {
+				every_province = {
+					add_province_modifier = {
+						name = wex_the_borders_united
+						duration = -1
+					}
+				}
+			}
 		} 
 	}
 }
@@ -441,9 +452,14 @@ wex_exp_4 = {
 		required_missions = { A30_grand_duchy_restoration } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			
+		} 
 
-		effect = {  } 
+		effect = {  
+			custom_tooltip = wex_magisters_command_unlocked_tt
+			set_country_flag = wex_magisters_command_unlocked
+		} 
 	}
 }
 wex_exp_5 = {

@@ -70,27 +70,54 @@ country_event = {
 
 country_event = {
 	id = flavor_wex_eur.3
-	title = fflavor_wex_eur.3.t
+	title = flavor_wex_eur.3.t
 	desc = flavor_wex_eur.3.d
 	picture = COUNCIL_TRENT_eventPicture
 	
 	is_triggered_only = yes
 	
-	trigger = {
-		A30 = {
-			not = {
-				army_professionalism = 0
-			}
+	trigger = {	
+		not = {
+			army_professionalism = 0.001
 		}
-		has_country_flag = wex_magisters_command_active
+		has_country_modifier = wex_magisters_command
 	}
 	immediate = {
 		remove_country_modifier = wex_magisters_command
 		clr_country_flag = wex_magisters_command_active
 	}
 	option = {
-		name = flavor_wex.3.a
+		name = flavor_wex_eur.3.a
 		ai_chance = { factor = 100 }
 		custom_tooltip = wex_no_professionalism_tt
+	}
+}
+
+country_event = {
+	id = flavor_wex_eur.4
+	title = flavor_wex_eur.4.t
+	desc = flavor_wex_eur.4.d
+	picture = COUNCIL_TRENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {	
+		and = {
+			is_at_war = no
+			has_country_modifier = wex_magisters_command
+		}
+	}
+	option = {
+		name = flavor_wex_eur.4.a
+		ai_chance = { factor = 100 }
+		custom_tooltip = wex_no_professionalism_tt
+		hidden_effect = {
+			remove_country_modifier = wex_magisters_command
+			clr_country_flag = wex_magisters_command_active
+		}
+	}
+	option = {
+		name = flavor_wex_eur.4.b
+		ai_chance = { factor = 0 }
 	}
 }

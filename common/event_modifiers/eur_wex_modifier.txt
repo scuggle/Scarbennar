@@ -39,6 +39,10 @@ support_of_balgar_burghers = {
 	build_cost = -0.10
 	build_time = -0.20
 }
+wex_the_borders_united = {
+	allowed_num_of_buildings = 1
+	local_governing_cost = -0.1
+}
 
 
 

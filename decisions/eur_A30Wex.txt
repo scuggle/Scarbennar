@@ -1,5 +1,5 @@
 country_decisions = {	
-	wexonard_superiority = {
+	enforce_wexonard_cultural_superiority = {
 		#TODO add cooldown with shorter cooldown by mission/countryflag, increase debuff
 		color = { 138 43 226 }
 		potential = {
@@ -15,8 +15,6 @@ country_decisions = {
 				NOT = { 
 					culture = ROOT 	
 				}
-				is_overseas = no
-				continent = europe
 				any_neighbor_province = { 
 						culture = ROOT 
 				}
@@ -27,7 +25,7 @@ country_decisions = {
 			has_any_disaster = no
 		}
 		effect = {
-			custom_tooltip = wex_tt_1
+			custom_tooltip = wex_enforce_wexonard_cultural_superiority_tt
 			hidden_effect = {
 				random_owned_province = {
 					limit = {
@@ -65,6 +63,7 @@ country_decisions = {
 				tag = A30
 				was_tag = A30
 			}
+			has_country_flag = wex_magisters_command_unlocked
 			NOT = {
 				has_country_modifier = wex_magisters_command
 			}

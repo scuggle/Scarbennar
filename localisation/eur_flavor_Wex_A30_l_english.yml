@@ -10,6 +10,8 @@ HAVE_LESS_BANNER_THAN:0 "Have less Wexonard Palace Guard Regiments than $VALUE|Y
 HAVE_AT_LEAST_BANNER_THAN:0 "Have at least $VALUE|Y$ Wexonard Palace Guard Regiments.\n"
 banner_regiment:0 "Wexonard Palace Guard"
 
+# wex missions
+
 A30_imperial_minting_title:0 "Imperial Minting"
 A30_imperial_minting_desc:0 ""
 
@@ -48,7 +50,7 @@ wex_eur_flavor_1_tt:0 "We will be able to choose the future direction for our co
 wex_lothane_ambition_reward_tt:0 "We will reap special rewards if we fully restore the Grand Duchy in the Borders Region while Lothane is still alive!"
 wex_imperial_minting_reward_tt:0 "We will ensure our control over the future monetary concerns of the Empire."
 wex_befriend_telgier_or_rubyhold_tooltip:0 "\n§TIf Telgier or Rubyhold has §G150§! Opinion of us, we will also gain§!"
-wex_question_of_culture_reward_tt:0 "We will unlock a decision that will convert non-primary culture provinces bordering to our primary culture. \n\n§PWex must rule!§!"
+wex_question_of_culture_reward_tt:0 "Unlocks a decision that will convert non-primary culture provinces bordering to our primary culture. \n\n§PWex must rule!§!"
 
 wex_removed_free_city_requirement_indlebury_tt:0 "Revoke §YFree City Status§! from §YIndlebury§!"
 wex_removed_free_city_requirement_magdalaire_tt:0 "Revoke §YFree City Status§! from §YMagdalaire§!"
@@ -64,13 +66,41 @@ wex_buff_granted_burghers_bookkeeping_2_tt:0 "The §YMerchant Guilds§! Privileg
 wex_balgar_yes_tt:0 "\n§TIf Balgar is our Patron God,§!"
 wex_balgar_no_tt:0 "\n§TIf Balgar is not our Patron God,§!"
 
+wex_tellum_yes_tt:0 "§TIf §YTellum§! has §Y200§! Opinion of us and §Y50§! Trust towards us,§!"
+wex_tellum_no_tt:0 ""
+
+wex_magisters_command_unlocked_tt:0 "Unlocks a decision, that will let us use the §YMagister's Command§! Ability."
+
+# wex related modifier
+wex_magisters_command:0 "Magister's Command"
+wex_cleanse:0 "Wex Cleanse"
+
+# wex related decisions
+
+enforce_wexonard_cultural_superiority_title:0 "Enforce Wexonard Cultural Superiority"
+enforce_wexonard_cultural_superiority_desc:0 "Perfection can only be archieved by being Wexonard."
+wex_enforce_wexonard_cultural_superiority_tt:0 "Converts any owned province with non-primary culture to §YWexonard culture§!.\nThe Province will have an uprising and get the modifier '§YWex Cleanse§!'."
+
+
 activate_magisters_command_title:0 "§GActivate§! the Magister's Command"
+activate_magisters_command_desc:0 "Gather all Magister suitable for use in war to Command our forces!"
+wex_activate_magisters_command_tt:0 "§GActivate§! the §YMagister's Command§!:\nLand Fire Damage: §G+15.0%§!\nShock Damage: §G+15.0%§!\nYearly Army Professionalism: §R-2.0%§!\n" 
+
 deactivate_magisters_command_title:0 "§RDeactivate§! the Magister's Command"
-wex_activate_magisters_command_tt:0 "§GActivate§! the §YMagister's Command§!:\nLand Fire Damage: §G+10.0%§!\nShock Damage: §G+10.0%§!\nYearly Army Professionalism: §R-2.0%§!\n" 
-wex_deactivate_magisters_command_tt:0 "§RDeactivate§! the §YMagister's Command§!"
+deactivate_magisters_command_desc:0 "Send the commanding Magister home to their families."
+wex_deactivate_magisters_command_tt:0 "§RDeactivate§! the §YMagister's Command§!"^
+
+flavor_wex_eur.3.t:0 "Not enough Army Professionalism!"
+flavor_wex_eur.3.d:0 "We have run out of Army Professionalism to keep the Magister commanding our forces!"
+flavor_wex_eur.3.a:0 "Oh no...anyway!"
+wex_no_professionalism_tt:0 "The §YMagister's Command§! will be §Rdeactived§!.\n\n\n§YMagister's Command§!:\nLand Fire Damage: §G+15.0%§!\nShock Damage: §G+15.0%§!\nYearly Army Professionalism: §R-2.0%§!"
+flavor_wex_eur.4.t:0 "The Magisters are commanding inactive forces!"
+flavor_wex_eur.4.d:0 "After the dust has settled on the battlefield and our troops started looting the corpses, our commanding Magisters are questioning if their service is still needed."
+flavor_wex_eur.4.a:0 "They may return to their families."
+flavor_wex_eur.4.b:0 "They will stay, the next War is just around the corner!"
 
 
-# purple palace council
+# purple palace council government mechanics
 
 purple_palace_council_reform:0 "Purple Palace Council"
 palace_council_influence_mechanic:0 "The Purple Assembly"
