@@ -16,6 +16,7 @@ technocracy_rajput_bonus = {
 	is_rajput_modifier = yes
 	#reinforce_cost_modifier = -0.5
 	infantry_fire = 0.05
+	land_maintenance_modifier = 0.1
 }
 
 artificer_research_bonus_brilliance_mil = {
@@ -69,6 +70,7 @@ artifice_sparkdrive_rifles = {
 	is_rajput_modifier = yes
 
 	fire_damage = 0.15
+	land_maintenance_modifier = 0.1
 }
 
 artifice_holy_gunblade = {
@@ -81,6 +83,7 @@ artifice_exo_arms = {
 	is_rajput_modifier = yes
 
 	infantry_power = 0.075
+	land_maintenance_modifier = 0.1
 
 	#reinforce_cost_modifier = 0.5
 	#reinforce_speed = -0.025
@@ -91,6 +94,7 @@ artifice_war_golems = {
 
 	shock_damage = 0.1
 	shock_damage_received = -0.1
+	land_maintenance_modifier = 0.1
 }
 
 artifice_war_golems_asra = {
@@ -98,6 +102,7 @@ artifice_war_golems_asra = {
 
 	shock_damage = 0.15
 	shock_damage_received = -0.15
+	land_maintenance_modifier = 0.15
 
 }
 
@@ -105,6 +110,7 @@ artifice_wandlocks = {
 	is_rajput_modifier = yes
 
 	land_morale = 0.1
+	land_maintenance_modifier = 0.1
 
 	#reinforce_speed = -0.05
 	#reinforce_cost_modifier = 1
@@ -115,24 +121,28 @@ artifice_bioartificed_ascension = {
 
 	fire_damage_received = -0.075
 	morale_damage_received = -0.2
+	land_maintenance_modifier = 0.15
 }
 
 artifice_personal_mageshields = {
 	is_rajput_modifier = yes
 
 	shock_damage_received = -0.25
+	land_maintenance_modifier = 0.15
 }
 
 artifice_portable_turrets = {
 	is_rajput_modifier = yes
 
 	shock_damage_received = -0.15
+	land_maintenance_modifier = 0.1
 }
 
 artifice_arcane_blaster = {
 	is_rajput_modifier = yes
 	infantry_fire = 0.15
 	infantry_shock = 0.15
+	land_maintenance_modifier = 0.1
 
 	#reinforce_speed = -0.075
 	#reinforce_cost_modifier = 1.5
@@ -141,6 +151,7 @@ artifice_arcane_blaster = {
 artifice_chi_cultivation_charm = {
 	is_rajput_modifier = yes
 	morale_damage = 0.15
+	land_maintenance_modifier = 0.1
 
 	#reinforce_speed = -0.075
 	#reinforce_cost_modifier = 1.5
@@ -150,6 +161,7 @@ artifice_artifice_hunting_masks = {
 	is_rajput_modifier = yes
 	discipline = 0.025
 	land_attrition = -0.15
+	land_maintenance_modifier = 0.1
 
 	#reinforce_speed = -0.05
 	#reinforce_cost_modifier = 1
@@ -158,6 +170,7 @@ artifice_artifice_hunting_masks = {
 artifice_avatar_serum = {
 	is_rajput_modifier = yes
 	infantry_power = 0.15
+	land_maintenance_modifier = 0.15
 
 	#reinforce_speed = -0.075
 	#reinforce_cost_modifier = 1.5
@@ -166,17 +179,20 @@ artifice_avatar_serum = {
 artifice_demonflame_throwers = {
 	is_rajput_modifier = yes
 	fire_damage = 0.1
+	land_maintenance_modifier = 0.1
 }
 
 artifice_scrap_mechs = {
 	is_rajput_modifier = yes
 	infantry_shock = 0.2
+	land_maintenance_modifier = 0.1
 }
 
 artifice_predator_exoskeleton = {
 	is_rajput_modifier = yes
 
 	infantry_power = 0.075
+	land_maintenance_modifier = 0.1
 }
 
 artifice_platinum_warsuit = {
@@ -184,6 +200,7 @@ artifice_platinum_warsuit = {
 
 	regiment_manpower_usage = -0.1
 	discipline = 0.025
+	land_maintenance_modifier = 0.1
 }
 
 artifice_dragonscale_plating = {
@@ -191,11 +208,13 @@ artifice_dragonscale_plating = {
 
 	shock_damage_received = -0.075
 	fire_damage_received = -0.075
+	land_maintenance_modifier = 0.1
 }
 artifice_giantshape_warframe = {
 	is_rajput_modifier = yes
 	shock_damage_received = -0.15
 	infantry_power = 0.075
+	land_maintenance_modifier = 0.15
 
 	#reinforce_speed = -0.075
 	#reinforce_cost_modifier = 1.5
@@ -209,6 +228,7 @@ artifice_veykoda_rune_protections = {
 	is_rajput_modifier = yes
 
 	fire_damage_received = -0.1
+	land_maintenance_modifier = 0.1
 
 	#reinforce_speed = -0.05
 	#reinforce_cost_modifier = 1
@@ -219,11 +239,13 @@ artifice_dragonblood_gene_warriors = {
 
 	land_morale = 0.1
 	morale_damage_received = -0.1
+	land_maintenance_modifier = 0.15
 }
 
 artifice_elemental_gunpowder = {
 	is_rajput_modifier = yes
 	fire_damage = 0.15
+	land_maintenance_modifier = 0.1
 
 	#reinforce_speed = -0.05
 	#reinforce_cost_modifier = 1
@@ -233,11 +255,13 @@ artifice_codorran_powered_exoskeleton = {
 	is_rajput_modifier = yes
 
 	infantry_power = 0.15
+	land_maintenance_modifier = 0.15
 }
 
 artifice_controlled_rage_serum = {
 	is_rajput_modifier = yes
 	land_morale = 0.1
+	land_maintenance_modifier = 0.1
 }
 
 artifice_ageifier_bonus = {
@@ -267,6 +291,7 @@ artifice_vg_musket_precursor_edition = {
 	is_rajput_modifier = yes
 	
 	infantry_power = 0.075
+	land_maintenance_modifier = 0.1
 }
 
 artifice_ivory_tools = {

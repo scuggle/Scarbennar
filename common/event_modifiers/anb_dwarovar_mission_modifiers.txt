@@ -1672,6 +1672,7 @@ orldhum_world_class_warsuits = {
 	fire_damage = 0.15
 	drill_gain_modifier = 0.25
 	drill_decay_modifier = -0.25
+	land_maintenance_modifier = 0.1
 }
 orldhum_gaining_standing = {
 	diplomats = -1
@@ -3912,6 +3913,7 @@ orlghelovar_early_medicine = {
 orlghelovar_shatterproof_armor = {
 	fire_damage_received = -0.10
 	is_rajput_modifier = yes
+	land_maintenance_modifier = 0.1
 }
 orlghelovar_advanced_laser_research = {
 	all_power_cost = 0.05
@@ -5484,6 +5486,7 @@ I98_freezeflame = {
 	is_rajput_modifier = yes
 	infantry_fire = 0.2
 	fire_damage_received = -0.1
+	land_maintenance_modifier = 0.1
 }
 
 I98_province_nuked = {
@@ -5614,6 +5617,7 @@ I98_new_and_improved = {
 I98_mithril_tempering = {
 	is_rajput_modifier = yes
 	shock_damage_received = -0.15
+	land_maintenance_modifier = 0.1
 }
 
 I98_rail_logistics = {
@@ -5661,6 +5665,7 @@ I98_boom_boom = {
 	is_rajput_modifier = yes
 	fire_damage = 0.1
 	morale_damage = 0.1
+	land_maintenance_modifier = 0.1
 }
 
 I98_nonexistent_taxes = {
