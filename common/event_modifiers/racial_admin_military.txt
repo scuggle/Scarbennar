@@ -58,7 +58,7 @@ elven_military = {
 	#Gameplay: A very powerful and swift military that shines when its drilled and well-trained, however they replenish very slowly so its best to pick your battles
 
 	#Positives
-	discipline = 0.05					#2 SS / only disc in the game, makes them good throughout 
+	discipline = 0.075					#2 SS / only disc in the game, makes them good throughout 
 	drill_decay_modifier = -0.25	#1.5 A / to promote idea of well-trained army that you dont lose 
 	drill_gain_modifier = 1			#1 B / to promote drilling gameplay
 	movement_speed = 0.15			#1.5 C / swift elves
@@ -73,9 +73,11 @@ elven_military = {
 	
 	#Negatives
 	war_exhaustion_cost = 0.5		#-2 D / elves get weary of war quickly as they dont want to - its a big deal
-	manpower_recovery_speed = -0.25	#-5 B / very slow reproduction - worst in game
+	manpower_recovery_speed = -0.3	#-5 B / very slow reproduction - worst in game
 	reinforce_speed = -0.20			#-2 B / elves are slow to rally
-	mercenary_manpower = -0.33		#-2 C / not a lot of elf mercs and less reliant on mercs in generals (too snobby) - re-eveluate after new patch
+	mercenary_discipline = -0.05 	#		imagine hiring human mercs as elven mil lol
+	merc_maintenance_modifier = 0.3 # 		you're essentially using human mercs as cannon fodder, they're gonna want good pay
+	mercenary_manpower = -0.4		#-2 C / not a lot of elf mercs and less reliant on mercs in generals (too snobby) - re-eveluate after new patch
 	
 	sailors_recovery_speed = -0.25	#-2 B / slow reproduction
 	
@@ -268,14 +270,14 @@ gnomish_military = {
 	artillery_levels_available_vs_fort = 1
 	artillery_power = 0.1				#2 S / 
 	heavy_ship_power = 0.1				#1 B / gnomish hulks
-	allowed_rajput_fraction = 0.2 		#artificers
+	allowed_rajput_fraction = 0.25 		#artificers
 	
 	#3 + 0.5 + 0.75 = 4.25
 
 	#Negatives	
 	manpower_recovery_speed = -0.15		#-3 B / reproduction
 	
-	infantry_power = -0.05				#-1 A /
+	infantry_power = -0.1				#-1 A /
 	cavalry_cost = 0.2				#-2 B / standard small person cav malus
 	#shock_damage_received = 0.1			#-1 C /		They don't receive a shock damage malus. Part of their racial mil
 	galley_power = -0.2					#-1 D / you need long legs for galleys... and, well..
@@ -291,7 +293,7 @@ gnomish_military_artificer_buff = {
 	#Rajput only modifiers need to be their own modifiers and this is crucial for the racial mil to work so they also get this
 	
 	#Positives
-	infantry_power = 0.05
+	infantry_power = 0.15
 	infantry_fire = 0.15
 	
 	is_rajput_modifier = yes 
@@ -329,23 +331,23 @@ goblin_military = {
 
 	manpower_recovery_speed = 0.15			#1 A /
 	global_manpower_modifier = 0.20		#1 A /
-	siege_ability = 0.1					#1 B / quite good saboteurs and infiltrators and diggers
+	siege_ability = 0.15				#1 B / quite good saboteurs and infiltrators and diggers
 	reinforce_speed = 0.1 					#1 B / 
 	land_forcelimit_modifier = 0.15			#0.75 A / lots of gobbos
 	land_maintenance_modifier = -0.1		#1 B / cheaper armies to actually get bigger armies
 	artillery_cost = -0.1					#1 A / they make cheap explosives
-	fire_damage = 0.15						#1 C / explosives used to damage the enemy
+	fire_damage = 0.2						#1 C / explosives used to damage the enemy
 	allowed_rajput_fraction = 0.05 #artificers
 	
 	#1 + 1 + 0.75 + 0.75 + 0.75 + 0.75 + 1 + 0.5 = 6.5
 
 	#Negatives
-	morale_damage_received = 0.1		#-.5 A / cowardly goblins
+	morale_damage_received = 0.05		#-.5 A / cowardly goblins
 	fire_damage_received = 0.075			#-1 B / their own cheap explosives damage themselves, particularly when set off by enemy explosives
 	#Short people set
 	galley_power = -0.2					#you need long legs for galleys... and, well..
 	cavalry_cost = 0.2				#-2 B / standard small person cav malus
-	shock_damage_received = 0.1			#-1 B
+	shock_damage_received = 0.05			#-1 B
 	
 	#0.5 + 1 + 2 + 1 = 4.5
 	
@@ -444,17 +446,17 @@ halfling_military = {
 	#Gameplay: horrible military but good in numbers and can recover morale fast if needed
 
 	#Positives
-	land_forcelimit_modifier = 0.1
-	manpower_recovery_speed = 0.1
-	sailors_recovery_speed = 0.1
-	fire_damage = 0.05
+	land_forcelimit_modifier = 0.15
+	manpower_recovery_speed = 0.15
+	sailors_recovery_speed = 0.15
+	fire_damage = 0.1
 	morale_damage_received = -0.1
 	global_supply_limit_modifier = 0.2
 	
 	#Negatives
 	cavalry_cost = 0.2
-	shock_damage = -0.1
-	shock_damage_received = 0.1
+	shock_damage = -0.05
+	shock_damage_received = 0.05
 	drill_decay_modifier = 0.25
 	
 	picture = "racial_mil_halfling"
@@ -484,7 +486,7 @@ harpy_administration = {
 		
 	#Negatives	
  	global_tax_modifier = -0.1			#-1 B / dont really care for material wealth
-	development_cost = 0.1				#-1 S / due to nomadic life, they dont see the point of building stuff or infrastructure unless needed... they fly yo
+	development_cost = 0.075				#-1 S / due to nomadic life, they dont see the point of building stuff or infrastructure unless needed... they fly yo
 	#vassal_income = -0.25				#-1 C / harpies dont cover wealth or great power - and they prefer another form of tribute instead	#removed as it gives negative
 	advisor_cost = 0.1					#-1 A / 
 	
@@ -510,8 +512,8 @@ harpy_military = {
 	#1.5 + 0.75 + 0.75 + 0.4 + 0.5 + 0.75 + 1 = 5.65
 	
 	#Negatives
-	artillery_power = -0.1				#-1 A / they don't like fighting with heavy cumbersome weapons that reduce mobility
-	morale_damage_received = 0.1				#-2 B / harder to reform as its very easy to run
+	artillery_power = -0.075				#-1 A / they don't like fighting with heavy cumbersome weapons that reduce mobility
+	morale_damage_received = 0.075				#-2 B / harder to reform as its very easy to run
 	defensiveness = -0.5					#-2 B / not really defensive, they have always opted to flee and fly rather than hold ground
 	
 	naval_morale = -0.05				#-1 A / they arent really naval
@@ -540,8 +542,8 @@ human_military = {
 	#Gameplay: be a lad v2
 
 	#Positives
-	land_morale = 0.05				#0.5 A / human perserverance
-	naval_morale = 0.05				#0.5 B / 
+	land_morale = 0.075				#0.5 A / human perserverance
+	naval_morale = 0.075				#0.5 B / 
 	
 	#0.5 + 0.375 = 0.875
 	
@@ -582,21 +584,22 @@ kobold_military = {
 	loot_amount = 0.5						#1 E / crazy looters and thieves
 	manpower_recovery_speed = 0.25		#2 B / very numerous, maybe boost even more
 	land_forcelimit_modifier = 0.2		#1 A / big lad
-	reinforce_speed = 0.15
+	reinforce_speed = 0.2
 	fire_damage_received = -0.1
 	leader_land_manuever = 1
+	artillery_power = 0.05
 	
 	allowed_rajput_fraction = 0.05 #artificers
 	
 	#0.3 + 1.5 + 1 + 1 + 1 + 1 = 5.8
 	
 	#Negatives
-	land_morale = -0.05					#-0.5 A / 
+	land_morale = -0.025					#-0.5 A / 
 	
 	#Short people set
 	galley_power = -0.2					#-2 D / you need long legs for galleys... and, well..
 	cavalry_cost = 0.2					#-2 B / standard small person cav malus
-	shock_damage_received = 0.1			#-1 C / 
+	shock_damage_received = 0.075			#-1 C / 
 	
 	#1 + 0.75 + 0.8 + 1.5 + 0.5 = 5.06
 	picture = "racial_mil_kobold"
@@ -624,11 +627,11 @@ orcish_administration = {
     #Negatives
     improve_relation_modifier = -0.25    #-1 A / theyre orcs
     
-    development_cost = 0.1                #-1 S / orcs don't build cities of their own, instead relying on those left behind by others
+    development_cost = 0.075                #-1 S / orcs don't build cities of their own, instead relying on those left behind by others
     
     spy_offence = -0.2                    #-2 D / orcs do not like schemes
     
-    technology_cost = 0.05                #-1 S / they are not innovators. this should offset military ideas a bunch
+    technology_cost = 0.025                #-1 S / they are not innovators. this should offset military ideas a bunch
     
     #0.5 + 0.5 + 1 + 1.5 + 0.8 + 1.5 = 5.8
 	picture = "racial_adm_orc"
@@ -675,7 +678,7 @@ ruinborn_administration = {
 
 	#Positives
 	global_own_trade_power = 0.2		#2 C / knows ins and out of aelantir so they are better at defending it against expolitive colonials
-	administrative_efficiency = 0.05	#1 S / 
+	administrative_efficiency = 0.025	#1 S / 
 	
 	#1 + 1.5 = 3
 	
@@ -728,11 +731,11 @@ troll_administration = {
 	
 	#Negatives
 	improve_relation_modifier = -0.3		#-3 A / ugly bitches
-	administrative_efficiency = -0.05		#-1 S / reckless
-	build_cost = 0.1	#troll infrastructure needs to be bigger
+	administrative_efficiency = -0.025		#-1 S / reckless
+	build_cost = 0.075	#troll infrastructure needs to be bigger
 	
 	#Negatives - Giantkind
-	technology_cost = 0.1					#-1 S / its hard for advancements to apply to big dudes
+	technology_cost = 0.05					#-1 S / its hard for advancements to apply to big dudes
 	embracement_cost = 0.3					#-3 C / hard for advancement to apply to big guys
 	
 	#3+ 1.5 + 0.8 + 1.5 + 1.5 = 7.1 #outdated
