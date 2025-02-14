@@ -2703,6 +2703,7 @@ has_not_free_mercs_trait = {
 	#NOT = { has_idea = adven_ide7 } #1.35
 	NOT = { has_government_attribute = mercs_do_not_cost_army_professionalism }
 	NOT = { has_country_flag = fra_free_mercs_bargain_sale_flag } #1.35
+	NOT = { has_country_modifier = dodd_regular_irregulars_modifier }
 }
 
 mal_target_country_exists_in_region = {
