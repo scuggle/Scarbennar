@@ -361,6 +361,7 @@ province_event = { # A petition from Bayvic
 				OR = {
 					has_country_modifier = racial_pop_goblin_expulsion
 					has_country_modifier = racial_pop_goblin_purge
+					ai = no
 				}
 			}
 		}

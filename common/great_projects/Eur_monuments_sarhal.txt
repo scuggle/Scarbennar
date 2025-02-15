@@ -4206,7 +4206,7 @@ foundries_of_doddcodds = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 
-		cost_to_upgrade = { factor = 1000 }
+		cost_to_upgrade = { factor = 1500 }
 
 		province_modifiers = { 
 			trade_value_modifier = 0.2
@@ -4227,7 +4227,7 @@ foundries_of_doddcodds = {
 	tier_2 = {
 		upgrade_time = { months = 240 }
 
-		cost_to_upgrade = { factor = 2500 }
+		cost_to_upgrade = { factor = 3500 }
 
 		province_modifiers = { 
 			trade_value_modifier = 0.33
@@ -4237,7 +4237,7 @@ foundries_of_doddcodds = {
 		area_modifier = {}
 
         country_modifiers = {
-			artillery_fire = 0.2
+			artillery_fire = 0.15
         }
 
 		
@@ -4248,7 +4248,7 @@ foundries_of_doddcodds = {
 	tier_3 = {
 		upgrade_time = { months = 360 }
 
-		cost_to_upgrade = {	factor = 5000 }
+		cost_to_upgrade = {	factor = 7000 }
 
 		
 		province_modifiers = { 
@@ -4259,7 +4259,7 @@ foundries_of_doddcodds = {
 		area_modifier = {}
 
         country_modifiers = {
-            artillery_fire = 0.3
+            artillery_fire = 0.25
         }
 		
 		on_upgraded = {

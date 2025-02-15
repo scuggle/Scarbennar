@@ -58,10 +58,11 @@ new_world_nerf = {
 	trade_efficiency = -0.05
 	global_tax_modifier = -0.05
 	production_efficiency = -0.05
-	province_warscore_cost = 0.1
+	province_warscore_cost = 0.15
 	governing_capacity_modifier = -0.1
 	max_attrition = -1
 	hostile_attrition = -1
+	culture_conversion_cost = 0.15
 }
 
 
@@ -80,4 +81,29 @@ there_is_nothing_to_colonize = {
 		NOT = { is_year = 1484 }
 	}
 	colonists = -1
+}
+escann_nerf_modifier = {
+	potential = {
+		always = yes
+	}
+	trigger = {
+		capital_scope = {
+			OR = {
+				region = south_castanor_region
+				region = inner_castanor_region
+				region = west_castanor_region
+				has_country_modifier = escann_nerf_modifier
+			}
+		}
+		NOT = { reform_level = 2 }
+		NOT = { 
+			OR = {
+				culture_group = orcish
+				culture_group = goblin
+			}
+			NOT = { has_country_modifier = escann_nerf_modifier }
+		}
+	}
+	administrative_efficiency = -0.05
+	reduced_liberty_desire = -10
 }

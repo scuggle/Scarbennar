@@ -298,7 +298,7 @@ expansion_missions = {
 			create_general = { tradition = 80 }
 			add_country_modifier = {
 				name = "army_1_mission"
-				duration = 9125
+				duration = 5475
 			}
 		}
 	}
@@ -312,7 +312,7 @@ expansion_missions = {
 			create_general = { tradition = 80 }
 			add_country_modifier = {
 				name = "army_1_mission"
-				duration = 9125
+				duration = 5475
 			}
 		}
 	}
@@ -326,7 +326,7 @@ expansion_missions = {
 			create_general = { tradition = 80 }
 			add_country_modifier = {
 				name = "army_1_mission"
-				duration = 9125
+				duration = 5475
 			}
 		}
 	}
@@ -342,7 +342,7 @@ expansion_missions = {
 			create_general = { tradition = 100 }
 			add_country_modifier = {
 				name = "army_1_mission"
-				duration = 9125 
+				duration = 5475 
 			}
 		}
 	}

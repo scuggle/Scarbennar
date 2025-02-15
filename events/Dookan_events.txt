@@ -57,7 +57,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			add_yearly_manpower = 5
+			add_yearly_manpower = 3
 			add_army_professionalism = -0.025
 			
 		}
@@ -68,7 +68,7 @@ country_event = {
 
 		tooltip = {
 			
-			add_yearly_manpower = 5
+			add_yearly_manpower = 3
 			add_army_professionalism = -0.025
 			add_country_modifier = {
 				name = dookan_gather_great_host

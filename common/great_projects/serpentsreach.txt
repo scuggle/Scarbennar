@@ -217,7 +217,7 @@ verkal_skomdihr_warding_gate = {
 		}
 		country_modifiers = {
 			infantry_cost = -0.05
-			infantry_fire = 0.05
+			#infantry_fire = 0.05
 		}
 		on_upgraded = {
 		}
@@ -237,7 +237,7 @@ verkal_skomdihr_warding_gate = {
 		}
 		country_modifiers = {
 			infantry_cost = -0.10
-			infantry_fire = 0.1
+			infantry_fire = 0.05
 		}
 		on_upgraded = {
 		}
@@ -257,7 +257,7 @@ verkal_skomdihr_warding_gate = {
 		}
 		country_modifiers = {
 			infantry_cost = -0.15
-			infantry_fire = 0.15
+			infantry_fire = 0.1
 			leader_land_fire = 1
 		}
 		on_upgraded = {

@@ -2408,7 +2408,7 @@ F38_ideas = {
 		build_cost = -0.1
 	}
 	F38_from_ashes_the_phoenix_legion_rises = {
-		infantry_power = 0.2
+		infantry_power = 0.15
 	}
 	F38_offices_of_trade = {
 		trade_efficiency = 0.1
@@ -2419,7 +2419,7 @@ F38_ideas = {
 		advisor_cost = -0.1
 	}
 	F38_united_under_the_chosen_people = {
-		governing_capacity_modifier = 0.15
+		governing_capacity_modifier = 0.1
 	}
 }
 

@@ -145,7 +145,7 @@ at_standing = { # Professional
 		leader_cost = -0.10
 	}
 	at_sta6 = {	
-		yearly_army_professionalism = 0.01
+		yearly_army_professionalism = 0.0025
 		drill_decay_modifier = -0.1
 	}
 	at_sta7 = {
@@ -173,7 +173,7 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 		global_regiment_cost = -0.1
 	}
 	adven_ide2 = {
-		reinforce_speed = 0.10
+		reinforce_speed = 0.15
 	}
 	adven_ide3 = {
 		infantry_power = 0.1
@@ -186,7 +186,7 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 		possible_condottieri = 0.5
 	}
 	adven_ide6 = {
-		mercenary_manpower = 0.3
+		mercenary_manpower = 0.5
 	}
 	adven_ide7 = {
 		allow_mercenary_drill = yes
@@ -265,7 +265,7 @@ leadership_ideas = { #Leadership
 		leader_land_fire = 1
 	}
 	lead_ide5 = {
-		reserves_organisation = 0.25
+		reserves_organisation = 0.2
 	}
 	lead_ide6 = {
 		army_tradition_decay = -0.005
@@ -340,6 +340,7 @@ quality_ideas = { #Siege
 	}
 	quality_education = {
 		siege_ability = 0.15
+		backrow_artillery_damage = 0.075
 	}
 	finest_of_horses = {
 		shock_damage = 0.075
@@ -349,7 +350,7 @@ quality_ideas = { #Siege
 		land_attrition = -0.2
 	}
 	naval_drill = {
-		assault_fort_ability = 0.33
+		assault_fort_ability = 0.25
 	}
 	copper_bottoms = {
 		leader_siege = 1
@@ -357,7 +358,7 @@ quality_ideas = { #Siege
 	}
 	massed_battery = {
 		artillery_levels_available_vs_fort = 1
-		reinforce_speed = 0.2
+		reinforce_speed = 0.1
 	}
 
 	ai_will_do = {
@@ -383,12 +384,13 @@ offensive_ideas = { #Grand Plan
 	}
 	national_conscripts = {
 		global_regiment_recruit_speed = -0.15
+		manpower_recovery_speed = 0.05
 	}
 	superior_firepower = {
 		global_manpower_modifier = 0.10
 	}
 	glorious_arms = {
-	    global_regiment_cost = -0.05
+	    global_regiment_cost = -0.1
 	}
 	engineer_corps = {
 		reinforce_speed = 0.10
@@ -563,7 +565,7 @@ maritime_ideas = { #Ruler of the Waves Ideas
 			}
 	merchant_marine = {
 		colonists = 1
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.2
 		global_sailors = 3000
 		global_sailors_modifier = -0.25
 	}
@@ -1088,7 +1090,7 @@ the_great_game = { #The Great Game
 	}
 	tgg7 = {
 		imperial_authority = 0.10
-		monthly_reform_progress = 0.2
+		monthly_reform_progress = 0.25
 		imperial_mandate = 0.1
 	}
 	
@@ -1186,7 +1188,7 @@ innovativeness_ideas = { #Technocratic Ideas
 	category = ADM
 
 	bonus = {
-		idea_cost = -0.05
+		idea_cost = -0.1
 		possible_adm_policy = 1
 	}
 
@@ -1206,7 +1208,7 @@ innovativeness_ideas = { #Technocratic Ideas
 		reform_progress_growth = 0.15
 	}
 	print_culture = {
-		global_institution_spread = 0.33 
+		global_institution_spread = 0.5
 		artificers_loyalty_modifier = 0.1
 	}
 	optimism = {
@@ -1419,13 +1421,14 @@ administrative_ideas = { #government: monarchy
 		heir_chance = 1
 		legitimacy = 1
 		meritocracy = 0.5
+		merc_maintenance_modifier = -0.1
 	}
 	adaptability = {
 		prestige_decay = -0.01
 		promote_culture_cost = -0.5
 	}
 	benefits_for_mercenaries = {
-		same_culture_advisor_cost = -0.10
+		same_culture_advisor_cost = -0.15
 		culture_conversion_cost = -0.10
 	}
 	bookkeeping = {
@@ -1489,7 +1492,7 @@ plutocracy_ideas = { #government: republic
 		burghers_loyalty_modifier = 0.10
 	}
 	emancipation = {
-		republican_tradition = 0.3
+		republican_tradition = 0.25
 		reelection_cost = -0.1
 	}
 
@@ -1633,7 +1636,7 @@ economic_ideas = { #industrial ideas
 		build_time = -0.15
 	}
 	smithian_economics = {
-		production_efficiency = 0.15
+		production_efficiency = 0.1
 		burghers_influence_modifier = 0.1
 		burghers_loyalty_modifier = 0.1
  	}

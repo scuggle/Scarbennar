@@ -223,7 +223,7 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		years = 50
-		#modifier = {
+		#modifier = {	fix using province flags
 			#factor = 0.75
 			#num_of_neighbor_province = {
 				#value = 2
