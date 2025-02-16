@@ -1,0 +1,1163 @@
+namespace = dodd_flavour_events
+country_event = {	#forced tree plantation
+	id = dodd_flavour_events.1
+	title = dodd_flavour_events.1.t 
+	desc = dodd_flavour_events.1.d 
+	picture = no
+	is_triggered_only = yes
+	#trigger = {
+	#	
+	#}
+	immediate = {
+		random_owned_province = {
+			limit = {
+				trade_goods = tropical_wood
+			}
+			set_province_flag = dodd_wood_plantation_flag_1
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_2
+			}
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_3
+			}
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_3 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_3 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_4
+			}
+		}
+	}
+	
+	option = {	#none of these
+		ai_chance  = { factor = 0 }
+		name = dodd_flavour_events.1.a
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+	}
+	option = {	#
+		name = dodd_flavour_events.1.b 
+		ai_chance  = { factor = 20 }
+		trigger = {
+			any_owned_province = { has_province_flag = dodd_wood_plantation_flag_1 }
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_1
+			}
+			change_trade_goods = naval_supplies
+			add_unrest = 8
+		}
+		add_adm_power = -10
+		add_dip_power = -5
+		add_treasury = -200	
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10	#clears the flags
+			}
+		}
+	}
+	option = {	
+		name = dodd_flavour_events.1.c
+		ai_chance  = { factor = 20 }
+		trigger = {
+			any_owned_province = { has_province_flag = dodd_wood_plantation_flag_2 }
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_2
+			}
+			change_trade_goods = naval_supplies
+			add_unrest = 8
+		}
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+		add_adm_power = -10
+		add_dip_power = -5
+		add_treasury = -200		
+	}
+	option = {	
+		name = dodd_flavour_events.1.dd
+		ai_chance  = { factor = 20 }
+		trigger = {
+			any_owned_province = { has_province_flag = dodd_wood_plantation_flag_3 }
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_3
+			}
+			change_trade_goods = naval_supplies
+			add_unrest = 8
+		}
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+		add_adm_power = -10
+		add_dip_power = -5
+		add_treasury = -200		
+	}
+	option = {	
+		trigger = {
+			any_owned_province = { has_province_flag = dodd_wood_plantation_flag_4 }
+		}
+		name = dodd_flavour_events.1.e
+		ai_chance  = { factor = 20 }
+		random_owned_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_4
+			}
+			change_trade_goods = naval_supplies
+			add_unrest = 8
+		}
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+		add_adm_power = -10
+		add_dip_power = -5
+		add_treasury = -200		
+	}
+}
+country_event = {	#diplomatic tree plantation
+	id = dodd_flavour_events.2
+	title = dodd_flavour_events.2.t 
+	desc = dodd_flavour_events.2.d 
+	picture = no
+	is_triggered_only = yes
+	#trigger = {
+	#	
+	#}
+	immediate = {
+		random_owned_province = {
+			limit = {
+				trade_goods = tropical_wood
+			}
+			set_province_flag = dodd_wood_plantation_flag_1
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_2
+			}
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_3
+			}
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_3 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_3 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_4
+			}
+		}
+	}
+	
+	option = {	#none of these
+		name = dodd_flavour_events.2.a
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+	}
+	option = {	#
+		name = dodd_flavour_events.2.b 
+		trigger = {
+			any_owned_province = { has_province_flag = dodd_wood_plantation_flag_1 }
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_1
+			}
+			change_trade_goods = naval_supplies
+			add_local_autonomy = 10
+		}
+		add_adm_power = -5
+		add_dip_power = -15
+		add_treasury = -200	
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+	}
+	option = {	
+		name = dodd_flavour_events.2.c
+		trigger = {
+			any_owned_province = { has_province_flag = dodd_wood_plantation_flag_2 }
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_2
+			}
+			change_trade_goods = naval_supplies
+			add_local_autonomy = 10
+		}
+		add_adm_power = -5
+		add_dip_power = -15
+		add_treasury = -200	
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}		
+	}
+	option = {	
+		name = dodd_flavour_events.2.dd
+		trigger = {
+			any_owned_province = { has_province_flag = dodd_wood_plantation_flag_3 }
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_3
+			}
+			change_trade_goods = naval_supplies
+			add_local_autonomy = 10
+		}
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+		add_adm_power = -5
+		add_dip_power = -15
+		add_treasury = -200		
+	}
+	option = {	
+		name = dodd_flavour_events.2.e
+		trigger = {
+			any_owned_province = { has_province_flag = dodd_wood_plantation_flag_4 }
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_4
+			}
+			change_trade_goods = naval_supplies
+			add_local_autonomy = 10
+		}
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+		add_adm_power = -5
+		add_dip_power = -15
+		add_treasury = -200			
+	}
+}
+country_event = {	
+	id = dodd_flavour_events.3
+	title = dodd_flavour_events.3.t 
+	desc = dodd_flavour_events.3.d 
+	picture = no
+	is_triggered_only = yes
+	
+	immediate = {
+		random_subject_country = {
+			limit = {
+				culture_group = lizardfolk
+				any_owned_province = {
+					trade_goods = tropical_wood
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+				}
+				set_province_flag = dodd_wood_plantation_flag_1
+			}
+		}
+		random_subject_country = {
+			limit = {
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+				}
+				culture_group = lizardfolk
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_2
+			}
+		}
+		random_subject_country = {
+			limit = {
+				culture_group = lizardfolk
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_3
+			}
+		}
+		random_subject_country = {
+			limit = {
+				culture_group = lizardfolk
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_3 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_3 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_4
+			}
+		}
+	}
+	
+	option = {	#nvm
+		name = dodd_flavour_events.3.a
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+	}
+	option = {
+		name = dodd_flavour_events.3.b
+		trigger = {
+			any_subject_country = {
+				any_owned_province = {
+					has_province_flag = dodd_wood_plantation_flag_1
+				}
+			}
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_1
+			}
+			change_trade_goods = naval_supplies
+			set_province_flag = polder_wood_plantation_flag_1
+			owner = {
+				country_event = {
+					id = dodd_flavour_events.4
+					days = 30
+					random = 15
+				}
+				hidden_effect = {
+					country_event = {
+						id = dodd_flavour_events.10
+					}
+				}
+			}
+		}
+		add_adm_power = -10
+		add_dip_power = -5
+		add_treasury = -200
+	}
+	option = {
+		name = dodd_flavour_events.3.c
+		trigger = {
+			any_subject_country = {
+				any_owned_province = {
+					has_province_flag = dodd_wood_plantation_flag_2
+				}
+			}
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_2
+			}
+			change_trade_goods = naval_supplies
+			set_province_flag = polder_wood_plantation_flag_1
+			owner = {
+				country_event = {
+					id = dodd_flavour_events.4
+					days = 30
+					random = 15
+				}
+				hidden_effect = {
+					country_event = {
+						id = dodd_flavour_events.10
+					}
+				}
+			}
+		}
+		add_adm_power = -10
+		add_dip_power = -5
+		add_treasury = -200
+	}
+	option = {
+		name = dodd_flavour_events.3.dd
+		trigger = {
+			any_subject_country = {
+				any_owned_province = {
+					has_province_flag = dodd_wood_plantation_flag_3
+				}
+			}
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_3
+			}
+			change_trade_goods = naval_supplies
+			set_province_flag = polder_wood_plantation_flag_1
+			owner = {
+				country_event = {
+					id = dodd_flavour_events.4
+					days = 30
+					random = 15
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+		add_adm_power = -10
+		add_dip_power = -5
+		add_treasury = -200
+	}
+	option = {
+		name = dodd_flavour_events.3.e
+		trigger = {
+			any_subject_country = {
+				any_owned_province = {
+					has_province_flag = dodd_wood_plantation_flag_4
+				}
+			}
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_4
+			}
+			change_trade_goods = naval_supplies
+			set_province_flag = polder_wood_plantation_flag_1
+			owner = {
+				country_event = {
+					id = dodd_flavour_events.4
+					days = 30
+					random = 15
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+		add_adm_power = -10
+		add_dip_power = -5
+		add_treasury = -200	
+		
+	}
+}
+country_event = {
+	id = dodd_flavour_events.4
+	title = dodd_flavour_events.4.t 
+	desc = dodd_flavour_events.4.d 
+	picture = no
+	is_triggered_only = yes
+	
+	option = {	#accept it
+		name = dodd_flavour_events.4.a 
+		ai_chance = {
+			factor = 80
+		}
+		hidden_effect = {
+			random = {
+				chance = 33
+				random_owned_province = {
+					limit = {
+						has_province_flag = polder_wood_plantation_flag_1
+					}
+					spawn_rebels = {
+						type = peasant_rebels
+						size = 2
+					}
+					clr_province_flag = polder_wood_plantation_flag_1
+				}
+			}
+		}
+	}
+	option = {	#rebel
+		name = dodd_flavour_events.4.b 
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 5
+				army_strength = {
+					who = EC9
+					value = 0.75
+				}
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = polder_wood_plantation_flag_1
+				}
+				clr_province_flag = polder_wood_plantation_flag_1
+			}
+		}
+		declare_war_with_cb = {
+			who = EC9
+			casus_belli = cb_independence_war
+		}
+	}
+}
+country_event = {	
+	id = dodd_flavour_events.5
+	title = dodd_flavour_events.5.t 
+	desc = dodd_flavour_events.5.d 
+	picture = no
+	is_triggered_only = yes
+	
+	immediate = {
+		random_subject_country = {
+			limit = {
+				culture_group = lizardfolk
+				any_owned_province = {
+					trade_goods = tropical_wood
+				}
+			}
+			random_owned_province = {
+				culture_group = lizardfolk
+				limit = {
+					trade_goods = tropical_wood
+				}
+				set_province_flag = dodd_wood_plantation_flag_1
+			}
+		}
+		random_subject_country = {
+			limit = {
+				culture_group = lizardfolk
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_2
+			}
+		}
+		random_subject_country = {
+			limit = {
+				culture_group = lizardfolk
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_3
+			}
+		}
+		random_subject_country = {
+			limit = {
+				culture_group = lizardfolk
+				any_owned_province = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_3 }
+				}
+			}
+			random_owned_province = {
+				limit = {
+					trade_goods = tropical_wood
+					NOT = { has_province_flag = dodd_wood_plantation_flag_1 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_2 }
+					NOT = { has_province_flag = dodd_wood_plantation_flag_3 }
+				}
+				set_province_flag = dodd_wood_plantation_flag_4
+			}
+		}
+	}
+	
+	option = {	#nvm
+		name = dodd_flavour_events.5.a 
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+	}
+	option = {
+		name = dodd_flavour_events.5.b
+		trigger = {
+			any_subject_country = {
+				any_owned_province = {
+					has_province_flag = dodd_wood_plantation_flag_1
+				}
+			}
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_1
+			}
+			change_trade_goods = naval_supplies
+		}
+		add_adm_power = -5
+		add_dip_power = -15
+		add_treasury = -200	
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+	}
+	option = {
+		name = dodd_flavour_events.5.c
+		trigger = {
+			any_subject_country = {
+				any_owned_province = {
+					has_province_flag = dodd_wood_plantation_flag_2
+				}
+			}
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_2
+			}
+			change_trade_goods = naval_supplies
+		}
+		add_adm_power = -5
+		add_dip_power = -15
+		add_treasury = -200	
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+	}
+	option = {
+		name = dodd_flavour_events.5.dd
+		trigger = {
+			any_subject_country = {
+				any_owned_province = {
+					has_province_flag = dodd_wood_plantation_flag_3
+				}
+			}
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_3
+			}
+			change_trade_goods = naval_supplies
+		}
+		add_adm_power = -5
+		add_dip_power = -15
+		add_treasury = -200
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+	}
+	option = {
+		name = dodd_flavour_events.5.e
+		trigger = {
+			any_subject_country = {
+				any_owned_province = {
+					has_province_flag = dodd_wood_plantation_flag_4
+				}
+			}
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_4
+			}
+			change_trade_goods = naval_supplies
+		}
+		add_adm_power = -5
+		add_dip_power = -15
+		add_treasury = -200		
+		hidden_effect = {
+			country_event = {
+				id = dodd_flavour_events.10
+			}
+		}
+	}
+}
+country_event = {
+	id = dodd_flavour_events.6
+	title = dodd_flavour_events.6.t 
+	desc = dodd_flavour_events.6.d 
+	picture = no
+	fire_only_once = yes
+	trigger = {
+		any_owned_province = {
+			has_province_flag = dodd_super_fertilizer_flag
+			NOT = { has_province_modifier = dodd_super_fertilizer_agriculture_modifier }
+			NOT = { has_province_modifier = dodd_sustainable_fertilizer_agriculture_modifier }
+		}
+	}
+	mean_time_to_happen = {
+		years = 10
+	}
+	option = {
+		name = dodd_flavour_events.6.a 
+		every_owned_province = {
+			limit = {
+				has_province_flag = dodd_super_fertilizer_flag
+				NOT = { has_province_modifier = dodd_super_fertilizer_agriculture_modifier }
+				NOT = { has_province_modifier = dodd_sustainable_fertilizer_agriculture_modifier } 
+			}
+			add_permanent_province_modifier = {
+				name = dodd_soil_depletion_modifier	#modifier giving -75% goods produced modifier, yet to be localized
+				duration = 7300	#20 years
+			}
+			clr_province_flag = dodd_super_fertilizer_flag
+		}
+	}
+}
+country_event = {
+	id = dodd_flavour_events.7
+	title = dodd_flavour_events.7.t 
+	desc = dodd_flavour_events.7.d 
+	picture = no
+	fire_only_once = yes
+	trigger = {
+		any_owned_province = {
+			has_province_flag = dodd_super_fertilizer_flag
+			NOT = { has_province_modifier = dodd_super_fertilizer_agriculture_modifier }
+			NOT = { has_province_modifier = dodd_sustainable_fertilizer_agriculture_modifier }
+		}
+	}
+	mean_time_to_happen = {
+		years = 10
+	}
+	option = {
+		name = dodd_flavour_events.7.a 
+		every_owned_province = {
+			limit = {
+				has_province_flag = dodd_super_fertilizer_flag
+				NOT = { has_province_modifier = dodd_super_fertilizer_agriculture_modifier }
+				NOT = { has_province_modifier = dodd_sustainable_fertilizer_agriculture_modifier } 
+			}
+			add_permanent_province_modifier = {
+				name = dodd_soil_depletion_adaptation_modifier	#modifier giving 10% trade value modifier, yet to be localized
+				duration = 7300	#20 years
+			}
+			clr_province_flag = dodd_super_fertilizer_flag
+		}
+	}
+}
+
+country_event = {	
+	id = dodd_flavour_events.8
+	title = dodd_flavour_events.8.t 
+	desc = dodd_flavour_events.8.d 
+	picture = no
+	fire_only_once = yes
+	trigger = {
+		tag = EC9
+	}
+	mean_time_to_happen = {
+		years = 2
+	}
+	option = {	#supplement with mercenaries in army
+		ai_chance  = { factor = 50 }
+		name = dodd_flavour_events.8.a 
+		add_country_modifier = {
+			name = dodd_limited_gnomes_in_army_modifier	#modifier giving -25% manpower, -5% land force limit, 20% merc manpower and -5% merc cost, yet to be localized
+			duration = -1	#permanent
+		}
+	}
+	option = {	#invite lizardfolk as sailors
+		ai_chance  = { factor = 20 }
+		name = dodd_flavour_events.8.b
+		add_country_modifier = {
+			name = dodd_lizardfolk_in_navy_modifier	#modifier giving -5% manpower, 10% sailors, -10% naval morale, yet to be localized
+			duration = -1	#permanent
+		}
+		6033 = {
+			add_unrest = 20
+		}
+	}
+	option = {	#leave the army out to dry
+		ai_chance  = { factor = 10 }
+		name = dodd_flavour_events.8.c 
+		add_country_modifier = {
+			name = dodd_army_left_out_to_dry_modifier	#modifier giving -20% manpwer, -5% land force limit, -5% land morale, 5% naval force limit modifier and 10% naval morale yet to be localized
+			duration = -1	#permanent
+		}
+	}
+	option = {	#quality over quantity
+		ai_chance  = { factor = 20 }
+		name = dodd_flavour_events.8.dd
+		add_country_modifier = {
+			name = dodd_quality_over_quantity_modifier	#modifier giving -25% manpower, -10% land force limit, 5% land morale, 5% discipline, 10% infantry combat ability, +50% unit cost, yet to be localized
+			duration = -1	#permanent
+		}
+	}
+}
+country_event = {
+	id = dodd_flavour_events.9
+	title = dodd_flavour_events.9.t 
+	desc = dodd_flavour_events.9.d 
+	picture = no
+	is_triggered_only = yes
+	option = {	#lizardfolk army with gnomish officers
+		name = dodd_flavour_events.9.a 
+		ai_chance  = { factor = 30 }
+		if = {
+			limit = { NOT = { has_country_modifier = lizardfolk_military } }
+			clear_racial_military = yes
+			add_country_modifier = { 
+				name = lizardfolk_military
+				duration = -1  
+			}
+			change_unit_type = tech_lizardfolk
+		}
+		if = {
+			limit = {
+				has_country_modifier = dodd_limited_gnomes_in_army_modifier
+			}
+			remove_country_modifier = dodd_limited_gnomes_in_army_modifier
+		}
+		if = {
+			limit = {
+				has_country_modifier = dodd_lizardfolk_in_navy_modifier
+			}
+			remove_country_modifier = dodd_lizardfolk_in_navy_modifier
+			add_country_modifier = {
+				name = dodd_lizardfolk_navy_modifier	#modifier giving 25% sailors and 5% marines force limit, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = dodd_army_left_out_to_dry_modifier
+			}
+			remove_country_modifier = dodd_army_left_out_to_dry_modifier
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_modifier = dodd_quality_over_quantity_modifier
+				}
+			}
+			add_country_modifier = {
+				name = dodd_gnomish_officers_modifier	#modifier giving 5% artificers force limit, 10% fire damage, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = dodd_quality_over_quantity_modifier
+			}
+			remove_country_modifier = dodd_quality_over_quantity_modifier
+			add_country_modifier = {
+				name = dodd_gnomish_gnomish_elite_core_modifier	#modifier giving 7.5% artificers force limit, 10% fire damage, yet to be localized
+				duration = -1	#permanent
+			}
+			add_country_modifier = {
+				name = dodd_gnomish_gnomish_elite_core_modifier2	#modifier giving artificers +5% discipline and +10% fire damage, yet to be localized
+				duration = -1	#permanent
+			}
+		}	
+	}
+	option = {	#mixed army
+		ai_chance  = { factor = 30 }
+		name = dodd_flavour_events.9.b
+		add_country_modifier = {
+			name = dodd_lizardfolk_in_army_modifier	#modifier giving 10% shock damage, 25% manpower modifier and 5% force limit modifier yet to be localized
+			duration = -1	#permanent
+		}
+	}
+	option = {	#full lizardfolk army
+		ai_chance  = { factor = 10 }
+		name = dodd_flavour_events.9.c
+		trigger = {
+			NOT = {	
+				OR = {
+					has_country_modifier = dodd_quality_over_quantity_modifier
+					has_country_modifier = dodd_army_left_out_to_dry_modifier
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_country_modifier = lizardfolk_military } }
+			clear_racial_military = yes
+			add_country_modifier = { 
+				name = lizardfolk_military
+				duration = -1  
+			}
+			change_unit_type = tech_lizardfolk
+		}
+		if = {
+			limit = {
+				has_country_modifier = dodd_limited_gnomes_in_army_modifier
+			}
+			remove_country_modifier = dodd_limited_gnomes_in_army_modifier
+			add_country_modifier = {
+				name = dodd_gnomes_free_for_civil_affairs_modifier 	#modifier giving -5% dev cost and -10% tech cost, yet to be localized
+				duration = -1	#permanent
+			}
+			add_country_modifier = {
+				name = dodd_gnomish_captains	#modifier giving 1 admiral fire and 5% extra ship cannons
+				duration = -1	#permanent
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = dodd_lizardfolk_in_navy_modifier
+			}
+			remove_country_modifier = dodd_lizardfolk_in_navy_modifier
+			add_country_modifier = {
+				name = dodd_gnomes_free_for_civil_affairs_modifier_2	#modifier giving -7.5% dev cost, -10% tech cost and 20% institution spread, yet to be localized
+			}
+		}
+	}
+	option = {	#marine army
+		ai_chance  = { factor = 10 }
+		name = dodd_flavour_events.9.dd
+		trigger = {
+			OR = {
+				has_country_modifier = dodd_lizardfolk_in_navy_modifier
+				has_country_modifier = dodd_limited_gnomes_in_army_modifier
+			}
+		}
+		if = {
+			limit = { NOT = { has_country_modifier = lizardfolk_military } }
+			clear_racial_military = yes
+			add_country_modifier = { 
+				name = lizardfolk_military
+				duration = -1  
+			}
+			change_unit_type = tech_lizardfolk
+		}
+		if = {
+			limit = {
+				has_country_modifier = dodd_lizardfolk_in_navy_modifier
+			}
+			remove_country_modifier = dodd_lizardfolk_in_navy_modifier
+			add_country_modifier = {
+				name = dodd_gnomes_free_for_civil_affairs_modifier 	#modifier giving -5% dev cost and -10% tech cost
+				duration = -1	#permanent
+			}
+			add_country_modifier = {
+				name = dodd_lizardfolk_marines_modifier	#modifier giving 15% sailors, 10% sailor recovery speed, 10% possible marines, yet to be localized
+				duration = -1	#permanent
+			}
+			add_country_modifier = {
+				name = dodd_lizardfolk_marines_modifier2	#modifier giving marines 5% shock damage and -10% shock and fire damage taken, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = dodd_limited_gnomes_in_army_modifier
+			}
+			add_country_modifier = {
+				name = dodd_mixed_marines_modifier	#modifier giving 20% sailors, 15% possible marines, yet to be localized
+				duration = -1	#permanent
+			}
+			add_country_modifier = {
+				name = dodd_mixed_marines_modifier2	#modifier giving marines 15% fire damage, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+	}
+	option = {	#full navy focus
+		ai_chance  = { factor = 10 }
+		name = dodd_flavour_events.9.e
+		trigger = {
+			OR = {
+				has_country_modifier = dodd_army_left_out_to_dry_modifier
+				has_country_modifier = dodd_lizardfolk_in_navy_modifier
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = dodd_army_left_out_to_dry_modifier
+			}
+			remove_country_modifier = dodd_army_left_out_to_dry_modifier
+		}
+		if = {
+			limit = { 
+				NOT = { has_country_modifier = lizardfolk_military } 
+				has_country_modifier = dodd_lizardfolk_in_navy_modifier
+			}
+			clear_racial_military = yes
+			add_country_modifier = { 
+				name = lizardfolk_military
+				duration = -1  
+			}
+			change_unit_type = tech_lizardfolk
+		}
+		add_country_modifier = {
+			name = dodd_army_abandonded_modifier	#modifier giving -50% manpower modifier, -20% land force limit modifier, -10% land morale, yet to be localized
+			duration = -1	#permanent
+		}
+		add_country_modifier = {
+			name = dodd_navy_focus_modifier	#modifier giving 10% naval morale, 25% naval force limit, +1yearly naval tradition and 25% sailors modifier, yet to be localized
+			duration = -1	#permanent
+		}
+		add_country_modifier = {
+			name = dodd_marines_not_left_behind_modifier	#modifier giving marines 15% land morale, yet to be localized
+		}
+	}
+	option = {	#regular irregulars
+		ai_chance  = { factor = 10 }
+		name = dodd_flavour_events.9.f
+		trigger = {
+			OR = {
+				has_country_modifier = dodd_army_left_out_to_dry_modifier
+				has_country_modifier = dodd_limited_gnomes_in_army_modifier
+			}
+		}
+		add_country_modifier = {
+			name = dodd_regular_irregulars_modifier	#modifier giving 25% merc manpower, allowing merc drill and merc splitting, making recruiting mercs not cost proffesionalism and -50% manpower modifier, yet to be localized
+			duration = -1	#permanent
+		}
+		add_country_modifier = {
+			name = dodd_regular_irregulars_modifier2	#modifier giving mercenaries 15% morale of armies and 10% fire damage, yet to be localized
+			duration = -1	#permanent
+		}
+		set_country_flag = dodd_mercenary_company_flag4	#flag giving 3 merc companies
+	}
+}
+country_event = {
+	id = dodd_flavour_events.10
+	title = dodd_flavour_events.10.t 
+	desc = dodd_flavour_events.10.d 
+	picture = no
+	is_triggered_only = yes
+	hidden = yes 
+	immediate = {
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_1
+			}
+			clr_province_flag = dodd_wood_plantation_flag_1
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_2
+			}
+			clr_province_flag = dodd_wood_plantation_flag_2
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_3
+			}
+			clr_province_flag = dodd_wood_plantation_flag_3
+		}
+		every_province = {
+			limit = {
+				has_province_flag = dodd_wood_plantation_flag_4
+			}
+			clr_province_flag = dodd_wood_plantation_flag_4
+		}
+	}
+	
+	option = {
+		name = dodd_flavour_events.10.a
+		
+	}
+}
