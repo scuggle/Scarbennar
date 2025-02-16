@@ -1,0 +1,496 @@
+country_decisions = {
+	dodd_tree_plantations1 = {	#build it somewhat forcefully
+		potential = {
+			mission_completed = dodd_expanding_the_foundries
+			NOT = {
+				mission_completed = dodd_tree_plantations
+			}
+		}
+		allow = {	
+			any_owned_province = {
+				trade_goods = tropical_wood
+			}
+			adm_power = 10
+			dip_power = 5
+			treasury = 200
+			NOT = {
+				mission_completed = dodd_tree_plantations
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			trade_goods = tropical_wood
+		}
+		effect = {
+			country_event = { #fire an event to choose a province
+				id = dodd_flavour_events.1 
+			}
+		}
+	}
+	dodd_tree_plantations2 = {	#work with the local tribes
+		potential = {
+			mission_completed = dodd_expanding_the_foundries
+			NOT = {
+				mission_completed = dodd_tree_plantations
+			}
+		}
+		allow = {
+			any_owned_province = {
+				trade_goods = tropical_wood
+			}
+			adm_power = 5
+			dip_power = 15
+			treasury = 200
+			NOT = {
+				mission_completed = dodd_tree_plantations
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			trade_goods = tropical_wood
+		}
+		effect = {
+			country_event = {
+				id = dodd_flavour_events.2
+			}
+		}
+	}
+	dodd_tree_plantations3 = {	#subject version, build it somewhat forcefully
+		potential = {	
+			mission_completed = dodd_expanding_the_foundries
+			NOT = {
+				mission_completed = dodd_tree_plantations
+			}
+		}
+		allow = {
+			any_subject_country = {
+				any_owned_province = {
+					trade_goods = tropical_wood
+				}
+			}
+			adm_power = 10
+			dip_power = 5
+			treasury = 200
+			NOT = {
+				mission_completed = dodd_tree_plantations
+			}
+		}
+		provinces_to_highlight = {
+			#owner = {
+			#	overlord = ROOT
+			#}
+			trade_goods = tropical_wood
+		}
+		effect = {
+			country_event = {
+				id = dodd_flavour_events.3
+			}
+		}
+	}
+	dodd_tree_plantations4 = {	#subject version, work with the local tribes
+		potential = {
+			mission_completed = dodd_expanding_the_foundries
+			NOT = {
+				mission_completed = dodd_tree_plantations
+			}
+		}
+		allow = {
+			any_subject_country = {
+				any_owned_province = {
+					trade_goods = tropical_wood
+				}
+			}
+			adm_power = 5
+			dip_power = 15
+			treasury = 200
+			NOT = {
+				mission_completed = dodd_tree_plantations
+			}
+		}
+		provinces_to_highlight = {
+			#owner = {
+			#	overlord = ROOT
+			#}
+			trade_goods = tropical_wood
+		}
+		effect = {
+			country_event = {
+				id = dodd_flavour_events.5
+			}
+		}
+	}
+	dodd_recruit_irregulars = {
+		potential = {
+			mission_completed = dodd_an_irregular_army
+			NOT = { mission_completed = dodd_lizardkin_regulars }
+		}
+		allow = {
+			#NOT = {
+				#any_subject_country = {
+					#has_country_modifier = polder_gnomes_recruiting_irregulars_modifier
+				#}
+			#}
+			any_subject_country = {
+				culture_group = lizardfolk
+				land_forcelimit = 60
+				army_size_percentage = 0.8
+				NOT = { has_country_modifier = polder_gnomes_recruiting_irregulars_modifier }
+			}
+			years_of_income = 0.75
+			dip_power = 25
+			army_professionalism = 0.05
+			NOT = { mission_completed = dodd_lizardkin_regulars }
+		}
+		effect = {
+			random_subject_country = {
+				limit = {
+					culture_group = lizardfolk
+					NOT = { has_country_modifier = polder_gnomes_recruiting_irregulars_modifier }
+					land_forcelimit = 60
+					army_size_percentage = 0.8
+					
+				}
+				add_country_modifier = {
+					name = polder_gnomes_recruiting_irregulars_modifier
+					duration = 7300	#20years
+				}
+			}
+			add_years_of_income = -0.75
+			add_dip_power = -25
+			add_army_professionalism = -0.05
+			add_yearly_manpower = 2
+			if = {
+					limit = {
+						NOT = { has_country_modifier = dodd_irregular_recruitment_spree }
+					}
+					add_country_modifier = {
+						name = dodd_irregular_recruitment_spree	#modifier giving 25% manpower recovery speed, -10% merc cost, 20% merc manpower, yet to be localized
+						duration = 3650	#10 years
+					}
+				}
+			if = {
+				limit = {
+					has_country_modifier = dodd_irregular_recruitment_spree
+				}
+				add_yearly_manpower = 1
+			}	
+		}
+	}
+	dodd_build_dykes = {
+		potential = {
+			mission_completed = dodd_the_seven_cities
+			NOT = { mission_completed = dodd_land_reclamation }
+		}
+		allow = {
+			any_owned_province = {
+				OR = {
+					area = ashamad_mabeed_area
+					area = ssippansek_area
+					area = zulbur_area
+					area = ishyaga_area
+					area = yassa_tara_area
+					area = teranak_area
+					area = nazhni_tressik_area
+				}
+				has_terrain = marsh
+				NOT = { has_province_modifier = dodd_dykes_build_modifier }
+			}
+			treasury = 300
+			adm_power = 20
+			dip_power = 20
+			adm_tech = 12
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						area = ashamad_mabeed_area
+						area = ssippansek_area
+						area = zulbur_area
+						area = ishyaga_area
+						area = yassa_tara_area
+						area = teranak_area
+						area = nazhni_tressik_area
+					}
+					has_terrain = marsh
+					NOT = { has_province_modifier = dodd_dykes_build_modifier }
+				}
+				add_province_modifier = {
+					name = dodd_dykes_build_modifier #modifier giving 25% state maintenance, 10% defensivness, 25% friendly movement speed, yet to be localized
+					duration = -1	#permanent
+				}
+				add_unrest = 10
+			}
+			add_treasury = -300
+			add_adm_power = -20
+			add_dip_power = -20
+		}	
+	}
+	dodd_install_pumps = {
+		potential = {
+			mission_completed = dodd_the_seven_cities
+			NOT = { mission_completed = dodd_land_reclamation }
+		}
+		allow = {
+			any_owned_province = {
+				has_province_modifier = dodd_dykes_build_modifier
+				NOT = { has_province_modifier = dodd_pumps_installed_modifier }
+			}
+			OR = {
+				AND = {
+					innovativeness = 50
+					adm_tech = 16
+				}
+				AND = {
+					innovativeness = 75
+					adm_tech = 13
+				}
+			}
+			#has_estate_privilege = artifice_invention_mechanim_workforce
+			advisor = natural_scientist
+			adm_power = 25
+			treasury = 350
+		}
+		effect = {
+			random_owned_province = {
+				limit = [
+					has_province_modifier = dodd_dykes_build_modifier
+					NOt = { has_province_modifier = dodd_pumps_installed_modifier }
+				}
+				add_province_modifier = {
+					name = dodd_pumps_installed_modifier	#modifier giving 10% state maintenance, -0.05 monthly devastation, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+			add_adm_power = -25
+			add_treasury = -350
+		}
+	}
+	dodd_fertilizer_imports = {
+		potential = {
+			mission_completed = dodd_land_reclamation
+			NOT = { has_country_modifier = dodd_fertile_dust_imports_modifier }
+		}
+		allow = {
+			any_subject_country = {
+				num_of_owned_provinces_with = {
+					value = 30
+					has_province_modifier = effelai_slash_and_burn 
+				}
+			}
+			years_of_income = 0.25
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_fertile_dust_imports_modifier	#modifier giving -5% trade efficiency and 5% goods produced, yet to be localized
+				duration = 5475	#15 years
+			}
+			random_subject_country = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 30
+						has_province_modifier = effelai_slash_and_burn 
+					}
+				}
+				add_country_modifier = {
+					name = dodd_fertile_dust_exports_modifier	#modifier giving +2.5% dev cost modifier, -10% goods produced modifier and 5% trade efficiency, yet to be localized
+					duration = 5475	#15 years
+				}
+				add_years_of_income = 0.33
+			}
+			add_years_of_income = -0.25
+		}
+	}
+	dodd_fertilizer_production = {	#slash and burn
+		potential = {
+			mission_completed = dodd_land_reclamation
+			NOT = { has_country_modifier = dod_fertile_dust_production_modifier }
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 50
+				OR = {
+					has_terrain = jungle
+					has_terrain = woods
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dod_fertile_dust_production_modifier	#modifier giving 7.5% goods produced, yet to be localized
+				duration = 10950	#30 years
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = jungle
+						has_terrain = woods
+					}
+				}
+				add_permanent_province_modifier = {
+					name = dodd_slashing_modifier	#modifier giving -2.5% dev cost and 1 monthly devastation, yet to be localized
+					duration = 10950	#30 years
+				}
+			}
+		}
+	}
+	dodd_permanent_fertilizer_production = {
+		potential = {
+			mission_completed = dodd_land_reclamation
+			NOT = { has_country_modifier = dodd_permanent_fertilizer_production_modifier }
+		}
+		allow = {
+			adm_tech = 16
+			innovativeness = 80
+			years_of_income = 1
+			adm_power  = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_permanent_fertilizer_production_modifier #modifier giving 5% goods produced, yet to be localized
+				duration = -1	#permanent
+			}
+			add_years_of_income = -1
+			add_adm_power = -100
+		}
+	}
+	dodd_move_in_vyzembi_farmers = {
+		potential = {
+			mission_completed = dodd_land_reclamation
+			has_global_flag = vizemby_farmers_moved_flag
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 15
+				OR = {
+					culture = amezatany
+					culture = mboala
+					culture = mazava
+					culture = fomarati
+					culture = vyoronsi
+					culture = zohebidi
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				OR = {
+					culture = amezatany
+					culture = mboala
+					culture = mazava
+					culture = fomarati
+					culture = vyoronsi
+					culture = zohebidi
+				}
+			}
+		}
+		provinces_to_highlight = {
+			has_terrain = marsh 
+			OR = {
+				area = ashamad_mabeed_area
+				area = ssippansek_area
+				area = zulbur_area
+				area = ishyaga_area
+				area = yassa_tara_area
+				area = teranak_area
+				area = nazhni_tressik_area
+			}
+		}
+		effect = {
+			set_global_flag = vizemby_farmers_moved_flag
+			every_owned_province = {
+				limit = {
+					has_terrain = marsh 
+					OR = {
+						area = ashamad_mabeed_area
+						area = ssippansek_area
+						area = zulbur_area
+						area = ishyaga_area
+						area = yassa_tara_area
+						area = teranak_area
+						area = nazhni_tressik_area
+					}
+					trade_goods = grain
+				}
+				add_halfling_minority_size_effect = yes 
+				add_permanent_province_modifier = {
+					name = dodd_vizembi_farming_newcommers_modifier	#modifier giving -5% dev cost, +3 unrest and +15% goods produced modifier, yet to be implemented
+					duration = 3650	#10 years
+				}
+			}
+			random_owned_province = {
+				limit = {
+					development = 15
+					OR = {
+						culture = amezatany
+						culture = mboala
+						culture = mazava
+						culture = fomarati
+						culture = vyoronsi
+						culture = zohebidi
+					}
+				}
+				add_random_development = -5
+			}
+			random_owned_province = {
+				limit = {
+					development = 15
+					OR = {
+						culture = amezatany
+						culture = mboala
+						culture = mazava
+						culture = fomarati
+						culture = vyoronsi
+						culture = zohebidi
+					}
+				}
+				add_random_development = -5
+			}
+			random_owned_province = {
+				limit = {
+					development = 15
+					OR = {
+						culture = amezatany
+						culture = mboala
+						culture = mazava
+						culture = fomarati
+						culture = vyoronsi
+						culture = zohebidi
+					}
+				}
+				add_random_development = -5
+			}
+		}
+	}
+	dodd_dyke_checker = {
+		potential = {
+			any_owned_province = { has_province_modifier = dodd_dykes_build_modifier }
+			NOT = { mission_completed = dodd_land_reclamation }
+		}
+		allow = {
+			always = yes 
+		}
+		provinces_to_highlight = {
+			has_province_modifier = dodd_dykes_build_modifier
+		}
+		effect = {
+		
+		}
+	}
+	dodd_pump_checker = {
+		potential = {
+			any_owned_province = { has_province_modifier = dodd_pumps_installed_modifier }
+			NOT = { mission_completed = dodd_land_reclamation }
+		}
+		allow = {
+			always = yes 
+		}
+		provinces_to_highlight = {
+			has_province_modifier = dodd_pumps_installed_modifier
+		}
+		effect = {
+		
+		}
+	}
+}
+
