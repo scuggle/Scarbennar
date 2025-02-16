@@ -1,0 +1,313 @@
+dodd_foundry_expansions = {
+	trade_value_modifier = 0.33
+	trade_goods_size_modifier = 0.1
+	local_development_cost = -0.25
+}
+dodd_grand_foundry_modifier = {
+	artillery_cost = -0.05
+}
+dodd_buzzin_capital_modifier = {
+	trade_goods_size_modifier = 0.17
+	local_manpower_modifier = 0.2
+	province_trade_power_modifier = 0.5
+}
+dodd_city_planning_modifier = {
+	development_cost = -0.025
+	build_cost = -0.05
+}
+dodd_city_of_qasri_abeesooyinka_modifier = {
+	local_development_cost = -0.1
+	local_sailors_modifier = 1
+	local_ship_cost = -0.1
+}
+dodd_city_of_nazhni_modifier = {
+	local_development_cost = -0.1
+	local_ship_cost = -0.1
+	province_trade_power_modifier = 1
+}
+dodd_city_of_gokadas_soro_modifier = {
+	local_development_cost = -0.1
+	local_manpower_modifier = 1
+	province_trade_power_modifier = 0.5
+}
+dodd_city_of_kethenkad_modifier = {
+	local_development_cost = -0.15
+	trade_goods_size_modifier = 0.5
+	trade_value_modifier = 0.25
+}
+dodd_city_of_khatynsek_modifier = {
+	local_development_cost = -0.1
+	local_manpower_modifier = 1
+	trade_goods_size_modifier = 0.5
+}
+dodd_city_of_yasa_modifier = {
+	local_development_cost = -0.1
+	province_trade_power_modifier = 1
+	local_manpower_modifier = 0.75
+}
+dodd_city_of_ishyaga_modifier = {
+	local_development_cost = -0.15
+	trade_value_modifier = 0.25
+	local_institution_spread = 0.5
+}
+dodd_land_reclamation_modifier = {
+	local_development_cost = -0.25
+	trade_goods_size_modifier = 0.33
+}
+dodd_super_fertilizer_agriculture_modifier = {
+	trade_goods_size_modifier = 2.5
+	local_development_cost = -0.05
+}
+dodd_tree_plantations_modifier = {
+	trade_value_modifier = 0.1
+	trade_goods_size_modifier = 0.5
+}
+dodd_merchant_navy_modifier = {
+	mercantilism_cost = -0.2
+}
+dodd_a_mighty_fleet_modifier = {
+	naval_morale = 0.05
+}
+dodd_the_triple_city = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.25
+	local_manpower_modifier = 0.25
+	province_trade_power_modifier = 0.5
+}
+polder_gnomes_recruiting_irregulars_modifier = {
+	global_manpower_modifier = -0.1
+	mercenary_manpower = -0.15
+	yearly_army_professionalism = 0.01
+	infantry_power = 0.05
+}
+dodd_gnomes_recruiting_irregulars_modifier = {
+	mercenary_manpower = 0.25
+	mercenary_discipline = 0.05
+	mercenary_cost = -0.1
+}
+dodd_the_three_polders_modifier = {
+	mercenary_manpower = 0.25
+}
+dodd_growing_polder_modifier = {
+	core_creation = -0.25
+}
+dodd_the_five_polders_modifier = {
+	reduced_liberty_desire = 10
+	diplomatic_upkeep = 1
+}
+dodd_closer_with_lizardfolk_modifier = {
+	reduced_liberty_desire = 5
+	mercenary_cost = -0.1
+}
+polder_closer_with_gnomes_modifier = {
+	fire_damage = 0.05
+	yearly_army_professionalism = 0.0025
+}
+dodd_subjugating_lizard_folk_modifier = {
+	mercenary_manpower = 0.1
+	mercenary_cost = -0.05
+	development_cost = -0.05
+}
+dodd_expeditions_modifier = {
+	colonists = 1
+	prestige = 0.5
+	trade_efficiency = -0.05
+}
+dodd_genie_relics_modifier = {
+	trade_goods_size = 0.5
+	trade_value_modifier = 0.1
+}
+dodd_taychend_imports_modifier = {
+	artificers_influence_modifier = 0.1
+	artificers_loyalty_modifier = 0.05
+}
+dodd_taste_for_more_modifier = {
+	province_warscore_cost = -0.1
+	core_creation = -0.1
+	global_colonial_growth = 25
+}
+dodd_rakaty_trade_centre_modifier = {
+	province_trade_power_modifier = 0.5
+	local_development_cost = -0.05
+}
+dodd_colonization_modifier = {
+	global_colonial_growth = 50
+	range = 0.33
+}
+dodd_colonial_development_effort_modifier = {
+	local_development_cost = -0.075
+	local_state_maintenance_modifier = 0.5
+}
+dodd_wood_influx_modifier = {
+	global_ship_cost = -0.1
+}
+#dodd_taychend_imports_modifier = {	#needs to give cap as well still
+#	artificers_loyalty_modifier = 0.05
+#	artificers_influence_modifier = 0.1
+#}
+dodd_well_developed_deep_effelai_colony_modifier = {
+	prestige = 0.5
+	mercantilism_cost = -0.05
+}
+dodd_well_developed_colony_modifier = {
+	global_trade_goods_size_modifier = 0.1
+	prestige = 1
+}
+dodd_well_developed_eastern_effelai_colony_modifier = {
+	prestige = 0.5
+	mercantilism_cost = -0.1
+}
+dodd_irregular_recruitment_spree = {
+	manpower_recovery_speed = 0.25
+	mercenary_cost = -0.1
+	mercenary_manpower = 0.2
+}
+dodd_dykes_build_modifier = {
+	local_state_maintenance_modifier = 0.25
+	defensiveness = 0.1
+	local_friendly_movement_speed = 0.25
+}
+dodd_pumps_installed_modifier = {
+	local_state_maintenance_modifier = 0.1
+	local_monthly_devastation = -0.05
+}
+dodd_limited_gnomes_in_army_modifier = {
+	global_manpower_modifier = -0.25
+	land_forcelimit_modifier = -0.05
+	mercenary_manpower = 0.2
+	mercenary_cost = -0.05	
+}
+dodd_lizardfolk_in_navy_modifier = {
+	global_manpower_modifier = -0.05
+	global_sailors_modifier = 0.1
+	naval_morale = -0.1
+}
+dodd_army_left_out_to_dry_modifier = {
+	global_manpower_modifier = -0.2
+	land_forcelimit_modifier = -0.05
+	land_morale = -0.05
+	naval_forcelimit_modifier = 0.05
+	naval_morale = 0.1
+}
+dodd_quality_over_quantity_modifier = {
+	global_manpower_modifier = -0.25
+	land_forcelimit_modifier = -0.1
+	land_morale = 0.05
+	discipline = 0.05
+	infantry_power = 0.1
+	global_regiment_cost = 0.5
+}
+dodd_gnomish_officers_modifier = {
+	allowed_rajput_fraction = 0.05
+	fire_damage = 0.1
+}
+dodd_gnomish_gnomish_elite_core_modifier = {
+	allowed_rajput_fraction = 0.075
+	fire_damage = 0.1
+}
+dodd_gnomish_gnomish_elite_core_modifier2 = {
+	is_rajput_modifier = yes 
+	discipline = 0.05
+	fire_damage = 0.1
+}
+dodd_lizardfolk_in_army_modifier = {
+	shock_damage = 0.1
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.05
+}
+dodd_lizardfolk_navy_modifier = {
+	global_sailors_modifier = 0.25
+	has_marines = yes
+	allowed_marine_fraction = 0.05
+}
+dodd_gnomes_free_for_civil_affairs_modifier = {
+	development_cost = -0.05
+	technology_cost = -0.1
+}
+dodd_gnomish_captains = {
+	leader_naval_fire = 1
+	number_of_cannons_modifier = 0.05
+}
+dodd_gnomes_free_for_civil_affairs_modifier_2 = {
+	development_cost = -0.075
+	technology_cost = -0.1
+	global_institution_spread = 0.2
+}
+dodd_lizardfolk_marines_modifier = {
+	global_sailors_modifier = 0.15
+	sailors_recovery_speed = 0.1
+	allowed_marine_fraction = 0.1
+}
+dodd_lizardfolk_marines_modifier2 = {
+	is_marine_modifier = yes 
+	shock_damage = 0.05
+	shock_damage_received = -0.1
+	fire_damage_received = -0.1
+}
+dodd_mixed_marines_modifier = {
+	global_sailors_modifier = 0.25
+	allowed_marine_fraction = 0.15
+}
+dodd_mixed_marines_modifier2 = {
+	is_marine_modifier = yes 
+	fire_damage = 0.15
+}
+dodd_army_abandonded_modifier = {
+	global_manpower_modifier = -0.5
+	land_forcelimit_modifier = -0.2
+	land_morale = -0.1
+}
+dodd_navy_focus_modifier = {
+	naval_morale = 0.1
+	naval_forcelimit_modifier = 0.25
+	navy_tradition = 1
+	global_sailors_modifier = 0.25
+}
+dodd_marines_not_left_behind_modifier = {
+	is_marine_modifier = yes 
+	land_morale = 0.15
+}
+dodd_sustainable_fertilizer_agriculture_modifier = {
+	trade_goods_size_modifier = 0.33
+	local_development_cost = -0.075
+}
+dodd_fertile_dust_imports_modifier = {
+	trade_efficiency = -0.05
+	global_trade_goods_size_modifier = 0.05
+}
+dodd_fertile_dust_exports_modifier = {
+	development_cost = 0.025
+	global_trade_goods_size_modifier = -0.1
+	trade_efficiency = 0.05
+}
+dod_fertile_dust_production_modifier = {
+	global_trade_goods_size_modifier = 0.075
+}
+dodd_slashing_modifier = {
+	local_development_cost = -0.025
+	global_monthly_devastation = 1
+}
+dodd_permanent_fertilizer_production_modifier = {
+	global_trade_goods_size_modifier = 0.05
+}
+dodd_soil_depletion_modifier = {
+	trade_goods_size_modifier = -0.75
+}
+dodd_soil_depletion_adaptation_modifier = {
+	trade_value_modifier = 0.1
+}
+dodd_well_developed_taychend_colony_modifier = {	#2 artificer cap
+	artificers_loyalty_modifier = 0.05
+	prestige = 0.5
+}
+dodd_regular_irregulars_modifier = {
+	mercenary_manpower = 0.25
+	allow_mercenary_drill = yes 
+	allow_mercenaries_to_split = yes 
+	global_manpower_modifier = -0.5
+}
+dodd_regular_irregulars_modifier2 = {
+	is_mercenary_modifier = yes 
+	land_morale = 0.15
+	fire_damage = 0.1
+}
