@@ -38,3 +38,106 @@ merc_nzeri_amazons = {
 		female_advisor_chance = 1.0
 	}
 }
+dodd_merc_company1 = {
+    regiments_per_development = 0.2
+	home_province = 5951	#yasa
+	cavalry_weight = 0
+    artillery_weight = 0
+	sprites = { lizardfolk_sprite_pack }	#check this somehow?
+    trigger = {
+		has_country_flag = dodd_merc_company_flag1
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	cost_modifier = 0.9
+	modifier = {
+		shock_damage_received = -0.15
+		land_fire = 0.1
+	}
+}
+dodd_merc_company2 = {
+    regiments_per_development = 0.2
+	home_province = 5949	#gokadas soros
+	cavalry_weight = 0
+    artillery_weight = 0
+	sprites = { lizardfolk_sprite_pack }	#check this somehow?
+    trigger = {
+		has_country_flag = dodd_merc_company_flag2
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	cost_modifier = 0.66
+	modifier = {
+		shock_damage_received = -0.15
+		land_fire = 0.15
+	}
+}
+dodd_merc_company3 = {
+    regiments_per_development = 0.2
+	home_province = 6033	#doddcodds
+	cavalry_weight = 0.1
+    artillery_weight = 0
+	cavalry_cap = 2
+	sprites = { lizard_sprite_pack }	#check this somehow?
+    trigger = {
+		has_country_flag = dodd_merc_company_flag3
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	cost_modifier = 0.75
+	modifier = {
+		shock_damage_received = -0.1
+		land_fire = 0.15
+	}
+}
+dodd_merc_company4 = {
+    regiments_per_development = 0.1
+	home_province = 6033	#doddcodds
+	cavalry_weight = 0.1
+    artillery_weight = 0
+	cavalry_cap = 4
+	sprites = { lizardfolk_sprite_pack }	#check this somehow?
+    trigger = {
+		has_country_flag = dodd_mercenary_company_flag4
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	cost_modifier = 1
+	modifier = {
+		shock_damage_received = -0.15
+		land_fire = 0.15
+		infantry_power = 0.1
+	}
+}
+dodd_merc_company5 = {
+    regiments_per_development = 0.15
+	home_province = 6033	#doddcodds
+	cavalry_weight = 0.1
+    artillery_weight = 0
+	cavalry_cap = 4
+	sprites = { lizardfolk_sprite_pack }	#check this somehow?
+    trigger = {
+		has_country_flag = dodd_mercenary_company_flag4
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	cost_modifier = 1
+	modifier = {
+		shock_damage_received = -0.15
+		land_fire = 0.15
+		infantry_power = 0.1
+	}
+}
+dodd_merc_company6 = {
+    regiments_per_development = 0.15
+	home_province = 6033	#doddcodds
+	cavalry_weight = 0.1
+    artillery_weight = 0
+	cavalry_cap = 4
+	sprites = { lizardfolk_sprite_pack }	#check this somehow?
+    trigger = {
+		has_country_flag = dodd_mercenary_company_flag4
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	cost_modifier = 1
+	modifier = {
+		shock_damage_received = -0.15
+		land_fire = 0.15
+		infantry_power = 0.1
+	}
+}
