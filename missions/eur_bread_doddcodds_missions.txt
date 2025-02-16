@@ -1,0 +1,1534 @@
+doddcods_left_branch = {
+	slot = 1
+ 	generic = no
+ 	ai = yes
+ 	potential = {
+ 		NOT = { has_country_flag = chose_generic_mt }
+ 		tag = EC9	#Doddcodds 
+ 		NOT = { map_setup = map_setup_random }
+ 	}
+	dodd_expanding_the_foundries = {
+		position = 1
+		icon = mission_conquer_5_states
+		required_missions = { }
+		trigger = {
+			trade_goods_produced_amount  = {
+ 				trade_goods = naval_supplies
+ 				amount = 3
+ 			}
+			OR = {
+				trade_goods_produced_amount  = {
+					trade_goods = iron
+					amount = 2
+				}
+				trade_goods_produced_amount  = {
+					trade_goods = copper
+					amount = 2
+				}
+			}
+			6033 = {	#doddcodds
+				base_production = 5
+				has_great_project = {
+					type = foundries_of_doddcodds
+					tier = 2
+				}
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6033	#doddcodds
+				trade_goods = iron 
+				trade_goods = copper
+				trade_goods = naval_supplies
+			}
+		}
+		effect = {
+			6033 = {	#doddcodds
+				add_permanent_province_modifier = {
+					name = dodd_foundry_expansions	#modifier giving 33% trade value, 10% goods produced and -25% dev cost
+					duration = -1	#permanent
+				}
+			}
+			add_country_modifier = {
+				name = dodd_grand_foundry_modifier	#modifier giving -5% artillery cost
+				duration = -1	#permanent
+			}
+		}
+	}
+	dodd_a_worthy_capital = {
+		position = 2
+		icon = mission_conquer_5_states
+		required_missions = { dodd_expanding_the_foundries }
+		trigger = {
+			6033 = {	#doddcodds
+				development = 35	#used to be higher
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 6033	#doddcodds
+		}
+		effect = {
+			6033 = {	#doddcodds
+				add_permanent_province_modifier = {
+					name = dodd_buzzin_capital_modifier	#modifier giving 17% trade value, 20% manpower and 50% trade power
+					duration = -1	#permanent
+				}
+			}
+			add_country_modifier = {
+				name = dodd_city_planning_modifier	#modifier giving -2.5% dev cost and -5% construction cost
+				duration = 182500	#50 years
+			}
+		}
+	}
+	dodd_the_seven_cities = {
+		position = 5
+		icon = mission_conquer_5_states
+		required_missions = { dodd_a_worthy_capital }
+		trigger = {
+			6060 = {	#qasri abeesooyinka
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 30
+			}
+			5941 = {	#nazhni
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 30
+			}
+			5949 = {	#gokadas soro
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 25
+			}
+			6031 = {	#kethenkad
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 25
+			}
+			6007 = {	#khatynsek
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 25
+			}
+			5951 = {	#yasa
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 25
+			}
+			5984 = {	#ishyaga
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 25
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						province_id = 6060
+						province_id = 5941
+					}
+					OR = {
+						NOT = { development = 30 }
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					OR = {
+						province_id = 5949
+						province_id = 6031
+						province_id = 6007
+						province_id = 5951
+						province_id = 5984
+					}
+					OR = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						NOT = { development = 25 }
+					}
+				}
+			}
+			
+		}
+		effect = {
+			6060 = {
+				add_province_modifier = {
+					name = dodd_city_of_qasri_abeesooyinka_modifier	#modifier giving -10% dev cost, 100% sailors and -10 ship build cost
+					duration = -1	#permanent
+				}
+			}
+			5941 = {
+				add_province_modifier = {
+					name = dodd_city_of_nazhni_modifier	#modifier giving -10% dev cost, -10% ship build cost and 100% trade power
+					duration = -1	#permanent
+				}
+			}
+			5949 = {
+				add_province_modifier = {
+					name = dodd_city_of_gokadas_soro_modifier	#modifier giving -10% dev cost, 100% manpower modifier and 50% trade power
+					duration = -1	#permanent
+				}
+			}
+			6031 = {
+				add_province_modifier = {
+					name = dodd_city_of_kethenkad_modifier	#modifier giving -15% dev cost, 50% goods produced and 25% trade value modifier	
+					duration = -1	#permanent
+				}
+				if = {
+					limit = {
+						NOT = { 
+							OR = {
+								has_gnomish_majority_trigger = yes
+								has_large_gnomish_minority_trigger = yes
+							}
+						}
+					}
+					add_gnomish_minority_size_effect = yes
+				}
+			}
+			6007 = {
+				add_province_modifier = {
+					name = dodd_city_of_khatynsek_modifier	#modifier giving -10% dev cost, 100% manpower and 50% goods produced
+					duration = -1	#permanent
+				}
+			}
+			5951 = {	
+				add_province_modifier = {
+					name = dodd_city_of_yasa_modifier	#modifier giving -10% dev cost, 100% trade power, and 75% manpower
+					duration = -1	#permanent
+				}
+				if = {
+					limit = {
+						owner = {
+							is_vassal = yes 
+						}
+					}
+					owner = {
+						set_country_flag = dodd_merc_company_flag1	#merc company 
+						overlord = {
+							set_country_flag = dodd_merc_company_flag1	#merc company 
+						}
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							is_vassal = no
+						}
+					}
+					owner = {
+						set_country_flag = dodd_merc_company_flag1
+					}
+				}
+			}
+			5984 = {
+				add_province_modifier = {
+					name = dodd_city_of_ishyaga_modifier	#modifier giving -15% dev cost, 25% trade value modifier, 50% institution spread
+					duration = -1	#permanent
+				}
+				change_trade_goods = paper
+			}
+		}
+	}
+	dodd_land_reclamation = {
+		position = 6
+		icon = mission_conquer_5_states 
+		required_missions = { dodd_the_seven_cities }
+		trigger = {
+			ashamad_mabeed_area = {
+				type = all 
+				OR = {
+					NOT = { has_terrain = marsh }
+					has_province_modifier = dodd_pumps_installed_modifier
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ssippansek_area = {
+				type = all 
+				OR = {
+					NOT = { has_terrain = marsh }
+					has_province_modifier = dodd_pumps_installed_modifier
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zulbur_area = {
+				type = all 
+				OR = {
+					NOT = { has_terrain = marsh }
+					has_province_modifier = dodd_pumps_installed_modifier
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ishyaga_area = {
+				type = all 
+				OR = {
+					NOT = { has_terrain = marsh }
+					has_province_modifier = dodd_pumps_installed_modifier
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yassa_tara_area = {
+				type = all 
+				OR = {
+					NOT = { has_terrain = marsh }
+					has_province_modifier = dodd_pumps_installed_modifier
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			teranak_area = {
+				type = all 
+				OR = {
+					NOT = { has_terrain = marsh }
+					has_province_modifier = dodd_pumps_installed_modifier
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			nazhni_tressik_area = {
+				type = all 
+				OR = {
+					NOT = { has_terrain = marsh }
+					has_province_modifier = dodd_pumps_installed_modifier
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_estate_privilege = artifice_invention_mechanim_workforce
+			adm_power = 150
+			treasury = 1000
+		}
+		provinces_to_highlight = {
+			has_terrain = marsh 
+			OR = {
+				area = ashamad_mabeed_area
+				area = ssippansek_area
+				area = zulbur_area
+				area = ishyaga_area
+				area = yassa_tara_area
+				area = teranak_area
+				area = nazhni_tressik_area
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {	
+					has_terrain = marsh 
+					OR = {
+						area = ashamad_mabeed_area
+						area = ssippansek_area
+						area = zulbur_area
+						area = ishyaga_area
+						area = yassa_tara_area
+						area = teranak_area
+						area = nazhni_tressik_area
+					}
+				}
+				add_permanent_province_modifier = {
+					name = dodd_land_reclamation_modifier	#modifier giving -25% dev cost and +33% goods produced
+					duration = -1	#permanent
+				}
+				if = {
+					limit = {
+						NOT = { trade_goods = grain }
+						#not specific provinces
+					}
+					change_trade_goods = grain
+				}
+			}
+			add_adm_power = -150
+			add_treasury = -1000
+		}
+	}
+	dodd_dusty_fertilizer = {
+		position = 7
+		icon = mission_conquer_5_states
+		required_missions = { dodd_land_reclamation }
+		trigger = {
+			OR = {
+				has_country_modifier = dodd_fertile_dust_imports_modifier	
+				has_country_modifier = dod_fertile_dust_production_modifier 
+			}
+			has_estate_privilege = artifice_invention_growth_beans
+			has_estate_privilege = artifice_invention_gene_food_cultivation
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = cocoa
+						trade_goods = coffee
+						trade_goods = naval_supplies
+					}
+					NOT = { province_id = 6033 }	#doddcodds
+					has_climate = tropical
+				}
+				add_permanent_province_modifier = {	#event can fire for soil depletion
+					name = dodd_super_fertilizer_agriculture_modifier	#+250% goods produced and -5% dev cost
+					duration = 9125	#25 years
+				}
+				set_province_flag = dodd_super_fertilizer_flag
+			}
+		}
+	}
+	
+	dodd_sustainable_fertilizer = {
+		position = 8
+		icon = mission_conquer_5_states
+		required_missions = { dodd_dusty_fertilizer }
+		trigger = {
+			OR = {
+				has_country_modifier = dodd_permanent_fertilizer_production_modifier
+				has_estate_privilege = artifice_everlasting_fertilizer
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = cocoa
+						trade_goods = coffee
+						trade_goods = naval_supplies
+					}
+					NOT = { province_id = 6033 }	#doddcodds
+					has_climate = tropical
+				}
+				add_permanent_province_modifier = {	
+					name = dodd_sustainable_fertilizer_agriculture_modifier	#+33% goods produced and -7.5% dev cost, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+}
+doddcods_inner_left_branch = {
+	slot = 2
+ 	generic = no
+ 	ai = yes
+ 	potential = {
+ 		NOT = { has_country_flag = chose_generic_mt }
+ 		tag = EC9	#Doddcodds 
+ 		NOT = { map_setup = map_setup_random }
+ 	}
+	dodd_tree_plantations = {	#has a decision
+		position = 2
+		icon = mission_conquer_5_states
+		required_missions = { dodd_expanding_the_foundries }
+		trigger = {
+			OR = {
+				AND = {
+					trade_goods_produced_amount  = {
+						trade_goods = naval_supplies
+						amount = 20		#used to be 24
+					}
+					num_of_owned_provinces_with = {
+						value = 4
+						trade_goods = naval_supplies
+					}
+				}
+				any_subject_country = {
+					trade_goods_produced_amount  = {
+						trade_goods = naval_supplies
+						amount = 20
+					}
+					num_of_owned_provinces_with = {
+						value = 3
+						trade_goods = naval_supplies
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = naval_supplies
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				owner = {
+					OR = {
+						tag = ec9
+						is_subject_of = ec9
+					}
+					NOT = {
+						trade_goods_produced_amount  = {
+							trade_goods = naval_supplies
+							amount = 20
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					trade_goods_produced_amount  = {
+						trade_goods = naval_supplies
+						amount = 20
+					}
+					num_of_owned_provinces_with = {
+						value = 4
+						trade_goods = naval_supplies
+					}
+				}
+				every_owned_province = {
+					limit = {
+						trade_goods = naval_supplies
+						NOT = { province_id = 6033 }	#doddcodds
+					}
+					add_province_modifier = {
+						name = dodd_tree_plantations_modifier	#modifier giving +10% trade value and +50% goods produced, yet to be localized
+						duration = -1	#permanent
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_subject_country = {
+						trade_goods_produced_amount  = {
+							trade_goods = naval_supplies
+							amount = 20
+						}
+						num_of_owned_provinces_with = {
+							value = 3
+							trade_goods = naval_supplies
+						}
+					}
+				}
+				random_subject_country = {
+					limit = {
+						trade_goods_produced_amount  = {
+							trade_goods = naval_supplies
+							amount = 20
+						}
+						num_of_owned_provinces_with = {
+							value = 3
+							trade_goods = naval_supplies
+						}
+					}
+					every_owned_province = {
+						limit = {
+							trade_goods = naval_supplies
+						}
+						add_province_modifier = {
+							name = dodd_tree_plantations_modifier
+							duration = -1	#permanent
+						}
+					}
+				}
+			}
+		}
+	}
+	dodd_a_merchant_navy = {
+		position = 3
+		icon = mission_conquer_5_states
+		required_missions = { dodd_tree_plantations }
+		trigger = {
+			num_of_light_ship = 120
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_merchant_navy_modifier	#modifier giving -20% cost to promote mercantlism, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+	}
+	dodd_mighty_fleet = {
+		position = 4
+		icon = mission_conquer_5_states
+		required_missions = { dodd_a_merchant_navy }
+		trigger = {
+			num_of_heavy_ship = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_a_mighty_fleet_modifier	#modifier giving 5% naval morale, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+	}
+	dodd_iron_fleet = {
+		position = 5
+		icon = mission_conquer_5_states
+		required_missions = { dodd_mighty_fleet }
+		trigger = {
+			
+		}
+	}
+	dodd_the_triple_city = {
+		position = 5
+		icon = mission_conquer_5_states
+		required_missions = { dodd_the_seven_cities }
+		trigger = {	#6031
+			6032 = {
+				development = 30
+				has_gnomish_majority_trigger = yes
+				owned_by = ROOT
+			}
+			6031 = {
+				development = 30
+				has_gnomish_majority_trigger = yes
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6031
+				province_id = 6032
+				province_id = 6033
+			}
+		}
+		effect = {
+			6031 = {
+				add_permanent_province_modifier = {
+					name = dodd_the_triple_city	#modifier giving -10% dev cost, 25% production effiency, 25% manpower and 50% trade power, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+			6032 = {
+				add_permanent_province_modifier = {
+					name = dodd_the_triple_city	#modifier giving -10% dev cost, 25% production effiency, 25% manpower and 50% trade power
+					duration = -1	#permanent
+				}
+			}
+			6033 = {
+				add_permanent_province_modifier = {
+					name = dodd_the_triple_city	#modifier giving -10% dev cost, 25% production effiency, 25% manpower and 50% trade power
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+}
+doddcods_inner_branch = {
+	slot = 3
+ 	generic = no
+ 	ai = yes
+ 	potential = {
+ 		NOT = { has_country_flag = chose_generic_mt }
+ 		tag = EC9	#Doddcodds 
+ 		NOT = { map_setup = map_setup_random }
+ 	}
+	dodd_an_irregular_army = {
+		position = 4
+		icon = mission_conquer_5_states
+		required_missions = { dodd_the_five_polders }
+		trigger = {
+			any_subject_country = {
+				culture_group = lizardfolk
+				land_forcelimit = 60
+				army_size_percentage = 0.8
+			}
+			all_subject_country = {
+				OR = {
+					AND = {
+						land_forcelimit = 30
+						army_size_percentage = 0.8
+					}
+					NOT = {
+						culture_group = lizardfolk
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+		
+		}
+		effect = {
+			random_subject_country = {
+				limit = {
+					culture_group = lizardfolk
+					land_forcelimit = 60
+					army_size_percentage = 0.8
+				}
+				add_country_modifier = {
+					name = polder_gnomes_recruiting_irregulars_modifier	#modifier giving -10% manpower modifier, -15% merc manpower, +1 yearly proffesionalism and 5% infantry combat ability, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+			add_country_modifier = {
+				name = dodd_gnomes_recruiting_irregulars_modifier	#modifier giving 25% merc manpower, 5% merc discipline and -10% merc cost, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+	}
+	dodd_lizardkin_regulars = {
+		position = 5
+		icon = mission_conquer_5_states
+		required_missions = { dodd_an_irregular_army }
+		trigger = {
+			land_forcelimit = 100
+			army_professionalism = 0.5
+			num_of_mercenaries = 50
+			any_subject_country = {
+				has_country_modifier = polder_gnomes_recruiting_irregulars_modifier	#has a decision
+			}
+		}
+		provinces_to_highlight = {
+			owner = {
+				has_country_modifier = polder_gnomes_recruiting_irregulars_modifier
+			}
+		}
+		effect = {
+			country_event = {
+				id = dodd_flavour_events.9
+			}
+			remove_country_modifier = dodd_gnomes_recruiting_irregulars_modifier
+			add_country_modifier = {
+				name = dodd_recruiting_lizardfolk_regulars_modifier	#modifier giving 25% manpower modifier, -10% unit cost and +1% yearly proff, yet to be implemented, maybe nerf
+				duration = -1	#permanent
+			}
+		}
+	}
+	dodd_draining_the_swamp = {
+		position = 6
+		icon = mission_conquer_5_states
+		trigger = {
+		
+		}
+		provinces_to_highlight = {
+		
+		}
+		effect = {
+		
+		}
+	}
+	dodd_eastern_effelai_development = {
+		position = 7
+		icon = mission_conquer_5_states
+		required_missions = { dodd_eastern_effelai }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 30
+				OR = {
+					region = east_effelai_region
+					region = dry_coast_region
+				}
+				owner = {
+					is_colonial_nation_of = ROOT
+				}
+				development = 20
+				num_of_buildings_in_province = 3
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = east_effelai_region
+				region = dry_coast_region
+			}
+			OR = {
+				NOT = { development = 20 }
+				NOT = { num_of_buildings_in_province = 3 }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_well_developed_eastern_effelai_colony_modifier	#modifier giving 0.5 yearly prestige and -10% cost to promote mercantilism, yet to be localized
+				duration = -1	#permanent
+			}
+			add_mercantilism = 5
+			every_country = {
+				limit = {
+					is_colonial_nation_of = ROOT 
+					capital_scope  = {
+						OR = {
+							region = east_effelai_region
+							region = dry_coast_region
+						}
+					}
+					num_of_owned_provinces_with = {
+						value = 10
+						OR = {
+							region = east_effelai_region
+							region = dry_coast_region
+						}
+						development = 20
+						num_of_buildings_in_province = 3
+					}
+				}
+				add_country_modifier = {
+					name = dodd_well_developed_colony_modifier	#modifier giving 1 yearly prestige, 10% goods produced
+					duration = -1	#permanent
+				}
+				add_mercantilism = 5
+			}
+		}
+	}
+	dodd_taychend_development = {
+		position = 8
+		required_missions = { dodd_taychend }
+		trigger = {
+			any_subject_country = {
+				num_of_owned_provinces_with = {
+					value = 10
+					superregion = taychend_superregion
+					development = 25
+				}
+				trade_goods_produced_amount = {
+					trade_goods = tea 
+					amount = 10
+				}
+				trade_goods_produced_amount = {
+					trade_goods = sugar 
+					amount = 10
+				}
+				trade_goods_produced_amount = {
+					trade_goods = precursor_relics 
+					amount = 6
+				}
+			}
+		}
+		provinces_to_highlight = {
+			superregion = taychend_superregion
+			NOT = { development = 25 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_well_developed_taychend_colony_modifier	#modifier giving 0.5 prestige, 5% artificer loyalty modifier, +2 artificer cap, yet to be localized
+				duration = -1	#permanent
+			}
+			every_subject_country = {
+				limit = {
+					num_of_owned_provinces_with = {
+					value = 10
+					superregion = taychend_superregion
+					development = 25
+					}
+					trade_goods_produced_amount = {
+						trade_goods = tea 
+						amount = 10
+					}
+					trade_goods_produced_amount = {
+						trade_goods = sugar 
+						amount = 10
+					}
+					trade_goods_produced_amount = {
+						trade_goods = precursor_relics 
+						amount = 6
+					}
+				}
+				add_country_modifier = {
+					name = dodd_well_developed_colony_modifier
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	dodd_mushrooms = {
+		position = 9
+		required_missions = { dodd_amadia }
+		icon = mission_conquer_5_states
+		trigger = {
+			any_subject_country = {
+				trade_goods_produced_amount = {
+					trade_goods = fungi 
+					amount = 20
+				}
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = fungi
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					any_owned_province = {
+						trade_goods = fungi
+					}
+				}
+				add_country_modifier = {
+					name = dodd_shroom_sales2	#modifier giving -2 dip rep and -5% trade effiency, yet to be implemented
+					duration = 18250	#50 years
+				}
+				every_owned_province = {
+					limit = {
+						trade_goods = fungi
+					}
+					add_province_modifier = {
+						name = dodd_shroom_sales	#modifier giving 25% trade value modifier, yet to be implemented
+						duration = 18250	#50 years
+					}
+				}
+			}
+			add_country_modifier = {
+				name = dodd_shroom_sales2	#modifier giving -2 dip rep and -5% trade effiency, yet to be implemented
+				duration = 18250	#50 years
+			}
+		}
+	}
+}
+doddcods_inner_right_branch = {
+	slot = 4
+ 	generic = no
+ 	ai = yes
+ 	potential = {
+ 		NOT = { has_country_flag = chose_generic_mt }
+ 		tag = EC9	#Doddcodds 
+ 		NOT = { map_setup = map_setup_random }
+ 	}
+	dodd_the_three_polders = {
+		position = 2
+		icon = mission_conquer_5_states
+		required_missions = { dodd_tightening_the_bonds }
+		trigger = { 
+			ED0 = {
+				num_of_owned_provinces_with = {
+					value = 10
+					is_core = ED0
+				}
+			}
+			ED1 = {
+				num_of_owned_provinces_with = {
+					value = 10
+					is_core = ED1
+				}
+			}
+			ED2 = {
+				num_of_owned_provinces_with = {
+					value = 10
+					is_core = ED2
+				}
+			}
+			NOT = {
+				any_subject_country = {
+				liberty_desire = 33
+				}
+			}
+		}
+		
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = { owned_by = ROOT }
+			NOT = { 
+				owner = {
+					liberty_desire = 33
+					num_of_owned_provinces_with = {
+						value = 10
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_the_three_polders_modifier	#modifier giving 25% merc manpower
+				duration = -1	#permanent
+			}
+			ED0 = {
+				add_country_modifier = {
+					name = dodd_growing_polder_modifier	#modifier giving -25% core creation cost
+					duration = 7300	#20 years
+				}
+			}
+			ED1 = {
+				add_country_modifier = {
+					name = dodd_growing_polder_modifier	#modifier giving -25% core creation cost
+					duration = 7300	#20 years
+				}
+			}
+			ED2 = {
+				add_country_modifier = {
+					name = dodd_growing_polder_modifier	#modifier giving -25% core creation cost
+					duration = 7300	#20 years
+				}
+			}
+		}
+	}
+	dodd_the_five_polders = {
+		position = 3
+		icon = mission_conquer_5_states
+		required_missions = { dodd_the_three_polders }
+		
+		trigger = {
+			calc_true_if  = {
+				all_subject_country = {
+					num_of_owned_provinces_with = {
+						value = 10
+						culture_group = lizardfolk
+						#is_core = ROOT
+					}
+					culture_group = lizardfolk
+					NOT = { liberty_desire = 33 }
+				}
+				amount = 5
+			}
+			
+		}
+		provinces_to_highlight = {
+		
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_the_five_polders_modifier	#modifier giving -10% liberty desire of subjects and +1 dip relations
+				duration = -1	#permanent
+			}
+			set_country_flag = dodd_merc_company_flag3	#merc company
+			every_subject_country = {
+				limit = {
+					NOT = {
+						OR = {
+							TAG = ED0
+							TAG = ED1 
+							TAG = ED2
+						}
+					}
+				}
+				add_country_modifier = {
+					name = dodd_growing_polder_modifier
+					duration = 7300	#20 years
+				}
+			}
+		}
+	}
+	dodd_conquer_qasri_abeesooyinka = {
+		position = 4
+		icon = mission_conquer_5_states
+		required_missions = { dodd_subjugate_the_mashkay_and_skarakara }
+		trigger = {
+			6060 = {	#qasri abeesooyinka
+				owned_by = ROOT 
+				is_core = ROOT
+				NOT = { local_autonomy = 25 }
+			}
+			6032 = {
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 6060
+			province_id = 6032
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			create_conquistador = { tradition = 60 }
+			add_country_modifier = {
+				name = dodd_expeditions_modifier	#modifier giving 1 colonist, 0,5 yearly prestige and -5% trade effiency modifier, yet to be localized
+				duration = 3650	#10 years
+			}
+		}
+	}
+	dodd_expedition_into_jasiir_doog = {
+		position = 5
+		icon = mission_conquer_5_states
+		required_missions = { dodd_conquer_qasri_abeesooyinka }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				region = ardimya_region
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = ardimya_region
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { trade_goods = precursor_relics }
+					region = ardimya_region
+				}
+				change_trade_goods = precursor_relics
+				add_permanent_province_modifier = {
+					name = dodd_genie_relics_modifier	#modifier giving +0,5 goods and 10% trade value, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	dodd_taychend = {
+		position = 7
+		icon = mission_conquer_5_states
+		required_missions = { dodd_eastern_effelai }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 25
+				superregion = taychend_superregion
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 3
+				superregion = taychend_superregion
+				owner = {
+					is_subject_of = ROOT
+				}
+				trade_goods = precursor_relics
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 5
+				superregion = taychend_superregion
+				owner = {
+					is_subject_of = ROOT
+				}
+				trade_goods = sugar
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 5
+				superregion = taychend_superregion
+				owner = {
+					is_subject_of = ROOT
+				}
+				trade_goods = tea
+			}
+		}
+		provinces_to_highlight = {
+			superregion = taychend_superregion
+			OR = {
+				trade_goods = precursor_relics
+				trade_goods = sugar
+				trade_goods = tea
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_taychend_imports_modifier 	#modifier giving 2 artificer cap, 5% artificer loyalty and 10% artificer influence, yet to be localized
+				duration = -1	#permanent
+			}
+			add_country_modifier = {
+				name = dodd_taste_for_more_modifier	#modifier giving -10% war score cost, -10% core creation cost, +25 settlers, yet to be localized
+				duration = 3650	#10 years
+			}
+		}
+	}
+	dodd_amadia = {
+		position= 8
+		icon = mission_conquer_5_states
+		required_missions = { dodd_taychend }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 30
+				region = amadia_region
+				owner = {
+					is_colonial_nation_of = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = amadia_region
+		}
+		effect = {
+			every_province = {
+				limit = {
+					region = amadia_region
+					owner = {
+						is_colonial_nation_of = ROOT
+					}
+				}
+				add_province_modifier = {
+					name = dodd_colonial_development_effort_modifier	#modifier giving -7.5% dev cost and 50% state maintenance cost
+					duration = 3650	#10 years
+				}
+			}
+		}
+	}
+	dodd_develop_amadia = {
+		position = 9
+		icon = mission_conquer_5_states
+		required_missions = { dodd_amadia }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 30
+				development = 20
+				num_of_buildings_in_province = 3
+				region = amadia_region
+			}
+			any_subject_country = {
+				trade_goods_produced_amount = {
+					trade_goods = damestear
+					amount = 10
+				}
+			}
+		}
+		provinces_to_highlight = {
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_well_developed_amadian_colony_modifier	#modifier giving 5artificer cap, yet to be implemented
+				duration = -1	#permanent
+			}
+		}
+	}
+}
+doddcods_right_branch = {
+	slot = 5
+ 	generic = no
+ 	ai = yes
+ 	potential = {
+ 		NOT = { has_country_flag = chose_generic_mt }
+ 		tag = EC9	#Doddcodds 
+ 		NOT = { map_setup = map_setup_random }
+ 	}
+	dodd_tightening_the_bonds = {	#etarshyn (6004) Gokados soro (5949) khatynsek (6007)
+		position = 1
+		icon = mission_conquer_5_states
+		required_missions = { }
+		trigger = {
+			OR = {
+				AND = {
+					any_subject_country = {
+						tag = ED0
+						NOT = { liberty_desire = 33 }
+						has_opinion = {
+							who = EC9
+							value = 100
+						}
+					}
+					any_subject_country = {
+						tag = ED1
+						NOT = { liberty_desire = 33 }
+						has_opinion = {
+							who = EC9
+							value = 100
+						}
+					}
+					any_subject_country = {
+						tag = ED2
+						NOT = { liberty_desire = 33 }
+						has_opinion = {
+							who = EC9
+							value = 100
+						}
+					}
+				}
+				AND = {
+					6004 = {	#etarshyn
+						owned_by = ROOT 
+						is_core = ROOT
+					}
+					5949 = {	#gokadas soros
+						owned_by = ROOT 
+						is_core = ROOT
+					}
+					6007 = {	#khatynsek
+						owned_by = ROOT 
+						is_core = ROOT
+					}
+					NOT = { exists = ED0 }
+					NOT = { exists = ED1 }
+					NOT = { exists = ED2 }
+				}
+			}
+			high_tolerance_lizardfolk_race_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6004
+				province_id = 6007
+				province_id = 5949
+				owned_by = ED0
+				owned_by = ED1
+				owned_by = ED2
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_closer_with_lizardfolk_modifier	#modifier giving -5% liberty desire of subjects and -10% merc cost
+				duration = -1	#permanent
+			}
+			set_country_flag = dodd_merc_company_flag2	#merc company
+			ED0 = {	
+				add_country_modifier = {
+					name = polder_closer_with_gnomes_modifier	#modifier giving +5% land fire damage and +0.25 yearly proffesionalism
+					duration = -1	#permanent
+				}
+			}
+			ED1 = {	
+				add_country_modifier = {
+					name = polder_closer_with_gnomes_modifier	#modifier giving +5% land fire damage and +0.25 yearly proffesionalism
+					duration = -1	#permanent
+				}
+			}
+			ED2 = {	
+				add_country_modifier = {
+					name = polder_closer_with_gnomes_modifier	#modifier giving +5% land fire damage and +0.25 yearly proffesionalism
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	dodd_subjugate_the_mashkay_and_skarakara = {
+		position = 3
+		icon = mission_conquer_5_states
+		required_missions = { dodd_tightening_the_bonds }
+		trigger = {
+			all_province = {
+				OR = {
+					NOT = {
+						OR = {
+							culture = mashkay_lizardfolk
+							culture = skarakara_lizardfolk
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				culture = mashkay_lizardfolk
+				culture = skarakara_lizardfolk
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect= {
+			6060 = {	#qasri abeesooyinka
+				add_permanent_claim = ROOT
+			}
+			every_subject_country = {
+				limit = {
+					culture_group = lizardfolk
+				}
+				zulbur_area = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+				ishyaga_area = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+			}	
+			add_country_modifier = {
+				name = dodd_subjugating_lizard_folk_modifier	#modifier giving 10% mercenary manpower, -5% merc cost, -5% dev cost
+				duration = 9125	#25 years
+			}
+		}
+	}
+	dodd_conquer_zulbur_and_ishyaga = {
+		position = 4
+		icon = mission_conquer_5_states
+		required_missions = { dodd_subjugate_the_mashkay_and_skarakara }
+		trigger = {
+			zulbur_area = {
+				type = all
+				owner = {
+					is_subject_of = ROOT
+					culture_group = lizardfolk
+				}
+			}
+			ishyaga_area = {
+				type = all
+				owner = {
+					is_subject_of = ROOT
+					culture_group = lizardfolk
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = zulbur_area
+				area = ishyaga_area
+			}
+			NOT = {
+				owner = {
+					is_subject_of = ROOT
+					culture_group = lizardfolk
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tbd_modifier	#not implemented
+				duration = -1	#placeholder duration
+			}
+			#some country modifier, maybe also one for one of the subjects
+			inner_rankaty_islands_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			outer_rankaty_islands_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	dodd_conquer_the_rakaty_islands = {
+		position = 5
+		icon = mission_conquer_5_states
+		required_missions = { dodd_conquer_zulbur_and_ishyaga }
+		trigger = {
+			inner_rankaty_islands_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			outer_rankaty_islands_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = inner_rankaty_islands_area
+				area = outer_rankaty_islands_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		effect = {
+			5834 = {
+				add_province_modifier = {
+					name = dodd_rakaty_trade_centre_modifier	#modifier giving 50% tradepower and -5% dev cost
+					duration = -1	#permanent
+				}
+				if = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 2 }
+					}
+					add_center_of_trade_level = 1
+				}
+				if = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 1 }
+					}
+					center_of_trade = 2
+				}
+			}
+			add_country_modifier = {
+				name = dodd_colonization_modifier	#modifier giving 50 yearly settlers and 33% colonial range
+				duration = 18250	#50 years
+			}
+		}
+	}
+	dodd_eastern_effelai = {
+		position = 6
+		icon = mission_conquer_5_states
+		required_missions = { dodd_conquer_the_rakaty_islands }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 30
+				OR = {
+					region = east_effelai_region
+					region = dry_coast_region
+				}
+				owner = {
+					is_colonial_nation_of = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = east_effelai_region
+				region = dry_coast_region
+			}
+		}
+		effect = {
+			every_province = {
+				limit = {
+					OR = {
+						region = east_effelai_region
+						region = dry_coast_region
+					}
+					owner = {
+						is_colonial_nation_of = ROOT
+					}
+				}
+				add_province_modifier = {
+					name = dodd_colonial_development_effort_modifier	#modifier giving -7.5% dev cost and 50% state maintenance cost
+					duration = 3650	#10 years
+				}
+			}
+		}
+	}
+	dodd_further_into_effelai = {
+		position = 7
+		icon = mission_conquer_5_states
+		required_missions = { dodd_eastern_effelai }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 40
+				OR = {
+					region = leechdens_region
+					region = south_effelai_region
+				}
+				owner = {
+					is_colonial_nation_of = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = leechdens_region
+				region = south_effelai_region
+			}
+		}
+		effect = {
+			every_province = {
+				limit = {
+					OR = {
+						region = leechdens_region
+						region = south_effelai_region
+					}
+					owner = {
+						is_colonial_nation_of = ROOT
+					}
+				}
+				add_province_modifier = {
+					name = dodd_colonial_development_effort_modifier	#modifier giving -7.5% dev cost and 50% state maintenance cost
+					duration = 3650	#10 years
+				}
+			}
+			add_country_modifier = {
+				name = dodd_wood_influx_modifier	#modifier giving -10% ship cost
+				duration = 7300	#20 years
+			}
+		}
+	}
+	dodd_deep_effelai_development = {
+		position = 8
+		icon = mission_conquer_5_states
+		required_missions = { dodd_further_into_effelai }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 20
+				OR = {
+					region = leechdens_region
+					region = south_effelai_region
+				}
+				owner = {
+					is_colonial_nation_of = ROOT
+				}
+				development = 20
+				num_of_buildings_in_province = 3
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = leechdens_region
+				region = south_effelai_region
+			}
+			OR = {
+				NOT = { development = 20 }
+				NOT = { num_of_buildings_in_province = 3 }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dodd_well_developed_deep_effelai_colony_modifier	#modifier giving 0.5 yearly prestige and -5% cost to promote mercantilism, yet to be localized
+				duration = -1	#permanent
+			}
+			add_mercantilism = 5
+			every_country = {
+				limit = {
+					is_colonial_nation_of = ROOT 
+					capital_scope  = {
+						OR = {
+							region = leechdens_region
+							region = south_effelai_region
+						}
+					}
+					num_of_owned_provinces_with = {
+						value = 10
+						OR = {
+							region = leechdens_region
+							region = south_effelai_region
+						}
+						development = 20
+						num_of_buildings_in_province = 3
+					}
+				}
+				add_country_modifier = {
+					name = dodd_well_developed_colony_modifier	#modifier giving 1 yearly prestige, 10% goods produced, yet to be localized
+					duration = -1	#permanent
+				}
+				add_mercantilism = 5
+			}
+		}
+	}
+}
