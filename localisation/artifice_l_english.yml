@@ -131,9 +131,6 @@
  artifice_damestear_points_none:0 "§g+0§! - From Tradeshare of Damestear (Max +10 at 10% Tradeshare)\n"
  
  artifice_mission_points:0 "§G+[Root.StaticArtificePoints.GetValue]§! - From Missions\n"
-
- artifice_inno_ideas:0 "§G+20§! - Full Innovative Ideas"
- artifice_inno_ideas_none:0 "§g+0 - Full Innovative Ideas"
  artifice_modifier_points_pos:0 "§G+[Root.ModifierArtificePoints.GetValue]§! - From Modifiers\n"
  artifice_modifier_points_neg:0 "§R[Root.ModifierArtificePoints.GetValue]§! - From Modifiers\n"
  
