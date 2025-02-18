@@ -21,7 +21,6 @@ kumarkand_incident_slot_1 = {
 		provinces_to_highlight = { 
 			province_id = 591
 			NOT = { cavalry_in_province = 4 }
-			province_id = 614
 		}
 		
 		trigger = {
@@ -338,10 +337,8 @@ kumarkand_incident_slot_3 = {
 		position = 3
 		
 		provinces_to_highlight = { 
-			AND = {
-				area = traz_buranun_area
-				NOT = { controlled_by = ROOT }
-			}
+			area = traz_buranun_area
+			NOT = { controlled_by = ROOT }
 		}
 		
 		trigger = {
@@ -468,7 +465,7 @@ kumarkand_incident_slot_4 = {
 		position = 3
 		
 		provinces_to_highlight = { 
-			province_id =550
+			province_id = 550
 		}
 		
 		trigger = {
@@ -831,6 +828,41 @@ kumarkand_slot_1 = {
 					}
 					add_permanent_claim = F80
 				}
+				misharallen_area = {
+					limit = {
+						NOT = { is_core = F80 }
+						NOT = { owned_by = F80 }
+					}
+					add_permanent_claim = F80
+				}
+				firanyalen_area = {
+					limit = {
+						NOT = { is_core = F80 }
+						NOT = { owned_by = F80 }
+					}
+					add_permanent_claim = F80
+				}
+				kuzak_area = {
+					limit = {
+						NOT = { is_core = F80 }
+						NOT = { owned_by = F80 }
+					}
+					add_permanent_claim = F80
+				}
+				gelkalis_area = {
+					limit = {
+						NOT = { is_core = F80 }
+						NOT = { owned_by = F80 }
+					}
+					add_permanent_claim = F80
+				}
+				lawassar_area = {
+					limit = {
+						NOT = { is_core = F80 }
+						NOT = { owned_by = F80 }
+					}
+					add_permanent_claim = F80
+				}
 				custom_tooltip = F30_reduced_monstrous_tt
 				hidden_effect = {
 					F80 = {
@@ -882,15 +914,19 @@ kumarkand_slot_1 = {
 		}
 		
 		trigger = {
-			siffiraeri_area = {
+			gelkalis_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
 			}
-			kharfiraeri_area = {
+			lawassar_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
 			}
-			nansalen_area = {
+			misharallen_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			firanyalen_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
 			}
@@ -912,11 +948,12 @@ kumarkand_slot_1 = {
 		position = 5
 
 		provinces_to_highlight = { 
-			AND = {
-				culture = firanyan_harpy
+			country_or_non_sovereign_subject_holds = ROOT
+			culture = firanyan_harpy
+			OR = {
 				NOT = { development = 8 }
 				NOT = { has_tax_building_trigger = yes}
-				NOT = {has_courthouse_building_trigger = yes}
+				NOT = { has_courthouse_building_trigger = yes}
 			}
 		}
 		
@@ -1131,15 +1168,11 @@ kumarkand_slot_2 = {
 		provinces_to_highlight = { 
 			OR = {
 				AND = {
-					area = irrliam_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					area = anzabad_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					area = zansap_area
+					OR = {
+						area = irrliam_area
+						area = anzabad_area
+						area = zansap_area
+					}
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				AND = {
@@ -1237,23 +1270,13 @@ kumarkand_slot_2 = {
 		provinces_to_highlight = { 
 			OR = {
 				AND = {
-					area = medurubar_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					area = upper_brasan_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					area = lower_brasan_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					area = outer_drolas_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					area = inner_drolas_area
+					OR = {
+						area = medurubar_area
+						area = upper_brasan_area
+						area = lower_brasan_area
+						area = outer_drolas_area
+						area = inner_drolas_area
+					}
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				AND = {
@@ -1491,19 +1514,11 @@ kumarkand_slot_3 = {
 
 		provinces_to_highlight = { 
 			OR = {
-				AND = {
-					area = avamezan_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					area = sareyand_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					area = harklum_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
+				area = avamezan_area
+				area = sareyand_area
+				area = harklum_area
 			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
@@ -1564,26 +1579,34 @@ kumarkand_slot_3 = {
 		provinces_to_highlight = { 
 			OR = {
 				AND = {
-					area = eduz_vacyn_area
+					OR = {
+						area = eduz_vacyn_area
+						area = upper_suran_area
+						area = panuses_area
+					}
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				AND = {
-					area = upper_suran_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					OR = {
+						province_id = 631
+						province_id = 640
+					}
+					OR = {
+						NOT = { province_has_current_tech_fort_trigger = yes }
+						NOT = {	has_forcelimit_building_trigger = yes }
+					}
 				}
 				AND = {
-					area = panuses_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					province_id = 631
-					NOT = { province_has_current_tech_fort_trigger = yes }
-					NOT = {	has_forcelimit_building_trigger = yes }
-				}
-				AND = {
-					province_id = 640
-					NOT = { province_has_current_tech_fort_trigger = yes}
-					NOT = {	has_forcelimit_building_trigger = yes }
+					OR = {
+						area = avamezan_area
+						area = east_naza_area
+						area = north_naza_area
+						province_id = 615
+					}
+					OR = {
+						NOT = { development = 8 }
+						devastation = 1
+					}
 				}
 			}
 		}
@@ -1682,18 +1705,13 @@ kumarkand_slot_3 = {
 		provinces_to_highlight = { 
 			OR = {
 				AND = {
-					area = azka_sur_area
+					OR = {
+						area = azka_sur_area
+						area = grixek_area
+						area = jikarzax_area
+					}
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
-				AND = {
-					area = grixek_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					area = jikarzax_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-					
 				AND = {
 					province_id = 643
 					NOT = { province_has_current_tech_fort_trigger = yes }
@@ -1702,8 +1720,10 @@ kumarkand_slot_3 = {
 				AND = {
 					culture = surani
 					trade_goods = grain
-					NOT = { base_manpower = 6 }
-					NOT = { has_manufactory_trigger = yes }
+					OR = {
+						NOT = { base_manpower = 6 }
+						NOT = { has_manufactory_trigger = yes }
+					}
 				}
 			}
 		}
@@ -1814,7 +1834,7 @@ kumarkand_slot_3 = {
 		}
 		
 		effect = {
-			country_event = { id = flavor_kumarkand.24 }
+			country_event = { id = flavor_kumarkand.104 }
 			override_country_name = kumarkand_karqaslu
 			bahar_region = {
 				add_permanent_claim = ROOT
@@ -1848,25 +1868,25 @@ kumarkand_slot_4 = {
 			OR = {
 				AND = {
 					province_id = 591 
-					NOT = { development = 20 }
+					NOT = { development = 16 }
 					NOT = { has_tax_building_trigger = yes}
 					NOT = { has_trade_building_trigger = yes}	
 				}
 				AND = {
 					province_id = 603 
-					NOT = { development = 15 }
+					NOT = { development = 14 }
 				}
 			}
 		}
 		
 		trigger = {
 			591 = {
-				development = 20
+				development = 16
 				has_tax_building_trigger = yes
 				has_trade_building_trigger = yes
 			}
 			603 = {
-				development = 15
+				development = 14
 			}
 		}
 		
@@ -1902,14 +1922,14 @@ kumarkand_slot_4 = {
 						has_terrain = farmlands
 					}
 					NOT = { has_manpower_building_trigger = yes }
-					NOT = { base_manpower = 6 }
+					NOT = { base_manpower = 5 }
 				}
 			}
 		}
 		
 		trigger = {
 			num_of_cavalry = 10
-			cavalry_fraction = 0.3
+			cavalry_fraction = 0.2
 			num_of_owned_provinces_with = {
 				value = 4
 				OR = {
@@ -1918,7 +1938,7 @@ kumarkand_slot_4 = {
 				has_terrain = farmlands
 				}
 				has_manpower_building_trigger = yes
-				base_manpower = 6
+				base_manpower = 5
 			}
 		}
 		
@@ -1937,13 +1957,13 @@ kumarkand_slot_4 = {
 
 		provinces_to_highlight = { 
 			is_capital = yes
-			owner = { culture_group = halfling }
+			owner = { is_cannorian_halfling_primary_culture = yes }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
 			any_known_country = {
-				culture_group = halfling
+				is_cannorian_halfling_primary_culture = yes
 				capital_scope = {
 					continent = europe
 				}
@@ -2120,7 +2140,15 @@ kumarkand_slot_4 = {
 		position = 7
 
 		provinces_to_highlight = { 
-			
+			has_province_modifier = F30_farming_level_one
+			OR = {
+				trade_goods = grain
+				trade_goods = livestock
+			}
+			OR = {
+				has_production_building_trigger = no
+				NOT = { base_production = 7 }
+			}
 		}
 		
 		trigger = {
@@ -2271,7 +2299,16 @@ kumarkand_slot_5 = {
 		position = 4
 
 		provinces_to_highlight = { 
-		
+			province_group = F30_nsc_major_temples_provinces
+			OR = {
+				has_tax_building_trigger = no
+				NOT = {
+					num_of_units_in_province = {
+						who = ROOT
+						amount = 10
+					}
+				}
+			}
 		}
 		
 		trigger = {
@@ -2381,7 +2418,7 @@ kumarkand_slot_5 = {
 				limit = {
 					religion = old_bulwari_sun_cult
 				}
-				army_tradition = 60
+				army_tradition = 40
 				num_of_owned_provinces_with = {
 					value = 30
 					religion = old_bulwari_sun_cult
@@ -2980,11 +3017,12 @@ kumarkand_karqaslu_slot_4 = {
 			kheterata_region = {
 				add_permanent_claim = ROOT
 			}
+			custom_tooltip = F30_alusir_mandate_tt
 		}	
 	}
 	
 	F30_elikhets_nightmare = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		required_missions = { F30_emperors_vengeance }
 		position = 10
 
@@ -2994,9 +3032,15 @@ kumarkand_karqaslu_slot_4 = {
 		}
 		
 		trigger = {
-			kheterata_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			AND = {
+				kheterata_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				custom_trigger_tooltip = {
+					tooltip = F30_kumarkand_end_mandate_tt
+					has_global_flag = khet_dead
+				}
 			}
 		}
 		

@@ -1,8 +1,8 @@
 
-# Dwarven Phalanx
+# Dwarven Tortoise Formation
 
 type = infantry
-unit_type = tech_dwarven
+unit_type = tech_west_dwarven
 
 maneuver = 1
 offensive_morale = 1

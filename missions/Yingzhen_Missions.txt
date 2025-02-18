@@ -1,11 +1,17 @@
 
-yingzhen_start_1 = {
+yingzhen_start_2 = {
 	slot = 2
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y10
+		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = Y10
+			AND = {
+				tag = V19
+				was_tag = Y10
+			}
+		}
 	}
 	has_country_shield = yes
 	
@@ -48,7 +54,12 @@ yingzhen_start_1 = {
 		
 		effect = {
 			if = {
-				limit = { exists = Y01 }
+				limit = { 
+					exists = Y01
+					NOT = {
+						vassal_of = Y01
+					}
+				}
 				Y01 = { country_event = { id = yingzhen.5 } }
 			}
 			else = {
@@ -144,7 +155,7 @@ yingzhen_start_1 = {
 				}
 			}
 			country_event = { id = yingzhen.10 }
-			#custom_tooltip = y10_assassin_events_tooltip
+			custom_tooltip = y10_assassin_events_tooltip
 			hidden_effect = {
 				set_country_flag = allow_yingzhen_events
 			}
@@ -152,13 +163,19 @@ yingzhen_start_1 = {
 	}
 }
 
-yingzhen_start_2 = {
+yingzhen_start_3 = {
 	slot = 3
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y10
+		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = Y10
+			AND = {
+				tag = V19
+				was_tag = Y10
+			}
+		}
 	}
 	has_country_shield = yes
 	
@@ -172,15 +189,15 @@ yingzhen_start_2 = {
 			owned_by = Y02
 		}
 		trigger = {
-			OR = {
+			if = {
+				limit = { exists = Y02 }
 				has_spy_network_in = {
 					who = Y02
 					value = 40
 				}
-				AND = {
-					NOT = { exists = Y02 }
-					owns_core_province = 4851
-				}
+			}
+			else = {
+				owns_core_province = 4851
 			}
 		}
 		
@@ -216,12 +233,9 @@ yingzhen_start_2 = {
 		
 		trigger = {
 			OR = {
-				AND = {
-					has_spy_network_in = {
-						who = Y04
-						value = 50
-					}
-					church_power = 75
+				has_spy_network_in = {
+					who = Y04
+					value = 50
 				}
 				AND = {
 					NOT = { exists = Y04 }
@@ -347,13 +361,19 @@ yingzhen_start_2 = {
 	}
 }
 
-yingzhen_start_3 = {
+yingzhen_start_4 = {
 	slot = 4
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y10
+		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = Y10
+			AND = {
+				tag = V19
+				was_tag = Y10
+			}
+		}
 	}
 	has_country_shield = yes
 	
@@ -481,9 +501,9 @@ yingzhen_unified_1 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y10
-		has_country_flag = yanszin_unification
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = V19
+		was_tag = Y10
 	}
 	has_country_shield = yes
 	
@@ -644,9 +664,9 @@ yingzhen_unified_2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y10
-		has_country_flag = yanszin_unification
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = V19
+		was_tag = Y10
 	}
 	has_country_shield = yes
 	
@@ -683,7 +703,7 @@ yingzhen_unified_2 = {
 		position = 9
 		
 		trigger = {
-			church_power = 100
+			num_of_aspects = 1
 			custom_trigger_tooltip = {
 				tooltip = y10_plant_growth_tooltip
 				any_owned_province = {
@@ -852,9 +872,9 @@ yingzhen_unified_3 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y10
-		has_country_flag = yanszin_unification
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = V19
+		was_tag = Y10
 	}
 	has_country_shield = yes
 	
@@ -1237,9 +1257,9 @@ yingzhen_unified_4 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y10
-		has_country_flag = yanszin_unification
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = V19
+		was_tag = Y10
 	}
 	has_country_shield = yes
 	
@@ -1563,9 +1583,9 @@ yingzhen_unified_5 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = Y10
-		has_country_flag = yanszin_unification
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = V19
+		was_tag = Y10
 	}
 	has_country_shield = yes
 	
@@ -1586,7 +1606,7 @@ yingzhen_unified_5 = {
 				Y01 = {
 					has_opinion = {
 						who = ROOT
-						value = 50
+						value = 0
 					}
 					is_at_war = no
 				}

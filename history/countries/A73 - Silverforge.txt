@@ -5,7 +5,7 @@ add_government_reform = dwarovar_elected_clans_reform
 government_rank = 1
 primary_culture = silver_dwarf
 religion = regent_court
-technology_group = tech_dwarven
+technology_group = tech_west_dwarven
 
 capital = 912
 
@@ -34,3 +34,6 @@ elector = yes
 	add_ruler_personality = malevolent_personality
 	set_ruler_flag = long_lived_ruler
 }
+
+set_country_flag = owns_cannorian_holy_site
+set_country_flag = can_use_cannorian_holy_site

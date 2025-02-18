@@ -87,6 +87,9 @@ onwards_from_castellos = {
 	tolerance_own = -2
 	idea_cost = -0.1
 }
+infernal_inspiration = {
+	land_morale = 0.05
+}
 
 hre_dominant_regent_court = {
 	legitimacy = 0.25
@@ -192,7 +195,7 @@ holy_research = {
 	embracement_cost = -0.1
 }
 
-anb_excommunicated = {
+ravelian_excommunicated = {
 	prestige = -2
 	tolerance_own = -3
 	devotion = -5
@@ -343,27 +346,69 @@ dookans_mercy = {
 }
 
 # The Hunt Abilities
-the_hunt_fair_winds = {
-	movement_speed = 0.3
-	shock_damage_received = -0.2
+
+harpy_eagle_doctrine = {
+	picture = "monarch_lifespan"
 }
 
-harpy_egg_merchant = {
-	merchants = 1
+harpy_myna_doctrine = {
+	picture = "monarch_lifespan"
 }
 
-harpy_egg_diplomat = {
-	diplomats = 1
+harpy_crane_doctrine = {
+	picture = "monarch_lifespan"
 }
 
-harpy_egg_missionary = {
-	missionaries = 1
+harpy_eagle_doctrine_heir = {
+	picture = "monarch_lifespan"
 }
 
-harpy_the_odd_hunt = {
-	global_institution_spread = 0.20
-	idea_cost = -0.10
-	spy_offence = 0.3
+harpy_myna_doctrine_heir = {
+	picture = "monarch_lifespan"
+}
+
+harpy_crane_doctrine_heir = {
+	picture = "monarch_lifespan"
+}
+
+harpy_rites_of_peace_unrest = {
+	global_unrest = -2
+}
+
+harpy_rites_of_peace_conversion = {
+	global_missionary_strength = 0.02
+}
+
+harpy_rites_of_war = {
+	morale_damage = 0.15
+}
+
+harpy_rites_of_war_eagle = {
+	morale_damage = 0.2
+}
+
+harpy_rites_of_tithing = {
+	global_tax_modifier = 0.1
+	vassal_income = 0.1
+}
+
+harpy_rites_of_proving = {
+	manpower_recovery_speed = 0.15
+}
+
+harpy_rites_of_peace = {
+	improve_relation_modifier = 0.2
+	reduced_liberty_desire = 10
+}
+
+harpy_odd_hunt_myna = {
+	technology_cost = -0.05
+	idea_cost = -0.1
+}
+
+harpy_odd_hunt = {
+	technology_cost = -0.05
+	idea_cost = -0.05
 }
 
 
@@ -384,6 +429,7 @@ salvage_shipwrecks = {
 }
 recycled_jewellery = {
 	prestige = 1
+	diplomatic_reputation = 1
 }
 trial_of_the_reforged_chain = {
 	global_unrest = -2
@@ -1557,7 +1603,7 @@ nsc_fifth_calamity_modifier = {
 
 nsc_small_damestear_deposit = {
 	trade_value = 3
-	picture = "damestar_deposit"
+	picture = "damestear_deposit"
 }
 
 nsc_god_king_wish = {
@@ -2371,6 +2417,52 @@ vachava_thrifter = {
 	land_maintenance_modifier = -0.10
 }
 
+#Suhan's Praxis
+
+sexes_liberated = {
+	female_advisor_chance = 0.33
+	may_recruit_female_generals = yes
+	same_religion_advisor_cost = -0.15
+	leader_cost = -0.10
+}
+
+guru_diplomatic_effort = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.2
+}
+
+expanded_horizons_of_mind = {
+	innovativeness_gain = 0.25
+	technology_cost = -0.05
+}
+
+paradigmatic_zealousness = {
+	land_morale = 0.10
+	naval_morale = 0.1
+}
+
+debated_nature = {
+	global_missionary_strength = 0.015
+}
+debated_nature2 = {
+	global_missionary_strength = 0.02
+}
+debated_nature3 = {
+	global_missionary_strength = 0.025
+}
+debated_nature4 = {
+	global_missionary_strength = 0.03
+}
+debated_nature5 = {
+	global_missionary_strength = 0.035
+}
+debated_nature6 = {
+	global_missionary_strength = 0.04
+}
+debated_nature7 = {
+	global_missionary_strength = 0.045
+}
+
 #Taychend
 taychend_helpless_subject = {
 	land_forcelimit_modifier = -0.75
@@ -2428,7 +2520,7 @@ on_kamrayakvals_war_4 = {
 }
 
 on_kamrayakvals_citadel = {
-	garrison_size = 0.25
+	local_garrison_size = 0.25
 	local_defensiveness = 0.15
 }
 
@@ -2470,7 +2562,7 @@ shadow_pact_silat_mod = {
 }
 
 shadow_pact_tree_mod = {
-	attrition = 0.2
+	land_attrition = 0.2
 }
 
 shadow_pact_flayed_man_mod = {
@@ -2535,4 +2627,119 @@ feast_gods_hungry_populace = {
 
 feast_gods_hopeful_populace = {
 	yearly_doom_reduction = 1
+}
+
+###Devouring Path
+dvp_devoured_mod = {
+	church_power_modifier = -2
+}
+
+expand_the_dark_world_mod = {
+	missionaries = 1
+	global_missionary_strength = 0.03
+}
+
+chroniclers_of_secret_histories_mod = {
+	all_power_cost = -0.025
+}
+
+gunpowder_meditation_mod = {
+	fire_damage = 0.2
+}
+
+demon_warriors_mod = {
+	infantry_shock = 0.2
+}
+
+oni_demon_warriors_mod = {
+	infantry_shock = 0.4
+}
+
+the_god_eaters_mod = {
+	warscore_cost_vs_other_religion = -0.15
+}
+
+gifts_for_fools_mod = {
+	ae_impact = -0.15
+}
+
+way_of_shadows_mod = {
+	spy_offence = 0.33
+	siege_ability = 0.2
+}
+
+means_to_an_end_mod = {
+	diplomats = 1
+	colonists = 1
+	missionaries = 1
+	merchants = 1
+	envoy_travel_time = -0.5
+}
+
+above_spirits_and_man_mod = {
+	free_adm_policy = 1
+	free_dip_policy = 1
+	free_mil_policy = 1
+}
+
+tether_the_weak_mod = {
+	morale_damage_received = -0.15
+}
+
+bleed_haless_dry_mod = {
+	global_trade_goods_size_modifier = 0.1
+	production_efficiency = 0.1
+}
+
+dvp_temple_devcost = {
+	local_development_cost = -0.1
+}
+
+origin_of_the_devouring_path = {
+	reverse_relation_with_same_religion = 50
+}
+
+two_rulers_one_people_modifier = {
+	religion = yes
+	local_tolerance_of_heretics = 5
+	local_religious_unity_contribution = -1
+	local_missionary_strength = -1
+}
+
+corinite_ardent_administrators = {
+	local_governing_cost_increase = -5
+}
+
+corinite_passionate_artisans = {
+	trade_value_modifier = 0.05
+}
+
+corinite_bastion_of_zealots = {
+	local_assault_fort_ability = -0.75
+}
+
+#HP Flavour
+HP_nam_labeda = {
+	global_missionary_strength = 0.015
+}
+HP_rule_mendab = {
+	legitimacy = 0.5
+	devotion = 0.5
+	republican_tradition = 0.15
+	horde_unity = 0.5
+}
+HP_convoke_idisarindat = {
+	global_unrest = -1
+}
+HP_proclaim_anjitaranga = {
+	prestige = 0.5
+}
+HP_reorganise_chalanevaala = {
+	global_heretic_missionary_strength = 0.01
+}
+HP_meditation_on_simrals_mirror = {
+	technology_cost = -0.05
+}
+HP_meditation_on_the_kamalkundal = {
+	siege_ability = 0.10
 }

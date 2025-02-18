@@ -134,24 +134,10 @@ defined_text = {
 		}
 	}
 
-	text = { #Kheterata
-		localisation_key = string_start_title_kheterata
-		trigger = {
-			tag = U01
-		}
-	}
-
 	text = { # Urviksten
 		localisation_key = string_start_title_Urviksten
 		trigger = {
 			tag = Z15
-		}
-	}
-
-	text = { # Nirat
-		localisation_key = string_start_title_nirat
-		trigger = {
-			tag = U02
 		}
 	}
 
@@ -374,6 +360,14 @@ defined_text = {
 			tag = R38
 		}
 	}
+	
+	text = { #ghavaanaj elephant lords
+		localisation_key = string_start_title_ghavaanaj
+		trigger = {
+			primary_culture = ghavaanaj
+			NOT = { tag = Y31 } #xia ghavaanaj tag
+		}
+	}
 
 	#Regions, leave this before the Countries otherwise this will be shown instead (this is a backup shown for countries who dont have special intros)
 	# text = {
@@ -458,7 +452,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				capital_scope = {
-					superregion = escann_superregion
+					province_group = escann_proper
 				}
 				government = theocracy
 			}
@@ -547,6 +541,22 @@ defined_text = {
 			}
 		}
 	}
+
+
+	text = { #Kheterata and chums
+	localisation_key = string_start_title_kheterata
+		trigger = {
+			capital_scope = {
+				OR = {
+					region = kheterata_region
+					region = khetapera_region
+					region = gol_region
+					region = west_salahad_region
+				}
+			}
+		}
+	}	
+
 
 	#Generic:
 	text = {
@@ -666,6 +676,13 @@ defined_text = {
 		localisation_key = string_start_religion_mother_akasik_title
 		trigger = {
 			religion = mother_akasik
+		}
+	}
+
+	text = {
+		localisation_key = string_start_religion_noukahi_pantheon_title
+		trigger = {
+			religion = noukahi_pantheon
 		}
 	}
 
@@ -791,6 +808,22 @@ defined_text = {
 				OR = {
 					superregion = kheionai_superregion
 					superregion = taychend_superregion
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_start_sarhal
+		trigger = {
+			capital_scope = {
+				OR = {
+					superregion = east_sarhal_superregion
+					superregion = taneyas_superregion
+					superregion = tanib_dajek_superregion
+					superregion = fangaula_superregion
+					superregion = north_salahad_superregion
+					superregion = djinnakah_superregion
 				}
 			}
 		}
@@ -1244,13 +1277,20 @@ defined_text = {
 		}
 	}
 
+	text = {
+		localisation_key = string_start_naleni
+		trigger = {
+			tag = L55
+		}
+	}
+
 	# Adventurer Companies in Escann
 	text = {
 		localisation_key = string_start_escann_adventurer
 		trigger = {
 			AND = {
 				capital_scope = {
-					superregion = escann_superregion
+					province_group = escann_proper
 				}
 				government = theocracy
 			}
@@ -1268,6 +1308,13 @@ defined_text = {
 		}
 	}
 
+	text = { #ghavaanaj elephant lords
+		localisation_key = string_start_ghavaanaj
+		trigger = {
+			primary_culture = ghavaanaj
+			NOT = { tag = Y31 } #xia ghavaanaj tag
+		}
+	}
 
 	#Regions, leave this before the Countries otherwise this will be shown instead (this is a backup shown for countries who dont have special intros
 	text = {
@@ -1285,20 +1332,6 @@ defined_text = {
 			capital_scope = {
 				region = ourdia_region
 			}
-		}
-	}
-
-	text = { #Kheterata
-		localisation_key = string_start_kheterata
-		trigger = {
-			tag = U01
-		}
-	}
-
-	text = { #Nirat
-		localisation_key = string_start_nirat
-		trigger = {
-			tag = U02
 		}
 	}
 
@@ -1464,6 +1497,20 @@ defined_text = {
 		trigger = {
 			capital_scope = {
 				region = akasik_region
+			}
+		}
+	}
+
+	text = { #Kheterata and chums
+		localisation_key = string_start_kheterata
+		trigger = {
+			capital_scope = {
+				OR = {
+					region = kheterata_region
+					region = khetapera_region
+					region = gol_region
+					region = west_salahad_region
+				}
 			}
 		}
 	}
@@ -1798,7 +1845,41 @@ defined_text = {
 			religion = mother_akasik
 		}
 	}
-	
+
+	text = {
+		localisation_key = string_start_religion_noukahi_pantheon
+		trigger = {
+			religion = noukahi_pantheon
+		}
+	}
+
+	text = {
+		localisation_key = string_start_religion_accretive_path
+		trigger = {
+			religion = accretive_path
+		}
+	}
+
+	text = {
+		localisation_key = string_start_religion_transmutative_path
+		trigger = {
+			religion = transmutative_path
+		}
+	}
+
+	text = {
+		localisation_key = string_start_religion_devouring_path
+		trigger = {
+			religion = devouring_path
+		}
+	}
+
+	text = {
+		localisation_key = string_start_religion_kobold_dragon_cult
+		trigger = {
+			religion = kobold_dragon_cult
+		}
+	}
 
 	#Vanilla
 	#Christians:
@@ -3061,6 +3142,24 @@ defined_text = {
 		}
 	}
 
+	#Sarhal
+	text = {
+		localisation_key = string_start_sarhal_description
+		trigger = {
+			capital_scope = {
+				OR = {
+					superregion = east_sarhal_superregion
+					superregion = taneyas_superregion
+					superregion = tanib_dajek_superregion
+					superregion = fangaula_superregion
+					superregion = north_salahad_superregion
+					superregion = djinnakah_superregion
+					superregion = south_salahad_superregion
+				}
+			}
+		}
+	}
+
 	text = {
 		localisation_key = string_start_east_asia_description #Japan, Eoc and Tributaries
 		trigger = {
@@ -3289,4 +3388,9 @@ defined_text = {
 	text = {
 		localisation_key = string_start_hobgoblins_primer
 	}
+}
+
+defined_text = {
+	name = start_religion_chi_primer
+	text = { localisation_key = string_start_religion_chi_primer }
 }

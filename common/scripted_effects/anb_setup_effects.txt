@@ -10,10 +10,27 @@ setup_vision = {
 				capital_scope = {
 					continent = europe
 				}
+				NOT = {
+					capital_scope = {
+						superregion = deepwoods_superregion
+					}
+				}
+				NOT = {
+					is_adventurer = yes
+					monstrous_culture = yes
+				}
 			}
 			
 			#Discover civilized Cannor
 			western_cannor_superregion = {
+				limit = {
+					NOT = {
+						area = whistlevale_area
+						area = cursewood_area
+						area = lonely_isle_area
+						province_id = 1
+					}
+				}
 				discover_country = ROOT
 			}
 			gerudia_superregion = {
@@ -23,8 +40,8 @@ setup_vision = {
 						area = gifrbygd_area
 						area = zeindalr_area
 						area = southern_giants_tears_area
-						area = gerudian_area
-						area = gerudia1_area
+						area = jotunsdalr_area
+						area = feigrvegrholt_area
 						province_id = 988
 						province_id = 989
 						province_id = 2426
@@ -565,6 +582,12 @@ setup_vision = {
 			ourdia_region = {
 				discover_country = ROOT
 			}
+			daravans_folly_region = {
+				discover_country = ROOT
+			}
+			dostanor_region = {
+				discover_country = ROOT
+			}
 			businor_region = {
 				discover_country = ROOT
 			}
@@ -621,6 +644,9 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			1919 = {
+				discover_country = ROOT
+			}
+			1923 = {
 				discover_country = ROOT
 			}
 			1 = {
@@ -710,23 +736,6 @@ setup_vision = {
 					discover_country = ROOT
 				}
 				1909 = {
-					discover_country = ROOT
-				}
-			}
-			# Crathanor area
-			if = {
-				limit = {
-					capital_scope = {
-						area = crathanor_area
-					}
-				}
-				dostanor_region = {
-					discover_country = ROOT
-				}
-				daravans_folly_region = {
-					discover_country = ROOT
-				}
-				1923 = {
 					discover_country = ROOT
 				}
 			}
@@ -1170,7 +1179,7 @@ setup_vision = {
 			yanshen_superregion = {
 				discover_country = ROOT
 			}
-			south_haless_superregion = {
+			vimdatrong_superregion = {
 				limit = { NOT = { province_group = lupulan_rainforest_interior } }
 				discover_country = ROOT
 			}
@@ -1253,6 +1262,12 @@ setup_vision = {
 			the_borders_region = {
 				undiscover_country = ROOT
 			}
+			daravans_folly_region = {
+				undiscover_country = ROOT
+			}
+			dostanor_region = {
+				undiscover_country = ROOT
+			}
 			esmaria_region = {
 				undiscover_country = ROOT
 			}
@@ -1260,6 +1275,9 @@ setup_vision = {
 				undiscover_country = ROOT
 			}
 			1919 = {
+				undiscover_country = ROOT
+			}
+			1923 = {
 				undiscover_country = ROOT
 			}
 			bulwar_superregion = {
@@ -1692,6 +1710,7 @@ setup_vision = {
 						superregion = rahen_superregion
 					}
 					tag = R03 #Davharral
+					tag = L62 #Vandipha
 				}
 			}
 			far_salahad_region = {
@@ -1706,7 +1725,7 @@ setup_vision = {
 			yanshen_superregion = {
 				discover_country = ROOT
 			}
-			south_haless_superregion = {
+			vimdatrong_superregion = {
 				limit = { NOT = { province_group = lupulan_rainforest_interior } }
 				discover_country = ROOT
 			}
@@ -1926,7 +1945,7 @@ setup_vision = {
 			yanshen_superregion = {
 				discover_country = ROOT
 			}
-			south_haless_superregion = {
+			vimdatrong_superregion = {
 				limit = { NOT = { province_group = lupulan_rainforest_interior } }
 				discover_country = ROOT
 			}
@@ -2161,7 +2180,7 @@ setup_vision = {
 		if = {
 			limit = {
 				capital_scope = {
-					superregion = south_haless_superregion
+					superregion = vimdatrong_superregion
 					OR = {
 						NOT = { region = lupulan_rainforest_region }
 						owner = { tag = Y64 }
@@ -2175,7 +2194,7 @@ setup_vision = {
 			yanshen_superregion = {
 				discover_country = ROOT
 			}
-			south_haless_superregion = {
+			vimdatrong_superregion = {
 				limit = { NOT = { province_group = lupulan_rainforest_interior } }
 				discover_country = ROOT
 			}
@@ -2363,7 +2382,7 @@ setup_vision = {
 					NOT = { tag = Y64 } #Pinghoi
 					NOT = { tag = Y65 } #Arawkelin
 				}
-				south_haless_superregion = {
+				vimdatrong_superregion = {
 					discover_country = ROOT
 				}
 			}
@@ -2374,7 +2393,7 @@ setup_vision = {
 						tag = Y65 #Arawkelin
 					}
 				}
-				south_haless_superregion = {
+				vimdatrong_superregion = {
 					limit = { NOT = { province_group = lupulan_rainforest_interior } }
 					discover_country = ROOT
 				}
@@ -2511,7 +2530,7 @@ setup_vision = {
 			upper_sorrow_area = {
 				discover_country = ROOT
 			}
-			gnollakaz_area = {
+			garpix_grizaka_area = {
 				discover_country = ROOT
 			}
 			gnolltauz_area = {
@@ -2810,7 +2829,7 @@ setup_vision = {
 			hapmot_area = {
 				discover_country = ROOT
 			}
-			gnollakaz_area = {
+			garpix_grizaka_area = {
 				discover_country = ROOT
 			}
 			gnolltauz_area = {
@@ -4578,6 +4597,9 @@ setup_vision = {
 				2936 = {
 					discover_country = ROOT
 				}
+				1662 = {
+					discover_country = ROOT
+				}
 				1663 = {
 					discover_country = ROOT
 				}
@@ -4591,7 +4613,7 @@ setup_vision = {
 				1791 = {
 					discover_country = ROOT
 				}
-				1662 = {
+				2595 = {
 					discover_country = ROOT
 				}
 				6121 = {
@@ -4733,10 +4755,13 @@ setup_vision = {
 				}
 				
 				#Lakes and Wasteland
+				1662 = {
+					discover_country = ROOT
+				}
 				1663 = {
 					discover_country = ROOT
 				}
-				1662 = {
+				2595 = {
 					discover_country = ROOT
 				}
 				1779 = {
@@ -5501,9 +5526,9 @@ setup_vision = {
 			limit = {
 				capital_scope = {
 					OR = {
-						area = west_plateau_area
-						area = north_wall_area
-						area = south_wall_area
+						area = bazuniezar_area
+						area = northern_peaks_area
+						area = southern_shield_area
 					}
 				}
 				NOT = { 
@@ -5513,13 +5538,13 @@ setup_vision = {
 			nomsyulhan_region = {
 				discover_country = ROOT
 			}
-			west_plateau_area = {
+			bazuniezar_area = {
 				discover_country = ROOT
 			}
-			north_wall_area = {
+			northern_peaks_area = {
 				discover_country = ROOT
 			}
-			south_wall_area = {
+			southern_shield_area = {
 				discover_country = ROOT
 			}
 			5407 = {
@@ -5531,13 +5556,13 @@ setup_vision = {
 			churgyund_area = {
 				discover_country = ROOT
 			}
-			area_2_area = {
+			chaneuusk_area = {
 				discover_country = ROOT
 			}
-			area_3_area = {
+			rushing_river_area = {
 				discover_country = ROOT
 			}
-			area_4_area = {
+			four_peaks_area = {
 				discover_country = ROOT
 			}
 			#Wasteland
@@ -5626,7 +5651,7 @@ setup_vision = {
 			baizoi_area = {
 				discover_country = ROOT
 			}
-			area_1_area = {
+			ilabomar_area = {
 				discover_country = ROOT
 			}
 			zoital_area = {
@@ -5706,10 +5731,10 @@ setup_vision = {
 			baizoi_area = {
 				discover_country = ROOT
 			}
-			area_1_area = {
+			ilabomar_area = {
 				discover_country = ROOT
 			}
-			area_7_area = {
+			red_vale_area = {
 				discover_country = ROOT
 			}
 			kokevdan_area = {
@@ -5736,13 +5761,13 @@ setup_vision = {
 			portal_west_area = {
 				discover_country = ROOT
 			}
-			valley_west_lower_area = {
+			sanctuary_area = {
 				discover_country = ROOT
 			}
-			valley_west_mid_area = {
+			iona_saothar_area = {
 				discover_country = ROOT
 			}
-			valley_west_upper_area = {
+			overgrowth_area = {
 				discover_country = ROOT
 			}
 			5197 = {

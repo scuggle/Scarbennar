@@ -1817,7 +1817,7 @@ bulwar_3 = {
 			}
 		}
 		effect = {
-			add_country_modifier = { name = bulwar_strenght_in_unity_timer duration = 7300 hidden = yes }
+			add_country_modifier = { name = bulwar_strenght_in_unity_timer duration = 7300 }
 			custom_tooltip = bulwar_no_penalty_annexing_subject_tt
 		}
 	}
@@ -2332,7 +2332,7 @@ bulwar_5 = {
 	}
 	
 	bulwar_ahead_of_the_pack = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		required_missions = {
 			bulwar_happy_people_of_the_sad_sur
 		}

@@ -23,7 +23,7 @@
  B38_elikhetist_enlightenment_title: "Khetist Enlightenment"
  B38_elikhetist_enlightenment_desc: "We have shown the way of Elikhet to some of the Cannorians, and they have prospered from it. We need to continue our divine mission, and guide even more of them towards his glory."
  B38_new_brethren_title: "Our New Brethren"
- B38_new_brethren_desc: "Our missions of conversion have been a rounded success! Now the true path to prosperity begins, as we introduce the cannorians into our people, and take away any animosity or doubt they may yet hold on to."
+ B38_new_brethren_desc: "Our missions of conversion have been a rounded success! Now the true path to prosperity begins, as we introduce the Cannorians into our people, and take away any animosity or doubt they may yet hold on to."
  B38_elikhander_legions_title: "Elikhander Legions"
  B38_elikhander_legions_desc: "Our people have long intermixed with the locals of this continent, and our ways have merged to create a new identity. This becomes clear when our armies march to battle, only distinguishable from the Cannorians around them by appearance and the use of a sickle in melee. This embrace has made us dynamic, however, for our history leaves a few tricks up our sleeves."
  B38_sole_divinity_title: "Sole Divinity"
@@ -303,7 +303,7 @@
  flavor_elikhand.2.e: "Shieldrest will overlook our expanding nation!"
  
  flavor_elikhand.3.t: "The Dalcabban Proclamation"
- flavor_elikhand.3.d: "Khetist scholars in Elikhand have long debated how to reconcile their beliefs with their geographical reality. Many have seen the sacrifice of Castanor as a feat worthy of the Khets themselves, while many common people have interacted with the native faith of these lands. It has been decided that the best means forwards is a syncretism between the two practices. This will serve to help integrate our people into this new land, and for those already here to embrace the glory of the Khets."
+ flavor_elikhand.3.d: "Khetist scholars in [Root.GetName] have long debated how to reconcile their beliefs with their geographical reality. Many have seen the sacrifice of Castanor as a feat worthy of the Khets themselves, while many common people have interacted with the native faith of these lands. It has been decided that the best means forwards is a syncretism between the two practices. This will serve to help integrate our people into this new land, and for those already here to embrace the glory of the Khets."
  flavor_elikhand.3.a: "We shall guide Cannor to the light of the Khet!"
  flavor_elikhand.3.effect: "Every owned §YKhetist§! province:\n  §Y90%§! chance of converting to §YDalcabba§!"
  flavor_elikhand.3.b: "Maybe we should rethink this"
@@ -343,7 +343,7 @@
  
  flavor_elikhand.8.t: "My Resting Place"
  flavor_elikhand.8.d: "With the completion of a worthy pyramid, I, Entef of Wibnuat, finally have a place for my body to rest. True glory has finally come to this nation, and I rest easier for it. While a geometric pile of rocks may strike some as unassuming, far more goes into it than many would think. Thousands of people must prepare tons upon tons of material. The finest stonemasons must carve each and every block by hand. Anyway I'm rambling... my vantage point calls for me."
- flavor_elikhand.8.a: "Glory to Elikhand! May it's founder rest."
+ flavor_elikhand.8.a: "Glory to Elikhand! May its founder rest."
  
  flavor_elikhand.9.t: "My Return"
  flavor_elikhand.9.d: "Escann is in chaos, and my nation in crisis. I have rested for over a century now, but that rest ends here. Elikhand calls to me, and I shall answer. Some might call me a Lich but I am something far more capable. My flesh does not rot off of me for it has been long since preserved. My soul likewise is not corrupted by the foul energies one would associate with undeath; it is in fact burning with a passion for this nation. Many would mistake me for a divine resurrection, but I am in fact merely a mummy."

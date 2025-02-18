@@ -148,7 +148,7 @@
  
  #Artisans complain
  escanni_refugees_settlement.302.t:0 "Artisans Complain over Unregulated Competition"
- escanni_refugees_settlement.302.d:0 "A new popular good has spread in [This.Getname]: small trinkets carved out of wood and fashioned with straw, depicting foreign cavaliers and knights. While this is not something completely novel in itself, the origin of these trinkets is new. They are manufactured by Escanni refugees as a means to earn money, these symbols of a foreign culture very popular amongst our nobles and now even competing directly with some local toy makers.\nIn itself this is not an issue, to us anyway. But the local artisans are complaining that the refugees operate outside of any guilds, thus presenting unfair competition. As such the guilds have come forward and asked us to step in, as they do not want to bear any responsibility regarding this.\n\nWhat should be our approach?"
+ escanni_refugees_settlement.302.d:0 "A new popular good has spread in [This.GetName]: small trinkets carved out of wood and fashioned with straw, depicting foreign cavaliers and knights. While this is not something completely novel in itself, the origin of these trinkets is new. They are manufactured by Escanni refugees as a means to earn money, these symbols of a foreign culture very popular amongst our nobles and now even competing directly with some local toy makers.\nIn itself this is not an issue, to us anyway. But the local artisans are complaining that the refugees operate outside of any guilds, thus presenting unfair competition. As such the guilds have come forward and asked us to step in, as they do not want to bear any responsibility regarding this.\n\nWhat should be our approach?"
  escanni_refugees_settlement.302.a:0 "Make the guild hire those Escanni artisans, they too have to operate under our regulations."
  escanni_refugees_settlement.302.b:0 "We can't have our artisans outcompeted by refugees and vagrants."
  escanni_refugees_settlement.302.c:0 "Nothing is as sweet as free labour."
@@ -197,7 +197,7 @@
  escanni_refugees_settlement.307.e:0 "The Magisterium is clearly not doing its job properly, recruit these wild mages."
  escanni_refugees_settlement.307.f:0 "They are quite bold to try this here."
  escanni_refugees_settlement.307.g:0 "I'll deal with this myself."
- escanni_warwizard_tt:0 "An Escanni warwizard (2/8/1/4) will be available for duty."
+ escanni_warwizard_tt:0 "An Escanni war wizard (2/8/1/4) will be available for duty."
  
  #Escanni scholars seek refuge
  escanni_refugees_settlement.308.t:0 "Escanni Scholars Seek Refuge"
@@ -260,15 +260,15 @@
  
  
  #Custom tooltips to make things legible
- 10_percent_chance_of_integrate_escanni_tt:0 "\nThere is a 10% chance of the refugees in §Y[Root.EscanniRefugeesIntegrate10]§! integrating and granting §G+1 random developtment§!\nThis would result in the refugee center in §Y[escanni_center_target_1.GetName]§! §Tdecreasing in size§!."
- EscanniIntegrate10_1target:0 "[escanni_effect_target_1.GetName]"
- EscanniIntegrate10_2target:0 "[escanni_effect_target_1.GetName] [escanni_effect_target_2.GetName]"
- EscanniIntegrate10_3target:0 "[escanni_effect_target_1.GetName] [escanni_effect_target_2.GetName] [escanni_effect_target_3.GetName]"
+ 10_percent_chance_of_integrate_escanni_tt:0 "\nThere is a 10% chance of the refugees in [Root.EscanniRefugeesIntegrate10] integrating and granting §G+1 random development§!.\nThis would result in the refugee center in §Y[escanni_center_target_1.GetName]§! §Tdecreasing in size§!."
+ EscanniIntegrate10_1target:0 "§Y[escanni_effect_target_1.GetName]§!"
+ EscanniIntegrate10_2target:0 "§Y[escanni_effect_target_1.GetName]§!, §Y[escanni_effect_target_2.GetName]§!"
+ EscanniIntegrate10_3target:0 "§Y[escanni_effect_target_1.GetName]§!, §Y[escanni_effect_target_2.GetName]§! and §Y[escanni_effect_target_3.GetName]§!"
  lose_10_estate_loyalty_all_estates_tt:0 "All estates will lose §R10§! loyalty."
- 5_percent_chance_of_integrate_escanni_tt:0 "\nThere is a 5% chance of the refugees in §Y[Root.EscanniRefugeesIntegrate10]§! integrating and granting §G+1 random developtment§!\nThis would result in the refugee center in §Y[escanni_center_target_1.GetName]§! §Tdecreasing in size§!."
- 
+ 5_percent_chance_of_integrate_escanni_tt:0 "\nThere is a 5% chance of the refugees in [Root.EscanniRefugeesIntegrate10] integrating and granting §G+1 random development§!\nThis would result in the refugee center in §Y[escanni_center_target_1.GetName]§! §Tdecreasing in size§!."
+ escanni_change_mage_org_to_guilds_tt:0 "§YMage Organization: Guilds§! will be granted to the §Y[Root.GetMagesName]§!"
  
  
  #Province group
  escanni_refugee_centers:0 "" #Blank so it's invisible
- escann_proper:0 "" #Blank so it's invisible
+ escann_proper:0 "Escann Proper"

@@ -221,7 +221,7 @@
  diggy_encounter.141.a:0 "Our power dwarfed theirs!"
 
  diggy_encounter.142.t:0 "Stone Cunning\n[EncounterOverlayBackground]"
- diggy_encounter.142.d:0 "[EncounterOverlay]"Never fight a dwarf in their hold, nor their roads. No matter what you know about the terrain, they know it ten times better." -A common remark that [Owner.Monarch.GetTitle] [Owner.Monarch.GetName] heard when learning how to fight in the Serpentspine.\n\nEven far away from their holds and roads the dwarves our expedition encountered are in their natural element. Like unwavering stone, they held against our attack and then unleashed an avalanche of rocks upon us. They quickly took from us what they could carry and went their merry way, singing songs in their guttural language."
+ diggy_encounter.142.d:0 "[EncounterOverlay]"Never fight a dwarf in their hold, nor their roads. No matter what you know about the terrain, they know it ten times better." -A common remark that [Root.Owner.Monarch.GetTitle] [Root.Owner.Monarch.GetName] heard when learning how to fight in the Serpentspine.\n\nEven far away from their holds and roads the dwarves our expedition encountered are in their natural element. Like unwavering stone, they held against our attack and then unleashed an avalanche of rocks upon us. They quickly took from us what they could carry and went their merry way, singing songs in their guttural language."
  diggy_encounter.142.a:0 "To the hells with those bearded bastards!"
 
  diggy_encounter.150.t:0 "An Apparition Appears\n[EncounterOverlayBackground]"
@@ -672,6 +672,7 @@
  diggy_encounter.351.t:0 "Bliss\n[EncounterOverlayBackground]"
  diggy_encounter.351.d:0 "[EncounterOverlay]The mushrooms don't taste that good, but their effect is undeniable: Our men feel elated, ecstatic even. The mushrooms must have contained some sort of psychoactive drug, at least from the looks of it. This has led to a far more enjoyable journey, but some of the soldiers are so busy spending time in their own world daydreaming that they straggle behind and don't pay much attention to what is actually going on with the expedition."
  diggy_encounter.351.a:0 "Is that a rainbow rothé?"
+ diggy_encounter.351.b:0 "The famous rainbow rothé!"
 
  diggy_encounter.352.t:0 "Overdose\n[EncounterOverlayBackground]"
  diggy_encounter.352.d:0 "[EncounterOverlay]The soldiers eating the mushrooms seem to have a great time, eating more and more in their increasingly ecstatic state. This invites others to join them in their revelry but just as a new group of mushroom-hungry men arrive, the first ones, who have eaten copious amounts of mushrooms by now, start coughing and their mouths begin to foam. They fall over with dull eyes, as if they have gone blind. This state of unconsciousness soon ends with death, the entire body slumped after an episode of intense twitching.\n\nThose that witnessed this threw the mushrooms away in disgust, but for some it was already too late. Those that survived the twitches and tremors are in an unstable state of mind, needing constant attention."
@@ -740,7 +741,7 @@
  diggy_encounter.382.a:0 "Who can withstand such numbers and such reckless hate?"
 
  diggy_encounter.383.t:0 "A Great Clan for All\n[EncounterOverlayBackground]"
- diggy_encounter.383.d:0 "[EncounterOverlay]The goblin army has agreed to peaceful terms, as befitting such an advanced civilization as us. In the masterfully crafted treaty, they generously donate some supplies, while we offer them the safety of being a part of [Owner.GetName]."
+ diggy_encounter.383.d:0 "[EncounterOverlay]The goblin army has agreed to peaceful terms, as befitting such an advanced civilization as us. In the masterfully crafted treaty, they generously donate some supplies, while we offer them the safety of being part of [Root.Owner.GetName]."
  diggy_encounter.383.a:0 "Onwards!"
 
  diggy_encounter.384.t:0 "Stubborn Goblins\n[EncounterOverlayBackground]"

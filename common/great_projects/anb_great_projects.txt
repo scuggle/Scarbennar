@@ -48,7 +48,9 @@ marrhold_dwarovar_tunnel = {
 	can_use_modifiers_trigger = {}
 
 	#can our country upgrade it?
-	can_upgrade_trigger = { NOT = { 4065 = { has_great_project = { type = dwarovar_marrhold_tunnel } } } }
+	can_upgrade_trigger = {
+		NOT = { 4065 = { has_great_project = { type = dwarovar_marrhold_tunnel } has_construction = dwarovar_marrhold_tunnel  } }
+	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {}
@@ -195,7 +197,9 @@ dwarovar_marrhold_tunnel = {
 	can_use_modifiers_trigger = {}
 
 	#can our country upgrade it?
-	can_upgrade_trigger = { NOT = { 4097 = { has_great_project = { type = marrhold_dwarovar_tunnel } } } }
+	can_upgrade_trigger = {
+		NOT = { 4097 = { has_great_project = { type = marrhold_dwarovar_tunnel } has_construction = marrhold_dwarovar_tunnel  } }
+	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {}
@@ -437,7 +441,7 @@ redrushes_climb = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {	
 		}
 	}
 
@@ -497,7 +501,7 @@ redrushes_climb = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {		
 		}
 	}
 }
@@ -617,7 +621,7 @@ spoorland_lift = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 
@@ -647,7 +651,7 @@ spoorland_lift = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 
@@ -677,7 +681,7 @@ spoorland_lift = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 
@@ -707,7 +711,7 @@ spoorland_lift = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 }
@@ -857,7 +861,7 @@ walkway_of_thorns = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {		
 		}
 	}
 
@@ -887,7 +891,7 @@ walkway_of_thorns = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 
@@ -917,7 +921,7 @@ walkway_of_thorns = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 }
@@ -1067,7 +1071,7 @@ arca_noruin = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {		
 		}
 	}
 
@@ -1097,7 +1101,7 @@ arca_noruin = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 
@@ -1127,7 +1131,7 @@ arca_noruin = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 }
@@ -1277,7 +1281,7 @@ arca_venaan = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 
@@ -1307,7 +1311,7 @@ arca_venaan = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 
@@ -1337,7 +1341,7 @@ arca_venaan = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 }
@@ -1487,7 +1491,7 @@ arbeloch_ascensor = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 
@@ -1517,7 +1521,7 @@ arbeloch_ascensor = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {		
 		}
 	}
 
@@ -1691,7 +1695,7 @@ the_wormway = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {		
 		}
 	}
 
@@ -1720,7 +1724,7 @@ the_wormway = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {		
 		}
 	}
 
@@ -1749,7 +1753,7 @@ the_wormway = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {
+		on_upgraded = {			
 		}
 	}
 }
@@ -1813,6 +1817,11 @@ deepwoods_fey_portal = {
 		4997 = { add_canal = domandrod_fey_portal }
 		4998 = { add_canal = domandrod_fey_portal }
 		4999 = { add_canal = domandrod_fey_portal }
+
+		show_ambient_object = deepwoods_fey_portal_object
+
+		#Raithtall MT failsafe
+		hidden_effect = { 6245 = { remove_province_modifier = raithtall_orachran_agreement } }
 	}
 	
 	#what to do when it's destroyed
@@ -1845,6 +1854,8 @@ deepwoods_fey_portal = {
 		4997 = { remove_canal = domandrod_fey_portal }
 		4998 = { remove_canal = domandrod_fey_portal }
 		4999 = { remove_canal = domandrod_fey_portal }
+
+		hide_ambient_object = deepwoods_fey_portal_object
 	}
 
 	#can our country use it?
@@ -1873,8 +1884,8 @@ deepwoods_fey_portal = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_friendly_movement_speed = -0.2
-			local_hostile_movement_speed = -0.2
+			local_friendly_movement_speed = 1
+			local_hostile_movement_speed = 1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1904,8 +1915,8 @@ deepwoods_fey_portal = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			province_trade_power_value = 10
-			local_friendly_movement_speed = 0.5
-			local_hostile_movement_speed = 0.5
+			local_friendly_movement_speed = 2
+			local_hostile_movement_speed = 2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1935,8 +1946,8 @@ deepwoods_fey_portal = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			province_trade_power_value = 25
-			local_friendly_movement_speed = 1
-			local_hostile_movement_speed = 1
+			local_friendly_movement_speed = 4
+			local_hostile_movement_speed = 4
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1966,8 +1977,8 @@ deepwoods_fey_portal = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			province_trade_power_value = 50
-			local_friendly_movement_speed = 2
-			local_hostile_movement_speed = 2
+			local_friendly_movement_speed = 6
+			local_hostile_movement_speed = 6
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2043,6 +2054,8 @@ domandrod_fey_portal = {
 		4997 = { add_canal = domandrod_fey_portal }
 		4998 = { add_canal = domandrod_fey_portal }
 		4999 = { add_canal = domandrod_fey_portal }
+
+		show_ambient_object = domandrod_fey_portal_object
 	}
 	
 	#what to do when it's destroyed
@@ -2075,6 +2088,8 @@ domandrod_fey_portal = {
 		4997 = { remove_canal = domandrod_fey_portal }
 		4998 = { remove_canal = domandrod_fey_portal }
 		4999 = { remove_canal = domandrod_fey_portal }
+
+		hide_ambient_object = domandrod_fey_portal_object
 	}
 
 	#can our country use it?
@@ -2103,8 +2118,8 @@ domandrod_fey_portal = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_friendly_movement_speed = -0.2
-			local_hostile_movement_speed = -0.2
+			local_friendly_movement_speed = 1
+			local_hostile_movement_speed = 1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2134,8 +2149,8 @@ domandrod_fey_portal = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			province_trade_power_value = 10
-			local_friendly_movement_speed = 0.5
-			local_hostile_movement_speed = 0.5
+			local_friendly_movement_speed = 2
+			local_hostile_movement_speed = 2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2165,8 +2180,8 @@ domandrod_fey_portal = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			province_trade_power_value = 25
-			local_friendly_movement_speed = 1
-			local_hostile_movement_speed = 1
+			local_friendly_movement_speed = 4
+			local_hostile_movement_speed = 4
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2196,8 +2211,8 @@ domandrod_fey_portal = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			province_trade_power_value = 50
-			local_friendly_movement_speed = 2
-			local_hostile_movement_speed = 2
+			local_friendly_movement_speed = 6
+			local_hostile_movement_speed = 6
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2606,13 +2621,23 @@ domandrod_autumn_gate = {
 
 	#can we build it?
 	build_trigger = {
-		owner = { has_country_flag = eord_domandrod_opened }
+		OR = {
+			owner = { has_country_flag = eord_domandrod_opened }
+			owner = { has_country_flag = raithtall_gate_check }
+		}
 	}
 	
 	#what to do when it's built
 	on_built = {
 		3281 = {
 			add_canal = domandrod_autumn_gate
+		}
+		#Dorcurt MT
+		hidden_effect = {
+			if = {
+				limit = { owner = { has_country_flag = raithtall_gate_check } }
+				owner = { country_event = { id = flavor_raithtall.2 } }
+			}
 		}
 	}
 	
@@ -3516,35 +3541,75 @@ grand_archives = {
 	}
 
 	can_use_modifiers_trigger = {
-		religion_group = triunic_lake
-		NOT = { religion = yudunyovi }
-		OR = {
-		        has_owner_religion = yes
-				owner = { has_harmonized_with = ROOT }
+		if = { 
+			limit = {
+				owner = {
+					OR = {
+						tag = I90
+						was_tag = I90 
+					}
+				}
 			}
-		culture_group = triunic
-		owner = { 
-		       AND = {
-			   culture_group = triunic
-			   religion_group = triunic_lake
-			   }
-			   }
+			owner = { 
+				custom_trigger_tooltip = {
+					tooltip = I90_can_use_archive_tt_2
+					has_country_flag = I90_can_use_archive 
+				}
+			}
+		}
+		else = {
+			AND = {
+				religion_group = triunic_lake
+				NOT = { religion = yudunyovi }
+				OR = {
+					has_owner_religion = yes
+					owner = { has_harmonized_with = ROOT }
+				}
+				culture_group = triunic
+				owner = { 
+					AND = {
+					culture_group = triunic
+					religion_group = triunic_lake
+					}
+				}
+			}
+		}
 	}
 
 	can_upgrade_trigger = {
-		religion_group = triunic_lake
-		NOT = { religion = yudunyovi }
-		OR = {
-		        has_owner_religion = yes
-				owner = { has_harmonized_with = ROOT }
+		if = { 
+			limit = {
+				owner = {
+					OR = {
+						tag = I90
+						was_tag = I90 
+					}
+				}
 			}
-		culture_group = triunic
-		owner = { 
-		       AND = {
-			   culture_group = triunic
-			   religion_group = triunic_lake
-			   }
-			   }
+			owner = { 
+				custom_trigger_tooltip = {
+					tooltip = I90_can_use_archive_tt_2
+					has_country_flag = I90_can_use_archive 
+				}
+			}
+		}
+		else = {
+			AND = {
+				religion_group = triunic_lake
+				NOT = { religion = yudunyovi }
+				OR = {
+					has_owner_religion = yes
+					owner = { has_harmonized_with = ROOT }
+				}
+				culture_group = triunic
+				owner = { 
+					AND = {
+					culture_group = triunic
+					religion_group = triunic_lake
+					}
+				}
+			}
+		}
 	}
 
 	keep_trigger = {
@@ -4359,31 +4424,63 @@ cloud_ruins = {
 	}
 
 	can_use_modifiers_trigger = {
-		religion_group = giantkin
-		has_owner_religion = yes
-		OR = {
-			AND = {
-				culture_group = ogre
-				owner = { culture_group = ogre }
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						tag = H81
+						was_tag = H81
+					}
+				}
 			}
-			AND = {
-				culture_group = giantkind
-				owner = { culture_group = giantkind }
+			custom_trigger_tooltip = {
+				tooltip = mb_mag_ruins_tt
+				owner = { has_country_flag = mb_mag_ruins_flg }
+			}
+		}
+		else = {
+			religion_group = giantkin
+			has_owner_religion = yes
+			OR = {
+				AND = {
+					culture_group = ogre
+					owner = { culture_group = ogre }
+				}
+				AND = {
+					culture_group = giantkind
+					owner = { culture_group = giantkind }
+				}
 			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		religion_group = giantkin
-		has_owner_religion = yes
-		OR = {
-			AND = {
-				culture_group = ogre
-				owner = { culture_group = ogre }
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						tag = H81
+						was_tag = H81
+					}
+				}
 			}
-			AND = {
-				culture_group = giantkind
-				owner = { culture_group = giantkind }
+			custom_trigger_tooltip = {
+				tooltip = mb_mag_ruins_tt
+				owner = { has_country_flag = mb_mag_ruins_flg }
+			}
+		}
+		else = {
+			religion_group = giantkin
+			has_owner_religion = yes
+			OR = {
+				AND = {
+					culture_group = ogre
+					owner = { culture_group = ogre }
+				}
+				AND = {
+					culture_group = giantkind
+					owner = { culture_group = giantkind }
+				}
 			}
 		}
 	}
@@ -4683,4 +4780,243 @@ warmrock_bazar = {
 			
 		}
 	}
+}
+
+H35_gp_crimson_cathedral = { #cathedral of crimson grace
+	#start = 2807 - doesnt need this
+
+	date = 1.1.1
+
+	time = {
+		months = 120
+	}
+
+	build_cost = 1
+
+	can_be_moved = no
+
+	starting_tier = 0
+
+	#project type
+	type = monument
+
+	build_trigger = {
+		has_province_flag = h35_crimson_cathedral
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		owner = {
+			OR = {
+				was_tag = H35
+				tag = H35
+				culture = corinsfielder
+			}
+			religion = corinite
+		}
+		religion = corinite
+	}
+
+	can_upgrade_trigger = {
+		owner = {
+			OR = {
+				was_tag = H35
+				tag = H35
+			}
+			religion = corinite
+		}
+		religion = corinite
+	}
+
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		upgrade_time = {
+			months = 36
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			local_development_cost = -0.05
+		}
+
+		country_modifiers = {
+			tolerance_own = 1
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 170
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			trade_goods_size = 0.2
+			local_development_cost = -0.05
+		}
+
+		country_modifiers = {
+			tolerance_own = 1
+			church_privilege_slots = 1
+			infantry_power = 0.05
+		}
+
+		on_upgraded = {
+			owner = {
+				if = {
+					limit = { NOT = { 2807 = { has_province_flag = ccg_upgradeddev } } }
+					custom_tooltip = h35_cathedral_prod
+					hidden_effect = {
+						every_owned_province = {
+							limit = {
+								OR = {
+									region = sarda_region
+									region = veykoda_region
+								}
+							}
+							add_base_production = 1
+						}
+						2807 = { set_province_flag = ccg_upgradeddev }
+					}
+				}
+			}
+		}
+	}
+
+	tier_3 = {
+		
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			trade_goods_size = 0.4
+			local_development_cost = -0.1
+		}
+
+		country_modifiers = {
+			tolerance_own = 2
+			church_privilege_slots = 2
+			infantry_power = 0.1
+		}
+
+		on_upgraded = {
+			owner = {
+				if = {
+					limit = { NOT = { 2807 = { has_province_flag = ccg_upgradeddev2 } } }
+					custom_tooltip = h35_cathedral_prod
+					hidden_effect = {
+						every_owned_province = {
+							limit = {
+								OR = {
+									region = sarda_region
+									region = veykoda_region
+								}
+							}
+							add_base_production = 1
+						}
+						2807 = { set_province_flag = ccg_upgradeddev2 }
+					}
+				}
+			}
+		}
+	}
+}
+
+stormwall_canal = {
+	# province it starts in
+	start = 3580
+
+	# random guess, doesn't need to be canon
+	date = 1650.01.01
+
+	#time to build
+	time = {
+		months = 1
+	}
+
+	#how much to build one
+	build_cost = 1
+
+	#can we move it?
+	can_be_moved = no
+
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 1
+
+	#project type
+	type = canal
+
+	#can we build it?
+	build_trigger = {
+		always = no
+	}
+
 }

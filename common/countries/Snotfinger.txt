@@ -144,7 +144,7 @@ ship_names = {
 }
 
 army_names = {
-	"Snotfinger Army" "Goblin Horde" "Army of $PROVINCE$" "Orc Removal Crew" "Insult Warriors"
+	"Snotfinger Army" "Goblin Horde" "Army $PROVINCE$" "Orc Removal Crew" "Insult Warriors"
 } 
 
 fleet_names = {

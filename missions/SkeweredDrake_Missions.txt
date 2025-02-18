@@ -276,7 +276,7 @@ skewered_drake_3 = {
 	potential = { tag = H73 }
 	
 	skewered_drake_first_many = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		position = 2
 		required_missions = { 
 			skewered_drake_out_wound
@@ -532,7 +532,11 @@ skewered_drake_4 = {
 			num_of_hussars = 6
 			4228 = {
 				NOT = { has_province_modifier = expedition_target }
-				cavalry_in_province = 4
+				num_of_units_in_province = {
+					who = ROOT
+					type = cavalry
+					amount = 4
+				}
 			}
 		}
 		
@@ -1191,16 +1195,17 @@ skewered_drake_2b = {
 		trigger = {
 			owns_or_subject_of = 549
 			owns_or_subject_of = 538
-			any_subject_country = {
-				OR = {
-					culture_group = dwarven
-					culture_group = goblin
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 20
+				has_production_building_trigger = yes
+				owner = {
+					is_subject_of = ROOT
+					NOT = { liberty_desire = 50 }
+					OR = {
+						culture_group = dwarven
+						culture_group = goblin
+					}
 				}
-				num_of_owned_provinces_with = {
-					value = 20
-					has_production_building_trigger = yes
-				}
-				NOT = { liberty_desire = 50 }
 			}
 		}
 		
@@ -1722,16 +1727,17 @@ skewered_drake_5b = {
 				reform_level = 3
 			}
 			estate_loyalty = { estate = estate_nobles loyalty = 50 }
-			any_subject_country = {
-				culture_group = gnollish
-				num_of_owned_provinces_with = {
-					value = 6
-					OR = {
-						region = far_bulwar_region
-						region = far_salahad_region
-					}
-				}
-			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 6
+                OR = {
+                    region = far_bulwar_region
+                    region = far_salahad_region
+                }
+                owner = {
+                    is_subject_of = ROOT
+                    culture_group = gnollish
+                }
+            }
 			custom_trigger_tooltip = {
 				tooltip = skewered_drake_bark_bite_tooltip
 				NOT = {
@@ -1816,13 +1822,14 @@ skewered_drake_5b = {
 				trader = 3
 				dip_power = 200
 			}
-			any_subject_country = {
-				culture_group = centaur
-				num_of_owned_provinces_with = {
-					value = 10
-					region = serpent_gift_region
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				region = serpent_gift_region
+				owner = {
+                    is_subject_of = ROOT
+					culture_group = centaur
+					owns = 5101
 				}
-				owns = 5101
 			}
 			5102 = { is_strongest_trade_power = ROOT }
 

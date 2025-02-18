@@ -1754,12 +1754,27 @@ malacnar_battleking_rankdown = {
 			has_ruler_modifier = g32_cowardly_battleking
 		}
 		add_stability = -1
-		random_province = {
-			limit = { area = malacnar_area }
-			
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 2
+		if = {
+			limit = {
+				malacnar_area = {
+					type = all
+					NOT = { owned_by = ROOT }
+				}
+			}
+			capital_scope = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = { area = malacnar_area }
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+				}
 			}
 		}
 	}
@@ -11283,141 +11298,78 @@ krakazol_slaying_effect = {
 ##Ameion##
 ##########
 
-ameion_taychend_cores = { #This fires in 1444, but only if Ameion is a player
-	south_america = {
-		limit = { 
-			OR = {
-				culture = larankarha
-				culture = kalavendhi
+ameion_fotistrepei_effect = {
+	hidden_effect = {
+		every_owned_province = {
+			if = {
+				limit = {
+					superregion = taychend_superregion
+					culture_group = taychendi_ruinborn_elf
+					religion = kheionism
+					has_owner_accepted_culture = yes
+				}
+				add_province_modifier = {
+					name = G52_fotistrepei_mod
+					duration = -1
+				}
 			}
-		}
-		if = {
-			limit = { is_core = G65 }
-			set_province_flag = G52_c_G65
-		}
-		if = {
-			limit = { is_core = G66 }
-			set_province_flag = G52_c_G66
-		}
-		if = {
-			limit = { is_core = G67 }
-			set_province_flag = G52_c_G67
-		}
-		if = {
-			limit = { is_core = G68 }
-			set_province_flag = G52_c_G68
-		}
-		if = {
-			limit = { is_core = G69 }
-			set_province_flag = G52_c_G69
-		}
-		if = {
-			limit = { is_core = G70 }
-			set_province_flag = G52_c_G70
-		}
-		if = {
-			limit = { is_core = G71 }
-			set_province_flag = G52_c_G71
-		}
-		if = {
-			limit = { is_core = G72 }
-			set_province_flag = G52_c_G72
+			else = { remove_province_modifier = G52_fotistrepei_mod }
 		}
 	}
-	G77 = { every_core_province = { set_province_flag = G52_c_G77 } }
-	2474 = { set_province_flag = G52_c_G65 } #Not 1444
 }
 
-ameion_taychend_restore = {
+ameion_fotistrepei_effect_prov = {
 	hidden_effect = {
-		south_america = {
-			#limit = {
-			#	OR = {
-			#		region = yodhanchend_region
-			#		region = larankarha_highlands_region
-			#	}
-			#}
-			if = {
-				limit = { has_province_flag = G52_c_G65 }
-				clr_province_flag = G52_c_G65
-				add_core = G65
-				cede_province = G65
+		if = {
+			limit = {
+				superregion = taychend_superregion
+				culture_group = taychendi_ruinborn_elf
+				religion = kheionism
+				has_owner_accepted_culture = yes
 			}
-			if = {
-				limit = { has_province_flag = G52_c_G66 }
-				clr_province_flag = G52_c_G66
-				add_core = G66
-				cede_province = G66
-			}
-			if = {
-				limit = { has_province_flag = G52_c_G67 }
-				clr_province_flag = G52_c_G67
-				add_core = G67
-				cede_province = G67
-			}
-			if = {
-				limit = { has_province_flag = G52_c_G68 }
-				clr_province_flag = G52_c_G68
-				add_core = G68
-				cede_province = G68
-			}
-			if = {
-				limit = { has_province_flag = G52_c_G69 }
-				clr_province_flag = G52_c_G69
-				add_core = G69
-				cede_province = G69
-			}
-			if = {
-				limit = { has_province_flag = G52_c_G70 }
-				clr_province_flag = G52_c_G70
-				add_core = G70
-				cede_province = G70
-			}
-			if = {
-				limit = { has_province_flag = G52_c_G71 }
-				#clr_province_flag = G52_c_G71
-				add_core = G71
-				cede_province = G71
-			}
-			if = {
-				limit = { has_province_flag = G52_c_G72 }
-				clr_province_flag = G52_c_G72
-				add_core = G72
-				cede_province = G72
-			}
-			if = {
-				limit = { has_province_flag = G52_c_G77 }
-				clr_province_flag = G52_c_G77
-				add_core = G77
-				cede_province = G77
-			}
-			if = {
-				limit = { 
-					is_core = G52
-					NOT = { owned_by = G52 }
-					OR = {
-						region = yodhanchend_region
-						region = larankarha_highlands_region
-					}
-					NOT = { province_id = 2525 }
-				}
-				cede_province = G52
-				add_province_modifier = { 
-					name = G52_resistance
-					duration = 3650
-				}
-				set_local_autonomy = 100
-			}
-			if = {
-				limit = { NOT = { owned_by = G64 } }
-				remove_core = G64
+			add_province_modifier = {
+				name = G52_fotistrepei_mod
+				duration = -1
 			}
 		}
+		else = { remove_province_modifier = G52_fotistrepei_mod }
+	}
+}
+
+ameion_advahkalla_effect = {
+	random_owned_province = {
+		limit = {
+			OR = {
+				area = sedregenhi_area
+				area = ethanamara_area
+				area = ahartadyam_area
+			}
+			has_manpower_building_trigger = yes
+			has_forcelimit_building_trigger = yes
+			religion = kheionism
+			NOT = { culture_group = kheionai_ruinborn_elf }
+		}
+		change_culture = klereyen
 	}
 }
 
 ameion_site_mage_buff = {
 	if = {
+		limit = { has_country_modifier = G52_mage_10 }
+		hidden_effect = { remove_country_modifier = G52_mage_10 }
+		add_country_modifier = { name = G52_mage_11 duration = -1 }
+	}
+	else_if = {
+		limit = { has_country_modifier = G52_mage_9 }
+		hidden_effect = { remove_country_modifier = G52_mage_9 }
+		add_country_modifier = { name = G52_mage_10 duration = -1 }
+	}
+	else_if = {
+		limit = { has_country_modifier = G52_mage_8 }
+		hidden_effect = { remove_country_modifier = G52_mage_8 }
+		add_country_modifier = { name = G52_mage_9 duration = -1 }
+	}
+	else_if = {
 		limit = { has_country_modifier = G52_mage_7 }
 		hidden_effect = { remove_country_modifier = G52_mage_7 }
 		add_country_modifier = { name = G52_mage_8 duration = -1 }
@@ -11517,28 +11469,27 @@ ameion_tacenie = {
 
 
 ameion_administration = {
-	if = {
+	random_owned_province = {
 		limit = {
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 10
-					has_province_modifier = G52_administrative_center
-				}
+			NOT = { 
+				area = nanru_nakar_area
+				area = nagarchend_area
+				area = ameion_area
+				area = deyeion_area
+				area = amgremos_area
+				area = mteibhara_area
+				area = zaernmaera_area
 			}
+			development = 20
+			has_courthouse_building_trigger = yes
+			has_building = state_house
+			culture_group = kheionai_ruinborn_elf
 		}
-		random_owned_province = {
-			limit = {
-				NOT = { area = nanru_nakar_area }
-				development = 20
-				has_courthouse_building_trigger = yes
-				has_building = state_house
-			}
-			add_permanent_province_modifier = {
-				name = G52_administrative_center
-				duration = -1
-			}
-			set_seat_in_parliament = yes
+		add_permanent_province_modifier = {
+			name = G52_local_capital
+			duration = -1
 		}
+		set_seat_in_parliament = yes
 	}
 }
 
@@ -11550,53 +11501,11 @@ ameion_gly_clear_claim_core = {
 				remove_core = $TAG$
 			}
 		}
-	}
-}
-
-ameion_G71_reinforce = {
-	add_treasury = 250
-	add_manpower = 10
-	if = {
-		limit = { NOT = { army_size_percentage = 0.4 } }
-		6559 = {
-			build_to_forcelimit = {
-				infantry = 0.6
-				cavalry = 0.1
-				artillery = 0.3
+		every_claimed_province = {
+			if = {
+				limit = { NOT = { owned_by = $TAG$ } }
+				remove_claim = $TAG$
 			}
-			infantry = PREV
-			infantry = PREV
-		}
-	}
-	else = {
-		6559 = {
-			infantry = PREV
-			infantry = PREV
-			infantry = PREV
-			infantry = PREV
-			infantry = PREV
-			infantry = PREV
-		}
-	}
-	if = {
-		limit = { NOT = { navy_size_percentage = 0.9 } }
-		6559 = {
-			build_to_forcelimit = {
-				heavy_ship = 0.5
-				light_ship = 0.5
-			}
-			heavy_ship = PREV
-			light_ship = PREV
-		}
-	}
-	else = {
-		6559 = {
-			heavy_ship = PREV
-			heavy_ship = PREV
-			heavy_ship = PREV
-			light_ship = PREV
-			light_ship = PREV
-			light_ship = PREV
 		}
 	}
 }
@@ -11612,8 +11521,12 @@ ameion_G00_war = {
 			artillery = PREV
 			artillery = PREV
 			if = {
-				limit = { NOT = { fort_level = 5 } }
-				add_building = fort_17th
+				limit = { NOT = { province_has_current_tech_fort_trigger = yes } }
+				remove_fortifications = yes
+				add_latest_building = {
+					builder = ROOT
+					fort = yes
+                }
 			}
 		}
 		random_owned_province = {
@@ -11630,17 +11543,22 @@ ameion_G00_war = {
 			artillery = PREV
 			artillery = PREV
 			if = {
-				limit = { NOT = { fort_level = 5 } }
-				add_building = fort_17th
+				limit = { NOT = { province_has_current_tech_fort_trigger = yes } }
+				remove_fortifications = yes
+				add_latest_building = {
+					builder = ROOT
+					fort = yes
+                }
 			}
 		}
 		2525 = {
 			if = {
-				limit = {
-					owned_by = PREV
-					NOT = { fort_level = 5 }
-				}
-				add_building = fort_17th
+				limit = { NOT = { province_has_current_tech_fort_trigger = yes } }
+				remove_fortifications = yes
+				add_latest_building = {
+					builder = ROOT
+					fort = yes
+                }
 			}
 		}
 		if = {
@@ -11648,27 +11566,25 @@ ameion_G00_war = {
 				NOT = { 
 					num_of_owned_provinces_with = {
 						value = 8
-						fort_level = 5
+						province_has_current_tech_fort_trigger = yes
 					}
 				}
 			}
 			random_owned_province = {
-				limit = { 
-					NOT = { 
-						fort_level = 3
-						region = chendhya_region
-					}
-				}
-				add_building = fort_17th
+				limit = { NOT = { province_has_current_tech_fort_trigger = yes } }
+				remove_fortifications = yes
+				add_latest_building = {
+					builder = ROOT
+					fort = yes
+                }
 			}
 			random_owned_province = {
-				limit = { 
-					NOT = { 
-						fort_level = 3
-						region = chendhya_region
-					}
-				}
-				add_building = fort_17th
+				limit = { NOT = { province_has_current_tech_fort_trigger = yes } }
+				remove_fortifications = yes
+				add_latest_building = {
+					builder = ROOT
+					fort = yes
+                }
 			}
 		}
 		if = {
@@ -11676,17 +11592,25 @@ ameion_G00_war = {
 				NOT = { 
 					num_of_owned_provinces_with = {
 						value = 10
-						fort_level = 3
+						province_has_current_tech_fort_trigger = yes
 					}
 				}
 			}
 			random_owned_province = {
-				limit = { NOT = { fort_level = 3 } }
-				add_building = fort_16th
+				limit = { NOT = { province_has_current_tech_fort_trigger = yes } }
+				remove_fortifications = yes
+				add_latest_building = {
+					builder = ROOT
+					fort = yes
+                }
 			}
 			random_owned_province = {
-				limit = { NOT = { fort_level = 3 } }
-				add_building = fort_16th
+				limit = { NOT = { province_has_current_tech_fort_trigger = yes } }
+				remove_fortifications = yes
+				add_latest_building = {
+					builder = ROOT
+					fort = yes
+                }
 			}
 		}
 		random_owned_province = {
@@ -11707,6 +11631,9 @@ ameion_G00_war = {
 			create_general = { tradition = 30 }
 			create_general = { tradition = 50 }
 			create_general = { tradition = 70 }
+			add_army_professionalism = 0.5
+			add_army_tradition = 80
+			add_navy_tradition = 90
 			country_event = { id = flavor_ameion.55 days = 35 }
 		}
 	}
@@ -12177,35 +12104,35 @@ add_cult_aw_to_random_province = {
 
 give_all_embraced_institutions_to_province_effect = {
 	if = {
-		limit = { ROOT = { has_institution = feudalism } }
+		limit = { $tag$ = { has_institution = feudalism } }
 		add_institution_embracement = { which = feudalism value = 100 }
 	}
 	if = {
-		limit = { ROOT = { has_institution = renaissance } }
+		limit = { $tag$ = { has_institution = renaissance } }
 		add_institution_embracement = { which = renaissance value = 100 }
 	}
 	if = {
-		limit = { ROOT = { has_institution = new_world_i } }
+		limit = { $tag$ = { has_institution = new_world_i } }
 		add_institution_embracement = { which = new_world_i value = 100 }
 	}
 	if = {
-		limit = { ROOT = { has_institution = printing_press } }
+		limit = { $tag$ = { has_institution = printing_press } }
 		add_institution_embracement = { which = printing_press value = 100 }
 	}
 	if = {
-		limit = { ROOT = { has_institution = global_trade } }
+		limit = { $tag$ = { has_institution = global_trade } }
 		add_institution_embracement = { which = global_trade value = 100 }
 	}
 	if = {
-		limit = { ROOT = { has_institution = manufactories } }
+		limit = { $tag$ = { has_institution = manufactories } }
 		add_institution_embracement = { which = manufactories value = 100 }
 	}
 	if = {
-		limit = { ROOT = { has_institution = enlightenment } }
+		limit = { $tag$ = { has_institution = enlightenment } }
 		add_institution_embracement = { which = enlightenment value = 100 }
 	}
 	if = {
-		limit = { ROOT = { has_institution = industrialization } }
+		limit = { $tag$ = { has_institution = industrialization } }
 		add_institution_embracement = { which = industrialization value = 100 }
 	}
 }
@@ -13221,39 +13148,8 @@ yinquan_exile_effect = {
 	hidden_effect = {
 		set_country_flag = Y26_election_loop
 		if = {
-			limit = { check_variable = { PatronApproval = 8 } }
-			set_ruler_flag = patron_approval_8
-		}
-		else_if = {
-			limit = { check_variable = { PatronApproval = 7 } }
-			set_ruler_flag = patron_approval_7
-		}
-		else_if = {
-			limit = { check_variable = { PatronApproval = 6 } }
-			set_ruler_flag = patron_approval_6
-		}
-		else_if = {
-			limit = { check_variable = { PatronApproval = 5 } }
-			set_ruler_flag = patron_approval_5
-		}
-		else_if = {
-			limit = { check_variable = { PatronApproval = 4 } }
-			set_ruler_flag = patron_approval_4
-		}
-		else_if = {
-			limit = { check_variable = { PatronApproval = 3 } }
-			set_ruler_flag = patron_approval_3
-		}
-		else_if = {
-			limit = { check_variable = { PatronApproval = 2 } }
-			set_ruler_flag = patron_approval_2
-		}
-		else_if = {
-			limit = { check_variable = { PatronApproval = 1 } }
-			set_ruler_flag = patron_approval_1
-		}
-		else = {
-			set_ruler_flag = patron_approval_0
+			limit = { NOT = { has_ruler_flag = bladedancer_patron } }
+			yinquan_approval_effect = yes
 		}
 		exile_ruler_as = { name = $ruler$_ruler }
 	}
@@ -13290,6 +13186,34 @@ yinquan_ruler_returns_effect = {
 			duration = 1
 			hidden = yes
 		}
+		if = { 
+			limit = { has_ruler_flag = bladedancer_patron }
+			clr_ruler_flag = patron_favored_divination
+			clr_ruler_flag = patron_favored_evocation
+			clr_ruler_flag = patron_disfavored_illusion
+			clr_ruler_flag = patron_disfavored_abjuration
+			clr_ruler_flag = bladedancer_patron
+		}
+		if = { 
+			limit = { has_ruler_flag = is_holi }
+			set_magic_patron = {
+				name_key = huli_jing
+				favoured_school_1 = enchantment
+				favoured_school_2 = illusion
+				disfavoured_school_1 = divination
+				disfavoured_school_2 = necromancy
+			}
+		}
+		else_if = {
+			limit = { has_ruler_flag = is_sado }
+			set_magic_patron = {
+				name_key = gumiho
+				favoured_school_1 = enchantment
+				favoured_school_2 = illusion
+				disfavoured_school_1 = abjuration
+				disfavoured_school_2 = evocation
+			}
+		}
 		trigger_switch = {
 			on_trigger = has_ruler_flag
 
@@ -13302,6 +13226,46 @@ yinquan_ruler_returns_effect = {
 			patron_approval_6 = { set_variable = { PatronApproval = 6 } clr_ruler_flag = patron_approval_6 }
 			patron_approval_7 = { set_variable = { PatronApproval = 7 } clr_ruler_flag = patron_approval_7 }
 			patron_approval_8 = { set_variable = { PatronApproval = 8 } clr_ruler_flag = patron_approval_8 }
+		}
+	}
+}
+
+yinquan_approval_effect = { #Saving huli jing or gumiho approval
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { PatronApproval = 8 } }
+			set_ruler_flag = patron_approval_8
+		}
+		else_if = {
+			limit = { check_variable = { PatronApproval = 7 } }
+			set_ruler_flag = patron_approval_7
+		}
+		else_if = {
+			limit = { check_variable = { PatronApproval = 6 } }
+			set_ruler_flag = patron_approval_6
+		}
+		else_if = {
+			limit = { check_variable = { PatronApproval = 5 } }
+			set_ruler_flag = patron_approval_5
+		}
+		else_if = {
+			limit = { check_variable = { PatronApproval = 4 } }
+			set_ruler_flag = patron_approval_4
+		}
+		else_if = {
+			limit = { check_variable = { PatronApproval = 3 } }
+			set_ruler_flag = patron_approval_3
+		}
+		else_if = {
+			limit = { check_variable = { PatronApproval = 2 } }
+			set_ruler_flag = patron_approval_2
+		}
+		else_if = {
+			limit = { check_variable = { PatronApproval = 1 } }
+			set_ruler_flag = patron_approval_1
+		}
+		else = {
+			set_ruler_flag = patron_approval_0
 		}
 	}
 }
@@ -15654,23 +15618,14 @@ F23_shipyard_construction = {
 	}
 }
 F23_extending_our_reach_effect = {
-	random_trade_node_member_province = {
-		limit = {
-			has_terrain = coastline
-			F23_owned_by_friendly_nation = yes
-			has_shipyard_building_trigger = yes
-			num_free_building_slots = 1
-		}
-		if = { limit = { country_or_non_sovereign_subject_holds = F23  NOT = { owned_by = ROOT } }
-			cede_province = F23
-		}
-		add_province_modifier = { name = F23_local_naval_base duration = -1 }
-		change_trade_goods = fish
-		add_building_construction = {
-			building = impressment_offices
-			speed = 0.0
-			cost = 0.0
-		}
+	if = { limit = { country_or_non_sovereign_subject_holds = F23 NOT = { owned_by = ROOT } }
+		cede_province = F23
+	}
+	add_province_modifier = { name = F23_local_naval_base duration = -1 }
+	add_building_construction = {
+		building = impressment_offices
+		speed = 0.0
+		cost = 0.0
 	}
 }
 F23_seizing_the_sweetport_custom_effect = {
@@ -15687,89 +15642,433 @@ F23_seizing_the_sweetport_custom_effect = {
 		}	
 	}
 }
-F23_copper_offer_effect = {
-	hidden_effect = { $prov_num$ = { set_province_flag = F23_copper_offer_made } }
-	custom_tooltip = F23_make_the_copper_offer_target_$prov_num$
-
-	if = { limit = { $prov_num$ = { owner = { F23_copper_offer_subtrigger_already_subject = yes } } } 
-		custom_tooltip = F23_copper_offer_effect_already_vassal_true
+# Copper offer section
+F23_copper_offer_effect_set_up_master = {
+	F23_copper_offer_effect_set_up = { prov_tag = F40 prov_num = 560 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F76 prov_num = 561 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F24 prov_num = 565 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F30 prov_num = 591 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F43 prov_num = 596 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F39 prov_num = 601 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F35 prov_num = 613 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F33 prov_num = 616 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F83 prov_num = 622 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F25 prov_num = 625 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F31 prov_num = 631 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F45 prov_num = 640 	}
+	F23_copper_offer_effect_set_up = { prov_tag = U20 prov_num = 643 	}
+	F23_copper_offer_effect_set_up = { prov_tag = F85 prov_num = 6761 	}
+}
+F23_copper_offer_effect_set_up = {
+	# Does the tag exist?
+	if = { limit = { exists = $prov_tag$ }
+		# Tag exists, scope to tag.
+		$prov_tag$ = {
+			# Is the tag independent (or tributary state)?
+			if = { limit = { is_subject = yes NOT = { is_subject_of_type = tributary_state_anb } }
+				# Tag is not independent.
+				if = { 
+					limit = { 
+						OR = { 
+							is_subject_of_type_with_overlord = { who = ROOT type = trade_protectorate } 
+							is_subject_of_type_with_overlord = { who = ROOT type = loyal_trade_protectorate } 
+						} 
+					}
+					# Blank. Tag is already trade protectorate or indebted state, Copper Offer irrelevant.
+					ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_already_protectorate }
+				}
+				else_if = { limit = { is_subject_of = ROOT }
+					# Tag is non-trade protectorate subject of Ovdal Tûngr, can turn them into a Trade Protectorate for free.
+					ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_make_subject_protectorate }
+				}
+				# Tag is subject of a country other than Ovdal Tûngr or Crathanor.
+				else_if = { limit = { overlord = { OR = { is_enemy = ROOT is_rival = ROOT NOT = { has_opinion = { who = ROOT value = -100 } } } } }
+					# Tag overlord is enemy or rival of Ovdal Tûngr, can do hostile takeover.
+					if = { limit = { overlord = { has_spy_network_from = { who = F23 value = 30 } } }
+						ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_exists_spy_yes }
+						ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover }
+					}
+					else = {
+						ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_exists_spy_no }
+						ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover }
+					}
+				}
+				else = {
+					# Tag is not subject of Ovdal Tûngr, Crathanor, or a rival/enemy country. Copper offer can be made to overlord.
+					if = { limit = { overlord = { has_opinion = { who = ROOT value = 125 } } }
+						ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_overlord_offer_will_accept }
+					}
+					else = { 
+						ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_overlord_offer_will_refuse }
+					}
+				}
+			}
+			else = {
+				# Tag is independent.
+				if = { 
+					limit = {
+						guaranteed_by = ROOT 
+						NOT = { total_development = 100 }
+						has_opinion = { who = ROOT value = 125 }
+					}
+					ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_become_protectorate_will_accept }
+				}
+				else = {
+					ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_become_protectorate_will_refuse }
+				}
+			}
+		}
 	}
 	else = {
-		custom_tooltip = F23_copper_offer_effect_already_vassal_false
+		# Tag does not exist, scope to province owner.
+		$prov_num$ = {
+			owner = {
+				if = { limit = { tag = ROOT }
+					# Appropriate province owned by Ovdal Tûngr.
+					if = { limit = { is_at_war = yes }
+						ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_can_release_but_at_war }
+					}
+					else = {
+						ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_can_release_not_at_war }
+					}
+				}
+				else_if = { limit = { is_subject_of = ROOT }
+					# Owner is subject of Ovdal Tûngr.
+					ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_other_subject_owns_province }
+				}
+				# Owner is not Ovdal Tûngr or one of their subjects.
+				# Check whether owner is independent.
+				else_if = { limit = { is_subject = no }
+					# Owner is independent.
+					if = { limit = { capital_scope = { province_id = $prov_num$ } }
+						# Relevant province is capital. Will not sell.
+						if = { limit = { has_spy_network_from = { who = ROOT value = 30 } NOT = { truce_with = ROOT } NOT = { war_with = ROOT } } 
+							ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_capital_spy_yes }
+							ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover }
+						}
+						else = {
+							ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_capital_spy_no }
+							ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover }
+						}
+					}
+					else_if = {
+						# Relevant province is not the capital. Check whether owner is rival or enemy.
+						if = { limit = { OR = { is_rival = ROOT is_enemy = ROOT NOT = { has_opinion = { who = ROOT value = -100 } } } }
+							# Owner is rival or enemy of Ovdal Tûngr, unwilling to sell. Hostile takeover, yay.
+							if = { limit = { has_spy_network_from = { who = ROOT value = 30 } NOT = { truce_with = ROOT } NOT = { war_with = ROOT } } 
+								ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_does_not_exist_spy_yes }
+								ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover }
+							}
+							else = {
+								ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_does_not_exist_spy_no }
+								ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover }
+							}
+						}
+						else = {
+							# Owner is non-hostile. Will sell the province if relations are sufficient.
+							if = { limit = { has_opinion = { who = ROOT value = 125 } }
+								# High enough relations.
+								ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_sell_owned_province_will_accept }
+							}
+							else = {
+								# Not high enough relations.
+								ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_sell_owned_province_will_refuse }
+							}
+						}
+					}
+				}
+				else = {
+					# Owner is subject.
+					if = { limit = { overlord = { OR = { is_rival = ROOT is_enemy = ROOT NOT = { has_opinion = { who = ROOT value = -100 } } } } }
+						# Overlord is rival or enemy. Hostile takeover ahoy!
+						if = { limit = { overlord = { has_spy_network_from = { who = ROOT value = 30 } NOT = { truce_with = ROOT } NOT = { war_with = ROOT } } }
+							ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_does_not_exist_spy_yes }
+						}
+						else = {
+							ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_does_not_exist_spy_no }
+						}
+					}
+					else = {
+						# Overlord is non-hostile, will sell out subject.
+						if = { limit = { has_opinion = { who = ROOT value = 125 } }
+							# High enough relations.
+							ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_sell_subject_province_will_accept }
+						}
+						else = {
+							# Not high enough relations.
+							ROOT = { set_country_flag = F23_copper_offer_$prov_tag$_sell_subject_province_will_refuse }
+						}
+					}
+				}
+			}
+		}
 	}
+	# Suboptimal performance-wise to use a trigger_switch rather than adding the response flags when more specific flags are set, but this looks nicer.
+	trigger_switch = {
+		on_trigger = has_country_flag
 
-	if = { limit = { $prov_num$ = { owner = { F23_copper_offer_subtrigger_willing_to_become_subject = yes } } }
-		custom_tooltip = F23_copper_offer_effect_becomes_protectorate_true
+		F23_copper_offer_$prov_tag$_make_subject_protectorate = 				{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_hostile_takeover_exists_spy_yes = 			{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_hostile_takeover_exists_spy_no = 			{ set_country_flag = F23_copper_offer_$prov_tag$_response_negative }
+		F23_copper_offer_$prov_tag$_overlord_offer_will_accept = 				{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_overlord_offer_will_refuse = 				{ set_country_flag = F23_copper_offer_$prov_tag$_response_negative }
+		F23_copper_offer_$prov_tag$_become_protectorate_will_accept = 			{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_become_protectorate_will_refuse = 			{ set_country_flag = F23_copper_offer_$prov_tag$_response_negative }
+		F23_copper_offer_$prov_tag$_can_release_but_at_war = 					{ set_country_flag = F23_copper_offer_$prov_tag$_response_negative }
+		F23_copper_offer_$prov_tag$_can_release_not_at_war = 					{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_other_subject_owns_province = 				{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_hostile_takeover_capital_spy_yes = 			{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_hostile_takeover_capital_spy_no = 			{ set_country_flag = F23_copper_offer_$prov_tag$_response_negative }
+		F23_copper_offer_$prov_tag$_hostile_takeover_does_not_exist_spy_yes = 	{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_hostile_takeover_does_not_exist_spy_no = 	{ set_country_flag = F23_copper_offer_$prov_tag$_response_negative }
+		F23_copper_offer_$prov_tag$_sell_owned_province_will_accept = 			{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_sell_owned_province_will_refuse = 			{ set_country_flag = F23_copper_offer_$prov_tag$_response_negative }
+		F23_copper_offer_$prov_tag$_sell_subject_province_will_accept = 		{ set_country_flag = F23_copper_offer_$prov_tag$_response_positive }
+		F23_copper_offer_$prov_tag$_sell_subject_province_will_refuse = 		{ set_country_flag = F23_copper_offer_$prov_tag$_response_negative }
 	}
-	else = {
-		custom_tooltip = F23_copper_offer_effect_becomes_protectorate_false
-	}
+}
+F23_copper_offer_effect_execute_positive = {
+	trigger_switch = {
+		on_trigger = has_country_flag
 
+		F23_copper_offer_$prov_tag_input$_make_subject_protectorate = 				{ F23_copper_offer_effect_make_subject_protectorate = 				{ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_hostile_takeover_exists_spy_yes = 		{ F23_copper_offer_effect_hostile_takeover_exists_spy_yes = 		{ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_become_protectorate_will_accept = 		{ F23_copper_offer_effect_become_protectorate_will_accept = 		{ prov_tag = $prov_tag_input$ } }
+
+		F23_copper_offer_$prov_tag_input$_overlord_offer_will_accept = 				{ F23_copper_offer_effect_overlord_offer_will_accept = 				{ prov_num = $prov_num_input$ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_can_release_not_at_war = 					{ F23_copper_offer_effect_can_release_not_at_war = 					{ prov_num = $prov_num_input$ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_other_subject_owns_province = 			{ F23_copper_offer_effect_other_subject_owns_province = 			{ prov_num = $prov_num_input$ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_sell_owned_province_will_accept = 		{ F23_copper_offer_effect_sell_owned_province_will_accept = 		{ prov_num = $prov_num_input$ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_sell_subject_province_will_accept = 		{ F23_copper_offer_effect_sell_subject_province_will_accept = 		{ prov_num = $prov_num_input$ prov_tag = $prov_tag_input$ } }
+
+		F23_copper_offer_$prov_tag_input$_hostile_takeover_capital_spy_yes = 		{ F23_copper_offer_effect_hostile_takeover_capital_spy_yes = 		{ prov_num = $prov_num_input$ } }
+		F23_copper_offer_$prov_tag_input$_hostile_takeover_does_not_exist_spy_yes = { F23_copper_offer_effect_hostile_takeover_does_not_exist_spy_yes = { prov_num = $prov_num_input$ } }
+	}
+}
+F23_copper_offer_effect_execute_negative = {
+	trigger_switch = {
+		on_trigger = has_country_flag
+
+		F23_copper_offer_$prov_tag_input$_hostile_takeover_exists_spy_no = 			{ F23_copper_offer_effect_hostile_takeover_exists_spy_no = 			{ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_become_protectorate_will_refuse = 		{ F23_copper_offer_effect_become_protectorate_will_refuse = 		{ prov_tag = $prov_tag_input$ } }
+
+		F23_copper_offer_$prov_tag_input$_overlord_offer_will_refuse = 				{ F23_copper_offer_effect_overlord_offer_will_refuse = 				{ prov_num = $prov_num_input$ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_sell_owned_province_will_refuse = 		{ F23_copper_offer_effect_sell_owned_province_will_refuse = 		{ prov_num = $prov_num_input$ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_sell_subject_province_will_refuse = 		{ F23_copper_offer_effect_sell_subject_province_will_refuse = 		{ prov_num = $prov_num_input$ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_can_release_but_at_war = 					{ F23_copper_offer_effect_can_release_but_at_war = 					{ prov_num = $prov_num_input$ prov_tag = $prov_tag_input$ } }
+		F23_copper_offer_$prov_tag_input$_hostile_takeover_capital_spy_no = 		{ F23_copper_offer_effect_hostile_takeover_capital_spy_no = 		{ prov_num = $prov_num_input$ } }
+		F23_copper_offer_$prov_tag_input$_hostile_takeover_does_not_exist_spy_no = 	{ F23_copper_offer_effect_hostile_takeover_does_not_exist_spy_no = 	{ prov_num = $prov_num_input$ } }
+	}
+}
+
+
+F23_copper_offer_effect_clean_up_master = {
+	F23_copper_offer_effect_clean_up = { prov_tag = F40 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F76 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F24 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F30 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F43 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F39 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F35 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F33 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F83 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F25 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F31 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F45 }
+	F23_copper_offer_effect_clean_up = { prov_tag = U20 }
+	F23_copper_offer_effect_clean_up = { prov_tag = F85 }
+}
+F23_copper_offer_effect_clean_up = {
+	clr_country_flag = F23_copper_offer_$prov_tag$_make_subject_protectorate
+	clr_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_exists_spy_yes
+	clr_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_exists_spy_no
+	clr_country_flag = F23_copper_offer_$prov_tag$_overlord_offer_will_accept
+	clr_country_flag = F23_copper_offer_$prov_tag$_overlord_offer_will_refuse
+	clr_country_flag = F23_copper_offer_$prov_tag$_become_protectorate_will_accept
+	clr_country_flag = F23_copper_offer_$prov_tag$_become_protectorate_will_refuse
+	clr_country_flag = F23_copper_offer_$prov_tag$_can_release_but_at_war
+	clr_country_flag = F23_copper_offer_$prov_tag$_can_release_not_at_war
+	clr_country_flag = F23_copper_offer_$prov_tag$_other_subject_owns_province
+	clr_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_capital_spy_yes
+	clr_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_capital_spy_no
+	clr_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_does_not_exist_spy_yes
+	clr_country_flag = F23_copper_offer_$prov_tag$_hostile_takeover_does_not_exist_spy_no
+	clr_country_flag = F23_copper_offer_$prov_tag$_sell_owned_province_will_accept
+	clr_country_flag = F23_copper_offer_$prov_tag$_sell_owned_province_will_refuse
+	clr_country_flag = F23_copper_offer_$prov_tag$_sell_subject_province_will_accept
+	clr_country_flag = F23_copper_offer_$prov_tag$_sell_subject_province_will_refuse
+	clr_country_flag = F23_copper_offer_$prov_tag$_response_positive
+	clr_country_flag = F23_copper_offer_$prov_tag$_response_negative
+}
+
+F23_copper_offer_effect_make_subject_protectorate = {
+	create_subject = { subject_type = trade_protectorate subject = $prov_tag$ }
+}
+F23_copper_offer_effect_hostile_takeover_exists_effect = {
+	add_treasury = -1000
+	hidden_effect = {
+		$prov_tag_effect$ = { 
+			overlord = { 
+				ROOT = { 
+					declare_war_with_cb = { 
+						who = PREV 
+						casus_belli = cb_liberation 
+					} 
+				} 
+				every_subject_country = {
+					add_opinion	= {
+						who = ROOT
+						modifier = F23_liberators
+						months = 120
+					}
+				}
+			} 
+		} 
+	}
+	custom_tooltip = F23_copper_offer_effect_hostile_takeover_tt
+}
+F23_copper_offer_effect_hostile_takeover_exists_spy_yes = {
+	custom_tooltip = F23_copper_offer_effect_hostile_takeover_exists_spy_yes_tt
+	F23_copper_offer_effect_hostile_takeover_exists_effect = { prov_tag_effect = $prov_tag$ }
+}
+F23_copper_offer_effect_hostile_takeover_exists_spy_no = {
+	custom_tooltip = F23_copper_offer_effect_hostile_takeover_exists_spy_no_tt
+	tooltip = { F23_copper_offer_effect_hostile_takeover_exists_effect = { prov_tag_effect = $prov_tag$ } }
+}
+F23_copper_offer_effect_overlord_offer_effect = {
+	add_treasury = -1000
+	$prov_tag_effect$ = { overlord = { add_treasury = 1000 hidden_effect = { inherit = $prov_tag_effect$ } } }
+	custom_tooltip = F23_copper_offer_effect_overlord_offer_effect_tt
+	$prov_num_effect$ = { cede_province = $prov_tag_effect$ }
+	create_subject = { subject_type = trade_protectorate subject = $prov_tag_effect$ }
+	tooltip = { $prov_num_effect$ = { cede_province = $prov_tag_effect$ } }
+}
+F23_copper_offer_effect_overlord_offer_will_accept = {
+	custom_tooltip = F23_copper_offer_effect_overlord_offer_will_accept_tt
+	F23_copper_offer_effect_overlord_offer_effect = { prov_num_effect = $prov_num$ prov_tag_effect = $prov_tag$ }
+}
+F23_copper_offer_effect_overlord_offer_will_refuse = {
+	custom_tooltip = F23_copper_offer_effect_overlord_offer_will_refuse_tt
+	tooltip = { F23_copper_offer_effect_overlord_offer_effect = { prov_num_effect = $prov_num$ prov_tag_effect = $prov_tag$ } }
+}
+F23_copper_offer_effect_become_protectorate_effect = {
 	if = { 
 		limit = { 
-			$prov_num$ = { 
-				owner = { 
-					is_subject = no
-					has_opinion = { who = F23 value = 125 }	
-					$prov_num$ = { is_capital = no } 
-					$appropriate_tag$ = { OR = { exists = no is_subject_of = PREV } }
-				} 
+			$prov_tag_effect$ = { 
+				OR = {
+					has_opinion_modifier = { who = ROOT modifier = released_in_peace } 
+					has_opinion_modifier = { who = ROOT modifier = F23_liberators } 
+				}
 			} 
 		}
-		custom_tooltip = F23_copper_offer_effect_owns_and_releases_true
+		add_treasury = -500
+		$prov_tag_effect$ = { add_treasury = 500 }
+
+		custom_tooltip = F23_copper_offer_effect_become_protectorate_freed_tt
 	}
 	else = {
-		custom_tooltip = F23_copper_offer_effect_owns_and_releases_false
+		add_treasury = -1000
+		$prov_tag_effect$ = { add_treasury = 1000 }
 	}
+	create_subject = { subject_type = trade_protectorate subject = $prov_tag_effect$ }
 
-	if = { 
-		limit = { 
-			$prov_num$ = { 
-				owner = { 
-					OR = { $appropriate_tag$ = { exists = no } tag = $appropriate_tag$ } 
-					overlord = { has_opinion = { who = F23 value = 125 } }
-				} 
-			} 
-		}
-		custom_tooltip = F23_copper_offer_effect_subject_owns_releases_true
+}
+F23_copper_offer_effect_become_protectorate_will_accept = {
+	custom_tooltip = F23_copper_offer_effect_become_protectorate_will_accept_tt
+	F23_copper_offer_effect_become_protectorate_effect = { prov_tag_effect = $prov_tag$ }
+}
+F23_copper_offer_effect_become_protectorate_will_refuse = {
+	custom_tooltip = F23_copper_offer_effect_become_protectorate_will_refuse_tt
+	tooltip = { F23_copper_offer_effect_become_protectorate_effect = { prov_tag_effect = $prov_tag$ } }
+}
+F23_copper_offer_effect_can_release_effect = {
+	$prov_num_effect$ = { cede_province = $prov_tag_effect$ }
+	create_subject = { subject_type = trade_protectorate subject = $prov_tag_effect$ }
+}
+F23_copper_offer_effect_can_release_but_at_war = {
+	custom_tooltip = F23_copper_offer_effect_can_release_but_at_war_tt
+	tooltip = { F23_copper_offer_effect_can_release_effect = { prov_num_effect = $prov_num$ prov_tag_effect = $prov_tag$ } }
+}
+F23_copper_offer_effect_can_release_not_at_war = {
+	custom_tooltip = F23_copper_offer_effect_can_release_not_at_war_tt
+	F23_copper_offer_effect_can_release_effect = { prov_num_effect = $prov_num$ prov_tag_effect = $prov_tag$ }
+}
+F23_copper_offer_effect_other_subject_owns_province = {
+	if = { limit = { $prov_num$ = { owner = { ai = yes tag = U17 } } }
+		custom_tooltip = F23_copper_offer_effect_other_subject_owns_province_crathanor_tt
 	}
 	else = {
-		custom_tooltip = F23_copper_offer_effect_subject_owns_releases_false
+		add_treasury = -1000
+		$prov_num$ = { owner = { add_treasury = 1000 } }
 	}
-
-	$prov_num$ = {
-		owner = {
-			if = { limit = { F23_copper_offer_subtrigger_already_subject = yes }
-				F23 = { create_subject = { subject_type = trade_protectorate subject = PREV } }
-			}
-			else_if = { limit = { F23_copper_offer_subtrigger_willing_to_become_subject = yes }
-				add_treasury = 1000 
-				F23 = { create_subject = { subject_type = trade_protectorate subject = PREV } add_treasury = -1000 }
-			}
-			else_if = { 
-				limit = { 
-					OR = { is_subject = no is_subject_of_type = tributary_state_anb }
-					has_opinion = { who = F23 value = 125 }	
-					$prov_num$ = { is_capital = no } 
-					$appropriate_tag$ = { OR = { exists = no is_subject_of = PREV } }
+	$prov_num$ = { cede_province = $prov_tag$ }
+	create_subject = { subject_type = trade_protectorate subject = $prov_tag$ }
+}
+# Shared for F23_copper_offer_effect_hostile_takeover_capital and F23_copper_offer_effect_hostile_takeover_does_not_exist
+F23_copper_offer_effect_hostile_takeover_effect = {
+	add_treasury = -1000
+	hidden_effect = {
+		$prov_num_effect$ = { 
+			ROOT = {
+				declare_war_with_cb = {
+					who = PREV
+					casus_belli = cb_liberation
 				}
-				add_treasury = 1000 
-				inherit = $appropriate_tag$ 
-				$prov_num$ = { cede_province = $appropriate_tag$ } 
-				tooltip = { $prov_num$ = { cede_province = $appropriate_tag$ } }
-				F23 = { create_subject = { subject_type = trade_protectorate subject = $appropriate_tag$ } add_treasury = -1000 }
 			}
-			else_if = { 
-				limit = { 
-					OR = { $appropriate_tag$ = { exists = no } tag = $appropriate_tag$ } 
-					overlord = { has_opinion = { who = F23 value = 125 } }
+			every_subject_country = {
+				add_opinion	= {
+					who = ROOT
+					modifier = F23_liberators
+					months = 120
 				}
-				overlord = { add_treasury = 1000 inherit = PREV } 
-				$prov_num$ = { cede_province = $appropriate_tag$ } 
-				F23 = { create_subject = { subject_type = trade_protectorate subject = $appropriate_tag$ } add_treasury = -1000 }
 			}
 		}
 	}
+	custom_tooltip = F23_copper_offer_effect_hostile_takeover_tt
+}
+F23_copper_offer_effect_hostile_takeover_capital_spy_yes = {
+	custom_tooltip = F23_copper_offer_effect_hostile_takeover_capital_spy_yes_tt
+	F23_copper_offer_effect_hostile_takeover_effect = { prov_num_effect = $prov_num$ }
+}
+F23_copper_offer_effect_hostile_takeover_capital_spy_no = {
+	custom_tooltip = F23_copper_offer_effect_hostile_takeover_capital_spy_no_tt
+	tooltip = { F23_copper_offer_effect_hostile_takeover_effect = { prov_num_effect = $prov_num$ } }
+}
+F23_copper_offer_effect_hostile_takeover_does_not_exist_spy_yes = {
+	custom_tooltip = F23_copper_offer_effect_hostile_takeover_does_not_exist_spy_yes_tt
+	F23_copper_offer_effect_hostile_takeover_effect = { prov_num_effect = $prov_num$ }
+}
+F23_copper_offer_effect_hostile_takeover_does_not_exist_spy_no = {
+	custom_tooltip = F23_copper_offer_effect_hostile_takeover_does_not_exist_spy_no_tt
+	tooltip = { F23_copper_offer_effect_hostile_takeover_effect = { prov_num_effect = $prov_num$ } }
+}
+F23_copper_offer_effect_sell_owned_province_effect = {
+	add_treasury = -1000
+	$prov_num_effect$ = { owner = { add_treasury = 1000 } }
+	$prov_num_effect$ = { cede_province = $prov_tag_effect$ }
+	create_subject = { subject_type = trade_protectorate subject = $prov_tag_effect$ }
+}
+F23_copper_offer_effect_sell_owned_province_will_accept = {
+	custom_tooltip = F23_copper_offer_effect_sell_owned_province_will_accept_tt
+	F23_copper_offer_effect_sell_owned_province_effect = { prov_num_effect = $prov_num$ prov_tag_effect = $prov_tag$ }
+}
+F23_copper_offer_effect_sell_owned_province_will_refuse = {
+	custom_tooltip = F23_copper_offer_effect_sell_owned_province_will_refuse_tt
+	tooltip = { F23_copper_offer_effect_sell_owned_province_effect = { prov_num_effect = $prov_num$ prov_tag_effect = $prov_tag$ } }
+}
+F23_copper_offer_effect_sell_subject_province_effect = {
+	add_treasury = -1000
+	$prov_num_effect$ = { owner = { overlord = { add_treasury = 1000 } } }
+	$prov_num_effect$ = { cede_province = $prov_tag_effect$ }
+	create_subject = { subject_type = trade_protectorate subject = $prov_tag_effect$ }
+}
+F23_copper_offer_effect_sell_subject_province_will_accept = {
+	custom_tooltip = F23_copper_offer_effect_sell_subject_province_will_accept_tt
+	F23_copper_offer_effect_sell_subject_province_effect = { prov_num_effect = $prov_num$ prov_tag_effect = $prov_tag$ }
+}
+F23_copper_offer_effect_sell_subject_province_will_refuse = {
+	custom_tooltip = F23_copper_offer_effect_sell_subject_province_will_refuse_tt
+	tooltip = { F23_copper_offer_effect_sell_subject_province_effect = { prov_num_effect = $prov_num$ prov_tag_effect = $prov_tag$ } }
 }
 F23_institution_spread_effect = {
 	if = { limit = { has_institution = $institution$ }
@@ -15792,32 +16091,48 @@ F23_institution_spread_effect = {
 	}
 }
 
-F23_apply_improved_trading_post = {
-	remove_province_modifier = F23_improved_trading_post_1
-	remove_province_modifier = F23_improved_trading_post_2
-	remove_province_modifier = F23_improved_trading_post_3
-	remove_province_modifier = F23_improved_trading_post_4
-	remove_province_modifier = F23_improved_trading_post_5
-	
-	set_province_flag = F23_improved_trading_post_flag
-
-	if 		= { limit = { num_of_times_expanded_infrastructure = 5 } add_province_modifier = { name = F23_improved_trading_post_5 duration = -1 } }
-	else_if = { limit = { num_of_times_expanded_infrastructure = 4 } add_province_modifier = { name = F23_improved_trading_post_4 duration = -1 } }
-	else_if = { limit = { num_of_times_expanded_infrastructure = 3 } add_province_modifier = { name = F23_improved_trading_post_3 duration = -1 } }
-	else_if = { limit = { num_of_times_expanded_infrastructure = 2 } add_province_modifier = { name = F23_improved_trading_post_2 duration = -1 } }
-	else_if = { limit = { num_of_times_expanded_infrastructure = 1 } add_province_modifier = { name = F23_improved_trading_post_1 duration = -1 } }
-	else = { clr_province_flag = F23_improved_trading_post_flag }
-
-	if = { limit = { has_any_dwarven_pop_trigger = no }
-		add_dwarven_minority_size_effect = yes
-	}
-
-	if = { limit = { has_province_flag = F23_improved_trading_post_flag} 
-		if = { limit = { owner = { mission_completed = F23_resting_yet_productive } }
-			add_province_modifier = { name = F23_improved_trading_post_granary_improved duration = -1 }
+F23_apply_uthojdihr_trading_post = {
+	if = { limit = { owner = { has_reform = F23_the_port_hold } OR = { province_has_center_of_trade_of_level = 1 has_river_estuary_trigger = yes } }
+		# If player has Leviathan, run off of expanding infrastructure.
+		if = { limit = { has_dlc = "Leviathan" }
+			set_province_flag = F23_improved_trading_post_flag
+			trigger_switch = {
+				on_trigger = num_of_times_expanded_infrastructure
+				5 = { add_province_modifier = { name = F23_improved_trading_post_5 duration = -1 } remove_province_modifier = F23_improved_trading_post_4 }
+				4 = { add_province_modifier = { name = F23_improved_trading_post_4 duration = -1 } remove_province_modifier = F23_improved_trading_post_3 }
+				3 = { add_province_modifier = { name = F23_improved_trading_post_3 duration = -1 } remove_province_modifier = F23_improved_trading_post_2 }
+				2 = { add_province_modifier = { name = F23_improved_trading_post_2 duration = -1 } remove_province_modifier = F23_improved_trading_post_1 }
+				1 = { add_province_modifier = { name = F23_improved_trading_post_1 duration = -1 } }
+			}
 		}
-		else_if = { limit = { owner = { mission_completed = F23_our_granary } }
-			add_province_modifier = { name = F23_improved_trading_post_granary duration = -1 }
+		
+		# Otherwise, it runs off of development.
+		else = { 
+			trigger_switch = {
+				on_trigger = development
+				75 = { add_province_modifier = { name = F23_improved_trading_post_5 duration = -1 } remove_province_modifier = F23_improved_trading_post_4 }
+				60 = { add_province_modifier = { name = F23_improved_trading_post_4 duration = -1 } remove_province_modifier = F23_improved_trading_post_3 }
+				45 = { add_province_modifier = { name = F23_improved_trading_post_3 duration = -1 } remove_province_modifier = F23_improved_trading_post_2 }
+				30 = { add_province_modifier = { name = F23_improved_trading_post_2 duration = -1 } remove_province_modifier = F23_improved_trading_post_1 }
+				15 = { add_province_modifier = { name = F23_improved_trading_post_1 duration = -1 } }
+			}
+			if = { limit = { development = 15 }
+				set_province_flag = F23_improved_trading_post_flag
+			}
+		}
+
+		# Then check whether the trading post flag has been set.
+		if = { limit = { has_province_flag = F23_improved_trading_post_flag }
+			if = { limit = { NOT = { fast_has_pop_of_race = { race = dwarven } } }
+				add_dwarven_minority_size_effect = yes
+			}
+
+			if = { limit = { owner = { mission_completed = F23_resting_yet_productive } }
+				add_province_modifier = { name = F23_improved_trading_post_granary_improved duration = -1 }
+			}
+			else_if = { limit = { owner = { mission_completed = F23_our_granary } }
+				add_province_modifier = { name = F23_improved_trading_post_granary duration = -1 }
+			}
 		}
 	}
 }
@@ -15873,6 +16188,7 @@ F23_sea_hold_undocking = {
 			}
 			F23_sea_hold_clear_modifiers = yes
 
+			set_province_flag = F23_sea_hold_spawn_location
 			clr_province_flag = F23_sea_hold_docked_prov
 		}
 	}
@@ -15969,26 +16285,25 @@ F23_sea_hold_docking = {
 	custom_tooltip = F23_sea_hold_docking_tt
 	hidden_effect = {
 		random_owned_province = {
-			if = { limit = { galleys_in_province = 1 has_province_flag = F23_improved_trading_post_flag }
-				kill_units = { who = owner type = galley } 
-				if = {
-					limit = { owner = { NOT = { num_of_galley = 1 } } }
-					owner = { set_country_flag = F23_sea_hold_docked_country }
-					set_province_flag = F23_sea_hold_docked_prov
+			limit = { galleys_in_province = 1 has_province_flag = F23_improved_trading_post_flag }
+			kill_units = { who = owner type = galley } 
+			if = {
+				limit = { owner = { NOT = { num_of_galley = 1 } } }
+				owner = { set_country_flag = F23_sea_hold_docked_country }
+				set_province_flag = F23_sea_hold_docked_prov
 
-					if = { limit = { NOT = { province_id = 526 } }
-						if = { limit = { owner = { has_country_flag = F23_sea_hold_ramparts_enabled } } set_province_flag = F23_sea_hold_ramparts }
-						if = { limit = { owner = { has_country_flag = F23_sea_hold_development_enabled } } set_province_flag = F23_sea_hold_development }
-						if = { limit = { owner = { has_country_flag = F23_sea_hold_uthojdihr_enabled } } set_province_flag = F23_sea_hold_uthojdihr }
-						if = { limit = { owner = { has_country_flag = F23_sea_hold_artisan_enabled } } set_province_flag = F23_sea_hold_artisan } 
-						if = { limit = { owner = { has_country_flag = F23_sea_hold_settlement_enabled } } set_province_flag = F23_sea_hold_settlement }
-					}
+				if = { limit = { NOT = { province_id = 526 } }
+					if = { limit = { owner = { has_country_flag = F23_sea_hold_ramparts_enabled } } set_province_flag = F23_sea_hold_ramparts }
+					if = { limit = { owner = { has_country_flag = F23_sea_hold_development_enabled } } set_province_flag = F23_sea_hold_development }
+					if = { limit = { owner = { has_country_flag = F23_sea_hold_uthojdihr_enabled } } set_province_flag = F23_sea_hold_uthojdihr }
+					if = { limit = { owner = { has_country_flag = F23_sea_hold_artisan_enabled } } set_province_flag = F23_sea_hold_artisan } 
+					if = { limit = { owner = { has_country_flag = F23_sea_hold_settlement_enabled } } set_province_flag = F23_sea_hold_settlement }
+				}
 
-					F23_sea_hold_apply_effect_province = yes
-				}
-				else = {
-					owner = { country_event = { id = flavour_ovdal_tungr.58 } }
-				}
+				F23_sea_hold_apply_effect_province = yes
+			}
+			else = {
+				owner = { country_event = { id = flavour_ovdal_tungr.58 } }
 			}
 		}
 	}
@@ -16156,7 +16471,7 @@ F23_sea_hold_permadock_effect = {
 		if = { limit = { owner = { has_country_flag = F23_sea_hold_artisan_enabled } } set_province_flag = F23_sea_hold_artisan } 
 		if = { limit = { owner = { has_country_flag = F23_sea_hold_settlement_enabled } } set_province_flag = F23_sea_hold_settlement }
 	}
-	clr_province_flag = F23_sea_hold_docked_country
+	clr_country_flag = F23_sea_hold_docked_country
 	clr_country_flag = F23_sea_hold_active
 	
 	clr_country_flag = F23_sea_hold_ramparts_enabled
@@ -17426,5 +17741,990 @@ gronstunad_building_authority_effect = {
 				value = $value$
 			}
 		}
+	}
+}
+
+#Maghargma
+increase_occupation_counter = {
+	change_variable = {
+		which = I90_mission_counter
+		value = 1
+	}
+	change_variable = {
+		which = I90_occupation_counter
+		value = 1
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = I90_mission_counter
+				value = 4
+			}
+		}
+		country_event = { id = flavor_maghargma.25 }
+	}
+}
+
+increase_collaboration_counter = {
+	change_variable = {
+		which = I90_mission_counter
+		value = 1
+	}
+	change_variable = {
+		which = I90_collaboration_counter
+		value = 1
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = I90_mission_counter
+				value = 4
+			}
+		}
+		country_event = { id = flavor_maghargma.25 }
+	}
+}
+
+maghargama_vassalize_centaur_tributary = {
+	hidden_effect = {
+		#Every tributary and their vassals becomes our vassal
+		every_known_country = { 
+			limit = {
+				overlord = {
+					[[check_capital] capital_scope = { region = $region$ } ]
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = tributary_state_anb
+					}	
+				}
+			}
+			ROOT = { 
+				create_subject = {
+					subject_type = maghargma_special_subject
+					subject = PREV
+				}
+			}
+			[[move_capital]
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = { region = $region$ }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = $region$ 
+					}
+					owner = { set_capital = PREV }
+				}
+			}
+			]
+		}
+		every_subject_country = {
+			limit = {
+				is_subject_of_type_with_overlord = {
+					who = ROOT
+					type = tributary_state_anb
+				}
+				culture_group = centaur
+				[[check_capital] capital_scope = { region = $region$ } ]
+			}
+			ROOT = { 
+				create_subject = {
+					subject_type = maghargma_special_subject
+					subject = PREV
+				}
+			}
+			[[move_capital]
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = { region = $region$ }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = $region$ 
+					}
+					owner = { set_capital = PREV }
+				}
+			}
+			]
+		}
+		#Every tributary inside the region should've been your vassal, if any other tribs outside owns it its ceded to you
+		every_subject_country = { 
+			limit = {
+				is_subject_of_type = tributary_state_anb
+				any_owned_province = {
+					region = $region$
+				}
+			}
+			every_owned_province = {
+				limit = {
+					region = $region$
+				}
+				cede_province = ROOT
+			}
+		}
+	}
+}
+
+
+maghargma_consolidate_centaur_vassal = {
+	random_subject_country = {
+		limit = {
+			is_subject_of_type = maghargma_special_subject
+			has_50_opinion_improved_relation = { target = ROOT }
+			capital_scope = { region = $region$ }
+			culture_group = centaur
+		}
+		set_country_flag = I90_centaur_vassal_$horse$
+		every_country = {
+			limit = {
+				OR = {
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = vassal
+					}
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = maghargma_special_subject
+					}
+				}
+				NOT = { has_country_flag = I90_centaur_vassal_$horse$ }
+				capital_scope = { region = $region$ }
+				culture_group = centaur
+			}
+			PREV = { inherit = PREV }
+		}
+		every_owned_province = {
+			limit = { 
+				NOT = { region = $region$ }
+			}
+			cede_province = ROOT
+		}
+	}
+}
+
+maghargma_create_special_subject = {
+	ROOT = { 
+		create_subject = {
+			subject_type = maghargma_special_subject
+			who = PREV
+		}
+	}
+}
+
+#Kherka
+kherka_set_ruler = {
+	[[stalwarts]
+		random_list = {
+            1 = { set_ruler = irenthegenea_candidate }
+            1 = { set_ruler = varagenea_candidate }
+            1 = { set_ruler = elethogenea_candidate }
+		}
+		add_ruler_modifier = {
+			name = G48_stalwarts_in_power
+            duration = -1
+		}
+	]
+    [[militants]
+		random_list = {
+            1 = { set_ruler = artogenea_candidate  }
+            1 = { set_ruler = nestegenea_candidate }
+		}
+		add_ruler_modifier = {
+			name = G48_militants_in_power
+            duration = -1
+		}
+	]
+	[[colonists]
+		random_list = {
+            1 = { set_ruler = galengenea_candidate }
+            1 = { set_ruler = taelagenea_candidate }
+        }
+		add_ruler_modifier = {
+			name = G48_colonists_in_power
+            duration = -1
+		}
+	]
+	[[schemers]
+		random_list = {
+			1 = { set_ruler = serogenea_candidate }
+            1 = { set_ruler = darasgenea_candidate }
+            1 = { set_ruler = kelasgenea_candidate }
+        }
+		add_ruler_modifier = {
+			name = G48_schemers_in_power
+            duration = -1
+		}
+	]
+}
+
+kherka_remove_faction_flags = {
+	clr_country_flag = stalwarts_in_power
+    clr_country_flag = militants_in_power
+    clr_country_flag = colonists_in_power
+    clr_country_flag = schemers_in_power
+}
+
+
+
+#Rakkaz
+rakkaz_add_fighting_pit_modifier = {
+	change_religion = ROOT
+	change_culture = ROOT
+	if = {
+		limit = { owner = { 
+			has_country_flag = rakkaz_fighting_pit_more_cav_unlocked 
+			NOT = { has_country_flag = rakkaz_fighting_pit_more_cav_upgrade_unlocked }
+		} }
+		add_permanent_province_modifier = {
+			name = rakkaz_fighting_pit_more_cav
+			duration = -1
+			hidden = yes
+		}
+	}
+	else_if = {
+		limit = { owner = { has_country_flag = rakkaz_fighting_pit_more_cav_upgrade_unlocked } }
+		add_permanent_province_modifier = {
+			name = rakkaz_fighting_pit_more_cav_upgrade
+			duration = -1
+			hidden = yes
+		}
+	}
+	add_permanent_province_modifier = {
+		name = rakkaz_fighting_pit
+		duration = -1
+	}
+}
+
+rakkaz_fighting_pit_mazu_makhara_interactions = {
+	hidden_effect = {
+		if = {
+			limit = { religion = xhazobkult }
+			if = {
+				limit = { has_country_flag = rakkaz_manpower_when_interaction }
+				if = {
+					limit = { has_country_flag = rakkaz_mazu_makhara_light_the_pyres }
+					5466 = {
+						hidden_effect = { remove_province_modifier = rakkaz_surge_of_suffering_upgrade }
+						add_province_modifier = {
+							name = rakkaz_surge_of_suffering_upgrade
+							duration = 3650
+						}
+					}
+				}
+				if = {
+					limit = { has_country_flag = rakkaz_fighting_pit_light_the_pyres }
+					every_owned_province = {
+						limit = { has_province_modifier = rakkaz_fighting_pit }
+						hidden_effect = { remove_province_modifier = rakkaz_channeling_suffering_upgrade }
+						add_province_modifier = {
+							name = rakkaz_channeling_suffering_upgrade
+							duration = 3650
+						}
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = { has_country_flag = rakkaz_mazu_makhara_light_the_pyres }
+					5466 = {
+						hidden_effect = { remove_province_modifier = rakkaz_surge_of_suffering }
+						add_province_modifier = {
+							name = rakkaz_surge_of_suffering
+							duration = 3650
+						}
+					}
+				}
+				if = {
+					limit = { has_country_flag = rakkaz_fighting_pit_light_the_pyres }
+					every_owned_province = {
+						limit = { has_province_modifier = rakkaz_fighting_pit }
+						hidden_effect = { remove_province_modifier = rakkaz_channeling_suffering }
+						add_province_modifier = {
+							name = rakkaz_channeling_suffering
+							duration = 3650
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = { religion = shadow_pact }
+			if = {
+				limit = { has_country_flag = rakkaz_manpower_when_interaction }
+				if = {
+					limit = { has_country_flag = rakkaz_mazu_makhara_light_the_pyres }
+					5466 = {
+						hidden_effect = { remove_province_modifier = rakkaz_surge_of_suffering_upgrade }
+						add_province_modifier = {
+							name = rakkaz_surge_of_suffering_upgrade
+							duration = 7300
+						}
+					}
+				}
+				if = {
+					limit = { has_country_flag = rakkaz_fighting_pit_light_the_pyres }
+					every_owned_province = {
+						limit = { has_province_modifier = rakkaz_fighting_pit }
+						hidden_effect = { remove_province_modifier = rakkaz_channeling_suffering_upgrade }
+						add_province_modifier = {
+							name = rakkaz_channeling_suffering_upgrade
+							duration = 7300
+						}
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = { has_country_flag = rakkaz_mazu_makhara_light_the_pyres }
+					5466 = {
+						hidden_effect = { remove_province_modifier = rakkaz_surge_of_suffering }
+						add_province_modifier = {
+							name = rakkaz_surge_of_suffering
+							duration = 7300
+						}
+					}
+				}
+				if = {
+					limit = { has_country_flag = rakkaz_fighting_pit_light_the_pyres }
+					every_owned_province = {
+						limit = { has_province_modifier = rakkaz_fighting_pit }
+						hidden_effect = { remove_province_modifier = rakkaz_channeling_suffering }
+						add_province_modifier = {
+							name = rakkaz_channeling_suffering
+							duration = 7300
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+rakkaz_soldier_household_buffs = {
+	if = {
+		limit = { has_province_modifier = rakkaz_fighting_pit }
+		add_province_modifier = {
+			name = rakkaz_soldier_households_3
+			duration = -1
+			hidden = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				trade_goods = grain
+				trade_goods = fish
+				trade_goods = livestock
+				trade_goods = wine
+				trade_goods = fungi
+				trade_goods = serpentbloom
+				trade_goods = slaves
+			}
+			NOT = { has_province_modifier = rakkaz_fighting_pit }
+		}
+		add_province_modifier = {
+			name = rakkaz_soldier_households_2
+			duration = -1
+			hidden = yes
+		}
+	}
+	else = {
+		add_province_modifier = {
+			name = rakkaz_soldier_households_1
+			duration = -1
+			hidden = yes
+		}
+	}
+}
+
+rakkaz_soldier_household_buffs_remove = {
+	if = {
+		limit = { has_province_modifier = rakkaz_soldier_households_3 }
+		remove_province_modifier = rakkaz_soldier_households_3
+	}
+	if = {
+		limit = { has_province_modifier = rakkaz_soldier_households_2 }
+		remove_province_modifier = rakkaz_soldier_households_2
+	}
+	if = {
+		limit = { has_province_modifier = rakkaz_soldier_households_1 }
+		remove_province_modifier = rakkaz_soldier_households_1
+	}
+}
+
+rakkaz_warlock_advisor_management = {
+	clr_country_flag = rakkaz_rule_of_warlocks_advisor_demon
+	clr_country_flag = rakkaz_rule_of_warlocks_advisor_hag
+	clr_country_flag = rakkaz_rule_of_warlocks_advisor_autonomy
+	clr_country_flag = rakkaz_rule_of_warlocks_advisor_churchpower
+	clr_country_flag = rakkaz_rule_of_warlocks_advisor_demonpower
+	clr_country_flag = rakkaz_rule_of_warlocks_advisor_loot
+	clr_country_flag = rakkaz_rule_of_warlocks_advisor_loyalty
+	clr_country_flag = rakkaz_rule_of_warlocks_advisor_missionary
+	clr_country_flag = rakkaz_rule_of_warlocks_advisor_unrest
+	clr_country_flag = rakkaz_already_choosen_third_modifier
+	country_event = { id = flavour_rakkaz.6 days = 1 }
+}
+
+rakkaz_more_bonuses_for_kult_of_the_packmother = {
+	if = {
+		limit = { has_country_flag = rakkaz_improved_kult_of_the_packmother }
+		if = {
+			limit = { patriarch_authority = 0.4 }
+			random_owned_province = {
+				limit = { culture = fieldstalker_gnoll }
+				add_base_manpower = 2
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = { culture = fieldstalker_gnoll }
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = { patriarch_authority = 0.8 }
+			add_yearly_manpower = 0.5
+		}
+		else_if = {
+			limit = { patriarch_authority = 0.6 }
+			add_yearly_manpower = 0.4
+		}
+		else_if = {
+			limit = { patriarch_authority = 0.4 }
+			add_yearly_manpower = 0.3
+		}
+		else_if = {
+			limit = { patriarch_authority = 0.2 }
+			add_yearly_manpower = 0.2
+		}
+		else = { add_yearly_manpower = 0.1 }
+	}
+}
+
+rakkaz_make_warlock_pact_avaliables = {
+	clr_country_flag = revoke_warlock_pact_power
+	clr_country_flag = revoke_warlock_pact_exploitation
+	clr_country_flag = revoke_warlock_pact_domination
+	clr_country_flag = revoke_warlock_pact_overcharge
+	clr_country_flag = revoke_warlock_pact_overcharge
+	clr_country_flag = revoke_warlock_pact_overcharge
+	clr_country_flag = revoke_warlock_pact_unrestricted_savagery
+	clr_country_flag = revoke_warlock_pact_battlefield_domination
+}
+
+gophira_var_effect_add = {
+	custom_tooltip = gophira_change_tt
+	if = {
+		limit = {
+			check_variable = {
+				which = gophira_court
+				value = 12
+			}
+			NOT = { has_country_modifier = gophira_stance_5 }
+		}
+		remove_country_modifier = gophira_stance_4
+		add_country_modifier = {
+			name = gophira_stance_5
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = gophira_court
+				value = 9
+			}
+			NOT = {
+				has_country_modifier = gophira_stance_4
+				check_variable = {
+					which = gophira_court
+					value = 12
+				}
+			}
+		}
+		remove_country_modifier = gophira_stance_3
+		add_country_modifier = {
+			name = gophira_stance_4
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = gophira_court
+				value = 6
+			}
+			NOT = {
+				has_country_modifier = gophira_stance_3
+				check_variable = {
+					which = gophira_court
+					value = 9
+				}
+			}
+		}
+		remove_country_modifier = gophira_stance_2
+		add_country_modifier = {
+			name = gophira_stance_3
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = gophira_court
+				value = 3
+			}
+			NOT = {
+				has_country_modifier = gophira_stance_2
+				check_variable = {
+					which = gophira_court
+					value = 6
+				}
+			}
+		}
+		remove_country_modifier = gophira_stance_1
+		add_country_modifier = {
+			name = gophira_stance_2
+			duration = -1
+		}
+	}
+	hidden_effect = {
+		change_variable = {
+			which = gophira_court
+			value = 1
+		}	
+	}
+}
+
+gophira_var_effect_subtract = {
+	custom_tooltip = gophira_subtract_tt
+	if = {
+		limit = {
+			check_variable = {
+				which = gophira_court
+				value = 11
+			}
+			NOT = {
+				has_country_modifier = gophira_stance_4
+				check_variable = {
+					which = gophira_court
+					value = 14
+				}
+			}
+		}
+		remove_country_modifier = gophira_stance_5
+		add_country_modifier = {
+			name = gophira_stance_4
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = gophira_court
+				value = 8
+			}
+			NOT = {
+				has_country_modifier = gophira_stance_3
+				check_variable = {
+					which = gophira_court
+					value = 11
+				}
+			}
+		}
+		remove_country_modifier = gophira_stance_4
+		add_country_modifier = {
+			name = gophira_stance_3
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = gophira_court
+				value = 5
+			}
+			NOT = {
+				has_country_modifier = gophira_stance_2
+				check_variable = {
+					which = gophira_court
+					value = 8
+				}
+			}
+		}
+		remove_country_modifier = gophira_stance_3
+		add_country_modifier = {
+			name = gophira_stance_2
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_modifier = gophira_stance_1
+				check_variable = {
+					which = gophira_court
+					value = 5
+				}
+			}
+		}
+		remove_country_modifier = gophira_stance_2
+		add_country_modifier = {
+			name = gophira_stance_1
+			duration = -1
+		}
+	}
+	hidden_effect = {
+		change_variable = {
+			which = gophira_court
+			value = -1
+		}
+	}
+}
+
+gophira_heir_effect = {
+	if = {
+		limit = { has_heir_flag = gophira_heir }
+		if = {
+			limit = { 
+				NOT = { heir_$pow$ = 6 }
+			}
+			change_heir_$pow$ = $amount$
+		}
+		else = { add_$pow$_power = $amount$00 }
+	}
+}
+
+add_racial_minority_and_dev_preferred_terrain = {
+	if = {
+		limit = {
+			any_owned_province = {
+				preferred_terrain = { $race$ = yes }
+				NOT = { culture_is_$race$ = yes }
+			}
+		}
+		random_owned_province = {
+			limit = {
+				preferred_terrain = { $race$ = yes }
+				NOT = { culture_is_$race$ = yes }
+			}
+			add_$race$_minority_size_effect = yes
+			add_random_development = $dev_amount$
+		}
+	}
+	else = {
+		random_owned_province = {
+			limit = {
+				NOT = { culture_is_$race$ = yes }
+			}
+			add_$race$_minority_size_effect = yes
+			add_random_development = $dev_amount$
+		}
+	}
+}
+
+#Vandipha
+vandipha_slave_selling_effect = {
+	if = {
+		limit = {
+			L62 = { has_country_flag = L62_prestigious_slave_1 }
+		}
+		define_general = {
+			fire = 2
+			shock = 6
+			manuever = 4
+			siege = 2
+			trait = planetouched_commander_personality
+		}
+	}
+	if = {
+		limit = {
+			L62 = { has_country_flag = L62_prestigious_slave_2 }
+		}
+		every_owned_province = {
+			limit = { has_port = yes }
+			add_province_modifier = {
+				name = L62_ex_pirate_slave
+				duration = 18250
+			}
+		}
+	}
+	if = {
+		limit = {
+			L62 = { has_country_flag = L62_prestigious_slave_3 }
+		}
+		define_advisor = {
+			type = philosopher
+			skill = 2
+			cost_multiplier = 0.5
+			culture = tanizu
+		}
+	}
+	if = {
+		limit = {
+			L62 = { has_country_flag = L62_prestigious_slave_4 }
+		}
+		if = {
+			limit = {
+				fast_ruler_is_human = yes
+			}
+			define_consort = {
+				adm = 5
+				dip = 5
+				mil = 5
+			}
+		}
+		else = {
+			define_advisor = {
+				type = statesman
+				female = yes
+				skill = 3
+				cost_multiplier = 0.75
+				culture = metobesebi
+			}
+		}
+	}
+	if = {
+		limit = {
+			L62 = { has_country_flag = L62_prestigious_slave_5 }
+		}
+		define_advisor = {
+			type = court_mage
+			skill = 2
+			cost_multiplier = 0.25
+			culture = yeteferen
+		}
+	}
+	if = {
+		limit = {
+			L62 = { has_country_flag = L62_prestigious_slave_6 }
+		}
+		if = {
+			limit = {
+				fast_ruler_is_harimari = yes
+			}
+			define_heir = {
+				adm = 4
+				dip = 2
+				mil = 6
+				culture = roaming_harimari
+			}
+		}
+		else = {
+			define_advisor = {
+				type = grand_captain
+				skill = 3
+				cost_multiplier = 0.25
+				culture = roaming_harimari
+			}
+		}
+	}
+	if = {
+		limit = {
+			L62 = { has_country_flag = L62_prestigious_slave_7 }
+		}
+		largest_increase_of_gnomish_tolerance_effect = yes
+		capital_scope = {
+			add_gnomish_minority_size_effect = yes
+		}
+		define_advisor = {
+			type = trader
+			skill = 3
+			cost_multiplier = 0.25
+			culture = cliff_gnome
+		}
+	}
+	if = {
+		limit = {
+			L62 = { has_country_flag = L62_prestigious_slave_8 }
+		}
+		add_country_modifier = {
+			name = L62_most_exquisite_slaves
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_country_flag = L62_prestigious_slave_1
+					has_country_flag = L62_prestigious_slave_2
+					has_country_flag = L62_prestigious_slave_3
+					has_country_flag = L62_prestigious_slave_4
+					has_country_flag = L62_prestigious_slave_5
+					has_country_flag = L62_prestigious_slave_6
+					has_country_flag = L62_prestigious_slave_7
+					has_country_flag = L62_prestigious_slave_8
+				}
+			}
+		}
+		add_country_modifier = {
+			name = L62_slave_workforce
+			duration = 3650
+		}
+	}
+}
+
+vandipha_end_transaction_effect = {
+	hidden_effect = {
+		L62 = {
+			clr_country_flag = L62_ongoing_transaction
+			clr_country_flag = L62_prestigious_slave_1
+			clr_country_flag = L62_prestigious_slave_2
+			clr_country_flag = L62_prestigious_slave_3
+			clr_country_flag = L62_prestigious_slave_4
+			clr_country_flag = L62_prestigious_slave_5
+			clr_country_flag = L62_prestigious_slave_6
+			clr_country_flag = L62_prestigious_slave_7
+			clr_country_flag = L62_prestigious_slave_8
+			clr_country_flag = L62_offer_to_ally
+			clr_country_flag = L62_offer_to_raja
+			clr_country_flag = L62_offer_to_powerful
+			clr_country_flag = L62_offer_to_wealthy
+			clr_country_flag = L62_offer_accepted
+			clr_country_flag = L62_offer_rejected
+		}
+		event_target:l62_recipient = { 
+			clr_country_flag = L62_offer_to_ally
+			clr_country_flag = L62_offer_to_raja
+			clr_country_flag = L62_offer_to_powerful
+			clr_country_flag = L62_offer_to_wealthy
+		}
+	}
+}
+
+vandipha_retreat_of_scholars_effect = {
+	if = {
+		limit = { NOT = { has_country_modifier = L62_retreat_of_scholars } }
+		random_owned_province = {
+			limit = {
+				OR = {
+					NOT = { religion = ROOT }
+					NOT = { culture = ROOT }
+				}
+			}
+			change_religion = ROOT
+			change_culture = ROOT
+		}
+		random_subject_country = {
+			random_owned_province = {
+				limit = {
+					NOT = { culture_is_harimari = yes }
+				}
+				add_harimari_minority_size_effect = yes
+			}
+		}
+	}
+	add_country_modifier = {
+		name = L62_retreat_of_scholars
+		duration = 5475
+	}
+}
+
+khadisrapur_become_free_company_effect = {
+	custom_tooltip = khadisrapur_become_free_company_effect_tt
+	hidden_effect = {
+		if = {
+			limit = { NOT = { government = monarchy } }
+			change_government = monarchy
+		}
+		add_government_reform = heroic_realm_free_company
+	}
+}
+
+#Ikogshaantus
+J52_consecrate_provinces = {
+	if = {
+		limit = { has_country_flag = J52_consecration_expanded_2_flag }
+		add_treasury = -600
+	}
+	else_if = {
+		limit = { has_country_flag = J52_consecration_expanded_1_flag }
+		add_treasury = -300
+	}
+	else = { add_treasury = -100 }
+	random_owned_province = {
+		limit = { 
+			J52_can_consecrate_province = { type = $type$ } 
+			NOT = { has_province_modifier = J52_consecration_in_progress }
+		}
+		add_province_modifier = {
+			name = J52_consecration_in_progress
+			duration = -1
+		}
+	}
+	random_owned_province = {
+		limit = { 
+			J52_can_consecrate_province = { type = $type$ } 
+			NOT = { has_province_modifier = J52_consecration_in_progress }
+		}
+		add_province_modifier = {
+			name = J52_consecration_in_progress
+			duration = -1
+		}
+	}
+	if = {
+		limit = { has_country_flag = J52_consecration_expanded_1_flag }
+		random_owned_province = {
+			limit = { 
+				J52_can_consecrate_province = { type = $type$ } 
+				NOT = { has_province_modifier = J52_consecration_in_progress }
+			}
+			add_province_modifier = {
+				name = J52_consecration_in_progress
+				duration = -1
+			}
+		}
+		random_owned_province = {
+			limit = { 
+				J52_can_consecrate_province = { type = $type$ } 
+				NOT = { has_province_modifier = J52_consecration_in_progress }
+			}
+			add_province_modifier = {
+				name = J52_consecration_in_progress
+				duration = -1
+			}
+		}
+	}
+	if = {
+		limit = { has_country_flag = J52_consecration_expanded_2_flag }
+		random_owned_province = {
+			limit = { 
+				J52_can_consecrate_province = { type = $type$ } 
+				NOT = { has_province_modifier = J52_consecration_in_progress }
+			}
+			add_province_modifier = {
+				name = J52_consecration_in_progress
+				duration = -1
+			}
+		}
+		random_owned_province = {
+			limit = { 
+				J52_can_consecrate_province = { type = $type$ } 
+				NOT = { has_province_modifier = J52_consecration_in_progress }
+			}
+			add_province_modifier = {
+				name = J52_consecration_in_progress
+				duration = -1
+			}
+		}
+	}
+	country_event = {
+		id = ikogshaantus_events.101 #Consecration Complete
+		days = 1825 #5 years
+	}
+	set_country_flag = J52_is_consecrating_flag
+}
+
+J52_add_consecrated_industry_modifier = {
+	set_seat_in_parliament = yes
+	add_province_modifier = {
+		name = J52_consecrated_industry
+		duration = -1
 	}
 }

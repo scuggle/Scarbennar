@@ -1076,7 +1076,7 @@ country_event = {
 			add_country_modifier = { name = human_administration duration = -1 hidden = yes }
 		}
 		
-		if = { limit = { tag = F38 }
+		if = { limit = { or = { tag = F97 tag = F38 } }
 			if = {
 				limit = {
 					NOT = { primary_culture = sun_elf }
@@ -7886,9 +7886,11 @@ country_event = {
 	#Go out back For kumarkand
 	option = {
 		name = new_sun_cult.172.e
-		ai_chance = { factor = 100 }
 		trigger = {
-			has_country_flag = F30_keladors_petition
+			custom_trigger_tooltip = {
+				tooltip = F30_kumarkand_explosion_tt
+				has_country_flag = F30_keladors_petition
+			}
 		}
 		highlight = yes
 		set_country_flag = nsc_far_from_explosion	
@@ -11761,7 +11763,7 @@ country_event = {
 	after = {
 		clr_country_flag = nsc_human_country_magic_prohibition
 		clr_country_flag = active_nsc_incident_flag
-		hidden_effect = { country_event = { id = new_sun_cult.248 days = 10 } }
+		hidden_effect = { country_event = { id = new_sun_cult.248 days = 10 } country_event = { id = bulwar_flavour.138 days = 730 } }
 	}
 }
 

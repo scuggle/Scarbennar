@@ -112,6 +112,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		tag = F30
 		F30 = {
 			is_subject = no 
 			is_at_war = yes
@@ -152,6 +153,9 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
+	trigger = {
+		is_incident_active = incident_whisper_shadows 
+	}
 	option = {
 		name = flavor_kumarkand.5.a
 		hidden_effect = {
@@ -172,6 +176,9 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
+	trigger = {
+		is_incident_active = incident_whisper_shadows
+	}
 	option = {
 		name = flavor_kumarkand.6.a
 		hidden_effect = {
@@ -369,9 +376,16 @@ country_event = {
             else_if = {
                 limit = {
                     NOT = { exists = F33 }
-                }    
+                }
                 release_with_religion_and_culture = { tag = F33 religion = bulwari_sun_cult culture = zanite }
+				north_naza_area = {
+					limit = { owned_by = F42}
+					cede_province = F33
+				}
                 vassalize = F33
+				615 = { 
+					cede_province = F30 
+				}
             }
 			every_war_enemy_country = {
 				white_peace = ROOT
@@ -614,11 +628,11 @@ country_event = {
 		}
 		custom_tooltip = F30_harpy_vassal_tt
 		if = {
-			limit = { NOT = { F80 = { is_subject_of = ROOT } } }
+			limit = { NOT = { F80 = { is_subject_of = F30 } } }
 			vassalize = F80
 		}
 		hidden_effect = {
-		every_owned_province = {
+			every_owned_province = {
                 limit = {
                     OR = {
                         area = siffiraeri_area
@@ -631,12 +645,14 @@ country_event = {
 						area = kuzak_area
                     }
                 }
-                hidden_effect = {
-                    remove_core = ROOT
-                    add_core = F80
-                }
-                cede_province = F80
-            }	
+                remove_core = ROOT
+                add_core = F80
+				cede_province = F80
+			}
+			if = {
+				limit = { NOT = { F80 = { is_subject_of = F30 } } }
+				vassalize = F80
+			}
 		}
 	}
 	option = {
@@ -996,6 +1012,8 @@ country_event = {
 		change_adm = 2
 		change_dip = 2
 		change_mil = 2
+		custom_tooltip = add_magic_study_modifier_50_tt
+		update_magic_study_experience_modifier = { value=50 }
 		country_event = { id = flavor_kumarkand.25 days = 7 }
 	}
 }
@@ -1368,6 +1386,9 @@ country_event = {
 			name = F30_protector_misari
 			duration = -1
 		}
+		591 = {
+			add_half_elven_minority_size_effect = yes
+		}
 	}
 }
 
@@ -1382,6 +1403,11 @@ country_event = {
 	
 	option = {
 		name = flavor_kumarkand.39.a
+		add_stability = 3
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_splendor = 400
 	}
 }
 
@@ -1426,9 +1452,6 @@ country_event = {
 		add_country_modifier = {
 			name = F30_sibhluliam_support
 			duration = 7300
-		}
-		591 = {
-			add_half_elven_minority_size_effect = yes
 		}
 	}
 }
@@ -1696,7 +1719,6 @@ country_event = {
 	picture = FIREBALL_eventPicture
 	
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
 		has_country_flag = nsc_has_amussu_incident
@@ -1706,6 +1728,7 @@ country_event = {
 	option = {
 		name = flavor_kumarkand.53.a
 		kill_ruler = yes
+		custom_tooltip = F30_amussu_warning_tt
 	}
 }
 
@@ -1720,6 +1743,7 @@ country_event = {
 	
 	option = {
 		name = flavor_kumarkand.54.a
+		custom_tooltip = F30_something_wrong_here_tt
 		hidden_effect = {
 			country_event = { id = flavor_kumarkand.55 days = 1825 }
 		}
@@ -2030,7 +2054,7 @@ country_event = {
 	
 	option = {
 		name = flavor_kumarkand.64.a
-		add_inflation = 3
+		add_inflation = 2
 		add_treasury = 100
 		set_country_flag = kumarkand_cooldown_64
 	}
@@ -2168,7 +2192,7 @@ country_event = {
 	
 	option = {
 		name = flavor_kumarkand.69.a
-		add_corruption = 2
+		add_corruption = 1.5
 		add_country_modifier = {
 			name = F30_dealings_dark
 			duration = 1825
@@ -3260,5 +3284,20 @@ country_event = {
 
 	option = {
 		name = flavor_kumarkand.103.a
+	}
+}
+
+country_event = {
+	id = flavor_kumarkand.104
+	title = flavor_kumarkand.104.t
+	desc = flavor_kumarkand.104.d
+	picture = CONQUEROR_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_kumarkand.104.a
+		country_event = { id = flavor_kumarkand.24 days = 1 }
 	}
 }

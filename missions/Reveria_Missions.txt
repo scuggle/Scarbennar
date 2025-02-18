@@ -1012,7 +1012,7 @@ reveria_2 = {
 				AND = {
 					owned_by = ROOT
 					is_core = ROOT
-					development = 30
+					development = 25
 					culture = creek_gnome
 				}
 			}
@@ -1022,7 +1022,7 @@ reveria_2 = {
 			owns_core_province = 126
 			126 = {
 				culture = creek_gnome
-				development = 30
+				development = 25
 			}
 			has_estate = estate_artificers
 			treasury = 270
@@ -2225,7 +2225,7 @@ reveria_4 = {
 			if = {
 				limit = {
 					owns_core_province = 141
-					141 = { culture_group = halfling }
+					141 = { is_cannorian_halfling_culture = yes }
 				}
 				141 = {
 					ROOT = { infantry = PREV }
@@ -2234,7 +2234,7 @@ reveria_4 = {
 			if = {
 				limit = {
 					owns_core_province = 144
-					144 = { culture_group = halfling }
+					144 = { is_cannorian_halfling_culture = yes }
 				}
 				144 = {
 					ROOT = { infantry = PREV }
@@ -2527,7 +2527,7 @@ reveria_4 = {
 	}
 	
 	A05_mocbarja_dam = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		required_missions = { A05_damned_dam }
 		position = 10
 		

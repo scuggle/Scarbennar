@@ -1,12 +1,3 @@
-#Ndurubu-Taafisi
-vassal = {
-	first = L16
-	second = L17
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
-
-
 #Bokiya-Mausarjirad 
 vassal = {
 	first = L15
@@ -58,6 +49,25 @@ vassal = {
 alliance = {
 	first = L37
 	second = L09
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+
+#Bibyobi-Rayafo
+
+dependency = {
+    subject_type = tributary_state_anb
+	first = L38
+	second = S98
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Negefaama-Damisi
+vassal = {
+	first = L14
+	second = S97
 	start_date = 1444.1.1
 	end_date = 1500.1.1
 }

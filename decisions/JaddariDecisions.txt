@@ -396,7 +396,12 @@ country_decisions = {
 		}
 		
 		allow = {
-			dip_power = 50
+			hidden_trigger = {
+				OR = {
+					tag = F99
+					tag = F51
+				}
+			}
 			if = {
 				limit = { tag = F51 }
 				F99 = {
@@ -417,6 +422,7 @@ country_decisions = {
 					}
 				}
 			}
+			dip_power = 50
 			custom_trigger_tooltip = {
 				tooltip = jaddari_deioderan_sway_menu_open_tt
 				NOT = { has_country_flag = jaddari_deioderan_sway_menu_open }

@@ -156,6 +156,17 @@ country_event = {
 			}
 			else_if = {
 				limit = {
+					wyvernheart_is_floodborn_council = yes
+				}
+				define_heir = {
+					age = 55
+					change_adm = 2
+					culture = ROOT
+					dynasty = "of Wyvernheart"
+				}
+			}
+			else_if = {
+				limit = {
 					has_saved_event_target = gifted_academic_province
 				}
 				define_heir_random_gender = {
@@ -195,6 +206,18 @@ country_event = {
 					culture = event_target:gifted_academic_province
 					change_adm = 2
 					female = yes
+				}
+			}
+			else_if = {
+				limit = {
+					wyvernheart_is_floodborn_council = yes
+				}
+				define_heir = {
+					age = 45
+					change_adm = 2
+					culture = ROOT
+					hidden = yes
+					dynasty = "of Wyvernheart"
 				}
 			}
 			else_if = {
@@ -267,6 +290,17 @@ country_event = {
 			}
 			else_if = {
 				limit = {
+					wyvernheart_is_floodborn_council = yes
+				}
+				define_heir = {
+					age = 45
+					change_dip = 2
+					culture = ROOT
+					dynasty = "of Wyvernheart"
+				}
+			}
+			else_if = {
+				limit = {
 					has_saved_event_target = charismatic_sorcerer_province
 				}
 				define_heir_random_gender = {
@@ -306,6 +340,18 @@ country_event = {
 					culture = event_target:charismatic_sorcerer_province
 					change_dip = 2
 					female =yes
+				}
+			}
+			else_if = {
+				limit = {
+					wyvernheart_is_floodborn_council = yes
+				}
+				define_heir = {
+					age = 55
+					change_dip = 2
+					culture = ROOT
+					hidden = yes
+					dynasty = "of Wyvernheart"
 				}
 			}
 			else_if = {
@@ -386,6 +432,16 @@ country_event = {
 							female = yes
 						}
 					}
+					else_if = {
+						limit = {
+							wyvernheart_is_floodborn_council = yes
+						}
+						define_heir = {
+							age = 45
+							culture = ROOT
+							dynasty = "of Wyvernheart"
+						}
+					}
 					else = {
 						define_heir_random_gender = { 
 							dynasty = PREV 
@@ -406,6 +462,17 @@ country_event = {
 							culture = PREV
 							hidden = yes
 							female = yes
+						}
+					}
+					else_if = {
+						limit = {
+							wyvernheart_is_floodborn_council = yes
+						}
+						define_heir = {
+							age = 45
+							culture = ROOT
+							hidden = yes
+							dynasty = "of Wyvernheart"
 						}
 					}
 					else = {
@@ -466,6 +533,16 @@ country_event = {
 			}
 			else_if = {
 				limit = {
+					wyvernheart_is_floodborn_council = yes
+				}
+				define_heir = {
+					age = 45
+					culture = ROOT
+					dynasty = "of Wyvernheart"
+				}
+			}
+			else_if = {
+				limit = {
 					has_saved_event_target = estate_heir_province
 				}
 				define_heir_random_gender = {
@@ -501,6 +578,17 @@ country_event = {
 					hidden = yes
 					culture = event_target:estate_heir_province
 					female = yes
+				}
+			}
+			else_if = {
+				limit = {
+					wyvernheart_is_floodborn_council = yes
+				}
+				define_heir = {
+					age = 45
+					culture = ROOT
+					hidden = yes
+					dynasty = "of Wyvernheart"
 				}
 			}
 			else_if = {
@@ -572,6 +660,19 @@ country_event = {
 			}
 			else_if = {
 				limit = {
+					wyvernheart_is_floodborn_council = yes
+				}
+				define_heir = {
+					age = 35
+					culture = ROOT
+					max_random_adm = 3
+					max_random_dip = 3
+					max_random_mil = 3
+					dynasty = "of Wyvernheart"
+				}
+			}
+			else_if = {
+				limit = {
 					has_saved_event_target = estate_heir_province
 				}
 				define_heir_random_gender = {
@@ -619,6 +720,20 @@ country_event = {
 					hidden = yes
 					culture = event_target:estate_heir_province
 					female = yes
+				}
+			}
+			else_if = {
+				limit = {
+					wyvernheart_is_floodborn_council = yes
+				}
+				define_heir = {
+					age = 35
+					culture = ROOT
+					max_random_adm = 3
+					max_random_dip = 3
+					max_random_mil = 3
+					hidden = yes
+					dynasty = "of Wyvernheart"
 				}
 			}
 			else_if = {

@@ -132,7 +132,7 @@ krakdhumvror_1b = {
 			OR = {
 				province_id = 4198
 				province_id = 4201
-				province_id = 6196
+				province_id = 6287
 				province_id = 6214
 			}
 			NOT = { development = 8 }
@@ -141,14 +141,14 @@ krakdhumvror_1b = {
 		trigger = {
 			4198 = { development = 8 }
 			4201 = { development = 8 }
-			6196 = { development = 8 }
+			6287 = { development = 8 }
 			6214 = { development = 8 }
 		}
 		
 		effect = {
 			4198 = { add_province_modifier = { name = krak_road_building duration = -1 } }
 			4201 = { add_province_modifier = { name = krak_road_building duration = -1 } }
-			6196 = { add_province_modifier = { name = krak_road_building duration = -1 } }
+			6287 = { add_province_modifier = { name = krak_road_building duration = -1 } }
 			6214 = { add_province_modifier = { name = krak_road_building duration = -1 } }
 			hidden_effect = { country_event = { id = flavor_krak.9 days = 730 random = 365 } }
 		}
@@ -180,7 +180,7 @@ krakdhumvror_1b = {
 				tooltip = krak_mapping_dwarovar_tooltip
 				4198 = { has_province_modifier = krak_basic_road }
 				4201 = { has_province_modifier = krak_basic_road }
-				6196 = { has_province_modifier = krak_basic_road }
+				6287 = { has_province_modifier = krak_basic_road }
 				6214 = { has_province_modifier = krak_basic_road }
 			}
 			4020 = {
@@ -1189,10 +1189,10 @@ krakdhumvror_3 = {
 						NOT = { has_fort_building_trigger = yes }
 						OR = {
 							province_id = 4173
-							province_id = 4174
 							province_id = 4176
-							province_id = 6173
 							province_id = 6286
+							province_id = 4181
+							province_id = 4189
 						}
 					}
 				}
@@ -1220,10 +1220,10 @@ krakdhumvror_3 = {
 				}
 			}
 			4173 = { has_fort_building_trigger = yes }
-			4174 = { has_fort_building_trigger = yes }
 			4176 = { has_fort_building_trigger = yes }
-			6173 = { has_fort_building_trigger = yes }
 			6286 = { has_fort_building_trigger = yes }
+			4181 = { has_fort_building_trigger = yes }
+			4189 = { has_fort_building_trigger = yes }
 		}
 		
 		effect = {
@@ -1521,7 +1521,7 @@ krakdhumvror_3b = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 6214
-				province_id = 6196
+				province_id = 6287
 				province_id = 4202
 				province_id = 4199
 				province_id = 4196
@@ -1541,7 +1541,7 @@ krakdhumvror_3b = {
 			add_treasury = -2000
 			add_adm_power = -200
 			6214 = { add_province_modifier = { name = krak_road_building duration = -1 } }
-			6196 = { add_province_modifier = { name = krak_road_building duration = -1 } }
+			6287 = { add_province_modifier = { name = krak_road_building duration = -1 } }
 			4202 = { add_province_modifier = { name = krak_road_building duration = -1 } }
 			4199 = { add_province_modifier = { name = krak_road_building duration = -1 } }
 			4196 = { add_province_modifier = { name = krak_road_building duration = -1 } }
@@ -1989,7 +1989,7 @@ krakdhumvror_4b = {
 			region = serpents_vale_region
 			OR = {
 				NOT = { owned_by = ROOT }
-				has_province_modifier = flooded_province
+				has_province_flag = flooded_province
 			}
 		}
 		
@@ -1997,7 +1997,7 @@ krakdhumvror_4b = {
 			serpents_vale_region = {
 				type = all
 				owned_by = ROOT
-				NOT = { has_province_modifier = flooded_province }
+				NOT = { has_province_flag = flooded_province }
 			}
 		}
 		

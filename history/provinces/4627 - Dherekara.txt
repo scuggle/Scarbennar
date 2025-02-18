@@ -5,7 +5,7 @@ controller = R78
 add_core = R78
 add_core = R85
 culture = shamadhan
-religion = righteous_path
+religion = accretive_path
 
 hre = no
 

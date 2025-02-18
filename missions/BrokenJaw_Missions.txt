@@ -14,7 +14,13 @@ Z19_1 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {  
-			has_old_dookan_omen = yes
+			if = {
+				limit = { religion = old_dookan }
+				has_old_dookan_omen = yes
+			}
+			else = {
+				religious_unity = 0.6
+			}
 			estate_loyalty = {
 				estate = estate_mages
 				loyalty = 60
@@ -164,7 +170,7 @@ Z19_2 = {
 	}
 
 	Z19_end_of_the_traitor = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		position = 3
 		required_missions = { Z19_justice_victorious } 
 		provinces_to_highlight = {
@@ -206,21 +212,31 @@ Z19_2 = {
 		} 
 
 		trigger = {  
-			owns_all_provinces = {
-				region = alenic_reach_region
-				custom_trigger_tooltip = {
-					tooltip = Z19_end_of_the_traitor_tooltip_1
-					is_core = Z18
+			NOT = {
+				alenic_reach_region = {
+					custom_trigger_tooltip = {
+						tooltip = Z19_end_of_the_traitor_tooltip_1
+						is_core = Z18
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 			}
-			owns_all_provinces = {
-				OR = {
-					region = alenic_reach_region
-					region = gerudian_frontier_region
+			NOT = {
+				alenic_reach_region = {
+					custom_trigger_tooltip = {
+						tooltip = Z19_end_of_the_traitor_tooltip_2
+						is_core = Z47
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
-				custom_trigger_tooltip = {
-					tooltip = Z19_end_of_the_traitor_tooltip_2
-					is_core = Z47
+			}
+			NOT = {
+				gerudian_frontier_region = {
+					custom_trigger_tooltip = {
+						tooltip = Z19_end_of_the_traitor_tooltip_2
+						is_core = Z47
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 			}
 			740 = {
@@ -253,7 +269,13 @@ Z19_2 = {
 			province_id = 740
 			NOT = {
 				AND = {
-					num_of_times_expanded_infrastructure = 1
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						num_of_times_expanded_infrastructure = 1
+					}
+					else = {
+						development = 15
+					}
 					has_tax_building_trigger = yes
 					has_production_building_trigger = yes
 					has_manpower_building_trigger = yes
@@ -264,7 +286,13 @@ Z19_2 = {
 
 		trigger = {  
 			740 = {
-				num_of_times_expanded_infrastructure = 1
+				if = {
+					limit = { has_dlc = "Leviathan" }
+					num_of_times_expanded_infrastructure = 1
+				}
+				else = {
+					development = 15
+				}
 				has_tax_building_trigger = yes
 				has_production_building_trigger = yes
 				has_manpower_building_trigger = yes
@@ -723,7 +751,13 @@ Z19_4 = {
 			NOT = {
 				AND = {
 					has_tax_building_trigger = yes
-					num_of_times_expanded_infrastructure = 1
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						num_of_times_expanded_infrastructure = 1
+					}
+					else = {
+						development = 15
+					}
 				}
 			}
 		} 
@@ -743,7 +777,13 @@ Z19_4 = {
 						has_troll_minority_trigger = yes
 						has_large_troll_minority_trigger = yes
 					}
-					num_of_times_expanded_infrastructure = 1
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						num_of_times_expanded_infrastructure = 1
+					}
+					else = {
+						development = 15
+					}
 				}
 			}
 		}
@@ -1097,7 +1137,13 @@ Z19_5 = {
 			has_province_modifier = brokenjaw_mammoth_grazing
 			NOT = {
 				AND = {
-					num_of_times_expanded_infrastructure = 1
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						num_of_times_expanded_infrastructure = 1
+					}
+					else = {
+						development = 15
+					}
 					base_production = 10
 					has_building = barracks
 					cavalry_in_province = 10
@@ -1109,7 +1155,13 @@ Z19_5 = {
 		trigger = {  
 			any_owned_province = {
 				has_province_modifier = brokenjaw_mammoth_grazing
-				num_of_times_expanded_infrastructure = 1
+				if = {
+					limit = { has_dlc = "Leviathan" }
+					num_of_times_expanded_infrastructure = 1
+				}
+				else = {
+					development = 15
+				}
 				base_production = 10
 				has_building = barracks
 				cavalry_in_province = 10

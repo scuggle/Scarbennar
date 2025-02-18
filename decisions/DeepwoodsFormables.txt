@@ -83,13 +83,19 @@ country_decisions = {
 				primary_culture = forest_goblin
 			}
 			NOT = { exists = Z86 }
-			NOT = {
-				deepwoods_superregion = {
-					type = any
-					owner = {
-						primary_culture = forest_goblin
-						NOT = { tag = ROOT }
-					}	
+			if = {
+				limit = { tag = I35 }
+				mission_completed = brambleskinner_merge_the_cartels
+			}
+			else = {
+				NOT = {
+					deepwoods_superregion = {
+						type = any
+						owner = {
+							primary_culture = forest_goblin
+							NOT = { tag = ROOT }
+						}	
+					}
 				}
 			}
 			is_at_war = no
@@ -102,7 +108,7 @@ country_decisions = {
 		effect = {
 			change_tag = Z86
 			hidden_effect = { restore_country_name = yes }
-			swap_non_generic_missions = yes
+			#swap_non_generic_missions = yes #uncomment when MT is done
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -117,6 +123,7 @@ country_decisions = {
 			add_prestige = 25
 			country_event = { id = ideagroups.1 } #Swap Ideas
 			lock_racial_admin = yes
+			hidden_effect = { every_subject_country = { clr_country_flag = brambleskinner_no_integration } }
 		}
 		ai_will_do = {
 			factor = 400
@@ -168,7 +175,7 @@ country_decisions = {
 		effect = {
 			change_tag = Z87
 			hidden_effect = { restore_country_name = yes }
-			swap_non_generic_missions = yes
+			#swap_non_generic_missions = yes #uncomment when MT is done
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {

@@ -181,13 +181,19 @@ country_event = {
 		hidden_effect = {
 			random_neighbor_country = {
 				limit = { 
-					any_owned_province = { is_claim = ROOT }
+					any_owned_province = {
+						is_claim = ROOT 
+						NOT = { is_permanent_claim = ROOT }
+					}
 					NOT = { has_country_modifier = monstrous_nation }
 					NOT = { war_with = ROOT }
 				}
 				save_event_target_as = country
 				random_owned_province = {
-					limit = { is_claim = ROOT }
+					limit = { 
+						is_claim = ROOT 
+						NOT = { is_permanent_claim = ROOT }
+					}
 					save_event_target_as = province
 				}
 			}
@@ -594,6 +600,7 @@ country_event = {
 						religion = ravelian
 						religion = the_jadd
 						religion = corinite
+						religion = kalyin_worshippers
 						religion = the_thought
 						religion = kvangahga
 						religion = rinta_seekers
@@ -612,6 +619,7 @@ country_event = {
 						religion = ravelian
 						religion = the_jadd
 						religion = corinite
+						religion = kalyin_worshippers
 						AND = {
 							religion = the_thought
 							ROOT = {
@@ -1206,6 +1214,7 @@ country_event = {
 							religion = ravelian
 							religion = the_jadd
 							religion = corinite
+							religion = kalyin_worshippers
 							AND = {
 								religion = the_thought
 								ROOT = {
@@ -1235,6 +1244,7 @@ country_event = {
 							religion = ravelian
 							religion = the_jadd
 							religion = corinite
+							religion = kalyin_worshippers
 							AND = {
 								religion = the_thought
 								ROOT = {
@@ -1264,6 +1274,7 @@ country_event = {
 							religion = ravelian
 							religion = the_jadd
 							religion = corinite
+							religion = kalyin_worshippers
 							AND = {
 								religion = the_thought
 								ROOT = {
@@ -1293,7 +1304,13 @@ country_event = {
 	#Let's convert
 	option = {
 		name = monstrous.22.a
-		ai_chance = { factor = 1 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = R62 #this replaces what was previously an AI bypass
+			}
+		}
 		decrease_monstrous_10 = yes
 		change_government_reform_progress = 25
 		if = {
@@ -1326,6 +1343,7 @@ country_event = {
 			
 			modifier = {
 				factor = 0
+				NOT = { tag = R62 }
 				want_to_decrease_monstrous = yes
 			}
 		}
@@ -1531,9 +1549,11 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = monstrous_nation
+		current_age = age_of_discovery
 		has_regency = no
-		any_known_country = { NOT = { has_country_modifier = monstrous_nation } }
+		is_great_power = no
 		NOT = { has_ruler_flag = chaingrasper_lichdom_quest } #Don't kill Dak please
+		any_known_country = { NOT = { has_country_modifier = monstrous_nation } }
 	}
 	
 	#Let's go
@@ -2032,6 +2052,7 @@ country_event = {
 				days = 365
 			}
 		}
+		NOT = { tag = F66 }
 	}
 	
 	immediate = {
@@ -2055,7 +2076,10 @@ country_event = {
 		trigger = {
 			any_neighbor_country = {
 				NOT = { has_country_modifier = monstrous_nation }
-				any_owned_province = { is_claim = ROOT }
+				any_owned_province = {
+					is_claim = ROOT
+					NOT = { is_permanent_claim = ROOT }
+				}
 				NOT = { war_with = ROOT }
 			}
 		}
@@ -2162,6 +2186,7 @@ country_event = {
 					religion = ravelian
 					religion = the_jadd
 					religion = corinite
+					religion = kalyin_worshippers
 					AND = {
 						religion = the_thought
 						ROOT = {
@@ -2186,6 +2211,7 @@ country_event = {
 					religion = ravelian
 					religion = the_jadd
 					religion = corinite
+					religion = kalyin_worshippers
 					religion = the_thought
 					religion = kvangahga
 					religion = rinta_seekers
@@ -2386,14 +2412,11 @@ country_event = {
 				religion = xhazobkult
 				has_ruler_flag = xhazob_patron	#Great Xhaz
 			}
-			if = {
-				limit = { tag = R62 ai = yes }	#The Command
-				NOT = { total_development = 400 }
-			}
 			NOT = {
 				religion = ravelian
 				religion = the_jadd
 				religion = corinite
+				religion = kalyin_worshippers
 				religion = the_thought
 				religion = kvangahga
 				religion = rinta_seekers
@@ -2408,6 +2431,7 @@ country_event = {
 						religion = ravelian
 						religion = the_jadd
 						religion = corinite
+						religion = kalyin_worshippers
 						AND = {
 							religion = the_thought
 							ROOT = {
@@ -2432,6 +2456,7 @@ country_event = {
 						religion = ravelian
 						religion = the_jadd
 						religion = corinite
+						religion = kalyin_worshippers
 						AND = {
 							religion = the_thought
 							ROOT = {
@@ -2473,6 +2498,7 @@ country_event = {
 		trigger = {
 			stability = 0
 			religion = xhazobkult
+			NOT = { has_country_flag = xhazobkult_rejected_conversion }
 		}
 		country_event = { id = xhazobkult_events.2 }
 	}

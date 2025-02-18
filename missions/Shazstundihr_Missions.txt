@@ -628,7 +628,7 @@ marble_2_tng = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 510
-				area = south_overmarch_area
+				area = oudmarck_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -637,7 +637,7 @@ marble_2_tng = {
 			510 = {
 				owned_by = ROOT
 			}
-			south_overmarch_area = {
+			oudmarck_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -1613,7 +1613,7 @@ marble_4_tng = {
 	
 	shaz_de_extremism = {
 		position = 9
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		required_missions = {
 			shaz_appeasing_opposers
 			shaz_memory_bizartanses

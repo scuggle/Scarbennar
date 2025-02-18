@@ -3,7 +3,7 @@ owner = R79
 controller = R79
 add_core = R79
 culture = kamtarhid
-religion = high_philosophy
+religion = devouring_path
 
 hre = no
 

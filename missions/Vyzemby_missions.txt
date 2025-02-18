@@ -7,6 +7,9 @@ vyzemby_1 = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = amezatany
+		has_unique_vyzemby_mt = no
+		NOT = { tag = S71 } #move this to the trigger once the MT is done
+		is_colonial_nation = no
 	}
 	has_country_shield = yes
 	
@@ -293,7 +296,9 @@ vyzemby_2 = {
     NOT = { has_country_flag = chose_generic_mt }
 		NOT = { primary_culture = amezatany }
 		is_vyzemby_primary_culture = yes
-		
+		has_unique_vyzemby_mt = no
+		NOT = { tag = S71 } #move this to the trigger once the MT is done
+		is_colonial_nation = no
 	}
 	has_country_shield = yes
 	
@@ -666,10 +671,11 @@ vyzemby_4 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		OR = {
-			primary_culture = mazava
-		}
+		NOT = { has_country_flag = chose_generic_mt }
+		primary_culture = mazava
+		has_unique_vyzemby_mt = no
+		NOT = { tag = S71 } #move this to the trigger once the MT is done
+		is_colonial_nation = no
 	}
 	has_country_shield = yes
 	
@@ -701,15 +707,30 @@ vyzemby_4 = {
 		}
 		
 		effect = {
-			every_owned_province = {
-				if = {
-					limit = { trade_goods = cloves}
-					add_permanent_province_modifier = { 
-						name = vyzemby_standardized_clove_farming_techniques
-						duration = -1  
-					}
+			6624 = {
+				add_permanent_province_modifier = { 
+					name = vyzemby_standardized_clove_farming_techniques
+					duration = -1  
 				}
-			}	
+			}
+			6626 = {
+				add_permanent_province_modifier = { 
+					name = vyzemby_standardized_clove_farming_techniques
+					duration = -1  
+				}
+			}
+			6632 = {
+				add_permanent_province_modifier = { 
+					name = vyzemby_standardized_clove_farming_techniques
+					duration = -1  
+				}
+			}
+			6634 = {
+				add_permanent_province_modifier = { 
+					name = vyzemby_standardized_clove_farming_techniques
+					duration = -1  
+				}
+			}
 		}
 	}
 	
@@ -806,6 +827,9 @@ vyzemby_5 = {
     	NOT = { has_country_flag = chose_generic_mt }
 		is_vyzemby_primary_culture = yes
 		NOT = { primary_culture = mazava }
+		has_unique_vyzemby_mt = no
+		NOT = { tag = S71 } #move this to the trigger once the MT is done
+		is_colonial_nation = no
 	}
 	has_country_shield = yes
 	
@@ -1111,6 +1135,9 @@ vyzemby_6 = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		is_vyzemby_primary_culture = yes
+		has_unique_vyzemby_mt = no
+		NOT = { tag = S71 } #move this to the trigger once the MT is done
+		is_colonial_nation = no
 	}
 	has_country_shield = yes
 	
@@ -1260,6 +1287,9 @@ vyzemby_7 = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		is_vyzemby_primary_culture = yes
+		has_unique_vyzemby_mt = no
+		NOT = { tag = S71 } #move this to the trigger once the MT is done
+		is_colonial_nation = no
 	}
 	has_country_shield = yes
 	
@@ -1310,6 +1340,9 @@ vyzemby_8 = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		is_vyzemby_primary_culture = yes
+		has_unique_vyzemby_mt = no
+		NOT = { tag = S71 } #move this to the trigger once the MT is done
+		is_colonial_nation = no
 	}
 	has_country_shield = yes
 	
@@ -1368,6 +1401,9 @@ vyzemby_9 = {
 		NOT = { primary_culture = amezatany }
 		NOT = { primary_culture = mazava }
 		is_vyzemby_primary_culture = yes
+		has_unique_vyzemby_mt = no
+		NOT = { tag = S71 } #move this to the trigger once the MT is done
+		is_colonial_nation = no
 	}
 	has_country_shield = yes
 	

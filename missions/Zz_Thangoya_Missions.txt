@@ -114,11 +114,14 @@ thangoya_1 = {
         }
         
         provinces_to_highlight = {
-            area = thirabnir_area
+            OR = {
+                area = thirabnir_area
+                area = kaiden_area
+            }
             OR = {
                 AND = {
                     NOT = { has_terrain = desert }
-                    NOT = { development = 9 }
+                    NOT = { development = 8 }
                 }
                 AND = {
                     has_terrain = desert
@@ -133,13 +136,17 @@ thangoya_1 = {
                 OR = {
                     AND = {
                         NOT = { has_terrain = desert }
-                        development = 9
+                        development = 8
                     }
                     AND = {
                         has_terrain = desert
                         development = 6
                     }
                 }
+            }
+            kaiden_area = {
+                type = all
+                development = 8
             }
             OR = {
                 government_reform_progress = 50
@@ -218,7 +225,7 @@ thangoya_1 = {
                     4778 = { add_harpy_minority_size_effect = yes } #Kesanthi
 				"
             }
-            # hidden_effect = {
+            # hidden_effect = { #Break in case complex_dynamic_effect acts sus.
             #     if = {
             #         limit = { government_reform_progress = 50 }
             #         add_country_modifier = {
@@ -266,9 +273,8 @@ thangoya_1 = {
         }
         
         effect = {
-            sikai_townships_group = {
-                custom_tooltip = thangoya_1_1_0_dev_manufactory_tt
-            }
+            custom_tooltip = thangoya_sikai_townships_line_tt
+            custom_tooltip = thangoya_1_1_0_dev_manufactory_tt
             define_advisor = {
                 type = philosopher
                 skill = 3
@@ -281,6 +287,24 @@ thangoya_1 = {
                         limit = { has_manufactory_trigger = yes }
                         add_base_tax = 1
                         add_base_production = 1
+                        if = {
+                            limit = { trade_goods = glass }
+                            add_harpy_minority_size_effect = yes
+                        }
+                        else_if = {
+                            limit = { 
+                                OR = {
+                                    trade_goods = copper 
+                                    trade_goods = gold 
+                                    #Edge Case: Iron that spawns after a damestear comet despawns, not coding for that
+                                    trade_goods = salt 
+                                }
+                            }
+                            add_dwarven_minority_size_effect = yes
+                        }
+                        else = {
+                            add_elven_minority_size_effect = yes
+                        }
                     } 
                 }
             }
@@ -592,7 +616,10 @@ thangoya_2 = {
             if = {
                 limit = { 
                     any_known_country = {
-                        has_reform = xiaken
+                        OR = {
+                            has_reform = xiaken
+                            has_reform = indep_xiaken
+                        }
                         has_opinion = { #I am 75% sure this order is faster, given I check for provinces next but idk
                             who = PREV #Thangoya
                             value = 100
@@ -701,7 +728,7 @@ thangoya_2 = {
                     country_or_non_sovereign_subject_holds = Y58 #Lot Dekkhang
                 }
             }
-            accepted_culture = western_yan #Szitu
+            accepted_culture = szitu #Szitu
         }
         
         effect = {
@@ -752,12 +779,19 @@ thangoya_2 = {
                 }
                 workshop = 15
             }
-            has_church_aspect = meditation_through_farming
+            OR = {
+                has_church_aspect = transmutative_path_weaving_weal #Azkare aspect
+                has_church_aspect = transmutative_path_dessicate_landscape #Thirabnir aspect
+                has_church_aspect = transmutative_path_dredge_the_flats #Lo Ngoen aspect
+                has_church_aspect = transmutative_path_threadeth_the_corn #Khao Elnak aspect
+            }
         }
         
         effect = {
             custom_tooltip = thangoya_fund_an_industrial_project_tt
+            custom_tooltip = thangoya_sikai_townships_line_tt
             custom_tooltip = thangoya_25_dev_prov_tt
+            custom_tooltip = thangoya_savannah_discount_tt
             hidden_effect = {
                 sikai_townships_group = {
                     limit = {
@@ -766,6 +800,15 @@ thangoya_2 = {
                         }
                     }
                     add_next_institution_embracement = 50
+                }
+                sikai_townships_group = {
+                    limit = {
+                        has_terrain = savannah
+                    }
+                    add_province_modifier = {
+                        name = thangoya_savannah_discount
+                        duration = -1
+                    }
                 }
                 set_country_flag = thangoya_fund_an_industrial_project
             }
@@ -1348,23 +1391,27 @@ thangoya_3 = {
     
         trigger = {
             4779 = { province_has_center_of_trade_of_level = 2 } #Haiban
-            custom_trigger_tooltip = {
-                tooltip = thangoya_2_aw_modifier_tt
-                NOT = {
-                    calc_true_if = {
-                        ROOT = {
-                            all_owned_province = {
-                                OR = {
-                                    has_infestation_1 = yes
-                                    has_infestation_2 = yes
-                                    has_infestation_3 = yes
+            OR = {
+                custom_trigger_tooltip = {
+                    tooltip = thangoya_2_aw_modifier_tt
+                    NOT = {
+                        calc_true_if = {
+                            ROOT = {
+                                all_owned_province = {
+                                    OR = {
+                                        has_infestation_1 = yes
+                                        has_infestation_2 = yes
+                                        has_infestation_3 = yes
+                                    }
                                 }
                             }
+                            amount = 3
                         }
-                        amount = 3
                     }
                 }
+                4779 = { has_province_modifier = chi_wellspring_3 }
             }
+            
             estate_loyalty = {
                 estate = estate_adventurers
                 loyalty = 60
@@ -1641,7 +1688,7 @@ thangoya_4 = {
         }
     
         trigger = {
-            has_church_aspect = romanticize_our_feats
+            4779 = { has_province_modifier = chi_wellspring_1 } #Haiban
             if = {
                 limit = { thirabnir_mission = yes }
                 manpower_percentage = 0.8
@@ -1903,10 +1950,23 @@ thangoya_4 = {
         effect = {
             4764 = { #Mo Hoang
                 change_culture = phonan 
-                add_nationalism = -10
+                add_province_modifier = {
+                    name = thangoya_phonan_autonomy
+                    duration = 7300
+                }
             } 
-            ananhu_area = { add_nationalism = -10 }
-            phonan_area = { add_nationalism = -10 }
+            ananhu_area = { 
+                add_province_modifier = {
+                    name = thangoya_phonan_autonomy
+                    duration = 7300
+                }
+            }
+            phonan_area = { 
+                add_province_modifier = {
+                    name = thangoya_phonan_autonomy
+                    duration = 7300
+                }
+            }
             nui_phom_area = { add_permanent_claim = ROOT }
             khom_ma_area = { add_permanent_claim = ROOT }
             hoangdesinh_area = { add_permanent_claim = ROOT }

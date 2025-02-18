@@ -124,9 +124,7 @@ country_event = {
 				fangaula_superregion = { destroy_province_permanently = yes }
 				horashesh_region = { destroy_province_permanently = yes }
 				fahvanosy_region = { destroy_province_permanently = yes }
-				katala_raz_region = { destroy_province_permanently = yes }
-				throden_gokad_region = { destroy_province_permanently = yes }
-				odu_kherass_region = { destroy_province_permanently = yes }
+				taneyas_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_east_sarhal_region }
 				east_sarhal_superregion = { destroy_province_permanently = yes }
@@ -197,7 +195,7 @@ country_event = {
 			}
 			if = { limit = { has_global_flag = delete_haless_region }
 				yanshen_superregion = { destroy_province_permanently = yes }
-				south_haless_superregion = { destroy_province_permanently = yes }
+				vimdatrong_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_east_serpentspine_region }
 				east_serpentspine_superregion = { destroy_province_permanently = yes }
@@ -220,7 +218,7 @@ country_event = {
 					yyl_moista_region = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_gozenguun_region } 
-				north_haless_superregion = { destroy_province_permanently = yes }
+				gozengun_superregion = { destroy_province_permanently = yes }
 			}
 			# if = { limit = { has_global_flag = delete_insyaa_region }
 				# oceania = { destroy_province_permanently = yes }
@@ -498,7 +496,7 @@ country_event = {
 		trigger = { NOT = { has_global_flag = delete_cannor_region } }
 		custom_tooltip = disable_region_tt
 		set_global_flag = delete_cannor_region
-		custom_tooltip = institutions_warning_tt
+		#custom_tooltip = institutions_warning_tt		#No longer the case
 		if = {
 			limit = {
 				capital_scope = { 
@@ -520,7 +518,7 @@ country_event = {
 		name = anb_settings.3.ddx
 		trigger = { has_global_flag = delete_cannor_region }
 		clr_global_flag = delete_cannor_region
-		custom_tooltip = institutions_warning_tt
+		#custom_tooltip = institutions_warning_tt		#No longer the case
 		if = {
 			limit = {
 				capital_scope = { 
@@ -651,9 +649,7 @@ country_event = {
 						superregion = fangaula_superregion
 						region = horashesh_region
 						region = fahvanosy_region
-						region = katala_raz_region
-						region = throden_gokad_region
-						region = odu_kherass_region
+						superregion = taneyas_superregion
 					}
 				}
 			}
@@ -675,9 +671,7 @@ country_event = {
 						superregion = fangaula_superregion
 						region = horashesh_region
 						region = fahvanosy_region
-						region = katala_raz_region
-						region = throden_gokad_region
-						region = odu_kherass_region
+						superregion = taneyas_superregion
 					}
 				}
 			}
@@ -700,8 +694,7 @@ country_event = {
 				capital_scope = { 
 					OR = {
 						superregion = east_sarhal_superregion
-						region = jasiir_jadid_region
-						region = ardimya_region
+						superregion = djinnakah_superregion
 						region = gazraak_region
 					}
 				}
@@ -722,8 +715,7 @@ country_event = {
 				capital_scope = { 
 					OR = {
 						superregion = east_sarhal_superregion
-						region = jasiir_jadid_region
-						region = ardimya_region
+						superregion = djinnakah_superregion
 						region = gazraak_region
 					}
 				}
@@ -855,7 +847,7 @@ country_event = {
 				capital_scope = { 
 					OR = {
 						superregion = yanshen_superregion
-						superregion = south_haless_superregion
+						superregion = vimdatrong_superregion
 					}
 				}
 			}
@@ -875,7 +867,7 @@ country_event = {
 				capital_scope = { 
 					OR = {
 						superregion = yanshen_superregion
-						superregion = south_haless_superregion
+						superregion = vimdatrong_superregion
 					}
 				}
 			}
@@ -896,7 +888,7 @@ country_event = {
 		if = {
 			limit = {
 				capital_scope = { 
-					superregion = north_haless_superregion
+					superregion = gozengun_superregion
 				}
 			}
 			custom_tooltip = tag_in_this_region_tt
@@ -913,7 +905,7 @@ country_event = {
 		if = {
 			limit = {
 				capital_scope = { 
-					superregion = north_haless_superregion
+					superregion = gozengun_superregion
 				}
 			}
 			custom_tooltip = tag_in_this_region_tt

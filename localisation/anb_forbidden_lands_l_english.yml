@@ -15,7 +15,7 @@
  the_lake_federation_desc:0 "The time has finally come! Let us bring forth our constitution and rally every islander under a new banner! The Grace of Kalyin shall be known to us all, for we are now one, Triunic, people."
  federation_ask_for_war_mandat_title:0 "§MRequest Federation War Rights§!"
  federation_ask_for_war_mandat_desc:0 "Under the laws of the §MFederation§!, the independent cities of the islands are barred from conducting §Ywar§! against another without the §Yapproval§! of the §TFederation Leader§!. Even if it pains us to grovel so, we must submit our request and wait for the response before we can conquer new lands."
- lake_ask_war_mandat_tooltip:0 "While having §Ybad relations§! with the §TFederation Leader§! will certainly undermine our chances of a positive response, having a §Ycasus belli§! against them will probably never end in a positive answer.\n §YAdditionally, we may only declare one war within the Federation after obtaining these rights and must wait 5 years for another request. Choose your target wisely.§ \n"
+ lake_ask_war_mandat_tooltip:0 "While having §Ybad relations§! with the §TFederation Leader§! will certainly undermine our chances of a positive response, having a §Ycasus belli§! against them will probably never end in a positive answer.\n §YAdditionally, we may only declare one war within the Federation after obtaining these rights and must wait 5 years for another request. Choose your target wisely.§! \n"
  lake_federation_crisis:0 "Federation Crisis"
  organize_a_gun_tournament_title:0 "Organize a Gun Tournament"
  organize_a_gun_tournament_desc:0 "We will organize a Gun Tournament!"
@@ -180,27 +180,18 @@
  federation_pos_intrigue:0 "Federation Intrigue"
  federation_neg_intrigue:0 "Federation Intrigue"
  fed_pol_leader_denounced:0 "Leader Denounced"
- fed_pol_officials_corrupted:0 "Officials Corrupted"
 
  federation_denounce_leader_policy_title:0 "§TDenounce Leader Policies§!"
  federation_denounce_leader_policy_tooltip:0 "§TFederation Action§!\nWe can §Rharm§! §Y[From.GetName]§! standing due to their §Ylow Republican Tradition§!.\n"
  federation_denounce_leader_policy_desc:0 "This action will reduce the standing of §Y[From.GetName]§! due to the low §YRepublican Tradition§! of their country.\n\nWe will lose §R-50§!£icon_powers_administrative£\nWe will lose §Y2 Political Points§!.\nWe might lose some opinion with them."
 
- federation_corrupt_representatives_title:0 "§TCorrupt Representatives§!"
- federation_corrupt_representatives_tooltip:0 "§TFederation Action§!\nWe can §Rharm§! §Y[From.GetName]§! standing due to their §YCorruption§! or §YLow Stability§!.\n"
- federation_corrupt_representatives_desc:0 "This action will lightly reduce the standing of §Y[From.GetName]§! due to their §YCorruption§! or §YLow Stability§!.\n\nWe will lose §R-50§!£icon_gold£\nWe will lose §Y1 Political Points§!.\nWe might lose some opinion with them."
-
  federation_slander_nation_title:0 "§TSlander Them§!"
- federation_slander_nation_tooltip:0 "§TFederation Action§!\nWe can §Rharm§! §Y[From.GetName]§! standing due to our §YSpy Network§!.\n"
+ federation_slander_nation_tooltip:0 "§TFederation Action§!\nWe can §Rharm§! §Y[From.GetName]§! standing due to our §YSpy Network§!.\nWe can unlock a more powerful form of this diplomatic action if we have §YEspionage Ideas\n"
  federation_slander_nation_desc:0 "This action will reduce the standing of §Y[From.GetName]§! thanks to our agents in their country.\n\nWill reduce the size of our §Y[From.GetName]§! Spy Network by §R50.00§!£diplomacy_spy_icon£\nWe will lose §Y1 Political Points§!.\nWe might lose a lot of opinion with them."
 
  federation_steal_merit_title:0 "§TSteal Merit§!"
- federation_steal_merit_tooltip:0 "§TFederation Action§!\nWe can §Rsteal§! §Y[From.GetName]§! merit due to our §YSpy Ideas§!, gaining standing while they lose some.\n"
+ federation_steal_merit_tooltip:0 "§TFederation Action§!\nWe can §Rsteal§! §Y[From.GetName]§! merit due to our §YEspionage Ideas§!, gaining standing while they lose some.\n"
  federation_steal_merit_desc:0 "This action will steal the standing of §Y[From.GetName]§! thanks to our agents in their country.\n\nWill reduce the size of our §Y[From.GetName]§! Spy Network by §R50.00§!£diplomacy_spy_icon£\nWe will lose §Y1 Political Points§!.\nWe might lose a lot of opinion with them."
-
- federation_influence_nation_title:0 "§TCoerce Nation§!"
- federation_influence_nation_tooltip:0 "§TFederation Action§!\nWe can §Rsteal§! §Y[From.GetName]§! standing due to our §YInfluence Ideas§!, gaining standing while they lose some.\n"
- federation_influence_nation_desc:0 "This action will steal the standing of §Y[From.GetName]§! thanks to our agents in their country.\n\nWe will lose §R-35§!£icon_powers_diplomatic£\nWe will lose §R-50§!£icon_gold£\nWe will lose §Y1 Political Points§!.\nWe will lose opinion with them."
 
  fed_recently_confronted_tooltip:0 "We didn't confront §Y[From.GetName]§! in the last §Y365 days§!."
  federation_confront_rival_title:0 "§TDefame Rival§!"
@@ -1086,7 +1077,7 @@
  cb_federation_religious_war_desc:0 "We shall make sure our Goddess will stand above all the others!"
  federation_religious_war:0 "Federation Religious War"
  federation_religious_war_desc:0 "Federation Religious War"
- FEDERATION_RELIGIOUS_WAR_KALYIN_NAME:0 "War of Kalyin's Will"
+ FEDERATION_RELIGIOUS_WAR_KALYIN_NAME:0 "$ORDER$War of Kalyin's Will"
  cb_federation_religious_war_kalyin:0 "Kalyin's Will"
  cb_federation_religious_war_kalyin_desc:0 "We shall enforce Kalyin's will for the Federation to be united in faith." #Redundant? -Ditto
  federation_religious_war_kalyin_desc:0 "We shall enforce Kalyin's will for the Federation to be united in faith."
@@ -1129,6 +1120,9 @@
  fed_religious.10.t:0 "They Killed our Delegation!"
  fed_religious.10.d:0 "£icon_lake_federation_crisis£\nThose treacherous Kodave followers have assassinated our delegation and Head Priest! We must not let this go unpunished!"
  fed_religious.10.a:0 "War is on the horizon..."
+ fed_religious.10.enuuk_tt:0 "Every §YEnuuk§! nation gets:"
+ fed_religious.10.kodave_tt:0 "Every §YKodave§! nation gets:"
+ fed_religious.10.yukel_tt:0 "Every §YYukel§! nation gets:"
 
  fed_religious.11.t:0 "Preposterous Accusations"
  fed_religious.11.d:0 "£icon_lake_federation_crisis£\nHonor has always been one of the highest teachings of Kodave. We fight for the Federation, and always have. Despite this, those ungrateful Enuuk curs have framed the assassination of their Head Priest on us! It's now clear that they've always wanted to undermine our standing."
@@ -1281,7 +1275,7 @@
  cb_federation_war_gold_island_desc:0 "War is upon us to know who will control the Ultakal Island!"
  federation_war_gold_island:0 "Ultakal Ownership"
  federation_war_gold_island_desc:0 "We must assert our dominance over our enemy if we want to win the gold island."
- FEDERATION_WAR_GOLD_NAME:0 "Golden Island War"
+ FEDERATION_WAR_GOLD_NAME:0 "$ORDER$Golden Island War"
  CB_ALLOWED_po_federation_gold_island:0 "Claim Ultakal Ownership"
  PEACE_po_federation_gold_island:0 "§TClaim Ultakal Ownership§!"
  po_federation_gold_island_desc:0 "§Y[Root.GetName]§! will claim ownership over the §YUltakal island§!, ending the §YUltakal Decree§! and cementing their rightful position as overlord of the Golden Island. "
@@ -1441,7 +1435,7 @@
  cb_federation_war_desc:0 "We must cut them down to size!"
  federation_war:0 "Federation Cutdown War"
  federation_war_desc:0 "We must cut them down to size!"
- FEDERATION_WAR_NAME:0 "Federation Cutdown War"
+ FEDERATION_WAR_NAME:0 "$ORDER$Federation Cutdown War"
  CB_ALLOWED_po_federation_cutdown:0 "Cutdown Citystate"
  PEACE_po_federation_cutdown:0 "§TCutdown Citystate§!"
  po_federation_cutdown_desc:0 "§Y[From.GetName]§! will be cutdown by the authority of the Federation."
@@ -1497,7 +1491,7 @@
  cb_federation_mage_war_desc: "We will make sure mages in the federation are treated according to our will!"
  federation_mage_war: "Federation Mage War"
  federation_mage_war_desc: "Federation Mage War"
- FEDERATION_MAGE_WAR_NAME: "War of the Mages"
+ FEDERATION_MAGE_WAR_NAME: "$ORDER$War of the Mages"
 
  PEACE_po_federation_mage: "§TEnforce our stance on Mages§!"
  CB_ALLOWED_po_federation_mage: "Enforce our stance on mages"
@@ -2240,12 +2234,12 @@
  under_one_khan_tooltip:0 "No other centaur country roams the world."
  grandiose_tournament_tooltip:0 "§GThis option is available to us because of the high military skill of our Ruler§!"
  salgae_can_start_tooltip:0 "Our tribes are no longer zealous."
- absorb_centaur_follower_title:0 "§OIntegrate Horde§!"
- absorb_centaur_follower_tooltip:0 "§YIntegrate§! one of the hordes that we've subjugated, using their people to colonize new lands, and §Yupgrade§! our capital."
- absorb_centaur_follower_desc:0 "We will integrate §Y[From.GetName]§! and §Ycolonize§! three random province bordering our country.\nWe will lose §R75§! £icon_powers_administrative£"
- negeal_dip_action_title:0 "§ONegeal§!"
- negeal_dip_action_tooltip:0 "Meaning Unity, a Negeal is the union between two tribes, under the domination of one. We will integrate all their territory into our own."
- negeal_dip_action_desc:0 "Meaning Unity, a §ONegeal§! is the union between two tribes, under the domination of one. We will §Yintegrate§! all their territory into our own.\n We will lose §R20§! Horde Unity"
+ #absorb_centaur_follower_title:0 "§OIntegrate Horde§!"
+ #absorb_centaur_follower_tooltip:0 "§YIntegrate§! one of the hordes that we've subjugated, using their people to colonize new lands, and §Yupgrade§! our capital."
+ #absorb_centaur_follower_desc:0 "We will integrate §Y[From.GetName]§! and §Ycolonize§! three random province bordering our country.\nWe will lose §R75§! £icon_powers_administrative£"
+ #negeal_dip_action_title:0 "§ONegeal§!"
+ #negeal_dip_action_tooltip:0 "Meaning Unity, a Negeal is the union between two tribes, under the domination of one. We will integrate all their territory into our own."
+ #negeal_dip_action_desc:0 "Meaning Unity, a §ONegeal§! is the union between two tribes, under the domination of one. We will §Yintegrate§! all their territory into our own.\n We will lose §R20§! Horde Unity"
 
 
  the_salgae:0 "The Salgae"
@@ -2305,7 +2299,7 @@
  centaur_horde_6:0 "Colossal Horde"
  subjugated_horde:0 "Subjugated Horde"
  settled_horde_mod:0 "Settled Horde"
- recently_integrated_horde:0 "Recently Integrated Horde"
+ #recently_integrated_horde:0 "Recently Integrated Horde"
  centaur_the_red_storm:0 "The Red Storm"
  centaur_the_red_storm_ai_luck:0 "Luck"
  recent_negeal:0 "Recent Negeal"
@@ -2575,6 +2569,9 @@
  CENTAUR_the_great_reforms_desc:0 "Our caehnate has made a great deal of progress in the quest to adapt for the coming storm. Our Caehn has already managed to pass a great number of reforms, such as the elimination of the free clans, the codification of the rights of the ordsiwyn, and many more. Once the last of the great reforms has passed, our caehnate will be ready to enter the storm and emerge, not only unscathed, but stronger."
  centaur_irdaeos_scourge_tt: "\n§GEvent Insight§!\nAn unprecedented reform has been proposed in our caehnate that could change the very way centaur governance works. However, there is resistance against these reforms amongst the Filustkhuga sect of shamans. If we are their patrons, we may be able to reject the proposed reforms and go down a §Rdifferent path§!..."
  centaur_great_reforms_scourge_tt: "\n§GEvent Insight§!\nWe must choose to either continue on the path of reform and reconciliation, or, if we are the §RScourge of Irdaeos§!, the world will know fear."
+ centaur_churchpower_75_tt: "Have religious power of at least §Y75.00§!, or has converted to §YThe Jadd§! or §YYudunyovi§!"
+ centaur_churchpower_50_tt: "Have religious power of at least §Y50.00§!, or has converted to §YThe Jadd§! or §YYudunyovi§!"
+
 
  centaur.1.t:0 "[From.GetName] has subjugated us!"
  centaur.1.d:0 "It brings us great shame to know that we have been bested in war. Our Caehn, once mighty, now kneels before our conqueror. Our tribe is now subservient, one of many now uniting under one of the many great uniters of the Forbidden Plains."
@@ -2884,7 +2881,7 @@ desc_communion_4: "This aspect is a §YCelebration Aspect§!, which is placed in
  centaur_will_in_clouds: "Will in the Clouds"
  centaur_geoglyph_aspectmod: "Geoglyph Creation"
  centaur_greatest_gift: "Irdaeos' Greatest Gift"
-
+ centaur_celebration_cooldown: "Centaur Celebration Cooldown"
 
  centaur_tournament_win_1: "Tournament Victory"
  centaur_tournament_win_2: "Tournament Victory"
@@ -2954,6 +2951,8 @@ desc_communion_4: "This aspect is a §YCelebration Aspect§!, which is placed in
  irdaeos_worship.11.d:0 "One. Ten. A hundred. The days blur like billowing and waning clouds, your mind adrift on the trek. In the haze of experience and memory, you are unsure what changed without and within. You followed the bends of golden grass, scaled with wild goats to isolated buttes that touched the limitless blue, tasted bitter fruits that turned night to noon, and rested by oases while conversing with strangers who barely knew the name [Root.Monarch.GetName].\n\nWind, rain, running, smiling, and sighing; a thousand moments strung together like a rhythmic canter, each muscle flex and lung flare renewing body and mind. No amount of temporal authority prepared you for the Maslekh, a journey measured not in miles, but in wisdom.\n\nYour reminiscence fades as thunder rumbles from a nearby hilltop: not the solitary blast of Ik Magthaal's lightning, no, but the mounting surge of a storm. A dust cloud, kicked up by clusters of hooves, obscures a band of approaching figures. You stop, legs set into the earth with newfound strength. Should your journey end beneath the sky here and now, would it have all been enough? As you make peace with your answer, the figures slow to a trot, the cloud dissipating to reveal two dozen scouts and hunters out on patrol, their clothing, skin, and flank etched with the familiar emblem of [Root.GetName]. Home. Before long, you return to [Root.Capital.GetCapitalName], your people heralding your pilgrimage and newfound sagacity with celebration."
  irdaeos_worship.11.a:0 "To stand where you started, forever changed."
 
+ irdaeos_worship.12.t:0 "Rites of Maslekh: Strength"
+
  irdaeos_worship.13.t:0 "Rites of Maslekh: Strength"
  irdaeos_worship.13.d:0 "As the sun gallops across Ik Maghtaal above in endless beauty, the clans of [Root.GetName] mature in all segments of being. In your people's eyes, it is not enough to merely exist; no, you grow, you struggle, you revel, you ache, you weep. A [Root.Monarch.GetTitle] should know this truth well, after all. With motivation set in your mind, you train for the Maslekh's Rite of Strength in the preceding weeks, your every bead of sweat and quivering tendon aiming to burn as brightly as the sun.\n\nA dry haze settles over a dirt ring flattened by a procession to make holy. Several centaurs, men and women both, set their minds on the challenges ahead, trying to ignore the odor of sweat and dust that thickens in the air. Assorted iron weights, chiseled boulders, logs as long as four centaurs, and hempen rope tethers litter the space, each ready to mark and measure. Shamans initiate their calls to challenge, cradling vases that slosh with fine oils. At the shaman's word, the participants scoop earth from between their front legs, letting the dry soil coat their bare hands. With great respect, you join in the gesture, letting the caked earth coat your palms; You will need the grip for the challenges ahead.\n\n"Irdaeos no doubt blesses us with such sturdy stock," a shaman announces to all arrayed. "You will blaze like a wildfire. Of that I have no doubt."\n\nThe opening ceremony complete, you and your competition buck to action, hoisting, dragging, and lifting the objects in sequence. Where a simple grip fails, you let your broad shoulders or broader back take the load, and when you cannot lift, you drag with rope tethers, straining with every ounce of might as your trail plows the earth. Over the hours, centaurs buckle and falter, but before long, the winners stand tall above the rest. Brows drenched, muscles aching, and lungs ablaze, the gathered crowds cheer as shamans empty their vases onto each participant, the glistening oil glistening cooling their quivering forms. In the sun's rays, you sparkle brightly: a sure sign of your vigor."
  irdaeos_worship.13.a:0 "May all marvel at our toil's splendor!"
@@ -2969,6 +2968,8 @@ desc_communion_4: "This aspect is a §YCelebration Aspect§!, which is placed in
  irdaeos_worship.15.t:0 "Rite of Survival Completed"
  irdaeos_worship.15.d:0 "Rising, your legs pry at your lean's flattened earth, even as grogginess weighs down your limbs. You pine for a longer slumber, but you know the gazelles linger at the watering hole for only a few hours before prancing about the plains; if you miss them now, you know how much harder it will be to catch them in the open, let alone when predators stalk the grass. Holstering a dozen spears along your flank, you stomp your hoof onto your makeshift stone knives, ensuring their sharpness for harvesting hemp and skin alike. In the day's light, you catch a fine cow, shape another vase to store fresh water, and perfect a knotted rope for stringing up drying furs. At every hour, you keep a balance of vigilance, swiftness, caution, and daring.\n\nAs [Root.Monarch.GetTitle], you sometimes forgot the monumental effort needed to sustain [Root.GetName]: how water source had to be tested for purity, how erratically the cattle wandered, or even how food could spoil if not properly cured. After first-hand frustrations in all these and more, you recall the hardships and ingenuity required for [Root.GetName]'s prosperity.\n\nBy the end of the day, you set your spoils into your shallow shelter, enjoying a moment of reprieve. Irdaeos no doubt looks at your sated belly, animated spirit, and sharpened mind with pleasure. One more lonely night alone, and you rise with the sun, the wind guiding you back home. With fresh fur clothing, rough satchels stuffed with food, and a hearty disposition on display, your clan cheers with delight over their [Root.Monarch.GetTitle]'s durability and experience."
  irdaeos_worship.15.a:0 "Red and yellow, centaur whack. Red and black, centaur snack."
+
+ irdaeos_worship.16.t:0 "Rites of Maslekh: Staves"
 
  irdaeos_worship.17.t:0 "Rites of Maslekh: Staves"
  irdaeos_worship.17.d:0 "A whistling fife inaugurates the Maslekh's Rite of Staves. Rather than clamoring crowds, the ritual you find yourself participating in draws few eyes: you, your partner, a half dozen other pairs, and a trio of shamans. One of these shamans, marked by blue paint and adorned in billowing gray cloth, rests a pipe beneath their lips. You and your partner step into the ring, and as you gaze to them, they smile with trust and finesse.\n\n"Just like we practiced; strike true, my [Root.Monarch.GetTitle]."\n\nThe fife hisses once, and your partner thrusts forward with their stave, their front leg and tail curled up in a statuesque pose. Another note, and you mirror the maneuver, squeezing the grip and exhaling with your swing. As you follow the steps with your partner, the other pairs watch on with keen interest, marveling at their [Root.Monarch.GetTitle]'s long labored talent. Keeping pace, your steady thrum of wood on wood and hoof on earth join the ceremonial pipe as a drum of combat.\n\nAfter a song's worth of choreographed poses, the shaman holds a long note as you reset your position, stave across your sternum. The preamble finished, you nod to your partner who in turn bows back. You both tense, ready for the true contest.\n\nAs the fifer resumes playing a steady flow of notes, you initiate your spar. Sliding and levering the stave's tip, you strike forward just as your partner swats your leg. With a half-hop of pain, you reply by swinging your flank wide, granting you enough momentum to drive them onto the defense. The memories fly back: how your partner laughed when excited, the way their eyebrows creased when unamused, the twitch of their hock when ready to leap: all a key insight to both defeat your foe and strengthen your friend. In turn, you think back to your own qualities: when your lip twitches when flustered by a dodging opponent, how you flex your fingers before the strike, or the way your eyes trailed with the movement of a weapon's sweep.\n\n[i]Back. Forth. Tap. Stomp. Parry. Strike.[/i]\n\nSeveral bruises later, one of you loses their weapon's grip, the shaman prolonging another fife note to denote the fight's conclusion. You and your partner warmly bow to one another, thankful for the challenge regardless of victory or defeat.\n\nAfter the other pairs conduct their bouts, the rite concludes with a final whistle, and the shamans declare Irdaeos' pleasure."
@@ -3054,12 +3055,13 @@ desc_communion_4: "This aspect is a §YCelebration Aspect§!, which is placed in
  ########################GOVREFORMS########################
 
  centaur_horde: "Centaur Horde"
- centaur_horde_desc: "A Centaur Horde"
+ centaur_horde_desc: "Across the Forbidden Lands, the Centaur peoples organize themselves into clans, the most basic unit of centaur society. Clans then choose to organize themselves into ordsiwyn, choosing one from amongst their ranks to serve as ordsikar. And when multiple ordsiwyn are brought together through diplomacy or through war, a caehnate is formed, with the caehn at the head. Generally holding no settlements, each clan and ordsiwyn only remaining encamped in the same location for a few weeks, a Caehnate's power is usually defined by the number of able-bodied warriors it has. This is determined by the number of clans and ordsiwyn loyal to the Caehn, but a Caehnate's influence can also be defined by the range of lands in which these clans and ordsiwyn roam while still maintaining their ties to their superiors."
  mechanic_centaur_nomadism_attribute_yes: "Your Capital can only be moved once every 5 years. Enables §YCentaur Nomadism:§!\n\n§YCentaur Nomadism:§!\n\nYour capital exerts a special §YNomadic Zone of Control§! onto §Yall adjacent provinces§!.\nall owned provinces affected by your §YNomadic Zone of Control§! gain the following benefits:\n§G+10%§! Local Defensiveness\n§G-15%§! Core-Creation Cost\n§G-0.1§! Monthly Autonomy Change\n\nFor each province of §YCentaur§! culture within the zone, gain §G0.5§! Horde Unity and §G1§! Reform Progress.\nIn every province that falls within your §YNomadic Zone of Control§! but is §RUnowned§!, gain temporary claims."
  centaur_settled: "Settled Centaur Horde"
  centaur_settled_desc: "A Settled Centaur Horde"
  great_centaur_horde: "Great Centaur Horde"
  great_centaur_horde_desc: "The Great Centaur Horde"
+ great_centaur_horde_tt: "Enact §YGreat Centaur Horde§! Tier 1 Government Reform."
 
 
  mechanic_centaur_nomadism_attribute: "Centaur Nomadism"
@@ -3090,6 +3092,7 @@ desc_communion_4: "This aspect is a §YCelebration Aspect§!, which is placed in
  centaur_ogrish_production_methods_reform: "Ogrish Production Methods"
  mechanic_ogrish_production_migrate_effect_yes: "Upon moving capital, if there are at least 2 of the following trade goods within the §YNomadic Zone of Control§! of the destination (§YIron§!, §YCopper§!, §YGold§!, or §YCoal§!), gain §Y"Fires of Industry"§! until you next move your capital, giving §G+10%§! Production Efficiency and §G-10%§! Construction Cost.\nThe next time you move your capital, consume §YFires of Industry§! to gain §G+15%§! Siege Ability for §Y5 Years§!, as well as 1 free artillery unit in your capital."
  
+ gozlamoir_unlock_tt: "Gozlamoir System Unlocked"
  expand_the_gozlamoir_system_reform: "Expand the Gozlamoir System"
  mechanic_gozlamoir_expansion_migrate_effect_yes: "Upon moving capital, if there are at least 3 provinces of a §YHuman§! culture within the §YNomadic Zone of Control§! of the destination, gain §Y"Caravan Protections and Taxes"§!, giving §G+7.5%§! Trade Efficiency and §G+7.5%§! National Tax Modifier until you next move your capital. The next time you move your capital, consume §YCaravan Protections and Taxes§! to gain §G+10%§! Local Trade Power and §G-7.5%§! Local Development Cost within every §YNomadic Zone of Control§! province for §Y5 Years§!."
 
@@ -3107,18 +3110,173 @@ desc_communion_4: "This aspect is a §YCelebration Aspect§!, which is placed in
 
 
 
- centaur_negeal_reform_desc: ""
- centaur_ensure_ordsiwyn_loyalties_reform_desc: ""
+ centaur_negeal_reform_desc: "Negeal, meaning unity, is a practice in which two clans are subsumed into one another, often under the dominance of one. Enshrining this practice as a solidified right of a Clan-head or Ordsikar will allow us to consolidate power more effectively, especially in times of war or conquest.  Conquered tribes can simply be integrated into existing clans or ordsiwyn rather than being added in on top of them. However, the very existence of such a power makes certain ordsiwyn and clans wary of the sudden dismantling of their history and proud traditions."
+ centaur_ensure_ordsiwyn_loyalties_reform_desc: "The ordsiwyn, and their leaders the ordsikar, are the most important extensions of the Caehn's power. Centaur History is littered with the corpses of Caehns who lost the loyalty of their ordsikar, and in short order, their very Caehnates. While having to rely on subordinates of questionable loyalty is not ideal, simply trying to rule through pure force and strength will only cause the Ordsiwyn to chafe more under the rule of the Caehn. Practicing some form of acquiescence to the Ordsiwyn, and granting them privileges and rights that the Caehn cannot easily abuse or revoke, will keep the Ordsiwyn in line and loyal to the Caehnate."
  
- scourge_of_irdaeos_reform_desc: ""
- law_of_the_steppe_reform_desc: ""
- expand_the_gozlamoir_system_reform_desc: ""
+ scourge_of_irdaeos_reform_desc: "For millennia we have raided, razed, burned, and pillaged. We have met our enemies and settled things on the field of battle in glorious charges. And in the last few centuries, the Filustkhuga Shamans have been shown the truth: Centaurkind is Irdaeos's Weapon. He gives us the power to break all of our enemies underhoof, to impale them on our spears, to wreak our vengeance upon the human race. We are the Scourge of Irdaeos, and they will know fear."
+ centaur_protection_racketeering_reform_desc: "As we bring our rule to the conquered, we have learned that violence is not the only way to extract loot or tribute or taxes from those that live beneath us. Sometimes, only the implied threat of what might occur if they do not give in to our demands is enough to keep the tribute and money flowing into the Ordsiwyn, and eventually, up to the Caehn."
+ centaur_middlemen_of_the_plains_reform_desc: "Centaurs have some uniquely built-in advantages in performing any tasks that involve hauling heavy products, physical exertion, or moving long distances for long periods of time. Trading is just one such practice that fulfills these conditions. Historically, periods of trading with centaurs brought all manner of boons to nearby regions - though many now see centaurkind as monsters, and are unwilling to do business with us, it may become obvious to the other races that the opportunities that lie available are too good to pass up."
 
- centaur_patronage_reform_desc: ""
- centaur_protection_racketeering_reform_desc: ""
- centaur_ogrish_production_methods_reform_desc: ""
- centaur_reformed_ordsiwyn_reform_desc: ""
+ centaur_patronage_reform_desc: "With victory over settled peoples comes great wealth flowing into the ranks of Ordsiwyn serving as gozlamoir. For a long time, such wealth had not been as important to Centaur society, aside from trading for quality weapons, armor, and higher quality tents and equipment. However, a newfound use for wealth has recently taken root amongst centaur society; the patronage of artisans, artists, and authors, centaur or otherwise. With little else of import on which to spend such wealth, commissioning great works of art and literature about clan accomplishments, the cultural or religious history of centaurkind, and other wide ranging topics has become common, with centaurs unexpectedly becoming some of the largest patrons of the arts in recently conquered areas."
+ centaur_ogrish_production_methods_reform_desc: "The Fathide Ogres of the western valley may not be as mobile or maneuverable as we are, but they make up for it somewhat via their many craftsmen and far more advanced metalworking skills. Items of Ogrish make are circulating throughout almost all of centaurkind, carried great distances via extensive bartering, even during times of strife with the ogres. In addition, the organization of ogres into fortified kelaktar means that they are far more experienced in siege warfare than we are, having developed numerous weapons suited for the task of overcoming constructed defenses. By establishing small encampments in which the metalworking and weaponry creation methods of the ogres are employed, we will increase our military might by negating one of our greatest weaknesses."
+ expand_the_gozlamoir_system_reform_desc: "The Gozlamoir system has seen great success not only in establishing our rule over conquered peoples, but also in easing tensions and helping to showcase that we are not the monsters many believe we are. However, the system had its flaws, and we have now embarked on a number of expansions and reforms to it. By delineating regular and defined combat rounds, each clan now knows precisely which years or months they will be serving, allowing local leaders to plan accordingly. In addition, specific positions for each member of the ordsiwyn shall be institutionalised, each member specializing for specific non-combat roles when not on campaign - after all, grizzled warriors make for better guards than tax collectors or arbitrators. With this approach, we improve the benefit of each visit to the local community, and the wealthier and more prosperous each community becomes, the more wealth finds its way into the hands of the ordsiwyn themselves."
+ centaur_reformed_ordsiwyn_reform_desc: "For much of history, Centaur armies have generally consisted of every able bodied man in an ordsiwyn taking up a spear or bow and charging to glorious battle, regardless of their training or other profession. As a warrior culture, many of these young men spend years training and perfecting their physique and combat abilities, but they are overeager, seeking glory at the cost of discipline, and they do not always work well as a united force to be reckoned with. If we are to keep up with the rest of the world, this will no longer do. A number of men will be designated as warriors by profession for the ordsiwyn, and they will not only train their own combat abilities, but how to work together as a disciplined, united, fighting force. Such soldiers will be capable of following orders to the letter, more powerful than any human, and focused on communal victory rather than victories in personal combat."
 
  centaur_rule_from_the_storm_reform_desc: ""
 
  centaur_COT_capital:0 "Centaur Merchants"
+
+################################################
+############ Sedentarization System ############
+# Province button
+ sed_establish_outpost_button: "§YEstablish Outpost§!"
+ sed_placing_new_phase_two_outpost_tt: "§RMust choose §YOutpost Type§! for your other new §YOutpost§! first!§!"
+
+# Scripted effects
+ sed_place_brand_new_outpost_phase_one: "§Y[This.GetName]§! gets an §YOutpost§! at §YPhase One§!, allowing Local Autonomy to drop from §R100.0%§! to §G80.0%§! as we sedentarize this untamed land."
+ sed_place_brand_new_outpost_phase_two: "§Y[This.GetName]§! gets an §YOutpost§! at §YPhase Two§!, allowing Local Autonomy to drop from §R100.0%§! to §G65.0%§! as we sedentarize this untamed land."
+ sed_unlock_raid_events: "Raid events §RMAY§! occur here, slowing our progrees by increasing autonomy."
+ sed_neglecting_friendly_warning: "§OBy ignoring a \"friendly\" warning from the centaurs, this will §Rprovoke§! their raids§!"
+ sed_add_minority_from_outpost: "§GAdds/Increases§! §YMinority Size§! from the §YOutpost's§! majority."
+ sed_convert_to_that_of_outpost: "§GConvert§! §Yculture§! and §Yreligion§! to that of the §YOutpost's§!."
+ sed_remove_system_from_province: "This province will §Gno longer§! be §YForbidden§!."
+
+# Scripted functions
+ sed_block_move_capital: "Such a forbidden land would be useless as our capital without at least establishing an outpost here."
+
+# Scripted triggers
+ sed_outpost_usage: "[This.Owner.sed_outpost_cap_usage.GetValue]"
+ sed_outpost_cap: "§Outpost cap is: gov rank + colonists = [This.Owner.sed_outpost_cap.GetValue]"
+ sed_outpost_usage_out_of_cap: "Have available §YOutpost Capacity§! (using [This.SedOutpostCapUsage]/[This.Owner.sed_outpost_cap.GetValue])"
+
+# Event modifiers
+ sed_forbidden: "Forbidden Lands"
+ desc_sed_forbidden: "These lands are beyond wild and untamed; they are roamed by noble, rebellious, and often marauding centaurs.\n--------------\n§MSedentarization:§! [This.SedSedentarizationLevel]"
+ sed_entrenched_centaur_nomadism: "Entrenched Centaur Nomadism"
+ desc_sed_entrenched_centaur_nomadism: "Centaurs just chilling here for millenia"
+ sed_min_autonomy_from_territory_negation: "Negate Territorial Core autonomy"
+ sed_min_autonomy_from_half_state_negation: "Negate Colonial Core autonomy"
+ sed_outpost_phase_i: "Outpost: Phase One"
+ desc_sed_outpost_phase_i: "A burgeoning frontier village.[This.SedOutpostInfo]"
+ sed_outpost_phase_ii: "Outpost: Phase Two"
+ desc_sed_outpost_phase_ii: "A burgeoning frontier town. New crafts and commerce are slowing popping up.[This.SedOutpostInfo]"
+ sed_outpost_phase_iii: "Outpost: Phase Three"
+ desc_sed_outpost_phase_iii: "A burgeoning city of administration for the surrounding frontier. Commerce continues to grow.[This.SedOutpostInfo]"
+ sed_outpost_areal_influence_phase_i: "Phase One areal influence"
+ desc_sed_outpost_areal_influence_phase_i: ""
+ sed_outpost_areal_influence_phase_ii: "Phase Two areal influence"
+ desc_sed_outpost_areal_influence_phase_ii: ""
+ sed_outpost_areal_influence_phase_iii: "Phase Three areal influence"
+ descsed_outpost_areal_influence_phase_iii: ""
+ sed_outpost_progress_blocked: "Outpost cannot progress"
+ sed_centaur_tributary_system: "Centaur Tributary System"
+ desc_sed_centaur_tributary_system: "These centaurs mostly administrate themselves and are loyal to us"
+ sed_nomadic_governance: "Nomadic Governance"
+ desc_sed_nomadic_governance: "Peoples used to these wild, sparse lands have sworn to develop and partially self-govern this place as a frontier"
+
+# Customizable localization
+ sed_sedentarization_level_wild: "§gWildly Untamed§!"
+ sed_sedentarization_level_incomplete: "§YIncomplete§!\n  - §gBarely tamed.§!"
+ sed_sedentarization_level_semi_complete: "§YSemi-complete§!\n  - §gHalf tamed.§!"
+ sed_sedentarization_level_complete: "This shouldn't be visible (unless the system has changed; report this bug)"
+ sed_green_zero: "§G0§!"
+ sed_red_outpost_cap_usage: "§R[This.Owner.sed_outpost_cap_usage.GetValue]§!"
+ sed_green_oupost_cap_usage: "§G[This.Owner.sed_outpost_cap_usage.GetValue]§!"
+ SedOutpostInfo_key: "\n--------------\n§MSedentarization:§! [This.SedSedentarizationLevel]\n\n[This.SedProgressInvalidated][This.SedProgressBlocked]Next phase [This.SedNextProgressInfo]\n\nCentaur Attitude: [This.SedFirstContact]\nOutpost Type: [This.SedOutpostType]\nSettler Policy: [This.SedSettlerPolicy]"
+ SedProgressInvalidated_key: "§R- Progress has been upended! -§!\nOur recent genocidal policy towards centaurs has invalidated the peaceful plans this §YOutpost§! had been working towards.\n\n"
+ SedProgressBlocked_key: " §R- Outpost cannot progress! -§!\nReason: [This.SedProgressBlockedReason]\n\n"
+ sed_blocked_dont_own_entire_area: "§RDon't own the entire area§!"
+ sed_blocked_havent_made_first_contact: "§RHaven't made First Contact§!"
+ sed_next_progress_phase_i: "at §Y80.0%§! Local Autonomy."
+ sed_next_progress_phase_ii: "at §Y65.0%§! Local Autonomy."
+ sed_next_progress_phase_iii: "at §Y50.0%§! Local Autonomy."
+ sed_next_progress_soon: "within about §Y2§! years."
+ sed_first_contact_not_met: "§YNot met§!"
+ sed_first_contact_hostile: "§RHostile§!"
+ sed_first_contact_dubious: "§ODubious§!"
+ sed_first_contact_placid: "§GPlacid§!"
+ sed_outpost_type_NA: "§gNeeds Phase Two§!"
+ sed_generic_not_chosen: "§RNot Chosen§!"
+ sed_outpost_type_gozabhar_key: "§YGozabhar§!"
+ sed_outpost_type_settlement_key: "§YSettlement§!"
+ sed_outpost_type_nomadic_base_key: "§YNomadic Base§!"
+ sed_outpost_type_kelaktar_key: "§YKelaktar§!"
+ sed_settler_policy_NA: "§gNeeds Phase Three§!"
+ sed_settler_policy_centaur_tribute_key: "§YCentaur Tribute§!"
+ sed_settler_policy_nomadic_control_key: "§YNomadic Control§!"
+ sed_settler_policy_heavy_settlement_key: "§YHeavy Settlement§!"
+
+# Events
+ sedentarization.10.t: "The Forbidden Lands"
+ sedentarization.10.d: "REPLACE_ME\n    The war is coming to a close; we have defeated the combine hordes of the Caehn and his Ordsikar, and our own forces are free to move into the area. But here, there is nothing to move into.\n    One could walk over a hundred miles and not find another settlement. The native centaurs live freely, migrating across the steppes, stopping for a week or two before continuing on. It is apparently their god who commands them to live in this manner. Life is harsh in these lands, and they enjoy few of the benefits of civilization.\n    But we have an opportunity. We can tame these lands, and seek whatever riches might lie on the other side… But the presence of the centaurs looms over the idea like a stormcloud. They are seen as strange and uncouth by most, and as monstrous and evil by many more. Some claim the only solution is to kill the beasts on sight wherever they may be found. However, the wisest amongst our advisors realize that such a course of action will likely do us more harm than good: the centaurs will not simply roll over and let us kill them; they will resist, and when they do, they will strike harder than ever. These advisors instead push for a careful deployment of adminstrators and settlers to these forbidden lands."
+ sedentarization.10.a: "We have a lot of work ahead of us."
+ sedentarization.explainer: "§MSedentarization of the Forbidden Lands§!\nAll provinces initially owned by centaurs are §YForbidden§!, giving §R+100.00§! Minimum Local Autonomy, indicating a complete lack of settled infrastructure. To make the land useful we must designate an §YOutpost§! province within a fully-owned area, allowing Local Autonomy to decrease. From then, the choices we face will cascade from the §YOutpost§! to decide that area's fate.\n\n - Use the §YEstablish Outpost§! button in the province view (replaces Trade Companies).\n - §YOutposts§! progress over three phases, with each phase completing within a few years after reaching an autonomy threshold.\n - You do NOT need to core nor state §YForbidden§! provinces to establish an §YOutpost§!.\n - The number of §YOutposts§! you can maintain at once is equal to Government Rank + Colonists.\n - Conquering an area not fully sedentarized allows starting from §YPhase Two§!, though it may be too late to help — or yourself harm — the native centaurs."
+
+ sedentarization.100.t: "Sudden Raid"
+ sedentarization.100.d: "Wow, bad first meeting with the local centaur clans. They burnd almost all of the outpost down."
+ sedentarization.100.d_moved_capital: "It appears that claiming this wild frontier as our capital has greatly angered the native centaur clans.\n\nWow, bad first meeting with the local centaur clans. They burnd almost all of the outpost down."
+ sedentarization.100.a: "Dang. At least it's not all gone"
+
+ sedentarization.101.t: "Centaurs Seek Audience"
+ sedentarization.101.d: "REPLACE_ME\nAs per the terms of treaties which brought us claim to [This.GetAreaName], all centaur Ordsikar entering the areas claimed by our realm must come to an agreement with our chosen administrator of the territory or have their ordsiwyn be labeled as enemies of the realm. While many ordsiwyn have taken this as a sign to simply stay away, many still appear before our administrator to announce their presence and intent.\n\nThey are not known for patience…"
+ sedentarization.101.a: "Hear em out."
+ sedentarization.101.b: "Nah."
+
+ sedentarization.102.t: "Arrangement Reached"
+ sedentarization.102.d: "Miraculously, these centuars are cool with us being here. We only had to make some minor concessions so small they can't be represented with game mechanics"
+ sedentarization.102.a: "Nice"
+ sedentarization.102.a.tt: "Raids §Gwill NOT§! occur here."
+ sedentarization.tt_will_invalidate: "§OWill invalidate upon purging or expelling centaurs.§!"
+
+ sedentarization.103.t: "Friendly Warning"
+ sedentarization.103.d: "At the end of the talks, these centaurs decided they are cool with us being here for now, but if we so much as try to move families of settlers near there herding grounds, they'll be p mad"
+ sedentarization.103.a: "We'll do what we want anyways"
+ sedentarization.103.a.tt: "Raids §Gwill NOT§! occur here, §Oas long as we don't push settlers onto their territory§!."
+
+ sedentarization.104.t: "Threatening Warning"
+ sedentarization.104.d: "Wow, these centaurs just came here to bad mouth us. They've promised violence."
+ sedentarization.104.a: "Well that was rude"
+
+ sedentarization.120.t: "Outpost Raided"
+ sedentarization.120.d: "Centaurs raided our oupost here, majorly stalling our efforts to tame this land"
+ sedentarization.120.a: "Dang it"
+ sedentarization.120.a.tt: "Gain §R+2.50%§! - §R+5.00%§! Local Autonomy."
+
+ sedentarization.121.t: "Mounted Guards"
+ sedentarization.121.d: "REPLACE_ME\nAs the outpost in [This.GetAreaName] is quite young, it is exceedingly vulnerable. Not quite self-sustainable yet, it requires constant shipments and streams of supplies, settlers, and goods. The road to the outpost was constructed swiftly, and goes through miles and miles of land, each shipment is theoretically vulnerable to great beasts of the steppes, bandits, and centaur raiders. It is of vital importance that the supply lines from our outpost back towards the more populated parts of our realm are guarded, and that all travellers, merchants, and materials make it to the outpost safe. To do this, we could  finance and produce a force of mounted warriors to patrol the lanes back to the heartland of our empire. However, doing so would be costly in both gold and in men that could be better spent elsewhere, and using our own men is not the only option before us…"
+ sedentarization.121.reuse_guards: "We've done this before elsewhere. Easy"
+ sedentarization.121.reuse_guards.tt: "Raids will be §Gblocked§! from happening here."
+ sedentarization.121.create_guards: "Novel!"
+ sedentarization.121.create_guards.tt: "Raids will be §Gblocked§! from happening here and will be much cheaper to establish at other §YOutposts§!."
+ sedentarization.121.cannot_afford_guards: "Raids aren't a big deal. Keep the money"
+ sedentarization.121.deploy_unique_guards: "We've got just the elite force already"
+ sedentarization.121.deploy_unique_guards.tt: "Our elite soldiers will §Gblock§! raids from happening here and at our other §YOutposts§!."
+
+ sedentarization.200.t: "Outpost Type"
+ sedentarization.200.d: "This outpost is getting large enough that it needs deliberate thought on how it's designed and governed going forward."
+ sedentarization.200.d_invalidated: "Our recent change in policy towards centaurs, viewing them as undesirables, has upended much progress in making [This.GetAreaName] a useful part of our [This.Owner.GovernmentName]. The outpost's plans for administration are no longer compatible with our central policy.\n\nThis outpost is getting large enough that it needs deliberate thought on how it's designed and governed going forward."
+ sedentarization.200.d_new_outpost: "This area has previously seen colonization attempts, though the sparse and half-empty structures of sedentary peoples reveals the truth: this placec is barely tamed. However, there's a decent many spots to use as our administrative outpost, and they're large enough that they'll need deliberate thought on how they're designed and governed going forward."
+ sedentarization.200.gozabhar: "GOZABHAR"
+ sedentarization.200.gozabhar.tt: "§OWith a \"friendly\" warning from the centuars, this is the only option to §Gprevent§! raids.§!"
+ sedentarization.tt_on_completion: "\n§TWhen this outpost completes:§!"
+ sedentarization.200.gozabhar.tt_however: "\n\nHowever, our §YPhase Three Settler Policy§! will be §Olocked§! to §YCentaur Tribute§!, giving the following effects:"
+ sedentarization.tt_on_completion_whole_area: "\n§TWhen this outpost completes, whole area gains:§!"
+ sedentarization.200.settlement: "Let's make this a real city"
+ sedentarization.200.nomadic_base: "Free-spirited people for free-spirited land."
+ sedentarization.200.kelaktar: "Ogre town forts are cool"
+
+ sedentarization.210.t: "Trade Goods Upgrade"
+ sedentarization.210.d: "The new crafts and commerce that have been popping up are taking the form of a new major export out of here!"
+ sedentarization.210.a: "Cloth?! From giant sheep?!"
+
+ sedentarization.300.t: "Settler Policy"
+ sedentarization.300.d: "This outpost is on a precipice. More and more traders, settlers, gentry, administrators pass through the area every day. Some even stay! The people demand more construction, demands more commerce, demands more bureaucracy, demands more people!"
+ sedentarization.300.d_invalidated: "Our recent change in policy towards centaurs, viewing them as undesirables, has upended much progress in making [This.GetAreaName] a useful part of our [This.Owner.GovernmentName]. The outpost's plans for administration are no longer compatible with our central policy.\n\nThis outpost is on a precipice. More and more traders, settlers, gentry, administrators pass through the area every day. Some even stay! The people demand more construction, demands more commerce, demands more bureaucracy, demands more people!"
+ sedentarization.300.centaur_tribute: "Eh. The centaurs have a handle on things"
+ sedentarization.300.nomadic_control: "Let loose the frontiersmen"
+ sedentarization.300.heavy_settlement: "YOU get city, and YOU get a city!"
+
+ sedentarization.310.t: "Outpost Completion"
+ sedentarization.310.d: "After a looong time of establishing our presence in these lands, we can truly call ourselves its overlord. We will reap the benefits we sowed.\n\nYou don't know how many times I've typed "Sedentarization" and misspelled "completeion"..."
+ sedentarization.310.a: "Joy!"
+ sedentarization.310.next_months: "\n§TIn three months, the rest of the area will gain:§!"

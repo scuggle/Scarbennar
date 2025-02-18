@@ -42,6 +42,30 @@ country_event = {
 				}
 				save_event_target_as = spawn_province
 			}
+			random_province = {
+				# pick a province with no neighbors if possible
+				# to avoid colonizers or migratory nations causing problems
+				# while the player is holding the event
+				limit = {
+					region = serpentreach_region
+					is_empty = yes
+					has_empty_adjacent_province = yes
+					OR = {
+						area = orlghelovar_area
+						area = shazstundihr_area
+						area = south_altar_area
+						area = north_altar_area
+						area = argrod_origin_area
+					}
+					NOT = {
+						any_neighbor_province = {
+							region = serpentreach_region
+							is_empty = no
+						}
+					}
+				}
+				save_event_target_as = spawn_province
+			}
 			event_target:spawn_province = {
 				random_empty_neighbor_province = {
 					limit = { can_spawn_expedition = yes }
@@ -73,7 +97,7 @@ country_event = {
 				country_event = { id = diggy_spawnable.10 days = 3 } 
 				add_country_modifier = {
 					name = dwarovar_claimer
-					duration = 9125
+					duration = 16000 #plus 1450 is roughly 1494
 				}
 				set_country_flag = dwarovar_claimer_setup
 				lose_reforms = 10
@@ -196,6 +220,26 @@ country_event = {
 				}
 				save_event_target_as = spawn_province
 			}
+			random_province = {
+				limit = {
+					region = west_dwarovar_region
+					NOT = { # Won't spawn in the small area of Krakdhum
+						area = anvils_horn_area
+						area = krakdhum_area
+						area = dead_end_tunnel_area
+						province_group = hold_province
+					}
+					is_empty = yes
+					has_empty_adjacent_province = yes
+					NOT = {
+						any_neighbor_province = {
+							region = west_dwarovar_region
+							is_empty = no
+						}
+					}
+				}
+				save_event_target_as = spawn_province
+			}
 			event_target:spawn_province = {
 				random_empty_neighbor_province = {
 					limit = { can_spawn_expedition = yes }
@@ -226,7 +270,7 @@ country_event = {
 			H96 = {
 				add_country_modifier = {
 					name = dwarovar_claimer
-					duration = 9125
+					duration = 12350 #plus 1460 is roughly 1494
 				}
 				set_country_flag = dwarovar_claimer_setup
 				lose_reforms = 10
@@ -315,6 +359,21 @@ country_event = {
 				}
 				save_event_target_as = spawn_province
 			}
+			random_province = {
+				limit = {
+					region = middle_dwarovar_region
+					is_empty = yes
+					has_empty_adjacent_province = yes
+					has_terrain = dwarven_road
+					NOT = {
+						any_neighbor_province = {
+							region = middle_dwarovar_region
+							is_empty = no
+						}
+					}
+				}
+				save_event_target_as = spawn_province
+			}
 			event_target:spawn_province = {
 				random_empty_neighbor_province = {
 					limit = { NOT = { can_spawn_expedition = yes } }
@@ -346,7 +405,7 @@ country_event = {
 				country_event = { id = diggy_spawnable.9 days = 3 } 
 				add_country_modifier = {
 					name = dwarovar_claimer
-					duration = 9125
+					duration = 16000 #plus 1450 is roughly 1494
 				}
 				set_country_flag = dwarovar_claimer_setup
 				lose_reforms = 10
@@ -439,6 +498,20 @@ country_event = {
 				}
 				save_event_target_as = spawn_province
 			}
+			random_province = {
+				limit = {
+					region = tree_of_stone_region
+					is_empty = yes
+					has_empty_adjacent_province = yes
+					NOT = {
+						any_neighbor_province = {
+							region = tree_of_stone_region
+							is_empty = no
+						}
+					}
+				}
+				save_event_target_as = spawn_province
+			}
 			event_target:spawn_province = {
 				random_empty_neighbor_province = {
 					limit = { can_spawn_expedition = yes }
@@ -474,7 +547,7 @@ country_event = {
 					country_event = { id = diggy_spawnable.11 days = 3 } 
 					add_country_modifier = {
 						name = dwarovar_claimer
-						duration = 9125
+						duration = 12350 #plus 1460 is roughly 1494
 					}
 					set_country_flag = dwarovar_claimer_setup
 					lose_reforms = 10

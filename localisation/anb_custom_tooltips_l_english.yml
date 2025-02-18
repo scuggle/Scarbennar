@@ -18,8 +18,6 @@
  YANSING_ADJ:0 "Yan"
  YANSENG:0 "Yansèng"
  YANSENG_ADJ:0 "Yan"
- YANSZIN:0 "Yanszin"
- YANSZIN_ADJ:0 "Yan"
  DAAIFAI:0 "Daaifai"
  DAAIFAI_ADJ:0 "Daaifai"
  DUAHUI:0 "Duahui"
@@ -57,9 +55,16 @@
  gerudia_release_rebellious:0 "Any seditious regions will be converted into vassals, rather than integrated as cores."
 
 #parliament stuff
- issue_effects_with_estate_mages_influence_tt:0 "§YScales with the influence of the [Root.GetMagesOrFallbackName]§!"
+ issue_effects_with_estate_mages_influence_tt:0 "§YScales with the influence of the [Root.GetMagesName]§!"
 
 #Age
  aelantir_relics_tt:0 "Gain twice the §YMaximum Artifice Capacity§! from §YPrecursor Relics§!"
  ab_dev_from_centralising_tt:0 "§YCentralize a State§! will add §G+1§! random Development to every owned province in the area"
  double_ability_disable_tt:0 "Does not refund half the cost of centralising a state if the §YRuinborn Administrative Renaissance§! age ability is active."
+
+#Esmaria
+ give_city_to_temple:0 "We will lose 20 AE with every members of the Empire of Anbennar"
+
+ #scripted_effects
+ add_months_of_tax_income_tt:0 "Gain §G[Root.current_tax_income.GetValue]§! Crowns."
+ remove_months_of_trade_income_tt:0 "Lose §R[Root.current_trade_income.GetValue]§! Crowns."

@@ -435,7 +435,11 @@ azkabar_3 = {
 					}
 				}
 				owns_core_province = 625
-				}
+			}
+			OR = {
+				is_subject = no
+				is_subject_of = F25
+			}
 		}
 		effect = {
 			south_naza_area = { add_permanent_claim = ROOT }
@@ -1506,7 +1510,7 @@ azkabar_2_b = {
 		trigger = {
 			OR = {
 				NOT = {
-					any_owned_province = { NOT = { religion = old_bulwari_sun_cult } }
+					any_owned_province = { religion = old_bulwari_sun_cult }
 				}
 				has_estate_privilege = estate_church_enforced_one_faith
 			}

@@ -80,7 +80,7 @@ R38_Pre_Suhan_1 = {
 				target = Y58
 			}
 			hidden_effect = {
-				south_haless_superregion = {
+				vimdatrong_superregion = {
 					limit = { culture = teplin }
 					add_permanent_claim = R38
 				}
@@ -380,7 +380,7 @@ R38_Pre_Suhan_1 = {
 					create_march = Y50
 				}
 			}
-		} 
+		}
 	}
 
 	R38_smoke_water = {
@@ -442,6 +442,7 @@ R38_Pre_Suhan_1 = {
 							hidden_trigger = { tag = R38 }
 							has_opinion = { who = R38 value = 100 }
 							has_spy_network_from = { who = R38 value = 40 }
+							overlord = { has_spy_network_from = { who = R38 value = 40 } }
 						}
 					}
 				}
@@ -451,6 +452,7 @@ R38_Pre_Suhan_1 = {
 							hidden_trigger = { tag = R38 }
 							has_opinion = { who = R38 value = 100 }
 							has_spy_network_from = { who = R38 value = 40 }
+							overlord = { has_spy_network_from = { who = R38 value = 40 } }
 						}
 					}
 				}
@@ -460,6 +462,7 @@ R38_Pre_Suhan_1 = {
 							hidden_trigger = { tag = R38 }
 							has_opinion = { who = R38 value = 100 }
 							has_spy_network_from = { who = R38 value = 40 }
+							overlord = { has_spy_network_from = { who = R38 value = 40 } }
 						}
 					}
 				}
@@ -499,8 +502,12 @@ R38_Pre_Suhan_1 = {
 #								R38 = { ai = yes }
 #							}
 #						}
-						tag = R38
+						OR = {
+							tag = R38
+							is_subject_of = R38
+						}	
 						has_spy_network_from = { who = R38 value = 70 }
+						overlord = { has_spy_network_from = { who = R38 value = 70 } }
 					}
 				}
 			}
@@ -513,8 +520,12 @@ R38_Pre_Suhan_1 = {
 #								R38 = { ai = yes }
 #							}
 #						}
-						tag = R38
+						OR = {
+							tag = R38
+							is_subject_of = R38
+						}	
 						has_spy_network_from = { who = R38 value = 70 }
+						overlord = { has_spy_network_from = { who = R38 value = 70 } }
 					}
 				}
 			}
@@ -527,8 +538,12 @@ R38_Pre_Suhan_1 = {
 #								R38 = { ai = yes }
 #							}
 #						}
-						tag = R38
+						OR = {
+							tag = R38
+							is_subject_of = R38
+						}	
 						has_spy_network_from = { who = R38 value = 70 }
+						overlord = { has_spy_network_from = { who = R38 value = 70 } }
 					}
 				}
 			}
@@ -599,7 +614,7 @@ R38_Pre_Suhan_2_a = {
 	potential = { tag = R38 }
 
 	R38_end_the_red_devils = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		position = 2
 		required_missions = { R38_relock_the_gate } 
 		provinces_to_highlight = {
@@ -984,6 +999,10 @@ R38_Pre_Suhan_2_a = {
 					duration = -1
 				}
 			}
+			country_event = {
+				id = flavor_bhuvauri.24
+				days = 3650 
+			}
 			custom_tooltip = bhuvauri_fetters_sarhal_effect_tt
 			custom_tooltip = bhuvauri_fetters_sarhal_effect_2_tt
 			hidden_effect = {
@@ -1198,14 +1217,9 @@ R38_Pre_Suhan_2_b = {
 				owner = {
 					OR = {
 						hidden_trigger = { tag = R38 }
-						has_opinion = {
-							who = R38
-							value = 150
-						}
-						has_spy_network_from = {
-							who = R38
-							value = 50
-						}
+						has_opinion = { who = R38 value = 150 }
+						has_spy_network_from = { who = R38 value = 50 }
+						overlord = { has_spy_network_from = { who = R38 value = 50 } }
 					}
 				}
 			}
@@ -1213,14 +1227,9 @@ R38_Pre_Suhan_2_b = {
 				owner = {
 					OR = {
 						hidden_trigger = { tag = R38 }
-						has_opinion = {
-							who = R38
-							value = 150
-						}
-						has_spy_network_from = {
-							who = R38
-							value = 50
-						}
+						has_opinion = { who = R38 value = 150 }
+						has_spy_network_from = { who = R38 value = 50 }
+						overlord = { has_spy_network_from = { who = R38 value = 50 } }
 					}
 				}
 			}
@@ -1610,7 +1619,6 @@ R38_Pre_Suhan_3_a_branching = {
 		icon = mission_unknown_mission
 		position = 7
 		required_missions = {
-			R38_fetters_sarhal
 			R38_suhans_speech
 		}
 	}
@@ -1696,14 +1704,14 @@ R38_Post_Suhan_3_a_suhans = {
 		position = 7
 		required_missions = {
 			R38_suhans_speech
-			R38_fetters_sarhal
 		}
 		provinces_to_highlight = {
 			is_capital = yes
 			owner = {
 				OR = {
 					religion = high_philosophy
-					religion = righteous_path
+					religion = accretive_path
+					religion = transmutative_path
 				}
 				NOT = { trust = { who = R38 value = 80 } }
 			}
@@ -1716,7 +1724,8 @@ R38_Post_Suhan_3_a_suhans = {
 #					ai = yes
 #					OR = {
 #						religion = high_philosophy
-#						religion = righteous_path
+#						religion = accretive_path
+#						religion = transmutative_path
 #					}
 #					trust = { who = R38 value = 60 }
 #				}
@@ -1727,7 +1736,8 @@ R38_Post_Suhan_3_a_suhans = {
 					all_known_country = {
 						OR = {
 							religion = high_philosophy
-							religion = righteous_path
+							religion = accretive_path
+							religion = transmutative_path
 						}
 						trust = { who = R38 value = 80 }
 					}
@@ -1750,7 +1760,8 @@ R38_Post_Suhan_3_a_suhans = {
 #							ai = yes
 #							OR = {
 #								religion = high_philosophy
-#								religion = righteous_path
+#								religion = accretive_path
+#								religion = transmutative_path
 #							}
 #							trust = { who = R38 value = 60 }
 #						}
@@ -1762,7 +1773,8 @@ R38_Post_Suhan_3_a_suhans = {
 						limit = {
 							OR = {
 								religion = high_philosophy
-								religion = righteous_path
+								religion = accretive_path
+								religion = transmutative_path
 							}
 							trust = { who = R38 value = 80 }
 						}
@@ -1858,11 +1870,13 @@ R38_Post_Suhan_3_a_suhans = {
 							capital_scope = { superregion = rahen_superregion }
 						}
 					}
-					calc_true_if = {
-						amount = 11
-						all_known_country = {
-							capital_scope = { superregion = rahen_superregion }
-							NOT = { religion = suhans_praxis }
+					ROOT = {
+						calc_true_if = {
+							amount = 11
+							all_known_country = {
+								capital_scope = { superregion = rahen_superregion }
+								NOT = { religion = suhans_praxis }
+							}
 						}
 					}
 				}
@@ -1967,7 +1981,6 @@ R38_Post_Suhan_3_a_hp = {
 		position = 7
 		required_missions = {
 			R38_suhans_speech
-			R38_fetters_sarhal
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -2193,9 +2206,15 @@ R38_Pre_Suhan_3_b = {
 			NOT = {
 				AND = {
 					owned_by = R38
-					province_has_current_tech_fort_trigger = yes
+					OR = {
+						province_has_current_tech_fort_trigger = yes
+						any_neighbor_province = {
+							province_has_current_tech_fort_trigger = yes
+						}
+					}
 					has_manpower_building_trigger = yes
 					has_trade_building_trigger = yes
+					has_forcelimit_building_trigger = yes
 				}
 			}
 		} 
@@ -2220,23 +2239,41 @@ R38_Pre_Suhan_3_b = {
 				middle_dhenbasana_area =  {
 					type = all
 					owned_by = R38
-					province_has_current_tech_fort_trigger = yes
 					has_manpower_building_trigger = yes
+					has_forcelimit_building_trigger = yes
 					has_trade_building_trigger = yes
+					OR = {
+						province_has_current_tech_fort_trigger = yes
+						any_neighbor_province = {
+							province_has_current_tech_fort_trigger = yes
+						}
+					}
 				}
 				lower_dhenbasana_area =  {
 					type = all
 					owned_by = R38
-					province_has_current_tech_fort_trigger = yes
 					has_manpower_building_trigger = yes
+					has_forcelimit_building_trigger = yes
 					has_trade_building_trigger = yes
+					OR = {
+						province_has_current_tech_fort_trigger = yes
+						any_neighbor_province = {
+							province_has_current_tech_fort_trigger = yes
+						}
+					}
 				}
 				satarsaya_area =  {
 					type = all
 					owned_by = R38
-					province_has_current_tech_fort_trigger = yes
 					has_manpower_building_trigger = yes
+					has_forcelimit_building_trigger = yes
 					has_trade_building_trigger = yes
+					OR = {
+						province_has_current_tech_fort_trigger = yes
+						any_neighbor_province = {
+							province_has_current_tech_fort_trigger = yes
+						}
+					}
 				}
 #			}
 		} 
@@ -2259,6 +2296,102 @@ R38_Pre_Suhan_3_b = {
 			}
 			add_mercantilism = 3
 		} 
+	}
+	
+	R38_artificial_fabrics = {
+		icon = mission_son_own_develop_clothes_and_salt
+		position = 11
+		required_missions = { R38_mouth_cotton }
+		provinces_to_highlight = {
+			superregion = rahen_superregion
+			OR = {
+				trade_goods = cotton
+				trade_goods = silk
+			}
+			owner = {
+				NOT = {
+					tag = R62
+					is_subject_of = R62
+					tag = R38
+					is_subject_of = R38
+					alliance_with = R38
+				}
+			}
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = bhuvauri_artificial_fabrics_trigger_tt
+				NOT = {
+					rahen_superregion = {
+						OR = {
+							trade_goods = cotton
+							trade_goods = silk
+						}
+						owner = {
+							NOT = {
+								tag = R62
+								is_subject_of = R62
+								tag = R38
+								is_subject_of = R38
+								alliance_with = R38
+							}
+						}
+					}
+				}
+			}
+			treasury = 10000
+#			if = {
+#				limit = { ai = no }
+				estate_loyalty = {
+					estate = estate_lowercastes
+					loyalty = 60
+				}
+				production_leader = { trade_goods = cotton }
+				production_leader = { trade_goods = silk }
+#			}
+		} 
+
+		effect = {
+			add_treasury = -10000
+			custom_tooltip = bhuvauri_artificial_fabrics_effect_tt
+			hidden_effect = {
+				set_country_flag = bhuvauri_rapid_industrialization_unlocked
+				set_country_flag = bhuvauri_culinary_cotton_creations_unlocked
+				set_country_flag = bhuvauri_cotton_farmers_unlocked
+				rahen_superregion = {
+					limit = {
+						OR = {
+							trade_goods = cotton
+							trade_goods = silk
+						}
+						owner = {
+							NOT = {
+								tag = R62
+								is_subject_of = R62
+							}
+						}
+					}
+					add_base_production = 1
+					if = {
+						limit = { trade_goods = cotton }
+						add_building_construction = {
+							building = plantations
+							speed = 1
+							cost = 0
+						}
+					}
+					if = {
+						limit = { trade_goods = silk }
+						add_building_construction = {
+							building = textile
+							speed = 1
+							cost = 0
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -2396,6 +2529,7 @@ R38_Pre_Suhan_4 = {
 			}
 			remove_country_modifier = bhuvauri_great_ishudhen_cyclone_mod
 			custom_tooltip = bhuvauri_business_as_usual_effect_tt
+			set_country_flag = unlock_flagship_modification_portuguese_trade_route_map
 			hidden_effect = {
 				every_owned_province = {
 					remove_province_modifier = great_ishudhen_cyclone_mod
@@ -2410,15 +2544,11 @@ R38_Pre_Suhan_4 = {
 		required_missions = { R38_business_as_usual } 
 		provinces_to_highlight = {
 			OR = {
-				if = {
-					limit = { exists = S21 }
-					owned_by = S21
-				}
-				else = {
-					AND = {
-						owner = { culture_group = baashidi }
-						is_capital = yes
-					}
+				owned_by = S21
+				AND = {
+					S21 = { exists = no }
+					is_capital = yes
+					owner = { culture_group = baashidi }
 				}
 				province_id = 1449 #Biya Mubidya
 			}
@@ -2661,10 +2791,10 @@ R38_Pre_Suhan_4 = {
 							trade_goods = spices
 						}	
 					}
-				}
-				add_permanent_province_modifier = {
-					name = bhuvauri_everything_nice
-					duration = -1
+					add_permanent_province_modifier = {
+						name = bhuvauri_everything_nice
+						duration = -1
+					}
 				}
 			}
 			4577 = {
@@ -2759,7 +2889,7 @@ R38_Pre_Suhan_4 = {
 	R38_suhans_speech = {
 		icon = mission_colonise_brazil
 		position = 6
-		required_missions = { R38_old_soldiers }
+		required_missions = { }
 		provinces_to_highlight = {
 			owned_by = R38
 			OR = {
@@ -2938,7 +3068,7 @@ R38_post_suhan_1 = {
 	R38_eastern_anbenncost = {
 		icon = mission_kanbawzathadi_palace
 		position = 14
-		required_missions = { R38_artificial_fabrics } 
+		required_missions = { R38_modern_metallurgy } 
 		provinces_to_highlight = {
 			OR = {
 				AND = {
@@ -2946,7 +3076,7 @@ R38_post_suhan_1 = {
 					NOT = {
 						AND = {
 							enlightenment = 100
-							development = 55
+							development = 40
 							OR = {
 								NOT = { has_dlc = "Leviathan" }
 								custom_trigger_tooltip = {
@@ -3021,7 +3151,7 @@ R38_post_suhan_1 = {
 #			else = {
 				4420 = {
 					enlightenment = 100
-					development = 55
+					development = 40
 					OR = {
 						NOT = { has_dlc = "Leviathan" }
 						custom_trigger_tooltip = {
@@ -3103,104 +3233,76 @@ R38_post_suhan_2 = {
 		tag = R38
 		has_country_flag = suhan_went_sicko_mode
 	}
-	
-	R38_artificial_fabrics = {
-		icon = mission_son_own_develop_clothes_and_salt
+
+	R38_modern_metallurgy = {
+		icon = mission_iron_and_copper
 		position = 13
-		required_missions = { R38_open_the_gate }
+		required_missions = { R38_open_the_gate } 
 		provinces_to_highlight = {
-			superregion = rahen_superregion
+			owned_by = R38
 			OR = {
-				trade_goods = cotton
-				trade_goods = silk
+				trade_goods = iron
+				trade_goods = copper
+				trade_goods = gold
 			}
-			owner = {
-				NOT = {
-					tag = R38
-					is_subject_of = R38
-					alliance_with = R38
+			NOT = {
+				AND = {
+					base_production = 8
+					has_manufactory_trigger = yes
+					OR = {
+						trade_goods = gold
+						has_production_building_trigger = yes
+					}
 				}
 			}
-		}
+		} 
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = bhuvauri_artificial_fabrics_trigger_tt
-				NOT = {
-					rahen_superregion = {
+#			if = {
+#				limit = { ai = yes }
+#				owns = 4367
+#			}
+#			else = {
+				custom_trigger_tooltip = {
+					tooltip = bhuvauri_modern_metallurgy_trigger_tt
+					all_owned_province = {
 						OR = {
-							trade_goods = cotton
-							trade_goods = silk
-						}
-						owner = {
 							NOT = {
-								tag = R38
-								is_subject_of = R38
-								alliance_with = R38
+								trade_goods = iron
+								trade_goods = copper
+								trade_goods = gold
+							}
+							AND = {
+								base_production = 8
+								has_manufactory_trigger = yes
+								OR = {
+									trade_goods = gold
+									has_production_building_trigger = yes
+								}
 							}
 						}
 					}
 				}
-			}
-			treasury = 20000
-#			if = {
-#				limit = { ai = no }
-				estate_loyalty = {
-					estate = estate_artificers
-					loyalty = 60
-				}
-				estate_loyalty = {
-					estate = estate_lowercastes
-					loyalty = 60
-				}
-				production_leader = { trade_goods = cotton }
-				production_leader = { trade_goods = silk }
 #			}
 		} 
 
 		effect = {
-			add_treasury = -20000
-			custom_tooltip = bhuvauri_artificial_fabrics_effect_tt
-			hidden_effect = {
-				set_country_flag = bhuvauri_rapid_industrialization_unlocked
-				set_country_flag = bhuvauri_culinary_cotton_creations_unlocked
-				set_country_flag = bhuvauri_cotton_farmers_unlocked
-				rahen_superregion = {
-					limit = {
-						OR = {
-							trade_goods = cotton
-							trade_goods = silk
-						}
-					}
-					add_base_production = 1
-					if = {
-						limit = { trade_goods = cotton }
-						add_building_construction = {
-							building = plantations
-							speed = 1
-							cost = 0
-						}
-					}
-					if = {
-						limit = { trade_goods = silk }
-						add_building_construction = {
-							building = textile
-							speed = 1
-							cost = 0
-						}
-					}
-				}
-			}
-		} 
+			4367 = { change_trade_goods = iron }
+			custom_tooltip = bhuvauri_modern_metallurgy_effect_tt
+			set_country_flag = bhuvauri_rapid_industrialization_unlocked
+			set_country_flag = bhuvauri_shackle_makers_unshackled_unlocked
+			set_country_flag = bhuvauri_sarkhashabid_weapons_guild_unlocked
+			set_country_flag = bhuvauri_shenrali_steel_company_unlocked
+			set_country_flag = bhuvauri_bavijay_naval_supplies_unlocked
+			set_country_flag = bhuvauri_iron_hulls_sarhal_unlocked
+			set_country_flag = bhuvauri_black_veins_ghankedhen_unlocked
+		}
 	}
 	
 	R38_spreading_prosperity = {
 		icon = mission_prosperity_in_bengal
 		position = 14
-		required_missions = {
-			R38_artificial_fabrics
-			R38_modern_metallurgy
-		}
+		required_missions = { R38_modern_metallurgy }
 		provinces_to_highlight = {
 			OR = {
 				province_group = golden_highway_rahen_coast
@@ -3284,7 +3386,7 @@ R38_post_suhan_3 = {
 		position = 12
 		required_missions = {
 			R38_all_vases
-			R38_mouth_cotton
+			R38_artificial_fabrics
 			R38_raheni_regiments
 		}
 		provinces_to_highlight = {
@@ -3338,71 +3440,6 @@ R38_post_suhan_3 = {
 		} 
 	}
 
-	R38_modern_metallurgy = {
-		icon = mission_iron_and_copper
-		position = 13
-		required_missions = { R38_open_the_gate } 
-		provinces_to_highlight = {
-			owned_by = R38
-			OR = {
-				trade_goods = iron
-				trade_goods = copper
-				trade_goods = gold
-			}
-			NOT = {
-				AND = {
-					base_production = 8
-					has_manufactory_trigger = yes
-					OR = {
-						trade_goods = gold
-						has_production_building_trigger = yes
-					}
-				}
-			}
-		} 
-
-		trigger = {
-#			if = {
-#				limit = { ai = yes }
-#				owns = 4367
-#			}
-#			else = {
-				custom_trigger_tooltip = {
-					tooltip = bhuvauri_modern_metallurgy_trigger_tt
-					all_owned_province = {
-						OR = {
-							NOT = {
-								trade_goods = iron
-								trade_goods = copper
-								trade_goods = gold
-							}
-							AND = {
-								base_production = 8
-								has_manufactory_trigger = yes
-								OR = {
-									trade_goods = gold
-									has_production_building_trigger = yes
-								}
-							}
-						}
-					}
-				}
-#			}
-		} 
-
-		effect = {
-			4367 = { change_trade_goods = iron }
-			custom_tooltip = bhuvauri_modern_metallurgy_effect_tt
-			set_country_flag = bhuvauri_rapid_industrialization_unlocked
-			set_country_flag = bhuvauri_shackle_makers_unshackled_unlocked
-			set_country_flag = bhuvauri_sarkhashabid_weapons_guild_unlocked
-			set_country_flag = bhuvauri_shenrali_steel_company_unlocked
-			set_country_flag = bhuvauri_bavijay_naval_supplies_unlocked
-			set_country_flag = bhuvauri_iron_hulls_sarhal_unlocked
-			set_country_flag = bhuvauri_black_veins_ghankedhen_unlocked
-		} 
-	}
-
 	R38_luna_eclipsed = {
 		icon = mission_solaris
 		position = 15
@@ -3420,7 +3457,7 @@ R38_post_suhan_3 = {
 				}
 				AND = {
 					province_id = 4420
-					NOT = { development = 65 }
+					NOT = { development = 50 }
 				}
 			}
 		} 
@@ -3431,7 +3468,7 @@ R38_post_suhan_3 = {
 #				limit = { ai = no }
 				NOT = { great_power_rank = 2 }
 				is_hegemon_of_type = economic_hegemon
-				4420 = { development = 65 }
+				4420 = { development = 50 }
 #			}
 		} 
 
@@ -3657,6 +3694,10 @@ R38_post_suhan_4 = {
 					add_permanent_province_modifier = { name = bhuvauri_slave_export_station_50 duration = -1 }
 				}
 			}
+			country_event = {
+				id = flavor_bhuvauri.27
+				days = 3650 
+			}
 		} 
 	}
 
@@ -3682,14 +3723,10 @@ R38_post_suhan_4 = {
 #			}
 #			else = {
 				has_estate_privilege = estate_lowercastes_right_to_bear_arms
-				num_of_owned_provinces_with = {
-					value = 80
-					has_building = soldier_households
-					has_building = training_fields
-					custom_trigger_tooltip = {
-						tooltip = bhuvauri_raheni_regiments_trigger_2_tt
-						always = yes
-					}
+				soldier_households = 100
+				custom_trigger_tooltip = {
+					tooltip = bhuvauri_raheni_regiments_trigger_2_tt
+					always = yes
 				}
 #			}
 			custom_trigger_tooltip = {
@@ -3774,21 +3811,8 @@ R38_post_suhan_4 = {
 					effect = "spawn_rebels = { type = noble_rebels size = 2 }"
 				}
 				every_owned_province = {
-					limit = {
-						OR = {
-							has_terrain = farmlands
-							has_river_estuary_trigger = yes
-							trade_goods = grain
-							trade_goods = fish
-							trade_goods = livestock
-						}
-						OR = {
-							superregion = rahen_superregion
-							superregion = east_sarhal_superregion
-							region = bomdan_region
-						}
-					}
-					add_permanent_province_modifier = {
+					limit = { has_building = soldier_households }
+					add_province_modifier = {
 						name = bhuvauri_adasa_workforce
 						duration = -1
 					}
@@ -3885,10 +3909,7 @@ R38_post_suhan_4 = {
 	R38_other_half = {
 		icon = mission_ottoman_harem
 		position = 14
-		required_missions = {
-			R38_modern_metallurgy
-			R38_safe_last
-		}
+		required_missions = { R38_safe_last }
 		provinces_to_highlight = {
 			owned_by = R38
 			NOT = { has_building = university }
@@ -3928,10 +3949,7 @@ R38_post_suhan_4 = {
 					tooltip = bhuvauri_other_half_trigger_2_tt
 					NOT = { has_country_flag = bhuvauri_fangaulan_ruler }
 				}
-				num_of_owned_provinces_with = {
-					value = 75
-					has_building = university
-				}
+				university = 75
 #			}
 		} 
 

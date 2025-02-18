@@ -1,6 +1,5 @@
-owner = S34 #Cunning River Eel
-controller = S34 #Cunning River Eel
-add_core = S34 #Cunning River Eel
+owner = S33 #Red Fanged Gorilla
+controller = S33 #Red Fanged Gorilla
 add_core = S33 #Red Fanged Gorilla
 culture = tanizu
 religion = beast_memory

@@ -28,7 +28,17 @@ CENTAUR_1 = {
 			OR = {
 				AND = {
 					treasury = 100
-					church_power = 50
+					custom_trigger_tooltip = {
+						tooltip = centaur_churchpower_50_tt
+						OR = {
+							AND = {
+								religion = irdaeos_worship
+								church_power = 50
+							}
+							religion = the_jadd
+							religion = yudunyovi
+						}
+					}
 				}
 				custom_trigger_tooltip = {
 					tooltip = geoglyph_celebration_tooltip
@@ -113,17 +123,59 @@ CENTAUR_2 = {
 		position = 2
 		
 		trigger = {
-			church_power = 75
-			horde_unity = 90
-			employed_advisor = {
-				category = ADM
+			#irdaeos worship+75 church power, jadd, or yudunyovi
+			custom_trigger_tooltip = {
+				tooltip = centaur_churchpower_75_tt
+				OR = {
+					AND = {
+						religion = irdaeos_worship
+						church_power = 75
+					}
+						religion = the_jadd
+						religion = yudunyovi
+				}
 			}
-			employed_advisor = {
-				category = DIP
+			
+			#if youre a horde you need 90 horde unity. if youve reformed, you dont need anything
+			if = {
+				limit = {
+					government = tribal
+				}
+				horde_unity = 90
 			}
-			employed_advisor = {
-				category = MIL
+
+			#AI only needs any two advisors
+			if = {
+				limit = {
+					ai = yes
+				}
+            	calc_true_if = {
+               		amount = 2
+                	employed_advisor = {
+                    	category = ADM
+                	}
+               		 employed_advisor = {
+                    	category = DIP
+                	}
+                	employed_advisor = {
+                    	category = MIL
+                	}
+            	}
 			}
+			#player needs all 3
+			else = {
+				employed_advisor = {
+					category = ADM
+				}
+				employed_advisor = {
+					category = DIP
+				}
+				employed_advisor = {
+					category = MIL
+				}
+			}
+
+			#AI doesnt need the special quest
 			if = {
 				limit = {
 					ai = yes
@@ -175,6 +227,7 @@ CENTAUR_2 = {
 		}
 		
 		effect = {
+			#AI gets points due to no special quest
 			if = {
 				limit = {
 					ai = yes

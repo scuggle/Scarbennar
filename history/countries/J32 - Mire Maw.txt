@@ -42,3 +42,5 @@ capital = 4123
 		mil = 5
 	}
 }
+
+set_country_flag = was_mossmouth_ogre #Flooded provinces

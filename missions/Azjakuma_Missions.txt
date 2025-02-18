@@ -175,10 +175,10 @@ azjakuma_missiontree_2_pt_1 = {
 			area = moryokang_area
 			NOT = {
 				OR = {
-					culture = hill_yan
+					culture = beikling
 					culture = horned_ogre
 				}
-				religion = lefthand_path
+				religion = devouring_path
 			}
 		}
 
@@ -189,7 +189,7 @@ azjakuma_missiontree_2_pt_1 = {
 				OR = {
 					OR = {
 						culture = horned_ogre
-						culture = hill_yan
+						culture = beikling
 					}
 					is_year = 1485
 				}
@@ -992,7 +992,7 @@ azjakuma_missiontree_1_pt_2 = {
 				area = hongnguan_area
 				area = mulim_area
 			}
-			NOT = { religion = lefthand_path }
+			NOT = { religion = devouring_path }
 		}
 		
 		trigger = {
@@ -1011,7 +1011,7 @@ azjakuma_missiontree_1_pt_2 = {
 						area = hongnguan_area
 						area = mulim_area
 					}
-					religion = lefthand_path
+					religion = devouring_path
 				}
 			}
 		}
@@ -1104,7 +1104,7 @@ azjakuma_missiontree_1_pt_2 = {
 				area = jinjiang_area
 				area = jiantsiang_area
 			}
-			NOT = { religion = lefthand_path }
+			NOT = { religion = devouring_path }
 		}
 		
 		trigger = {
@@ -1123,7 +1123,7 @@ azjakuma_missiontree_1_pt_2 = {
 						area = jinjiang_area
 						area = jiantsiang_area
 					}
-					religion = lefthand_path
+					religion = devouring_path
 				}
 			}
 		}
@@ -1155,32 +1155,56 @@ azjakuma_missiontree_1_pt_2 = {
 				province_id = 4979
 				province_id = 4925
 			}
-			NOT = { has_province_modifier = corrupted_temple_complex }
+			NOT = {
+				has_province_modifier = ruined_temple_complex
+				has_province_modifier = corrupted_temple_complex
+			}
 		}
 		
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = oni_all_temples_yanshen_but_tianlou_tooltip # make a tooltip for this
 				4951 = {
-					has_province_modifier = corrupted_temple_complex
+					OR = {
+						has_province_modifier = ruined_temple_complex
+						has_province_modifier = corrupted_temple_complex
+					}
 				}
 				4839 = {
-					has_province_modifier = corrupted_temple_complex
+					OR = {
+						has_province_modifier = ruined_temple_complex
+						has_province_modifier = corrupted_temple_complex
+					}
 				}
 				4859 = {
-					has_province_modifier = corrupted_temple_complex
+					OR = {
+						has_province_modifier = ruined_temple_complex
+						has_province_modifier = corrupted_temple_complex
+					}
 				}
 				4949 = {
-					has_province_modifier = corrupted_temple_complex
+					OR = {
+						has_province_modifier = ruined_temple_complex
+						has_province_modifier = corrupted_temple_complex
+					}
 				}
 				4930 = {
-					has_province_modifier = corrupted_temple_complex
+					OR = {
+						has_province_modifier = ruined_temple_complex
+						has_province_modifier = corrupted_temple_complex
+					}
 				}
 				4979 = {
-					has_province_modifier = corrupted_temple_complex
+					OR = {
+						has_province_modifier = ruined_temple_complex
+						has_province_modifier = corrupted_temple_complex
+					}
 				}
 				4925 = {
-					has_province_modifier = corrupted_temple_complex
+					OR = {
+						has_province_modifier = ruined_temple_complex
+						has_province_modifier = corrupted_temple_complex
+					}
 				}
 			}
 		}
@@ -1288,7 +1312,7 @@ azjakuma_missiontree_2_pt_2 = {
 			bianfang_area = {
 				limit = {
 					is_core = Y09
-					NOT = { religion = lefthand_path }
+					NOT = { religion = devouring_path }
 				}
 				add_province_modifier = {
 					name = azjakuma_oni_conversion_province
@@ -1298,7 +1322,7 @@ azjakuma_missiontree_2_pt_2 = {
 			bianyuan_area = {
 				limit = {
 					is_core = Y09
-					NOT = { religion = lefthand_path }
+					NOT = { religion = devouring_path }
 				}
 				add_province_modifier = {
 					name = azjakuma_oni_conversion_province
@@ -1308,7 +1332,7 @@ azjakuma_missiontree_2_pt_2 = {
 			lamzung_area = {
 				limit = {
 					is_core = Y09
-					NOT = { religion = lefthand_path }
+					NOT = { religion = devouring_path }
 				}
 				add_province_modifier = {
 					name = azjakuma_oni_conversion_province
@@ -1318,7 +1342,7 @@ azjakuma_missiontree_2_pt_2 = {
 			jiangszun_area = {
 				limit = {
 					is_core = Y09
-					NOT = { religion = lefthand_path }
+					NOT = { religion = devouring_path }
 				}
 				add_province_modifier = {
 					name = azjakuma_oni_conversion_province
@@ -1340,7 +1364,7 @@ azjakuma_missiontree_2_pt_2 = {
 				area = lamzung_area
 				area = jiangszun_area
 			}
-			NOT = { religion = lefthand_path }
+			NOT = { religion = devouring_path }
 		}
 		
 		trigger = {
@@ -1354,7 +1378,7 @@ azjakuma_missiontree_2_pt_2 = {
 						area = lamzung_area
 						area = jiangszun_area
 					}
-					religion = lefthand_path
+					religion = devouring_path
 				}
 			}
 		}
@@ -1382,8 +1406,8 @@ azjakuma_missiontree_2_pt_2 = {
 			# define_advisor = {
 			# 	type = diplomat
 			# 	skill = 1
-			# 	culture = river_yan
-			# 	religion = lefthand_path
+			# 	culture = jiangszun
+			# 	religion = devouring_path
 			# }
 		}
 	}
@@ -1473,7 +1497,7 @@ azjakuma_missiontree_2_pt_2 = {
 			NOT = {
 				AND = {
 					country_or_non_sovereign_subject_holds = ROOT
-					religion = lefthand_path
+					religion = devouring_path
 				}
 			}
 		}
@@ -1482,17 +1506,17 @@ azjakuma_missiontree_2_pt_2 = {
 			anjiang_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-				religion = lefthand_path
+				religion = devouring_path
 			}
 			linyuan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-				religion = lefthand_path
+				religion = devouring_path
 			}
 			yanzhong_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-				religion = lefthand_path
+				religion = devouring_path
 			}
 		}
 		
@@ -1567,7 +1591,7 @@ azjakuma_missiontree_2_pt_2 = {
 				area = jinjiang_area
 				area = jiantsiang_area
 			}
-			NOT = { religion = lefthand_path }
+			NOT = { religion = devouring_path }
 		}
 		
 		trigger = {
@@ -1582,13 +1606,13 @@ azjakuma_missiontree_2_pt_2 = {
 						area = jinjiang_area
 						area = jiantsiang_area
 					}
-					religion = lefthand_path
+					religion = devouring_path
 				}
 			}
 		}
 		
 		effect = {
-			custom_tooltip = river_yan_remove_resistance_tooltip
+			custom_tooltip = jiangszun_remove_resistance_tooltip
 			hidden_effect = {
 				erluxi_area = {
 					remove_province_modifier = azjakuma_yanshen_resistance
@@ -1672,7 +1696,7 @@ azjakuma_missiontree_2_pt_2 = {
 		effect = {
 			custom_tooltip = azjakuma_life_extension_unlock_tooltip
 			hidden_effect = {
-				set_country_flag = lefthand_life_extension_unlocked
+				set_country_flag = devouring_life_extension_unlocked
 			}
 		}
 	}
@@ -1684,16 +1708,33 @@ azjakuma_missiontree_2_pt_2 = {
 		
 		provinces_to_highlight = {
 			province_id = 4871
-			NOT = { has_province_modifier = corrupted_temple_complex }
-		}
-		
-		trigger = {
-			4871 = {
+			NOT = {
+				has_province_modifier = ruined_temple_complex
 				has_province_modifier = corrupted_temple_complex
 			}
 		}
 		
+		trigger = {
+			if = {
+				limit = { 4871 = { has_province_modifier = ruined_temple_complex } }
+				adm_power = 100
+				dip_power = 100
+				mil_power = 100
+			}
+			else = {
+				4871 = {
+					has_province_modifier = corrupted_temple_complex
+				}
+			}
+		}
+		
 		effect = {
+			if = {
+				limit = { 4871 = { has_province_modifier = ruined_temple_complex } }
+				add_adm_power = -100
+				add_dip_power = -100
+				add_mil_power = -100
+			}
 			4871 = {
 				add_province_modifier = {
 					name = azjakuma_ritual_preperations_one
@@ -1948,7 +1989,7 @@ azjakuma_missiontree_3_pt_2 = {
 					NOT = {
 						AND = {
 							country_or_non_sovereign_subject_holds = ROOT
-							religion = lefthand_path
+							religion = devouring_path
 						}
 					}
 				}
@@ -1962,7 +2003,7 @@ azjakuma_missiontree_3_pt_2 = {
 			}
 			4620 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				religion = lefthand_path
+				religion = devouring_path
 			}
 			estate_loyalty = {
 				estate = estate_chumijemoya
@@ -1989,13 +2030,13 @@ azjakuma_missiontree_3_pt_2 = {
 		
 		provinces_to_highlight = {
 			region = xianjie_region
-			NOT = { religion = lefthand_path }
+			NOT = { religion = devouring_path }
 		}
 		
 		trigger = {
 			xianjie_region = {
 				type = all
-				religion = lefthand_path
+				religion = devouring_path
 			}
 		}
 		
@@ -2191,6 +2232,8 @@ azjakuma_missiontree_4_pt_2 = {
 				4630 = { cede_province = ROOT }
 			}
 			add_stability_or_adm_power = yes
+			custom_tooltip = witches_and_shamans_unlock
+			clr_country_flag = witches_and_shamans_banned
 		}
 	}
 	
@@ -2322,17 +2365,37 @@ azjakuma_missiontree_4_pt_2 = {
 		}
 		
 		trigger = {
-			owns_all_provinces = {
-				OR = {
-					area = pevyirer_area
-					area = dekaipnam_area
-					area = zhonglin_area
-					area = jilin_anb_area
-					area = aoshan_area
-					area = tzingyuan_area
-					area = sarisung_area
-					area = rangadevi_area
-				}
+			pevyirer_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dekaipnam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zhonglin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jilin_anb_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aoshan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tzingyuan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sarisung_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rangadevi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		
@@ -2627,12 +2690,12 @@ azjakuma_missiontree_5_pt_2 = {
 				AND = {
 					NOT = { exists = R78 }
 					province_id = 4633
-					NOT = { religion = lefthand_path }
+					NOT = { religion = devouring_path }
 				}
 				AND = {
 					exists = R78
 					is_capital_of = R78
-					R78 = { NOT = { religion = lefthand_path } }
+					R78 = { NOT = { religion = devouring_path } }
 				}
 			}
 		}
@@ -2642,19 +2705,19 @@ azjakuma_missiontree_5_pt_2 = {
 				limit = { exists = R78 }
 				R78 = {
 					is_subject_of = ROOT
-					religion = lefthand_path
+					religion = devouring_path
 				}
 			}
 			else = {
 				4633 = {
-					religion = lefthand_path
+					religion = devouring_path
 				}
 			}
 		}
 		
 		effect = {
 			if = {
-				limit = { R78 = { is_subject_of = ROOT religion = lefthand_path } }
+				limit = { R78 = { is_subject_of = ROOT religion = devouring_path } }
 				R78 = {
 					force_converted = no
 					add_country_modifier = {
@@ -2665,7 +2728,7 @@ azjakuma_missiontree_5_pt_2 = {
 			}
 			else = {
 				sir_area = {
-					limit = { NOT = { religion = lefthand_path } }
+					limit = { NOT = { religion = devouring_path } }
 					add_province_modifier = {
 						name = azjakuma_oni_conversion_province
 						duration = 3650
@@ -2807,6 +2870,12 @@ azjakuma_missiontree_5_pt_2 = {
 		
 		trigger = {
 			#jade march would probably not exist
+			R81 = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
 			jade_mines_region = {
 				type = all
 				OR = {
@@ -2825,27 +2894,27 @@ azjakuma_missiontree_5_pt_2 = {
 			# this would create a new nation, it could change the tag of a goblin subject if one is available ?
 			custom_tooltip = goblin_subject_change_religion_and_type_tooltip
 			hidden_effect = {
-				random_subject_country = {
-					limit = { culture_group = goblin }
-					change_religion = lefthand_path
-					
-					save_global_event_target_as = azjakuma_goblinSubject # using this below before it's defined writes to log
-					ROOT = {
-						create_subject = {
-							subject_type = autonomous_vassal
-							subject = PREV
-						}
-						every_subject_country = {
-							limit = {
-								culture_group = goblin
-								NOT = { tag = event_target:azjakuma_goblinSubject }
-							}
-							every_owned_province = {
-								add_core = event_target:azjakuma_goblinSubject
-								remove_core = owner
-								cede_province = event_target:azjakuma_goblinSubject
-							}
-						}
+				if = {
+					limit = { NOT = { R81 = { is_subject_of = ROOT } } }
+					random_subject_country = {
+						limit = { culture_group = goblin }
+						change_tag = R81
+					}
+				}
+				R81 = { change_religion = devouring_path }
+				create_subject = {
+					subject_type = oni_governorship
+					subject = R81
+				}
+				every_subject_country = {
+					limit = {
+						culture_group = goblin
+						NOT = { tag = R81 }
+					}
+					every_owned_province = {
+						add_core = R81
+						remove_core = owner
+						cede_province = R81
 					}
 				}
 			}
@@ -2889,12 +2958,9 @@ azjakuma_missiontree_5_pt_2 = {
 		trigger = {
 			if = {
 				limit = {
-						mission_completed = Y01_subjugation_of_goblins # has_saved_event_target didnt work so this instead
-						event_target:azjakuma_goblinSubject = {
-							exists = yes
-						}
+						R81 = { is_subject_of = ROOT }	
 				}
-				event_target:azjakuma_goblinSubject = { # #change with the jade march tag - I think it would make more sense to have the goblin march own this provinces
+				R81 = {
 					num_of_owned_provinces_with = {
 						value = 5
 						region = jade_mines_region
@@ -2910,7 +2976,7 @@ azjakuma_missiontree_5_pt_2 = {
 			}
 			
 			else = {
-				any_subject_country = { # #change with the jade march tag - I think it would make more sense to have the goblin march own this provinces
+				any_subject_country = {
 					num_of_owned_provinces_with = {
 						value = 5
 						region = jade_mines_region
@@ -2927,10 +2993,6 @@ azjakuma_missiontree_5_pt_2 = {
 		}
 		
 		effect = {
-			hidden_effect = {
-				clear_global_event_target = azjakuma_goblinSubject
-			}
-		
 			capital_scope = { 
 				add_permanent_province_modifier = { name = azjakuma_senukagrii_main_level_1 duration = -1 }
 			}
@@ -2944,7 +3006,7 @@ azjakuma_missiontree_5_pt_2 = {
 		
 		provinces_to_highlight = {
 			region = jade_mines_region
-			NOT = { religion = lefthand_path }
+			NOT = { religion = devouring_path }
 			NOT = { has_terrain = cavern }
 		}
 		
@@ -2953,7 +3015,7 @@ azjakuma_missiontree_5_pt_2 = {
 				amount = 22
 				jade_mines_region = {
 					type = all
-					religion = lefthand_path
+					religion = devouring_path
 					NOT = { has_terrain = cavern }
 				}
 			}

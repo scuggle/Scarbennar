@@ -296,7 +296,7 @@ integrate_medasi_reform_desc:0 "Medasi each have their purpose, yet with our gro
  khet_mandate.80.t:0 "Burning Bridges"
  khet_mandate.80.d:0 "In Kheterata, every aspect of life is set up around appeasing the Khets. Things such as routine, clothing, architecture and infrastructure can be and are routinely disrupted by fickle Khet behaviour. In recent days a bridge on the Sorrow was destroyed by a Khet, as it blocked out the sun in his napping time. Without this critical piece of infrastructure, land trade of the province has been effectively brought to a halt."
  khet_mandate.80.a:0 "They didn't need it anyway"
- khet_mandate.80.b:0 "Bulid a new one"
+ khet_mandate.80.b:0 "Build a new one"
  khet_mandate.80.c:0 "This is a sign to improve the bridge!"
 
  khet_mandate.81.t:0 "Sadistic Tendencies"
@@ -309,7 +309,7 @@ integrate_medasi_reform_desc:0 "Medasi each have their purpose, yet with our gro
  khet_mandate.82.d:0 "While recently wandering through the markets of Kheterata, a Khet learned about a magnificent technology originating in the far lands of Haless. They were described as small rockets, filled with a mysterious powder, that launch with unimaginable speeds and explode in the sky, giving way to a pleasant explosion of sound and colours.\nThrilled by the descriptions, the Khet instantly messaged the Steward about his dire need to experience these "fireworks"."
  khet_mandate.82.a:0 "Import pyrotechnicians and fireworks"
  khet_mandate.82.b:0 "Employ the mages to perform"
- khet_mandate.82.c:0 "Let the Steward prove his magical proficiency"
+ khet_mandate.82.c:0 "Let the Steward prove [Root.Monarch.GetHerHis] magical proficiency"
  khet_mandate.82.d1:0 "We can't afford it"
 
  khet_mandate.83.t:0 "Natural Enemies"
@@ -348,7 +348,7 @@ integrate_medasi_reform_desc:0 "Medasi each have their purpose, yet with our gro
  khet_mandate.90.a:0 "We're working hard to keep it flowing"
 
  khet_mandate.91.t:0 "Make the Pyramid Great Again"
- khet_mandate.91.d:0 "Making sure that Khets get access to unique commodities from across the world is a tall task. For that, a long ago a system of satrapies was established. In exchange for the protection given by Khets, the satrapies are required to supply them with their local specialties, mostly gold. This system has worked for the better or for the worse over the years, but right now our network is successfully supplying us with a constant amount of fresh produce, to the point where Khets have also recognized this, expressing their appreciation to the Steward."
+ khet_mandate.91.d:0 "The Great Pyramid of Elikhet towers as one of the landmarks of the Kheterata, its smooth shape and rough, clean walls naturally matching the barren wasteland. Or so the architect thought - the Khetarch has ordered a renovation of the Pyramid, so that it can fully demonstrate the might of Elikhet's legacy. He demands a number of expensive investments: a chamber after each of Elikhet's titles, their walls inscribed with an epic dedicated to his history; magical wards protecting Elikhet’s sarcophagus and replacing the tip with a solid gold block."
  khet_mandate.91.a:0 "Make the improvements"
  khet_mandate.91.b:0 "We can't afford it"
 
@@ -445,7 +445,7 @@ integrate_medasi_reform_desc:0 "Medasi each have their purpose, yet with our gro
  mandate_new_steward:0 "New Steward of the Sorrow"
  mandate_lost_steward:0 "Lost Stewardship of the Sorrow"
  khet_mandate_ai_master_decision_timer:0 "ai timer"
- mandate_ai_steward_dip_bonus:0 "Steward of the Sorrow"
+ mandate_ai_civil_war_victor:0 "Kheteratan Civil War Victor"
  koroshesh_league_bankruptcy:0 "League Debts"
 
  mandate_unowned_sorrow_1:0 "Unowned §YMother's Sorrow River§! provinces"
@@ -737,6 +737,7 @@ integrate_medasi_reform_desc:0 "Medasi each have their purpose, yet with our gro
  ahati_disaster_regiments:0 "Ahati Betrayal"
  ahati_reducing_influence:0 "Reduced Influence: §Y$VAL$%§!"
  aakheta_uprising_modifier:0 "Harbingers of Justice"
+ aakheta_uprising_modifier_ai:0 "Harbingers of Justice"
  aakheta_recovery:0 "Rapid Organization"
  aakheta_victory:0 "True Heirs of Kheterata"
  aakheta_victory2:0 "Rapid Reforms"
@@ -867,7 +868,7 @@ integrate_medasi_reform_desc:0 "Medasi each have their purpose, yet with our gro
  ahati_events.132.a:0 "So delivery times are getting even worse?!"
 
  ahati_events.133.t:0 "Ahati Homes"
- ahati_events.133.d:0 "As the Ahati expanded, new quarters were needed. We therefore provided them with a large amount of land to build new barracks and fortifications on, like the one in [event_province.GetName]. This benefited them with new sleeping quarters and connections to the local population, while benefiting us as those soldiers bolstered security, increasing trade and the local economy and our tax revenue. But as with other Ahati affiliated locations, this one has also now turned into a local stronghold, barring our armies from entering or staying. These Ahati are also attempting to sway the local populace to their sides and are spreading vile lies and fake stories about our [Root.Monarch.GetTitle]."
+ ahati_events.133.d:0 "As the Ahati expanded, new quarters were needed. We therefore provided them with a large amount of land to build new barracks and fortifications on, like the one in [Root.GetName]. This benefited them with new sleeping quarters and connections to the local population, while benefiting us as those soldiers bolstered security, increasing trade and the local economy and our tax revenue. But as with other Ahati affiliated locations, this one has also now turned into a local stronghold, barring our armies from entering or staying. These Ahati are also attempting to sway the local populace to their sides and are spreading vile lies and fake stories about our [Root.Owner.Monarch.GetTitle]."
  ahati_events.133.a:0 "They will regret their insolence one day!"
 
  ahati_events.150.t:0 "Ahati Governor"

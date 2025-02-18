@@ -375,8 +375,6 @@ country_event = {
 				}
 			}
 		}
-		
-		capital_scope = { center_of_trade = 1 }
 	}
 	
 	option = { # Besolaki
@@ -430,8 +428,6 @@ country_event = {
 				}
 			}
 		}
-		
-		capital_scope = { center_of_trade = 1 }
 	}
 	
 	option = { # Eneion
@@ -485,8 +481,6 @@ country_event = {
 				}
 			}
 		}
-		
-		capital_scope = { center_of_trade = 1 }
 	}
 
 	option = { # Deyeion
@@ -540,8 +534,6 @@ country_event = {
 				}
 			}
 		}
-		
-		capital_scope = { center_of_trade = 1 }
 	}
 	
 	option = { # Apikhoxi
@@ -595,8 +587,6 @@ country_event = {
 				}
 			}
 		}
-		
-		capital_scope = { center_of_trade = 1 }
 	}
 	
 	option = { # Keyolion
@@ -650,8 +640,6 @@ country_event = {
 				}
 			}
 		}
-		
-		capital_scope = { center_of_trade = 1 }
 	}
 	
 	option = { # Anisikheion
@@ -705,8 +693,6 @@ country_event = {
 				}
 			}
 		}
-		
-		capital_scope = { center_of_trade = 1 }
 	}
 	
 	option = { # Amgremos
@@ -760,8 +746,6 @@ country_event = {
 				}
 			}
 		}
-		
-		capital_scope = { center_of_trade = 1 }
 	}
 	
 	option = { # Resist cultural change
@@ -776,8 +760,6 @@ country_event = {
 		}
 		
 		add_prestige = -10
-		
-		capital_scope = { center_of_trade = 1 }
 		
 		set_country_flag = no_formable_culture_shift
 	}
@@ -861,6 +843,14 @@ country_event = {
 	
 	immediate = {
 		set_global_flag = alecand_deathwinds_active
+		hidden_effect = {
+			random = {
+				chance = 20
+				country_event = {
+					id = kheionai_flavour.3
+				}
+			}
+		}
 	}
 
 	option = {
@@ -1397,8 +1387,26 @@ country_event = {
 			}
 		}
 	}
+
+	after = {
+		every_subject_country = {
+			limit = { 
+				is_subject_of_type = nekhei 
+				NOT = { num_of_colonists = 1 }
+			}
+			add_country_modifier = {
+				name = nekheis_new_colonies
+				duration = -1
+			}
+			add_country_modifier = {
+				name = nekheis_cheap_colonies
+				duration = 18250 #50 Years
+			}
+		}
+	}
 }
 
+#Choose to grant or refuse war rights
 country_event = {
 	id = kheionai.19
 	title = kheionai.19.t
@@ -1504,6 +1512,7 @@ country_event = {
 	}
 }
 
+#War rights granted
 country_event = {
 	id = kheionai.20
 	title = kheionai.20.t
@@ -1528,6 +1537,7 @@ country_event = {
 	}
 }
 
+#War rights denied
 country_event = {
 	id = kheionai.21
 	title = kheionai.21.t
@@ -1612,7 +1622,7 @@ country_event = { #Hidden event to make the Nekheis start colonizing
 
 	option = { #Blank option for those with their own startup events
 		name = kheionai.200.c
-        ai_chance = { factor = 100 }
+		ai_chance = { factor = 100 }
 		trigger = {
 			OR = {
 				tag = G55 #Eneion
@@ -1624,7 +1634,7 @@ country_event = { #Hidden event to make the Nekheis start colonizing
 
 	option = { #Empkeios
 		name = kheionai.200.a
-        ai_chance = { factor = 100 }
+		ai_chance = { factor = 100 }
 		trigger = {
 			tag = G53
 		}
@@ -1639,7 +1649,7 @@ country_event = { #Hidden event to make the Nekheis start colonizing
 
 	option = { #Besolaki
 		name = kheionai.200.b
-        ai_chance = { factor = 100 }
+		ai_chance = { factor = 100 }
 		trigger = {
 			tag = G54
 		}
@@ -1654,7 +1664,7 @@ country_event = { #Hidden event to make the Nekheis start colonizing
 
 	option = { #Deyeion
 		name = kheionai.200.d
-        ai_chance = { factor = 100 }
+		ai_chance = { factor = 100 }
 		trigger = {
 			tag = G56
 		}
@@ -1669,7 +1679,7 @@ country_event = { #Hidden event to make the Nekheis start colonizing
 
 	option = { #Apikhoxi
 		name = kheionai.200.e
-        ai_chance = { factor = 100 }
+		ai_chance = { factor = 100 }
 		trigger = {
 			tag = G57
 		}
@@ -1682,18 +1692,9 @@ country_event = { #Hidden event to make the Nekheis start colonizing
         }
 	}
 
-	option = { #Keyolion
-		name = kheionai.200.f
-        ai_chance = { factor = 100 }
-		trigger = {
-			tag = G58
-		}
-		#Has their own startup event with the effects
-	}
-
 	option = { #Amgremos
 		name = kheionai.200.g
-        ai_chance = { factor = 100 }
+		ai_chance = { factor = 100 }
 		trigger = {
 			tag = G62
 		}
@@ -1702,6 +1703,21 @@ country_event = { #Hidden event to make the Nekheis start colonizing
             add_permanent_province_modifier = {
 				name = G58_on_startup_growth
 				duration = 1825
+			}
+        }
+	}
+
+	option = { #Ameion
+		name = kheionai.200.g
+		ai_chance = { factor = 100 }
+		trigger = {
+			tag = G52
+		}
+		2590 = { #Hussarnbyst
+            create_colony = 50
+            add_permanent_province_modifier = {
+				name = G58_on_startup_growth
+				duration = 1825 #50 years
 			}
         }
 	}
@@ -1751,9 +1767,13 @@ country_event = { #Enable Degarikes - Winner
         }
         navy_tradition = 25
         navy_size = 25
-        any_owned_province = {
-            has_province_modifier = kheionai_shipyard
-        }
+		OR = {
+			tag = G79
+			was_tag = G79
+			any_owned_province = {
+				has_province_modifier = kheionai_shipyard
+			}
+		}
 	}
 	fire_only_once = yes
 	major = yes
@@ -1781,7 +1801,6 @@ country_event = { #Enable Degarikes - Winner
 				}
 				spawn_units_for = { type = geobukseon_galley who = ROOT amount = 2 }
 			}
-			set_country_flag = has_degarikes
 			set_global_flag = degarikes_rediscovered
 		}
 	}
@@ -1824,9 +1843,13 @@ country_event = { #Enable Degarikes - Rest
         }
         navy_tradition = 25
         navy_size = 25
-        any_owned_province = {
-            has_province_modifier = kheionai_shipyard
-        }
+		OR = {
+			tag = G79
+			was_tag = G79
+			any_owned_province = {
+				has_province_modifier = kheionai_shipyard
+			}
+		}
 	}
 
 	option = {
@@ -1838,24 +1861,15 @@ country_event = { #Enable Degarikes - Rest
 			}
 		}
         enable_degarikes = yes
-		hidden_effect = {
-			set_country_flag = has_degarikes
-		}
 	}
 	option = {
 		name = kheionai.32.b
 		trigger = { culture_group = taychendi_ruinborn_elf }
         enable_degarikes = yes
-		hidden_effect = {
-			set_country_flag = has_degarikes
-		}
 	}
 	option = {
 		name = kheionai.32.c
 		trigger = { culture_group = devandi_ruinborn_elf }
         enable_degarikes = yes
-		hidden_effect = {
-			set_country_flag = has_degarikes
-		}
 	}
 }

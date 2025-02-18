@@ -1,4 +1,4 @@
-#Age of Greentide
+#Age of Monsters
 age_of_discovery = {
 	start = 1400
 	
@@ -20,19 +20,35 @@ age_of_discovery = {
 					}
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = obj_discover_america_tooltip
+			if = { limit = { ai = no }
+				custom_trigger_tooltip = {
+					tooltip = obj_discover_america_tooltip
 					OR = {
 						north_america = { has_discovered = ROOT }
 						south_america = { has_discovered = ROOT }
 						new_world = { has_discovered = ROOT }
 					}
 				}
+			}
+			else = {
+				OR = {
+					exploration_ideas = 2
+					has_institution = new_world_i
+				}
+			}
 		}
 		
 		obj_greentide_aftermath = {
+			allow = {
+				OR = {
+					ai = no
+					capital_scope = { continent = europe }
+				}
+			}
+
 			num_of_owned_provinces_with = {
 				value = 5
+				hidden_trigger = { continent = europe }
 				OR = {
 					region = west_castanor_region
 					region = south_castanor_region
@@ -59,16 +75,32 @@ age_of_discovery = {
 		# }
 		
 		obj_5_centers_of_trade = {
-			calc_true_if = {
-				all_owned_province = {
-					OR = {
-						province_has_center_of_trade_of_level = 2
-						province_has_center_of_trade_of_level = 3
+			if = { limit = { ai = no }
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							province_has_center_of_trade_of_level = 2
+							province_has_center_of_trade_of_level = 3
+						}
+						controlled_by = owner
+						is_core = ROOT
 					}
-					controlled_by = owner
-					is_core = ROOT
+					amount = 5
 				}
-				amount = 5
+			}
+			else = {
+				total_development = 250 # Estimate for when AI could realistically fulfill the trigger, should exclude most small countries.
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							province_has_center_of_trade_of_level = 2
+							province_has_center_of_trade_of_level = 3
+						}
+						controlled_by = owner
+						is_core = ROOT
+					}
+					amount = 5
+				}
 			}
 		}
 		
@@ -127,6 +159,44 @@ age_of_discovery = {
 			}
 			643 = {
 				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		obj_high_temples = {
+			allow = {
+				capital_scope = { continent = asia } 
+			}
+			if = {
+				limit = { ai = no }
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 3
+					province_group = temple_province_group
+				}
+			}
+			else = {
+				has_country_flag = owns_high_temple
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 3
+					province_group = temple_province_group
+				}
+			}
+		}
+		obj_precursor_relics = {
+			allow = {
+				capital_scope = { OR = { continent = north_america continent = south_america } }
+			}
+			development_in_provinces = {
+				value = 20
+				trade_goods = precursor_relics
+			}
+		}
+		obj_sarhal_monuments = {
+			allow = {
+				capital_scope = { continent = africa }
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 2
+				continent = africa
+				has_great_project = { type = any tier = 0}
 			}
 		}
 	}		
@@ -348,13 +418,12 @@ age_of_discovery = {
 						culture_group = centaur
 					}
 				}
-				development_in_provinces = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 10
 					OR = {
 						culture_is_human = yes
 						culture_is_elven = yes
 					}
-					value = 100
-					country_or_subject_holds = ROOT
 				}
 				has_estate = estate_monstrous_tribes
 			}
@@ -401,7 +470,7 @@ age_of_discovery = {
 		
 		ab_nascent_civilization = {
 			allow = {
-				OR ={
+				OR = {
 					culture = fathide_ogre
 					culture_group = triunic
 					culture_group = centaur
@@ -409,6 +478,13 @@ age_of_discovery = {
 			}
 			effect = {
 				on_age_ability_taken = { age = age_of_discovery }
+				if = {
+					limit = {
+						culture = fathide_ogre
+					}
+					hidden_effect = { set_country_flag = ogre_nascent_civilization }
+					custom_tooltip = ab_nascent_civilization_ogre_tt
+				}
 			}
 			modifier = {
 				reform_progress_growth = 0.25
@@ -466,6 +542,7 @@ age_of_reformation = {
 				religion = suhans_praxis
 				religion = reformed_feast_of_the_gods
 				religion = kalyin_worshippers
+				religion = runefather_worship
 				AND = {
 					religion = dwarven_pantheon
 					capital_scope = {
@@ -530,11 +607,19 @@ age_of_reformation = {
 				}
 			}
 			OR = {
-				north_america = {
-					country_or_non_sovereign_subject_holds = ROOT
+				any_owned_province = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
 				}
-				south_america = {
-					country_or_non_sovereign_subject_holds = ROOT
+				any_subject_country = {
+					any_owned_province = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
 				}
 			}
 		}
@@ -561,9 +646,9 @@ age_of_reformation = {
 			custom_trigger_tooltip = {
 				tooltip = obj_30_development_city_tooltip
 				any_owned_province = {
+					development_discounting_tribal = 30
 					is_core = ROOT
 					controlled_by = owner
-					development_discounting_tribal = 30
 				}
 			}
 		}
@@ -575,9 +660,11 @@ age_of_reformation = {
 		obj_dig_holds = {
 			allow = {
 				capital_scope = { continent = serpentspine }
+				NOT = { has_country_flag = blorc_plunder_capital_set }
 			}
 			num_of_owned_provinces_with = {
 				value = 5
+				hidden_trigger = { province_group = hold_province }
 				has_dwarven_hold_2 = yes
 			}
 		}
@@ -789,6 +876,7 @@ age_of_reformation = {
 					tag = H27 #Ynnic Empire
 					tag = U69 #Sarda
 					tag = U70 #Dolindha
+					tag = U71 #Rzenta
 					tag = H21 #Eordand
 					tag = U28 #Kooyahse
 					tag = U22 #Veykodirzag
@@ -953,12 +1041,12 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_rival_change = {
+		ab_core_cost = {
 			effect = {
 				on_age_ability_taken = { age = age_of_absolutism }
 			}
 			modifier = {
-				rival_change_cost = -0.5
+				core_creation = -0.1
 				num_of_age_rewards = 1
 			}
 			ai_will_do = {
@@ -1191,6 +1279,7 @@ age_of_absolutism = {
 					tag = L23 #Fangaula
 					tag = F66 #Konolkhatep
 					tag = S72 #Vyoronsi
+					tag = S90 #Umbral Covenant
 				}
 			}
 			modifier = {
@@ -1369,25 +1458,17 @@ age_of_revolutions = {
 				factor = 10
 			}
 		}
-		ab_same_contine_lib_desire = {
+		ab_core_cost_2 = {
 			effect = {
 				on_age_ability_taken = { age = age_of_revolutions }
 			}
 			modifier = {
-				reduced_liberty_desire_on_same_continent = 25
+				core_creation = -0.15
+				governing_capacity_modifier = 0.1
 				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 15
-				modifier = {
-					factor = 0
-					NOT = {
-						any_subject_country = {
-							liberty_desire = 30
-							same_continent = ROOT
-						}
-					}
-				}
 			}
 		}
 		# ab_artificer_machinations_of_war = {

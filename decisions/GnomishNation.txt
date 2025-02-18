@@ -1,7 +1,7 @@
 
 country_decisions = {
 
-	gnomish_nation = {
+	gnomish_nation = { #Gnomish Hierarchy
 		major = yes
 		potential = {
 			culture_group = gnomish
@@ -117,11 +117,8 @@ country_decisions = {
 				primary_culture = creek_gnome
 				primary_culture = iochander
 			}
-			OR = {
-				religion = regent_court
-				religion = corinite
-				religion = ravelian
-			}
+			NOT = { religion = the_thought }
+			
 		}
 		
 		effect = {
@@ -164,6 +161,10 @@ country_decisions = {
 			142 = {
 				change_province_name = "Roynoms"
 				rename_capital = "Kongnamm"
+				change_culture = iochander
+			}
+			143 = {
+				change_culture = iochander
 			}
 			add_prestige = 10
 			add_country_modifier = {
@@ -178,9 +179,18 @@ country_decisions = {
 			
 			#hidden_effect = { 
 				clear_racial_military = yes
-				add_country_modifier = {
-					name = human_military
-					duration = -1
+				hidden_effect = {
+					add_country_modifier = { 
+						name = human_military
+						duration = -1  
+						hidden = yes
+					}
+				}
+				tooltip = {
+					add_country_modifier = {
+						name = human_military
+						duration = -1
+					}
 				}
 				add_country_modifier = { 
 					name = restructuring_military
@@ -202,7 +212,7 @@ country_decisions = {
 		ai_importance = 500
 	}
 
-	B71_southroy_culture = { 
+	B71_southroy_culture = { #Southroy shifts from Low Lorentish to Iochander
 		major = yes
 		potential = {
 			tag = B71

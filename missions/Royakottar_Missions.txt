@@ -6,9 +6,19 @@ G67_1_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
-		tag = G67
+		OR = {
+			tag = G67
+			AND = {
+				tag = J84 #Taychendi Empire
+				was_tag = G67
+			}
+			AND = {
+				tag = U39 #Orenvalyam
+				was_tag = G67
+			}
+		}
 	} 
 
 	G67_1_1_delving_deeper = {
@@ -134,9 +144,19 @@ G67_2_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
-		tag = G67 
+	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = G67
+			AND = {
+				tag = J84 #Taychendi Empire
+				was_tag = G67
+			}
+			AND = {
+				tag = U39 #Orenvalyam
+				was_tag = G67
+			}
+		}
 	} 
 
 	G67_2_1_kadradars_ambition = {
@@ -400,9 +420,19 @@ G67_3_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
-		tag = G67 
+	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = G67
+			AND = {
+				tag = J84 #Taychendi Empire
+				was_tag = G67
+			}
+			AND = {
+				tag = U39 #Orenvalyam
+				was_tag = G67
+			}
+		}
 	} 
 
 	G67_3_1_calling_on_old_friends = {
@@ -781,10 +811,7 @@ G67_3_missions = {
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = G67_passed_reform_5_tt
-				has_country_flag = got_reform_5
-			}
+			taychend_hero_cult_has_passed_reform = { reform = 5 }
 			is_at_war = no
 			stability = 2
 			custom_trigger_tooltip = {
@@ -870,9 +897,19 @@ G67_4_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
-		tag = G67 
+	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = G67
+			AND = {
+				tag = J84 #Taychendi Empire
+				was_tag = G67
+			}
+			AND = {
+				tag = U39 #Orenvalyam
+				was_tag = G67
+			}
+		}
 	} 
 
 	G67_4_1_blue_swords_blue_sea = {
@@ -1206,9 +1243,19 @@ G67_5_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
-		tag = G67 
+	potential = {
 		NOT = { has_country_flag = chose_generic_mt }
+		OR = {
+			tag = G67
+			AND = {
+				tag = J84 #Taychendi Empire
+				was_tag = G67
+			}
+			AND = {
+				tag = U39 #Orenvalyam
+				was_tag = G67
+			}
+		}
 	} 
 
 	G67_5_1_scholars_mate = {

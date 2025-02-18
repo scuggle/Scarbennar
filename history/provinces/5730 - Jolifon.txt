@@ -1,6 +1,7 @@
-owner = L16
-controller = L16
-add_core = L16
+owner = F69
+controller = F69
+add_core = F69
+add_core = S95
 culture = ndurubu
 religion = fangaulan_pantheon
 

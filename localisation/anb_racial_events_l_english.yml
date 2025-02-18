@@ -36,6 +36,7 @@
  racial_pop_misc.2.t:0 "Half-orc Minority Created"
  racial_pop_misc.2.d:0 "The mixing of humans and orcs in [racial_pop_province_target.GetName] have led to the rise of a prevalent half-orc minority. These new people combine the raw physicality of their orcish blood with the determination and adaptive will of humanity and will no doubt be an important minority in the province."
  racial_pop_misc.2.a:0 "Half-orc Minority added to [racial_pop_province_target.GetName]."
+ racial_pop_grow_horc_tt:0 "Half-orcs, like any racial minority, will grow when in provinces that are §YProsperous§! or above §Y20§! development."
  
  racial_pop_misc.3.t:0 "Racial Tolerances & Policies\n£pop_menu_window£"
  racial_pop_misc.3.d:0 ""
@@ -147,6 +148,7 @@
  genocide_below_limit_tt:0 "You can enact §Y[Root.remaining_free_genocide.GetValue]§! more §YPurge or Expulsion Policy§! §Gwithout costing a diplomat§!\n"
  genocide_limit_tt:0 "This §YPurge or Expel Policy§! §Rcosts a diplomat§! to enact!\n"
  increase_free_genocide_tt:0 "§YRacial Tolerance§!: Your capacity to enact §YPurge or Expulsion Policy§! §Gwithout costing a diplomat§! will increase"
+ free_genocide_tt:0 "Your nation can §YPurge or Expel§! this species with §Gno diplomat cost§!"
  pop_menu_focus_desc_tt:0 "While the §YFocus Policy§! is active, §YTolerance§! and §YMigration§! events will be much more frequent, allowing you to change your §YTolerance§! more quickly and control population movements.\nIf active, the §YExpulsion§! and §YPurge§! §YPolicies§! will also be more effective.\n                     -------------------------------\n"
  focus_free_tt:0 "§YRacial Tolerance§!: Your nation can enact any number of §YFocus Policy§! with §Gno diplomat cost§!\n"
  focus_below_limit_tt:0 "You can enact §Y[Root.remaining_free_focus.GetValue]§! more §YFocus Policy§! §Gwithout costing a diplomat§!\n"
@@ -165,6 +167,28 @@
  set_all_tolerance_to_integrated_or_higher_tt:0 "Set tolerance of all §ROppressed§! and §GCoexisting§! races to §TIntegrated§!."
  set_all_tolerance_below_coexisting_tt:0 "Set tolerance of all §GCoexisting§! and §TIntegrated§! races to §ROppressed§!"
  set_all_tolerance_below_integrated_tt:0 "Set tolerance of all §TIntegrated§! races to §GCoexisting§!"
+
+ set_tolerance_of_goblin_to_coexisting_or_higher_tt:0 "Set tolerance of §YGoblin§! to §GCoexisting§!."
+ set_tolerance_of_elven_to_coexisting_or_higher_tt:0 "Set tolerance of §YElven§! to §GCoexisting§!."
+ set_tolerance_of_dwarven_to_coexisting_or_higher_tt:0 "Set tolerance of §YDwarven§! to §GCoexisting§!."
+ set_tolerance_of_halfling_to_coexisting_or_higher_tt:0 "Set tolerance of §YHalfling§! to §GCoexisting§!."
+ set_tolerance_of_gnomish_to_coexisting_or_higher_tt:0 "Set tolerance of §YGnomish§! to §GCoexisting§!."
+ set_tolerance_of_half_orcish_to_coexisting_or_higher_tt:0 "Set tolerance of §YHalf-Orcish§! to §GCoexisting§!."
+ set_tolerance_of_kobold_to_coexisting_or_higher_tt:0 "Set tolerance of §YKobold§! to §GCoexisting§!."
+ set_tolerance_of_orcish_to_coexisting_or_higher_tt:0 "Set tolerance of §YOrcish§! to §GCoexisting§!."
+ set_tolerance_of_human_to_coexisting_or_higher_tt:0 "Set tolerance of §YHuman§! to §GCoexisting§!."
+ set_tolerance_of_gnollish_to_coexisting_or_higher_tt:0 "Set tolerance of §YGnollish§! to §GCoexisting§!."
+ set_tolerance_of_ruinborn_to_coexisting_or_higher_tt:0 "Set tolerance of §YRuinborn§! to §GCoexisting§!."
+ set_tolerance_of_harpy_to_coexisting_or_higher_tt:0 "Set tolerance of §YHarpy§! to §GCoexisting§!."
+ set_tolerance_of_troll_to_coexisting_or_higher_tt:0 "Set tolerance of §YTroll§! to §GCoexisting§!."
+ set_tolerance_of_half_elven_to_coexisting_or_higher_tt:0 "Set tolerance of §YHalf-Elven§! to §GCoexisting§!."
+ set_tolerance_of_harimari_to_coexisting_or_higher_tt:0 "Set tolerance of §YHarimari§! to §GCoexisting§!."
+ set_tolerance_of_hobgoblin_to_coexisting_or_higher_tt:0 "Set tolerance of §YHobgoblin§! to §GCoexisting§!."
+ set_tolerance_of_centaur_to_coexisting_or_higher_tt:0 "Set tolerance of §YCentaur§! to §GCoexisting§!."
+ set_tolerance_of_ogre_to_coexisting_or_higher_tt:0 "Set tolerance of §YOgre§! to §GCoexisting§!."
+ set_tolerance_of_lizardfolk_to_coexisting_or_higher_tt:0 "Set tolerance of §YLizardfolk§! to §GCoexisting§!."
+ set_tolerance_of_mechanim_to_coexisting_or_higher_tt:0 "Set tolerance of §YMechanim§! to §GCoexisting§!."
+
 
  #Custom Loc
  CentaurPopNumbers:0 "£pop_option_left££pop_name_centaurs£[Root.GetPopCentaurPrimaryMil][Root.GetcentaurPopPercentage][Root.GetPopMenuToleranceCentaur][Root.GetPopMenuPolicyCentaur]"
@@ -712,6 +736,11 @@
  racial_pop_events_goblin.23.t:0 "Persecuted Goblins Cause Unrest"
  racial_pop_events_goblin.23.d:0 "The persecution of the goblin race, whether it be expulsion or purging, has led to a number of riots and general unrest in [racial_pop_province_origin.GetName]."
  racial_pop_events_goblin.23.a:0 "Damn them!"
+ racial_pop_events_goblin.100.t:0 "Send Goblins to Aelantir"
+ racial_pop_events_goblin.100.d:0 "With the colonization of Aelantir well underway, one of our advisors has come forth with a proposal: to utilize some of our species minorities to speed up the founding of outposts and cities in the old world. The goblins' ingenuity and sheer numbers are perfect for that purpose, and it’s not like we’ll miss them here.\nHowever, there is debate in our government as to whether it is worth offering financial incentives to encourage emigration there, or rather simply forcing them to move to Aelantir."
+ racial_pop_events_goblin.100.1:0 "Give them some money."
+ racial_pop_events_goblin.100.2:0 "Throw them on a boat."
+ smallfolk_migration:0 "Smallfolk migration"
 
 
 ##################
@@ -941,6 +970,10 @@
  racial_pop_events_halfling.23.t:0 "Persecuted Halflings Cause Unrest"
  racial_pop_events_halfling.23.d:0 "The persecution of the halfling race, whether it be expulsion or purging, has led to a number of riots and general unrest in [racial_pop_province_origin.GetName]."
  racial_pop_events_halfling.23.a:0 "Damn them!"
+ racial_pop_events_halfling.100.t:0 "Send Halflings to Aelantir"
+ racial_pop_events_halfling.100.d:0 "With the colonization of Aelantir well underway, one of our advisors has come forth with a proposal: to utilize some of our species minorities to speed up the founding of outposts and cities in the old world. The halflings' sheer numbers are perfect for that purpose, and it’s not like we’ll miss them here.\nHowever, there is debate in our government as to whether it is worth offering financial incentives to encourage emigration there, or rather simply forcing them to move to Aelantir."
+ racial_pop_events_halfling.100.1:0 "Give them some money."
+ racial_pop_events_halfling.100.2:0 "Throw them on a boat."
  
 ##################
 # Harpy Events
@@ -1169,6 +1202,10 @@
  racial_pop_events_kobold.23.t:0 "Persecuted Kobolds Cause Unrest"
  racial_pop_events_kobold.23.d:0 "The persecution of the kobold race, whether it be expulsion or purging, has led to a number of riots and general unrest in [racial_pop_province_origin.GetName]."
  racial_pop_events_kobold.23.a:0 "Damn them!"
+ racial_pop_events_kobold.100.t:0 "Send Kobolds to Aelantir"
+ racial_pop_events_kobold.100.d:0 "With the colonization of Aelantir well underway, one of our advisors has come forth with a proposal: to utilize some of our species minorities to speed up the founding of outposts and cities in the old world. The kobolds' adaptability and sheer numbers are perfect for that purpose, and it’s not like we’ll miss them here.\nHowever, there is debate in our government as to whether it is worth offering financial incentives to encourage emigration there, or rather simply forcing them to move to Aelantir."
+ racial_pop_events_kobold.100.1:0 "Give them some money."
+ racial_pop_events_kobold.100.2:0 "Throw them on a boat."
 
 ##################
 # Lizardfolk Events

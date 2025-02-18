@@ -67,6 +67,7 @@ estate_adeen = {
 	influence_modifier = {
 		desc = EST_VAL_ADEEN_WEAK_NOBLES
 		trigger = {
+			NOT = { tag = R38 }
 			OR = {
 				NOT = { has_estate = estate_nobles }
 				NOT = {
@@ -171,6 +172,13 @@ estate_adeen = {
 				tag = R38
 				has_country_flag = adeen_emulating_adasa_flag
 			}
+		}
+	}
+
+	custom_name = {
+		desc = estate_adeen
+		trigger = {
+			always = yes
 		}
 	}
 	

@@ -76,7 +76,7 @@ country_event = {
 		name = flavor_viakkoc.2.a
 		ai_chance = { factor = 20 }
 		
-		create_vassal = A74
+		create_vassal_with_religion_and_culture = { tag = A74 religion = regent_court culture = nathalairey} 
 		create_subject = {
 			subject_type = march
 			subject = A74

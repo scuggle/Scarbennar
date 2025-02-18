@@ -1165,15 +1165,17 @@ country_event = {
 	}
 
 	immediate = {
-		deepwoods_outward_gladeways = {
-			limit = {
-				is_empty = yes
-				NOT = { has_province_modifier = cant_colonize }
-				any_neighbor_province = {
-					owned_by = ROOT
+		hidden_effect = {
+			deepwoods_outward_gladeways = {
+				limit = {
+					is_empty = yes
+					NOT = { has_province_modifier = cant_colonize }
+					any_neighbor_province = {
+						owned_by = ROOT
+					}
 				}
+				save_event_target_as = gladeway
 			}
-			save_event_target_as = gladeway
 		}
 	}
 
@@ -1181,7 +1183,7 @@ country_event = {
 		name = deepwoods.16.a
 		ai_chance = { factor = 100 }
 		event_target:gladeway = {
-			create_colony = 850
+			add_siberian_construction = 850
 			hidden_effect = {
 				cede_province = ROOT
 				change_culture = ROOT
@@ -1799,7 +1801,7 @@ country_event = {
 		clr_country_flag = green_orc_war_of_the_black_trees
 		set_country_flag = green_orc_war_of_the_black_trees_won
 		set_country_flag = war_of_the_black_trees_end
-		set_country_flag = karakhanbar_common_fey_nuissance
+		set_country_flag = karakhanbar_common_fey_nuisance
 	}
 }
 
@@ -2399,6 +2401,7 @@ country_event = {
 		deepwoods_bone_grove = {
 			type = any
 			owned_by = ROOT
+			controlled_by = owner
 			NOT = {
 				has_province_modifier = deepwoods_harrowing_bonehoarders
 			}
@@ -2641,7 +2644,7 @@ country_event = {
 
 	trigger = {
 		3020 = {
-			Not = { has_province_modifier = deepwoods_ciranmyna_expansion }
+			NOT = { has_province_modifier = deepwoods_ciranmyna_expansion }
 			owned_by = ROOT
 			culture = wood_elf
 		}

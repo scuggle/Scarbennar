@@ -1,6 +1,6 @@
 
 # No previous file for Candelaria
-culture = ancardian #faranean
+culture = farrani_half_elf #faranean
 religion = regent_court
 capital = ""
 hre = no

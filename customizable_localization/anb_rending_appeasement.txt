@@ -1541,12 +1541,13 @@ defined_text = {
     text = {
         localisation_key = lupulan_quest_5_yes
         trigger = {
-			south_haless_superregion = {
+			vimdatrong_superregion = {
 				type = all
 				owner = {
 					OR = {
 						religion = mystic_accord
-						religion = righteous_path
+						religion = accretive_path
+						religion = transmutative_path
 					}
 				}
 			}
@@ -1843,6 +1844,7 @@ defined_text = {
         localisation_key = hokuma_quest_2_1_yes
         trigger = {
             hokuma_spirit_area = {
+                type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
         }
@@ -1864,19 +1866,19 @@ defined_text = {
             yanshen_superregion = {
                 type = all
                 NOT = {
-                    religion = lefthand_path
+                    religion = devouring_path
                 }
             }
-            south_haless_superregion = {
+            vimdatrong_superregion = {
                 type = all
                 NOT = {
-                    religion = lefthand_path
+                    religion = devouring_path
                 }
             }
             rahen_superregion = {
                 type = all
                 NOT = {
-                    religion = lefthand_path
+                    religion = devouring_path
                 }
             }
         }

@@ -301,42 +301,42 @@ crathanor_missions_slot_1 = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				inner_drolas_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				upper_brasan_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				lower_brasan_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				medurubar_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				anzabad_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				OR = {
@@ -363,7 +363,7 @@ crathanor_missions_slot_1 = {
 					625 = {
 						OR = {
 							country_or_non_sovereign_subject_holds = ROOT
-							country_or_subject_holds = F23
+							country_or_non_sovereign_subject_holds = F23
 						}
 					}
 				}
@@ -391,7 +391,7 @@ crathanor_missions_slot_1 = {
 					2909 = {
 						OR = {
 							country_or_non_sovereign_subject_holds = ROOT
-							country_or_subject_holds = F23
+							country_or_non_sovereign_subject_holds = F23
 						}
 					}
 				}
@@ -483,9 +483,16 @@ crathanor_missions_slot_1 = {
 			}
 			custom_tooltip = crathanor_annailsub.tt
 			hidden_effect = {
-				6761 = {
-					cede_province = ROOT
-					add_core = ROOT
+				if = {
+					limit = {
+						6761 = {
+							owned_by_subject_of = ROOT
+						}
+					}
+					6761 = {
+						cede_province = ROOT
+						add_core = ROOT
+					}
 				}
 			}
 		}
@@ -673,23 +680,46 @@ crathanor_missions_slot_2 = {
 		}
 	 
 		trigger = {
-			526 = {
-				owner = {
-					has_opinion_modifier = {
-						who = ROOT 
-						modifier = sent_gift 
-					}
-					has_opinion = {
-						who = ROOT 
-						value = 175 
-					}
-					gives_military_access_to = ROOT 
-					receives_military_access_from = ROOT 
+			if = {
+				limit = { 
+					ai = yes
+					F23 = { ai = no }
+				}
+				always = yes
+			}
+			else = {
+				526 = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT 
+							modifier = sent_gift 
+						}
+						has_opinion = {
+							who = ROOT 
+							value = 175 
+						}
+						gives_military_access_to = ROOT 
+						receives_military_access_from = ROOT 
+					} 
 				} 
-			} 
+			}
 		} 
 		 
 		effect = { 
+			if = {
+				limit = { 
+					ai = yes
+				}
+				set_ai_personality = { 
+					personality = ai_balanced
+					locked = yes
+				}
+				set_ai_attitude = {
+					attitude = attitude_hostile
+					who = U14
+					locked = yes
+				}
+			}
 			add_country_modifier = { 
 				name = crathanor_brothers_in_arms 
 				duration = 3650 
@@ -764,7 +794,7 @@ crathanor_missions_slot_2 = {
 		provinces_to_highlight = { 
 			area = tungr_mountains_area
 			NOT = { 
-				country_or_subject_holds = F23
+				country_or_non_sovereign_subject_holds = F23
 			}
 		}
 		
@@ -778,7 +808,7 @@ crathanor_missions_slot_2 = {
 			}
 			tungr_mountains_area = {
 				type = all 
-				country_or_subject_holds = F23
+				country_or_non_sovereign_subject_holds = F23
 			}
 			F23 = {
 				trust = {
@@ -831,7 +861,7 @@ crathanor_missions_slot_2 = {
 				536 = {
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT				
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 					has_dock_building_trigger = yes
 				}
@@ -839,21 +869,21 @@ crathanor_missions_slot_2 = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				fajabahar_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				zagnabad_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 
@@ -918,7 +948,7 @@ crathanor_missions_slot_2 = {
 				type = all
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
-					country_or_subject_holds = F23
+					country_or_non_sovereign_subject_holds = F23
 				}
 				NOT = { unrest = 1 }
 			}
@@ -1275,35 +1305,35 @@ crathanor_missions_slot_2 = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT 
-						country_or_subject_holds = F23 
+						country_or_non_sovereign_subject_holds = F23 
 					}
 				}
 				bulwar_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT 
-						country_or_subject_holds = F23 
+						country_or_non_sovereign_subject_holds = F23 
 					}
 				}
 				irrliam_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT 
-						country_or_subject_holds = F23 
+						country_or_non_sovereign_subject_holds = F23 
 					}
 				}
 				kumarkand_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT 
-						country_or_subject_holds = F23 
+						country_or_non_sovereign_subject_holds = F23 
 					}
 				}
 				anzarzax_area = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT 
-						country_or_subject_holds = F23 
+						country_or_non_sovereign_subject_holds = F23 
 					}
 				}
 				OR = {
@@ -1330,7 +1360,7 @@ crathanor_missions_slot_2 = {
 					688 = {
 						OR = {
 							country_or_non_sovereign_subject_holds = ROOT 
-							country_or_subject_holds = F23 
+							country_or_non_sovereign_subject_holds = F23 
 						}
 					}
 				}
@@ -1358,7 +1388,7 @@ crathanor_missions_slot_2 = {
 					487 = {
 						OR = {
 							country_or_non_sovereign_subject_holds = ROOT 
-							country_or_subject_holds = F23 
+							country_or_non_sovereign_subject_holds = F23 
 						}
 					}
 				}
@@ -1672,7 +1702,7 @@ crathanor_missions_slot_3 = {
 	}
 
 	crathanor_end_noble_republic = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		position = 2
 		required_missions = {
 			crathanor_dawn_of_crathanor
@@ -1836,7 +1866,7 @@ crathanor_missions_slot_3 = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 			}
@@ -2042,8 +2072,14 @@ crathanor_missions_slot_3 = {
 				area = awaashesh_area
 				area = masusopot_area
 			}
-			NOT = { 
-				country_or_non_sovereign_subject_holds = ROOT 
+			if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = F23
+				}
+			}
+			else = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		
@@ -2053,7 +2089,7 @@ crathanor_missions_slot_3 = {
 				if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				else = {
@@ -2065,7 +2101,7 @@ crathanor_missions_slot_3 = {
 				if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				else = {
@@ -2077,7 +2113,7 @@ crathanor_missions_slot_3 = {
 				if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}	
 				}
 				else = {
@@ -2089,7 +2125,7 @@ crathanor_missions_slot_3 = {
 				if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}		
 				}
 				else = {
@@ -2101,7 +2137,7 @@ crathanor_missions_slot_3 = {
 				if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}		
 				}
 				else = {
@@ -2113,7 +2149,7 @@ crathanor_missions_slot_3 = {
 				if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}		
 				}
 				else = {
@@ -2125,7 +2161,7 @@ crathanor_missions_slot_3 = {
 				if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					} 
 				}
 				else = {
@@ -2137,7 +2173,7 @@ crathanor_missions_slot_3 = {
 				if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 				else = {
@@ -2149,7 +2185,7 @@ crathanor_missions_slot_3 = {
 				if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } }
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}			
 				}
 				else = {
@@ -2187,39 +2223,57 @@ crathanor_missions_slot_3 = {
 		
 		effect = {
 			if = {
-				limit = {
+				limit = { 
 					elizna_area = {
-						NOT = {
-							owned_by = ROOT
-						}
+						type = all
+						owned_by = ROOT
 					}
 				}
-				elizna_area = {
-					cede_province = ROOT
-				}
+				add_adm_power = 50
 			}
 			else = {
-				add_adm_power = 50
+                elizna_area = {
+                    limit = { owner = { is_subject_of = ROOT } } 
+                    cede_province = ROOT
+                }
 			}
 			custom_tooltip = crathanor_north_kheterata_vassals.tt
 			hidden_effect = {
 				if = {
 					limit = {
-						exists = L28
+						L28 = {
+							exists = yes
+							is_subject_of = ROOT
+						}
 					}
 					ohitsopot_area = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 						cede_province = L28
 					}
 					coast_of_tears_area = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 						cede_province = L28
 					}
 					mothers_delta_area = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 						cede_province = L28
 					}
 					lower_sorrow_area = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 						cede_province = L28
 					}
 					hitputtiushesh_area = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 						cede_province = L28
 					}
 					L28 = {
@@ -2229,15 +2283,27 @@ crathanor_missions_slot_3 = {
 				}
 				if = {
 					limit = {
-						exists = L27
+						L27 = {
+							exists = yes
+							is_subject_of = ROOT
+						}
 					}	
 					ibtat_axast_area = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 						cede_province = L27
 					}
 					awaashesh_area = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 						cede_province = L27
 					}
 					masusopot_area = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 						cede_province = L27
 					}
 					L27 = {
@@ -2283,7 +2349,7 @@ crathanor_missions_slot_3 = {
 				province_id = 521
 			}
 			OR = {
-				NOT = {	country_or_non_sovereign_subject_holds = ROOT }
+				NOT = {	OR = { country_or_non_sovereign_subject_holds = ROOT country_or_non_sovereign_subject_holds = F23 } }
 				NOT = { has_trade_building_trigger = yes }
 				NOT = {	province_has_center_of_trade_of_level = 2 }
 				NOT = {	has_manufactory_trigger = yes }
@@ -2295,97 +2361,225 @@ crathanor_missions_slot_3 = {
 				tooltip = crathanor_new_sun_req.tt 
 				hidden_trigger = {
 					516 = { #Crathano
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					451 = { #Nathalaire
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					413 = { #Sorncell
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					365 = { #Abtanus
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					380 = { #Eborthil
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					376 = { #Stingport
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					402 = { #Ekha
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					400 = { #Khasa
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					382 = { #Deshak
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					463 = { #Koroshesh
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					565 = { #Brasan
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					6761 = { #Annailsub
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					560 = { #Anzabad
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					536 = { #Aqatbar
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					526 = { # Ovdal-Tungr
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
 					}
 					521 = { # Re'Uyel
-						country_or_non_sovereign_subject_holds = ROOT
+						if = { limit = { ROOT = { OR = { is_subject_of = F23 alliance_with = F23 } } } 
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								country_or_non_sovereign_subject_holds = F23
+							}
+						}
+						else = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}	
 						has_trade_building_trigger = yes
 						province_has_center_of_trade_of_level = 2
 						has_manufactory_trigger = yes
@@ -2439,9 +2633,23 @@ crathanor_missions_slot_3 = {
 				}
 			}
 			num_of_light_ship = 250
-			OR = {
-				is_hegemon_of_type = naval_hegemon
-				is_hegemon_of_type = economic_hegemon
+			monthly_income = 1000
+			if = { limit = { alliance_with = F23 }
+				custom_trigger_tooltip = {
+					tooltip = crathanor_new_sun_old_shores_trigger_tt
+					NOT = { any_other_great_power = { monthly_income = ROOT NOT = { tag = F23 } } }
+					NOT = { any_other_great_power = { num_of_heavy_ship = ROOT NOT = { tag = F23 } } }
+				}
+			}
+			else = {
+				if = { limit = { has_dlc = "Emperor" }
+					OR = {
+						is_hegemon_of_type = naval_hegemon
+						is_hegemon_of_type = economic_hegemon
+					}
+				}
+				NOT = { any_other_great_power = { monthly_income = ROOT } }
+				NOT = { any_other_great_power = { num_of_heavy_ship = ROOT } }
 			}
 		}
 		
@@ -2515,21 +2723,21 @@ crathanor_missions_slot_4 = {
 		} 
 		 
 		effect = { 
-			west_overmarch_area = { 
+			lencmarck_area = { 
 				limit = { 
 					NOT = { is_core = ROOT } 
 					NOT = { is_permanent_claim = ROOT } 
 				} 
 				add_permanent_claim = ROOT 
 			} 
-			east_overmarch_area = { 
+			tencmarck_area = { 
 				limit = { 
 					NOT = { is_core = ROOT } 
 					NOT = { is_permanent_claim = ROOT } 
 				}				 
 				add_permanent_claim = ROOT 
 			} 
-			south_overmarch_area = { 
+			oudmarck_area = { 
 				limit = { 
 					NOT = { is_core = ROOT } 
 					NOT = { is_permanent_claim = ROOT } 
@@ -2555,15 +2763,15 @@ crathanor_missions_slot_4 = {
 		}
 		
         trigger = {
-            west_overmarch_area = {
+            lencmarck_area = {
                 type = all
                 owned_by = ROOT
             }
-            east_overmarch_area = {
+            tencmarck_area = {
                 type = all
                 owned_by = ROOT
             }
-            south_overmarch_area = {
+            oudmarck_area = {
                 type = all
                 owned_by = ROOT
             }
@@ -2620,21 +2828,21 @@ crathanor_missions_slot_4 = {
 				ourdia_region = {
 					type = all
 					OR = {
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
 				reuyel_area = {
 					type = all
 					OR = {
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
 				medbahar_area = {
 					type = all
 					OR = {
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
@@ -3149,7 +3357,7 @@ crathanor_missions_slot_5 = {
 					type = all
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 					NOT = {
 						devastation = 1
@@ -3160,7 +3368,7 @@ crathanor_missions_slot_5 = {
 					has_coast_defense_building_trigger = yes
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						country_or_subject_holds = F23
+						country_or_non_sovereign_subject_holds = F23
 					}
 				}
 			}

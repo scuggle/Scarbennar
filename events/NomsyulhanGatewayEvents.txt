@@ -69,7 +69,9 @@ country_event = {
 			}
 		}
 		else_if = {
-			limit = { is_city = no }
+			limit = { 
+				6838 = { is_city = no }
+			}
 			country_event = { id = nomsyulhan_gateway.10 } # Getting to the Gateway
 		}
 		else = {
@@ -81,6 +83,43 @@ country_event = {
 	
 	option = { 
 		name = nomsyulhan_gateway.0.a
+	}
+}
+
+country_event = {
+	id = nomsyulhan_gateway.1
+	title = nomsyulhan_gateway.1.t
+	desc = nomsyulhan_gateway.1.d
+	picture = COMET_SIGHTED_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		6838 = {
+			OR = {
+				has_province_modifier = nomsyulhan_active_gateway
+				has_province_modifier = nomsyulhan_permanent_gateway
+			}
+			owner = {
+				has_country_flag = nomsyulhan_on_expedition
+			}
+		}
+	}
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = nomsyulhan_gateway.1.a
+		6838 = {
+			owner = {
+				random_list = {
+					1 = {}
+				}
+			}
+		}
 	}
 }
 
@@ -194,11 +233,14 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			6838 = {
-				remove_province_modifier = nomsyulhan_incomplete_gateway
-				add_province_modifier = {
-					name = nomsyulhan_unpowered_gateway
-					duration = -1
+			if = {
+				limit = { 6838 = { has_province_modifier = nomsyulhan_incomplete_gateway } }
+				6838 = {
+					remove_province_modifier = nomsyulhan_incomplete_gateway
+					add_province_modifier = {
+						name = nomsyulhan_unpowered_gateway
+						duration = -1
+					}
 				}
 			}
 		}
@@ -290,7 +332,7 @@ country_event = {
 	
 	option = { 
 		name = nomsyulhan_gateway.40.a
-		country_event = { id = nomsyulhan_gateway.100 }
+		# country_event = { id = nomsyulhan_gateway.100 }
 	}
 }
 
@@ -389,8 +431,105 @@ country_event = {
 		}
 	}
 	
-	option = { 
+	option = {
 		name = nomsyulhan_gateway.45.a
+	}
+}
+
+## Cheat Events for testing expeditions
+# Only cheaters use these events ;P
+# You may break the system if you don't know what you're doing
+# You may break the system if you do know what you're doing
+
+# Reset or permanently power the gateway
+country_event = {
+	id = nomsyulhan_gateway.60
+	title = nomsyulhan_gateway.60.t
+	desc = nomsyulhan_gateway.60.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Uncolonize and reset the gateway
+		name = nomsyulhan_gateway.60.a
+		nomsyulhan_gateway_reset = yes
+	}
+	
+	option = { # Own and Permanently power the gateway
+		name = nomsyulhan_gateway.60.b
+		nomsyulhan_gateway_permanent_power = yes
+	}
+}
+
+# Modify system variables
+country_event = {
+	id = nomsyulhan_gateway.61
+	title = nomsyulhan_gateway.61.t
+	desc = nomsyulhan_gateway.61.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Add 1 to Expedition Count
+		name = nomsyulhan_gateway.61.a
+		change_variable = { which = nomsyulhan_gateway_expedition_total_count value = 1 }
+	}
+	
+	option = { # Subtract 1 from Expedition Count
+		name = nomsyulhan_gateway.61.b
+		subtract_variable = { which = nomsyulhan_gateway_expedition_total_count value = 1 }
+	}
+	
+	option = { # Add 1 to Expedition Success Count
+		name = nomsyulhan_gateway.61.c
+		subtract_variable = { which = nomsyulhan_gateway_expedition_success_count value = 1 }
+	}
+	
+	option = { # Subtract 1 from Expedition Success Count
+		name = nomsyulhan_gateway.61.e
+		subtract_variable = { which = nomsyulhan_gateway_expedition_success_count value = 1 }
+	}
+	
+	option = { # Add 1 to Expedition Failure Count
+		name = nomsyulhan_gateway.61.f
+		subtract_variable = { which = nomsyulhan_gateway_expedition_failure_count value = 1 }
+	}
+	
+	option = { # Subtract 1 from Expedition Failure Count
+		name = nomsyulhan_gateway.61.g
+		subtract_variable = { which = nomsyulhan_gateway_expedition_failure_count value = 1 }
+	}
+}
+
+# Gain Access to any expedition (TODO)
+# This event only works if all expedition flags are included as options
+country_event = {
+	id = nomsyulhan_gateway.62
+	title = nomsyulhan_gateway.62.t
+	desc = nomsyulhan_gateway.62.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = nomsyulhan_gateway.62.a
+		
+	}
+}
+
+# Set any expedition as completed (TODO)
+# This event only works if all expedition_complete flags are included as options
+country_event = {
+	id = nomsyulhan_gateway.63
+	title = nomsyulhan_gateway.63.t
+	desc = nomsyulhan_gateway.63.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = nomsyulhan_gateway.63.a
+		
 	}
 }
 
@@ -405,6 +544,6 @@ country_event = {
 	
 	option = { 
 		name = nomsyulhan_gateway.70.a
-		country_event = { id = nomsyulhan_gateway.100 }
+		# country_event = { id = nomsyulhan_gateway.100 }
 	}
 }

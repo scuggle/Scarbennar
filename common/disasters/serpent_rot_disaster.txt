@@ -19,6 +19,10 @@ serpent_rot = {
 	progress = {
 		modifier = {
 			factor = 1
+			always = yes
+		}
+		modifier = {
+			factor = 1
 			any_owned_province = {
 				custom_trigger_tooltip = {
 					tooltip = caurak_collapse_tooltip

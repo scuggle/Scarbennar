@@ -146,9 +146,9 @@ ship_names = {
 }
 
 army_names = {
-	"Railskulker Army" "Orcish Horde" "Army $PROVINCE$"
+	"Railskulker Army" "Goblin Horde" "Army $PROVINCE$"
 } 
 
 fleet_names = {
-	"Railskulker Fleet" "Orcish Fleet" "Dookan Squadron" "Black Squadron" "Green Squadron"
+	"Railskulker Fleet" "Goblin Fleet" "Seaskulker Squadron" "Black Squadron" "Green Squadron"
 }

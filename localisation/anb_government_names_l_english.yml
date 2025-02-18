@@ -367,8 +367,8 @@
  SENAPTI:0 "Senapti"
  GRAND_VIZIER:0 "Grand Vizier"
  GRAND_MARSHAL:0 "Grand Marshal"
- COMMAND:0 "Command"
- GREAT_COMMAND:0 "Great Command"
+ TRIBE:0 "Tribe"
+ CONFEDERATION:0 "Confederation"
  CRIMINAL_GANG:0 "Criminal Gang"
  CRIMINAL_ORGANISATION:0 "Criminal Organisation"
  CRIMINAL_EMPIRE:0 "Criminal Empire"
@@ -837,3 +837,31 @@
  HEGEMONY:0 "Hegemony" 
  OVERLORD:0 "Overlord"
  HIGH_OVERLORD:0 "High Overlord"
+
+ #Wyvernheart
+ SOVEREIGNTY:0 "Sovereignty of the Flood"
+ SOVEREIGN:0 "Sovereign"
+ COUNCILLOR:0 "Councillor"
+
+ #Broken Jaw 
+ GREAT_COUNCIL:0 "Great Council" 
+ WARMASTER:0 "Warmaster"
+
+ #Suryavar
+ DIVINE_MONARCHY:0 "Divine Monarchy"
+ DIVINE_EMPIRE:0 "Divine Empire"
+ HERALD_KING:0 "Herald-King"
+ HERALD_EMPEROR:0 "Herald-Emperor"
+ HERALD_QUEEN:0 "Herald-Queen"
+ HERALD_EMPRESS:0 "Herald-Empress"
+ CHOSEN_SUCCESSOR:0 "Chosen Successor"
+
+#Vandipha
+ VANDIPHA_GUARDIANSHIP:0 "Guardianship of the Waves"
+ VANDIPHA_THRONE:0 "Throne of the Infinite Tides"
+ JALSENAPTI:0 "Jalsenapti"
+ JALSENAPATNI:0 "Jalsenapatni"
+ JALSENAPTIKUMAR:0 "Jalsenaptikumar"
+ JALSENAPTIKUMARI:0 "Jalsenaptikumari"
+ MAHARAJKUMAR:0 "Maharajkumar"
+ MAHARAJKUMARI:0 "Maharajkumari"

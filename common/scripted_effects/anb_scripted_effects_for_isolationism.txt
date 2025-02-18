@@ -147,7 +147,7 @@ refresh_nsc_incidents_ui = {
 		}
 		set_country_flag = updating_isolationism_window
 		if = { limit = { is_defender_of_faith = yes } set_country_flag = updating_isolationism_dotf }
-		change_religion = cannorian_pantheon
+		change_religion = etchings_of_the_deep
 		change_religion = bulwari_sun_cult
 		if = {
 			limit = { has_country_flag = updating_isolationism_dotf }
@@ -571,7 +571,7 @@ nsc_calculate_pledge_score = {
 			}
 		}
 		if = { limit = { tag = F42 }
-			set_variable = { which = ProvincesToGetVar value = 16 } #nb of provinces in target province group x2
+			set_variable = { which = ProvincesToGetVar value = 18 } #nb of provinces in target province group x2
 			nsc_incident_target_varamhar = {
 				if = { limit = { owner = { religion = bulwari_sun_cult } }
 					F42 = { change_variable = { which = ScoreRightReligionVar value = 1 } }
@@ -1601,7 +1601,7 @@ define_kazam_siege = {
 #-----------# New Sun Cult End #-----------#
 
 #-----------# Runefather Worship #-----------#
-
+######Defunct, kept in files to keep isolationism lvls consistent for other religions######
 increase_runelink_level = {
 	if = {
 		limit = {

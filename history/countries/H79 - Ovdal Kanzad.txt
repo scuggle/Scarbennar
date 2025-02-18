@@ -4,7 +4,7 @@ government = monarchy
 add_government_reform = dwarovar_dwarven_clan_reform
 government_rank = 1
 primary_culture = amber_dwarf
-religion = runefather_worship
+religion = ancestor_worship
 technology_group = tech_east_dwarven
 capital = 4247
 fixed_capital = 4247
@@ -35,14 +35,35 @@ fixed_capital = 4247
 		dip = 3
 		mil = 5
 	}
-	
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = bold_fighter_personality
 	set_ruler_flag = long_lived_ruler
+	queen = {
+		country_of_origin = H79
+		name = "Sivondi"
+		dynasty = "Skullaxe"
+		birth_date = 1293.3.27
+		death_date = 1472.2.01
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+	add_queen_personality = industrious_personality
+	set_consort_flag = long_lived_ruler
+}
 
-	set_variable = { which = ClanShadowhammerAllegienceVar value = 0 }
-	set_variable = { which = ClanDarkstoneAllegienceVar value = 0 }
-	set_variable = { which = GroediAzAnAllegienceVar value = 0 }
-	set_variable = { which = AmlruzskappaAllegienceVar value = 0 }
-	set_variable = { which = FurdanhundAllegienceVar value = 0 }
+1385.2.19 = {
+	heir = {
+		name = "Hardûn"
+		dynasty = "Powderkeg"
+		birth_date = 1385.2.19
+		death_date = 1557.6.14
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+	add_heir_personality = architectural_visionary_personality
+	set_heir_flag = long_lived_ruler
 }

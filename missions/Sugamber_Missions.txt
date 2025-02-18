@@ -1260,7 +1260,7 @@ sugamber_4_missions = {
 					spymaster = 1
 					dip_power = 100
 					any_known_country = {
-						owns = 601
+						owns_or_subject_of = 601
 						has_spy_network_from = {
 							who = ROOT
 							value = 50
@@ -1530,8 +1530,8 @@ sugamber_4_missions = {
 			OR = {
 				AND = {
 					OR = {
-						area = east_overmarch_area
-						area = west_overmarch_area
+						area = tencmarck_area
+						area = lencmarck_area
 					}
 					NOT = { is_part_of_hre = yes }
 				}
@@ -1548,8 +1548,8 @@ sugamber_4_missions = {
 					NOT = { baldostan_area = { fort_level = 2 base_manpower = 10 country_or_non_sovereign_subject_holds = ROOT } }
 				}
 				AND = {
-					area = east_overmarch_area
-					NOT = { east_overmarch_area = { fort_level = 2 base_manpower = 10 country_or_non_sovereign_subject_holds = ROOT } }
+					area = tencmarck_area
+					NOT = { tencmarck_area = { fort_level = 2 base_manpower = 10 country_or_non_sovereign_subject_holds = ROOT } }
 				}
 			}
 		}
@@ -1558,11 +1558,11 @@ sugamber_4_missions = {
 			510 = {
 				has_province_modifier = castanorian_citadel
 			}
-			east_overmarch_area = {
+			tencmarck_area = {
 				type = all
 				is_part_of_hre = yes
 			}
-			west_overmarch_area = {
+			lencmarck_area = {
 				type = all
 				is_part_of_hre = yes
 			}
@@ -1581,7 +1581,7 @@ sugamber_4_missions = {
 				base_manpower = 10
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			east_overmarch_area = {
+			tencmarck_area = {
 				fort_level = 2
 				base_manpower = 10
 				country_or_non_sovereign_subject_holds = ROOT

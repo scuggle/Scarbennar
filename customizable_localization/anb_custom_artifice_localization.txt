@@ -23,21 +23,49 @@ defined_text = {
 }
 
 defined_text = {
-	name = getArtificeMultipliers
+	name = getArtificeMultipliersPositive
 	random = no
 	
 	text = {
-        localisation_key = artifice_multipliers_mixed_mode
+        localisation_key = artifice_positive_multipliers_orlghelovar_science_mages
+        trigger = {
+			has_country_flag = orlghelovar_science_mages_privilege
+        }
+    }
+	
+	text = {
+        localisation_key = taychend_positive_artifice_multiplier
+        trigger = {
+			tag = J84 #Taychendi Empire
+			has_country_flag = J84_increased_percent_artifice_capacity_flag
+        }
+    }
+
+	text = {
+        localisation_key = artifice_mode_none
+        trigger = {
+			always = yes
+		}
+    }
+}
+
+defined_text = {
+	name = getArtificeMultipliersNegative
+	random = no
+	
+	text = {
+        localisation_key = artifice_negative_multipliers_mixed_mode
         trigger = {
 			has_country_flag = magic_artificery_mixed
         }
     }
 
 	text = {
-        localisation_key = artifice_multipliers_mage_ruler
+        localisation_key = artifice_negative_multipliers_mage_ruler
         trigger = {
 			has_country_flag = magic_artificery_artificery_only 
 			ruler_has_mage_personality = yes
+			NOT = { has_ruler_flag = pursuing_artificery }
         }
     }
 
@@ -77,7 +105,7 @@ defined_text = {
 		trigger = {
 			check_variable = {
 				which = artifice_inventions_currently_used
-				which = artifice_max_invention_slots
+				which = ArtificeMaxInventions
 			}
 		}
 	}
@@ -105,7 +133,7 @@ defined_text = {
 		localisation_key = artifice_invention_max
 		trigger = {
 			check_variable = {
-				which = artifice_max_invention_slots
+				which = ArtificeMaxInventions
 				value = 1
 			}
 		}
@@ -182,7 +210,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = get_artificery_Progress_slow_2
+		localisation_key = get_artificery_progress_slow_2
 		trigger = {
 			has_country_flag = artifice_research_slow
 			NOT = { has_country_flag = artifice_unlocked_expert }
@@ -405,6 +433,35 @@ defined_text = {
 		}
 	}
 }
+
+defined_text = {
+	name = getArtificeModifiers
+	random = no
+
+	text = {
+		localisation_key = artifice_modifier_points_pos
+		trigger = {
+			check_variable = {
+				which = ModifierArtificePoints
+				value = 1
+			}
+			has_country_flag = artificers_capacity_modifier_positive
+		}
+	}
+	text = {
+		localisation_key = artifice_modifier_points_neg
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = ModifierArtificePoints
+					value = -1
+				}
+			}
+			has_country_flag = artificers_capacity_modifier_negative
+		}
+	}
+}
+
 
 defined_text = {
 	name = getArtificeHasMultipliers
@@ -770,7 +827,7 @@ defined_text = {
 	text = {
 		localisation_key = artifice_invention_wonderous_lunchbox
 		trigger = {
-			culture_group = halfling
+			culture_is_halfling = yes
 		}
 	}
 
@@ -1070,14 +1127,17 @@ defined_text = {
 	text = {
 		localisation_key = artifice_invention_chi_cultivation
 		trigger = {
-			religion = lefthand_path
+			religion = devouring_path
 		}
 	}
 
 	text = {
 		localisation_key = artifice_invention_power_fists
 		trigger = {
-			religion = righteous_path
+			OR = {
+				religion = accretive_path
+				religion = transmutative_path
+			}
 		}
 	}
 
@@ -1107,7 +1167,7 @@ defined_text = {
 		trigger = {
 			religion_group = khetist
 		}
-	}
+	}	
 }
 
 defined_text = {
@@ -1119,6 +1179,7 @@ defined_text = {
 			religion = ravelian
 		}
 	}
+
 }
 
 defined_text = {
@@ -1237,12 +1298,48 @@ defined_text = {
 	}
 
 	text = {
+		localisation_key = artifice_invention_holy_gunblade
+		trigger = {
+			OR = {
+				tag =  A77
+				was_tag = A77
+			}
+		}
+	}
+
+	text = {
 		localisation_key = artifice_invention_karakhanbar_high_heat_smelters
 		trigger = {
 			OR = {
 				tag = Z54
 				was_tag = Z54
 			}
+		}
+	}
+
+	text = {
+		localisation_key = artifice_invention_korashi_tuners
+		trigger = {
+			OR = {
+				tag = R62
+				was_tag = R62
+			}
+		}
+	}
+
+	text = {
+		localisation_key = artifice_invention_ironwraith_weapons_platform
+		trigger = {
+			OR = {
+				tag = I90
+				was_tag = I90
+			}
+		}
+	}
+	text = {
+		localisation_key = artifice_invention_kobildzan_draconic_ascension
+		trigger = {
+			has_country_flag = unlocked_artifice_invention_kobildzan_draconic_ascension
 		}
 	}
 }
@@ -1289,6 +1386,22 @@ defined_text = {
 			}
 		}
 	}
+
+	text = {
+		localisation_key = artifice_invention_spirit_capture_tech
+		trigger = {
+			OR = {
+				tag = I90
+				was_tag = I90
+			}
+		}
+	}
+	text = {
+		localisation_key = artifice_invention_lullaby_cannon
+		trigger = {
+			has_country_flag = can_use_lullaby_cannon
+		}
+	}
 }
 
 defined_text = {
@@ -1301,6 +1414,12 @@ defined_text = {
 				tag =  H61
 				was_tag = H61
 			}
+		}
+	}
+	text = {
+		localisation_key = artifice_invention_elemental_gunpowder
+		trigger = {
+			has_country_flag = can_use_elemental_gunpowder
 		}
 	}
 }
@@ -1721,4 +1840,40 @@ defined_text = {
 			}
 		}
 	}
+}
+
+defined_text = {
+	name = reset_mode_title
+	
+	text = {
+        localisation_key = artifice_reset_invite_mages_title
+        trigger = {
+			has_country_flag = magic_artificery_artificery_only
+        }
+    }
+
+	text = {
+        localisation_key = artifice_reset_invite_artificers_title
+        trigger = {
+			has_country_flag = magic_artificery_mage_only
+        }
+    }
+}
+
+defined_text = {
+	name = reset_mode_desc
+	
+	text = {
+        localisation_key = artifice_reset_invite_mages_desc
+        trigger = {
+			has_country_flag = magic_artificery_artificery_only
+        }
+    }
+
+	text = {
+        localisation_key = artifice_reset_invite_artificers_desc
+        trigger = {
+			has_country_flag = magic_artificery_mage_only
+        }
+    }
 }

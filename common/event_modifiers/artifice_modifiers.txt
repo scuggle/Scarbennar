@@ -92,18 +92,13 @@ artifice_exo_arms = {
 artifice_war_golems = {
 	is_rajput_modifier = yes
 
-	shock_damage = 0.1
-	shock_damage_received = -0.1
-	land_maintenance_modifier = 0.1
+	shock_damage = 0.15
 }
 
 artifice_war_golems_asra = {
 	is_rajput_modifier = yes
 
-	shock_damage = 0.15
-	shock_damage_received = -0.15
-	land_maintenance_modifier = 0.15
-
+	shock_damage = 0.25
 }
 
 artifice_wandlocks = {
@@ -119,23 +114,20 @@ artifice_wandlocks = {
 artifice_bioartificed_ascension = {
 	is_rajput_modifier = yes
 
-	fire_damage_received = -0.075
+	fire_damage_received = -0.05
 	morale_damage_received = -0.15
-	land_maintenance_modifier = 0.15
 }
 
 artifice_personal_mageshields = {
 	is_rajput_modifier = yes
 
 	shock_damage_received = -0.2
-	land_maintenance_modifier = 0.15
 }
 
 artifice_portable_turrets = {
 	is_rajput_modifier = yes
 
-	shock_damage_received = -0.1
-	land_maintenance_modifier = 0.1
+	shock_damage_received = -0.10
 }
 
 artifice_arcane_blaster = {
@@ -206,15 +198,13 @@ artifice_platinum_warsuit = {
 artifice_dragonscale_plating = {
 	is_rajput_modifier = yes
 
-	shock_damage_received = -0.075
-	fire_damage_received = -0.075
-	land_maintenance_modifier = 0.1
+	shock_damage_received = -0.05
+	fire_damage_received = -0.05
 }
 artifice_giantshape_warframe = {
 	is_rajput_modifier = yes
-	shock_damage_received = -0.15
-	infantry_power = 0.075
-	land_maintenance_modifier = 0.15
+	shock_damage_received = -0.1
+	infantry_power = 0.15
 
 	reinforce_speed = -0.075
 	reinforce_cost_modifier = 1.5
@@ -297,3 +287,33 @@ artifice_vg_musket_precursor_edition = {
 artifice_ivory_tools = {
 	local_development_cost = -0.05
 }
+
+artifice_bramble_burners = {
+	is_rajput_modifier = yes
+	fire_damage = 0.1
+	fire_damage_received = 0.05
+}
+
+artifice_research_temporarily_disabled = {
+	picture = "artificer_blocked"
+}
+artificers_busy_10 = {
+	artificers_capacity = -10
+}
+artificers_busy_20 = {
+	artificers_capacity = -20
+}
+artificers_busy_40 = {
+	artificers_capacity = -40
+}
+artificers_busy_60 = {
+	artificers_capacity = -60
+}
+artificers_busy_120 = {
+	artificers_capacity = -120
+}
+artificers_busy_all = {
+	artificers_capacity = -500
+}
+
+artifice_block_research_event_transferring_between_countries = {}

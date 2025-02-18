@@ -27,7 +27,7 @@ bulwari_tech_boom = {
 golden_highway = {
 	local_friendly_movement_speed = 0.25
 	supply_limit = 40
-	province_trade_power_modifier = 0.1
+	province_trade_power_value = 4
 	local_institution_spread = 0.25
 	picture = "golden_highway_complete"
 }
@@ -203,20 +203,6 @@ ulmisbar_punitive_reward = {
 	harsh_treatment_cost = -0.1
 }	
 
-the_hunt_myna_modifier = {
-	tolerance_heathen = 3
-	religion = yes
-}
-
-the_hunt_falcon_modifier = {
-	global_missionary_strength = 0.02
-	religion = yes
-}
-
-the_hunt_harpy_raid_modifier = {
-	loot_amount = 0.5
-}
-
 zamukaras_focus_carpets_modifier = {
 	shock_damage_received = -0.1
 	is_hussars_modifier = yes
@@ -351,7 +337,8 @@ phoenix_estate_guarantee_autonomy_modifier = {
 #Desert Legion
 
 dance_the_deioderan_modifier = {
-	cavalry_power = 0.15
+	cavalry_power = 0.10
+	siege_ability = 0.10
 }
 
 #Government Reforms
@@ -409,4 +396,12 @@ bulwar_blessed_rule = {
 bulwar_exemplars_unhappy = {
 	local_manpower_modifier = -0.25
 	local_defensiveness = -0.10
+}
+
+jaddari_zealotry_darkness_province = {
+	monthly_jaddari_zealotry = -0.0125
+}
+
+jaddari_zealotry_jaddar = {
+	monthly_jaddari_zealotry = 0.25
 }

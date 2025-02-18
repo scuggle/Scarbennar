@@ -494,7 +494,7 @@ haraz_orldhum_3 = {
 	}
 	
 	orldhum_impudent_greenskins = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		position = 1
 		required_missions = {
 		}
@@ -2005,7 +2005,7 @@ haraz_orldhum_3_pt_2 = {
 				royal_terrace_area = {
 					type = all
 					owned_by = ROOT
-					NOT = { has_province_modifier = flooded_province }
+					NOT = { has_province_flag = flooded_province }
 				}
 			}
 			mil_power = 100
@@ -2315,7 +2315,7 @@ haraz_orldhum_3_pt_2 = {
 				serpents_vale_region = {
 					type = all
 					owned_by = ROOT
-					NOT = { has_province_modifier = flooded_province }
+					NOT = { has_province_flag = flooded_province }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -2380,9 +2380,11 @@ haraz_orldhum_3_pt_2 = {
 					has_improved_hold_infrastructure = yes
 				}
 			}
-			owns_all_provinces = {
-				region = west_dwarovar_region
-				province_group = hold_province
+			NOT = {
+				west_dwarovar_region = {
+					province_group = hold_province
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
 			}
 				2863 = { has_dwarven_hold_4 = yes }
 				4236 = { has_dwarven_hold_4 = yes }

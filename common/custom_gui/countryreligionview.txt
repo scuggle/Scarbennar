@@ -4,6 +4,7 @@ custom_button = {
     	OR = {
     		religion = regent_court
     		religion = infernal_court
+			religion = runefather_worship
     	}
     	OR = {
     		#Regent Court
@@ -20,8 +21,10 @@ custom_button = {
     		has_personal_deity = balgar
     		has_personal_deity = balgar_upgraded
     		has_personal_deity = esmaryal
+			has_personal_deity = esmaryal_upgraded_themarenn
     		has_personal_deity = ryala
     		has_personal_deity = ryala_upgraded
+			has_personal_deity = ryala_upgraded_themarenn
     		has_personal_deity = minara
     		has_personal_deity = falah
     		has_personal_deity = falah_upgraded
@@ -84,13 +87,30 @@ custom_button = {
     trigger = {
     	if = {
     		limit = { religion = regent_court }
-    		custom_trigger_tooltip = {
-				tooltip = swap_deity_tt_2
-				OR = {
-					NOT = { has_country_flag = regent_court_deity_switch_cooldown }
-					had_country_flag = {
-						flag = regent_court_deity_switch_cooldown
-						days = 3500
+			if = {
+				limit = {
+					has_government_attribute = follower_of_many_gods
+				}
+				custom_trigger_tooltip = {
+					tooltip = swap_deity_tt_3
+					OR = {
+						NOT = { has_country_flag = regent_court_deity_switch_cooldown }
+						had_country_flag = {
+							flag = regent_court_deity_switch_cooldown
+							days = 1750
+						}
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = swap_deity_tt_2
+					OR = {
+						NOT = { has_country_flag = regent_court_deity_switch_cooldown }
+						had_country_flag = {
+							flag = regent_court_deity_switch_cooldown
+							days = 3500
+						}
 					}
 				}
 			}
@@ -294,6 +314,119 @@ custom_icon = {
 }
 
 custom_icon = {
+    name = suhans_praxis_visvatma
+    potential = {
+    	religion = suhans_praxis
+	}
+	tooltip = high_philosophy_visvatma_ui_custom_tt
+	frame = {
+		number = 1
+		trigger = {
+			4871 = {
+				check_variable = {
+					which = globalWardStrength
+					value = 102
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			4871 = {
+				check_variable = {
+					which = globalWardStrength
+					value = 92
+				}
+			}
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			4871 = {
+				check_variable = {
+					which = globalWardStrength
+					value = 82
+				}
+			}
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			4871 = {
+				check_variable = {
+					which = globalWardStrength
+					value = 72
+				}
+			}
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			4871 = {
+				check_variable = {
+					which = globalWardStrength
+					value = 62
+				}
+			}
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			4871 = {
+				check_variable = {
+					which = globalWardStrength
+					value = 52
+				}
+			}
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			4871 = {
+				check_variable = {
+					which = globalWardStrength
+					value = 42
+				}
+			}
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			4871 = {
+				check_variable = {
+					which = globalWardStrength
+					value = 32
+				}
+			}
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			4871 = {
+				check_variable = {
+					which = globalWardStrength
+					value = 22
+				}
+			}
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_icon = {
 	name = runefather_bar_shadowhammer_1
 	potential = {
 		religion = runefather_worship
@@ -305,12 +438,12 @@ custom_icon = {
 		}
 		NOT = {
 			check_variable = {
-				which = ClanShadowhammerAllegienceVar
+				which = ClanShadowhammerAllegianceVar
 				value = 15
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -324,17 +457,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = ClanShadowhammerAllegienceVar
+			which = ClanShadowhammerAllegianceVar
 			value = 15
 		}
 		NOT = {
 			check_variable = {
-				which = ClanShadowhammerAllegienceVar
+				which = ClanShadowhammerAllegianceVar
 				value = 45
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -348,17 +481,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = ClanShadowhammerAllegienceVar
+			which = ClanShadowhammerAllegianceVar
 			value = 45
 		}
 		NOT = {
 			check_variable = {
-				which = ClanShadowhammerAllegienceVar
+				which = ClanShadowhammerAllegianceVar
 				value = 90
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -372,17 +505,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = ClanShadowhammerAllegienceVar
+			which = ClanShadowhammerAllegianceVar
 			value = 90
 		}
 		NOT = {
 			check_variable = {
-				which = ClanShadowhammerAllegienceVar
+				which = ClanShadowhammerAllegianceVar
 				value = 150
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -396,11 +529,11 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = ClanShadowhammerAllegienceVar
+			which = ClanShadowhammerAllegianceVar
 			value = 150
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -415,12 +548,12 @@ custom_icon = {
 		}
 		NOT = {
 			check_variable = {
-				which = ClanDarkstoneAllegienceVar
+				which = ClanDarkstoneAllegianceVar
 				value = 15
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -434,17 +567,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = ClanDarkstoneAllegienceVar
+			which = ClanDarkstoneAllegianceVar
 			value = 15
 		}
 		NOT = {
 			check_variable = {
-				which = ClanDarkstoneAllegienceVar
+				which = ClanDarkstoneAllegianceVar
 				value = 45
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -458,17 +591,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = ClanDarkstoneAllegienceVar
+			which = ClanDarkstoneAllegianceVar
 			value = 45
 		}
 		NOT = {
 			check_variable = {
-				which = ClanDarkstoneAllegienceVar
+				which = ClanDarkstoneAllegianceVar
 				value = 90
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -482,17 +615,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = ClanDarkstoneAllegienceVar
+			which = ClanDarkstoneAllegianceVar
 			value = 90
 		}
 		NOT = {
 			check_variable = {
-				which = ClanDarkstoneAllegienceVar
+				which = ClanDarkstoneAllegianceVar
 				value = 150
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -506,11 +639,11 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = ClanDarkstoneAllegienceVar
+			which = ClanDarkstoneAllegianceVar
 			value = 150
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -525,12 +658,12 @@ custom_icon = {
 		}
 		NOT = {
 			check_variable = {
-				which = GroediAzAnAllegienceVar
+				which = GroediAzAnAllegianceVar
 				value = 15
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -544,17 +677,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = GroediAzAnAllegienceVar
+			which = GroediAzAnAllegianceVar
 			value = 15
 		}
 		NOT = {
 			check_variable = {
-				which = GroediAzAnAllegienceVar
+				which = GroediAzAnAllegianceVar
 				value = 45
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -568,17 +701,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = GroediAzAnAllegienceVar
+			which = GroediAzAnAllegianceVar
 			value = 45
 		}
 		NOT = {
 			check_variable = {
-				which = GroediAzAnAllegienceVar
+				which = GroediAzAnAllegianceVar
 				value = 90
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -592,17 +725,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = GroediAzAnAllegienceVar
+			which = GroediAzAnAllegianceVar
 			value = 90
 		}
 		NOT = {
 			check_variable = {
-				which = GroediAzAnAllegienceVar
+				which = GroediAzAnAllegianceVar
 				value = 150
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -616,11 +749,11 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = GroediAzAnAllegienceVar
+			which = GroediAzAnAllegianceVar
 			value = 150
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -635,12 +768,12 @@ custom_icon = {
 		}
 		NOT = {
 			check_variable = {
-				which = AmlruzskappaAllegienceVar
+				which = AmlruzskappaAllegianceVar
 				value = 15
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -654,17 +787,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = AmlruzskappaAllegienceVar
+			which = AmlruzskappaAllegianceVar
 			value = 15
 		}
 		NOT = {
 			check_variable = {
-				which = AmlruzskappaAllegienceVar
+				which = AmlruzskappaAllegianceVar
 				value = 45
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -678,17 +811,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = AmlruzskappaAllegienceVar
+			which = AmlruzskappaAllegianceVar
 			value = 45
 		}
 		NOT = {
 			check_variable = {
-				which = AmlruzskappaAllegienceVar
+				which = AmlruzskappaAllegianceVar
 				value = 90
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -702,17 +835,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = AmlruzskappaAllegienceVar
+			which = AmlruzskappaAllegianceVar
 			value = 90
 		}
 		NOT = {
 			check_variable = {
-				which = AmlruzskappaAllegienceVar
+				which = AmlruzskappaAllegianceVar
 				value = 150
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -726,11 +859,11 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = AmlruzskappaAllegienceVar
+			which = AmlruzskappaAllegianceVar
 			value = 150
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -745,12 +878,12 @@ custom_icon = {
 		}
 		NOT = {
 			check_variable = {
-				which = FurdanhundAllegienceVar
+				which = FurdanhundAllegianceVar
 				value = 15
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -764,17 +897,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = FurdanhundAllegienceVar
+			which = FurdanhundAllegianceVar
 			value = 15
 		}
 		NOT = {
 			check_variable = {
-				which = FurdanhundAllegienceVar
+				which = FurdanhundAllegianceVar
 				value = 45
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -788,17 +921,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = FurdanhundAllegienceVar
+			which = FurdanhundAllegianceVar
 			value = 45
 		}
 		NOT = {
 			check_variable = {
-				which = FurdanhundAllegienceVar
+				which = FurdanhundAllegianceVar
 				value = 90
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -812,17 +945,17 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = FurdanhundAllegienceVar
+			which = FurdanhundAllegianceVar
 			value = 90
 		}
 		NOT = {
 			check_variable = {
-				which = FurdanhundAllegienceVar
+				which = FurdanhundAllegianceVar
 				value = 150
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -836,11 +969,11 @@ custom_icon = {
 			}
 		}
 		check_variable = {
-			which = FurdanhundAllegienceVar
+			which = FurdanhundAllegianceVar
 			value = 150
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -853,12 +986,12 @@ custom_icon = {
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 100
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -870,17 +1003,17 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 100
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 250
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -892,17 +1025,17 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 250
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 400
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -914,17 +1047,17 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 400
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 750
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -936,11 +1069,11 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 750
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -953,12 +1086,12 @@ custom_icon = {
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 100
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -970,17 +1103,17 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 100
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 250
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -992,17 +1125,17 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 250
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 400
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -1014,17 +1147,17 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 400
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 750
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -1036,11 +1169,11 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 750
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -1053,12 +1186,12 @@ custom_icon = {
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 100
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -1070,17 +1203,17 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 100
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 250
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -1092,17 +1225,17 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 250
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 400
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -1114,17 +1247,17 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 400
 		}
 		NOT = {
 			check_variable = {
-				which = RunefatherAllegienceVar
+				which = RunefatherAllegianceVar
 				value = 750
 			}
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
 custom_icon = {
@@ -1136,20 +1269,13 @@ custom_icon = {
 			was_tag = H94
 		}
 		check_variable = {
-			which = RunefatherAllegienceVar
+			which = RunefatherAllegianceVar
 			value = 750
 		}
 	}
-	tooltip = runefather_worship_allegience_custom_tt
+	tooltip = runefather_worship_allegiance_custom_tt
 }
 
-custom_icon = {
-    name = suhans_praxis_visvatma
-    potential = {
-    	religion = suhans_praxis
-	}
-	tooltip = high_philosophy_visvatma_ui_custom_tt
-}
 
 custom_button = {
 	name = xhazobkult_light_the_pyres
@@ -1176,6 +1302,12 @@ custom_button = {
 		}
 	}
 	effect = { 
+		hidden_effect = {
+			change_variable = {
+				which = numOfLightThePyres
+				value = 1
+			}
+		}
 		if = {
 			limit = { NOT = { total_development = 100 } }
 			custom_tooltip = xhazobkult_light_the_pyres_100
@@ -1183,7 +1315,7 @@ custom_button = {
 				random_owned_province = {
 					limit = {
 						AND = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }							
 							base_tax = 2
 							base_production = 2
 							base_manpower = 2
@@ -1194,9 +1326,6 @@ custom_button = {
 					add_base_manpower = -1
 				}
 			}		
-			add_patriarch_authority = 0.05
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
 		}
 		else_if = {
 			limit = { NOT = { total_development = 200 } }
@@ -1206,7 +1335,7 @@ custom_button = {
 				effect = "
 					random_owned_province = {
 						limit = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }							
 							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
 							base_tax = 2
 							base_production = 2
@@ -1219,12 +1348,9 @@ custom_button = {
 					}
 				"
 			}
-			add_patriarch_authority = 0.05
 			every_owned_province = {
 				clr_province_flag = xhazobkult_already_lighted_the_pyre
 			}
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
 		}
 		else_if = {
 			limit = { NOT = { total_development = 300 } }
@@ -1234,7 +1360,7 @@ custom_button = {
 				effect = "
 					random_owned_province = {
 						limit = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }							
 							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
 							base_tax = 2
 							base_production = 2
@@ -1247,12 +1373,9 @@ custom_button = {
 					}
 				"
 			}
-			add_patriarch_authority = 0.05
 			every_owned_province = {
 				clr_province_flag = xhazobkult_already_lighted_the_pyre
 			}
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
 		}
 		else_if = {
 			limit = { NOT = { total_development = 400 } }
@@ -1262,7 +1385,7 @@ custom_button = {
 				effect = "
 					random_owned_province = {
 						limit = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }							
 							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
 							base_tax = 2
 							base_production = 2
@@ -1275,12 +1398,9 @@ custom_button = {
 					}
 				"
 			}
-			add_patriarch_authority = 0.05
 			every_owned_province = {
 				clr_province_flag = xhazobkult_already_lighted_the_pyre
 			}
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
 		}
 		else_if = {
 			limit = { NOT = { total_development = 500 } }
@@ -1290,7 +1410,7 @@ custom_button = {
 				effect = "
 					random_owned_province = {
 						limit = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }							
 							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
 							base_tax = 2
 							base_production = 2
@@ -1303,12 +1423,9 @@ custom_button = {
 					}
 				"
 			}
-			add_patriarch_authority = 0.05
 			every_owned_province = {
 				clr_province_flag = xhazobkult_already_lighted_the_pyre
 			}
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
 		}
 		else_if = {
 			limit = { NOT = { total_development = 600 } }
@@ -1318,7 +1435,7 @@ custom_button = {
 				effect = "
 					random_owned_province = {
 						limit = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }							
 							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
 							base_tax = 2
 							base_production = 2
@@ -1331,12 +1448,9 @@ custom_button = {
 					}
 				"
 			}
-			add_patriarch_authority = 0.05
 			every_owned_province = {
 				clr_province_flag = xhazobkult_already_lighted_the_pyre
 			}
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
 		}
 		else_if = {
 			limit = { NOT = { total_development = 700 } }
@@ -1346,7 +1460,7 @@ custom_button = {
 				effect = "
 					random_owned_province = {
 						limit = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }							
 							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
 							base_tax = 2
 							base_production = 2
@@ -1359,12 +1473,9 @@ custom_button = {
 					}
 				"
 			}
-			add_patriarch_authority = 0.05
 			every_owned_province = {
 				clr_province_flag = xhazobkult_already_lighted_the_pyre
 			}
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
 		}
 		else_if = {
 			limit = { NOT = { total_development = 800 } }
@@ -1374,7 +1485,7 @@ custom_button = {
 				effect = "
 					random_owned_province = {
 						limit = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }							
 							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
 							base_tax = 2
 							base_production = 2
@@ -1387,12 +1498,9 @@ custom_button = {
 					}
 				"
 			}
-			add_patriarch_authority = 0.05
 			every_owned_province = {
 				clr_province_flag = xhazobkult_already_lighted_the_pyre
 			}
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
 		}
 		else_if = {
 			limit = { NOT = { total_development = 900 } }
@@ -1402,7 +1510,7 @@ custom_button = {
 				effect = "
 					random_owned_province = {
 						limit = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }							
 							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
 							base_tax = 2
 							base_production = 2
@@ -1415,22 +1523,44 @@ custom_button = {
 					}
 				"
 			}
-			add_patriarch_authority = 0.05
 			every_owned_province = {
 				clr_province_flag = xhazobkult_already_lighted_the_pyre
 			}
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
 		}
 		else_if = {
-			limit = { total_development = 300 }
+			limit = { NOT = { total_development = 1000 } }
+			for = {
+				amount = 10
+				custom_tooltip = xhazobkult_light_the_pyres_900
+				effect = "
+					random_owned_province = {
+						limit = {
+							NOT = { religion = xhazobkult }							
+							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
+							base_tax = 2
+							base_production = 2
+							base_manpower = 2
+						}
+						add_base_tax = -1
+						add_base_production = -1
+						add_base_manpower = -1
+						set_province_flag = xhazobkult_already_lighted_the_pyre
+					}
+				"
+			}
+			every_owned_province = {
+				clr_province_flag = xhazobkult_already_lighted_the_pyre
+			}
+		}
+		else_if = {
+			limit = { total_development = 1000 }
 			for = {
 				amount = 10
 				custom_tooltip = xhazobkult_light_the_pyres_1000
 				effect = "
 					random_owned_province = {
 						limit = {
-							NOT = { religion = xhazobkult }
+							NOT = { religion = xhazobkult }						
 							NOT = { has_province_flag = xhazobkult_already_lighted_the_pyre }
 							base_tax = 2
 							base_production = 2
@@ -1443,12 +1573,70 @@ custom_button = {
 					}
 				"
 			}
-			add_patriarch_authority = 0.05
 			every_owned_province = {
 				clr_province_flag = xhazobkult_already_lighted_the_pyre
 			}
-			clr_country_flag = xhazobkult_light_the_pyres_cooldown
-			set_country_flag = xhazobkult_light_the_pyres_cooldown
+		}
+		clr_country_flag = xhazobkult_light_the_pyres_cooldown
+		set_country_flag = xhazobkult_light_the_pyres_cooldown
+		if = {
+			limit = { has_country_flag = rakkaz_light_the_pyres_upgrade }
+			add_patriarch_authority = 0.075
+		}
+		else = {
+			add_patriarch_authority = 0.05
+		}
+		rakkaz_fighting_pit_mazu_makhara_interactions = yes
+	}
+}
+
+custom_icon = {
+	name = accretive_path_admin_blocker
+	potential = {
+		religion = accretive_path
+		accretive_path_has_adm_aspect_scripted_trigger = yes
+	}
+	tooltip = accretive_path_adm_cant_change_aspect_tt
+}
+custom_icon = {
+	name = accretive_path_diplo_blocker
+	potential = {
+		religion = accretive_path
+		accretive_path_has_dip_aspect_scripted_trigger = yes
+	}
+	tooltip = accretive_path_dip_cant_change_aspect_tt
+}
+custom_icon = {
+	name = accretive_path_mil_blocker
+	potential = {
+		religion = accretive_path
+		accretive_path_has_mil_aspect_scripted_trigger = yes
+	}
+	tooltip = accretive_path_mil_cant_change_aspect_tt
+}
+
+custom_icon = {
+	name = devouring_path_blocker
+	potential = {
+		religion = devouring_path
+		NOT = {
+			AND = {
+				num_of_aspects = 3
+				church_power = 200
+			}
 		}
 	}
+	tooltip = devouring_path_blocker_tt
+}
+
+custom_icon = {
+    name = taychend_deity_desc
+    potential = { OR = { religion = gods_of_the_taychend religion = oren_nayiru } }
+	tooltip = taychend_deity_description
+}
+
+custom_icon = {
+    name = kheionist_deity_desc
+    potential = { religion = kheionism }
+	tooltip = kheionist_deity_description
 }

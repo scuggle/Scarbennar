@@ -177,6 +177,7 @@ country_decisions = {
 					is_vassal = yes
 				}
 			}
+			NOT = { is_or_was_tag = { tag = H35 } }
 		}
 		allow = {
 			stability = 3

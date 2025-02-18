@@ -891,7 +891,19 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 			}
 
-
+			guiButtonType =
+			{
+				name = "transmutative_path_infuse_chi_button"
+				position = { x= 450 y = 24 }
+				quadTextureSprite ="chi_wellspring_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+			}
 
 			### INCOME
 
@@ -1064,6 +1076,14 @@ guiTypes = {
 				position = { x = 20 y = 328 }
 				hint_tag = "hint_hre"
 				frame = 1
+			}
+			
+			guiButtonType =
+			{
+				name = "sedentarization_make_outpost"
+				quadTextureSprite = "GFX_trading_city_button"
+				position = { x = 20 y = 328 }
+				scripted = yes
 			}
 
 			guiButtonType = {
@@ -2728,7 +2748,7 @@ guiTypes = {
 			guiButtonType =
 			{
 				name = "concentrate_development"
-				quadTextureSprite = "GFX_empty"
+				quadTextureSprite = "GFX_concentrate_development"
 				position = { x = 318 y = 9 }
 			}
 			

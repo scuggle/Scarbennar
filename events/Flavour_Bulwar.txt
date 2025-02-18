@@ -3997,22 +3997,20 @@ country_event = {
 		ai_chance = { factor = 50 }
 		if = {
 			limit = {
-				development_in_provinces = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 10
 					OR = {
 						culture_is_human = yes
 						culture_is_elven = yes
 					}
-					value = 100
-					country_or_subject_holds = ROOT
 				}
 				NOT = {
-					development_in_provinces = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 20
 						OR = {
 							culture_is_human = yes
 							culture_is_elven = yes
 						}
-						value = 200
-						country_or_subject_holds = ROOT
 					}
 				}
 			}
@@ -4023,22 +4021,20 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				development_in_provinces = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 20
 					OR = {
 						culture_is_human = yes
 						culture_is_elven = yes
 					}
-					value = 200
-					country_or_subject_holds = ROOT
 				}
 				NOT = {
-					development_in_provinces = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 30
 						OR = {
 							culture_is_human = yes
 							culture_is_elven = yes
 						}
-						value = 300
-						country_or_subject_holds = ROOT
 					}
 				}
 			}
@@ -4049,22 +4045,20 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				development_in_provinces = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 30
 					OR = {
 						culture_is_human = yes
 						culture_is_elven = yes
 					}
-					value = 300
-					country_or_subject_holds = ROOT
 				}
 				NOT = {
-					development_in_provinces = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 40
 						OR = {
 							culture_is_human = yes
 							culture_is_elven = yes
 						}
-						value = 400
-						country_or_subject_holds = ROOT
 					}
 				}
 			}
@@ -4075,13 +4069,12 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				development_in_provinces = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 40
 					OR = {
 						culture_is_human = yes
 						culture_is_elven = yes
 					}
-					value = 400
-					country_or_subject_holds = ROOT
 				}
 			}
 			add_treasury = 150
@@ -5025,6 +5018,7 @@ country_event = {
 			tag = F38
 			tag = F51
 			tag = F52
+			tag = F97
 		}
 		OR = {
 			AND = {
@@ -5478,6 +5472,50 @@ country_event = {
 				add_building = counting_house
 			}
 			"
+		}
+	}
+}
+
+#An Offer from the Serpent
+country_event = {
+	id = bulwar_flavour.138
+	title = bulwar_flavour.138.t
+	desc = bulwar_flavour.138.d
+	picture = COMET_SIGHTED_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_saved_name = {
+				key = evil_magi
+				type = simple
+				name = "Nehša"
+			}
+		}
+	}
+
+	option = {
+		name = bulwar_flavour.138.a
+		custom_tooltip = form_musaskalam_event_tt
+		hidden_effect = {
+			set_country_flag = can_form_musaskalam
+		}
+		add_prestige = -5
+	}
+
+	option = {
+		name = bulwar_flavour.138.b
+		capital_scope = {
+			spawn_rebels = {
+				size = 2
+				leader = evil_magi
+				type = old_bulwari_sun_cult_rebels
+			}
 		}
 	}
 }

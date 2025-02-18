@@ -4,29 +4,62 @@ country_decisions = {
 		major = yes
 		potential = {
 			culture_group = baashidi
-			hidden_trigger = {
-				OR = {
-					ai = no
-					total_development = 100
-					ruler_has_personality = great_conqueror_personality
-					ruler_has_personality = mythical_conqueror_personality
-				}
+			NOT  = { culture = guryadagga }
+			OR = {
+				ai = no
+				total_development = 100
+				ruler_has_personality = great_conqueror_personality
+				ruler_has_personality = mythical_conqueror_personality
 			}
 			NOT = { tag = S79 }
+			
 		}
-
 		provinces_to_highlight = {
-			region = jasiir_jadid_region
-			NOT = { owned_by = ROOT }
-		}
-		
-		allow = {
-			jasiir_jadid_region = {
-				owned_by = ROOT
+			OR = {
+                AND = {
+					region = jasiir_jadid_region
+					NOT = { owned_by = ROOT }
+					NOT = {
+						ROOT = {
+							num_of_owned_provinces_with = {
+								value = 30
+								region = jasiir_jadid_region
+							}
+						}
+					}
+				}
+				AND = {
+                    OR = {
+                        province_id = 6679
+						province_id = 6052
+						province_id = 6678
+						province_id = 6675
+						province_id = 6060
+						province_id = 6021 
+                    }
+                    NOT = { owned_by = ROOT }
+                }
+            }
+        }
 
-				type = all
+        allow = {
+			hidden_trigger = {
+				culture_group = baashidi
 			}
-		}
+			is_at_war = no
+			is_free_or_tributary_trigger = yes                        
+            #Required provinces
+            owns = 6679 #Qasri Aqoon
+			owns = 6052 #Magaalad Qasr
+			owns = 6678 #Qasri Maroodiqya
+			owns = 6675 #Qasri Bariga
+			owns = 6060 #Qasri Abeesooyinka
+			owns = 6021 #Qasri Ubakhiyo
+            num_of_owned_provinces_with = {
+                value = 30
+                region = jasiir_jadid_region
+            }                        
+        }
 		
 		effect = {
 			change_tag = S79
@@ -39,7 +72,7 @@ country_decisions = {
             }
 		}
 		
-		ai_will_do = { #The AI can't use this anyway
+		ai_will_do = {
 			factor = 1
 		}
 	}
@@ -233,21 +266,13 @@ country_decisions = {
         provinces_to_highlight = {
 			OR = {
                 AND = {
-					OR = {
-						region = throden_gokad_region
-						region = katala_raz_region
-						region = odu_kherass_region
-					}
+					superregion = taneyas_superregion
 					NOT = { owned_by = ROOT }
 					NOT = {
 						ROOT = {
 							num_of_owned_provinces_with = {
 								value = 75
-								OR = {
-									region = throden_gokad_region
-									region = katala_raz_region
-									region = odu_kherass_region
-								}
+								superregion = taneyas_superregion
 							}
 						}
 					}
@@ -273,6 +298,7 @@ country_decisions = {
 			hidden_trigger = {
 				culture_group = lizardfolk
 			}
+			religion = anzalkatsa
 			is_at_war = no
 			is_free_or_tributary_trigger = yes                        
             #Required provinces
@@ -294,11 +320,7 @@ country_decisions = {
 
             num_of_owned_provinces_with = {
                 value = 75
-                OR = {
-                    region = throden_gokad_region
-                    region = katala_raz_region
-                    region = odu_kherass_region
-                }
+				superregion = taneyas_superregion
             }                        
         }
 
@@ -311,19 +333,7 @@ country_decisions = {
                 }
                 set_government_rank = 3
             }
-            throden_gokad_region = {
-                limit = {
-                    NOT = { owned_by = ROOT }
-                }
-                add_permanent_claim = S81
-            }
-            katala_raz_region = {
-                limit = {
-                    NOT = { owned_by = ROOT }
-                }
-                add_permanent_claim = S81
-            }
-            odu_kherass_region = {
+            taneyas_superregion = {
                 limit = {
                     NOT = { owned_by = ROOT }
                 }
@@ -344,6 +354,67 @@ country_decisions = {
         }
         ai_importance = 400
     }
+
+	yehatirha_nation = { #mengi jadd formable yethatirha
+		major = yes 
+		
+		potential = {
+			religion = the_jadd
+			culture_group = mengi
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = S89 } #yethatirha - its the formable 
+		}
+
+		provinces_to_highlight = {
+			AND = {
+				superregion = east_sarhal_superregion
+				NOT = { religion = the_jadd }
+			}
+		}
+
+		allow = {
+			hidden_trigger = {
+				religion = the_jadd
+				culture_group = mengi
+			}	
+			num_of_owned_provinces_with = {
+				value = 10
+				superregion = east_sarhal_superregion
+			}     
+			development_in_provinces = {
+				value = 100
+				superregion = east_sarhal_superregion
+				religion = the_jadd
+			}
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+			change_tag = S89
+			hidden_effect = { restore_country_name = yes }
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			hidden_effect = {
+				clear_mages_organization_effect = yes
+			}	
+			set_estate_privilege = estate_mages_organization_jaherian_statute
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+		
+	}
 
 	melakmengi_nation = { #mengi formable
 		major = yes
@@ -562,5 +633,73 @@ country_decisions = {
 		}
 	
 	}
+
+	umbral_covenant_formation = { 
+		major = yes
+		potential = {
+			religion = shadow_pact
+			capital_scope = {
+				NOT = { region = yezel_mora_region }
+				OR = {
+					superregion = east_sarhal_superregion
+					superregion = taneyas_superregion
+					superregion = tanib_dajek_superregion
+					superregion = south_salahad_superregion
+				}
+			}
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = umbral_covenant_formed }
+			NOT = { has_country_flag = we_dont_want_no_stinkin_vile_one }
+			NOT = { has_reform = dakinshi_warlord_reform }
+			NOT = { exists = S90 }
+		}
+		
+		provinces_to_highlight = {
+		}
+		
+		allow = {
+			religion = shadow_pact
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				value = 30
+				religion = shadow_pact
+				NOT = {
+					region = yezel_mora_region
+				}
+			}     
+			capital_scope = {
+				NOT = { region = yezel_mora_region }
+			}
+			is_free_or_tributary_trigger = yes
+		}
+		
+		effect = {
+			change_tag = S90
+			hidden_effect = { restore_country_name = yes }
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			hidden_effect = {
+				set_country_flag = umbral_covenant_formed
+			}
+			country_event = {
+				id = flavor_umbral_covenant.1
+			}
+		}
+	
+	}
 }
+
+
 

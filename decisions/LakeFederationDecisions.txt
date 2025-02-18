@@ -363,6 +363,12 @@ country_decisions = {
 			has_country_modifier = human_administration
 			NOT = { exists = J33 }
 			NOT = { has_global_flag = lake_federation_disbanded }
+			OR = { #Prevents released subjects from joining the fed unless you are also part of it
+				is_subject = no 
+				overlord = {
+					has_country_modifier = lake_federation_member 
+				}
+			}
 			#ai = yes
 		}
 
@@ -457,7 +463,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			add_prestige = 100
+			add_prestige_or_monarch_power = { amount = 100 }
 			every_country = {
 				limit = { has_country_modifier = lake_federation_member }
 				country_event = { id = lake.39 }
@@ -1303,6 +1309,44 @@ country_decisions = {
 					hidden = yes
 				}
 			}
+		}
+	}
+
+	J52_consecrate_industry_decision = { #Ikogshaantus
+		potential = {
+			has_estate_privilege = estate_church_J52_consecrate_industry
+		}
+
+		allow = {
+			hidden_trigger = { has_estate_privilege = estate_church_J52_consecrate_industry }
+			custom_trigger_tooltip = {
+				tooltip = J52_isnt_consecrating_tt
+				NOT = { has_country_flag = J52_is_consecrating_flag }
+			}
+			if = {
+				limit = { has_country_flag = J52_consecration_expanded_2_flag }
+				treasury = 600
+			}
+			else_if = {
+				limit = { has_country_flag = J52_consecration_expanded_1_flag }
+				treasury = 300
+			}
+			else = { treasury = 100 }
+			any_owned_province = { J52_can_consecrate_province = { type = random_consecrate } }
+		}
+
+		provinces_to_highlight = {
+			J52_can_consecrate_province = { type = random_consecrate }
+		}
+
+		effect = {
+			country_event = {
+				id = ikogshaantus_events.100 #The Consecration
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

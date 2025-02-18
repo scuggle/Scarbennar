@@ -923,8 +923,22 @@ H61_3 = {
 		}
 		
 		effect = {
+			custom_tooltip = H61_manufactury_replacement_tt
 			1931 = {
-				change_trade_goods = wine
+				if = {
+					limit = {
+						AND = {
+							has_farm_trade_goods = no
+							has_production_manufactory_or_gold_trigger = yes
+							NOT = { trade_goods = gold }
+						}
+					}
+					change_trade_goods = wine
+					add_building = farm_estate
+				}
+				else = {
+					change_trade_goods = wine
+				}
 				add_permanent_province_modifier = {
 					name = H61_plum_saplings
 					duration = -1
@@ -935,7 +949,20 @@ H61_3 = {
 				}
 			}
 			2856 = {
-				change_trade_goods = wine
+				if = {
+					limit = {
+						AND = {
+							has_farm_trade_goods = no
+							has_production_manufactory_or_gold_trigger = yes
+							NOT = { trade_goods = gold }
+						}
+					}
+					change_trade_goods = wine
+					add_building = farm_estate
+				}
+				else = {
+					change_trade_goods = wine
+				}
 				add_permanent_province_modifier = {
 					name = H61_plum_saplings
 					duration = -1
@@ -946,7 +973,20 @@ H61_3 = {
 				}
 			}
 			1845 = {
-				change_trade_goods = wine
+				if = {
+					limit = {
+						AND = {
+							has_farm_trade_goods = no
+							has_production_manufactory_or_gold_trigger = yes
+							NOT = { trade_goods = gold }
+						}
+					}
+					change_trade_goods = wine
+					add_building = farm_estate
+				}
+				else = {
+					change_trade_goods = wine
+				}
 				add_permanent_province_modifier = {
 					name = H61_plum_saplings
 					duration = -1
@@ -1557,6 +1597,7 @@ H61_4 = {
 					ruler_has_personality = scholar_personality
 					ruler_has_personality = free_thinker_personality
 					ruler_has_personality = tolerant_personality
+					ruler_has_personality = patron_of_arts_personality
 				}
 				OR = {
 					full_idea_group = innovativeness_ideas

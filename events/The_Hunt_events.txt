@@ -1,7 +1,60 @@
 
 namespace = the_hunt_events
 
-#Fair winds
+#TODO
+# passive conversion
+# event pictures
+
+
+country_event = {
+	id = the_hunt_events.0
+	title = the_hunt_events.0.t
+	desc = the_hunt_events.0.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		religion = the_hunt
+		NOT = {
+			has_country_modifier = harpy_eagle_doctrine
+			has_country_modifier = harpy_myna_doctrine
+			has_country_modifier = harpy_crane_doctrine
+			has_country_modifier = harpy_eagle_doctrine_heir
+			has_country_modifier = harpy_myna_doctrine_heir
+			has_country_modifier = harpy_crane_doctrine_heir
+		}
+	}	
+	option = {
+		name = the_hunt_events.0.a
+        ai_chance = { factor = 34 }
+		add_ruler_modifier = {
+			name = harpy_eagle_doctrine
+			duration = -1
+		}
+	}
+
+	option = {
+        name = the_hunt_events.0.b
+        ai_chance = { factor = 33 }
+		add_ruler_modifier = {
+			name = harpy_myna_doctrine
+			duration = -1
+		}
+	}
+
+	option = {
+        name = the_hunt_events.0.c
+        ai_chance = { factor = 33 }
+		add_ruler_modifier = {
+			name = harpy_crane_doctrine
+			duration = -1
+		}
+	}
+}
+
+#rites of peace 
 country_event = {
 	id = the_hunt_events.1
 	title = the_hunt_events.1.t
@@ -9,20 +62,22 @@ country_event = {
 	picture = BATTLE_eventPicture
 	
 	is_triggered_only = yes
-	
+
 	option = {
 		name = the_hunt_events.1.a
         ai_chance = { factor = 100 }
-		add_country_modifier = { name = "the_hunt_fair_winds" duration = 365 }
+		add_country_modifier = { name = "harpy_rites_of_peace_unrest" duration = 3650 }
+		add_stability = 1
 	}
 	option = {
         name = the_hunt_events.1.b
         ai_chance = { factor = 0 }
-		add_church_power = 100
+		add_country_modifier = { name = "harpy_rites_of_peace_conversion" duration = 3650 }
+		add_stability = 1
 	}
 }
 
-#Move pop
+#Rites of war
 country_event = {
 	id = the_hunt_events.2
 	title = the_hunt_events.2.t
@@ -31,74 +86,35 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = {
-		hidden_effect = {
-			harpy_define_pop_to_take = yes
-		}
-	}
-	
-	after = {
-		hidden_effect = {
-			every_owned_province = {
-				clr_province_flag = harpy_pop_@ROOT
-			}
-			clr_country_flag = open_harpy_take_pop_menu
-		}
-	}
-	
 	option = {
 		name = the_hunt_events.2.a
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop1 }
-		goto = harpy_pop1
-		event_target:harpy_pop1 = {
-			harpy_move_pop_to_capital_effect = yes
+		if = {
+			limit = { has_country_modifier = slackening_modifier }
+			custom_tooltip = harpy_slacken_bad
 		}
-	}
-	option = {
-		name = the_hunt_events.2.b
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop2 }
-		goto = harpy_pop2
-		event_target:harpy_pop2 = {
-			harpy_move_pop_to_capital_effect = yes
+		else = {
+			IF = {
+				limit = {
+					has_country_modifier = harpy_eagle_doctrine
+				}
+				add_yearly_manpower = 0.8
+				add_country_modifier = {
+					name = harpy_rites_of_war_eagle
+					duration = 3650
+				} 
+			}
+			else = {
+				add_yearly_manpower = 0.6
+				add_country_modifier = {
+					name = harpy_rites_of_war
+					duration = 3650
+				} 
+			}
 		}
-	}
-	option = {
-		name = the_hunt_events.2.c
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop3 }
-		goto = harpy_pop3
-		event_target:harpy_pop3 = {
-			harpy_move_pop_to_capital_effect = yes
-		}
-	}
-	option = {
-		name = the_hunt_events.2.dd
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop4 }
-		goto = harpy_pop4
-		event_target:harpy_pop4 = {
-			harpy_move_pop_to_capital_effect = yes
-		}
-	}
-	option = {
-		name = the_hunt_events.2.e
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop5 }
-		goto = harpy_pop5
-		event_target:harpy_pop5 = {
-			harpy_move_pop_to_capital_effect = yes
-		}
-	}
-	option = {
-        name = the_hunt_events.2.f
-        ai_chance = { factor = 0 }
-		add_church_power = 100
 	}
 }
 
-#Raid neighbours
+#rites of tithing
 country_event = {
 	id = the_hunt_events.3
 	title = the_hunt_events.3.t
@@ -107,182 +123,97 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = {
-		hidden_effect = {
-			harpy_define_raid_target = yes
-		}
-	}
-	
-	after = {
-		hidden_effect = {
-			harpy_clear = { target = harpy_raid1 }
-			harpy_clear = { target = harpy_raid2 }
-			harpy_clear = { target = harpy_raid3 }
-			harpy_clear = { target = harpy_raid4 }
-			clr_country_flag = open_harpy_raid_menu
-		}
-	}
-	
 	option = {
 		name = the_hunt_events.3.a
-        ai_chance = { factor = 1 }
-		trigger = {
-			harpy_option_trigger = { target = harpy_raid1 }
-		}
-		goto = harpy_raid1
-		harpy_hunt_raid_option = { target = harpy_raid1 event_nr = 301 }
 		add_country_modifier = {
-			name = the_hunt_harpy_raid_modifier
-			duration = 1825
+			name = harpy_rites_of_tithing
+			duration = 3650
 		}
-	}
-	option = {
-		name = the_hunt_events.3.b
-        ai_chance = { factor = 1 }
-		trigger = {
-			harpy_option_trigger = { target = harpy_raid2 }
+		if = {
+			limit = { total_own_and_non_tributary_subject_development = 1000 }
+			add_treasury = 500
 		}
-		goto = harpy_raid2
-		harpy_hunt_raid_option = { target = harpy_raid2 event_nr = 302 }
-		add_country_modifier = {
-			name = the_hunt_harpy_raid_modifier
-			duration = 1825
+		else_if = {
+			limit = { total_own_and_non_tributary_subject_development = 900 }
+			add_treasury = 450
 		}
-	}
-	option = {
-		name = the_hunt_events.3.c
-        ai_chance = { factor = 1 }
-		trigger = {
-			harpy_option_trigger = { target = harpy_raid3 }
+		else_if = {
+			limit = { total_own_and_non_tributary_subject_development = 800 }
+			add_treasury = 400
 		}
-		goto = harpy_raid3
-		harpy_hunt_raid_option = { target = harpy_raid3 event_nr = 303 }
-		add_country_modifier = {
-			name = the_hunt_harpy_raid_modifier
-			duration = 1825
+		else_if = {
+			limit = { total_own_and_non_tributary_subject_development = 700 }
+			add_treasury = 350
 		}
-	}
-	option = {
-		name = the_hunt_events.3.dd
-        ai_chance = { factor = 1 }
-		trigger = {
-			harpy_option_trigger = { target = harpy_raid4 }
+		else_if = {
+			limit = { total_own_and_non_tributary_subject_development = 600 }
+			add_treasury = 300
 		}
-		goto = harpy_raid4
-		harpy_hunt_raid_option = { target = harpy_raid4 event_nr = 304 }
-		add_country_modifier = {
-			name = the_hunt_harpy_raid_modifier
-			duration = 1825
+		else_if = {
+			limit = { total_own_and_non_tributary_subject_development = 500 }
+			add_treasury = 250
 		}
-	}
-	option = {
-        name = the_hunt_events.3.e
-        ai_chance = { factor = 0 }
-		add_church_power = 50
-	}
-}
-
-
-
-# Raid and inform the victim: "Helpless in Halting Harpy Hunts"
-country_event = {
-	id = the_hunt_events.301
-	title = the_hunt_events.300.t 
-	desc = the_hunt_events.301.d
-	picture = HARPY_TOWN_eventPicture
-	
-	is_triggered_only = yes
-
-	after = {
-		hidden_effect = {
-			set_country_flag = informed_of_harpy_raid
+		else_if = {
+			limit = { total_own_and_non_tributary_subject_development = 400 }
+			add_treasury = 200
 		}
-	}
-	
-	option = {
-		name = the_hunt_events.300.a
-        ai_chance = { factor = 1 }
-		add_casus_belli = {
-			target = FROM
-			type = cb_insult
-			months = 18
+		else_if = {
+			limit = { total_own_and_non_tributary_subject_development = 300 }
+			add_treasury = 150
 		}
-	}
-}
-country_event = {
-	id = the_hunt_events.302
-	title = the_hunt_events.300.t
-	desc = the_hunt_events.302.d
-	picture = HARPY_TOWN_eventPicture
-	
-	is_triggered_only = yes
-
-	after = {
-		hidden_effect = {
-			set_country_flag = informed_of_harpy_raid
+		else_if = {
+			limit = { total_own_and_non_tributary_subject_development = 200 }
+			add_treasury = 100
 		}
-	}
-	
-	option = {
-		name = the_hunt_events.300.a
-        ai_chance = { factor = 1 }
-		add_casus_belli = {
-			target = FROM
-			type = cb_insult
-			months = 18
+		else = {
+			add_treasury = 50
 		}
-	}
-}
-country_event = {
-	id = the_hunt_events.303
-	title = the_hunt_events.300.t
-	desc = the_hunt_events.303.d
-	picture = HARPY_TOWN_eventPicture
-	
-	is_triggered_only = yes
-
-	after = {
-		hidden_effect = {
-			set_country_flag = informed_of_harpy_raid
-		}
-	}
-	
-	option = {
-		name = the_hunt_events.300.a
-        ai_chance = { factor = 1 }
-		add_casus_belli = {
-			target = FROM
-			type = cb_insult
-			months = 18
-		}
-	}
-}
-country_event = {
-	id = the_hunt_events.304
-	title = the_hunt_events.300.t
-	desc = the_hunt_events.304.d
-	picture = HARPY_TOWN_eventPicture
-	
-	is_triggered_only = yes
-
-	after = {
-		hidden_effect = {
-			set_country_flag = informed_of_harpy_raid
-		}
-	}
-	
-	option = {
-		name = the_hunt_events.300.a
-        ai_chance = { factor = 1 }
-		add_casus_belli = {
-			target = FROM
-			type = cb_insult
-			months = 18
+		#crane additional cash
+		if = {
+			limit = { has_country_modifier = harpy_crane_doctrine }
+				if = {
+					limit = { total_own_and_non_tributary_subject_development = 1000 }
+					add_treasury = 250
+				}
+				else_if = {
+					limit = { total_own_and_non_tributary_subject_development = 900 }
+					add_treasury = 225
+				}
+				else_if = {
+					limit = { total_own_and_non_tributary_subject_development = 800 }
+					add_treasury = 200
+				}
+				else_if = {
+					limit = { total_own_and_non_tributary_subject_development = 700 }
+					add_treasury = 175
+				}
+				else_if = {
+					limit = { total_own_and_non_tributary_subject_development = 600 }
+					add_treasury = 150
+				}
+				else_if = {
+					limit = { total_own_and_non_tributary_subject_development = 500 }
+					add_treasury = 125
+				}
+				else_if = {
+					limit = { total_own_and_non_tributary_subject_development = 400 }
+					add_treasury = 100
+				}
+				else_if = {
+					limit = { total_own_and_non_tributary_subject_development = 300 }
+					add_treasury = 75
+				}
+				else_if = {
+					limit = { total_own_and_non_tributary_subject_development = 200 }
+					add_treasury = 50
+				}
+				else = {
+					add_treasury = 25
+				}
 		}
 	}
 }
 
-#Powerful Egg
 country_event = {
 	id = the_hunt_events.4
 	title = the_hunt_events.4.t
@@ -291,80 +222,28 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	#normal training
 	option = {
 		name = the_hunt_events.4.a
-        ai_chance = { factor = 100 }
-		custom_tooltip = harpy_egg_effect_tt
-		tooltip = {
-			random_list = {
-				20 = { add_country_modifier = { name = harpy_egg_merchant duration = 9125 desc = harpy_25_years_tt } }
-				20 = { add_country_modifier = { name = harpy_egg_diplomat duration = 9125 desc = harpy_25_years_tt } }
-				20 = { add_country_modifier = { name = harpy_egg_missionary duration = 9125 desc = harpy_25_years_tt } }
-				20 = { custom_tooltip = harpy_get_random_advisor_tt }
-				10 = { create_general = { tradition = 50 } }
-				10 = { create_war_wizard_effect = yes }
+		add_country_modifier = {
+			name = harpy_rites_of_proving
+			duration = 3650
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					continent = africa
+				}
+			}
+		custom_tooltip = harpy_rites_of_war_sarhal_tt
+		}
+		else = {
+			custom_tooltip = harpy_rites_of_war_tt
+		}
+		hidden_effect = {
+			country_event = {
+				id = the_hunt_events.5
 			}
 		}
-		hidden_effect = { country_event = { id = the_hunt_events.6 days = 9125 } }
-		set_country_flag = harpy_egg_ongoing
-		clr_country_flag = open_harpy_egg_menu
-	}
-	
-	#focus on magical training
-	option = {
-		name = the_hunt_events.4.b
-		trigger = { church_power = 100 }
-        ai_chance = { factor = 0 }
-		
-		if = { limit = { church_power = 100 }
-			add_church_power = -100
-			set_country_flag = harpy_egg_magical
-		}
-		
-		custom_tooltip = harpy_egg_effect_tt
-		tooltip = {
-			random_list = {
-				15 = { add_country_modifier = { name = harpy_egg_merchant duration = 9125 desc = harpy_25_years_tt } }
-				15 = { add_country_modifier = { name = harpy_egg_diplomat duration = 9125 desc = harpy_25_years_tt } }
-				15 = { add_country_modifier = { name = harpy_egg_missionary duration = 9125 desc = harpy_25_years_tt } }
-				15 = { custom_tooltip = harpy_get_random_advisor_tt }
-				10 = { create_general = { tradition = 50 } }
-				30 = { create_war_wizard_effect = yes }
-			}
-		}
-		hidden_effect = { country_event = { id = the_hunt_events.6 days = 9125 } }
-		set_country_flag = harpy_egg_ongoing
-		clr_country_flag = open_harpy_egg_menu
-	}
-	option = {
-		name = the_hunt_events.4.bx
-		trigger = { NOT = { church_power = 100 } }
-        ai_chance = { factor = 0 }
-		
-		custom_tooltip = harpy_egg_magical_unavailable_tt
-		
-		tooltip = { add_church_power = -100 }
-		custom_tooltip = harpy_egg_effect_tt
-		tooltip = {
-			random_list = {
-				15 = { add_country_modifier = { name = harpy_egg_merchant duration = 9125 desc = harpy_25_years_tt } }
-				15 = { add_country_modifier = { name = harpy_egg_diplomat duration = 9125 desc = harpy_25_years_tt } }
-				15 = { add_country_modifier = { name = harpy_egg_missionary duration = 9125 desc = harpy_25_years_tt } }
-				15 = { custom_tooltip = harpy_get_random_advisor_tt }
-				10 = { create_general = { tradition = 50 } }
-				30 = { create_war_wizard_effect = yes }
-			}
-		}
-		hidden_effect = { country_event = { id = the_hunt_events.5 } }
-	}
-	
-	#go back
-	option = {
-		name = the_hunt_events.4.c
-        ai_chance = { factor = 0 }
-		add_church_power = 100
-		clr_country_flag = open_harpy_egg_menu
 	}
 }
 
@@ -376,14 +255,289 @@ country_event = {
 	
 	is_triggered_only = yes
 	hidden = yes
-	
-	option = {
-		name = the_hunt_events.5.a
-		country_event = { id = the_hunt_events.4 }
+
+	option = { #not sarhal
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			NOT = { 
+				capital_scope = {
+					continent = africa
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { army_tradition = 20 }
+			}
+			create_general = {
+				tradition = 20
+				add_shock = 1
+				add_fire = 1
+				add_manuever = 1
+				add_siege = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { army_tradition = 40 }
+			}
+			create_general = {
+				tradition = 40
+				add_shock = 1
+				add_fire = 1
+				add_manuever = 1
+				add_siege = 1
+			}
+		}
+		else_if  = {
+			limit = {
+				NOT = { army_tradition = 60 }
+			}
+			create_general = {
+				tradition = 60
+				add_shock = 1
+				add_fire = 1
+				add_manuever = 1
+				add_siege = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { army_tradition = 80 }
+			}
+			create_general = {
+				tradition = 80
+				add_shock = 1
+				add_fire = 1
+				add_manuever = 1
+				add_siege = 1
+			}
+		}
+		else = {
+			create_general = {
+				tradition = 100
+				add_shock = 1
+				add_fire = 1
+				add_manuever = 1
+				add_siege = 1
+			}
+		}
 	}
+
+	option = { #  planetouched - sarhal only
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			capital_scope = {
+				continent = africa
+			}
+		}
+		name = the_hunt_events.5.c
+		if = {
+			limit = { 
+				NOT = { 
+					army_tradition = 20 
+				}
+			}
+			define_general = {
+				fire = 2
+				shock = 3
+				manuever = 3
+				siege = 1
+				trait = planetouched_commander_personality
+				female = yes
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { 
+					army_tradition = 40 
+				}
+			}
+			define_general = {
+				fire = 3
+				shock = 4
+				manuever = 3
+				siege = 1
+				trait = planetouched_commander_personality
+				female = yes
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { 
+					army_tradition = 60 
+				}
+			}
+			define_general = {
+				fire = 3
+				shock = 5
+				manuever = 4
+				siege = 1
+				trait = planetouched_commander_personality
+				female = yes
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { 
+					army_tradition = 80 
+				}
+			}
+			define_general = {
+				fire = 4
+				shock = 5
+				manuever = 5
+				siege = 2
+				trait = planetouched_commander_personality
+				female = yes
+			}
+		}
+		else = {
+			define_general = {
+				fire = 5
+				shock = 5
+				manuever = 5
+				siege = 3
+				trait = planetouched_commander_personality
+				female = yes
+			}
+		}
+	}
+
+	option = { # warwizard 
+		ai_chance = {
+			factor = 1
+		}
+		name = the_hunt_events.5.a
+		if = {
+			limit = {
+				NOT = { army_tradition = 20 }
+			}
+			define_general = {
+				fire = 1
+				shock = 7
+				manuever = 0
+				siege = 2
+				trait = war_wizard_personality
+				female = yes
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { army_tradition = 40 }
+			}
+			define_general = {
+				fire = 2
+				shock = 7
+				manuever = 1
+				siege = 3
+				trait = war_wizard_personality
+				female = yes
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { army_tradition = 60 }
+			}
+			define_general = {
+				fire = 2
+				shock = 8
+				manuever = 1
+				siege = 4
+				trait = war_wizard_personality
+				female = yes
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { army_tradition = 80 }
+			}
+			define_general = {
+				fire = 2
+				shock = 9
+				manuever = 2
+				siege = 5
+				trait = war_wizard_personality
+				female = yes
+			}
+		}
+		else = {
+			define_general = {
+				fire = 3
+				shock = 10
+				manuever = 3
+				siege = 6
+				trait = war_wizard_personality
+				female = yes
+			}
+		}
+	}
+	
+	option = { #not eagle regular general
+		name = the_hunt_events.5.f
+		ai_chance = {
+			factor = 2
+		}
+		trigger = {
+			NOT = { 
+				has_country_modifier = harpy_eagle_doctrine
+			}
+		}
+		if = {
+			limit = {
+				NOT = { army_tradition = 20 }
+			}
+			create_general = {
+				tradition = 20
+				add_shock = 1
+				add_fire = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { army_tradition = 40 }
+			}
+			create_general = {
+				tradition = 40
+				add_shock = 1
+				add_fire = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { army_tradition = 60 }
+			}
+			create_general = {
+				tradition = 60
+				add_shock = 1
+				add_fire = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { army_tradition = 80 }
+			}
+			create_general = {
+				tradition = 80
+				add_shock = 1
+				add_fire = 1
+			}
+		}
+		else = {
+			create_general = {
+				tradition = 100
+				add_shock = 1
+				add_fire = 1
+			}
+		}
+	}	
 }
 
-#Powerful Egg result chance
+#seek peace
 country_event = {
 	id = the_hunt_events.6
 	title = the_hunt_events.6.t
@@ -391,63 +545,41 @@ country_event = {
 	picture = HARPY_TOWN_eventPicture
 	
 	is_triggered_only = yes
-	hidden = yes
-	
+
 	option = {
 		name = the_hunt_events.6.a
-		ai_chance = {
-			factor = 20
-			modifier = { factor = 0.75 has_country_flag = harpy_egg_magical }
+		custom_tooltip = harpy_seek_peace_tt
+		if = {
+			limit = {
+				has_country_modifier = harpy_myna_doctrine
+			}
+			hidden_effect = {
+				every_known_country = {
+					add_aggressive_expansion = {
+						who = ROOT
+						value = -20
+						apply_calc = no
+					}
+				}
+			}
 		}
-		set_country_flag = harpy_egg_result_merchant
-	}
-	option = {
-		name = the_hunt_events.6.a
-		ai_chance = {
-			factor = 20
-			modifier = { factor = 0.75 has_country_flag = harpy_egg_magical }
+		hidden_effect = {
+			every_known_country = {
+				add_aggressive_expansion = {
+					who = ROOT
+					value = -10
+					apply_calc = no
+				}
+			}
 		}
-		set_country_flag = harpy_egg_result_diplomat
-	}
-	option = {
-		name = the_hunt_events.6.a
-		ai_chance = {
-			factor = 20
-			modifier = { factor = 0.75 has_country_flag = harpy_egg_magical }
+		add_country_modifier = {
+			name = harpy_rites_of_peace
+			duration = 3650
 		}
-		set_country_flag = harpy_egg_result_missionary
-	}
-	option = {
-		name = the_hunt_events.6.a
-		ai_chance = {
-			factor = 20
-			modifier = { factor = 0.75 has_country_flag = harpy_egg_magical }
-		}
-		set_country_flag = harpy_egg_result_advisor
-	}
-	option = {
-		name = the_hunt_events.6.a
-		ai_chance = {
-			factor = 10
-		}
-		set_country_flag = harpy_egg_result_general
-	}
-	option = {
-		name = the_hunt_events.6.a
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 3 has_country_flag = harpy_egg_magical }
-		}
-		set_country_flag = harpy_egg_result_war_wizard
-	}
-	
-	after = {
-		country_event = { id = the_hunt_events.7 }
 	}
 }
 
 
-#Powerful Egg result
 country_event = {
 	id = the_hunt_events.7
 	title = the_hunt_events.7.t
@@ -458,48 +590,75 @@ country_event = {
 	
 	option = {
 		name = the_hunt_events.7.a
-		trigger = { has_country_flag = harpy_egg_result_merchant }
-		add_country_modifier = { name = harpy_egg_merchant duration = 9125 }
-		clr_country_flag = harpy_egg_result_merchant
+		add_adm_power = 50
+		if = {
+			limit = {
+				has_country_modifier = harpy_crane_doctrine
+			}
+			change_heir_adm = 2
+		}
+		else = {
+			change_heir_adm = 1
+		}
+		custom_tooltip = harpy_worth_crane
+		hidden_effect = {
+			add_country_modifier = {
+				name = harpy_crane_doctrine_heir
+				duration = -1
+			}
+			remove_country_modifier = harpy_myna_doctrine_heir
+			remove_country_modifier = harpy_eagle_doctrine_heir
+		}
 	}
+
 	option = {
 		name = the_hunt_events.7.b
-		trigger = { has_country_flag = harpy_egg_result_diplomat }
-		add_country_modifier = { name = harpy_egg_diplomat duration = 9125 }
-		clr_country_flag = harpy_egg_result_diplomat
+		add_dip_power = 50
+		if = {
+			limit = {
+				has_country_modifier = harpy_crane_doctrine
+			}
+			change_heir_dip = 2
+		}
+		else = {
+			change_heir_dip = 1
+		}
+		custom_tooltip = harpy_worth_myna
+		hidden_effect = {
+			add_country_modifier = {
+				name = harpy_myna_doctrine_heir
+				duration = -1
+			}
+			remove_country_modifier = harpy_crane_doctrine_heir
+			remove_country_modifier = harpy_eagle_doctrine_heir
+		}
 	}
+
 	option = {
 		name = the_hunt_events.7.c
-		trigger = { has_country_flag = harpy_egg_result_missionary }
-		add_country_modifier = { name = harpy_egg_missionary duration = 9125 }
-		clr_country_flag = harpy_egg_result_missionary
-	}
-	option = {
-		name = the_hunt_events.7.dd
-		trigger = { has_country_flag = harpy_egg_result_advisor }
-		custom_tooltip = harpy_get_random_advisor_tt
-		define_advisor_of_random_type = { skill = 2 discount = yes }
-		clr_country_flag = harpy_egg_result_advisor
-	}
-	option = {
-		name = the_hunt_events.7.e
-		trigger = { has_country_flag = harpy_egg_result_general }
-		create_general = { tradition = 50 }
-		clr_country_flag = harpy_egg_result_general
-	}
-	option = {
-		name = the_hunt_events.7.f
-		trigger = { has_country_flag = harpy_egg_result_war_wizard }
-		create_war_wizard_effect = yes
-		clr_country_flag = harpy_egg_result_war_wizard
-	}
-	
-	after = {
-		clr_country_flag = harpy_egg_ongoing
+		add_mil_power = 50
+		if = {
+			limit = {
+				has_country_modifier = harpy_crane_doctrine
+			}
+			change_heir_adm = 2
+		}
+		else = {
+			change_heir_dip = 1
+		}
+		custom_tooltip = harpy_worth_eagle
+		hidden_effect = {
+			add_country_modifier = {
+				name = harpy_eagle_doctrine_heir
+				duration = -1
+			}
+			remove_country_modifier = harpy_myna_doctrine_heir
+			remove_country_modifier = harpy_crane_doctrine_heir
+		}
 	}
 }
 
-#Move pop (demonsterised version)
+#Odd hunt
 country_event = {
 	id = the_hunt_events.8
 	title = the_hunt_events.8.t
@@ -508,90 +667,99 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = {
-		hidden_effect = {
-			harpy_define_pop_to_take = yes
-		}
-	}
-	
-	after = {
-		hidden_effect = {
-			every_owned_province = {
-				clr_province_flag = harpy_pop_@ROOT
-			}
-			clr_country_flag = open_harpy_take_pop_menu
-		}
-	}
-	
 	option = {
 		name = the_hunt_events.8.a
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop1 }
-		goto = harpy_pop1
-		event_target:harpy_pop1 = {
-			harpy_move_pop_to_capital_effect = yes
+		if = {
+			limit = {
+				has_country_modifier = harpy_myna_doctrine
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_modifier = harpy_roost
+					}
+					add_next_institution_embracement = 30
+				}
+			}
+			custom_tooltip = harpy_odd_myna
+			add_country_modifier = {
+				name = harpy_odd_hunt_myna
+				duration = 3650
+			}
 		}
-	}
-	option = {
-		name = the_hunt_events.8.b
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop2 }
-		goto = harpy_pop2
-		event_target:harpy_pop2 = {
-			harpy_move_pop_to_capital_effect = yes
+		else = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_modifier = harpy_roost
+					}
+					add_next_institution_embracement = 20
+				}
+			}
+			custom_tooltip = harpy_odd
+			add_country_modifier = {
+				name = harpy_odd_hunt
+				duration = 3650
+			}
 		}
-	}
-	option = {
-		name = the_hunt_events.8.c
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop3 }
-		goto = harpy_pop3
-		event_target:harpy_pop3 = {
-			harpy_move_pop_to_capital_effect = yes
-		}
-	}
-	option = {
-		name = the_hunt_events.8.dd
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop4 }
-		goto = harpy_pop4
-		event_target:harpy_pop4 = {
-			harpy_move_pop_to_capital_effect = yes
-		}
-	}
-	option = {
-		name = the_hunt_events.8.e
-        ai_chance = { factor = 1 }
-		trigger = { has_saved_event_target = harpy_pop5 }
-		goto = harpy_pop5
-		event_target:harpy_pop5 = {
-			harpy_move_pop_to_capital_effect = yes
-		}
-	}
-	option = {
-        name = the_hunt_events.8.f
-        ai_chance = { factor = 0 }
-		add_church_power = 100
 	}
 }
 
-#Odd hunt
 country_event = {
-	id = the_hunt_events.9
-	title = the_hunt_events.9.t
-	desc = the_hunt_events.9.d
+	id = the_hunt_events.100
+	title = the_hunt_events.100.t
+	desc = the_hunt_events.100.d
 	picture = HARPY_TOWN_eventPicture
 	
 	is_triggered_only = yes
-	
-	option = {
-		name = the_hunt_events.9.a
-        ai_chance = { factor = 100 }
-		add_country_modifier = { name = harpy_the_odd_hunt duration = 1825 }
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+		religion = the_hunt
+		has_estate = estate_church
+		NOT = {
+			has_estate_privilege = estate_church_the_hunt_tolerance
+		}
 	}
+
 	option = {
-        name = the_hunt_events.9.b
-        ai_chance = { factor = 0 }
-		add_church_power = 100
+		name = the_hunt_events.100.a
+		set_estate_privilege = estate_church_the_hunt_tolerance
+		remove_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+	}
+
+	option = {
+		name = the_hunt_events.100.b
+	}
+}
+
+country_event = {
+	id = the_hunt_events.101
+	title = the_hunt_events.100.t
+	desc = the_hunt_events.100.d
+	picture = HARPY_TOWN_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+		religion = the_hunt
+		has_estate = estate_monstrous_tribes
+		NOT = {
+			has_estate_privilege = estate_church_the_hunt_tolerance
+			has_estate_privilege = estate_monstrous_tribes_the_hunt_tolerance
+		}
+	}
+
+	option = {
+		name = the_hunt_events.100.a
+		set_estate_privilege = estate_monstrous_tribes_the_hunt_tolerance
+		remove_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+	}
+
+	option = {
+		name = the_hunt_events.100.b
 	}
 }

@@ -3,12 +3,12 @@ country_decisions = {
 
 	draft_mercenary_general = {
 		potential = {
-			has_reform = heroic_realm_reform
+			has_government_attribute = is_heroic_realm
 			NOT = { has_country_modifier = rahen_recruited_general }
 		}
 		
 		allow = {
-			has_reform = heroic_realm_reform
+			has_government_attribute = is_heroic_realm
 			treasury = 50
 			mil_power = 50
 			any_hired_mercenary_company = {

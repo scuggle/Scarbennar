@@ -2305,7 +2305,7 @@ skurkokli_horde_marches_three = {
 	}
 
 	skurkokli_the_despoilers_come = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		required_missions = { skurkokli_horde_marches_west }
 		position = 12
 		
@@ -4055,11 +4055,11 @@ skurkokli_horde_marches_four = {
 				change_culture = bloodtooth_ogre
 				change_religion = ROOT
 				add_local_autonomy = -30
-				change_trade_goods = gold
+				change_trade_goods = gems
 			}
 			add_country_modifier = {
 				name = skurkokli_gold_vault
-				duration = 9125 #25 years
+				duration = 18250 #50 years
 			}
 			hidden_effect = {
 				5021 = {

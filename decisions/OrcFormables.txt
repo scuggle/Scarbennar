@@ -73,6 +73,13 @@ country_decisions = {
 				limit = { has_country_modifier = brokenjaw_inhospitable_lands_production }
 				remove_country_modifier = brokenjaw_inhospitable_lands_production
 			}
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = brokenjaw_frozen_union }
+					add_historical_friend = Z89
+					Z89 = { add_historical_friend = Z19 }
+				}
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			add_prestige = 25
@@ -108,16 +115,12 @@ country_decisions = {
 				primary_culture = gray_orc
 			}
 			NOT = { exists = Z51 }
+			NOT = { tag = Z18 }
 			NOT = { has_country_flag = orc_nation_formed }
 			any_owned_province = { region = west_castanor_region }
 			normal_or_historical_nations = yes
 			is_free_or_tributary_trigger = yes
 			capital_scope = { continent = europe }
-			OR = { 
-				religion = great_dookan
-				religion = corinite
-				religion = regent_court 
-			}
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
@@ -192,11 +195,6 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			is_free_or_tributary_trigger = yes
 			capital_scope = { continent = europe }
-			OR = { 
-				religion = great_dookan
-				religion = corinite
-				religion = regent_court 
-			}
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
@@ -267,11 +265,6 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			is_free_or_tributary_trigger = yes
 			capital_scope = { continent = europe }
-			OR = { 
-				religion = great_dookan
-				religion = corinite
-				religion = regent_court 
-			}
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
@@ -339,6 +332,7 @@ country_decisions = {
 			NOT = { exists = Z57 }
 			normal_or_historical_nations = yes
 			is_free_or_tributary_trigger = yes
+			NOT = { has_country_flag = blorc_plunder_capital_set }
 			NOT = { has_country_flag = orc_nation_formed }
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_reform = roadwarrior_great_convoy }
@@ -465,6 +459,9 @@ country_decisions = {
 			add_country_modifier = { name = centralization_modifier duration = 7300 }
 			add_prestige = 10
 			set_country_flag = orc_nation_formed
+			if = { limit = { tag = H73 }
+				custom_tooltip = found_tarakar_mt_warning
+			}
 		}
 		ai_will_do = { factor = 1 }
 		ai_importance = 400

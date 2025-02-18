@@ -53,7 +53,7 @@ province_event = {
 	id = treasurefleet.1
 	title = treasurefleet.1.t
 	desc = treasurefleet.1.d
-	picture = TRIBUTARY_FLEET_eventPicture
+	picture = TREASURE_FLEET_SHIP_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -247,7 +247,7 @@ province_event = {
 	id = treasurefleet.3
 	title = treasurefleet.3.t
 	desc = treasurefleet.3.d
-	picture = NAVAL_MILITARY_eventPicture
+	picture = TREASURE_FLEET_SHIP_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -360,7 +360,7 @@ country_event = {
 		trigger = { NOT = { religion = bangujonsi } }
 		desc = "treasurefleet.5.d2"
 	}
-	picture = TRIBUTARY_FLEET_eventPicture
+	picture = TREASURE_FLEET_SHIP_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -786,7 +786,7 @@ province_event = {
 	id = treasurefleet.20
 	title = treasurefleet.20.t
 	desc = treasurefleet.20.d
-	picture = TRIBUTARY_FLEET_eventPicture
+	picture = TREASURE_FLEET_SHIP_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -833,7 +833,7 @@ province_event = {
 	id = treasurefleet.21
 	title = treasurefleet.21.t
 	desc = treasurefleet.21.d
-	picture = TRIBUTARY_FLEET_eventPicture
+	picture = TREASURE_FLEET_SHIP_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -909,7 +909,7 @@ province_event = {
 	id = treasurefleet.22
 	title = treasurefleet.22.t
 	desc = treasurefleet.22.d
-	picture = TRIBUTARY_FLEET_eventPicture
+	picture = TREASURE_FLEET_SHIP_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -935,7 +935,7 @@ province_event = {
 	id = treasurefleet.23
 	title = treasurefleet.23.t
 	desc = treasurefleet.23.d
-	picture = TRIBUTARY_FLEET_eventPicture
+	picture = TREASURE_FLEET_SHIP_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -1007,6 +1007,62 @@ province_event = {
 #		JY_LF_trade = yes
 #	}
 #}
+
+#Centaur stow-away
+province_event = {
+	id = treasurefleet.25
+	title = treasurefleet.25.t
+	desc = treasurefleet.25.d
+	picture = TREASURE_FLEET_SHIP_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		JY_LF_visit = yes
+	}
+	
+	option = {
+		name = treasurefleet.25.a
+		trigger = {
+			owner = { has_idea_group = exploration_ideas }
+		}
+		highlight = yes
+		owner = {
+			define_explorer = {
+				shock = 0
+				fire = 0
+				manuever = 0
+				siege = 0
+				name = "Ushen Shingyuul"
+			}
+			medium_increase_of_centaur_tolerance_effect = yes
+		}
+		JY_LF_trade = yes
+	}
+	
+	option = {
+		name = treasurefleet.25.b
+		owner = {
+			add_sailors = 1
+			small_increase_of_centaur_tolerance_effect = yes
+		}
+		JY_LF_trade = yes
+	}
+	
+	option = {
+		name = treasurefleet.25.c
+		owner = {
+			define_general = {
+				shock = 3
+				fire = 0
+				manuever = 4
+				siege = 0
+				name = "Ushen Shingyuul"
+			}
+			small_decrease_of_centaur_tolerance_effect = yes
+		}
+	}
+}
 
 #Decide next location
 province_event = {
@@ -1322,6 +1378,18 @@ province_event = {
 						#	}
 						#	province_event = { id = treasurefleet.24 days = 30 }
 						#}
+						5 = {		#need to keep this rare, but if more events get made should bump this up a bit
+							modifier = {
+								factor = 0
+								NOT = {
+									owner = {
+										has_country_modifier = racial_pop_centaur_expulsion
+										has_country_modifier = racial_pop_centaur_purge
+									}
+								}
+							}
+							province_event = { id = treasurefleet.25 days = 30 }
+						}
 						1 = { province_event = { id = treasurefleet.8 days = 30 } } #Normal Encounter (included in case no other flavor event is possible)
 					}
 				}
@@ -1542,7 +1610,7 @@ country_event = {
 	id = treasurefleet.103
 	title = treasurefleet.103.t
 	desc = treasurefleet.103.d
-	picture = TRIBUTARY_FLEET_eventPicture
+	picture = TREASURE_FLEET_SHIP_eventPicture
 	
 	is_triggered_only = yes
 	

@@ -24,5 +24,15 @@ capital = 817
 	}
 	add_ruler_personality = inspiring_leader_personality
 }
+1550.11.11 = {
+	monarch = {
+		name = "The Regent"
+		dynasty = "of Wyvernheart"
+		birth_date = 1530.4.1
+		adm = 4
+		dip = 5
+		mil = 6
+	}
+}
 
 set_country_flag = adventurer_derived_government

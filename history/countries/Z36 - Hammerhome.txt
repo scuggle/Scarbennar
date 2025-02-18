@@ -5,7 +5,7 @@ add_government_reform = adventurer_republic_reform
 government_rank = 1
 primary_culture = iron_dwarf
 religion = regent_court
-technology_group = tech_dwarven
+technology_group = tech_west_dwarven
 capital = 817
 add_accepted_culture = heartman
 

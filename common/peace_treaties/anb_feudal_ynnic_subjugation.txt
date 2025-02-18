@@ -2,13 +2,13 @@
 
 # THIS is the Taker and FROM the Giver in all scopes unless otherwise stated
 
-# This functionality was made to fully support modded subject types. It can probably also be used for other things, but has the following limitations: 
+# This functionality was made to fully support modded subject types. It can probably also be used for other things, but has the following limitations:
 # These treaties don't support having a different Taker/Giver than the two countries that are negotiating.
 # Nor do they support setting provinces (like cede province) or third party countries (like annull treaties) as targets.
 # FROM = The dude that receive it THIS = The dude that launch the shit
 # Example:
 po_feudal_ynnic_subjugation = {
-	# The following strings need localization: 
+	# The following strings need localization:
 	#		"make_dummy_desc" (uses text processing, supporting bracket notation) ("[FROM.GetName] becomes a [THIS.GetName] Dummy")
 	#		"CB_ALLOWED_make_dummy" (uses plain localization) ("Enforced Dumbness")
 	#		"PEACE_make_dummy" (uses plain localization, but with support for $TAKER$, $TAKERS$, $GIVER$ and $GIVERS$) ("Become $TAKERS$ Dummy")
@@ -34,7 +34,7 @@ po_feudal_ynnic_subjugation = {
 	requires_demand_independence = yes # Whether this can be demanded by the former subject in an independence war without also demanding independence.
 	is_make_subject = yes # This will make the treaty mutually exclusive with other treaties that makes the giver a subject, or that explicitly frees the giver from their current overlord.
 	requires_is_allowed = no # If set to "yes", treaty will only be visible when explicitly allowed by casus belli. If not, it will be available but cost diplomatic power.
-	
+
 	is_visible = { # Defaults to equivalent of "always = yes"
 		OR = {
 			has_country_modifier = ynn_diplo
@@ -52,13 +52,13 @@ po_feudal_ynnic_subjugation = {
 		}
 	}
 	is_allowed = { # Defaults to equivalent of "always = yes"
-		FROM = { 
-			capital_scope = { 
+		FROM = {
+			capital_scope = {
 				OR = {
-					superregion = ynn_superregion 
-					region = forest_of_the_cursed_ones_region 
+					superregion = ynn_superregion
+					region = forest_of_the_cursed_ones_region
 				}
-			} 
+			}
 		}
 	}
 	effect = { # Defaults to empty effect (which makes error log entry but is safe)

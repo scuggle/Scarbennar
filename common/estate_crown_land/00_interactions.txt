@@ -147,6 +147,9 @@ interaction = { # Cast Spell
 		else_if = { limit = { has_estate_privilege = artifice_invention_korashi_tuners }
 			NOT = { has_country_modifier = magic_cooldown }
 		}
+		hidden_trigger = {
+			NOT = { has_country_flag = J84_no_casting_spells_flag }
+		}
     }
     effect = {
 		if = { limit = { has_estate = estate_mages }
@@ -531,6 +534,12 @@ interaction = { # Seize Land
 			}
 			NOT = { has_estate_privilege = estate_church_statutory_rights }
 		}
+		else_if = {
+			limit = {
+				has_estate = estate_uppercastes
+			}
+			NOT = { has_estate_privilege = estate_uppercastes_statutory_rights }
+		}
         #is_at_war = no
 		if = {
 			limit = { has_government_attribute = can_not_seize_land }
@@ -622,6 +631,14 @@ interaction = { # Seize Land
 			limit = { has_government_attribute = theocratic_monarchy_mechanic }
 			change_statists_vs_orangists = 0.05
 		}
+
+		if = {
+			limit = {
+				has_country_modifier = khadisrapur_empower_merchants_mod
+				mission_completed = R11_embassies_guild
+			}
+			change_estate_land_share = { estate = adventurers share = 1 }
+		}
 	}
 	ai_will_do = {
 		factor = 50
@@ -679,6 +696,20 @@ interaction = { # Seize Land
 				any_owned_province = {
 					fort_level = 1
 					NOT = { garrison = 400 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			# Don't mess up colonization with estate rebels in the Serpentspine
+			AND = {
+				NOT = { is_year = 1500 }
+				capital_scope = { continent = serpentspine }
+			}
+			NOT = {
+				estate_loyalty = {
+					estate = all
+					loyalty = 50
 				}
 			}
 		}
@@ -994,13 +1025,7 @@ interaction = { # Research Artificery
 			}
 			has_artificers_organization_privilege = yes
 		}
-		custom_trigger_tooltip = {
-			tooltip = is_not_researching_invention_tt
-			NOT = {
-				has_country_flag = artifice_research_in_progress
-				has_country_flag = artifice_research_menu_open
-			}
-		}
+		is_not_researching_invention = yes
     }
     effect = {
 		custom_tooltip = start_artificery_research_tt

@@ -7,6 +7,7 @@ country_decisions = {
 				full_idea_group = maritime_ideas
 				full_idea_group = exploration_ideas
 				full_idea_group = trade_ideas
+				tag = L62
 			}
 			NOT = { 
 				has_country_modifier = thalassocracy
@@ -117,132 +118,145 @@ country_decisions = {
 		}
 		allow = {
 			ai = no
-			OR = {
-				full_idea_group = maritime_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = trade_ideas
-				#full_idea_group = naval_ideas
-				# full_idea_group = trade_ideas
+			if = {
+				limit = {
+					OR = {
+						tag = L62
+						was_tag = L62
+					}
+				}
+				OR = {
+					full_idea_group = maritime_ideas
+					full_idea_group = trade_ideas
+					mission_completed = L62_sole_supplier
+				}
 			}
-			is_hegemon = yes
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = confirm_thalassocracy_rahen_tt
-					AND = {
-						1361 = { # Gulf of Rahen
-							is_strongest_trade_power = ROOT
-						}
-						1343 = { # Coffee Coast
-							is_strongest_trade_power = ROOT
-						}
-						1339 = { # Dakinshi Ahunanja
-							is_strongest_trade_power = ROOT
-						}
-						1364 = { # Cay Cam Sinh
-							is_strongest_trade_power = ROOT
-						}
-						1366 = { # Arawkelin
-							is_strongest_trade_power = ROOT
+			else = {
+				OR = {
+					full_idea_group = maritime_ideas
+					full_idea_group = trade_ideas
+				}
+			}
+			if = { limit = { NOT = { has_country_flag = confirm_thalassocracy_trade_node_req_bypass } } 
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = confirm_thalassocracy_rahen_tt
+						AND = {
+							1361 = { # Gulf of Rahen
+								is_strongest_trade_power = ROOT
+							}
+							1343 = { # Coffee Coast
+								is_strongest_trade_power = ROOT
+							}
+							1339 = { # Dakinshi Ahunanja
+								is_strongest_trade_power = ROOT
+							}
+							1364 = { # Cay Cam Sinh
+								is_strongest_trade_power = ROOT
+							}
+							1366 = { # Arawkelin
+								is_strongest_trade_power = ROOT
+							}
 						}
 					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = confirm_thalassocracy_west_cannor_tt
-					AND = {
-						1263 = { # Westport
-							is_strongest_trade_power = ROOT
-						}
-						1294 = { # Dragon Coast
-							is_strongest_trade_power = ROOT
-						}
-						1324 = { # Serpentshead
-							is_strongest_trade_power = ROOT
-						}
-						1477 = { # Bay of Chills
-							is_strongest_trade_power = ROOT
-						}
-						1292 = { # Bay of Wines
-							is_strongest_trade_power = ROOT
-						}
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = confirm_thalassocracy_dameshead_tt
-					AND = {
-						1296 = { # Eborthil
-							is_strongest_trade_power = ROOT
-						}
-						1270 = { # Anbenncost
-							is_strongest_trade_power = ROOT
-						}
-						1926 = { # Dameshead
-							is_strongest_trade_power = ROOT
-						}
-						1305 = { # Mothers Sorrow
-							is_strongest_trade_power = ROOT
-						}
-						1309 = { # Brasan
-							is_strongest_trade_power = ROOT
+					custom_trigger_tooltip = {
+						tooltip = confirm_thalassocracy_west_cannor_tt
+						AND = {
+							1263 = { # Westport
+								is_strongest_trade_power = ROOT
+							}
+							1294 = { # Dragon Coast
+								is_strongest_trade_power = ROOT
+							}
+							1324 = { # Serpentshead
+								is_strongest_trade_power = ROOT
+							}
+							1477 = { # Bay of Chills
+								is_strongest_trade_power = ROOT
+							}
+							1292 = { # Bay of Wines
+								is_strongest_trade_power = ROOT
+							}
 						}
 					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = confirm_thalassocracy_sarhal_tt
-					AND = {
-						1449 = { # Biya Mubidya
-							is_strongest_trade_power = ROOT
-						}
-						1458 = { # Khazynas Gulf
-							is_strongest_trade_power = ROOT
-						}
-						3084 = { # Sea of Lel
-							is_strongest_trade_power = ROOT
-						}
-						3082 = { # Clovesight
-							is_strongest_trade_power = ROOT
-						}
-						1465 = { # Dao Nako
-							is_strongest_trade_power = ROOT
-						}
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = confirm_thalassocracy_aelantir_tt
-					AND = {
-						1504 = { # Banished Isles
-							is_strongest_trade_power = ROOT
-						}
-						1527 = { # Ruined Sea
-							is_strongest_trade_power = ROOT
-						}
-						1519 = { # Trollsbay
-							is_strongest_trade_power = ROOT
-						}
-						1445 = { # West Haraf
-							is_strongest_trade_power = ROOT
-						}
-						1681 = { # Tor Nayyi
-							is_strongest_trade_power = ROOT
+					custom_trigger_tooltip = {
+						tooltip = confirm_thalassocracy_dameshead_tt
+						AND = {
+							1296 = { # Eborthil
+								is_strongest_trade_power = ROOT
+							}
+							1270 = { # Anbenncost
+								is_strongest_trade_power = ROOT
+							}
+							1926 = { # Dameshead
+								is_strongest_trade_power = ROOT
+							}
+							1305 = { # Mothers Sorrow
+								is_strongest_trade_power = ROOT
+							}
+							1309 = { # Brasan
+								is_strongest_trade_power = ROOT
+							}
 						}
 					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = confirm_thalassocracy_treasure_fleet_tt
-					AND = {
-						1374 = { # Odheongu
-							is_strongest_trade_power = ROOT
+					custom_trigger_tooltip = {
+						tooltip = confirm_thalassocracy_sarhal_tt
+						AND = {
+							1449 = { # Biya Mubidya
+								is_strongest_trade_power = ROOT
+							}
+							1458 = { # Khazynas Gulf
+								is_strongest_trade_power = ROOT
+							}
+							3084 = { # Sea of Lel
+								is_strongest_trade_power = ROOT
+							}
+							3082 = { # Clovesight
+								is_strongest_trade_power = ROOT
+							}
+							1465 = { # Dao Nako
+								is_strongest_trade_power = ROOT
+							}
 						}
-						4990 = { # Moduk
-							is_strongest_trade_power = ROOT
+					}
+					custom_trigger_tooltip = {
+						tooltip = confirm_thalassocracy_aelantir_tt
+						AND = {
+							1504 = { # Banished Isles
+								is_strongest_trade_power = ROOT
+							}
+							1527 = { # Ruined Sea
+								is_strongest_trade_power = ROOT
+							}
+							1519 = { # Trollsbay
+								is_strongest_trade_power = ROOT
+							}
+							1445 = { # West Haraf
+								is_strongest_trade_power = ROOT
+							}
+							1681 = { # Tor Nayyi
+								is_strongest_trade_power = ROOT
+							}
 						}
-						5315 = { # North Lake
-							is_strongest_trade_power = ROOT
-						}
-						1372 = { # Tianlou
-							is_strongest_trade_power = ROOT
-						}
-						1371 = { # Feiten
-							is_strongest_trade_power = ROOT
+					}
+					custom_trigger_tooltip = {
+						tooltip = confirm_thalassocracy_treasure_fleet_tt
+						AND = {
+							1374 = { # Odheongu
+								is_strongest_trade_power = ROOT
+							}
+							4990 = { # Moduk
+								is_strongest_trade_power = ROOT
+							}
+							5315 = { # North Lake
+								is_strongest_trade_power = ROOT
+							}
+							1372 = { # Tianlou
+								is_strongest_trade_power = ROOT
+							}
+							1371 = { # Feiten
+								is_strongest_trade_power = ROOT
+							}
 						}
 					}
 				}

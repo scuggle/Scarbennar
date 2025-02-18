@@ -37,6 +37,20 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { wyvernheart_is_floodborn_council = yes }
+				capital_scope = {
+					spawn_rebels = {
+						size = 2
+						type = mage_rebels
+					}
+				}
+			}
+		}
+	}
+
 	option = {	#Send Adventurers to find a lost tome
 		name = magic_project_lichdom.1.a
 		trigger = {
@@ -124,6 +138,20 @@ country_event = {
 		}
 	}
 	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { wyvernheart_is_floodborn_council = yes }
+				capital_scope = {
+					spawn_rebels = {
+						size = 2
+						type = mage_rebels
+					}
+				}
+			}
+		}
+	}
+
 	option = {	#An amulet capable of containing a small object
 		name = magic_project_lichdom.2.a
 		ai_chance = {
@@ -170,7 +198,6 @@ country_event = {
 		NOT = { has_ruler_flag = magic_project_lichdom_3 }
 		NOT = { has_ruler_flag = magic_project_lichdom_complete }
 		is_lesser_in_union = no
-
 	}
 	
 	mean_time_to_happen = {
@@ -187,7 +214,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {	#Scribe dark spells on tiny magical parchments to put inside
 		name = magic_project_lichdom.3.a
 		ai_chance = {
@@ -258,6 +285,20 @@ country_event = {
 		}
 	}
 	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { wyvernheart_is_floodborn_council = yes }
+				capital_scope = {
+					spawn_rebels = {
+						size = 2
+						type = mage_rebels
+					}
+				}
+			}
+		}
+	}
+
 	option = {	#Perform Dark Enchantments
 		name = magic_project_lichdom.4.a
 		ai_chance = {
@@ -447,6 +488,21 @@ country_event = {
 		}
 	}
 	
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { wyvernheart_is_floodborn_council = yes }
+				capital_scope = {
+					spawn_rebels = {
+						size = 3
+						type = mage_rebels
+					}
+				}
+			}
+		}
+	}
+
 	option = {	#Obtain the heart of an innocent
 		name = magic_project_lichdom.7.a
 		ai_chance = {
@@ -510,6 +566,21 @@ country_event = {
 		}
 	}
 	
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { wyvernheart_is_floodborn_council = yes }
+				capital_scope = {
+					spawn_rebels = {
+						size = 2
+						type = mage_rebels
+					}
+				}
+			}
+		}
+	}
+
 	option = {	#Make the preparations
 		name = magic_project_lichdom.8.a
 		ai_chance = {
@@ -954,6 +1025,11 @@ country_event = {
 			increase_witch_king_points_large = yes
 			increase_witch_king_points_large = yes
 		}
+
+		if = {
+			limit = { tag = B39 has_ruler_flag = wyvernheart_the_regent }
+			set_country_flag = wyvernheart_the_regent_lich
+		}
 		
 		set_ruler_flag = is_a_lich
 		set_ruler_flag = is_a_secret_lich
@@ -1071,6 +1147,19 @@ country_event = {
 					age = 33
 					name = "Varina"
 					dynasty = "Escer"
+					female = yes
+					max_random_adm  = 0
+					max_random_dip  = 0
+					max_random_mil  = 0
+					hide_skills = yes
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = wyvernheart_the_regent_lich }
+				define_ruler = {
+					age = 33
+					name = "The Regent"
+					dynasty = "of Wyvernheart"
 					female = yes
 					max_random_adm  = 0
 					max_random_dip  = 0
@@ -1314,6 +1403,8 @@ country_event = {
 		NOT = { has_ruler_flag = denied_magocracy }
 		NOT = { has_country_flag = b38_entef_ruler }
 		NOT = { is_subject_of_type = personal_union }
+		NOT = { has_reform = argordstun_gleaming_council }
+		NOT = { has_reform = argordstun_stubborn_reformists }
 	}
 	
 	mean_time_to_happen = {

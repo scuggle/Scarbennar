@@ -1320,7 +1320,7 @@
  refused_to_install_heir_for_favors:0 "Refused our Heir as a favor"
  refused_to_give_sailors_for_favors:0 "Refused to give Sailors for Favors"
  refused_to_give_men_for_favors:0 "Refused to give Soldiers for Favors"
- refused_to_give_gold_for_favors:0 "Refused to give Ducats for Favors"
+ refused_to_give_gold_for_favors:0 "Refused to give Crowns for Favors"
  CANNOT_SUPPORT_HEIR_PERSONAL_UNION:0 "You cannot Support Heir in a country you are in a Personal Union with."
  WARNING_TARGET_IN_INDEPENDENCE_WAR:0 "$COUNTRY|Y$ are fighting for independence, if their war ends in defeat before your war ends, your war will automatically end."
  CONVERT_CULTURE_OPINION_HIT:0 "This will cause a hit of $VAL|R$ opinion with countries of the same culture ($LIST$)."

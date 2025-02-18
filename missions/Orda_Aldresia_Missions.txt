@@ -46,7 +46,7 @@ orda_aldresia_1 = {
 		trigger = {
 			innovativeness = 3
             423 = {
-                has_building = temple
+                has_tax_building_trigger = yes
             }
 			OR = {
 				advisor = natural_scientist
@@ -74,7 +74,7 @@ orda_aldresia_1 = {
 				value = 3
 				trade_goods = iron
 				base_production = 5
-				has_building = workshop
+				has_production_building_trigger = yes
 				
 			}
 			423 = {
@@ -113,7 +113,7 @@ orda_aldresia_1 = {
             }
 			remove_country_modifier = proto_gunblade
 			artifice_magic_switch_to_mixed_mode = yes
-			set_estate_privilege = artifice_invention_holy_gunblade
+			set_country_flag = unlocked_artifice_invention_holy_gunblade
 		}
 	}
 }
@@ -159,22 +159,22 @@ orda_aldresia_2 = {
 					283  = {
 					country_or_non_sovereign_subject_holds = ROOT
 						OR = {
-							has_building = barracks
-							has_building = regimental_camp
+							has_manpower_building_trigger = yes
+							has_forcelimit_building_trigger = yes
 						}
 					}
 					285 = {
 						country_or_non_sovereign_subject_holds = ROOT
 						OR = {
-							has_building = barracks
-							has_building = regimental_camp
+							has_manpower_building_trigger = yes
+							has_forcelimit_building_trigger = yes
 						}
 					}
 					286 = {
 						country_or_non_sovereign_subject_holds = ROOT
 						OR = {
-							has_building = barracks
-							has_building = regimental_camp
+							has_manpower_building_trigger = yes
+							has_forcelimit_building_trigger = yes
 						}
 					}
 					A55 = {
@@ -192,7 +192,7 @@ orda_aldresia_2 = {
 			if = { 
 				limit = { 569 = {owned_by = ROOT } }
 				add_country_modifier = {
-					name = enlisment_of_adventurers
+					name = A77_enlistment_of_adventurers
 					duration = 9125
 				}
 				
@@ -345,14 +345,14 @@ orda_aldresia_2 = {
 				owned_by = ROOT
 			}
 			wesdam_area = {
-				has_building = soldier_households
+				has_manpower_building_trigger = yes
 			}
 			windtower_area = {
 				type = all
 				owned_by = ROOT
 			}
 			windtower_area = {
-				has_building = soldier_households
+				has_manpower_building_trigger = yes
 			}
 		}
 		
@@ -434,6 +434,9 @@ orda_aldresia_3 = {
 			south_ibevar_area = {
 				add_permanent_claim = ROOT
 			}
+			314 = {
+				add_permanent_claim = ROOT
+			}
 			add_country_modifier = {
 				name = A77_drawn_blades
 				duration = 5475
@@ -480,7 +483,8 @@ orda_aldresia_3 = {
 			if = {
 				limit = { A85 = { ai = yes }}
 				set_bankruptcy = A85
-			} else = {
+			}
+			else = {
 				A85 = { country_event = { id = flavor_magisterium.37 }} 
 			}
 		}
@@ -536,7 +540,7 @@ orda_aldresia_3 = {
 			cursewood_area = {
 				type = all
 				owned_by = ROOT
-				has_building = barracks
+				has_manpower_building_trigger = yes
 				NOT = { unrest = 0 }
 				base_manpower = 6
 			}
@@ -849,13 +853,13 @@ orda_aldresia_4 = {
 			south_ibevar_area = {
 				type = all
 				owned_by = ROOT
-				has_building = barracks
+				has_manpower_building_trigger = yes
 				base_manpower = 6
 			}
 			whistlevale_area = {
 				type = all
 				owned_by = ROOT
-				has_building = barracks
+				has_manpower_building_trigger = yes
 				base_manpower = 6
 			}
 		}
@@ -878,8 +882,8 @@ orda_aldresia_4 = {
 				value = 4 
 				region = dostanor_region
 				has_state_edict = edict_defensive_edict 
-				has_building = regimental_camp
-				has_building = barracks
+				has_manpower_building_trigger = yes
+				has_forcelimit_building_trigger = yes
 				has_fort_building_trigger = yes
 			}
 		}
@@ -943,24 +947,31 @@ orda_aldresia_4 = {
 		position = 10
 		
 		trigger = {
-			any_owned_province = {
-				has_province_modifier = ravelian_lodge
-			}
-			898 = {
-				development = 25
-			}
-			calc_true_if = {
-				amount = 2
-				all_known_country = {
+			OR = {
+				religion = ravelian
+				AND = {
 					any_owned_province = {
 						has_province_modifier = ravelian_lodge
 					}
-					has_opinion = {
-						who = ROOT
-						value = 100
+					calc_true_if = {
+						amount = 2
+						all_known_country = {
+							any_owned_province = {
+								has_province_modifier = ravelian_lodge
+							}
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
 					}
 				}
 			}
+			is_religion_enabled = ravelian
+			898 = {
+				development = 25
+			}
+
 		}
 		
 		effect = {
@@ -1045,11 +1056,14 @@ orda_aldresia_5 = {
 			custom_trigger_tooltip = { 
 				tooltip = orda_war_variables_tt
 			}
+			custom_trigger_tooltip = {
+				tooltip = empires_second_sons_tt
+			}
 			crown_land_share = 40
-			NOT = {
-				estate_influence = {
-					estate = estate_nobles
-					influence = 40
+			capital_scope = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 30
 				}
 			}
 			OR = {
@@ -1074,6 +1088,7 @@ orda_aldresia_5 = {
 					name = A77_second_sons_coup
 					duration = -1
 				}
+				country_event = { id = flavor_orda_aldresia.37 }
 			}
 		}
 	}
@@ -1167,7 +1182,7 @@ orda_aldresia_5 = {
 			north_ibevar_area = {
 				type = all
 				owned_by = ROOT
-				has_building = temple
+				has_tax_building_trigger = yes
 				base_tax = 8 
 			}
 		}

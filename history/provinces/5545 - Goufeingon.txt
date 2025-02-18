@@ -4,7 +4,7 @@ owner = L63
 controller = L63
 add_core = L63
 culture = antmvura
-religion = righteous_path
+religion = transmutative_path
 
 hre = no
 
@@ -18,3 +18,7 @@ capital = ""
 
 is_city = yes
 
+add_province_modifier = {
+	name = transmutative_path_irrigate_jungle_plantations_mod
+	duration = -1
+}

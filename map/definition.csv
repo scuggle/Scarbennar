@@ -543,7 +543,7 @@ province;red;green;blue;x;x
 542;77;92;128;Fajabahar_#4d5c80;x
 543;205;94;192;Deshkumar_#cd5ec0;x
 544;77;96;255;Yesdbar_#4d60ff;x
-545;205;98;0;Forramaz_#cd6200;x
+545;205;98;0;Farramaz_#cd6200;x
 546;78;100;64;Wibnuat_#4e6440;x
 547;206;102;128;Tremo-Enkost_#ce6680;x
 548;78;104;192;Habqez_#4e68c0;x
@@ -2535,7 +2535,7 @@ province;red;green;blue;x;x
 2534;118;131;196;Uyarbaid_#7683c4;x
 2535;244;231;145;Kalniphirsi_#f4e791;x
 2536;16;19;95;Kilavussam_#10135f;x
-2537;142;31;46;Vul_Tenvach_#8e1f2e;x
+2537;142;31;46;Vuls_Tenvach_#8e1f2e;x
 2538;79;131;246;Cann_Silsunvern_#4f83f6;x
 2539;205;1;196;Sibisimra_#cd01c4;x
 2540;37;6;145;Matnadevela_#250691;x
@@ -3723,9 +3723,9 @@ province;red;green;blue;x;x
 3722;220;251;49;RNW_#dcfb31;x
 3723;113;60;127;RNW_#713c7f;x
 3724;100;11;124;RNW_#640b7c;x
-3725;100;11;125;RNW_#640b7d;x
-3726;100;11;126;RNW_#640b7e;x
-3727;100;11;127;RNW_#640b7f;x
+3725;136;49;85;RNW_#883155;x
+3726;127;39;39;RNW_#7f2727;x
+3727;121;104;153;RNW_#796899;x
 3728;100;11;128;RNW_#640b80;x
 3729;100;11;129;RNW_#640b81;x
 3730;100;11;130;RNW_#640b82;x
@@ -5760,7 +5760,7 @@ province;red;green;blue;x;x
 5759;107;68;174;Stoutmarch_#6b44ae;x
 5760;219;6;53;Asanbosam_Tu_#db0635;x
 5761;183;190;59;Timberland_#b7be3b;x
-5762;4;178;209;Marids_Delta_#04b2d1;x
+5762;4;178;209;Marid's_Bay_#04b2d1;x
 5763;128;157;238;New_Hookfield_#809dee;x
 5764;108;62;75;Spucro_Farm_#6c3e4b;x
 5765;101;213;226;Galodugu_#65d5e2;x
@@ -6235,8 +6235,8 @@ province;red;green;blue;x;x
 6234;176;233;29;Anbennar6234_#b0e91d;x
 6235;118;201;118;Anbennar6235_#76c976;x
 6236;200;210;22;Anbennar6236_#c8d216;x
-6237;67;180;181;Anbennar6237_#43b4b5;x
-6238;80;136;152;Anbennar6238_#508898;x
+6237;67;180;181;South_Toreiel_#43b4b5;x
+6238;80;136;152;North_Toreiel_#508898;x
 6239;99;233;39;Anbennar6239_#63e927;x
 6240;176;186;96;Zeindalr_#b0ba60;x
 6241;215;198;66;Domancadh_#d7c642;x

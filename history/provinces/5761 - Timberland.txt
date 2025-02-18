@@ -7,6 +7,9 @@ capital = ""
 culture = jiromji
 religion = fangaulan_pantheon
 trade_goods = iron
+latent_trade_goods = {
+	coal
+}
 
 is_city = yes
 

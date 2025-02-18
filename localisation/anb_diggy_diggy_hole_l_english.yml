@@ -97,7 +97,7 @@
 
   diggy.36.t:0 "Rail in [Root.GetName] Restored!"
   diggy.36.d:0 "For the first time in millennia, wheels shift upon metal track, as a section of the ancient Dwarovar rail system has been restored. It has taken great effort, but now, surely, the vast flow of people, goods, and armies, will make all of the effort worth it."
-  diggy.36.a:0 "Reconstruction continues"
+  diggy.36.a:0 "Reconstruction Continues"
 
   diggy.37.t:0 "Discovery in [Root.GetName]"
   diggy.37.d:0 "We have discovered an incredible cavern in [Root.GetName]!\n\nAn immense lake, lit by a vast flora of bioluminescent plants, laying several hundred meters below the surface. And in its middle shelters a huge island, almost unbelievable in its wonder. It is a totally independent ecosystem, feeding on unknown energy."
@@ -362,6 +362,7 @@
   diggy.504.t:0 "Two Miners, One Magical Mineral"
   diggy.504.d:0 "Word has reached us of a great discovery! In one of the many tunnels that snake their way through our hold, two miners have come across a vast deposit of the magical mineral, damestear — a main ingredient in all things magic from artificery to enchantments. Up until this point they have been speaking almost in unison, but soon, the two begin bickering. Eventually, the first miner speaks, and says that the damestear must be mined and exploited for the benefit of our great nation, and would surely bring great riches. The second, however, raises her voice, and loudly proclaims that mining damestear would, rather than riches, bring great danger, and not be worth the risk to extract."
   diggy.504.a:0 "Great riches, you say?"
+  diggy.504.a.tt:0 "§RIt won't be possible to improve this Hold's Infrastructure until the damestear depletes!§!"
   diggy.504.b:0 "Safety first."
 
   diggy.505.t:0 "Damestear Explosion"
@@ -835,6 +836,14 @@
   diggy.758.a:0 "Long are our memories as well. We will brook no tolerance to these squatters."
   diggy.758.b:0 "And how did such things aid Aul Dwarov? We must carve a new path."
 
+  diggy.760.t:0 "Managing the Rails"
+  diggy.760.d:0 "Constructing the rails can take a toll on one's mind and body. Maybe it's time we delegate the effort to our capable builders?"
+  diggy.760.a:0 "Continue as usual"
+  diggy.760.aa:0 "Let me think about it"
+  diggy.760.b:0 "Report back later"
+  diggy.760.c:0 "Construct at will"
+  diggy.760.d.1:0 "Never bother me again"
+
   diggy_project.1.t:0 "Advanced Foundry Infrastructure"
   diggy_project.1.d:0 "[Root.GetName] has started work on improving our foundry infrastructure to accommodate the most recent advancements and developments in both our hold and the world."
   diggy_project.1.a:0 "Excellent"
@@ -901,6 +910,7 @@
 
   dig_through_tooltip:0 "§GIncrease dig speed§! until the end of the game"
   enough_dev_to_dig_tooltip:0 "Enough development to dig to the next level"
+  not_diggy_locked_tooltip:0 "Is not prevented from digging."
   not_dig_through_tooltip:0 "§RDecrease dig speed§! until the end of the game"
   until_dig_complete:0 "until hold digging is complete"
   orc_warband_tooltip:0 "§RAn Orc Warband is roaming the Dwarovar, and very well might work its way toward us§!"
@@ -920,6 +930,7 @@
   desc_dwarovar_claimer:0 "We will claim the Dwarovar with blade and blood!\n§RYou will lose this if you declare a non-coalition offensive war on a country outside of the Serpentspine continent§!"
   hold_is_repaired_tt:0 "Is NOT §YDamaged§! or §YInfested§!"
   diggy_cannot_repair_hold_tt:0 "This Hold cannot currently be repaired!"
+  downgrade_improved_infrastructure_tt:0 "This Hold will have its infrastructure downgraded."
 
   restore_irrigation_tooltip:0 "§T\nRestoring the entirety of the Serpent's Vale irrigation system will greatly improve the speed at which our non-capital Holds develop and dig.§!"
   building_diggy_tooltip:0 "Is not upgrading §YHold Infrastructure§!"
@@ -974,6 +985,11 @@
   rebuild_road_title:0 "£icon_dig_deeper£ Rebuild old Dwarovar Rail"
   rebuild_road_desc:0 "The ancient empire of Aul-Dwarov was unified and connected by the Dwarovar Highway, a prominent part of which was integrated rail along the dwarven roads—and now, we must rebuild it, province by province if we have to!"
   rebuild_road_tooltip:0 "Start the construction of §YRailway Works§! in every §Yapplicable§! province for 15¤ per province"
+  rebuild_road_temporary_tooltip:0 "Whenever a §YRailway§! finishes construction, it will automatically start another §YConstruction§! in the adjacent applicable provinces if there are enough crowns.\n\nWe will §RNOT§! be notified about the §YRailway§! finishing construction for the next §Y5§! years\n"
+  rebuild_road_auto_tooltip:0 "Whenever a §YRailway§! finishes construction, it will automatically start another §YConstruction§! in the adjacent applicable provinces if there are enough crowns.\n\nWe will §RNO§! longer be notified about the §YRailway§! finishing construction until the end of the game\n"
+  rebuild_road_never_tooltip:0 "We will §RNO§! longer be notified about the §YRailway§! finishing construction until the end of the game\n"
+  no_rail_and_event_notif_for_5_years:0 "We will §RNOT§! be notified about the §YRailway§! finishing construction and THIS event for the next §Y5§! years\n"
+  no_event_notif_for_5_years:0 "We will §RNOT§! be notified about THIS event for the next §Y5§! years"
   upgrade_road_title:0 "£icon_dig_deeper£ Upgrade the Dwarovar Rail"
   upgrade_road_desc:0 "Rebuilding is not enough, because like the blood of a giant, it is through our transport system that our nation breathes, and improving the circulation of each individual and goods through the Dwarovar will bring us a new era of prosperity!"
   upgrade_road_tooltip:0 "Start the construction of §YRailway Works§! in every §Yapplicable§! province for 30¤ per province"
@@ -1153,9 +1169,13 @@
   haraz_path:0 "Grôn Tunad"
   desc_haraz_path:0 "§TThose two provinces are linked by an underground tunnel.§!"
   flooded_province:0 "Flooded Province"
-  desc_flooded_province:0 "During the Last Days of the Dwarovar, this province was flooded in an attempt to stop the invading orcs.\n\n§TIn order to fix this province, we will need to repair the §Yirrigation§! once we control the §YAmldihr area§!.§!\n"
+  desc_flooded_province:0 "During the Last Days of the Dwarovar, this province was flooded in an attempt to stop the invading orcs.\n\n§TIn order to fix this province, we will need to repair the §Yirrigation§! once we control the §YAmldihr area§!.§!\n\nTo §GDeactivate§! this §YFlooded Province§!:\n£no£This province and its owner are both §YMossmouth Ogre§! culture."
+  flooded_province_inactive:0 "Flooded Province §g(Inactive)§!"
+  desc_flooded_province_inactive:0 "During the Last Days of the Dwarovar, this province was flooded in an attempt to stop the invading orcs.\n\n§TIn order to fix this province, we will need to repair the §Yirrigation§! once we control the §YAmldihr area§!.§!\n\nTo §GDeactivate§! this §YFlooded Province§!:\n£yes£This province and its owner are both §YMossmouth Ogre§! culture."
   efficient_irrigation:0 "Efficient Irrigation"
-  desc_efficient_irrigation:0 "This province benefits from a highly advanced irrigation system, allowing the production of grain in vast quantities.\n"
+  desc_efficient_irrigation:0 "This province benefits from a highly advanced irrigation system, allowing the production of grain in vast quantities.\n\nEfficient Irrigation is currently §YActive§!:\n£yes£Trade Goods is §YGrain§!"
+  efficient_irrigation_inactive:0 "Efficient Irrigation §g(Inactive)§!"
+  desc_efficient_irrigation_inactive:0 "This province benefits from a highly advanced irrigation system, allowing the production of grain in vast quantities.\n\nEfficient Irrigation is currently §g(Inactive)§!:\n£no£Trade Goods is §YGrain§!"
   dwarovar_granary:0 "Dwarovar Granary"
   desc_dwarovar_granary:0 "This hold is host to the biggest food market of the Dwarovar, dictating crop prices and supply."
   developing_advanced_infrastructure:0 "Upgrading Infrastructure"
@@ -1650,7 +1670,7 @@
   hoard_contract_reform_tooltip:0 "§YIt's a common sight to see workers working long hours for sometimes very little pay. We can't let this happen, and need to reform this§!"
   curtail_reform_tooltip:0 "§YAfter the roots, we shall cut off the Head of this affliction!§!\n\n§GThe more reforms we've already taken, the less this will cost us, and the higher our change of success will be.§!\n"
   all_the_reforms_tooltip:0 "We need to profoundly reform our country!"
-  permanent_reform_tooltip:0 "§TYour choice will have permanent consequences!§!"
+  permanent_reform_tooltip:0 "§TThis will have the following effects once implemented.§!"
 
   hoardcurse_massive_invest:0 "Massive State Investments"
   the_reformist:0 "The Reformist"
@@ -2130,7 +2150,7 @@
   diggy_spawnable.8.d:0 "For centuries the Mithril-Arm Cartel had monopolized the scarce trade of mithril in Silverforge. Any mithril arms and armor that was sold was carefully cataloged with the Cartel's archivists and tracked diligently to make sure as little of the precious metal was lost as possible. Even with their careful bookkeeping, however, with no new mithril flowing from the Serpentspine following the Greentide, the Cartel's economic niche lessened as mithril was lost to the multitudes of conflicts being waged during the 15th century. But while on the one hand the Greentide threatened the end of the Mithril-Arm Cartel's trade altogether, on the other hand it presented an opportunity like no other. Now, the ancient mines of the Dwarovar were abandoned once more and a new chance arose to prospect for new veins of mithril ore, and with new ore they could fire up the old forges and make more of the precious metal themselves.\n\nSo with the last of their money spent on supplies, the Mithril-Arm Cartel set out for the Serpentspine. Along with them they brought the tools they had used to determine the quality and purity of mithril and their well-kept manuals on mithril upkeep. Armed with this knowledge they, with their leader Bertus Mirth-Arm, fought their way into the depths. After a long and arduous expedition they have finally found what they have been looking for: a fresh vein of mithril."
   diggy_spawnable.8.a:0 "Thank the ancestors!"
   diggy_spawnable.9.t:0 "Company of the Grudgebearers"
-  diggy_spawnable.9.d:0 "For most Ancestor Worship dwarves, settling grudges was an important duty. For the Company of the Grudgebearers,righting the wrongs of old was a way of life. Based in Rubyhold, the company operated as justice-for-hire for centuries; reclaiming lost inheritances and burying long dead hatchets - for a tidy sum, of course. \n\nWith the end of Dookanson and his Greentide came a new opportunity, however., A chance to venture back into the Serpentspine and avenge the wrongs perpetrated against Aul-Dwarov. Yet, with so many grudges,  discord soon sprang within the group as of which insult to avenge first. The list was long, with nearly ten thousand years of history buried in the rock and blood of the mountains. From petty criminal disputes to the devastation caused by those who tried to conquer the mountains, each hold was haunted by the ghost of innumerable slights and each new recruit brought with them hand-me-down tales of more. \n\nThis cycle was broken with the arrival of Belgrak Cavedweller. Belgrak, legendary warrior of Corin's Circle, left the normally rowdy halls in silent reverence. Lifting a tankard, he threw his own suggestion into the debates - the holds of the Middle Dwarovar had a unique history. It had been devastated by orcs and goblins but it also held scars from the elves outside of the mountain, their Burned Empress once turning dwarf against dwarf inside their own homes and sacking once resplendent halls beyond recognition in their lust for the wealth of the mountains. With a final slam of the tankard on his table, the band erupted in approval of the scheme and rushed to draw up their plans for the expedition.\n\nFollowing Belgrak, the Company has arrived in the Middle Dwarovar with a list of wrongs on their minds, ready to replay each drop of blood spilled in kind."
+  diggy_spawnable.9.d:0 "For most Ancestor Worship dwarves, settling grudges was an important duty. For the Company of the Grudgebearers, righting the wrongs of old was a way of life. Based in Rubyhold, the company operated as justice-for-hire for centuries; reclaiming lost inheritances and burying long dead hatchets - for a tidy sum, of course. \n\nWith the end of Dookanson and his Greentide came a new opportunity, however., A chance to venture back into the Serpentspine and avenge the wrongs perpetrated against Aul-Dwarov. Yet, with so many grudges,  discord soon sprang within the group as of which insult to avenge first. The list was long, with nearly ten thousand years of history buried in the rock and blood of the mountains. From petty criminal disputes to the devastation caused by those who tried to conquer the mountains, each hold was haunted by the ghost of innumerable slights and each new recruit brought with them hand-me-down tales of more. \n\nThis cycle was broken with the arrival of Belgrak Cavedweller. Belgrak, legendary warrior of Corin's Circle, left the normally rowdy halls in silent reverence. Lifting a tankard, he threw his own suggestion into the debates - the holds of the Middle Dwarovar had a unique history. It had been devastated by orcs and goblins but it also held scars from the elves outside of the mountain, their Burned Empress once turning dwarf against dwarf inside their own homes and sacking once resplendent halls beyond recognition in their lust for the wealth of the mountains. With a final slam of the tankard on his table, the band erupted in approval of the scheme and rushed to draw up their plans for the expedition.\n\nFollowing Belgrak, the Company has arrived in the Middle Dwarovar with a list of wrongs on their minds, ready to replay each drop of blood spilled in kind."
   diggy_spawnable.9.a:0 "Time to settle some grudges"
   diggy_spawnable.10.t:0 "The Flip Of A Coin"
   diggy_spawnable.10.d:0 "When Began Stormhammer was a child, his grandfather gave him a coin. It was an unassuming thing, its only defining feature being its antiquity. His grandfather's father had, apparently, made it himself, carving the face of some ancient, barely-remembered Dwarovic monarch onto one side of the copper. Once, perhaps, it had been perfectly weighted. Now, as Began idly flipped it as he gazed over the Sea of Echoes, it seemed to favour the carved edge.\n\nOvdal Tûngr was hardly the worst place to live. Though the sea air disagreed with him about as much as the boats themselves, dwarven culture still held strong. He had grown up here, and had a home for himself, taking whatever work he could find that didn't involve stepping foot onto one of those infernal ships. He'd sold fish. He'd worked to deepen the hold. He'd carried huge planks of timber down to the drydocks. When he was a boy, his mother had joked that he'd been born without sea legs. Life was calm. Peaceful.\n\nSomething unpleasant burned in his chest. Something familiar, and not. Something the sea hadn't been able to quell.\n\nShazstundihr was tauntingly close. On clear days, if he climbed the Gulangor mountains high enough to see between their peaks, the summits of the Serpentreach were visible. Even now, decades after his predecessors fled from those ancient halls, Began could feel something inexplicably drawing him back towards them. He flipped the coin once more, eyeing the face in his palm as it gazed back imperiously. When he was a child, it had been a pleasant, burnished orange. Now, in the salty, damp air of Ovdal Tûngr, it had turned a strange blueish-green.\n\nPerhaps, if Began was wholly made of copper, he'd have been able to change like his coin. Unfortunately for the squatters that remained in the Serpentreach, his blood was mixed with the colour of marble."
@@ -2213,6 +2233,7 @@
 
   ############Adventurer Mission Tree#########################
   ally_remnant_tooltip:0 "We need to be allied with a Dwarven Remnant."
+  ally_remnant_effect_tooltip:0 "We'll gain trust with the Dwarven Remnant ally."
   dadv_fungal_farm_tooltip:0 "4 random fungi or serpentbloom producing provinces will each gain +1 base production and manpower."
   dadv_childrens_of_the_dwarovar_tooltip:0 "§TThis modifier will increase our passive digging speed by 15%.§!"
   dadv_digging_expert_tooltip:0 "§TThis modifier will increase the digging speed of our Capital Hold by 10%.§!"
@@ -2558,6 +2579,9 @@
 
   remnant_stagnation_disaster:0 "Remnant Stagnation"
   remnant_stagnation_disaster_tooltip:0 "We must break off from these millenia of stagnation!"
+  
+  runefather_conversion_tt:0 "§TThis will lead us to converting to the Runefather Worship religion.§!"
+  runefather_conversion_decision_tt:0 "§TEnables the Embrace Runefather's Will Decision.§!"
 
   #decisions
   remnant_awaken_title:0 "Remnant Awakening"

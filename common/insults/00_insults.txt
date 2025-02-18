@@ -475,7 +475,7 @@ insult_tall_small_1 = {
 			NOT = { primary_culture = horned_ogre }
 		}
 		OR = {
-			culture_group = halfling
+			culture_is_halfling = yes
 			culture_group = kobold
 			culture_group = goblin
 			culture_group = gnomish
@@ -494,7 +494,7 @@ insult_tall_small_2 = {
 			NOT = { primary_culture = horned_ogre }
 		}
 		OR = {
-			culture_group = halfling
+			culture_is_halfling = yes
 			culture_group = kobold
 			culture_group = goblin
 			culture_group = gnomish
@@ -513,7 +513,7 @@ insult_tall_small_3 = {
 			NOT = { primary_culture = horned_ogre }
 		}
 		OR = {
-			culture_group = halfling
+			culture_is_halfling = yes
 			culture_group = kobold
 			culture_group = goblin
 			culture_group = gnomish
@@ -783,6 +783,16 @@ insult_wex_damerian = {
 				dynasty = "Silistra"
 			}
 		}
+	}
+}
+
+insult_against_wex = {
+	trigger = {
+		FROM = {
+			has_country_flag = lilac_wars_moon_party
+		}
+		tag = A30
+		is_emperor = yes
 	}
 }
 
@@ -1073,7 +1083,7 @@ insult_halflings = {
 		NOT = {
 			FROM = {
 				OR = {
-					culture_group = halfling
+					culture_is_halfling = yes
 					culture_group = kobold
 					culture_group = goblin
 					culture_group = gnomish
@@ -1238,14 +1248,14 @@ insult_xiaken_1 = {
 insult_goldbolds = {
 	trigger = {
 		primary_culture = goldscale_kobold
-		FROM = { NOT = { religion = righteous_path } }
+		FROM = { NOT = { religion = accretive_path } }
 	}
 }
 
 insult_eunuchs_rp = {
 	trigger = {
 		has_reform = eunuch_republic
-		FROM = { religion = righteous_path }
+		FROM = { religion = accretive_path }
 	}
 }
 
@@ -1257,7 +1267,7 @@ insult_from_verkal_dromak = {
 
 insult_not_oni = {
 	trigger = {
-		FROM = { religion = righteous_path }
+		FROM = { OR = { religion = accretive_path religion = transmutative_path } }
 		OR = {
 			capital_scope = { region = bomdan_region }
 			capital_scope = { region = lupulan_rainforest_region }
@@ -1458,7 +1468,7 @@ insult_horashesh = {
 			tag = L06
 			tag = L09
 			tag = L12
-		 } 
+		} 
 	}
 }
 
@@ -1468,6 +1478,17 @@ insulting_the_vyzemby ={
 		culture_group = irsukuba
 		FROM = { 
 			is_vyzemby_culture = yes
-		 } 
+		} 
+	}
+}
+
+insult_from_nekheis = {
+	trigger = {
+		FROM = {
+			culture_group = kheionai_ruinborn_elf
+			NOT = { capital_scope = { region = alecand_region } }
+		}
+		NOT = { culture_group = kheionai_ruinborn_elf }
+		NOT = { culture = eltibhar }
 	}
 }

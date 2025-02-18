@@ -37,7 +37,9 @@
  cb_escanni_wars_of_consolidation:0 "War of Consolidation"
  cb_escanni_wars_of_consolidation_desc:0 "It is is time to unify Escann under one power like the days of Ancient Castanor."
  superiority_escanni_wars_of_consolidation_desc:0 "War goal is to show them superiority by winning battles."
- 
+
+ linebreak_tt:0 "\n"
+
  DEIODERAN_WAR_NAME:0 "The $ORDER$Deioderan"
  cb_deioderan:0 "Deioderan"
  cb_deioderan_desc:0 "We are supposed to be one nation under Surael, but they are straying from the path of light and we must drag them back at all costs."
@@ -54,6 +56,9 @@
  REV_COMMAND_STRING_ADJ:0 "Hobgoblin"
  REV_ANBENNAR_STRING:0 "Revolutionary Anbennar"
  REV_ANBENNAR_STRING_ADJ:0 "Anbennarian"
+
+ black_damestear:0 "Black Damestear"
+ desc_black_damestear:0 "Korashi, what would later become known as Black Damestear, is a creation by the Oni of the Demon Hills. Unlike regular damestear, which empowers magic, black damestear greedily consumes it, negating all magic it encounters. The material and its properties would be foundational to the Blackpowder Revolution of the 18th century with the creation of black damestear bullets."
  
  exodus_goblin_invasion:0 "The Goblin Exodus"
  anbennar_setup.17.t:0 "The Exodus Goblin Invasion"
@@ -80,6 +85,7 @@
  flavor_aramari_temple.1.a:0 "Your tithe, if you please."
  flavor_aramari_temple.1.b:0 "No thanks."
  
+ mage_rebels_title: "Furious Mages"
  mage_rebels_name: "Furious Mages"
  mage_rebels_army: "Band of Mages"
  mage_rebels_demands: "Wreak Havoc"
@@ -150,7 +156,7 @@
  anb_mr_traders_influence:0 "Boosting Traders"
  anb_mr_guilds_influence:0 "Boosting Guilds"
  anb_rr_jacobins_influence:0 "Boosting Jacobins"
- anb_rr_royalists:0 "Boosting Royalists"
+ anb_rr_royalists_influence:0 "Boosting Royalists"
  anb_rr_girondists_influence:0 "Boosting Girondists"
  anb_pr_buccaneers_influence:0 "Boosting Buccaneers"
  anb_pr_smugglers_influence:0 "Boosting Smugglers"
@@ -232,6 +238,12 @@
  anb_miscevents.19.ay:0 "Back"
  has_faction_menu_open_tt:0 "Faction boost has not been used in the past 5 years."
  has_faction_menu_open_2_years_tt:0 "Faction boost has not been used in the past 2 years."
+
+ holds_castanor_legacy_tooltip:0 "Part of Castanorian Legacy"
+ corintar_gwindeth_camllann_troops:0 "Wood Elven Glaive Training"
+ corintar_gwindeth_camllann_troops_desc:0 "With decades of experience and a bit too much passion for glaive fighting, the Wood Elf Gwindeth Camllann has taught our troops to be that much more deadily."
+ corintar_gwindeth_camllann_leader:0 "Tip of the Glaive"
+ corintar_gwindeth_camllann_leader_desc:0 "Amongst the first to join the melee, the Wood Elf Gwindeth Camllann has made our commanders that much more bolder."
  
  FlagA00:0 "£A00£"
  FlagA01:0 "£A01£"

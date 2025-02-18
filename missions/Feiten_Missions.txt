@@ -1515,7 +1515,7 @@ feiten_missions_2_last = {
 			province_id = 4861
 			NOT = {
 				AND = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 					has_building = university
 					has_building = cathedral
 					development = 40
@@ -1542,7 +1542,7 @@ feiten_missions_2_last = {
 			}
 			OR = {
 				4861 = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 					has_building = university
 					has_building = cathedral
 					development = 40
@@ -3319,8 +3319,28 @@ feiten_missions_4_established = {
 		trigger = {
 			if = {
 				limit = { has_dlc = "Rule Britannia" }
-				innovativeness = 33
+				innovativeness = 10
+				OR = {
+					innovativeness = 30
+					AND = {
+						innovativeness = 20
+						adm_power = 100
+						dip_power = 100
+						mil_power = 100
+					}
+					AND = {
+						adm_power = 200
+						dip_power = 200
+						mil_power = 200
+					}
+				}
 			}
+			else = {
+				adm_power = 50
+				dip_power = 50
+				mil_power = 50
+			}
+
 			if = {
 				limit = { Y24 = { is_subject_of = event_target:feiten_or_was_feiten_target } }
 				custom_trigger_tooltip = { tooltip = feiten_house_of_fire_and_water_trigger_tt_1 }
@@ -3361,6 +3381,32 @@ feiten_missions_4_established = {
 				}
 			}
 			mission_reward_artifice_points_3 = yes
+			if = {
+				limit = { has_dlc = "Rule Britannia" }
+				complex_dynamic_effect = {
+					first_custom_tooltip = feiten_house_of_fire_and_water_innovativeness_tt_1
+					first_limit = "innovativeness = 30"
+					first_effect = "change_innovativeness = 3 "
+					second_custom_tooltip = feiten_house_of_fire_and_water_innovativeness_tt_2
+					second_limit = "innovativeness = 20"
+					second_effect = "add_adm_power = -100
+						add_dip_power = -100
+						add_mil_power = -100
+						change_innovativeness = 1
+					"
+					third_custom_tooltip = feiten_house_of_fire_and_water_innovativeness_tt_3
+					third_limit = "innovativeness = 10"
+					third_effect = "add_adm_power = -200
+						add_dip_power = -200
+						add_mil_power = -200
+					"
+				}
+			}
+			else = {
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
+			}
 		}
 	}
 	
@@ -3839,9 +3885,24 @@ feiten_missions_4_last = {
 		}
 		
 		trigger = {
-			4881 = {
-				has_building = furnace
-				has_building = counting_house
+			if = {
+				limit = {
+					NOT = { has_country_flag = feiten_coal_misison_changed }
+				}
+				4881 = {
+					has_building = furnace
+					has_building = counting_house
+				}
+			}
+			else = {
+				treasury = 10000
+				adm_power = 100
+				4881 = {
+					base_production = 20
+					has_production_building_trigger = yes
+					has_manufactory_trigger = yes
+					infantry_in_province = 20
+				}
 			}
 		}
 		
@@ -3861,6 +3922,13 @@ feiten_missions_4_last = {
 						name = feiten_industrialized_prov
 						duration = 7300
 					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = feiten_coal_misison_changed }
+				country_event = {
+					id = flavor_feiten.311
+					days = 1
 				}
 			}
 		}

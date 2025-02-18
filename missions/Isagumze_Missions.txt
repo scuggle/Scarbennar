@@ -107,7 +107,7 @@ isagumze_missions_2 = {
 	potential = { tag = L03 }
 
 	L03_isagumze_restarting_the_sacred_war = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		required_missions = {}
 		position = 1
 		
@@ -691,8 +691,8 @@ isagumze_missions_5 = {
 			}
 			has_dip_advisor_2 = yes
 			num_of_owned_provinces_with = {
-						value = 20
-						region = throden_gokad_region
+				value = 20
+				region = throden_gokad_region
 			}
 		}
 
@@ -754,9 +754,9 @@ isagumze_missions_5 = {
 		
 		trigger = {
 			num_of_owned_provinces_with = {
-						value = 20
-						region = throden_gokad_region
-						has_owner_religion = yes
+				value = 20
+				region = throden_gokad_region
+				has_owner_religion = yes
 			}
 			num_of_active_blessings = 2
 			ruler_religion = noukahi_pantheon	
@@ -1298,9 +1298,7 @@ isagumze_missions_3b = {
 		}		
 
 		effect = {
-			katala_raz_region = { add_permanent_claim = ROOT }
-			odu_kherass_region = { add_permanent_claim = ROOT }
-			throden_gokad_region = { add_permanent_claim = ROOT }
+			taneyas_superregion = { add_permanent_claim = ROOT }
 			add_country_modifier = {
 				name = L03_terror_in_the_jungle
 				duration = -1
@@ -1454,45 +1452,22 @@ isagumze_missions_3b = {
 		position = 11
 		
 		provinces_to_highlight = {	
-			OR = {
-				AND = {
-					region = katala_raz_region
-					NOT = { country_or_non_sovereign_subject_holds = ROOT } 
-				}
-				AND = {
-					region = odu_kherass_region
-					NOT = { country_or_non_sovereign_subject_holds = ROOT } 
-				}
-				AND = {
-					region = throden_gokad_region
-					NOT = { country_or_non_sovereign_subject_holds = ROOT } 
-				}
-			}
+			superregion = taneyas_superregion
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 
 		trigger = {
-			NOT = { great_power_rank = 2 }
-			katala_raz_region = {
+			OR = {
+				NOT = { great_power_rank = 2 }
+				is_hegemon = yes
+			}	
+			taneyas_superregion = {
 				type = all
 				OR = { 
 					country_or_non_sovereign_subject_holds = ROOT 
 					is_city = no
-				}
+				}	
 			}
-			odu_kherass_region = {
-				type = all
-				OR = { 
-					country_or_non_sovereign_subject_holds = ROOT 
-					is_city = no
-				}
-			}
-			throden_gokad_region = {
-				type = all
-				OR = { 
-					country_or_non_sovereign_subject_holds = ROOT 
-					is_city = no
-				}
-			}		
 		}
 		effect = {
 			country_event = { id = flavour_isagumze.14 }
@@ -1862,11 +1837,7 @@ isagumze_missions_5b = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 50
-				OR = {
-					region = throden_gokad_region
-					region = odu_kherass_region
-					region = katala_raz_region
-				}	
+				superregion = taneyas_superregion
 				has_owner_religion = yes
 			}
 			OR = {

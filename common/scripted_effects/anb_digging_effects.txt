@@ -1031,11 +1031,18 @@ define_hold_to_clear = {
 		set_province_flag = infested_@ROOT
 		save_event_target_as = infested3
 	}
-	random_owned_province = {
-		limit = { has_province_modifier = infested_hold is_city = yes NOT = { has_province_flag = infested_@ROOT } }
-		set_province_flag = option_infested_4_@ROOT
-		set_province_flag = infested_@ROOT
-		save_event_target_as = infested4
+	random_subject_country = {
+		limit = {
+			has_country_flag = owns_hold_province
+			any_owned_province = { has_province_modifier = infested_hold is_city = yes }
+		}
+		set_country_flag = infested_subject
+		random_owned_province = {
+			limit = { has_province_modifier = infested_hold is_city = yes NOT = { has_province_flag = infested_@ROOT } }
+			set_province_flag = option_infested_4_@ROOT
+			set_province_flag = infested_@ROOT
+			save_event_target_as = infested4
+		}
 	}
 }
 infested_hold_clearing = {
@@ -1061,7 +1068,30 @@ infested_hold_clearing = {
 				clr_province_flag = option_infested_3_@ROOT
 				clr_province_flag = option_infested_4_@ROOT
 			}
+			every_subject_country = {
+				limit = { has_country_flag = infested_subject }
+				clr_country_flag = infested_subject
+				every_owned_province = {
+					limit = { has_province_flag = infested_@ROOT }
+					clr_province_flag = infested_@ROOT
+					clr_province_flag = option_infested_4_@ROOT
+				}
+			}
 			clr_country_flag = open_infested_hold_menu
+			if = {
+				limit = { is_subject = yes }
+				clr_country_flag = infested_subject
+				overlord = {
+					every_owned_province = {
+						limit = { has_province_flag = infested_@ROOT }
+						clr_province_flag = infested_@ROOT
+						clr_province_flag = option_infested_1_@ROOT
+						clr_province_flag = option_infested_2_@ROOT
+						clr_province_flag = option_infested_3_@ROOT
+					}
+					clr_country_flag = open_infested_hold_menu
+				}
+			}
 		}
 	}
 }
@@ -2448,13 +2478,16 @@ clr_hold_advanced_infrastructure = {
 }
 
 downgrade_improved_infrastructure = {
-	trigger_switch = {
-		on_trigger = has_province_modifier	
-		hold_artisan_2 = { remove_province_modifier = hold_artisan_2 add_province_modifier = { name = hold_artisan duration = -1 } }  
-		hold_city_2 = { remove_province_modifier = hold_city_2 add_province_modifier = { name = hold_city duration = -1 } }
-		hold_farm_2 = { remove_province_modifier = hold_farm_2 add_province_modifier = { name = hold_farm duration = -1 } }
-		hold_military_2 = { remove_province_modifier = hold_military_2 add_province_modifier = { name = hold_military duration = -1 } }
-		hold_foundry_2 = { remove_province_modifier = hold_foundry_2 add_province_modifier = { name = hold_foundry duration = -1 } }
+	custom_tooltip = downgrade_improved_infrastructure_tt
+	hidden_effect = {
+		trigger_switch = {
+			on_trigger = has_province_modifier	
+			hold_artisan_2 = { remove_province_modifier = hold_artisan_2 add_province_modifier = { name = hold_artisan duration = -1 } }  
+			hold_city_2 = { remove_province_modifier = hold_city_2 add_province_modifier = { name = hold_city duration = -1 } }
+			hold_farm_2 = { remove_province_modifier = hold_farm_2 add_province_modifier = { name = hold_farm duration = -1 } }
+			hold_military_2 = { remove_province_modifier = hold_military_2 add_province_modifier = { name = hold_military duration = -1 } }
+			hold_foundry_2 = { remove_province_modifier = hold_foundry_2 add_province_modifier = { name = hold_foundry duration = -1 } }
+		}
 	}
 	hidden_effect = { clr_province_flag = upgraded_hold }
 }
@@ -3212,6 +3245,19 @@ generate_expedition = {
 				limit = { has_province_flag = vazhatun_expedition_flag }
 				set_variable = { nbFloor = 4 }
 				set_variable = { danger_level = 5 }
+			}
+
+			#Masked Butcher MT
+			if = {
+				limit = { 
+					has_province_flag = mb_vampire_expedition_flag
+				}
+				set_variable = { 
+					nbFloor = 3 
+				}
+				set_variable = { 
+					danger_level = 4 
+				}
 			}
 
 			# Loot Estimate
@@ -4656,6 +4702,34 @@ special_reward_expedition = {
 		limit = { has_province_flag = vazhatun_expedition_flag }
 		owner = { country_event = { id = flavor_vazhatun.8 } }
 	}
+
+	#Masked Butcher MT
+	if = {
+		limit = { 
+			has_province_flag = mb_vampire_expedition_flag
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						tag = H81
+						was_tag = H81
+					}
+				}
+			}
+			owner = {
+				country_event = {
+					id = flavour_maskedbutcher.1
+				}
+			}	
+		}
+		else = {
+			province_event = {
+				id = flavour_maskedbutcher.150
+				days = 1825
+			}
+		}	
+	}
 	
 }
 currency_effect_expedition = { #currency (#takeFrom) #addTo #which/value
@@ -5730,6 +5804,7 @@ dwarven_pantheon_argezenna_purge_effect = {
 		if = {
 			limit = { 
 				OR = {
+					has_province_modifier = hobgoblin_majority_oppressed
 					has_province_modifier = orcish_majority_oppressed
 					has_province_modifier = goblin_majority_oppressed
 					has_province_modifier = ogre_majority_oppressed
@@ -5739,6 +5814,7 @@ dwarven_pantheon_argezenna_purge_effect = {
 			}
 
 			# remove majority first so no minorities
+			remove_racial_majority = { race = hobgoblin }
 			remove_racial_majority = { race = orcish }
 			remove_racial_majority = { race = goblin }
 			remove_racial_majority = { race = ogre }
@@ -5756,6 +5832,7 @@ dwarven_pantheon_argezenna_purge_effect = {
 			add_permanent_province_modifier = { name = purge_unrest_modifier duration = 9125 }
 		}
 		else = {
+			remove_racial_minority_any_size_with_tolerance = { race = hobgoblin tolerance = oppressed }
 			remove_racial_minority_any_size_with_tolerance = { race = orcish tolerance = oppressed }
 			remove_racial_minority_any_size_with_tolerance = { race = goblin tolerance = oppressed }
 			remove_racial_minority_any_size_with_tolerance = { race = ogre tolerance = oppressed }
@@ -6292,6 +6369,12 @@ blorc_begin_plundering = {
 			}
 		}
 		add_province_modifier = { name = blorc_plunder_camp duration = -1 }
+		if = {
+			limit = {
+				has_province_modifier = blorc_war_camp
+			}
+			remove_province_modifier = blorc_war_camp
+		}
 	}
 	else = { add_province_modifier = { name = blorc_war_camp duration = -1 } }
 }
@@ -6621,7 +6704,7 @@ add_blorc_war_camp = {
 
 
 
-shadowhammer_allegience_increase_scripted_effect = {
+shadowhammer_allegiance_increase_scripted_effect = {
 	custom_tooltip = shadowhammer_order_upgrade_tt
     hidden_effect = {
         if = {
@@ -6640,7 +6723,7 @@ shadowhammer_allegience_increase_scripted_effect = {
                         }
                     }
                     change_variable = {
-                        which = ClanShadowhammerAllegienceVar
+                        which = ClanShadowhammerAllegianceVar
                         value = 4
                     }
                 }
@@ -6652,7 +6735,7 @@ shadowhammer_allegience_increase_scripted_effect = {
                         }
                     }
                     change_variable = {
-                        which = RunefatherAllegienceVar
+                        which = RunefatherAllegianceVar
                         value = 4
                     }
                 }
@@ -6673,7 +6756,7 @@ shadowhammer_allegience_increase_scripted_effect = {
                         }
                     }
                     change_variable = {
-                        which = ClanShadowhammerAllegienceVar
+                        which = ClanShadowhammerAllegianceVar
                         value = 3
                     }
                 }
@@ -6685,7 +6768,7 @@ shadowhammer_allegience_increase_scripted_effect = {
                         }
                     }
                     change_variable = {
-                        which = RunefatherAllegienceVar
+                        which = RunefatherAllegianceVar
                         value = 3
                     }
                 }
@@ -6706,7 +6789,7 @@ shadowhammer_allegience_increase_scripted_effect = {
                         }
                     }
                     change_variable = {
-                        which = ClanShadowhammerAllegienceVar
+                        which = ClanShadowhammerAllegianceVar
                         value = 2
                     }
                 }
@@ -6718,7 +6801,7 @@ shadowhammer_allegience_increase_scripted_effect = {
                         }
                     }
                     change_variable = {
-                        which = RunefatherAllegienceVar
+                        which = RunefatherAllegianceVar
                         value = 2
                     }
                 }
@@ -6736,7 +6819,7 @@ shadowhammer_allegience_increase_scripted_effect = {
                         }
                     }
                     change_variable = {
-                        which = ClanShadowhammerAllegienceVar
+                        which = ClanShadowhammerAllegianceVar
                         value = 1
                     }
                 }
@@ -6748,16 +6831,16 @@ shadowhammer_allegience_increase_scripted_effect = {
                         }
                     }
                     change_variable = {
-                        which = RunefatherAllegienceVar
+                        which = RunefatherAllegianceVar
                         value = 1
                     }
                 }
             }
         }
-		owner = { country_event = { id = runefather_worship.2 } }
+		owner = { update_runefather_allegiance_scripted_effect = yes }
 	}
 }
-shadowhammer_allegience_decrease_scripted_effect = {
+shadowhammer_allegiance_decrease_scripted_effect = {
 	if = {
 		limit = {
 			trade_goods = mithril
@@ -6774,7 +6857,7 @@ shadowhammer_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = ClanShadowhammerAllegienceVar
+					which = ClanShadowhammerAllegianceVar
 					value = -4
 				}
 			}
@@ -6786,7 +6869,7 @@ shadowhammer_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -4
 				}
 			}
@@ -6807,7 +6890,7 @@ shadowhammer_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = ClanShadowhammerAllegienceVar
+					which = ClanShadowhammerAllegianceVar
 					value = -3
 				}
 			}
@@ -6819,7 +6902,7 @@ shadowhammer_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -3
 				}
 			}
@@ -6840,7 +6923,7 @@ shadowhammer_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = ClanShadowhammerAllegienceVar
+					which = ClanShadowhammerAllegianceVar
 					value = -2
 				}
 			}
@@ -6852,7 +6935,7 @@ shadowhammer_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -2
 				}
 			}
@@ -6870,7 +6953,7 @@ shadowhammer_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = ClanShadowhammerAllegienceVar
+					which = ClanShadowhammerAllegianceVar
 					value = -1
 				}
 			}
@@ -6882,15 +6965,15 @@ shadowhammer_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -1
 				}
 			}
 		}
 	}
-	owner = { country_event = { id = runefather_worship.2 } }
+	owner = { update_runefather_allegiance_scripted_effect = yes }
 }
-darkstone_allegience_increase_scripted_effect = {
+darkstone_allegiance_increase_scripted_effect = {
 	custom_tooltip = darkstone_order_upgrade_tt
 	hidden_effect = {
 		if = {
@@ -6909,7 +6992,7 @@ darkstone_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = ClanDarkstoneAllegienceVar
+						which = ClanDarkstoneAllegianceVar
 						value = 4
 					}
 				}
@@ -6921,7 +7004,7 @@ darkstone_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 4
 					}
 				}
@@ -6942,7 +7025,7 @@ darkstone_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = ClanDarkstoneAllegienceVar
+						which = ClanDarkstoneAllegianceVar
 						value = 3
 					}
 				}
@@ -6954,7 +7037,7 @@ darkstone_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 3
 					}
 				}
@@ -6975,7 +7058,7 @@ darkstone_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = ClanDarkstoneAllegienceVar
+						which = ClanDarkstoneAllegianceVar
 						value = 2
 					}
 				}
@@ -6987,7 +7070,7 @@ darkstone_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 2
 					}
 				}
@@ -7005,7 +7088,7 @@ darkstone_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = ClanDarkstoneAllegienceVar
+						which = ClanDarkstoneAllegianceVar
 						value = 1
 					}
 				}
@@ -7017,16 +7100,16 @@ darkstone_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 1
 					}
 				}
 			}
 		}
-		owner = { country_event = { id = runefather_worship.2 } }
+		owner = { update_runefather_allegiance_scripted_effect = yes }
 	}
 }
-darkstone_allegience_decrease_scripted_effect = {
+darkstone_allegiance_decrease_scripted_effect = {
 	if = {
 		limit = {
 			trade_goods = mithril
@@ -7043,7 +7126,7 @@ darkstone_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = ClanDarkstoneAllegienceVar
+					which = ClanDarkstoneAllegianceVar
 					value = -4
 				}
 			}
@@ -7055,7 +7138,7 @@ darkstone_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -4
 				}
 			}
@@ -7076,7 +7159,7 @@ darkstone_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = ClanDarkstoneAllegienceVar
+					which = ClanDarkstoneAllegianceVar
 					value = -3
 				}
 			}
@@ -7088,7 +7171,7 @@ darkstone_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -3
 				}
 			}
@@ -7109,7 +7192,7 @@ darkstone_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = ClanDarkstoneAllegienceVar
+					which = ClanDarkstoneAllegianceVar
 					value = -2
 				}
 			}
@@ -7121,7 +7204,7 @@ darkstone_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -2
 				}
 			}
@@ -7139,7 +7222,7 @@ darkstone_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = ClanDarkstoneAllegienceVar
+					which = ClanDarkstoneAllegianceVar
 					value = -1
 				}
 			}
@@ -7151,15 +7234,15 @@ darkstone_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -1
 				}
 			}
 		}
 	}
-	owner = { country_event = { id = runefather_worship.2 } }
+	owner = { update_runefather_allegiance_scripted_effect = yes }
 }
-groedi_az_an_allegience_increase_scripted_effect = {
+groedi_az_an_allegiance_increase_scripted_effect = {
 	custom_tooltip = groedi_az_an_order_upgrade_tt
 	hidden_effect = {
 		if = {
@@ -7178,7 +7261,7 @@ groedi_az_an_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = GroediAzAnAllegienceVar
+						which = GroediAzAnAllegianceVar
 						value = 4
 					}
 				}
@@ -7190,7 +7273,7 @@ groedi_az_an_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 4
 					}
 				}
@@ -7211,7 +7294,7 @@ groedi_az_an_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = GroediAzAnAllegienceVar
+						which = GroediAzAnAllegianceVar
 						value = 3
 					}
 				}
@@ -7223,7 +7306,7 @@ groedi_az_an_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 3
 					}
 				}
@@ -7244,7 +7327,7 @@ groedi_az_an_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = GroediAzAnAllegienceVar
+						which = GroediAzAnAllegianceVar
 						value = 2
 					}
 				}
@@ -7256,7 +7339,7 @@ groedi_az_an_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 2
 					}
 				}
@@ -7274,7 +7357,7 @@ groedi_az_an_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = GroediAzAnAllegienceVar
+						which = GroediAzAnAllegianceVar
 						value = 1
 					}
 				}
@@ -7286,16 +7369,16 @@ groedi_az_an_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 1
 					}
 				}
 			}
 		}
-		owner = { country_event = { id = runefather_worship.2 } }
+		owner = { update_runefather_allegiance_scripted_effect = yes }
 	}
 }
-groedi_az_an_allegience_decrease_scripted_effect = {
+groedi_az_an_allegiance_decrease_scripted_effect = {
 	if = {
 		limit = {
 			trade_goods = mithril
@@ -7312,7 +7395,7 @@ groedi_az_an_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = GroediAzAnAllegienceVar
+					which = GroediAzAnAllegianceVar
 					value = -4
 				}
 			}
@@ -7324,7 +7407,7 @@ groedi_az_an_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -4
 				}
 			}
@@ -7345,7 +7428,7 @@ groedi_az_an_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = GroediAzAnAllegienceVar
+					which = GroediAzAnAllegianceVar
 					value = -3
 				}
 			}
@@ -7357,7 +7440,7 @@ groedi_az_an_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -3
 				}
 			}
@@ -7378,7 +7461,7 @@ groedi_az_an_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = GroediAzAnAllegienceVar
+					which = GroediAzAnAllegianceVar
 					value = -2
 				}
 			}
@@ -7390,7 +7473,7 @@ groedi_az_an_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -2
 				}
 			}
@@ -7408,7 +7491,7 @@ groedi_az_an_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = GroediAzAnAllegienceVar
+					which = GroediAzAnAllegianceVar
 					value = -1
 				}
 			}
@@ -7420,15 +7503,15 @@ groedi_az_an_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -1
 				}
 			}
 		}
 	}
-	owner = { country_event = { id = runefather_worship.2 } }
+	owner = { update_runefather_allegiance_scripted_effect = yes }
 }
-amlruzskappa_allegience_increase_scripted_effect = {
+amlruzskappa_allegiance_increase_scripted_effect = {
 	custom_tooltip = amlruzskappa_order_upgrade_tt
 	hidden_effect = {
 		if = {
@@ -7447,7 +7530,7 @@ amlruzskappa_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = AmlruzskappaAllegienceVar
+						which = AmlruzskappaAllegianceVar
 						value = 4
 					}
 				}
@@ -7459,7 +7542,7 @@ amlruzskappa_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 4
 					}
 				}
@@ -7480,7 +7563,7 @@ amlruzskappa_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = AmlruzskappaAllegienceVar
+						which = AmlruzskappaAllegianceVar
 						value = 3
 					}
 				}
@@ -7492,7 +7575,7 @@ amlruzskappa_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 3
 					}
 				}
@@ -7513,7 +7596,7 @@ amlruzskappa_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = AmlruzskappaAllegienceVar
+						which = AmlruzskappaAllegianceVar
 						value = 2
 					}
 				}
@@ -7525,7 +7608,7 @@ amlruzskappa_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 2
 					}
 				}
@@ -7543,7 +7626,7 @@ amlruzskappa_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = AmlruzskappaAllegienceVar
+						which = AmlruzskappaAllegianceVar
 						value = 1
 					}
 				}
@@ -7555,16 +7638,16 @@ amlruzskappa_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 1
 					}
 				}
 			}
 		}
-		owner = { country_event = { id = runefather_worship.2 } }
+		owner = { update_runefather_allegiance_scripted_effect = yes }
 	}
 }
-amlruzskappa_allegience_decrease_scripted_effect = {
+amlruzskappa_allegiance_decrease_scripted_effect = {
 	if = {
 		limit = {
 			trade_goods = mithril
@@ -7581,7 +7664,7 @@ amlruzskappa_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = AmlruzskappaAllegienceVar
+					which = AmlruzskappaAllegianceVar
 					value = -4
 				}
 			}
@@ -7593,7 +7676,7 @@ amlruzskappa_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -4
 				}
 			}
@@ -7614,7 +7697,7 @@ amlruzskappa_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = AmlruzskappaAllegienceVar
+					which = AmlruzskappaAllegianceVar
 					value = -3
 				}
 			}
@@ -7626,7 +7709,7 @@ amlruzskappa_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -3
 				}
 			}
@@ -7647,7 +7730,7 @@ amlruzskappa_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = AmlruzskappaAllegienceVar
+					which = AmlruzskappaAllegianceVar
 					value = -2
 				}
 			}
@@ -7659,7 +7742,7 @@ amlruzskappa_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -2
 				}
 			}
@@ -7677,7 +7760,7 @@ amlruzskappa_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = AmlruzskappaAllegienceVar
+					which = AmlruzskappaAllegianceVar
 					value = -1
 				}
 			}
@@ -7689,15 +7772,15 @@ amlruzskappa_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -1
 				}
 			}
 		}
 	}
-	owner = { country_event = { id = runefather_worship.2 } }
+	owner = { update_runefather_allegiance_scripted_effect = yes }
 }
-furdanhund_allegience_increase_scripted_effect = {
+furdanhund_allegiance_increase_scripted_effect = {
 	custom_tooltip = furdanhund_order_upgrade_tt
 	hidden_effect = {
 		if = {
@@ -7716,7 +7799,7 @@ furdanhund_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = FurdanhundAllegienceVar
+						which = FurdanhundAllegianceVar
 						value = 4
 					}
 				}
@@ -7728,7 +7811,7 @@ furdanhund_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 4
 					}
 				}
@@ -7749,7 +7832,7 @@ furdanhund_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = FurdanhundAllegienceVar
+						which = FurdanhundAllegianceVar
 						value = 3
 					}
 				}
@@ -7761,7 +7844,7 @@ furdanhund_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 3
 					}
 				}
@@ -7782,7 +7865,7 @@ furdanhund_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = FurdanhundAllegienceVar
+						which = FurdanhundAllegianceVar
 						value = 2
 					}
 				}
@@ -7794,7 +7877,7 @@ furdanhund_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 2
 					}
 				}
@@ -7812,7 +7895,7 @@ furdanhund_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = FurdanhundAllegienceVar
+						which = FurdanhundAllegianceVar
 						value = 1
 					}
 				}
@@ -7824,16 +7907,16 @@ furdanhund_allegience_increase_scripted_effect = {
 						}
 					}
 					change_variable = {
-						which = RunefatherAllegienceVar
+						which = RunefatherAllegianceVar
 						value = 1
 					}
 				}
 			}
 		}
-		owner = { country_event = { id = runefather_worship.2 } }
+		owner = { update_runefather_allegiance_scripted_effect = yes }
 	}	
 }
-furdanhund_allegience_decrease_scripted_effect = {
+furdanhund_allegiance_decrease_scripted_effect = {
 	if = {
 		limit = {
 			trade_goods = mithril
@@ -7850,7 +7933,7 @@ furdanhund_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = FurdanhundAllegienceVar
+					which = FurdanhundAllegianceVar
 					value = -4
 				}
 			}
@@ -7862,7 +7945,7 @@ furdanhund_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -4
 				}
 			}
@@ -7883,7 +7966,7 @@ furdanhund_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = FurdanhundAllegienceVar
+					which = FurdanhundAllegianceVar
 					value = -3
 				}
 			}
@@ -7895,7 +7978,7 @@ furdanhund_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -3
 				}
 			}
@@ -7916,7 +7999,7 @@ furdanhund_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = FurdanhundAllegienceVar
+					which = FurdanhundAllegianceVar
 					value = -2
 				}
 			}
@@ -7928,7 +8011,7 @@ furdanhund_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -2
 				}
 			}
@@ -7946,7 +8029,7 @@ furdanhund_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = FurdanhundAllegienceVar
+					which = FurdanhundAllegianceVar
 					value = -1
 				}
 			}
@@ -7958,11 +8041,450 @@ furdanhund_allegience_decrease_scripted_effect = {
 					}
 				}
 				change_variable = {
-					which = RunefatherAllegienceVar
+					which = RunefatherAllegianceVar
 					value = -1
 				}
 			}
 		}
 	}
-	owner = { country_event = { id = runefather_worship.2 } }
+	owner = { update_runefather_allegiance_scripted_effect = yes }
+}
+update_runefather_allegiance_scripted_effect = {
+	if = {
+		limit = {
+			OR = {
+				has_personal_deity = clan_shadowhammer_1
+				has_personal_deity = clan_shadowhammer_2
+				has_personal_deity = clan_shadowhammer_3
+				has_personal_deity = clan_shadowhammer_4
+				has_personal_deity = clan_shadowhammer_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = ClanShadowhammerAllegianceVar
+					value = 150
+				}
+			}
+			change_personal_deity = clan_shadowhammer_5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = ClanShadowhammerAllegianceVar
+					value = 90
+				}
+			}
+			change_personal_deity = clan_shadowhammer_4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = ClanShadowhammerAllegianceVar
+					value = 45
+				}
+			}
+			change_personal_deity = clan_shadowhammer_3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = ClanShadowhammerAllegianceVar
+					value = 15
+				}
+			}
+			change_personal_deity = clan_shadowhammer_2
+		}
+		else = {
+			change_personal_deity = clan_shadowhammer_1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_personal_deity = clan_darkstone_1
+				has_personal_deity = clan_darkstone_2
+				has_personal_deity = clan_darkstone_3
+				has_personal_deity = clan_darkstone_4
+				has_personal_deity = clan_darkstone_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = ClanDarkstoneAllegianceVar
+					value = 150
+				}
+			}
+			change_personal_deity = clan_darkstone_5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = ClanDarkstoneAllegianceVar
+					value = 90
+				}
+			}
+			change_personal_deity = clan_darkstone_4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = ClanDarkstoneAllegianceVar
+					value = 45
+				}
+			}
+			change_personal_deity = clan_darkstone_3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = ClanDarkstoneAllegianceVar
+					value = 15
+				}
+			}
+			change_personal_deity = clan_darkstone_2
+		}
+		else = {
+			change_personal_deity = clan_darkstone_1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_personal_deity = groedi_az_an_1
+				has_personal_deity = groedi_az_an_2
+				has_personal_deity = groedi_az_an_3
+				has_personal_deity = groedi_az_an_4
+				has_personal_deity = groedi_az_an_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = GroediAzAnAllegianceVar
+					value = 150
+				}
+			}
+			change_personal_deity = groedi_az_an_5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = GroediAzAnAllegianceVar
+					value = 90
+				}
+			}
+			change_personal_deity = groedi_az_an_4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = GroediAzAnAllegianceVar
+					value = 45
+				}
+			}
+			change_personal_deity = groedi_az_an_3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = GroediAzAnAllegianceVar
+					value = 15
+				}
+			}
+			change_personal_deity = groedi_az_an_2
+		}
+		else = {
+			change_personal_deity = groedi_az_an_1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_personal_deity = amlruzskappa_1
+				has_personal_deity = amlruzskappa_2
+				has_personal_deity = amlruzskappa_3
+				has_personal_deity = amlruzskappa_4
+				has_personal_deity = amlruzskappa_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = AmlruzskappaAllegianceVar
+					value = 150
+				}
+			}
+			change_personal_deity = amlruzskappa_5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = AmlruzskappaAllegianceVar
+					value = 90
+				}
+			}
+			change_personal_deity = amlruzskappa_4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = AmlruzskappaAllegianceVar
+					value = 45
+				}
+			}
+			change_personal_deity = amlruzskappa_3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = AmlruzskappaAllegianceVar
+					value = 15
+				}
+			}
+			change_personal_deity = amlruzskappa_2
+		}
+		else = {
+			change_personal_deity = amlruzskappa_1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_personal_deity = furdanhund_1
+				has_personal_deity = furdanhund_2
+				has_personal_deity = furdanhund_3
+				has_personal_deity = furdanhund_4
+				has_personal_deity = furdanhund_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = FurdanhundAllegianceVar
+					value = 150
+				}
+			}
+			change_personal_deity = furdanhund_5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = FurdanhundAllegianceVar
+					value = 90
+				}
+			}
+			change_personal_deity = furdanhund_4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = FurdanhundAllegianceVar
+					value = 45
+				}
+			}
+			change_personal_deity = furdanhund_3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = FurdanhundAllegianceVar
+					value = 15
+				}
+			}
+			change_personal_deity = furdanhund_2
+		}
+		else = {
+			change_personal_deity = furdanhund_1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_personal_deity = runefathers_might_1
+				has_personal_deity = runefathers_might_2
+				has_personal_deity = runefathers_might_3
+				has_personal_deity = runefathers_might_4
+				has_personal_deity = runefathers_might_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 750
+				}
+			}
+			change_personal_deity = runefathers_might_5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 400
+				}
+			}
+			change_personal_deity = runefathers_might_4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 250
+				}
+			}
+			change_personal_deity = runefathers_might_3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 100
+				}
+			}
+			change_personal_deity = runefathers_might_2
+		}
+		else = {
+			change_personal_deity = runefathers_might_1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_personal_deity = runefathers_mercy_1
+				has_personal_deity = runefathers_mercy_2
+				has_personal_deity = runefathers_mercy_3
+				has_personal_deity = runefathers_mercy_4
+				has_personal_deity = runefathers_mercy_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 750
+				}
+			}
+			change_personal_deity = runefathers_mercy_5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 400
+				}
+			}
+			change_personal_deity = runefathers_mercy_4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 250
+				}
+			}
+			change_personal_deity = runefathers_mercy_3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 100
+				}
+			}
+			change_personal_deity = runefathers_mercy_2
+		}
+		else = {
+			change_personal_deity = runefathers_mercy_1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_personal_deity = runefathers_majesty_1
+				has_personal_deity = runefathers_majesty_2
+				has_personal_deity = runefathers_majesty_3
+				has_personal_deity = runefathers_majesty_4
+				has_personal_deity = runefathers_majesty_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 750
+				}
+			}
+			change_personal_deity = runefathers_majesty_5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 400
+				}
+			}
+			change_personal_deity = runefathers_majesty_4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 250
+				}
+			}
+			change_personal_deity = runefathers_majesty_3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = RunefatherAllegianceVar
+					value = 100
+				}
+			}
+			change_personal_deity = runefathers_majesty_2
+		}
+		else = {
+			change_personal_deity = runefathers_majesty_1
+		}
+	}
+}
+
+
+##############
+### Rails ###
+##############
+rail_construct_every_rail_road = { #Used in country scope
+	every_owned_province = {
+		limit = {
+			rail_province_eligibility_trigger = { rail_to_replace = $current_rail$ $upgraded_rail$ = yes }
+			NOT = { has_construction = any }
+			NOT = { has_colonist = yes }
+		}
+		add_building_construction = {
+			building = railway_work
+			speed = $speed$
+			cost = $cost$
+		}
+	}
+}
+
+construct_every_adjacent_rail_road = { #Used in building scope
+	every_neighbor_province = {
+		limit = {
+			NOT = { has_construction = any }
+			NOT = { has_colonist = yes }
+			has_province_modifier = $rail$
+			is_city = yes
+			is_state = yes
+			owned_by = FROM
+		}
+		add_building_construction = {
+			building = railway_work
+			speed = $speed$
+			cost = $cost$
+		}
+	}
 }

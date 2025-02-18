@@ -53,6 +53,10 @@ country_decisions ={
 		}
 		
 		effect = {
+			if = {
+				limit = { tag = B39 }
+				custom_tooltip = wyvernheart_patrician_tt
+			}
 			country_event = {
 				id = castonath_patricians_events.200
 			}
@@ -105,7 +109,7 @@ country_decisions ={
 			clr_country_flag = estate_castonath_patricians_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 }

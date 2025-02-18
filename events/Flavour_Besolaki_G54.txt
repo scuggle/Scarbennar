@@ -1595,26 +1595,25 @@ province_event = {
 	is_triggered_only = yes
 	hidden = yes
 
-	option = {
-		name = besolaki_events.1100.a
-		if = { #Besolaki, Anisikheion gets Andeios islands if they're your subject
-			limit = {
-				NOT = { owned_by = G59 } #Anisikheion
-				OR = {
-					owner = { has_country_flag = G54_anisikheion_gets_islands_flag }
-					owner = { overlord = { has_country_flag = G54_anisikheion_gets_islands_flag } }
-				}
-				OR = {
-					owner = { G59 = { is_subject_of = PREV } } #Anisikheion
-					owner = { overlord = { G59 = { is_subject_of = PREV } } } #Anisikheion
-				}
-				OR = {
-					superregion = kheionai_superregion
-					superregion = taychend_superregion
-				}
-				is_island = yes
-			}
-			cede_province = G59 #Anisikheion
+	trigger = {
+		is_island = yes
+		OR = {
+			superregion = kheionai_superregion
+			superregion = taychend_superregion
 		}
+		NOT = { owned_by = G59 } #Anisikheion
+		OR = {
+			owner = { has_country_flag = G54_anisikheion_gets_islands_flag }
+			owner = { overlord = { has_country_flag = G54_anisikheion_gets_islands_flag } }
+		}
+		OR = {
+			owner = { G59 = { is_subject_of = PREV } } #Anisikheion
+			owner = { overlord = { G59 = { is_subject_of = PREV } } } #Anisikheion
+		}
+	}
+
+	option = { #Besolaki, Anisikheion gets Andeios islands if they're your subject
+		name = besolaki_events.1100.a
+		cede_province = G59 #Anisikheion
 	}
 }

@@ -57,12 +57,16 @@ country_event = {
 		months = 8
 		modifier = {
 			factor = 0.1
-			any_owned_province = {
-				OR = {
-					has_province_modifier = mild_winter
-					has_province_modifier = normal_winter
-					has_province_modifier = severe_winter
+			OR = {
+				any_owned_province = {
+					OR = {
+						has_province_modifier = mild_winter
+						has_province_modifier = normal_winter
+						has_province_modifier = severe_winter
+					}
 				}
+				has_estate_privilege = estate_mages_organization_ice_smiths
+				has_ruler_flag = gemradcurt_immariel_rules
 			}
 		}
 		modifier = {
@@ -76,10 +80,15 @@ country_event = {
 	
 	option = {
 		name = magic_project_simulacrum.2.a
+		trigger = { 
+			NOT = {
+				has_estate_privilege = estate_mages_organization_ice_smiths
+				has_country_flag = gemradcurt_immariel_rules
+			}
+		}
 		ai_chance = {
 			factor = 50
 		}
-		
 		add_mil_power = -50
 		
 		set_ruler_flag = magic_project_simulacrum_2
@@ -87,6 +96,36 @@ country_event = {
 		custom_tooltip = tooltip_magic_project_advance
 		
 	}
+	option = {
+		name = magic_project_simulacrum.2.b
+		trigger = { has_estate_privilege = estate_mages_organization_ice_smiths }
+		ai_chance = {
+			factor = 50
+		}
+		highlight = yes
+		add_dip_power = -5
+		
+		set_ruler_flag = magic_project_simulacrum_2
+		clr_ruler_flag = magic_project_simulacrum_1
+		custom_tooltip = tooltip_magic_project_advance
+		
+	}
+	option = {
+		name = magic_project_simulacrum.2.c
+		trigger = { has_country_flag = gemradcurt_immariel_rules }
+
+		ai_chance = {
+			factor = 50
+		}
+		highlight = yes
+		add_legitimacy = 5
+		
+		set_ruler_flag = magic_project_simulacrum_2
+		clr_ruler_flag = magic_project_simulacrum_1
+		custom_tooltip = tooltip_magic_project_advance
+		
+	}
+
 }
 
 # 2b - Getting snow/ice at home import

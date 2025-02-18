@@ -71,7 +71,7 @@ country_event = {
 		name = "flavor_honsai.1.o"
 		if = {
 			limit = {
-				has_church_aspect = honsai_the_ghostemperor 
+				has_church_aspect = transmutative_path_hon_sai_ghost_emperor 
 			}
 			subtract_variable = {
 				which = honsai_lifespan
@@ -162,7 +162,7 @@ country_event = {
 		name = "flavor_honsai.1.o"
 		if = {
 			limit = {
-				has_church_aspect = honsai_the_ghostemperor 
+				has_church_aspect = transmutative_path_hon_sai_ghost_emperor 
 			}
 			subtract_variable = {
 				which = honsai_lifespan
@@ -514,7 +514,7 @@ country_event = {
 	}
 	
 	after = {
-		remove_church_aspect = honsai_the_ghostemperor
+		remove_church_aspect = transmutative_path_hon_sai_ghost_emperor
 		clr_country_flag = honsai_ghostemperor_alive
 		clr_country_flag = anchor_to_reality
 		clr_country_flag = honsai_monarchy_adm
@@ -2063,7 +2063,7 @@ country_event = {
 	option = {
 		name = "flavor_honsai.63.a"
 		4958 = { #Pakpon Haitri
-			change_religion = lefthand_path
+			change_religion = devouring_path
 		}
 	}
 }
@@ -2103,7 +2103,7 @@ country_event = {
 				4699 = {owned_by = ROOT}
 			}
 			4699 = { #Bihon Caung
-				change_religion = lefthand_path
+				change_religion = devouring_path
 			}
 		}
 	}
@@ -2128,7 +2128,7 @@ country_event = {
 		hidden_effect = {
 			4958 = { #Pakpon Haitri
 				spawn_rebels = {
-					type = lefthand_path_rebels 
+					type = devouring_path_rebels 
 					size = 10
 				}
 				remove_province_modifier = honsai_independant_martial_school
@@ -2139,7 +2139,7 @@ country_event = {
 				}
 				4699 = { #Bihon Caung
 					spawn_rebels = {
-						type = lefthand_path_rebels 
+						type = devouring_path_rebels 
 						size = 10
 					}
 				}
@@ -2614,6 +2614,7 @@ country_event = {
 	option = {
 		name = "flavor_honsai.74.a"
 		custom_tooltip = godemperor_tt
+		add_church_power = 90
 		set_country_flag = honsai_god_emperor
 		clr_country_flag = honsai_god_emperor_2
 		clr_country_flag = ghostemperor_decision_menu_opened

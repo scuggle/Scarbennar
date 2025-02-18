@@ -355,7 +355,6 @@ Ayarallen_Left = {
 					F22 = {
 						is_in_war = {
 							defender_leader = F22
-							attacker_leader = F27
 						}
 						NOT = {
 							is_in_war = {
@@ -386,6 +385,7 @@ Ayarallen_Left = {
 			hidden_effect = {
 				if = {
 					limit = {
+						F27 = { ai = no }
 						F22 = {
 							is_in_war = {
 								defender_leader = ROOT
@@ -397,6 +397,7 @@ Ayarallen_Left = {
 				else_if = {
 					limit = {
 						AND = {
+							F27 = { ai = no }
 							F22 = { guaranteed_by = F27 }
 							F22 = { has_100_opinion_improved_relation = { target = F27 } }
 						}
@@ -407,7 +408,11 @@ Ayarallen_Left = {
 					}
 				}
 				else = {
-					release = F22
+					release_with_religion_and_culture = { 
+						tag = F22
+						culture = bahari
+						religion = old_bulwari_sun_cult
+					}
 					649 = { if = { limit = { country_or_non_sovereign_subject_holds = F27 } cede_province = F27 add_core = F27 } }
 					650 = { if = { limit = { country_or_non_sovereign_subject_holds = F27 } cede_province = F27 add_core = F27 } }
 					652 = { if = { limit = { country_or_non_sovereign_subject_holds = F27 } cede_province = F27 add_core = F27 } }
@@ -842,7 +847,15 @@ Ayarallen_Left = {
 		}
 
 		effect = {
-			682 = { cede_province = F27 change_culture = firanyan_harpy change_religion = owner add_province_triggered_modifier = harpy_roost }
+			682 = {
+				if = { 
+					limit = { NOT = { owned_by = ROOT } }
+					cede_province = ROOT
+				}
+				change_culture = firanyan_harpy
+				change_religion = owner
+				add_province_triggered_modifier = harpy_roost
+			}
 			add_country_modifier = {
 				name = f27_prosperity_after_peace_modifier
 				duration = -1

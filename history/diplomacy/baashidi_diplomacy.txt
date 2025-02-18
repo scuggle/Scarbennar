@@ -1,6 +1,5 @@
 
 dependency = {
-	#subject_type = "sponsored_expedition"
     subject_type = tributary_state_anb
 	first = S20
 	second = S22

@@ -144,10 +144,17 @@ country_event = { #should pusle, dang rabble
 	trigger = {
 		culture_group = mengi 
 	}
+	
+	immediate = {
+		random_owned_province = {
+			save_event_target_as = spawn_province
+		}
+	}
+	goto = spawn_province
 
 	option = {
 		name = "mengi_flavor_events.3.a"
-		random_owned_province = {
+		event_target:spawn_province = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
 				size = 2
@@ -704,7 +711,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { 
 	id = mengi_flavor_events.12
 	title = "mengi_flavor_events.12.t"
 	desc = "mengi_flavor_events.12.desc"
@@ -748,5 +755,298 @@ country_event = {
 		trigger = {
 			has_country_flag = mengi_play_fail
 		}
+	}
+}
+
+country_event = { #jadd missionaries pull up
+	id = mengi_flavor_events.13
+	title = "mengi_flavor_events.13.t"
+	desc = "mengi_flavor_events.13.desc"
+	picture = 6_Rajput_Estate_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		capital_scope = {
+			superregion = east_sarhal_superregion
+		}
+		culture_group = mengi
+		is_year = 1465 
+		NOT = { is_year = 1500 }
+		NOT = { religion = the_jadd } 
+	}
+
+	immediate = {
+		hidden_effect = {
+			F46 = { save_event_target_as = desert_elf_dude }
+			set_saved_name = {
+				key = desert_elf_name
+				type = advisor
+				scope = event_target:desert_elf_dude
+			}
+		}
+	}
+
+	option = {
+		name = "mengi_flavor_events.13.a"
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				factor = 10
+				religion = shadow_pact
+			}
+		}
+		add_prestige = 20
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		hidden_effect = {
+			country_event = { id = mengi_flavor_events.14 days = 365 }
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 3
+				religion = sky_domain
+			}
+		}
+		name = "mengi_flavor_events.13.b"
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -20
+		}
+		random_list = {
+			33 = {
+				define_advisor = {
+					type = theologian 
+					name = desert_elf_name
+					culture = desert_elf
+					religion = the_jadd
+					skill = 2
+					age = 40
+					cost_multiplier = 0.5 
+				}
+			}
+			33 = {
+				define_advisor = {
+					type = commandant 
+					name = desert_elf_name
+					culture = desert_elf
+					religion = the_jadd
+					skill = 2
+					age = 40
+					cost_multiplier = 0.5 
+				}
+
+			}
+			34 = {
+				define_advisor = {
+					type = grand_captain
+					name = desert_elf_name
+					culture = desert_elf
+					religion = the_jadd
+					skill = 2
+					age = 40
+					cost_multiplier = 0.5 
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = { id = mengi_flavor_events.15 days = 730 }
+		}
+	}
+}
+
+country_event = { #uh oh 
+	id = mengi_flavor_events.14
+	title = "mengi_flavor_events.14.t"
+	desc = "mengi_flavor_events.14.desc"
+	picture = AFRICAN_REVOLT_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				spawn_rebels = {
+					size = 2
+					leader = desert_elf_name
+					type = the_jadd_rebels
+				}
+			}
+			every_owned_province = {
+				limit = { 
+					NOT = { religion = the_jadd }
+					trade_goods = slaves
+				}
+				spawn_rebels = {
+					size = 2
+					type = the_jadd_rebels
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "mengi_flavor_events.14.a"
+		add_stability = -1
+	}
+
+	after = {
+		clear_saved_name = desert_elf_name
+	}
+}
+
+country_event = { #accidently homoerotic conversion event 
+	id = mengi_flavor_events.15
+	title = "mengi_flavor_events.15.t"
+	desc = "mengi_flavor_events.15.desc"
+	picture = SUN_CULT_PRIEST_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0.75
+				any_neighbor_country = {
+					OR = {
+						religion = shadow_pact
+						religion = night_coven
+					}
+				}
+			}
+			modifier = {
+				factor = 1000
+				calc_true_if = {
+					amount = 4
+					all_country = {
+						capital_scope = {
+							superregion = east_sarhal_superregion
+						}
+						religion = the_jadd
+					}
+				}
+			}
+		}
+		name = "mengi_flavor_events.15.a"
+		add_church_power = 33
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		custom_tooltip = desert_elf_leaves.tt
+		hidden_effect = {
+			if = {
+				limit = {
+					employed_advisor = {
+						culture = desert_elf
+						religion = the_jadd
+						type = commandant
+					}
+				}
+				remove_advisor = commandant
+			}
+			else_if = {
+				limit = { 
+					employed_advisor = {
+						culture = desert_elf
+						religion = the_jadd
+						type = grand_captain
+					}
+				}
+				remove_advisor = grand_captain
+			} 
+			else_if = {
+				limit = { 
+					employed_advisor = {
+						culture = desert_elf
+						religion = the_jadd
+						type = theologian
+					}
+				}
+				remove_advisor = theologian
+			} 
+		}
+	}
+
+	option = {
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 2.5
+				any_neighbor_country = {
+					OR = {
+						religion = shadow_pact
+						religion = night_coven
+					}
+				}
+			}
+		}
+		name = "mengi_flavor_events.15.b"
+		change_religion = the_jadd
+		set_ruler_religion = the_jadd
+		set_consort_religion = the_jadd
+		set_heir_religion = the_jadd
+		capital_scope = {
+			area = {
+				limit = {
+					owned_by = ROOT
+					NOT = { religion = the_jadd }
+				}
+				change_religion = the_jadd
+			}
+		}
+		custom_tooltip = desert_elf_upgrades.tt
+		hidden_effect = {
+			if = {
+				limit = {
+					employed_advisor = {
+						culture = desert_elf
+						religion = the_jadd
+						type = commandant
+					}
+				}
+				remove_advisor = commandant
+			}
+			else_if = {
+				limit = { 
+					employed_advisor = {
+						culture = desert_elf
+						religion = the_jadd
+						type = grand_captain
+					}
+				}
+				remove_advisor = grand_captain
+			} 
+			else_if = {
+				limit = { 
+					employed_advisor = {
+						culture = desert_elf
+						religion = the_jadd
+						type = theologian
+					}
+				}
+				remove_advisor = theologian
+			} 
+			hire_advisor = {
+				type = inquisitor
+				name = desert_elf_name
+				culture = desert_elf
+				religion = the_jadd
+				skill = 3
+				age = 42
+				cost_multiplier = 0.34
+			}
+		}
+	}
+
+	after = {
+		clear_saved_name = desert_elf_name
 	}
 }

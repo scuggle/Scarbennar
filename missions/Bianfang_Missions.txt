@@ -1255,7 +1255,7 @@ bianfang_liang_missions_1 = {
 	}
 	
 	bianfang_final_command = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		position = 13
 		required_missions = {
 			bianfang_our_greatest_foe
@@ -1586,7 +1586,7 @@ bianfang_liang_missions_2 = {
 		}
 		
 		effect = {
-			north_haless_superregion = {
+			gozengun_superregion = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1599,9 +1599,9 @@ bianfang_liang_missions_2 = {
 				change_religion = high_philosophy
 				if = {
 					limit = {
-						owner = { has_country_flag = steppe_yan_appeared }
+						owner = { has_country_flag = shuokyuan_appeared }
 					}
-					change_culture = steppe_yan
+					change_culture = shuokyuan
 				}
 				else = { change_culture = ROOT }
 			}
@@ -1824,6 +1824,7 @@ bianfang_liang_missions_4 = {
 
 		trigger = {
 			years_of_income = 0.5
+			adm_power = 50
 			owns_core_province = 4871
 			4871 = {
 				has_production_building_trigger = yes
@@ -1838,6 +1839,7 @@ bianfang_liang_missions_4 = {
 		}
 		
 		effect = {
+			custom_tooltip = bianfang_palace_divine_call_tt
 			4871 = {
 				add_permanent_province_modifier = {
 					name = bianfang_tianlou_city_of_temples
@@ -1845,6 +1847,7 @@ bianfang_liang_missions_4 = {
 				}
 				add_center_of_trade_level = 1
 			}
+			add_adm_power = -50
 			add_years_of_income = -0.5
 		}
 	}
@@ -2509,7 +2512,7 @@ bianfang_liang_missions_2_second = {
 		
 		effect = {
 			4630 = {
-				change_culture = western_yan
+				change_culture = szitu
 				change_religion = high_philosophy
 				add_base_tax = 1
 				add_base_production = 1
@@ -2734,7 +2737,7 @@ bianfang_yanification_missions_3_second = {
 		# provinces_to_highlight = {
 			# OR = {
 				# superregion = rahen_superregion
-				# superregion = south_haless_superregion
+				# superregion = vimdatrong_superregion
 				# superregion = yanshen_superregion
 			# }
 			# owned_by = ROOT

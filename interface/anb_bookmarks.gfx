@@ -399,6 +399,11 @@ spriteTypes = {
 		name = "LANDING_race_troll_HEADER_PICTURE"
 	 	texturefile = "gfx/interface/bookmarks/dlc_button_empty.dds"
 	}
+
+		spriteType = {
+		name = "LANDING_race_half_elf_HEADER_PICTURE"
+	 	texturefile = "gfx/interface/bookmarks/dlc_button_empty.dds"
+	}
 	
 	#--------------# custom pictures #---------------#
 	#Ogre
@@ -666,6 +671,13 @@ spriteTypes = {
 		name = "LANDING_race_vyzemby_halfling_HEADER_PICTURE"
 	 	texturefile = "gfx/interface/bookmarks/dlc_button_empty.dds"
 	}
+
+	#Half Elf
+	spriteType = {
+		name = "GFX_dlc_button_half_elf"
+		texturefile = "gfx/interface/bookmarks/dlc_button_half_elf.dds"
+		legacy_lazy_load = no
+	}
 	
 	#--------------------------------#
 	
@@ -803,6 +815,10 @@ spriteTypes = {
 	spriteType = {
 		name = "LANDING_spawnable_G99_HEADER_PICTURE"
 	 	texturefile = "gfx/flags/G99.tga"
+	}
+	spriteType = {
+		name = "LANDING_spawnable_U66_HEADER_PICTURE"
+		texturefile = "gfx/flags/U66.tga"
 	}
 	spriteType = {
 		name = "LANDING_spawnable_U67_HEADER_PICTURE"

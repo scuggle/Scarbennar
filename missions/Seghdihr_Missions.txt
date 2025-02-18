@@ -407,6 +407,7 @@ seghdihr_2 = {
 					owned_by = ROOT
 					is_city = yes
 				}
+				H78 = { is_at_war = no }
 			}
 			else = {
 				F47 = {
@@ -761,7 +762,13 @@ seghdihr_3 = {
 		trigger = {
 			if = {
 				limit = { exists = F47 }
-				reverse_has_opinion = { who = F47 value = 100 }
+				OR = {
+					reverse_has_opinion = { who = F47 value = 100 }
+					AND = {
+						F47 = { has_90_opinion_improved_relation = { target = ROOT } }
+						dip_power = 200
+					}
+				}
 			}
 			legitimacy = 90
 			estate_influence = { estate = estate_nobles influence = 50 }
@@ -784,6 +791,9 @@ seghdihr_3 = {
 				add_casus_belli = { type = cb_vassalize_mission target = I15 months = 600 }
 			}
 			else = { hehos_legacy_area = { add_permanent_claim = ROOT } }
+			if = { limit = { NOT = { reverse_has_opinion = { who = F47 value = 100 } } }
+				add_dip_power = -200
+			}
 		}
 	}
 
@@ -1964,7 +1974,7 @@ seghdihr_2b = {
 	}
 
 	seghdihr_light_tunnels = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		position = 12
 		required_missions = { 
 			seghdihr_watching_backs

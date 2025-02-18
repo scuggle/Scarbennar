@@ -806,9 +806,15 @@ lot_dekkhang_2 = {
 		}
 		
 		trigger = {
-			owns_all_provinces = {
-				culture_group = bom
-				continent = asia
+			asia = {
+				type = all
+				OR = {
+					NOT = { culture_group = bom }
+					AND = {
+						culture_group = bom
+						country_or_non_sovereign_subject_holds = ROOT 
+					}
+				}
 			}
 		}
 		
@@ -1724,7 +1730,7 @@ lot_dekkhang_5 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 4797
+					province_id = 4796
 					OR = {
 						NOT = { owned_by = ROOT }
 						NOT = { has_manpower_building_trigger = yes }

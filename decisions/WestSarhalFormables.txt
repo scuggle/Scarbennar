@@ -546,6 +546,8 @@ country_decisions = {
 				tag = F73 #Mokatanga
 				tag = L02 #Jagab Faru
 				tag = L13 #Samishesha
+				tag = S94 #Jarafarin
+				tag = S95 #Kuraoko
 			}
 			was_never_end_game_tag_trigger = yes
 			hidden_trigger = { #this is so ai tags will still ally eachother

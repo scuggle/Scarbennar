@@ -1,8 +1,8 @@
 
-# Dwarven Pepper and Phalanx | they forgo the shield cos of armor
+# Dwarven Remnant Harquebusiers
 
 type = infantry
-unit_type = tech_dwarven
+unit_type = tech_west_dwarven
 
 maneuver = 1
 offensive_morale = 1

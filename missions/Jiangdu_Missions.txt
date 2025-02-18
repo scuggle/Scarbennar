@@ -283,7 +283,7 @@ jiangdu2 = {
 		
 		provinces_to_highlight = {
 			province_id = 4868
-			NOT = { development = 35 }
+			NOT = { development = 30 }
 		}
 		
 		trigger = {
@@ -292,7 +292,7 @@ jiangdu2 = {
 				NOT = { is_subject = yes }
 			}
 			4868 = {
-				development = 35
+				development = 30
 			}
 			treasury = 75
 		}
@@ -964,7 +964,10 @@ jiangdu3 = {
 				courthouse = 10
 				town_hall = 10
 			}
-			training_fields = 10
+			num_of_owned_provinces_with = {
+				value = 20
+				has_manpower_building_trigger = yes
+			}
 			army_size = 100
 		}
 		
@@ -1001,7 +1004,10 @@ jiangdu4 = {
 				limit = { is_subject = yes }
 				NOT = { is_subject = yes }
 			}
-			barracks = 4
+			num_of_owned_provinces_with = {
+				value = 4
+				has_manpower_building_trigger = yes
+			}
 			manpower_percentage = 0.75
 			mil_power = 100
 		}
@@ -1207,7 +1213,7 @@ jiangdu5 = {
 			province_id = 4868
 			NOT = {
 				AND = {
-					base_production = 14
+					base_production = 12
 					has_production_building_trigger = yes
 				}
 			}
@@ -1219,7 +1225,7 @@ jiangdu5 = {
 				NOT = { is_subject = yes }
 			}
 			4868 = {
-				base_production = 14
+				base_production = 12
 				has_production_building_trigger = yes
 			}
 		}

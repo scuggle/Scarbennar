@@ -4,14 +4,20 @@ country_decisions = {
 	form_harimraj = { #Harimari Empire of Rahen
 		major = yes
 		potential = {
-			NOT = { tag = R61 }
 			OR = {
 				primary_culture = royal_harimari
 				primary_culture = primal_harimari
 			}
+			OR = { 
+				NOT = { tag = R61 } 
+				mission_completed = pasiragha_unity_of_spirit_land
+			}
 			NOT = { exists = R70 }
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
+			hidden_trigger = {
+				NOT = { has_country_flag = L62_no_harimraj }
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -47,6 +53,9 @@ country_decisions = {
 			if = {
 				limit = { tag = R51 }
 				mission_completed = R51_second_final_harimraj
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = L62_no_harimraj }
 			}
 		}
 		effect = {
@@ -681,7 +690,10 @@ country_decisions = {
 					set_in_empire = no
 				}
 			}
-			set_government_rank = 2
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
 			add_prestige = 50
 			if = {
 				limit = { has_custom_ideas = no }
@@ -830,8 +842,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_at_war = no
-			owns_core_province = 4460
+			has_government_attribute = is_heroic_realm
+			if = {
+				limit = { NOT = { mission_completed = R11_heroic_victory } }
+				owns_core_province = 4460
+			}
 			owns_core_province = 4465
 			owns_core_province = 4633
 			owns_core_province = 4630
@@ -840,7 +855,7 @@ country_decisions = {
 				value = 30
 				region = shamakhad_region
 			}
-			has_reform = heroic_realm_reform
+			is_at_war = no
 			has_estate_privilege = estate_adventurers_heroes_in_the_army
 			OR = {
 				caste_fluidity_is_fluid = yes
@@ -848,6 +863,16 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				if = {
+					limit = { historical_friend_with = R07 } #Rajnadhaga
+					set_country_flag = R07_historical_friend
+				}
+				if = {
+					limit = { historical_friend_with = R73 } #Nadimraj
+					set_country_flag = R73_historical_friend
+				}
+			}
 			change_tag = R97
 			hidden_effect = { restore_country_name = yes }
 			hidden_effect = {
@@ -872,6 +897,27 @@ country_decisions = {
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_raghajandi_flag
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = R07_historical_friend }
+					clr_country_flag = R07_historical_friend
+					add_historical_friend = R07
+					R07 = { add_historical_friend = ROOT }
+				}
+				if = {
+					limit = { has_country_flag = R73_historical_friend }
+					clr_country_flag = R73_historical_friend
+					add_historical_friend = R73
+					R73 = { add_historical_friend = ROOT }
+				}
+				every_subject_country = {
+					limit = {
+						has_reform = heroic_realm_free_company #Khadisrapur MT Content
+					}
+					add_historical_friend = ROOT
+					ROOT = { add_historical_friend = PREV }
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1026,6 +1072,8 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			change_government = theocracy
+			add_government_reform = raheni_divine_monarchy_reform
 			set_country_flag = formed_suryavar_flag
 			hidden_effect = {
 				if = {

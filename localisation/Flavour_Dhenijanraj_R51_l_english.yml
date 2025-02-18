@@ -36,7 +36,7 @@
  R51_across_far_salahad_desc:0 "The Golden Highway was an ambitious project - a single road that would stretch the breadth of Halcann, from Brasan in the West to Tianlou in the East. To span this distance, the Highway crossed one of the greatest barriers to movement that exists in our world - the Endless Sands of the Far Salahad.\n\nIn doing so, the links between Bulwar and Rahen were strengthened as trade and diplomacy between the regions blossomed. As we look outwards once again, it would be good to remember the many successes of that time and forge new bonds of wealth and knowledge with the Phoenix Akalates of Bulwar."
 
  R51_conquer_the_colonies_title:0 "Conquer the Colonies"
- R51_conquer_the_colonies_desc:0 "Over the past centuries, the merchant kingdoms of Iyarashar, Davharral, and Sarkashabid became heavily involved in trading with the Sarhaly lands across the Gulf of Rahen. There, they established settlements around their trading posts and drew great wealth in spices and slaves from the colonies established in the shadow of the Empire of Melekafar.\n\nNow that their parent cities have been absorbed into our empire, however, the colonies are defenseless, their wealth ripe for the picking. Let us cross the Gulf of Rahen are reassert Raheni dominance over the far coast.\n\n§RThis mission will be enabled with the release of Sarhal§!"
+ R51_conquer_the_colonies_desc:0 "For thousands of years the merchants of Rahen have sailed to Madriamilak, becoming fabulously wealthy trading with the Mengi kingdoms of the south, and communities of Raheni can be found all across the coast. In the 1400s, the Raghamideshi managed to conquer much of the area, establishing colonies to monopolize trade flowing from the Keygas river.\n\nNow that their parent cities have been absorbed into our empire, however, their colonies are leaderless, and in need of the Lotus Court’s wise direction. Let us cross the Gulf of Rahen and reassert Raheni dominance over the north coast of Madriamilak."
 
  R51_peridot_king_title:0 "The Peridot King"
  R51_peridot_king_desc:0 "The Exilarch of Grozumdihr has ruled a kingdom within our kingdom for nearly two thousand years, the entire Peridot Dwarven community turning to his palanquin in Rayavhashapal for guidance instead of heeding the words of the Lotus Throne in Dhenijansar. As centralization is cemented in Rahen once more, the existence of an entire people who live their lives outside of the caste system and listen to another authority has become insufferable.\n\nThe dwarves have always been a reasonable people and have long stood side by side with human and harimari, however — perhaps a direct confrontation with the Exilarch can be avoided with diplomacy, and an agreement about our relationship reached?"
@@ -249,6 +249,8 @@
  R51_ruin_warriors:0 "Warriors of the Ruin Kingdoms"
  R51_triumph_at_sir:0 "Triumph at Sir"
  R51_triumph_over_the_command:0 "The Three-Headed Banner, Broken"
+ R51_learning_our_ways: "Learning Our Ways"
+
 
 #Tooltips#
 
@@ -288,7 +290,7 @@
 
  dhenijanraj_mission_temples_north_tt:0 "All provinces with a §OHigh Temple Complex§! in the §YDhujat§! and §YShamakhad§! regions will gain the following bonuses:\nLocal Manpower Modifier: §G+20%§!\n Local Unrest: §G-2§!"
 
- dhenijanraj_dwarven_integration_tt:0 "All provinces that we control with a dwarven minority or majority must be §Yprosperous§! and have no unrest"
+ dhenijanraj_dwarven_integration_tt:0 "All provinces that we control with a dwarven minority or majority must have no unrest, and either be §Yprosperous§! or have §Y15§! development and a production building."
 
  dhenijanraj_hobgoblin_subjugation_tt:0 "All provinces that we control with a hobgoblin minority or majority must have less than §Y50§! local autonomy and no unrest"
 
@@ -311,3 +313,5 @@
  dhenijanraj_peridot_opinion_modifier:0 "Helped the Peridot Dwarves"
 
  dhenijanraj_court_disaster_over_tt:0 "§YThe Corruption of the Lotus Court§! Disaster has been beaten"
+
+ dhenijanraj_sarhal_trade:0 "§GExpanded Sarhal Trade§!"

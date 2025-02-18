@@ -36,56 +36,87 @@ alliance = {
 
 
 #Tanizu vassals
-#Eel - Gorrila
+#Shalazar - Eel
 vassal = {
-	first = S34
-	second = S33
-	start_date = 1438.1.1
+	first = L84 #Shalazar
+	second = S34 #Cunning River Eel
+	start_date = 540.1.1
 	end_date = 1500.1.1
 }
-#Eel - Sea Roaming Inyubi
+#Shalazar - Gorilla
 vassal = {
-	first = S34
-	second = S11
-	start_date = 1438.1.1
-	end_date = 1500.1.1
-}
-
-#Katidariga - Hut Building weaver
-vassal = {
-	first = S83
-	second = S39
+	first = L84 #Shalazar
+	second = S33 #Red Fanged Gorilla
 	start_date = 1438.1.1
 	end_date = 1500.1.1
 }
 
-#Katidariga - Way Pointing Tchoken
+#Shangra - Duiker
 vassal = {
-	first = S83
-	second = L82
+	first = L83 #Shangra
+	second = S36 #Stealthy Duiker
 	start_date = 1438.1.1
 	end_date = 1500.1.1
 }
 
-#Katidariga - Foul Mouthed Kazatsa
-vassal = {
-	first = S83
-	second = S12
+#Gawakhiza - Inyubi
+dependency = {
+	subject_type = tributary_state_anb
+	first = S21 #Gawakhiza
+	second = S11 #Sea Roaming Inyubi
 	start_date = 1438.1.1
 	end_date = 1500.1.1
 }
 
-#Goose - Parrot
+#Katidariga - Weaver Bird
 vassal = {
-	first = S43
+	first = S83 #Katidariga
+	second = S39 #Hut Building Weaver Bird
+	start_date = 1438.1.1
+	end_date = 1500.1.1
+}
+#Katidariga - Tchoken
+vassal = {
+	first = S83 #Katidariga
+	second = L82 #Way Pointing Tchoken
+	start_date = 1438.1.1
+	end_date = 1500.1.1
+}
+#Katidariga - Kazatsa
+vassal = {
+	first = S83 #Katidariga
+	second = S12 #Foul Mouthed Kazatsa
+	start_date = 1438.1.1
+	end_date = 1500.1.1
+}
+
+#Kidsit Yiti - Parrot
+vassal = {	
+	first = L67 #Kidsit Yiti
 	second = S42
 	start_date = 1438.1.1
 	end_date = 1500.1.1
 }
-#Goose - Parrot
+#Kidsit Yiti - Goose
 vassal = {
-	first = S43
-	second = S38
+	first = L67 #Kidsit Yiti
+	second = S43 #Violent Hearted Goose
+	start_date = 1438.1.1
+	end_date = 1500.1.1
+}
+
+#Bongo - Hippo
+vassal = {
+	first = S37 #Swift Legged Bongo
+	second = S38 #Work Doing Hippo
+	start_date = 1438.1.1
+	end_date = 1500.1.1
+}
+
+#Bongo - Hippo
+vassal = {
+	first = S37 #Swift Legged Bongo
+	second = S40 #Forest Hiding Okapi
 	start_date = 1438.1.1
 	end_date = 1500.1.1
 }

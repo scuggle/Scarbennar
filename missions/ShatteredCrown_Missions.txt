@@ -1102,6 +1102,7 @@ shatteredcrown_3 = {
 		position = 5
 		
 		trigger = {
+			is_free_or_tributary_trigger = yes
 			if = {
 				limit = { exists = Z18 }
 				is_neighbor_of = Z18
@@ -1238,9 +1239,15 @@ shatteredcrown_3 = {
 		trigger = {
 			F27 = { 
 				is_subject_of = ROOT
-				owns_all_provinces = {
-					culture = firanyan_harpy
-					superregion = bulwar_superregion 
+				bulwar_superregion = {
+					type = all
+					OR = {
+						NOT = { culture = firanyan_harpy }
+						AND = {
+							culture = firanyan_harpy
+							owned_by = PREV 
+						}
+					}
 				}
 			}
 		}

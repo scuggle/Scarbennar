@@ -1,21 +1,22 @@
-#_______________________________________________________________#
-#		:Files to edit when adding inventions Checklist:		#
-#			1. estate_privleges/estate_artifice_privileges.txt	#
-#			2. estates/99_artificers.txt						#
-#			3. scripted_effects/artifice_scripted_effects.txt	#
-#			4. events/ArtificeResearch.txt						#
-#			5. common/custom_gui/countrydecisionsview.txt		#
-#			6. Don't forget to localize your work				#
-#---------------------------------------------------------------#
-#			:OPTIONAL: GFX/GUI editers only:					#
-#			7. interface/countrydecisionsview.gui				#
-#			8. interface/countrydecisionsview.gfx				#
-#																#
-#			:GFX Assets Folder: 								#
-#			9. gfx/interface/custom_gui/artificery				#
-#																#
-#			Written By: Tators/River Doge						#
-#_______________________________________________________________#
+#___________________________________________________________________#
+#		:Files to edit when adding inventions Checklist:			#
+#			1. estate_privleges/estate_artifice_privileges.txt		#
+#			2. estates/99_artificers.txt							#
+#			3. scripted_effects/artifice_scripted_effects.txt		#
+#			4. events/ArtificeResearch.txt							#
+#			5. common/custom_gui/countrydecisionsview.txt			#
+#			6. scripted_triggers/anb_scripted_triggers_artifice.txt	#
+#			7. Don't forget to localize your work					#
+#-------------------------------------------------------------------#
+#			:OPTIONAL: GFX/GUI editers only:						#
+#			7. interface/countrydecisionsview.gui					#
+#			8. interface/countrydecisionsview.gfx					#
+#																	#
+#			:GFX Assets Folder: 									#
+#			9. gfx/interface/custom_gui/artificery					#
+#																	#
+#			Written By: Tators/River Doge							#
+#___________________________________________________________________#
 estate_artificers = {
 	icon = 6
 
@@ -208,6 +209,13 @@ estate_artificers = {
 	}
 
 	custom_name = {
+		desc = estate_steam_knights
+		trigger = {
+			tag = A77
+		}
+	}
+
+	custom_name = {
 		desc = estate_gemradcurt_artificers
 		trigger = {
 			tag = H16
@@ -273,6 +281,9 @@ estate_artificers = {
 		estate_artificers_organization_feiten_shuimu_cadre
 		estate_artificers_organization_vazhatun_enhanced_astronomy
 		estate_artificers_organization_discombobulatorium
+		estate_artificers_organization_giberd_magisterium_oversight
+		estate_artificers_organization_giberd_ravelian_guilds
+		estate_artificers_organization_giberd_beacon_of_harmony
 		
 		# Non-Inventions Privileges
 		estate_artificers_feiten_invest_engineering_workshop
@@ -359,7 +370,7 @@ estate_artificers = {
 		artifice_invention_personal_mageshields
 		artifice_invention_military_sky_galleons
 		artifice_invention_damestear_reactor_megacannon #new
-		artifice_invention_holy_gunblade # Orda Aldresia
+		
 		
 		# #inventions
 		# #basic
@@ -553,6 +564,14 @@ estate_artificers = {
 		artifice_invention_allclan_drill_shells #30
 		artifice_invention_allclan_super_boots #20
 
+		#Taychendi Empire Inventions
+		artifice_invention_taychend_demon_powered_flame_rigs #20
+		artifice_invention_taychend_prism_cored_war_machines #20
+		artifice_invention_taychend_effelai_growth_stimulants #20
+		artifice_invention_taychend_imitation_seedthralls #20
+		artifice_invention_taychend_artifice_augmented_kotakompu #20
+		artifice_invention_taychend_relic_lord_prototype_power_armour #30
+
 		#Missions Misc
 		artifice_invention_vg_musket_precursor_edition #30
 		artifice_invention_spirit_proof_exoskeleton #Arawekelin 10
@@ -571,6 +590,11 @@ estate_artificers = {
 		artifice_everlasting_fertilizer #Plumstead 10
 		artifice_invention_karakhanbar_high_heat_smelters #Karakhanbar 10
 		artifice_invention_karakhanbar_black_hearth_torches #Karakhanbar 30
+		artifice_invention_holy_gunblade # Orda Aldresia 10
+		artifice_invention_ironwraith_weapons_platform #Maghargma 20
+		artifice_invention_spirit_capture_tech #Maghargma 20
+		artifice_invention_bramble_burners #Brambleskinner 10
+		artifice_invention_kobildzan_draconic_ascension #Kobildzan 10
 	}
 	
 	agendas = {

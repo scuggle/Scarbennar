@@ -8,6 +8,7 @@ religion = high_philosophy
 technology_group = tech_raheni
 religious_school = orange_sash_school
 capital = 4397
+historical_friend = R11 #Khadisrapur
 
 historical_friend = R51
 

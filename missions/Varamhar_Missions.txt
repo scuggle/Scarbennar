@@ -11,6 +11,10 @@ varamhar_1 = {
 				tag = F38
 				was_tag = F42
 			}
+			AND = {
+				tag = F97
+				was_tag = F42
+			}
 		}
 	}
 	has_country_shield = yes
@@ -263,6 +267,10 @@ varamhar_2 = {
 				tag = F38
 				was_tag = F42
 			}
+			AND = {
+				tag = F97
+				was_tag = F42
+			}
 		}
 	}
 	has_country_shield = yes
@@ -437,6 +445,10 @@ varamhar_3 = {
 			tag = F42
 			AND = {
 				tag = F38
+				was_tag = F42
+			}
+			AND = {
+				tag = F97
 				was_tag = F42
 			}
 		}
@@ -622,6 +634,10 @@ varamhar_4 = {
 			tag = F42
 			AND = {
 				tag = F38
+				was_tag = F42
+			}
+			AND = {
+				tag = F97
 				was_tag = F42
 			}
 		}
@@ -845,6 +861,10 @@ varamhar_5 = {
 			tag = F42
 			AND = {
 				tag = F38
+				was_tag = F42
+			}
+			AND = {
+				tag = F97
 				was_tag = F42
 			}
 		}

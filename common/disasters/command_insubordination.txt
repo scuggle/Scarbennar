@@ -23,7 +23,7 @@ command_insubordination = {
 			value = 30
 			custom_trigger_tooltip = {
 				tooltip = command_insubordination_elephant_trigger_tt
-				superregion = south_haless_superregion
+				superregion = vimdatrong_superregion
 			}
 		}
 		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -31,9 +31,10 @@ command_insubordination = {
 			custom_trigger_tooltip = {
 				tooltip = command_insubordination_dragon_trigger_tt
 				superregion = yanshen_superregion
+				NOT = { region = demon_hills_region }
 			}
 		}
-		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { value = 120 NOT = { region = shamakhad_region } }
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { value = 120 NOT = { region = shamakhad_region region = demon_hills_region } }
 		custom_trigger_tooltip = {
 			tooltip = command_insubordination_trigger_tt
 			has_country_flag = insubordination_start_flag

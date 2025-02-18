@@ -319,6 +319,7 @@ country_decisions = {
 				}
 				custom_tooltip = L70_khugra_sapphire_party_in_process_tt
 			}
+			custom_tooltip = L70_khugra_sapphire_party_effects_tt
 			hidden_effect = {
 				country_event = { 
 					id = flavour_khugra.10
@@ -365,11 +366,7 @@ country_decisions = {
         provinces_to_highlight = {
 			OR = {
                 AND = {
-					OR = {
-						region = throden_gokad_region
-						region = katala_raz_region
-						region = odu_kherass_region
-					}
+					superregion = taneyas_superregion
 					NOT = { 
 						owned_by = ROOT 
 						owned_by_subject_of = ROOT
@@ -378,11 +375,7 @@ country_decisions = {
 						ROOT = {
 							num_of_owned_provinces_with = {
 								value = 75
-								OR = {
-									region = throden_gokad_region
-									region = katala_raz_region
-									region = odu_kherass_region
-								}
+								superregion = taneyas_superregion
 							}
 						}
 					}
@@ -433,11 +426,7 @@ country_decisions = {
 
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 75
-                OR = {
-                    region = throden_gokad_region
-                    region = katala_raz_region
-                    region = odu_kherass_region
-                }
+				superregion = taneyas_superregion
             }                        
         }
 
@@ -450,11 +439,7 @@ country_decisions = {
 					limit = {
 						culture_group = lizardfolk
 						capital_scope = { 
-							OR = {
-								region = throden_gokad_region
-								region = katala_raz_region
-								region = odu_kherass_region
-							}
+							superregion = taneyas_superregion
 						}
 						NOT = { liberty_desire = 50 }
 						NOT = { is_subject_of_type = tributary_state_anb }
@@ -476,19 +461,7 @@ country_decisions = {
                 }
                 set_government_rank = 3
             }
-            throden_gokad_region = {
-                limit = {
-                    NOT = { owned_by = ROOT }
-                }
-                add_permanent_claim = S81
-            }
-            katala_raz_region = {
-                limit = {
-                    NOT = { owned_by = ROOT }
-                }
-                add_permanent_claim = S81
-            }
-            odu_kherass_region = {
+            taneyas_superregion = {
                 limit = {
                     NOT = { owned_by = ROOT }
                 }
@@ -508,11 +481,7 @@ country_decisions = {
 				limit = {
 					culture_group = lizardfolk
 					capital_scope = { 
-						OR = {
-							region = throden_gokad_region
-							region = katala_raz_region
-							region = odu_kherass_region
-						}
+						superregion = taneyas_superregion
 					}
 					NOT = { liberty_desire = 50 }
 					NOT = { is_subject_of_type = tributary_state_anb }

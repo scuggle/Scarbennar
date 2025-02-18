@@ -22,29 +22,31 @@ keyolion_mastering_the_craft_se = {
 			}
 		}
 		#If there is, it scopes to it
-		random_owned_province = {
-			limit = {
-				NOT = {
+		ROOT = { # Why do we need this? Because otherwise SE in hidden_effect throws errors
+			random_owned_province = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = sugar
+							trade_goods = damestear
+							trade_goods = gems
+							trade_goods = gold
+							trade_goods = coal
+						}
+					}
+					#Has mountainous terrain AND some level of winter.
+					has_terrain = mountain
 					OR = {
-						trade_goods = sugar
-						trade_goods = damestear
-						trade_goods = gems
-						trade_goods = gold
-						trade_goods = coal
+						has_winter = mild_winter
+						has_winter = normal_winter
 					}
 				}
-				#Has mountainous terrain AND some level of winter.
-				has_terrain = mountain
-				OR = {
-					has_winter = mild_winter
-					has_winter = normal_winter
+				#And it changes the goods to sugar and adds the modifier.
+				change_trade_goods = sugar
+				add_permanent_province_modifier = {
+					name = G58_sugar_cold_resistant_modifier
+					duration = -1
 				}
-			}
-			#And it changes the goods to sugar and adds the modifier.
-			change_trade_goods = sugar
-			add_permanent_province_modifier = {
-				name = G58_sugar_cold_resistant_modifier
-				duration = -1
 			}
 		}
 	}
@@ -72,54 +74,58 @@ keyolion_mastering_the_craft_se = {
 			}
 		}
 		#If there is, it scopes to it
-		random_owned_province = {
-			limit = {
-				NOT = {
+		ROOT = { # Why do we need this? Because otherwise SE in hidden_effect throws errors
+			random_owned_province = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = sugar
+							trade_goods = damestear
+							trade_goods = gems
+							trade_goods = gold
+							trade_goods = coal
+						}
+					}
 					OR = {
-						trade_goods = sugar
-						trade_goods = damestear
-						trade_goods = gems
-						trade_goods = gold
-						trade_goods = coal
+						has_terrain = hills
+						has_terrain = highlands
+						has_winter = mild_winter
+						has_winter = normal_winter
 					}
 				}
-				OR = {
-					has_terrain = hills
-					has_terrain = highlands
-					has_winter = mild_winter
-					has_winter = normal_winter
+				#And it changes the goods to sugar and adds the modifier.
+				change_trade_goods = sugar
+				add_permanent_province_modifier = {
+					name = G58_sugar_cold_resistant_modifier
+					duration = -1
 				}
-			}
-			#And it changes the goods to sugar and adds the modifier.
-			change_trade_goods = sugar
-			add_permanent_province_modifier = {
-				name = G58_sugar_cold_resistant_modifier
-				duration = -1
 			}
 		}
 	}
 	#Case 3 - Anything else, but not coastal urbanization
 	else = {
-		random_owned_province = {
-			limit = {
-				#Doesn't produce any of these goods and is not a coastal urban center.
-				NOT = {
-					OR = {
-						trade_goods = sugar
-						trade_goods = damestear
-						trade_goods = gems
-						trade_goods = gold
-						trade_goods = coal
-						has_province_modifier = G58_coastal_urban_center_modifier
-						has_province_modifier = G58_coastal_urbanization_modifier
+		ROOT = {
+			random_owned_province = {
+				limit = {
+					#Doesn't produce any of these goods and is not a coastal urban center.
+					NOT = {
+						OR = {
+							trade_goods = sugar
+							trade_goods = damestear
+							trade_goods = gems
+							trade_goods = gold
+							trade_goods = coal
+							has_province_modifier = G58_coastal_urban_center_modifier
+							has_province_modifier = G58_coastal_urbanization_modifier
+						}
 					}
 				}
-			}
-			#And it changes the goods to sugar and adds the modifier.
-			change_trade_goods = sugar
-			add_permanent_province_modifier = {
-				name = G58_sugar_cold_resistant_modifier
-				duration = -1
+				#And it changes the goods to sugar and adds the modifier.
+				change_trade_goods = sugar
+				add_permanent_province_modifier = {
+					name = G58_sugar_cold_resistant_modifier
+					duration = -1
+				}
 			}
 		}
 	}
@@ -1304,6 +1310,7 @@ remove_all_nekhei_subject_modifiers = {
 }
 
 enable_degarikes = {
+	set_country_flag = has_degarikes
 	if = {
 		limit = {
 			any_owned_province = {
@@ -1527,6 +1534,12 @@ enable_degarikes = {
 			}
 		}
 	}
+	else = {
+		add_country_modifier = {
+			name = great_kheionai_shipbuilders_0
+			duration = -1
+		}
+	}
 }
 
 gaining_kheionai_shipyard_effect = {
@@ -1572,5 +1585,215 @@ losing_kheionai_shipyard_effect = {
 		great_kheionai_shipbuilders_14 = { remove_country_modifier = great_kheionai_shipbuilders_14 add_country_modifier = { name = great_kheionai_shipbuilders_13 duration = -1 } }
 		great_kheionai_shipbuilders_15 = { remove_country_modifier = great_kheionai_shipbuilders_15 add_country_modifier = { name = great_kheionai_shipbuilders_14 duration = -1 } }
 		great_kheionai_shipbuilders_16 = { remove_country_modifier = great_kheionai_shipbuilders_16 add_country_modifier = { name = great_kheionai_shipbuilders_15 duration = -1 } }
+	}
+}
+
+initialize_kheionism_variables = {
+	set_variable = {
+		which = kheionism_maederitic_rule_var
+		value = 0
+	}
+	set_variable = {
+		which = kheionism_schaal_onitheia_var
+		value = 0
+	}
+	set_variable = {
+		which = kheionism_teachings_of_varamelas_var
+		value = 0
+	}
+	set_variable = {
+		which = kheionism_dictats_of_isparokaeus_var
+		value = 0
+	}
+	set_variable = {
+		which = kheionism_archatiradist_doctrine_var
+		value = 0
+	}
+	set_variable = {
+		which = kheionism_anagbheism_var
+		value = 0
+	}
+	set_variable = {
+		which = kheionism_axierophonic_mandate_var
+		value = 0
+	}
+	set_variable = {
+		which = kheionism_drivos_rochos_var
+		value = 0
+	}
+	set_variable = {
+		which = kheionism_laskaris_creed_var
+		value = 0
+	}
+	set_variable = {
+		which = kheionism_provinces_var
+		value = 0
+	}
+	update_kheionism_provinces_variables = yes
+}
+
+update_kheionism_provinces_variables = {
+	export_to_variable = {
+		which = kheionism_provinces_var
+		value = trigger_value:num_of_cities
+	}
+	set_variable = {
+		which = kheionism_75_provinces_var
+		which = kheionism_provinces_var
+	}
+	multiply_variable = {
+		which = kheionism_75_provinces_var
+		value = 3
+	}
+	divide_variable = {
+		which = kheionism_75_provinces_var
+		value = 4
+	}
+	set_variable = {
+		which = kheionism_75_provinces_display_var
+		which = kheionism_75_provinces_var
+	}
+	round_variable = {
+		which = kheionism_75_provinces_display_var
+		value = 1
+	}
+
+	set_variable = {
+		which = kheionism_half_provinces_var
+		which = kheionism_provinces_var
+	}
+	divide_variable = {
+		which = kheionism_half_provinces_var
+		value = 2
+	}
+	set_variable = {
+		which = kheionism_half_provinces_display_var
+		which = kheionism_half_provinces_var
+	}
+	round_variable = {
+		which = kheionism_half_provinces_display_var
+		value = 1
+	}
+
+}
+
+upgrade_kheionism_deity = {
+	if = {
+		limit = { has_kheionist_deity = { deity = $deity$ } }
+		if = {
+			limit = {
+				check_variable = {
+					which = kheionism_$deity$_var
+					which = kheionism_75_provinces_var
+				}
+				NOT = { has_personal_deity = $deity$_deity_level_3 }
+			}
+			change_personal_deity = $deity$_deity_level_3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = kheionism_$deity$_var
+					which = kheionism_half_provinces_var
+				}
+				NOT = { 
+					check_variable = {
+						which = kheionism_$deity$_var
+						which = kheionism_75_provinces_var
+					}
+				}
+				NOT = { has_personal_deity = $deity$_deity_level_2 }
+			}
+			change_personal_deity = $deity$_deity_level_2
+		}
+		else_if = {
+			limit = {
+				NOT = { 
+					check_variable = {
+						which = kheionism_$deity$_var
+						which = kheionism_half_provinces_var
+					}
+				} 
+				NOT = { has_personal_deity = $deity$_deity_level_1 } 
+			}
+			change_personal_deity = $deity$_deity_level_1
+		}
+	}
+}
+
+kheionist_ho_added_effect = {
+	hidden_effect = {
+		set_province_flag = has_$deity$_order_flag
+		owner = {
+			change_variable = {
+				which = kheionism_$deity$_var
+				value = 1
+			}
+			upgrade_kheionism_deity = { deity = $deity$ }
+		}
+	}
+}
+
+kheionist_ho_removed_effect = {
+	hidden_effect = {
+		if = {
+			limit = { owner = { NOT = { has_country_flag = save_kheionist_province_flags } } }
+			clr_province_flag = has_$deity$_order_flag
+		}
+		owner = {
+			if = {
+				limit = {
+					check_variable = {
+						which = kheionism_$deity$_var
+						value = 1
+					}
+				}
+				change_variable = {
+					which = kheionism_$deity$_var
+					value = -1
+				}
+			}
+			upgrade_kheionism_deity = { deity = $deity$ }
+		}
+	}
+}
+
+kheionist_change_deity_tooltip = {
+	custom_tooltip = kheionist_deity_changes_tt
+	if = {
+		limit = { has_kheionist_deity = { deity = maederitic_rule } }
+		tooltip = { change_personal_deity = maederitic_rule_deity_level_1 }
+	}
+	if = {
+		limit = { has_kheionist_deity = { deity = schaal_onitheia } }
+		tooltip = { change_personal_deity = schaal_onitheia_deity_level_1 }
+	}
+	if = {
+		limit = { has_kheionist_deity = { deity = teachings_of_varamelas } }
+		tooltip = { change_personal_deity = teachings_of_varamelas_deity_level_1 }
+	}
+	if = {
+		limit = { has_kheionist_deity = { deity = dictats_of_isparokaeus } }
+		tooltip = { change_personal_deity = dictats_of_isparokaeus_deity_level_1 }
+	}
+	if = {
+		limit = { has_kheionist_deity = { deity = archatiradist_doctrine } }
+		tooltip = { change_personal_deity = archatiradist_doctrine_deity_level_1 }
+	}
+	if = {
+		limit = { has_kheionist_deity = { deity = anagbheism } }
+		tooltip = { change_personal_deity = anagbheism_deity_level_1 }
+	}
+	if = {
+		limit = { has_kheionist_deity = { deity = axierophonic_mandate } }
+		tooltip = { change_personal_deity = axierophonic_mandate_deity_level_1 }
+	}
+	if = {
+		limit = { has_kheionist_deity = { deity = drivos_rochos } }
+		tooltip = { change_personal_deity = drivos_rochos_deity_level_1 }
+	}
+	if = {
+		limit = { has_kheionist_deity = { deity = laskaris_creed } }
+		tooltip = { change_personal_deity = laskaris_creed_deity_level_1 }
 	}
 }

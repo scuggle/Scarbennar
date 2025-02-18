@@ -967,7 +967,7 @@ country_event = { #Lel and Kolo
 	trigger = {
 		religion = nakavy_avo
 		prestige = 0
-		
+		has_consort = yes
 	}
 
 	option = {
@@ -1210,7 +1210,7 @@ country_event = { # Azaly Farscribe Returns
 				capital_scope = {
 					continent = europe
 				}
-				culture_group = halfling
+				is_cannorian_halfling_primary_culture = yes
 			}
 			add_opinion = {
 				who = ROOT

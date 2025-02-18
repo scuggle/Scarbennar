@@ -30,7 +30,7 @@
  mengi_flavor_events.2.b:0 "We should emulate the hyena. "
  mengi_flavor_events.2.c:0 "We should emulate the lion. "
 
- mengi_flavor_events.3.t:0 "Rabble Rouser Remberers"
+ mengi_flavor_events.3.t:0 "Rabble Rouser Rememberers"
  mengi_flavor_events.3.desc:0 "Though defeated in 1370 many slaves in our land eventually learn the story of Abazima Sky-Eye, his enslavement at Fetengoni hands, his service in Yetmesira, his sale to Raheni merchants, and his eventual return to Yetmesira at the head of an army. Many enslaved, regardless if from Bamaliwuni, seek to emulate his actions and gain their freedom via force, we now need to put down these Rememberers otherwise the revolt may spread and threaten our kingdom."
  mengi_flavor_events.3.a:0 "As much as his story is remembered they will surely forget in no time on their own."
  mengi_flavor_events.3.b:0 "They should find that bread, gold and shattering of some chains will help them forget. "
@@ -77,7 +77,7 @@
  mengi_flavor_events.10.b:0 "How about the comedy? Who does not like to laugh?"
  mengi_flavor_events.10.c:0 "A tragedy will surely bring in crowds."
  mengi_flavor_events.10.d:0 "I like the sounds of the drama, let's put that on."
- mengi_flavor_events.10.e:0 "Am I not a king and scholar? Let's go with the history. 
+ mengi_flavor_events.10.e:0 "Am I not a king and scholar? Let's go with the history."
  mengi_play_tt.10.b:0 "Success influenced by rulers diplomacy skill."
  mengi_play_tt.10.c:0 "Success sinfluenced by rulers administrative skill." 
  mengi_play_tt.10.d:0 "Success influenced by rulers military skill."
@@ -90,8 +90,24 @@
  mengi_flavor_events.11.c:0 "Make the mask of Kebek, The Infirm King."
  mengi_flavor_events.11.d:0 "Make the mask of Xeze, The laughing Hyena."
 
- mengi_flavor_events.12.t:0 "The Crowd's Reaction "
+ mengi_flavor_events.12.t:0 "The Crowd's Reaction"
  mengi_flavor_events.12.desc:0 "Time has come for our grand glass play to be shown to the public; over half a year of preparation has been put into the making of this event. As the crowd watches on, their reaction is one of..... "
  mengi_flavor_events.12.a:0 "thunderous celebration."
  mengi_flavor_events.12.b:0 "disappointment and jeers."
  down_river_from_shadow:0 " "
+
+ mengi_flavor_events.13.t:0 "Arrival"
+ mengi_flavor_events.13.desc:0 "As the Sun reaches its peak, a house slave requests your attention. He leads you to the front of your palace in [Root.Capital.GetName] where before the guard stands a foreigner and their entourage.\n\nThe foreigner is dusted and sun-scorched from travel, but their pointed ears and hair the color of gold still stands out. You of course have heard of elves before, but the first one you have ever seen. Their entourage is almost as surprising as well, an eclectic group of Northerners from the desert. There is a gnoll with a shortsword at his side, a Harpy dressed in silk finery, and a few human tribesmen. Each alone might not be surprising, that they would be here together on one mission certainly is.\n\nTheir discussion with the guard falls silent as they see you approach. The elf steps forward, and begins.\n\n“Hello, I come bearing news of the Lord who brings Light to the Four Corners. The god Zurel, as you call them. We wish to tell you about His truths as revealed to His Herald.”"
+ mengi_flavor_events.13.a:0 "Guards get them out of here!"
+ mengi_flavor_events.13.b:0 "I will hear you out, what's the harm in that?"
+
+ mengi_flavor_events.14.t:0 "Rejection"
+ mengi_flavor_events.14.desc:0 "It starts as a whisper, creeping through the fields and furrows of [Root.GetName] like a weed. And then the slaves start to disappear.\n\nAt first, it isn't a problem. You dispatch some catchers, and like any minor nuisance, you expect it to be resolved in quick order. And then the catchers start to disappear. Your advisors quickly conclude that there must be some monster afoot, and so dispatch some Riyitewag, who are well equipped with hunting and defeating such beasts. Then the adventurers disappear as well. \n\nOne evening, as you finish a tirade at your captains and generals about how useless they’re being, a hill on the outskirts of [Root.Capital.GetName] is lit up, brighter than the midday sun. You shield your eyes from the almost-blinding light, but you can still hear the chant:\n\n“Zurel Will Bring Light. Zureal Will Bring Freedom.”"
+ mengi_flavor_events.14.a:0 "Ready the armies."
+
+ mengi_flavor_events.15.t:0 "Embrace?"
+ mengi_flavor_events.15.desc:0 "As you walk around the palace garden in [Root.Capital.GetName], now flourishing with the help of the hands of your new friend, [This.desert_elf_name.GetName] asks “For who is the better gardener?”\n\nYou laugh softly, and give him a wry smile as you answer, “You are, of course.” The new techniques brought from Bulwar, and the way he has carefully nurtured some of the land’s more delicate plants, makes that clear.\n\nThen you meet the eyes of your friend, and they have no humor in them at all. They are as serious as the day he met you in your palace. He shakes his head, and gestures toward the sky.\n\nThey ask again. “Who is the better gardener, the one who makes the rain or the one who is the light?” "
+ mengi_flavor_events.15.a:0 "The one who makes the rain, Amilak."
+ mengi_flavor_events.15.b:0 "The one who is the light, Zurel."
+ desert_elf_leaves.tt:0 "§Y[This.desert_elf_name.GetName]§! leaves your court."
+ desert_elf_upgrades.tt:0 "§Y[This.desert_elf_name.GetName]'s§! skill increases and becomes an Inquisitor."

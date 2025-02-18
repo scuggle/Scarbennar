@@ -118,15 +118,30 @@ country_event = {
 				}
 				modifier = {
 					factor = 1.5
-					NOT = { check_variable = { army_tradition = 30 } }
+					NOT = { army_tradition = 30 }
 				}
 				modifier = {
 					factor = 1.5
-					NOT = { check_variable = { army_professionalism = 0.25 } }
+					NOT = { army_professionalism = 0.25 }
 				}
 				country_event = {
 					id = hobgoblin_tolerance_events.6
 				}
+			}
+			30 = {
+				trigger = {
+					ai = no
+					OR = {
+						has_country_modifier = just_lost_war_timer
+						average_unrest = 10
+						is_bankrupt = yes
+						NOT = { stability = 0 }
+					}
+					NOT = { high_tolerance_hobgoblin_race_trigger = yes }
+					is_not_purging_or_expelling_any_race_trigger = yes
+				}
+				set_country_flag = propflag_hobgoblin
+				country_event = { id = tolerance_generic.1 }
 			}
 		}
 	}

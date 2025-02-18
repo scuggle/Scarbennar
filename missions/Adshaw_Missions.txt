@@ -556,10 +556,16 @@ adshaw_1_missions_nc = {
 		}
 		
 		trigger = {
-			owns_all_provinces  = {
-				culture = olavish
-				continent = europe
-			}
+			europe = {
+				type = all
+				OR = {
+					NOT = { culture = olavish }
+		    		AND = {
+						culture = olavish
+		        		country_or_non_sovereign_subject_holds = ROOT 
+					}
+				}
+		    }
 			dip_power = 200
 		}
 		
@@ -2558,7 +2564,7 @@ adshaw_4_missions_m = {
 	}
 	
 	adshaw_trouble_in_the_dens = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		position = 10
 		required_missions = {
 			adshaw_tempting_the_wolf
@@ -2726,7 +2732,17 @@ adshaw_4_missions_m = {
 					}
 					release_with_religion_and_culture = { tag = Z39 religion = regent_court culture = visfoot_halfling }
 				}
-				set_government_rank = 1
+				if = {
+					limit = { ai = yes }
+					# give the rest to Gerwick
+					every_owned_province = {
+						add_core = B83
+					}
+					release_with_religion_and_culture = { tag = B83 religion = ROOT culture = gawedi }
+				}
+				else = {
+					set_government_rank = 1
+				}
 			}
 			add_prestige = 20
 			custom_tooltip = adshaw_gawed_burns

@@ -1,6 +1,5 @@
-owner = S43 #Violent Hearted Goose
-controller = S43 #Violent Hearted Goose
-add_core = S43 #Violent Hearted Goose
+owner = S40 #Forest Hiding Okapi
+controller = S40 #Forest Hiding Okapi
 add_core = S40 #Forest Hiding Okapi
 culture = cyazizeta_lizardfolk
 religion = beast_memory

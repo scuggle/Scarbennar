@@ -684,7 +684,7 @@ declarewar = {
 		}
 	}
 
-	condition = { #Nekheis need permission to declare war
+	condition = { #Can't declare war on Orenvalyam while the Kamrayakval's War is happening
 		tooltip = KAMRAYAKVALS_WAR_CANT_INTERVENE
 		potential = { 
 			FROM = { tag = U39 } #Orenvalyam
@@ -710,10 +710,10 @@ declarewar = {
 		if = {	# If an Escanni adventurer player tries to declare a no-CB war.
 			limit = { escann_adventurer_no_no_cb_wars_trigger = yes }
 			white_peace = FROM	# Immediate white peace; keeps the -2 stab hit from no-CB.
-			country_event = { id = adventurer.6 }
+			country_event = { id = adventurer.5 }
 			save_event_target_as = cheeky_no_cb_adventurers
 			FROM = {
-				country_event = { id = adventurer.5 }
+				country_event = { id = adventurer.6 }
 			}
 		}
 
@@ -1009,6 +1009,8 @@ declarewar = {
 			}
 		}
 
+		accretive_path_beikling_chi_stacking_effect = { amount = 20 }
+
 		# Empkeios Independence War - and adaptation from Keyolion's
 		if = {
 			limit = {
@@ -1252,14 +1254,12 @@ declarewar = {
 		}
 
 		if = {
-			limit = {
-				FROM = {
-					tag = R62
-					has_country_flag = command_sir_revolt_started
-				}
+			limit = { FROM = { tag = R62 } }
+			if = {
+				limit = { FROM = { has_country_flag = command_sir_revolt_started } }
+				4352 = { remove_building = fort_15th remove_province_modifier = command_fake_fort }
+				4345 = { remove_building = fort_15th remove_province_modifier = command_fake_fort }
 			}
-			4352 = { remove_building = fort_15th remove_province_modifier = command_fake_fort }
-			4345 = { remove_building = fort_15th remove_province_modifier = command_fake_fort }
 		}
 		if = {
 			limit = {
@@ -1348,6 +1348,54 @@ declarewar = {
 			country_event = {
 				id = flavour_khugra.6
 			}
+		}
+		if = { #Taychendi Empire
+			limit = { 
+				has_country_flag = J84_lizardfolk_expedition_flag
+				FROM = {
+					OR = {
+						culture_group = lizardfolk
+						num_of_owned_provinces_with = {
+							value = 10
+							culture_group = lizardfolk
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = J84_the_lizardfolk_expedition
+				duration = -1
+			}
+		}
+		if = { #Taychendi Empire
+			limit = {
+				OR = {
+					has_country_modifier = J84_artificer_aided_colonisation
+					has_country_modifier = J84_artificery_unleashed
+				}
+				FROM = {
+					is_colonial_nation = yes
+					capital_scope = { superregion = effelai_superregion }
+				}
+			}
+			every_war_enemy_country = {
+				limit = { 
+					defensive_war_with = FROM 
+					capital_scope = { continent = europe }
+					NOT = { tag = FROM }
+					NOT = {
+						is_in_war = {
+							participants = ROOT
+							duration = 1
+						}
+					}
+				}
+				white_peace = ROOT
+			}
+		}
+		if = {
+			limit = { has_country_flag = mengi_expand_realm }
+			clr_country_flag = mengi_expand_realm
 		}
 	}
 }
@@ -2532,6 +2580,14 @@ annexationaction = {
 					}
 				}
 				AND = {
+					tag = U71
+					yrw_has_settled_second_debate_blame_subjects = yes
+					FROM = {
+						primary_culture = rzentur
+						capital_scope = { OR = { region = rzenta_region area = pomvasonn_area } }
+					}
+				}
+				AND = {
 					tag = G27
 					yrw_has_settled_second_debate_blame_subjects = yes
 					has_country_flag = g27_imperial_flag
@@ -2580,6 +2636,15 @@ annexationaction = {
 		allow = {
 			always = no
 		}
+	}
+	
+	condition = {
+		tooltip = brambleskinner_subordinate_clans
+		potential = {
+			ROOT = { tag = I35 }
+			FROM = { has_country_flag = brambleskinner_no_integration }
+		}
+		allow = { always = no }
 	}
 	
 	effect = {
@@ -2638,6 +2703,18 @@ annexationaction = {
             always = no
         }
     }
+	
+	condition = {
+        tooltip = BAGCATIR_CANT_INTEGRATE
+        potential = {
+			tag = H07
+			has_country_modifier = bagcatir_trade_league
+		}
+        allow = {
+            always = no
+        }
+    }	
+	
 }
 
 integrationaction = {
@@ -2975,6 +3052,18 @@ callaction = {
 			}
 		}
 	}
+	condition = { #Kinstrife is an internal affair, and relies on allclan.9999 instead of peace deals
+		tooltip = KINSTRIFE_NO_CALL
+		potential = {
+			OR = {
+				FROM = { has_country_flag = kinstrife_funtime_flag }
+				has_country_flag = kinstrife_funtime_flag
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 	condition = { #Can't call to arms during Ovdal Lodhum's scripted war
 		tooltip = LODHUM_NO_CALL_WAR
 		potential = {
@@ -3010,15 +3099,12 @@ callaction = {
 	condition = { #Degakheion cant go to war against eneion when its an autovassal
 		potential = {
 			ROOT = { 
-				war_with = G55
+				war_with = G55 #Eneion
 			}
 			FROM = { 
-				tag = G46
-				G55 = {
-					is_subject_of_type_with_overlord = {
-						who = G46
-						type = autonomous_vassal
-					}
+				tag = G46 #Degakheion
+				G55 = { #Eneion
+					has_country_flag = G55_call_in_degakheion_flag
 				}
 			}
 		}
@@ -3053,6 +3139,19 @@ callaction = {
 			}
 		}
 	}
+
+	condition = {
+		tooltip = NO_ALLIES_WAR
+		potential = {
+			ROOT = { has_country_flag = no_allies_war }
+		}
+		allow = {
+			OR = {
+				overlord_of = FROM
+				is_subject_of = FROM
+			}
+		}
+	}
 	
 	effect = {
 		if = {	#achievement against the Command
@@ -3073,8 +3172,8 @@ callaction = {
 					NOT = { is_in_war = { casus_belli = cb_revolt_of_the_north } }
 				}
 			}
+			FROM = { capital_scope = { remove_province_modifier = command_defensiveness_for_ai } }
 		}
-		FROM = { capital_scope = { remove_province_modifier = command_defensiveness_for_ai } }
 	}
 	
 	effect = {
@@ -3084,6 +3183,29 @@ callaction = {
 			}
 			country_event = { id = ashtreepact.1 }
 			FROM = { country_event = { id = ashtreepact.1 } }
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						ROOT = { tag = J72 }
+						FROM = { tag = G74 }
+					}
+					AND = {
+						ROOT = { tag = G74 }
+						FROM = { tag = J72 }
+					}
+				}
+			}
+			G74 = {
+				change_variable = {
+					which = gophira_war_fought_with_dark
+					value = 1
+				}
+			}
 		}
 	}
 
@@ -3123,6 +3245,24 @@ callaction = {
 			always = no
 		}
 	}
+
+	condition = { #Taychend Effelai Conquest
+		tooltip = J84_ABANDON_EFFELAI_COLONIES_TT
+		potential = {
+			J84 = { #Taychendi Empire
+				OR = {
+					has_country_modifier = J84_artificer_aided_colonisation
+					has_country_modifier = J84_artificery_unleashed
+				}
+			}
+			is_colonial_nation = yes
+			capital_scope = { superregion = effelai_superregion }
+			is_in_war = { participants = J84 } #Taychendi Empire
+		}
+		allow = {
+			FROM = { NOT = { capital_scope = { continent = europe } } }
+		}
+	}
 }
 
 designate_march = {
@@ -3142,6 +3282,17 @@ designate_march = {
 			}
 		}
 		allow = { always = no }
+	}
+
+	effect = {
+		if = {
+			limit = { ROOT = { mission_completed = R11_organize_companies } }
+			FROM = {
+				khadisrapur_become_free_company_effect = yes
+				add_historical_friend = ROOT
+			}
+			add_historical_friend = FROM
+		}
 	}
 }
 
@@ -3430,14 +3581,35 @@ requestpeace = {
 		}
 	}
 	condition = {
-		tooltip = COMMAND_ACTIVE_SIR_REVOLT
+		tooltip = COMMAND_ACTIVE_DISASTER_WAR
 		potential = {
 			OR = {
-				has_country_flag = command_sir_revolt_started
-				FROM = { has_country_flag = command_sir_revolt_started }
+				tag = R62
+				FROM = { tag = R62 }
 			}
 		}
-		allow = { always = no }
+		allow = {
+			if = {
+				limit = { R62 = { has_country_flag = command_sir_revolt_started } }
+				NOT = {
+					has_country_flag = command_sir_revolt_started
+					FROM = { has_country_flag = command_sir_revolt_started }
+				}
+			}
+			else_if = {
+				limit = { R62 = { has_country_flag = insubordination_active_flag } }
+				NOT = {
+					AND = {
+						tag = R62
+						FROM = { is_in_war = { casus_belli = cb_insubordination } }
+					}
+					AND = {
+						is_in_war = { casus_belli = cb_insubordination }
+						FROM = { tag = R62 }
+					}
+				}
+			}
+		}
 	}
 	condition = { #Besolaki Independence War
 		tooltip = G54_NO_PEACE_OUT_TT
@@ -3469,11 +3641,11 @@ break_alliance = {
 	}
 }
 
-excommunicate_action = {
+excommunicate_action = { 
 	condition = {  }
 	
 	effect = {
-		add_ruler_modifier = { name = anb_excommunicated duration = -1 }
+		FROM = { add_ruler_modifier = { name = ravelian_excommunicated duration = -1 } } #removed in on_actions
 	}
 }
 

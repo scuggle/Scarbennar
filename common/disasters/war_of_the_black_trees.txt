@@ -101,8 +101,11 @@ war_of_the_black_trees = {
 			stability = 3
 		}
 		modifier = {
-			factor = -2
-			MIL = 6
+			factor = 10
+			custom_trigger_tooltip = {
+				has_country_flag = sapchopper_ire_of_prince
+				tooltip = sapchopper_ire_of_prince.tt
+			}
 		}
 	}
 

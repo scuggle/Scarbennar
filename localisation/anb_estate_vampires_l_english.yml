@@ -305,6 +305,7 @@
  vampire_hideout_menu_decision_desc:0 "§TThe more vampires havens we destroy, the less powerful §YThe Masquerade Rebellion§! will be.§!"
  
  vampire_thrall:0 "Vampire Thrall"
+ has_vampire_thrall.tt:0 "Does NOT have a Vampire Thrall already."
  wounded_ruler:0 "Wounded Ruler"
  vampire_hideout:0 "Vampire Conspirator Haven"
  

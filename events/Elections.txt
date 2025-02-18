@@ -58,32 +58,22 @@ country_event = {
 
 		#Anbennar
 		NOT = { has_country_flag = lich_ruler_has_phylactery }
+		OR = {
+			NOT = { has_government_attribute = anb_special_elections }
+			has_reform = reformed_silver_council_reform #Unique--locks access to a bunch of reforms, has no unique election event
+		}
 		NOT = { has_reform = obsidian_council_reform }
-		NOT = { has_reform = roilsard_elective }
 		NOT = { has_reform = ar_callein_reform }
-		NOT = { has_reform = reuyeli_republic }
-		NOT = { has_reform = krak_clan_council }
-		NOT = { has_reform = krak_free_council }
 		NOT = { has_ruler_modifier = republic_rule_for_life }
-		NOT = { has_reform = eternal_council }
 		NOT = { has_reform = sunrise_court_reform }
 		NOT = { AND = { tag = Y86 has_ruler_flag = is_hiderion } }
 		NOT = { has_reform = sinistral_republic_reform }
-		NOT = { has_reform = bulwar_twelve_families_reform }
 		NOT = { has_reform = krakazol_olzonog }
 		NOT = { has_reform = varamhar_eternal_empire }
 		NOT = { has_reform = varamhar_eternal_empire_mandate }
-		NOT = { has_reform = trollsbayer_pluralism_reform }
 		NOT = { has_reform = dakinshi_warlord_reform }
-		NOT = { has_reform = free_slave_reform }
-		NOT = { has_reform = praxic_meritocracy_reform }
-		NOT = { has_reform = brelar_ynnic_dynastic_republic }
 		NOT = {	has_country_flag = g27_drozmasrecat_flag }
 		NOT = { has_reform = haraf_kinah_conclave }
-		NOT = { has_reform = isagumze_scaled_lords_reform }
-		NOT = { has_reform = vels_bacar_bacaran_republic }
-		NOT = { has_reform = besolaki_chaotic_republicanism }
-		NOT = { has_reform = technocracy_republic_reform }
 		if = {
 			limit = {
 				has_country_flag = caretaker_revolutionary_government
@@ -97,16 +87,15 @@ country_event = {
 				has_country_flag = bulwar_got_rabsukalukaturanised
 			}
 		}
-		NOT = { has_reform = ameion_conquerers_reform }
-		NOT = { has_reform = newshire_stewardship }
-		NOT = { has_reform = newshire_high_stewardship }
-		NOT = { has_reform = mountainshark_govzenszel }
-		NOT = { has_reform = pentapandemonium_reform }
-		NOT = { has_reform = medasi_reform }
 		NOT = { has_reform = husziens_council }
 		NOT = { has_reform = bronze_dual_government_reform }
 		NOT = { has_reform = kai_republic }
+		NOT = { has_reform = technocracy_republic_reform }
+		NOT = { has_reform = imperial_technocracy_republic_reform }
 		NOT = { has_reform = united_federation }
+		NOT = { has_reform = abyssal_otardom_reform }
+		NOT = { has_reform = forge_council_reform }
+		NOT = { has_reform = ameion_republic }
 	}
 
 	immediate = {
@@ -374,6 +363,14 @@ country_event = {
 					name = silver_touched_province
 					duration = 2920
 				}
+			}
+		}
+		
+		if = { #Ikogshaantus
+			limit = { has_reform = ikogshaantus_khantaar_industrial_council }
+			add_estate_loyalty = {
+				estate = all
+				loyalty = -3
 			}
 		}
 	}
@@ -1136,7 +1133,6 @@ country_event = {
 				has_country_flag = bulwar_got_rabsukalukaturanised
 			}
 		}
-		NOT = { has_reform = ameion_conquerers_reform }
 		NOT = { has_reform = newshire_stewardship }
 		NOT = { has_reform = newshire_high_stewardship }
 		NOT = { has_reform = land_of_thousand_shrines}
@@ -1145,7 +1141,7 @@ country_event = {
 		OR = { NOT = { has_ruler_flag = is_holi } has_country_flag = Y26_election_loop }
 		NOT = { has_reform = pentapandemonium_reform }
 		NOT = { has_reform = brelar_ynnic_dynastic_republic }
-		NOT = { AND = { tag = U04 has_country_modifier = aakheta_uprising_modifier } }
+		NOT = { AND = { tag = U04 OR = { has_country_modifier = aakheta_uprising_modifier has_country_modifier = aakheta_uprising_modifier_ai } } }
 		NOT = { has_government_attribute = generals_become_rulers }
 		NOT = { has_reform = shadow_horde }
 		NOT = { has_reform = haraf_kinah_conclave }
@@ -1158,7 +1154,12 @@ country_event = {
 		NOT = { has_reform = isagumze_scaled_lords_reform }
 		NOT = { has_reform = vels_bacar_bacaran_republic }
 		NOT = { has_reform = technocracy_republic_reform }
+		NOT = { has_reform = imperial_technocracy_republic_reform }
 		NOT = { has_country_modifier = thirabnir_stayin_alive } #I wish I wasn't forced to do this, but life extension doesn't work
+		NOT = { has_reform = racial_tolerance_reform }
+		NOT = { has_reform = abyssal_otardom_reform }
+		NOT = { has_reform = forge_council_reform }
+		NOT = { has_reform = ameion_republic }
  	}
 
 	immediate = {
@@ -1914,6 +1915,11 @@ country_event = {
 		desc = elections.720.feiten
 	}
 	
+	desc = {
+		trigger = { has_reform = raithtall_twilight_court_reform }
+		desc = elections.720.raithtall
+	}
+	
 	# desc = {
 	# 	trigger = { 
 	# 		NOT = {
@@ -1941,6 +1947,7 @@ country_event = {
 		name = elections.720.a
 		trigger = { 
 			NOT = { has_reform = monastic_elections_reform }
+			NOT = { has_reform = raithtall_twilight_court_reform }
 			NOT = { has_reform = feuillant_reform }
 			NOT = { has_reform = damescrown_republic_reform }
 			NOT = { has_reform = feiten_reformist_movement }
@@ -2032,6 +2039,7 @@ country_event = {
 					# has_government_attribute = has_dutch_election
 					has_reform = monastic_elections_reform
 					has_reform = damescrown_republic_reform
+					has_reform = raithtall_twilight_court_reform
 				}
 			} 
 			NOT = { has_reform = feiten_reformist_movement }
@@ -2160,6 +2168,31 @@ country_event = {
 		change_innovativeness = -2
 		add_mercantilism_excess_to_diplo_power_effect = { VAL = 2 }
 	}
+	
+	option = {
+		name = elections.720.twilightMonarchist
+		trigger = { 
+			has_reform = raithtall_twilight_court_reform
+		}
+		define_ruler = {
+			dynasty = original_dynasty
+			random_gender = yes
+		}
+		set_ruler_flag = raithtallTwilightMonarchist
+		change_statists_vs_orangists = -0.2
+	}
+
+	option = {
+		trigger = { 
+			has_reform = raithtall_twilight_court_reform
+		}
+		name = elections.720.twilightTheocrat
+		define_ruler = {
+			random_gender = yes
+		}
+		set_ruler_flag = raithtallTwilightTheocrat
+		change_statists_vs_orangists = 0.2
+	}
 }
 
 country_event = {
@@ -2190,6 +2223,11 @@ country_event = {
 	desc = {
 		trigger = { has_reform = feiten_reformist_movement }
 		desc = elections.721.feiten
+	}
+	
+	desc = {
+		trigger = { has_reform = raithtall_twilight_court_reform }
+		desc = elections.721.raithtall
 	}
 	
 	# desc = {
@@ -2223,6 +2261,7 @@ country_event = {
 			NOT = { has_reform = feuillant_reform }
 			NOT = { has_reform = damescrown_republic_reform }
 			NOT = { has_reform = feiten_reformist_movement }
+			NOT = { has_reform = raithtall_twilight_court_reform }
 		}
 		if = {
 			limit = {
@@ -2300,8 +2339,9 @@ country_event = {
 					has_reform = monastic_elections_reform 
 					has_reform = damescrown_republic_reform
 					has_reform = feiten_reformist_movement
+					has_reform = raithtall_twilight_court_reform
 				} 
-			} 
+			}
 		}
 		name = elections.720.c
 		if = {
@@ -2389,6 +2429,31 @@ country_event = {
 		change_innovativeness = -2
 		add_mercantilism_excess_to_diplo_power_effect = { VAL = 2 }
 	}
+		
+	option = {
+		name = elections.720.twilightMonarchist
+		trigger = { 
+			has_reform = raithtall_twilight_court_reform
+		}
+		define_ruler = {
+			dynasty = original_dynasty
+			random_gender = yes
+		}
+		set_ruler_flag = raithtallTwilightMonarchist
+		change_statists_vs_orangists = -0.2
+	}
+
+	option = {
+		trigger = { 
+			has_reform = raithtall_twilight_court_reform
+		}
+		name = elections.720.twilightTheocrat
+		define_ruler = {
+			random_gender = yes
+		}
+		set_ruler_flag = raithtallTwilightTheocrat
+		change_statists_vs_orangists = 0.2
+	}
 }
 
 # Lottery Election by Daniel Tolman
@@ -2424,6 +2489,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+			################### A Candidate ###################
 			if = {
 				limit = {
 					has_country_modifier = harpy_administration
@@ -2525,6 +2591,7 @@ country_event = {
 					option = 0
 				}
 			}
+			################### B Candidate ###################
 			if = {
 				limit = {
 					has_country_modifier = harpy_administration
@@ -2627,6 +2694,7 @@ country_event = {
 					option = 1
 				}
 			}
+			################### C Candidate ###################
 			if = {
 				limit = {
 					has_country_modifier = harpy_administration
@@ -3058,53 +3126,88 @@ country_event = { #Technocracy Election
 	is_triggered_only = yes
 		
 	trigger = {
-		has_reform = technocracy_republic_reform
+		OR = {
+			has_reform = technocracy_republic_reform
+			has_reform = imperial_technocracy_republic_reform
+		}
 	}
 	
 	option = {
+		trigger = {
+			NOT = { has_country_flag = technocracy_death_election }
+			has_regency = no
+		}
 		name = elections.900.a # Current ruler stays
-		ai_chance = { 
-			factor = 60
-			modifier = {
-				factor = 0
-				NOT = {
-					OR = {
-						AND = {
-							faction_in_power = tec_brilliance
-							has_ruler_flag = brillite_ruler
-						}
-						AND = {
-							faction_in_power = tec_technomancy
-							has_ruler_flag = technomancy_ruler
-						}
-						AND = {
-							faction_in_power = tec_mechanists
-							has_ruler_flag = mechanists_ruler
-						}
-					}				
-				}
+		ai_chance = { factor = 50 }
+		if = {
+			limit = {
+				has_government_attribute = reelection_depowers_estates
+			}
+			add_estate_influence_modifier = {
+				estate = all
+				influence = -10
+				duration = 1460
+				desc = REELCTION_DEPOWER_ESTATES
 			}
 		}
 		if = {
-			limit = { 
-				OR = {
-					AND = {
-						faction_in_power = tec_brilliance
-						has_ruler_flag = brillite_ruler
-					}
-					AND = {
-						faction_in_power = tec_technomancy
-						has_ruler_flag = technomancy_ruler
-					}
-					AND = {
-						faction_in_power = tec_mechanists
-						has_ruler_flag = mechanists_ruler
-					}
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty = {
+				estate = all
+				loyalty = 5
+			}
+		}
+		if = {
+			limit = { has_government_attribute = reelection_increases_absolutism }
+			tooltip = {
+				add_absolutism = 10
+			}
+			custom_tooltip = ADD_ABSOLUTISM_BASED_ON_ELECTION_TERM
+			hidden_effect = {
+				for_variable_amount = {
+					variable = election_term
+					effect = "
+						add_absolutism = 10
+					"
+				}
+			}
+			hidden_effect = {
+				change_variable = {
+					which = election_term
+					value = 1
 				}
 			}
 		}
-		else = {
-			custom_tooltip = wrong_ruler_faction_tooltip
+		
+		if = {
+			limit = {
+				has_country_flag = giberd_faction_competition_enabled
+			}
+			if = {
+				limit = {
+					has_ruler_flag = technomancy_ruler
+				}
+				giberd_factions_technomancers_increase = yes
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = brillite_ruler
+				}
+				giberd_factions_brillites_increase = yes
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = mechanists_ruler
+				}
+				giberd_factions_mechanists_increase = yes
+			}
+		}
+
+		if = {
+			limit = {
+				ai = no
+			}
+			# half RT price for technocracy re-elections
 			if = {	#long-lived races
 				limit = {
 					OR = {
@@ -3113,27 +3216,36 @@ country_event = { #Technocracy Election
 						has_country_modifier = dwarven_administration
 					}
 				}
-				add_scaled_republican_tradition = -3
+				add_scaled_republican_tradition = -1.5
 			}
 			else = {
 				if = {
 					limit = {
 						has_country_flag = increased_election_cost
 					}
-					add_scaled_republican_tradition = -15
+					add_scaled_republican_tradition = -7.5
 					clr_country_flag = increased_election_cost
 				}
 				else = {
-					add_scaled_republican_tradition = -10
+					add_scaled_republican_tradition = -5
 				}
 			}
-		}	
+		}
 	}
 	option = {
 		name = elections.900.b # Brillite Ruler
+		if = {
+			limit = {
+				has_country_flag = giberd_faction_competition_enabled
+			}
+			giberd_factions_brillites_increase = yes
+		}
 
 		if = { 
-			limit = { NOT = { faction_in_power = tec_brilliance } }
+			limit = {
+				ai = no
+				faction_in_power = tec_brilliance 
+			}
 			custom_tooltip = wrong_ruler_faction_tooltip 
 			if = {	#long-lived races
 				limit = {
@@ -3159,15 +3271,15 @@ country_event = { #Technocracy Election
 			}
 		}
 		define_ruler = {
-			adm = 3
-			dip = 1
-			mil = 0
+			adm = 2
+			dip = 0
+			mil = 1
 		}
 		if = {
 			limit = {
 				faction_influence = {
 					faction = tec_brilliance
-					influence = 80
+					influence = 90
 				}
 			}
 			hidden_effect = {
@@ -3181,7 +3293,7 @@ country_event = { #Technocracy Election
 			limit = {
 				faction_influence = {
 					faction = tec_brilliance
-					influence = 60
+					influence = 75
 				}
 			}
 			hidden_effect = {
@@ -3195,7 +3307,7 @@ country_event = { #Technocracy Election
 			limit = {
 				faction_influence = {
 					faction = tec_brilliance
-					influence = 40
+					influence = 50
 				}
 			}
 			hidden_effect = {
@@ -3209,7 +3321,7 @@ country_event = { #Technocracy Election
 			limit = {
 				faction_influence = {
 					faction = tec_brilliance
-					influence = 20
+					influence = 25
 				}
 			}
 			hidden_effect = {
@@ -3255,6 +3367,19 @@ country_event = { #Technocracy Election
 		hidden_effect = {
 			set_ruler_flag = brillite_ruler
 		}
+		if = {
+			limit = {
+				has_country_flag = giberd_ravelians_role
+			}
+			giberd_leader_clean_bonus = yes
+			giberd_leader_brillites_bonus = yes
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_adm = {
+				loyalty = 10
+			}
+		}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -3265,9 +3390,19 @@ country_event = { #Technocracy Election
 	}
 	option = {
 		name = elections.900.c # Techno-Thaumaturge Ruler
+		
+		if = {
+			limit = {
+				has_country_flag = giberd_faction_competition_enabled
+			}
+			giberd_factions_technomancers_increase = yes
+		}
 
 		if = { 
-			limit = { NOT = { faction_in_power = tec_technomancy } }
+			limit = {
+				ai = no
+				faction_in_power = tec_technomancy
+			}
 			custom_tooltip = wrong_ruler_faction_tooltip 
 			if = {	#long-lived races
 				limit = {
@@ -3301,7 +3436,7 @@ country_event = { #Technocracy Election
 			limit = {
 				faction_influence = {
 					faction = tec_technomancy
-					influence = 80
+					influence = 90
 				}
 			}
 			hidden_effect = {
@@ -3315,7 +3450,7 @@ country_event = { #Technocracy Election
 			limit = {
 				faction_influence = {
 					faction = tec_technomancy
-					influence = 60
+					influence = 75
 				}
 			}
 			hidden_effect = {
@@ -3329,7 +3464,7 @@ country_event = { #Technocracy Election
 			limit = {
 				faction_influence = {
 					faction = tec_technomancy
-					influence = 40
+					influence = 50
 				}
 			}
 			hidden_effect = {
@@ -3337,13 +3472,13 @@ country_event = { #Technocracy Election
 				change_dip = 2
 				change_mil = 2
 			}
-			custom_tooltip = increase_stats_by_1_influence_tt 
+			custom_tooltip = increase_stats_by_2_influence_tt 
 		}
 		else_if = {
 			limit = {
 				faction_influence = {
 					faction = tec_technomancy
-					influence = 20
+					influence = 25
 				}
 			}
 			hidden_effect = {
@@ -3386,8 +3521,21 @@ country_event = { #Technocracy Election
 		else = { 
 			custom_tooltip = increase_stats_by_0_trad_tt 
 		}
+		if = {
+			limit = {
+				has_country_flag = giberd_ravelians_role
+			}
+			giberd_leader_clean_bonus = yes
+			giberd_leader_technomancers_bonus = yes
+		}
 		hidden_effect = {
 			set_ruler_flag = technomancy_ruler
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_dip = {
+				loyalty = 10
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -3399,10 +3547,19 @@ country_event = { #Technocracy Election
 	}
 	option = {
 		name = elections.900.d # Mechanist Ruler
+		if = {
+			limit = {
+				has_country_flag = giberd_faction_competition_enabled
+			}
+			giberd_factions_mechanists_increase = yes
+		}
 
 		if = { 
-			limit = { NOT = { faction_in_power = tec_mechanists } }
-			custom_tooltip = wrong_ruler_faction_tooltip
+			limit = {
+				ai = no
+				faction_in_power = tec_mechanists
+			}
+			custom_tooltip = wrong_ruler_faction_tooltip 
 			if = {	#long-lived races
 				limit = {
 					OR = {
@@ -3429,13 +3586,13 @@ country_event = { #Technocracy Election
 		define_ruler = {
 			adm = 0
 			dip = 1
-			mil = 3
+			mil = 2
 		}
 		if = {
 			limit = {
 				faction_influence = {
 					faction = tec_mechanists
-					influence = 80
+					influence = 90
 				}
 			}
 			hidden_effect = {
@@ -3449,7 +3606,7 @@ country_event = { #Technocracy Election
 			limit = {
 				faction_influence = {
 					faction = tec_mechanists
-					influence = 60
+					influence = 75
 				}
 			}
 			hidden_effect = {
@@ -3457,13 +3614,13 @@ country_event = { #Technocracy Election
 				change_dip = 3
 				change_mil = 3
 			}
-			custom_tooltip = increase_stats_by_3_influence_tt
+			custom_tooltip = increase_stats_by_3_influence_tt 
 		}
 		else_if = {
 			limit = {
 				faction_influence = {
 					faction = tec_mechanists
-					influence = 40
+					influence = 50
 				}
 			}
 			hidden_effect = {
@@ -3477,7 +3634,7 @@ country_event = { #Technocracy Election
 			limit = {
 				faction_influence = {
 					faction = tec_mechanists
-					influence = 20
+					influence = 25
 				}
 			}
 			hidden_effect = {
@@ -3520,8 +3677,21 @@ country_event = { #Technocracy Election
 		else = { 
 			custom_tooltip = increase_stats_by_0_proff_tt 
 		}
+		if = {
+			limit = {
+				has_country_flag = giberd_ravelians_role
+			}
+			giberd_leader_clean_bonus = yes
+			giberd_leader_mechanists_bonus = yes
+		}
 		hidden_effect = {
 			set_ruler_flag = mechanists_ruler
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_mil = {
+				loyalty = 10
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -3530,6 +3700,10 @@ country_event = { #Technocracy Election
 				faction_in_power = tec_mechanists
 			}
 		}
+	}
+
+	after = {
+		clr_country_flag = technocracy_death_election
 	}
 }
 
@@ -3541,414 +3715,27 @@ country_event = { #Technocracy Death Election
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		set_country_flag = technocracy_death_election
+	}
 		
 	trigger = {
-		has_reform = technocracy_republic_reform
-	}
-	option = {
-		name = elections.900.b # Brillite Ruler
-
-		if = { 
-			limit = { NOT = { faction_in_power = tec_brilliance } }
-			custom_tooltip = wrong_ruler_faction_tooltip
-			if = {	#long-lived races
-				limit = {
-					OR = {
-						has_country_modifier = gnomish_administration
-						has_country_modifier = elven_administration
-						has_country_modifier = dwarven_administration
-					}
-				}
-				add_scaled_republican_tradition = -3
-			}
-			else = {
-				if = {
-					limit = {
-						has_country_flag = increased_election_cost
-					}
-					add_scaled_republican_tradition = -15
-					clr_country_flag = increased_election_cost
-				}
-				else = {
-					add_scaled_republican_tradition = -10
-				}
-			}
-		}
-		define_ruler = {
-			adm = 3
-			dip = 1
-			mil = 0
-		}
-		if = {
-			limit = {
-				faction_influence = {
-					faction = tec_brilliance
-					influence = 80
-				}
-			}
-			hidden_effect = {
-				change_adm = 4
-				change_dip = 4
-				change_mil = 4
-			}
-			custom_tooltip = increase_stats_by_4_influence_tt 
-		}
-		else_if = {
-			limit = {
-				faction_influence = {
-					faction = tec_brilliance
-					influence = 60
-				}
-			}
-			hidden_effect = {
-				change_adm = 3
-				change_dip = 3
-				change_mil = 3
-			}
-			custom_tooltip = increase_stats_by_3_influence_tt 
-		}
-		else_if = {
-			limit = {
-				faction_influence = {
-					faction = tec_brilliance
-					influence = 40
-				}
-			}
-			hidden_effect = {
-				change_adm = 2
-				change_dip = 2
-				change_mil = 2
-			}
-			custom_tooltip = increase_stats_by_2_influence_tt 
-		}
-		else_if = {
-			limit = {
-				faction_influence = {
-					faction = tec_brilliance
-					influence = 20
-				}
-			}
-			hidden_effect = {
-				change_adm = 1
-				change_dip = 1
-				change_mil = 1
-			}
-			custom_tooltip = increase_stats_by_1_influence_tt 
-		}
-		else = {
-			custom_tooltip = increase_stats_by_0_influence_tt 
-		}
-		if = {
-			limit = { innovativeness = 100 }
-			hidden_effect = {
-				change_adm = 3
-				change_dip = 3
-				change_mil = 3
-			}
-			custom_tooltip = increase_stats_by_3_inno_tt 			
-		}		
-		else_if = {
-			limit = { innovativeness = 66 }
-			hidden_effect = {
-				change_adm = 2
-				change_dip = 2
-				change_mil = 2
-			}
-			custom_tooltip = increase_stats_by_2_inno_tt 			
-		}	
-		else_if = {
-			limit = { innovativeness = 33 }
-			hidden_effect = {
-				change_adm = 1
-				change_dip = 1
-				change_mil = 1
-			}
-			custom_tooltip = increase_stats_by_1_inno_tt 			
-		}
-		else = { 
-			custom_tooltip = increase_stats_by_0_inno_tt 
-		}
-		hidden_effect = {
-			set_ruler_flag = brillite_ruler
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 100
-				faction_in_power = tec_brilliance
-			}
+		OR = {
+			has_reform = technocracy_republic_reform
+			has_reform = imperial_technocracy_republic_reform
 		}
 	}
 	option = {
-		name = elections.900.c # Techno-Thaumaturge Ruler
-
-		if = { 
-			limit = { NOT = { faction_in_power = tec_technomancy } }
-			custom_tooltip = wrong_ruler_faction_tooltip
-			if = {	#long-lived races
-				limit = {
-					OR = {
-						has_country_modifier = gnomish_administration
-						has_country_modifier = elven_administration
-						has_country_modifier = dwarven_administration
-					}
-				}
-				add_scaled_republican_tradition = -3
-			}
-			else = {
-				if = {
-					limit = {
-						has_country_flag = increased_election_cost
-					}
-					add_scaled_republican_tradition = -15
-					clr_country_flag = increased_election_cost
-				}
-				else = {
-					add_scaled_republican_tradition = -10
-				}
-			}
-		}
-		define_ruler = {
-			adm = 1
-			dip = 2
-			mil = 1
-		}
-		if = {
-			limit = {
-				faction_influence = {
-					faction = tec_technomancy
-					influence = 80
-				}
-			}
-			hidden_effect = {
-				change_adm = 4
-				change_dip = 4
-				change_mil = 4
-			}
-			custom_tooltip = increase_stats_by_4_influence_tt 
-		}
-		else_if = {
-			limit = {
-				faction_influence = {
-					faction = tec_technomancy
-					influence = 60
-				}
-			}
-			hidden_effect = {
-				change_adm = 3
-				change_dip = 3
-				change_mil = 3
-			}
-			custom_tooltip = increase_stats_by_3_influence_tt 
-		}
-		else_if = {
-			limit = {
-				faction_influence = {
-					faction = tec_technomancy
-					influence = 40
-				}
-			}
-			hidden_effect = {
-				change_adm = 2
-				change_dip = 2
-				change_mil = 2
-			}
-			custom_tooltip = increase_stats_by_1_influence_tt 
-		}
-		else_if = {
-			limit = {
-				faction_influence = {
-					faction = tec_technomancy
-					influence = 20
-				}
-			}
-			hidden_effect = {
-				change_adm = 1
-				change_dip = 1
-				change_mil = 1
-			}
-			custom_tooltip = increase_stats_by_1_influence_tt 
-		}
-		else = {
-			custom_tooltip = increase_stats_by_0_influence_tt 
-		}
-		if = {
-			limit = { army_tradition = 100 }
-			hidden_effect = {
-				change_adm = 3
-				change_dip = 3
-				change_mil = 3
-			}
-			custom_tooltip = increase_stats_by_3_trad_tt 			
-		}		
-		else_if = {
-			limit = { army_tradition = 66 }
-			hidden_effect = {
-				change_adm = 2
-				change_dip = 2
-				change_mil = 2
-			}
-			custom_tooltip = increase_stats_by_2_trad_tt 		
-		}	
-		else_if = {
-			limit = { army_tradition = 33 }
-			hidden_effect = {
-				change_adm = 1
-				change_dip = 1
-				change_mil = 1
-			}
-			custom_tooltip = increase_stats_by_1_trad_tt 			
-		}
-		else = { 
-			custom_tooltip = increase_stats_by_0_trad_tt 
-		}
-		hidden_effect = {
-			set_ruler_flag = technomancy_ruler
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 100
-				faction_in_power = tec_technomancy
-			}
-		}
-	}
-	option = {
-		name = elections.900.d # Mechanist Ruler
-
-		if = { 
-			limit = { NOT = { faction_in_power = tec_mechanists } }
-			custom_tooltip = wrong_ruler_faction_tooltip
-			if = {	#long-lived races
-				limit = {
-					OR = {
-						has_country_modifier = gnomish_administration
-						has_country_modifier = elven_administration
-						has_country_modifier = dwarven_administration
-					}
-				}
-				add_scaled_republican_tradition = -3
-			}
-			else = {
-				if = {
-					limit = {
-						has_country_flag = increased_election_cost
-					}
-					add_scaled_republican_tradition = -15
-					clr_country_flag = increased_election_cost
-				}
-				else = {
-					add_scaled_republican_tradition = -10
-				}
-			}
-		}
-		define_ruler = {
-			adm = 0
-			dip = 1
-			mil = 3
-		}
-		if = {
-			limit = {
-				faction_influence = {
-					faction = tec_mechanists
-					influence = 80
-				}
-			}
-			hidden_effect = {
-				change_adm = 4
-				change_dip = 4
-				change_mil = 4
-			}
-			custom_tooltip = increase_stats_by_4_influence_tt 
-		}
-		else_if = {
-			limit = {
-				faction_influence = {
-					faction = tec_mechanists
-					influence = 60
-				}
-			}
-			hidden_effect = {
-				change_adm = 3
-				change_dip = 3
-				change_mil = 3
-			}
-			custom_tooltip = increase_stats_by_3_influence_tt
-		}
-		else_if = {
-			limit = {
-				faction_influence = {
-					faction = tec_mechanists
-					influence = 40
-				}
-			}
-			hidden_effect = {
-				change_adm = 2
-				change_dip = 2
-				change_mil = 2
-			}
-			custom_tooltip = increase_stats_by_2_influence_tt 
-		}
-		else_if = {
-			limit = {
-				faction_influence = {
-					faction = tec_mechanists
-					influence = 20
-				}
-			}
-			hidden_effect = {
-				change_adm = 1
-				change_dip = 1
-				change_mil = 1
-			}
-			custom_tooltip = increase_stats_by_1_influence_tt 
-		}
-		else = {
-			custom_tooltip = increase_stats_by_0_influence_tt 
-		}
-		if = {
-			limit = { army_professionalism = 1 }
-			hidden_effect = {
-				change_adm = 3
-				change_dip = 3
-				change_mil = 3
-			}
-			custom_tooltip = increase_stats_by_3_proff_tt 			
-		}		
-		else_if = {
-			limit = { army_professionalism = 0.66 }
-			hidden_effect = {
-				change_adm = 2
-				change_dip = 2
-				change_mil = 2
-			}
-			custom_tooltip = increase_stats_by_2_proff_tt 		
-		}	
-		else_if = {
-			limit = { army_professionalism = 0.33 }
-			hidden_effect = {
-				change_adm = 1
-				change_dip = 1
-				change_mil = 1
-			}
-			custom_tooltip = increase_stats_by_1_proff_tt 		
-		}
-		else = { 
-			custom_tooltip = increase_stats_by_0_proff_tt
-		}
-		hidden_effect = {
-			set_ruler_flag = mechanists_ruler
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 100
-				faction_in_power = tec_mechanists
-			}
+		country_event = {
+			id = elections.900
+			days = 1
 		}
 	}
 }
 
+# Hidden event that equalizes faction influence (with technomancers just a little bit ahead) upon reform taken
 country_event = { #Technocracy Event On Reform Taken
 	id = elections.902
 	title = elections.902.t
@@ -3957,65 +3744,651 @@ country_event = { #Technocracy Event On Reform Taken
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
+	hidden = yes
 		
 	trigger = {
-		has_reform = technocracy_republic_reform
+		OR = {
+			has_reform = technocracy_republic_reform
+			has_reform = imperial_technocracy_republic_reform
+		}
+	}
+	
+	option = {
+		name = elections.902.c
+		add_faction_influence = {
+			faction = tec_brilliance
+			influence = 100
+		}
+		add_faction_influence = {
+			faction = tec_mechanists
+			influence = 50
+		}
+		add_faction_influence = {
+			faction = tec_technomancy
+			influence = 34
+		}
+		ai_chance = { 
+			factor = 1
+		}
+	}
+}
+
+##Racial Equality elections
+
+country_event = { #ruler died, I love how janky ruler death is in a republic
+	id = elections.1000
+	title = elections.1000.t
+	desc = elections.1000.d
+
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		has_reform = racial_tolerance_reform
+	}
+	hidden = yes
+
+	option = {
+		name = elections.1000.a # Current ruler becomes Brillite
+		set_ruler_flag = racial_election_ruler_dead_flag
+		country_event = {
+			id = elections.1001
+		}
+	}
+}
+country_event = { #Racial tolerance
+	id = elections.1001
+	title = elections.1001.t
+	desc = elections.1001.d
+
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		has_reform = racial_tolerance_reform
 	}
 	
 	immediate = {
 		hidden_effect = {
-			add_faction_influence = {
-				faction = tec_brilliance
-				influence = 100
+			select_ruler_race_option = yes
+			select_ruler_race_option = yes
+			select_ruler_race_option = yes
+			select_ruler_race_option = yes
+		}
+		if = {
+			limit = {
+				republic_with_female_rulers_trigger = yes
 			}
-			add_faction_influence = {
-				faction = tec_mechanists
-				influence = 50
-			}
-			add_faction_influence = {
-				faction = tec_technomancy
-				influence = 34
-			}
+			set_country_flag = racial_election_female_equality_flag
 		}
 	}
 
 	option = {
-		name = elections.902.a # Current ruler becomes Brillite
+		name = elections.1001.a # Keep current ruler
+		trigger = {
+			NOT = { has_ruler_flag = racial_election_ruler_dead_flag }
+			has_regency = no
+		}
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		if = {	#long-lived races
+			limit = {
+				OR = {
+					has_country_modifier = gnomish_administration
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+				}
+			}
+			add_scaled_republican_tradition = -3
+		}
+		else = {
+			add_scaled_republican_tradition = -10
+		}
+		if = {
+			limit = {
+				has_government_attribute = reelection_depowers_estates
+			}
+			add_estate_influence_modifier = {
+				estate = all
+				influence = -10
+				duration = 1460
+				desc = REELCTION_DEPOWER_ESTATES
+			}
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty = {
+				estate = all
+				loyalty = 5
+			}
+		}
+		if = {
+			limit = { has_government_attribute = reelection_increases_absolutism }
+			tooltip = {
+				add_absolutism = 10
+			}
+			custom_tooltip = ADD_ABSOLUTISM_BASED_ON_ELECTION_TERM
+			hidden_effect = {
+				for_variable_amount = {
+					variable = election_term
+					effect = "
+						add_absolutism = 10
+					"
+				}
+			}
+			hidden_effect = {
+				change_variable = {
+					which = election_term
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_random_faction = {
+				influence = 20
+			}
+		}
+		add_karma = -5
+	}
+	option = {
+		name = elections.1001.b # Centaur
+		trigger = {
+			has_country_flag = racial_election_centaur_available_flag
+		}
+		get_ruler_from_majority_or_minority_centaur = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_centaur_ruler
+			duration = -1  
+		}
+		
+	}
+	option = {
+		name = elections.1001.c # Dwarf
+		trigger = {
+			has_country_flag = racial_election_dwarf_available_flag
+		}
+		get_ruler_from_majority_or_minority_dwarf = yes
+		add_ruler_modifier = { 
+			name = racial_tolerance_dwarf_ruler
+			duration = -1  
+		}
 		hidden_effect = {
-			set_ruler_flag = brillite_ruler
-		}
-		add_faction_influence = {
-			faction = tec_brilliance
-			influence = 5
-		}
-		ai_chance = { 
-			factor = 1
+			if = {
+				limit = {
+					NOT = {
+						has_country_modifier = elven_administration
+						has_country_modifier = dwarven_administration
+						has_country_modifier = gnomish_administration
+					}
+				}
+				country_event = { 
+					id = elections.1002
+					days = 18250
+				}
+			}
 		}
 	}
 	option = {
-		name = elections.902.b # Current ruler becomes Thaumaturge
+		name = elections.1001.e # Elf
+		trigger = {
+			has_country_flag = racial_election_elf_available_flag
+		}
+		get_ruler_from_majority_or_minority_elf = yes
+		add_ruler_modifier = { 
+			name = racial_tolerance_elf_ruler
+			duration = -1  
+		}
 		hidden_effect = {
-			set_ruler_flag = technomancy_ruler
-		}
-		add_faction_influence = {
-			faction = tec_technomancy
-			influence = 5
-		}
-		ai_chance = { 
-			factor = 1
+			if = {
+				limit = {
+					NOT = {
+						has_country_modifier = elven_administration
+						has_country_modifier = dwarven_administration
+						has_country_modifier = gnomish_administration
+					}
+				}
+				country_event = { 
+					id = elections.1002
+					days = 18250
+				}
+			}
 		}
 	}
 	option = {
-		name = elections.902.c # Current ruler becomes Mechanist
+		name = elections.1001.f # Gnoll
+		trigger = {
+			has_ruler_flag = racial_election_gnoll_available_flag
+		}
+		get_ruler_from_majority_or_minority_gnoll = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_gnoll_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.g # Gnome
+		trigger = {
+			has_country_flag = racial_election_gnome_available_flag
+		}
+		get_ruler_from_majority_or_minority_gnome = yes
+		add_ruler_modifier = { 
+			name = racial_tolerance_gnome_ruler
+			duration = -1  
+		}
 		hidden_effect = {
-			set_ruler_flag = mechanists_ruler
+			if = {
+				limit = {
+					NOT = {
+						has_country_modifier = elven_administration
+						has_country_modifier = dwarven_administration
+						has_country_modifier = gnomish_administration
+					}
+				}
+				country_event = { 
+					id = elections.1002
+					days = 18250
+				}
+			}
 		}
-		add_faction_influence = {
-			faction = tec_mechanists
-			influence = 5
+	}
+	option = {
+		name = elections.1001.h # Goblin
+		trigger = {
+			has_country_flag = racial_election_goblin_available_flag
 		}
-		ai_chance = { 
-			factor = 1
+		get_ruler_from_majority_or_minority_goblin = yes 
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_goblin_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.i # Half-Elf
+		trigger = {
+			has_country_flag = racial_election_half_elf_available_flag
+		}
+		get_ruler_from_majority_or_minority_half_elf = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		} #I guess, idk might work from mechanical sence better
+		add_ruler_modifier = { 
+			name = racial_tolerance_half_elf_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.j # Half-Orc
+		trigger = {
+			has_country_flag = racial_election_half_orc_available_flag
+		}
+		get_ruler_from_majority_or_minority_half_orc = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_half_orc_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.k #Halfling
+		trigger = {
+			has_country_flag = racial_election_halfling_available_flag
+		}
+		get_ruler_from_majority_or_minority_halfling = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_halfling_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.l #Harimari
+		trigger = {
+			has_country_flag = racial_election_harimari_available_flag
+		}
+		get_ruler_from_majority_or_minority_harimari = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_harimari_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.m #Harpy
+		trigger = {
+			has_country_flag = racial_election_harpy_available_flag
+		}
+		get_ruler_from_majority_or_minority_harpy = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_harpy_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.n #Hobgoblin
+		trigger = {
+			has_country_flag = racial_election_hobgoblin_available_flag
+		}
+		get_ruler_from_majority_or_minority_hobgoblin = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_hobgoblin_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.o #Human
+		trigger = {
+			has_country_flag = racial_election_human_available_flag
+		}
+		get_ruler_from_majority_or_minority_human = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_human_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.p #Kobold
+		trigger = {
+			has_country_flag = racial_election_kobold_available_flag
+		}
+		get_ruler_from_majority_or_minority_kobold = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_kobold_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.q #Lizardfolk
+		trigger = {
+			has_country_flag = racial_election_lizardfolk_available_flag
+		}
+		get_ruler_from_majority_or_minority_lizardfolk = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_lizardfolk_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.r #Mechanim
+		trigger = {
+			has_country_flag = racial_election_mechanim_available_flag
+		}
+		get_ruler_from_majority_or_minority_mechanim = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_mechanim_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.s #Ogre
+		trigger = {
+			has_country_flag = racial_election_ogre_available_flag
+		}
+		get_ruler_from_majority_or_minority_ogre = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_ogre_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.u #Orc
+		trigger = {
+			has_country_flag = racial_election_orcish_available_flag
+		}
+		get_ruler_from_majority_or_minority_orc = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_orc_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.v #Ruinborn
+		trigger = {
+			has_country_flag = racial_election_ruinborn_available_flag
+		}
+		get_ruler_from_majority_or_minority_ruinborn = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_ruinborn_ruler
+			duration = -1  
+		}
+	}
+	option = {
+		name = elections.1001.w #Troll
+		trigger = {
+			has_country_flag = racial_election_troll_available_flag
+		}
+		get_ruler_from_majority_or_minority_troll = yes
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = elven_administration
+					has_country_modifier = dwarven_administration
+					has_country_modifier = gnomish_administration
+				}
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		add_ruler_modifier = { 
+			name = racial_tolerance_troll_ruler
+			duration = -1  
+		}
+	}
+	after = {
+		racial_tolerance_cleanup_effect = yes
+	}
+}
+
+country_event = { #ruler ruled for too long, time for chabge
+	id = elections.1002
+	title = elections.1002.t
+	desc = elections.1002.d
+
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		has_reform = racial_tolerance_reform
+		months_of_ruling = 599
+	}
+	hidden = yes
+
+	option = {
+		name = elections.1002.a # reelection
+		set_ruler_flag = racial_election_ruler_dead_flag #not really but serves the purpose
+		country_event = {
+			id = elections.1001
 		}
 	}
 }

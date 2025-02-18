@@ -201,7 +201,7 @@ avhavubhiya_1_missions = {
 			owner = { NOT = { total_development = 250 } }
 			OR = {
 				superregion = rahen_superregion
-				superregion = south_haless_superregion
+				superregion = vimdatrong_superregion
 				superregion = east_sarhal_superregion
 				superregion = yanshen_superregion
 			}
@@ -215,7 +215,7 @@ avhavubhiya_1_missions = {
 					num_of_units_in_province = { who = ROOT type = infantry amount = 5 }
 					OR = {
 						superregion = rahen_superregion
-						superregion = south_haless_superregion
+						superregion = vimdatrong_superregion
 						superregion = east_sarhal_superregion
 						superregion = yanshen_superregion
 					}
@@ -571,7 +571,7 @@ sarkhashabid_1_missions = {
 					capital_scope = {
 						OR = {
 							superregion = rahen_superregion
-							superregion = south_haless_superregion
+							superregion = vimdatrong_superregion
 							superregion = yanshen_superregion
 						}
 					}
@@ -599,7 +599,7 @@ sarkhashabid_1_missions = {
 						capital_scope = {
 							OR = {
 								superregion = rahen_superregion
-								superregion = south_haless_superregion
+								superregion = vimdatrong_superregion
 								superregion = yanshen_superregion
 							}
 						}
@@ -793,12 +793,14 @@ davharral_1_missions = {
 			2913 = {
 				has_dock_building_trigger = yes
 				has_shipyard_building_trigger = yes
-				num_of_units_in_province = { who = ROOT type = galley amount = 10 }
+				galleys_in_province = 10
+				hidden_trigger = { galleys_in_province = ROOT }
 			}
 			5505 = {
 				has_dock_building_trigger = yes
 				has_shipyard_building_trigger = yes
-				num_of_units_in_province = { who = ROOT type = galley amount = 10 }
+				galleys_in_province = 10
+				hidden_trigger = { galleys_in_province = ROOT }
 			}
 		}
 
@@ -2927,10 +2929,13 @@ sanghariyar_2_post_in_control_missions = {
 				generic_start_expulsion = { race = harpy free = yes }
 				generic_start_expulsion = { race = gnollish free = yes }
 				every_owned_province = {
-					limit = { has_owner_accepted_culture = yes }
-					random_list = {
-						1 = { leadered_peasant_rebels = 3 }
-						3 = { leadered_peasant_rebels = 2 }
+					limit = {
+						has_owner_accepted_culture = yes
+						NOT = { culture = raghamidesh }
+					}
+					random = {
+						chance = 25
+						leadered_peasant_rebels = 3
 					}
 					change_culture = raghamidesh
 					change_religion = ROOT
@@ -3011,7 +3016,26 @@ sanghariyar_2_post_in_control_missions = {
 			change_government_reform_progress = -50
 			remove_country_modifier = sanghariyar_bureaucratic_crisis
 			remove_country_modifier = sanghariyar_open_debates
-			add_government_reform = sanghariyar_parliament_reform
+			if = {
+				limit = { has_country_flag = sanghariyar_extend_representation_flag }
+				custom_tooltip = sanghariyar_reform_bureaucracy_effect_extend_rep_yes
+				add_government_reform = sanghariyar_parliament_reform_2
+				custom_tooltip = sanghariyar_reform_bureaucracy_effect_cultural_assim_no
+				tooltip = { add_government_reform = sanghariyar_parliament_reform }
+			}
+			else_if = {
+				limit = { has_country_flag = sanghariyar_cultural_assimilation_flag }
+				custom_tooltip = sanghariyar_reform_bureaucracy_effect_extend_rep_no
+				tooltip = { add_government_reform = sanghariyar_parliament_reform_2 }
+				custom_tooltip = sanghariyar_reform_bureaucracy_effect_cultural_assim_yes
+				add_government_reform = sanghariyar_parliament_reform
+			}
+			else = {
+				custom_tooltip = sanghariyar_reform_bureaucracy_effect_extend_rep_no
+				add_government_reform = sanghariyar_parliament_reform_2
+				custom_tooltip = sanghariyar_reform_bureaucracy_effect_cultural_assim_no
+				add_government_reform = sanghariyar_parliament_reform
+			}
 			custom_tooltip = sanghariyar_reform_bureaucracy_effect_tt
 			hidden_effect = {
 				4435 = { set_seat_in_parliament = yes }
@@ -3021,7 +3045,7 @@ sanghariyar_2_post_in_control_missions = {
 				4380 = { set_seat_in_parliament = yes }
 				4368 = { set_seat_in_parliament = yes }
 				if = {
-					limit = { NOT = { has_country_flag = sanghariyar_cultural_assimilation_flag } }
+					limit = { has_country_flag = sanghariyar_extend_representation_flag }
 					every_owned_province = {
 						limit = {
 							OR = {
@@ -3096,6 +3120,25 @@ sanghariyar_3_missions = {
 					mission_completed = davharral_digging_wells
 					mission_completed = sarkhashabid_trade_investments
 					mission_completed = shenral_encourage_dwarven_settlements
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_or_was_tag = { tag = R02 }
+						is_or_was_tag = { tag = R44 }
+					}
+				}
+				OR = {
+					religion = high_philosophy
+					religion = suhans_praxis
+				}
+			}
+			else = {
+				religion = high_philosophy
+				religious_school = {
+					group = raheni
+					school = silk_turban_school
 				}
 			}
 			calc_true_if = {
@@ -3588,7 +3631,14 @@ sanghariyar_3_missions = {
 			}
 			if = {
 				limit = { has_dlc = "Emperor" }
-				is_hegemon_of_type = naval_hegemon
+				if = {
+					limit = { is_or_was_tag = { tag = R01 } }
+					OR = {
+						is_hegemon_of_type = economic_hegemon
+						is_hegemon_of_type = naval_hegemon
+					}
+				}
+				else = { is_hegemon_of_type = naval_hegemon }
 			}
 			else = {
 				num_of_heavy_ship = 250
@@ -4490,13 +4540,7 @@ sanghariyar_5_missions = {
 			estate_loyalty = { estate = estate_artificers loyalty = 60 }
 			estate_influence = { estate = estate_artificers influence = 50 }
 			innovativeness = 50
-			custom_trigger_tooltip = {
-				tooltip = I98_discombobulate_tt
-				check_variable = {
-					which = artifice_inventions_currently_used
-					value = 1
-				}
-			}
+			artifice_has_num_inventions_active = { amount = 1 }
 		}
 
 		effect = {

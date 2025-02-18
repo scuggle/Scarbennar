@@ -24,7 +24,7 @@ mage_rebels = {
 	infantry = 1.0
 	cavalry = 0.0
 	
-	morale = 1.0
+	morale = 2.0
 	
 	# Possible handle actions
 	handle_action_negotiate = no
@@ -128,6 +128,10 @@ mage_rebels = {
 		if = {
 			limit = { has_reform = hobgoblin_stratocracy_reform }
 			add_legitimacy = -50
+		}
+		if = {
+			limit = { tag = B39 }
+			ROOT = { kill_ruler = yes }
 		}
 		else = {
 			add_country_modifier = {

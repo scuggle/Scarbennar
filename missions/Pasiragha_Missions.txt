@@ -478,7 +478,7 @@ pasiragha_missions_beginning_4 = {
 			custom_trigger_tooltip = {
 				tooltip = "Indranayar I finally knows true peace."
 				hidden_trigger = {
-					overlord = {
+					R51 = {
 						NOT = {
 							has_ruler_flag = is_indranayar
 						}
@@ -771,7 +771,13 @@ pasiragha_missions_beginning_5 = {
 
 		provinces_to_highlight = {
 			owner = {
-				is_subject_of_type = great_daimyo_vassal
+				OR = {
+					is_subject_of_type = great_daimyo_vassal
+					AND = {
+						has_reform = indep_prabhi_reform
+						total_development = 30
+					}
+				}
 				OR = {
 					NOT = {
 						is_rival = ROOT
@@ -789,7 +795,13 @@ pasiragha_missions_beginning_5 = {
 			diplomatic_reputation = 3
 			any_country = {
 				AND = {
-					is_subject_of_type = great_daimyo_vassal
+					OR = {
+						is_subject_of_type = great_daimyo_vassal
+						AND = {
+							has_reform = indep_prabhi_reform
+							total_development = 30
+						}
+					}
 					NOT = {
 						is_rival = ROOT
 					}
@@ -1307,6 +1319,8 @@ pasiragha_missions_middle_3 = {
 					dip_power = 100
 					OR = {
 						overlord = {
+							religion_group = raheni
+							NOT = { has_matching_religion = ROOT }
 							has_opinion = {
 								who = ROOT
 								value = 95
@@ -1317,6 +1331,8 @@ pasiragha_missions_middle_3 = {
 							}
 						}
 						any_ally = {
+							religion_group = raheni
+							NOT = { has_matching_religion = ROOT }
 							has_opinion = {
 								who = ROOT
 								value = 95
@@ -1328,12 +1344,11 @@ pasiragha_missions_middle_3 = {
 						}
 					}
 				}
-				#just in case you are the last of your kind
-				hidden_trigger = {
-					NOT ={
-						any_country = {
-							religion_group = raheni		
-						}
+				#just in case you are the last of your kind or no heretic country left
+				NOT ={
+					any_country = {
+						religion_group = raheni
+						NOT = { has_matching_religion = ROOT }		
 					}
 				}
 			}
@@ -1346,6 +1361,17 @@ pasiragha_missions_middle_3 = {
 				if = {
 					limit = {
 						is_subject = yes
+						overlord = {
+							NOT = { has_matching_religion = ROOT }
+							has_opinion = {
+								who = ROOT
+								value = 95
+							}
+							owes_favors = {
+								who = ROOT
+								value = 40
+							}
+						}
 					}
 					overlord = {
 						country_event = { 
@@ -1358,6 +1384,7 @@ pasiragha_missions_middle_3 = {
 				else = {
 					random_ally = {
 						limit = {
+							NOT = { has_matching_religion = ROOT }
 							has_opinion = {
 								who = ROOT
 								value = 95
@@ -1774,6 +1801,7 @@ pasiragha_missions_middle_4 = {
 		}
 
 		effect = {
+			custom_tooltip = pasiragha_form_harimraj_tt
 			if = {
 				limit = {
 					has_government_attribute = is_raja

@@ -61,6 +61,8 @@
  magocracy_reform_desc:0 "While some countries may be ruled by the nobility or by the merchant class, magocracies derive their prerequisite to rule from the ability to cast magic."
  technocracy_republic_reform:0 "Technocracy"
  technocracy_republic_reform_desc:0 "A highly administrative form of government where the ruling elite consists of scientists, engineers and artificers. The state aims to put the most skilled folks in their fields into the positions where they can serve the state most effectively."
+ imperial_technocracy_republic_reform:0 "Imperial Technocracy"
+ imperial_technocracy_republic_reform_desc:0 "Lacking native sources of the required materials for artificery, Giberd has had to adapt the traditional technocratic teachings of past hierarchies. Giberd’s take on technocracy takes advantage of the diplomatic leanings and frugality of the Esmari people by hiring advisors from across Esmaria to help administer the nation and maintain its reputation, while state-sponsored guilds prioritize a high-efficiency, low-waste artificery work ethic to utilize our minimal resources to their maximum potential."
  greentide_horde:0 "Greentide Horde"
  greentide_horde_desc:0 "Living primarily in Escann, these tribes of orcs and goblins are the result of and successors to Korgus Dookanson's invasion of Escann, also known as the Greentide."
  deepwoods_horde:0 "Deepwood Horde"
@@ -154,10 +156,12 @@
  hobgoblin_wartime_economics_desc: "The business of the state is war. It is therefor imperative that the engine of the state supports its primary business. All economic activity should be turned towards this goal."
  hobgoblin_gerunanin_economic_freedom: "Gerunanin Economic Freedom"
  hobgoblin_gerunanin_economic_freedom_desc: "The Gerunanin, the conquered peoples, are the largest force of economic production in the state. They should be given their freedoms to pursue greater wealth and productivity as that will strengthen the state in turn."
+ mechanic_hobgoblin_gerunanin_economic_freedom_effect_yes: "The §YReduce Tribute Requirements§! privilege no longer costs absolutism."
  hobgoblin_domestic_practices: "Domestic Practices"
  hobgoblin_domestic_practices_desc: "The household, or Ekyun, is the core of hobgoblin society. It produces our soldiers, feeds them, and provides their equipment. Its members are the heart of our economic and military production; We need to protect this institution at all costs."
  command_obedience: "Obedience"
  command_obedience_desc: "Amongst the hobgoblins two political philosophies developed: Those of Obedience and Consensus. The philosophy of Obedience held that the hierarchy of the state should be rigid if it was to be strong. This top-down manner of organisation ensured that the country would always be moving in one direction as a unified force."
+ mechanic_command_lower_requirement_to_declare_war_yes: "Lower the war room command loyalty requirement for declaring war to 40."
  command_consensus: "Consensus"
  command_consensus_desc: "Amongst the hobgoblins two political philosophies developed: Those of Obedience and Consensus. The philosophy of Consensus held that the state was based on the social contract between individuals. This bottom-up manner of organisation ensured that the factions within the country remained satified and conhesive."
  command_consolidate_rule:0 "Consolidate Rule"
@@ -176,7 +180,7 @@
  free_slave_reform:0 "Free Slaves"
  free_slave_reform_desc:0 "A government of slaves and slaves owning slaves, where the most skilled are promoted and the least skilled are reassigned to positions more appropriate for their skillset. They are all owned by the state and the state choses their leader and position."
  praxic_meritocracy_reform:0 "Praxic Meritocracy"
- praxic_meritocracy_reform_desc:0 "Placeholder"
+ praxic_meritocracy_reform_desc:0 "" #Placeholder - blank for now
  harimari_upper_caste:0 "Harimari Upper Caste"
  harimari_upper_caste_desc:0 "Within the Rahen Caste system, harimari form the upper castes of philosophers and administrators. With their generations of experience at the helm, many harimari led ministries function much more efficiently than their less organised and traditional counterparts."
  vanrahar_warrior_caste:0 "Vanrahar Warrior Caste"
@@ -380,11 +384,10 @@
  
  reuyeli_republic:0 "Re-Uyeli Republic"
  reuyeli_republic_desc:0 "Rulers can be of different cultures and races but can't be re-elected after ruling for more than 20 years."
- administrating_officers_reform:0 "Administrating Officers"
- administrating_officers_reform_desc:0 ""
+ U18_administrating_officers:0 "Administrating Officers"
  
  roangu_thidin_reform:0 "Roangu Thidin"
- roangu_thidin_reform_desc:0 "Chien Binhrung's sole power, since the founding of the kingdom in 9 BA, has always been the ruling queen of the nation. This unique tradition dates back to when Chien Binhrung was founded by a matriarchal tribe, who conquered many disunified villages on the eastern side of the Lupulan Peninsula. Combining the traditions of their tribe to Kai customs, Chien Binhrung became a land where the queen's will was law and where the people were willing to fight for her against any foe. The tribe that formed Chien Binhrung also picked up the customs of their new Kai brethren, including a focus on open trade with neighbors and adopting the Righteous Path as their new faith."
+ roangu_thidin_reform_desc:0 "Chien Binhrung's sole power, since the founding of the kingdom in 9 BA, has always been the ruling queen of the nation. This unique tradition dates back to when Chien Binhrung was founded by a matriarchal tribe, who conquered many disunified villages on the eastern side of the Lupulan Peninsula. Combining the traditions of their tribe to Kai customs, Chien Binhrung became a land where the queen's will was law and where the people were willing to fight for her against any foe. The tribe that formed Chien Binhrung also picked up the customs of their new Kai brethren, including a focus on open trade with neighbors and adopting the Transmutative Path as their new faith."
  
  gnomish_cogovernment_reform:0 "Gnomish Co-Government"
  gnomish_cogovernment_reform_desc:0 "A Gnomish Co-Government is a government in which gnomes hold a supportive but vital role. Their influence permeates through every faucet of the administration. These gnomes will be more than pleased with this system, but the local civil servants won't be keen on working in a bilingual government."
@@ -497,7 +500,12 @@
  bulwar_twelve_families_reform_desc:0 "Bulwar is ruled by the Council of Twelve, a legisative body consisting of representatives from each of the Twelve Families. Every twelve years, elections are held within the families to determine which will make up the smaller yet still powerful executive council. "
  bulwar_expended_council_reform:0 "Expanded Council"
  bulwar_expended_council_reform_desc:0 ""
- 
+ establish_edarendan_reform:0 "Establish Edarendan"
+ establish_edarendan_reform_desc:0 "The Edarendan were established by Erelassa, Jaddar’s daughter and governor of the Bulwari territories, following the Jadd’s conquest of the Upper Suran. Tasked with serving as temporary judges and enforcers of Surael’s law in recently conquered territories, the Edarandan were one of the many methods that allowed the Jadd to rapidly expand during its golden age."
+ virtuous_cults_reform:0 "Virtuous Cults"
+ virtuous_cults_reform_desc:0 "The Sun Cult has long been divided, and it is said there are more than a thousand different sun cults in Bulwar alone. Many of these cults have heavily militarized in response to the suffering inflicted upon Bulwar by its invaders, and although frail when divided, if organized, united, and allowed to toil for the safety of Bulwar and its peoples as one whole, they would surely make for an awe-inspiring sight!"
+ mechanic_virtuous_cults_upgrade_yes:0 "Strengthen the '§YOld Sun Cult Centralization§!' Estate Privilege, making it give §G+5%§! Morale of Armies."
+
  leechfather_cult_reform:0 "Cult of the Leechfather"
  leechfather_cult_government:0 "Leechfather Cult"
  leechfather_cult_legacy:0 "Leecfather Cult"
@@ -506,7 +514,7 @@
  yanglam_tengalam_reform_desc:0 "The Rainforest Kings of the Lupulan have traditionally focused heavily on their territories directly surrounding their capitals, while leaving lesser kings to maintain the further reaches of their claimed realms."
  
  pelimkana_kalemba_reform:0 "Kalemba" #rename order eventually
- pelimkana_kalemba_reform_desc:0 "Pelimkana has long been under the control of the Order of Pelimkana, and has rejected the Tengalam system of monarchy of the Yanglam. The resulting state is exceedingly isolatinst and particularly zealous, even disallowing logging in the Lupulan. The blessings of the spirits have made their lands exceedingly productive as a result, though this comes at the cost of foreign trade."
+ pelimkana_kalemba_reform_desc:0 "Pelimkana has long been under the control of the Order of Pelimkana, and has rejected the Tengalam system of monarchy of the Yanglam. The resulting state is exceedingly isolationist and particularly zealous, even disallowing logging in the Lupulan. The blessings of the spirits have made their lands exceedingly productive as a result, though this comes at the cost of foreign trade."
 
  lelak_sejanakau_reform:0 "Sejanakau"
  lelak_sejanakau_reform_desc:0 "The [Root.Monarch.GetTitle]s of Lelak, following the belief that those who are granted power by the Lupulan are in escense married to it, assemble large male harems of the brightest minds of the land. They come from all different cultures and backgrounds and are expected to share the burden of adminstering the realm with the [Root.Monarch.GetTitle]."
@@ -617,8 +625,7 @@
  appease_khet_desc:0 "Our state is technically not the owner of the lands of the Sorrow, technically it is just a steward which manages the lands and river in the name of the Khet. The Khet, feline-human hybrids, demi-gods, and true owners of the lands and river have named us the stewards. This gives us the right to subjugate and control the lands of the Salahad and the authority to do as we please, as long as we praise, worship and serve the Khet in any way they please, no matter if it is moral or debaucherous."
  appease_khet_theocracy:0 "Appease the Khet"
  appease_khet_theocracy_desc:0 "Our state is technically not the owner of the lands of the Sorrow, technically it is just a steward which manages the lands and river in the name of the Khet. The Khet, feline-human hybrids, demi-gods, and true owners of the lands and river have named us the stewards. This gives us the right to subjugate and control the lands of the Salahad and the authority to do as we please, as long as we praise, worship and serve the Khet in any way they please, no matter if it is moral or debaucherous."
- konolkhatep_reform:0 "Awin Nephec"
- konolkhatep_reform_desc:0 "Though gnolls ruled over Kheterata in centuries past, they did not receive the blessing of the Khet until the ascendancy of the so-called gnoll dynasty, or "Awin Nephec" in Kheteratan. The Awin Nephec championed the Khet and took advantage of the traditional Kheteratan state apparatus, while drawing on the brutal and cunning warrior traditions of the gnolls."
+
  medasi_reform:0 "The Medasi Compromise"
  medasi_reform_desc:0 "When Horashesh was the Southern Territories of Kheterata, a native monarch - the Efergezmu - ruled with the blessing and guidance of a local Kheteratan governor - the Medawor. After Kheterata's collapse, the two sides agreed to share power in an uneasy compromise."
  L29_formation_requirement_tt:0 "Medawor Power over the Efergezmu is at least §Y90§!."
@@ -807,7 +814,7 @@
  ikatara_reform:0 "Ikatara"
  ikatara_reform_desc:0 "As lizardfolk empires rise and inevitably fall, the major cities that once were part of the fabric of these empires splinter into their own entities. Called Ikatara, or Shard-Realm, these city states usually centre around one of the large, ancient cities that act as a hub of trade and activity in the dense jungles of Taneyas."
  anzatara_reform:0 "Anzatara"
- anzatara_reform_reform:0 "The Anzara Empire was supposed to be the penultimate empire before the final 333rd Empire that was destined to unite all lizardfolk. Centred around the capital city of Zerat, Anzara reigned over much of Taneyas before its hold faltered and much of its land fell from its grasp. That was over 1000 years ago, and yet no one else has stepped up to claim the title as the 333rd Empire. Until one does, Zerat can still claim to be the divine realm over lizardfolk."
+ anzatara_reform_desc:0 "The Anzara Empire was supposed to be the penultimate empire before the final 333rd Empire that was destined to unite all lizardfolk. Centred around the capital city of Zerat, Anzara reigned over much of Taneyas before its hold faltered and much of its land fell from its grasp. That was over 1000 years ago, and yet no one else has stepped up to claim the title as the 333rd Empire. Until one does, Zerat can still claim to be the divine realm over lizardfolk."
  tokhraz_reform:0 "Tokhraz"
  tokhraz_reform_desc:0 "Outside of the ancient cities of the lizardfolk lies acres and acres of dense jungle, divided by deep rivers and swamps. This harsh terrain houses many tribal lizardfolk clans. Each one is led by a royal family, usually guided by a council of powerful naga on matters of faith and philosophy."
  
@@ -918,16 +925,16 @@
 #mengi tier 4
  semayebaka_chapter_houses:0 "Semayebaka Chapter Houses"
  semayebaka_chapter_houses_desc:0 "The Semayebaka, as part of their sacred duties, must wander from place to place across the realm. To assist in this, many temples both great and small have begun to establish specific lodgings for wandering Semayebaka. Ranging from a simple room with comfortable bedding, to grand chapter houses dedicated to the magical arts in the grandest of temple complexes, these facilities regardless allow the Semayebaka to do their divine duties with greatest efficacy."
- mechanic_buff_development_of_temple_yes:0 "Development of Temples doubles in power on cathedrals"
- semayebaka_chapter_houses_tt:0 "Guide the Rains will increase in power on provinces with temples or cathedrals"
+ mechanic_buff_development_of_temple_yes:0 "The church privilege §YDevelopment of Temples§! is twice as effective on §YCathedrals§! and no longer costs §YAbsolutism§!\n"
+ mechanic_semayebaka_buff_rain_yes:0 "The religious action §YGuide the Rains§! will give additional bonuses to provinces with §YTemples§! or §YCathedrals§!"
 
  frontier_republic_reform:0 "Frontier Republic"
  frontier_republic_reform_desc:0 "On the vast Epednan Expanse, the frontier never truly ends. Houses can be raised, towns built, but bringing true civilization here is a process that will take centuries and take more than simply putting a flag here and there. It's seen as a lawless wasteland where only hard men can thrive. But we are those hard men."
 
  war_artificery:0 "War Artificery"
- anbennar_T5_human_gnomish_effect_tt:0 "Artificery Regiments:\n   §G15% Infantry Combatability§!\n   §G-5% Shock Damage received§!\n   §G-5% Fire Damage received§!"
+ anbennar_T5_human_gnomish_effect_tt:0 "Artificery Regiments:\n   §G20% Infantry Combatability§!"
  lizardfolk_marines:0 "Lizardfolk Marines"
- anbennar_T5_human_lizardfolk_tt:0 "Marines:\n   §G-10% Shock Damage received§!\n   §G-20% Regiment Manpower Usage§!"
+ anbennar_T5_human_lizardfolk_tt:0 "Marines:\n   §G-15% Shock Damage received§!"
  anbennar_T5_ruinborn_magic_tt:0 "You can now generate War Wizards without the need for Battlemage Academies. If you have this reform and the privilege you have a double chance for generating a war wizard."
  
  anbennar_T5_generic_bottomless_bags:0 "Bottomless Bags"
@@ -971,8 +978,10 @@
  anbennar_T5_human_harpy_desc:0 "Aerial Skirmishers:"The difference between harpies and demons? Demons fly alone.\n\nThere are not many things that men in Bulwar fear more than the sound of harpies raining down upon them. These humanoid avian inhabitants of the skies are infamous for their practice of abduction and are strong enough to lift all but the heaviest men high into the air. Luckily we have established a good relation with the harpies and as such enlisting them into the army has become a possibility. The harpies offer us the ability to rain explosives or fire upon enemies from above, supply our men in the most unreachable locations and “pick up” enemy commanders to disrupt enemy communications and battlefield coordination. We can conquer the skies, just as we can conquer land and sea!"
  anbennar_T5_human_hobgoblin:0 "Hobgoblin Drill Masters"
  anbennar_T5_human_hobgoblin_desc:0 "Hobgoblins did not invent discipline, though they sure did perfect it.\n\nIf the Command teaches us anything, it is that hobgoblins live and die as soldiers. From the moment they can walk, they are trained for war and combat. This upbringing ingrains a discipline in them that has remained unmatched anywhere else and makes the hobgoblins of the Command perfect military instructors. We would be fools, then,  not to employ our own hobgoblin community in drilling our armies and making them more organized, disciplined and overall professional. The harsh training regiments of the hobgoblins will make our soldiers more sturdy, reliable and brave, though it will also mean fewer men get through bootcamp, as the weak will not be able to keep up with the high and unforgiving demands of their red drillmasters. Nonetheless, our armies shall be like iron, and march against our enemies with unrivaled discipline!"
- anbennar_T5_human_human:0 "Humanity First"
- anbennar_T5_human_human_desc:0 "All The World Belongs To Humanity\n\nIt is a simple fact, humanity is the most successful race in all of Halann. We are present and dominant on each continent and everywhere one goes, it is humans that have created the greatest and most durable societies of all time. Empires of elves, harimari or dwarves come and go, yet it is humans that always remain and return. It is as such that we can trust only humans to defend and expand our nation and that no other or lesser race must be allowed to form a sort of fifth column and undermine our ambitions and defense. Humanity first is the motto of our army and our nation!"
+ anbennar_T5_human_human_1:0 "Blackpowder Innovation"
+ anbennar_T5_human_human_1_desc:0 "Surpass the ages of old.\n\nWhile others lie content with their civilisation's achievements, it is up to humanity to overshadow the fallen empires of old, leaving behind the belief that nothing can ever be greater than them. The continued use and development of gunpowder weaponry has granted humanity equal footing against all that might threaten it, while others only seek to reclaim what grandeur they have lost. The only way is forward, marching atop the ashes of failed civilisations."
+ anbennar_T5_human_human_2:0 "Unfaltering Tradition"
+ anbennar_T5_human_human_2_desc:0 "Heed the knowledge of our forefathers.\n\nHumanity has survived and thrived only thanks to our continued resilience and staunchness to the ideas of our ancestors, who had built realms that may survive past all odds. The descendants of the greatest pioneers have led us to places though unimaginable by the races that once called us primitive. With the leadership of the nobility, the greatest of human empires were forged, and only by forgetting their achievements will we truly fall."
  anbennar_T5_human_kobold:0 "Kobold Masses"
  anbennar_T5_human_kobold_desc:0 "A thousand drops form a tidal wave.\n\nKobolds are not known for their physical strength or bravery. However, they are known for their large families and clans. They dwell in large numbers and are rarely seen alone, forming tight-knit communities that rely on their numbers to compensate for their lack of individual strength. By employing these large communities as mass infantry, we can form substantial groups of "replenishable" soldiers who fire and fight in unison. However, this communal behavior could also damage their morale in case of high casualties."
  anbennar_T5_human_lizardfolk:0 "Lizard Mariners"
@@ -1032,9 +1041,8 @@
  #Rahen heroic realm
  heroic_realm_reform:0 "Heroic Realm"
  heroic_realm_reform_desc:0 "Within the Heroic Realm, a distinctive governance emerges - one where the valorous adventurers, unencumbered by rigid social hierarchies, assume the mantle of protectors. Their duty transcends mere borders; they safeguard all the land against threats external and internal, their deeds echoing through time. In this place, lineage yields to courage, and the very fabric of our nation is woven by those who rise to glory instead of remaining mired in tradition."
- heroic_realm_traits_tt:0 "As long as our rulers are generals, they will be more likely to gain positive military personality traits!"
- heroic_realm_mercs_tt:0 "Allows recruitment of mercenary generals via decision."
- heroic_realm_heroes_in_the_army_tt:0 "Upgrades the §YHeroes in the Army§! privilege for the adventurers."
+ mechanic_is_heroic_realm:0 "Is part of the §YHeroic Realm§!"
+ mechanic_is_heroic_realm_yes:0 "Is part of the §YHeroic Realm§!, which allows recruitment of mercenary generals via decision and upgrades the §YHeroes in the Army§! privilege for the §YAdventurers§! estate. Our ruler-generals will be more likely to gain positive military personality traits."
  
  #Madakas Markasi and planetouched generals increased chance
  madakas_markasi:0 "Madakas Markasi"
@@ -1076,7 +1084,7 @@
  mechanic_reduced_gov_cost_in_primary_culture_yes: "Primary culture provinces gain §G-20%§! Governing Cost"
  mechanic_add_dev_from_manufactories_yes: "Gain §G+1§! development from building Manufactories"
  mechanic_can_propagate_trade_gov_attribute_yes: "May use the Propagate Religion trading policy"
- mechanic_deliberative_design_parliament_yes: "Upon successfully passing a parliament issue, gain §G-7.5%§! Development Cost for ten years\nUpon failing to pass a parliament issue, gain §R+7.5%§! Development Cost for ten years\nAdds every stated province to Parliament"
+ mechanic_deliberative_design_parliament_yes: "Upon successfully passing a parliament issue, gain §G-7.5%§! Development Cost for ten years\nUpon failing to pass a parliament issue, gain §R+7.5%§! Development Cost for ten years\nAdds §Yevery stated province§! to Parliament"
  mechanic_production_efficiency_from_strategic_goods_yes: "Gain §G2.5%§! Production Efficiency for each good you have the trade leader bonus for (capped at §Y15%§!, checked once every five years)"
 
  cultural_colonies_mod: "Cultural Colonies: Primary Culture"
@@ -1099,3 +1107,67 @@
  production_efficiency_from_strategic_goods_1: "Economy of Scale (1)"
  production_efficiency_from_strategic_goods_1_desc: "The factories fire up... and they have so much potential.\n\nThis modifier updates every 5 years, depending on how many Strategic Goods you have the trade bonus for."
  mechanic_is_technocracy: "Technocratic"
+ 
+ #Book of Stone
+ mechanic_cant_manually_decrease_autonomy_yes:0 "Can't Manually Decrease Autonomy"
+ mechanic_arturos_watch_chapters_yes:0 "Can upgrade Arturo's Watch Chapters"
+
+#Cannorian monarchy tier 2 reform
+
+honor_the_senators: "Honor the Senators"
+honor_the_senators_desc: "Senators are a remnant of the Damerian Republic, and some of their families date back to that time. They are a vital part of our government, and by honoring the old traditions, a monarch can gain their favor and respect."
+new_parliament_issues_tt: "§MUnlock new Parliament Issues§!"
+ties_with_anbennarian_nobility: "Ties with Anbennarian Nobility"
+ties_with_anbennarian_nobility_desc: "As non-native Anbennarians, we may have trouble understanding the intricacies of Anbennar’s politics and culture. We must choose to strengthen our relationships with the empire's powerful so that they can help us adapt to the empire's culture. Anbennar means unity, and we will be an integral part of it."
+ties_with_anbennarian_tt: "§MUp to four Imperial cultures don't cost a cultural slot when accepted, but heretical imperial provinces will get a negative modifier. Accepting an Imperial culture also returns 50 diplomatic points.§!"
+strengthen_elves_privileges: "Strengthen Elven Privileges"
+strengthen_elves_privileges_desc: "The elves lent their aid to our nation in our darkest hour and have integrated into our society over the years. We will honor the old pacts and guarantee the sons and daughters of Venaan their freedoms and privileges."
+strengthen_elves_privileges_tt: "§TMoon Elf culture will not cost a cultural slot, but cannot be converted to other cultures. Elven Forebears don't affect religious unity, but cannot be converted.§!"
+empower_magnate_council: "Empower the Magnate Council"
+empower_magnate_council_desc: "The formation of the Magnate Council was intended to weaken the position of the Great Lords, as well as to repair the economy. By strengthening the council's powers, it will be able to achieve its goals even more effectively."
+mechanic_magnate_council_doubled_yes: "Effect of Magnates privilege '§YMagnate Council§!' will be §Gdoubled§!."
+mechanic_primacy_of_nobility_harsher_yes: "'§YPrimacy of Nobility§!' doesn’t cost absolutism, but lowers nobles loyalty by another §R-5%§!."
+mechanic_disable_noble_land_right_yes: "'§YNobility Land Rights§!' is no longer available, but '§YMagnate Land Rights§!' give §G+200§! §Ygovernment capacity§! instead of §G+100§!."
+mechanic_burghers_land_right_streghtened_yes: "Magnates’ support (and disapproval) of a new king will have a §Ydoubled effect§!."
+gov_moon_elf_slot: "Elven Rights"
+gov_moon_elf_tolerance: "Moon Elf Tolerance"
+gov_moon_elven_religion_tolerance: "Elven Forebears Tolerance"
+gov_ties_with_anbennarian_I: "Ties with Empire"
+gov_ties_with_anbennarian_II: "Ties with Empire"
+gov_ties_with_anbennarian_III: "Ties with Empire"
+gov_ties_with_anbennarian_IV: "Ties with Empire"
+gov_empire_heretic: "Imperial Heretic Resistance"
+honor_the_senators_call_for_imperial_unity: "Call for Imperial Unity"
+honor_the_senators_tea_act: "Tea Act"
+honor_the_senators_support_chronicles: "Support Order of Chronicles"
+honor_the_senators_streghten_wooden_wall: "Streghten Wooden Wall"
+honor_the_senators_sponsor_excavations: "Sponsor Damenath Excavations"
+issue_sponsor_excavations: "Sponsor Excavations"
+issue_help_from_chronicles: "Order of Chronicles helps"
+issue_tea_act: "Tea Act"
+
+follower_of_many_gods_reform:0 "Followers of Many Gods"
+follower_of_many_gods_reform_desc:0 "While many devotees of the Regent Court exalt a single god above all others within the pantheon, our Court understands that each deity holds a unique purpose and role. To govern effectively and meet the needs of the people, rulers must seek wisdom from those most knowledgeable. And who could provide better guidance than a god? By honouring each deity's domain and welcoming their insight, our Ruler gains divine mentorship, ensuring their rule aligns with the diverse aspects of life cherished by the faithful."
+mechanic_follower_of_many_gods_yes:0 "Can swap §YPersonal Deities§! every §Y5 years§!.\n\nSwapping §YPersonal Deity§! changes opinion of every country following this deity by §G+25§!."
+
+two_rulers_one_people_rc_reform:0 "Two Rulers, One People"
+two_rulers_one_people_rc_reform_desc:0 "Wars between the Adeanties and Corinites were fiercely bloody, with hatred and division straining the bonds we once shared. In the chaos of battle, we seem to have forgotten the common principles that once united us, the shared history and values we all held dear - our opposition to evils of the world. Though we may differ in our views on the final authority of the Court, we must remember that we are all people under the protection of the gods, and our ties remain unbroken despite our differences."
+mechanic_two_rulers_one_people_rc_yes:0 "Every owned §YCorinite§! province gains:\nLocal Tolerance of Heretics: §G+5.00§!\nLocal Missionary Strength: §R-100%§!\nLocal Religious Unity Contribution: §Y-100%§!\n\nEnable §YCorin§! as a §YPersonal Deity§! once again."
+
+two_rulers_one_people_cor_reform:0 "Two Rulers, One People"
+two_rulers_one_people_cor_reform_desc:0 "Wars between the Adeanties and Corinites were fiercely bloody, with hatred and division straining the bonds we once shared. In the chaos of battle, we seem to have forgotten the common principles that once united us, the shared history and values we all held dear - our opposition to evils of the world. Though we may differ in our views on the final authority of the Court, we must remember that we are all people under the protection of the gods, and our ties remain unbroken despite our differences."
+mechanic_two_rulers_one_people_cor_yes:0 "Every owned §YRegent Court§! province gains:\nLocal Tolerance of Heretics: §G+5.00§!\nLocal Missionary Strength: §R-100%§!\nLocal Religious Unity Contribution: §Y-100%§!\n\nEnable §YAdeanic Bannerettes§! as a §YHoly Order§!."
+
+two_rulers_one_people_modifier:0 "Two Rulers, One People"
+desc_two_rulers_one_people_modifier:0 "The population of [Root.GetName] cooperates with the [Root.Owner.Monarch.GetTitle] of [Root.Owner.GetName], despite the differences of their faiths."
+
+patronise_the_corinite_orders_reform:0 "Patronise the Corinite Orders"
+patronise_the_corinite_orders_reform_desc:0 "Holy Orders serve as the backbone of the Corinite faith, anchoring its influence at the ground level. These groups, dedicated to one of deities of the Pantheon, provide structure, protection, and guidance to followers across the realm. By empowering and utilising them to their fullest, we can deepen the roots of our faith, strengthening local communities and fostering unity under our divine cause. With their tireless work, the Holy Orders ensure that the word of our Lady reaches all who seek her light."
+mechanic_patronise_the_corinite_orders_yes:0 "Establishing an §YAdministrative§! Holy Order causes the highest-developed province in the state to get '§YArdent Administrators§!' until the end of the game, giving the following effects:\nLocal Governing Increase Cost: §G-5§!\n\nEstablishing a §YDiplomatic§! Holy Order causes the highest-developed province in the state to get '§YPassionate Artisans§!' until the end of the game, giving the following effects:\nTrade Value Modifier: §G+5.0%§!\n\nEstablishing a §YMilitary§! Holy Order causes the highest-developed province in the state to get '§YBastion of Zealots§!' until the end of the game, giving the following effects:\nLocal Assault Fort ability: §G-75.0%§!"
+
+corinite_ardent_administrators:0 "Ardent Administrators"
+desc_corinite_ardent_administrators:0 "The administrators of [Root.GetName] serve with steadfast devotion."
+corinite_passionate_artisans:0 "Passionate Artisans"
+desc_corinite_passionate_artisans:0 "The artisans of [Root.GetName] are driven by divine inspiration."
+corinite_bastion_of_zealots:0 "Bastion of Zealots"
+desc_corinite_bastion_of_zealots:0 "Even if the walls fall, the defenders of [Root.GetName] will fight on."

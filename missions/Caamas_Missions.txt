@@ -9,6 +9,7 @@ caamas1_missions = {
 		NOT = {
 			tag = H21
 			tag = U42
+			tag = H07
 		}
 	}
 	
@@ -142,7 +143,6 @@ caamas1_missions = {
 				days = 365
 			}
 			add_years_of_income = -1.25
-			custom_tooltip = caamas_excavation_of_cadcimn_tt
 		}
 	}
 	
@@ -181,7 +181,6 @@ caamas1_missions = {
 				add_base_production = 2
 				add_base_manpower = 1
 			}
-			custom_tooltip = caamas_foray_into_the_depths_of_cadsimn_tt
 		}
 	}
 }
@@ -196,6 +195,7 @@ caamas2_missions = {
 		NOT = {
 			tag = H21
 			tag = U42
+			tag = H07
 		}
 	}
 	
@@ -348,6 +348,7 @@ caamas3_missions = {
 		NOT = {
 			tag = H21
 			tag = U42
+			tag = H07
 		}
 	}
 	
@@ -496,6 +497,7 @@ caamas4_missions = {
 		NOT = {
 			tag = H21
 			tag = U42
+			tag = H07
 		}
 	}
 	
@@ -611,7 +613,6 @@ caamas4_missions = {
 				add_permanent_claim = ROOT
 			}
 			country_event = { id = eordand.3 }
-			custom_tooltip = caamas_demands_of_the_domandrod_tt
 		}
 	}
 }
@@ -925,140 +926,6 @@ caamas5_missions_dearktir = { #Dearktir
 					name = "dearktir_western_port"
 					duration = 9125
 				}
-			}
-		}
-	}
-}
-
-caamas5_missions_bagcatir = { #Bagcatir
-	slot = 5
-	generic = no
-	ai = yes
-	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		tag = H07
-	}
-	
-	bagcatir_city_of_free_merchants = {
-		icon = mission_control_venice
-		required_missions = { }
-		position = 1
-		
-		trigger = {
-			republican_tradition = 90
-			OR = {
-				adm = 5
-				dip = 5
-				mil = 5
-			}
-		}
-		
-		effect = {
-			add_treasury = 50
-			add_stability_or_adm_power = yes
-		}
-	}
-	
-	bagcatir_capitalize_on_elarbarc_tensions = {
-		icon = mission_combat_barbary_piracy
-		required_missions = {
-			bagcatir_city_of_free_merchants
-		}
-		position = 2
-		
-		provinces_to_highlight = {
-			OR = {
-				province_id = 2053
-				province_id = 2028
-				province_id = 2037
-			}
-			NOT = { owned_by = ROOT }
-		}
-		
-		trigger = {
-			2053 = {
-				owned_by = ROOT
-			}
-			OR = {
-				2028 = {
-					owned_by = ROOT
-				}
-				2037 = {
-					owned_by = ROOT
-				}
-			}
-		}
-		
-		effect = {
-			paskala_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			dearktir_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			murdkather_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = "bagcatir_elarbarc_supremacy"
-				duration = 10950
-			}
-		}
-	}
-	
-	bagcatir_control_the_south_sarmadfar = {
-		icon = mission_rb_take_gibraltar
-		required_missions = {
-			bagcatir_capitalize_on_elarbarc_tensions
-		}
-		position = 3
-		
-		provinces_to_highlight = {
-			OR = {
-				province_id = 2056
-				province_id = 2055
-				province_id = 2054
-				province_id = 2061
-			}
-			NOT = { owned_by = ROOT }
-		}
-		
-		trigger = {
-			2056 = {
-				owned_by = ROOT
-			}
-			2055 = {
-				owned_by = ROOT
-			}
-			2054 = {
-				owned_by = ROOT
-			}
-			2061 = {
-				owned_by = ROOT
-			}
-		}
-		
-		effect = {
-			2022 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-			}
-			add_country_modifier = {
-				name = "bagcatir_colonial_spirit"
-				duration = 9125
 			}
 		}
 	}

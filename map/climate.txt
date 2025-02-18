@@ -370,6 +370,8 @@ mild_winter = {
 
 	#Ekyunimoy
 	3309 3308 3307 3306
+	
+	3727 
 }
 
 #Example: Inland Europe & Scandinavia
@@ -524,6 +526,7 @@ normal_winter = {
 	6840 6844 6845 6846 6847
 	
 	6799
+	3726 
 }
 
 #Example: Russia & Lappland
@@ -563,6 +566,7 @@ severe_winter = {
 	#West Dwarovar
 	
 	4153 2863 4553 4020 4147 4156 4999
+	3725 
 	
 	#North Aelantir
 	924 950 2787 2848 1217 1215 1214 1213 1206 1218 1224 1226 1233 1232 1219 1223 1220 1225 1222 1229 1231 2793 2794 1241 1240 1238 1237 1236 1200 1216 1199 1744 1743 1242 1239 
@@ -643,6 +647,7 @@ impassable = {
 	
 	#New Serpentspine sections
 	4995 4996 4997 4998 4999 6545 6546
+	3725 3726 3727 
 
 	#Sarhal
 	5778 

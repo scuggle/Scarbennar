@@ -246,7 +246,13 @@ province_event = {
 		remove_province_modifier = dwindling_resources
 		if = {
 			limit = { trade_goods = precursor_relics }
-			set_from_saved_trade_goods = yes
+			if = {
+				limit = { has_silverforge_surface_mine = yes }
+				silverforge_precursor_relics_depletion = yes
+			}
+			else = {
+				set_from_saved_trade_goods = yes
+			}
 		}
 		if = {
 			limit = { NOT = { has_province_modifier = eordan_expedition_site } }

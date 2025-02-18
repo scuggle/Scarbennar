@@ -112,7 +112,7 @@ obrtrol_missiontree_1 = {
 	}
 	
 	obrtrol_take_olavslund = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		required_missions = {
 			obrtrol_big_books_big_runes
 		}
@@ -482,9 +482,21 @@ obrtrol_missiontree_3 = {
 				limit = {
 					has_estate = estate_monstrous_tribes
 				}
-				num_of_estate_agendas_completed = {
-					estate = estate_monstrous_tribes 
-					value = 2
+				OR = {
+					num_of_estate_agendas_completed = {
+						estate = estate_monstrous_tribes 
+						value = 2
+					}
+					AND = {
+						num_of_estate_agendas_completed = {
+							estate = estate_monstrous_tribes 
+							value = 1
+						}
+						estate_loyalty = {
+							estate = estate_monstrous_tribes
+							loyalty = 60
+						}
+					}
 				}
 			}
             if = {

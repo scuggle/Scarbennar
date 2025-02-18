@@ -120,8 +120,9 @@ khao_elnak_2 = {
 					}
 				}
 				AND = {
-					owns_all_provinces = {
-						area = thirabnir_area
+					thirabnir_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
 					}
 					NOT = { exists = Y59 } #Thirabnir
 				}
@@ -156,8 +157,9 @@ khao_elnak_2 = {
 			custom_tooltip = khao_elnak_conquest_tt
 			if = {
 				limit = {
-					owns_all_provinces = {
-						area = thirabnir_area
+					thirabnir_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
 					}
 					NOT = { exists = Y59 } #Thirabnir
 				}
@@ -241,7 +243,7 @@ khao_elnak_3 = {
 			OR = {
 				AND = {
 					province_id = 4791 #Yemakhai
-					NOT = { development = 8 }
+					NOT = { development = 7 }
 				}
 				AND = {
 					province_id = 4792 #Kang Kaiden
@@ -253,7 +255,7 @@ khao_elnak_3 = {
 		trigger = { 
 			army_size_percentage = 0.9 
 			num_of_cavalry = 3
-			4791 = { development = 8 } #Yemakhai
+			4791 = { development = 7 } #Yemakhai
 			4792 = { development = 8 } #Kang Kaiden
 		} 
 
@@ -365,29 +367,40 @@ khao_elnak_3 = {
 			hidden_effect = {
 				if = {  
 					limit = { 
-						4790 = { owned_by = Y86 } #Vai Ma #Azkare
-						4787 = { owned_by = Y86 } #Lektonmai #Azkare
+						OR = {
+							has_spawned_supported_rebels = Y86 #Azkare
+							Y86 = { #Azkare
+								rebel_progress_at_least = { value = 50 }
+							}
+						}
 					} 
-					4790 = { #Vai Ma
-						spawn_rebels = {
+					if = {
+						limit = { 4790 = { NOT = { owned_by = Y62 } } } #Vai Ma #Khao Elnak
+						4790 = { #Vai Ma
+							spawn_rebels = {
 								type = nationalist_rebels
 								size = 1
 								culture = sikai
 								friend = Y62 #Khao Elnak
 								friend = Y60 #Lo Ngoen
 								separatists_target = Y62 #Khao Elnak
+							}
 						}
 					}
-					4787 = { #Lektonmai
-						spawn_rebels = {
+					if = {
+						limit = { 4787 = { NOT = { owned_by = Y60 } } } #Lektonmai #Lo Ngoen
+						4787 = { #Lektonmai
+							spawn_rebels = {
 								type = nationalist_rebels
 								size = 1
 								culture = sikai
 								friend = Y62 #Khao Elnak
 								friend = Y60 #Lo Ngoen
 								separatists_target = Y60 #Lo Ngoen
+							}
 						}
 					}
+					
 				}
 				else = {
 					add_adm_power = 50
@@ -406,7 +419,7 @@ khao_elnak_3 = {
 
 		trigger = {  
 			dip_power = 50
-			is_scrying = yes
+			is_scrying = yes #MAGICREWORK
 			estate_loyalty = {
 				estate = estate_church
 				loyalty = 60
@@ -517,7 +530,7 @@ khao_elnak_4 = {
 			OR = {
 				any_ally = {
 					OR = {
-						total_development = 60
+						total_development = 55	#The Semphrerong Standard(tm)
 						tag = Y28 #Jiangliusi
 						tag = Y63 #Verkal Ozovar
 					}
@@ -539,7 +552,7 @@ khao_elnak_4 = {
 				random_ally = {
 					limit = {
 						OR = {
-							total_development = 60
+							total_development = 55
 							tag = Y28 #Jiangliusi
 							tag = Y63 #Verkal Ozovar
 						}

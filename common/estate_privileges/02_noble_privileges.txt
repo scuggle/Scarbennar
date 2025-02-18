@@ -6,8 +6,9 @@ estate_nobles_land_rights = {
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
-		NOT = { OR = { religion = gods_of_the_taychend religion = oren_nayiru } } 
+		NOT = { OR = { religion = gods_of_the_taychend religion = oren_nayiru } }
 		NOT = { has_country_flag = active_tree }
+		NOT = { has_reform = empower_magnate_council}
 	}
 	can_select = {
 		not = { has_estate_privilege = estate_ghulams_land_rights }
@@ -21,6 +22,12 @@ estate_nobles_land_rights = {
 		trigger = { has_country_flag = mng_increased_land_rights_flag }
 		modifier = {
 			stability_cost_modifier = -0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = { mission_completed = G52_taychendi_brethren }
+		modifier = {
+			max_absolutism = 5
 		}
 	}
 	# conditional_modifier = {
@@ -254,6 +261,13 @@ estate_nobles_nobility_primacy = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
+	conditional_modifier = {
+		trigger = { has_reform = empower_magnate_council }
+		modifier = {
+			nobles_loyalty_modifier = -0.05
+			max_absolutism = 5
+		}
+	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -306,19 +320,19 @@ estate_nobles_officer_corp = {
 	is_valid = {
 		NOT = { has_country_flag = no_noble_military } # Anbennar
 		NOT = { has_country_flag = active_sword }
-		NOT = { 
+		NOT = {
 			has_estate_privilege = estate_eunuchs_anb_generals # Anbennar
 			has_estate_privilege = estate_uppercastes_officer_corp # Anbennar
 			has_estate_privilege = estate_nomadic_tribes_guaranteed_leadgership_in_host
 			has_estate_privilege = estate_nobles_jiangdu_officer_corp # Anbennar
 			has_estate_privilege = estate_lion_command_ninyu_kikun_officers
 			has_estate_privilege = estate_artificers_artificer_generals
-			has_estate_privilege = estate_nobles_sunijalla_triunic_nobles 
+			has_estate_privilege = estate_nobles_sunijalla_triunic_nobles
 		}
 	}
 	can_select = {
 		army_tradition = 30
-		NOT = { 
+		NOT = {
 			has_estate_privilege = estate_eunuchs_anb_generals # Anbennar
 			has_estate_privilege = estate_uppercastes_officer_corp # Anbennar
 			has_estate_privilege = estate_nomadic_tribes_guaranteed_leadgership_in_host
@@ -340,6 +354,14 @@ estate_nobles_officer_corp = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
+	conditional_modifier = {
+		trigger = { has_country_flag = rosande_officer_corp_mod }
+		modifier = {
+			army_tradition_decay = -0.005
+			general_cost = -0.1
+			infantry_power = 0.1
+		}
+	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -360,11 +382,13 @@ estate_nobles_levies = {
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_liberty } #Anbennar
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
 		NOT = { tag = I08 } #Anbennar
+		NOT = { has_estate_privilege = estate_nobles_themarenn_sailors } #Anbennar
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_liberty } #Anbennar
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
+		NOT = { has_estate_privilege = estate_nobles_themarenn_sailors } #Anbennar
 		if = {
 			limit = {
 				has_estate = estate_maratha
@@ -382,10 +406,6 @@ estate_nobles_levies = {
 		if = {
 			limit = { has_ruler_modifier = G52_destiny }
 			NOT = { has_ruler_modifier = G52_destiny }
-		}
-		else_if = {
-			limit = { has_country_modifier = G52_laskaris_legacy }
-			NOT = { has_country_modifier = G52_laskaris_legacy }
 		}
 	}
 	modifier_by_land_ownership = {
@@ -487,7 +507,7 @@ estate_nobles_advisors = {
 	is_valid = {
 		NOT = { has_country_flag = active_reliquary }
 	}
-	can_select = { 
+	can_select = {
 		NOT = { has_estate_privilege = estate_maratha_advisor }
 		NOT = { has_estate_privilege = estate_rajput_advisor }
 		NOT = { has_estate_privilege = estate_eunuchs_anb_advisors }	#Anbennar
@@ -646,7 +666,7 @@ estate_nobles_supremacy_over_crown = {
 		has_dlc = "Emperor"
 		NOT = { has_government_attribute = blocked_call_diet }
 	}
-	can_select = { 
+	can_select = {
 		NOT = { has_estate_privilege = estate_eunuchs_supremacy_over_crown_privilege }
 		NOT = {
 			has_country_flag = vf_lownobles_flg
@@ -707,6 +727,10 @@ estate_nobles_supremacy_over_crown = {
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = rosande_above_the_flames }
+		modifier = { max_absolutism = 5 }
 	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
@@ -897,7 +921,7 @@ estate_nobles_monopoly_of_livestock = {
 		}
 		custom_tooltip = estate_nobles_monopoly_of_livestock_effect_tooltip
 		if = {
-			limit = {  
+			limit = {
 				has_country_flag = L08_monopoly_of_livestock_upgrade
 			}
 			capital_scope = {
@@ -1157,6 +1181,7 @@ estate_nobles_strong_duchies = {
 	is_valid = {
 		NOT = { has_country_flag = estate_nobles_castanor_upgraded_strong_duchies_unlocked }
 		NOT = { has_estate_privilege = estate_nobles_sunijalla_council_of_lords }
+		NOT = { has_country_flag = L62_mengi_partners }
 		any_subject_country = {
 			OR = {
 				is_subject_of_type = vassal
@@ -1167,6 +1192,8 @@ estate_nobles_strong_duchies = {
 				#Anbennar
 				is_subject_of_type = autonomous_vassal
 				is_subject_of_type = patronate
+				is_subject_of_type = loyal_crathanor_subject # Special Ovdal Tûngr subject for Crathanor, called "Ilatani March"
+				is_subject_of_type = maghargma_special_subject
 			}
 		}
 	}
@@ -1188,6 +1215,8 @@ estate_nobles_strong_duchies = {
 						#Anbennar
 						is_subject_of_type = autonomous_vassal
 						is_subject_of_type = patronate
+						is_subject_of_type = loyal_crathanor_subject # Special Ovdal Tûngr subject for Crathanor, called "Ilatani March"
+						is_subject_of_type = maghargma_special_subject
 					}
 				}
 			}
@@ -1203,6 +1232,14 @@ estate_nobles_strong_duchies = {
 		trigger = { has_government_attribute = buffed_strong_duchies }
 		modifier = {
 			nobles_loyalty_modifier = 0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = { mission_completed = G52_across_hills }
+		modifier = {
+			max_absolutism = 10
+			diplomatic_upkeep = 1
+			diplomatic_reputation = 1
 		}
 	}
 	ai_will_do = {
@@ -1244,7 +1281,7 @@ estate_nobles_golden_liberty = {
 		OR = {
 			has_estate_privilege = estate_nobles_golden_liberty #Poland starts with it
 			has_reform = elective_monarchy
-			has_reform = polish_elective_monarchy 
+			has_reform = polish_elective_monarchy
 		}
 	}
 	can_revoke = {
@@ -1259,8 +1296,8 @@ estate_nobles_golden_liberty = {
 				# }
 			# }
 			# OR = {
-				# AND = { 
-					# NOT = { has_reform = polish_elective_monarchy } 
+				# AND = {
+					# NOT = { has_reform = polish_elective_monarchy }
 					# NOT = { has_reform = elective_monarchy }
 				# }
 				# has_reform = polish_autocratic_monarchy
@@ -1313,7 +1350,7 @@ estate_nobles_golden_liberty = {
 		# }
 		if = {
 			limit = {
-				OR = { 
+				OR = {
 					has_reform = elective_monarchy
 					has_reform = polish_elective_monarchy
 				}
@@ -1394,7 +1431,7 @@ estate_nobles_veto_heir_apparent = {
 	loyalty = -0.05
 	is_valid = {
 		has_dlc = "Emperor"
-		OR = { 
+		OR = {
 			has_reform = polish_elective_monarchy
 			has_reform = elective_monarchy
 		}
@@ -1492,6 +1529,7 @@ estate_nobles_better_integration = {
 				is_subject_of_type = daimyo_vassal
 				is_subject_of_type = personal_union
 				is_subject_of_type = appanage
+				is_subject_of_type = maghargma_special_subject
 				AND = {
 					is_subject_of_type = ynnic_iosahar
 					ROOT = {
@@ -1931,7 +1969,7 @@ estate_nobles_leidang_mass_conscription = {
 		has_estate_privilege = estate_nobles_leidang_conscription
 	}
 	penalties = {
-		
+
 	}
 	benefits = {
 		nobles_privilege_slots = 1
@@ -2346,7 +2384,7 @@ estate_nobles_nobles_instead_of_royal_court = {
 	}
 }
 
-#Poland Privileges 
+#Poland Privileges
 
 # estate_nobles_sponsor_hussars = {
 # 	icon = privilege_make_generous_donation
@@ -2357,7 +2395,7 @@ estate_nobles_nobles_instead_of_royal_court = {
 # 	}
 # 	influence = 0.05
 # 	loyalty = -0.05
-# 	benefits = { 
+# 	benefits = {
 # 		amount_of_hussars = 6
 # 	}
 # 	penalties = {
@@ -2976,24 +3014,24 @@ estate_nobles_mestnichestvo = {
 		# tag = CAS
 	# }
 	# can_revoke = {
-		# crown_land_share = 50 
+		# crown_land_share = 50
 	# }
 	# on_granted = {
-		
+
 	# }
 	# on_revoked = {
-		
+
 	# }
 	# benefits = {
-		
+
 	# }
 	# penalties = {
 		# legitimacy = -0.5
 		# global_autonomy = 0.05
-		
+
 	# }
 	# conditional_modifier = {
-		# trigger = { 
+		# trigger = {
 			# has_country_flag = cas_royalist_flag
 		# }
 		# modifier = {
@@ -3003,7 +3041,7 @@ estate_nobles_mestnichestvo = {
 		# }
 	# }
 	# conditional_modifier = {
-		# trigger = { 
+		# trigger = {
 			# has_country_flag = cas_infantes_flag
 		# }
 		# modifier = {
@@ -3022,7 +3060,7 @@ estate_nobles_consolidated_noble_contracts = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_consolidated_noble_contracts }
-		has_dlc = "Domination" 
+		has_dlc = "Domination"
 		NOT = { absolutism = 50 }
 	}
 	on_granted = {
@@ -3032,11 +3070,11 @@ estate_nobles_consolidated_noble_contracts = {
 	benefits = {
 		core_creation = -0.1
 	}
-	penalties = { 
+	penalties = {
 	}
 	conditional_modifier = {
 		trigger = {
-			is_at_war = yes 
+			is_at_war = yes
 		}
 		modifier = {
 			war_exhaustion = -0.05
@@ -3103,7 +3141,7 @@ estate_nobles_consolidated_noble_contracts = {
 		# }
 	# }
 	# can_revoke = {
-		
+
 	# }
 	# on_granted = {
 	# }
@@ -3418,6 +3456,7 @@ estate_nobles_noble_officer_right = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		NOT = { has_country_flag = no_noble_military }
 	}
 	can_select = {
 		if = {
@@ -3474,7 +3513,7 @@ estate_nobles_expedition_rights = {
 			colony_cost_modifier = -0.5
 		}
 	}
-	
+
 	on_granted = {
 		scaling_with_loyalty_privilege_tooltip = {
 			estate_privilege = estate_nobles_expedition_rights
@@ -3538,5 +3577,202 @@ estate_nobles_xia_last_bastion = {
 	}
 	can_revoke = {
 		always = no
+	}
+}
+
+estate_nobles_G57_emerald_waters = {
+	icon = privilege_dev_cost_forest
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	influence = 0.10
+	loyalty = 0.0
+	is_valid = {
+		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_G57_emerald_waters }
+	}
+	can_select = {
+		any_owned_province = {
+			OR = {
+				has_port = yes
+				province_id = 2695
+				province_id = 2696
+				province_id = 2699
+				province_id = 2702
+				province_id = 2707
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_G57_emerald_waters_tt
+			hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_port = yes
+						province_id = 2695
+						province_id = 2696
+						province_id = 2699
+						province_id = 2702
+						province_id = 2707
+					}
+				}
+				add_province_modifier = {
+					name = estate_nobles_G57_emerald_waters_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_nobles_G57_emerald_waters_modifier
+				}
+				remove_province_modifier = estate_nobles_G57_emerald_waters_modifier
+			}
+		}
+	}
+}
+estate_nobles_G57_land_golden_ears = {
+	icon = privilege_dev_cost_forest
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	influence = 0.10
+	loyalty = 0.0
+	is_valid = {
+		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_G57_land_golden_ears }
+	}
+	can_select = {
+		OR = {
+			livestock = 1
+			grain = 1
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_G57_land_golden_ears_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = livestock
+						trade_goods = grain
+					}
+				}
+				add_province_modifier = {
+					name = estate_nobles_G57_land_golden_ears_modifier
+					duration = -1
+				}
+			}
+			set_country_flag = estate_nobles_G57_land_golden_ears_flag
+		}
+	}
+	on_revoked = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_nobles_G57_land_golden_ears_modifier
+				}
+				remove_province_modifier = estate_nobles_G57_land_golden_ears_modifier
+			}
+			clr_country_flag = estate_nobles_G57_land_golden_ears_flag
+		}
+	}
+}
+#themarenn
+estate_nobles_themarenn_sailors = { #Anbennar, for A95 missions
+	icon = privilege_demand_more_troops
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes NOT = { has_government_attribute = free_noble_levies } } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	loyalty = 0.1
+	is_valid = {
+		has_estate_privilege = estate_nobles_themarenn_sailors
+	}
+	can_select = {
+		always = no
+	}
+	can_revoke = { #Anbennar
+	}
+	modifier_by_land_ownership = {
+		global_tax_modifier = -0.1
+		global_sailors_modifier = 0.5
+		sailors_recovery_speed = 0.5
+	}
+	penalties = {
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = free_noble_levies
+		}
+		modifier = {
+			max_absolutism = 5
+			nobles_influence_modifier = -0.1
+		}
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.5
+			any_rival_country = {
+				army_strength = {
+					who = root
+					value = 1.5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_idea_group = quantity_ideas
+		}
+		modifier = {
+			factor = 0.5
+			max_manpower = 200
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { current_income_balance = 5 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { current_income_balance = 0 }
+		}
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
 	}
 }

@@ -65,7 +65,8 @@ country_event = {
 		}
 		NOT = { has_reform = effelai_alianaiarat_reform } #they select heirs through effelai_worship.500
 		NOT = { has_reform = bronze_dual_government_reform }
-		NOT = { has_reform = irkorzik_dunesworn_council_reform } #They select heirs through irkorzik_flavour.8
+		NOT = { has_reform = irkorzik_dunesworn_council_reform } #They select heirs through flavour_irkorzik.8
+		NOT = { has_reform = raheni_divine_monarchy_reform } #They select heirs through flavour_suryavar.1
 	}
 
 	immediate = {
@@ -1041,8 +1042,9 @@ country_event = {
 			# Anbennar
 			OR = {
 				religion = the_jadd
-				religion = righteous_path
-				religion = lefthand_path
+				religion = accretive_path
+				religion = transmutative_path
+				religion = devouring_path
 			}
 			NOT = {
 				OR = {
@@ -1131,8 +1133,9 @@ country_event = {
 		if = { 
 			limit = { 
 				OR = {
-					religion = righteous_path
-					religion = lefthand_path
+					religion = accretive_path
+					religion = transmutative_path
+					religion = devouring_path
 				}
 			}
 			add_church_power = 10

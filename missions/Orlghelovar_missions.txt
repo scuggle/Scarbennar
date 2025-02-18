@@ -7,6 +7,7 @@ orlghelovar_1p2s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -140,6 +141,7 @@ orlghelovar_1p1s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -208,6 +210,7 @@ orlghelovar_1p4s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -383,6 +386,7 @@ orlghelovar_1p5s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -450,6 +454,7 @@ orlghelovar_1p3s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -515,6 +520,7 @@ orlghelovar_2p5s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -704,6 +710,7 @@ orlghelovar_2p4s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -856,6 +863,7 @@ orlghelovar_2p3s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1012,6 +1020,7 @@ orlghelovar_2p1s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1031,20 +1040,20 @@ orlghelovar_2p1s = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = west_overmarch_area
-				area = east_overmarch_area
+				area = lencmarck_area
+				area = tencmarck_area
 			}
 			culture_group = goblin
 		}
 		
 		trigger = {
-			east_overmarch_area = {
+			tencmarck_area = {
 				NOT = {
 					culture_group = goblin
 				}
 				type = all
 			}
-			west_overmarch_area = {
+			lencmarck_area = {
 				NOT = {
 					culture_group = goblin
 				}
@@ -1073,14 +1082,14 @@ orlghelovar_2p1s = {
 		provinces_to_highlight = {
 			NOT = {
 				OR = {
-					owned_by = F23
 					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = F23
 				}
 			}
 			OR = {
-				area = south_overmarch_area
-				area = east_overmarch_area
-				area = west_overmarch_area
+				area = oudmarck_area
+				area = tencmarck_area
+				area = lencmarck_area
 			}
 		}
 		
@@ -1088,25 +1097,25 @@ orlghelovar_2p1s = {
 			U16 = {
 				exists = no
 			}
-			south_overmarch_area = {
+			oudmarck_area = {
 				type = all
 				OR = {
 					owned_by = ROOT
-					owned_by = F23
+					country_or_non_sovereign_subject_holds = F23
 				}
 			}
-			west_overmarch_area = {
+			lencmarck_area = {
 				type = all
 				OR = {
 					owned_by = ROOT
-					owned_by = F23
+					country_or_non_sovereign_subject_holds = F23
 				}
 			}
-			east_overmarch_area = {
+			tencmarck_area = {
 				type = all
 				OR = {
 					owned_by = ROOT
-					owned_by = F23
+					country_or_non_sovereign_subject_holds = F23
 				}
 			}
 		}
@@ -1194,6 +1203,7 @@ orlghelovar_2p2s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1262,7 +1272,7 @@ orlghelovar_2p2s = {
 		
 		provinces_to_highlight = { 
 			area = zagnabad_area
-			NOT = { owned_by = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
@@ -1277,8 +1287,11 @@ orlghelovar_2p2s = {
 						}
 					}
 					AND = {
-						owned_by = F23
-						is_core = F23
+						country_or_non_sovereign_subject_holds = F23
+						is_core = owner
+						NOT = {
+							culture = exodus_goblin
+						}
 					}
 				}
 			}
@@ -1430,6 +1443,7 @@ orlghelovar_2bp5s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1555,6 +1569,7 @@ orlghelovar_2bp4s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1608,6 +1623,7 @@ orlghelovar_3p1s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1647,6 +1663,7 @@ orlghelovar_3p2s = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1734,6 +1751,7 @@ orlghelovar_3p3snt = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1757,11 +1775,11 @@ orlghelovar_3p3snt = {
 			F23 = { years_in_vassalage_under = { who = ROOT years = 25 } }
 			reuyel_area = {
 				type = all
-				owned_by = F23
+				country_or_non_sovereign_subject_holds = F23
 			}
 			crathanor_area = {
 				type = all
-				owned_by = F23
+				country_or_non_sovereign_subject_holds = F23
 			}
 			
 		}
@@ -1778,6 +1796,7 @@ orlghelovar_glass_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1829,6 +1848,7 @@ orlghelovar_glass_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1877,6 +1897,7 @@ orlghelovar_glass_3a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1917,6 +1938,7 @@ orlghelovar_glass_3b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -1963,6 +1985,7 @@ orlghelovar_glass_final = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2004,6 +2027,7 @@ orlghelovar_3p3su = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2099,6 +2123,7 @@ orlghelovar_bonus_mg = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2151,6 +2176,7 @@ orlghelovar_light_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2216,6 +2242,7 @@ orlghelovar_magic_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2270,6 +2297,7 @@ orlghelovar_magic_2a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2306,6 +2334,7 @@ orlghelovar_magic_3a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2346,6 +2375,7 @@ orlghelovar_magic_3b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2396,6 +2426,7 @@ orlghelovar_magic_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2435,6 +2466,7 @@ orlghelovar_black_damestear_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2512,6 +2544,7 @@ orlghelovar_black_damestear_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2560,6 +2593,7 @@ orlghelovar_black_damestear_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2628,6 +2662,7 @@ orlghelovar_black_damestear_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2664,6 +2699,7 @@ orlghelovar_black_damestear_4 = {
 			2942 = {
 				change_trade_goods = damestear
 				set_province_flag = permanent_damestear 
+				add_permanent_province_modifier = { name = black_damestear duration = -1 }
 				add_province_modifier = { name = orlghelovar_black_damestear_facility duration = -1 }
 				add_province_modifier = { name = orlghelovar_new_production duration = 3650 }
 			}
@@ -2682,6 +2718,7 @@ orlghelovar_black_damestear_research_center = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2722,6 +2759,7 @@ orlghelovar_magical_bullets_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2762,6 +2800,7 @@ orlghelovar_magical_bullets_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2816,6 +2855,7 @@ orlghelovar_sapphire_glass_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2921,6 +2961,7 @@ orlghelovar_sapphire_glass_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -2963,6 +3004,7 @@ orlghelovar_microscope_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3000,6 +3042,7 @@ orlghelovar_microscope_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3074,6 +3117,7 @@ orlghelovar_microscope_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3112,6 +3156,7 @@ orlghelovar_medicine_1 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3195,6 +3240,7 @@ orlghelovar_medicine_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3265,10 +3311,10 @@ orlghelovar_medicine_2 = {
 				}
 			}
 			if = {
-				limit = { any_known_country = { capital_scope = { superregion = south_haless_superregion } } }
+				limit = { any_known_country = { capital_scope = { superregion = vimdatrong_superregion } } }
 				any_known_country = {
 					capital_scope = {
-						superregion = south_haless_superregion
+						superregion = vimdatrong_superregion
 					}
 					has_opinion = {
 						who = ROOT
@@ -3302,6 +3348,7 @@ orlghelovar_lad_1a = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3382,6 +3429,7 @@ orlghelovar_lad_1b = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3433,6 +3481,7 @@ orlghelovar_lad_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3477,6 +3526,7 @@ orlghelovar_lad_advanced_1 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3545,6 +3595,7 @@ orlghelovar_lad_advanced_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3590,6 +3641,7 @@ orlghelovar_armour_protection_1 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3636,6 +3688,7 @@ orlghelovar_armour_protection_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3727,6 +3780,7 @@ orlghelovar_armour_protection_3 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3778,6 +3832,7 @@ orlghelovar_military_1 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {
@@ -3823,6 +3878,7 @@ orlghelovar_military_2 = {
 	ai = no
 	has_country_shield = yes
 	potential = {
+		NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = I12
 			AND = {

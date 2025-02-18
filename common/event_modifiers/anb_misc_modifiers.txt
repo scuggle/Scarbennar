@@ -271,6 +271,7 @@ ai_spellcasting_cooldown = {
 
 owns_anbenncost = {
 	diplomatic_upkeep = 1
+	local_autonomy = -0.1
 }
 
 corveld_regional_capitol = {
@@ -462,16 +463,12 @@ frontier_republic_steppe_expansion = {
 
 war_artificery = {
 	is_rajput_modifier = yes
-	shock_damage_received = -0.05
-	fire_damage_received = -0.05
-	infantry_power = 0.1
-	land_maintenance_modifier = 0.1
+	infantry_power = 0.2
 }
 
 lizardfolk_marines = {
 	is_marine_modifier = yes
-	shock_damage_received = -0.1
-	regiment_manpower_usage = -0.2
+	shock_damage_received = -0.15
 }
 
 gathgob_lighthouse_modifier = {
@@ -525,3 +522,17 @@ production_efficiency_from_strategic_goods_5 = {
 production_efficiency_from_strategic_goods_6 = {
 	production_efficiency = 0.15
 }
+
+black_damestear = {
+	trade_goods_size_modifier = -0.5
+	trade_value_modifier = 0.15
+
+	picture = "black_damestear"
+}
+clstc_colonialism = {
+	institution_growth = 20
+}
+
+anb_heir_cannot_die = { }
+
+anb_consort_cannot_die = { }

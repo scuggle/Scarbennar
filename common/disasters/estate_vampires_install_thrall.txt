@@ -4,6 +4,7 @@ estate_vampires_install_thrall_disaster = {
 		has_estate = estate_vampires
 		is_year = 1445
 		NOT = { tag = B34 }
+		NOT = { has_country_flag = mb_keepers_razor_flg }
 		# NOT = { has_ruler_flag = is_a_vampire }
 	}
 
@@ -16,8 +17,11 @@ estate_vampires_install_thrall_disaster = {
 				loyalty = 20
 			}
 		}
-		NOT = {
-			has_ruler_flag = vampire_thrall
+		custom_trigger_tooltip = {
+			tooltip = has_vampire_thrall.tt
+			NOT = {
+				has_ruler_flag = vampire_thrall
+			}
 		}
 	}
 	

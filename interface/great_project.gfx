@@ -24,7 +24,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_great_project_the_lake_palace" 
-		texturefile = "gfx//interface//great_projects//great_project_grand_canal.dds"
+		texturefile = "gfx//interface//great_projects//great_project_kazan_kremlin.dds"
 	}
 
 	spriteType = {
@@ -286,6 +286,12 @@ spriteTypes = {
 		name = "GFX_great_project_heart_of_the_effelai"
 		texturefile = "gfx//interface//great_projects//great_project_heart_of_the_effelai.dds"
 	}
+	#Gleaming Tower
+	spriteType = {
+		name = "GFX_great_project_gleaming_tower"
+		texturefile = "gfx//interface//great_projects//great_project_gleaming_tower.dds"
+	}
+
 
 	#baashidi canal
 	spriteType = {
@@ -312,6 +318,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_great_project_the_wormway"
 		texturefile = "gfx//interface//great_projects//great_project_falun_copper_mine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_tunnels_of_renewal"
+		texturefile = "gfx//interface//great_projects//great_project_walls_benin.dds"
 	}
 	##KOK
 	
@@ -354,5 +365,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_great_project_shah_rukn_e_alam_tomb"	
 		texturefile = "gfx//interface//great_projects//great_project_shah_rukn_e_alam_tomb.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_H35_gp_crimson_cathedral" 
+		texturefile = "gfx//interface//great_projects//great_project_H35_gp_crimson_cathedral.dds"
 	}
 }

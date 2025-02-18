@@ -379,7 +379,13 @@ country_event = {
 		name = sapchopper.13.a
 		custom_tooltip = sapchopper.13.a.tt
 		hidden_effect = {
+			clr_country_flag = ashentree_fey_investigation
 			set_country_flag = ashentree_fey_investigation_completed
+			every_province = {	# Bandaid for edge case where these aren't already removed somehow(???)
+				remove_province_modifier = sapchopper_the_path_clue_a
+				remove_province_modifier = sapchopper_the_path_clue_b
+				remove_province_modifier = sapchopper_the_path_clue_c
+			}
 		}
 	}
 }
@@ -481,25 +487,10 @@ country_event = {
 
 	option = {
 		name = sapchopper.17.a
-		add_stability_or_adm_power = yes
-		add_prestige = 5
 		set_country_flag = fey_offering_denied
-		hidden_effect = {
-			change_tag = Z54
-			change_primary_culture = karakhanbari_orc
-			hidden_effect = { restore_country_name = yes }
-			swap_non_generic_missions = yes
-			country_event = { id = orcform.1 days = 1 }
-			country_event = { id = ideagroups.1 } #Swap Ideas
-			every_owned_province = {
-				if = {
-					limit = { culture = green_orc }
-					change_culture = karakhanbari_orc
-				}
-			}
-			set_country_flag = karakhanbar_common_fey_nuissance
-			set_country_flag = had_bron_event
-		}
+		set_country_flag = sapchopper_ire_of_prince
+		kill_ruler = yes
+		custom_tooltip = sapchopper.17.a.tt
 	}
 }
 

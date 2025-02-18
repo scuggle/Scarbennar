@@ -4,7 +4,7 @@
  ghavaanaj_1_gather_skilled_mahouts_title:0 "Gather Skilled Mahouts"
  ghavaanaj_1_gather_skilled_mahouts_desc:0 "Since our earliest days, we have tamed elephants, and over the course of time, we have learned the best ways to do so. Those who tame them are known as mahouts, and they begin their training as a child. Throughout Rahen, mahouts rear elephants, but most of them use cruel methods, driving sharp metal tools into their hides to force them to move.\n\nOur mahouts, however, treat our elephants with respect, and as such, they are willing to do anything for us. Let us assemble our best under a single general, to make our enemies shudder as we charge."
 
- ghavaanaj_1_organise_elephant_training_title:0 "Organise Elephant Training"
+ ghavaanaj_1_organise_elephant_training_title:0 "Elephant Collaborations"
  ghavaanaj_1_organise_elephant_training_desc:0 "With our mahouts united under a single general, we should gather our forces and engage in a few training exercises. The mahouts are hoping to impress the Reeshi representatives that we have invited, in the hopes of collaborating directly with them."
 
  ghavaanaj_1_reeshi_bonds_title:0 "Reeshi Bonds"
@@ -28,7 +28,7 @@
  ghavaanaj_1_pachyderm_mortars_title:0 "Pachyderm Mortars"
  ghavaanaj_1_pachyderm_mortars_desc:0 "When Ramaplar the Reunifier's heavy infantry decimated our troops, we were shown a glaring weakness that thus far we have struggled to overcome. Recent innovations in warfare, combined with a few mechanically minded mahouts have led to a proposal that may allow us to overcome that weakness.\n\nCannons are a devastating force multiplier on the field of battle, but they are very vulnerable. With some redesigns of our cannons, we can seize the elephant of surprise and use our mammoth allies as mobile artillery platforms to bring even the most elite infantry under our feet." #elephant of surprise
 
- ghavaanaj_2_maintain_reeshi_relations_title:0 "Maintain Reeshi Relations"
+ ghavaanaj_2_maintain_reeshi_relations_title:0 "Reeshi Relations"
  ghavaanaj_2_maintain_reeshi_relations_desc:0 "While other nations employ mages, we benefit from the knowledge of the Reeshi, those who are skilled in magic because they know that they are a part of nature, not apart from it. Their ability to speak with animals allows them to form personal connections with animals, including elephants. We should ensure that we have their loyalty and aid them in whatever way they need."
 
  ghavaanaj_2_the_desert_tribes_title:0 "The Desert Tribes"
@@ -533,6 +533,7 @@
  ghavaanaj_2_expand_grazing_grounds_tt:0 "Increase the chance of positive herd size events.\n"
  ghavaanaj_3_export_monopolies_tt:0 "Own all the §YPorcelain§! provinces in Haless"
  ghavaanaj_4_roles_reversed_tt:0 "Release Nadimraj, and gain the following modifier while they are our subject:\n"
+ ghavaanaj_4_roles_reversed_bypass_tt:0 "£no£ Mission bypassed for being §YNadimraj§!. The following will NOT happen.\n"
  ghavaanaj_4_the_elephant_commands_tt:0 "Gain §Yclaims§! on all land owned by §YThe Command§!"
  ghavaanaj_5_lord_and_champion_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName] has won one of the Sharaajaghal games"
  ghavaanaj_5_the_greatest_games_tt:0 "We will host the Sharaajaghal Games like never seen before! Everyone from Brasan to Tianlou will be invited!"

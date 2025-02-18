@@ -2,7 +2,7 @@
 # Ram Raiders
 
 type = cavalry
-unit_type = tech_dwarven
+unit_type = tech_west_dwarven
 
 maneuver = 2
 offensive_morale = 1

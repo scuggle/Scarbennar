@@ -58,7 +58,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_hindu_deities_strip"
 		texturefile = "gfx//interface//hindu_deities_strip.dds"
-		noOfFrames = 165	#Anbennar
+		noOfFrames = 222	#Anbennar
 	}
 	
 
@@ -721,6 +721,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_innovativeness_aspect"
 		texturefile = "gfx/interface/church_aspects_anglicanism/innovativeness_aspect_icon.dds"
+		legacy_lazy_load = no
 	}
 
 	spriteType = {
@@ -731,11 +732,42 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_diplomats_of_the_reformation_aspect"
 		texturefile = "gfx/interface/church_aspects_anglicanism/diplomats_of_the_reformation_aspect_icon.dds"
+		legacy_lazy_load = no
 	}
 	
 	spriteType = {
 		name = "GFX_icons_of_the_church_icon"
 		texturefile = "gfx/interface/church_aspects_anglicanism/icons_of_the_church_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ancestral_armaments"
+		texturefile = "gfx/interface/church_aspects/kvangahga/ancestral_armaments.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_repurposed_relics"
+		texturefile = "gfx/interface/church_aspects/kvangahga/repurposed_relics.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_salvage_shipwrecks"
+		texturefile = "gfx/interface/church_aspects/kvangahga/salvage_shipwrecks.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_reconditioned_tools"
+		texturefile = "gfx/interface/church_aspects/kvangahga/reconditioned_tools.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_recycled_jewellery"
+		texturefile = "gfx/interface/church_aspects/kvangahga/recycled_jewellery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trial_of_the_reforged_chain"
+		texturefile = "gfx/interface/church_aspects/kvangahga/trial_of_the_reforged_chain.dds"
 	}
 
 	#Anbennar
@@ -1135,6 +1167,26 @@ spriteTypes = {
 	spriteType = {
         name = "GFX_runefather_bar_majesty_5"
         texturefile = "gfx//interface//ideas_EU4//runefather_worship//bar_majesty_5.dds"    
+    }
+
+	spriteType = {
+		name = "accretive_path_blocker"
+		texturefile = "gfx//interface//custom_gui//accretive_path_blocker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_devouring_path_blocker"
+		texturefile = "gfx//interface//custom_gui//devouring_path_blocker.dds"
+	}
+	
+	spriteType = {
+        name = "taychend_deity_desc"
+        texturefile = "gfx//interface//custom_gui//taychend_deity_desc.dds"    
+    }
+
+	spriteType = {
+        name = "kheionist_deity_desc"
+        texturefile = "gfx//interface//custom_gui//kheionist_deity_desc.dds"    
     }
 }	
 

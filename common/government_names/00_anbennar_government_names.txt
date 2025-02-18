@@ -282,6 +282,7 @@ mengi_kingdom_name = {
 	trigger = {
 		culture_group = mengi
 		government = monarchy
+		NOT = { has_reform = ngwenamasonamingo_reform }
 	}
 }
 
@@ -543,6 +544,17 @@ monarchy_county = {	#For special counts, in the HRE/EOA this is by default. Like
 		NOT = { culture_group = elven } #Elfrealms take priority
 		NOT = { total_development = 50 }
 		NOT = { has_country_flag = is_a_grand_duchy }
+		NOT = {	
+			OR = {
+				tag = A39 #Bennon
+				tag = A40 #Exwes
+				tag = A56 #Celliande
+				tag = A57 #Toarnen
+				tag = A76 #Uelaire
+				tag = A84 #Galeinn
+				tag = Z05 #Tretun
+			}
+		}	
 	}
 }
 
@@ -1056,7 +1068,38 @@ eordand_theocracy = {
 		OR = {
 			has_reform = monastic_order_reform
 			has_reform = leading_clergy_reform
+			AND = {
+				has_reform = raithtall_twilight_court_reform
+				NOT = { has_ruler_flag = raithtallTwilightMonarchist }
+			}
 		}
+	}
+}
+
+eordand_theocracy_dorcurt = {	#Only for Dorcurt when they pick monarchical ruler, normal eordand_theocarcy is used when they pick theocratic ruler
+	rank = {
+		1 = SGARBAG
+		2 = PROMAL
+		3 = ATPROMAL
+	}
+	
+	ruler_male = {
+		1 = SONAD
+		2 = FALT
+		3 = ARD_FALT
+	}
+	
+	ruler_female = {
+		1 = SURCAG
+		2 = BANRAG
+		3 = ARD_BANRAG
+	}
+
+	trigger = {
+		government = theocracy
+		culture_group = eordan_ruinborn_elf
+		has_reform = raithtall_twilight_court_reform
+		has_ruler_flag = raithtallTwilightMonarchist
 	}
 }
 
@@ -1576,7 +1619,7 @@ anbennar_elector_republic = {
 		OR = {
 			culture_group = anbennarian
 			culture_group = alenic
-			culture_group = halfling
+			is_cannorian_halfling_primary_culture = yes
 			culture_group = lencori			
 		}
 		government = republic
@@ -2272,7 +2315,7 @@ anbennar_republic = {
 		OR = {
 			culture_group = anbennarian
 			culture_group = alenic
-			culture_group = halfling
+			is_cannorian_halfling_primary_culture = yes
 			culture_group = lencori			
 		}
 		government = republic
@@ -2681,7 +2724,14 @@ senapti = {
 	}
 
 	trigger = {
-		has_reform = senapti_reform
+		OR = {
+			has_reform = senapti_reform
+			AND = {
+				overlord = { mission_completed = L62_cooperation_with_mengi }
+				culture_group = mengi
+				is_march = yes
+			}
+		}
 		NOT = { has_country_flag = raj_vizier }
 	}
 }
@@ -2709,6 +2759,11 @@ prabhi = {
 		OR = {
 			has_reform = prabhi_reform
 			has_reform = indep_prabhi_reform
+			AND = {
+				overlord = { mission_completed = L62_cooperation_with_mengi }
+				culture_group = mengi
+				is_march = no
+			}
 		}
 		NOT = { has_country_flag = raj_vizier }
 	}
@@ -3448,8 +3503,8 @@ harpy_matriarchy = {
 		OR = {
 			government = tribal
 			government = monarchy
-			has_reform = matriarchal_pirate_republic
 		}
+		not = { has_reform = naleni_thalassocracy_reform }
 		culture_group = harpy
 	}
 }
@@ -3946,7 +4001,7 @@ heroic_realm_reform_hero = {
         3 = HERO_EMPRESS
     }
     trigger = {
-        has_reform = heroic_realm_reform
+		has_government_attribute = is_heroic_realm
 		is_monarch_leader = yes
     }
 } 
@@ -3968,7 +4023,7 @@ heroic_realm_reform = {
         3 = EMPRESS
     }
     trigger = {
-        has_reform = heroic_realm_reform
+		has_government_attribute = is_heroic_realm
     }
 } 
 
@@ -4017,5 +4072,29 @@ karakhanbar_black_hearth_council = {
 	 
 	trigger = { 
 		has_reform = karakhanbar_black_hearth_council_reform 
+	}
+}
+
+grombari_council_reform = { 
+	rank = { 
+		1 = GREAT_COUNCIL
+		2 = GREAT_COUNCIL 
+		3 = GREAT_COUNCIL
+	} 
+	 
+	ruler_male = { 
+		1 = WARMASTER 
+		2 = WARMASTER 
+		3 = WARMASTER 
+	} 
+	 
+	ruler_female = { 
+		1 = WARMASTER 
+		2 = WARMASTER 
+		3 = WARMASTER 
+	} 
+	 
+	trigger = { 
+		has_reform = grombari_council_reform 
 	}
 }

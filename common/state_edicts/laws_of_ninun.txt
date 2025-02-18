@@ -155,12 +155,17 @@ laws_of_ninun_edict = {
 			}
 		}
 		area = {
-			if = {
-				limit = { owner = { has_estate_privilege = estate_tiger_command_proselytizers_to_the_wuhyun } }
-				province_event = { id = the_command.34 days = 219 random = 438 }
+			tooltip = {
+				if = {
+					limit = { owner = { has_estate_privilege = estate_tiger_command_proselytizers_to_the_wuhyun } }
+					province_event = { id = the_command.34 days = 219 random = 438 }
+				}
+				else = {
+					province_event = { id = the_command.34 days = 274 random = 548 }
+				}
 			}
-			else = {
-				province_event = { id = the_command.34 days = 274 random = 548 }
+			hidden_effect = {
+				add_province_triggered_modifier = command_wuhyunization_randomization_ptm
 			}
 		}
 	}

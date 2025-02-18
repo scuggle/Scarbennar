@@ -157,7 +157,7 @@ country_event = {
 		set_global_flag = saanorgegh_faceless_queen_death
 	}
 	
-	#A New God For All Shuvüüsh
+	#A New God For All Shuvuush
 	option = {
 		name = flavor_nuugdan_tsarai.3.a
 		ai_chance = { factor = 100 }
@@ -183,7 +183,7 @@ country_event = {
 		set_global_flag = guwaamud_ascension
 	}
 	
-	#A New God For All Shavï¿½ï¿½sh
+	#A New God For All Shavuush
 	option = {
 		name = flavor_nuugdan_tsarai.4.a
 		ai_chance = { factor = 100 }
@@ -210,7 +210,7 @@ country_event = {
 		set_global_flag = daxugo_ascension
 	}
 	
-	#A New God For All Shavï¿½ï¿½sh
+	#A New God For All Shavuush
 	option = {
 		name = flavor_nuugdan_tsarai.5.a
 		ai_chance = { factor = 100 }
@@ -271,21 +271,21 @@ country_event = {
     		type = treasurer
     		skill = 2
    			culture = goldscale_kobold
-    		religion = righteous_path
+    		religion = accretive_path
 			discount = yes
 		}
 		define_advisor = {
     		type = spymaster
     		skill = 2
    			culture = goldscale_kobold
-    		religion = righteous_path
+    		religion = accretive_path
 			discount = yes
 		}
 		define_advisor = {
     		type = fortification_expert
     		skill = 2
    			culture = goldscale_kobold
-    		religion = righteous_path
+    		religion = accretive_path
 			discount = yes
 		}
 	}
@@ -301,7 +301,7 @@ country_event = {
 			type = spymaster
 			skill = 2
 			culture = goldscale_kobold
-			religion = righteous_path
+			religion = accretive_path
 		}
 	}
 	
@@ -345,9 +345,9 @@ province_event = {
 		5372 = { cede_province = Y91 add_core = Y91 add_base_production = -1 remove_core = Y92 }
 		5373 = { cede_province = Y91 add_core = Y91 add_base_tax = -1 add_base_production = -1 remove_core = Y92 }
 		5339 = { cede_province = Y91 add_core = Y91 add_base_production = -1 remove_core = Y92 }
-		5349 = { cede_province = Y92 change_culture = shuvuush change_religion = saanorgegh add_base_tax = 1 add_base_production = 1 add_base_manpower = 1 }
-		5351 = { cede_province = Y92 change_culture = shuvuush change_religion = saanorgegh add_base_tax = 1 add_base_production = 1 add_base_manpower = 1 }
-		5352 = { cede_province = Y92 change_culture = shuvuush change_religion = saanorgegh add_base_tax = 1 add_base_production = 1 add_base_manpower = 1 }
+		5349 = { cede_province = Y92 change_religion = saanorgegh add_base_tax = 1 add_base_production = 1 add_base_manpower = 1 }
+		5351 = { cede_province = Y92 change_religion = saanorgegh add_base_tax = 1 add_base_production = 1 add_base_manpower = 1 }
+		5352 = { cede_province = Y92 change_religion = saanorgegh add_base_tax = 1 add_base_production = 1 add_base_manpower = 1 }
 		Y92 = { set_capital = 5351 }
 		jibojagi_area = { add_permanent_claim = Y91 }
 		suppiu_area = { add_permanent_claim = Y92 }
@@ -443,8 +443,8 @@ country_event = {
 					province_id = 4901
 				}
 			}
-			change_culture = hill_yan
-			change_religion = righteous_path
+			change_culture = beikling
+			change_religion = accretive_path
 			add_devastation = 50
 			add_base_tax = -1
 			add_base_production = -1
@@ -543,8 +543,8 @@ country_event = {
 					province_id = 4901
 				}
 			}
-			change_culture = hill_yan
-			change_religion = righteous_path
+			change_culture = beikling
+			change_religion = accretive_path
 		}
 		add_treasury = 100
 		
@@ -615,7 +615,7 @@ country_event = {
 	}
 }
 
-#Greasing Rï¿½ng Palms
+#Greasing Rung Palms
 country_event = {
 	id = flavor_nuugdan_tsarai.12
 	title = flavor_nuugdan_tsarai.12.t
@@ -645,315 +645,6 @@ country_event = {
 	}
 }
 
-#Lakefolk 4
-country_event = {
-	id = flavor_nuugdan_tsarai.16
-	title = flavor_nuugdan_tsarai.16.t
-	picture = traders_eventPicture
-	desc = flavor_nuugdan_tsarai.16.d
-	
-	fire_only_once = yes
-
-	trigger = {
-		is_year = 1490
-		owns_core_province = 5338
-		religion = saanorgegh
-		has_country_flag = Y91_face_stealersfirstcleared
-	#	has_country_flag = Y91_face_stealersmountainjoined #removed event that added this flag with Runsukhi colonisation event purge
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	immediate = {
-		set_country_flag = Y91_face_stealerslakefolkjoined
-	}
-	
-	#promise autonomy
-	option = {
-		name = flavor_nuugdan_tsarai.16.a
-		ai_chance = { factor = 100 }
-		trigger = {
-			OR = {
-				5337 = { is_empty = yes }
-				5337 = { owned_by = ROOT }
-			}
-			OR = {
-				5335 = { is_empty = yes }
-				5335 = { owned_by = ROOT }
-			}
-			OR = {
-				5336 = { is_empty = yes }
-				5336 = { owned_by = ROOT }
-			}
-			OR = {
-				5421 = { is_empty = yes }
-				5421 = { owned_by = ROOT }
-			}
-			OR = {
-				5418 = { is_empty = yes }
-				5418 = { owned_by = ROOT }
-			}
-			OR = {
-				5378 = { is_empty = yes }
-				5378 = { owned_by = ROOT }
-			}
-		}
-		add_years_of_income = -0.2
-		add_adm_power = -20
-		swap_non_generic_missions = yes
-		if = { limit = { 5337 = { is_empty = yes } }
-			5337 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = livestock
-				add_province_modifier = {
-					name = Y91_autonomous_clan
-					duration = 21900
-				}
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5337 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5335 = { is_empty = yes } }
-			5335 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = fish
-				add_province_modifier = {
-					name = Y91_autonomous_clan
-					duration = 21900
-				}
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5335 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5336 = { is_empty = yes } }
-			5336 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = wool
-				add_province_modifier = {
-					name = Y91_autonomous_clan
-					duration = 21900
-				}
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5336 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5421 = { is_empty = yes } }
-			5421 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = wool
-				add_province_modifier = {
-					name = Y91_autonomous_clan
-					duration = 21900
-				}
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5421 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5418 = { is_empty = yes } }
-			5418 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = wool
-				add_province_modifier = {
-					name = Y91_autonomous_clan
-					duration = 21900
-				}
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5418 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5378 = { is_empty = yes } }
-			5378 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = wool
-				add_province_modifier = {
-					name = Y91_autonomous_clan
-					duration = 21900
-				}
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5378 = {
-				add_core = ROOT
-			}
-		}
-	}
-	
-	#buy them out
-	option = {
-		name = flavor_nuugdan_tsarai.16.b
-		ai_chance = { factor = 100 }
-		add_years_of_income = -0.5
-		add_adm_power = -20
-		swap_non_generic_missions = yes
-		if = { limit = { 5337 = { is_empty = yes } }
-			5337 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = livestock
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5337 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5335 = { is_empty = yes } }
-			5335 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = fish
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5335 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5336 = { is_empty = yes } }
-			5336 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = wool
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5336 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5421 = { is_empty = yes } }
-			5421 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = wool
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5421 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5418 = { is_empty = yes } }
-			5418 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = wool
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5418 = {
-				add_core = ROOT
-			}
-		}
-		if = { limit = { 5378 = { is_empty = yes } }
-			5378 = {
-				hidden_effect = {
-					create_colony = 1000
-					add_core = ROOT
-				}
-				cede_province = ROOT
-				change_culture = runsukhi
-				change_religion = levaajan
-				change_trade_goods = wool
-			}
-			add_adm_power = -25
-		}
-		else = {
-			5378 = {
-				add_core = ROOT
-			}
-		}
-	}
-}
 
 #Rung Oedek migration fix | isn't fired by anything?
 country_event = {
@@ -1142,11 +833,11 @@ country_event = {
 		ai_chance = { factor = 60 }
 		trigger = {
 			any_owned_province = {
-				culture = northern_yan
+				culture = jiangyang
 			}
 		}
 		define_consort = {
-			culture = northern_yan
+			culture = jiangyang
 			religion = ROOT
 			age = 20
 		}
@@ -1154,7 +845,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					culture = northern_yan
+					culture = jiangyang
 				}
 				add_province_modifier = {
 					name = Y91_represented_by_consort
@@ -1170,11 +861,11 @@ country_event = {
 		ai_chance = { factor = 60 }
 		trigger = {
 			any_owned_province = {
-				culture = river_yan
+				culture = jiangszun
 			}
 		}
 		define_consort = {
-			culture = river_yan
+			culture = jiangszun
 			religion = ROOT
 			age = 20
 		}
@@ -1182,7 +873,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					culture = river_yan
+					culture = jiangszun
 				}
 				add_province_modifier = {
 					name = Y91_represented_by_consort
@@ -1198,11 +889,11 @@ country_event = {
 		ai_chance = { factor = 60 }
 		trigger = {
 			any_owned_province = {
-				culture = hill_yan
+				culture = beikling
 			}
 		}
 		define_consort = {
-			culture = hill_yan
+			culture = beikling
 			religion = ROOT
 			age = 20
 		}
@@ -1210,7 +901,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					culture = hill_yan
+					culture = beikling
 				}
 				add_province_modifier = {
 					name = Y91_represented_by_consort
@@ -1226,11 +917,11 @@ country_event = {
 		ai_chance = { factor = 60 }
 		trigger = {
 			any_owned_province = {
-				culture = coastal_yan
+				culture = gangim
 			}
 		}
 		define_consort = {
-			culture = coastal_yan
+			culture = gangim
 			religion = ROOT
 			age = 20
 		}
@@ -1238,7 +929,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					culture = coastal_yan
+					culture = gangim
 				}
 				add_province_modifier = {
 					name = Y91_represented_by_consort
@@ -1254,11 +945,11 @@ country_event = {
 		ai_chance = { factor = 60 }
 		trigger = {
 			any_owned_province = {
-				culture = forest_yan
+				culture = naamjyut
 			}
 		}
 		define_consort = {
-			culture = forest_yan
+			culture = naamjyut
 			religion = ROOT
 			age = 20
 		}
@@ -1266,7 +957,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					culture = forest_yan
+					culture = naamjyut
 				}
 				add_province_modifier = {
 					name = Y91_represented_by_consort
@@ -1282,11 +973,11 @@ country_event = {
 		ai_chance = { factor = 60 }
 		trigger = {
 			any_owned_province = {
-				culture = western_yan
+				culture = szitu
 			}
 		}
 		define_consort = {
-			culture = western_yan
+			culture = szitu
 			religion = ROOT
 			age = 20
 		}
@@ -1294,7 +985,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					culture = western_yan
+					culture = szitu
 				}
 				add_province_modifier = {
 					name = Y91_represented_by_consort
@@ -1533,7 +1224,7 @@ country_event = {
 					culture_group = yan
 					NOT = {
 						culture = daxug
-						culture = western_yan
+						culture = szitu
 					}
 				}
 				add_province_modifier = {
@@ -1922,7 +1613,7 @@ country_event = {
 		set_global_flag = Y91_menjaeng_added
 	}
 	
-	#A New God For All Shavï¿½ï¿½sh
+	#A New God For All Shavuush
 	option = {
 		name = flavor_nuugdan_tsarai.27.a
 		ai_chance = { factor = 100 }
@@ -2875,38 +2566,38 @@ country_event = {
 		OR = {
 			AND = {
 				employed_advisor = {
-					culture = northern_yan 
+					culture = jiangyang 
 					category = ADM
 				}
-				NOT = { mission_completed = Y91_northern_yan_unification }
+				NOT = { mission_completed = Y91_jiangyang_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = coastal_yan 
+					culture = gangim 
 					category = ADM
 				}
-				NOT = { mission_completed = Y91_coastal_yan_unification }
+				NOT = { mission_completed = Y91_gangim_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = forest_yan 
+					culture = naamjyut 
 					category = ADM
 				}
-				NOT = { mission_completed = Y91_forest_yan_unification }
+				NOT = { mission_completed = Y91_naamjyut_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = river_yan 
+					culture = jiangszun 
 					category = ADM
 				}
-				NOT = { mission_completed = Y91_river_yan_unification }
+				NOT = { mission_completed = Y91_jiangszun_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = hill_yan 
+					culture = beikling 
 					category = ADM
 				}
-				NOT = { mission_completed = Y91_hill_yan_unification }
+				NOT = { mission_completed = Y91_beikling_unification }
 			}
 		}
 	}
@@ -2940,38 +2631,38 @@ country_event = {
 		OR = {
 			AND = {
 				employed_advisor = {
-					culture = northern_yan 
+					culture = jiangyang 
 					category = DIP
 				}
-				NOT = { mission_completed = Y91_northern_yan_unification }
+				NOT = { mission_completed = Y91_jiangyang_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = coastal_yan 
+					culture = gangim 
 					category = DIP
 				}
-				NOT = { mission_completed = Y91_coastal_yan_unification }
+				NOT = { mission_completed = Y91_gangim_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = forest_yan 
+					culture = naamjyut 
 					category = DIP
 				}
-				NOT = { mission_completed = Y91_forest_yan_unification }
+				NOT = { mission_completed = Y91_naamjyut_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = river_yan 
+					culture = jiangszun 
 					category = DIP
 				}
-				NOT = { mission_completed = Y91_river_yan_unification }
+				NOT = { mission_completed = Y91_jiangszun_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = hill_yan 
+					culture = beikling 
 					category = DIP
 				}
-				NOT = { mission_completed = Y91_hill_yan_unification }
+				NOT = { mission_completed = Y91_beikling_unification }
 			}
 		}
 	}
@@ -3005,38 +2696,38 @@ country_event = {
 		OR = {
 			AND = {
 				employed_advisor = {
-					culture = northern_yan 
+					culture = jiangyang 
 					category = MIL
 				}
-				NOT = { mission_completed = Y91_northern_yan_unification }
+				NOT = { mission_completed = Y91_jiangyang_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = coastal_yan 
+					culture = gangim 
 					category = MIL
 				}
-				NOT = { mission_completed = Y91_coastal_yan_unification }
+				NOT = { mission_completed = Y91_gangim_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = forest_yan 
+					culture = naamjyut 
 					category = MIL
 				}
-				NOT = { mission_completed = Y91_forest_yan_unification }
+				NOT = { mission_completed = Y91_naamjyut_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = river_yan 
+					culture = jiangszun 
 					category = MIL
 				}
-				NOT = { mission_completed = Y91_river_yan_unification }
+				NOT = { mission_completed = Y91_jiangszun_unification }
 			}
 			AND = {
 				employed_advisor = {
-					culture = hill_yan 
+					culture = beikling 
 					category = MIL
 				}
-				NOT = { mission_completed = Y91_hill_yan_unification }
+				NOT = { mission_completed = Y91_beikling_unification }
 			}
 		}
 	}
@@ -3654,7 +3345,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	#Progressive: Diguï¿½ Entrenchment
+	#Progressive: Diguo Entrenchment
 	option = {
 		name = flavor_nuugdan_tsarai.51.a
 		ai_chance = { factor = 100 }
@@ -3871,10 +3562,10 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						culture = western_yan
+						culture = szitu
 						culture = shamadhan
 						culture = kamtarhid
-						culture = hill_yan
+						culture = beikling
 					}
 				}
 				add_unrest = 5
@@ -4028,24 +3719,36 @@ country_event = {
 						}
 					}
 					if = {
-						limit = { religion = righteous_path }
+						limit = { religion = accretive_path }
 						random_list = {
 							10 = {
 								spawn_rebels = {
 									size = 3
-									type = righteous_path_rebels
+									type = accretive_path_rebels
 								}
 							}
 							90 = { }
 						}
 					}
 					if = {
-						limit = { religion = lefthand_path }
+						limit = { religion = transmutative_path }
+						random_list = {
+							10 = {
+								spawn_rebels = {
+									size = 3
+									type = transmutative_path_rebels
+								}
+							}
+							90 = { }
+						}
+					}
+					if = {
+						limit = { religion = devouring_path }
 						random_list = {
 							25 = {
 								spawn_rebels = {
 									size = 4
-									type = lefthand_path_rebels 
+									type = devouring_path_rebels 
 								}
 							}
 							75 = { }
@@ -4075,8 +3778,9 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					has_spawned_rebels = lefthand_path_rebels
-					has_spawned_rebels = righteous_path_rebels
+					has_spawned_rebels = devouring_path_rebels
+					has_spawned_rebels = accretive_path_rebels
+					has_spawned_rebels = transmutative_path_rebels
 					has_spawned_rebels = godlost_rebels
 					has_spawned_rebels = saanorgegh_rebels
 					has_spawned_rebels = high_philosophy_rebels
@@ -4171,24 +3875,36 @@ country_event = {
 						}
 					}
 					if = {
-						limit = { religion = righteous_path }
+						limit = { religion = accretive_path }
 						random_list = {
 							25 = {
 								spawn_rebels = {
 									size = 3
-									type = righteous_path_rebels
+									type = accretive_path_rebels
 								}
 							}
 							75 = { }
 						}
 					}
 					if = {
-						limit = { religion = lefthand_path }
+						limit = { religion = transmutative_path }
 						random_list = {
 							25 = {
 								spawn_rebels = {
 									size = 3
-									type = lefthand_path_rebels 
+									type = transmutative_path_rebels
+								}
+							}
+							75 = { }
+						}
+					}
+					if = {
+						limit = { religion = devouring_path }
+						random_list = {
+							25 = {
+								spawn_rebels = {
+									size = 3
+									type = devouring_path_rebels 
 								}
 							}
 							75 = { }
@@ -4235,24 +3951,36 @@ country_event = {
 					}
 				}
 				if = {
-					limit = { religion = righteous_path }
+					limit = { religion = accretive_path }
 					random_list = {
 						25 = {
 							spawn_rebels = {
 								size = 3
-								type = righteous_path_rebels
+								type = accretive_path_rebels
 							}
 						}
 						75 = { }
 					}
 				}
 				if = {
-					limit = { religion = lefthand_path }
+					limit = { religion = transmutative_path }
+					random_list = {
+						25 = {
+							spawn_rebels = {
+								size = 3
+								type = transmutative_path_rebels
+							}
+						}
+						75 = { }
+					}
+				}
+				if = {
+					limit = { religion = devouring_path }
 					random_list = {
 						25 = {
 							spawn_rebels = {
 								size = 5
-								type = lefthand_path_rebels 
+								type = devouring_path_rebels 
 							}
 						}
 						75 = { }
@@ -4281,8 +4009,9 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					has_spawned_rebels = lefthand_path_rebels
-					has_spawned_rebels = righteous_path_rebels
+					has_spawned_rebels = devouring_path_rebels
+					has_spawned_rebels = accretive_path_rebels
+					has_spawned_rebels = transmutative_path_rebels
 					has_spawned_rebels = godlost_rebels
 					has_spawned_rebels = saanorgegh_rebels
 					has_spawned_rebels = high_philosophy_rebels
@@ -4498,27 +4227,27 @@ country_event = {
 			factor = 0.1
 			OR = {
 				employed_advisor = {
-					culture = hill_yan
+					culture = beikling
 					type = spymaster
 				}
 				employed_advisor = {
-					culture = forest_yan
+					culture = naamjyut
 					type = spymaster
 				}
 				employed_advisor = {
-					culture = western_yan
+					culture = szitu
 					type = spymaster
 				}
 				employed_advisor = {
-					culture = river_yan
+					culture = jiangszun
 					type = spymaster
 				}
 				employed_advisor = {
-					culture = northern_yan
+					culture = jiangyang
 					type = spymaster
 				}
 				employed_advisor = {
-					culture = coastal_yan
+					culture = gangim
 					type = spymaster
 				}
 			}
@@ -4670,7 +4399,7 @@ country_event = {
 		name = flavor_nuugdan_tsarai.66.a
 		ai_chance = { factor = 100 }
 		add_country_modifier = {
-			name = Y91_hill_yan_hexxing
+			name = Y91_beikling_hexxing
 			duration = 1825
 		}
 	}
@@ -4706,7 +4435,7 @@ country_event = {
 		OR = {
 			tag = Y90 #Tuiista Jaal
 			tag = Y91 #Nuugdan Tsarai
-			tag = Y92 #Rï¿½ng Oedek
+			tag = Y92 #Rung Oedek
 			tag = Y96 #Guwaamud
 			tag = Y98 #Daxugo
 		}
@@ -5060,7 +4789,7 @@ country_event = {
 				Y90 = { save_global_event_target_as = Y91_tournament_winner }
 				set_global_flag = Y91_tournament_won_by_heir
 			}
-			#Rï¿½ng Oedek Ruler Won
+			#Rung Oedek Ruler Won
 			10 = {
 				modifier = {
 					factor = 0
@@ -6440,35 +6169,35 @@ country_event = {
 			AND = {
 				NOT = { has_country_flag = daxugo_north_yan_placated }
 				any_owned_province = {
-					culture = northern_yan
+					culture = jiangyang
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 			}
 			AND = {
-				NOT = { has_country_flag = daxugo_hill_yan_placated }
+				NOT = { has_country_flag = daxugo_beikling_placated }
 				any_owned_province = {
-					culture = hill_yan
+					culture = beikling
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 			}
 			AND = {
-				NOT = { has_country_flag = daxugo_river_yan_placated }
+				NOT = { has_country_flag = daxugo_jiangszun_placated }
 				any_owned_province = {
-					culture = river_yan
+					culture = jiangszun
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 			}
 			AND = {
-				NOT = { has_country_flag = daxugo_coastal_yan_placated }
+				NOT = { has_country_flag = daxugo_gangim_placated }
 				any_owned_province = {
-					culture = coastal_yan
+					culture = gangim
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 			}
 			AND = {
-				NOT = { has_country_flag = daxugo_forest_yan_placated }
+				NOT = { has_country_flag = daxugo_naamjyut_placated }
 				any_owned_province = {
-					culture = forest_yan
+					culture = naamjyut
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 			}
@@ -6480,7 +6209,7 @@ country_event = {
 			limit = { NOT = { has_country_flag = daxugo_north_yan_placated } }
 			every_owned_province = {
 				limit = {
-					culture = northern_yan
+					culture = jiangyang
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 				add_province_modifier = {
@@ -6494,10 +6223,10 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { NOT = { has_country_flag = daxugo_hill_yan_placated } }
+			limit = { NOT = { has_country_flag = daxugo_beikling_placated } }
 			every_owned_province = {
 				limit = {
-					culture = hill_yan
+					culture = beikling
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 				add_province_modifier = {
@@ -6511,10 +6240,10 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { NOT = { has_country_flag = daxugo_river_yan_placated } }
+			limit = { NOT = { has_country_flag = daxugo_jiangszun_placated } }
 			every_owned_province = {
 				limit = {
-					culture = river_yan
+					culture = jiangszun
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 				add_province_modifier = {
@@ -6528,10 +6257,10 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { NOT = { has_country_flag = daxugo_coastal_yan_placated } }
+			limit = { NOT = { has_country_flag = daxugo_gangim_placated } }
 			every_owned_province = {
 				limit = {
-					culture = coastal_yan
+					culture = gangim
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 				add_province_modifier = {
@@ -6545,10 +6274,10 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { NOT = { has_country_flag = daxugo_forest_yan_placated } }
+			limit = { NOT = { has_country_flag = daxugo_naamjyut_placated } }
 			every_owned_province = {
 				limit = {
-					culture = forest_yan
+					culture = naamjyut
 					NOT = { has_province_modifier = Y91_disaster_unrest }
 				}
 				add_province_modifier = {
@@ -6870,7 +6599,19 @@ country_event = {
 			if = {
 				limit = { NOT = { has_country_modifier = human_military } }
 				clear_racial_military = yes
-				add_country_modifier = { name = human_military duration = -1 }
+				hidden_effect = {
+					add_country_modifier = { 
+						name = human_military
+						duration = -1  
+						hidden = yes
+					}
+				}
+				tooltip = {
+					add_country_modifier = {
+						name = human_military
+						duration = -1
+					}
+				}
 				add_country_modifier = { name = restructuring_military duration = 3650 }
 			}
 			change_unit_type = tech_halessi 

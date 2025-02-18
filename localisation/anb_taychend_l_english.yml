@@ -6,10 +6,11 @@ l_english:
  superiority_taychend_glory: "Taychendi Superiority"
  superiority_taychend_glory_desc: "The would-be God-King seeks Glory in war."
  TAYCHEND_GLORY_WAR: "Taychendi Superiority"
- TAYCHEND_GLORY_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ war of Glory"
+ TAYCHEND_GLORY_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ War of Glory"
  PEACE_po_taychend_vassalize: "Taychendi Vassalize"
  po_taychend_vassalize_desc: "§Y[Root.GetName]§! claims Glory by making §Y[From.GetName]§! a vassal."
  CB_ALLOWED_po_taychend_vassalize: "Taychendi Vassalize"
+ CB_DISALLOWED_po_taychend_vassalize: "Our enemy's capital must be controlled by us or one of our war allies."
  PEACE_po_taychend_humiliate: "Taychendi Superiority"
  po_taychend_humiliate_desc: "§Y[Root.GetName]§! claims Glory by lessening their rival in §Y[From.GetName]§!."
  CB_ALLOWED_po_taychend_humiliate: "Taychendi Superiority"
@@ -32,7 +33,7 @@ l_english:
 
  #Disasters
  kamrayakvals_war: "Kamrayakval's War"
- kamrayakvals_war_reqs_tt: "One of the following is true:\n The year is §Y1600§!\n §Y60§! provinces in Taychend are §YOren Nayiru§!\n    Number of §YOren Nayiru§! provinces in Taychend: §Y[2502.taychend_oren_nayiru_provinces.GetValue]§!"
+ kamrayakvals_war_reqs_tt: "One of the following must be true:\n The year is §Y1575§!\n §Y60§! (currently: §Y[2502.taychend_oren_nayiru_provinces.GetValue]§!) provinces in Taychend are §YOren Nayiru§!\n All of the following must be true:\n   Less than §Y20§! provinces in Taychend are §YOren Nayiru§!\n   §YOren Nayiru§! spawned §Y50§! years ago"
 
  #Tooltips
  got_kingdom_decision: "§TWe will now be able to firmly establish our control over this region!§!"
@@ -49,6 +50,7 @@ l_english:
  gain_20_glory_tt: "Gain §G20§! Glory"
  gain_10_glory_tt: "Gain §G10§! Glory"
  gain_5_glory_tt: "Gain §G5§! Glory"
+ lose_200_glory_tt: "Lose §R200§! Glory"
  lose_100_glory_tt: "Lose §R100§! Glory"
  lose_75_glory_tt: "Lose §R75§! Glory"
  lose_50_glory_tt: "Lose §R50§! Glory"
@@ -60,7 +62,13 @@ l_english:
  orenvalyam_reform_religion_tt: "We'll reform the Oren Nayiru Faith"
  orenvalyam_integrate_subjects_tt: "We'll integrate all our subjects"
  free_taychend_reform_tt: "The next §GReligious Reform§! is free"
- taychendi_kheionist_chance_tt: "25% chance that our §YHeir§! converts to §YKheionism§!."
+ taychendi_kheionist_chance_tt: "25% chance that our §YHeir§! converts to §YKheionist§!."
+ taychend_passed_reform_1_tt: "Have passed the 1st Religious Reform" 
+ taychend_passed_reform_2_tt: "Have passed the 2nd Religious Reform"
+ taychend_passed_reform_3_tt: "Have passed the 3rd Religious Reform"
+ taychend_passed_reform_4_tt: "Have passed the 4th Religious Reform"
+ taychend_passed_reform_5_tt: "Have passed the 5th Religious Reform"
+ keep_taychend_missions_tt: "Expands your current mission tree\n"
  
  #Modifiers
  taychend_helpless_subject: "Helpless Subject"
@@ -79,12 +87,13 @@ l_english:
 
  # province groups
  tf_taras_border_provinces: "" # blank name
+ taychend_islands: "Taychend Islands"
 
  #Decisions
  taychend_hire_ships_title: "Levy A Fleet"
  taychend_hire_ships_desc: "A Taychendi Warlord seeks to conquer land, not sea. When the need for war on the water is present, the merchants are turned to."
  taychend_kingdom_title: "Enshrine Our Place In History"
- taychend_kingdom_desc: "Through our conquests, we now control nearly the entirety of our home region. Our kingdom stands tall, as one of the great powers of Taychend. We are no longer the city state we once were, and we will rename our kingdom to befit this status. There is much struggle ahead on our path, but with [Root.Dynasty] firmly placed at the head, there will be no stopping us now."
+ taychend_kingdom_desc: "Through our conquests, we now control nearly the entirety of our home region. Our kingdom stands tall, as one of the great powers of Taychend. We are no longer the city state we once were, and we will rename our kingdom to befit this status. There is much struggle ahead on our path, but with [Root.Monarch.Dynasty.GetName] firmly placed at the head, there will be no stopping us now."
  taychend_empire_nation_title: "Unite Taychend"
  taychend_empire_nation_desc: "Taychend has never been truly unified. Many in the past have tried, but none managed to keep control of the entire land for long. But our nation has done what no other could: truly unify Taychend. No longer would petty warlords threaten our rule. We have finally ended the cycle of war and chaos; we have created the first empire of Taychend."
  orenvalyam_nation_title: "Unite Taychend"
@@ -191,7 +200,7 @@ l_english:
  taychendi.12.a:0 "Send the army and repress these dangerous ideas."
  taychendi.12.b:0 "Invite the philosopher to court, it's always useful to learn of our enemies."
  taychendi.12.c:0 "He has some merit! Adopt some of these ideas in our state."
- taykheion_philosopher_mod:0 "Kheionism influences"
+ taykheion_philosopher_mod:0 "Kheionist influences"
 
  taychendi.13.t:0 "A Newborn prince"
  taychendi.13.d:0 ""Hear me, and rejoice! The first [Root.Heir.GetDaughterSon] of our [Root.Monarch.GetTitle] [Root.Monarch.GetName] has come into the world! Cheer for our new [Root.Heir.GetTitle]!"\nWhile the criers are announcing the birth to the population, the whole court is busy with the preparations for the birth rituals for the newborn. Already the baby was bathed and named [Root.Heir.GetName] by the proud parents; now the time for the ceremony to propitiate the child future has come.\nThe court will move to a famous battlefield where our most renowned warrior will bury a shield with the [Root.Monarch.Dynasty.GetName] insigna, together with the connection between the mother and the child.\n[Root.Heir.GetSheHeCap] will become a great warrior and leader."
@@ -241,6 +250,11 @@ l_english:
  taychendi.19.d:0 "As it almost always happens, the oracle's warnings came true. The [Root.GetClergyName] is pompously proclaiming the strength of the gods and the wisdom of those who follow them.\nAnd everybody agrees with them, as fighting fate and losing nets you only pity and derision."
  taychendi.19.a:0 "But only he who can take risks, can achieve greatness."
 
+ taychendi.20.t: "What is the Shade of Taychend?"
+ taychendi.20.d: "With the final unification of Taychend under one state, it has been a topic of much discussion on the color scheme of our new banners. Some claim that a new state needs a new unifying symbol - a royal brown, representing the difficulties we have gone through to make it this far. The old guard are affronted with this, claiming that it is abandoning the traditions of the hard-won victors. They leave the answer to you alone."
+ taychendi.20.a: "A united Taychend requires a united color!"
+ taychendi.20.b: "We shall take pride in our ancestral hues!"
+
  ####################################################### Oren Nayiru Events #####################################
 
  oren_nayiru.1.t: "First Contact"
@@ -251,12 +265,12 @@ l_english:
  oren_nayiru.910.d: "The Ruin was an event shrouded in hundreds of myths and legends, an episode of violence, upheaval, and environmental devastation that heralded the doom of the immortal Slaver-Nobles who once ruled Taychend. One particular story, however, details a great exodus along a newly sunken coast, as any elf who could took flight on any vessels that survived the great floods. Knowledgeable folk thought those who fled dead, a sign of the dangers that would overcome you when you sailed far out to sea. They were wrong. Today, those refugees returned.\n\nElves similar in complexion to the Taychendi, though clean-shaven and with an ageless quality, having retained some of the immortality of our ancestors, they call themselves the “Jaherian Exemplars”. A disciplined and experienced army who worship the single sun-god “Surael” above all others, members of their organisation, offered hospitality by the warlord in Katelperai, have begun exploring the region – and have begun spreading their ideals as they do so. Whatever happens from now on, it is clear that Taychend will never be the same again." #Should be same as above
  oren_nayiru.910.a: "Our prodigal brothers return" #Should be same as above
 
- oren_nayiru.2.t: "Cult of the Old Sun"
+ oren_nayiru.2.t: "Cult of the One Sun"
  oren_nayiru.2.d: "The cult of Vherenar Freesword, formed in the fires of the Second Gophiran Empire’s collapse, has long been a persistent nuisance for the rulers of Taychend. A secretive organisation, compartmentalised into hidden and autonomous “cells”, led by Kavalali warrior priests, they are widespread in the slave populations of Taychend, dedicated to vanquishing the evil of slavery. As a result of Vherenar’s Ahartadyami heritage, they are also believers in the “Elusive Ones”, a group of powerful creator gods who fled the heavenly world in the chaos of some distant calamity.\n\nWhen the Jaherian Exemplars arrived in Taychend, and their ideals of abolitionism – and their belief in a sole-surviving god, Surael – spread through Taychend, the Cult of Vherenar took notice. The Kavalali of the Uesrennu and Katelperai cells have argued that this Surael is the last of the Elusive Ones of legend, and that the arrival of the Exemplars have heralded the coming of a new dawn over Taychend. As their millenarian fervour infects the rest of the cult, cells across Taychend have spiralled into a theological flurry of increasingly radical proclamations – the Tenets of Uesrennu, that declared a new faith, that of the Oren Nayiru, or One Sun, supreme among them.\n\nThe Oren Nayiru now call for the abolition of slavery, for the ejection of all invaders, for the reorganisation of land and society, for the replacement of warlords with the pious Kavalali, and for the spread of Nayiru’s truth to all peoples who would hear them. They are militant, well organised and determined – and with their new faith spreading through the slave, serf and peasant populations of Taychend, they may very well soon be successful."
  oren_nayiru.2.a: "An ominous development"
  oren_nayiru.2.b: "These zealots must be beaten back into the dark!"
 
- oren_nayiru.920.t: "Cult of the Old Sun" #Should be same as above
+ oren_nayiru.920.t: "Cult of the One Sun" #Should be same as above
  oren_nayiru.920.d: "The cult of Vherenar Freesword, formed in the fires of the Second Gophiran Empire’s collapse, has long been a persistent nuisance for the rulers of Taychend. A secretive organisation, compartmentalised into hidden and autonomous “cells”, led by Kavalali warrior priests, they are widespread in the slave populations of Taychend, dedicated to vanquishing the evil of slavery. As a result of Vherenar’s Ahartadyami heritage, they are also believers in the “Elusive Ones”, a group of powerful creator gods who fled the heavenly world in the chaos of some distant calamity.\n\nWhen the Jaherian Exemplars arrived in Taychend, and their ideals of abolitionism – and their belief in a sole-surviving god, Surael – spread through Taychend, the Cult of Vherenar took notice. The Kavalali of the Uesrennu and Katelperai cells have argued that this Surael is the last of the Elusive Ones of legend, and that the arrival of the Exemplars have heralded the coming of a new dawn over Taychend. As their millenarian fervour infects the rest of the cult, cells across Taychend have spiralled into a theological flurry of increasingly radical proclamations – the Tenets of Uesrennu, that declared a new faith, that of the Oren Nayiru, or One Sun, supreme among them.\n\nThe Oren Nayiru now call for the abolition of slavery, for the ejection of all invaders, for the reorganisation of land and society, for the replacement of warlords with the pious Kavalali, and for the spread of Nayiru’s truth to all peoples who would hear them. They are militant, well organised and determined – and with their new faith spreading through the slave, serf and peasant populations of Taychend, they may very well soon be successful." #Should be same as above
  oren_nayiru.920.a: "An ominous development" #Should be same as above
  oren_nayiru.920.b: "These zealots must be beaten back into the dark!" #Should be same as above
@@ -392,7 +406,7 @@ l_english:
 
  oren_nayiru.114.t: "Our People Massacred!"
  oren_nayiru.114.d: "Naturally, the Oren Nayiru despise the Kheionai, seeing them as foreign invaders exploiting Taychend’s land and people and destroying Taychendi culture. The Klereyen, those Taychendi who have converted to the Kheionai ways, are despised even more, seen as traitors.\n\nWith the Kamrayakval sweeping over Taychend, his forces have developed a habit of mistreating – and massacring – any Kheionai and Klereyen civilians they can get their hands on. Though he has issued orders to stop any “targeted” violence, it has done little to stem the tide of atrocities, and recently a particularly vicious attack caused widespread devastation in some of our provinces."
- oren_nayiru.114.a: "The Barbhen show their true colours!"
+ oren_nayiru.114.a: "The Bharbhen show their true colours!"
 
  oren_nayiru.115.t: "Taychendi Serfs Defect!"
  oren_nayiru.115.d: "Ameion’s imposition of serfdom on the Taychendi – often framed as a “moral alternative to slavery” – has likely been one of the greatest sources of discontent among the empire’s subjugated peoples. Their much coveted freedom restricted, the peasantry fell into the arms of the Oren Nayiru, who they believed could provide the organisation they need to throw off Ambhen domination – recently, a wave of serf rebellions has erupted, with the rebels declaring in favour of the Kamrayakval"
@@ -412,7 +426,7 @@ l_english:
  taychend_flavour.1.a: "A foolish and fatal mistake!"
  
  taychend_flavour.2.t: "Mercenaries Revolt"
- taychend_flavour.2.d: "While Mercenaries are common to all lands, they take on a slightly more powerful form in Taychend, where might creates right and a helmet and crown are one and the same. Mercenary captains are often “wandering warlords”, with more elves at their command than many cities, and the political power – and mindedness – to match the proudest of sedentary warlord kings.\n\nThey are loyal to coin – but they are not blind to the situation of those who spend it. If they sense weakness, and they believe they can further their position by revolting against their employers, they will do so. Mercenary companies under our employ have raised arms against us, taking advantage of [Root.Monarch.Name]’s low status to attempt to overthrow [Root.Monarch.GetHerHim], and raise someone more pliable – and generous – to the crown."
+ taychend_flavour.2.d: "While Mercenaries are common to all lands, they take on a slightly more powerful form in Taychend, where might creates right and a helmet and crown are one and the same. Mercenary captains are often “wandering warlords”, with more elves at their command than many cities, and the political power – and mindedness – to match the proudest of sedentary warlord kings.\n\nThey are loyal to coin – but they are not blind to the situation of those who spend it. If they sense weakness, and they believe they can further their position by revolting against their employers, they will do so. Mercenary companies under our employ have raised arms against us, taking advantage of [Root.Monarch.GetName]’s low status to attempt to overthrow [Root.Monarch.GetHerHim], and raise someone more pliable – and generous – to the crown."
  taychend_flavour.2.a: "Pay some of them off."
  taychend_flavour.2.b: "Defeat them on the battlefield."
  taychend_flavour.2.c: "Convince them to stand down."
@@ -432,6 +446,7 @@ l_english:
  taychend_flavour.5.d: "Agents of the Cult of Vherenar, a secretive religious brotherhood dedicated to liberating those in bondage, has recently ambushed and overrun a slave caravan arriving from the western plains of the Guaraddhi, liberating the cargo being transported and executing all of the slavers and their guards. Our inability to protect their cargo has greatly infuriated our merchants and mine-owners, who rely on slaves for many of their commercial endeavours."
  taychend_flavour.5.a: "Don't blame us, there was nothing we could do!"
  taychend_flavour.5.b: "Convince the merchants there was nothing we could do."
+ EST_VAL_TF_AMBUSHED_CARAVAN: "Unsafe roads: $VAL|Y$"
  
  taychend_flavour.6.t: "Vassal Warlord Conspires to Steal Land"
  taychend_flavour.6.d: "One might say that there are several “tiers” of warlord in Taychend. Greater warlords dominate smaller warlords, and fight those of a similar size over control of their vassals and territory. To attempt to take on a more powerful warlord on one’s own, or to attack those warlords under one’s direct control and protection, is a foolish idea – though when a warlord-domain grows large and decadent enough, their more tempestuous underlings may attempt to take advantage.\n\nWe have recently discovered that one of our vassals has been plotting to seize several petty city-states under our protection in one swift move, forcing us to accept the new situation as a done-deal. They believe that our state and our ruler are too weak to stop them, and perhaps they are right – but if we want to prevent our vassal increasing their power then we must prevent this scheme immediately."
@@ -504,6 +519,7 @@ l_english:
  taychend_flavour.17.t: "Warren Expedition Finds Massive Ruin!"
  taychend_flavour.17.d: "The Slaver-Nobles had many secrets, and be they rivals among their own class, or imperial agents looking on with suspicion from Tacenie, there were many prying eyes eager to uncover them. As a result, the Slaver-Nobles invested heavily in underground facilities and storage areas, hidden in the depths of their domains, where they could embark on whatever twisted project they so desired.\n\nSometimes, they hid these ruins in their own slave warrens, concealed behind false walls and shadow veils. Luckily for us, the illusion and abjuration magic that once protected these hidden entrances has worn thin since the Ruin, and on our recent warren expedition we stumbled on a massive underground ruin.\n\nAn extensive underground facility, with many store rooms and hidden chambers, it is a veritable treasure trove of Precursor artefacts, unmolested by the ravages of time. It will take years to fully clear these ruins out, and scrap them for the valuable Precursor steel that has kept them stable for so long."
  taychend_flavour.17.a: "Riches beyond imagining!"
+ EST_VAL_WARREN_EXPEDITION: "Funded warren expedition: $VAL|Y$"
  
  # relic lord events
  
@@ -543,7 +559,7 @@ l_english:
  taychend_flavour.24.a: "What foul magics created such a monster…"
  
  taychend_flavour.25.t: "Dey Vettaga Slain By Ruler!"
- taychend_flavour.25.d: "[Root.Monarch.GetName] stumbled through the forest trail, clutching [Root.Monarch.GetHerHis] sabre with white-knuckled hands. Blood was spattered across [Root.Monarch.GetHerHis] armour – but it coated the edge of [Root.Monarch.GetHerHis] sword as well. [Root.Monarch.GetHerHisCap] bodyguards, Galinpan and Varamesh, were dead, but they did not die in vain. [Root.Monarch.GetSheHeCap]’d slashed the beast across the back with [Root.Monarch.GetHerHis] sword as it was mauling Galinpan, a sure hit, though it darted away before [Root.Monarch.GetSheHe] could attack again. Injured but not mortally so – but the actual damage didn’t matter. [Root.Monarch.GetSheHeCap]’d hit it, and that meant blood.\n\n[Root.Monarch.GetHerHisCap] heart pounded as [Root.Monarch.GetSheHe] searched the forest floor, moving from one blood-specked leaf to the next. It had to be cloaked, its fur invisible – but not untrackable, not anymore. The [Root.Monarch.GetTitle] stopped, tracked the trail with [Root.Monarch.GetHerHis] eyes but did not move. The blood drops grew heavier as [Root.Monarch.GetHerHis] gaze followed them – [Root.Monarch.GetSheHe] had to squint, but [Root.Monarch.GetSheHe] could just make out a break in the light foliage that carved the forest floor. The brown of the dirt looked wet, darker than that beneath [Root.Monarch.GetHerHis] own feet. [Root.Monarch.GetName] silently thanked the gods for his good eyes. Now, [Root.Monarch.GetSheHe] needed to pray that they granted [Root.Monarch.GetHerHim] courage. The [Root.Monarch.GetTitle] took a deep breath, raised [Root.Monarch.GetHerHis] sabre, and charged with a cry.\n\n[Root.Monarch.GetSheHeCap] had only made it a few sprinted steps before the Dey Vettaga pounced from its cloaked position. With an ear-splitting roar, the forest in front of the [Root.Monarch.GetTitle] was replaced with white fur and piercing blue eyes and terrible claws. [Root.Monarch.GetName] swung [Root.Monarch.GetHerHis] sword with all the might [Root.Monarch.GetSheHe] could muster. Slaver-Noble steel flashed – then the beast crashed into the warlord with enough force to barrel [Root.Monarch.GetHerHim] over. When [Root.Monarch.GetSheHe] finally came to [Root.Monarch.GetHerHis] senses, [Root.Monarch.GetHerHis] front was covered in blood – and when [Root.Monarch.GetSheHe] pushed the Dey Vettaga’s corpse off [Root.Monarch.GetHerHim], [Root.Monarch.GetSheHe] found the source, as a gaping hole stood where the beasts’s head had once been. [Root.Monarch.GetName] laughed as [Root.Monarch.GetSheHe] collapsed from the exhaustion. The ghost in the hills had been slain."
+ taychend_flavour.25.d: "[Root.Monarch.GetName] stumbled through the forest trail, clutching [Root.Monarch.GetHerHis] sabre with white-knuckled hands. Blood was spattered across [Root.Monarch.GetHerHis] armour – but it coated the edge of [Root.Monarch.GetHerHis] sword as well. [Root.Monarch.GetHerHisCap] bodyguards, Galinpan and Varamesh, were dead, but they did not die in vain. [Root.Monarch.GetSheHeCap]’d slashed the beast across the back with [Root.Monarch.GetHerHis] sword as it was mauling Galinpan, a sure hit, though it darted away before [Root.Monarch.GetSheHe] could attack again. Injured but not mortally so – but the actual damage didn’t matter. [Root.Monarch.GetSheHeCap]’d hit it, and that meant blood.\n\n[Root.Monarch.GetHerHisCap] heart pounded as [Root.Monarch.GetSheHe] searched the forest floor, moving from one blood-specked leaf to the next. It had to be cloaked, its fur invisible – but not untrackable, not anymore. The [Root.Monarch.GetTitle] stopped, tracked the trail with [Root.Monarch.GetHerHis] eyes but did not move. The blood drops grew heavier as [Root.Monarch.GetHerHis] gaze followed them – [Root.Monarch.GetSheHe] had to squint, but [Root.Monarch.GetSheHe] could just make out a break in the light foliage that carved the forest floor. The brown of the dirt looked wet, darker than that beneath [Root.Monarch.GetHerHis] own feet. [Root.Monarch.GetName] silently thanked the gods for [Root.Monarch.GetHerHis] good eyes. Now, [Root.Monarch.GetSheHe] needed to pray that they granted [Root.Monarch.GetHerHim] courage. The [Root.Monarch.GetTitle] took a deep breath, raised [Root.Monarch.GetHerHis] sabre, and charged with a cry.\n\n[Root.Monarch.GetSheHeCap] had only made it a few sprinted steps before the Dey Vettaga pounced from its cloaked position. With an ear-splitting roar, the forest in front of the [Root.Monarch.GetTitle] was replaced with white fur and piercing blue eyes and terrible claws. [Root.Monarch.GetName] swung [Root.Monarch.GetHerHis] sword with all the might [Root.Monarch.GetSheHe] could muster. Slaver-Noble steel flashed – then the beast crashed into the warlord with enough force to barrel [Root.Monarch.GetHerHim] over. When [Root.Monarch.GetSheHe] finally came to [Root.Monarch.GetHerHis] senses, [Root.Monarch.GetHerHis] front was covered in blood – and when [Root.Monarch.GetSheHe] pushed the Dey Vettaga’s corpse off [Root.Monarch.GetHerHim], [Root.Monarch.GetSheHe] found the source, as a gaping hole stood where the beasts’s head had once been. [Root.Monarch.GetName] laughed as [Root.Monarch.GetSheHe] collapsed from the exhaustion. The ghost in the hills had been slain."
  taychend_flavour.25.a: "Glory to [Root.Monarch.GetName], the Ghostslayer!"
  
  # chendhyan events
@@ -578,7 +594,7 @@ l_english:
  taychend_flavour.31.b: "Expel them as penance for their ancestors’ crimes."
  
  taychend_flavour.32.t: "Caergarae Does Surf"
- taychend_flavour.32.da: "The Samidon Trail, a trade route running from Clemetar to Empkeios, has always been extremely lucrative, offering a far shorter nautical route from Taychend to the Kheionai than the southern Path of Wine can offer, the wide Agotham river allowing large ships and barges full of cargo to make the trip south. There is only one problem – the Chendhyans. While the friendly riders of Kaeorg may help guide ships over the Chendhya, the decidedly unfriendly lake-pirates of Caergaraen definitely do not help guide ships over the Taras’su Ervan.\n\nThe Caergarae launch constant raids from their hidden cove-bases along the lakeside, with the pirates taking their feline mounts onto their ships, pouncing onto the decks of trade vessels, and wreaking sheer havoc on those unfortunate enough to meet them. Recently, a particularly loaded convoy was attacked by Caergarae pirates, who made off with their goods, and liberated the slaves on board the ships. While there remain unsubjugated Chendhyans living on the shores of the lake, this situation is likely to continue – much to the annoyance of our merchants and the detriment of our coffers.”
+ taychend_flavour.32.da: "The Samidon Trail, a trade route running from Clemetar to Empkeios, has always been extremely lucrative, offering a far shorter nautical route from Taychend to the Kheionai than the southern Path of Wine can offer, the wide Agotham river allowing large ships and barges full of cargo to make the trip south. There is only one problem – the Chendhyans. While the friendly riders of Kaeorg may help guide ships over the Chendhya, the decidedly unfriendly lake-pirates of Caergaraen definitely do not help guide ships over the Taras’su Ervan.\n\nThe Caergarae launch constant raids from their hidden cove-bases along the lakeside, with the pirates taking their feline mounts onto their ships, pouncing onto the decks of trade vessels, and wreaking sheer havoc on those unfortunate enough to meet them. Recently, a particularly loaded convoy was attacked by Caergarae pirates, who made off with their goods, and liberated the slaves on board the ships. While there remain unsubjugated Chendhyans living on the shores of the lake, this situation is likely to continue – much to the annoyance of our merchants and the detriment of our coffers."
  taychend_flavour.32.db: "The Samidon Trail, a trade route running from Clemetar to Empkeios, has always been extremely lucrative, offering a far shorter, nautical route from Taychend to the Kheionai than the southern Path of Wine can offer, the wide Agotham river allowing large ships and barges full of cargo to make the trip south. There is only one problem – us. While the treacherous riders of Kaeorg may help guide ships over the Chendhya, we decidedly do not help guide ships over the Taras’su Ervan.\n\nOur forces launch constant raids from our hidden cove-bases along the lakeside, with our pirates taking their feline mounts onto their ships, pouncing onto the decks of trade vessels, and wreaking sheer havoc on those unfortunate enough to meet them. Recently, a particularly loaded convoy was attacked by us. We made off with their goods, and liberated the slaves on board the ships. While our enemies still control parts of the lake, we can still prey on their vessels, and repossess some more of the slavers’ ill-gotten gains."
  taychend_flavour.32.a: "Bloody pirates!"
  taychend_flavour.32.b: "Our mounts love the taste of elf in the morning!"
@@ -596,7 +612,21 @@ l_english:
  taychend_flavour.34.b: "Side with the Sarihaddi."
  taychend_flavour.34.c: "Force a compromise."
 
-   
+ taychend_flavour.40.t:0 "Between Two Worlds"
+ taychend_flavour.40.d:0 "Though the Oremvand-aligned Chendhyans of Haebizyund have launched numerous raids against Ameion’s northern border over the years, the city of Oremvand has always had an amicable relationship with Ameion, being both their largest trade partner and an occasional ally. It would be on Oremvand’s side that Ameion’s first tentative forays into Taychendi politics would be undertaken, as it was they who seized the underpopulated islands of Paraidar and Kosiphineion from Nagar Vyechei, and even launched an expedition into Taychend during the wars against Gophira – the failure of which would . It was no wonder then that when Laskaris sent Serondorus Rhadinos, he came not as the general he was known as, but an ambassador.  Laskaris instead sent one of his generals, Serondorus Rhadinos, as an ambassador.\n\nWithin a year, Serondorus had done an excellent job of charming the Oremvandians, even if he failed to encourage them into any official alliance with the conqueror. He did such an excellent job, in fact, that he managed to charm his way into Queen Vesimanthi’s bedchamber. The result of this union, and the subsequent marriage, was Seroninpan, the half-Kheionai heir to Oremvand.\n\nSeroninpan has grown up situated between two worlds, as his mother teaches him the glory of Oremvand’s past and the power of the gods, and his father educates him in the many philosophies of his own homeland – and in the inescapable domination of the Kheionai way of life. That last point in particular has made a point on the young prince – there are rumours that he wishes to reform Oremvand, to bring the cultural and governmental inventions of the west to Taychend. Such a move would surely result in massive upheaval, as the Thekvrystana city shifts from being influenced by the Chendhyans to being influenced by the Kheionai. No matter the impact, however, it is clear Seroninpan must make up his mind whether to proceed."
+ taychend_flavour.40.a:0 "We must stick to the old ways!"
+ taychend_flavour.40.b:0 "If it is adapt or die, we must adapt on our own terms."
+
+ taychend_flavour.41.t:0 "The Bastard Prince"
+ taychend_flavour.41.d:0 "In the island ports of Kosiphineion or Paraidar, Kheionai merchants and captains have always had a presence in Taychend, even before Laskaris’ conquest made such a presence rather political. There were always those partial to Ambhen allegiances or Taychendi hostility, however. Liandithe Echatos, an adventurous Amgrebhen ship captain and occasional pirate, made many visits to Vul Tenvach, eventually calling its ports her home – and making an impression on Alvardip Tailarudu himself. Eventually, they became lovers.\n\nThe half-Kheionai boy born of this union was called Olorises – given the surname Pulojith in a reflection of his heritage, but not his parentage – and quickly proved as talented and quick-minded as he was impossibly ambitious. By all accounts, he has taken after his mother; adventuring across Vul Tenvach and beyond, and engrossing himself in every tale Liandithe has told him about both the wonders and horrors of the world.\n\nFar outside the line of succession on account of his status as a bastard, there are rumours that he is nonetheless plotting to imminently take over – and even more worrying rumours that he wishes to implement a wide series of Kheionai-inspired reforms to bring Vul Tenvach into the new age. if we act now, we might be able to stop his coup."
+ taychend_flavour.41.a:0 "Olorises succeeds."
+ taychend_flavour.41.b:0 "The pretender is stopped."
+
+ taychend_flavour.42.t:0 "The Offer at Géna"
+ taychend_flavour.42.d:0 "Olorises gripped the hilt of his sword as the cloaked figures emerged from the darkness, illuminated at last by his bodyguard’s torchlight. It was a grim place to meet – surrounded by the shattered remains of Olorises’ previous great victory. But dead men tell no tales – and if this meeting went wrong, the elves before him could easily join the bodies littering the floor and Olorises could do something actually worthwhile. Some of their faces, he could see, were Taychendi tan or brown. Others had the strong teal of a pureblooded Ambhen or the same cyan tint that matched his own.\n\n“Greetings, conqueror,” spoke a Taychendi figure . “Your activities have not gone unnoticed. Your tendencies. Your… vision. The masses worship Laskaris as a god, and you as his heir – but we know better. And in time, so will you.” Another stepped up, a half-Kheionai like Olorises. “We are the Laskarian Circle – the heart of the Cult of Laskaris.”\n\nOlorises scoffed. “The Laskarian Circle!” he sneered, an old habit of his mothers when she knew she was being cheated. “The followers of Jaherios Lýkos– his companions in the nightblades’ delusional schemes!”\n\nThe cloaked Taychendi shook his head fiercely. “We follow Laskaris, not Lýkos! That fool fell to his own lies– the lie of divinity!” Olorises’ grip tightened – he had little time for the gods, but he did not often dare provoke them. “The cult we run, the masses – they call Laskaris a god, but here is our truth! In being a simple elf, he was more powerful than any diety; Laskaris was a philosopher, a visionary! We wish to uphold his ideals.” The half-Kheionai withdrew a purple-plumed helmet of Precursor steel from his cloak. Olorises recognised it instantly – the helm of the conqueror himself! “Create a new world, a true synthesis of Kheionai philosophy and Taychendi glory, with you as its harbinger, the true heir of Laskaris, the elf you were meant to be!” As Olorises was handed the helm, he felt the world hold its breath..."
+ taychend_flavour.42.a:0 "Accept the offer."
+ taychend_flavour.42.b:0 "Decline the offer."
+
  # flavour event modifiers
  tf_mercenaries_emboldened: "Mercenaries Emboldened"
  tf_slaves_scoured: "Slaves Scoured"
@@ -621,6 +651,7 @@ l_english:
  tf_remnant_chendhyan_community: "Remnant Chendhyan Community"
  tf_expelled_remnants_mod: "Expelled Remnants"
  tf_sarihaddi_migration: "Sarihaddi Migration"
+ tf_heir_of_laskaris:0 "Heir of Laskaris"
  
  # flavour event tooltips
  
@@ -629,6 +660,11 @@ l_english:
  tf_random_chendhyan_advisor_25_tt: "Gain a random Chendhyan advisor at 25% off"
  tf_random_sarihaddi_mil_advisor_50_tt: "Gain a random Sarihaddi military advisor at 50% off"
  tf_random_sarihaddi_mil_advisor_25_tt: "Gain a random Sarihaddi military advisor at 25% off"
+ tv_chose_taychend_tt:0 "§RFollowing this path will guide us towards forming Taychendi Empire.§!"
+ tv_chose_validaunea_tt:0 "§RFollowing this path will guide us towards forming Validaunéa.§!"
+ taychendi_revolt_5_tt:0 "§RReligious§! regiment(s) rise up in revolt in §Y5 owned provinces§!."
+ taychendi_revolt_2_tt:0 "§RReligious§! regiment(s) rise up in revolt in §Y2 owned provinces§!."
+ #ambhen_revolt_tt:0 "§RNoble§! regiment(s) rise up in revolt in §Y3 owned provinces§! of §YAmbhen§! culture."
  
  #Taychend Empire Names
 
@@ -653,3 +689,11 @@ l_english:
  #Urvand
  URVAND: "Urvand"
  URVAND_ADJ: "Urvandhi"
+
+ #Estates
+ estate_church_validaunean_syncretism:0 "Validaunéan Syncretism"
+ estate_church_validaunean_syncretism_desc:0 "The relentlessly aggressive conversion efforts of Ameion are now a mere memory. As the Cult of Laskaris frames the Conqueror as a god, the nobility pours over his actions and writings, forming a cohesive Laskarian philosophy to guide their way - while Kheionist philosophy serves the elite, Taychendi religion serves the masses."
+ estate_church_validaunean_syncretism_effect_tooltip:0 "Every owned province of §YTaychendi Hero Cults§! or §YTaychendi Hero Worship§! faiths gains:\nLocal Missionary Strength: §R-100%§!\nLocal Religious Unity Contribution: §G-100%§!"
+ estate_church_validaunean_syncretism_revoke_effect_tooltip:0 "The modifier §Y'Validaunéan Syncretism'§! is removed from all owned §YTaychendi Hero Cults§! or §YTaychendi Hero Worship§! provinces."
+ estate_church_validaunean_syncretism_mod:0 "Validaunéan Syncretism"
+ desc_estate_church_validaunean_syncretism_mod:0 "The Kheionai elite of the state allows the existence of local Taychendi cults."

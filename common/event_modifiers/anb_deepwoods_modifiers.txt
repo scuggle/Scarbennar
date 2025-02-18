@@ -436,6 +436,7 @@ sapchopper_bloodytusks = {
 	local_development_cost = -0.15
 }
 
+# Silentblade modifiers
 silentblade_the_first_pact_reward = {
 	missionaries = 1
 	global_missionary_strength = 0.02
@@ -475,7 +476,12 @@ silentblade_bound_by_bark_and_branch_reward_vassal_b = {
 	monthly_fervor_increase = 3
 }
 
-silentblade_rival_clan_vassalized_reward = {
+silentblade_rival_clan_blackmoon_vassalized_reward = {
+	diplomatic_reputation = 1
+	diplomatic_upkeep = 1
+}
+
+silentblade_rival_clan_cursed_howl_vassalized_reward = {
 	diplomatic_reputation = 1
 	diplomatic_upkeep = 1
 }
@@ -497,5 +503,64 @@ silentblade_shaping_the_tool_reward = {
 }
 
 silentblade_the_second_conclave_of_elynaile_reward = {
-	land_morale = -0.05
+	land_morale = -0.1
+}
+
+
+#Forest Goblin flavour
+unlimited_traps_goblin = {
+	local_development_cost = 0.05
+	local_defensiveness = 0.15
+}
+
+no_more_traps_goblin = {
+	local_development_cost = -0.05
+	local_defensiveness = -0.15
+}
+
+say_no_to_fey = {
+	global_missionary_strength = 0.01
+	tolerance_own = 2
+	tolerance_heathen = -2
+}
+
+no_more_treant_goblin = {
+	trade_goods_size_modifier =  0.1
+
+}
+
+treant_rampage_goblin = {
+	local_unrest = 2
+	trade_goods_size_modifier = -0.1
+}
+
+old_ways_inventions = {
+	production_efficiency = 0.1
+	fire_damage = 0.1
+}
+
+pactseeker_inventions = {
+	global_trade_goods_size_modifier = 0.1
+	shock_damage = 0.1
+}
+
+catastrophe_unrest_goblin = {
+	local_unrest = 1
+}
+
+unpopular_regulations_goblin = {
+	local_unrest = 3
+	build_cost = 0.1
+	build_time = 0.15
+}
+
+no_yellow_festival = {
+	global_unrest = 1
+}
+
+good_yellow_festival = {
+	global_unrest = -1
+}
+
+had_yellow_festival = {
 }

@@ -23,6 +23,7 @@ estate_mages = {
 		NOT = { has_reform = demon_empire_reform }
 		NOT = { has_country_flag = LF_mages_banned }
 		NOT = { has_country_flag = magic_artificery_artificery_only }
+		NOT = { has_country_flag = h35_debarment_moment }
 	}
 
 	# These scale with loyalty & power
@@ -277,7 +278,7 @@ estate_mages = {
 	custom_name = {
 		desc = estate_sorcerers
 		trigger = {
-			religion = lefthand_path
+			religion = devouring_path
 		}
 	}
 
@@ -314,18 +315,18 @@ estate_mages = {
 			culture_group = baashidi
 		}
 	}
-
-	custom_name = {
-		desc = inyaswarosa_spirit_speakers
-		trigger = {
-			culture_group = inyaswarosa
-		}
-	}
 	
 	custom_name = {
 		desc = mihipha
 		trigger = {
 			is_vyzemby_primary_culture = yes
+		}
+	}
+
+	custom_name = { #jadd mengi mage rename 
+		desc = estate_S89_rename_shayebaka
+		trigger = { 
+			tag = S89
 		}
 	}
 
@@ -346,7 +347,10 @@ estate_mages = {
 	custom_name = {
 		desc = estate_warlocks
 		trigger = {
-			religion = pactseeker
+			OR = {
+				has_country_flag = rakkaz_warlocks_rename
+				religion = pactseeker
+			}	
 		}
 	}
 
@@ -354,6 +358,34 @@ estate_mages = {
 		desc = estate_denunransunin
 		trigger = {
 			tag = V17
+		}
+	}
+
+	custom_name = {
+		desc = lodge_of_the_nameless_name
+		trigger = {
+			has_country_flag = lodge_of_the_nameless
+		}
+	}
+
+	custom_name = {
+		desc = estate_mb_arok_ankash
+		trigger = {
+			has_country_flag = mb_arok_ankash_flg
+		}
+	}
+	
+	custom_desc = {
+		desc = estate_mb_arok_ankash_desc
+		trigger = {
+			has_country_flag = mb_arok_ankash_flg
+		}
+	}
+
+	custom_name = {
+		desc = wyvernheart_floodborn_council_estate
+		trigger = {
+			has_country_flag = floodborn_council_rename
 		}
 	}
 
@@ -428,6 +460,24 @@ estate_mages = {
 		estate_mages_young_tower_of_magic # Shangra
 		estate_mages_lawassari_zamukaras #Mount Lazzaward reward
 		estate_mages_archaic_traditions #Orda Aldresia Debuff
+		estate_mages_delta_orbs #duwarkani MT
+		estate_mages_steady_ichorletting #Masked Butcher stuff
+		estate_mages_all_mask
+		estate_mages_great_fey_mask
+		estate_mages_organization_giberd_beacon_of_harmony
+		estate_mages_collaborators #Maghargma
+		#Rakkaz MT
+		estate_mages_organization_rule_of_warlocks
+		estate_mages_warlock_pact_power
+		estate_mages_warlock_pact_exploitation
+		estate_mages_warlock_pact_overcharge
+		estate_mages_warlock_pact_domination
+		estate_mages_warlock_pact_battlefield_domination
+		estate_mages_warlock_pact_unrestricted_savagery
+		estate_mages_warlock_pact_demonic_possession
+		estate_mages_warlock_pact_night_coven
+		estate_wyvernheart_subservient_artificers #Wyvernheart
+		estate_wyvernheart_floodborn_council #Wyvernheart
 	}
 
 	agendas = {
@@ -446,6 +496,10 @@ estate_mages = {
 		estate_mages_develop_precursor_relics_in_y
 		estate_mages_build_mage_tower_in_y
 		estate_mages_develop_x
+		estate_mages_wyvernheart_spread_vision_of_magic
+		estate_mages_wyvernheart_wave_the_heart
+		estate_mages_wyvernheart_invest_in_critical_materials #Wyvernheart
+		estate_mages_wyvernheart_research_new_spells #Wyvernheart
 	}
 	influence_from_dev_modifier = 0.5
 }

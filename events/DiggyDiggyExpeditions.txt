@@ -32,7 +32,7 @@ country_event = {
 			amount = 22
 			effect = "
 				random_province = {
-					limit = { region = west_dwarovar_region is_city = no }
+					limit = { region = west_dwarovar_region is_city = no can_spawn_expedition = yes }
 					spawn_expedition = yes
 				}
 			"
@@ -41,7 +41,7 @@ country_event = {
 			amount = 13
 			effect = "
 				random_province = {
-					limit = { region = serpentreach_region is_city = no }
+					limit = { region = serpentreach_region is_city = no can_spawn_expedition = yes }
 					spawn_expedition = yes
 				}
 			"
@@ -50,7 +50,7 @@ country_event = {
 			amount = 13
 			effect = "
 				random_province = {
-					limit = { region = middle_dwarovar_region is_city = no }
+					limit = { region = middle_dwarovar_region is_city = no can_spawn_expedition = yes }
 					spawn_expedition = yes
 				}
 			"
@@ -60,7 +60,7 @@ country_event = {
 			amount = 8
 			effect = "
 				random_province = {
-					limit = { region = tree_of_stone_region is_city = no NOT = { province_id = 4266 } }
+					limit = { region = tree_of_stone_region is_city = no can_spawn_expedition = yes NOT = { province_id = 4266 } }
 					spawn_expedition = yes
 				}
 			"

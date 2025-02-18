@@ -4,8 +4,8 @@ government = republic
 add_government_reform = krak_clan_council
 government_rank = 1
 primary_culture = quartz_dwarf
-religion = runefather_worship
-technology_group = tech_dwarven
+religion = ancestor_worship
+technology_group = tech_west_dwarven
 capital = 4208
 fixed_capital = 4208
 
@@ -41,10 +41,4 @@ fixed_capital = 4208
 		estate = estate_mages
 		share = -5
 	}
-
-	set_variable = { which = ClanShadowhammerAllegienceVar value = 0 }
-	set_variable = { which = ClanDarkstoneAllegienceVar value = 0 }
-	set_variable = { which = GroediAzAnAllegienceVar value = 0 }
-	set_variable = { which = AmlruzskappaAllegienceVar value = 0 }
-	set_variable = { which = FurdanhundAllegienceVar value = 0 }
 }

@@ -2627,8 +2627,12 @@ country_event = {
 		
 		set_country_flag = ynn_iosahar_is_revolting
 		release_iosahar = yes
-		
+
 		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = ynn_revolting_iosahar
+			}
 			every_subject_country = {
 				limit = {
 					is_subject_of_type = ynnic_iosahar
@@ -4426,7 +4430,7 @@ country_event = { #Controller Event for General Flavour Events
 					}
 				}
 				modifier = {
-					factor = 4
+					factor = 5
 					G33 = { has_estate_privilege = estate_burghers_sponsor_new_ships }
 				}
 				country_event = {
@@ -9011,7 +9015,7 @@ country_event = {	#Holy merchant fleet asks for a port
 				ruler_has_personality = embezzler_personality
 			}
 			modifier = {
-				factor = 2
+				factor = 3
 				G33 = { has_estate_privilege = estate_church_clerical_convincing }
 			}
 		}
@@ -9057,7 +9061,7 @@ country_event = {	#Holy merchant fleet asks for a port
 				ruler_has_personality = careful_personality
 			}
 			modifier = {
-				factor = 0.5
+				factor = 0.25
 				G33 = { has_estate_privilege = estate_church_clerical_convincing }
 			}
 		}
@@ -9616,6 +9620,7 @@ country_event = {	#False Rumours Out of Thromshana
 		capital_scope = {
 			superregion = ynn_superregion
 		}
+		has_discovered = 1140
 		NOT = {
 			capital = 1140
 			1140 = { has_province_flag = 1140_destroyed_rumour_mill }

@@ -31,6 +31,9 @@
  magic_project_simulacrum.2.t:0 "Simulacrum Project: Stage 2"
  magic_project_simulacrum.2.d:0 "\"Ice, like spirit, is ephemeral yet eternal."\n-Hrafn, Bjarnríki Cryomancer\n\nAfter spending a long time perfecting your simulacrum's mannerisms, it now looks like and acts like you, or at least, as close as anyone can get!\nHowever, the simulacrum is still little more than a shadow and requires a base (typically flakes of snow or ice, refracting light within a magical suspension) in order to take on and maintain your appearance long-term without requiring constant magical upkeep."
  magic_project_simulacrum.2.a:0 "Thankfully we have plenty of snow around here!"
+ magic_project_simulacrum.2.b:0 "A little cajoling should bring us the Ice-Smiths' finest."
+ magic_project_simulacrum.2.c:0 "Ice or snow? The [Root.Monarch.GetTitle] can make that [Root.Monarch.GetHerHim]self."
+
  
  magic_project_simulacrum.3.t:0 "Simulacrum Project: Stage 2"
  magic_project_simulacrum.3.d:0 "\"Ice, like spirit, is ephemeral yet eternal."\n-Hrafn, Bjarnríki Cryomancer\n\nAfter spending a long time perfecting your simulacrum's mannerisms, it now looks like and acts like you, or at least, as close as anyone can get!\nHowever, the simulacrum is still little more than a shadow and requires a base (typically flakes of snow or ice, refracting light within a magical suspension) in order to take on and maintain your appearance long-term without requiring constant magical upkeep."\n\nSadly snowfall is currently scarce, and to progress at this moment you'll need to import some from abroad."

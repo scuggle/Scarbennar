@@ -138,11 +138,6 @@ makan_estuary_modifier = {
 	picture = "estuary_icon"
 }
 
-marid_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
 tora_estuary_modifier = {
 	province_trade_power_value = 5
 	picture = "estuary_icon"
@@ -585,7 +580,6 @@ ruined_city = {
 	development_cost = 1
 }
 
-
 #Greentide Modifiers
 
 legacy_of_adventurers_modifier = {
@@ -841,6 +835,144 @@ ordal_fish_market = {
 	trade_goods_size = 2.5
 }
 
+tipney_tobacco_fields = {
+	trade_goods_size = 1
+	province_trade_power_modifier = 0.1
+}
+
+rosemetal_mines = {
+	trade_goods_size = 2
+}
+
+dragonmarks = {
+	trade_goods_size = 1
+	local_build_cost = 0.25
+}
+
+iron_hill = {
+	trade_goods_size = 1.5
+	global_regiment_cost = -0.1
+}
+
+###Cannorian Holy Sites###
+pantheonway_temple = {
+	missionaries = 1
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+pantheonway_temple_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+highest_moon = {
+	tolerance_own = 1
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+highest_moon_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+adeanscour = {
+	missionaries = 1
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+adeanscour_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+temple_ara = {
+	global_heretic_missionary_strength = 0.01
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+temple_ara_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+grand_begga = {
+	global_heathen_missionary_strength = 0.01
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+grand_begga_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+minara_bosom = {
+	global_missionary_strength = 0.005
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+minara_bosom_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+aldtempel = {
+	global_heretic_missionary_strength = 0.01
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+aldtempel_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+mothers_sanctuary = {
+	global_missionary_strength = 0.005
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+mothers_sanctuary_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+ryala_temple = {
+	global_missionary_strength = 0.005
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+ryala_temple_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+necropolis_minor = {
+	tolerance_own = 1
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+necropolis_minor_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+to_munas = {
+	global_heathen_missionary_strength = 0.01
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+to_munas_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+hall_shadowdancer = {
+	global_missionary_strength = 0.01
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+hall_shadowdancer_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+dorum_odir_temple = {
+	global_missionary_strength = 0.005
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+dorum_odir_temple_inactive = {
+	trade_goods_size = 0.02
+	picture = "missionaries"
+}
+
 #Eordand Courts
 eordand_spring_court = {
 	production_efficiency = 0.05
@@ -858,6 +990,9 @@ eordand_winter_court = {
 }
 eordand_domandrod = {
 	yearly_absolutism = 0.5
+}
+eordand_twilight_court = {	#Dorcurt
+	land_morale = 0.05
 }
 gawed_regent_court = {
 	local_religious_conversion_resistance = 0.25
@@ -1171,6 +1306,8 @@ tluukt_receiving_zokka_refugees = {
 	global_regiment_recruit_speed = -0.5
 }
 tluukt_the_rule_of_tluukt = {
+}
+tluukt_the_rule_of_tluukt_ai = {
 	hostile_attrition = 2
 	land_morale = 0.2
 	defensiveness = 0.25
@@ -2114,14 +2251,30 @@ magnate_council_support = {
 	burghers_loyalty_modifier = 0.05
 }
 
+magnate_council_support_empower = {
+	production_efficiency = 0.20
+	burghers_influence_modifier = 0.1
+	burghers_loyalty_modifier = 0.1
+}
+
 magnate_council_rejected = {
 	burghers_influence_modifier = -0.10
 	burghers_loyalty_modifier = -0.10
 	global_trade_power = -0.05
 }
 
+magnate_council_rejected_empower = {
+	burghers_influence_modifier = -0.20
+	burghers_loyalty_modifier = -0.20
+	global_trade_power = -0.1
+}
+
 magnate_council_opposition = {
 	global_trade_power = -0.10
+}
+
+magnate_council_opposition_empower = {
+	global_trade_power = -0.20
 }
 
 sold_magnate_business = {
@@ -3143,6 +3296,144 @@ brokenjaw_in_perfect_order = {
 }
 ##
 
+#Rakkaz F71
+rakkaz_new_recruits = {
+	land_morale = 0.1
+	land_maintenance_modifier = -0.1
+}
+
+rakkaz_fighting_pit = {
+	trade_goods_size = 1
+	local_governing_cost = -0.25
+	local_development_cost = -0.05
+	local_build_cost = -0.05
+}
+
+rakkaz_the_shadow_womb = {
+	local_development_cost = -0.1
+	local_defensiveness = 0.1
+	trade_goods_size = 2
+	local_build_cost = -0.1
+}
+
+rakkaz_base_demoncollar_amount = {
+	amount_of_hussars = 6
+}
+
+rakkaz_slave_exploitation = {
+	trade_goods_size = 2
+	trade_goods_size_modifier = 0.2
+}
+
+rakkaz_surge_of_suffering = {
+	trade_goods_size = 3
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+}
+
+rakkaz_surge_of_suffering_upgrade = {
+	trade_goods_size = 3
+	local_development_cost = -0.1
+	local_manpower_modifier = 1
+	local_build_cost = -0.1
+}
+
+rakkaz_pact_overcharge = {
+	local_unrest = -4
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+}
+
+rakkaz_channeling_suffering = {
+	trade_goods_size = 2
+	local_development_cost = -0.05
+	local_monthly_devastation = 0.4
+	local_build_cost = -0.05
+}
+
+rakkaz_channeling_suffering_upgrade = {
+	trade_goods_size = 2
+	local_development_cost = -0.05
+	local_monthly_devastation = 0.4
+	local_manpower_modifier = 1
+	local_build_cost = -0.05
+}
+
+rakkaz_mazu_makhara_more_cav = {
+	amount_of_hussars = 2
+}
+
+rakkaz_mazu_makhara_more_cav_upgrade = {
+	amount_of_hussars = 4
+}
+
+rakkaz_fighting_pit_more_cav = {
+	amount_of_hussars = 1
+}
+
+rakkaz_fighting_pit_more_cav_upgrade = {
+	amount_of_hussars = 2
+}
+
+rakkaz_demonflare_enchantment = {
+	cavalry_shock = 0.5
+	fire_damage_received = -0.2
+	land_maintenance_modifier = 0.25
+	is_hussars_modifier = yes
+}
+
+rakkaz_increase_in_desertions = {
+	morale_damage_received = 0.1
+	manpower_recovery_speed = -0.2
+}
+
+rakkaz_witherling_units = {
+	morale_damage_received = -0.05
+}
+
+rakkaz_seat_of_darkness = {
+	local_tax_modifier = 0.3
+	local_production_efficiency = 0.2
+	local_manpower_modifier = 1
+	min_local_autonomy = -90
+}
+
+rakkaz_power_of_the_curse = {
+	leader_land_shock = 1
+	movement_speed = 0.1
+}
+
+rakkaz_demoncollar_hordes = {
+	morale_damage_received = -0.05
+	cav_to_inf_ratio = 0.2
+	special_unit_forcelimit = 0.2
+}
+
+rakkaz_witherling_army = {
+	morale_damage_received = -0.1
+	fire_damage_received = -0.15
+}
+
+rakkaz_scorching_flames = {
+	cavalry_shock = 1
+	cavalry_fire = 1
+	land_maintenance_modifier = 0.25
+	is_hussars_modifier = yes
+}
+
+rakkaz_soldier_households_1 = {
+	land_forcelimit = 1
+}
+
+rakkaz_soldier_households_2 = {
+	land_forcelimit = 2
+}
+
+rakkaz_soldier_households_3 = {
+	land_forcelimit = 4
+}
+#
+
 #Haraagtseda F72
 haraagtseda_rozherg_the_hammer_of_kvanga = {
 	global_missionary_strength = 0.02
@@ -3168,15 +3459,15 @@ anb_adv_fortune_seekers_influence = {
 }
 
 anb_tec_brilliance_influence = {
-	tec_brilliance_influence = 0.1
+	tec_brilliance_influence = 0.05
 }
 
 anb_tec_mechanists_influence = {
-	tec_mechanists_influence = 0.1
+	tec_mechanists_influence = 0.05
 }
 
 anb_tec_technomancy_influence = {
-	tec_technomancy_influence = 0.1
+	tec_technomancy_influence = 0.05
 }
 
 anb_aelnar_blaiddtar_influence = {
@@ -3551,7 +3842,7 @@ ruinborn_settler_dispute = {
 
 ruinborn_adapting_administration = {
 	state_maintenance_modifier = -0.2
-	state_governing_cost = -0.2
+	reform_progress_growth = 0.15
 }
 
 ruinborn_local_guides = {
@@ -3578,4 +3869,12 @@ ruinborn_aelantir_treasure = {
 
 ruinborn_aelantir_treasures = {
 	global_trade_power = 0.1
+}
+
+corintar_gwindeth_camllann_troops = {
+	infantry_power = 0.05
+}
+
+corintar_gwindeth_camllann_leader = {
+	leader_land_shock = 1
 }

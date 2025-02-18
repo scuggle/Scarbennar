@@ -413,7 +413,7 @@ halfling_ideas = {
 		global_prov_trade_power_modifier = 0.1
 	}
 	trigger = {
-		culture_group = halfling
+		is_cannorian_halfling_primary_culture = yes
 	}
 	free = yes
 	
@@ -2252,7 +2252,7 @@ birb_ideas = {
 	}
 }
 
-hill_yan_ideas = {
+beikling_ideas = {
 	start = {
 		global_missionary_strength = 0.02
 		hostile_attrition = 1.5
@@ -2261,31 +2261,31 @@ hill_yan_ideas = {
 		ae_impact = -0.1
 	}
 	trigger = {
-		primary_culture = hill_yan
+		primary_culture = beikling
 	}
 	free = yes
 	
-	hill_yan_moguren = { #Frequent raiders of civilized Yanshen, seen as more demon than man
+	beikling_moguren = { #Frequent raiders of civilized Yanshen, seen as more demon than man
 		loot_amount = 0.5
 		available_province_loot = 0.1
 	}
-	hill_yan_the_iron_mounds = { #There's a fuckton of iron in their hills
+	beikling_the_iron_mounds = { #There's a fuckton of iron in their hills
 		infantry_power = 0.1
 	}
-	hill_yan_swift_as_the_shadows = { #Traversing their hills has made them extremely quick on the move
+	beikling_swift_as_the_shadows = { #Traversing their hills has made them extremely quick on the move
 		movement_speed = 0.1
 	}
-	hill_yan_sheng_shan = { #The most sacred hills of the Hill Yan, featuring isolated temples and shrines
+	beikling_sheng_shan = { #The most sacred hills of the Hill Yan, featuring isolated temples and shrines
 		tolerance_own = 1
 		missionaries = 1
 	}
-	hill_yan_masters_of_darkness = { #The Hill Yan have long practiced magics taught to them by dark entities and Oni
+	beikling_masters_of_darkness = { #The Hill Yan have long practiced magics taught to them by dark entities and Oni
 		shock_damage = 0.1
 	}
-	hill_yan_legacy_of_great_luyixu = { #Luyixu was an ancient Hill Yan kingdom that ravaged many neighboring River Yan kingdoms before being dismantled by Harimar
+	beikling_legacy_of_great_luyixu = { #Luyixu was an ancient Hill Yan kingdom that ravaged many neighboring River Yan kingdoms before being dismantled by Harimar
 		unjustified_demands = -0.2
 	}
-	hill_yan_qiuzu_castes = { #Society is split into 4 castes, slaves, warriors, rulers, and mages at the top
+	beikling_qiuzu_castes = { #Society is split into 4 castes, slaves, warriors, rulers, and mages at the top
 		global_unrest = -1
 	}
 }
@@ -2674,44 +2674,5 @@ vyzemby_ideas = {
 	}
 	vyzemby_animal_shrines = { #different animals are seen as sacred and are associated with specific gods. Such shrines commonplace in the islands
 		tolerance_own = 2
-	}
-}
-
-#Tanizu Lizards
-beastfolk_ideas = {
-	start = {
-		land_forcelimit_modifier = 0.15
-		num_accepted_cultures = 2
-	}
-	bonus = {
-		global_unrest = -2
-	}
-	trigger = { 
-		culture = cyazizeta_lizardfolk 
-		NOT = { tag = S83 } #Katiradiga
-	}
-	free = yes
-	
-	beastfolk_lizards_and_tanizu = {
-		idea_cost = -0.1
-	}
-	beastfolk_the_storyscales = {
-		stability_cost_modifier = -0.15
-	}
-	beastfolk_warrior_prowess = {
-		discipline = 0.025
-		shock_damage_received = -0.05
-	}
-	beastfolk_sacred_bond = {
-		diplomatic_upkeep = 1
-	}
-	beastfolk_nomadic_tradition = {
-		movement_speed = 0.15
-	}
-	beastfolk_friendship_drink = {
-		improve_relation_modifier = 0.2
-	}
-	beastfolk_kin_wars = {
-		war_exhaustion = -0.03
 	}
 }

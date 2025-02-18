@@ -47,7 +47,7 @@
  daimyo_xiaken_vassal_title:0 "Xiaken"
  daimyo_xiaken_vassal_title_plural:0 "Xiaken"
  daimyo_xiaken_vassal_is_our:0 "$NAME|Y$ is our Xiaken."
- daimyo_xiaken_vassal_long_desc:0 "The Xiaken are the various martial schools and followers of the Wulin. They will fight with and for the Wulin when the need comes, but they are also prone to fighting amongst themselves to prove who is the rightful leader of the Righteous Path."
+ daimyo_xiaken_vassal_long_desc:0 "The Xiaken are the various martial schools and followers of the Wulin. They will fight with and for the Wulin when the need comes, but they are also prone to fighting amongst themselves to prove who is the rightful leader of the Xia."
 
  oni_governorship:0 "Rethagi"
  oni_governorship_title:0 "Rethagi"
@@ -72,6 +72,7 @@
  gylikheion_title_plural:0 "Gylíkheions"
  gylikheion_is_our:0 "$NAME|Y$ is our Gylíkheion"
  gylikheion_long_desc:0 "The kheions of the west pale in comparison to the Ameioni nation. As the greatest of the kheions, it is our duty to steward our smaller counterparts so that Kheionai culture may flourish."
+ gylikheion_no_colonist: "Gylíkheion"
 
  patronate:0 "Patronate"
  patronate_title:0 "Patronate"
@@ -101,3 +102,4 @@
  nekhei_title_plural:0 "Nékheis"
  nekhei_is_our:0 "$NAME|Y$ is our Nékhei"
  nekhei_long_desc:0 "A Nékhei is a semi-autonomous colony dedicated to colonizing the interior of the Kheionai subcontinent."
+ 

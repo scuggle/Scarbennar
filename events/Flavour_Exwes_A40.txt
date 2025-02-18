@@ -190,7 +190,7 @@ country_event = {
 	}
 }
 
-#Starting the restoration of Arca Iruanairé
+#Starting the restoration of Arca Iruanainé
 country_event = {
 	id = flavour_exwes.3
 	title = flavour_exwes.3.t
@@ -250,7 +250,7 @@ country_event = {
 	}
 }
 
-#The restoration of Arca Iruanairé has been completed
+#The restoration of Arca Iruanainé has been completed
 country_event = {
 	id = flavour_exwes.4
 	title = flavour_exwes.4.t
@@ -679,7 +679,7 @@ country_event = {
 							culture = exwesser
 							AND = {
 								has_owner_accepted_culture = yes
-								culture_group = halfling
+								is_cannorian_halfling_culture = yes
 							}
 						}
 					}
@@ -696,7 +696,7 @@ country_event = {
 						OR = {
 							AND = {
 								has_owner_accepted_culture = no
-								culture_group = halfling
+								is_cannorian_halfling_culture = yes
 							}
 							AND = {
 								has_large_halfling_minority_trigger = yes

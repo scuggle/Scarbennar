@@ -45,6 +45,7 @@ can_claim_defender_of_faith = {
 		tooltip = "regent_court_defender_tooltip"
 		potential = {
 			religion = regent_court
+			NOT = { is_religion_enabled = corinite }
 		}
 		allow = {
 			always = no
@@ -179,14 +180,21 @@ can_change_culture = {
 
 can_move_capital = {
 	condition = {
-		tooltip = "NO_CAPITAL_MOVE_SHOGUN"
+		tooltip = "NO_CAPITAL_MOVE_RAJA"
 		potential = {
 			FROM = {
-				OR = {
-					# has_reform = shogunate
-					has_government_attribute = is_raja
-					has_reform = wulin
-				}
+				has_government_attribute = is_raja
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = "NO_CAPITAL_MOVE_WULIN"
+		potential = {
+			FROM = {
+				has_reform = wulin
 			}
 		}
 		allow = {
@@ -281,6 +289,18 @@ can_move_capital = {
 			#NOT = { province_group = triunic_cities }
 		}
 		allow = { always = no }
+	}
+	condition = {
+		tooltip = sed_block_move_capital
+		potential = { has_province_modifier = sed_forbidden }
+		allow = {
+			OR = {
+				has_province_modifier = sed_entrenched_centaur_nomadism
+				sedentarization_province_has_outpost = yes
+				has_province_modifier = sed_centaur_tributary_system
+				has_province_modifier = sed_nomadic_governance
+			}
+		}
 	}
 }
 
@@ -639,6 +659,16 @@ can_add_seat_in_parliament = {
 			always = no
 		}
 	}
+
+	condition = {
+		tooltip = NO_ADD_SEAT_IKOGSHAANTUS
+		potential = {
+			FROM = { has_reform = ikogshaantus_assembly_of_guilds }
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 #1.35
@@ -647,6 +677,16 @@ can_remove_seat_in_parliament = {
 		tooltip = "NO_SEAT_KALSYTO"
 		potential = {
 			FROM = { has_reform = united_federation }
+		}
+		allow = {
+			always = no
+		}
+	}
+
+	condition = {
+		tooltip = NO_REMOVE_SEAT_IKOGSHAANTUS
+		potential = {
+			FROM = { has_reform = ikogshaantus_assembly_of_guilds }
 		}
 		allow = {
 			always = no

@@ -114,13 +114,151 @@ guiTypes = {
 			scripted = yes
 		}
 
-		#Jaddari Gov Mechanic
+		#Karakhanbar Gov Mechanic
 		iconType = {
 			name = "karakhanbar_black_hearth_bg"
 			position = { x= 39 y = 249 }
 			quadTextureSprite = "GFX_karakhanbar_black_hearth_bg" 
 			scripted = yes
 		}
+		
+		#Gronstunad Gov Mechanic
+        iconType = {
+            name = "gronstunad_authority_bg"
+            position = { x= 29 y = 229 }
+            quadTextureSprite = "GFX_gronstunad_authority_bg" 
+            scripted = yes
+        }
+
+        #Gronstunad Crown Gems
+        iconType = {
+            name = "gronstunad_authority_gem_peridot"
+            position = { x= 144 y = 244 } # +115/+15
+            quadTextureSprite = "GFX_gronstunad_authority_gem_peridot" 
+            scripted = yes
+        }
+        
+        iconType = {
+            name = "gronstunad_authority_gem_granite"
+            position = { x= 154 y = 244 } # +125/+15
+            quadTextureSprite = "GFX_gronstunad_authority_gem_granite" 
+            scripted = yes
+        }
+        
+        iconType = {
+            name = "gronstunad_authority_gem_emerald"
+            position = { x= 164 y = 239 } # +135/+10
+            quadTextureSprite = "GFX_gronstunad_authority_gem_emerald" 
+            scripted = yes
+        }
+        
+        iconType = {
+            name = "gronstunad_authority_gem_jade"
+            position = { x= 179 y = 239 } # +150/+10
+            quadTextureSprite = "GFX_gronstunad_authority_gem_jade" 
+            scripted = yes
+        }
+        
+        iconType = {
+            name = "gronstunad_authority_gem_damestear"
+            position = { x= 194 y = 239 } # +165/+10
+            quadTextureSprite = "GFX_gronstunad_authority_gem_damestear" 
+            scripted = yes
+        }
+        
+        iconType = {
+            name = "gronstunad_authority_gem_amethyst"
+            position = { x= 204 y = 244 } # +175/+15
+            quadTextureSprite = "GFX_gronstunad_authority_gem_amethyst" 
+            scripted = yes
+        }
+        
+        iconType = {
+            name = "gronstunad_authority_gem_amber"
+            position = { x= 219 y = 244 } # +190/+15
+            quadTextureSprite = "GFX_gronstunad_authority_gem_amber" 
+            scripted = yes
+        }
+
+		#Konolkhatep Gov Mechanic
+		
+        iconType = {
+            name = "konolkhatep_bg"
+            position = { x= 8 y = 218 }
+            quadTextureSprite = "GFX_konolkhatep_bg" 
+            scripted = yes
+        }
+
+		#Taychendi Vainglory
+		
+        iconType = {
+            name = "taychendi_vainglory_bg"
+            position = { x= 0 y = 224 }
+            quadTextureSprite = "GFX_taychendi_vainglory_bg" 
+            scripted = yes
+        }
+		
+		#Khugra Gov Mechanic
+        iconType = {
+            name = "khugra_araizary_affinity_bg"
+            position = { x= 39 y = 243 }
+            quadTextureSprite = "GFX_khugra_araizary_affinity_bg" 
+            scripted = yes
+        }
+
+		#Corinsfield Gov Mechanic
+		
+        iconType = {
+            name = "corinsfield_paranoia_bg"
+            position = { x= 8 y = 218 }
+            quadTextureSprite = "GFX_corinsfield_paranoia_bg" 
+            scripted = yes
+        }
+		
+        iconType = {
+            name = "corinsfield_paranoia_chicken_1"
+            position = { x= 138 y = 218 }
+            quadTextureSprite = "GFX_corinsfield_paranoia_chicken_1" 
+            scripted = yes
+        }
+		
+        iconType = {
+            name = "corinsfield_paranoia_chicken_2"
+            position = { x= 113 y = 218 }
+            quadTextureSprite = "GFX_corinsfield_paranoia_chicken_2" 
+            scripted = yes
+        }
+		
+        iconType = {
+            name = "corinsfield_paranoia_chicken_3"
+            position = { x= 108 y = 218 }
+            quadTextureSprite = "GFX_corinsfield_paranoia_chicken_3" 
+            scripted = yes
+        }
+		
+		#Wyvernheart Gov Mechanic
+        iconType = {
+            name = "floodborn_council_bg"
+            position = { x= 29 y = 239 }
+            quadTextureSprite = "GFX_floodborn_council_bg" 
+            scripted = yes
+        }
+		
+		#Phoenix Estate Gov Mechanic
+        iconType = {
+            name = "phoenix_estate_bg"
+            position = { x= 29 y = 244 }
+            quadTextureSprite = "GFX_phoenix_estate_bg" 
+            scripted = yes
+        }
+		
+		#Eduz-Vacyn Gov Mechanic
+        iconType = {
+            name = "vacyntassi_temple_authority_bg"
+            position = { x= 36 y = 243 }
+            quadTextureSprite = "GFX_vacyntassi_temple_authority_bg" 
+            scripted = yes
+        }
 
 		### ------- Government -------
 
@@ -911,6 +1049,114 @@ guiTypes = {
 			scripted = yes
 			clicksound = back_click
 		}
+		
+		#Konolkhatep Buttons
+		
+		guiButtonType = {
+			name = "konolkhatep_governors"
+			position = { x= 74 y = 233 }
+			quadTextureSprite = "GFX_konolkhatep_governors" 
+			scripted = yes
+			clicksound = back_click
+		}
+
+		guiButtonType = {
+			name = "konolkhatep_projects"
+			position = { x= 69 y = 283 }
+			quadTextureSprite = "GFX_konolkhatep_projects" 
+			scripted = yes
+			clicksound = back_click
+		}
+
+		guiButtonType = {
+			name = "konolkhatep_horutep"
+			position = { x= 142 y = 230 }
+			quadTextureSprite = "GFX_konolkhatep_horutep" 
+			scripted = yes
+			clicksound = back_click
+		}
+
+		guiButtonType = {
+			name = "konolkhatep_legions"
+			position = { x= 259 y = 230 }
+			quadTextureSprite = "GFX_konolkhatep_legions" 
+			scripted = yes
+			clicksound = back_click
+		}
+
+		guiButtonType = {
+			name = "konolkhatep_medasi"
+			position = { x= 259 y = 274 }
+			quadTextureSprite = "GFX_konolkhatep_medasi" 
+			scripted = yes
+			clicksound = back_click
+		}
+		
+		#Taychendi Vainglory Buttons
+		
+		guiButtonType = {
+			name = "taychendi_vainglory_spoils_of_war"
+			position = { x= 32 y = 306 }
+			quadTextureSprite = "GFX_taychendi_vainglory_spoils_of_war" 
+			scripted = yes
+			clicksound = back_click
+		}
+		
+		guiButtonType = {
+			name = "taychendi_vainglory_swords_to_plowshares"
+			position = { x= 92 y = 306 }
+			quadTextureSprite = "GFX_taychendi_vainglory_swords_to_plowshares" 
+			scripted = yes
+			clicksound = back_click
+		}
+		
+		guiButtonType = {
+			name = "taychendi_vainglory_settling_veterans"
+			position = { x= 151 y = 306 }
+			quadTextureSprite = "GFX_taychendi_vainglory_settling_veterans" 
+			scripted = yes
+			clicksound = back_click
+		}
+		
+		guiButtonType = {
+			name = "taychendi_vainglory_building_greatness"
+			position = { x= 212 y = 306 }
+			quadTextureSprite = "GFX_taychendi_vainglory_building_greatness" 
+			scripted = yes
+			clicksound = back_click
+		}
+		
+		guiButtonType = {
+			name = "taychendi_vainglory_taychend_in_bloom"
+			position = { x= 271 y = 306 }
+			quadTextureSprite = "GFX_taychendi_vainglory_taychend_in_bloom" 
+			scripted = yes
+			clicksound = back_click
+		}
+		
+		#guiButtonType = {
+		#	name = "corinsfield_paranoia_be_good_to_your_neighbour"
+		#	position = { x= 55 y = 290 }
+		#	quadTextureSprite = "GFX_corinsfield_paranoia_be_good_to_your_neighbour" 
+		#	scripted = yes
+		#	clicksound = back_click
+		#}
+		
+		#guiButtonType = {
+		#	name = "corinsfield_paranoia_trust_no_one"
+		#	position = { x= 147 y = 290 }
+		#	quadTextureSprite = "GFX_corinsfield_paranoia_trust_no_one" 
+		#	scripted = yes
+		#	clicksound = back_click
+		#}
+		
+		#guiButtonType = {
+		#	name = "corinsfield_paranoia_witch_hunt"
+		#	position = { x= 239 y = 290 }
+		#	quadTextureSprite = "GFX_corinsfield_paranoia_witch_hunt" 
+		#	scripted = yes
+		#	clicksound = back_click
+		#}
 
 		### MODIFIER VIEW (for when you click on the modifier list button in the top right)
 		windowType = {

@@ -47,10 +47,10 @@ estate_nobles = {
 						# NOT = { has_government_attribute = is_peasants_republic }
 					# }
 				# }
-		
+
 				#Raheni cultures have castes, if they have the correct flag (set in history files):
 				NOT = { has_country_flag = has_caste_estates }
-		
+
 				is_monstrous_horde = no
 			}
 		}
@@ -58,7 +58,7 @@ estate_nobles = {
 		#	NOT = { is_emperor_of_china = yes }
 		#	has_dlc = "Mandate of Heaven"
 		#}
-		
+
 		# OR = {
 			# has_reform = feiten_silken_jellyfish_council
 			# NOT = { has_government_attribute = is_merchant_republic }
@@ -66,14 +66,14 @@ estate_nobles = {
 	}
 
 	country_modifier_happy = {
-		manpower_recovery_speed = 0.2 
+		manpower_recovery_speed = 0.2
 		land_maintenance_modifier = -0.1
 		rr_royalists_influence = 0.2
 	}
 	country_modifier_neutral = {
-		manpower_recovery_speed = 0.2 
+		manpower_recovery_speed = 0.2
 		rr_royalists_influence = 0.1
-	}	
+	}
 	country_modifier_angry = {
 		manpower_recovery_speed = -0.1
 		land_maintenance_modifier = 0.1
@@ -111,7 +111,7 @@ estate_nobles = {
 		desc = EST_VAMPIRIC_LORD
 		trigger = {
 			has_estate_privilege = estate_vampires_organization_vampires_lord
-		}	
+		}
 		influence = -10
 	}
 	#Anbennar
@@ -119,10 +119,10 @@ estate_nobles = {
 	# 	desc = EST_VAL_EASTERN_TECH
 	# 	trigger = {
 	# 		technology_group = eastern
-	# 	}	
+	# 	}
 	# 	influence = 5
 	# }
-	
+
 	# Influence modifiers from Events:
 	# influence_modifier = {
 	# 	desc = EST_HUN_MAGNATES
@@ -136,10 +136,10 @@ estate_nobles = {
 		trigger = {
 			has_any_estate_disaster_active = yes
 			has_not_own_estate_disaster_active = { estate = estate_nobles }
-		}	
+		}
 		influence = -40
 	}
-	
+
 	loyalty_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
@@ -202,7 +202,7 @@ estate_nobles = {
 	}
 	#Anbennar
 	# Great Peasants' War Modifiers
-	
+
 	# influence_modifier = {
 	# 	desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_WIN_MINOR_INFLUENCE
 	# 	trigger = {
@@ -211,7 +211,7 @@ estate_nobles = {
 	# 	}
 	# 	influence = 5
 	# }
-	
+
 	# loyalty_modifier = {
 	# 	desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_WIN_MINOR_LOYALTY
 	# 	trigger = {
@@ -220,7 +220,7 @@ estate_nobles = {
 	# 	}
 	# 	loyalty = 5
 	# }
-	
+
 	# influence_modifier = {
 	# 	desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_WIN_MAJOR_INFLUENCE
 	# 	trigger = {
@@ -229,7 +229,7 @@ estate_nobles = {
 	# 	}
 	# 	influence = 10
 	# }
-	
+
 	# loyalty_modifier = {
 	# 	desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_WIN_MAJOR_LOYALTY
 	# 	trigger = {
@@ -238,7 +238,7 @@ estate_nobles = {
 	# 	}
 	# 	loyalty = 10
 	# }
-	
+
 	# influence_modifier = {
 	# 	desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MINOR_INFLUENCE
 	# 	trigger = {
@@ -247,7 +247,7 @@ estate_nobles = {
 	# 	}
 	# 	influence = -5
 	# }
-	
+
 	# loyalty_modifier = {
 	# 	desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MINOR_LOYALTY
 	# 	trigger = {
@@ -256,7 +256,7 @@ estate_nobles = {
 	# 	}
 	# 	loyalty = -5
 	# }
-	
+
 	# influence_modifier = {
 	# 	desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MAJOR_INFLUENCE
 	# 	trigger = {
@@ -265,7 +265,7 @@ estate_nobles = {
 	# 	}
 	# 	influence = -10
 	# }
-	
+
 	# loyalty_modifier = {
 	# 	desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MAJOR_LOYALTY
 	# 	trigger = {
@@ -274,8 +274,15 @@ estate_nobles = {
 	# 	}
 	# 	loyalty = -10
 	# }
-	
+
 	#Alternative naming of estates
+	custom_name = { #esmari stewards
+		desc = estate_esmari_stewards
+		trigger = {
+			tag = A95
+			has_country_flag = A95_esmari_stewards_name
+		}
+	}
 	custom_name = {
 		desc = estate_imperial_nobility
 		trigger = {
@@ -329,7 +336,7 @@ estate_nobles = {
 			}
 		}
 		custom_name = { #Court of Officers
-			desc = estate_officer 
+			desc = estate_officer
 			trigger = {
 				has_country_flag = jiangdu_court_of_officer
 			}
@@ -341,11 +348,15 @@ estate_nobles = {
 				mission_completed = Y63_king_of_kai
 			}
 		}
-	
+
 		custom_name = {
 			desc = tanizu_warrior_lodges
 			trigger = {
-				culture = tanizu
+				OR = {
+					culture = tanizu
+					culture = cyazizeta_lizardfolk
+				}
+				NOT = { tag = S83 }
 			}
 		}
 
@@ -356,17 +367,18 @@ estate_nobles = {
 					culture = kombedak
 					culture = umsozidak
 					culture = wakoodak
+					tag = S83
 				}
 			}
 		}
-	
+
 		custom_name = {
 			desc = antmvura_captaincies
 			trigger = {
 				culture = antmvura
 			}
 		}
-	
+
 		custom_name = {
 			desc = baashidi_estate_house_of_might
 			trigger = {
@@ -492,7 +504,7 @@ estate_nobles = {
 				}
 			}
 		}
-		
+
 		custom_name = {
 			desc = estate_ynn_lords
 			trigger = {
@@ -517,23 +529,25 @@ estate_nobles = {
 			desc = estate_ankashyi
 			trigger = {
 				culture_is_lizardfolk = yes
+				NOT = {  culture = cyazizeta_lizardfolk }
 			}
 		}
-		
+
 		custom_name = {
 			desc = estate_sword_covenant
 			trigger = {
 				tag = Z37
 			}
 		}
-	
+
 	color = { 200 0 50 }
-	
+
 	privileges = {
 		estate_nobles_land_rights
 		estate_nobles_nobility_primacy
 		estate_nobles_officer_corp
 		estate_nobles_jiangdu_officer_corp # Jiangdu version
+		estate_nobles_themarenn_sailors #themarenn levies
 		estate_nobles_levies
 		estate_nobles_advisors
 		estate_nobles_right_of_counsel
@@ -643,9 +657,8 @@ estate_nobles = {
 		estate_nobles_orldhum_ostentatious_overseers
 		estate_nobles_orldhum_platinum_liberty
 		estate_nobles_orldhum_platinum_control
-		estate_nobles_pyre_flame_use
 		estate_nobles_noble_acolytes	#Brelar MT
-		estate_nobles_myrsarnik_architects	#Brelar YE 
+		estate_nobles_myrsarnik_architects	#Brelar YE
 		estate_nobles_elizna_elven_nobility #Elizna MT
 		estate_nobles_vf_first_night # Vels Fadhecai
 		estate_nobles_entrenched_lorentish_nobility #Lorent
@@ -674,6 +687,7 @@ estate_nobles = {
 		estate_nobility_forgotten_city # Karshyr
 		estate_nobility_besieged_heart # Rhada
 		estate_noble_monopoly_of_fuel #Karakhanbar MT
+		estate_nobles_ironblood_officer_corp #Gophira
 
 		#Mutation Privileges
 		estate_nobility_boaga_mutation
@@ -686,6 +700,18 @@ estate_nobles = {
 		estate_nobility_covenblad_burning_sword
 		estate_nobility_covenblad_silver_reliquary
 		estate_nobility_covenblad_broken_chain
+		## Apikhoxi
+		estate_nobles_G57_emerald_waters
+		estate_nobles_G57_land_golden_ears
+
+		estate_nobility_nzeri_standard_bearers #duwarkani
+		estate_nobles_mengi_partners #Vandipha
+		#Averilibet
+		estate_nobility_S53_tanizu_tradition_blood
+		estate_nobility_S53_tanizu_tradition_water
+		estate_nobility_S53_tanizu_tradition_covenant
+		estate_nobles_rosande_noble_slaveowners #Rosande
+		estate_nobles_rosande_competent_slaveowners #Rosande
 	}
 
 	agendas = {
@@ -717,14 +743,18 @@ estate_nobles = {
 		estate_nobles_improve_prestige
 		estate_nobles_hire_advisor
 		estate_nobles_fire_advisor
+		estate_nobles_wyvernheart_invest_in_burblood_production #Wyvernheart
+		estate_nobles_wyvernheart_procure_burnblood_candidates #Wyvernheart
+		estate_nobles_wyvernheart_choose_avenue_of_expansion #Wyvernheart
+		estate_nobles_wyvernheart_remove_corrupt_overseer #Wyvernheart
 		#1.36
-		#estate_nobles_mam_three_privileges 
-		#estate_nobles_mam_recruit_mamluks 
-		#estate_nobles_mam_develop_military_infrastructure 
-		#estate_nobles_mam_increase_army_tradition 
-		#estate_nobles_mam_increase_army_professionalism 
+		#estate_nobles_mam_three_privileges
+		#estate_nobles_mam_recruit_mamluks
+		#estate_nobles_mam_develop_military_infrastructure
+		#estate_nobles_mam_increase_army_tradition
+		#estate_nobles_mam_increase_army_professionalism
 		#estate_nobles_mam_focus_on_military_matters
 	}
-	
+
 	influence_from_dev_modifier = 1.0
 }

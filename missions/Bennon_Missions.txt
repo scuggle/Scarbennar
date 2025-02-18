@@ -573,7 +573,7 @@ bennon_4 = {
 			province_id = 909 #Havorton
 			NOT = {
 				AND = {
-					base_production = 12
+					base_production = 10
 					has_production_building_trigger = yes
 				}
 			}
@@ -581,7 +581,7 @@ bennon_4 = {
 		trigger = {
 			909 = { #Havorton
 				owned_by = ROOT
-				base_production = 12
+				base_production = 10
 				has_production_building_trigger = yes
 			}
 		}
@@ -1998,7 +1998,7 @@ havoral_5 = {
 	has_country_shield = yes
 	
 	B66_gaze_upon_a_slaughter = {
-		icon = mission_torch_fire
+		icon = mission_burning_man
 		position = 7
 		required_missions = { B66_filling_the_vale }
 		provinces_to_highlight = {

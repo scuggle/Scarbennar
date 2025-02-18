@@ -819,6 +819,8 @@ peace = {
 	pen_erectors_influence = 0.05
 	pen_harmaceuticals_influence = 0.05
 	monthly_caravan_preparation = 0.33
+	monthly_jaddari_zealotry = -0.25
+	monthly_taychend_vainglory_power = -0.275
 }
 
 unconditional_surrender = {
@@ -848,7 +850,7 @@ war_exhaustion = {
 
 	#Anbennar
 	adv_marchers_influence = 0.05
-	tec_brilliance_influence = -0.1
+	tec_brilliance_influence = -0.02
 	pen_cloak_and_swagger_influence = -0.05
 }
 
@@ -1253,6 +1255,7 @@ over_extension = {
 	adv_fortune_seekers_influence = 0.5			
 	monthly_adventurer_unity = -0.05
 	pen_cloak_and_swagger_influence = 0.05
+	monthly_korashi_reserves = -1.5
 }
 
 prestige = {
@@ -1610,6 +1613,9 @@ large_colonial_nation = {
 }
 
 new_world_exploitation_modifier = {
+	global_trade_goods_size_modifier = 0.1
+}
+new_world_exploitation_modifier_thought = {
 	global_trade_goods_size_modifier = 0.1
 }
 
@@ -2431,7 +2437,7 @@ children_of_goxma_tradition_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	num_accepted_cultures = 2
+	tolerance_heathen = 2
 }
 
 kult_of_the_packmother_tradition_modifier = {
@@ -2667,6 +2673,7 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_3 = -1
 	administrative_efficiency = -0.5
 	monthly_ottoman_decadence = 2
+	monthly_korashi_reserves = -1
 }
 
 #Scales with used capacity, being at full capacity means 100% of the modifier
@@ -2674,6 +2681,7 @@ under_governing_capacity_modifier = {
 }
 #Scales with unused capacity, eing at full capacity means 0% of the modifier
 reverse_under_governing_capacity_modifier = {
+	monthly_korashi_reserves = 1
 }
 
 
@@ -2833,6 +2841,7 @@ reverse_average_subject_liberty_desire = { #100% LD => 0% modifier #1.35
 
 average_global_autonomy = { #100% autonomy => 100% modifier #1.35
 	monthly_ottoman_decadence = 0.25
+	monthly_korashi_reserves = -5
 }
 
 reverse_average_global_autonomy = { #100% autonomy => 0% modifier #1.35
@@ -2909,6 +2918,11 @@ J33_one_family_CDS_mod = {
 J33_crescent_upon_halann_CDS_mod = {
 	infantry_power = 0.1
 	heavy_ship_power = 0.1
+}
+
+#Ameion
+gylikheion_no_colonist = {
+	colonists = -4
 }
 
 manpower_percentage = {

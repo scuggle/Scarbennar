@@ -29,6 +29,12 @@ country_event = { # Introduction to the castes
 				set_estate_privilege = estate_middlecastes_organization_caste_bhuvauri
 				set_estate_privilege = estate_lowercastes_organization_caste_bhuvauri
 			}
+			else_if = {
+				limit = { tag = R11 }
+				set_estate_privilege = estate_uppercastes_organization_caste
+				set_estate_privilege = estate_middlecastes_organization_caste
+				set_estate_privilege = estate_lowercastes_organization_caste_khadisrapur
+			}
 			else = {
 				set_estate_privilege = estate_uppercastes_organization_caste
 				set_estate_privilege = estate_middlecastes_organization_caste

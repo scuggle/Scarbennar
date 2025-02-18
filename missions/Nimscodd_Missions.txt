@@ -495,7 +495,7 @@ nimscodd_2 = {
 		icon = mission_settlers_north_america
 		required_missions = {
 			nimscodd_deal_with_kobolds
-			nimscodd_begin_reconquest
+			nimscodd_prepare_reclamation_army
 		}
 		position = 3
 		
@@ -1059,7 +1059,7 @@ nimscodd_3 = {
 	nimscodd_prepare_reclamation_army = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { }
-		position = 1
+		position = 2
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -1088,36 +1088,6 @@ nimscodd_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-		}
-	}
-	
-	nimscodd_begin_reconquest = {
-		icon = mission_build_up_to_force_limit
-		required_missions = {
-			nimscodd_prepare_reclamation_army
-		}
-		position = 2
-		
-		provinces_to_highlight = {
-			OR = {
-				area = gnomish_pass_area
-				area = dragondowns_area
-			}
-			NOT = { owned_by = ROOT }
-		}
-		
-		trigger = {
-			gnomish_pass_area = {
-				type = all
-				owned_by = ROOT
-			}
-			dragondowns_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-		
-		effect = {
 			dragonpoint_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1131,12 +1101,16 @@ nimscodd_3 = {
 	nimscodd_reclaim_capital = {
 		icon = mission_unite_home_region
 		required_missions = {
-			nimscodd_begin_reconquest
+			nimscodd_prepare_reclamation_army
 		}
 		position = 3
 		
 		provinces_to_highlight = {
-			area = dragonpoint_area
+			OR = {
+				area = gnomish_pass_area
+				area = dragondowns_area
+				area = dragonpoint_area
+			}
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -1145,8 +1119,15 @@ nimscodd_3 = {
 				type = all
 				owned_by = ROOT
 			}
+			gnomish_pass_area = {
+				type = all
+				owned_by = ROOT
+			}
+			dragondowns_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
-		
 		effect = {
 			dragonspine_area = {
 				limit = {
@@ -2247,6 +2228,20 @@ nimscodd_5 = {
 					}
 				}
 			}
+			else_if = {
+				limit = { exists = A80 }
+				OR = {
+					A80 = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					126 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
 			else = {
 				126 = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -2287,11 +2282,31 @@ hierarchy_5 = {
 			if = {
 				limit = { exists = A19 }
 				OR = {
-					A19 = {
-						has_opinion = {
-							who = ROOT
-							value = 150
+					AND = {
+						A19 = {
+							has_opinion = {
+								who = ROOT
+								value = 190
+							}
 						}
+						alliance_with = A19
+					}
+					126 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = { exists = A80 }
+				OR = {
+					AND = {
+						A80 = {
+							has_opinion = {
+								who = ROOT
+								value = 190
+							}
+						}
+						alliance_with = A80
 					}
 					126 = {
 						country_or_non_sovereign_subject_holds = ROOT
@@ -2315,7 +2330,19 @@ hierarchy_5 = {
 				}
 				add_dip_power = -150
 				A19 = {
-					country_event = { id = gnomish.1 days = 60 random = 30 }
+					country_event = { id = gnomish.1 days = 30 }
+				}
+			}
+			else_if = {
+				limit = {
+					A80 = {
+						exists = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+				add_dip_power = -150
+				A80 = {
+					country_event = { id = gnomish.1 days = 30 }
 				}
 			}
 			reaver_coast_area = {
