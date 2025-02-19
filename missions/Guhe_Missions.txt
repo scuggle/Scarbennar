@@ -4,7 +4,7 @@ Guhe_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    	NOT = { has_country_flag = chose_generic_mt } tag = Y07 } 
+    	NOT = { has_country_flag = chose_generic_mt } 
 		OR = {
 			tag = Y07
 			AND = {

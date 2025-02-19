@@ -8,7 +8,7 @@ religion = anzalkatsa
 capital = 5949 #gokadas soros
 religious_school = being_sculptors_school
 technology_group = tech_lizardfolk
-
+historical_friend = EC9
 
 
 

@@ -578,6 +578,13 @@
  EC9_7:0 "A small people"
  EC9_7_desc:0 "Our people are small, both in stature and in number. Thus we have no choice but to assimilate the natives into our new Hierarchy."
 
+ ED0:0 "Gokadas"
+ ED_ADJ:0 "Gokadaser"
+ ED1:0 "Etarshyn"
+ ED1_ADJ:0 "Etarshyner"
+ ED2:0 "Khatynsek"
+ ED2_ADJ:0 "Khatynsekker"
+ 
  EA0:0 "Núrael"
  EA0_ADJ:0 "Núrael"
  EA0_ideas:0 "Núrael Ideas"
