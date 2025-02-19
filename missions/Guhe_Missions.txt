@@ -4,8 +4,15 @@ Guhe_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    	NOT = { has_country_flag = chose_generic_mt } tag = Y07 } 
-	
+    	NOT = { has_country_flag = chose_generic_mt } 
+		OR = {
+			tag = Y07
+			AND = {
+				tag = V19
+				was_tag = Y07
+			}
+		}
+	}
 
 	guhe_centralized_defense = {
 		icon = mission_non-western_soldiers
