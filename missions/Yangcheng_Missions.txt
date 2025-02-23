@@ -521,7 +521,6 @@ yangcheng_4 = {
 	has_country_shield = yes
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt } 
-	tag = Y06
 		OR = {
 			tag = Y06
 			AND = {
@@ -595,7 +594,7 @@ yangcheng_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-    	NOT = { has_country_flag = chose_generic_mt } tag = Y06 } 
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y06
 			AND = {
