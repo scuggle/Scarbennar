@@ -567,7 +567,7 @@ maritime_ideas = { #Ruler of the Waves Ideas
 		colonists = 1
 		allowed_marine_fraction = 0.2
 		global_sailors = 3000
-		global_sailors_modifier = -0.25
+		global_sailors_modifier = -0.2
 	}
 	sheltered_ports = {
 		range = 0.5
