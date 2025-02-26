@@ -195,7 +195,7 @@ dodd_quality_over_quantity_modifier = {
 	land_morale = 0.05
 	discipline = 0.05
 	infantry_power = 0.1
-	global_regiment_cost = 0.5
+	global_regiment_cost = 0.33
 }
 dodd_gnomish_officers_modifier = {
 	allowed_rajput_fraction = 0.05
