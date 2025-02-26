@@ -1138,7 +1138,7 @@ doddcods_inner_right_branch = {
 			
 		}
 		effect = {
-			mission_reward_artifice_points_2 
+			mission_reward_artifice_points_5
 			#add_country_modifier = {
 			#	name = dodd_well_developed_amadian_colony_modifier	#modifier giving 5artificer cap, yet to be implemented
 			#	duration = -1	#permanent
