@@ -195,7 +195,7 @@ dodd_quality_over_quantity_modifier = {
 	land_morale = 0.05
 	discipline = 0.05
 	infantry_power = 0.1
-	global_regiment_cost = 0.33
+	global_regiment_cost = 0.25
 }
 dodd_gnomish_officers_modifier = {
 	allowed_rajput_fraction = 0.05
@@ -208,7 +208,7 @@ dodd_gnomish_gnomish_elite_core_modifier = {
 dodd_gnomish_gnomish_elite_core_modifier2 = {
 	is_rajput_modifier = yes 
 	discipline = 0.05
-	fire_damage = 0.1
+	fire_damage = 0.15
 }
 dodd_lizardfolk_in_army_modifier = {
 	shock_damage = 0.1
