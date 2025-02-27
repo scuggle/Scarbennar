@@ -416,6 +416,7 @@ portnamn_inner_left_branch = {
  			}
  		}
  		effect = {
+			mission_reward_artifice_points_5
  			add_country_modifier = {
  				name = port_nismcodd_exchange_modifier	#modifier giving +5 artificer cap, 5% artificer influence, 2.5% artificer loyalty and 2.5% land fire damage, yet to be localized
  				duration = -1	#permanent
@@ -425,6 +426,7 @@ portnamn_inner_left_branch = {
  					exists = A06
  				}
  				A06 = {
+					mission_reward_artifice_points_5
  					add_country_modifier = {
  						name = port_exchange_modifier	#modifier giving +5 artificer cap, 5% artificer influence, 2.5% artificer loyalty and 5% manpower recovery speed, yet to be localized
  						duration = -1	#permanent
@@ -449,6 +451,7 @@ portnamn_inner_left_branch = {
  			has_estate_privilege = estate_artificers_organization_international_gommo
  		}
  		effect = {
+			mission_reward_artifice_points_5
  			remove_country_modifier = port_nismcodd_exchange_modifier
  			remove_country_modifier = port_exchange_with_giberd_modifier
  			add_country_modifier = {
@@ -462,6 +465,7 @@ portnamn_inner_left_branch = {
  					}
  				}
  				A06 = {
+				mission_reward_artifice_points_5
  				remove_country_modifier = port_exchange_modifier
  					add_country_modifier = {
  						name = port_international_gommo_institute_modifier_1	#modifier giving +10 artificer cap, 10% artifificer influence, 2.5% land fire damage, 2.5% goods produced and 5% manpower recovery speed, modifier yet to be localized
@@ -476,6 +480,7 @@ portnamn_inner_left_branch = {
  					}
  				}
  				A81 = {
+				mission_reward_artifice_points_5
  				remove_country_modifier = port_exchange_modifier
  					add_country_modifier = {
  						name = port_international_gommo_institute_modifier_1	
@@ -490,6 +495,7 @@ portnamn_inner_left_branch = {
  					}
  				}
  				A79 = {	#hierarchy
+				mission_reward_artifice_points_5
  				remove_country_modifier = port_exchange_modifier
  					add_country_modifier = {
  						name = port_international_gommo_institute_modifier_1	
@@ -507,6 +513,7 @@ portnamn_inner_left_branch = {
  				}
  				275 = {	#konwell
  					owner = {
+						mission_reward_artifice_points_5
  						remove_country_modifier = port_exchange_modifier
  						add_country_modifier = {
  							name = port_international_gommo_institute_modifier_1	
@@ -634,6 +641,7 @@ portnamn_inner_branch = {
  			#NOT = { owned_by = ROOT }
  		}
  		effect = {
+			mission_reward_artifice_points_5
  			add_country_modifier= {
  				name = port_artificer_corps_modifier	#modifier giving 5% rajput fraction, +5 artifificer cap, 10% atrificer influence and 2.5% artificer loyalty, yet to be localized
  				duration = -1	#permanent
@@ -670,6 +678,7 @@ portnamn_inner_branch = {
  			}
  		}
  		effect = {
+			mission_reward_artifice_points_5
  			add_country_modifier = {
  				name = port_exchange_with_giberd_modifier	#modifier giving +5 artificer cap, 5% artificer influence, 2.5% artificer loyalty and 2.5% goods produced, yet to be localized
  				duration = -1	#permanent
@@ -679,6 +688,7 @@ portnamn_inner_branch = {
  					exists = A81
  				}
  				A81 = {
+					mission_reward_artifice_points_5
  					add_country_modifier = {
  						name = port_exchange_modifier	
  						duration = -1	#permanent
@@ -742,6 +752,7 @@ portnamn_inner_branch = {
  				}
  				275 = {
  					owner = {
+						mission_reward_artifice_points_5
  						add_country_modifier = {
  							name = port_konwell_gommo_exchange_modifier	#modifier giving +5 artificer cap, 7.5% artificer influence, 2.5% artificer loyalty, modifier yet to be implemented
  							duration = -1	#permanent
