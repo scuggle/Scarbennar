@@ -111,8 +111,8 @@ country_event = {
 		hidden_effect = {
 			if = { limit = { has_global_flag = delete_bulwar_region }
 				bulwar_superregion = { destroy_province_permanently = yes }
-				2914 = { destroy_province_permanently = yes }
-				4124 = { destroy_province_permanently = yes }
+				#2914 = { destroy_province_permanently = yes }
+				#4124 = { destroy_province_permanently = yes }
 
 			}
 			if = { limit = { has_global_flag = delete_north_sarhal_region }
@@ -184,14 +184,14 @@ country_event = {
 				rahen_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_forbidden_plains_region }
-				#forbidden_lands_superregion = { destroy_province_permanently = yes }
-					ogre_valley_region = { destroy_province_permanently = yes }
-					west_forbidden_plains_region = { destroy_province_permanently = yes }
-					east_forbidden_plains_region = { destroy_province_permanently = yes }
-					serpent_gift_region = { destroy_province_permanently = yes }
-					south_yarikhoi_region = { destroy_province_permanently = yes }
-					north_yarikhoi_region = { destroy_province_permanently = yes }
-					nuzurbokh_region = { destroy_province_permanently = yes }
+				forbidden_lands_superregion = { destroy_province_permanently = yes }
+				#	ogre_valley_region = { destroy_province_permanently = yes }
+				#	west_forbidden_plains_region = { destroy_province_permanently = yes }
+				#	east_forbidden_plains_region = { destroy_province_permanently = yes }
+				#	serpent_gift_region = { destroy_province_permanently = yes }
+				#	south_yarikhoi_region = { destroy_province_permanently = yes }
+				#	north_yarikhoi_region = { destroy_province_permanently = yes }
+				#	nuzurbokh_region = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_haless_region }
 				yanshen_superregion = { destroy_province_permanently = yes }
@@ -204,14 +204,14 @@ country_event = {
 				#west_serpentspine_superregion = { destroy_province_permanently = yes }
 					west_dwarovar_region = { destroy_province_permanently = yes }
 					middle_dwarovar_region = { 
-						limit = {
-							NOT = {
-								OR = {
-									province_id = 4124
-									province_id = 2914
-								}
-							}
-						}
+						#limit = {
+						#	NOT = {
+						#		OR = {
+						#			province_id = 4124
+						#			province_id = 2914
+						#		}
+						#	}
+						#}
 						destroy_province_permanently = yes }
 					serpentreach_region = { destroy_province_permanently = yes }
 					serpents_vale_region = { destroy_province_permanently = yes }
