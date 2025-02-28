@@ -1460,6 +1460,11 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	trigger = {
+		TAG = G53
+		ai = no
+	}
+
 	option = {
 		name = empkeios_events.1299.a
 		if = {
