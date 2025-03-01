@@ -193,7 +193,7 @@ minority_ideas:0 "§JMinority Integration Ideas§!"
  minority_ideas_06:0 "6"
  minority_ideas_06_desc:0 "desc"
  minority_ideas_07:0 "7"
- minority_ideas_07_desc:0 "§GEvery Large Minority in provinces now give 0.25 production.\nEvery Small Minority in provinces now give 0.10 production.§!"
+ minority_ideas_07_desc:0 "§GEvery Large Minority in provinces now give 0.1 flat goods produced.\nEvery Small Minority in provinces now give 0.05 flat goods produced.§!"
  minority_ideas_bonus:0 "Completed Minority Integration Ideas"
 
  spy_ideas:0 "§JCultural Unity Ideas§!"

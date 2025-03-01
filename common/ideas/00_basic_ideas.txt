@@ -490,7 +490,7 @@ minority_ideas = { #Minority ideas
 
 	minority_ideas_07 = {
 		global_unrest = -2
-		#accepted minorities now give 0.25 goods produced, small minorities give 0.10
+		#accepted minorities now give 0.1 goods produced, small minorities give 0.05
 	}
 
 	ai_will_do = {
