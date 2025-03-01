@@ -163,7 +163,10 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		has_personal_deity = the_dame
+		OR = {
+			has_personal_deity = the_dame
+			has_personal_deity = dame_monument_upgraded
+		}
 		OR = {
 			ruler_has_personality = tolerant_personality
 			ruler_has_personality = free_thinker_personality
@@ -905,6 +908,7 @@ country_event = {
 			has_personal_deity = ryala
 			has_personal_deity = ryala_upgraded
 			has_personal_deity = ryala_upgraded_themarenn
+			has_personal_deity = ryala_monument_upgraded
 		}
 		OR = {
 			ruler_has_personality = calm_personality
@@ -1203,7 +1207,10 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		has_personal_deity = ara
+		OR = {
+			has_personal_deity = ara
+			has_personal_deity = ara_monument_upgraded
+		}
 		OR = {
 			ruler_has_personality = midas_touched_personality
 			ruler_has_personality = entrepreneur_personality
@@ -1638,7 +1645,10 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		has_personal_deity = minara
+		OR = {
+			has_personal_deity = minara
+			has_personal_deity = minara_monument_upgraded
+		}
 		OR = {
 			ruler_has_personality = fierce_negotiator_personality
 			ruler_has_personality = silver_tongue_personality
