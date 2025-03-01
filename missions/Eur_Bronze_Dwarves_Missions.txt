@@ -99,7 +99,7 @@ bronzemission1 = {
         }
         trigger = {
 			num_of_owned_provinces_with = {
-				value = 33
+				value = 32
 				OR = {
 					AND = {
                         base_manpower = 10
