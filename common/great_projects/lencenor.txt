@@ -622,6 +622,7 @@ minara_temple = {
 					name = minara_temple_degenerate_sex_party
 					duration = 7300
 				}
+				set_global_flag = eur_minara_maxxed_flag
 			}
 		}
 	}
