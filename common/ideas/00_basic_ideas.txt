@@ -51,7 +51,7 @@ aristocracy_ideas = { # Cavalry/Shock
 
 	bonus = {
 		cavalry_power = 0.1
-		infantry_power = 0.1
+		infantry_power = 0.05
 		possible_mil_policy = 1
 	}
 	

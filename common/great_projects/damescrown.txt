@@ -471,6 +471,7 @@ ara_temple = {
 					duration = 3650
 				}
 			}
+			set_global_flag = eur_ara_temple_maxed_flag
 		}
 	}
 }
