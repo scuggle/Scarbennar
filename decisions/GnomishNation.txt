@@ -12,6 +12,7 @@ country_decisions = {
 			capital_scope = { continent = europe }
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_modifier = kobold_administration }
 		}
 		
 		provinces_to_highlight = {
@@ -36,7 +37,7 @@ country_decisions = {
 			adm_tech = 7
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			
+			NOT = { has_country_modifier = kobold_administration }
 		}
 		
 		effect = {

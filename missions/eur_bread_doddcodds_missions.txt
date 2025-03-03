@@ -773,8 +773,9 @@ doddcods_inner_branch = {
 			NOT = { development = 25 }
 		}
 		effect = {
+			mission_reward_artifice_points_2 
 			add_country_modifier = {
-				name = dodd_well_developed_taychend_colony_modifier	#modifier giving 0.5 prestige, 5% artificer loyalty modifier, +2 artificer cap, yet to be localized
+				name = dodd_well_developed_taychend_colony_modifier	#modifier giving 0.5 prestige, 5% artificer loyalty modifier,  yet to be localized
 				duration = -1	#permanent
 			}
 			every_subject_country = {
@@ -1073,8 +1074,9 @@ doddcods_inner_right_branch = {
 			}
 		}
 		effect = {
+			mission_reward_artifice_points_2 
 			add_country_modifier = {
-				name = dodd_taychend_imports_modifier 	#modifier giving 2 artificer cap, 5% artificer loyalty and 10% artificer influence, yet to be localized
+				name = dodd_taychend_imports_modifier 	#modifier 5% artificer loyalty and 10% artificer influence, yet to be localized
 				duration = -1	#permanent
 			}
 			add_country_modifier = {
@@ -1136,10 +1138,11 @@ doddcods_inner_right_branch = {
 			
 		}
 		effect = {
-			add_country_modifier = {
-				name = dodd_well_developed_amadian_colony_modifier	#modifier giving 5artificer cap, yet to be implemented
-				duration = -1	#permanent
-			}
+			mission_reward_artifice_points_5
+			#add_country_modifier = {
+			#	name = dodd_well_developed_amadian_colony_modifier	#modifier giving 5artificer cap, yet to be implemented
+			#	duration = -1	#permanent
+			#}
 		}
 	}
 }

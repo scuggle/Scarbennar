@@ -902,6 +902,7 @@ damish_temple_temple_of_the_highest_moon = {
 					duration = 10950
 				}
 			}
+			set_global_flag = eur_dame_temple_maxxed_flag
 		}
 	}
 }

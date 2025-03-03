@@ -8,6 +8,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { exists = Z38 } 
 			capital_scope = { continent = europe }
+			NOT = { has_country_modifier = gnomish_administration }
 		}
 		provinces_to_highlight = {
 			OR = { 
@@ -67,6 +68,7 @@ country_decisions = {
 				NOT = { exists = A27 } 
 				NOT = { exists = A28 } 
 			}
+			NOT = { has_country_modifier = gnomish_administration }
 		}
 		effect = {
 			189 = {

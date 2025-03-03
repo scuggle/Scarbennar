@@ -465,6 +465,7 @@ temple_of_ryala = {
 					duration = 7300
 				}
 			}
+			set_global_flag = eur_ryala_temple_maxxed_flag
 		}
 	}
 }
