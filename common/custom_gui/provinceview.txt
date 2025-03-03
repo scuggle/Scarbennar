@@ -111,7 +111,10 @@ custom_button = {
 		}
 	}
 	trigger = {
-		has_subterranean_race = yes
+		OR = {
+			has_subterranean_race = yes
+			adm_tech = 12
+		}
 		owner = {
 			if = {
 				limit = { NOT = { has_country_modifier = dwarven_administration } }
@@ -120,6 +123,8 @@ custom_button = {
 						OR = {
 							dwarovar_goblin_culture_primary = yes
 							primary_culture = darkscale_kobold
+							tag = EC2
+							tag = EC3
 						}
 					}
 					adm_tech = 5
