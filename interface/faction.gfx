@@ -717,4 +717,32 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 
+	#eur
+	spriteType = {
+		name = "GFX_faction_bg_voltenu_stakeholders"
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_voltenu_stakeholders"
+		texturefile = "gfx//interface//faction_engineers_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_voltenu_upper_management"
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_voltenu_upper_management"
+		texturefile = "gfx//interface//faction_manufacturers_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_voltenu_workers"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_voltenu_workers"
+		texturefile = "gfx//interface//faction_inventors_icon.dds"
+	}
 }
