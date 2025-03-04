@@ -443,22 +443,6 @@ march = {
 #	start_date = 1444.1.1
 #	end_date = 1600.1.1
 #}
-# Blackstep Clan
-dependency = {
-	subject_type = "slave_state"
-	first = R62
-	second = R65
-	start_date = 1444.1.1
-	end_date = 1600.1.1
-}
-# Stolen Gem clan
-dependency = {
-	subject_type = "slave_state"
-	first = R62
-	second = R66
-	start_date = 1444.1.1
-	end_date = 1600.1.1
-}
 
 #Sarkhashabid - Maqet
 alliance = {

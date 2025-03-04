@@ -3645,11 +3645,6 @@ country_event = {
 			tag = J32 #miremaw
 		}
 		NOT = { has_country_flag = dwarovar_claimer_setup }
-		NOT = {
-			tag = R65 #Blackstep
-			tag = R66 #Stolen Gem
-			tag = R81 #Jade march
-		}
 	}
 	
 	option = {

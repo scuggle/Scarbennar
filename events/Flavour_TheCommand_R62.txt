@@ -27,10 +27,6 @@ country_event = { #Startup Event
 				days = 25
 				random = 10
 			}
-			R63 = { set_country_flag = command_slave_state_flag }
-			R64 = { set_country_flag = command_slave_state_flag }
-			R65 = { set_country_flag = command_slave_state_flag }
-			R66 = { set_country_flag = command_slave_state_flag }
 			add_estate_loyalty = {
 				estate = all
 				loyalty = 1
