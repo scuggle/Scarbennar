@@ -322,7 +322,7 @@ orda_aldresia_2 = {
 				}
 				AND = {
 					NOT = { exists = A85 }
-					legitimacy = 100
+					legitimacy_equivalent = 100
 					prestige = 100
 				}
 			}
