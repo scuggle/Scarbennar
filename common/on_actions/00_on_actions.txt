@@ -2414,32 +2414,6 @@ on_siege_won_country = {
 		}
 		country_event = { id = flavour_beggaston.7 }
 	}
-	if = {
-		limit = { R62 = { has_country_flag = command_sir_revolt_started } }
-		FROM = { remove_province_modifier = command_trade_power_for_ai }
-		if = {
-			limit = {
-				NOT = {
-					is_in_war = {
-						casus_belli = cb_revolt_of_the_north
-					}
-				}
-				R62 = {
-					any_war_enemy_country = {
-						capital_scope = {
-							province_id = FROM
-							controlled_by = ROOT
-						}
-						is_subject = no
-						is_in_war = { casus_belli = cb_revolt_of_the_north }
-					}
-				}
-			}
-			save_event_target_as = command_third_party_country
-			FROM = { owner = { save_event_target_as = command_enemy_country } }
-			R62 = { country_event = { id = the_command.118 } }
-		}
-	}
 	if = { #War of the Three Commands stuff
 		limit = {
 			OR = {
