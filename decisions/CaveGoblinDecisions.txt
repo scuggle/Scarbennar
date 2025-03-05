@@ -90,11 +90,7 @@ country_decisions = {
 	form_underkingdom = {
 		major = yes
 		potential = {
-			OR = { 
-				tag = H88
-				tag = H92
-				tag = H93
-			}
+			culture = undergrowth_goblin
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
