@@ -3310,7 +3310,7 @@ voltenu_corp_names = {
 		3 = CEO
 	}
 
-		ruler_female = {
+	ruler_female = {
  		1 = CEO
  		2 = CEO
  		3 = CEO

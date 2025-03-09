@@ -8118,7 +8118,7 @@ Z54_ideas = {
 #Soyzkaru Cartel
 Z86_ideas = {
 	start = {
-		fire_damage = 0.1
+		fire_damage = 0.15
 		hostile_attrition = 1
 	}
 	bonus = {
@@ -8133,21 +8133,23 @@ Z86_ideas = {
 		advisor_cost = -0.15
 	}
 	Z86_hired_muscle = {
-		mercenary_cost = -0.10
+		mercenary_cost = -0.20
 		harsh_treatment_cost = -0.25
 	}
 	Z86_forest_and_fey_into_the_forest = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.15
 	}
 	Z86_cartel_subterfuge = {
 		diplomatic_reputation = 1
+		merchants = 1
 	}
 	Z86_opportunistic_piety = {
-		tolerance_heathen = 1
-		trade_efficiency = 0.1
+		tolerance_heathen = 2
+		trade_efficiency = 0.15
 	}
 	Z86_cartel_towns = {
-		trade_company_investment_cost = -0.15
+		trade_company_investment_cost = -0.2
+		artillery_cost = -0.25
 	}
 	Z86_the_ciernkakest = {
 		dip_tech_cost_modifier = -0.1

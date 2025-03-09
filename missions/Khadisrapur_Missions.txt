@@ -1386,8 +1386,8 @@ R11_post_victory_3 = {
 			num_of_mercenaries = 30
 			OR = {
 				AND = {
-					has_idea_group = mercenary_ideas
-					has_idea = expanded_contracts
+					has_idea_group = adventurer_ideas_vaass
+					has_idea = adven_ide3
 				}
 				mil_power = 150
 			}
@@ -1395,7 +1395,7 @@ R11_post_victory_3 = {
 
 		effect = {
 			if = {
-				limit = { NOT = { has_idea = expanded_contracts } }
+				limit = { NOT = { has_idea = adven_ide3 } }
 				add_mil_power = -150
 			}
 			country_event = { id = khadisrapur.19 }
@@ -1451,7 +1451,7 @@ R11_post_victory_3 = {
 
 		trigger = {
 			OR = {
-				full_idea_group = mercenary_ideas
+				full_idea_group = adventurer_ideas_vaass
 				mil_power = 200
 			}
 			4507 = {
