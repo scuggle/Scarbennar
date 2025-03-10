@@ -4387,7 +4387,7 @@ reward_adk_effect = {
 			while = {
 				limit = { check_variable = { ancientDwarvenKnowledge = 1 } }
 				subtract_variable = { ancientDwarvenKnowledge = 1 }
-				owner = { change_government_reform_progress = 15 }
+				owner = { change_government_reform_progress = 7 }
 			}
 		}
 	]

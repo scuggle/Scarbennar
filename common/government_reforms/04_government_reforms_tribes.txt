@@ -1048,13 +1048,13 @@ dwarovar_warband = {
 	}
 
 	modifiers = {
-		global_manpower = 5
+		global_manpower = 2
 		land_forcelimit = 10
 		movement_speed = 0.1
 		reinforce_cost_modifier = -0.2
-		reform_progress_growth = -0.5
-		global_institution_spread = -0.25
-		diplomatic_upkeep = -2
+		reform_progress_growth = -0.2
+		global_institution_spread = -0.1
+		diplomatic_upkeep = -1
 		global_supply_limit_modifier = 0.33
 		prestige_from_land = 0.5
 	}
@@ -1098,13 +1098,13 @@ dwarovar_squatter = {
 	maintain_dynasty = yes
 
 	modifiers = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.1
 		land_maintenance_modifier = -0.10
 		land_attrition = -0.1
 		reinforce_cost_modifier = -0.1
-		reform_progress_growth = -0.5
-		global_institution_spread = -0.25
-		diplomatic_upkeep = -2
+		reform_progress_growth = -0.2
+		global_institution_spread = -0.1
+		diplomatic_upkeep = -1
 		
 		garrison_size = 0.1
 		war_taxes_cost_modifier = -0.5
