@@ -3,7 +3,10 @@ covenblad_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z37 }
+	potential = {
+		NOT = { has_country_flag = chose_generic_mt } 
+		tag = Z37
+	}
 	
 	covenblad_excavating_the_stone_city = {
 		icon = a_question_of_spain
@@ -341,7 +344,10 @@ covenblad_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z37 }
+	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = Z37 
+	}
 	
 	covenblad_to_the_lake = {
 		icon = mission_advance_to_the_dnieper
@@ -777,7 +783,10 @@ covenblad_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z37 }
+	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = Z37 
+	}
 	
 	covenblad_a_promise_to_be_fulfilled = {
 		icon = mission_swear_fealty_knight
@@ -1416,7 +1425,10 @@ covenblad_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z37 }
+	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = Z37 
+	}
 	
 	covenblad_into_the_mountains = {
 		icon = prosper_in_piedmont
@@ -1846,7 +1858,10 @@ covenblad_5 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z37 }
+	potential = { 
+		NOT = { has_country_flag = chose_generic_mt }
+		tag = Z37 
+	}
 	
 	covenblad_a_symposium_for_shamanism = {
 		icon = mission_verdant_secret

@@ -4,7 +4,7 @@ government = monarchy
 add_government_reform = adventurer_kingdom_reform
 government_rank = 1
 primary_culture = covenbladic
-religion = corinite
+religion = regent_court
 technology_group = tech_cannorian
 capital = 748
 
