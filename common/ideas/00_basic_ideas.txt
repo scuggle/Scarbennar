@@ -544,6 +544,42 @@ spy_ideas = { #Cultural Unity Ideas
 	}
 }
 
+dummy_ideas = { #so people stop asking about colonial ideas
+	category = DIP
+
+	trigger = {
+		NOT = { adm_tech = 5 }
+		ai = no
+	}
+	bonus = {
+
+	}
+	dummy_ideas1 = {
+
+	}
+	dummy_ideas2 = {
+
+	}
+	dummy_ideas3 = {
+
+	}
+	dummy_ideas4 = {
+
+	}
+	dummy_ideas5 = {
+
+	}
+	dummy_ideas6 = {
+
+	}
+	dummy_ideas7 = {
+
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 maritime_ideas = { #Ruler of the Waves Ideas
 	category = DIP
 
