@@ -1144,6 +1144,7 @@ naval_battery = {
 	keep_trigger = {
 		NOT = {
 			area_for_scope_province = {
+				NOT = { province_id = root }
 				owner = {
 					tag = ROOT
 				}
@@ -3481,6 +3482,7 @@ impressment_offices = {
 	keep_trigger = {
 		NOT = {
 			area_for_scope_province = {
+				NOT = { province_id = root }
 				owner = {
 					tag = ROOT
 				}
