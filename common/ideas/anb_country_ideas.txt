@@ -1586,7 +1586,7 @@ A48_ideas = {
 	}
 	A48_rhinns_mound = {
 		development_cost = -0.1
-		adventurer_loyalty_equilibrium = 0.1 # The city of Rhinmond (Rhinn’s Mound) is one of the oldest and most well-developed Alenic settlements in the Borders, dating to the days of the fledgling First Wexonard Kingdom when it was founded by the legendary Rhinn the Progenitor. It is also home to one of the most popular haunts for adventurers in the Borders - the ever-shifting, ever-changing Milcori Labyrinth of Rhinmond.
+		adventurers_loyalty_modifier = 0.1 # The city of Rhinmond (Rhinn’s Mound) is one of the oldest and most well-developed Alenic settlements in the Borders, dating to the days of the fledgling First Wexonard Kingdom when it was founded by the legendary Rhinn the Progenitor. It is also home to one of the most popular haunts for adventurers in the Borders - the ever-shifting, ever-changing Milcori Labyrinth of Rhinmond.
 	}
 	A48_lockcastle_fair = {
 		global_unrest = -1
@@ -1603,7 +1603,7 @@ A48_ideas = {
 		culture_conversion_time = -0.1	# The Sugambrian culture and identity’s expansion in the Borders came at the expense of the Milcori, who were driven out of their ancient homes and labyrinths with blood and steel during the Long War. Sugambrians are no stranger to settling new lands - and driving out the old inhabitants in the process.
 	}
 	A48_amber_aristocracy = {
-		yearly_prestige = 1		# Sitting in Rhinmond’s Amber Hall, first constructed by King Rhinn I in the year 525 to celebrate the fall of Xamarzu the Lich-King, and has stood as the southern counterpart to the Wexkeep for almost a thousand years, the nobility of Sugamber are known as the “Amber Aristocracy”.
+		prestige = 1		# Sitting in Rhinmond’s Amber Hall, first constructed by King Rhinn I in the year 525 to celebrate the fall of Xamarzu the Lich-King, and has stood as the southern counterpart to the Wexkeep for almost a thousand years, the nobility of Sugamber are known as the “Amber Aristocracy”.
 	}
 }
 
