@@ -2240,7 +2240,7 @@ quartermaster = {
 	
 	# Bonus
 	land_attrition = -0.15
-	land_maintenance_modifier = -0.10
+	reinforce_speed = 0.33
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -2553,7 +2553,7 @@ grand_captain = {
 	}
 	
 	# Bonus
-	global_regiment_cost = -0.1
+	land_maintenance_modifier = -0.1
 	general_cost = -0.1
 	
 	skill_scaled_modifier = {
