@@ -664,10 +664,10 @@ doddcods_inner_branch = {
 				id = dodd_flavour_events.9
 			}
 			remove_country_modifier = dodd_gnomes_recruiting_irregulars_modifier
-			add_country_modifier = {
-				name = dodd_recruiting_lizardfolk_regulars_modifier	#modifier giving 25% manpower modifier, -10% unit cost and +1% yearly proff, yet to be implemented, maybe nerf
-				duration = -1	#permanent
-			}
+			#add_country_modifier = {
+			#	name = dodd_recruiting_lizardfolk_regulars_modifier	#modifier giving 25% manpower modifier, -10% unit cost and +1% yearly proff, yet to be implemented, maybe nerf
+			#	duration = -1	#permanent
+			#}
 		}
 	}
 	dodd_draining_the_swamp = {
