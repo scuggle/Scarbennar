@@ -1336,7 +1336,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_technocracy = yes	#should work instead
+			has_government_attribute = is_technocracy #should work instead
 			#has_government_reform = #artificer reform
 			126 = {	#portnamm
 				owned_by = ROOT
@@ -1354,7 +1354,7 @@ country_decisions = {
 				faction = tec_mechanists
 				influence = 35
 			}
-			add_adm_power = 20
+			adm_power = 20
 		}
 		effect = {
 			126 = {
@@ -1406,7 +1406,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_technocracy = yes	#should work instead
+			has_government_attribute = is_technocracy #should work instead
 			#has_government_reform = #artificer reform
 			112 = {	#westport
 				owned_by = ROOT
