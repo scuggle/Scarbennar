@@ -32,6 +32,8 @@
  Qol_delete_farm_estates_title:0 "§M-->§! Delete farm estates"
  Qol_delete_farm_estates_desc:0 "Deletes all your farm estates in all of you provinces, that are valid for it"
  Qol_delete_farm_estates_tooltip:0 "Have at least one province with a farm estate\n£yes£Be the controller of this province"
+ Qol_show_expanded_infra_title:0 "Expand Infrastructure Highlighter"
+ Qol_show_expanded_infra_desc:0 "Hover over the trigger to highlight provinces above 15 developments in which you have not yet expanded infrastructure!"
 
  mjl_less_than_7_stats_tt:0 "Ruler has less than 7 points in total"
  mjl_educate_rulers_count:0 "Educated rulers count"
