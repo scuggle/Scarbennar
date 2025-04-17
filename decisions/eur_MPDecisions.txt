@@ -663,4 +663,37 @@ country_decisions = {
 			}
 		}
 	}
+
+	integrate_falahan = {
+		potential = {
+			ai = no
+			tag = U17
+			NOT = { is_year = 1445 }
+			NOT = { has_country_flag = integrated_falahan }
+		}
+		
+		allow = {
+			ai = no
+		}
+
+		effect = {
+			518 = {
+				add_core = ROOT
+				cede_province = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+				add_local_autonomy = -100
+				add_nationalism = -100
+			}
+			519 = {
+				add_core = ROOT
+				cede_province = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+				add_local_autonomy = -100
+				add_nationalism = -100
+			}
+			set_country_flag = integrated_falahan
+		}
+	}
 }	

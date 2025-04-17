@@ -92,3 +92,7 @@
 
  EC6_form_nation_title: "Proclaim the New Moon Empire"
  EC6_form_nation_desc: "The time has come to proclaim our authority over the lands of Sarhal."
+
+ integrate_falahan_title: "Integrate the Matriarchy of Falahan"
+ integrate_falahan_desc: "The petty matriarchy of Falahan is de jure land of Crathanor and shall once again belong to us!"
+ integrated_falahan: "Integrated Falahan"
