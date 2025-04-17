@@ -29,6 +29,10 @@
  Qol_delete_coastal_defences_title:0 "§M-->§! Delete coastal defences"
  Qol_delete_coastal_defences_desc:0 "Deletes all your coastal defences and naval batteries in all of you provinces, that are valid for it"
  Qol_delete_coastal_defences_tooltip:0 "Have at least one province with a coastal defences or a naval batteries\n£yes£Be the controller of this province"
+ Qol_delete_farm_estates_title:0 "§M-->§! Delete farm estates"
+ Qol_delete_farm_estates_desc:0 "Deletes all your farm estates in all of you provinces, that are valid for it"
+ Qol_delete_farm_estates_tooltip:0 "Have at least one province with a farm estate\n£yes£Be the controller of this province"
+
  mjl_less_than_7_stats_tt:0 "Ruler has less than 7 points in total"
  mjl_educate_rulers_count:0 "Educated rulers count"
  mjl_cant_educate_same_ruler_tt:0 "Ruler has not already been educated"
