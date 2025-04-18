@@ -552,4 +552,60 @@ country_decisions = {
 			}
 		}
 	}
+
+	Qol_delete_farm_estates = {
+		
+		potential = {
+			ai = no
+			has_country_flag = Qol_flag		
+			has_country_flag = Qol_buildings_interface
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {			
+			custom_trigger_tooltip = {
+				tooltip = Qol_delete_farm_estates_tooltip
+				any_owned_province = {
+					#controller = ROOT
+					has_building = farm_estate
+				}
+			}
+			is_at_war = no
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					#controller = ROOT
+					has_building = farm_estate
+				}
+				remove_building = farm_estate			
+			}
+		}
+	}
+
+	Qol_show_expanded_infra = {
+        color = { 255 243 51 }
+        potential = {
+            ai = no
+			has_country_flag = Qol_flag	
+        }
+
+        allow = {
+            always = no
+        }
+
+        provinces_to_highlight = {
+            owned_by = ROOT
+            development = 15
+            NOT = { num_of_times_expanded_infrastructure = 1 }
+        }
+
+        effect = {
+            add_treasury = 1
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
 }
