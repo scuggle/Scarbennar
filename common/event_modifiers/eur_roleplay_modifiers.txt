@@ -47,15 +47,15 @@ eur_temple_2 = {
 }
 eur_market_1 = {
 	province_trade_power_modifier = -0.1
-	#trade_value_modifier = -0.05
+	trade_value_modifier = -0.02
 }
 eur_market_2 = {
 	province_trade_power_modifier = -0.2
-	#trade_value_modifier = -0.1
+	trade_value_modifier = -0.033
 }
 eur_market_3 = {
 	province_trade_power_modifier = -0.25
-	#trade_value_modifier = -0.125
+	trade_value_modifier = -0.05
 }
 eur_barracks_1 = {
 	local_manpower_modifier = -0.1
