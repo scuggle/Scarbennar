@@ -1327,7 +1327,7 @@ cathedral = {
 }
 
 university = {
-	cost = 500
+	cost = 350
 	time = 12
 	modifier = {
 		local_development_cost = -0.1

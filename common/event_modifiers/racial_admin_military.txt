@@ -58,7 +58,7 @@ elven_military = {
 	#Gameplay: A very powerful and swift military that shines when its drilled and well-trained, however they replenish very slowly so its best to pick your battles
 
 	#Positives
-	discipline = 0.05					#2 SS / only disc in the game, makes them good throughout 
+	discipline = 0.075					#2 SS / only disc in the game, makes them good throughout 
 	drill_decay_modifier = -0.25	#1.5 A / to promote idea of well-trained army that you dont lose 
 	drill_gain_modifier = 1			#1 B / to promote drilling gameplay
 	movement_speed = 0.15			#1.5 C / swift elves
