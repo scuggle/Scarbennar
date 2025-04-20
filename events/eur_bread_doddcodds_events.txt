@@ -613,9 +613,9 @@ country_event = {
 					trade_goods = tropical_wood
 				}
 			}
-			random_owned_province = {
-				culture_group = lizardfolk
+			random_owned_province = {	
 				limit = {
+					culture_group = lizardfolk
 					trade_goods = tropical_wood
 				}
 				set_province_flag = dodd_wood_plantation_flag_1
