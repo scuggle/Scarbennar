@@ -2650,7 +2650,7 @@ anbennar_T5_human_dwarven = {
 	}
 	modifiers = {
 		#Positive
-		artillery_power = 0.1
+		artillery_power = 0.075
 		defensiveness = 0.1
 		artillery_levels_available_vs_fort = 1
 		#Negative
@@ -2679,13 +2679,13 @@ anbennar_T5_human_elven = {
 	}
 	modifiers = {
 		#Positive
-		discipline = 0.05
+		discipline = 0.025
 		navy_tradition_decay = -0.01
 		movement_speed = 0.15
 		#Negative
 		global_sailors_modifier = -0.05
 		global_manpower_modifier = -0.1
-		manpower_recovery_speed = -0.15
+		manpower_recovery_speed = -0.10
 	}
 	
 	ai = {
@@ -2712,6 +2712,9 @@ anbennar_T5_human_gnollish = {
 		morale_damage = 0.1
 		loot_amount = 0.5
 		available_province_loot = 0.5
+
+		#Negative
+		years_of_nationalism = 5
 	}
 	
 	ai = {
@@ -2829,7 +2832,7 @@ anbennar_T5_human_half_orcish = {
 	}
 	modifiers = {
 		#Positive
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.05
 		leader_land_shock = 1
 		army_tradition_decay = -0.01
 		may_recruit_female_generals = yes
@@ -2861,7 +2864,7 @@ anbennar_T5_human_halfling = {
 		#Positive
 		land_attrition = -0.25
 		land_forcelimit_modifier = 0.1
-		reserves_organisation = 0.1
+		reserves_organisation = 0.15
 		#Negative
 		global_regiment_cost = 0.05
 		fire_damage = -0.025
@@ -2889,7 +2892,7 @@ anbennar_T5_human_harimari = {
 	}
 	modifiers = {
 		#Positive
-		infantry_power = 0.1
+		infantry_power = 0.05
 		shock_damage = 0.05
 		#Negative
 		leader_land_fire = -1
@@ -2945,11 +2948,11 @@ anbennar_T5_human_hobgoblin = {
 	}
 	modifiers = {
 		#Positive
-		military_tactics = 0.1
+		military_tactics = 0.25
 		drill_gain_modifier = 1
 		drill_decay_modifier = -0.25
 		#Negative
-		land_forcelimit_modifier = -0.1
+		land_forcelimit_modifier = -0.15
 		recover_army_morale_speed = -0.1
 	}
 	
@@ -2973,8 +2976,8 @@ anbennar_T5_human_human_1 = {
 	}
 	modifiers = {
 		#Positive
-		infantry_power = 0.05
-		artillery_power = 0.05
+		infantry_power = 0.025
+		artillery_power = 0.025
 		mil_tech_cost_modifier = -0.05
 		#Negative
 	}
@@ -3029,7 +3032,7 @@ anbennar_T5_human_kobold = {
 		land_forcelimit_modifier = 0.1
 		allowed_rajput_fraction = 0.05
 		#Negative
-		land_morale = -0.05
+		land_morale = -0.1
 		shock_damage_received = 0.05
 	}
 	
@@ -3059,6 +3062,7 @@ anbennar_T5_human_lizardfolk = {
 		allowed_marine_fraction = 0.15
 		#Negative
 		cavalry_cost = 0.1
+		naval_maintenance_modifier = 0.1
 	}
 	effect = {
 		custom_tooltip = anbennar_T5_human_lizardfolk_tt
@@ -3115,7 +3119,7 @@ anbennar_T5_human_ogre = {
 	}
 	modifiers = {
 		#Positive
-		shock_damage_received = -0.1
+		shock_damage_received = -0.05
 		fire_damage_received = -0.05
 		#Negative
 		infantry_cost = 0.1
@@ -3143,7 +3147,7 @@ anbennar_T5_human_orcish = {
 	}
 	modifiers = {
 		#Positive
-		shock_damage = 0.15
+		shock_damage = 0.10
 		assault_fort_ability = 0.15
 		may_recruit_female_generals = yes
 		#Negative
@@ -3206,7 +3210,7 @@ anbennar_T5_human_troll = {
 		reinforce_speed = 0.2
 		artillery_barrage_cost = -0.25	
 		#Negative
-		movement_speed = -0.1
+		movement_speed = -0.05
 		cavalry_power = -0.15
 	}
 	

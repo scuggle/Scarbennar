@@ -930,7 +930,7 @@ province_event = {	#rogue nia semi positive event
 			any_neighbor_province = {
 				owner = {
 					has_country_modifier = port_the_nia_modifier
-					has_government_reform = 
+					#has_government_reform = 
 				}
 			}
 		}
@@ -948,9 +948,9 @@ province_event = {	#rogue nia semi positive event
 		name = port_flavour_events.7.a
 	}
 	option = {	#forgive them
-	
+		name = port_flavour_events.7.b
 	}
 	option = {	#confront them
-	
+		name = port_flavour_events.7.c
 	}
 }

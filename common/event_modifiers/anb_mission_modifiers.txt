@@ -7536,7 +7536,7 @@ giberd_artificers_of_cannor_modifier = {
 	artificers_research_time = -0.20
 }
 giberd_deluge_of_investment = {
-	development_cost = -0.10
+	development_cost = -0.075
 }
 
 giberd_language_of_esmar = {

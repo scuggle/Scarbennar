@@ -51,7 +51,7 @@ dodd_merc_company1 = {
 	cost_modifier = 0.9
 	modifier = {
 		shock_damage_received = -0.15
-		land_fire = 0.1
+		fire_damage = 0.1
 	}
 }
 dodd_merc_company2 = {
@@ -67,7 +67,7 @@ dodd_merc_company2 = {
 	cost_modifier = 0.66
 	modifier = {
 		shock_damage_received = -0.15
-		land_fire = 0.15
+		fire_damage = 0.15
 	}
 }
 dodd_merc_company3 = {
@@ -84,7 +84,7 @@ dodd_merc_company3 = {
 	cost_modifier = 0.75
 	modifier = {
 		shock_damage_received = -0.1
-		land_fire = 0.15
+		fire_damage = 0.15
 	}
 }
 dodd_merc_company4 = {
@@ -101,7 +101,7 @@ dodd_merc_company4 = {
 	cost_modifier = 1
 	modifier = {
 		shock_damage_received = -0.15
-		land_fire = 0.15
+		fire_damage = 0.15
 		infantry_power = 0.1
 	}
 }
@@ -119,7 +119,7 @@ dodd_merc_company5 = {
 	cost_modifier = 1
 	modifier = {
 		shock_damage_received = -0.15
-		land_fire = 0.15
+		fire_damage = 0.15
 		infantry_power = 0.1
 	}
 }
@@ -137,7 +137,7 @@ dodd_merc_company6 = {
 	cost_modifier = 1
 	modifier = {
 		shock_damage_received = -0.15
-		land_fire = 0.15
+		fire_damage = 0.15
 		infantry_power = 0.1
 	}
 }
